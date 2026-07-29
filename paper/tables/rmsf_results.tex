@@ -1,0 +1,36 @@
+% !TeX root = ../paper.tex
+% 在正文中使用 \input{tables/rmsf_results} 插入本表。
+
+\begin{table}[htbp]
+  \centering
+  \caption{FlexPPI 与 FastProtFlex 的共同静态 RMSF 排序任务。所有数值均为
+  蛋白或复合体等权宏平均；该表属于同域诊断，不是冻结外部测试。
+  FastProtFlex 没有绝对 $\text{\AA}$ 输出，故仅比较相对指标。}
+  \label{tab:rmsf-results}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{lllrrrrrr}
+    \toprule
+    数据集 & 样本单位 & 方法 &
+    Spearman $\uparrow$ & Pearson $\uparrow$ &
+    z-MAE $\downarrow$ & AUROC $\uparrow$ &
+    AP $\uparrow$ & P@K $\uparrow$ \\
+    \midrule
+    ATLAS 单链 & 191 蛋白 & FastProtFlex
+      & 0.7984 & 0.7717 & 0.4870 & 0.9125 & 0.7821 & 0.6898 \\
+    ATLAS 单链 & 191 蛋白 & FlexPPI
+      & \textbf{0.8205} & \textbf{0.8509} & \textbf{0.3393}
+      & \textbf{0.9230} & \textbf{0.8024} & \textbf{0.7069} \\
+    DynaRepo 单链 & 31 蛋白 & FastProtFlex
+      & 0.8298 & 0.7476 & 0.5032 & 0.9134 & 0.7678 & 0.6903 \\
+    DynaRepo 单链 & 31 蛋白 & FlexPPI
+      & \textbf{0.8517} & \textbf{0.7854} & \textbf{0.4088}
+      & \textbf{0.9212} & \textbf{0.7835} & \textbf{0.7040} \\
+    DynaRepo 复合体 & 54 复合体 & FastProtFlex
+      & 0.7599 & 0.6930 & 0.5549 & 0.8926 & 0.7374 & 0.6509 \\
+    DynaRepo 复合体 & 54 复合体 & FlexPPI
+      & \textbf{0.7902} & \textbf{0.7506} & \textbf{0.4490}
+      & \textbf{0.9042} & \textbf{0.7620} & \textbf{0.6730} \\
+    \bottomrule
+  \end{tabular}%
+  }
+\end{table}

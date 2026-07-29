@@ -1,0 +1,43 @@
+{
+  "figure_contract": {
+    "core_conclusion": "Absolute-state pretraining learns residue-level flexibility and outperforms FastProtFlex on shared static tasks, whereas paired response remains weak and TCR3D provides only moderate proxy evidence.",
+    "archetype": "quantitative_grid",
+    "target": "Nature-family standard, double column, 183 mm"
+  },
+  "input_files": [
+    "artifacts\\evaluation\\state_validation_pretrain.json",
+    "artifacts\\evaluation\\state_validation_finetune.json",
+    "artifacts\\evaluation\\pair_validation.json",
+    "artifacts\\evaluation\\fastprotflex_comparison\\atlas_comparison_report.json",
+    "artifacts\\evaluation\\fastprotflex_comparison\\chain_context\\chain_context_comparison_report.json",
+    "artifacts\\evaluation\\tcr3d_full\\tcr3d_report.json",
+    "artifacts\\evaluation\\tcr3d_full\\tcr3d_residue_predictions.csv"
+  ],
+  "tcr3d_data_audit": {
+    "input_residue_rows": 129268,
+    "finite_residue_rows": 129268,
+    "dropped_nonfinite_residue_rows": 0,
+    "correlatable_chains": 1187,
+    "excluded_constant_or_short_chains": 2
+  },
+  "tcr3d_reported_summary": {
+    "mean_spearman": 0.38862789589229474,
+    "bootstrap_95_ci": [
+      0.37771642154366675,
+      0.39681685216061424
+    ],
+    "correlatable_chains": 1187
+  },
+  "signal_checks": {
+    "panel_a_value_range": 0.17769149950483576,
+    "panel_b_min_FlexPPI_minus_FastProtFlex": 0.021844153387667542,
+    "panel_c_min_method_range": 0.011842136757182598,
+    "panel_d_chain_spearman_sd": 0.188328906973873
+  },
+  "statistics": {
+    "panels_a_b_c": "Point estimates are equal-system means; intervals are archived system-level nonparametric bootstrap 95% confidence intervals.",
+    "panel_d": "The violin contains all correlatable chains. The orange point is the equal-chain mean and the whisker is the archived chain bootstrap 95% confidence interval.",
+    "hypothesis_tests": "No p-values are asserted in this figure.",
+    "multiple_comparison_correction": "Not applicable."
+  }
+}

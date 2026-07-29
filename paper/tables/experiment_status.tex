@@ -1,0 +1,35 @@
+% !TeX root = ../paper.tex
+
+\begin{table}[!ht]
+  \centering
+  \caption{实验完成状态与可作出的结论。}
+  \label{tab:experiment-status}
+  \small
+  \begin{tabularx}{\textwidth}{
+    >{\raggedright\arraybackslash}p{3.2cm}
+    >{\raggedright\arraybackslash}p{1.5cm}
+    X}
+    \toprule
+    实验 & 状态 & 当前证据或完成条件 \\
+    \midrule
+    ATLAS/\allowbreak DynaRepo 动态标签流水线 & 已完成 &
+      RMSF、侧链构象熵、SASA、标签方差与残基映射均已有可重建产物。\\
+    绝对状态内部验证 & 已完成 &
+      276 个系统；验证集参与 checkpoint 选择，只能作内部诊断。\\
+    FastProtFlex 共同任务 & 已完成 &
+      ATLAS 191 个蛋白、DynaRepo 31 个单链和 54 个复合体；比较相对排序。\\
+    apo/holo 配对响应 & 已完成 &
+      7 个模型选择验证体系；$\Delta$RMSF 仅有弱增益，尚无独立测试。\\
+    TCR3D 晶体代理 & 已完成 &
+      1,189 条链；只能说明 B-factor/CDR 代理迁移，不是 MD 真值。\\
+    冻结外部 MD 测试 & 计划 &
+      需要序列和结构双重去泄漏、多重复轨迹、统一标签及完整基线。\\
+    独立 apo/holo 响应测试 & 计划 &
+      需要从训练和选轮次中隔离，并补齐成对 $\Delta$SASA。\\
+    复合物 $\Delta G_{\mathrm{bind}}$ 微调 & 计划 &
+      需要真实亲和力标签、A/B 对称亲和力头和静态/动态消融。\\
+    突变 $\Delta\Delta G$ 微调 & 计划 &
+      需要 WT/突变配对标签、正反反对称约束和家族/界面隔离测试。\\
+    \bottomrule
+  \end{tabularx}
+\end{table}

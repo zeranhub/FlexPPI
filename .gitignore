@@ -1,0 +1,39 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+.venv-md/
+.venv-*/
+dist/
+build/
+
+# Generated training and evaluation products
+artifacts/
+output/
+tmp/
+ideaspark_run/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+
+# LaTeX and rendering intermediates; keep paper.pdf and figure exports
+paper/tmp/
+paper/.render_check*/
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz

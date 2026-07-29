@@ -1,0 +1,145 @@
+% !TeX root = ../paper.tex
+
+\section{实验}
+
+\subsection{实验状态与证据等级}
+
+本文使用 ``已完成''、``进行中'' 和 ``计划'' 三种状态。已完成结果均来自
+仓库中可重建的 JSON/CSV 产物；但当前训练器没有完全未接触的测试划分，内部
+验证集参与了最优 checkpoint 选择，因此这些结果只用于能力诊断，不能写成
+独立测试或 state-of-the-art。表 \ref{tab:experiment-status} 汇总了当前状态。
+
+\input{tables/experiment_status}
+
+\subsection{评价协议}
+
+绝对状态任务先在每个蛋白内计算 Pearson、Spearman、MAE、RMSE 和一致性相关
+系数，再让每个蛋白等权平均；所有残基混合计算的 pooled 指标只作补充，避免
+长蛋白支配结果。将每个蛋白真实 RMSF 最高的 20\% 残基定义为高柔性集合，
+报告 AUROC、average precision（AP）和 Precision@K。配对响应除回归指标外，
+在 RMSF 和侧链熵上使用 0.1 的 dead zone，把残基分成刚化、中性和增柔三类，
+报告 macro-F1、真实活跃残基的符号准确率以及绝对变化最大 20\% 残基的检出。
+所有置信区间均以蛋白或复合体为重采样单位进行配对 bootstrap。
+
+\subsection{已经完成：标签流水线与绝对状态诊断}
+
+ATLAS 的 1,938 个体系已经全部完成索引，包含 444,240 个具有三重复 RMSF 的
+残基；DynaRepo 的 922 个体系包含 366,777 个 RMSF、294,358 个侧链构象熵和
+51,459 个 SASA 标签。当前绝对状态验证包含 276 个系统。表
+\ref{tab:state-head-results} 表明预训练模型已经学习到稳定的蛋白内柔性排序，
+其中侧链构象熵最强；但是配对响应微调使 RMSF 和侧链熵下降，并使稀疏的 SASA
+任务发生灾难性遗忘。这一结果支持在后续亲和力训练中冻结底层表示、回放旧任务
+并采用多目标 checkpoint 选择。
+
+\input{tables/state_head_results}
+
+\subsection{已经完成：与 FastProtFlex 的共同静态任务}
+
+FastProtFlex 输出每条蛋白内部标准化的相对柔性，不能参加以
+$\text{\AA}$ 为单位的绝对 MAE 比较。表 \ref{tab:rmsf-results} 因而只报告两种
+方法都能回答的排序、标准化误差和高柔性检出。ATLAS 的 191 个共同蛋白上，
+FlexPPI 的蛋白等权 Spearman 为 0.8205，FastProtFlex 为 0.7984；DynaRepo
+单链和复合体也得到同方向差异。复合体分层进一步显示，FlexPPI 的总体优势主要
+来自非界面区域，界面 Spearman 尚未超过 FastProtFlex，因此不能宣称已经解决
+界面柔性预测。ATLAS 参与了两种模型的开发，DynaRepo 又存在训练域不对称，
+这些比较仍属于同域诊断。
+
+\input{tables/rmsf_results}
+
+\subsection{已经完成：配对响应诊断}
+
+当前 test53 配对清单中 37 对全部参与微调流程，模型选择验证只含 7 个体系、
+2,124 个有效 $\Delta$RMSF 残基和 1,691 个有效
+$\Delta H_\chi$ 残基。表 \ref{tab:response-results} 显示，直接响应头把
+$\Delta$RMSF MAE 从零变化的 $0.221\,\text{\AA}$ 降到
+$0.209\,\text{\AA}$，改善 5.2\%，且比两个状态直接相减的
+$0.275\,\text{\AA}$ 更低；然而逐蛋白 Spearman 只有 0.160，活跃残基符号
+准确率为 34.3\%，增柔类别 F1 只有 0.063。$\Delta H_\chi$ 响应头的 MAE
+还差于零变化基线，当前也没有配对 $\Delta$SASA 标签。因此，模型目前只对
+$\Delta$RMSF 提供弱的平均误差增益，尚未可靠学会变化方向或强变化尾部。
+
+\input{tables/response_results}
+
+\subsection{已经完成：TCR3D 外部代理}
+
+在排除精确训练 PDB 重叠后，TCR3D 共成功评测 1,189 条 TCR $\alpha/\beta$
+链和 129,268 个残基。预测 RMSF 与晶体 B-factor 换算代理的每链等权
+Spearman 为 0.389，95\% bootstrap 区间为 $[0.378,0.397]$；识别 CDR3
+相对框架区的 pooled AUROC 为 0.612、AP 为 0.332，而随机 AP 为 0.144。
+该结果说明模型保留了中等程度的跨域局部排序信号，但 B-factor 同时受到晶格、
+分辨率和精修影响，TCR3D 也没有配对 MD，故本实验不能作为 MD-RMSF 或结合
+响应真值。将数据域编码从 ATLAS 改为 DynaRepo 时，RMSF 平均绝对漂移达到
+$0.278\,\text{\AA}$，说明后续应删除数据集身份这一非物理条件，改用温度、
+离子强度、力场和时间窗等可测变量。
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=\textwidth]{fig_completed_experiments.pdf}
+  \caption{已完成柔性实验的统一可视化。所有点估计均先在单个蛋白、复合物或体系
+  内计算，再对体系等权平均；误差线为归档结果中的非参数 bootstrap 95\% 置信
+  区间。（a）预训练与配对响应微调后的绝对状态预测能力，仅展示 RMSF 与侧链
+  构象熵 $H_\chi$，差值定义为微调减预训练。（b）FlexPPI 与 FastProtFlex
+  在共同可回答的静态 RMSF 排序任务上的比较，右侧数字为
+  $\rho_{\mathrm{FlexPPI}}-\rho_{\mathrm{FastProtFlex}}$。（c）7 个配对体系上
+  响应头、状态相减和零变化基线的体系等权 MAE；竖虚线对应零变化基线，误差线
+  反映当前小样本下的不确定性。（d）TCR3D 中 1,187 条可计算相关性的链的
+  B-factor 代理 Spearman 分布；橙色点为链等权均值，灰色线为其 95\% 置信
+  区间。TCR3D 共评测 1,189 条链，其中 2 条因代理值或预测值为常数而不能计算
+  Spearman。面板（a）--（c）属于内部验证或模型选择诊断，面板（d）使用晶体
+  B-factor 代理而非 MD 真值，因而均不作为独立测试集上的最终性能声明。}
+  \label{fig:completed-experiments}
+\end{figure}
+\clearpage
+
+\subsection{必须补做：冻结的外部柔性测试}
+
+正式柔性结论需要建立完全未参与训练、调参和 checkpoint 选择的外部 MD 测试集。
+候选体系在进入测试前必须同时与全部训练链进行 MMseqs2 序列搜索以及
+Foldseek/CATH/ECOD 结构拓扑搜索，至少剔除高于 30\% 序列一致性的近同源，
+并分别报告 ``新序列但旧折叠'' 和 ``新折叠''。每个体系应包含不少于三条独立
+初速度的重复轨迹，在统一温度、力场、水模型、离子条件、平衡流程和生产时长下
+生成标签；重复 A 对重复 B 的性能作为经验噪声上限。所有方法统一使用
+$C_\alpha$、链级 Kabsch 对齐、共同残基掩码和缺失残基规则。
+
+第一轮必须运行常数、氨基酸类型、二级结构、SASA、反向 pLDDT、GNM、ANM、
+CABS-flex、FastProtFlex、FlexPred-SVR、PEGASUS、Flexpert-Seq 和
+Flexpert-3D。第二轮加入 BackFlip、RocketSHP 和 RMSF-net 的 PDB-only 分支。
+绝对输出模型参加 MAE/RMSE/CCC；相对输出模型只参加每蛋白相关、排序和
+top-$k$ 检出。BackFlip 的局部对齐标签与 FlexPPI 的链级对齐标签分开报告，
+RMSF-net 完整 cryo-EM 模型进入额外实验信息轨道。
+
+\subsection{必须补做：独立 apo/holo 响应测试}
+
+需要重新冻结一套从未进入响应微调和轮次选择的 apo/holo 测试集，并补齐两态
+RMSF、侧链熵和 SASA 标签。界面定义从当前的跨链
+$C_\alpha\leq8\,\text{\AA}$ 升级为任意重原子
+$\leq5\,\text{\AA}$，另设 $5$--$12\,\text{\AA}$ 近界面和远端变构区域。
+响应头、状态相减和零变化三种方法并列；每种训练至少使用五个随机种子，报告
+蛋白级 bootstrap 区间、配对显著性检验、方向 macro-F1、强变化 AP、推理时间
+和失败样本。还需比较冻结编码器、顶部小学习率解冻、旧任务 replay 和多任务
+checkpoint 选择，以确定哪种方案能在学习响应时保留绝对状态能力。
+
+\subsection{计划实验：由柔性响应预测结合亲和力}
+
+亲和力实验分成两个任务。任务一预测复合物的
+$\Delta G_{\mathrm{bind}}^{\circ}$；任务二预测突变或条件变化造成的
+$\Delta\Delta G$。所有 $K_d/K_i$ 标签转换为统一的
+$\mathrm{kcal\,mol^{-1}}$，保存温度、pH、离子强度、测量方法和不等式标签；
+无法确定温度的样本单列或使用带缺失条件的模型，不能静默假设所有实验等价。
+数据划分以复合物家族和界面相似性为单位，任何相同或近同源链、相同界面模板
+及同一突变的正反记录不得跨越训练、验证和测试。
+
+对每个样本按式 \eqref{eq:two-sided-response} 生成 A、B 双侧特征。主模型使用
+式 \eqref{eq:symmetric-pooling} 的 A/B 对称表示；第一阶段冻结 FlexPPI，
+只训练亲和力头，第二阶段小学习率解冻顶部表示块并保留
+$\mathcal L_{\mathrm{pair}}$。主指标为复合物等权 MAE、RMSE、Pearson、
+Spearman、$R^2$、CCC 和预测区间覆盖率；$\Delta\Delta G$ 另外报告稳定化/
+去稳定化方向准确率、macro-F1 和反向反对称误差。
+
+亲和力消融至少包含：（1）仅静态界面几何与理化特征；（2）仅绝对 RMSF、
+侧链熵和 SASA；（3）仅直接柔性响应；（4）仅状态相减；（5）仅残基隐藏表示；
+（6）静态与动态全部特征；（7）逐一移除 RMSF、侧链熵或 SASA；（8）真实
+apo/holo 与从复合体删除伙伴的伪 apo 对照；（9）预训练状态 checkpoint、
+响应微调 checkpoint 和带 replay 的联合 checkpoint。只有当 ``静态+动态''
+在冻结同源/界面测试集上稳定超过 ``仅静态''，且多个随机种子的改进置信区间
+不跨零，才能声称柔性响应为亲和力预测提供了增量价值。

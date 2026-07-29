@@ -1,0 +1,14 @@
+FlexPPI
+
+The invariant point attention design is an independent PyTorch implementation
+inspired by the Apache-2.0 licensed AlphaFold and Ibex/OpenFold structure
+modules:
+
+  https://github.com/google-deepmind/alphafold
+  https://github.com/prescient-design/ibex
+
+No pretrained AlphaFold or Ibex weights are redistributed by this project.
+ESM weights, when enabled, retain their upstream licenses. The local ATLAS
+dataset is distributed under CC BY-NC 4.0; users are responsible for checking
+the licenses of all training data and model weights for their intended use.
+

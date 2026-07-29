@@ -1,0 +1,24 @@
+% !TeX root = ../paper.tex
+
+\begin{table}[htbp]
+  \centering
+  \caption{配对响应在 7 个模型选择验证体系上的内部诊断。相对零变化改善为
+  正值时表示 MAE 降低。}
+  \label{tab:response-results}
+  \small
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llrrrrr}
+    \toprule
+    标签 & 方法 & MAE & Pearson & Spearman &
+    相对零变化 MAE 改善 & 活跃残基符号准确率 \\
+    \midrule
+    $\Delta$RMSF & response head & $0.209\,\text{\AA}$ & 0.236 & 0.197 & $+5.2\%$ & 34.3\% \\
+    $\Delta$RMSF & state subtraction & $0.275\,\text{\AA}$ & 0.293 & 0.171 & $-24.7\%$ & 37.5\% \\
+    $\Delta$RMSF & zero change & $0.221\,\text{\AA}$ & -- & -- & 0 & 0\% \\
+    $\Delta H_\chi$ & response head & 0.139 & 0.176 & 0.046 & $-3.9\%$ & 2.7\% \\
+    $\Delta H_\chi$ & state subtraction & 0.145 & 0.234 & 0.082 & $-8.8\%$ & 15.2\% \\
+    $\Delta H_\chi$ & zero change & 0.133 & -- & -- & 0 & 0\% \\
+    \bottomrule
+  \end{tabular}%
+  }
+\end{table}

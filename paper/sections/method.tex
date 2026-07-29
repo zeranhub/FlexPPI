@@ -1,0 +1,378 @@
+% !TeX root = ../paper.tex
+\section{方法}
+
+\subsection{绝对状态预测问题}
+
+FlexPPI 的预训练样本对应蛋白质在给定实验或模拟条件下的一个结构状态。对一个含有 $N$ 个残基的样本，模型接收氨基酸序列、主链原子坐标以及温度、轨迹时长和数据来源等条件信息，并为每个具有可靠标签的目标残基预测三个绝对动态描述符。第 $i$ 个残基的监督信号写为
+\begin{equation}
+    \mathbf{y}_i =
+    \left[
+        y_i^{\mathrm{RMSF}},
+        y_i^{\chi},
+        y_i^{\mathrm{SASA}}
+    \right] \in \mathbb{R}^{3},
+    \label{eq:absolute-state-target}
+\end{equation}
+其中 RMSF（root mean square fluctuation，均方根波动）表征残基在轨迹中的空间位移幅度，$H_{\chi}$ 表征侧链扭转角构象分布的不确定性，SASA（solvent-accessible surface area，溶剂可及表面积）表征残基暴露于溶剂的程度。三者分别从整体位移、侧链构象变化和溶剂暴露三个互补角度描述残基的动态状态。
+
+模型对每个指标同时预测均值 $\hat{\mu}_{ik}$ 和对数方差 $\hat{\ell}_{ik}=\log \hat{\sigma}_{ik}^{2}$，其中指标下标 $k$ 分别对应 RMSF、$H_{\chi}$ 和 SASA。均值表示模型对该动态量的中心估计，方差表示仅由当前结构、序列和条件仍无法解释的不确定性。训练时还使用目标掩码、几何有效掩码和标签有效掩码，保证填充位置、主链不完整的残基、非目标残基以及缺少某一类标签的残基不参与相应损失计算。因此，预训练阶段学习的是从单个结构状态到逐残基绝对动态量及其不确定性的映射。
+
+\subsection{动态标签提取}
+
+\subsubsection{数据来源与统一表示}
+
+预训练数据来自 ATLAS 和 DynaRepo 两类分子动力学资源。ATLAS 提供三条重复轨迹预计算的逐残基 RMSF 表；DynaRepo 提供本地结构和轨迹，由预处理程序按时间窗口计算 RMSF、侧链扭转角熵以及可选的 SASA。不同来源的原始文件命名、轨迹长度、拓扑格式和元数据字段并不完全一致，因此首先将每个样本整理为统一的状态记录，包括结构文件、轨迹文件、目标链集合、温度、有效模拟时长、数据来源标识以及可选的数据聚类标识。ATLAS 的标签序列通过全局序列比对映射到结构残基，DynaRepo 则要求结构与轨迹中的标准残基顺序和数量一致，由此避免仅依赖未经校验的数组顺序造成标签与残基错位。
+
+预处理程序为每个指标分别保存标签值、样本方差和有效掩码。这里的“观测样本”在 ATLAS 中指三条重复轨迹给出的 RMSF，在 DynaRepo 中指从一条或多条轨迹得到的非重叠时间窗口。设某个指标在残基 $i$ 上共有 $M_i$ 个有效观测值 $z_{im}$，则标签均值与样本方差分别为
+\begin{equation}
+    \bar{z}_i=\frac{1}{M_i}\sum_{m=1}^{M_i}z_{im},
+    \qquad
+    s_i^2=\frac{1}{M_i-1}\sum_{m=1}^{M_i}(z_{im}-\bar{z}_i)^2.
+    \label{eq:label-mean-variance}
+\end{equation}
+式~\eqref{eq:label-mean-variance} 中的样本方差在 $M_i>1$ 时计算；若只有一个有效观测，则实现将 $s_i^2$ 置为零。$s_i^2$ 表示由有限时间窗口或有限重复轨迹直接估计的标签噪声，模型预测的方差则表示给定输入条件下仍未解释的不确定性，二者在训练目标中具有不同含义。
+
+\subsubsection{逐链对齐后的 RMSF}
+
+若直接在实验室坐标系中计算位移，蛋白质整体平移和整体旋转也会被计入波动，从而夸大内部柔性。为去除这种刚体运动，对每一条链分别选择在所有轨迹帧中均存在的 C$\alpha$ 原子，并将每一帧通过 Kabsch 算法最小二乘对齐到参考结构。设对齐后第 $t$ 帧中残基 $i$ 的 C$\alpha$ 坐标为 $\mathbf{r}_{it}$，共有 $T$ 帧，则
+\begin{equation}
+    \bar{\mathbf{r}}_i=\frac{1}{T}\sum_{t=1}^{T}\mathbf{r}_{it},
+    \qquad
+    \mathrm{RMSF}_i=
+    \sqrt{
+        \frac{1}{T}
+        \sum_{t=1}^{T}
+        \left\|
+            \mathbf{r}_{it}-\bar{\mathbf{r}}_i
+        \right\|_2^2
+    }.
+    \label{eq:rmsf}
+\end{equation}
+逐链对齐使 RMSF 主要反映链内部的残基位移，并消除整条链相对于坐标原点的漂移。对 DynaRepo，默认以 1000 个保留帧构成一个非重叠窗口，并在每个窗口内独立完成对齐和式~\eqref{eq:rmsf} 的计算；来自所有本地轨迹的窗口随后共同进入式~\eqref{eq:label-mean-variance}。因此，即使只有一条长轨迹，也可以由窗口间差异估计标签方差。若轨迹短到只能形成一个有效窗口，则样本方差记为零，表示当前样本无法提供窗口间方差估计。ATLAS 直接读取三条重复轨迹的预计算 RMSF，并以三次重复的均值和样本方差作为标签。
+
+\subsubsection{侧链扭转角熵}
+
+侧链柔性不能仅由 C$\alpha$ 位移充分描述，因此进一步计算 $\chi_1$ 至 $\chi_4$ 侧链扭转角的联合旋转异构状态熵。对残基 $i$ 的第 $q$ 个扭转角，在每个轨迹帧 $t$ 将角度 $\chi_{iqt}\in[-180^\circ,180^\circ)$ 等分到三个宽度为 $120^\circ$ 的区间，
+\begin{equation}
+    b_{iqt}
+    =
+    \operatorname{clip}
+    \left(
+        \left\lfloor
+            \frac{\chi_{iqt}+180^\circ}{120^\circ}
+        \right\rfloor,
+        0,2
+    \right).
+    \label{eq:chi-bin}
+\end{equation}
+若残基 $i$ 在拓扑中定义了 $Q_i$ 个 $\chi$ 角，则用三进制编码把同一帧中的多个扭转角组合为一个联合状态
+\begin{equation}
+    c_{it}
+    =
+    \sum_{q=1}^{Q_i}b_{iqt}3^{q-1}.
+    \label{eq:joint-chi-state}
+\end{equation}
+设联合状态 $c$ 在一个窗口中的出现比例为 $p_{ic}$，侧链构象熵定义为
+\begin{equation}
+    H_{\chi,i}
+    =
+    -\sum_{c:p_{ic}>0}p_{ic}\log p_{ic}.
+    \label{eq:chi-entropy}
+\end{equation}
+本文直接采用式~\eqref{eq:chi-entropy} 所示的自然对数熵，不作最大熵归一化；值越大表示残基在窗口内访问的联合侧链构象越多且分布越均匀。只有当该残基类型定义的全部 $\chi$ 角均能从轨迹原子中构造时才计算此标签；Gly、Ala 等没有 $\chi$ 角的残基以及缺少必要侧链原子的残基，其 $H_{\chi}$ 标签掩码为零。各窗口的熵再通过式~\eqref{eq:label-mean-variance} 汇总为标签均值和窗口间方差。
+
+\subsubsection{溶剂可及表面积}
+
+对启用 SASA 计算的样本，使用 Shrake--Rupley 滚球算法逐帧估计每个原子的溶剂可及表面积，再按残基求和。若第 $t$ 帧中残基 $i$ 的原子集合为 $\mathcal{A}_i$，原子 $a$ 的可及面积为 $A_{at}$，则
+\begin{equation}
+    \mathrm{SASA}_{it}=\sum_{a\in\mathcal{A}_i}A_{at},
+    \qquad
+    \overline{\mathrm{SASA}}_i=
+    \frac{1}{T}\sum_{t=1}^{T}\mathrm{SASA}_{it}.
+    \label{eq:sasa}
+\end{equation}
+实现仅对重原子采样，将元素范德华半径加上 $1.4$~\AA{} 的水探针半径作为扩张球半径，并默认在每个原子球面放置 96 个 Fibonacci 采样点。一个采样点若落入邻近原子的扩张球则视为被遮挡；未被遮挡点的比例乘以扩张球面积得到原子 SASA。式~\eqref{eq:sasa} 在每个时间窗口内求帧平均，各窗口均值再通过式~\eqref{eq:label-mean-variance} 汇总，保存的标签方差对应窗口间差异。由于 SASA 计算量较大且需显式启用，SASA 采用独立有效掩码，缺失时不会阻止 RMSF 和 $H_{\chi}$ 参与训练；ATLAS 预计算标签中也只有 RMSF 有效。
+
+\subsubsection{标签覆盖与样本筛选}
+
+每个状态最终保存形状为 $N\times3$ 的标签矩阵 $\mathbf{Y}$、标签方差矩阵 $\mathbf{S}^{2}$ 和标签掩码矩阵 $\mathbf{M}^{\mathrm{label}}$。预训练数据集保留具有现存标签文件的状态；若清单给出了非零的残基数元数据，则进一步过滤超过 768 个残基的状态。某个状态具体参与哪些指标的监督由 $\mathbf{M}^{\mathrm{label}}$ 决定。长度过滤用于限制固定显存条件下残基对几何特征的 $O(N^2)$ 存储和计算开销。
+
+\subsection{绝对状态预训练}
+
+\subsubsection{总体架构}
+
+FlexPPI 的预训练网络由逐残基输入分支、残基对几何分支、固定框架 IPA 编码器和绝对状态预测头组成。逐残基分支把氨基酸类别及实验条件编码为 $\mathbf{H}^{(0)}\in\mathbb{R}^{N\times128}$；几何分支从主链坐标构造局部坐标系以及 $\mathbf{P}\in\mathbb{R}^{N\times N\times48}$ 的残基对表示。随后，四个固定框架 IPA 模块以 $\mathbf{H}^{(0)}$ 产生标量和三维点形式的查询、键和值，以 $\mathbf{P}$ 提供残基对偏置和待聚合的关系特征，在所有有效残基之间执行几何多头自注意力。编码后的逐残基表示最终送入概率回归头，分别预测 RMSF、侧链联合构象熵和 SASA 的均值与对数方差。除特别说明外，下文省略批次维度。
+
+\subsubsection{输入表示与条件编码}
+
+图~\ref{fig:flexppi-pretraining} 给出了预训练阶段从原始输入、几何编码到动态量分布预测和损失计算的完整数据流。一个状态中的所有蛋白质链共同构成结构上下文，总残基数记为 $N$。对第 $i$ 个残基，程序首先将氨基酸名称转换为整数类别 $x_i\in\{0,\ldots,20\}$，其中 20 个编号对应标准氨基酸，额外一个槽位用于未知类别和批内填充；填充位置随后由掩码排除。
+
+批处理时，不同样本首先补齐到该批次的最大残基数 $N_{\max}$，并记录填充掩码 $m_i^{\mathrm{pad}}$。真实残基的掩码为 1，补齐位置的掩码为 0。未知氨基酸和填充位置虽然可以共用编号 20，但二者由掩码区分：未知氨基酸是真实输入，仍可参与计算；填充位置不代表任何残基，其序列分支输出会乘以 $m_i^{\mathrm{pad}}$，并在后续几何注意力和损失中再次被排除。当前预训练批大小为 1，因此通常没有跨样本长度补齐，但模型实现保留了这一机制。
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{figures/fig_flexppi_pretraining.pdf}
+    \caption{\textbf{FlexPPI 绝对状态预训练流程。} \textbf{(a)} ATLAS 的三重复 RMSF 与 DynaRepo 的窗口化轨迹统计被统一为逐残基标签均值、观测方差和有效掩码。\textbf{(b)} 氨基酸类别、实验条件与主链几何分别编码后，经四个固定框架不变点注意力模块形成逐残基表示；输入坐标在整个过程中保持不变。\textbf{(c)} 绝对状态头为 RMSF、联合侧链扭转角熵和 SASA 分别输出均值与对数方差，并与标签噪声共同进入掩码加权的异方差高斯损失。}
+    \label{fig:flexppi-pretraining}
+\end{figure*}
+
+当前预训练采用可学习的氨基酸类别嵌入。模型设置主要氨基酸嵌入矩阵
+\begin{equation}
+    \mathbf{E}^{\mathrm{seq}}\in\mathbb{R}^{21\times d_{\mathrm{seq}}},
+    \qquad
+    \mathbf{s}_i=\mathbf{E}^{\mathrm{seq}}_{x_i,:},
+    \label{eq:sequence-lookup}
+\end{equation}
+其中 $d_{\mathrm{seq}}=128$，$\mathbf{E}^{\mathrm{seq}}_{x_i,:}$ 表示矩阵中对应类别 $x_i$ 的一行，即该残基的 128 维主要嵌入向量。该嵌入矩阵与网络的其他参数共同训练，用于建立各类氨基酸适合动态属性预测的数值表示。当前预训练检查点采用 \texttt{sequence\_backend=learned}，因此这一阶段先表示各位置的氨基酸类别，残基之间的上下文随后由 IPA 模块传播。
+
+模型另设独立的辅助类型嵌入矩阵
+\begin{equation}
+    \mathbf{E}^{\mathrm{aa}}\in\mathbb{R}^{21\times32},
+    \qquad
+    \mathbf{a}_i=\mathbf{E}^{\mathrm{aa}}_{x_i,:}.
+    \label{eq:amino-acid-lookup}
+\end{equation}
+当前配置中，主要嵌入向量 $\mathbf{s}_i$ 和辅助类型嵌入向量 $\mathbf{a}_i$ 均由类别 $x_i$ 索引，但分别属于独立的参数矩阵，维度分别为 128 和 32。两组向量沿特征维拼接，再通过带偏置的线性层融合。记加入条件信息之前的残基表示为
+\begin{equation}
+    \widetilde{\mathbf{h}}_i^{(0)}
+    =
+    \mathbf{W}_{\mathrm{in}}
+    [\mathbf{s}_i\Vert\mathbf{a}_i]
+    +\mathbf{b}_{\mathrm{in}}
+    \in\mathbb{R}^{128},
+    \label{eq:single-input}
+\end{equation}
+其中 $\Vert$ 表示按特征维拼接。当前配置先形成 $128+32=160$ 维向量，再将其线性投影为 128 维逐残基表示。代码接口还支持用逐链 ESM2 上下文化表示替换主要氨基酸嵌入，但本文报告的预训练实验均采用上述可学习嵌入配置。
+
+同一蛋白质在不同温度或不同轨迹时间尺度下可能具有不同动态分布，因此构造三维条件向量
+\begin{equation}
+    \mathbf{c}=
+    \left[
+        \frac{T-300}{20},
+        \frac{\log(1+t_{\mathrm{ns}})}{\log(501)},
+        d_{\mathrm{set}}
+    \right],
+    \label{eq:condition-vector}
+\end{equation}
+其中 $T$ 为开尔文温度，$t_{\mathrm{ns}}$ 为纳秒单位的有效轨迹时长，$d_{\mathrm{set}}=0$ 表示 ATLAS、$d_{\mathrm{set}}=1$ 表示 DynaRepo。温度中心化和轨迹时长的对数缩放用于减小数值尺度差异。条件向量经两层 MLP（multilayer perceptron，多层感知机）映射为 128 维向量 $\mathbf{e}^{\mathrm{cond}}$，再加到每个有效残基：
+\begin{equation}
+    \mathbf{h}_i^{(0)}
+    =
+    \widetilde{\mathbf{h}}_i^{(0)}
+    {}+\mathbf{e}^{\mathrm{cond}}.
+    \label{eq:condition-addition}
+\end{equation}
+这样，同一个序列和结构在不同条件下会获得不同的初始状态表示。
+
+\subsubsection{固定局部坐标系与残基对几何编码}
+
+结构输入使用每个残基的 N、C$\alpha$、C 和 O 主链原子坐标，形状为 $N\times4\times3$；最后一维的三个数分别是笛卡尔空间的 $x$、$y$ 和 $z$ 坐标。当前实现保留 O 坐标，但局部框架和残基对几何只使用 N、C$\alpha$ 和 C。以 C$\alpha$ 坐标作为原点 $\mathbf{t}_i$，令从 C$\alpha$ 指向 C 的单位向量为第一轴，再将从 C$\alpha$ 指向 N 的方向正交化得到第二轴，二者叉乘得到第三轴。三条单位轴组成旋转矩阵 $\mathbf{R}_i\in\mathbb{R}^{3\times3}$。如果某个残基缺少上述三个主链原子，则其几何掩码为零，不参与几何注意力或损失。
+
+为把 $N$ 个残基的原子坐标转换成残基间关系，模型枚举所有有序残基对 $(i,j)$，因此得到 $N\times N$ 个几何条目。对每个有效残基对，先计算 C$\alpha$ 距离 $d_{ij}=\|\mathbf{t}_j-\mathbf{t}_i\|_2$。距离通过 24 个径向基函数展开，中心均匀覆盖 $0$--$24$~\AA，使单个距离从一个标量变为 24 个平滑响应值，便于网络区分接触距离、中程距离和远程距离。随后附加一个同链指示量、一个残基编号间隔量和三维局部方向。编号间隔使用 $\min(|r_i-r_j|,32)/32$ 缩放到 $[0,1]$，其中 $r_i$ 为结构文件中的残基编号；独立的同链指示量使网络能够区分链内间隔和跨链残基对。局部方向为
+\begin{equation}
+    \mathbf{u}_{ij}
+    =
+    \frac{
+        \mathbf{R}_i^{\mathsf{T}}
+        (\mathbf{t}_j-\mathbf{t}_i)
+    }{
+        \|\mathbf{t}_j-\mathbf{t}_i\|_2+\varepsilon
+    }.
+    \label{eq:local-direction}
+\end{equation}
+它表示“从残基 $i$ 看向残基 $j$”的方向，但坐标已经转换到 $i$ 的局部框架中。记 24 个径向基函数的输出为 $\boldsymbol{\phi}(d_{ij})\in\mathbb{R}^{24}$，同链指示量为 $\delta_{ij}^{\mathrm{chain}}$，则原始残基对特征为
+\begin{equation}
+    \mathbf{g}_{ij}
+    =
+    \left[
+        \boldsymbol{\phi}(d_{ij})
+        \,\Vert\,
+        \delta_{ij}^{\mathrm{chain}}
+        \,\Vert\,
+        \frac{\min(|r_i-r_j|,32)}{32}
+        \,\Vert\,
+        \mathbf{u}_{ij}
+    \right]
+    \in\mathbb{R}^{29}.
+    \label{eq:raw-pair-feature}
+\end{equation}
+其中 29 维来自 $24+1+1+3$。同一个“线性层--SiLU--线性层”MLP 独立作用于每个 $(i,j)$：
+\begin{equation}
+    \mathbf{p}_{ij}
+    =
+    \mathbf{W}_{2}^{\mathrm{pair}}
+    \operatorname{SiLU}
+    \left(
+        \mathbf{W}_{1}^{\mathrm{pair}}\mathbf{g}_{ij}
+        +\mathbf{b}_{1}^{\mathrm{pair}}
+    \right)
+    +\mathbf{b}_{2}^{\mathrm{pair}}
+    \in\mathbb{R}^{48}.
+    \label{eq:pair-projection}
+\end{equation}
+汇总所有残基对后得到 $\mathbf{P}\in\mathbb{R}^{N\times N\times48}$。其中 48 是可调的残基对隐藏维度，表示网络从 29 维显式几何描述中学习的关系特征。由于距离和局部方向不会随整个蛋白质的共同平移或旋转而改变，该编码不依赖结构文件采用的任意全局坐标系。
+
+\subsubsection{几何 Transformer 编码与绝对状态预测头}
+
+逐残基特征 $\mathbf{h}_i^{(0)}$、残基对特征 $\mathbf{p}_{ij}$ 和固定局部框架 $(\mathbf{R}_i,\mathbf{t}_i)$ 被送入四个串联的 IPA（invariant point attention，不变点注意力）模块。从架构上看，IPA 是 Transformer 多头自注意力的三维几何扩展：它保留由逐残基特征产生的查询、键和值以及残差连接、LayerNorm 和前馈网络，同时在注意力分数和聚合结果中显式加入残基对特征与三维点。每个模块包含 8 个注意力头，单头标量查询和键的维度为 $d_h=16$。对于一个注意力头，残基 $i$ 对残基 $j$ 的未归一化注意力分数由三部分相加：其一是从 $\mathbf{h}_i$ 和 $\mathbf{h}_j$ 得到的标量查询--键相似度，其二是由 $\mathbf{p}_{ij}$ 产生的残基对偏置，其三是查询点与键点之间的三维距离惩罚。按照实现中的缩放因子可写为
+\begin{equation}
+    e_{ij}^{(h)}
+    =
+    \sqrt{\frac{1}{3d_h}}\,
+        \langle\mathbf{q}_{i}^{(h)},\mathbf{k}_{j}^{(h)}\rangle
+    +\sqrt{\frac{1}{3}}\,
+        b^{(h)}(\mathbf{p}_{ij})
+    -\frac{\gamma_h}{2}
+    \sum_{r=1}^{P}
+    \left\|
+        \mathbf{R}_i\mathbf{q}_{ir}^{(h),\mathrm{pt}}+\mathbf{t}_i
+        -
+        \mathbf{R}_j\mathbf{k}_{jr}^{(h),\mathrm{pt}}-\mathbf{t}_j
+    \right\|_2^2,
+    \label{eq:ipa-logit}
+\end{equation}
+其中上标 $h$ 表示注意力头，$P=4$ 是查询点和键点的数量，
+\begin{equation}
+    \gamma_h
+    =
+    \operatorname{softplus}(w_h)
+    \sqrt{\frac{2}{27P}}
+    \label{eq:ipa-point-scale}
+\end{equation}
+是由可学习参数 $w_h$ 得到的非负点距离权重。对有效残基 $j$ 做 softmax 后得到注意力权重
+\begin{equation}
+    \alpha_{ij}^{(h)}
+    =
+    \frac{\exp(e_{ij}^{(h)})}
+    {\sum_{j'\in\mathcal{V}}\exp(e_{ij'}^{(h)})},
+    \label{eq:ipa-attention-weight}
+\end{equation}
+其中 $\mathcal{V}$ 为通过填充和几何掩码筛选后的有效残基集合。残基对特征首先通过 $b^{(h)}(\mathbf{p}_{ij})$ 调节残基 $i$ 对残基 $j$ 的注意力权重。
+
+得到 $\alpha_{ij}^{(h)}$ 后，每个头同时聚合三类信息。标量值和残基对特征分别为
+\begin{equation}
+    \mathbf{o}_{i,\mathrm{scalar}}^{(h)}
+    =
+    \sum_{j\in\mathcal{V}}
+    \alpha_{ij}^{(h)}\mathbf{v}_{j}^{(h)}
+    \in\mathbb{R}^{16},
+    \qquad
+    \mathbf{o}_{i,\mathrm{pair}}^{(h)}
+    =
+    \sum_{j\in\mathcal{V}}
+    \alpha_{ij}^{(h)}\mathbf{p}_{ij}
+    \in\mathbb{R}^{48}.
+    \label{eq:ipa-scalar-pair-aggregation}
+\end{equation}
+对于第 $r$ 个三维值点，先将残基 $j$ 的局部值点变换到全局坐标，再按注意力权重求和，最后转换回残基 $i$ 的局部框架：
+\begin{equation}
+    \mathbf{o}_{ir,\mathrm{point}}^{(h)}
+    =
+    \mathbf{R}_i^{\mathsf{T}}
+    \left[
+        \sum_{j\in\mathcal{V}}
+        \alpha_{ij}^{(h)}
+        \left(
+            \mathbf{R}_j\mathbf{v}_{jr}^{(h),\mathrm{pt}}
+            +\mathbf{t}_j
+        \right)
+        -\mathbf{t}_i
+    \right]
+    \in\mathbb{R}^{3}.
+    \label{eq:ipa-point-aggregation}
+\end{equation}
+每个头包含 8 个三维值点，并同时保留每个局部点的三个分量及其模长。因此，单头输出维度为
+\begin{equation}
+    16+48+8\times3+8=96.
+    \label{eq:ipa-head-output-dim}
+\end{equation}
+8 个头的输出拼接为 $8\times96=768$ 维，再经输出线性层映射回 128 维，作为逐残基更新量并通过残差连接加入 $\mathbf{h}_i$。由此，$N\times N\times48$ 的关系表示通过“调节注意力权重”和“作为值被加权聚合”两条路径融合进 $N\times128$ 的逐残基表示。整个过程只更新抽象的逐残基特征，输入的主链坐标、局部框架和残基对特征保持固定，因此该预训练模型执行给定结构上的动态属性预测。
+
+将输入结构整体平移或旋转时，点坐标会同步变化，但式~\eqref{eq:ipa-logit} 中的点间距离保持不变，转换回局部框架后的向量也保持一致，因此输出的动态量对全局刚体变换不变。与标准 Transformer block 类似，第 $l$ 个模块采用预归一化、残差连接和前馈网络：
+\begin{align}
+    \mathbf{H}' &=
+    \mathbf{H}^{(l)}
+    {}+\operatorname{Dropout}
+    \left[
+        \operatorname{IPA}
+        \left(
+            \operatorname{LayerNorm}(\mathbf{H}^{(l)}),
+            \mathbf{P},\mathbf{R},\mathbf{t}
+        \right)
+    \right],
+    \\
+    \mathbf{H}^{(l+1)} &=
+    \mathbf{H}'
+    {}+\operatorname{Dropout}
+    \left[
+        \operatorname{FFN}
+        \left(
+            \operatorname{LayerNorm}(\mathbf{H}')
+        \right)
+    \right].
+    \label{eq:ipa-block}
+\end{align}
+默认 dropout 概率为 0.1。四个模块使一个残基能够反复汇聚空间邻域乃至跨链残基的信息，从而同时利用局部化学环境和较长程的结构约束。
+
+四个 IPA 模块之后，模型先用一个 LayerNorm 得到最终逐残基表示；状态预测头再依次执行 LayerNorm、128 维线性变换、SiLU 激活和输出线性变换，产生 $2K=6$ 个数，其中 $K=3$。输出首先重排为 $K\times2$，每个指标对应一对“原始均值、原始对数方差”。每对中的均值分量经过 softplus 函数
+\begin{equation}
+    \operatorname{softplus}(z)=\log(1+\mathrm{e}^{z})
+\end{equation}
+转换为非负均值 $\hat{\boldsymbol{\mu}}_i\in\mathbb{R}_{\ge0}^{3}$，因为 RMSF、熵和 SASA 均不应为负；每对中的另一分量作为对数方差，并截断到 $[-8,6]$，得到 $\hat{\boldsymbol{\ell}}_i\in[-8,6]^3$。最终两个输出张量的形状均为 $N\times3$，即每一行对应一个残基，每一列对应一种动态指标。
+
+\subsubsection{噪声感知的预训练目标}
+
+对残基 $i$ 的指标 $k$，模型方差为 $\hat{\sigma}_{ik}^{2}=\exp(\hat{\ell}_{ik})$，标签提取阶段得到的观测方差为 $s_{ik}^{2}$。训练时把二者相加为总方差，并采用异方差高斯负对数似然
+\begin{equation}
+    \ell_{ik}
+    =
+    \frac{1}{2}
+    \left[
+        \frac{
+            (\hat{\mu}_{ik}-y_{ik})^2
+        }{
+            \exp(\hat{\ell}_{ik})+s_{ik}^2
+        }
+        +
+        \log
+        \left(
+            \exp(\hat{\ell}_{ik})+s_{ik}^2
+        \right)
+    \right].
+    \label{eq:pretraining-nll}
+\end{equation}
+第一项是由总方差缩放的预测误差，因此重复轨迹差异较大的标签获得较小的误差权重。第二项约束预测方差的无界增长，使均值误差与不确定性估计保持平衡。实现中总方差被限制在 $[10^{-6},10^{6}]$，以防除零、对数溢出和异常梯度。
+
+实现中的有效掩码定义为
+\begin{equation}
+    m_{ik}
+    =
+    m_i^{\mathrm{target}}\,
+    m_{ik}^{\mathrm{label}}\,
+    m_i^{\mathrm{out}},
+    \label{eq:pretraining-mask}
+\end{equation}
+其中 $m_i^{\mathrm{target}}$ 指示该残基是否属于需要监督的目标链，$m_{ik}^{\mathrm{label}}$ 指示第 $k$ 个动态标签是否存在，$m_i^{\mathrm{out}}$ 是状态编码器的输出掩码，已经同时排除批内补齐位置和缺少有效 N--C$\alpha$--C 局部框架的残基。即使一个状态包含用于提供三维环境的其他链，也只有目标掩码为一的残基贡献监督误差。三个指标的默认权重分别为 $w_{\mathrm{RMSF}}=1.0$、$w_{\chi}=0.5$ 和 $w_{\mathrm{SASA}}=0.25$，总预训练损失为
+\begin{equation}
+    \mathcal{L}_{\mathrm{pre}}
+    =
+    \frac{
+        \sum_{i=1}^{N}\sum_{k=1}^{3}
+        m_{ik}w_k\ell_{ik}
+    }{
+        \max
+        \left(
+            \sum_{i=1}^{N}\sum_{k=1}^{3}
+            m_{ik}w_k,\,
+            1
+        \right)
+    }.
+    \label{eq:pretraining-loss}
+\end{equation}
+按有效权重总和归一化，使不同样本即使残基数或标签覆盖率不同，损失尺度仍保持可比。
+
+\subsubsection{数据划分与训练设置}
+
+ATLAS 和 DynaRepo 的状态清单在加载后合并。划分函数依次尝试使用清单元数据中的 \texttt{cluster\_id}、\texttt{pdb\_id} 和样本标识作为分组键，再按固定随机种子 7 将约 10\% 的组分配到验证集。当前两份预训练清单没有提供前两个字段，因此本次配置实际按样本标识随机分组；这一划分按样本而非同源簇隔离，后续补充聚类标识后即可直接启用组级划分。当前默认配置使用 128 维主要氨基酸嵌入、32 维辅助类型嵌入、128 维逐残基特征、48 维残基对特征、4 个 IPA 模块和 8 个注意力头。由于残基对张量随序列长度呈平方增长，批大小设为 1，并将最大状态长度设为 768 个残基。
+
+模型训练 20 个 epoch，优化器为 AdamW，初始学习率为 $3\times10^{-4}$，权重衰减为 $10^{-4}$。每次反向传播后将全局梯度范数截断为 1.0，以减小极端样本引起的不稳定更新；验证损失最低的参数保存为最佳预训练检查点。上述设置对应本文默认配置，改变序列后端、最大长度或显存条件时可相应调整批大小和训练轮数。

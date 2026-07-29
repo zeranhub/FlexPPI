@@ -1,0 +1,44 @@
+stage: finetune
+seed: 7
+device: auto
+output_dir: artifacts/finetune
+init_checkpoint: artifacts/pretrain/best.pt
+
+data:
+  state_manifest: null
+  pair_manifest: artifacts/data/dynarepo_pairs.jsonl
+  max_residues: 1024
+  batch_size: 1
+  num_workers: 0
+
+model:
+  sequence_backend: learned
+  esm_model_name: facebook/esm2_t6_8M_UR50D
+  freeze_esm: true
+  single_dim: 128
+  pair_dim: 48
+  sequence_dim: 128
+  ipa_blocks: 4
+  ipa_heads: 8
+  ipa_scalar_dim: 16
+  ipa_qk_points: 4
+  ipa_v_points: 8
+  rbf_bins: 24
+  dropout: 0.1
+  metrics: [rmsf, chi_entropy, sasa]
+
+train:
+  epochs: 50
+  val_fraction: 0.2
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  grad_clip: 1.0
+  log_every: 10
+  checkpoint_every: 1
+  state_weight: 0.5
+  response_weight: 1.0
+  consistency_weight: 0.25
+  metric_weights:
+    rmsf: 1.0
+    chi_entropy: 0.5
+    sasa: 0.25

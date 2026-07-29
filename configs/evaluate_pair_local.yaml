@@ -1,0 +1,18 @@
+stage: finetune
+seed: 7
+device: auto
+output_dir: artifacts/evaluation/pair
+
+data:
+  state_manifest: null
+  pair_manifest: artifacts/data/dynarepo_pairs.jsonl
+  max_residues: 1024
+  batch_size: 1
+  num_workers: 0
+  path_mappings:
+    /ranze/repos/FlexPPI/artifacts/data: 'E:\Project\FlexPPI\artifacts\data'
+    /ranze/data/dynarepo/dynarepo_non_nucleic_full: 'D:\data\dynarepo_non_nucleic_full'
+
+train:
+  val_fraction: 0.2
+
