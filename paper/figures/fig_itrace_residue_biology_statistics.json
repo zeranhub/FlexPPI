@@ -1,0 +1,438 @@
+{
+  "figure_contract": {
+    "core_conclusion": "The frozen model partially recovers the held-out peptide RMSF position map: it identifies P1 mobility and P2/P8 constraint but misses the P6 mobility peak. Its TCR-centred RMSF, side-chain entropy and SASA responses remain hypotheses.",
+    "archetype": "asymmetric mixed-modality quantitative figure",
+    "target": "Nature-family double column, 183 mm",
+    "review_risks": [
+      "ITrace provides MD truth only for RMSF, not H_chi or SASA.",
+      "Full-minus-pMHC uses fixed bound coordinates and is not a true apo-to-holo response.",
+      "Gly and Ala have no defined H_chi label and are excluded from entropy interpretation.",
+      "Residues are nested within complexes; intervals therefore resample complexes."
+    ]
+  },
+  "source_validation": {
+    "md_9mer_positions": 9,
+    "fidelity_9mer_positions": 9,
+    "context_9mer_positions": 9,
+    "nine_mer_complex_count": 154,
+    "external_clean_complex_count": 244,
+    "peptide_residue_count": 2278,
+    "amino_acid_type_count": 20,
+    "case_complex_count": 2,
+    "case_residue_count": 18,
+    "case_sequence_count": 2
+  },
+  "rmsf_prediction_fidelity": {
+    "scope": "Complete-complex FlexPPI RMSF predictions versus ITrace MD RMSF on external-clean peptide residues; no context delta is used.",
+    "residue_count": 2278,
+    "complex_count": 244,
+    "pooled_residue_spearman_rho": 0.28978446439761835,
+    "pooled_residue_pvalue_descriptive_only": 2.5685856839854828e-45,
+    "peptide_rmsf_mae_angstrom": 0.22547810594912404,
+    "peptide_rmsf_mean_error_angstrom": 0.17144048227259456,
+    "within_complex_ranking": {
+      "mean_spearman_rho": 0.30241998438719747,
+      "median_spearman_rho": 0.33333333333333337,
+      "complex_bootstrap_ci_low": 0.25570673691063034,
+      "complex_bootstrap_ci_high": 0.34485402916755376,
+      "fraction_positive": 0.7786885245901639,
+      "fraction_positive_bootstrap_ci_low": 0.7254098360655737,
+      "fraction_positive_bootstrap_ci_high": 0.8278688524590164,
+      "fraction_spearman_at_least_0_5": 0.3319672131147541,
+      "most_mobile_exact_match_fraction": 0.3401639344262295,
+      "most_mobile_within_one_position_fraction": 0.42213114754098363,
+      "least_mobile_exact_match_fraction": 0.23770491803278687,
+      "least_mobile_within_one_position_fraction": 0.4180327868852459
+    },
+    "nine_mer_mean_position_pattern": {
+      "position_count": 9,
+      "complex_count": 154,
+      "pearson_r": 0.6840755383245247,
+      "pearson_pvalue": 0.04212933897574904,
+      "spearman_rho": 0.3,
+      "spearman_pvalue": 0.4328453267094823,
+      "mean_absolute_z_error": 0.4033960196872457
+    },
+    "direct_tcr_contact_pattern": {
+      "paired_complex_count": 236,
+      "mean_md_contacted_minus_noncontacted_rmsf_angstrom": -0.026795767807305592,
+      "md_complex_bootstrap_ci_low": -0.03881517618071183,
+      "md_complex_bootstrap_ci_high": -0.014505839351497922,
+      "fraction_md_contacted_lower": 0.5677966101694916,
+      "mean_model_contacted_minus_noncontacted_rmsf_angstrom": -0.010233538566302046,
+      "model_complex_bootstrap_ci_low": -0.018658013803995135,
+      "model_complex_bootstrap_ci_high": -0.0023602790234974764,
+      "fraction_model_contacted_lower": 0.5211864406779662,
+      "across_complex_spearman_rho": 0.3711531175393829,
+      "across_complex_spearman_pvalue": 4.029782209125255e-09,
+      "same_direction_fraction": 0.6483050847457628
+    }
+  },
+  "nine_mer_by_position": {
+    "1": {
+      "mean_md_rmsf_z": 1.275542933968006,
+      "mean_model_rmsf_z": 1.0367383037542506,
+      "tcr_contact_fraction": 0.44155844155844154,
+      "mean_delta_rmsf_angstrom": -0.0528653012467669,
+      "mean_delta_chi_entropy": -0.0446083456277847,
+      "mean_delta_sasa_angstrom2": -5.458677329026259
+    },
+    "2": {
+      "mean_md_rmsf_z": -0.6147446670605137,
+      "mean_model_rmsf_z": -0.2062171058260517,
+      "tcr_contact_fraction": 0.37012987012987014,
+      "mean_delta_rmsf_angstrom": -0.074123781996888,
+      "mean_delta_chi_entropy": -0.037644857042775,
+      "mean_delta_sasa_angstrom2": -2.643162916233013
+    },
+    "3": {
+      "mean_md_rmsf_z": -0.2128725669431867,
+      "mean_model_rmsf_z": 0.0096901553619264,
+      "tcr_contact_fraction": 0.538961038961039,
+      "mean_delta_rmsf_angstrom": -0.1725155436373376,
+      "mean_delta_chi_entropy": -0.114003939357485,
+      "mean_delta_sasa_angstrom2": -9.17269087766672
+    },
+    "4": {
+      "mean_md_rmsf_z": 0.08526284234104,
+      "mean_model_rmsf_z": 0.5114639750936818,
+      "tcr_contact_fraction": 1.0,
+      "mean_delta_rmsf_angstrom": -0.3318351236256686,
+      "mean_delta_chi_entropy": -0.3080965109444367,
+      "mean_delta_sasa_angstrom2": -37.24551423493918
+    },
+    "5": {
+      "mean_md_rmsf_z": -0.4550974343634325,
+      "mean_model_rmsf_z": -0.0757412488392521,
+      "tcr_contact_fraction": 0.9545454545454546,
+      "mean_delta_rmsf_angstrom": -0.3214161152189428,
+      "mean_delta_chi_entropy": -0.3926968661353769,
+      "mean_delta_sasa_angstrom2": -30.20739703054552
+    },
+    "6": {
+      "mean_md_rmsf_z": 0.5497598677692951,
+      "mean_model_rmsf_z": -0.1819758101065023,
+      "tcr_contact_fraction": 1.0,
+      "mean_delta_rmsf_angstrom": -0.3143403789439759,
+      "mean_delta_chi_entropy": -0.1634783013900339,
+      "mean_delta_sasa_angstrom2": -19.58267724049556
+    },
+    "7": {
+      "mean_md_rmsf_z": -0.068154443611578,
+      "mean_model_rmsf_z": -0.3536231590520965,
+      "tcr_contact_fraction": 0.948051948051948,
+      "mean_delta_rmsf_angstrom": -0.2349294238276295,
+      "mean_delta_chi_entropy": -0.2086758023856524,
+      "mean_delta_sasa_angstrom2": -16.399984554810956
+    },
+    "8": {
+      "mean_md_rmsf_z": -0.7133615552581029,
+      "mean_model_rmsf_z": -0.3347270684818943,
+      "tcr_contact_fraction": 0.9545454545454546,
+      "mean_delta_rmsf_angstrom": -0.2143959555920068,
+      "mean_delta_chi_entropy": -0.1835536372229853,
+      "mean_delta_sasa_angstrom2": -21.864912206476387
+    },
+    "9": {
+      "mean_md_rmsf_z": 0.1536650231584725,
+      "mean_model_rmsf_z": -0.4056080419040618,
+      "tcr_contact_fraction": 0.18181818181818182,
+      "mean_delta_rmsf_angstrom": -0.0901987459752466,
+      "mean_delta_chi_entropy": -0.0595874715792505,
+      "mean_delta_sasa_angstrom2": -2.316866007718173
+    }
+  },
+  "within_complex_contact_effect": {
+    "rmsf": {
+      "paired_complex_count": 236,
+      "mean_contacted_minus_noncontacted_delta": -0.18778041656449024,
+      "median_contacted_minus_noncontacted_delta": -0.17124741524457932,
+      "fraction_more_negative_at_contact": 0.9915254237288136,
+      "complex_bootstrap_ci_low": -0.20422859553017553,
+      "complex_bootstrap_ci_high": -0.17332136164364229
+    },
+    "chi_entropy": {
+      "paired_complex_count": 230,
+      "mean_contacted_minus_noncontacted_delta": -0.15684851988632612,
+      "median_contacted_minus_noncontacted_delta": -0.1566828861832619,
+      "fraction_more_negative_at_contact": 0.991304347826087,
+      "complex_bootstrap_ci_low": -0.1660665501943258,
+      "complex_bootstrap_ci_high": -0.14729180140401152
+    },
+    "sasa": {
+      "paired_complex_count": 236,
+      "mean_contacted_minus_noncontacted_delta": -18.57360838246195,
+      "median_contacted_minus_noncontacted_delta": -18.708109654320612,
+      "fraction_more_negative_at_contact": 0.9915254237288136,
+      "complex_bootstrap_ci_low": -19.32217613170857,
+      "complex_bootstrap_ci_high": -17.87907811738324
+    }
+  },
+  "within_complex_distance_response": {
+    "rmsf": {
+      "complex_count": 244,
+      "mean_within_complex_spearman_rho": 0.629920148157853,
+      "median_within_complex_spearman_rho": 0.7,
+      "complex_bootstrap_ci_low": 0.5988441203605138,
+      "complex_bootstrap_ci_high": 0.6608629007604416
+    },
+    "chi_entropy": {
+      "complex_count": 243,
+      "mean_within_complex_spearman_rho": 0.49991983325316663,
+      "median_within_complex_spearman_rho": 0.5357142857142858,
+      "complex_bootstrap_ci_low": 0.4625227139116028,
+      "complex_bootstrap_ci_high": 0.5362812427627242
+    },
+    "sasa": {
+      "complex_count": 244,
+      "mean_within_complex_spearman_rho": 0.6677370443763886,
+      "median_within_complex_spearman_rho": 0.7154761904761906,
+      "complex_bootstrap_ci_low": 0.6430128733970949,
+      "complex_bootstrap_ci_high": 0.6931118198741149
+    }
+  },
+  "robust_position_adjusted_amino_acid_effects": {
+    "rmsf": [
+      {
+        "amino_acid_1": "G",
+        "residue_count": 210,
+        "mean_delta_rmsf": -0.0495678567986338,
+        "cluster_bootstrap_ci_low_rmsf": -0.0940565515174996,
+        "cluster_bootstrap_ci_high_rmsf": -0.0092192975557949
+      },
+      {
+        "amino_acid_1": "N",
+        "residue_count": 52,
+        "mean_delta_rmsf": 0.0550344659184867,
+        "cluster_bootstrap_ci_low_rmsf": 0.0304594136776614,
+        "cluster_bootstrap_ci_high_rmsf": 0.078826882424495
+      },
+      {
+        "amino_acid_1": "P",
+        "residue_count": 140,
+        "mean_delta_rmsf": 0.0345813367150876,
+        "cluster_bootstrap_ci_low_rmsf": 0.0122855239049763,
+        "cluster_bootstrap_ci_high_rmsf": 0.0558367356859961
+      },
+      {
+        "amino_acid_1": "R",
+        "residue_count": 85,
+        "mean_delta_rmsf": 0.0245711852693211,
+        "cluster_bootstrap_ci_low_rmsf": 0.0047961411387641,
+        "cluster_bootstrap_ci_high_rmsf": 0.0466758880648201
+      },
+      {
+        "amino_acid_1": "V",
+        "residue_count": 202,
+        "mean_delta_rmsf": 0.0127878185787626,
+        "cluster_bootstrap_ci_low_rmsf": 0.0015830436214399,
+        "cluster_bootstrap_ci_high_rmsf": 0.0245244409993821
+      },
+      {
+        "amino_acid_1": "Y",
+        "residue_count": 123,
+        "mean_delta_rmsf": 0.0269457438028398,
+        "cluster_bootstrap_ci_low_rmsf": 0.0118337216259421,
+        "cluster_bootstrap_ci_high_rmsf": 0.0433521637028048
+      }
+    ],
+    "chi_entropy": [
+      {
+        "amino_acid_1": "F",
+        "residue_count": 143,
+        "mean_delta_chi_entropy": -0.1141870148664357,
+        "cluster_bootstrap_ci_low_chi_entropy": -0.1414412931639011,
+        "cluster_bootstrap_ci_high_chi_entropy": -0.0860057498741671
+      },
+      {
+        "amino_acid_1": "H",
+        "residue_count": 31,
+        "mean_delta_chi_entropy": -0.0510460704610708,
+        "cluster_bootstrap_ci_low_chi_entropy": -0.0815731750845336,
+        "cluster_bootstrap_ci_high_chi_entropy": -0.0222408154108478
+      },
+      {
+        "amino_acid_1": "K",
+        "residue_count": 64,
+        "mean_delta_chi_entropy": -0.0643755527880943,
+        "cluster_bootstrap_ci_low_chi_entropy": -0.0951196591909494,
+        "cluster_bootstrap_ci_high_chi_entropy": -0.0351659671720477
+      },
+      {
+        "amino_acid_1": "L",
+        "residue_count": 344,
+        "mean_delta_chi_entropy": 0.0143710102493192,
+        "cluster_bootstrap_ci_low_chi_entropy": 0.0063998098716537,
+        "cluster_bootstrap_ci_high_chi_entropy": 0.0226581699145454
+      },
+      {
+        "amino_acid_1": "M",
+        "residue_count": 72,
+        "mean_delta_chi_entropy": -0.0713426621769173,
+        "cluster_bootstrap_ci_low_chi_entropy": -0.0996158082012631,
+        "cluster_bootstrap_ci_high_chi_entropy": -0.0451497613213257
+      },
+      {
+        "amino_acid_1": "P",
+        "residue_count": 140,
+        "mean_delta_chi_entropy": 0.153380603419224,
+        "cluster_bootstrap_ci_low_chi_entropy": 0.1340859854724928,
+        "cluster_bootstrap_ci_high_chi_entropy": 0.1723743160926933
+      },
+      {
+        "amino_acid_1": "Q",
+        "residue_count": 63,
+        "mean_delta_chi_entropy": -0.1061935185292741,
+        "cluster_bootstrap_ci_low_chi_entropy": -0.1491768007942926,
+        "cluster_bootstrap_ci_high_chi_entropy": -0.0607117583080741
+      },
+      {
+        "amino_acid_1": "R",
+        "residue_count": 85,
+        "mean_delta_chi_entropy": -0.089859513275018,
+        "cluster_bootstrap_ci_low_chi_entropy": -0.1283429376627434,
+        "cluster_bootstrap_ci_high_chi_entropy": -0.0502865746352014
+      },
+      {
+        "amino_acid_1": "S",
+        "residue_count": 88,
+        "mean_delta_chi_entropy": 0.0611733713998026,
+        "cluster_bootstrap_ci_low_chi_entropy": 0.0497739245294916,
+        "cluster_bootstrap_ci_high_chi_entropy": 0.0738110348798088
+      },
+      {
+        "amino_acid_1": "T",
+        "residue_count": 135,
+        "mean_delta_chi_entropy": 0.08256271189128,
+        "cluster_bootstrap_ci_low_chi_entropy": 0.0735836744334657,
+        "cluster_bootstrap_ci_high_chi_entropy": 0.0919067023705606
+      },
+      {
+        "amino_acid_1": "V",
+        "residue_count": 202,
+        "mean_delta_chi_entropy": 0.0634162085776871,
+        "cluster_bootstrap_ci_low_chi_entropy": 0.053180178429591,
+        "cluster_bootstrap_ci_high_chi_entropy": 0.0740964821975222
+      },
+      {
+        "amino_acid_1": "Y",
+        "residue_count": 123,
+        "mean_delta_chi_entropy": -0.0702770564785228,
+        "cluster_bootstrap_ci_low_chi_entropy": -0.0949211960843428,
+        "cluster_bootstrap_ci_high_chi_entropy": -0.0477122036012224
+      }
+    ],
+    "sasa": [
+      {
+        "amino_acid_1": "F",
+        "residue_count": 143,
+        "mean_delta_sasa": -3.328155862704771,
+        "cluster_bootstrap_ci_low_sasa": -5.28170676108792,
+        "cluster_bootstrap_ci_high_sasa": -1.2382514872060393
+      },
+      {
+        "amino_acid_1": "G",
+        "residue_count": 210,
+        "mean_delta_sasa": 2.561469191744804,
+        "cluster_bootstrap_ci_low_sasa": 0.8246201826250027,
+        "cluster_bootstrap_ci_high_sasa": 4.141441206775069
+      },
+      {
+        "amino_acid_1": "M",
+        "residue_count": 72,
+        "mean_delta_sasa": -7.052750107048222,
+        "cluster_bootstrap_ci_low_sasa": -10.055206073906524,
+        "cluster_bootstrap_ci_high_sasa": -4.548211708296674
+      },
+      {
+        "amino_acid_1": "N",
+        "residue_count": 52,
+        "mean_delta_sasa": 5.108925142071461,
+        "cluster_bootstrap_ci_low_sasa": 1.277375604811713,
+        "cluster_bootstrap_ci_high_sasa": 9.153813717566845
+      },
+      {
+        "amino_acid_1": "P",
+        "residue_count": 140,
+        "mean_delta_sasa": 1.823614233999468,
+        "cluster_bootstrap_ci_low_sasa": 0.2930477062653248,
+        "cluster_bootstrap_ci_high_sasa": 3.204085543016927
+      },
+      {
+        "amino_acid_1": "Q",
+        "residue_count": 63,
+        "mean_delta_sasa": -3.545987003671831,
+        "cluster_bootstrap_ci_low_sasa": -6.588422510184936,
+        "cluster_bootstrap_ci_high_sasa": -0.3262937151505797
+      },
+      {
+        "amino_acid_1": "S",
+        "residue_count": 88,
+        "mean_delta_sasa": 2.0941362182563195,
+        "cluster_bootstrap_ci_low_sasa": 0.4554105160197094,
+        "cluster_bootstrap_ci_high_sasa": 3.7321482558300256
+      },
+      {
+        "amino_acid_1": "T",
+        "residue_count": 135,
+        "mean_delta_sasa": 1.5058796200905928,
+        "cluster_bootstrap_ci_low_sasa": 0.2222772184660727,
+        "cluster_bootstrap_ci_high_sasa": 2.918769945110836
+      },
+      {
+        "amino_acid_1": "V",
+        "residue_count": 202,
+        "mean_delta_sasa": 3.656310148753864,
+        "cluster_bootstrap_ci_low_sasa": 2.5837988151435924,
+        "cluster_bootstrap_ci_high_sasa": 4.767486731635029
+      }
+    ]
+  },
+  "case_replication": {
+    "comparison": "complete TCR-pMHC minus pMHC subset at identical retained coordinates",
+    "peptide_sequence": "ALHGGWTTK",
+    "complexes": [
+      "7L1D",
+      "7RRG"
+    ],
+    "chi_entropy_rule": "Ala P1 and Gly P4/P5 are excluded from H_chi interpretation because their training labels have no defined chi torsion.",
+    "position_pattern_replication": {
+      "rmsf": {
+        "position_count": 9,
+        "spearman_rho": 0.9166666666666666,
+        "pvalue": 0.0005066190663052084
+      },
+      "chi_entropy": {
+        "position_count": 6,
+        "spearman_rho": 0.7714285714285715,
+        "pvalue": 0.07239650145772594
+      },
+      "sasa": {
+        "position_count": 9,
+        "spearman_rho": 0.8166666666666667,
+        "pvalue": 0.007224785246358785
+      }
+    },
+    "central_P3_P8_mean_delta": {
+      "rmsf": -0.36467523376146954,
+      "chi_entropy": -0.12635079026222226,
+      "sasa": -23.62993661562602
+    },
+    "terminal_P1_P2_P9_mean_delta": {
+      "rmsf": -0.0957090556621551,
+      "chi_entropy": -0.0508641004562378,
+      "sasa": -3.4634831746419277
+    },
+    "direct_contact_counts": {
+      "7L1D": 8,
+      "7RRG": 5
+    }
+  },
+  "n_definition": {
+    "panel_a": "154 external-clean ITrace 9-mer complexes; held-out MD RMSF is compared directly with complete-complex FlexPPI RMSF.",
+    "panel_b": "The same 154 complexes; 7L1D and 7RRG are complete, non-selected case overlays.",
+    "panel_c": "All 2,278 peptide residues from 244 external-clean complexes; mean effects and 95% CIs use complex-cluster bootstrap."
+  },
+  "center_and_interval": "Mean and 2,000-repeat complex-cluster bootstrap 95% CI.",
+  "delta_definition": "complete TCR-pMHC prediction minus pMHC-subset prediction, with all retained coordinates identical."
+}

@@ -1,0 +1,1075 @@
+{
+  "figure": "ITrace frozen-checkpoint full-complex context ablation",
+  "core_conclusion": "The same frozen FlexPPI checkpoint benefits from full-complex context overall, but the gain is chain-role dependent and the isolated peptide condition exhibits severe length extrapolation.",
+  "cohort": {
+    "independent_unit": "PDB complex",
+    "n_complexes": 244,
+    "n_chains": 1220,
+    "n_residues": 199668,
+    "excluded_exact_training_pdb": [
+      "3kxf"
+    ]
+  },
+  "inference": {
+    "parameter_updates": 0,
+    "checkpoint_sha256": "30611c285c8e5d16dc07a7851d97ab54a829f9027c3be1c2bafd31779cee0b78",
+    "full_input": "bound-state five-chain complex",
+    "ablation_input": "one chain extracted from the same bound-state topology with retained atom coordinates unchanged",
+    "target_used_during_inference": false
+  },
+  "statistics": {
+    "center": "metric computed within chain, equal-chain mean within complex, then equal-complex macro mean",
+    "interval": "2,000 complex-level bootstrap resamples, percentile 95% CI",
+    "paired_test": "two-sided Wilcoxon signed-rank test across complexes",
+    "multiple_comparison": "Benjamini-Hochberg FDR within the seven panel-b metrics and within the five panel-c chain roles"
+  },
+  "main_results": {
+    "full_complex": {
+      "spearman": {
+        "macro_mean": 0.7396338750447341,
+        "macro_median": 0.7454064941699474,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.7307852484141036,
+          0.7479818179713674
+        ]
+      },
+      "pearson": {
+        "macro_mean": 0.6774251643714089,
+        "macro_median": 0.6808240351470005,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.6679317143830901,
+          0.6865956122135107
+        ]
+      },
+      "z_mae": {
+        "macro_mean": 0.5306557215895095,
+        "macro_median": 0.5286623322655022,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.5233485210815149,
+          0.5379941314831622
+        ]
+      },
+      "z_rmse": {
+        "macro_mean": 0.7527092835897042,
+        "macro_median": 0.7556186924548647,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.7429931044448178,
+          0.7624549380765048
+        ]
+      },
+      "top20_auroc": {
+        "macro_mean": 0.8712812694493434,
+        "macro_median": 0.8772997492099603,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.8652583409274862,
+          0.8772573223682248
+        ]
+      },
+      "top20_average_precision": {
+        "macro_mean": 0.7354284168899605,
+        "macro_median": 0.7387345463100708,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.7283678330699811,
+          0.74248155586648
+        ]
+      },
+      "top20_precision_at_k": {
+        "macro_mean": 0.6313994668334036,
+        "macro_median": 0.6467408358294109,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.6227317311396835,
+          0.6397653128583726
+        ]
+      },
+      "absolute_mae_angstrom": {
+        "macro_mean": 0.3459599667132538,
+        "macro_median": 0.32922527146509717,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.3369554349292462,
+          0.35557869652070134
+        ]
+      },
+      "absolute_rmse_angstrom": {
+        "macro_mean": 0.4750211265015202,
+        "macro_median": 0.4378842725977506,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.4600091113686723,
+          0.4911338367260258
+        ]
+      }
+    },
+    "isolated_chain": {
+      "spearman": {
+        "macro_mean": 0.6828304604073071,
+        "macro_median": 0.6869138595715578,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.6742748982344412,
+          0.6915982680918327
+        ]
+      },
+      "pearson": {
+        "macro_mean": 0.6206526110099075,
+        "macro_median": 0.6268644640008789,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.6104315962797099,
+          0.6317077960731762
+        ]
+      },
+      "z_mae": {
+        "macro_mean": 0.5705824499432338,
+        "macro_median": 0.5694654548110004,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.5631181590520279,
+          0.5780302606578738
+        ]
+      },
+      "z_rmse": {
+        "macro_mean": 0.8126813312649839,
+        "macro_median": 0.8168823532149799,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.8021787076006611,
+          0.8227658054186923
+        ]
+      },
+      "top20_auroc": {
+        "macro_mean": 0.8358449018664157,
+        "macro_median": 0.8367838024772145,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.8294824634821669,
+          0.8423455626547894
+        ]
+      },
+      "top20_average_precision": {
+        "macro_mean": 0.6583700783699901,
+        "macro_median": 0.6567937031909173,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.6515767976970113,
+          0.6653878843409986
+        ]
+      },
+      "top20_precision_at_k": {
+        "macro_mean": 0.5755784420855984,
+        "macro_median": 0.5795157514974587,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.5682505961514889,
+          0.5838467958027131
+        ]
+      },
+      "absolute_mae_angstrom": {
+        "macro_mean": 1.8646439108393575,
+        "macro_median": 1.855659367335283,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          1.8509014095171823,
+          1.878512498654862
+        ]
+      },
+      "absolute_rmse_angstrom": {
+        "macro_mean": 1.9976731296319146,
+        "macro_median": 1.9770050118749394,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          1.9798715343655682,
+          2.0164448087324867
+        ]
+      }
+    },
+    "paired_full_vs_isolated": {
+      "spearman": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": 0.05680341463742705,
+        "median_advantage": 0.054393797445935144,
+        "complex_bootstrap_95_ci": [
+          0.04486481788980639,
+          0.06892200466417281
+        ],
+        "win_rate": 0.7090163934426229,
+        "loss_rate": 0.29098360655737704,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 1.4744780340226601e-15
+      },
+      "pearson": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": 0.0567725533615014,
+        "median_advantage": 0.04859429405405602,
+        "complex_bootstrap_95_ci": [
+          0.04374312291569996,
+          0.06940448836732481
+        ],
+        "win_rate": 0.7090163934426229,
+        "loss_rate": 0.29098360655737704,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 1.099643596254184e-14
+      },
+      "z_mae": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": 0.03992672835372446,
+        "median_advantage": 0.03751110815552472,
+        "complex_bootstrap_95_ci": [
+          0.03031815265367893,
+          0.04936915723878894
+        ],
+        "win_rate": 0.7213114754098361,
+        "loss_rate": 0.2786885245901639,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 2.461725438313455e-14
+      },
+      "z_rmse": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": 0.05997204767527985,
+        "median_advantage": 0.054502173728563086,
+        "complex_bootstrap_95_ci": [
+          0.048439090952516736,
+          0.07079833541529544
+        ],
+        "win_rate": 0.7459016393442623,
+        "loss_rate": 0.2540983606557377,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 2.3088841770681686e-19
+      },
+      "top20_auroc": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": 0.035436367582927515,
+        "median_advantage": 0.030660678279444242,
+        "complex_bootstrap_95_ci": [
+          0.026342141069740272,
+          0.043931702015282806
+        ],
+        "win_rate": 0.6885245901639344,
+        "loss_rate": 0.3114754098360656,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 9.331705974321013e-13
+      },
+      "top20_average_precision": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": 0.07705833851997047,
+        "median_advantage": 0.07666069840548301,
+        "complex_bootstrap_95_ci": [
+          0.06849716768896294,
+          0.08547126381830325
+        ],
+        "win_rate": 0.8483606557377049,
+        "loss_rate": 0.15163934426229508,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 5.421668718172408e-33
+      },
+      "top20_precision_at_k": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": 0.05582102474780531,
+        "median_advantage": 0.045321281505950495,
+        "complex_bootstrap_95_ci": [
+          0.04512603468621914,
+          0.06606732104083995
+        ],
+        "win_rate": 0.7827868852459017,
+        "loss_rate": 0.21721311475409835,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 1.082330152009498e-18
+      },
+      "absolute_mae_angstrom": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": 1.518683944126104,
+        "median_advantage": 1.5228294154345496,
+        "complex_bootstrap_95_ci": [
+          1.506357877420666,
+          1.530757303614112
+        ],
+        "win_rate": 1.0,
+        "loss_rate": 0.0,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 8.886386986877488e-42
+      },
+      "absolute_rmse_angstrom": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": 1.5226520031303943,
+        "median_advantage": 1.5283019795797266,
+        "complex_bootstrap_95_ci": [
+          1.5102234578621052,
+          1.535008792103589
+        ],
+        "win_rate": 1.0,
+        "loss_rate": 0.0,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 8.886386986877488e-42
+      }
+    },
+    "context_response": {
+      "overall": {
+        "residue_count": 199668,
+        "complex_count": 244,
+        "complex_macro_signed_mean_angstrom": -0.23147206870624873,
+        "complex_macro_signed_mean_95_ci": [
+          -0.23314330740095357,
+          -0.22984076012625723
+        ],
+        "complex_macro_absolute_mean_angstrom": 0.23163883167893906,
+        "complex_macro_absolute_mean_95_ci": [
+          0.23002322257785449,
+          0.23331273227969448
+        ]
+      },
+      "interface_8A": {
+        "residue_count": 8764,
+        "complex_count": 244,
+        "complex_macro_signed_mean_angstrom": -1.71869087069631,
+        "complex_macro_signed_mean_95_ci": [
+          -1.7530135523809758,
+          -1.6841431979930763
+        ],
+        "complex_macro_absolute_mean_angstrom": 1.71869087069631,
+        "complex_macro_absolute_mean_95_ci": [
+          1.6841431979930763,
+          1.7530135523809758
+        ]
+      },
+      "non_interface": {
+        "residue_count": 190904,
+        "complex_count": 244,
+        "complex_macro_signed_mean_angstrom": -0.16368708749582275,
+        "complex_macro_signed_mean_95_ci": [
+          -0.16582400784950638,
+          -0.16170700345062972
+        ],
+        "complex_macro_absolute_mean_angstrom": 0.16386168561178488,
+        "complex_macro_absolute_mean_95_ci": [
+          0.16187857135998626,
+          0.1659942499499074
+        ]
+      },
+      "role:b2m": {
+        "residue_count": 24318,
+        "complex_count": 244,
+        "complex_macro_signed_mean_angstrom": -0.169078882892086,
+        "complex_macro_signed_mean_95_ci": [
+          -0.1717121579101758,
+          -0.16639139886828871
+        ],
+        "complex_macro_absolute_mean_angstrom": 0.1691854887020739,
+        "complex_macro_absolute_mean_95_ci": [
+          0.16649332517618382,
+          0.17182551242950095
+        ]
+      },
+      "role:mhc": {
+        "residue_count": 67078,
+        "complex_count": 244,
+        "complex_macro_signed_mean_angstrom": -0.09320931230886362,
+        "complex_macro_signed_mean_95_ci": [
+          -0.09442122195438725,
+          -0.09205983698027073
+        ],
+        "complex_macro_absolute_mean_angstrom": 0.09331805124082936,
+        "complex_macro_absolute_mean_95_ci": [
+          0.09217344844646479,
+          0.09453761814334524
+        ]
+      },
+      "role:peptide": {
+        "residue_count": 2278,
+        "complex_count": 244,
+        "complex_macro_signed_mean_angstrom": -7.755422497699533,
+        "complex_macro_signed_mean_95_ci": [
+          -7.81101251570944,
+          -7.702548440390521
+        ],
+        "complex_macro_absolute_mean_angstrom": 7.755422497699533,
+        "complex_macro_absolute_mean_95_ci": [
+          7.702548440390521,
+          7.81101251570944
+        ]
+      },
+      "role:tcr_alpha": {
+        "residue_count": 47611,
+        "complex_count": 244,
+        "complex_macro_signed_mean_angstrom": -0.2282731217829644,
+        "complex_macro_signed_mean_95_ci": [
+          -0.23224077636228463,
+          -0.2240190731603519
+        ],
+        "complex_macro_absolute_mean_angstrom": 0.22855337878753318,
+        "complex_macro_absolute_mean_95_ci": [
+          0.22427715659554612,
+          0.23252694349098904
+        ]
+      },
+      "role:tcr_beta": {
+        "residue_count": 58383,
+        "complex_count": 244,
+        "complex_macro_signed_mean_angstrom": -0.1252731240205793,
+        "complex_macro_signed_mean_95_ci": [
+          -0.12742727314962646,
+          -0.1232801523892347
+        ],
+        "complex_macro_absolute_mean_angstrom": 0.12544560938096466,
+        "complex_macro_absolute_mean_95_ci": [
+          0.12344979609588591,
+          0.12758769704630174
+        ]
+      }
+    }
+  },
+  "non_peptide_sensitivity": {
+    "full_complex": {
+      "spearman": {
+        "macro_mean": 0.8489373477091183,
+        "macro_median": 0.8518503958458398,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.8463285626765431,
+          0.8514323592182654
+        ]
+      },
+      "pearson": {
+        "macro_mean": 0.758158301382476,
+        "macro_median": 0.7619917366575624,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.7524331767005581,
+          0.7641455823257438
+        ]
+      },
+      "z_mae": {
+        "macro_mean": 0.4396396254547912,
+        "macro_median": 0.4386406827134246,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.4337549549360641,
+          0.4451563581923737
+        ]
+      },
+      "z_rmse": {
+        "macro_mean": 0.668526671068605,
+        "macro_median": 0.6694400796538382,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.6594412964577188,
+          0.6768687120241256
+        ]
+      },
+      "top20_auroc": {
+        "macro_mean": 0.9211564186487856,
+        "macro_median": 0.9223654662638364,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.919184565511635,
+          0.9230048983636867
+        ]
+      },
+      "top20_average_precision": {
+        "macro_mean": 0.7766561151889875,
+        "macro_median": 0.778534118339083,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.7718999083158209,
+          0.781250597287949
+        ]
+      },
+      "top20_precision_at_k": {
+        "macro_mean": 0.6867903171483121,
+        "macro_median": 0.6924931557989049,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.6824566246337381,
+          0.6909675752147159
+        ]
+      },
+      "absolute_mae_angstrom": {
+        "macro_mean": 0.3762852910223337,
+        "macro_median": 0.35098022315027316,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.36517468216003407,
+          0.3884904143457197
+        ]
+      },
+      "absolute_rmse_angstrom": {
+        "macro_mean": 0.5331730649380878,
+        "macro_median": 0.4871118522992005,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.514484971922553,
+          0.553530670213315
+        ]
+      }
+    },
+    "isolated_chain": {
+      "spearman": {
+        "macro_mean": 0.8295864806558997,
+        "macro_median": 0.8324123956861228,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.8271124256990516,
+          0.8321174402230166
+        ]
+      },
+      "pearson": {
+        "macro_mean": 0.7533250511610513,
+        "macro_median": 0.7555748145970695,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.7467117590681055,
+          0.7602496958244779
+        ]
+      },
+      "z_mae": {
+        "macro_mean": 0.4442841106018833,
+        "macro_median": 0.44420820407491624,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.4385362841944136,
+          0.4496149653134937
+        ]
+      },
+      "z_rmse": {
+        "macro_mean": 0.6867402069124451,
+        "macro_median": 0.6911250675936733,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.6772375330914001,
+          0.6958756359441018
+        ]
+      },
+      "top20_auroc": {
+        "macro_mean": 0.9069704249737519,
+        "macro_median": 0.9087680718371705,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.9051394497803461,
+          0.9086806486221775
+        ]
+      },
+      "top20_average_precision": {
+        "macro_mean": 0.7066507369144586,
+        "macro_median": 0.7082815084983612,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.7016739232078577,
+          0.7115236717189692
+        ]
+      },
+      "top20_precision_at_k": {
+        "macro_mean": 0.646385620913009,
+        "macro_median": 0.6456277353598783,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.6423085470703688,
+          0.6502853577797643
+        ]
+      },
+      "absolute_mae_angstrom": {
+        "macro_mean": 0.3479994355019172,
+        "macro_median": 0.32669743959405934,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.3390421197328439,
+          0.35793846849125893
+        ]
+      },
+      "absolute_rmse_angstrom": {
+        "macro_mean": 0.5084729782540479,
+        "macro_median": 0.4654569822137614,
+        "complex_count": 244,
+        "complex_bootstrap_95_ci": [
+          0.49193421200523013,
+          0.5264283293289823
+        ]
+      }
+    },
+    "paired_full_vs_isolated": {
+      "spearman": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": 0.019350867053218663,
+        "median_advantage": 0.020770872244708916,
+        "complex_bootstrap_95_ci": [
+          0.016776736785020497,
+          0.021899435433458216
+        ],
+        "win_rate": 0.819672131147541,
+        "loss_rate": 0.18032786885245902,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 1.1148353321887556e-27
+      },
+      "pearson": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": 0.004833250221424826,
+        "median_advantage": 0.005370388709652174,
+        "complex_bootstrap_95_ci": [
+          6.116314961290466e-05,
+          0.009565864508433206
+        ],
+        "win_rate": 0.569672131147541,
+        "loss_rate": 0.430327868852459,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 0.021160803451389078
+      },
+      "z_mae": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": 0.004644485147092063,
+        "median_advantage": 0.0036658471635231393,
+        "complex_bootstrap_95_ci": [
+          0.0005722864156171581,
+          0.008746642007736161
+        ],
+        "win_rate": 0.5655737704918032,
+        "loss_rate": 0.4344262295081967,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 0.023442751841411792
+      },
+      "z_rmse": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": 0.018213535843840268,
+        "median_advantage": 0.02021012872521133,
+        "complex_bootstrap_95_ci": [
+          0.011748634254485694,
+          0.024454713165059455
+        ],
+        "win_rate": 0.6680327868852459,
+        "loss_rate": 0.3319672131147541,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 1.0929144303497385e-08
+      },
+      "top20_auroc": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": 0.014185993675033762,
+        "median_advantage": 0.01550076719719573,
+        "complex_bootstrap_95_ci": [
+          0.012384851011498908,
+          0.015877411526115926
+        ],
+        "win_rate": 0.8524590163934426,
+        "loss_rate": 0.14754098360655737,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 6.118695826776157e-29
+      },
+      "top20_average_precision": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": 0.07000537827452888,
+        "median_advantage": 0.07356402613840168,
+        "complex_bootstrap_95_ci": [
+          0.0654216553410011,
+          0.07452644398826368
+        ],
+        "win_rate": 0.9467213114754098,
+        "loss_rate": 0.05327868852459016,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 3.6393422007238426e-40
+      },
+      "top20_precision_at_k": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": 0.040404696235303086,
+        "median_advantage": 0.043501638460262115,
+        "complex_bootstrap_95_ci": [
+          0.03589231317293535,
+          0.045082602568693265
+        ],
+        "win_rate": 0.8770491803278688,
+        "loss_rate": 0.12295081967213115,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 9.81626814149209e-32
+      },
+      "absolute_mae_angstrom": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": -0.02828585552041653,
+        "median_advantage": -0.027881972776416963,
+        "complex_bootstrap_95_ci": [
+          -0.03146140846979683,
+          -0.024984889562936763
+        ],
+        "win_rate": 0.11065573770491803,
+        "loss_rate": 0.889344262295082,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 3.207499546754477e-33
+      },
+      "absolute_rmse_angstrom": {
+        "advantage_definition": "positive means full-complex input is better than bound-state isolated-chain input",
+        "mean_advantage": -0.02470008668403982,
+        "median_advantage": -0.024816536492860614,
+        "complex_bootstrap_95_ci": [
+          -0.02993570332626151,
+          -0.01939759380833612
+        ],
+        "win_rate": 0.2827868852459016,
+        "loss_rate": 0.7172131147540983,
+        "tie_rate": 0.0,
+        "paired_complex_count": 244,
+        "wilcoxon_two_sided_p": 1.2143040346082884e-16
+      }
+    }
+  },
+  "panel_b_source": [
+    {
+      "metric": "spearman",
+      "metric_label": "Spearman ρ",
+      "full_complex_macro_mean": 0.7396338750447341,
+      "isolated_chain_macro_mean": 0.6828304604073071,
+      "mean_advantage": 0.05680341463742705,
+      "ci_low": 0.04486481788980639,
+      "ci_high": 0.06892200466417281,
+      "win_rate": 0.7090163934426229,
+      "wilcoxon_two_sided_p": 1.4744780340226601e-15,
+      "n_complexes": 244,
+      "bh_fdr_q": 2.5803365595396554e-15
+    },
+    {
+      "metric": "pearson",
+      "metric_label": "Pearson r",
+      "full_complex_macro_mean": 0.6774251643714089,
+      "isolated_chain_macro_mean": 0.6206526110099075,
+      "mean_advantage": 0.0567725533615014,
+      "ci_low": 0.04374312291569996,
+      "ci_high": 0.06940448836732481,
+      "win_rate": 0.7090163934426229,
+      "wilcoxon_two_sided_p": 1.099643596254184e-14,
+      "n_complexes": 244,
+      "bh_fdr_q": 1.5395010347558573e-14
+    },
+    {
+      "metric": "z_mae",
+      "metric_label": "z-MAE",
+      "full_complex_macro_mean": 0.5306557215895095,
+      "isolated_chain_macro_mean": 0.5705824499432338,
+      "mean_advantage": 0.03992672835372446,
+      "ci_low": 0.03031815265367893,
+      "ci_high": 0.04936915723878894,
+      "win_rate": 0.7213114754098361,
+      "wilcoxon_two_sided_p": 2.461725438313455e-14,
+      "n_complexes": 244,
+      "bh_fdr_q": 2.8720130113656976e-14
+    },
+    {
+      "metric": "z_rmse",
+      "metric_label": "z-RMSE",
+      "full_complex_macro_mean": 0.7527092835897042,
+      "isolated_chain_macro_mean": 0.8126813312649839,
+      "mean_advantage": 0.05997204767527985,
+      "ci_low": 0.048439090952516736,
+      "ci_high": 0.07079833541529544,
+      "win_rate": 0.7459016393442623,
+      "wilcoxon_two_sided_p": 2.3088841770681686e-19,
+      "n_complexes": 244,
+      "bh_fdr_q": 8.08109461973859e-19
+    },
+    {
+      "metric": "top20_auroc",
+      "metric_label": "Top-20% AUROC",
+      "full_complex_macro_mean": 0.8712812694493434,
+      "isolated_chain_macro_mean": 0.8358449018664157,
+      "mean_advantage": 0.035436367582927515,
+      "ci_low": 0.026342141069740272,
+      "ci_high": 0.043931702015282806,
+      "win_rate": 0.6885245901639344,
+      "wilcoxon_two_sided_p": 9.331705974321013e-13,
+      "n_complexes": 244,
+      "bh_fdr_q": 9.331705974321013e-13
+    },
+    {
+      "metric": "top20_average_precision",
+      "metric_label": "Top-20% AP",
+      "full_complex_macro_mean": 0.7354284168899605,
+      "isolated_chain_macro_mean": 0.6583700783699901,
+      "mean_advantage": 0.07705833851997047,
+      "ci_low": 0.06849716768896294,
+      "ci_high": 0.08547126381830325,
+      "win_rate": 0.8483606557377049,
+      "wilcoxon_two_sided_p": 5.421668718172408e-33,
+      "n_complexes": 244,
+      "bh_fdr_q": 3.7951681027206856e-32
+    },
+    {
+      "metric": "top20_precision_at_k",
+      "metric_label": "Top-20% P@K",
+      "full_complex_macro_mean": 0.6313994668334036,
+      "isolated_chain_macro_mean": 0.5755784420855984,
+      "mean_advantage": 0.05582102474780531,
+      "ci_low": 0.04512603468621914,
+      "ci_high": 0.06606732104083995,
+      "win_rate": 0.7827868852459017,
+      "wilcoxon_two_sided_p": 1.082330152009498e-18,
+      "n_complexes": 244,
+      "bh_fdr_q": 2.525437021355495e-18
+    }
+  ],
+  "panel_c_source": [
+    {
+      "chain_role": "mhc",
+      "chain_role_label": "MHC",
+      "full_complex_spearman": 0.852653874775522,
+      "isolated_chain_spearman": 0.7638288483970503,
+      "mean_advantage": 0.08882502637847148,
+      "ci_low": 0.08486645096327053,
+      "ci_high": 0.09266977473949099,
+      "wilcoxon_two_sided_p": 9.451666219036721e-42,
+      "n_complexes": 244,
+      "bh_fdr_q": 4.725833109518361e-41
+    },
+    {
+      "chain_role": "b2m",
+      "chain_role_label": "β2m",
+      "full_complex_spearman": 0.8340728682215302,
+      "isolated_chain_spearman": 0.8753101669665366,
+      "mean_advantage": -0.04123729874500668,
+      "ci_low": -0.046006443697693696,
+      "ci_high": -0.03652510480307103,
+      "wilcoxon_two_sided_p": 5.943982281678583e-34,
+      "n_complexes": 244,
+      "bh_fdr_q": 1.4859955704196457e-33
+    },
+    {
+      "chain_role": "peptide",
+      "chain_role_label": "Peptide",
+      "full_complex_spearman": 0.30241998438719747,
+      "isolated_chain_spearman": 0.09580637941293679,
+      "mean_advantage": 0.20661360497426068,
+      "ci_low": 0.14526533746308337,
+      "ci_high": 0.2663466349224546,
+      "wilcoxon_two_sided_p": 1.4447539373969143e-09,
+      "n_complexes": 244,
+      "bh_fdr_q": 1.4447539373969143e-09
+    },
+    {
+      "chain_role": "tcr_alpha",
+      "chain_role_label": "TCRα",
+      "full_complex_spearman": 0.8626944283771566,
+      "isolated_chain_spearman": 0.8175701879654474,
+      "mean_advantage": 0.045124240411708996,
+      "ci_low": 0.03890671100903346,
+      "ci_high": 0.05123348110481474,
+      "wilcoxon_two_sided_p": 2.420572363836944e-26,
+      "n_complexes": 244,
+      "bh_fdr_q": 4.034287273061573e-26
+    },
+    {
+      "chain_role": "tcr_beta",
+      "chain_role_label": "TCRβ",
+      "full_complex_spearman": 0.8463282194622646,
+      "isolated_chain_spearman": 0.8616367192945635,
+      "mean_advantage": -0.015308499832299167,
+      "ci_low": -0.019183648423906477,
+      "ci_high": -0.011336232270738489,
+      "wilcoxon_two_sided_p": 1.2688575985567993e-11,
+      "n_complexes": 244,
+      "bh_fdr_q": 1.5860719981959992e-11
+    }
+  ],
+  "panel_d_summary": [
+    {
+      "chain_role": "b2m",
+      "chain_role_label": "β2m",
+      "method": "target",
+      "method_label": "ITrace MD",
+      "macro_mean_of_complex_medians": 0.6395522607032393,
+      "macro_median_of_complex_medians": 0.6349237461884817,
+      "ci_low": 0.6307324556496422,
+      "ci_high": 0.6483136524975585,
+      "n_complexes": 244
+    },
+    {
+      "chain_role": "mhc",
+      "chain_role_label": "MHC",
+      "method": "target",
+      "method_label": "ITrace MD",
+      "macro_mean_of_complex_medians": 1.1945322048875804,
+      "macro_median_of_complex_medians": 1.170126954714457,
+      "ci_low": 1.1734061024309508,
+      "ci_high": 1.2146031621599296,
+      "n_complexes": 244
+    },
+    {
+      "chain_role": "peptide",
+      "chain_role_label": "Peptide",
+      "method": "target",
+      "method_label": "ITrace MD",
+      "macro_mean_of_complex_medians": 0.460299338860427,
+      "macro_median_of_complex_medians": 0.4227568830053011,
+      "ci_low": 0.44034507888130064,
+      "ci_high": 0.48378409339939465,
+      "n_complexes": 244
+    },
+    {
+      "chain_role": "tcr_alpha",
+      "chain_role_label": "TCRα",
+      "method": "target",
+      "method_label": "ITrace MD",
+      "macro_mean_of_complex_medians": 1.1497464804945747,
+      "macro_median_of_complex_medians": 1.1329028457403183,
+      "ci_low": 1.1262482705485342,
+      "ci_high": 1.1735488065213084,
+      "n_complexes": 244
+    },
+    {
+      "chain_role": "tcr_beta",
+      "chain_role_label": "TCRβ",
+      "method": "target",
+      "method_label": "ITrace MD",
+      "macro_mean_of_complex_medians": 0.9382924411059077,
+      "macro_median_of_complex_medians": 0.9314004878203075,
+      "ci_low": 0.922922970765764,
+      "ci_high": 0.954895585209457,
+      "n_complexes": 244
+    },
+    {
+      "chain_role": "b2m",
+      "chain_role_label": "β2m",
+      "method": "full_complex",
+      "method_label": "Full complex",
+      "macro_mean_of_complex_medians": 0.8113347586305415,
+      "macro_median_of_complex_medians": 0.8102297782897949,
+      "ci_low": 0.8095044624243604,
+      "ci_high": 0.8131345125800763,
+      "n_complexes": 244
+    },
+    {
+      "chain_role": "mhc",
+      "chain_role_label": "MHC",
+      "method": "full_complex",
+      "method_label": "Full complex",
+      "macro_mean_of_complex_medians": 0.769293511133702,
+      "macro_median_of_complex_medians": 0.7660166025161743,
+      "ci_low": 0.767026532591,
+      "ci_high": 0.7717734790178108,
+      "n_complexes": 244
+    },
+    {
+      "chain_role": "peptide",
+      "chain_role_label": "Peptide",
+      "method": "full_complex",
+      "method_label": "Full complex",
+      "macro_mean_of_complex_medians": 0.6473824856955497,
+      "macro_median_of_complex_medians": 0.6425541937351227,
+      "ci_low": 0.6409130992062512,
+      "ci_high": 0.6537191152145139,
+      "n_complexes": 244
+    },
+    {
+      "chain_role": "tcr_alpha",
+      "chain_role_label": "TCRα",
+      "method": "full_complex",
+      "method_label": "Full complex",
+      "macro_mean_of_complex_medians": 0.7770397929383106,
+      "macro_median_of_complex_medians": 0.7744244784116745,
+      "ci_low": 0.7740557501642187,
+      "ci_high": 0.7802205059799503,
+      "n_complexes": 244
+    },
+    {
+      "chain_role": "tcr_beta",
+      "chain_role_label": "TCRβ",
+      "method": "full_complex",
+      "method_label": "Full complex",
+      "macro_mean_of_complex_medians": 0.7421579154544189,
+      "macro_median_of_complex_medians": 0.7398097962141037,
+      "ci_low": 0.7397827025533456,
+      "ci_high": 0.7446380299500756,
+      "n_complexes": 244
+    },
+    {
+      "chain_role": "b2m",
+      "chain_role_label": "β2m",
+      "method": "isolated_chain",
+      "method_label": "Isolated chain",
+      "macro_mean_of_complex_medians": 0.9195146660824292,
+      "macro_median_of_complex_medians": 0.9163511693477631,
+      "ci_low": 0.9164286017295766,
+      "ci_high": 0.9225453183665627,
+      "n_complexes": 244
+    },
+    {
+      "chain_role": "mhc",
+      "chain_role_label": "MHC",
+      "method": "isolated_chain",
+      "method_label": "Isolated chain",
+      "macro_mean_of_complex_medians": 0.8779531168888827,
+      "macro_median_of_complex_medians": 0.8735994547605515,
+      "ci_low": 0.8751444234772295,
+      "ci_high": 0.8810513603882711,
+      "n_complexes": 244
+    },
+    {
+      "chain_role": "peptide",
+      "chain_role_label": "Peptide",
+      "method": "isolated_chain",
+      "method_label": "Isolated chain",
+      "macro_mean_of_complex_medians": 8.415470595242548,
+      "macro_median_of_complex_medians": 8.412443161010742,
+      "ci_low": 8.357553779199474,
+      "ci_high": 8.474404440673649,
+      "n_complexes": 244
+    },
+    {
+      "chain_role": "tcr_alpha",
+      "chain_role_label": "TCRα",
+      "method": "isolated_chain",
+      "method_label": "Isolated chain",
+      "macro_mean_of_complex_medians": 0.9438729569560191,
+      "macro_median_of_complex_medians": 0.9415794909000397,
+      "ci_low": 0.9396021386761158,
+      "ci_high": 0.9480753514701958,
+      "n_complexes": 244
+    },
+    {
+      "chain_role": "tcr_beta",
+      "chain_role_label": "TCRβ",
+      "method": "isolated_chain",
+      "method_label": "Isolated chain",
+      "macro_mean_of_complex_medians": 0.8417532798208174,
+      "macro_median_of_complex_medians": 0.8394117951393127,
+      "ci_low": 0.8391788280278932,
+      "ci_high": 0.8444630228044068,
+      "n_complexes": 244
+    }
+  ],
+  "data_validation": {
+    "external_clean_complexes": 244,
+    "external_clean_chains": 1220,
+    "external_clean_residues": 199668,
+    "per_complex_unique": true,
+    "per_chain_unique": true,
+    "missing_required_residue_values": 0,
+    "chain_roles": [
+      "b2m",
+      "mhc",
+      "peptide",
+      "tcr_alpha",
+      "tcr_beta"
+    ]
+  },
+  "source_files": {
+    "context_report": "E:\\Project\\FlexPPI\\output\\itrace_zero_shot_context\\itrace_context_report.json",
+    "per_complex_metrics": "E:\\Project\\FlexPPI\\output\\itrace_zero_shot_context\\metrics\\per_complex_metrics.csv",
+    "per_chain_metrics": "E:\\Project\\FlexPPI\\output\\itrace_zero_shot_context\\metrics\\per_chain_metrics.csv",
+    "residue_predictions": "E:\\Project\\FlexPPI\\output\\itrace_zero_shot_context\\raw\\common_context_predictions.csv"
+  }
+}

@@ -1,0 +1,91 @@
+% !TeX root = ../paper.tex
+
+\appendix
+\section{ITrace 补充分析}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{fig_itrace_sensitivity.pdf}
+  \caption{ITrace 标签定义与样本纳入规则的敏感性分析。主分析使用逐链拟合的
+  $C_\alpha$ RMSF，并排除唯一精确训练 PDB 重叠 3KXF；次分析改用 ITrace
+  官方全复合体拟合标签，或把 3KXF 加回全部 245 个复合体。逐链拟合标签减少
+  链间整体运动对链内柔性的污染；两种纳入规则下总体排序不变，而官方标签下
+  FlexPPI 相对 FastProtFlex 的优势更大，说明主要结论并非由单一样本或单一
+  对齐定义造成。误差线为 2,000 次复合体 bootstrap 95\% 置信区间。}
+  \label{fig:itrace-sensitivity}
+\end{figure}
+
+\subsection{轨迹覆盖、预测成功率与标签质量控制}
+
+本研究使用的 ITrace 数据快照包含 245 个复合体和 735 条轨迹，即每个复合体三条独立重复。
+每条轨迹实际保留 1,001--1,009 帧，标签计算使用全部可用帧；FastProtFlex 的
+1,225 个逐链预测和 FlexPPI 的 245 个整复合体预测均成功完成。主标签共同覆盖
+200,501/200,501 个可比较残基，官方全复合体拟合标签覆盖
+200,430/200,501 个残基，即 99.965\%。244 个精确 PDB 外部复合体的重复间
+平均 Spearman 均不低于 0.5，中位数为 0.853；模型优势与重复可靠性的 Pearson
+相关仅为 0.05（$p=0.48$），未观察到 FlexPPI 的改善只集中在低可靠标签上的
+迹象。
+
+\subsection{长度外推与运行时间}
+
+ITrace 复合体长度为 599--848 个残基，中位数为 826；其中 235/245 超过预训练
+配置中的 768 残基上限。当前推理程序没有截断输入，因此所有残基均参与预测，
+但这仍属于训练长度范围之外的外推，应在后续长度分层和更长复合体训练中单独
+验证。在同一批 CPU 运行记录中，FastProtFlex 完成五条链的中位时间为
+10.1 秒，FlexPPI 完成整个复合体的中位时间为 2.0 秒，约快 5.1 倍；该时间只
+反映当前硬件、批处理和实现，不作为算法复杂度的普适结论。
+
+\subsection{冻结检查点上下文消融的完整性控制}
+
+上下文消融复用正文完整复合体预测，只额外运行同一检查点的结合态孤立链
+前向推理。检查点 SHA256 与完整复合体评估逐字节一致；推理函数在
+\texttt{torch.no\_grad()} 下运行，未构建优化器，也未读取 ITrace RMSF
+标签来调整模型参数、阈值或模拟条件。245 个复合体共生成 1,225 个单链输入，
+全部推理成功，中位耗时为 0.199\,s/链，总耗时为 240.5\,s。孤立链预测与主
+标签在 200,501 个共同残基上一一匹配，无缺失或重复键；排除 3KXF 后，
+正文分析包含 244 个复合体、1,220 条链和 199,668 个残基。
+
+孤立链由同一结合态拓扑直接删除其他链的 \texttt{ATOM} 记录得到，目标链
+坐标不作能量最小化、结构预测或重新对齐。这一设计最大程度保持目标链自身
+几何不变，但仍同时改变了跨链接触、输入总长度和全局注意力归一化。尤其是
+完整 ITrace 输入中有 235/245 个复合体超过预训练配置的 768 残基上限，而
+孤立链通常回到训练长度范围，约 9--15 残基的孤立抗原肽又位于另一个极端。
+因此，正文把完整减孤立称为“上下文响应”，不把它解释为真实 apo/holo
+$\Delta$RMSF 或纯粹的跨链边贡献。
+
+\subsection{正文分层结果的完整数值}
+
+表 \ref{tab:itrace-overall} 给出完整复合体 FlexPPI 与逐链 FastProtFlex 的全部
+共同指标，表 \ref{tab:itrace-context-ablation} 给出同一 FlexPPI 检查点的
+完整复合体/孤立链消融。表 \ref{tab:itrace-context-sensitivity} 报告排除短
+抗原肽后的结果，表 \ref{tab:itrace-regions} 报告区域分层结果。
+
+\input{tables/itrace_overall}
+
+\input{tables/itrace_context_ablation}
+
+\input{tables/itrace_context_sensitivity}
+
+\input{tables/itrace_regions}
+
+\subsection{可审计数据产物}
+
+正文表格和图的精简数值源随论文保存在
+{\footnotesize\path{data/itrace/summary_metrics.csv}}、
+{\footnotesize\path{data/itrace/paired_tests.csv}}、
+{\footnotesize\path{data/itrace/table_overall.csv}}、
+{\footnotesize\path{data/itrace/table_regions.csv}} 和
+{\footnotesize\path{data/itrace/cdr3_diagnostic_per_complex.csv}}。完整逐残基预测、
+逐复合体指标、bootstrap 抽样结果及运行日志保留在项目的
+{\footnotesize\path{output/itrace_benchmark/}} 中；论文只复制生成图表和核验结论所需的
+精简原始表，避免把模型缓存或中间二进制文件误当成实验数据。
+
+上下文消融的图形源数据另存于
+{\footnotesize\path{data/itrace_context/}}，包括 244 个复合体的配对
+Spearman、七项指标优势、五类链的分层结果和完整的 3,660 条
+“复合体--链角色--输入条件”RMSF 尺度记录。生成脚本为
+{\footnotesize\path{figures/make_itrace_context_ablation_figure.py}}，
+完整统计与数据来源记录为
+{\footnotesize\path{figures/fig_itrace_context_ablation_statistics.json}}；
+未经精简的逐残基预测和推理日志保留在
+{\footnotesize\path{output/itrace_zero_shot_context/}}。

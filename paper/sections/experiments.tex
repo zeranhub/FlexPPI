@@ -1,145 +1,212 @@
 % !TeX root = ../paper.tex
 
-\section{实验}
+\section{实验与结果}
 
-\subsection{实验状态与证据等级}
+\subsection{评价设计}
 
-本文使用 ``已完成''、``进行中'' 和 ``计划'' 三种状态。已完成结果均来自
-仓库中可重建的 JSON/CSV 产物；但当前训练器没有完全未接触的测试划分，内部
-验证集参与了最优 checkpoint 选择，因此这些结果只用于能力诊断，不能写成
-独立测试或 state-of-the-art。表 \ref{tab:experiment-status} 汇总了当前状态。
+\subsubsection{内部状态与配对任务}
 
-\input{tables/experiment_status}
+绝对状态任务在每个蛋白质内部计算 Pearson、Spearman、MAE、RMSE 和一致性相关
+系数，再对蛋白质等权平均；混合全部残基的 pooled 指标仅作补充，以避免长蛋白
+支配结果。真实 RMSF 最高的 20\% 残基被定义为高柔性集合，并以 AUROC、平均精确率
+（average precision，AP）和 Precision@$K$ 评价检出能力。内部验证集参与了最佳
+检查点选择，因此相应结果用于表征模型能力和微调影响，不视为独立测试。
 
-\subsection{评价协议}
+配对响应任务并列比较专用响应头、holo 与 apo 状态预测的直接相减，以及恒为零的
+无变化基线。除回归指标外，RMSF 和 $H_\chi$ 采用宽度为 0.1 的 dead zone，将残基
+划分为刚化、中性和增柔三类，并报告 macro-F1、真实活跃残基的符号准确率及绝对
+变化最大 20\% 残基的检出。置信区间和显著性检验均以蛋白质或复合体为独立单位，
+避免同一结构中的多个残基产生伪重复。
 
-绝对状态任务先在每个蛋白内计算 Pearson、Spearman、MAE、RMSE 和一致性相关
-系数，再让每个蛋白等权平均；所有残基混合计算的 pooled 指标只作补充，避免
-长蛋白支配结果。将每个蛋白真实 RMSF 最高的 20\% 残基定义为高柔性集合，
-报告 AUROC、average precision（AP）和 Precision@K。配对响应除回归指标外，
-在 RMSF 和侧链熵上使用 0.1 的 dead zone，把残基分成刚化、中性和增柔三类，
-报告 macro-F1、真实活跃残基的符号准确率以及绝对变化最大 20\% 残基的检出。
-所有置信区间均以蛋白或复合体为重采样单位进行配对 bootstrap。
+\subsubsection{ITrace 外部评估协议}
 
-\subsection{已经完成：标签流水线与绝对状态诊断}
+ITrace 包含 245 个 TCR--pMHC 复合体，每个体系由 MHC、$\beta_2$m、抗原肽、
+TCR$\alpha$ 和 TCR$\beta$ 五条链组成，并具有三条独立的 200\,ns 全原子轨迹
+\footnote{\url{https://itrace.life/}}。对每条轨迹，五条链分别对齐到各自参考构象，
+随后计算逐残基 C$\alpha$ RMSF；三条轨迹在残基层面取平均作为 MD 真值。逐链对齐
+消除了链间刚体运动，使标签集中反映链内构象涨落。
 
-ATLAS 的 1,938 个体系已经全部完成索引，包含 444,240 个具有三重复 RMSF 的
-残基；DynaRepo 的 922 个体系包含 366,777 个 RMSF、294,358 个侧链构象熵和
-51,459 个 SASA 标签。当前绝对状态验证包含 276 个系统。表
-\ref{tab:state-head-results} 表明预训练模型已经学习到稳定的蛋白内柔性排序，
-其中侧链构象熵最强；但是配对响应微调使 RMSF 和侧链熵下降，并使稀疏的 SASA
-任务发生灾难性遗忘。这一结果支持在后续亲和力训练中冻结底层表示、回放旧任务
-并采用多目标 checkpoint 选择。
+冻结的预训练模型不读取轨迹，只读取 run-1 的第 0 帧。每个复合体生成八种输入：
+完整五链结构、pMHC 子复合物、TCR$\alpha\beta$ 二聚体和五条孤立链。删链时保留
+原子的坐标、编号和条件信息，不执行重新对齐、能量最小化或结构预测。完整输入与
+孤立链输入用于评价伙伴上下文和单链基线；完整体减 pMHC、完整体减 TCR 二聚体分别
+描述两侧残基对加入另一伙伴的模型响应。由于保留坐标均来自结合态，这些差值不代表
+真实 apo/holo 变化。
+
+每次前向计算同时保存 RMSF、$H_\chi$ 和 SASA 的均值与预测标准差。ITrace 只提供
+RMSF 真值，因此外部准确性评价限于 RMSF；$H_\chi$ 和 SASA 只用于形成可由后续
+配对轨迹检验的模型假设。Ala 和 Gly 没有可定义的侧链 $\chi$ 角，不参与
+$H_\chi$ 生物学解释。抗原肽按 N 端到 C 端编号为 P1--P$\Omega$；任意肽--TCR
+重原子距离不超过 $5\,\text{\AA}$ 定义为直接接触。置信区间使用 2,000 次复合体
+cluster bootstrap。
+
+训练清单与 ITrace 唯一精确 PDB 重叠为 3KXF，主分析排除该体系，保留 244 个
+复合体、2,278 个抗原肽残基和 154 个九肽。完整复合物 FlexPPI 还与逐链
+FastProtFlex\cite{praznikar2026fast} 在共同残基上比较。两种方法先计算链内指标，
+再对五条链和复合体等权平均。
+
+\subsection{内部绝对状态诊断}
+
+ATLAS 的 1,938 个体系产生 444,240 个三重复 RMSF 标签；DynaRepo 的 922 个体系
+产生 366,777 个 RMSF、294,358 个 $H_\chi$ 和 51,459 个 SASA 标签。当前内部
+验证包含 276 个体系。表~\ref{tab:state-head-results} 显示，预训练检查点已学习到
+稳定的蛋白质内排序：RMSF、$H_\chi$ 和 SASA 的蛋白等权 Spearman 分别为
+0.811、0.928 和 0.871。配对响应微调后，三者分别降至 0.750、0.919 和
+$-0.096$；其中 SASA 的 MAE 从 $16.80\,\text{\AA}^2$ 增至
+$76.88\,\text{\AA}^2$。因此，响应微调不仅改变了响应头，也破坏了稀疏 SASA
+任务的状态表示。后文所有 ITrace 结果均使用微调前冻结的预训练检查点。
 
 \input{tables/state_head_results}
 
-\subsection{已经完成：与 FastProtFlex 的共同静态任务}
-
-FastProtFlex 输出每条蛋白内部标准化的相对柔性，不能参加以
-$\text{\AA}$ 为单位的绝对 MAE 比较。表 \ref{tab:rmsf-results} 因而只报告两种
-方法都能回答的排序、标准化误差和高柔性检出。ATLAS 的 191 个共同蛋白上，
-FlexPPI 的蛋白等权 Spearman 为 0.8205，FastProtFlex 为 0.7984；DynaRepo
-单链和复合体也得到同方向差异。复合体分层进一步显示，FlexPPI 的总体优势主要
-来自非界面区域，界面 Spearman 尚未超过 FastProtFlex，因此不能宣称已经解决
-界面柔性预测。ATLAS 参与了两种模型的开发，DynaRepo 又存在训练域不对称，
-这些比较仍属于同域诊断。
+FastProtFlex 输出蛋白质内部标准化的相对柔性，不能与以 \AA{} 为单位的绝对误差
+直接比较。表~\ref{tab:rmsf-results} 因而只报告两种方法共同支持的排序、标准化
+误差和高柔性检出。在 191 个 ATLAS 共同蛋白上，FlexPPI 的蛋白等权 Spearman
+为 0.8205，FastProtFlex 为 0.7984；DynaRepo 单链和复合体分层得到同方向差异。
+不过，ATLAS 参与了两种模型开发，DynaRepo 又存在训练域不对称，因此这些结果只
+说明模型在内部/同域任务上的相对行为，外部结论以下一节 ITrace 为准。
 
 \input{tables/rmsf_results}
 
-\subsection{已经完成：配对响应诊断}
+\Needspace{12\baselineskip}
+\subsection{ITrace 外部 MD 评估}
 
-当前 test53 配对清单中 37 对全部参与微调流程，模型选择验证只含 7 个体系、
-2,124 个有效 $\Delta$RMSF 残基和 1,691 个有效
-$\Delta H_\chi$ 残基。表 \ref{tab:response-results} 显示，直接响应头把
-$\Delta$RMSF MAE 从零变化的 $0.221\,\text{\AA}$ 降到
-$0.209\,\text{\AA}$，改善 5.2\%，且比两个状态直接相减的
-$0.275\,\text{\AA}$ 更低；然而逐蛋白 Spearman 只有 0.160，活跃残基符号
-准确率为 34.3\%，增柔类别 F1 只有 0.063。$\Delta H_\chi$ 响应头的 MAE
-还差于零变化基线，当前也没有配对 $\Delta$SASA 标签。因此，模型目前只对
-$\Delta$RMSF 提供弱的平均误差增益，尚未可靠学会变化方向或强变化尾部。
+\subsubsection{MD 真值显示界面两侧具有不同的动力学分工}
 
-\input{tables/response_results}
+在 244 个外部复合体中，RMSF 在每条链内部独立标准化；零表示该链平均水平，负值
+表示相对更刚，正值表示相对更柔。MHC 的 TCR 接触面均值为 $-0.529$，而
+TCR$\alpha$ 和 TCR$\beta$ 接触面分别为 $+0.096$ 和 $+0.419$。TCR$\beta$
+相对 TCR$\alpha$ 的差为 $0.323$（95\% CI $0.258$--$0.388$；配对 Wilcoxon
+$p=2.4\times10^{-22}$）。因此，结合态界面并非两侧同步刚化：pMHC 一侧相对稳定，
+TCR 一侧仍保留构象活动，且活动在 $\beta$ 链更强。
 
-\subsection{已经完成：TCR3D 外部代理}
-
-在排除精确训练 PDB 重叠后，TCR3D 共成功评测 1,189 条 TCR $\alpha/\beta$
-链和 129,268 个残基。预测 RMSF 与晶体 B-factor 换算代理的每链等权
-Spearman 为 0.389，95\% bootstrap 区间为 $[0.378,0.397]$；识别 CDR3
-相对框架区的 pooled AUROC 为 0.612、AP 为 0.332，而随机 AP 为 0.144。
-该结果说明模型保留了中等程度的跨域局部排序信号，但 B-factor 同时受到晶格、
-分辨率和精修影响，TCR3D 也没有配对 MD，故本实验不能作为 MD-RMSF 或结合
-响应真值。将数据域编码从 ATLAS 改为 DynaRepo 时，RMSF 平均绝对漂移达到
-$0.278\,\text{\AA}$，说明后续应删除数据集身份这一非物理条件，改用温度、
-离子强度、力场和时间窗等可测变量。
+CDR 分层进一步定位了这种链别差异。CDR1$\beta$ 和 CDR2$\beta$ 的链内标准化
+RMSF 分别为 $+0.329$ 和 $+0.233$，对应的 $\alpha$ 环接近链平均；
+CDR3$\alpha$ 为 $-0.340$，而 CDR3$\beta$ 为 $+0.052$。二者差值为 $0.391$
+（95\% CI $0.346$--$0.437$；$p=1.3\times10^{-34}$）。这组结果定义了模型
+需要恢复的区域级模式：CDR3 的相对稳定主要来自 $\alpha$ 链，而
+CDR1/2$\beta$ 和 TCR$\beta$ 接触面仍保持较高柔性。
 
 \begin{figure}[!htbp]
   \centering
-  \includegraphics[width=\textwidth]{fig_completed_experiments.pdf}
-  \caption{已完成柔性实验的统一可视化。所有点估计均先在单个蛋白、复合物或体系
-  内计算，再对体系等权平均；误差线为归档结果中的非参数 bootstrap 95\% 置信
-  区间。（a）预训练与配对响应微调后的绝对状态预测能力，仅展示 RMSF 与侧链
-  构象熵 $H_\chi$，差值定义为微调减预训练。（b）FlexPPI 与 FastProtFlex
-  在共同可回答的静态 RMSF 排序任务上的比较，右侧数字为
-  $\rho_{\mathrm{FlexPPI}}-\rho_{\mathrm{FastProtFlex}}$。（c）7 个配对体系上
-  响应头、状态相减和零变化基线的体系等权 MAE；竖虚线对应零变化基线，误差线
-  反映当前小样本下的不确定性。（d）TCR3D 中 1,187 条可计算相关性的链的
-  B-factor 代理 Spearman 分布；橙色点为链等权均值，灰色线为其 95\% 置信
-  区间。TCR3D 共评测 1,189 条链，其中 2 条因代理值或预测值为常数而不能计算
-  Spearman。面板（a）--（c）属于内部验证或模型选择诊断，面板（d）使用晶体
-  B-factor 代理而非 MD 真值，因而均不作为独立测试集上的最终性能声明。}
-  \label{fig:completed-experiments}
+  \includegraphics[width=\textwidth]{fig_itrace_biology.pdf}
+  \caption{\textbf{ITrace 界面动力学及完整上下文模型的区域偏差。}
+  （a）MHC、TCR$\alpha$ 和 TCR$\beta$ 接触残基相对所属链平均 RMSF 的位置；
+  （b）同一复合体中，完整输入相对孤立输入在非界面与界面的 Spearman 变化；灰线
+  连接同一复合体；（c）六类 TCR CDR 环的链内标准化 RMSF。点表示 244 个复合体
+  的等权平均，误差线为复合体 bootstrap 95\% CI。z-score 在每条链及每种真值或
+  预测内独立计算，表示结合态结构内部的相对柔性，而非 apo/holo 变化。}
+  \label{fig:itrace-biology}
 \end{figure}
-\clearpage
 
-\subsection{必须补做：冻结的外部柔性测试}
+\subsubsection{静态完整复合物只能部分恢复抗原肽的残基排序}
 
-正式柔性结论需要建立完全未参与训练、调参和 checkpoint 选择的外部 MD 测试集。
-候选体系在进入测试前必须同时与全部训练链进行 MMseqs2 序列搜索以及
-Foldseek/CATH/ECOD 结构拓扑搜索，至少剔除高于 30\% 序列一致性的近同源，
-并分别报告 ``新序列但旧折叠'' 和 ``新折叠''。每个体系应包含不少于三条独立
-初速度的重复轨迹，在统一温度、力场、水模型、离子条件、平衡流程和生产时长下
-生成标签；重复 A 对重复 B 的性能作为经验噪声上限。所有方法统一使用
-$C_\alpha$、链级 Kabsch 对齐、共同残基掩码和缺失残基规则。
+在 2,278 个抗原肽残基上，FlexPPI 预测与 MD 真值的 pooled Spearman 为
+$0.290$，MAE 为 $0.225\,\text{\AA}$，并平均高估 $0.171\,\text{\AA}$。
+由于 pooled 相关混合了不同复合体的尺度差异，主要终点采用逐复合体肽内排序：
+平均 Spearman 为 $0.302$（95\% CI $0.256$--$0.345$），77.9\% 的复合体取
+正值，但仅 33.2\% 达到 $\rho\geq0.5$。最活跃和最受限残基的精确命中率分别为
+34.0\% 和 23.8\%。模型包含可重复的肽内排序信号，但其强度不足以支持逐复合体
+的可靠残基定位。
 
-第一轮必须运行常数、氨基酸类型、二级结构、SASA、反向 pLDDT、GNM、ANM、
-CABS-flex、FastProtFlex、FlexPred-SVR、PEGASUS、Flexpert-Seq 和
-Flexpert-3D。第二轮加入 BackFlip、RocketSHP 和 RMSF-net 的 PDB-only 分支。
-绝对输出模型参加 MAE/RMSE/CCC；相对输出模型只参加每蛋白相关、排序和
-top-$k$ 检出。BackFlip 的局部对齐标签与 FlexPPI 的链级对齐标签分开报告，
-RMSF-net 完整 cryo-EM 模型进入额外实验信息轨道。
+154 个九肽的群体均值显示了具体的正确与错误模式（图~\ref{fig:itrace-residue-biology}a）。
+MD 中 P1 和 P6 相对活跃，P2、P5 和 P8 相对受限。模型正确恢复 P1 的主要活动峰
+及 P2/P8 的受限方向，却把 P4 预测为活动位点、遗漏 P6 活动峰，并把略活跃的 P9
+预测为受限。九个位置均值的 Pearson 为 $0.684$（$p=0.042$），Spearman 仅为
+$0.300$（$p=0.433$），说明模型捕获了部分曲线形状，但未恢复完整的位置次序。
 
-\subsection{必须补做：独立 apo/holo 响应测试}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{fig_itrace_residue_biology.pdf}
+  \caption{\textbf{抗原肽 RMSF 预测与冻结模型的 TCR 上下文响应。}
+  （a）154 个九肽复合体的 MD 与完整复合物 FlexPPI 肽内标准化 RMSF；阴影为复合体
+  bootstrap 95\% CI。（b）各位置与 TCR 的直接接触比例，以及固定坐标完整
+  TCR--pMHC 减 pMHC 输入的预测 $\Delta$RMSF、$\Delta H_\chi$ 和
+  $\Delta$SASA；粗实线为队列均值，细虚线为含相同 ALHGGWTTK 肽的
+  7L1D/7RRG。（c）先去除肽长度和位置均值，再按氨基酸类型汇总的上下文响应残差。
+  面板（a）使用 ITrace MD 真值直接评价模型；（b,c）仅表示冻结模型输出，且
+  $H_\chi$/SASA 没有 ITrace 真值。Ala/Gly 的 $H_\chi$ 不作解释。}
+  \label{fig:itrace-residue-biology}
+\end{figure}
 
-需要重新冻结一套从未进入响应微调和轮次选择的 apo/holo 测试集，并补齐两态
-RMSF、侧链熵和 SASA 标签。界面定义从当前的跨链
-$C_\alpha\leq8\,\text{\AA}$ 升级为任意重原子
-$\leq5\,\text{\AA}$，另设 $5$--$12\,\text{\AA}$ 近界面和远端变构区域。
-响应头、状态相减和零变化三种方法并列；每种训练至少使用五个随机种子，报告
-蛋白级 bootstrap 区间、配对显著性检验、方向 macro-F1、强变化 AP、推理时间
-和失败样本。还需比较冻结编码器、顶部小学习率解冻、旧任务 replay 和多任务
-checkpoint 选择，以确定哪种方案能在学习响应时保留绝对状态能力。
+\paragraph{接触信息的预测一致性有限。}
+在 236 个同时含接触与非接触肽残基的复合体中，MD 的接触残基相对非接触残基
+平均低 $0.0268\,\text{\AA}$ RMSF（95\% CI $0.0145$--$0.0388$），模型预测
+的差值为 $0.0102\,\text{\AA}$（$0.0024$--$0.0187$）。然而，两种差值分别仅
+在 56.8\% 和 52.1\% 的单个复合体中呈队列平均方向；跨复合体 Spearman 为
+$0.371$，模型与 MD 的方向一致率为 64.8\%。因此，模型恢复了弱的队列平均接触
+约束，但尚不能稳定判断具体 TCR--peptide 复合体中的接触残基是否更柔或更刚。
 
-\subsection{计划实验：由柔性响应预测结合亲和力}
+\subsubsection{固定坐标消融将 P4--P8 识别为主要上下文响应区}
 
-亲和力实验分成两个任务。任务一预测复合物的
-$\Delta G_{\mathrm{bind}}^{\circ}$；任务二预测突变或条件变化造成的
-$\Delta\Delta G$。所有 $K_d/K_i$ 标签转换为统一的
-$\mathrm{kcal\,mol^{-1}}$，保存温度、pH、离子强度、测量方法和不等式标签；
-无法确定温度的样本单列或使用带缺失条件的模型，不能静默假设所有实验等价。
-数据划分以复合物家族和界面相似性为单位，任何相同或近同源链、相同界面模板
-及同一突变的正反记录不得跨越训练、验证和测试。
+在 pMHC 输入中加入 TCR 后，九肽 P4、P5 和 P6 的预测 $\Delta$RMSF 分别为
+$-0.332$、$-0.321$ 和 $-0.314\,\text{\AA}$，明显大于 P1、P2 和 P9 的
+$-0.053$、$-0.074$ 和 $-0.090\,\text{\AA}$。$\Delta H_\chi$ 主要集中于
+P4/P5 和 P7/P8，$\Delta$SASA 则在 P4、P5 和 P8 最强。三种输出共同指向 P4--P8，
+说明模型响应并非对整条肽进行均匀缩放，而是定位到 TCR 接触更密集的中央区域。
 
-对每个样本按式 \eqref{eq:two-sided-response} 生成 A、B 双侧特征。主模型使用
-式 \eqref{eq:symmetric-pooling} 的 A/B 对称表示；第一阶段冻结 FlexPPI，
-只训练亲和力头，第二阶段小学习率解冻顶部表示块并保留
-$\mathcal L_{\mathrm{pair}}$。主指标为复合物等权 MAE、RMSE、Pearson、
-Spearman、$R^2$、CCC 和预测区间覆盖率；$\Delta\Delta G$ 另外报告稳定化/
-去稳定化方向准确率、macro-F1 和反向反对称误差。
+残基级接触对这一模式具有近乎确定性的影响。在同一复合体内，直接接触残基的
+上下文响应相对非接触残基额外降低 $0.188\,\text{\AA}$ RMSF、0.157 的
+$H_\chi$ 和 $18.57\,\text{\AA}^2$ SASA；三种差异分别在 99.15\%、99.13\%
+和 99.15\% 的可配对复合体中取相同方向。残基到 TCR 的最短重原子距离与三类
+响应的逐复合体平均 Spearman 分别为 0.630、0.500 和 0.668。该高度一致性证明
+模型在使用接触几何，但不能证明输出符合真实 apo/holo 动力学；前一小节较弱的
+模型--MD 接触一致性正好给出了这一限制。
 
-亲和力消融至少包含：（1）仅静态界面几何与理化特征；（2）仅绝对 RMSF、
-侧链熵和 SASA；（3）仅直接柔性响应；（4）仅状态相减；（5）仅残基隐藏表示；
-（6）静态与动态全部特征；（7）逐一移除 RMSF、侧链熵或 SASA；（8）真实
-apo/holo 与从复合体删除伙伴的伪 apo 对照；（9）预训练状态 checkpoint、
-响应微调 checkpoint 和带 replay 的联合 checkpoint。只有当 ``静态+动态''
-在冻结同源/界面测试集上稳定超过 ``仅静态''，且多个随机种子的改进置信区间
-不跨零，才能声称柔性响应为亲和力预测提供了增量价值。
+含相同 PIK3CA 九肽 ALHGGWTTK 的 7L1D 与 7RRG 提供了结构级复核。两种 TCR
+背景下，P3--P8 均比 P1/P2/P9 具有更强的负向响应；九个位置的 RMSF 和 SASA
+响应排序在两结构间的 Spearman 分别为 0.917 和 0.817，六个可解释
+$H_\chi$ 位置为 0.771（图~\ref{fig:itrace-residue-biology}b）。该个案说明中央
+肽段模式并非由单一结构产生，但仍属于模型内部可重复性，而非外部准确性证据。
+
+去除肽长度和位置均值后，氨基酸类型对主链 RMSF 响应的残差幅度不超过约
+$0.055\,\text{\AA}$，小于位置与接触效应；侧链量表现出更强的类型差异，Phe、
+Gln 和 Arg 的 $H_\chi$ 下降较多，而 Pro、Thr、Val 和 Ser 保留较多侧链状态
+（图~\ref{fig:itrace-residue-biology}c）。这些差异描述模型对静态局部化学环境的
+条件响应，不能换算为热力学构象熵。
+
+\subsubsection{完整上下文改善总体排序，却过度压低 TCR 界面柔性}
+
+排除抗原肽后，7,370 个界面残基的完整复合物预测均低于同一检查点的孤立链预测，
+平均下降 $0.577\,\text{\AA}$。这一修正在 MHC 侧方向正确：MHC 接触面的孤立
+预测为 $+0.007$，完整输入为 $-0.602$，接近 MD 的 $-0.529$。但是，同一修正
+也被施加到 TCR：TCR$\alpha$ 和 TCR$\beta$ 接触面由孤立输入的 $+0.689$、
+$+1.199$ 变为 $-0.216$、$-0.321$，与 MD 的 $+0.096$、$+0.419$ 方向相反。
+
+CDR 分层得到一致结论。孤立链虽高估 CDR3$\alpha$ 和 CDR3$\beta$ 柔性，仍保留
+$\beta$ 高于 $\alpha$ 的差异；完整输入将二者同时压到约 $-0.52$，使 MD 中
+0.391 的链间差异缩小为 0.015，并将较柔的 CDR1/2$\beta$ 预测为略低于链平均。
+因此，完整上下文捕获了粗粒度伙伴约束，但将 pMHC 侧适用的相对刚性过度推广到
+TCR$\beta$ 接触面和 CDR1/2$\beta$。
+
+总体排序增益主要产生于非界面。排除抗原肽后，完整输入相对孤立输入的 Spearman
+变化在非界面为 $+0.030$（95\% CI $+0.028$--$+0.032$），在 $8\,\text{\AA}$
+界面为 $-0.076$（95\% CI $-0.096$--$-0.057$）；配对差异为 $-0.106$
+（$p=3.2\times10^{-20}$；图~\ref{fig:itrace-biology}b）。非肽链总体 Spearman
+由 0.830 升至 0.849，但 MAE 由 $0.348\,\text{\AA}$ 增至
+$0.376\,\text{\AA}$，说明排序改善伴随尺度失准和过度刚化。约 9--15 个残基的
+孤立肽会产生异常大的 RMSF，故未用于这一界面机制判断。
+
+与独立单链方法比较时，完整复合物 FlexPPI 的平均 Spearman 为 0.740，高于
+FastProtFlex 的 0.685，并在 68.4\% 的复合体中占优（附录表
+\ref{tab:itrace-overall}）。但 FastProtFlex 在 CDR3 内部的 Spearman 为 0.894，
+高于 FlexPPI 的 0.812。模型在全结构层面的平均优势因此不能替代对界面、链别和
+功能区的分层检验。
+
+改用 ITrace 官方整复合体对齐标签或加回 3KXF 后，上述方向均保持不变，覆盖率、
+重复可靠性和运行时间见附录图~\ref{fig:itrace-sensitivity}。不过，235/245 个
+ITrace 复合体超过预训练最大长度 768，且当前只排除了精确 PDB 重叠，尚未完成
+序列与结构近同源隔离。因此，ITrace 支持精确 PDB 外部队列上的动力学评估，不支持
+严格的新序列或新折叠泛化声明。
+
+\subsection{配对响应头的内部诊断}
+
+现有 DynaRepo 配对清单包含 37 对体系，全部参与微调；模型选择验证集仅含 7 个
+体系、2,124 个有效 $\Delta$RMSF 残基和 1,691 个有效 $\Delta H_\chi$ 残基。
+表~\ref{tab:response-results} 显示，响应头将 $\Delta$RMSF MAE 从零变化基线的
+$0.221\,\text{\AA}$ 降至 $0.209\,\text{\AA}$，相对改善 5.2\%，并优于状态
+直接相减的 $0.275\,\text{\AA}$。但其逐蛋白 Spearman 仅为 0.160，活跃残基
+符号准确率为 34.3\%，增柔类别 F1 为 0.063。$\Delta H_\chi$ 响应头的 MAE
+高于零变化基线，且当前没有成对 $\Delta$SASA 标签。现有证据仅支持响应头对
+$\Delta$RMSF 平均误差的弱改善，尚不足以证明其能够可靠预测变化方向或强响应残基。
+
+\input{tables/response_results}

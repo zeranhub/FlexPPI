@@ -1,0 +1,26 @@
+% !TeX root = ../paper.tex
+
+\begin{table}[H]
+  \centering
+  \caption{完整复合体 FlexPPI 与逐链 FastProtFlex 在 244 个 ITrace
+  复合体上的等权平均结果。}
+  \label{tab:itrace-overall}
+  \small
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{lrrrrrrr}
+    \toprule
+    方法 &
+    Spearman $\uparrow$ & Pearson $\uparrow$ &
+    z-MAE $\downarrow$ & z-RMSE $\downarrow$ &
+    AUROC $\uparrow$ & AP $\uparrow$ & P@K $\uparrow$ \\
+    \midrule
+    FastProtFlex
+      & 0.685 & 0.619 & 0.626 & 0.828 & 0.841 & 0.678 & 0.581 \\
+    FlexPPI
+      & \textbf{0.740} & \textbf{0.677} &
+        \textbf{0.531} & \textbf{0.753} &
+        \textbf{0.871} & \textbf{0.735} & \textbf{0.631} \\
+    \bottomrule
+  \end{tabular}%
+  }
+\end{table}

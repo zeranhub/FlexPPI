@@ -1,0 +1,36 @@
+% !TeX root = ../paper.tex
+
+\begin{table}[H]
+  \centering
+  \caption{短肽排除敏感性分析。Spearman 优势为完整减孤立；绝对 MAE
+  优势为孤立减完整，故两列中的正优势均表示完整复合体输入更优。
+  ``非肽链'' 对每个复合体的 MHC、$\beta_2$m、TCR$\alpha$ 和
+  TCR$\beta$ 四条链等权平均。}
+  \label{tab:itrace-context-sensitivity}
+  \small
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{llrrrrl}
+    \toprule
+    队列 & 指标 &
+    完整复合体 &
+    孤立链 &
+    完整输入优势 &
+    95\% CI &
+    双侧 Wilcoxon $p$ \\
+    \midrule
+    全部五链
+      & Spearman
+      & 0.740 & 0.683 & 0.057 & $[0.045,0.069]$ & $1.47\times10^{-15}$ \\
+    全部五链
+      & 绝对 MAE（\AA）
+      & 0.346 & 1.865 & 1.519 & $[1.506,1.531]$ & $8.89\times10^{-42}$ \\
+    非肽链
+      & Spearman
+      & 0.849 & 0.830 & 0.019 & $[0.017,0.022]$ & $1.11\times10^{-27}$ \\
+    非肽链
+      & 绝对 MAE（\AA）
+      & 0.376 & 0.348 & $-0.028$ & $[-0.031,-0.025]$ & $3.21\times10^{-33}$ \\
+    \bottomrule
+  \end{tabular}%
+  }
+\end{table}

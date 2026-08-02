@@ -1,0 +1,42 @@
+% !TeX root = ../paper.tex
+
+\section{相关工作}
+
+\subsection{蛋白质柔性数据与静态结构预测}
+
+蛋白质柔性可由晶体 B 因子、NMR 构象集合、粗粒化模拟或全原子 MD 近似，但这些
+信号对应的时间尺度、实验条件和物理含义并不相同。ATLAS 采用标准化协议和重复轨迹
+覆盖结构多样的蛋白质，为跨体系比较 RMSF 提供了统一来源
+\cite{vandermeersche2024atlas}；DynaRepo 将数据范围扩展到蛋白质复合物及配对的
+瞬时相互作用体系，并提供更长的重复模拟\cite{mokhtari2026dynarepo}。在预测方法上，
+FastProtFlex 以原子图的 graphlet degree vector 构造轻量线性模型，强调速度和局部
+拓扑可解释性\cite{praznikar2026fast}；Flexpert-Seq/Flexpert-3D 借助预训练蛋白语言
+模型分别从序列或序列--结构联合输入预测 RMSF\cite{kouba2025flexpert}。这些工作主要
+评价单个蛋白内部的绝对柔性排序。FlexPPI 与之互补：它以多链结构为输入，同时预测
+三类动态描述符，并将伙伴上下文作为需要独立审计的变量。
+
+\subsection{几何深度学习与蛋白质界面建模}
+
+三维蛋白质模型必须处理全局坐标系的任意性。SE(3)-Transformer 通过张量场和等变
+注意力传播方向信息\cite{fuchs2020se3}；AlphaFold2 的 IPA 则在残基局部框架中生成
+标量与三维点查询，并以全局点间距离构造不变注意力分数
+\cite{jumper2021alphafold}。FlexPPI 采用后一条路线：主链框架在编码过程中固定，
+网络输出对整体旋转和平移不变的逐残基标量，而不是更新原子坐标。
+
+针对蛋白质相互作用，DeepInteract 通过随层演化的残基对几何预测伙伴特异的界面
+接触\cite{morehead2022deepinteract}；PeSTo 直接处理原子点云，以标量--向量几何
+Transformer 识别多类分子界面\cite{krapp2023pesto}；HERN 则使用残基/原子双层
+等变图迭代优化抗体--抗原界面\cite{jin2022hern}。这些模型的目标分别是接触分类、
+界面识别或结构生成，不能直接给出热涨落幅度。FlexPPI 研究的是另一问题：静态几何
+中的伙伴信息能否预测 MD 定义的残基级柔性，以及该信息在界面两侧是否具有正确方向。
+
+\subsection{结合前后变化与热力学边界}
+
+结合相关变化至少包含三个不同层次：静态构象差异、构象集合或涨落的变化，以及结合
+自由能。对抗体 CDR 的大规模结构比较表明，大多数非 H3 环在结合前后仅发生有限
+主链变化，而局部构象改变与相对框架位移需要分别度量\cite{liu2024cdr}。自由能模型
+还必须显式比较结合态与游离态的热力学循环；例如 Boltzmann-aligned inverse folding
+方法利用结合/游离结构上的序列似然估计突变 $\Delta\Delta G$
+\cite{jiao2024boltzmann}。因此，单个结构上的 RMSF 或删链前后的预测差值都不足以
+定义结合自由能。本文保留配对响应头作为诊断性扩展，但主要结论来自冻结状态模型和
+ITrace 外部 RMSF 真值；亲和力建模仅作为后续方向讨论。

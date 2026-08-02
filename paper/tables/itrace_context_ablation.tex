@@ -1,0 +1,40 @@
+% !TeX root = ../paper.tex
+
+\begin{table}[H]
+  \centering
+  \caption{同一冻结 FlexPPI 检查点的完整复合体与孤立链输入比较。
+  ``完整输入优势'' 对误差指标取反，因此正值均表示完整输入更优。}
+  \label{tab:itrace-context-ablation}
+  \small
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{lrrrrl}
+    \toprule
+    指标 &
+    完整复合体 &
+    孤立链 &
+    完整输入优势 &
+    95\% CI &
+    双侧 Wilcoxon $p$ \\
+    \midrule
+    Spearman $\uparrow$
+      & 0.740 & 0.683 & 0.057 & $[0.045,0.069]$ & $1.47\times10^{-15}$ \\
+    Pearson $\uparrow$
+      & 0.677 & 0.621 & 0.057 & $[0.044,0.069]$ & $1.10\times10^{-14}$ \\
+    z-MAE $\downarrow$
+      & 0.531 & 0.571 & 0.040 & $[0.030,0.049]$ & $2.46\times10^{-14}$ \\
+    z-RMSE $\downarrow$
+      & 0.753 & 0.813 & 0.060 & $[0.048,0.071]$ & $2.31\times10^{-19}$ \\
+    Top-20\% AUROC $\uparrow$
+      & 0.871 & 0.836 & 0.035 & $[0.026,0.044]$ & $9.33\times10^{-13}$ \\
+    Top-20\% AP $\uparrow$
+      & 0.735 & 0.658 & 0.077 & $[0.068,0.085]$ & $5.42\times10^{-33}$ \\
+    Top-20\% P@K $\uparrow$
+      & 0.631 & 0.576 & 0.056 & $[0.045,0.066]$ & $1.08\times10^{-18}$ \\
+    绝对 MAE（\AA）$\downarrow$
+      & 0.346 & 1.865 & 1.519 & $[1.506,1.531]$ & $8.89\times10^{-42}$ \\
+    绝对 RMSE（\AA）$\downarrow$
+      & 0.475 & 1.998 & 1.523 & $[1.510,1.535]$ & $8.89\times10^{-42}$ \\
+    \bottomrule
+  \end{tabular}%
+  }
+\end{table}

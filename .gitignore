@@ -30,6 +30,11 @@ checkpoints/
 # LaTeX and rendering intermediates; keep paper.pdf and figure exports
 paper/tmp/
 paper/.render_check*/
+paper/_qa_render*/
+paper/figures/qa_render/
+paper/figures/*.drawio.bkp
+paper/figures/*_before_revision.png
+paper/figures/*_review.png
 paper/*.aux
 paper/*.log
 paper/*.out

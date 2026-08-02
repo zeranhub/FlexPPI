@@ -1,0 +1,40 @@
+{
+  "comparison": "complete TCR-pMHC minus pMHC subset at identical retained coordinates",
+  "peptide_sequence": "ALHGGWTTK",
+  "complexes": [
+    "7L1D",
+    "7RRG"
+  ],
+  "chi_entropy_rule": "Ala P1 and Gly P4/P5 are excluded from H_chi interpretation because their training labels have no defined chi torsion.",
+  "position_pattern_replication": {
+    "rmsf": {
+      "position_count": 9,
+      "spearman_rho": 0.9166666666666666,
+      "pvalue": 0.0005066190663052084
+    },
+    "chi_entropy": {
+      "position_count": 6,
+      "spearman_rho": 0.7714285714285715,
+      "pvalue": 0.07239650145772594
+    },
+    "sasa": {
+      "position_count": 9,
+      "spearman_rho": 0.8166666666666667,
+      "pvalue": 0.007224785246358785
+    }
+  },
+  "central_P3_P8_mean_delta": {
+    "rmsf": -0.36467523376146954,
+    "chi_entropy": -0.12635079026222226,
+    "sasa": -23.62993661562602
+  },
+  "terminal_P1_P2_P9_mean_delta": {
+    "rmsf": -0.0957090556621551,
+    "chi_entropy": -0.0508641004562378,
+    "sasa": -3.4634831746419277
+  },
+  "direct_contact_counts": {
+    "7L1D": 8,
+    "7RRG": 5
+  }
+}

@@ -30,3 +30,34 @@ python paper\figures\make_completed_experiments_figure.py
 配套文件为 `fig_completed_experiments_source_data.csv`、
 `fig_completed_experiments_statistics.json` 和
 `fig_completed_experiments_QA.md`。
+
+## ITrace 冻结检查点上下文消融图
+
+`fig_itrace_context_ablation.pdf` 为论文使用的矢量主文件，`.png` 为
+300 dpi 预览，`.svg` 保留可编辑文字。四个面板依次展示逐复合体 Spearman
+配对、七项指标优势、链角色异质性和孤立短肽的绝对 RMSF 尺度外推。
+
+在项目根目录执行下列命令可重新生成图、精简源数据与统计记录：
+
+```powershell
+python paper\figures\make_itrace_context_ablation_figure.py
+```
+
+配套文件为 `fig_itrace_context_ablation_statistics.json`、
+`fig_itrace_context_ablation_QA.md` 和 `paper/data/itrace_context/`。
+
+## ITrace peptide 残基级生物学图
+
+`fig_itrace_residue_biology.pdf` 是双栏矢量主文件，`.svg` 保留可编辑文字，
+`.png` 为 300 dpi 预览。三个面板依次直接比较完整复合物 FlexPPI 与九肽 MD
+真值的位置柔性、展示加入 TCR 上下文后的逐位置 RMSF/$H_\chi$/SASA 与接触
+比例，以及去除长度/位置均值后的氨基酸类型效应；7L1D/7RRG 的 ALHGGWTTK
+个案叠加在队列曲线上。面板（a）回答模型能否预测规律，面板（b,c）只生成待
+外部验证的机制假设。
+
+```powershell
+python paper\figures\make_itrace_residue_biology_figure.py
+```
+
+配套文件为 `fig_itrace_residue_biology_statistics.json`、
+`fig_itrace_residue_biology_QA.md` 和 `paper/data/itrace_residue_biology/`。

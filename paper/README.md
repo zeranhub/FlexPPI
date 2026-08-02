@@ -5,16 +5,50 @@
 - `sections/`：日常撰写的正文文件。
 - `tables/`：复杂表格文件。
 - `figures/`：论文图片。
+- `data/itrace/`：论文中 ITrace 基准表格对应的精简原始 CSV。
+- `data/itrace_biology/`：结合态界面与 CDR 链间不对称图的逐复合体源数据。
+- `data/itrace_residue_biology/`：完整模型--MD 残基预测一致性、peptide 位置、
+  重原子接触、$H_\chi$/SASA 上下文响应和 7L1D/7RRG 残基个案的源数据。
 - `references.bib`：参考文献数据库。
+
+ITrace 正文生物学主图、留存的算法基准图和标签敏感性图分别为
+`figures/fig_itrace_biology.pdf`、`figures/fig_itrace_main.pdf` 与
+`figures/fig_itrace_sensitivity.pdf`。生物学主图直接展示 pMHC/TCR 界面
+动力学不对称、TCR $\alpha/\beta$ CDR 环差异，以及完整上下文在界面排序上
+反而退化的现象；执行 `python paper\figures\make_itrace_biology_figure.py`
+可重建 PDF、SVG、300 dpi PNG、统计 JSON、QA 报告及
+`data/itrace_biology/` 的逐复合体源数据。实验流程直接写在正文，避免用协议表
+重复叙述；算法基准图不再占用正文页面，总体指标与细分数值表移至附录，正文
+优先解释生物学模式。
+
+peptide 残基级图为 `figures/fig_itrace_residue_biology.pdf`，对应可编辑 SVG、
+300 dpi PNG、统计 JSON 和 QA 报告均采用同名文件。该图首先直接检验完整复合物
+模型能否恢复 154 个九肽的 MD 位置柔性，再展示固定坐标完整 TCR--pMHC 减
+pMHC 的 RMSF/$H_\chi$/SASA 响应、TCR 重原子接触比例、同肽 7L1D/7RRG
+个案，以及去除位置均值后的氨基酸类型假设。执行
+`python paper\figures\make_itrace_residue_biology_figure.py` 可由
+`paper/data/itrace_residue_biology/` 重建全部图件；全队列预测和接触源数据由
+`scripts/analyze_itrace_residue_biology.py` 从冻结检查点生成。
+
+冻结 FlexPPI 检查点的完整复合体/结合态孤立链消融图为
+`figures/fig_itrace_context_ablation.pdf`，300 dpi 预览和可编辑矢量版本分别为
+同名 `.png` 与 `.svg`。执行
+`python paper\figures\make_itrace_context_ablation_figure.py` 可从
+`output/itrace_zero_shot_context/` 重新生成图、统计 JSON 和
+`data/itrace_context/` 下的全部绘图源数据。对应正文表格为
+`tables/itrace_context_ablation.tex` 和
+`tables/itrace_context_sensitivity.tex`。
 
 在 VS Code 中打开任意 `sections/*.tex` 文件都可以写正文；这些文件顶部的
 `% !TeX root = ../paper.tex` 会让 LaTeX Workshop 编译完整论文。
 
 编译时优先选择 `latexmk (xelatex)`，然后使用 LaTeX Workshop 的 PDF 查看命令
 预览。当前本机的 TeX Live 2026 `latexmk` 启动包装器存在 Lua 路径错误；若遇到
-同样错误，可在本目录连续执行两次下列命令完成正文、公式编号和交叉引用编译：
+同样错误，可在本目录依次执行下列命令完成正文、参考文献、公式编号和交叉引用编译：
 
 ```powershell
+xelatex -interaction=nonstopmode -halt-on-error paper.tex
+bibtex paper
 xelatex -interaction=nonstopmode -halt-on-error paper.tex
 xelatex -interaction=nonstopmode -halt-on-error paper.tex
 ```

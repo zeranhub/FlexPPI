@@ -219,45 +219,57 @@ def write_report(
     peptide_rows: Sequence[Mapping[str, Any]],
 ) -> None:
     lines = [
-        "# Corrected FlexPPI comparison: pMHC before versus TCR-pMHC after binding",
+        "# FlexPPI fixed-coordinate context comparison: pMHC versus TCR-pMHC",
         "",
         "Before = A+B+C pMHC. After = A+B+C+D+E TCR-pMHC. Coordinates shared by "
-        "the two states are unchanged. Delta = after - before; negative RMSF delta means "
-        "the model predicts that TCR binding rigidifies the residue.",
+        "the two inputs are unchanged. Delta = complete - pMHC; negative RMSF, H_chi, "
+        "or SASA delta respectively means lower predicted positional fluctuation, lower "
+        "side-chain rotamer diversity, or lower solvent exposure after adding TCR context. "
+        "This is not a matched apo/holo measurement.",
         "",
         f"Checkpoint: `{checkpoint.resolve()}`",
         f"Checkpoint SHA256: `{_sha256(checkpoint)}`",
         "",
-        "| PDB | peptide RMSF before (A) | peptide RMSF after (A) | mean delta (A) |",
+        "| PDB | mean RMSF delta (A) | mean H_chi delta | mean SASA delta (A^2) |",
         "|---|---:|---:|---:|",
     ]
     for pdb_id, summary in summaries.items():
-        peptide = summary["groups"]["peptide"]["rmsf"]
+        peptide = summary["groups"]["peptide"]
         lines.append(
-            f"| {pdb_id} | {peptide['pmhc_before']['mean']:.3f} | "
-            f"{peptide['tcr_pmhc_after']['mean']:.3f} | "
-            f"{peptide['delta_after_minus_before']['mean']:.3f} |"
+            f"| {pdb_id} | {peptide['rmsf']['delta_after_minus_before']['mean']:.3f} | "
+            f"{peptide['chi_entropy']['delta_after_minus_before']['mean']:.3f} | "
+            f"{peptide['sasa']['delta_after_minus_before']['mean']:.3f} |"
         )
     lines.extend([
         "",
-        "## Per-peptide-residue RMSF",
+        "## Per-peptide-residue context response",
         "",
-        "| pos | aa | 7L1D before | 7L1D after | 7L1D delta | 7RRG before | 7RRG after | 7RRG delta |",
+        "| pos | aa | 7L1D dRMSF | 7RRG dRMSF | 7L1D dH_chi | 7RRG dH_chi | 7L1D dSASA | 7RRG dSASA |",
         "|---:|:---:|---:|---:|---:|---:|---:|---:|",
     ])
     for row in peptide_rows:
+        chi_defined = row["amino_acid"] not in {"A", "G"}
+        chi_7l1d = (
+            f"{row['7L1D_delta_after_minus_before_chi_entropy']:.3f}"
+            if chi_defined else "NA"
+        )
+        chi_7rrg = (
+            f"{row['7RRG_delta_after_minus_before_chi_entropy']:.3f}"
+            if chi_defined else "NA"
+        )
         lines.append(
             f"| {row['author_residue_id']} | {row['amino_acid']} | "
-            f"{row['7L1D_pmhc_before_rmsf']:.3f} | "
-            f"{row['7L1D_tcr_pmhc_after_rmsf']:.3f} | "
             f"{row['7L1D_delta_after_minus_before_rmsf']:.3f} | "
-            f"{row['7RRG_pmhc_before_rmsf']:.3f} | "
-            f"{row['7RRG_tcr_pmhc_after_rmsf']:.3f} | "
-            f"{row['7RRG_delta_after_minus_before_rmsf']:.3f} |"
+            f"{row['7RRG_delta_after_minus_before_rmsf']:.3f} | "
+            f"{chi_7l1d} | {chi_7rrg} | "
+            f"{row['7L1D_delta_after_minus_before_sasa']:.3f} | "
+            f"{row['7RRG_delta_after_minus_before_sasa']:.3f} |"
         )
     lines.extend([
         "",
-        "This is the binding comparison. The previous C+D+E versus A-E analysis is a separate "
+        "H_chi is not interpreted for Ala P1 or Gly P4/P5: these residue types have no "
+        "defined side-chain chi torsion in the MD labels, even though an unconstrained model "
+        "output can still be present. The previous C+D+E versus A-E analysis is a separate "
         "MHC-removal context ablation and must not be labelled as before-versus-after TCR binding.",
         "",
     ])
@@ -420,4 +432,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
