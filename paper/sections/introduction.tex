@@ -16,11 +16,16 @@ area，SASA）反映局部溶剂暴露。三者均可由轨迹估计，但分别
 
 从静态结构预测柔性的既有方法大体分为物理近似、结构统计和数据驱动模型。正则模态
 与粗粒化模拟以较低成本近似集体运动；FastProtFlex 使用原子邻接图的局部拓扑统计
-预测相对 RMSF\cite{praznikar2026fast}；Flexpert 则结合蛋白语言模型与三维结构学习
-残基级柔性\cite{kouba2025flexpert}。另一方面，几何深度学习通过距离、局部坐标系
-或等变表示消除任意全局坐标系的影响。SE(3)-Transformer 将旋转和平移对称性纳入
-注意力计算\cite{fuchs2020se3}，AlphaFold2 的不变点注意力（invariant point
-attention，IPA）利用局部框架和三维查询点更新残基表示\cite{jumper2021alphafold}；
+预测相对 RMSF\cite{praznikar2026fast}，ProDy 提供基于 C$\alpha$ 接触网络的
+ANM/GNM 模态分析\cite{zhang2021prody}；RMSF-net 将 PDB 或 cryo-EM 密度体素化后
+用三维卷积网络预测柔性\cite{song2024rmsfnet}；Flexpert 与 BackFlip 分别以
+序列--结构表示和等变主链网络学习残基级柔性
+\cite{kouba2025flexpert,viliuga2025backflip}。与这些直接预测器不同，AlphaFlow
+通过 flow matching 生成构象集合，可从采样坐标导出 RMSF\cite{jing2024alphaflow}。
+另一方面，几何深度学习通过距离、局部坐标系或等变表示消除任意全局坐标系的影响。
+SE(3)-Transformer 将旋转和平移对称性纳入注意力计算\cite{fuchs2020se3}，
+AlphaFold2 的不变点注意力（invariant point attention，IPA）利用局部框架和三维
+查询点更新残基表示\cite{jumper2021alphafold}；
 PeSTo 与 DeepInteract 进一步表明，几何注意力能够直接建模蛋白质界面及伙伴特异的
 残基关系\cite{krapp2023pesto,morehead2022deepinteract}。这些进展说明静态结构中
 包含可学习的柔性和界面线索，但并不自动保证模型能够恢复结合伙伴所对应的动力学
@@ -41,18 +46,24 @@ N--C$\alpha$--C 局部框架构造旋转和平移不变的残基对几何，并�
 多链结构中传播伙伴信息。概率状态头为每个残基预测 RMSF、$H_\chi$ 和 SASA 的均值
 与方差；噪声感知目标将重复轨迹或时间窗口间方差显式并入训练。模型首先在 ATLAS
 和 DynaRepo 上学习绝对状态。训练结束后，我们冻结检查点，在 ITrace 的 245 个
-TCR--pMHC 复合体和 735 条轨迹上构建外部评估，并对同一结合态结构生成完整五链、
-pMHC、TCR$\alpha\beta$ 二聚体和五条孤立链输入。该设计将“静态结构能否预测 MD
-真值”与“模型是否响应伙伴上下文”分开检验。
+TCR--pMHC 复合体和 735 条轨迹上构建外部评估。主要伙伴消融保持结合态坐标不变，
+仅删除对侧组分：pMHC 残基比较完整五链与 pMHC-only 输入，TCR 残基比较完整五链与
+TCR$\alpha\beta$-only 输入；五条孤立链只作为进一步拆解子复合物的敏感性分析。
+该设计将“静态结构能否预测 MD 真值”与“模型是否响应对侧伙伴上下文”分开检验，
+并避免把 pMHC 内部或 TCR$\alpha\beta$ 内部相互作用混入主要伙伴效应。
 
 外部结果揭示了模型能力的明确边界。排除唯一精确 PDB 重叠 3KXF 后，FlexPPI 在
 244 条抗原肽内的平均残基 Spearman 为 $0.302$，能够恢复九肽 P1 活跃和 P2/P8
 受限的群体趋势，但遗漏 P6 活动峰；最活跃残基命中率仅为 34.0\%。在全部链上，
-完整复合物预测的平均 Spearman 为 $0.740$，高于逐链 FastProtFlex 的 $0.685$，
-但增益主要来自非界面区域。进一步的固定坐标消融显示，加入伙伴会近乎单向地下调
-接触残基柔性：该偏置改善了 MHC 接触面的相对刚性，却将 MD 中较柔的 TCR 接触面
-和 CDR1/2$\beta$ 错误压低。模型由此学到了可定位但过度单向的伙伴约束，而没有
-充分恢复界面两侧的动力学分工。
+完整复合物预测的平均 Spearman 为 $0.740$，高于逐链 BackFlip-seq 的 $0.704$、
+FastProtFlex 的 $0.685$ 和 RMSF-net-PDB 的 $0.526$；但是，BackFlip-seq 在线性
+相关和标准化误差上更好，结构版 BackFlip 在 CDR3 内也明显领先。FlexPPI 的总体
+排序增益主要来自非界面区域。进一步的固定坐标伙伴消融显示，完整输入相对删伙伴
+子复合物将 Spearman 从 0.691 提高到 0.740，并将绝对 MAE 从
+$0.373\,\text{\AA}$ 降至 $0.346\,\text{\AA}$；但加入伙伴会近乎单向地下调接触
+残基的 RMSF、$H_\chi$ 和 SASA。该偏置改善了 MHC 接触面的相对刚性，却将 MD 中
+较柔的 TCR 接触面和 CDR1/2$\beta$ 错误压低。模型由此学到了可定位但过度单向的
+伙伴约束，而没有充分恢复界面两侧的动力学分工。
 
 本文的贡献包括三个方面：（1）构建一个同时预测 RMSF、侧链构象熵和 SASA 及其
 不确定性的多链几何 Transformer，并给出从轨迹标签、局部框架到噪声感知目标的

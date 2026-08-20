@@ -2,24 +2,35 @@
 
 \begin{table}[H]
   \centering
-  \caption{完整复合体 FlexPPI 与逐链 FastProtFlex 在 244 个 ITrace
-  复合体上的等权平均结果。}
+  \caption{七种方法在 244 个 ITrace 外部复合体上的共同残基结果。逐链方法分别
+  预测五条链；完整体方法读取五链结构。指标先在链内计算，再对链和复合体等权
+  平均；加粗为每列最优值。}
   \label{tab:itrace-overall}
-  \small
+  \scriptsize
   \resizebox{\textwidth}{!}{%
-  \begin{tabular}{lrrrrrrr}
+  \begin{tabular}{llrrrrrrr}
     \toprule
-    方法 &
+    方法 & 输入上下文 &
     Spearman $\uparrow$ & Pearson $\uparrow$ &
     z-MAE $\downarrow$ & z-RMSE $\downarrow$ &
     AUROC $\uparrow$ & AP $\uparrow$ & P@K $\uparrow$ \\
     \midrule
-    FastProtFlex
+    FastProtFlex & 逐链
       & 0.685 & 0.619 & 0.626 & 0.828 & 0.841 & 0.678 & 0.581 \\
-    FlexPPI
-      & \textbf{0.740} & \textbf{0.677} &
-        \textbf{0.531} & \textbf{0.753} &
-        \textbf{0.871} & \textbf{0.735} & \textbf{0.631} \\
+    ProDy-ANM & 完整体
+      & 0.403 & 0.399 & 0.781 & 1.066 & 0.722 & 0.555 & 0.447 \\
+    ProDy-GNM & 完整体
+      & 0.371 & 0.404 & 0.725 & 1.065 & 0.725 & 0.603 & 0.511 \\
+    BackFlip-structure & 逐链
+      & 0.637 & 0.631 & 0.572 & 0.789 & 0.831 & 0.679 & 0.593 \\
+    BackFlip-seq & 逐链
+      & 0.704 & \textbf{0.694} & \textbf{0.527} & \textbf{0.721}
+      & 0.857 & 0.714 & 0.619 \\
+    RMSF-net-PDB & 完整体
+      & 0.526 & 0.516 & 0.687 & 0.941 & 0.794 & 0.627 & 0.530 \\
+    FlexPPI & 完整体
+      & \textbf{0.740} & 0.677 & 0.531 & 0.753
+      & \textbf{0.871} & \textbf{0.735} & \textbf{0.631} \\
     \bottomrule
   \end{tabular}%
   }

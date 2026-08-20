@@ -19,12 +19,6 @@ $\hat\ell_{ik}=\log\hat\sigma_{ik}^{2}$，下标 $k$ 对应三类指标。预测
 给定静态结构和条件后仍未被解释的残差不确定性；它与由重复轨迹或时间窗口估计的
 标签方差在训练目标中分别建模。
 
-对于具有残基对应关系的 apo/holo 结构，本文还定义带符号响应
-$\Delta\mathbf y_i=\mathbf y_i^{\mathrm{holo}}-\mathbf y_i^{\mathrm{apo}}$。
-响应头直接预测 $\Delta\mathbf y_i$，并与两个状态预测均值的简单相减并列评价。
-这一区分是必要的：即使两个绝对状态分别具有较低误差，相减仍可能放大误差或给出
-错误方向。
-
 \subsection{从分子动力学轨迹构建监督标签}
 
 \subsubsection{数据统一与重复方差}
@@ -204,39 +198,3 @@ ATLAS 与 DynaRepo 清单合并后，划分程序依次尝试按同源簇、PDB 
 8 头 IPA，残基表示维度 128、残基对维度 48、dropout 0.1、批大小 1 和最大长度
 768；模型训练 20 个 epoch，采用 AdamW，学习率 $3\times10^{-4}$、权重衰减
 $10^{-4}$，梯度范数截断为 1.0，并保存验证损失最低的检查点。
-
-\subsection{配对响应头}
-
-对通过全局序列比对建立对应关系的 apo/holo 残基，状态编码器分别产生表示
-$\mathbf z_i^{\mathrm{apo}}$、$\mathbf z_i^{\mathrm{holo}}$ 和状态均值
-$\hat{\boldsymbol\mu}_i^{\mathrm{apo}}$、$\hat{\boldsymbol\mu}_i^{\mathrm{holo}}$。
-响应头输入为
-\begin{equation}
-    \mathbf x_i^{\mathrm{pair}}=
-    \left[\mathbf z_i^{\mathrm{apo}}\Vert
-    \mathbf z_i^{\mathrm{holo}}\Vert
-    (\mathbf z_i^{\mathrm{holo}}-\mathbf z_i^{\mathrm{apo}})\Vert
-    (\mathbf z_i^{\mathrm{holo}}\odot\mathbf z_i^{\mathrm{apo}})\Vert
-    (\hat{\boldsymbol\mu}_i^{\mathrm{holo}}-
-     \hat{\boldsymbol\mu}_i^{\mathrm{apo}})\right],
-    \label{eq:pair-feature}
-\end{equation}
-其中 $\odot$ 表示逐元素乘积。两层多层感知机由此预测带符号响应均值
-$\widehat{\Delta\mathbf y}_i$ 和对数方差；与状态头不同，响应均值不经 softplus，
-因此可表示刚化或增柔。
-
-响应真值为两态标签之差，标签方差近似为两态方差之和。配对损失由 apo/holo 状态
-损失、响应负对数似然和响应头与状态相减之间的 smooth-$L_1$ 一致性项组成：
-\begin{equation}
-    \mathcal L_{\mathrm{pair}}=
-    \frac{\lambda_{\mathrm{state}}}{2}
-    (\mathcal L_{\mathrm{apo}}+\mathcal L_{\mathrm{holo}})
-    +\lambda_{\mathrm{resp}}\mathcal L_{\Delta}
-    +\lambda_{\mathrm{cons}}\mathcal L_{\mathrm{cons}},
-    \label{eq:pair-loss}
-\end{equation}
-其中 $(\lambda_{\mathrm{state}},\lambda_{\mathrm{resp}},\lambda_{\mathrm{cons}})
-=(0.5,1.0,0.25)$。响应微调从最佳预训练检查点开始，最大长度提高至 1,024，训练
-50 个 epoch，学习率为 $10^{-4}$，其余优化器和梯度截断设置不变。由于现有 37 对
-样本全部进入微调流程，且 7 个验证体系参与检查点选择，该结果在本文中只作为内部
-诊断，不作为独立测试证据。

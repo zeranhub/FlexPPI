@@ -1,0 +1,133 @@
+{
+  "figure_contract": {
+    "core_conclusion_6uon": "Partner context selectively suppresses the model's predicted mobility at the contacted central KRAS-G12D peptide ridge, while MD retains p6/p8 as the most mobile ridge positions.",
+    "core_conclusion_2ptt": "The 2B4-CD48 interface combines relatively stable electrostatic anchors with a bound CC-prime loop that remains locally compliant.",
+    "archetype": "asymmetric mixed-modality",
+    "journal_export": "Nature-family standard, 183 mm double-column, vector PDF/SVG plus 300 dpi PNG"
+  },
+  "data_validation": {
+    "6uon_residue_count": 826,
+    "6uon_peptide_residue_count": 10,
+    "2ptt_mapped_residue_count": 206,
+    "2ptt_h42_present_in_structure": true,
+    "2ptt_h42_present_in_dynarepo_table": false,
+    "6uon_rows_present_in_render_pdb": 826,
+    "2ptt_rows_present_in_render_pdb": 206
+  },
+  "alignment_quality": {
+    "6ULK_MHC_to_6UON_MHC": {
+      "ca_count": 273,
+      "ca_rmsd_angstrom": 0.6982523429262139
+    },
+    "2PTU_2B4_to_2PTT_2B4": {
+      "ca_count": 105,
+      "ca_rmsd_angstrom": 1.2133187698987509
+    },
+    "2PTV_CD48_to_2PTT_CD48": {
+      "ca_count": 96,
+      "ca_rmsd_angstrom": 1.7021919109334838
+    }
+  },
+  "structure_rendering_measurements": {
+    "6uon_peptide_shift": {
+      "p5_ca_shift_angstrom": 5.016965915770215,
+      "p6_ca_shift_angstrom": 2.2642833303277285,
+      "p7_ca_shift_angstrom": 4.149428153372467,
+      "p8_ca_shift_angstrom": 3.7134368178279242
+    },
+    "6uon_contact_distances": {
+      "Tyr97a-p4": {
+        "distance_angstrom": 3.4059506749217636,
+        "atoms": [
+          "OH",
+          "O"
+        ]
+      },
+      "Gly97b-p5": {
+        "distance_angstrom": 2.629904941247876,
+        "atoms": [
+          "N",
+          "O"
+        ]
+      },
+      "Asp95b-p7": {
+        "distance_angstrom": 4.38111857862806,
+        "atoms": [
+          "OD2",
+          "NZ"
+        ]
+      }
+    },
+    "2ptt_h42_ca_shift_angstrom": 3.8783256696672614,
+    "2ptt_anchor_distances": {
+      "K35-E93": {
+        "distance_angstrom": 2.8130133309317973,
+        "atoms": [
+          "NZ",
+          "OE1"
+        ]
+      },
+      "E91-R87": {
+        "distance_angstrom": 3.308087211667791,
+        "atoms": [
+          "OE2",
+          "NH1"
+        ]
+      },
+      "T93-K41": {
+        "distance_angstrom": 3.178207828320859,
+        "atoms": [
+          "OG1",
+          "NZ"
+        ]
+      }
+    }
+  },
+  "6uon_peptide": {
+    "n_residues": 10,
+    "md_replica_definition": "Per-residue C-alpha RMSF averaged over three independent ITrace trajectories after chain-wise fitting.",
+    "md_mean_angstrom": 0.4723485926787059,
+    "flexppi_full_mean_angstrom": 0.8194489300251007,
+    "pmhc_only_mean_angstrom": 1.0188326239585876,
+    "mean_context_delta_full_minus_pmhc_angstrom": -0.19938369393348693,
+    "most_mobile_md_positions": [
+      8,
+      6,
+      7
+    ],
+    "largest_context_suppression_positions": [
+      5,
+      6,
+      4,
+      7
+    ]
+  },
+  "2ptt_local": {
+    "dataset_role": "DynaRepo model-selection validation example; not an untouched external test.",
+    "mapped_residue_count": 206,
+    "2b4_ccprime_loop_mean_md_angstrom": 1.4104896545410157,
+    "2b4_ccprime_loop_mean_prediction_angstrom": 1.459111762046814,
+    "selected_anchor_mean_md_angstrom": 0.441894272963206,
+    "selected_anchor_mean_prediction_angstrom": 0.563443789879481,
+    "h42_mapping": "Native 2B4 H42 is present in 2PTT/2PTU coordinates but absent from the DynaRepo residue prediction table; it is masked, not assigned zero."
+  },
+  "model": {
+    "checkpoint": "E:\\Project\\FlexPPI\\artifacts\\pretrain\\best.pt",
+    "checkpoint_sha256": "30611c285c8e5d16dc07a7851d97ab54a829f9027c3be1c2bafd31779cee0b78",
+    "checkpoint_role": "Frozen pretraining checkpoint used for ITrace and DynaRepo state prediction."
+  },
+  "statistics_and_reproducibility": {
+    "inferential_tests": "None. These are residue-level mechanistic case studies, not independent-replicate hypothesis tests.",
+    "center_and_spread": "No error bars are plotted in the case panels. The 6UON MD target is the mean of three trajectories at each residue; the 2PTT target is the archived DynaRepo RMSF label.",
+    "selection_rule": "Residues in quantitative local panels were selected before plotting from published structural contacts and named CC-prime loops; every mapped residue remains in the source-data tables and whole-structure coloring.",
+    "rmsf_color_scale": {
+      "minimum_angstrom": 0.25,
+      "saturation_angstrom": 2.0
+    },
+    "sources": [
+      "E:\\Project\\FlexPPI\\output\\itrace_benchmark\\raw\\common_residue_predictions.csv",
+      "E:\\Project\\FlexPPI\\output\\itrace_residue_biology\\raw\\all_condition_predictions.csv",
+      "E:\\Project\\FlexPPI\\artifacts\\evaluation\\fastprotflex_comparison\\dynarepo\\dynarepo_common_residue_predictions.csv"
+    ]
+  }
+}

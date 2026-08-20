@@ -1,0 +1,219 @@
+{
+  "output": "E:\\Project\\FlexPPI\\paper\\figures\\case_studies\\renders\\2ptt_interface_contacts.png",
+  "width": 1250,
+  "height": 900,
+  "deviceScaleFactor": 2,
+  "zoom": 1.52,
+  "rotations": [
+    {
+      "angle": 22,
+      "axis": "y"
+    },
+    {
+      "angle": -8,
+      "axis": "x"
+    }
+  ],
+  "models": [
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\figures\\case_studies\\prepared\\2ptt_interface_local.pdb",
+      "baseStyle": {
+        "cartoon": {
+          "color": "#D9D9D9",
+          "opacity": 0.24
+        }
+      },
+      "residueStyles": [
+        {
+          "selection": {
+            "chain": "B",
+            "resi": [
+              35,
+              91,
+              93
+            ]
+          },
+          "style": {
+            "stick": {
+              "color": "#2166AC",
+              "radius": 0.18
+            }
+          }
+        },
+        {
+          "selection": {
+            "chain": "A",
+            "resi": [
+              41,
+              87,
+              93
+            ]
+          },
+          "style": {
+            "stick": {
+              "color": "#F1A340",
+              "radius": 0.18
+            }
+          }
+        },
+        {
+          "selection": {
+            "chain": "B",
+            "resi": [
+              38,
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          },
+          "style": {
+            "cartoon": {
+              "color": "#80B1D3"
+            }
+          }
+        },
+        {
+          "selection": {
+            "chain": "A",
+            "resi": [
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          },
+          "style": {
+            "cartoon": {
+              "color": "#FDBF6F"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "start": {
+        "x": 7.978,
+        "y": 23.107,
+        "z": 17.798
+      },
+      "end": {
+        "x": 9.086,
+        "y": 25.459,
+        "z": 18.872
+      },
+      "color": "#222222",
+      "dashed": true,
+      "linewidth": 2
+    },
+    {
+      "start": {
+        "x": 7.917,
+        "y": 20.12,
+        "z": 18.28
+      },
+      "end": {
+        "x": 7.979,
+        "y": 21.026,
+        "z": 21.461
+      },
+      "color": "#222222",
+      "dashed": true,
+      "linewidth": 2
+    },
+    {
+      "start": {
+        "x": 0.719,
+        "y": 19.501,
+        "z": 19.712
+      },
+      "end": {
+        "x": 2.019,
+        "y": 22.247,
+        "z": 20.645
+      },
+      "color": "#222222",
+      "dashed": true,
+      "linewidth": 2
+    }
+  ],
+  "labels": [
+    {
+      "text": "2B4 K35",
+      "position": {
+        "x": 9.179,
+        "y": 23.434,
+        "z": 11.771
+      },
+      "fontSize": 18,
+      "fontColor": "#2166AC",
+      "backgroundColor": "#FFFFFF",
+      "backgroundOpacity": 0.82
+    },
+    {
+      "text": "2B4 E91",
+      "position": {
+        "x": 4.349,
+        "y": 17.946,
+        "z": 15.791
+      },
+      "fontSize": 18,
+      "fontColor": "#2166AC",
+      "backgroundColor": "#FFFFFF",
+      "backgroundOpacity": 0.82
+    },
+    {
+      "text": "2B4 T93",
+      "position": {
+        "x": -0.99,
+        "y": 17.793,
+        "z": 19.403
+      },
+      "fontSize": 18,
+      "fontColor": "#2166AC",
+      "backgroundColor": "#FFFFFF",
+      "backgroundOpacity": 0.82
+    },
+    {
+      "text": "CD48 E93",
+      "position": {
+        "x": 11.411,
+        "y": 29.161,
+        "z": 18.554
+      },
+      "fontSize": 18,
+      "fontColor": "#F1A340",
+      "backgroundColor": "#FFFFFF",
+      "backgroundOpacity": 0.82
+    },
+    {
+      "text": "CD48 R87",
+      "position": {
+        "x": 9.585,
+        "y": 26.874,
+        "z": 24.117
+      },
+      "fontSize": 18,
+      "fontColor": "#F1A340",
+      "backgroundColor": "#FFFFFF",
+      "backgroundOpacity": 0.82
+    },
+    {
+      "text": "CD48 K41",
+      "position": {
+        "x": 2.159,
+        "y": 19.819,
+        "z": 26.338
+      },
+      "fontSize": 18,
+      "fontColor": "#F1A340",
+      "backgroundColor": "#FFFFFF",
+      "backgroundOpacity": 0.82
+    }
+  ],
+  "threeDmolScript": "E:\\Project\\FlexPPI\\paper\\figures\\case_studies\\vendor\\3Dmol-min.js"
+}

@@ -1,0 +1,218 @@
+{
+  "output": "E:\\Project\\FlexPPI\\paper\\figures\\case_studies\\renders\\2ptt_apo_bound_overlay.png",
+  "width": 1200,
+  "height": 900,
+  "deviceScaleFactor": 2,
+  "zoom": 1.66,
+  "rotations": [
+    {
+      "angle": 18,
+      "axis": "y"
+    },
+    {
+      "angle": -10,
+      "axis": "x"
+    }
+  ],
+  "models": [
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\figures\\case_studies\\prepared\\2ptt_full_atom.pdb",
+      "baseStyle": {
+        "cartoon": {
+          "color": "#D9D9D9",
+          "opacity": 0.2
+        }
+      },
+      "residueStyles": [
+        {
+          "selection": {
+            "chain": "B",
+            "resi": [
+              38,
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          },
+          "style": {
+            "cartoon": {
+              "color": "#2166AC"
+            },
+            "stick": {
+              "color": "#2166AC",
+              "radius": 0.14
+            }
+          }
+        },
+        {
+          "selection": {
+            "chain": "A",
+            "resi": [
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          },
+          "style": {
+            "cartoon": {
+              "color": "#F1A340"
+            },
+            "stick": {
+              "color": "#F1A340",
+              "radius": 0.14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\figures\\case_studies\\prepared\\2ptu_aligned.pdb",
+      "baseStyle": {
+        "cartoon": {
+          "color": "#C6B3D5",
+          "opacity": 0.18
+        }
+      },
+      "residueStyles": [
+        {
+          "selection": {
+            "chain": "A",
+            "resi": [
+              38,
+              39,
+              40,
+              41,
+              42,
+              43
+            ]
+          },
+          "style": {
+            "cartoon": {
+              "color": "#762A83"
+            },
+            "stick": {
+              "color": "#762A83",
+              "radius": 0.12
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\figures\\case_studies\\prepared\\2ptv_aligned.pdb",
+      "baseStyle": {
+        "cartoon": {
+          "color": "#F6D8B5",
+          "opacity": 0.18
+        }
+      },
+      "residueStyles": [
+        {
+          "selection": {
+            "chain": "A",
+            "resi": [
+              37,
+              38,
+              39,
+              40,
+              41
+            ]
+          },
+          "style": {
+            "cartoon": {
+              "color": "#B2182B"
+            },
+            "stick": {
+              "color": "#B2182B",
+              "radius": 0.12
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "start": {
+        "x": 19.04,
+        "y": 24.718,
+        "z": 17.615
+      },
+      "end": {
+        "x": 18.104,
+        "y": 27.701,
+        "z": 19.91
+      },
+      "color": "#222222",
+      "dashed": true,
+      "linewidth": 2
+    }
+  ],
+  "labels": [
+    {
+      "text": "bound 2B4 loop",
+      "position": {
+        "x": 23.793,
+        "y": 27.103,
+        "z": 12.672
+      },
+      "fontSize": 18,
+      "fontColor": "#2166AC",
+      "backgroundColor": "#FFFFFF",
+      "backgroundOpacity": 0.82
+    },
+    {
+      "text": "apo 2B4 loop",
+      "position": {
+        "x": 23.582,
+        "y": 26.867,
+        "z": 16.294
+      },
+      "fontSize": 18,
+      "fontColor": "#762A83",
+      "backgroundColor": "#FFFFFF",
+      "backgroundOpacity": 0.82
+    },
+    {
+      "text": "bound CD48 loop",
+      "position": {
+        "x": 5.358,
+        "y": 14.124,
+        "z": 24.353
+      },
+      "fontSize": 18,
+      "fontColor": "#F1A340",
+      "backgroundColor": "#FFFFFF",
+      "backgroundOpacity": 0.82
+    },
+    {
+      "text": "apo CD48 loop\ntip 38-39 unresolved",
+      "position": {
+        "x": 2.717,
+        "y": 16.083,
+        "z": 26.479
+      },
+      "fontSize": 18,
+      "fontColor": "#B2182B",
+      "backgroundColor": "#FFFFFF",
+      "backgroundOpacity": 0.82
+    },
+    {
+      "text": "H42 shift 3.9 A",
+      "position": {
+        "x": 18.572,
+        "y": 26.2095,
+        "z": 18.7625
+      },
+      "fontSize": 18,
+      "fontColor": "#222222",
+      "backgroundColor": "#FFFFFF",
+      "backgroundOpacity": 0.82
+    }
+  ],
+  "threeDmolScript": "E:\\Project\\FlexPPI\\paper\\figures\\case_studies\\vendor\\3Dmol-min.js"
+}

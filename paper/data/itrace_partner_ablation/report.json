@@ -1,0 +1,227 @@
+{
+  "experiment": "fixed-bound-coordinate partner-context ablation",
+  "question": "Does a frozen FlexPPI checkpoint use the opposing TCR or pMHC partner to improve bound-state RMSF prediction and localize its output response near the interface?",
+  "causal_boundary": "The comparison is full complex minus partner-deleted subcomplex at identical retained coordinates. It is not an apo-to-holo or time-resolved binding response.",
+  "cohort": {
+    "complex_count": 244,
+    "chain_count": 1220,
+    "residue_count": 199668,
+    "excluded_exact_training_pdb": [
+      "3kxf"
+    ],
+    "independent_statistical_unit": "PDB complex"
+  },
+  "inputs": {
+    "complete": "bound-state five-chain TCR-pMHC complex",
+    "pmhc_ablation": "same-coordinate pMHC subcomplex after deleting TCR alpha/beta",
+    "tcr_ablation": "same-coordinate TCR alpha/beta after deleting MHC/b2m/peptide",
+    "parameter_updates": 0,
+    "md_targets_used_during_inference": false
+  },
+  "statistics": {
+    "state_metrics": "computed per chain, equal-chain averaged per complex",
+    "response_localization": "contact/non-contact effects computed within each side, two sides averaged per complex",
+    "contact_definition": "minimum inter-partner heavy-atom distance <= 5 A",
+    "confidence_interval": "2000 complex-level bootstrap resamples",
+    "paired_test": "two-sided Wilcoxon signed-rank test across complexes",
+    "multiple_testing": "Benjamini-Hochberg FDR within each result family"
+  },
+  "coordinate_identity": {
+    "passes": true,
+    "comparison_count": 488,
+    "maximum_absolute_difference_angstrom": 0.0,
+    "missing_atom_identity_count": 0
+  },
+  "state_metric_summary": [
+    {
+      "metric": "spearman",
+      "complex_count": 244,
+      "full_macro_mean": 0.7396338750447341,
+      "partner_removed_macro_mean": 0.6906282867829198,
+      "mean_full_advantage": 0.049005588261814365,
+      "median_full_advantage": 0.04753780890564696,
+      "bootstrap_ci_low": 0.03797063947676775,
+      "bootstrap_ci_high": 0.06043267731736393,
+      "full_win_rate": 0.680327868852459,
+      "wilcoxon_two_sided_p": 1.35697769695472e-12,
+      "benjamini_hochberg_q": 1.5265999090740602e-12
+    },
+    {
+      "metric": "pearson",
+      "complex_count": 244,
+      "full_macro_mean": 0.677425164371409,
+      "partner_removed_macro_mean": 0.6189002757490594,
+      "mean_full_advantage": 0.058524888622349454,
+      "median_full_advantage": 0.06318331673594585,
+      "bootstrap_ci_low": 0.048087408130652924,
+      "bootstrap_ci_high": 0.06865867375193654,
+      "full_win_rate": 0.7336065573770492,
+      "wilcoxon_two_sided_p": 2.308751839085972e-18,
+      "benjamini_hochberg_q": 6.9262555172579155e-18
+    },
+    {
+      "metric": "z_mae",
+      "complex_count": 244,
+      "full_macro_mean": 0.5306557215895095,
+      "partner_removed_macro_mean": 0.5713199181394375,
+      "mean_full_advantage": 0.04066419654992799,
+      "median_full_advantage": 0.042173956935630724,
+      "bootstrap_ci_low": 0.032223125169956804,
+      "bootstrap_ci_high": 0.04906368628439351,
+      "full_win_rate": 0.7131147540983607,
+      "wilcoxon_two_sided_p": 5.597957377267517e-16,
+      "benjamini_hochberg_q": 1.007632327908153e-15
+    },
+    {
+      "metric": "z_rmse",
+      "complex_count": 244,
+      "full_macro_mean": 0.7527092835897042,
+      "partner_removed_macro_mean": 0.8029976034397743,
+      "mean_full_advantage": 0.0502883198500701,
+      "median_full_advantage": 0.051706514480886256,
+      "bootstrap_ci_low": 0.040813569130182116,
+      "bootstrap_ci_high": 0.05967271610086416,
+      "full_win_rate": 0.7254098360655737,
+      "wilcoxon_two_sided_p": 7.096893147925798e-18,
+      "benjamini_hochberg_q": 1.5968009582833046e-17
+    },
+    {
+      "metric": "top20_auroc",
+      "complex_count": 244,
+      "full_macro_mean": 0.8712812694493434,
+      "partner_removed_macro_mean": 0.8427523895623248,
+      "mean_full_advantage": 0.02852887988701861,
+      "median_full_advantage": 0.029025616341025684,
+      "bootstrap_ci_low": 0.021354844612321983,
+      "bootstrap_ci_high": 0.0356727805256434,
+      "full_win_rate": 0.6844262295081968,
+      "wilcoxon_two_sided_p": 3.3018556991427446e-12,
+      "benjamini_hochberg_q": 3.3018556991427446e-12
+    },
+    {
+      "metric": "top20_average_precision",
+      "complex_count": 244,
+      "full_macro_mean": 0.7354284168899605,
+      "partner_removed_macro_mean": 0.6986613339658776,
+      "mean_full_advantage": 0.03676708292408313,
+      "median_full_advantage": 0.03563063406784328,
+      "bootstrap_ci_low": 0.029398586826672103,
+      "bootstrap_ci_high": 0.0445487126503484,
+      "full_win_rate": 0.7295081967213115,
+      "wilcoxon_two_sided_p": 1.5184008010618066e-15,
+      "benjamini_hochberg_q": 2.27760120159271e-15
+    },
+    {
+      "metric": "top20_precision_at_k",
+      "complex_count": 244,
+      "full_macro_mean": 0.6313994668334036,
+      "partner_removed_macro_mean": 0.5911548407582573,
+      "mean_full_advantage": 0.04024462607514639,
+      "median_full_advantage": 0.01814746100460385,
+      "bootstrap_ci_low": 0.03056277047787375,
+      "bootstrap_ci_high": 0.050092306833499474,
+      "full_win_rate": 0.7131147540983607,
+      "wilcoxon_two_sided_p": 2.1194334887613374e-14,
+      "benjamini_hochberg_q": 2.7249859141217194e-14
+    },
+    {
+      "metric": "absolute_mae_angstrom",
+      "complex_count": 244,
+      "full_macro_mean": 0.3459599667132538,
+      "partner_removed_macro_mean": 0.37331272045444636,
+      "mean_full_advantage": 0.027352753741192483,
+      "median_full_advantage": 0.028443110579360525,
+      "bootstrap_ci_low": 0.02495151843483734,
+      "bootstrap_ci_high": 0.03000293933267216,
+      "full_win_rate": 0.9426229508196722,
+      "wilcoxon_two_sided_p": 4.385229493014113e-37,
+      "benjamini_hochberg_q": 1.9733532718563508e-36
+    },
+    {
+      "metric": "absolute_rmse_angstrom",
+      "complex_count": 244,
+      "full_macro_mean": 0.4750211265015202,
+      "partner_removed_macro_mean": 0.5076145627255395,
+      "mean_full_advantage": 0.03259343622401935,
+      "median_full_advantage": 0.03296114288073368,
+      "bootstrap_ci_low": 0.02962789802865441,
+      "bootstrap_ci_high": 0.03579416075715339,
+      "full_win_rate": 0.9467213114754098,
+      "wilcoxon_two_sided_p": 2.841500338030031e-38,
+      "benjamini_hochberg_q": 2.5573503042270278e-37
+    }
+  ],
+  "interface_localization_summary": [
+    {
+      "metric": "rmsf",
+      "complex_count": 244,
+      "contact_macro_mean_delta": -0.25002258275571865,
+      "noncontact_macro_mean_delta": -0.007962430189068991,
+      "mean_contact_minus_noncontact_delta": -0.24206015256664962,
+      "bootstrap_ci_low": -0.24792412543515566,
+      "bootstrap_ci_high": -0.23655907741864063,
+      "fraction_complexes_stronger_negative_at_contact": 1.0,
+      "wilcoxon_two_sided_p": 8.886386986877488e-42,
+      "benjamini_hochberg_q": 8.886386986877488e-42
+    },
+    {
+      "metric": "chi_entropy",
+      "complex_count": 244,
+      "contact_macro_mean_delta": -0.22880906297741133,
+      "noncontact_macro_mean_delta": -0.004129087401889421,
+      "mean_contact_minus_noncontact_delta": -0.2246799755755219,
+      "bootstrap_ci_low": -0.2282839572364689,
+      "bootstrap_ci_high": -0.22089750875388828,
+      "fraction_complexes_stronger_negative_at_contact": 1.0,
+      "wilcoxon_two_sided_p": 8.886386986877488e-42,
+      "benjamini_hochberg_q": 8.886386986877488e-42
+    },
+    {
+      "metric": "sasa",
+      "complex_count": 244,
+      "contact_macro_mean_delta": -23.265901322945655,
+      "noncontact_macro_mean_delta": -0.3958279212327685,
+      "mean_contact_minus_noncontact_delta": -22.87007340171289,
+      "bootstrap_ci_low": -23.217334293271396,
+      "bootstrap_ci_high": -22.52479019484142,
+      "fraction_complexes_stronger_negative_at_contact": 1.0,
+      "wilcoxon_two_sided_p": 8.886386986877488e-42,
+      "benjamini_hochberg_q": 8.886386986877488e-42
+    }
+  ],
+  "distance_response_summary": [
+    {
+      "metric": "rmsf",
+      "complex_count": 244,
+      "mean_within_complex_side_averaged_spearman": 0.7310264321746343,
+      "median_within_complex_side_averaged_spearman": 0.7357274025921465,
+      "bootstrap_ci_low": 0.7258227629238909,
+      "bootstrap_ci_high": 0.7358385014862335,
+      "fraction_positive": 1.0,
+      "wilcoxon_two_sided_p": 8.886386986877488e-42,
+      "benjamini_hochberg_q": 8.886386986877488e-42
+    },
+    {
+      "metric": "chi_entropy",
+      "complex_count": 244,
+      "mean_within_complex_side_averaged_spearman": 0.5225311514364206,
+      "median_within_complex_side_averaged_spearman": 0.5249395669069239,
+      "bootstrap_ci_low": 0.5178860427398744,
+      "bootstrap_ci_high": 0.5272914819506246,
+      "fraction_positive": 1.0,
+      "wilcoxon_two_sided_p": 8.886386986877488e-42,
+      "benjamini_hochberg_q": 8.886386986877488e-42
+    },
+    {
+      "metric": "sasa",
+      "complex_count": 244,
+      "mean_within_complex_side_averaged_spearman": 0.5665754927457841,
+      "median_within_complex_side_averaged_spearman": 0.5695313958426267,
+      "bootstrap_ci_low": 0.5613773438671277,
+      "bootstrap_ci_high": 0.5717182220290066,
+      "fraction_positive": 1.0,
+      "wilcoxon_two_sided_p": 8.886386986877488e-42,
+      "benjamini_hochberg_q": 8.886386986877488e-42
+    }
+  ]
+}

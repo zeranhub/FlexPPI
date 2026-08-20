@@ -30,7 +30,15 @@ pMHC 的 RMSF/$H_\chi$/SASA 响应、TCR 重原子接触比例、同肽 7L1D/7RR
 `paper/data/itrace_residue_biology/` 重建全部图件；全队列预测和接触源数据由
 `scripts/analyze_itrace_residue_biology.py` 从冻结检查点生成。
 
-冻结 FlexPPI 检查点的完整复合体/结合态孤立链消融图为
+固定坐标伙伴消融的正文主图为
+`figures/fig_itrace_partner_ablation.pdf`；主要比较完整五链与 pMHC-only/TCR-only，
+不拆散目标侧内部组成。`scripts/analyze_fixed_partner_ablation.py` 从冻结预测重建逐链
+和逐复合体 RMSF 准确性、接触/距离定位、FDR 检验、488 组逐原子坐标一致性检查、
+正文表格及 PDF/SVG/PNG 图件，精简源数据保存在
+`data/itrace_partner_ablation/`。该比较只定义模型上下文敏感性，不表示 apo/holo
+变化。
+
+进一步拆成单链的敏感性消融图为
 `figures/fig_itrace_context_ablation.pdf`，300 dpi 预览和可编辑矢量版本分别为
 同名 `.png` 与 `.svg`。执行
 `python paper\figures\make_itrace_context_ablation_figure.py` 可从

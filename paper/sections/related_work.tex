@@ -11,8 +11,18 @@
 瞬时相互作用体系，并提供更长的重复模拟\cite{mokhtari2026dynarepo}。在预测方法上，
 FastProtFlex 以原子图的 graphlet degree vector 构造轻量线性模型，强调速度和局部
 拓扑可解释性\cite{praznikar2026fast}；Flexpert-Seq/Flexpert-3D 借助预训练蛋白语言
-模型分别从序列或序列--结构联合输入预测 RMSF\cite{kouba2025flexpert}。这些工作主要
-评价单个蛋白内部的绝对柔性排序。FlexPPI 与之互补：它以多链结构为输入，同时预测
+模型分别从序列或序列--结构联合输入预测 RMSF\cite{kouba2025flexpert}。BackFlip
+使用等变主链网络直接输出逐残基全局 RMSF，并同时提供不读取残基类型的结构版和
+加入 one-hot 氨基酸类别的序列增强版\cite{viliuga2025backflip}。ProDy 则实现了
+经典 ANM/GNM：它把 C$\alpha$ 视为网络节点，以距离阈值内的弹簧连接近似集体
+涨落\cite{zhang2021prody}。RMSF-net 将 PDB 原子结构或 cryo-EM 密度编码为三维
+体素，并用三维卷积网络输出
+体素级柔性；其官方实现提供仅 PDB、仅 cryo-EM 和双模态分支\cite{song2024rmsfnet}。
+这些直接预测方法覆盖结构统计、弹性网络和学习模型，但主要评价单个蛋白内部的柔性
+排序。AlphaFlow 则通过 flow matching 将
+AlphaFold 微调为构象集合生成器，可从多次采样坐标导出 RMSF\cite{jing2024alphaflow}；
+它与单次前向输出逐残基分数的方法不属于同一计算预算，故本文将其置于独立的集合生成
+子集分析。FlexPPI 与之互补：它以多链结构为输入，同时预测
 三类动态描述符，并将伙伴上下文作为需要独立审计的变量。
 
 \subsection{几何深度学习与蛋白质界面建模}
@@ -38,5 +48,5 @@ Transformer 识别多类分子界面\cite{krapp2023pesto}；HERN 则使用残基
 还必须显式比较结合态与游离态的热力学循环；例如 Boltzmann-aligned inverse folding
 方法利用结合/游离结构上的序列似然估计突变 $\Delta\Delta G$
 \cite{jiao2024boltzmann}。因此，单个结构上的 RMSF 或删链前后的预测差值都不足以
-定义结合自由能。本文保留配对响应头作为诊断性扩展，但主要结论来自冻结状态模型和
-ITrace 外部 RMSF 真值；亲和力建模仅作为后续方向讨论。
+定义结合自由能。本文只研究绝对状态预训练模型及其冻结检查点在 ITrace 上的外部
+RMSF 评估；结合响应与亲和力建模不在本文范围内。

@@ -2,6 +2,30 @@
 
 将论文图片放在本目录中，优先使用 PDF、PNG 或 JPG 格式。
 
+## 扩展 RMSF 基线图
+
+`make_rmsf_baseline_comparison_figures.py` 从
+`artifacts/evaluation/additional_baselines/` 的冻结结果生成双栏论文图：
+
+- `fig_static_residue_profiles.{pdf,png,svg}`：用统一的逐链标准化坐标展示 DynaRepo
+  多链复合体与 ATLAS 单链中 MD、FlexPPI 及六种基线的高变化连续片段；每个体系同时
+  给出曲线图和“方法乘残基位置”矩阵热图。候选窗口要求 MD 高柔性峰位于中央且稳健
+  变化范围至少为 2 个链内标准差，再按 FlexPPI 相对最强基线的标准化 MAE 优势选择；
+  因此该图明确属于优势案例可视化，队列总体结论仍由完整残基统计给出。
+- `fig_rmsf_baseline_comparison.{pdf,png,svg}`：244 个 ITrace 复合体的分布、
+  FlexPPI 与 BackFlip-seq 成对散点、完整的 13 区域乘 7 方法热图，以及按预先定义
+  规则选择的典型胜/负案例残基曲线。
+- `fig_alphaflow_overlap.{pdf,png,svg}`：独立处理的 AlphaFlow 六体系配对比较、
+  10--250 帧采样收敛和 6TGK-C 绝对尺度案例。
+
+对应的 `*_source_data.csv` 保存每一个绘图值；
+`fig_rmsf_baseline_comparison_statistics.json` 记录样本定义、bootstrap 设置、配对检验、
+案例选择规则和输入文件来源。在项目根目录执行：
+
+```powershell
+python paper\figures\make_rmsf_baseline_comparison_figures.py
+```
+
 正文中的插图示例：
 
 ```tex
@@ -31,7 +55,26 @@ python paper\figures\make_completed_experiments_figure.py
 `fig_completed_experiments_statistics.json` 和
 `fig_completed_experiments_QA.md`。
 
-## ITrace 冻结检查点上下文消融图
+## ITrace 固定坐标伙伴消融主图
+
+`fig_itrace_partner_ablation.{pdf,png,svg}` 使用完整五链对 pMHC-only/TCR-only
+的受控比较，不拆散目标侧内部组成。六个面板依次展示结合态 RMSF 的逐复合体
+Spearman、九项准确性中的七项无量纲配对优势、三类输出随伙伴距离的衰减，以及
+复合体内距离--响应相关。对应分析同时逐原子验证 488 组子复合物坐标与完整拓扑
+完全一致，并输出复合体 bootstrap、Wilcoxon 检验和 FDR 校正。
+
+在项目根目录执行：
+
+```powershell
+$env:PYTHONPATH=(Resolve-Path -LiteralPath 'src').Path
+python scripts\analyze_fixed_partner_ablation.py
+```
+
+完整源数据位于 `paper/data/itrace_partner_ablation/`，正文数值表为
+`paper/tables/itrace_partner_ablation.tex`。该图只表示固定结合态坐标的模型
+上下文敏感性，不表示 apo/holo 变化。
+
+## ITrace 孤立链敏感性消融图
 
 `fig_itrace_context_ablation.pdf` 为论文使用的矢量主文件，`.png` 为
 300 dpi 预览，`.svg` 保留可编辑文字。四个面板依次展示逐复合体 Spearman
@@ -61,3 +104,13 @@ python paper\figures\make_itrace_residue_biology_figure.py
 
 配套文件为 `fig_itrace_residue_biology_statistics.json`、
 `fig_itrace_residue_biology_QA.md` 和 `paper/data/itrace_residue_biology/`。
+
+## 6UON 与 2PTT 残基级结构案例图
+
+`make_case_study_figures.py` 生成两张双栏机制图：`fig_6uon_case_study.{pdf,png,svg}` 将 ITrace MD、完整复合物预测、6ULK/6UON 肽构象叠合、CDR3 局部接触和固定坐标伙伴上下文响应放入同一证据链；`fig_2ptt_case_study.{pdf,png,svg}` 将 DynaRepo MD、2PTT/2PTU/2PTV 叠合、跨链电荷锚点和 CC-prime 环残基配对放入同一图版。分子结构由 `case_studies/render_3dmol.js` 调用本地归档的 3Dmol.js 无界面渲染，定量图与最终合成由 Matplotlib 完成。
+
+```powershell
+python paper\figures\make_case_study_figures.py
+```
+
+配套源数据为 `fig_6uon_case_study_source_data.csv` 与 `fig_2ptt_case_study_source_data.csv`，完整编号映射、结构对齐、局部距离和统计定义保存在 `fig_case_studies_statistics.json`，质量检查记录为 `fig_case_studies_QA.md`。2PTT 的原生 2B4 His42 在结构中存在但缺少 DynaRepo 残基映射，因此数值面板将其标记为缺失而不是零柔性。

@@ -399,3 +399,351 @@ For a protein-protein-interaction architecture, start with **SE(3)-Transformer �
 ## 6. Search-process limitations and surfaced failures
 
 The configured `agent-reach` command was not installed or on `PATH`, so both `agent-reach doctor --json` and the required final `agent-reach check-update` could not run. The multi-source `paper-search` script also encountered source-specific problems: the initial six-source query timed out after 124.1 seconds; Semantic Scholar and DBLP each timed out after about 94.1 seconds; OpenAlex failed inside that connector with `unsupported operand type(s) for |: 'type' and 'NoneType'`; OpenReview returned zero records for the broad keyword query; and the first Crossref run hit a Windows GBK `UnicodeEncodeError`. The Crossref encoding problem was retried with UTF-8, while arXiv targeted searches and direct public OpenAlex queries supplied the bulk corpus. Publication status and architecture descriptions were then checked against primary pages from arXiv, OpenReview, PMLR, NeurIPS, CVF, IJCAI, and publisher DOI pages. Because “geometric Transformer” has no universally agreed boundary, this report deliberately labels adjacent foundations, withdrawals, workshops, and submissions rather than silently treating every record as a peer-reviewed main-conference paper.
+
+---
+
+# FlexPPI comparison-model search update (2026-08-03)
+
+Query: `protein flexibility prediction per-residue RMSF`, 2005--2026, maximum five records per source. The first all-source query terminated with `command timed out after 124050 milliseconds`. A restricted rerun queried Semantic Scholar, OpenAlex and arXiv. OpenAlex returned `[open_alex] unavailable (import failed: unsupported operand type(s) for |: 'type' and 'NoneType'); skipping this source.`; arXiv returned `[arxiv] Error: The read operation timed out`. Semantic Scholar completed with the five records below. The unavailable sources were not silently treated as zero-evidence searches; targeted primary-source searches were subsequently used to verify implementation details.
+
+## Semantic Scholar (5 papers)
+
+| # | Title | Date | Venue | Citations |
+|---|---|---:|---|---:|
+| [1](https://www.semanticscholar.org/paper/15d2a57625400e6c92d17bb19b6f013aa6107b7e) | Spectral Diffusion for Protein Dynamics | 2026 | ICML GenBio workshop / preprint | 0 |
+| [2](https://www.semanticscholar.org/paper/a31dd46d76d5c53667bf16c1232d1dc47f2662f2) | Advanced atom-level representations for protein flexibility prediction utilizing graph neural networks | 2024 | arXiv | 1 |
+| [3](https://www.semanticscholar.org/paper/785011e9846ce08f648a39441bdfb3747f3a0d63) | A-RFP: An Adaptive Residue Flexibility Prediction Method Improving Protein-ligand Docking Based on Homologous Proteins | 2024 | Current Bioinformatics | 1 |
+| [4](https://www.semanticscholar.org/paper/980bf62a69d7747449a9aad9f9fce730c72dd26f) | Accurate Prediction of Protein Structural Flexibility by Deep Learning Integrating Intricate Atomic Structures and Cryo-EM Density Information | 2024 | Nature Communications | 79 |
+| [5](https://www.semanticscholar.org/paper/5542462e9ca48ee2e425d3caf6057892da8eedf1) | PEGASUS: Prediction of MD-derived protein flexibility from sequence | 2025 | Protein Science | 5 |
+
+## OpenAlex (0 papers)
+
+Connector import failed with the exact error reported above; no records were returned.
+
+## arXiv (0 papers)
+
+The API read timed out in the reproducible script; no records were returned by that run.
+
+## OpenReview (not queried in restricted rerun)
+
+The source was part of the timed-out all-source query and was excluded from the diagnostic rerun.
+
+## Crossref (not queried in restricted rerun)
+
+The source was part of the timed-out all-source query and was excluded from the diagnostic rerun.
+
+## DBLP (not queried in restricted rerun)
+
+The source was part of the timed-out all-source query and was excluded from the diagnostic rerun.
+
+## Model knowledge and primary-source-verified additions (9 papers/tools)
+
+| # | Work | Year | Status | Relevance to FlexPPI comparison |
+|---|---|---:|---|---|
+| [1](https://openreview.net/forum?id=890gHX7ieS) | BackFlip in *Flexibility-Conditioned Protein Structure Design with Flow Matching* | 2025 | ICML | Direct per-residue RMSF from backbone structure; two public checkpoints, including a sequence-free model. |
+| [2](https://openreview.net/forum?id=L238BAx0wP) | Flexpert-Seq / Flexpert-3D | 2025 | ICLR | Direct RMSF from sequence or sequence plus backbone/ANM information; public weights. |
+| [3](https://openreview.net/forum?id=uKn9PdREBA) | DynaProt | 2026 | ICLR | Predicts per-residue 3x3 covariance and pairwise covariance from a static structure; RMSF is derived from the marginal covariance. |
+| [4](https://prody.readthedocs.io/en/latest/apps/prody/anm.html) | ProDy ANM/GNM | classical | maintained software | Fast structure-only normal-mode baselines; can calculate square fluctuations on a whole coordinate selection, including complexes. |
+| [5](https://cabsflex.lcbio.pl/protein-flexibility.html) | CABS-flex | 2013--2026 | maintained software | Coarse-grained sampling from a PDB structure and direct ensemble RMSF; multimer support makes it a high-value ITrace baseline. |
+| [6](https://github.com/microsoft/bioemu) | BioEmu | 2025 | released model | Sequence-to-equilibrium-ensemble generator; monomer-only and expensive for all 1,220 chains, so suitable for a subset analysis. |
+| [7](https://github.com/bjing2016/alphaflow) | AlphaFlow / ESMFlow | 2024 | released model | Sequence-conditioned ensemble generation; useful for a small mechanistic subset rather than the full five-chain benchmark. |
+| [8](https://pmc.ncbi.nlm.nih.gov/articles/PMC4086073/) | DynaMine | 2014 | webserver/software | Sequence-to-backbone order parameter; a dynamics proxy, not RMSF, and therefore only an auxiliary baseline. |
+| [9](https://academic.oup.com/nar/article/40/W1/W317/1076890) | PredyFlexy | 2012 | webserver/local by request | Sequence-based normalized RMSF/B-factor and three flexibility classes; historically relevant but lower reproducibility than modern released models. |
+
+## Summary of all searched results
+
+### 1. Overview
+
+The reproducible API rerun returned five Semantic Scholar records, of which PEGASUS, RMSF-net and DynaMode directly address MD-derived dynamics; the atom-level GNN predicts crystallographic B-factors, and A-RFP is a homolog-assisted docking method. Primary-source verification added modern direct predictors, physics baselines and ensemble generators needed to build a balanced FlexPPI benchmark.
+
+### 2. Trends
+
+The field has shifted from sequence-based B-factor or flexibility-class prediction toward direct MD-derived RMSF regression (Flexpert, PEGASUS, BackFlip), then toward richer covariance or trajectory prediction (DynaProt, DynaMode). At the same time, classical ANM/GNM and CABS-flex remain essential controls because they separate learned priors from static mechanical topology or explicit coarse-grained sampling.
+
+### 3. Key themes
+
+1. **Direct fast RMSF regression:** BackFlip, Flexpert, PEGASUS and RMSF-net produce residue-level continuous predictions.
+2. **Complex-context mechanics:** ANM/GNM and CABS-flex can represent inter-chain contacts without learning from ITrace.
+3. **Richer dynamics objects:** DynaProt predicts covariance and DynaMode predicts a time-resolved trajectory rather than one scalar per residue.
+4. **Sequence-only controls:** PEGASUS and Flexpert-Seq measure what can be recovered without the experimental complex geometry.
+5. **Ensemble generation:** BioEmu and AlphaFlow can yield RMSF after sampling but are monomer-oriented and substantially more expensive.
+
+### 4. Keywords frequency
+
+Approximate counts across the five returned titles and abstracts are shown below.
+
+| Keyword | Count |
+|---|---:|
+| protein flexibility / dynamics | 5 |
+| prediction | 4 |
+| residue / atom level | 4 |
+| RMSF / fluctuation | 4 |
+| neural network / deep learning | 3 |
+
+### 5. Most cited by accepted paper
+
+| Rank | Title | Year | Citations |
+|---:|---|---:|---:|
+| 1 | RMSF-net | 2024 | 79 |
+| 2 | PEGASUS | 2025 | 5 |
+| 3 | Advanced atom-level representations for protein flexibility prediction | 2024 | 1 |
+| 4 | A-RFP | 2024 | 1 |
+| 5 | Spectral Diffusion for Protein Dynamics | 2026 | 0 |
+
+### 6. Most cited by first author
+
+| Rank | Author | Papers in set | Total citations |
+|---:|---|---:|---:|
+| 1 | Xintao Song | 1 | 79 |
+| 2 | Yann Vander Meersche | 1 | 5 |
+| 3 | Sina Sarparast | 1 | 1 |
+| 4 | Chuqi Lei | 1 | 1 |
+| 5 | Hew Phipps | 1 | 0 |
+
+### 7. Recommendations for reading
+
+1. Read the ANM/GNM and CABS-flex papers first to establish the non-learning mechanical and sampling baselines.
+2. Read Flexpert and PEGASUS next to understand direct MD-RMSF prediction from sequence and sequence-plus-structure.
+3. Read BackFlip for the closest modern structure-based competitor to FlexPPI.
+4. Read RMSF-net for a voxelized, complex-capable structural alternative and its PDB-only inference branch.
+5. Read DynaProt and DynaMode last as the frontier from scalar flexibility toward covariance and trajectory prediction.
+
+## Model-impact audit (snapshot: 2026-08-03)
+
+Impact and benchmark suitability are deliberately separated. “Impact” summarizes publication venue, OpenAlex citation counts, public-code uptake, and whether the method has become a recognizable reference point in protein-dynamics research. “Benchmark priority” instead asks whether the released method can be run fairly on the current FlexPPI targets. Citation counts are a dated database snapshot rather than permanent facts; they also disadvantage papers from 2025--2026. GitHub stars were queried on the same date and are treated only as a rough reproducibility/adoption signal, not as scientific evidence.
+
+| Model or family | Representative publication | OpenAlex citations | Public-code signal | Impact assessment | FlexPPI benchmark priority |
+|---|---|---:|---:|---|---|
+| ANM/GNM via ProDy | ENM foundations (1996--1997); ProDy, *Bioinformatics* 2011 | 1,665 (Tirion ENM); 801 (GNM); 1,191 (ProDy) | ProDy: 554 stars, 180 forks | **S / foundational.** This is the established mechanical reference family rather than a recent learned predictor. | **Required.** Report rank/standardized metrics because the fluctuation scale is not directly calibrated to MD RMSF. |
+| CABS-flex | *Nucleic Acids Research* 2018 (CABS-flex 2.0) | 427; earlier NMR-validation paper: 107 | Maintained web/standalone software | **A / established and still active.** It is one of the most recognizable fast structure-flexibility simulators. | **Required.** Particularly valuable because it can retain multichain context and yields an ensemble-derived RMSF profile. |
+| BioEmu | *Science* 2025 | 247 | 859 stars, 144 forks | **A+ / rapidly rising frontier method.** It has the strongest recent combination of venue, citation velocity, and software uptake. | **Subset only.** Its monomer-oriented sequence-to-ensemble scope and sampling cost make it unsuitable for the full five-chain ITrace comparison. |
+| AlphaFlow/ESMFlow | ICLR 2025 | 83 | 536 stars, 81 forks | **A / influential emerging ensemble generator.** Strong adoption extends beyond direct RMSF regression. | **Subset only.** Use for a small mechanistic monomer analysis, not as a like-for-like full-complex baseline. |
+| RMSF-net | *Nature Communications* 2024 | 81 | 16 stars, 5 forks | **A- / highest-impact recent direct flexibility predictor in this set.** Its citation growth is unusually strong for a 2024 task-specific model. | **High.** Run the PDB-only branch so that cryo-EM density is not an unfair extra modality. |
+| MEDUSA | *Journal of Molecular Biology* 2021 | 74 | 8 stars, 2 forks | **B+ / recognized historical sequence baseline.** Its influence is substantial within sequence-based flexibility classification. | **Appendix.** It predicts B-factor-derived classes, not continuous MD RMSF, so only classification-style comparisons are defensible. |
+| BackFlip | ICML 2025 | OpenAlex not yet independently indexed; another public index showed about 1 | BackFlip: 36 stars, 6 forks; FliPS repository: 36 stars | **B+ / high-potential top-conference method.** Its scientific relevance to FlexPPI is greater than its immature citation count suggests. | **Very high.** It is the closest modern structure-to-per-residue-MD-RMSF competitor and provides both sequence-free and sequence-aware checkpoints. |
+| Flexpert-Seq / Flexpert-3D | ICLR 2025 | 1 | 22 stars, 3 forks | **B+ / high-potential top-conference method.** It is already a conceptual reference for learning MD flexibility and flexibility-aware design, but bibliometric influence is still immature. | **Very high.** Including both variants cleanly separates sequence-only and sequence-plus-structure information. |
+| PEGASUS | *Protein Science* 2025 | 3 | 8 stars, 1 fork | **B / credible emerging specialist method.** Peer reviewed and directly aligned with MD-derived residue flexibility, but still too new for a large citation footprint. | **High.** It is a useful sequence-only direct-RMSF baseline. |
+| FastProtFlex | *Bioinformatics* 2026, DOI 10.1093/bioinformatics/btag175 | 0 | 2 stars, 0 forks | **C+ / very new but now formally peer reviewed.** Publication in *Bioinformatics* improves credibility, while community influence cannot yet be claimed. | **High as a lightweight direct baseline, but insufficient alone.** It should remain in the table and be surrounded by more established and stronger learned baselines. |
+| DynaProt | ICLR 2026 | 0 | No verified public inference repository/weights | **B / frontier academic signal, unproven community impact.** Acceptance at ICLR and covariance prediction make it conceptually important despite its age. | **Watchlist unless code is released.** Do not claim an experimental comparison that cannot be reproduced. |
+| DynaMode | ICML 2026 GenBio workshop / arXiv | 0 | 14 stars, 2 forks; pretrained checkpoint announced but not yet available at audit time | **C / very early frontier work.** Interesting trajectory-level modeling, but impact and usability are not mature. | **Watchlist.** Add only after an official checkpoint becomes available. |
+| Atom-level GNN B-factor predictor | arXiv 2024 | 0 in OpenAlex (the earlier Semantic Scholar snapshot showed 1) | No verified ready-to-run official release | **C / low current influence.** Its atom-level representation is interesting, but it is a preprint targeting B-factors rather than MD RMSF. | **Low.** Do not prioritize over RMSF-net, BackFlip, Flexpert, PEGASUS, ANM/GNM, or CABS-flex. |
+
+### Impact-aware experimental recommendation
+
+The present FastProtFlex-only comparison is vulnerable because FastProtFlex, although now peer reviewed in *Bioinformatics*, is too recent to demonstrate that FlexPPI has been tested against established community standards. The most reviewer-defensible minimum expansion is **ANM + GNM + CABS-flex + RMSF-net + BackFlip + Flexpert-Seq + Flexpert-3D + PEGASUS**, while retaining FastProtFlex. This combination contributes (i) foundational mechanics with very high historical influence, (ii) an established coarse-grained simulator, (iii) the most visible recent direct flexibility paper, and (iv) several current top-conference or specialist direct-RMSF predictors. BioEmu and AlphaFlow have greater broad impact than most direct regressors, but their ensemble-generation scope and monomer/cost constraints make them better suited to a small supplementary case study. DynaProt and DynaMode should be discussed as frontier related work until reproducible inference artifacts are available.
+
+For paper wording, avoid statements such as “we compare against the most influential models” if the table contains only FastProtFlex and recent direct predictors. A defensible formulation is: “We compare FlexPPI with classical elastic-network baselines, an established coarse-grained simulator, and recent sequence- and structure-based predictors of MD-derived residue flexibility.” If BioEmu/AlphaFlow are evaluated only on a subset, state this explicitly as a complementary ensemble-level analysis rather than merging their results into the main full-complex ranking.
+
+### Impact-data sources
+
+- OpenAlex records: [ProDy](https://openalex.org/W2123681603), [CABS-flex 2.0](https://openalex.org/W2788954552), [RMSF-net](https://openalex.org/W4400260629), [BioEmu](https://openalex.org/W4412165572), [AlphaFlow](https://openalex.org/W4391673325), [Flexpert](https://openalex.org/W4405783904), [PEGASUS](https://openalex.org/W4412488876), [FastProtFlex](https://openalex.org/W4417116865), [DynaProt](https://openalex.org/W4414167615), and [DynaMode](https://openalex.org/W7167646191).
+- Primary publication pages: [FastProtFlex in Bioinformatics](https://academic.oup.com/bioinformatics/article/42/4/btag175/8654525), [BackFlip/FliPS at ICML 2025](https://openreview.net/forum?id=890gHX7ieS), [Flexpert at ICLR 2025](https://openreview.net/forum?id=L238BAx0wP), [DynaProt at ICLR 2026](https://openreview.net/forum?id=uKn9PdREBA), [PEGASUS](https://doi.org/10.1002/pro.70221), and [RMSF-net](https://doi.org/10.1038/s41467-024-49858-x).
+- GitHub adoption snapshot: [FastProtFlex](https://github.com/jure-praznikar/FastProtFlex), [BackFlip](https://github.com/graeter-group/backflip), [Flexpert](https://github.com/KoubaPetr/Flexpert), [PEGASUS](https://github.com/DSIMB/PEGASUS), [RMSF-net](https://github.com/XintSong/RMSF-net), [ProDy](https://github.com/prody/ProDy), [BioEmu](https://github.com/microsoft/bioemu), [AlphaFlow](https://github.com/bjing2016/alphaflow), and [DynaMode](https://github.com/HPuntu/DynaMode).
+
+---
+
+## Literature search: residue-flexibility case-study visualization (2026-08-04)
+
+Query: `protein residue flexibility prediction structure visualization case study molecular dynamics machine learning`, 2000–2026, maximum four records per API source.
+
+Search errors were retained verbatim: `[open_alex] unavailable (import failed: unsupported operand type(s) for |: 'type' and 'NoneType'); skipping this source.`; `[dblp] Error: HTTPSConnectionPool(host='dblp.org', port=443): Max retries exceeded with url: /search/publ/api?q=protein+residue+flexibility+prediction+structure+visualization+case+study+molecular+dynamics+machine+learning&format=json&h=4&f=0 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))`; `[semantic_scholar] Error: HTTPSConnectionPool(host='api.semanticscholar.org', port=443): Max retries exceeded with url: /graph/v1/paper/search?query=protein+residue+flexibility+prediction+structure+visualization+case+study+molecular+dynamics+machine+learning&offset=0&limit=4&fields=title%2Cauthors%2Cyear%2Cabstract%2CcitationCount%2Curl%2Cvenue%2CpublicationDate&year=2000-2026 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))`.
+
+### Semantic Scholar (0 papers)
+
+No matches returned because the source failed with the SSL error above.
+
+### OpenAlex (0 papers)
+
+No matches returned because the connector import failed.
+
+### arXiv (4 papers)
+
+| # | Title | Date | Venue | Citations |
+|---|---|---:|---|---:|
+| [1](http://arxiv.org/abs/1803.04479v1) | Machine Learning Harnesses Molecular Dynamics to Discover New μ Opioid Chemotypes | 2018 | arXiv | 0 |
+| [2](http://arxiv.org/abs/2306.04338v1) | Changing Data Sources in the Age of Machine Learning for Official Statistics | 2023 | arXiv | 0 |
+| [3](http://arxiv.org/abs/2006.16189v4) | DOME: Recommendations for supervised machine learning validation in biology | 2020 | arXiv | 0 |
+| [4](http://arxiv.org/abs/2201.12150v2) | Learning Curves for Decision Making in Supervised Machine Learning: A Survey | 2022 | arXiv | 0 |
+
+### OpenReview (0 papers)
+
+No matches returned.
+
+### Crossref (4 papers)
+
+| # | Title | Date | Venue | Citations |
+|---|---|---:|---|---:|
+| [1](https://doi.org/10.26434/chemrxiv.15001545/v2) | Molecular Structure and Toxicity Predictor (MSTP) V2: A Mobile-Developed Cheminformatics Web Application for 2D/3D Visualization and Machine Learning-Based Toxicity Prediction | not supplied | ChemRxiv | 0 |
+| [2](https://doi.org/10.1007/s10822-026-00804-7) | A combined study of molecular dynamics simulations, information theory, molecular graph theory, and machine learning in protein structure and dynamics | 2026 | Journal of Computer-Aided Molecular Design | 1 |
+| [3](https://doi.org/10.2142/biophys.46.s157_4) | 1P044 Ligand-dissociation increases protein flexibility in trp RNA-binding attenuation protein (TRAP): Molecular dynamics simulation study | 2006 | Seibutsu Butsuri | 0 |
+| [4](https://doi.org/10.1142/9789811258589_0007) | Machine Learning for Protein Inter-Residue Interaction Prediction | 2023 | Machine Learning in Bioinformatics of Protein Sequences | 1 |
+
+### DBLP (0 papers)
+
+No matches returned because the source failed with the SSL error above.
+
+### Model knowledge, subsequently verified on primary publication pages (5 papers)
+
+| # | Title | Year | Venue | Notes |
+|---|---|---:|---|---|
+| [1](https://doi.org/10.1038/s41467-024-49858-x) | Accurate Prediction of Protein Structural Flexibility by Deep Learning Integrating Intricate Atomic Structures and Cryo-EM Density Information | 2024 | Nature Communications | RMSF-net; maps predicted and MD-derived RMSF onto structures, then magnifies ligand-local regions. |
+| [2](https://doi.org/10.1038/s41598-022-14382-9) | AlphaFold2 models indicate that protein sequence determines both structure and dynamics | 2022 | Scientific Reports | Combines residue profiles, structural motion, and residue-pair dynamic maps. |
+| [3](https://pmc.ncbi.nlm.nih.gov/articles/PMC3317885/) | Predicting protein flexibility through the prediction of local structures | 2012 | BMC Structural Biology | Side-by-side predicted/observed flexibility mapped to one protein and accompanied by residue profiles. |
+| [4](https://doi.org/10.1093/bioinformatics/btu184) | CABS-flex predictions of protein flexibility compared with NMR ensembles | 2014 | Bioinformatics | Uses single-protein fluctuation profiles and ensemble-based structural interpretation. |
+| [5](https://doi.org/10.1002/pro.70221) | PEGASUS: Prediction of MD-derived protein flexibility from sequence | 2025 | Protein Science | Recent residue-level MD-flexibility predictor; useful methodological comparator. |
+
+### Overview
+
+The API query returned eight records, but only a minority directly addressed residue-flexibility case-study visualization. Five additional directly relevant papers were identified and verified on primary publication pages. The narrow lesson is that useful application figures combine structure coloring, a function-linked local zoom, and a residue-level profile or state difference; a global correlation scatter is supporting evidence rather than the biological story.
+
+### Trends
+
+Older work mainly plotted predicted and observed flexibility along sequence and mapped three-state or normalized flexibility to a single structure. Recent work increasingly adds state comparisons, spatial differences on the 3D structure, explicit ligand/interface neighborhoods, and mechanistic interpretation of flexible regions.
+
+### Key themes
+
+1. Predicted-versus-observed structural coloring: verified papers 1 and 3.
+2. Local functional zoom around ligands or interfaces: verified paper 1.
+3. Multi-domain or multimer dynamics shown through pairwise maps or motion modes: verified paper 2.
+4. Method-validation guidance and leakage awareness: arXiv paper 3.
+
+### Keywords frequency
+
+| Keyword | Count |
+|---|---:|
+| machine learning | 8 |
+| molecular dynamics | 6 |
+| protein flexibility/dynamics | 6 |
+| residue/structure | 5 |
+| prediction | 5 |
+
+### Most cited by accepted paper
+
+The API result supplied only two nonzero citation counts; these counts are incomplete and should not be used as an impact ranking.
+
+| Rank | Title | Year | Citations |
+|---|---|---:|---:|
+| 1 | A combined study of molecular dynamics simulations, information theory, molecular graph theory, and machine learning in protein structure and dynamics | 2026 | 1 |
+| 2 | Machine Learning for Protein Inter-Residue Interaction Prediction | 2023 | 1 |
+
+### Most cited by first author
+
+| Rank | Author | Papers in set | Total citations |
+|---|---|---:|---:|
+| 1 | Mirela Sino | 1 | 1 |
+| 2 | Yang Li | 1 | 1 |
+| 3 | Evan N. Feinberg | 1 | 0 |
+| 4 | Ian Walsh | 1 | 0 |
+| 5 | Felix Mohr | 1 | 0 |
+
+### Recommendations for reading
+
+1. *Predicting protein flexibility through the prediction of local structures* for the basic predicted/observed profile plus structure-coloring pattern.
+2. *AlphaFold2 models indicate that protein sequence determines both structure and dynamics* for linking local peaks to domain and multimer motions.
+3. *Accurate Prediction of Protein Structural Flexibility...* for the strongest modern case-study layout: global structure maps, local functional zooms, and state-specific differences.
+4. The 6UON and 2PTT primary structural papers should then be used to choose biologically meaningful residues and local views rather than selecting peaks solely by magnitude.
+
+---
+
+## AlphaFlow and RMSF-net local deployment and comparison (2026-08-03)
+
+The official RMSF-net repository was pinned at commit eb353b0d9d909a6c46d2808467a9d0f16e2bbda7 and packaged as the local CPU image flexppi-baseline/rmsf-net:pdb-eb353b0 (image ID sha256:e25d665b8e6c2f81ba4886db347a939db782a1d11fa631656e54216f1d5fb4f7). The PDB-only adapter reproduces the documented Chimera molmap geometry with 4 Å resolution, 1.5 Å spacing, atomic-number amplitudes, 5σ Gaussian cutoff, and 12 Å padding. It uses the official sim_model.pth checkpoint, consumes complete complexes when present, and never uses cryo-EM density. All 276 static systems and all 244 ITrace systems completed, yielding 67,077 and 199,668 raw prediction rows respectively; the evaluator then enforced exact coverage of 66,464 frozen static residues and all 199,668 ITrace residues.
+
+On ATLAS-191, DynaRepo-31 single chains, and DynaRepo-54 complexes, RMSF-net-PDB obtained macro Spearman values of 0.6682, 0.6735, and 0.5494. On the external-clean ITrace-244 cohort it obtained Spearman 0.5256, Pearson 0.5162, z-MAE 0.6868, z-RMSE 0.9406, AUROC 0.7935, AP 0.6269, and P@K 0.5298. The corresponding FlexPPI values were 0.7396, 0.6774, 0.5307, 0.7527, 0.8713, 0.7354, and 0.6314. RMSF-net's median full-complex CPU inference time was 137.4 seconds on ITrace. Because the released model normalizes its output before storing it in the PDB B-factor field, it is treated as a relative flexibility score and is not assigned an absolute Å error.
+
+The official AlphaFlow repository was pinned at commit 0408d7c89dac444a43a9089d7427ce470b0a5e67 with OpenFold revision 103d037. The local MD+Templates distilled checkpoint SHA-256 is E481DA4432CC0118E3A1CD51FFBDFB0ABECD50CE6642D9CD96FA5515451867AA; the released 250-frame ensemble archive SHA-256 is 73859D4277D5CA65BDF16910BCE807232ACE44722A437EA29CDE11D93CBFBAE1. Source, weights, and a pinned CUDA image recipe are local. Fresh official generation cannot run on this workstation because Docker exposes no NVIDIA device and the official entry point explicitly transfers tensors to CUDA, so the experiment uses the authors' released trajectories and states this limitation directly.
+
+Six released AlphaFlow ensembles overlap the frozen ATLAS-191 set: 6KTY-A, 6OVK-R, 6TGK-C, 7E2S-A, 7EC1-A, and 7RM7-A, totaling 1,486 common residues. After common-Cα alignment, AlphaFlow achieved macro Spearman 0.9090, Pearson 0.9374, z-MAE 0.2124, AUROC 0.9629, AP 0.8987, P@K 0.8104, and absolute MAE 0.8411 Å. The matching FlexPPI Spearman was 0.7511; BackFlip-structure had the best absolute MAE at 0.5192 Å. AlphaFlow's Spearman over 10, 25, 50, 100, and 250 frames was 0.8161, 0.8922, 0.8942, 0.9042, and 0.9090, so rank behavior stabilized early, but the six-system template-assisted result remains a case study rather than a full-cohort or ITrace ranking.
+
+---
+
+## FlexPPI interface over-rigidification fine-tuning search (2026-08-20)
+
+The automated multi-source query was `protein protein interface residue flexibility dynamics prediction partner conditioned deep learning apo holo molecular dynamics` for 2021–2026, with ten records requested per source. OpenAlex failed because the installed Python 3.9 runtime cannot import the source adapter's Python 3.10 union-type annotation; DBLP returned no records after a server error; Semantic Scholar and OpenReview returned no records. The API search was low precision, so the decision-grade evidence below is separated from the raw hits.
+
+### Crossref (10 raw hits)
+
+| # | Title | Year | Venue | Link |
+|---|---|---:|---|---|
+| 1 | The Impact of Protein Dynamics on Residue-Residue Coevolution and Contact Prediction | n/a | bioRxiv | https://doi.org/10.1101/2022.10.16.512436 |
+| 2 | Exploring Protein-DNA Binding Residue Prediction and Consistent Interpretability Analysis Using Deep Learning | n/a | bioRxiv | https://doi.org/10.1101/2024.10.12.613667 |
+| 3 | Apo-Holo: a neural network to predict residue-level backbone and side-chain displacements during the formation of CAZyme–sugar complexes | 2026 | Journal of Biomolecular Structure and Dynamics | https://doi.org/10.1080/07391102.2026.2655805 |
+| 4 | Anti-apoptotic Bcl-2 protein in apo and holo conformation anchored to the membrane: comparative molecular dynamics simulations | 2023 | Journal of Biomolecular Structure and Dynamics | https://doi.org/10.1080/07391102.2022.2101145 |
+| 5 | Interpreting Molecular Dynamics Forces as Deep Learning Gradients Improves Quality Of Predicted Protein Structures | n/a | bioRxiv | https://doi.org/10.1101/2023.10.03.560775 |
+| 6 | Decoding protein–membrane binding interfaces from surface-fingerprint-based geometric deep learning and molecular dynamics simulations | n/a | bioRxiv | https://doi.org/10.1101/2025.10.14.682447 |
+| 7 | Integrating protein sequence embeddings with structure via graph-based deep learning for single-residue property prediction | n/a | Research Square | https://doi.org/10.21203/rs.3.rs-8043216/v1 |
+| 8 | Crystal structure of the holo-acyl carrier protein (holo-AcpP) from Pseudomonas putida KT2440. Produced as an apo/holo mixture | 2021 | PDB | https://doi.org/10.2210/pdb7pdi/pdb |
+| 9 | An interpretable machine learning method for homo-trimeric protein interface residue-residue interaction prediction | 2021 | Biophysical Chemistry | https://doi.org/10.1016/j.bpc.2021.106666 |
+| 10 | Molecular Dynamics Simulations of the Apo and Holo States of the Copper Binding Protein CueR Reveal Principal Bending and Twisting Motions | 2021 | Journal of Physical Chemistry B | https://doi.org/10.1021/acs.jpcb.1c02553 |
+
+### arXiv (10 raw hits)
+
+| # | Title | Year | Link |
+|---|---|---:|---|
+| 1 | AlphaFold predicts the most complex protein knot and composite protein knots | 2022 | http://arxiv.org/abs/2207.07410v1 |
+| 2 | Mass Balance Approximation of Unfolding Improves Potential-Like Methods for Protein Stability Predictions | 2025 | http://arxiv.org/abs/2504.06806v1 |
+| 3 | Metalic: Meta-Learning In-Context with Protein Language Models | 2024 | http://arxiv.org/abs/2410.08355v3 |
+| 4 | Long Short-Term Memory to predict 3D Amino acids Positions in GPCR Molecular Dynamics | 2022 | http://arxiv.org/abs/2207.05682v1 |
+| 5 | A Parametric and Feasibility Study for Data Sampling of the Dynamic Mode Decomposition--Range, Resolution, and Universal Convergence States | 2021 | http://arxiv.org/abs/2110.06573v2 |
+| 6 | Graph neural networks and attention-based CNN-LSTM for protein classification | 2022 | http://arxiv.org/abs/2204.09486v2 |
+| 7 | ProtSCAPE: Mapping the landscape of protein conformations in molecular dynamics | 2024 | http://arxiv.org/abs/2410.20317v1 |
+| 8 | Introduction to Protein Structure | 2023 | http://arxiv.org/abs/2307.02169v2 |
+| 9 | Ranking protein-protein models with large language models and graph neural networks | 2024 | http://arxiv.org/abs/2407.16375v1 |
+| 10 | Introduction to Protein Folding | 2023 | http://arxiv.org/abs/2307.02174v2 |
+
+### Decision-grade primary sources found by targeted follow-up
+
+| Source | Relevant evidence for FlexPPI |
+|---|---|
+| Grünberg et al., Structure 2006, https://doi.org/10.1016/j.str.2006.01.014 | MD of 17 complexes and their free components found redistribution rather than universal loss of conformational freedom, including increased and unchanged entropy in some partners. |
+| Zen et al., BMC Structural Biology 2010, https://doi.org/10.1186/1472-6807-10-26 | In-silico partner removal showed that interface mobility changes depend on interface type, size, and obligate status; partner presence is not a universal scalar rigidity switch. |
+| Chakravarty et al., IUCrJ 2015, https://doi.org/10.1107/S2052252515015250 | Apo/holo analysis separates interface core and rim and reports stronger average rigidification in the core, while also observing partner-attraction and partner-accommodation structural changes. |
+| RMSF-net, Nature Communications 2024, https://doi.org/10.1038/s41467-024-49858-x | Demonstrates supervised MD-derived RMSF learning and a 335-entry, 30-ns dataset, but does not provide matched partner-present/removed causal supervision. |
+| PINDER, bioRxiv 2024, https://doi.org/10.1101/2024.07.17.603980 | Provides interface-clustered, leakage-aware PPI splits and paired apo/holo structures; useful for split construction and selecting systems for new MD, not as direct RMSF labels. |
+| DynaBench, Journal of Molecular Biology 2026, https://doi.org/10.1016/j.jmb.2026.169650 | Supplies more than 200 PPI complexes with three 100-ns MD replicas, directly suitable for absolute complex-state fine-tuning and interface-stratified evaluation. |
+| DynaPIN, Journal of Molecular Biology 2026, https://doi.org/10.1016/j.jmb.2026.169942 | Supplies dynamic-interface persistence, core/rim/support, interaction, energy, and secondary-structure descriptors that can stratify partner-response labels and audits. |
+| DynaPPI, arXiv 2026, http://arxiv.org/abs/2608.10435 | Dissociated-to-bound trajectories may support future kinetic auxiliary tasks, but are not a clean substitute for equilibrium matched full/partner-removed RMSF labels. |
+
+### Synthesis
+
+The search supports a signed redistribution formulation rather than a monotone contact-rigidity prior. The strongest immediate data path is to use existing DynaBench complex MD for interface-weighted absolute-state correction while keeping ITrace out of training; the strongest causal path is to add matched simulations that start from the same bound coordinates and differ only by whether the opposing biological component is retained. PINDER should define interface-level non-redundant splits and supply apo/holo structures, while DynaPIN annotations should stratify core, rim, support, persistent, and transient contacts. DynaPPI is promising but should remain auxiliary because binding-path trajectories and equilibrium per-residue fluctuations answer different questions.
+
+### Recommended model: signed context-residual FlexPPI (working name: SCR-FlexPPI)
+
+The recommended fine-tuning design treats the pretrained full-complex predictor as the carrier of the already validated global-flexibility ranking, rather than replacing it with a new interface model. For each biological recipient component, the frozen FlexPPI encoder is run twice on the same bound coordinates: once with the complete biological complex and once after removing only the opposing biological component. “Biological component” must be represented separately from PDB chain identity: for example, TCR alpha and beta remain together when pMHC is removed, and MHC, beta-2-microglobulin and peptide remain together when TCR is removed. The aligned recipient-residue representation difference, the frozen full-complex prediction, its uncertainty, the raw full-versus-removed prediction difference, and generic inter-component contact summaries feed a small shared residual adapter. The adapter predicts a signed correction for each target, and the final output is `frozen_full_prediction + interface_gate * signed_residual`. RMSF, side-chain entropy and SASA should have separate output heads because their physical response signs need not agree. TCR, MHC and CDR names should be evaluation strata, not model inputs, to avoid learning an ITrace-specific semantic shortcut.
+
+This design is tightly coupled to the present code. FlexPPI already contains a shared encoder, a state head and a signed `ResponseHead`; the clean extension is a `forward_context_pair` path that reuses these modules and adds `component_index` plus a small residual head. The first training phase freezes the entire encoder and state head. If that underfits the interface response, the second phase may add LoRA or unfreeze only the final IPA/pair-update block, with replay and distillation; a full-backbone update should remain an ablation rather than the main method. There should be no isotonic or exact rank lock: that would preserve the current interface mistakes. Global capability is protected through frozen weights, strong non-interface distillation, replay if any backbone layer is opened, and a preregistered non-inferiority rule for full-complex macro Spearman, while interface residues remain free to reorder.
+
+The training objective is `L = L_bound + alpha L_delta + beta L_sign + gamma L_noninterface_distill + eta L_replay`. `L_bound` is a heteroscedastic NLL or variance-aware Huber loss against full-complex MD labels. `L_delta` is allowed only for genuinely paired full/recipient-only MD and regresses the signed per-residue change. `L_sign` is evaluated and trained only when the paired change exceeds its replicate/bootstrap uncertainty; uncertain changes form a neutral class rather than being forced positive or negative. The distillation term is strong off-interface and weak or absent at the interface. Complexes and recipient sides, not residues, are sampled uniformly so that long multichain systems do not dominate. The physical target is a distributional redistribution of flexibility, not a forced 50/50 sign balance: negative interface changes can remain common, but near-universal negative predictions should disappear unless replicated MD supports them.
+
+### Data plan
+
+The immediate pilot can be performed without claiming physical partner-induced response. The current repository contains 210 DynaBench complex states and 39 test53 complex states with full-state labels, plus only 37 apo/holo pairs. These data can train an interface-weighted bound-state residual and test whether the frozen-plus-adapter architecture corrects full-complex interface RMSF/entropy/SASA without losing global rank. The existing ITrace cohort should not be used for training: it exposed the defect and therefore is best described as a targeted post-hoc stress test, not as a pristine prospective test. This pilot supports the claim “pretrained FlexPPI interface calibration,” but the full-versus-partner-removed model-input difference must not be labeled as a physical apo/holo delta because the coordinates and MD labels are unchanged.
+
+The paper-grade causal version should construct matched counterfactual MD for approximately 80–120 interface-cluster-nonredundant PPI complexes, with a 24-complex subset used only as a feasibility pilot. For every bipartite complex AB, simulate AB, A-only and B-only from identically repaired bound coordinates, under the same force field, protonation, solvent, ionic strength and temperature, with three independent replicas and preferably 50–100 ns production per condition. Existing three-replica full-complex DynaBench trajectories can supply AB; the new compute then concentrates on A-only and B-only. Labels are calculated after recipient-core alignment as AB-minus-A for A residues and AB-minus-B for B residues, together with replicate variance. PINDER should define interface-structure-clustered train/validation/test partitions and help select systems; its structural apo/holo pairs are useful covariates and external checks, but are not themselves RMSF labels. DynaPIN annotations should stratify persistent/transient contacts and interface core/rim/support. Exact-PDB exclusion is insufficient: sequence, whole-structure and interface-geometry similarity checks should also be performed.
+
+Formal sample-size claims should be made at the complex or recipient-side level. A fixed set of 24 complexes cannot guarantee adequate positive and negative changes, caliper matches and support in every `TCR/pMHC/CDR region x observable` cell. The primary study should therefore make generic PPI interface correction the estimand and reserve TCR/pMHC and CDR1/2-beta as biologically motivated external strata. If only 24 systems can be afforded, restrict the claim to one recipient direction and one well-converged observable such as backbone RMSF, or present the result as a feasibility study rather than a general response model.
+
+### Architecture choices and decision
+
+| Choice | Connection to pretraining | Main advantage | Main risk | Recommended role |
+|---|---|---|---|---|
+| Full end-to-end fine-tuning | Weakens the pretrained anchor | Simple | Catastrophic forgetting and interface shortcut learning | Baseline only |
+| Last-block LoRA/adapters | Reuses most pretrained features | Cheap and expressive | Global and interface effects remain entangled | Second-stage baseline |
+| Post-hoc scalar/isotonic calibration | Keeps the base score | Very cheap | Cannot repair residue ordering or signed mechanisms | Calibration baseline |
+| Dual-pass signed residual adapter | Explicitly measures the pretrained model's context response | Best balance of continuity, attribution and safety | Requires careful component semantics; causal claim needs paired MD | Primary choice |
+| Semantic role-gated mixture of experts | Can model TCR/pMHC asymmetry | High local capacity | Easy to overfit biological names and ITrace | Reject as primary; generic physical gates only |
+| Separate intra-/inter-component attention channels | Clean mechanistic decomposition | Stronger causal control | Invasive and expensive | Phase 2 if residual adapter underfits |
+| Ensemble/generative dynamics model | Represents multimodality | Biologically rich | Much larger compute and a different paper | Future work |
+
+### Evaluation and falsification
+
+The global primary endpoint is full-complex macro Spearman with a complex-bootstrap non-inferiority margin of `Delta rho >= -0.01`; report its confidence interval rather than only a point estimate. Interface endpoints are macro interface Spearman/MAE, signed-delta correlation, and macro balanced sign accuracy on reliable non-neutral paired labels. A direct over-rigidification audit should report the fraction of complexes whose contact responses are almost all negative and compare the predicted versus MD delta distributions. Results should be stratified by recipient side, core/rim/support, contact persistence and interface type, but only sufficiently supported strata receive confirmatory claims.
+
+Required controls are the frozen pretrained model, full end-to-end fine-tuning, last-block LoRA, post-hoc calibration, a same-capacity residual head that sees only the full input, and the proposed adapter without the hidden-representation difference. A paired-target permutation control must shuffle MD deltas across training complexes while preserving base predictions and contact geometry; performance should collapse toward the frozen baseline. The method should be rejected if it fails to improve reliable signed-delta metrics, if the lower confidence bound for global rank change crosses the `-0.01` margin, if the shuffled-target control performs similarly, if gains disappear under interface-cluster split, or if side-chain entropy has not converged across replicas.
+
+### Paper narrative and IdeaSpark audit outcome
+
+The coherent paper chain is: state-only pretraining learns transferable residue flexibility; paired state fine-tuning teaches state response; the external multichain stress test reveals that full context improves global ranking while the pretrained context operator over-applies a contact-rigidity prior; SCR-FlexPPI freezes that global prior and learns only an uncertainty-aware signed context residual; matched counterfactual MD then tests whether the correction represents physical partner-induced redistribution rather than dataset calibration. This is a natural continuation of pretraining, not a separate downstream model.
+
+The strict IdeaSpark audit did not approve an idea card after its one permitted retry. The first candidate failed because one partner-removed structure cannot supply both recipient directions and because a typed GNN plus rank-lock omitted simpler baselines and hid information loss. The second candidate replaced that design with the recommended frozen residual adapter and matched MD, but still failed the hard floor because 24 pre-split complexes cannot support broad region-by-observable claims, and because “counterfactual residual adaptation” alone is not a defensible novelty claim. Consequently, the method should be positioned around the protein-specific scientific finding, paired-MD benchmark construction, component-aware architecture and falsification evidence; it should not claim novelty merely from using a residual adapter.
