@@ -1,7 +1,12 @@
 from pathlib import Path
 
+import torch
+
+from flexppi.config import ModelConfig
 from flexppi.data.pairing import global_sequence_alignment, match_apo_to_holo
 from flexppi.data.structures import parse_pdb
+from flexppi.inference import predict
+from flexppi.model.network import FlexPPI
 
 
 def atom_line(serial, name, residue, chain, residue_id, x, y, z):
@@ -64,3 +69,43 @@ def test_alignment_keeps_exact_correspondence_across_gap():
     # ambiguous; either exact-G correspondence is a valid global alignment.
     assert alignment.indices_b in ([0, 1, 3, 4], [0, 2, 3, 4])
     assert alignment.coverage == 1.0
+
+
+def test_paired_static_prediction_builds_a_collatable_pair(tmp_path, monkeypatch):
+    apo_path = tmp_path / "apo.pdb"
+    holo_path = tmp_path / "holo.pdb"
+    write_chain(apo_path, [("A", "AGSV", 0.0)])
+    write_chain(holo_path, [("A", "AGSV", 0.0), ("B", "VVVV", 8.0)])
+
+    config = ModelConfig(
+        sequence_backend="learned",
+        single_dim=32,
+        pair_dim=16,
+        sequence_dim=24,
+        ipa_blocks=1,
+        ipa_heads=4,
+        ipa_scalar_dim=8,
+        ipa_qk_points=2,
+        ipa_v_points=2,
+        rbf_bins=8,
+        dropout=0.0,
+    )
+    model = FlexPPI(config).eval()
+    monkeypatch.setattr(
+        "flexppi.inference.load_model",
+        lambda *_args, **_kwargs: (model, config, torch.device("cpu")),
+    )
+
+    result = predict(
+        "unused.pt",
+        str(apo_path),
+        holo_pdb=str(holo_path),
+        target_chains=["A"],
+        device_name="cpu",
+    )
+
+    assert result["mode"] == "paired_response"
+    assert result["sequence_identity"] == 1.0
+    assert result["coverage"] == 1.0
+    assert result["matched_holo_chains"] == ["A"]
+    assert len(result["rows"]) == 4

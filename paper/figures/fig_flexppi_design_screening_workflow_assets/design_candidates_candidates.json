@@ -1,0 +1,67 @@
+{
+  "image": "C:\\Users\\DELL\\AppData\\Local\\Temp\\codex-clipboard-6fd8e26c-7913-4788-9158-1e2c043371aa.png",
+  "roi": [
+    590,
+    8,
+    195,
+    182
+  ],
+  "anchor": [
+    690,
+    90
+  ],
+  "exclude": [],
+  "background_rgb": [
+    255,
+    255,
+    255
+  ],
+  "component_count": 6,
+  "kept_component_count": 6,
+  "rejected_component_count": 0,
+  "preview": "E:\\Project\\FlexPPI\\paper\\figures\\fig_flexppi_design_screening_workflow_assets\\design_candidates_preview.png",
+  "candidates": [
+    {
+      "label": "target_pad",
+      "local_box": [
+        0,
+        0,
+        188,
+        182
+      ],
+      "source_box": [
+        590,
+        8,
+        188,
+        182
+      ],
+      "member_count": 6,
+      "rejected_component_hits": 0,
+      "warnings": [
+        "candidate touches ROI edge; rough ROI may be too tight"
+      ],
+      "file": "E:\\Project\\FlexPPI\\paper\\figures\\fig_flexppi_design_screening_workflow_assets\\design_candidates_1_target_pad.png"
+    },
+    {
+      "label": "target_tight",
+      "local_box": [
+        0,
+        0,
+        181,
+        181
+      ],
+      "source_box": [
+        590,
+        8,
+        181,
+        181
+      ],
+      "member_count": 6,
+      "rejected_component_hits": 0,
+      "warnings": [
+        "candidate touches ROI edge; rough ROI may be too tight"
+      ],
+      "file": "E:\\Project\\FlexPPI\\paper\\figures\\fig_flexppi_design_screening_workflow_assets\\design_candidates_2_target_tight.png"
+    }
+  ]
+}

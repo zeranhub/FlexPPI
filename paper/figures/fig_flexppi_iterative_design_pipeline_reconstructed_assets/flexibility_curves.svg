@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="58" viewBox="0 0 340 58">
+  <defs>
+    <linearGradient id="beforeFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C42B78" stop-opacity="0.27"/>
+      <stop offset="1" stop-color="#C42B78" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="afterFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1764AD" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#1764AD" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+  <path d="M4 47 C 20 47, 25 39, 33 27 C 41 14, 49 10, 57 14 C 64 18, 65 31, 74 33 C 83 36, 89 23, 97 23 C 104 22, 107 34, 114 36 C 121 39, 127 34, 132 31 L132 56 L4 56 Z" fill="url(#beforeFill)"/>
+  <path d="M4 47 C 20 47, 25 39, 33 27 C 41 14, 49 10, 57 14 C 64 18, 65 31, 74 33 C 83 36, 89 23, 97 23 C 104 22, 107 34, 114 36 C 121 39, 127 34, 132 31" fill="none" stroke="#B01E67" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M204 47 C 219 47, 226 39, 234 25 C 242 11, 252 8, 260 14 C 268 20, 267 35, 276 36 C 285 37, 290 24, 298 23 C 306 22, 309 36, 316 37 C 324 39, 330 34, 336 27 L336 56 L204 56 Z" fill="url(#afterFill)"/>
+  <path d="M204 47 C 219 47, 226 39, 234 25 C 242 11, 252 8, 260 14 C 268 20, 267 35, 276 36 C 285 37, 290 24, 298 23 C 306 22, 309 36, 316 37 C 324 39, 330 34, 336 27" fill="none" stroke="#1764AD" stroke-width="2.8" stroke-linecap="round"/>
+</svg>

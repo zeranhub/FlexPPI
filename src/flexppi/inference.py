@@ -5,7 +5,6 @@ from __future__ import annotations
 import math
 from typing import Any, Dict, List, Optional, Sequence
 
-import numpy as np
 import torch
 
 from flexppi.config import ModelConfig
@@ -143,6 +142,11 @@ def predict(
         "holo_indices": torch.tensor(holo_indices, dtype=torch.long),
         "sequence_identity": identity,
         "coverage": coverage,
+        "metadata": {
+            "apo_pdb": apo_pdb,
+            "holo_pdb": holo_pdb,
+            "matched_holo_chains": matched_chains,
+        },
     }
     batch = move_to_device(collate_pairs([pair_example]), device)
     output = model.forward_pair(batch)
@@ -182,4 +186,3 @@ def predict(
         "matched_holo_chains": matched_chains,
         "rows": rows,
     }
-

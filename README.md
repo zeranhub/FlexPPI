@@ -113,6 +113,18 @@ flexppi predict `
   --output artifacts\prediction.json
 ```
 
+## Zenodo 6638504 严格 apo/holo PPI 实验
+
+本地 `E:\data\protein_md_datasets\zenodo_6638504_ppi_md` 的 8 个经典 PPI 复合物现已支持 GRO+XTC 原子顺序安全转换、100 ns 窗口标签、16 个链侧严格配对、冻结 checkpoint 评估、伙伴删除消融、GNM/接触数/距离基线以及 leave-one-complex-out 校准。完整设计、实测结果、泄漏边界、生物学解释和复现命令见 [docs/zenodo_6638504_experiments.md](docs/zenodo_6638504_experiments.md)。
+
+```powershell
+flexppi index-zenodo-ppi --output artifacts\zenodo_6638504\data
+flexppi compute-md-labels `
+  --manifest artifacts\zenodo_6638504\data\zenodo_6638504_states.jsonl `
+  --output-dir artifacts\zenodo_6638504\data\labels `
+  --window-frames 2500
+```
+
 ## 代码布局与验证
 
 `src/flexppi/data` 负责 PDB、清单、配对和 MD 标签；`src/flexppi/model` 负责序列编码、几何特征、IPA 和预测头；`losses.py` 实现噪声感知状态损失、响应损失与一致性损失；`trainer.py`、`evaluation.py` 和 `inference.py` 分别处理训练、指标和推理。运行全部测试：

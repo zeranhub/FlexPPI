@@ -114,3 +114,13 @@ python paper\figures\make_case_study_figures.py
 ```
 
 配套源数据为 `fig_6uon_case_study_source_data.csv` 与 `fig_2ptt_case_study_source_data.csv`，完整编号映射、结构对齐、局部距离和统计定义保存在 `fig_case_studies_statistics.json`，质量检查记录为 `fig_case_studies_QA.md`。2PTT 的原生 2B4 His42 在结构中存在但缺少 DynaRepo 残基映射，因此数值面板将其标记为缺失而不是零柔性。
+
+## FlexPPI 设计/筛选 pipeline 总览图
+
+`make_flexppi_design_pipeline_figure.py` 生成四面板双栏总览图 `fig_flexppi_design_pipeline.{pdf,svg,png}`（178 mm × 95 mm，300 dpi PNG）：(a) 从头设计与突变筛选双入口泳道汇合；(b) 多 seed apo/holo 结构集合与可开发性、折叠/复合物置信度、静态 ΔΔG 三道收窄 gate；(c) 紫色高亮的 FlexPPI 动力学感知重排层，输出逐残基 RMSF/Sχ/SASA 色带、partner-induced Δ 发散色带和不确定性灰带；(d) Pareto 示意散点 + MD/湿实验验证 + 沿底部回到 (a) 的朱红实验反馈弧。图形语法与文献画法依据见 `docs/pipeline_figure_literature_review.md`，完整设计见 `docs/flexppi_design_screening_pipeline.md`。
+
+```powershell
+python paper\figures\make_flexppi_design_pipeline_figure.py
+```
+
+配套 QA 记录为 `fig_flexppi_design_pipeline_QA.md`。该图是应用/展望示意图，不包含数据统计；Pareto 散点为示意点，无真实坐标刻度。

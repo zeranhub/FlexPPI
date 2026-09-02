@@ -12,6 +12,7 @@ from flexppi.data.atlas import prepare_atlas
 from flexppi.data.dynarepo import index_dynarepo
 from flexppi.data.labels import compute_dynarepo_labels
 from flexppi.data.records import load_state_records, read_jsonl
+from flexppi.data.zenodo_ppi import index_zenodo_ppi
 from flexppi.evaluation import evaluate
 from flexppi.inference import predict
 from flexppi.tcr3d import evaluate_tcr3d, write_tcr3d_outputs
@@ -20,6 +21,7 @@ from flexppi.trainer import train
 
 DEFAULT_ATLAS = r"E:\data\protein_md_datasets\ATLAS_extracted"
 DEFAULT_DYNAREPO = r"D:\data\dynarepo_non_nucleic_full"
+DEFAULT_ZENODO_PPI = r"E:\data\protein_md_datasets\zenodo_6638504_ppi_md"
 DEFAULT_TCR3D = r"E:\Project\Data\TCR3d_database"
 
 
@@ -40,6 +42,17 @@ def _index_dynarepo(args: argparse.Namespace) -> None:
             limit=args.limit,
             minimum_identity=args.minimum_identity,
             minimum_coverage=args.minimum_coverage,
+        )
+    )
+
+
+def _index_zenodo_ppi(args: argparse.Namespace) -> None:
+    _print_json(
+        index_zenodo_ppi(
+            args.root,
+            args.output,
+            label_dir=args.label_dir,
+            limit=args.limit,
         )
     )
 
@@ -75,7 +88,8 @@ def _compute_labels(args: argparse.Namespace) -> None:
                 _print_json(results)
                 raise
     results["next_step"] = (
-        "Rerun index-dynarepo with --label-dir {} so pair records receive label paths."
+        "Re-run the matching dataset index command with --label-dir {} so state and "
+        "pair records receive label paths."
         .format(output_dir)
     )
     _print_json(results)
@@ -186,6 +200,16 @@ def build_parser() -> argparse.ArgumentParser:
     dynarepo.add_argument("--minimum-coverage", type=float, default=0.80)
     dynarepo.set_defaults(function=_index_dynarepo)
 
+    zenodo_ppi = subparsers.add_parser(
+        "index-zenodo-ppi",
+        help="prepare Zenodo 6638504 strict apo/holo PPI trajectories",
+    )
+    zenodo_ppi.add_argument("--root", default=DEFAULT_ZENODO_PPI)
+    zenodo_ppi.add_argument("--output", default="artifacts/zenodo_6638504/data")
+    zenodo_ppi.add_argument("--label-dir")
+    zenodo_ppi.add_argument("--limit", type=int)
+    zenodo_ppi.set_defaults(function=_index_zenodo_ppi)
+
     labels = subparsers.add_parser("compute-dynarepo-labels", help="compute windowed MD labels")
     labels.add_argument("--manifest", default="artifacts/data/dynarepo_states.jsonl")
     labels.add_argument("--output-dir", default="artifacts/data/dynarepo_labels")
@@ -198,6 +222,22 @@ def build_parser() -> argparse.ArgumentParser:
     labels.add_argument("--sasa-points", type=int, default=96)
     labels.add_argument("--continue-on-error", action="store_true")
     labels.set_defaults(function=_compute_labels)
+
+    generic_labels = subparsers.add_parser(
+        "compute-md-labels",
+        help="compute windowed labels for any FlexPPI state manifest",
+    )
+    generic_labels.add_argument("--manifest", required=True)
+    generic_labels.add_argument("--output-dir", required=True)
+    generic_labels.add_argument("--groups", nargs="+")
+    generic_labels.add_argument("--limit", type=int)
+    generic_labels.add_argument("--window-frames", type=int, default=1000)
+    generic_labels.add_argument("--stride", type=int, default=1)
+    generic_labels.add_argument("--max-windows", type=int)
+    generic_labels.add_argument("--sasa", action="store_true")
+    generic_labels.add_argument("--sasa-points", type=int, default=96)
+    generic_labels.add_argument("--continue-on-error", action="store_true")
+    generic_labels.set_defaults(function=_compute_labels)
 
     train_parser = subparsers.add_parser("train")
     train_parser.add_argument("--config", required=True)

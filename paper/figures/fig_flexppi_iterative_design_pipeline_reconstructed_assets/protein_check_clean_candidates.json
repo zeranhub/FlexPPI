@@ -1,0 +1,67 @@
+{
+  "image": "C:\\Users\\DELL\\AppData\\Local\\Temp\\codex-clipboard-ff83db32-911b-4be2-88e5-a90e7edad978.png",
+  "roi": [
+    320,
+    682,
+    118,
+    146
+  ],
+  "anchor": [
+    379,
+    751
+  ],
+  "exclude": [],
+  "background_rgb": [
+    240,
+    247,
+    246
+  ],
+  "component_count": 4,
+  "kept_component_count": 2,
+  "rejected_component_count": 2,
+  "preview": "paper\\figures\\fig_flexppi_iterative_design_pipeline_reconstructed_assets\\protein_check_clean_preview.png",
+  "candidates": [
+    {
+      "label": "target_pad",
+      "local_box": [
+        0,
+        0,
+        118,
+        143
+      ],
+      "source_box": [
+        320,
+        682,
+        118,
+        143
+      ],
+      "member_count": 2,
+      "rejected_component_hits": 0,
+      "warnings": [
+        "candidate touches ROI edge; rough ROI may be too tight"
+      ],
+      "file": "paper\\figures\\fig_flexppi_iterative_design_pipeline_reconstructed_assets\\protein_check_clean_1_target_pad.png"
+    },
+    {
+      "label": "target_tight",
+      "local_box": [
+        0,
+        3,
+        114,
+        135
+      ],
+      "source_box": [
+        320,
+        685,
+        114,
+        135
+      ],
+      "member_count": 2,
+      "rejected_component_hits": 0,
+      "warnings": [
+        "candidate touches ROI edge; rough ROI may be too tight"
+      ],
+      "file": "paper\\figures\\fig_flexppi_iterative_design_pipeline_reconstructed_assets\\protein_check_clean_2_target_tight.png"
+    }
+  ]
+}
