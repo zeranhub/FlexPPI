@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 import random
 from pathlib import Path
-from typing import Any, Dict, List, Sequence, Tuple
+from typing import Any, Dict, List, Tuple
 
 import numpy as np
 import torch
@@ -102,7 +102,7 @@ def _batch_loss(
     output = model(batch)
     weights = _metric_weights(config)
     if config.stage == "pretrain":
-        loss = state_loss(output, batch, weights)
+        loss = state_loss(output, batch, weights, config.model.metrics)
         return {"loss": loss, "state_loss": loss}
     return paired_loss(
         output,
@@ -111,7 +111,34 @@ def _batch_loss(
         state_weight=config.train.state_weight,
         response_weight=config.train.response_weight,
         consistency_weight=config.train.consistency_weight,
+        metric_names=config.model.metrics,
     )
+
+
+def _record_groups(dataset: Dataset) -> set:
+    records = getattr(dataset, "records", [])
+    return {_record_group(record) for record in records}
+
+
+def _fixed_state_validation_sets(
+    config: ExperimentConfig,
+    train_dataset: Dataset,
+) -> Tuple[Dataset, Dataset]:
+    if not config.data.validation_state_manifest:
+        return group_split(train_dataset, config.train.val_fraction, config.seed)
+    validation_dataset = StateDataset(
+        config.data.validation_state_manifest,
+        config.data.max_residues,
+        config.data.path_mappings,
+    )
+    overlap = sorted(_record_groups(train_dataset) & _record_groups(validation_dataset))
+    if overlap:
+        raise ValueError(
+            "Fixed train/validation manifests share biological groups: {}".format(
+                ", ".join(overlap[:10])
+            )
+        )
+    return train_dataset, validation_dataset
 
 
 @torch.no_grad()
@@ -139,7 +166,10 @@ def train(config: ExperimentConfig) -> Dict[str, Any]:
         raise RuntimeError(
             "No labelled samples survived filtering. For DynaRepo, compute labels and rerun index-dynarepo first."
         )
-    train_set, val_set = group_split(dataset, config.train.val_fraction, config.seed)
+    if config.stage == "pretrain":
+        train_set, val_set = _fixed_state_validation_sets(config, dataset)
+    else:
+        train_set, val_set = group_split(dataset, config.train.val_fraction, config.seed)
     train_loader = DataLoader(
         train_set,
         batch_size=config.data.batch_size,

@@ -1,14 +1,14 @@
 stage: pretrain
 seed: 7
 device: auto
-output_dir: artifacts/evaluation/state
+output_dir: artifacts/evaluation/state_rmsf_hchi_v1
 
 data:
-  state_manifest:
-    - artifacts/data/atlas_states.jsonl
-    - artifacts/data/dynarepo_states.jsonl
+  state_manifest: data/splits/state_rmsf_hchi_v1/train.jsonl
+  validation_state_manifest: data/splits/state_rmsf_hchi_v1/validation.jsonl
+  test_state_manifest: data/splits/state_rmsf_hchi_v1/test.jsonl
   pair_manifest: null
-  max_residues: 768
+  max_residues: 1024
   batch_size: 1
   num_workers: 0
   path_mappings:
@@ -17,5 +17,4 @@ data:
     /ranze/data/dynarepo/dynarepo_non_nucleic_full: 'D:\data\dynarepo_non_nucleic_full'
 
 train:
-  val_fraction: 0.1
-
+  val_fraction: 0.0

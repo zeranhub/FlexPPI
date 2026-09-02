@@ -1,3 +1,5 @@
+# LEGACY ONLY: retained to evaluate the previous apo/holo response checkpoint.
+# The state_rmsf_hchi_v1 retraining workflow does not use pair manifests.
 stage: finetune
 seed: 7
 device: auto
@@ -15,4 +17,3 @@ data:
 
 train:
   val_fraction: 0.2
-

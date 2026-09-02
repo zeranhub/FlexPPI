@@ -12,6 +12,8 @@ import yaml
 @dataclass
 class DataConfig:
     state_manifest: Optional[Union[str, List[str]]] = None
+    validation_state_manifest: Optional[Union[str, List[str]]] = None
+    test_state_manifest: Optional[Union[str, List[str]]] = None
     pair_manifest: Optional[str] = None
     max_residues: int = 768
     batch_size: int = 1
@@ -34,8 +36,9 @@ class ModelConfig:
     ipa_v_points: int = 8
     rbf_bins: int = 24
     dropout: float = 0.1
+    enable_response_head: bool = True
     metrics: List[str] = field(
-        default_factory=lambda: ["rmsf", "chi_entropy", "sasa"]
+        default_factory=lambda: ["rmsf", "chi_entropy"]
     )
 
 
@@ -52,7 +55,7 @@ class TrainConfig:
     response_weight: float = 1.0
     consistency_weight: float = 0.25
     metric_weights: Dict[str, float] = field(
-        default_factory=lambda: {"rmsf": 1.0, "chi_entropy": 0.5, "sasa": 0.25}
+        default_factory=lambda: {"rmsf": 1.0, "chi_entropy": 1.0}
     )
 
 

@@ -7,7 +7,7 @@ from typing import Any, Dict, List, Mapping, Optional, Sequence, Tuple
 
 import numpy as np
 import torch
-from torch.utils.data import DataLoader, Dataset, Subset
+from torch.utils.data import ConcatDataset, DataLoader, Dataset, Subset
 
 from flexppi.config import ExperimentConfig, ModelConfig
 from flexppi.constants import METRIC_NAMES
@@ -327,10 +327,14 @@ def _select_split(
     }, train_set
 
 
-def _training_label_means(dataset: StateDataset, train_set: Subset) -> Dict[str, float]:
+def _training_label_means(
+    dataset: StateDataset,
+    train_set: Optional[Subset] = None,
+) -> Dict[str, float]:
     sums = np.zeros(len(METRIC_NAMES), dtype=np.float64)
     counts = np.zeros(len(METRIC_NAMES), dtype=np.int64)
-    for index in train_set.indices:
+    indices = range(len(dataset)) if train_set is None else train_set.indices
+    for index in indices:
         record = dataset.records[index]
         if not record.label_path:
             continue
@@ -400,13 +404,67 @@ def _state_evaluation(
 ) -> Dict[str, Any]:
     if config.data.state_manifest is None:
         raise ValueError("state evaluation requires data.state_manifest")
-    dataset = StateDataset(
+    train_dataset = StateDataset(
         config.data.state_manifest,
         config.data.max_residues,
         config.data.path_mappings,
     )
-    selected, split_info, train_set = _select_split(dataset, config, split, limit)
-    training_means = _training_label_means(dataset, train_set)
+    if config.data.validation_state_manifest:
+        validation_dataset = StateDataset(
+            config.data.validation_state_manifest,
+            config.data.max_residues,
+            config.data.path_mappings,
+        )
+        test_dataset = (
+            StateDataset(
+                config.data.test_state_manifest,
+                config.data.max_residues,
+                config.data.path_mappings,
+            )
+            if config.data.test_state_manifest
+            else None
+        )
+        if split == "train":
+            selected: Dataset = train_dataset
+            role = "training"
+        elif split == "val":
+            selected = validation_dataset
+            role = "model_selection_validation"
+        elif split == "test":
+            if test_dataset is None:
+                raise ValueError("split=test requires data.test_state_manifest")
+            selected = test_dataset
+            role = "untouched_internal_test"
+        elif split == "all":
+            datasets: List[Dataset] = [train_dataset, validation_dataset]
+            if test_dataset is not None:
+                datasets.append(test_dataset)
+            selected = ConcatDataset(datasets)
+            role = "mixed_training_validation_and_test"
+        else:
+            raise ValueError("split must be all, train, val, or test")
+        total_before_limit = len(selected)
+        if limit is not None:
+            selected = Subset(selected, list(range(min(limit, len(selected)))))
+        split_info = {
+            "name": split,
+            "role": role,
+            "samples_before_limit": total_before_limit,
+            "samples_evaluated": len(selected),
+            "train_samples": len(train_dataset),
+            "validation_samples": len(validation_dataset),
+            "test_samples": 0 if test_dataset is None else len(test_dataset),
+            "warning": (
+                "Validation selects checkpoints and is optimistic; the explicit test "
+                "manifest is untouched during training. 'all' mixes statistical roles."
+            ),
+        }
+        training_means = _training_label_means(train_dataset)
+    else:
+        selected, split_info, train_set = _select_split(
+            train_dataset, config, split, limit
+        )
+        training_means = _training_label_means(train_dataset, train_set)
     loader = DataLoader(
         selected,
         batch_size=config.data.batch_size,

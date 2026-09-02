@@ -1,5 +1,9 @@
 # FlexPPI
 
+> 当前重训版本只学习逐残基绝对 `RMSF` 与侧链 `Hχ`（配置名为
+> `chi_entropy`）。SASA、apo/holo 配对和结合响应均不参与本轮训练；旧的
+> 成对实验和配置只作为历史分析保留。
+
 FlexPPI 是一个面向蛋白–蛋白结合动态响应的研究代码库。模型把每个输入状态表示成“目标受体 + 可选伙伴环境 + 一份静态三维结构”，由同一个状态编码器预测逐残基绝对 RMSF、侧链构象熵和 SASA，再在同一受体的 apo/holo 对之间预测带正负号的变化量。这里的 RMSF（root mean square fluctuation，均方根涨落）表示一个残基在轨迹中围绕平均位置晃动的幅度；侧链构象熵表示侧链在多少种不同朝向之间切换；SASA（solvent-accessible surface area，溶剂可接触表面积）表示残基暴露给溶剂的面积。
 
 项目参考了 [AlphaFold](https://github.com/google-deepmind/alphafold) 的 Invariant Point Attention（IPA，不变点注意力）和 [Ibex](https://github.com/prescient-design/ibex) 的 PyTorch/OpenFold 结构模块、分链 ESM 编码与批次补齐方式，但没有复制完整结构生成模型。FlexPPI 使用输入 PDB 中的 N–CA–C 原子建立固定的逐残基局部坐标架，IPA 只更新残基表示，不更新坐标；这样既保留整体旋转和平移不变性，又避免为动态标签任务引入不必要的坐标生成与扭转角重建。外部设计来源与许可证说明见 [NOTICE](NOTICE)。
@@ -75,14 +79,33 @@ flexppi inspect-manifest --manifest "artifacts\data\dynarepo_pairs.jsonl"
 
 ## 训练、评估与推理
 
-绝对状态预训练和配对微调分别使用两个配置文件。预训练配置中的 `state_manifest` 是一个清单列表，会把 ATLAS 与已经生成标签的 DynaRepo 状态合并；尚无标签的 DynaRepo 条目会自动过滤，而不是被当成零值标签：
+本轮训练只运行绝对状态模型，不再执行 apo/holo 配对微调。训练数据已经用
+MMseqs2 按完整生物体系划成固定的 train/validation/test：任意两条链达到
+30%序列一致性且双向覆盖率达到70%时视为同源，只要复合物中的一条链同源，
+整个体系就进入同一个不可拆分组。ITrace 的244个状态只参与同源排除，不进入
+训练、验证或内部测试。数据划分的清单、阈值、源文件哈希和审计结果见
+[`data/splits/state_rmsf_hchi_v1`](data/splits/state_rmsf_hchi_v1)。重新生成划分：
+
+```powershell
+python scripts\prepare_state_splits.py `
+  --manifest artifacts\data\atlas_states.jsonl `
+  --manifest artifacts\data\dynarepo_states.jsonl `
+  --external-manifest artifacts\data\itrace_context_diagnostic\itrace_states.jsonl `
+  --output-dir data\splits\state_rmsf_hchi_v1 `
+  --mmseqs artifacts\tools\mmseqs\bin\mmseqs
+```
+
+`configs/pretrain.yaml` 只输出 `rmsf` 和 `chi_entropy` 两个通道，明确关闭
+response head，并直接读取冻结的训练集和验证集；`test.jsonl` 不参与
+checkpoint 选择。开始训练：
 
 ```powershell
 flexppi train --config configs\pretrain.yaml
-flexppi train --config configs\finetune.yaml
 ```
 
-`configs/finetune.yaml` 默认从 `artifacts/pretrain/best.pt` 初始化。训练器以完整体系作为样本，并按 `cluster_id`、PDB ID 或体系 ID 分组划分训练/验证集，不会把同一个复合物的不同目标链随机拆到两侧。不过 ATLAS 当前本地文件没有现成同源簇；正式论文实验仍应先用 MMseqs2 或结构拓扑生成 `cluster_id`，再进行全库同源隔离，不能把当前按体系 ID 的默认划分当成最终无泄漏划分。
+训练器会检查训练和验证 manifest 的 `cluster_id`；若两侧出现同一生物组，
+训练会在开始前终止。旧版 [`configs/finetune.yaml`](configs/finetune.yaml)
+仍留在仓库中以复现历史 apo/holo 实验，但不是当前训练流程的一部分。
 
 评估会分别报告每个标签的有效残基数、MAE、Pearson 相关和符号准确率：
 
@@ -95,9 +118,8 @@ flexppi evaluate `
 现在的评测器还会报告蛋白等权宏平均、Spearman、RMSE、R²、CCC、高柔性残基检出、不确定性覆盖率，并在结合响应任务中并列比较响应头、两个状态直接相减和零变化基线。训练器当前只有 train/validation，没有未接触 test；因此应显式使用 `--split val`，并保留报告中的模型选择偏乐观警告。本地清单来自远程服务器时可使用带 `/ranze/...` 到 Windows 路径映射的 `configs/evaluate_state_local.yaml` 与 `configs/evaluate_pair_local.yaml`：
 
 ```powershell
-flexppi evaluate --config configs\evaluate_state_local.yaml --checkpoint artifacts\pretrain\best.pt --split val --output artifacts\evaluation\state_validation_pretrain.json
-flexppi evaluate --config configs\evaluate_state_local.yaml --checkpoint artifacts\finetune\best.pt --split val --output artifacts\evaluation\state_validation_finetune.json
-flexppi evaluate --config configs\evaluate_pair_local.yaml --checkpoint artifacts\finetune\best.pt --split val --output artifacts\evaluation\pair_validation.json
+flexppi evaluate --config configs\evaluate_state_local.yaml --checkpoint artifacts\pretrain_rmsf_hchi_v1\best.pt --split val --output artifacts\evaluation\state_validation_rmsf_hchi_v1.json
+flexppi evaluate --config configs\evaluate_state_local.yaml --checkpoint artifacts\pretrain_rmsf_hchi_v1\best.pt --split test --output artifacts\evaluation\state_test_rmsf_hchi_v1.json
 ```
 
 TCR3D 可作为独立的晶体 B 因子排序和 CDR 柔性富集代理测试；它没有 MD 轨迹，因此命令和输出都会明确标记“不是 MD-RMSF/结合响应真值”。完整评测设计、实测结果、数据泄漏边界和论文式 benchmark 骨架见 [docs/evaluation_protocol.md](docs/evaluation_protocol.md)。

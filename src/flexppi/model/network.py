@@ -55,7 +55,11 @@ class FlexPPI(nn.Module):
         )
         self.final_norm = nn.LayerNorm(config.single_dim)
         self.state_head = StateHead(config.single_dim, self.metric_count)
-        self.response_head = ResponseHead(config.single_dim, self.metric_count)
+        self.response_head = (
+            ResponseHead(config.single_dim, self.metric_count)
+            if config.enable_response_head
+            else None
+        )
 
     def forward_state(self, batch: Dict[str, Any]) -> Dict[str, torch.Tensor]:
         padding_mask = batch["padding_mask"].bool()
@@ -87,6 +91,11 @@ class FlexPPI(nn.Module):
         }
 
     def forward_pair(self, batch: Dict[str, Any]) -> Dict[str, Any]:
+        if self.response_head is None:
+            raise RuntimeError(
+                "This checkpoint was trained for absolute states only and has no "
+                "apo/holo response head"
+            )
         apo = self.forward_state(batch["apo"])
         holo = self.forward_state(batch["holo"])
         apo_indices = batch["apo_indices"]

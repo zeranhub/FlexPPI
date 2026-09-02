@@ -1,3 +1,5 @@
+# LEGACY ONLY: retained to reproduce the previous apo/holo response experiment.
+# The state_rmsf_hchi_v1 retraining workflow does not run this configuration.
 stage: finetune
 seed: 7
 device: auto

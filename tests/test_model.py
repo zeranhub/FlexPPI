@@ -87,8 +87,13 @@ def test_pair_forward_loss_and_backward():
         "pair_mask": torch.ones(1, residues, dtype=torch.bool),
     }
     output = model.forward_pair(batch)
-    assert output["delta_mean"].shape == (1, residues, 3)
-    values = paired_loss(output, batch, [1.0, 0.5, 0.25])
+    assert output["delta_mean"].shape == (1, residues, 2)
+    values = paired_loss(
+        output,
+        batch,
+        [1.0, 1.0],
+        metric_names=["rmsf", "chi_entropy"],
+    )
     assert torch.isfinite(values["loss"])
     values["loss"].backward()
     assert any(parameter.grad is not None for parameter in model.parameters() if parameter.requires_grad)

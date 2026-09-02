@@ -246,7 +246,9 @@ def build_parser() -> argparse.ArgumentParser:
     evaluation = subparsers.add_parser("evaluate")
     evaluation.add_argument("--config", required=True)
     evaluation.add_argument("--checkpoint", required=True)
-    evaluation.add_argument("--split", choices=["all", "train", "val"], default="all")
+    evaluation.add_argument(
+        "--split", choices=["all", "train", "val", "test"], default="all"
+    )
     evaluation.add_argument("--limit", type=int)
     evaluation.add_argument("--bootstrap", type=int, default=200)
     evaluation.add_argument("--delta-threshold", action="append")
