@@ -29,12 +29,24 @@ def heteroscedastic_nll(
     safe_target = torch.where(valid, target, predicted_mean.detach())
     total_variance = torch.exp(predicted_log_variance) + torch.clamp(label_variance, min=0.0)
     total_variance = torch.clamp(total_variance, min=1e-6, max=1e6)
-    nll = 0.5 * (
-        (predicted_mean - safe_target) ** 2 / total_variance + torch.log(total_variance)
-    )
+    nll = 0.5 * ((predicted_mean - safe_target) ** 2 / total_variance + torch.log(total_variance))
+    if nll.ndim < 3:
+        raise ValueError("Expected batched [system, residue, metric] label tensors")
     weights = _metric_weight_tensor(metric_weights, nll)
-    weighted_valid = valid.to(nll.dtype) * weights
-    return torch.sum(nll * weighted_valid) / torch.clamp(weighted_valid.sum(), min=1.0)
+    valid_float = valid.to(nll.dtype)
+    valid_per_system_metric = valid_float.sum(dim=-2)
+    mean_per_system_metric = torch.sum(nll * valid_float, dim=-2) / torch.clamp(
+        valid_per_system_metric, min=1.0
+    )
+    available = valid_per_system_metric > 0
+    weighted_available = available.to(nll.dtype) * weights
+    loss_per_system = torch.sum(mean_per_system_metric * weighted_available, dim=-1) / torch.clamp(
+        weighted_available.sum(dim=-1), min=1.0
+    )
+    system_available = torch.any(available, dim=-1)
+    if not torch.any(system_available):
+        return predicted_mean.sum() * 0.0
+    return loss_per_system[system_available].mean()
 
 
 def state_loss(
@@ -62,8 +74,12 @@ def state_loss(
         )
     mask = label_mask & batch["target_mask"][..., None] & output["mask"][..., None]
     return heteroscedastic_nll(
-        output["mean"], output["log_variance"], label_values,
-        label_variances, mask, metric_weights,
+        output["mean"],
+        output["log_variance"],
+        label_values,
+        label_variances,
+        mask,
+        metric_weights,
     )
 
 
@@ -98,8 +114,12 @@ def paired_loss(
     delta_variance = holo_variances + apo_variances
     delta_mask = apo_mask & holo_mask & output["pair_mask"][..., None]
     response = heteroscedastic_nll(
-        output["delta_mean"], output["delta_log_variance"], delta_target,
-        delta_variance, delta_mask, metric_weights,
+        output["delta_mean"],
+        output["delta_log_variance"],
+        delta_target,
+        delta_variance,
+        delta_mask,
+        metric_weights,
     )
     consistency_elements = functional.smooth_l1_loss(
         output["delta_mean"], output["state_difference"].detach(), reduction="none"
@@ -120,4 +140,3 @@ def paired_loss(
         "response_loss": response,
         "consistency_loss": consistency,
     }
-

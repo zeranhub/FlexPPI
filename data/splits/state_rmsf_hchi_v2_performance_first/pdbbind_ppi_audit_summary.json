@@ -1,0 +1,15 @@
+{
+  "records": 406,
+  "classification_counts": {
+    "high_confidence_ppi": 390,
+    "needs_manual_review": 3,
+    "not_ppi_single_protein_chain": 13
+  },
+  "criteria": {
+    "minimum_chain_residues": 20,
+    "ca_contact_cutoff_angstrom": 8.0,
+    "minimum_ca_contact_pairs": 5,
+    "minimum_interface_residues_per_chain": 3
+  },
+  "interpretation": "Automated protein-chain geometry audit. High-confidence records may be called PPI for inventory purposes; needs_manual_review records require curation before supporting a PPI-count claim. All categories may still provide absolute protein dynamics labels."
+}

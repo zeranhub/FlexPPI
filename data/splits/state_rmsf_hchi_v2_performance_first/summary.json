@@ -1,0 +1,126 @@
+{
+  "version": "state_rmsf_hchi_v2_performance_first",
+  "purpose": "structure-only absolute RMSF and chi-entropy performance-first training",
+  "seed": 7,
+  "folds": 5,
+  "max_residues": 1024,
+  "primary_cv_protocol": "each fold is test once and belongs to training in the other four runs",
+  "validation_protocol": "fixed epoch budget; no outer-test fold used for checkpoint selection",
+  "itrace_protocol": "complete-combination generalization; chain-family clusters are descriptive only and do not join ITrace records",
+  "other_complex_protocol": "single-chain systems are grouped by chain homology; multi-chain systems are grouped by their complete set of chain-family clusters, not by a shared common partner alone",
+  "mmseqs": {
+    "version": "eec9c354be4276d2373996af2e50808b1390d527",
+    "minimum_sequence_identity": 0.3,
+    "minimum_bidirectional_coverage": 0.7,
+    "cluster_mode": 0,
+    "sensitivity": 7.5
+  },
+  "source_manifests": [
+    {
+      "path": "E:\\Project\\FlexPPI\\artifacts\\data\\atlas_states.jsonl",
+      "sha256": "2b1fd9fd1a3d3c63a9d32ff612b7a3965b69339a1553413409b965952ef3ddbe"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\artifacts\\data\\dynarepo_states.jsonl",
+      "sha256": "5b5e5f79c53a9128bb9c9c5a47642957e3b8bf0c2a52bf8a50b78b374e19c76f"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\artifacts\\data\\itrace_performance_first_states.jsonl",
+      "sha256": "0f2d891aa38934df4be67b31ef84902962582f0a849e9530000b07d97dde17ff"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\artifacts\\data\\thermopcd_performance_first_candidates.jsonl",
+      "sha256": "b2f8ce9557b1eade13394616cf3c3c05454a948454207a8a8c3ae7967aa6b852"
+    }
+  ],
+  "records": {
+    "total": 3140,
+    "ready": 3068,
+    "pending_uniform_labels": 36,
+    "excluded": 36
+  },
+  "ready_datasets": {
+    "atlas": 1929,
+    "dynarepo": 895,
+    "itrace": 244
+  },
+  "fold_summary": {
+    "0": {
+      "ready_records": 613,
+      "pending_records": 7,
+      "biological_groups": 464,
+      "datasets": {
+        "atlas": 385,
+        "dynarepo": 179,
+        "itrace": 49,
+        "thermopcd": 7
+      },
+      "rmsf_labels": 192770,
+      "hchi_labels": 86635
+    },
+    "1": {
+      "ready_records": 613,
+      "pending_records": 7,
+      "biological_groups": 462,
+      "datasets": {
+        "atlas": 386,
+        "dynarepo": 179,
+        "itrace": 48,
+        "thermopcd": 7
+      },
+      "rmsf_labels": 190403,
+      "hchi_labels": 85197
+    },
+    "2": {
+      "ready_records": 614,
+      "pending_records": 8,
+      "biological_groups": 459,
+      "datasets": {
+        "atlas": 386,
+        "dynarepo": 179,
+        "itrace": 49,
+        "thermopcd": 8
+      },
+      "rmsf_labels": 195215,
+      "hchi_labels": 86879
+    },
+    "3": {
+      "ready_records": 614,
+      "pending_records": 7,
+      "biological_groups": 465,
+      "datasets": {
+        "atlas": 386,
+        "dynarepo": 179,
+        "itrace": 49,
+        "thermopcd": 7
+      },
+      "rmsf_labels": 187883,
+      "hchi_labels": 85752
+    },
+    "4": {
+      "ready_records": 614,
+      "pending_records": 7,
+      "biological_groups": 465,
+      "datasets": {
+        "atlas": 386,
+        "dynarepo": 179,
+        "itrace": 49,
+        "thermopcd": 7
+      },
+      "rmsf_labels": 193076,
+      "hchi_labels": 86560
+    }
+  },
+  "leakage_validation": {
+    "passed": true,
+    "violations": {
+      "biological_group": [],
+      "pdb_id": [],
+      "complex_signature": [],
+      "label_sha256": [],
+      "single_chain_sequence_cluster": [],
+      "complete_complex_cluster_signature": []
+    },
+    "itrace_sequence_cluster_scope": "exempt_from_primary_combination_cv_only"
+  }
+}

@@ -2,6 +2,7 @@ import numpy as np
 
 from flexppi.data.records import remap_path
 from flexppi.evaluation import (
+    _amino_acid_corrected_report,
     _direction_report,
     _regression_report,
     _retrieval_report,
@@ -51,3 +52,21 @@ def test_tcr_cdr_sequences_are_mapped_without_using_residue_numbers():
     assert regions.tolist().count(1) == 4
     assert regions.tolist().count(2) == 4
     assert regions.tolist().count(3) == 4
+
+
+def test_hchi_amino_acid_correction_removes_type_prior():
+    target = np.asarray([1.0, 1.2, 3.0, 3.2])
+    prediction = np.asarray([1.1, 1.3, 2.9, 3.1])
+    report = _amino_acid_corrected_report(
+        prediction,
+        target,
+        np.asarray(["a", "a", "b", "b"]),
+        np.ones(4),
+        np.asarray([0, 0, 1, 1]),
+        {0: 1.0, 1: 3.0},
+        0.0,
+        0,
+        7,
+    )
+    assert report["residual_overall"]["count"] == 4
+    assert set(report["within_amino_acid_type"]) == {"A", "C"}

@@ -10,14 +10,13 @@ import torch
 from torch.utils.data import ConcatDataset, DataLoader, Dataset, Subset
 
 from flexppi.config import ExperimentConfig, ModelConfig
-from flexppi.constants import METRIC_NAMES
+from flexppi.constants import METRIC_NAMES, RESTYPES
 from flexppi.data.dataset import PairDataset, StateDataset, collate_pairs, collate_states
 from flexppi.data.labels import load_label_file
 from flexppi.data.records import PairRecord
-from flexppi.data.structures import parse_pdb
+from flexppi.data.structures import parse_pdb, target_mask
 from flexppi.model.network import FlexPPI, gather_residues
 from flexppi.trainer import group_split, move_to_device, resolve_device
-
 
 DEFAULT_DELTA_THRESHOLDS = {"rmsf": 0.10, "chi_entropy": 0.10, "sasa": 2.0}
 
@@ -116,7 +115,9 @@ def _regression_report(
     target_variance = float(np.sum((target - target.mean()) ** 2))
     r2 = None if target_variance == 0 else 1.0 - float(np.sum(error ** 2)) / target_variance
     covariance = float(np.mean((prediction - prediction.mean()) * (target - target.mean())))
-    ccc_denominator = float(np.var(prediction) + np.var(target) + (prediction.mean() - target.mean()) ** 2)
+    ccc_denominator = float(
+        np.var(prediction) + np.var(target) + (prediction.mean() - target.mean()) ** 2
+    )
     ccc = None if ccc_denominator == 0 else 2.0 * covariance / ccc_denominator
     target_iqr = float(np.quantile(target, 0.75) - np.quantile(target, 0.25))
     report: Dict[str, Any] = {
@@ -129,7 +130,9 @@ def _regression_report(
         "spearman": spearman,
         "r2": _as_float(r2) if r2 is not None else None,
         "concordance_correlation": _as_float(ccc) if ccc is not None else None,
-        "nmae_by_target_iqr": None if target_iqr == 0 else float(np.mean(np.abs(error))) / target_iqr,
+        "nmae_by_target_iqr": None
+        if target_iqr == 0
+        else float(np.mean(np.abs(error))) / target_iqr,
     }
 
     group_mae: List[float] = []
@@ -350,6 +353,88 @@ def _training_label_means(
     }
 
 
+def _training_amino_acid_means(
+    dataset: StateDataset,
+    metric_name: str,
+) -> Dict[int, float]:
+    """Fit amino-acid priors on training labels only."""
+
+    metric_index = METRIC_NAMES.index(metric_name)
+    sums: Dict[int, float] = {}
+    counts: Dict[int, int] = {}
+    for record in dataset.records:
+        if not record.label_path:
+            continue
+        structure = parse_pdb(record.structure_path)
+        values, _, mask = load_label_file(record.label_path)
+        selected = (
+            mask[:, metric_index]
+            & np.isfinite(values[:, metric_index])
+            & structure.frame_mask
+            & target_mask(structure, record.target_chains)
+        )
+        for amino_acid in np.unique(structure.aatype[selected]):
+            amino_acid = int(amino_acid)
+            local = selected & (structure.aatype == amino_acid)
+            sums[amino_acid] = sums.get(amino_acid, 0.0) + float(values[local, metric_index].sum())
+            counts[amino_acid] = counts.get(amino_acid, 0) + int(local.sum())
+    return {
+        amino_acid: sums[amino_acid] / counts[amino_acid]
+        for amino_acid in sums
+        if counts[amino_acid] > 0
+    }
+
+
+def _amino_acid_name(index: int) -> str:
+    return RESTYPES[index] if 0 <= index < len(RESTYPES) else "X"
+
+
+def _amino_acid_corrected_report(
+    prediction: np.ndarray,
+    target: np.ndarray,
+    groups: np.ndarray,
+    total_std: np.ndarray,
+    amino_acid_types: np.ndarray,
+    training_priors: Mapping[int, float],
+    fallback_prior: float,
+    bootstrap_repetitions: int,
+    seed: int,
+) -> Dict[str, Any]:
+    prior = np.asarray(
+        [training_priors.get(int(index), fallback_prior) for index in amino_acid_types],
+        dtype=np.float64,
+    )
+    residual_prediction = prediction - prior
+    residual_target = target - prior
+    type_names = np.asarray([_amino_acid_name(int(index)) for index in amino_acid_types])
+    return {
+        "definition": (
+            "prediction and target minus the training-fold mean H-chi for that amino-acid type"
+        ),
+        "training_priors": {
+            _amino_acid_name(index): float(value)
+            for index, value in sorted(training_priors.items())
+        },
+        "residual_overall": _regression_report(
+            residual_prediction,
+            residual_target,
+            groups,
+            total_std,
+            bootstrap_repetitions,
+            seed,
+        ),
+        "within_amino_acid_type": _stratified_reports(
+            prediction,
+            target,
+            groups,
+            total_std,
+            type_names,
+            bootstrap_repetitions,
+            seed,
+        ),
+    }
+
+
 def _ca_interface_mask(record: PairRecord, cutoff: float = 8.0) -> np.ndarray:
     """Approximate interface residues by target/partner C-alpha distance."""
 
@@ -472,9 +557,18 @@ def _state_evaluation(
         collate_fn=collate_states,
     )
     accumulated: Dict[str, Dict[str, List[np.ndarray]]] = {
-        name: {key: [] for key in (
-            "prediction", "target", "total_std", "group", "dataset", "source_group"
-        )}
+        name: {
+            key: []
+            for key in (
+                "prediction",
+                "target",
+                "total_std",
+                "group",
+                "dataset",
+                "source_group",
+                "amino_acid_type",
+            )
+        }
         for name in metric_names
     }
     with torch.no_grad():
@@ -509,6 +603,9 @@ def _state_evaluation(
                     bucket["source_group"].append(
                         np.repeat(str(batch["source_group"][batch_index]), count)
                     )
+                    bucket["amino_acid_type"].append(
+                        batch["aatype"][batch_index][valid].cpu().numpy()
+                    )
 
     metrics: Dict[str, Any] = {}
     for name, bucket in accumulated.items():
@@ -518,6 +615,7 @@ def _state_evaluation(
         groups = _concatenate(bucket["group"], str)
         datasets = _concatenate(bucket["dataset"], str)
         source_groups = _concatenate(bucket["source_group"], str)
+        amino_acid_types = _concatenate(bucket["amino_acid_type"], np.int64)
         overall = _regression_report(
             prediction, target, groups, total_std, bootstrap_repetitions, config.seed
         )
@@ -537,14 +635,41 @@ def _state_evaluation(
             "training_mean_baseline": {"fitted_mean": mean_baseline, "metrics": baseline},
             "high_flexibility_retrieval": _retrieval_report(prediction, target, groups),
             "by_dataset": _stratified_reports(
-                prediction, target, groups, total_std, datasets,
-                bootstrap_repetitions, config.seed,
-            ) if len(target) else {},
+                prediction,
+                target,
+                groups,
+                total_std,
+                datasets,
+                bootstrap_repetitions,
+                config.seed,
+            )
+            if len(target)
+            else {},
             "by_source_group": _stratified_reports(
-                prediction, target, groups, total_std, source_groups,
-                bootstrap_repetitions, config.seed,
-            ) if len(target) else {},
+                prediction,
+                target,
+                groups,
+                total_std,
+                source_groups,
+                bootstrap_repetitions,
+                config.seed,
+            )
+            if len(target)
+            else {},
         }
+        if name == "chi_entropy" and len(target):
+            amino_acid_priors = _training_amino_acid_means(train_dataset, "chi_entropy")
+            metrics[name]["amino_acid_corrected"] = _amino_acid_corrected_report(
+                prediction,
+                target,
+                groups,
+                total_std,
+                amino_acid_types,
+                amino_acid_priors,
+                float(training_means.get("chi_entropy", 0.0)),
+                bootstrap_repetitions,
+                config.seed,
+            )
     return {"task": "absolute_state", "split": split_info, "metrics": metrics}
 
 
@@ -623,12 +748,16 @@ def _pair_evaluation(
                         output["delta_mean"][batch_index, :, output_index][valid].cpu().numpy()
                     )
                     bucket["state_subtraction"].append(
-                        output["state_difference"][batch_index, :, output_index][valid].cpu().numpy()
+                        output["state_difference"][batch_index, :, output_index][valid]
+                        .cpu()
+                        .numpy()
                     )
                     bucket["target"].append(target[valid].cpu().numpy())
                     bucket["total_std"].append(torch.sqrt(total_variance[valid]).cpu().numpy())
                     bucket["group"].append(np.repeat(str(pair_id), count))
-                    pair_interface = torch.from_numpy(interface_masks[str(pair_id)]).to(valid.device)
+                    pair_interface = torch.from_numpy(interface_masks[str(pair_id)]).to(
+                        valid.device
+                    )
                     bucket["interface"].append(pair_interface[valid].cpu().numpy())
                     bucket["sequence_identity"].append(
                         np.repeat(float(batch["sequence_identity"][batch_index].cpu()), count)

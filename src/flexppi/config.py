@@ -36,10 +36,9 @@ class ModelConfig:
     ipa_v_points: int = 8
     rbf_bins: int = 24
     dropout: float = 0.1
+    use_condition_features: bool = True
     enable_response_head: bool = True
-    metrics: List[str] = field(
-        default_factory=lambda: ["rmsf", "chi_entropy"]
-    )
+    metrics: List[str] = field(default_factory=lambda: ["rmsf", "chi_entropy"])
 
 
 @dataclass
@@ -51,6 +50,8 @@ class TrainConfig:
     grad_clip: float = 1.0
     log_every: int = 25
     checkpoint_every: int = 1
+    sampling_strategy: str = "uniform_records"
+    samples_per_epoch: Optional[int] = None
     state_weight: float = 1.0
     response_weight: float = 1.0
     consistency_weight: float = 0.25

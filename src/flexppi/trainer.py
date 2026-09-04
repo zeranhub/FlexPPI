@@ -5,11 +5,11 @@ from __future__ import annotations
 import json
 import random
 from pathlib import Path
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Optional, Sequence, Tuple
 
 import numpy as np
 import torch
-from torch.utils.data import DataLoader, Dataset, Subset
+from torch.utils.data import DataLoader, Dataset, Subset, WeightedRandomSampler
 
 from flexppi.config import ExperimentConfig
 from flexppi.data.dataset import PairDataset, StateDataset, collate_pairs, collate_states
@@ -141,6 +141,65 @@ def _fixed_state_validation_sets(
     return train_dataset, validation_dataset
 
 
+def _records_for_dataset(dataset: Dataset) -> Sequence[Any]:
+    if isinstance(dataset, Subset):
+        parent_records = _records_for_dataset(dataset.dataset)
+        return [parent_records[index] for index in dataset.indices]
+    return list(getattr(dataset, "records", []))
+
+
+def _sampling_system(record: Any) -> str:
+    metadata = getattr(record, "metadata", {})
+    return str(
+        metadata.get("biological_system")
+        or metadata.get("pdb_id")
+        or getattr(record, "sample_id", "unknown")
+    )
+
+
+def _source_system_balanced_weights(dataset: Dataset) -> List[float]:
+    """Give each source equal mass, then each system equal mass within a source."""
+
+    records = _records_for_dataset(dataset)
+    if len(records) != len(dataset):
+        raise ValueError("Balanced sampling requires a record-backed dataset")
+    source_groups: Dict[str, Dict[str, List[int]]] = {}
+    for index, record in enumerate(records):
+        source = str(getattr(record, "dataset", "unknown"))
+        system = _sampling_system(record)
+        source_groups.setdefault(source, {}).setdefault(system, []).append(index)
+    weights = [0.0] * len(records)
+    source_count = max(len(source_groups), 1)
+    for systems in source_groups.values():
+        system_count = max(len(systems), 1)
+        for indices in systems.values():
+            record_weight = 1.0 / (source_count * system_count * len(indices))
+            for index in indices:
+                weights[index] = record_weight
+    return weights
+
+
+def _training_sampler(
+    dataset: Dataset,
+    strategy: str,
+    samples_per_epoch: Optional[int],
+    seed: int,
+) -> Optional[WeightedRandomSampler]:
+    if strategy == "uniform_records":
+        return None
+    if strategy != "source_system_balanced":
+        raise ValueError("sampling_strategy must be uniform_records or source_system_balanced")
+    weights = _source_system_balanced_weights(dataset)
+    generator = torch.Generator()
+    generator.manual_seed(seed)
+    return WeightedRandomSampler(
+        weights,
+        num_samples=samples_per_epoch or len(dataset),
+        replacement=True,
+        generator=generator,
+    )
+
+
 @torch.no_grad()
 def _validate(
     config: ExperimentConfig,
@@ -164,16 +223,24 @@ def train(config: ExperimentConfig) -> Dict[str, Any]:
     dataset, collate = _make_dataset_and_collate(config)
     if len(dataset) == 0:
         raise RuntimeError(
-            "No labelled samples survived filtering. For DynaRepo, compute labels and rerun index-dynarepo first."
+            "No labelled samples survived filtering. For DynaRepo, compute labels "
+            "and rerun index-dynarepo first."
         )
     if config.stage == "pretrain":
         train_set, val_set = _fixed_state_validation_sets(config, dataset)
     else:
         train_set, val_set = group_split(dataset, config.train.val_fraction, config.seed)
+    train_sampler = _training_sampler(
+        train_set,
+        config.train.sampling_strategy,
+        config.train.samples_per_epoch,
+        config.seed,
+    )
     train_loader = DataLoader(
         train_set,
         batch_size=config.data.batch_size,
-        shuffle=True,
+        shuffle=train_sampler is None,
+        sampler=train_sampler,
         num_workers=config.data.num_workers,
         collate_fn=collate,
     )

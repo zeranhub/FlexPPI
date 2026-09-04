@@ -33,10 +33,14 @@ class FlexPPI(nn.Module):
         )
         self.aa_embedding = nn.Embedding(UNKNOWN_INDEX + 1, 32)
         self.single_input = nn.Linear(self.sequence_encoder.output_dim + 32, config.single_dim)
-        self.condition_mlp = nn.Sequential(
-            nn.Linear(3, config.single_dim),
-            nn.SiLU(),
-            nn.Linear(config.single_dim, config.single_dim),
+        self.condition_mlp = (
+            nn.Sequential(
+                nn.Linear(3, config.single_dim),
+                nn.SiLU(),
+                nn.Linear(config.single_dim, config.single_dim),
+            )
+            if config.use_condition_features
+            else None
         )
         self.pair_encoder = GeometryPairEncoder(config.pair_dim, config.rbf_bins)
         self.blocks = nn.ModuleList(
@@ -70,7 +74,8 @@ class FlexPPI(nn.Module):
         single = self.single_input(
             torch.cat((sequence, self.aa_embedding(batch["aatype"])), dim=-1)
         )
-        single = single + self.condition_mlp(batch["condition"])[:, None, :]
+        if self.condition_mlp is not None:
+            single = single + self.condition_mlp(batch["condition"])[:, None, :]
         rotation, translation, frame_mask = frames_from_backbone(
             batch["backbone"], batch["backbone_mask"]
         )
@@ -124,4 +129,3 @@ class FlexPPI(nn.Module):
         if "apo" in batch and "holo" in batch:
             return self.forward_pair(batch)
         return self.forward_state(batch)
-

@@ -1,0 +1,94 @@
+{
+  "version": "state_rmsf_hchi_v2_performance_first",
+  "passed": true,
+  "ready_records": 3068,
+  "datasets": {
+    "atlas": 1929,
+    "dynarepo": 895,
+    "itrace": 244
+  },
+  "metric_labels": {
+    "rmsf": 959347,
+    "chi_entropy": 431023
+  },
+  "folds": {
+    "0": {
+      "train_records": 2455,
+      "test_records": 613,
+      "config_checks": {
+        "state_manifest": true,
+        "test_state_manifest": true,
+        "no_outer_validation": true,
+        "max_residues": true,
+        "metrics": true,
+        "structure_only": true,
+        "no_response_head": true,
+        "balanced_sampling": true
+      }
+    },
+    "1": {
+      "train_records": 2455,
+      "test_records": 613,
+      "config_checks": {
+        "state_manifest": true,
+        "test_state_manifest": true,
+        "no_outer_validation": true,
+        "max_residues": true,
+        "metrics": true,
+        "structure_only": true,
+        "no_response_head": true,
+        "balanced_sampling": true
+      }
+    },
+    "2": {
+      "train_records": 2454,
+      "test_records": 614,
+      "config_checks": {
+        "state_manifest": true,
+        "test_state_manifest": true,
+        "no_outer_validation": true,
+        "max_residues": true,
+        "metrics": true,
+        "structure_only": true,
+        "no_response_head": true,
+        "balanced_sampling": true
+      }
+    },
+    "3": {
+      "train_records": 2454,
+      "test_records": 614,
+      "config_checks": {
+        "state_manifest": true,
+        "test_state_manifest": true,
+        "no_outer_validation": true,
+        "max_residues": true,
+        "metrics": true,
+        "structure_only": true,
+        "no_response_head": true,
+        "balanced_sampling": true
+      }
+    },
+    "4": {
+      "train_records": 2454,
+      "test_records": 614,
+      "config_checks": {
+        "state_manifest": true,
+        "test_state_manifest": true,
+        "no_outer_validation": true,
+        "max_residues": true,
+        "metrics": true,
+        "structure_only": true,
+        "no_response_head": true,
+        "balanced_sampling": true
+      }
+    }
+  },
+  "appearance_rule": "every ready record appears in four train manifests and one test manifest",
+  "violations": {
+    "config": [],
+    "fold_membership": [],
+    "fold_overlap": [],
+    "missing_file": [],
+    "label_schema": []
+  }
+}
