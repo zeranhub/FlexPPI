@@ -1,0 +1,23 @@
+{
+  "source": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v16_20261010_中文修订_已完成分析_三线表.docx",
+  "output": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v17_20261010_中文修订_基线与标签敏感性_三线表.docx",
+  "output_sha256": "d92d81ddd23aeb57867af6654c91f292c1cc59bc7c40b35a7b813482c1ecef6f",
+  "tables": 8,
+  "completed_added": [
+    "ANM GNM all3063",
+    "common window labels 83 paired control comparisons"
+  ],
+  "input_audits": {
+    "prody": "f98aedd5bbf514be297f09790d40092ce1938662e8eca161ad05ef33b4fc9923",
+    "labels": "0d9ba3e454448b6f45244bd669adfc95ae9e644b43fd688d99f57ab7eaeb55df",
+    "controls": "b514a7295ad1dc225c4578c4d4a77004978ea9b8ecf455e0f24e2a656b6cd283"
+  },
+  "pending": [
+    "single-target 10fits",
+    "family10fits",
+    "new2430 external neural",
+    "RMSFnet",
+    "PLANET",
+    "KIX12 new trajectories"
+  ]
+}

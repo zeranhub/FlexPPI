@@ -1,0 +1,1629 @@
+{
+  "status": "complete",
+  "configured_canvas_mm": [
+    183.0,
+    147.0
+  ],
+  "panel_letters": [
+    "a",
+    "b",
+    "c"
+  ],
+  "a_labels": [
+    {
+      "residue_id": 2,
+      "anchor_x_data": 2,
+      "label_x_data": 2,
+      "y_axes": -0.22
+    },
+    {
+      "residue_id": 41,
+      "anchor_x_data": 41,
+      "label_x_data": 41,
+      "y_axes": -0.22
+    }
+  ],
+  "all66_joint_values_retained": true,
+  "all151_defined_angles_retained": true,
+  "scatter_n": {
+    "1": 66,
+    "2": 52,
+    "3": 23,
+    "4": 10
+  },
+  "scatter_xlim": [
+    -0.7,
+    0.5
+  ],
+  "scatter_ylim": [
+    -1.0,
+    0.75
+  ],
+  "b_summary_table_removed": true,
+  "original8correlations_preserved_in_experiment": true,
+  "c_432_Fstar_values_retained": true,
+  "c_curve_xlim": [
+    -180,
+    180
+  ],
+  "c_curve_ylim": [
+    -0.8,
+    6.628313737302301
+  ],
+  "minimum_font_pt": 7.5,
+  "text_outside_canvas": [],
+  "point_counts": {
+    "a_Hchi": 132,
+    "b_scatter": 151,
+    "c": 432
+  },
+  "total_points": 715,
+  "frozen_overall_metrics": {
+    "all66_Hchi_MAE_nats": 0.07953050649754886,
+    "all66_Spearman_rho": 0.979374987806399,
+    "all66_training_type_mean_corrected_rho": 0.8681919720319797,
+    "all6_Gln_MAE_nats": 0.1050252914428711,
+    "all6_errors": {
+      "2": 0.019122838973999023,
+      "31": 0.02296161651611328,
+      "40": 0.3676173686981201,
+      "41": 0.10959291458129883,
+      "49": 0.05805158615112305,
+      "62": 0.052805423736572266
+    },
+    "all66_count": 66,
+    "GLN_count": 6,
+    "valid_zero_reference_count": 3
+  },
+  "source_sha256": {
+    "source\\all66_per_angle_metrics.csv": "f21d2c2dd47caa2ce510f85b64bda6fa6ecd12ffc278025044e1fe7c55582c58",
+    "source\\all66_residue_summary.csv": "fec153f86b3b8ba808d2ee731937754427902660c5b29a955cacf25f5d8ab4ab",
+    "source\\analysis_source_manifest.json": "ff8bf00b59beeb41e0c5fd4d36ef62921de4aa42a9d68710044aa0d71a6119ae",
+    "source\\fig7_all_residues_Gln_and_MD_free_energy.statistics.json": "5e164096e1f959087bffb328b6b9840a99f8e7f1bc023dcd91ec8e017983f418",
+    "source\\histograms_501frames.csv": "e90410df3e05ad5004861601e9f8b7272da0889c589d056ef4a13b4a5e20dbad",
+    "source\\README_数据定义与复算.md": "69775bc854b794a068b8f1ac7adecf5fc090a1b1ac79734b7a1f400f1444e678",
+    "source\\ubiquitin_all66_chi_501frames.npz": "562e14a3909718f99fa2471dc6503b3c244b39a04bc883073b50ba02a171c182",
+    "experiment\\all66_joint_predictions.csv": "a0ffd1247617be4acbd9f1a6df7980f00fc64922151fe630c64bd5b59358226b",
+    "experiment\\all_angle_slots_long.csv": "0ead8b695378914c03a158d6bdc0e865926a2241ec2f87fbbcfde840d614ae47",
+    "experiment\\analyze_all_chi_associations.py": "fca0281bc244d7b3623d518990c0517e51291e16ad8475f548ce0a55f154068b",
+    "experiment\\audit.json": "432d8984476d98614f54cb1aee554cc75e552472a4a5cc5c991c1e323ad11123",
+    "experiment\\defined_angles_long.csv": "8052306e31edf07f8cc7295ec8059c4e8dad6047354a834ea21fb0020e48ad0c",
+    "experiment\\definitions_and_handling.json": "318e9522b0fd2ed0781720fce7adfee77a11791737a24705b6ebfe7c4ee298a0",
+    "experiment\\figure_statistics.csv": "7b2a22fd54a9afe535bb18a6eb7fdeabc6901cdbcaa1cf9f6bc3553da63baaa4",
+    "experiment\\joint_prediction_accuracy_by_angle_count.csv": "6bafd46bf72c3f6e1f3b78f23718228a8099d73bcf8be01d37ea8248bc5ce7d8",
+    "experiment\\per_chi_AA_counts_and_constant_groups.csv": "7ca644298449c5250288b885183be74b5e55238555fbdfff3662f974dd7542f5",
+    "experiment\\per_chi_correlations.csv": "d90af24843fc5d5fb08abd0a9d799b38ea7e4fe0afd8fb229d7c370f3c544205",
+    "experiment\\README_逐角关联与角数精度.md": "22893da48469bf1093c8e2fc036e5e826c58c93c5625662493178a8ef3712a9f",
+    "experiment\\singleton_sensitivity_correlations.csv": "52ea6741293c6b48b6298fa39f5face715e3b335ecc417e7067505341d5f6425"
+  },
+  "output_sha256": {
+    "png": "ff8ef8f95d088272fac3d93a182f28c8b818bcd40f18f257ce1fb91f3d53954c",
+    "pdf": "5d6b2a4fc1411f885ec8cdaf42b855f6c7bb3a573bf8449d86a5b15458da45f4",
+    "svg": "5b3c9a4a0c3bd965d42df55c541d2cd10c47e6e7739ceafdb07cc5f60bb553e8"
+  },
+  "visual_review": "passed after directly viewing final PNG: a x-axis title removed, legend above curve at upper right, plain type-mean label clear; all b/c elements unchanged, no overlap or clipping.",
+  "parent_figure_version": "v37",
+  "a_xaxis_title_removed": true,
+  "a_legend_location": "above_curve_axis_upper_right",
+  "a_legend_bbox_pixels": [
+    237.05643044619427,
+    480.21653543307093,
+    381.8897637795276,
+    500.5498687664043
+  ],
+  "a_legend_above_axis": true,
+  "a_legend_no_overlap_with_statistics": true,
+  "a_type_mean_label": "扣除氨基酸类型均值后 ρ 0.868",
+  "a_missing_positions": [
+    10,
+    28,
+    35,
+    46,
+    47,
+    53
+  ],
+  "a_NaN_breaks_preserved": true,
+  "independent_check_count": 356,
+  "independent_checks": [
+    {
+      "check": "715_total_rows",
+      "pass": true
+    },
+    {
+      "check": "all_counts",
+      "pass": true
+    },
+    {
+      "check": "a_Hchi_all_values_exactly_v37",
+      "pass": true
+    },
+    {
+      "check": "b_scatter_all_values_exactly_v37",
+      "pass": true
+    },
+    {
+      "check": "c_all_values_exactly_v37",
+      "pass": true
+    },
+    {
+      "check": "no_b_summary_rows",
+      "pass": true
+    },
+    {
+      "check": "b_one_M1_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_M1_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_M1_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_M1_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_M1_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_M1_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q2_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q2_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q2_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q2_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q2_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q2_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_I3_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_I3_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_I3_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_I3_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_F4_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_F4_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_F4_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_F4_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_V5_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_V5_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_K6_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K6_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_K6_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K6_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_K6_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K6_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_K6_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K6_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_one_T7_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_T7_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_L8_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_L8_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_L8_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_L8_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_T9_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_T9_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_K11_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K11_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_K11_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K11_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_K11_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K11_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_K11_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K11_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_one_T12_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_T12_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_I13_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_I13_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_I13_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_I13_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_T14_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_T14_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_L15_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_L15_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_L15_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_L15_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_E16_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E16_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_E16_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E16_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_E16_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E16_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_V17_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_V17_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_E18_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E18_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_E18_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E18_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_E18_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E18_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_P19_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_P19_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_P19_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_P19_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_S20_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_S20_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_D21_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_D21_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_D21_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_D21_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_T22_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_T22_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_I23_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_I23_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_I23_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_I23_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_E24_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E24_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_E24_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E24_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_E24_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E24_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_N25_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_N25_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_N25_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_N25_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_V26_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_V26_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_K27_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K27_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_K27_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K27_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_K27_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K27_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_K27_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K27_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_one_K29_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K29_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_K29_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K29_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_K29_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K29_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_K29_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K29_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_one_I30_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_I30_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_I30_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_I30_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q31_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q31_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q31_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q31_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q31_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q31_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_D32_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_D32_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_D32_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_D32_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_K33_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K33_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_K33_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K33_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_K33_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K33_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_K33_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K33_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_one_E34_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E34_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_E34_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E34_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_E34_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E34_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_I36_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_I36_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_I36_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_I36_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_P37_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_P37_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_P37_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_P37_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_P38_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_P38_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_P38_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_P38_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_D39_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_D39_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_D39_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_D39_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q40_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q40_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q40_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q40_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q40_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q40_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q41_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q41_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q41_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q41_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q41_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q41_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_R42_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_R42_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_R42_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_R42_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_R42_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_R42_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_R42_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_R42_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_one_L43_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_L43_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_L43_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_L43_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_I44_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_I44_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_I44_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_I44_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_F45_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_F45_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_F45_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_F45_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_K48_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K48_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_K48_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K48_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_K48_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K48_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_K48_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K48_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q49_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q49_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q49_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q49_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q49_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q49_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_L50_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_L50_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_L50_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_L50_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_E51_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E51_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_E51_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E51_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_E51_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E51_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_D52_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_D52_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_D52_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_D52_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_R54_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_R54_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_R54_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_R54_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_R54_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_R54_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_R54_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_R54_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_one_T55_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_T55_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_L56_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_L56_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_L56_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_L56_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_S57_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_S57_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_D58_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_D58_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_D58_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_D58_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_Y59_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Y59_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_Y59_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Y59_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_N60_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_N60_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_N60_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_N60_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_I61_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_I61_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_I61_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_I61_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q62_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q62_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q62_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q62_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_Q62_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_Q62_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_K63_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K63_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_K63_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K63_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_K63_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K63_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_K63_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_K63_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_one_E64_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E64_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_E64_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E64_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_E64_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_E64_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_S65_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_S65_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_T66_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_T66_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_L67_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_L67_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_L67_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_L67_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_H68_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_H68_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_H68_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_H68_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_L69_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_L69_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_L69_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_L69_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_V70_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_V70_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_L71_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_L71_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_L71_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_L71_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_R72_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_R72_chi1",
+      "pass": true
+    },
+    {
+      "check": "b_one_R72_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_R72_chi2",
+      "pass": true
+    },
+    {
+      "check": "b_one_R72_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_R72_chi3",
+      "pass": true
+    },
+    {
+      "check": "b_one_R72_chi4",
+      "pass": true
+    },
+    {
+      "check": "b_coordinates_R72_chi4",
+      "pass": true
+    },
+    {
+      "check": "chi1_all_n",
+      "pass": true
+    },
+    {
+      "check": "chi2_all_n",
+      "pass": true
+    },
+    {
+      "check": "chi3_all_n",
+      "pass": true
+    },
+    {
+      "check": "chi4_all_n",
+      "pass": true
+    },
+    {
+      "check": "all_zero_overlap_observations_retained",
+      "pass": true
+    },
+    {
+      "check": "all_Pro_observations_preserved",
+      "pass": true
+    },
+    {
+      "check": "no_undefined_angles_zero_imputed",
+      "pass": true
+    },
+    {
+      "check": "all_scatter_points_within_common_xlim",
+      "pass": true
+    },
+    {
+      "check": "all_scatter_points_within_common_ylim",
+      "pass": true
+    },
+    {
+      "check": "common_linear_axes_unchanged",
+      "pass": true
+    },
+    {
+      "check": "only_abc_labels",
+      "pass": true
+    },
+    {
+      "check": "only_Q2_Q41_sequence_labels",
+      "pass": true
+    },
+    {
+      "check": "original_c_limits",
+      "pass": true
+    },
+    {
+      "check": "no_outside_text",
+      "pass": true
+    },
+    {
+      "check": "font_at_least7point5",
+      "pass": true
+    },
+    {
+      "check": "unchanged_66_metrics",
+      "pass": true
+    },
+    {
+      "check": "147mm_canvas",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_source/all66_per_angle_metrics.csv",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_source/all66_residue_summary.csv",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_source/analysis_source_manifest.json",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_source/fig7_all_residues_Gln_and_MD_free_energy.statistics.json",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_source/histograms_501frames.csv",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_source/README_数据定义与复算.md",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_source/ubiquitin_all66_chi_501frames.npz",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_experiment/all66_joint_predictions.csv",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_experiment/all_angle_slots_long.csv",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_experiment/analyze_all_chi_associations.py",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_experiment/audit.json",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_experiment/defined_angles_long.csv",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_experiment/definitions_and_handling.json",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_experiment/figure_statistics.csv",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_experiment/joint_prediction_accuracy_by_angle_count.csv",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_experiment/per_chi_AA_counts_and_constant_groups.csv",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_experiment/per_chi_correlations.csv",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_experiment/README_逐角关联与角数精度.md",
+      "pass": true
+    },
+    {
+      "check": "copy_hash_experiment/singleton_sensitivity_correlations.csv",
+      "pass": true
+    },
+    {
+      "check": "SVG_vector_only",
+      "pass": true
+    },
+    {
+      "check": "summary_table_plotting_removed",
+      "pass": true
+    },
+    {
+      "check": "300dpi",
+      "pass": true
+    },
+    {
+      "check": "a_xaxis_title_removed",
+      "pass": true
+    },
+    {
+      "check": "a_legend_above_right",
+      "pass": true
+    },
+    {
+      "check": "a_legend_no_stats_overlap",
+      "pass": true
+    },
+    {
+      "check": "clear_type_mean_wording",
+      "pass": true
+    },
+    {
+      "check": "all66_same_chain_A",
+      "pass": true
+    },
+    {
+      "check": "six_NaN_gaps_retained",
+      "pass": true
+    },
+    {
+      "check": "same_PNG_dimensions",
+      "pass": true
+    },
+    {
+      "check": "pixel_identical_b_complete_right",
+      "pass": true
+    },
+    {
+      "check": "pixel_identical_c_complete_lower",
+      "pass": true
+    }
+  ],
+  "actual_export_pixels": [
+    2148,
+    1730
+  ],
+  "actual_export_dpi": [
+    299.9994,
+    299.9994
+  ],
+  "actual_export_mm": [
+    181.86436372872745,
+    146.4736262805859
+  ],
+  "export_crop_policy": "183x147mm configured canvas with inherited tight outer crop.",
+  "scatter_axis_size_mm": [
+    30,
+    23
+  ],
+  "scatter_origin_overlap_counts": {
+    "1": 3,
+    "2": 3,
+    "3": 1,
+    "4": 0
+  },
+  "source_copy_sha256": {
+    "source\\all66_per_angle_metrics.csv": "f21d2c2dd47caa2ce510f85b64bda6fa6ecd12ffc278025044e1fe7c55582c58",
+    "source\\all66_residue_summary.csv": "fec153f86b3b8ba808d2ee731937754427902660c5b29a955cacf25f5d8ab4ab",
+    "source\\analysis_source_manifest.json": "ff8bf00b59beeb41e0c5fd4d36ef62921de4aa42a9d68710044aa0d71a6119ae",
+    "source\\fig7_all_residues_Gln_and_MD_free_energy.statistics.json": "5e164096e1f959087bffb328b6b9840a99f8e7f1bc023dcd91ec8e017983f418",
+    "source\\histograms_501frames.csv": "e90410df3e05ad5004861601e9f8b7272da0889c589d056ef4a13b4a5e20dbad",
+    "source\\README_数据定义与复算.md": "69775bc854b794a068b8f1ac7adecf5fc090a1b1ac79734b7a1f400f1444e678",
+    "source\\ubiquitin_all66_chi_501frames.npz": "562e14a3909718f99fa2471dc6503b3c244b39a04bc883073b50ba02a171c182",
+    "experiment\\all66_joint_predictions.csv": "a0ffd1247617be4acbd9f1a6df7980f00fc64922151fe630c64bd5b59358226b",
+    "experiment\\all_angle_slots_long.csv": "0ead8b695378914c03a158d6bdc0e865926a2241ec2f87fbbcfde840d614ae47",
+    "experiment\\analyze_all_chi_associations.py": "fca0281bc244d7b3623d518990c0517e51291e16ad8475f548ce0a55f154068b",
+    "experiment\\audit.json": "432d8984476d98614f54cb1aee554cc75e552472a4a5cc5c991c1e323ad11123",
+    "experiment\\defined_angles_long.csv": "8052306e31edf07f8cc7295ec8059c4e8dad6047354a834ea21fb0020e48ad0c",
+    "experiment\\definitions_and_handling.json": "318e9522b0fd2ed0781720fce7adfee77a11791737a24705b6ebfe7c4ee298a0",
+    "experiment\\figure_statistics.csv": "7b2a22fd54a9afe535bb18a6eb7fdeabc6901cdbcaa1cf9f6bc3553da63baaa4",
+    "experiment\\joint_prediction_accuracy_by_angle_count.csv": "6bafd46bf72c3f6e1f3b78f23718228a8099d73bcf8be01d37ea8248bc5ce7d8",
+    "experiment\\per_chi_AA_counts_and_constant_groups.csv": "7ca644298449c5250288b885183be74b5e55238555fbdfff3662f974dd7542f5",
+    "experiment\\per_chi_correlations.csv": "d90af24843fc5d5fb08abd0a9d799b38ea7e4fe0afd8fb229d7c370f3c544205",
+    "experiment\\README_逐角关联与角数精度.md": "22893da48469bf1093c8e2fc036e5e826c58c93c5625662493178a8ef3712a9f",
+    "experiment\\singleton_sensitivity_correlations.csv": "52ea6741293c6b48b6298fa39f5face715e3b335ecc417e7067505341d5f6425"
+  },
+  "all715_values_identical_to_v37": true,
+  "pixel_difference_bbox": [
+    172,
+    170,
+    1126,
+    997
+  ],
+  "pixel_identical_regions": {
+    "b_complete_right": [
+      1160,
+      0,
+      2148,
+      1730
+    ],
+    "c_complete_lower": [
+      0,
+      1100,
+      2148,
+      1730
+    ]
+  },
+  "no_single_angle_prediction_accuracy_claim": true,
+  "no_smoothing_jitter_or_filtering": true,
+  "a_missing_residue_names": {
+    "10": "GLY",
+    "28": "ALA",
+    "35": "GLY",
+    "46": "ALA",
+    "47": "GLY",
+    "53": "GLY"
+  },
+  "a_type_mean_correction": "Same fold0 training reference amino-acid mean subtracted from both prediction and reference; distinct from b layer-wise means."
+}

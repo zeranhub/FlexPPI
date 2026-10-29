@@ -1,0 +1,135 @@
+{
+  "sample_id": "1ail_A",
+  "dataset": "atlas",
+  "fold": 0,
+  "plan_sha256": "09f029e2107e2e77e05271d7c2e65c6f2efdc0fed6f0fcd3d7a3dba9eec2ba83",
+  "status": "complete",
+  "trajectories": [
+    {
+      "sample_id": "1ail_A",
+      "dataset": "atlas",
+      "fold": 0,
+      "replica_index": 1,
+      "status": "complete",
+      "plan_sha256": "09f029e2107e2e77e05271d7c2e65c6f2efdc0fed6f0fcd3d7a3dba9eec2ba83",
+      "cache_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\trajectory_analysis\\cache\\1ail_A_rep1.npz",
+      "cache_sha256": "61a23ea6f5ea970537d906f7338ae5d838bd3cac42bebf77481ad4099c31ce53",
+      "mapping": [
+        {
+          "canonical_chain": "_",
+          "replica_chain": "_",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "residue_count": 73,
+      "mapped_residues": 73,
+      "ca_valid": 73,
+      "chi_valid": 65,
+      "frames": 501,
+      "first_ps": 0.0,
+      "last_ps": 100000.0,
+      "bad_chi_bonds_gt5A": 0,
+      "chemistry_changes": {
+        "ILE_CD->CD1_atoms": 3
+      },
+      "byte_audit": {
+        "raw_sha256": "d7c9f20d3008203f6eabf0c5d5d4407ac07c5c457e845f61b6d615492302d685",
+        "raw_bytes": 5545580,
+        "selected_xtc_sha256": "a940421f4ea676074ab0beb5ba7e6d4360b23e2b3d129bc2af385bc285c7096d",
+        "selected_bytes": 2775580,
+        "raw_size_and_mtime_unchanged": true
+      },
+      "elapsed_seconds": 0.3589999999385327
+    },
+    {
+      "sample_id": "1ail_A",
+      "dataset": "atlas",
+      "fold": 0,
+      "replica_index": 2,
+      "status": "complete",
+      "plan_sha256": "09f029e2107e2e77e05271d7c2e65c6f2efdc0fed6f0fcd3d7a3dba9eec2ba83",
+      "cache_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\trajectory_analysis\\cache\\1ail_A_rep2.npz",
+      "cache_sha256": "30965ca1d535bdbfe325d574a788bbc57a6f5659a1d0a5919ed31b66d718f6a1",
+      "mapping": [
+        {
+          "canonical_chain": "_",
+          "replica_chain": "_",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "residue_count": 73,
+      "mapped_residues": 73,
+      "ca_valid": 73,
+      "chi_valid": 65,
+      "frames": 501,
+      "first_ps": 0.0,
+      "last_ps": 100000.0,
+      "bad_chi_bonds_gt5A": 0,
+      "chemistry_changes": {
+        "ILE_CD->CD1_atoms": 3
+      },
+      "byte_audit": {
+        "raw_sha256": "c5600ffd6e4567ab13ded0074435e0721146f78614b35487dfafc76946f307f9",
+        "raw_bytes": 5548156,
+        "selected_xtc_sha256": "c6398aeeac51b4ed040cff022d0b5652c0d36425192ba165bb83cecd8dc1aa3d",
+        "selected_bytes": 2776740,
+        "raw_size_and_mtime_unchanged": true
+      },
+      "elapsed_seconds": 0.2190000000409782
+    },
+    {
+      "sample_id": "1ail_A",
+      "dataset": "atlas",
+      "fold": 0,
+      "replica_index": 3,
+      "status": "complete",
+      "plan_sha256": "09f029e2107e2e77e05271d7c2e65c6f2efdc0fed6f0fcd3d7a3dba9eec2ba83",
+      "cache_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\trajectory_analysis\\cache\\1ail_A_rep3.npz",
+      "cache_sha256": "15a52ea50d897a290cabcf26e0d74a153cad38128ab33f8b01526e24ae2dcf30",
+      "mapping": [
+        {
+          "canonical_chain": "_",
+          "replica_chain": "_",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "residue_count": 73,
+      "mapped_residues": 73,
+      "ca_valid": 73,
+      "chi_valid": 65,
+      "frames": 501,
+      "first_ps": 0.0,
+      "last_ps": 100000.0,
+      "bad_chi_bonds_gt5A": 0,
+      "chemistry_changes": {
+        "ILE_CD->CD1_atoms": 3
+      },
+      "byte_audit": {
+        "raw_sha256": "eb0f7ab3f1c5fbfcaa0879bcd7ee65acae515c6fa49eec9b96e9e411b7a664e2",
+        "raw_bytes": 5546688,
+        "selected_xtc_sha256": "5f277366e7bb0b938007423931a420a5ef87a414a35c4284bb75a114eef0997a",
+        "selected_bytes": 2775768,
+        "raw_size_and_mtime_unchanged": true
+      },
+      "elapsed_seconds": 0.34300000010989606
+    }
+  ],
+  "reproduction": [
+    {
+      "variant": "uniform_rep1",
+      "max_absolute_label_difference": 0.0,
+      "mask_exact": true,
+      "prior_label_sha256": "b2cbba6a17d185fd34e6a4b4ab28ba4954e0c24b632bf2dd50c6dcf1576c9635"
+    },
+    {
+      "variant": "uniform_available_replicas",
+      "max_absolute_label_difference": 0.0,
+      "mask_exact": true,
+      "prior_label_sha256": "6505e1b880f8a34f128e3a21f4ce4ac64570d80d057766e0ae32514f48fd63ff"
+    }
+  ],
+  "elapsed_seconds": 0.5310000001918525
+}

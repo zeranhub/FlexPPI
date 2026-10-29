@@ -1,0 +1,77 @@
+{
+  "sample_id": "3las_B",
+  "dataset": "atlas",
+  "fold": 4,
+  "plan_sha256": "fe7c01b66ae16f4101e28c13fdb93246f054acc7d6f26ac758caf8aec9995ffd",
+  "status": "complete",
+  "replica_audits": [
+    {
+      "mapping": [
+        {
+          "canonical_chain": "_",
+          "replica_chain": "_",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "frames": 501,
+      "original_frames": 1001,
+      "chi_residues": 141,
+      "chi_bond_instances_gt5A": 0,
+      "residue_coverage": 1.0,
+      "replica_index": 1
+    },
+    {
+      "mapping": [
+        {
+          "canonical_chain": "_",
+          "replica_chain": "_",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "frames": 501,
+      "original_frames": 1001,
+      "chi_residues": 141,
+      "chi_bond_instances_gt5A": 0,
+      "residue_coverage": 1.0,
+      "replica_index": 2
+    },
+    {
+      "mapping": [
+        {
+          "canonical_chain": "_",
+          "replica_chain": "_",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "frames": 501,
+      "original_frames": 1001,
+      "chi_residues": 141,
+      "chi_bond_instances_gt5A": 0,
+      "residue_coverage": 1.0,
+      "replica_index": 3
+    }
+  ],
+  "labels": {
+    "uniform_rep1": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\label_sensitivity\\labels\\uniform_rep1\\3las_B.npz",
+      "sha256": "d9fe22ce8b03950d99873aa317dfeedf4e1b4f0ebe9313ccd3e031d2f8f351d5",
+      "valid_counts": [
+        166,
+        141
+      ]
+    },
+    "uniform_available_replicas": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\label_sensitivity\\labels\\uniform_available_replicas\\3las_B.npz",
+      "sha256": "18ce4ff06284863aed0f2013d38c838339b3864cb96f72065e2cc4f6c2ad42cc",
+      "valid_counts": [
+        166,
+        141
+      ]
+    }
+  },
+  "replicas": 3,
+  "elapsed_seconds": 1.9379999998491257
+}

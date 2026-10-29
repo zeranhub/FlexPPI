@@ -1,0 +1,3077 @@
+{
+  "status": "complete",
+  "plan_sha256": "9712242b5adbe142eb0b1068e32e08bd4d8c384ab088a151016b62904a606956",
+  "code_sha256": "508230b2e243887a5f2a0f99b8ea5d3438c79c6ccb2f9c9eedd84f5e99c2131a",
+  "source_files_sha256_size_and_mtime_unchanged": true,
+  "prediction_source": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\neural_exports\\evaluation\\full\\A003R.npz",
+  "MDAnalysis_version": "2.10.0",
+  "numpy_version": "2.3.5",
+  "topology_canonicalization": {
+    "ILE_CD->CD1": 12,
+    "HSE->HIS": 17
+  },
+  "raw_source_access": "SHA256/read copy only; MDAnalysis opens task staging copy only; staging auto-deleted",
+  "chainA_original_positions": 72,
+  "chainA_Hchi_valid_positions": 66,
+  "all66_have_all_chemically_defined_angles": true,
+  "chi_count_distribution": {
+    "1": 14,
+    "2": 29,
+    "3": 13,
+    "4": 10
+  },
+  "defined_per_angle_positions": 151,
+  "absent_angle_slots": 113,
+  "all_missing_angles_remain_NaN": true,
+  "angle_array_shape": [
+    501,
+    66,
+    4
+  ],
+  "frames": 501,
+  "time_range_ns": [
+    0.0,
+    100.0
+  ],
+  "step_ps": 200.0,
+  "original_zero_reference_Pro_sites": [
+    "P19",
+    "P37",
+    "P38"
+  ],
+  "independent_float64_dihedral_max_circular_error_degrees": 2.731039174364014e-05,
+  "maximum_adjacent_atom_distance_angstrom": 1.9165306091308594,
+  "six_GLN_501frame_angle_values_checked": 9018,
+  "six_GLN_max_circular_error_degrees": 0.0,
+  "prior_two_site_histogram_rows_checked": 432,
+  "prior_histogram_probability_Fstar_match_atol": 1e-14,
+  "original_target_and_prediction_unchanged": true,
+  "atom_mapping": [
+    {
+      "residue_index": 0,
+      "chain": "A",
+      "author_residue_id": "1",
+      "amino_acid": "M",
+      "residue": "M1",
+      "predicted_Hchi_nats": 2.0140578746795654,
+      "frozen_MD_joint_Hchi_nats": 1.9854868650436401,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 0,
+      "canonical_resname": "MET",
+      "chi_count": 3,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "SD"
+        ],
+        [
+          "CB",
+          "CG",
+          "SD",
+          "CE"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          0,
+          4,
+          6,
+          9
+        ],
+        [
+          4,
+          6,
+          9,
+          12
+        ],
+        [
+          6,
+          9,
+          12,
+          13
+        ]
+      ]
+    },
+    {
+      "residue_index": 1,
+      "chain": "A",
+      "author_residue_id": "2",
+      "amino_acid": "Q",
+      "residue": "Q2",
+      "predicted_Hchi_nats": 2.989755630493164,
+      "frozen_MD_joint_Hchi_nats": 3.008878469467163,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 1,
+      "canonical_resname": "GLN",
+      "chi_count": 3,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "OE1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          19,
+          21,
+          23,
+          26
+        ],
+        [
+          21,
+          23,
+          26,
+          29
+        ],
+        [
+          23,
+          26,
+          29,
+          30
+        ]
+      ]
+    },
+    {
+      "residue_index": 2,
+      "chain": "A",
+      "author_residue_id": "3",
+      "amino_acid": "I",
+      "residue": "I3",
+      "predicted_Hchi_nats": 1.223077654838562,
+      "frozen_MD_joint_Hchi_nats": 1.4116549491882324,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 2,
+      "canonical_resname": "ILE",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG1"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG1",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          36,
+          38,
+          40,
+          46
+        ],
+        [
+          38,
+          40,
+          46,
+          49
+        ]
+      ]
+    },
+    {
+      "residue_index": 3,
+      "chain": "A",
+      "author_residue_id": "4",
+      "amino_acid": "F",
+      "residue": "F4",
+      "predicted_Hchi_nats": 1.6252601146697998,
+      "frozen_MD_joint_Hchi_nats": 1.3400098085403442,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 3,
+      "canonical_resname": "PHE",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          55,
+          57,
+          59,
+          62
+        ],
+        [
+          57,
+          59,
+          62,
+          63
+        ]
+      ]
+    },
+    {
+      "residue_index": 4,
+      "chain": "A",
+      "author_residue_id": "5",
+      "amino_acid": "V",
+      "residue": "V5",
+      "predicted_Hchi_nats": 0.6713821291923523,
+      "frozen_MD_joint_Hchi_nats": 0.6978086829185486,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 4,
+      "canonical_resname": "VAL",
+      "chi_count": 1,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          75,
+          77,
+          79,
+          81
+        ]
+      ]
+    },
+    {
+      "residue_index": 5,
+      "chain": "A",
+      "author_residue_id": "6",
+      "amino_acid": "K",
+      "residue": "K6",
+      "predicted_Hchi_nats": 3.55291485786438,
+      "frozen_MD_joint_Hchi_nats": 3.435349464416504,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 5,
+      "canonical_resname": "LYS",
+      "chi_count": 4,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "CE"
+        ],
+        [
+          "CG",
+          "CD",
+          "CE",
+          "NZ"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          91,
+          93,
+          95,
+          98
+        ],
+        [
+          93,
+          95,
+          98,
+          101
+        ],
+        [
+          95,
+          98,
+          101,
+          104
+        ],
+        [
+          98,
+          101,
+          104,
+          107
+        ]
+      ]
+    },
+    {
+      "residue_index": 6,
+      "chain": "A",
+      "author_residue_id": "7",
+      "amino_acid": "T",
+      "residue": "T7",
+      "predicted_Hchi_nats": 0.7206032276153564,
+      "frozen_MD_joint_Hchi_nats": 0.42339029908180237,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 6,
+      "canonical_resname": "THR",
+      "chi_count": 1,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "OG1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          113,
+          115,
+          117,
+          119
+        ]
+      ]
+    },
+    {
+      "residue_index": 7,
+      "chain": "A",
+      "author_residue_id": "8",
+      "amino_acid": "L",
+      "residue": "L8",
+      "predicted_Hchi_nats": 1.4940201044082642,
+      "frozen_MD_joint_Hchi_nats": 1.4830896854400635,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 7,
+      "canonical_resname": "LEU",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          127,
+          129,
+          131,
+          134
+        ],
+        [
+          129,
+          131,
+          134,
+          136
+        ]
+      ]
+    },
+    {
+      "residue_index": 8,
+      "chain": "A",
+      "author_residue_id": "9",
+      "amino_acid": "T",
+      "residue": "T9",
+      "predicted_Hchi_nats": 0.7564218640327454,
+      "frozen_MD_joint_Hchi_nats": 0.6864983439445496,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 8,
+      "canonical_resname": "THR",
+      "chi_count": 1,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "OG1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          146,
+          148,
+          150,
+          152
+        ]
+      ]
+    },
+    {
+      "residue_index": 10,
+      "chain": "A",
+      "author_residue_id": "11",
+      "amino_acid": "K",
+      "residue": "K11",
+      "predicted_Hchi_nats": 3.91245174407959,
+      "frozen_MD_joint_Hchi_nats": 3.7684831619262695,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 10,
+      "canonical_resname": "LYS",
+      "chi_count": 4,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "CE"
+        ],
+        [
+          "CG",
+          "CD",
+          "CE",
+          "NZ"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          167,
+          169,
+          171,
+          174
+        ],
+        [
+          169,
+          171,
+          174,
+          177
+        ],
+        [
+          171,
+          174,
+          177,
+          180
+        ],
+        [
+          174,
+          177,
+          180,
+          183
+        ]
+      ]
+    },
+    {
+      "residue_index": 11,
+      "chain": "A",
+      "author_residue_id": "12",
+      "amino_acid": "T",
+      "residue": "T12",
+      "predicted_Hchi_nats": 0.7376914024353027,
+      "frozen_MD_joint_Hchi_nats": 0.6659627556800842,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 11,
+      "canonical_resname": "THR",
+      "chi_count": 1,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "OG1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          189,
+          191,
+          193,
+          195
+        ]
+      ]
+    },
+    {
+      "residue_index": 12,
+      "chain": "A",
+      "author_residue_id": "13",
+      "amino_acid": "I",
+      "residue": "I13",
+      "predicted_Hchi_nats": 1.503333568572998,
+      "frozen_MD_joint_Hchi_nats": 1.3252906799316406,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 12,
+      "canonical_resname": "ILE",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG1"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG1",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          203,
+          205,
+          207,
+          213
+        ],
+        [
+          205,
+          207,
+          213,
+          216
+        ]
+      ]
+    },
+    {
+      "residue_index": 13,
+      "chain": "A",
+      "author_residue_id": "14",
+      "amino_acid": "T",
+      "residue": "T14",
+      "predicted_Hchi_nats": 0.8076671361923218,
+      "frozen_MD_joint_Hchi_nats": 0.8311854004859924,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 13,
+      "canonical_resname": "THR",
+      "chi_count": 1,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "OG1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          222,
+          224,
+          226,
+          228
+        ]
+      ]
+    },
+    {
+      "residue_index": 14,
+      "chain": "A",
+      "author_residue_id": "15",
+      "amino_acid": "L",
+      "residue": "L15",
+      "predicted_Hchi_nats": 1.4609510898590088,
+      "frozen_MD_joint_Hchi_nats": 1.448617935180664,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 14,
+      "canonical_resname": "LEU",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          236,
+          238,
+          240,
+          243
+        ],
+        [
+          238,
+          240,
+          243,
+          245
+        ]
+      ]
+    },
+    {
+      "residue_index": 15,
+      "chain": "A",
+      "author_residue_id": "16",
+      "amino_acid": "E",
+      "residue": "E16",
+      "predicted_Hchi_nats": 2.646101951599121,
+      "frozen_MD_joint_Hchi_nats": 2.617633819580078,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 15,
+      "canonical_resname": "GLU",
+      "chi_count": 3,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "OE1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          255,
+          257,
+          259,
+          262
+        ],
+        [
+          257,
+          259,
+          262,
+          265
+        ],
+        [
+          259,
+          262,
+          265,
+          266
+        ]
+      ]
+    },
+    {
+      "residue_index": 16,
+      "chain": "A",
+      "author_residue_id": "17",
+      "amino_acid": "V",
+      "residue": "V17",
+      "predicted_Hchi_nats": 0.7336974740028381,
+      "frozen_MD_joint_Hchi_nats": 0.6518019437789917,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 16,
+      "canonical_resname": "VAL",
+      "chi_count": 1,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          270,
+          272,
+          274,
+          276
+        ]
+      ]
+    },
+    {
+      "residue_index": 17,
+      "chain": "A",
+      "author_residue_id": "18",
+      "amino_acid": "E",
+      "residue": "E18",
+      "predicted_Hchi_nats": 2.4591357707977295,
+      "frozen_MD_joint_Hchi_nats": 2.4086737632751465,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 17,
+      "canonical_resname": "GLU",
+      "chi_count": 3,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "OE1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          286,
+          288,
+          290,
+          293
+        ],
+        [
+          288,
+          290,
+          293,
+          296
+        ],
+        [
+          290,
+          293,
+          296,
+          297
+        ]
+      ]
+    },
+    {
+      "residue_index": 18,
+      "chain": "A",
+      "author_residue_id": "19",
+      "amino_acid": "P",
+      "residue": "P19",
+      "predicted_Hchi_nats": 0.0008202433818951249,
+      "frozen_MD_joint_Hchi_nats": 0.0,
+      "target_valid": true,
+      "is_proline": true,
+      "mda_resindex": 18,
+      "canonical_resname": "PRO",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          301,
+          305,
+          307,
+          310
+        ],
+        [
+          305,
+          307,
+          310,
+          302
+        ]
+      ]
+    },
+    {
+      "residue_index": 19,
+      "chain": "A",
+      "author_residue_id": "20",
+      "amino_acid": "S",
+      "residue": "S20",
+      "predicted_Hchi_nats": 0.6521909832954407,
+      "frozen_MD_joint_Hchi_nats": 0.6031706929206848,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 19,
+      "canonical_resname": "SER",
+      "chi_count": 1,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "OG"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          315,
+          317,
+          319,
+          322
+        ]
+      ]
+    },
+    {
+      "residue_index": 20,
+      "chain": "A",
+      "author_residue_id": "21",
+      "amino_acid": "D",
+      "residue": "D21",
+      "predicted_Hchi_nats": 1.0701044797897339,
+      "frozen_MD_joint_Hchi_nats": 1.1478891372680664,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 20,
+      "canonical_resname": "ASP",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "OD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          326,
+          328,
+          330,
+          333
+        ],
+        [
+          328,
+          330,
+          333,
+          334
+        ]
+      ]
+    },
+    {
+      "residue_index": 21,
+      "chain": "A",
+      "author_residue_id": "22",
+      "amino_acid": "T",
+      "residue": "T22",
+      "predicted_Hchi_nats": 0.645145833492279,
+      "frozen_MD_joint_Hchi_nats": 0.6904651522636414,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 21,
+      "canonical_resname": "THR",
+      "chi_count": 1,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "OG1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          338,
+          340,
+          342,
+          344
+        ]
+      ]
+    },
+    {
+      "residue_index": 22,
+      "chain": "A",
+      "author_residue_id": "23",
+      "amino_acid": "I",
+      "residue": "I23",
+      "predicted_Hchi_nats": 1.4077650308609009,
+      "frozen_MD_joint_Hchi_nats": 1.3760210275650024,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 22,
+      "canonical_resname": "ILE",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG1"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG1",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          352,
+          354,
+          356,
+          362
+        ],
+        [
+          354,
+          356,
+          362,
+          365
+        ]
+      ]
+    },
+    {
+      "residue_index": 23,
+      "chain": "A",
+      "author_residue_id": "24",
+      "amino_acid": "E",
+      "residue": "E24",
+      "predicted_Hchi_nats": 2.549337387084961,
+      "frozen_MD_joint_Hchi_nats": 2.4678850173950195,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 23,
+      "canonical_resname": "GLU",
+      "chi_count": 3,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "OE1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          371,
+          373,
+          375,
+          378
+        ],
+        [
+          373,
+          375,
+          378,
+          381
+        ],
+        [
+          375,
+          378,
+          381,
+          382
+        ]
+      ]
+    },
+    {
+      "residue_index": 24,
+      "chain": "A",
+      "author_residue_id": "25",
+      "amino_acid": "N",
+      "residue": "N25",
+      "predicted_Hchi_nats": 1.5065091848373413,
+      "frozen_MD_joint_Hchi_nats": 1.656162977218628,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 24,
+      "canonical_resname": "ASN",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "OD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          386,
+          388,
+          390,
+          393
+        ],
+        [
+          388,
+          390,
+          393,
+          394
+        ]
+      ]
+    },
+    {
+      "residue_index": 25,
+      "chain": "A",
+      "author_residue_id": "26",
+      "amino_acid": "V",
+      "residue": "V26",
+      "predicted_Hchi_nats": 0.6865206956863403,
+      "frozen_MD_joint_Hchi_nats": 0.6778249144554138,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 25,
+      "canonical_resname": "VAL",
+      "chi_count": 1,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          400,
+          402,
+          404,
+          406
+        ]
+      ]
+    },
+    {
+      "residue_index": 26,
+      "chain": "A",
+      "author_residue_id": "27",
+      "amino_acid": "K",
+      "residue": "K27",
+      "predicted_Hchi_nats": 2.8722100257873535,
+      "frozen_MD_joint_Hchi_nats": 2.863513708114624,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 26,
+      "canonical_resname": "LYS",
+      "chi_count": 4,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "CE"
+        ],
+        [
+          "CG",
+          "CD",
+          "CE",
+          "NZ"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          416,
+          418,
+          420,
+          423
+        ],
+        [
+          418,
+          420,
+          423,
+          426
+        ],
+        [
+          420,
+          423,
+          426,
+          429
+        ],
+        [
+          423,
+          426,
+          429,
+          432
+        ]
+      ]
+    },
+    {
+      "residue_index": 28,
+      "chain": "A",
+      "author_residue_id": "29",
+      "amino_acid": "K",
+      "residue": "K29",
+      "predicted_Hchi_nats": 3.3645122051239014,
+      "frozen_MD_joint_Hchi_nats": 3.25882887840271,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 28,
+      "canonical_resname": "LYS",
+      "chi_count": 4,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "CE"
+        ],
+        [
+          "CG",
+          "CD",
+          "CE",
+          "NZ"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          448,
+          450,
+          452,
+          455
+        ],
+        [
+          450,
+          452,
+          455,
+          458
+        ],
+        [
+          452,
+          455,
+          458,
+          461
+        ],
+        [
+          455,
+          458,
+          461,
+          464
+        ]
+      ]
+    },
+    {
+      "residue_index": 29,
+      "chain": "A",
+      "author_residue_id": "30",
+      "amino_acid": "I",
+      "residue": "I30",
+      "predicted_Hchi_nats": 1.6388790607452393,
+      "frozen_MD_joint_Hchi_nats": 1.5723001956939697,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 29,
+      "canonical_resname": "ILE",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG1"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG1",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          470,
+          472,
+          474,
+          480
+        ],
+        [
+          472,
+          474,
+          480,
+          483
+        ]
+      ]
+    },
+    {
+      "residue_index": 30,
+      "chain": "A",
+      "author_residue_id": "31",
+      "amino_acid": "Q",
+      "residue": "Q31",
+      "predicted_Hchi_nats": 2.461742877960205,
+      "frozen_MD_joint_Hchi_nats": 2.438781261444092,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 30,
+      "canonical_resname": "GLN",
+      "chi_count": 3,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "OE1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          489,
+          491,
+          493,
+          496
+        ],
+        [
+          491,
+          493,
+          496,
+          499
+        ],
+        [
+          493,
+          496,
+          499,
+          500
+        ]
+      ]
+    },
+    {
+      "residue_index": 31,
+      "chain": "A",
+      "author_residue_id": "32",
+      "amino_acid": "D",
+      "residue": "D32",
+      "predicted_Hchi_nats": 1.5206525325775146,
+      "frozen_MD_joint_Hchi_nats": 1.5191986560821533,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 31,
+      "canonical_resname": "ASP",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "OD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          506,
+          508,
+          510,
+          513
+        ],
+        [
+          508,
+          510,
+          513,
+          514
+        ]
+      ]
+    },
+    {
+      "residue_index": 32,
+      "chain": "A",
+      "author_residue_id": "33",
+      "amino_acid": "K",
+      "residue": "K33",
+      "predicted_Hchi_nats": 3.437173366546631,
+      "frozen_MD_joint_Hchi_nats": 3.2381298542022705,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 32,
+      "canonical_resname": "LYS",
+      "chi_count": 4,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "CE"
+        ],
+        [
+          "CG",
+          "CD",
+          "CE",
+          "NZ"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          518,
+          520,
+          522,
+          525
+        ],
+        [
+          520,
+          522,
+          525,
+          528
+        ],
+        [
+          522,
+          525,
+          528,
+          531
+        ],
+        [
+          525,
+          528,
+          531,
+          534
+        ]
+      ]
+    },
+    {
+      "residue_index": 33,
+      "chain": "A",
+      "author_residue_id": "34",
+      "amino_acid": "E",
+      "residue": "E34",
+      "predicted_Hchi_nats": 2.0912885665893555,
+      "frozen_MD_joint_Hchi_nats": 2.005753993988037,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 33,
+      "canonical_resname": "GLU",
+      "chi_count": 3,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "OE1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          540,
+          542,
+          544,
+          547
+        ],
+        [
+          542,
+          544,
+          547,
+          550
+        ],
+        [
+          544,
+          547,
+          550,
+          551
+        ]
+      ]
+    },
+    {
+      "residue_index": 35,
+      "chain": "A",
+      "author_residue_id": "36",
+      "amino_acid": "I",
+      "residue": "I36",
+      "predicted_Hchi_nats": 1.5240856409072876,
+      "frozen_MD_joint_Hchi_nats": 1.4335781335830688,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 35,
+      "canonical_resname": "ILE",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG1"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG1",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          562,
+          564,
+          566,
+          572
+        ],
+        [
+          564,
+          566,
+          572,
+          575
+        ]
+      ]
+    },
+    {
+      "residue_index": 36,
+      "chain": "A",
+      "author_residue_id": "37",
+      "amino_acid": "P",
+      "residue": "P37",
+      "predicted_Hchi_nats": 0.00013953560846857727,
+      "frozen_MD_joint_Hchi_nats": 0.0,
+      "target_valid": true,
+      "is_proline": true,
+      "mda_resindex": 36,
+      "canonical_resname": "PRO",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          581,
+          585,
+          587,
+          590
+        ],
+        [
+          585,
+          587,
+          590,
+          582
+        ]
+      ]
+    },
+    {
+      "residue_index": 37,
+      "chain": "A",
+      "author_residue_id": "38",
+      "amino_acid": "P",
+      "residue": "P38",
+      "predicted_Hchi_nats": 0.00013501424109563231,
+      "frozen_MD_joint_Hchi_nats": 0.0,
+      "target_valid": true,
+      "is_proline": true,
+      "mda_resindex": 37,
+      "canonical_resname": "PRO",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          595,
+          599,
+          601,
+          604
+        ],
+        [
+          599,
+          601,
+          604,
+          596
+        ]
+      ]
+    },
+    {
+      "residue_index": 38,
+      "chain": "A",
+      "author_residue_id": "39",
+      "amino_acid": "D",
+      "residue": "D39",
+      "predicted_Hchi_nats": 1.7874611616134644,
+      "frozen_MD_joint_Hchi_nats": 1.7131681442260742,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 38,
+      "canonical_resname": "ASP",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "OD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          609,
+          611,
+          613,
+          616
+        ],
+        [
+          611,
+          613,
+          616,
+          617
+        ]
+      ]
+    },
+    {
+      "residue_index": 39,
+      "chain": "A",
+      "author_residue_id": "40",
+      "amino_acid": "Q",
+      "residue": "Q40",
+      "predicted_Hchi_nats": 2.5540964603424072,
+      "frozen_MD_joint_Hchi_nats": 2.186479091644287,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 39,
+      "canonical_resname": "GLN",
+      "chi_count": 3,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "OE1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          621,
+          623,
+          625,
+          628
+        ],
+        [
+          623,
+          625,
+          628,
+          631
+        ],
+        [
+          625,
+          628,
+          631,
+          632
+        ]
+      ]
+    },
+    {
+      "residue_index": 40,
+      "chain": "A",
+      "author_residue_id": "41",
+      "amino_acid": "Q",
+      "residue": "Q41",
+      "predicted_Hchi_nats": 2.0000813007354736,
+      "frozen_MD_joint_Hchi_nats": 1.8904883861541748,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 40,
+      "canonical_resname": "GLN",
+      "chi_count": 3,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "OE1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          638,
+          640,
+          642,
+          645
+        ],
+        [
+          640,
+          642,
+          645,
+          648
+        ],
+        [
+          642,
+          645,
+          648,
+          649
+        ]
+      ]
+    },
+    {
+      "residue_index": 41,
+      "chain": "A",
+      "author_residue_id": "42",
+      "amino_acid": "R",
+      "residue": "R42",
+      "predicted_Hchi_nats": 2.830998182296753,
+      "frozen_MD_joint_Hchi_nats": 2.8130006790161133,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 41,
+      "canonical_resname": "ARG",
+      "chi_count": 4,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "NE"
+        ],
+        [
+          "CG",
+          "CD",
+          "NE",
+          "CZ"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          655,
+          657,
+          659,
+          662
+        ],
+        [
+          657,
+          659,
+          662,
+          665
+        ],
+        [
+          659,
+          662,
+          665,
+          668
+        ],
+        [
+          662,
+          665,
+          668,
+          670
+        ]
+      ]
+    },
+    {
+      "residue_index": 42,
+      "chain": "A",
+      "author_residue_id": "43",
+      "amino_acid": "L",
+      "residue": "L43",
+      "predicted_Hchi_nats": 1.1131482124328613,
+      "frozen_MD_joint_Hchi_nats": 1.2015118598937988,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 42,
+      "canonical_resname": "LEU",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          679,
+          681,
+          683,
+          686
+        ],
+        [
+          681,
+          683,
+          686,
+          688
+        ]
+      ]
+    },
+    {
+      "residue_index": 43,
+      "chain": "A",
+      "author_residue_id": "44",
+      "amino_acid": "I",
+      "residue": "I44",
+      "predicted_Hchi_nats": 1.4872088432312012,
+      "frozen_MD_joint_Hchi_nats": 1.4993960857391357,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 43,
+      "canonical_resname": "ILE",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG1"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG1",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          698,
+          700,
+          702,
+          708
+        ],
+        [
+          700,
+          702,
+          708,
+          711
+        ]
+      ]
+    },
+    {
+      "residue_index": 44,
+      "chain": "A",
+      "author_residue_id": "45",
+      "amino_acid": "F",
+      "residue": "F45",
+      "predicted_Hchi_nats": 1.3552250862121582,
+      "frozen_MD_joint_Hchi_nats": 1.3014118671417236,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 44,
+      "canonical_resname": "PHE",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          717,
+          719,
+          721,
+          724
+        ],
+        [
+          719,
+          721,
+          724,
+          725
+        ]
+      ]
+    },
+    {
+      "residue_index": 47,
+      "chain": "A",
+      "author_residue_id": "48",
+      "amino_acid": "K",
+      "residue": "K48",
+      "predicted_Hchi_nats": 3.924276351928711,
+      "frozen_MD_joint_Hchi_nats": 3.888474464416504,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 47,
+      "canonical_resname": "LYS",
+      "chi_count": 4,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "CE"
+        ],
+        [
+          "CG",
+          "CD",
+          "CE",
+          "NZ"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          754,
+          756,
+          758,
+          761
+        ],
+        [
+          756,
+          758,
+          761,
+          764
+        ],
+        [
+          758,
+          761,
+          764,
+          767
+        ],
+        [
+          761,
+          764,
+          767,
+          770
+        ]
+      ]
+    },
+    {
+      "residue_index": 48,
+      "chain": "A",
+      "author_residue_id": "49",
+      "amino_acid": "Q",
+      "residue": "Q49",
+      "predicted_Hchi_nats": 2.945452928543091,
+      "frozen_MD_joint_Hchi_nats": 3.003504514694214,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 48,
+      "canonical_resname": "GLN",
+      "chi_count": 3,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "OE1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          776,
+          778,
+          780,
+          783
+        ],
+        [
+          778,
+          780,
+          783,
+          786
+        ],
+        [
+          780,
+          783,
+          786,
+          787
+        ]
+      ]
+    },
+    {
+      "residue_index": 49,
+      "chain": "A",
+      "author_residue_id": "50",
+      "amino_acid": "L",
+      "residue": "L50",
+      "predicted_Hchi_nats": 1.350556492805481,
+      "frozen_MD_joint_Hchi_nats": 1.2914140224456787,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 49,
+      "canonical_resname": "LEU",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          793,
+          795,
+          797,
+          800
+        ],
+        [
+          795,
+          797,
+          800,
+          802
+        ]
+      ]
+    },
+    {
+      "residue_index": 50,
+      "chain": "A",
+      "author_residue_id": "51",
+      "amino_acid": "E",
+      "residue": "E51",
+      "predicted_Hchi_nats": 2.6051712036132812,
+      "frozen_MD_joint_Hchi_nats": 2.4976887702941895,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 50,
+      "canonical_resname": "GLU",
+      "chi_count": 3,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "OE1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          812,
+          814,
+          816,
+          819
+        ],
+        [
+          814,
+          816,
+          819,
+          822
+        ],
+        [
+          816,
+          819,
+          822,
+          823
+        ]
+      ]
+    },
+    {
+      "residue_index": 51,
+      "chain": "A",
+      "author_residue_id": "52",
+      "amino_acid": "D",
+      "residue": "D52",
+      "predicted_Hchi_nats": 1.5645369291305542,
+      "frozen_MD_joint_Hchi_nats": 1.6421929597854614,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 51,
+      "canonical_resname": "ASP",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "OD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          827,
+          829,
+          831,
+          834
+        ],
+        [
+          829,
+          831,
+          834,
+          835
+        ]
+      ]
+    },
+    {
+      "residue_index": 53,
+      "chain": "A",
+      "author_residue_id": "54",
+      "amino_acid": "R",
+      "residue": "R54",
+      "predicted_Hchi_nats": 3.1084399223327637,
+      "frozen_MD_joint_Hchi_nats": 3.0592503547668457,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 53,
+      "canonical_resname": "ARG",
+      "chi_count": 4,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "NE"
+        ],
+        [
+          "CG",
+          "CD",
+          "NE",
+          "CZ"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          846,
+          848,
+          850,
+          853
+        ],
+        [
+          848,
+          850,
+          853,
+          856
+        ],
+        [
+          850,
+          853,
+          856,
+          859
+        ],
+        [
+          853,
+          856,
+          859,
+          861
+        ]
+      ]
+    },
+    {
+      "residue_index": 54,
+      "chain": "A",
+      "author_residue_id": "55",
+      "amino_acid": "T",
+      "residue": "T55",
+      "predicted_Hchi_nats": 0.5534880757331848,
+      "frozen_MD_joint_Hchi_nats": 0.5769890546798706,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 54,
+      "canonical_resname": "THR",
+      "chi_count": 1,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "OG1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          870,
+          872,
+          874,
+          876
+        ]
+      ]
+    },
+    {
+      "residue_index": 55,
+      "chain": "A",
+      "author_residue_id": "56",
+      "amino_acid": "L",
+      "residue": "L56",
+      "predicted_Hchi_nats": 1.1790833473205566,
+      "frozen_MD_joint_Hchi_nats": 1.0605348348617554,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 55,
+      "canonical_resname": "LEU",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          884,
+          886,
+          888,
+          891
+        ],
+        [
+          886,
+          888,
+          891,
+          893
+        ]
+      ]
+    },
+    {
+      "residue_index": 56,
+      "chain": "A",
+      "author_residue_id": "57",
+      "amino_acid": "S",
+      "residue": "S57",
+      "predicted_Hchi_nats": 0.9776678085327148,
+      "frozen_MD_joint_Hchi_nats": 0.9473287463188171,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 56,
+      "canonical_resname": "SER",
+      "chi_count": 1,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "OG"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          903,
+          905,
+          907,
+          910
+        ]
+      ]
+    },
+    {
+      "residue_index": 57,
+      "chain": "A",
+      "author_residue_id": "58",
+      "amino_acid": "D",
+      "residue": "D58",
+      "predicted_Hchi_nats": 1.5393550395965576,
+      "frozen_MD_joint_Hchi_nats": 1.4995906352996826,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 57,
+      "canonical_resname": "ASP",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "OD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          914,
+          916,
+          918,
+          921
+        ],
+        [
+          916,
+          918,
+          921,
+          922
+        ]
+      ]
+    },
+    {
+      "residue_index": 58,
+      "chain": "A",
+      "author_residue_id": "59",
+      "amino_acid": "Y",
+      "residue": "Y59",
+      "predicted_Hchi_nats": 0.7261693477630615,
+      "frozen_MD_joint_Hchi_nats": 0.7101449966430664,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 58,
+      "canonical_resname": "TYR",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          926,
+          928,
+          930,
+          933
+        ],
+        [
+          928,
+          930,
+          933,
+          934
+        ]
+      ]
+    },
+    {
+      "residue_index": 59,
+      "chain": "A",
+      "author_residue_id": "60",
+      "amino_acid": "N",
+      "residue": "N60",
+      "predicted_Hchi_nats": 1.5947213172912598,
+      "frozen_MD_joint_Hchi_nats": 1.5695332288742065,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 59,
+      "canonical_resname": "ASN",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "OD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          947,
+          949,
+          951,
+          954
+        ],
+        [
+          949,
+          951,
+          954,
+          955
+        ]
+      ]
+    },
+    {
+      "residue_index": 60,
+      "chain": "A",
+      "author_residue_id": "61",
+      "amino_acid": "I",
+      "residue": "I61",
+      "predicted_Hchi_nats": 1.5208797454833984,
+      "frozen_MD_joint_Hchi_nats": 1.5891727209091187,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 60,
+      "canonical_resname": "ILE",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG1"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG1",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          961,
+          963,
+          965,
+          971
+        ],
+        [
+          963,
+          965,
+          971,
+          974
+        ]
+      ]
+    },
+    {
+      "residue_index": 61,
+      "chain": "A",
+      "author_residue_id": "62",
+      "amino_acid": "Q",
+      "residue": "Q62",
+      "predicted_Hchi_nats": 2.6838717460632324,
+      "frozen_MD_joint_Hchi_nats": 2.63106632232666,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 61,
+      "canonical_resname": "GLN",
+      "chi_count": 3,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "OE1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          980,
+          982,
+          984,
+          987
+        ],
+        [
+          982,
+          984,
+          987,
+          990
+        ],
+        [
+          984,
+          987,
+          990,
+          991
+        ]
+      ]
+    },
+    {
+      "residue_index": 62,
+      "chain": "A",
+      "author_residue_id": "63",
+      "amino_acid": "K",
+      "residue": "K63",
+      "predicted_Hchi_nats": 3.368197202682495,
+      "frozen_MD_joint_Hchi_nats": 3.3480286598205566,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 62,
+      "canonical_resname": "LYS",
+      "chi_count": 4,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "CE"
+        ],
+        [
+          "CG",
+          "CD",
+          "CE",
+          "NZ"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          997,
+          999,
+          1001,
+          1004
+        ],
+        [
+          999,
+          1001,
+          1004,
+          1007
+        ],
+        [
+          1001,
+          1004,
+          1007,
+          1010
+        ],
+        [
+          1004,
+          1007,
+          1010,
+          1013
+        ]
+      ]
+    },
+    {
+      "residue_index": 63,
+      "chain": "A",
+      "author_residue_id": "64",
+      "amino_acid": "E",
+      "residue": "E64",
+      "predicted_Hchi_nats": 2.4920568466186523,
+      "frozen_MD_joint_Hchi_nats": 2.3702569007873535,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 63,
+      "canonical_resname": "GLU",
+      "chi_count": 3,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "OE1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          1019,
+          1021,
+          1023,
+          1026
+        ],
+        [
+          1021,
+          1023,
+          1026,
+          1029
+        ],
+        [
+          1023,
+          1026,
+          1029,
+          1030
+        ]
+      ]
+    },
+    {
+      "residue_index": 64,
+      "chain": "A",
+      "author_residue_id": "65",
+      "amino_acid": "S",
+      "residue": "S65",
+      "predicted_Hchi_nats": 0.6956389546394348,
+      "frozen_MD_joint_Hchi_nats": 0.7459195256233215,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 64,
+      "canonical_resname": "SER",
+      "chi_count": 1,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "OG"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          1034,
+          1036,
+          1038,
+          1041
+        ]
+      ]
+    },
+    {
+      "residue_index": 65,
+      "chain": "A",
+      "author_residue_id": "66",
+      "amino_acid": "T",
+      "residue": "T66",
+      "predicted_Hchi_nats": 0.6990513205528259,
+      "frozen_MD_joint_Hchi_nats": 0.675688624382019,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 65,
+      "canonical_resname": "THR",
+      "chi_count": 1,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "OG1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          1045,
+          1047,
+          1049,
+          1051
+        ]
+      ]
+    },
+    {
+      "residue_index": 66,
+      "chain": "A",
+      "author_residue_id": "67",
+      "amino_acid": "L",
+      "residue": "L67",
+      "predicted_Hchi_nats": 1.391886830329895,
+      "frozen_MD_joint_Hchi_nats": 1.5744394063949585,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 66,
+      "canonical_resname": "LEU",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          1059,
+          1061,
+          1063,
+          1066
+        ],
+        [
+          1061,
+          1063,
+          1066,
+          1068
+        ]
+      ]
+    },
+    {
+      "residue_index": 67,
+      "chain": "A",
+      "author_residue_id": "68",
+      "amino_acid": "H",
+      "residue": "H68",
+      "predicted_Hchi_nats": 1.1518833637237549,
+      "frozen_MD_joint_Hchi_nats": 0.8002210259437561,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 67,
+      "canonical_resname": "HIS",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "ND1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          1078,
+          1080,
+          1082,
+          1086
+        ],
+        [
+          1080,
+          1082,
+          1086,
+          1085
+        ]
+      ]
+    },
+    {
+      "residue_index": 68,
+      "chain": "A",
+      "author_residue_id": "69",
+      "amino_acid": "L",
+      "residue": "L69",
+      "predicted_Hchi_nats": 1.26722252368927,
+      "frozen_MD_joint_Hchi_nats": 1.3204909563064575,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 68,
+      "canonical_resname": "LEU",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          1095,
+          1097,
+          1099,
+          1102
+        ],
+        [
+          1097,
+          1099,
+          1102,
+          1104
+        ]
+      ]
+    },
+    {
+      "residue_index": 69,
+      "chain": "A",
+      "author_residue_id": "70",
+      "amino_acid": "V",
+      "residue": "V70",
+      "predicted_Hchi_nats": 0.7744168043136597,
+      "frozen_MD_joint_Hchi_nats": 0.6978552937507629,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 69,
+      "canonical_resname": "VAL",
+      "chi_count": 1,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          1114,
+          1116,
+          1118,
+          1120
+        ]
+      ]
+    },
+    {
+      "residue_index": 70,
+      "chain": "A",
+      "author_residue_id": "71",
+      "amino_acid": "L",
+      "residue": "L71",
+      "predicted_Hchi_nats": 1.4863653182983398,
+      "frozen_MD_joint_Hchi_nats": 1.4445679187774658,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 70,
+      "canonical_resname": "LEU",
+      "chi_count": 2,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD1"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          1130,
+          1132,
+          1134,
+          1137
+        ],
+        [
+          1132,
+          1134,
+          1137,
+          1139
+        ]
+      ]
+    },
+    {
+      "residue_index": 71,
+      "chain": "A",
+      "author_residue_id": "72",
+      "amino_acid": "R",
+      "residue": "R72",
+      "predicted_Hchi_nats": 2.958847999572754,
+      "frozen_MD_joint_Hchi_nats": 2.776163339614868,
+      "target_valid": true,
+      "is_proline": false,
+      "mda_resindex": 71,
+      "canonical_resname": "ARG",
+      "chi_count": 4,
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "NE"
+        ],
+        [
+          "CG",
+          "CD",
+          "NE",
+          "CZ"
+        ]
+      ],
+      "chi_atom_indices": [
+        [
+          1149,
+          1151,
+          1153,
+          1156
+        ],
+        [
+          1151,
+          1153,
+          1156,
+          1159
+        ],
+        [
+          1153,
+          1156,
+          1159,
+          1162
+        ],
+        [
+          1156,
+          1159,
+          1162,
+          1164
+        ]
+      ]
+    }
+  ],
+  "outputs": {
+    "ubiquitin_all66_chi_501frames.npz": {
+      "sha256": "562e14a3909718f99fa2471dc6503b3c244b39a04bc883073b50ba02a171c182",
+      "bytes": 362180
+    },
+    "all66_per_angle_metrics.csv": {
+      "sha256": "f21d2c2dd47caa2ce510f85b64bda6fa6ecd12ffc278025044e1fe7c55582c58",
+      "bytes": 44643,
+      "rows": 264
+    },
+    "all66_histograms_origin0.csv": {
+      "sha256": "5e0b22fb92f31a2f595964fec2952875977ec5cc27a39498c57630e364793b5e",
+      "bytes": 2299614,
+      "rows": 19008
+    },
+    "all66_angles_long_501frames.csv": {
+      "sha256": "b848349b488497783160783c39a8196bd4e0bff60c58ec2ef51b91357a7ddd35",
+      "bytes": 14386265,
+      "rows": 132264
+    },
+    "all66_residue_summary.csv": {
+      "sha256": "fec153f86b3b8ba808d2ee731937754427902660c5b29a955cacf25f5d8ab4ab",
+      "bytes": 8283,
+      "rows": 66
+    }
+  }
+}

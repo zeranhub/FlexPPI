@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "ok": true,
+  "state": "awaiting_semantic_confirmation",
+  "source": {
+    "file_name": "e_chi1_association.csv",
+    "sha256": "a484fdfc1f4b4f6d82f76987be495709418cdf68e812d5796384eaef074b235b",
+    "columns": [
+      "AA-centered joint Full Hchi (nats)",
+      "AA-centered MD chi entropy (nats)"
+    ],
+    "bytes_unchanged": true
+  },
+  "template": {
+    "id": "scatter",
+    "name": "通用散点图"
+  },
+  "understanding": {
+    "domain": {
+      "family": "scatter",
+      "mode": "default",
+      "confidence": 1.0,
+      "source_adapter_hint": "editaplot_scatter"
+    },
+    "proposal_hash": "d2ee93a5e5e0140c3fa58407ddf2ea63d8e059bd26708bab07fe918e3751f4c2",
+    "column_decisions": [
+      {
+        "item_id": "source_000",
+        "item_type": "source_column",
+        "source_column": "AA-centered joint Full Hchi (nats)",
+        "semantic_role": "x",
+        "disposition": "render_primary",
+        "confidence": 1.0,
+        "evidence_codes": [
+          "user_confirmed_column_mapping"
+        ],
+        "alternatives": [],
+        "decision_zh": "主要图形元素：默认绘制"
+      },
+      {
+        "item_id": "source_001",
+        "item_type": "source_column",
+        "source_column": "AA-centered MD chi entropy (nats)",
+        "semantic_role": "series",
+        "disposition": "render_primary",
+        "confidence": 1.0,
+        "evidence_codes": [
+          "user_confirmed_column_mapping"
+        ],
+        "alternatives": [],
+        "decision_zh": "主要图形元素：默认绘制"
+      }
+    ],
+    "derived_items": [],
+    "figure_elements": [
+      {
+        "element_id": "series_000",
+        "element_kind": "symbol",
+        "data_item_ids": [
+          "source_000",
+          "source_001"
+        ],
+        "required": true,
+        "visible_by_default": true,
+        "axis": "left",
+        "legend_label": "AA-centered MD chi entropy (nats)"
+      }
+    ],
+    "ambiguities": []
+  },
+  "confirmation_gate": {
+    "required": true,
+    "can_confirm_now": true,
+    "uncertain_item_ids": [],
+    "blocking_ambiguity_ids": [],
+    "message_zh": "请核对：数据类型、每列用途、需要画出的元素、只用于计算/验证的列，以及明确不画的列。确认无误后，再把下面的确认对象交给 plan。",
+    "confirmation_payload_template": {
+      "proposal_hash": "d2ee93a5e5e0140c3fa58407ddf2ea63d8e059bd26708bab07fe918e3751f4c2",
+      "confirmed": true,
+      "approved_derived_item_ids": [],
+      "resolved_ambiguities": {}
+    }
+  },
+  "execution": {
+    "plan_created": false,
+    "render_started": false,
+    "origin_called": false
+  }
+}

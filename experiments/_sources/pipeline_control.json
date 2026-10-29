@@ -1,0 +1,156 @@
+{
+  "protocol": "user_md_reuse_priority_20261010_v1",
+  "updated_utc": "2026-10-10T09:54:00.272084+00:00",
+  "reason": "User requested reuse of existing local/hmu-gpu KIX MD, one trajectory per condition is sufficient, and manuscript priority; cancel all unstarted new triplicate simulations.",
+  "cancel_steps": [
+    "md_triplicate_production",
+    "analyze_md_triplicates",
+    "quality_md_rep01",
+    "quality_md_rep02",
+    "quality_md_rep03"
+  ],
+  "preserved_running_steps": {
+    "train_single_targets": {
+      "pid": 71188,
+      "start_ticks": 388347918,
+      "state": "S",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/single_target/run_single_target_queue.py",
+        "--plan",
+        "/root/flexppi_completion_20261010/single_target/single_target_plan.json"
+      ]
+    }
+  },
+  "md_reuse_policy": {
+    "strategy": "reuse_existing_audited_single_trajectory",
+    "priority": "manuscript",
+    "allow_new_kix_production": false,
+    "additional_kix_production_runs": 0,
+    "cancelled_planned_new_runs": 12,
+    "independent_replicates_required": 1,
+    "never_claim_triplicate_uncertainty_from_single_trajectory": true,
+    "existing_md_search_hosts": [
+      "local",
+      "hmu-gpu",
+      "hit-gpu"
+    ],
+    "provenance_requirement": "Only actual audited production trajectories; short CPU/CUDA technical smoke does not count as biological MD validation"
+  },
+  "handoff": {
+    "old_parent": {
+      "pid": 71135,
+      "start_ticks": 388347564,
+      "state": "S",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/run_completion_pipeline.py"
+      ]
+    },
+    "protected_processes": [
+      {
+        "pid": 70967,
+        "start_ticks": 388337387,
+        "state": "R",
+        "command": [
+          "/root/flexppi_completion_20261010/env/bin/python",
+          "-u",
+          "/root/flexppi_completion_20261010/baselines/run_rmsf_net_3063.py",
+          "--cohort",
+          "/root/flexppi_completion_20261010/baselines/cohort",
+          "--output",
+          "/root/flexppi_completion_20261010/baselines/rmsf_net",
+          "--source-root",
+          "/root/flexppi_completion_20261010/baselines/RMSF-net",
+          "--weights",
+          "/root/flexppi_completion_20261010/baselines/RMSF-net/model_cpu/sim_model.pth",
+          "--threads",
+          "2",
+          "--batch-size",
+          "2"
+        ]
+      },
+      {
+        "pid": 71188,
+        "start_ticks": 388347918,
+        "state": "S",
+        "command": [
+          "/root/flexppi_completion_20261010/env/bin/python",
+          "-u",
+          "/root/flexppi_completion_20261010/single_target/run_single_target_queue.py",
+          "--plan",
+          "/root/flexppi_completion_20261010/single_target/single_target_plan.json"
+        ]
+      },
+      {
+        "pid": 73982,
+        "start_ticks": 388551056,
+        "state": "S",
+        "command": [
+          "/root/flexppi_completion_20261010/planet_env/bin/python",
+          "-u",
+          "/root/flexppi_completion_20261010/baselines/run_planet_cpu_queue.py",
+          "--variant",
+          "full"
+        ]
+      },
+      {
+        "pid": 73983,
+        "start_ticks": 388551056,
+        "state": "S",
+        "command": [
+          "/root/flexppi_completion_20261010/planet_env/bin/python",
+          "-u",
+          "/root/flexppi_completion_20261010/baselines/run_planet_cpu_queue.py",
+          "--variant",
+          "seq"
+        ]
+      },
+      {
+        "pid": 73988,
+        "start_ticks": 388551858,
+        "state": "R",
+        "command": [
+          "/root/flexppi_completion_20261010/planet_env/bin/python",
+          "-u",
+          "/root/flexppi_completion_20261010/baselines/run_planet_cpu_queue.py",
+          "--variant",
+          "full",
+          "--worker"
+        ]
+      },
+      {
+        "pid": 73989,
+        "start_ticks": 388551874,
+        "state": "R",
+        "command": [
+          "/root/flexppi_completion_20261010/planet_env/bin/python",
+          "-u",
+          "/root/flexppi_completion_20261010/baselines/run_planet_cpu_queue.py",
+          "--variant",
+          "seq",
+          "--worker"
+        ]
+      },
+      {
+        "pid": 75948,
+        "start_ticks": 388935558,
+        "state": "R",
+        "command": [
+          "/root/flexppi_completion_20261010/env/bin/python",
+          "-u",
+          "-m",
+          "flexppi",
+          "train",
+          "--config",
+          "/root/flexppi_completion_20261010/single_target/configs/rmsf_only_fold0.yaml"
+        ]
+      }
+    ],
+    "old_source_sha256": "6e3c82f5354cb4d0022fbe3ed312c2f6d6ce8e10fcdfdeb4838eef3fa44e07a4",
+    "new_source_sha256": "009ee9c32e73ea65c52a7364c83f3fe26c70bbba1b731cbbbf7fe9bfec481a69",
+    "restart_policy": "Signal exactly the old monitoring parent PID; preserve children; new parent reacquires the existing gpu_queue.lock path and monitors original queue without starting training"
+  }
+}

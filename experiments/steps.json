@@ -1,0 +1,516 @@
+{
+  "3_1": {
+    "title": "两类动态预测与完整结构环境的贡献",
+    "steps": {
+      "train_full_intra": {
+        "script": "core_corrected_pipeline/training_payload/run_training_queue.py",
+        "description": "训练完整/链内五折及第0折种子对照，原始串行队列",
+        "inputs": [],
+        "notes": "会训练并导出；需要GPU、正确配置及原始清单路径映射。",
+        "cwd": "project"
+      },
+      "export_oof": {
+        "script": "core_corrected_pipeline/training_payload/evaluate_corrected_models.py",
+        "description": "按第40轮导出五折完整/链内预测",
+        "inputs": [],
+        "notes": "原程序要求training_payload/runs；已保存模型位于trained_checkpoints，运行前需按README配置路径。",
+        "cwd": "project"
+      },
+      "fit_static_aa": {
+        "script": "core_corrected_pipeline/run_corrected_static.py",
+        "description": "在对应训练折拟合47特征Static及类型均值AA对照",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "prediction_metrics": {
+        "script": "_sources/predictive_figure_v44_20261018/analysis/compute_metrics.py",
+        "description": "3063条记录四方法的整体/来源/类型内AP、AUROC及原始PR统计",
+        "inputs": [
+          "core_corrected_pipeline/neural_exports/evaluation/prediction_manifest.jsonl",
+          "core_corrected_pipeline/static_corrected/training_schema.json"
+        ],
+        "notes": "",
+        "cwd": "project"
+      },
+      "dense_metrics": {
+        "script": "_sources/dense_figure_v45_20261018/analysis/compute_dense_additions.py",
+        "description": "图2的记录等权参考分箱及类型内、来源分层补充统计",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "thermopcd2430": {
+        "script": "_sources/family_folds/evaluate_external_2430.py",
+        "description": "表1B：排除633条关联记录后的32条ThermoPCD外部评估",
+        "inputs": [],
+        "notes": "保留原CLI，需--source-root、--external-root及可用模型；默认cuda。",
+        "cwd": "project"
+      },
+      "thermopcd_static": {
+        "script": "_sources/baselines/run_static_external_2430.py",
+        "description": "以相同2430条训练记录拟合外部Static/AA对照",
+        "inputs": [],
+        "notes": "需--reference、--family-root、--output；原程序拒绝覆盖已完成输出。",
+        "cwd": "project"
+      },
+      "reproduce_final_figure": {
+        "script": "../paper/figures_v58/reproduce.py",
+        "arguments": [
+          "2"
+        ],
+        "description": "从已保存的本地图形源包重建最终论文图2",
+        "inputs": [
+          "../paper/figures_v58/manifest.json"
+        ],
+        "notes": "默认写入paper/figures_v58/reproduced/；无训练、推理或原始轨迹提取。",
+        "cwd": "project"
+      }
+    }
+  },
+  "3_2": {
+    "title": "同类型残基的局部动态差异",
+    "steps": {
+      "within_type_retrieval": {
+        "script": "_sources/predictive_figure_v44_20261018/analysis/compute_metrics.py",
+        "description": "同记录同氨基酸内的高Hchi位点AP/AUROC，与3.1共用冻结预测",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "within_type_curves": {
+        "script": "_sources/dense_figure_v45_20261018/analysis/compute_dense_additions.py",
+        "description": "42,108个记录—类型组的原始阈值曲线和来源分层统计",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "within_type_mae_production": {
+        "script": "core_corrected_pipeline/type_analysis/prepare_and_plot_main_oof_typography_v2.py",
+        "description": "类型内MAE原始生产实现：sidechain_rows函数及18/20种残基的配对宏平均",
+        "inputs": [
+          "core_corrected_pipeline/type_analysis/completed/amino_acid_paired_mae_support_and_macros.csv"
+        ],
+        "notes": "原始全生产流程还要求完整历史审计及BackFlip逐链输入；路径迁移后代码字节与旧冻结计划绑定不同，保护性检查会拒绝原地重跑。保留为可追溯实现；已有OOF的类型内MAE复算请用within_type_mae适配入口，不改旧plan/hash。",
+        "cwd": "project"
+      },
+      "within_type_mae": {
+        "script": "core_corrected_pipeline/type_analysis/recompute_type_metrics.py",
+        "description": "复用原sidechain_rows函数复算20/18种残基的类型内MAE与配对收益",
+        "inputs": [
+          "core_corrected_pipeline/backflip2_corrected_scoring/training_aligned.npz",
+          "core_corrected_pipeline/type_analysis/completed/amino_acid_paired_mae_support_and_macros.csv"
+        ],
+        "notes": "需显式--output新目录；读取已保存OOF与对照，保留原身份、掩码与计数断言，不训练、不推理、不出旧图。",
+        "cwd": "project"
+      },
+      "reproduce_final_figure": {
+        "script": "../paper/figures_v58/reproduce.py",
+        "arguments": [
+          "2"
+        ],
+        "description": "从已保存的本地图形源包重建最终论文图2",
+        "inputs": [
+          "../paper/figures_v58/manifest.json"
+        ],
+        "notes": "默认写入paper/figures_v58/reproduced/；无训练、推理或原始轨迹提取。",
+        "cwd": "project"
+      }
+    }
+  },
+  "3_3": {
+    "title": "KIX结构域中主链活动区域的定位",
+    "steps": {
+      "reuse_four_states": {
+        "script": "_sources/kix_existing_reuse_20261010/analyze_existing_kix.py",
+        "description": "复算论文实际使用的四状态各一条100ns轨迹及87位点定位成绩",
+        "inputs": [
+          "_case_validation_sources/data/kix_fold1_all_residues.csv",
+          "_case_validation_sources/kix/kix_v13_refresh_QA.json"
+        ],
+        "notes": "读取artifacts/kix_md_20260914的已有轨迹与质量源表，不产生新MD。",
+        "cwd": "project"
+      },
+      "freeze_predictions": {
+        "script": "_sources/freeze_kix_predictions.py",
+        "description": "保留第1折及其它折的校正模型KIX预测冻结程序",
+        "inputs": [],
+        "notes": "需原CLI的--training-root、--static-root、--md-root；论文主分析使用第1折。",
+        "cwd": "project"
+      },
+      "md_job": {
+        "script": "../scripts/kix_md/run_md.py",
+        "description": "原始OpenMM单状态轨迹程序",
+        "inputs": [],
+        "notes": "用原CLI的job --root ... --state ... --repeat 1运行单任务；queue会生成不同规模的新重复，非论文既有四条轨迹复算。",
+        "cwd": "project"
+      },
+      "analyze_md_job": {
+        "script": "../scripts/kix_md/analyze_job.py",
+        "description": "原始KIX轨迹逐链对齐及RMSF计算",
+        "inputs": [],
+        "notes": "需要--protein-pdb和--job-dir。",
+        "cwd": "project"
+      },
+      "reproduce_final_figure": {
+        "script": "../paper/figures_v58/reproduce.py",
+        "arguments": [
+          "3"
+        ],
+        "description": "从已保存的本地图形源包重建最终论文图3",
+        "inputs": [
+          "../paper/figures_v58/manifest.json"
+        ],
+        "notes": "默认写入paper/figures_v58/reproduced/；无训练、推理或原始轨迹提取。",
+        "cwd": "project"
+      }
+    }
+  },
+  "3_4": {
+    "title": "MEL5体系中跨界面接触与双动态响应的残基解析",
+    "steps": {
+      "recompute_md_labels": {
+        "script": "_sources/tcr_expanded_screen_v41_20261017/recompute_allprotein_pair_labels.py",
+        "description": "3HG1/4JFF已有三重复MD的全蛋白RMSF及Hchi复算",
+        "inputs": [],
+        "notes": "需要外部ITrace原始轨迹；原代码使用校正拓扑临时副本。",
+        "cwd": "project"
+      },
+      "align_mel5_positions": {
+        "script": "_sources/tcr_expanded_screen_v41_20261017/prepare_mel5_corrected_plot_sources.py",
+        "description": "将完整链序列对齐、CDR与作者编号对应到MEL5，保存全部对齐位点",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "q72_beta_contact": {
+        "script": "_sources/tcr_joint_case_search_20261019/residue_story/trajectory_link/analyze_Q72_beta_link.py",
+        "description": "Q72—beta53/beta54重原子近接触、氢键几何与三重复占据统计",
+        "inputs": [],
+        "notes": "读取原始ITrace及已核验的临时拓扑/轨迹副本。",
+        "cwd": "project"
+      },
+      "q72_summary": {
+        "script": "_sources/tcr_joint_case_search_20261019/residue_story/trajectory_link/summarize_Q72_beta_link.py",
+        "description": "将局部接触逐帧统计汇总成可审计的三重复结果",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "pair_geometry": {
+        "script": "_sources/mel5_interface_v51_20261022/analysis/analyze_pair_geometry.py",
+        "description": "3HG1与4JFF准备起始坐标中的Q72—beta53/beta54原子间距",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "reproduce_final_figure": {
+        "script": "../paper/figures_v58/reproduce.py",
+        "arguments": [
+          "4"
+        ],
+        "description": "从已保存的本地图形源包重建最终论文图4",
+        "inputs": [
+          "../paper/figures_v58/manifest.json"
+        ],
+        "notes": "默认写入paper/figures_v58/reproduced/；无训练、推理或原始轨迹提取。",
+        "cwd": "project"
+      }
+    }
+  },
+  "3_5": {
+    "title": "联合读数的构象对应与群体验证",
+    "steps": {
+      "paired_readouts": {
+        "script": "_sources/energy_landscape_v21_20261012/oof_analysis/analyze_oof_complementarity.py",
+        "description": "全部3063条OOF的双读数相关及四类同类型分位组合",
+        "inputs": [],
+        "notes": "原CLI需--training-root、--cohort、--output；拒绝覆盖已经完成的审计输出。",
+        "cwd": "project"
+      },
+      "angular_caches": {
+        "script": "_sources/energy_landscape_v21_20261012/trajectory_analysis/run_angle_distribution_analysis.py",
+        "description": "83条记录、203条共同窗口轨迹的全部可定义chi角与CA缓存",
+        "inputs": [],
+        "notes": "路径迁移改变了部分源代码字节；旧冻结计划仍绑定原始代码SHA256，保护性校验可能拒绝原地重跑。新的轨迹/占据计算须重新审核、冻结并使用独立输出；本次未重算，旧计划与结果哈希未改。",
+        "cwd": "project"
+      },
+      "fine_occupancy": {
+        "script": "_sources/model_argument_v24_20261013/experiment_predictive_occupancy/run_predictive_occupancy.py",
+        "description": "33,142个同类型位置的5度细箱熵、预测高低组及来源分层bootstrap",
+        "inputs": [],
+        "notes": "路径迁移改变了部分源代码字节；旧冻结计划仍绑定原始代码SHA256，保护性校验可能拒绝原地重跑。新的轨迹/占据计算须重新审核、冻结并使用独立输出；本次未重算，旧计划与结果哈希未改。",
+        "cwd": "project"
+      },
+      "low_free_energy_width": {
+        "script": "_sources/free_energy_model_v26_20261013/experiment/run_low_Fstar_width.py",
+        "description": "同一位置的低相对自由能角区总宽度及预测高低组比较",
+        "inputs": [],
+        "notes": "路径迁移改变了部分源代码字节；旧冻结计划仍绑定原始代码SHA256，保护性校验可能拒绝原地重跑。新的轨迹/占据计算须重新审核、冻结并使用独立输出；本次未重算，旧计划与结果哈希未改。",
+        "cwd": "project"
+      },
+      "ubiquitin_selected_curves": {
+        "script": "_sources/free_energy_curves_v27_20261014/case_curves/run_model_selected_ubiquitin.py",
+        "description": "泛素六个Gln中按预测选择Q41/Q2，提取501帧逐角MD经验投影",
+        "inputs": [],
+        "notes": "路径迁移改变了部分源代码字节；旧冻结计划仍绑定原始代码SHA256，保护性校验可能拒绝原地重跑。新的轨迹/占据计算须重新审核、冻结并使用独立输出；本次未重算，旧计划与结果哈希未改。",
+        "cwd": "project"
+      },
+      "ubiquitin_q41_q62": {
+        "script": "_sources/energy_landscape_v21_20261012/analyze_ubiquitin_landscape.py",
+        "description": "泛素Q41/Q62联合状态及前5000帧的五窗口原标签核对",
+        "inputs": [],
+        "notes": "依赖_case_validation_sources内角度及来源表。",
+        "cwd": "project"
+      },
+      "reproduce_final_figure": {
+        "script": "../paper/figures_v58/reproduce.py",
+        "arguments": [
+          "5"
+        ],
+        "description": "从已保存的本地图形源包重建最终论文图5",
+        "inputs": [
+          "../paper/figures_v58/manifest.json"
+        ],
+        "notes": "默认写入paper/figures_v58/reproduced/；无训练、推理或原始轨迹提取。",
+        "cwd": "project"
+      }
+    }
+  },
+  "A": {
+    "title": "数据来源与标签观测",
+    "steps": {
+      "prepare_corrected_labels": {
+        "script": "core_corrected_pipeline/prepare_corrected_labels.py",
+        "description": "化学命名校正、逐链对齐和三来源标签建立",
+        "inputs": [],
+        "notes": "读取外部ATLAS/DynaRepo/ITrace原始轨迹；不是已有标签的轻量校验。",
+        "cwd": "project"
+      },
+      "freeze_training_payload": {
+        "script": "core_corrected_pipeline/freeze_training_payload.py",
+        "description": "将校正后3063条记录、结构、标签与五折配置冻结为训练载荷",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "reproduce_final_figure": {
+        "script": "../paper/figures_v58/reproduce.py",
+        "arguments": [
+          "S1"
+        ],
+        "description": "从已保存的本地图形源包重建最终论文图S1",
+        "inputs": [
+          "../paper/figures_v58/manifest.json"
+        ],
+        "notes": "默认写入paper/figures_v58/reproduced/；无训练、推理或原始轨迹提取。",
+        "cwd": "project"
+      }
+    }
+  },
+  "B": {
+    "title": "训练方案与随机初始化",
+    "steps": {
+      "seed_stability": {
+        "script": "core_corrected_pipeline/export_fixed_fold_seed_stability.py",
+        "description": "第0折种子7/11/23的模型及留出成绩对照",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "prepare_single_target": {
+        "script": "_sources/single_target/prepare_single_target.py",
+        "description": "建立与联合模型匹配的RMSF-only/Hchi-only十个训练配置",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "train_single_target": {
+        "script": "_sources/single_target/run_single_target_queue.py",
+        "description": "运行两目标分别五折、固定40轮的单目标训练队列",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "export_single_target": {
+        "script": "_sources/single_target/export_completion_oof.py",
+        "description": "按实际输出通道导出单目标折外预测",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "compare_single_joint": {
+        "script": "_sources/single_target/analyze_completion_oof.py",
+        "description": "在共同961321/824988有效位置上比较单目标与联合模型",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      }
+    }
+  },
+  "C": {
+    "title": "基线实现与来源比较",
+    "steps": {
+      "prepare_cohort": {
+        "script": "_sources/baselines/prepare_baseline_cohort.py",
+        "description": "冻结3063条记录的完整/逐链输入及共同真值",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "prepare_backflip2": {
+        "script": "core_corrected_pipeline/prepare_corrected_backflip2.py",
+        "description": "BackFlip-2输入及作者残基编号映射",
+        "inputs": [],
+        "notes": "完整训练数据已收拢，但基线软件及其模型需另行安装。",
+        "cwd": "project"
+      },
+      "score_backflip2": {
+        "script": "core_corrected_pipeline/score_corrected_backflip2.py",
+        "description": "BackFlip-2协方差转换为Angstrom RMSF后共同位置计分",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "planet_md": {
+        "script": "_sources/baselines/run_planet_md_3063.py",
+        "description": "PLANET-MD full/sequence-only在冻结队列上预测",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "rmsf_net": {
+        "script": "_sources/baselines/run_rmsf_net_3063.py",
+        "description": "RMSF-net仅PDB输入分支在冻结队列上预测",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "prody": {
+        "script": "_sources/baselines/run_prody_3063.py",
+        "description": "完整输入ANM/GNM相对波动基线",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "score_common": {
+        "script": "_sources/baselines/score_common_residues.py",
+        "description": "全部961321个共同RMSF位置上的记录等权计分",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      }
+    }
+  },
+  "D": {
+    "title": "全组成链家族隔离评价",
+    "steps": {
+      "prepare_family_folds": {
+        "script": "_sources/baselines/prepare_family_folds.py",
+        "description": "全部组成链关联的1662个连通家族与五折冻结",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "train_family_models": {
+        "script": "_sources/family_folds/run_family_queue.py",
+        "description": "全链家族划分下完整/链内模型各五折训练",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "evaluate_family_models": {
+        "script": "_sources/family_folds/evaluate_family_models.py",
+        "description": "固定第40轮家族留出折外计分",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "evaluate_external2430": {
+        "script": "_sources/family_folds/evaluate_external_2430.py",
+        "description": "复用排除全部关联记录后的第0折模型评价ThermoPCD32",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      }
+    }
+  },
+  "E": {
+    "title": "共同窗口与预测驱动的构象占据验证",
+    "steps": {
+      "label_sensitivity": {
+        "script": "_sources/label_sensitivity/run_label_sensitivity.py",
+        "description": "来源内随机抽样、时间戳筛选及0–100ns共同窗口标签复算",
+        "inputs": [],
+        "notes": "--phase可选freeze/compute/analyze/all；默认all会计算，不会因入口--list触发。 路径迁移改变了部分源代码字节；旧冻结计划仍绑定原始代码SHA256，保护性校验可能拒绝原地重跑。新的轨迹/占据计算须重新审核、冻结并使用独立输出；本次未重算，旧计划与结果哈希未改。",
+        "cwd": "project"
+      },
+      "compare_controls": {
+        "script": "_sources/label_sensitivity/compare_controls.py",
+        "description": "原标签与共同窗口标签上的冻结模型和对照比较",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "angular_caches": {
+        "script": "_sources/energy_landscape_v21_20261012/trajectory_analysis/run_angle_distribution_analysis.py",
+        "description": "共同501帧的chi角和CA缓存",
+        "inputs": [],
+        "notes": "路径迁移改变了部分源代码字节；旧冻结计划仍绑定原始代码SHA256，保护性校验可能拒绝原地重跑。新的轨迹/占据计算须重新审核、冻结并使用独立输出；本次未重算，旧计划与结果哈希未改。",
+        "cwd": "project"
+      },
+      "fine_occupancy": {
+        "script": "_sources/model_argument_v24_20261013/experiment_predictive_occupancy/run_predictive_occupancy.py",
+        "description": "主分析与全部可用重复的细箱熵及类型控制",
+        "inputs": [],
+        "notes": "路径迁移改变了部分源代码字节；旧冻结计划仍绑定原始代码SHA256，保护性校验可能拒绝原地重跑。新的轨迹/占据计算须重新审核、冻结并使用独立输出；本次未重算，旧计划与结果哈希未改。",
+        "cwd": "project"
+      },
+      "low_free_energy_width": {
+        "script": "_sources/free_energy_model_v26_20261013/experiment/run_low_Fstar_width.py",
+        "description": "四箱格原点平均的低F*角区总宽度及阈值敏感性",
+        "inputs": [],
+        "notes": "路径迁移改变了部分源代码字节；旧冻结计划仍绑定原始代码SHA256，保护性校验可能拒绝原地重跑。新的轨迹/占据计算须重新审核、冻结并使用独立输出；本次未重算，旧计划与结果哈希未改。",
+        "cwd": "project"
+      }
+    }
+  },
+  "F": {
+    "title": "KIX轨迹与状态比较",
+    "steps": {
+      "reuse_four_states": {
+        "script": "_sources/kix_existing_reuse_20261010/analyze_existing_kix.py",
+        "description": "复算四条既有KIX轨迹、六对状态差值及前后半程统计",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "analyze_md_job": {
+        "script": "../scripts/kix_md/analyze_job.py",
+        "description": "已有KIX单任务轨迹的对齐与RMSF分析",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      }
+    }
+  },
+  "G": {
+    "title": "双读数组合的完整统计",
+    "steps": {
+      "paired_readouts": {
+        "script": "_sources/energy_landscape_v21_20261012/oof_analysis/analyze_oof_complementarity.py",
+        "description": "824988个共同位置的同类型双读数相关、四类组合与召回率",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      },
+      "summarize_for_manuscript": {
+        "script": "_sources/energy_landscape_v21_20261012/oof_analysis/summarize_for_manuscript.py",
+        "description": "从完整配对分析源表生成论文统计摘要",
+        "inputs": [],
+        "notes": "",
+        "cwd": "project"
+      }
+    }
+  }
+}

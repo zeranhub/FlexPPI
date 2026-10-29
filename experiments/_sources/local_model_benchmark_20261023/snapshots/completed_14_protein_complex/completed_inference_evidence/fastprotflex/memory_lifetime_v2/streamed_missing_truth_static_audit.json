@@ -1,0 +1,27 @@
+{
+  "status": "PASS_streamed_missing8_and_readonly_three_source_cache_interface",
+  "created_utc": "2026-10-23T19:18:23.740392+00:00",
+  "execution_entrypoint_sha256": "e610bd4459743d3eb69cf96e001e4c1a59c1a90281f751958369c389127c7a33",
+  "missing_ids": [
+    "1tg7_A",
+    "A007N",
+    "A00Q0",
+    "A007S",
+    "A00OQ",
+    "5jou_A",
+    "A00NH",
+    "7zh9_A"
+  ],
+  "truth_rows_retained": 7882,
+  "all_missing_frozen_truth_identity_matches_input": true,
+  "full_truth_not_materialized": true,
+  "readonly_cache_samples": [
+    "2o70_F",
+    "A007V",
+    "itrace_1qrn"
+  ],
+  "cache_target_valid_residue_index_truth_check": "deferred_independent_final_scorer",
+  "no_R_executed": true,
+  "no_prediction_validation_or_protocol_written": true,
+  "cached_CSV_checkpoint_policy": "every100th cache; each new/failure/last record"
+}

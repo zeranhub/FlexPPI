@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "case_id": "C03",
+  "dimensions_mm": [
+    183.0,
+    185.0
+  ],
+  "all_peptide_positions": 10,
+  "RMSF_positions": 10,
+  "Hchi_comparable_positions": 5,
+  "model": "Joint Full fold0; no ITrace training systems",
+  "training_counts": {
+    "ATLAS": 1866,
+    "DynaRepo": 564,
+    "ITrace": 0
+  },
+  "checkpoint_SHA256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+  "model_replication": "One existing prediction per structure from one checkpoint; no model seed interval is shown",
+  "model_error_bars": null,
+  "MD_replication": "Three independent pre-existing 200 ns trajectories per state; all saved frames; no new MD",
+  "center_statistic": "Existing MD comparisons use equal-weight mean of the three trajectory replica estimates",
+  "spread_displayed": null,
+  "n_definition": "Complete predefined peptide positions are the observations in correlation plots, not independent experimental repeats",
+  "statistics": "Spearman rank correlation over all valid complete-region positions; descriptive, not a significance test",
+  "hypothesis_test": null,
+  "multiple_comparison_correction": null,
+  "excluded_data": "Only no-chi or not-defined-in-both-states side-chain pairs; all RMSF sites retained; no quality-based selection",
+  "diagnostics": {
+    "rmsf": {
+      "n_positions": 10,
+      "MAE": 0.22888186163487179,
+      "direction_agreement": 0.9,
+      "n_definition": "Aligned residue positions; not independent experimental replicas",
+      "tests": null,
+      "regression_fit": null,
+      "unit": "Å",
+      "Spearman_rho": 0.8060606060606059
+    },
+    "hchi": {
+      "n_positions": 5,
+      "MAE": 0.12015516792440142,
+      "direction_agreement": 0.6,
+      "n_definition": "Aligned residue positions; not independent experimental replicas",
+      "tests": null,
+      "regression_fit": null,
+      "unit": "nats",
+      "Spearman_rho": 0.8999999999999998
+    }
+  },
+  "plot_values_checked_against_original_NPZ": [
+    {
+      "pdb": "7ow5",
+      "metric": "RMSF",
+      "n_values": 10,
+      "max_absolute_difference": 2.220446049250313e-16,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_7ow5.npz",
+      "NPZ_SHA256": "37c2a097119a345bbba8802dc44d667ed56ca32198a56106b99f9999079332bc"
+    },
+    {
+      "pdb": "7ow5",
+      "metric": "Hchi",
+      "n_values": 5,
+      "max_absolute_difference": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_7ow5.npz",
+      "NPZ_SHA256": "37c2a097119a345bbba8802dc44d667ed56ca32198a56106b99f9999079332bc"
+    },
+    {
+      "pdb": "7ow6",
+      "metric": "RMSF",
+      "n_values": 10,
+      "max_absolute_difference": 1.1102230246251565e-16,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_7ow6.npz",
+      "NPZ_SHA256": "06ebbc6025422ba1369e9bd5d670efe498635113c08e791afd5db9d05c5d7aed"
+    },
+    {
+      "pdb": "7ow6",
+      "metric": "Hchi",
+      "n_values": 5,
+      "max_absolute_difference": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_7ow6.npz",
+      "NPZ_SHA256": "06ebbc6025422ba1369e9bd5d670efe498635113c08e791afd5db9d05c5d7aed"
+    }
+  ],
+  "source_traceability": "Every plotted coordinate in source_absolute_RMSF.csv/source_absolute_Hchi.csv; full unfiltered source in source_complete_peptide.csv",
+  "limitations": "Paired Hchi is unavailable at G6→D6 and most other paired changes are near zero; high five-point rank correlation does not establish accurate amplitudes or a joint mechanism.",
+  "PNG_SHA256": "1a47f522fef58f2ac70346e79ff07fd9d497d47e68d17071e586c86905b746ed"
+}

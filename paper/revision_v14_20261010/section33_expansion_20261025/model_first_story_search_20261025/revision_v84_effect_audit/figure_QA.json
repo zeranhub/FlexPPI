@@ -1,0 +1,27 @@
+{
+  "all_full_sequence_values": 534,
+  "all_axes_start_at_zero": true,
+  "no_MD_drawn": true,
+  "no_axis_cropping": true,
+  "no_tables_or_gray_notes": true,
+  "full_sequence_limits": {
+    "rmsf": [
+      0,
+      4
+    ],
+    "hchi": [
+      0,
+      4.1
+    ]
+  },
+  "outside_text": [],
+  "visual_review": "passed: inspected the final rendered PNG; numeric labels and axes do not overlap or clip",
+  "output_sha256": {
+    "png": "feb3e7ef08e1c8b5cf529bbcdf736b816314811b8a35394252129cd331327edc",
+    "pdf": "74400e6f4d8b94611773df093248b84f4d89fcc9f52f8ea2c587240343427071",
+    "svg": "f0d9b8a5ebcef9155dae56444e99119849cf988cf6e1aca9408e79302e8ffc49"
+  },
+  "source_data_verification": "passed: all 534 plotted full-sequence values equal the unchanged v83 source to within 1e-12",
+  "pdf_fonts": "Arial and Arial Bold embedded as subset TrueType",
+  "manuscript_modified": false
+}

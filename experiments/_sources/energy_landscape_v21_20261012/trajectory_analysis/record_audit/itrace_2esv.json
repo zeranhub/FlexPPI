@@ -1,0 +1,207 @@
+{
+  "sample_id": "itrace_2esv",
+  "dataset": "itrace",
+  "fold": 1,
+  "plan_sha256": "09f029e2107e2e77e05271d7c2e65c6f2efdc0fed6f0fcd3d7a3dba9eec2ba83",
+  "status": "complete",
+  "trajectories": [
+    {
+      "sample_id": "itrace_2esv",
+      "dataset": "itrace",
+      "fold": 1,
+      "replica_index": 1,
+      "status": "complete",
+      "plan_sha256": "09f029e2107e2e77e05271d7c2e65c6f2efdc0fed6f0fcd3d7a3dba9eec2ba83",
+      "cache_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\trajectory_analysis\\cache\\itrace_2esv_rep1.npz",
+      "cache_sha256": "1445d5328992c2deb9b0c77155bcf74375d7edab50f24901cd0c728d1ef1a032",
+      "mapping": [
+        {
+          "canonical_chain": "A",
+          "replica_chain": "A",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "B",
+          "replica_chain": "B",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "C",
+          "replica_chain": "C",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "D",
+          "replica_chain": "D",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "E",
+          "replica_chain": "E",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "residue_count": 823,
+      "mapped_residues": 823,
+      "ca_valid": 823,
+      "chi_valid": 732,
+      "frames": 501,
+      "first_ps": 0.0,
+      "last_ps": 100000.0,
+      "bad_chi_bonds_gt5A": 0,
+      "chemistry_changes": {
+        "ILE_CD->CD1_atoms": 29
+      },
+      "byte_audit": {
+        "raw_sha256": "13648c061897386cb1ac878973d8e68a2a13e558b527adfe8ed906a3b0785278",
+        "raw_bytes": 49284952,
+        "selected_xtc_sha256": "2c76bf483b26e67877ad0bc9e1ae05c78603a61994967d3e0693b96bae777319",
+        "selected_bytes": 24666272,
+        "raw_size_and_mtime_unchanged": true
+      },
+      "elapsed_seconds": 3.077999999979511
+    },
+    {
+      "sample_id": "itrace_2esv",
+      "dataset": "itrace",
+      "fold": 1,
+      "replica_index": 2,
+      "status": "complete",
+      "plan_sha256": "09f029e2107e2e77e05271d7c2e65c6f2efdc0fed6f0fcd3d7a3dba9eec2ba83",
+      "cache_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\trajectory_analysis\\cache\\itrace_2esv_rep2.npz",
+      "cache_sha256": "0983c8834dd7cbebff474eaacba7534c3399769e0f729968a2b4d04595b5cc15",
+      "mapping": [
+        {
+          "canonical_chain": "A",
+          "replica_chain": "A",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "B",
+          "replica_chain": "B",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "C",
+          "replica_chain": "C",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "D",
+          "replica_chain": "D",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "E",
+          "replica_chain": "E",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "residue_count": 823,
+      "mapped_residues": 823,
+      "ca_valid": 823,
+      "chi_valid": 732,
+      "frames": 501,
+      "first_ps": 0.0,
+      "last_ps": 100000.0,
+      "bad_chi_bonds_gt5A": 0,
+      "chemistry_changes": {
+        "ILE_CD->CD1_atoms": 29
+      },
+      "byte_audit": {
+        "raw_sha256": "bb55fe99fca8afe48887ea0a5c3da31bb8933ece01010bce1cc8eed547f6c76a",
+        "raw_bytes": 49366300,
+        "selected_xtc_sha256": "542846b38a7b7282d38ec05bf588a85b8ca8e49aeed5181d23930e3aca268556",
+        "selected_bytes": 24644032,
+        "raw_size_and_mtime_unchanged": true
+      },
+      "elapsed_seconds": 3.2350000001024455
+    },
+    {
+      "sample_id": "itrace_2esv",
+      "dataset": "itrace",
+      "fold": 1,
+      "replica_index": 3,
+      "status": "complete",
+      "plan_sha256": "09f029e2107e2e77e05271d7c2e65c6f2efdc0fed6f0fcd3d7a3dba9eec2ba83",
+      "cache_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\trajectory_analysis\\cache\\itrace_2esv_rep3.npz",
+      "cache_sha256": "b31aff5ce3f6bf94239d46f157f6cff40a93edc7e9856729454f8e8442138506",
+      "mapping": [
+        {
+          "canonical_chain": "A",
+          "replica_chain": "A",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "B",
+          "replica_chain": "B",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "C",
+          "replica_chain": "C",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "D",
+          "replica_chain": "D",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "E",
+          "replica_chain": "E",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "residue_count": 823,
+      "mapped_residues": 823,
+      "ca_valid": 823,
+      "chi_valid": 732,
+      "frames": 501,
+      "first_ps": 0.0,
+      "last_ps": 100000.0,
+      "bad_chi_bonds_gt5A": 0,
+      "chemistry_changes": {
+        "ILE_CD->CD1_atoms": 29
+      },
+      "byte_audit": {
+        "raw_sha256": "80d6e08f87d88984bb881ef8cf90d6cf3d92775c3f32db32a099579b100cc291",
+        "raw_bytes": 49317280,
+        "selected_xtc_sha256": "f8cd4496344b50919a64d7b2f115d6163a57ea1c4119376a7109cb6326b2cbf6",
+        "selected_bytes": 24693768,
+        "raw_size_and_mtime_unchanged": true
+      },
+      "elapsed_seconds": 2.405999999959022
+    }
+  ],
+  "reproduction": [
+    {
+      "variant": "uniform_rep1",
+      "max_absolute_label_difference": 0.0,
+      "mask_exact": true,
+      "prior_label_sha256": "ba636d95c343f575886f4b0edf0efd96fb9e13d681fbe55e44786ea5d30eb4e3"
+    },
+    {
+      "variant": "uniform_available_replicas",
+      "max_absolute_label_difference": 0.0,
+      "mask_exact": true,
+      "prior_label_sha256": "2e90e6fb28d2b02c6ff98c7a4eafb1b13140d58f433dd164d37d4f948ccdc1e3"
+    }
+  ],
+  "elapsed_seconds": 9.280999999959022
+}

@@ -1,0 +1,291 @@
+{
+  "status": "complete",
+  "replica_mode": "replica1",
+  "plan_sha256": "b9b4eb2fed6c9e4421c09c19ffc512e7567d9d9f5e460e1477365b119c6c92d4",
+  "records": 83,
+  "common_positions": 33493,
+  "eligible_sameAA_positions": 33142,
+  "excluded_under4_sameAA_positions": 351,
+  "all_original_targets_masks_identities_exact": true,
+  "source_hashes_checked": true,
+  "primary_metric_unchanged": true,
+  "primary_correlations": [
+    {
+      "replica_mode": "replica1",
+      "scope": "all",
+      "metric": "fine_entropy_mean_per_chi",
+      "predictor": "full_hchi",
+      "dataset": "all",
+      "n_records": 83,
+      "mean": 0.5098929841305457,
+      "record_sample_sd": 0.10760288909264917,
+      "median": 0.543772100516812,
+      "min": 0.0490770711223864,
+      "max": 0.6646009124308611,
+      "bootstrap_95_low": 0.49067766294461135,
+      "bootstrap_95_high": 0.5272412914087983,
+      "positive_records": 83,
+      "negative_records": 0,
+      "zero_records": 0
+    },
+    {
+      "replica_mode": "replica1",
+      "scope": "all",
+      "metric": "fine_entropy_mean_per_chi",
+      "predictor": "full_rmsf",
+      "dataset": "all",
+      "n_records": 83,
+      "mean": 0.32056885919829164,
+      "record_sample_sd": 0.07246546688638206,
+      "median": 0.3181236946859783,
+      "min": 0.1458956560680698,
+      "max": 0.5492298399275142,
+      "bootstrap_95_low": 0.30517170118326215,
+      "bootstrap_95_high": 0.3354933711038942,
+      "positive_records": 83,
+      "negative_records": 0,
+      "zero_records": 0
+    },
+    {
+      "replica_mode": "replica1",
+      "scope": "all",
+      "metric": "fine_entropy_mean_per_chi",
+      "predictor": "intrachain_hchi",
+      "dataset": "all",
+      "n_records": 83,
+      "mean": 0.49323872281369685,
+      "record_sample_sd": 0.11875142998548815,
+      "median": 0.5192620156567026,
+      "min": -0.0019420873064473,
+      "max": 0.6386288130474177,
+      "bootstrap_95_low": 0.47210926020161736,
+      "bootstrap_95_high": 0.5126181504505827,
+      "positive_records": 82,
+      "negative_records": 1,
+      "zero_records": 0
+    }
+  ],
+  "primary_paired_differences": [
+    {
+      "replica_mode": "replica1",
+      "scope": "all",
+      "metric": "fine_entropy_mean_per_chi",
+      "contrast": "full_hchi_minus_full_rmsf",
+      "dataset": "all",
+      "n_records": 83,
+      "mean": 0.18932412493225415,
+      "record_sample_sd": 0.11146892249577492,
+      "median": 0.1954979297377668,
+      "min": -0.141501976284585,
+      "max": 0.39093340584435177,
+      "bootstrap_95_low": 0.17200149642456572,
+      "bootstrap_95_high": 0.2063917530475577,
+      "positive_records": 79,
+      "negative_records": 4,
+      "zero_records": 0
+    },
+    {
+      "replica_mode": "replica1",
+      "scope": "all",
+      "metric": "fine_entropy_mean_per_chi",
+      "contrast": "full_hchi_minus_intrachain_hchi",
+      "dataset": "all",
+      "n_records": 83,
+      "mean": 0.016654261316848818,
+      "record_sample_sd": 0.04850401159683088,
+      "median": 0.009324909790934477,
+      "min": -0.13848177605083684,
+      "max": 0.1450683446204163,
+      "bootstrap_95_low": 0.006499366453858242,
+      "bootstrap_95_high": 0.027044343498780175,
+      "positive_records": 58,
+      "negative_records": 25,
+      "zero_records": 0
+    }
+  ],
+  "primary_high_low": [
+    {
+      "replica_mode": "replica1",
+      "scope": "all",
+      "metric": "fine_entropy_mean_per_chi",
+      "predictor": "full_hchi",
+      "dataset": "all",
+      "n_records": 83,
+      "mean": 0.29253418951740073,
+      "record_sample_sd": 0.0744304697303598,
+      "median": 0.31094855225098306,
+      "min": 0.04849659691352266,
+      "max": 0.4347831968591178,
+      "bootstrap_95_low": 0.27739822153339244,
+      "bootstrap_95_high": 0.3069269665633149,
+      "positive_records": 83,
+      "negative_records": 0,
+      "zero_records": 0
+    },
+    {
+      "replica_mode": "replica1",
+      "scope": "all",
+      "metric": "fine_entropy_mean_per_chi",
+      "predictor": "full_rmsf",
+      "dataset": "all",
+      "n_records": 83,
+      "mean": 0.19783563472221222,
+      "record_sample_sd": 0.06494175479277906,
+      "median": 0.19531819456906774,
+      "min": 0.03640167589005516,
+      "max": 0.39298277521249453,
+      "bootstrap_95_low": 0.1845668027767956,
+      "bootstrap_95_high": 0.21114540405268684,
+      "positive_records": 83,
+      "negative_records": 0,
+      "zero_records": 0
+    },
+    {
+      "replica_mode": "replica1",
+      "scope": "all",
+      "metric": "fine_entropy_mean_per_chi",
+      "predictor": "intrachain_hchi",
+      "dataset": "all",
+      "n_records": 83,
+      "mean": 0.280601681081563,
+      "record_sample_sd": 0.07781090969883064,
+      "median": 0.3040111179474593,
+      "min": -0.000714301339451684,
+      "max": 0.41470659757220607,
+      "bootstrap_95_low": 0.26596871271232825,
+      "bootstrap_95_high": 0.2949835945473928,
+      "positive_records": 82,
+      "negative_records": 1,
+      "zero_records": 0
+    }
+  ],
+  "outputs": {
+    "per_residue": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_per_residue.csv.gz",
+      "sha256": "bc15f5894d69dd0f279c1284860824b5bf97d06fc84360807537fc90c546d37d",
+      "rows": 33493
+    },
+    "per_record_correlations": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_per_record_correlations.csv",
+      "sha256": "eb405e3a1cb04ddb17ae0a11c1159e6bcbee1714e327205a33e613f76c54b455",
+      "rows": 2478
+    },
+    "per_AA_correlations": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_per_AA_correlations.csv",
+      "sha256": "874f9fa4773c0e23727c98e5833feef6b07d5aea0072609801ae8c43e5dc5262",
+      "rows": 7776
+    },
+    "high_low_per_AA": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_high_low_per_AA.csv",
+      "sha256": "ed010b9a03e9aa7cfcd9d6938607098d1cb5af48fd29c3d663b26c9bae18d6ea",
+      "rows": 15552
+    },
+    "sameAA_pair_contrasts": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_sameAA_pair_contrasts.csv",
+      "sha256": "926711df99d38a89f540bd04734b3c89c4d9845ae07aafb5f98616ab93d987d3",
+      "rows": 1239
+    },
+    "eligibility_masks": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_eligibility_masks.csv",
+      "sha256": "5ac0b0ff7e76ab0ebf916f7c89c973f76efc9392cb0e22a633ae9bb564dd2cbc",
+      "rows": 415
+    },
+    "replica1_AA_group_equal_correlation_summary.bootstrap_draws.csv.gz": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_AA_group_equal_correlation_summary.bootstrap_draws.csv.gz",
+      "sha256": "682618de6547b85d19cff0c10497b318ece3d25a3a781e7d6520d876b9871e70",
+      "bytes": 15225061
+    },
+    "replica1_AA_group_equal_correlation_summary.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_AA_group_equal_correlation_summary.csv",
+      "sha256": "a76677a38f19f9187a1331ac91b4741cf38fce2b0bd1250957a00d17c4794f42",
+      "bytes": 25083
+    },
+    "replica1_compute_audit.json": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_compute_audit.json",
+      "sha256": "773c9cedd48b0386b0ab36e7855833a1b5a20909ea1ec8abe1951d0ef0da2faf",
+      "bytes": 208
+    },
+    "replica1_correlation_summary.bootstrap_draws.csv.gz": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_correlation_summary.bootstrap_draws.csv.gz",
+      "sha256": "99cc689562e08a18e00533df26fb52155cbd95cdd96e15fa8200eb856c0a299d",
+      "bytes": 15196962
+    },
+    "replica1_correlation_summary.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_correlation_summary.csv",
+      "sha256": "36bba97535e9cd4b90301f866e3d96f7b673fd7e2b5701d4b22745fb1d08fc60",
+      "bytes": 25076
+    },
+    "replica1_eligibility_masks.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_eligibility_masks.csv",
+      "sha256": "5ac0b0ff7e76ab0ebf916f7c89c973f76efc9392cb0e22a633ae9bb564dd2cbc",
+      "bytes": 18394
+    },
+    "replica1_high_low_per_AA.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_high_low_per_AA.csv",
+      "sha256": "ed010b9a03e9aa7cfcd9d6938607098d1cb5af48fd29c3d663b26c9bae18d6ea",
+      "bytes": 4398002
+    },
+    "replica1_high_low_per_record.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_high_low_per_record.csv",
+      "sha256": "eea17510ef006beb7479a35ba61b33a6a3b97282c5ea4cfc012596fc6946af85",
+      "bytes": 259769
+    },
+    "replica1_high_low_summary.bootstrap_draws.csv.gz": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_high_low_summary.bootstrap_draws.csv.gz",
+      "sha256": "069539c1d0bf9661178f61f31a1fe815eb239e2f437caa50caf646b091c0d486",
+      "bytes": 15133513
+    },
+    "replica1_high_low_summary.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_high_low_summary.csv",
+      "sha256": "ea0ed32cccd854fc97af796329c82a2782ac6a30a4e60a2131c9d0f256bd5306",
+      "bytes": 24806
+    },
+    "replica1_paired_correlation_differences.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_paired_correlation_differences.csv",
+      "sha256": "f63693107c4fb7843793defd78db55493f32c7bb5d2f375941ac6ca32c3a242f",
+      "bytes": 173647
+    },
+    "replica1_paired_correlation_difference_summary.bootstrap_draws.csv.gz": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_paired_correlation_difference_summary.bootstrap_draws.csv.gz",
+      "sha256": "8d3fa5358312c5587aa516d59c2b26fb708d95b3cb84d54fb338d1e87b0bc8d3",
+      "bytes": 10602134
+    },
+    "replica1_paired_correlation_difference_summary.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_paired_correlation_difference_summary.csv",
+      "sha256": "bc6acc875e62b465e4c00e249f50b80f907d75e477879dc14307d9b6096922a7",
+      "bytes": 18551
+    },
+    "replica1_pair_contrast_summary.bootstrap_draws.csv.gz": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_pair_contrast_summary.bootstrap_draws.csv.gz",
+      "sha256": "f8f44dd28ab92522ab2a7aa93ee335bac6f72b21af488dabd3560c0413cf2b08",
+      "bytes": 7367255
+    },
+    "replica1_pair_contrast_summary.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_pair_contrast_summary.csv",
+      "sha256": "46903016572678379b6429d98db60c6a30139c1d0bf65e9f36360a3d158e786e",
+      "bytes": 11036
+    },
+    "replica1_per_AA_correlations.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_per_AA_correlations.csv",
+      "sha256": "874f9fa4773c0e23727c98e5833feef6b07d5aea0072609801ae8c43e5dc5262",
+      "bytes": 722890
+    },
+    "replica1_per_record_correlations.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_per_record_correlations.csv",
+      "sha256": "eb405e3a1cb04ddb17ae0a11c1159e6bcbee1714e327205a33e613f76c54b455",
+      "bytes": 386356
+    },
+    "replica1_per_residue.csv.gz": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_per_residue.csv.gz",
+      "sha256": "bc15f5894d69dd0f279c1284860824b5bf97d06fc84360807537fc90c546d37d",
+      "bytes": 3872842
+    },
+    "replica1_sameAA_pair_contrasts.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\replica1_sameAA_pair_contrasts.csv",
+      "sha256": "926711df99d38a89f540bd04734b3c89c4d9845ae07aafb5f98616ab93d987d3",
+      "bytes": 83391
+    }
+  },
+  "finished_utc": "2026-10-13T02:21:22.373150+00:00",
+  "inference_scope": "Finite-record resamplingCI; outcomesareindependent finerangular descriptors,notmodel-predictedFcurve; sameAAcontrolremovesconstanttypevalue; n-recordsnotpair/residuecount"
+}

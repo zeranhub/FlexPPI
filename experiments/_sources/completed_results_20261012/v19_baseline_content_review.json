@@ -1,0 +1,115 @@
+{
+  "status": "passed_no_required_baseline_or_reference_corrections",
+  "created_utc": "2026-10-12T06:04:11.212243+00:00",
+  "document": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v19_20261012_中文修订_补充实验完成_三线表.docx",
+  "document_sha256": "b13c4f1e1de8458609fe6ab8d0eb17ceea81b0f0992d1a5d3d0728eb056bdea6",
+  "initial_request_sha256": "d5104be36fa74196b336d0518729daeb386a7da9f5a8e3d9a4910af96e2e3dab",
+  "document_updated_by_root_during_review": true,
+  "DOCX_edited": false,
+  "scope": "Baseline/reference and changed numerical-content logic, not visual layout or complete scientific reference metadata re-verification.",
+  "tables": 14,
+  "table_cells_checked": 170,
+  "checks": {
+    "Table1_all_eight_method_rows_match": true,
+    "TableS11_all_seven_methods_both_protocols_match": true,
+    "S11_zMAE_original_column_and_family_caption_correct": true,
+    "PLANET_MAE_rho_better_RMSE_worse_correct": true,
+    "PLANET_source_differences_correct": true,
+    "TableS9_single_target_values_and_gain_direction_correct": true,
+    "TableS10_family_values_correct": true,
+    "Table2_new_2430_values_and_metric_directions_correct": true,
+    "abstract_original_static_MAE_reductions": [
+      14.79702510308003,
+      11.295854682009399
+    ],
+    "source_or_family_scope_not_mixed": true,
+    "published_models_not_claimed_same_training_corpus": true,
+    "no_RMSF_net_Angstrom_MAE": true,
+    "no_SHP_as_Hchi": true,
+    "encoded_300K_float32_nm_times10_and_simulated_density_limits_explicit": true,
+    "no_universal_RMSF_superiority_claim_remaining": true,
+    "citation_31_PLANET_only": true,
+    "ProDy2_reference3_and_ProDy1_reference30_correct": true,
+    "old_30_31_citation_removed": true
+  },
+  "references": {
+    "numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "missing_references": [],
+    "uncited_references": [],
+    "PLANET_31": {
+      "paragraph": 137,
+      "text": "[31] Samuel Sledzieski and Sonya M. Hanson. PLANET-MD: Ultra-fast Proteome-scale Prediction of Allosteric Networks in Proteins. bioRxiv preprint, 2026, 2025.06.12.659353, version 2. doi:10.1101/2025.06.12.659353."
+    },
+    "PLANET_31_citation_paragraphs": [
+      7,
+      46
+    ],
+    "ProDy2_3": {
+      "paragraph": 109,
+      "text": "[3] She Zhang, James M. Krieger, Yan Zhang, Cihan Kaya, Burak Kaynak, Karolina Mikulska-Ruminska, Pemra Doruker, Hongchun Li, and Ivet Bahar. ProDy 2.0: increased scale and scope after 10 years of protein dynamics modelling with python. Bioinformatics, 37(20):3657–3659, 2021."
+    },
+    "ProDy1_30": {
+      "paragraph": 136,
+      "text": "[30] Ahmet Bakan, Lidio M. Meireles, and Ivet Bahar. ProDy: protein dynamics inferred from theory and experiments. Bioinformatics, 27(11):1575–1577, 2011."
+    },
+    "ProDy_supplement_context": {
+      "paragraph": 188,
+      "text": "使用ProDy 2.6.1[3,30]对冻结输入的完整多肽组成构建ANM和GNM，保留原始Cα顺序；两种网络的距离截断均为15 Å，弹簧常数为1，使用最低的20个非零模态，极短结构以可用模态数为上限。相对柔性分数为模态平方波动总和的平方根。全部3,063条结构均计算成功，无失败记录；有效计分位置为961,321个。每项分数先在记录内计算，再对记录等权平均，复合物中的链在同一记录内汇总。弹性网络输出不经过训练标签的幅值标定。标准化剖面误差指每条记录的参考与预测分别减去自身均值、除以自身标准差后，再计算逐位置平均绝对差，因而不带物理单位；最高10%位点命中率用于描述活动区域筛选。"
+    }
+  },
+  "comments": {
+    "comparison_source": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v18_20261010_中文修订_复用KIX单轨迹_三线表.docx",
+    "byte_identical": true,
+    "texts_and_ids_identical": true,
+    "anchors_identical": true,
+    "comments": 6,
+    "comments_xml_sha256": "2a6f5032353a15ed2a782fa69af89d7169ef0a94452075e31dc417dd4ea5edf7"
+  },
+  "issues": [],
+  "must_fix_issues": [],
+  "source_sha256": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\additional_original_oof\\record_macro_metrics.csv": "db8f50b1b3e530dff3f98088ed24d54afa98e976483768dfb58650f6f7555902",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\additional_family_oof\\record_macro_metrics.csv": "e7c16c04d2d4fc9d9ef243d2ad9b99b86b50494c1e0657dc5e5fb005a38bafee",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\completed_results_20261012\\summary\\single_target_overall_record_macro.csv": "856724d785494c358c46b020eb5eaeae847de87c7a86acf20e2d0c2c99de7c88",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\completed_results_20261012\\summary\\family_overall_record_macro.csv": "864de13d8a2deecb6466f33a9e723b7769aed93d72723c977f432841826117d2",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\completed_results_20261012\\summary\\family_source_record_macro.csv": "bf2f2d867097788c8ef360cb389ff43bc6aea52bed7d3dc73a143ef552fa221d",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\completed_results_20261012\\summary\\external_2430_record_macro.csv": "daf5d011db77086a0d31b4fe80941f70ec99d177c82cd68104fa7fd7e2ca6ab2",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\completed_results_20261012\\planet_reference_metadata.json": "74874fcbcfb5ab0d96b404e534b2e2e772f89fb9c8196796fba484bcb93e40ff",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\completed_results_20261012\\baseline_numeric_audit.json": "b35cd3f4795fd68744f6f48d318d74e15f156092fce6222a207f0a2234cf689b",
+    "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\neural_exports\\evaluation\\per_record_metrics.csv": "061f4567a88eddb4b99eb660bf86aa17c199bc0d07b716ae6fa1413f372fe93e",
+    "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\static_corrected\\oof_per_record_metrics.csv": "7bf5a604aeec1cd11020da82c1a78fa7c6fdcaa982905f598c30474a6fffbad0"
+  },
+  "conclusion": "All checked table cells and body interpretations match the frozen saved results. References 1–31 are connected, reference 31 correctly names PLANET and does not serve ProDy contexts. Six inherited annotations and their anchor inventory remain intact, including byte-identical comments XML. No baseline/reference content correction is required before root visual QA."
+}

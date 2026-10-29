@@ -1,0 +1,620 @@
+{
+  "status": "pass",
+  "bundle": "E:\\Project\\FlexPPI\\paper\\figures\\case_validation_v13_20261009",
+  "cases": {
+    "kix": {
+      "KIX_context": {
+        "selection": "ternary and chain B and resi 614-621",
+        "all_heavy_atoms_have_sticks": true,
+        "displayed_atoms": 56,
+        "displayed_real_bonds": 57,
+        "connected_components": 1,
+        "all_components_have_real_CA": true,
+        "CA_CB_roots": [
+          {
+            "chain": "B",
+            "residue": "614",
+            "length_A": 1.540049399935642
+          },
+          {
+            "chain": "B",
+            "residue": "615",
+            "length_A": 1.536200515277039
+          },
+          {
+            "chain": "B",
+            "residue": "616",
+            "length_A": 1.5391101639033735
+          },
+          {
+            "chain": "B",
+            "residue": "617",
+            "length_A": 1.5326637519625763
+          },
+          {
+            "chain": "B",
+            "residue": "618",
+            "length_A": 1.5334793767549948
+          },
+          {
+            "chain": "B",
+            "residue": "619",
+            "length_A": 1.535346511290013
+          },
+          {
+            "chain": "B",
+            "residue": "620",
+            "length_A": 1.541388826839125
+          },
+          {
+            "chain": "B",
+            "residue": "621",
+            "length_A": 1.5440666584196328
+          }
+        ],
+        "coordinates": {
+          "heavy_atoms": 1080,
+          "max_source_coordinate_difference_A": 0.0
+        }
+      },
+      "KIX_L12_MD": {
+        "selection": "L12_md and chain B and resi 614-621",
+        "all_heavy_atoms_have_sticks": true,
+        "displayed_atoms": 56,
+        "displayed_real_bonds": 57,
+        "connected_components": 1,
+        "all_components_have_real_CA": true,
+        "CA_CB_roots": [
+          {
+            "chain": "B",
+            "residue": "614",
+            "length_A": 1.540049399935642
+          },
+          {
+            "chain": "B",
+            "residue": "615",
+            "length_A": 1.536200515277039
+          },
+          {
+            "chain": "B",
+            "residue": "616",
+            "length_A": 1.5391101639033735
+          },
+          {
+            "chain": "B",
+            "residue": "617",
+            "length_A": 1.5326637519625763
+          },
+          {
+            "chain": "B",
+            "residue": "618",
+            "length_A": 1.5334793767549948
+          },
+          {
+            "chain": "B",
+            "residue": "619",
+            "length_A": 1.535346511290013
+          },
+          {
+            "chain": "B",
+            "residue": "620",
+            "length_A": 1.541388826839125
+          },
+          {
+            "chain": "B",
+            "residue": "621",
+            "length_A": 1.5440666584196328
+          }
+        ],
+        "coordinates": {
+          "heavy_atoms": 1080,
+          "max_source_coordinate_difference_A": 0.0
+        }
+      },
+      "KIX_L12_FlexPPI_fold1": {
+        "selection": "L12_model and chain B and resi 614-621",
+        "all_heavy_atoms_have_sticks": true,
+        "displayed_atoms": 56,
+        "displayed_real_bonds": 57,
+        "connected_components": 1,
+        "all_components_have_real_CA": true,
+        "CA_CB_roots": [
+          {
+            "chain": "B",
+            "residue": "614",
+            "length_A": 1.540049399935642
+          },
+          {
+            "chain": "B",
+            "residue": "615",
+            "length_A": 1.536200515277039
+          },
+          {
+            "chain": "B",
+            "residue": "616",
+            "length_A": 1.5391101639033735
+          },
+          {
+            "chain": "B",
+            "residue": "617",
+            "length_A": 1.5326637519625763
+          },
+          {
+            "chain": "B",
+            "residue": "618",
+            "length_A": 1.5334793767549948
+          },
+          {
+            "chain": "B",
+            "residue": "619",
+            "length_A": 1.535346511290013
+          },
+          {
+            "chain": "B",
+            "residue": "620",
+            "length_A": 1.541388826839125
+          },
+          {
+            "chain": "B",
+            "residue": "621",
+            "length_A": 1.5440666584196328
+          }
+        ],
+        "coordinates": {
+          "heavy_atoms": 1080,
+          "max_source_coordinate_difference_A": 0.0
+        }
+      }
+    },
+    "ubiquitin": {
+      "Q41": {
+        "neighbors": [
+          {
+            "selection": "complex and chain A and resi 27",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 9,
+            "displayed_real_bonds": 8,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "27",
+                "length_A": 1.608726389133042
+              }
+            ]
+          },
+          {
+            "selection": "complex and chain A and resi 30",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 8,
+            "displayed_real_bonds": 7,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "30",
+                "length_A": 1.5684727222060022
+              }
+            ]
+          },
+          {
+            "selection": "complex and chain A and resi 31",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 9,
+            "displayed_real_bonds": 8,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "31",
+                "length_A": 1.598310589090569
+              }
+            ]
+          },
+          {
+            "selection": "complex and chain A and resi 36",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 8,
+            "displayed_real_bonds": 7,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "36",
+                "length_A": 1.5233514769407712
+              }
+            ]
+          },
+          {
+            "selection": "complex and chain A and resi 37",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 7,
+            "displayed_real_bonds": 7,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "37",
+                "length_A": 1.5578823515483113
+              }
+            ]
+          },
+          {
+            "selection": "complex and chain A and resi 38",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 7,
+            "displayed_real_bonds": 7,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "38",
+                "length_A": 1.5546364705853053
+              }
+            ]
+          },
+          {
+            "selection": "complex and chain A and resi 40",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 9,
+            "displayed_real_bonds": 8,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "40",
+                "length_A": 1.550256381584015
+              }
+            ]
+          },
+          {
+            "selection": "complex and chain A and resi 42",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 11,
+            "displayed_real_bonds": 10,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "42",
+                "length_A": 1.5795552938956385
+              }
+            ]
+          },
+          {
+            "selection": "complex and chain A and resi 69",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 8,
+            "displayed_real_bonds": 7,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "69",
+                "length_A": 1.5379496055735138
+              }
+            ]
+          }
+        ],
+        "MD_frames": [
+          {
+            "selection": "Q41_observed_rank1 and chain A and resi 41",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 9,
+            "displayed_real_bonds": 8,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "41",
+                "length_A": 1.571241467058177
+              }
+            ],
+            "real_CA_difference_from_static_input_A": 0.7099027970527187,
+            "own_complete_ubiquitin_CA_trace_count": 72,
+            "source_coordinates": {
+              "heavy_atoms": 935,
+              "max_source_coordinate_difference_A": 0.0
+            }
+          },
+          {
+            "selection": "Q41_observed_rank2 and chain A and resi 41",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 9,
+            "displayed_real_bonds": 8,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "41",
+                "length_A": 1.6148380971490444
+              }
+            ],
+            "real_CA_difference_from_static_input_A": 0.5952128621489684,
+            "own_complete_ubiquitin_CA_trace_count": 72,
+            "source_coordinates": {
+              "heavy_atoms": 935,
+              "max_source_coordinate_difference_A": 0.0
+            }
+          },
+          {
+            "selection": "Q41_observed_rank3 and chain A and resi 41",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 9,
+            "displayed_real_bonds": 8,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "41",
+                "length_A": 1.5299075139243459
+              }
+            ],
+            "real_CA_difference_from_static_input_A": 0.19492861133164494,
+            "own_complete_ubiquitin_CA_trace_count": 72,
+            "source_coordinates": {
+              "heavy_atoms": 935,
+              "max_source_coordinate_difference_A": 0.0
+            }
+          }
+        ],
+        "reference_coordinates": {
+          "heavy_atoms": 935,
+          "max_source_coordinate_difference_A": 0.0
+        },
+        "all_visible_source_and_MD_atoms": {
+          "all_drawn_atoms_inside_full_frame": true,
+          "projected_bounds_px": [
+            1011.4893349114941,
+            391.4321709890023,
+            4988.510731913224,
+            4608.567833018933
+          ],
+          "depth_margin_A": [
+            3.9999980107300246,
+            3.9999995582740837
+          ]
+        }
+      },
+      "Q62": {
+        "neighbors": [
+          {
+            "selection": "complex and chain A and resi 60",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 8,
+            "displayed_real_bonds": 7,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "60",
+                "length_A": 1.5974022342589236
+              }
+            ]
+          },
+          {
+            "selection": "complex and chain A and resi 61",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 8,
+            "displayed_real_bonds": 7,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "61",
+                "length_A": 1.531632387834189
+              }
+            ]
+          },
+          {
+            "selection": "complex and chain A and resi 63",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 9,
+            "displayed_real_bonds": 8,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "63",
+                "length_A": 1.5556977068935252
+              }
+            ]
+          }
+        ],
+        "MD_frames": [
+          {
+            "selection": "Q62_observed_rank1 and chain A and resi 62",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 9,
+            "displayed_real_bonds": 8,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "62",
+                "length_A": 1.5693401721421136
+              }
+            ],
+            "real_CA_difference_from_static_input_A": 0.991706474194957,
+            "own_complete_ubiquitin_CA_trace_count": 72,
+            "source_coordinates": {
+              "heavy_atoms": 935,
+              "max_source_coordinate_difference_A": 0.0
+            }
+          },
+          {
+            "selection": "Q62_observed_rank2 and chain A and resi 62",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 9,
+            "displayed_real_bonds": 8,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "62",
+                "length_A": 1.6223489063654863
+              }
+            ],
+            "real_CA_difference_from_static_input_A": 1.1988246271784837,
+            "own_complete_ubiquitin_CA_trace_count": 72,
+            "source_coordinates": {
+              "heavy_atoms": 935,
+              "max_source_coordinate_difference_A": 0.0
+            }
+          },
+          {
+            "selection": "Q62_observed_rank3 and chain A and resi 62",
+            "all_heavy_atoms_have_sticks": true,
+            "displayed_atoms": 9,
+            "displayed_real_bonds": 8,
+            "connected_components": 1,
+            "all_components_have_real_CA": true,
+            "CA_CB_roots": [
+              {
+                "chain": "A",
+                "residue": "62",
+                "length_A": 1.599732556784099
+              }
+            ],
+            "real_CA_difference_from_static_input_A": 1.1862242960871459,
+            "own_complete_ubiquitin_CA_trace_count": 72,
+            "source_coordinates": {
+              "heavy_atoms": 935,
+              "max_source_coordinate_difference_A": 0.0
+            }
+          }
+        ],
+        "reference_coordinates": {
+          "heavy_atoms": 935,
+          "max_source_coordinate_difference_A": 0.0
+        },
+        "all_visible_source_and_MD_atoms": {
+          "all_drawn_atoms_inside_full_frame": true,
+          "projected_bounds_px": [
+            525.7010190258966,
+            705.9531160042802,
+            5474.298987944535,
+            4294.046873308464
+          ],
+          "depth_margin_A": [
+            4.0000064335785055,
+            3.999995623953623
+          ]
+        }
+      }
+    }
+  },
+  "direct_panel_f_sessions": {
+    "f_Q41_local.pse": [
+      {
+        "selection": "Q41_observed_rank1 and chain A and resi 41",
+        "all_heavy_atoms_have_sticks": true,
+        "displayed_atoms": 9,
+        "displayed_real_bonds": 8,
+        "connected_components": 1,
+        "all_components_have_real_CA": true,
+        "CA_CB_roots": [
+          {
+            "chain": "A",
+            "residue": "41",
+            "length_A": 1.571241467058177
+          }
+        ]
+      },
+      {
+        "selection": "Q41_observed_rank2 and chain A and resi 41",
+        "all_heavy_atoms_have_sticks": true,
+        "displayed_atoms": 9,
+        "displayed_real_bonds": 8,
+        "connected_components": 1,
+        "all_components_have_real_CA": true,
+        "CA_CB_roots": [
+          {
+            "chain": "A",
+            "residue": "41",
+            "length_A": 1.6148380971490444
+          }
+        ]
+      },
+      {
+        "selection": "Q41_observed_rank3 and chain A and resi 41",
+        "all_heavy_atoms_have_sticks": true,
+        "displayed_atoms": 9,
+        "displayed_real_bonds": 8,
+        "connected_components": 1,
+        "all_components_have_real_CA": true,
+        "CA_CB_roots": [
+          {
+            "chain": "A",
+            "residue": "41",
+            "length_A": 1.5299075139243459
+          }
+        ]
+      }
+    ],
+    "f_Q62_local.pse": [
+      {
+        "selection": "Q62_observed_rank1 and chain A and resi 62",
+        "all_heavy_atoms_have_sticks": true,
+        "displayed_atoms": 9,
+        "displayed_real_bonds": 8,
+        "connected_components": 1,
+        "all_components_have_real_CA": true,
+        "CA_CB_roots": [
+          {
+            "chain": "A",
+            "residue": "62",
+            "length_A": 1.5693401721421136
+          }
+        ]
+      },
+      {
+        "selection": "Q62_observed_rank2 and chain A and resi 62",
+        "all_heavy_atoms_have_sticks": true,
+        "displayed_atoms": 9,
+        "displayed_real_bonds": 8,
+        "connected_components": 1,
+        "all_components_have_real_CA": true,
+        "CA_CB_roots": [
+          {
+            "chain": "A",
+            "residue": "62",
+            "length_A": 1.6223489063654863
+          }
+        ]
+      },
+      {
+        "selection": "Q62_observed_rank3 and chain A and resi 62",
+        "all_heavy_atoms_have_sticks": true,
+        "displayed_atoms": 9,
+        "displayed_real_bonds": 8,
+        "connected_components": 1,
+        "all_components_have_real_CA": true,
+        "CA_CB_roots": [
+          {
+            "chain": "A",
+            "residue": "62",
+            "length_A": 1.599732556784099
+          }
+        ]
+      }
+    ]
+  }
+}

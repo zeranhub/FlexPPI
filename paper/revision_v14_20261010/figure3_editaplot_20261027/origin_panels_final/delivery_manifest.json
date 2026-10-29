@@ -1,0 +1,225 @@
+{
+  "renderer_plan_sha256": "b39aa47b5c710adf6cfb233b6f94a13fd1f03427ce12a9d34030a82919001ea7",
+  "environment": {
+    "origin_version": "10.15",
+    "origin_version_raw": 10.150132000000001,
+    "origin_product": "2024b",
+    "origin_compatibility_status": "verified",
+    "origin_supported_by_originpro": true,
+    "origin_verified_baseline": true,
+    "originpro_version": "1.1.15",
+    "originext_version": "1.2.5",
+    "python_version": "3.12.10",
+    "python_architecture_bits": 64,
+    "connection_mode": "new_isolated",
+    "session_ownership": "editaplot"
+  },
+  "approval_record": {
+    "confirmed": true,
+    "user_confirmation": "确认，按此方案制作",
+    "user_confirmation_source": "Human reply to the b-f scientific design checklist in this chat, 2026-10-27 Asia/Shanghai",
+    "scientific_proposal_sha256": "0bee05599fb3c09b91e9a5a268f5de865d44b6430939b16275ae05f2d6d245c4",
+    "scope": "All proposed b-f data mappings, display ordering, declared paired-difference analysis and requested style.",
+    "renderer_plan_sha256": "b39aa47b5c710adf6cfb233b6f94a13fd1f03427ce12a9d34030a82919001ea7",
+    "source_sha256": {
+      "cam_all25.csv": "ebc5700ffcb1708f94d632816e854ea38e5397e7edba35d2d27b59503b36c473",
+      "defined_angles_long.csv": "8052306e31edf07f8cc7295ec8059c4e8dad6047354a834ea21fb0020e48ad0c",
+      "f_paired_differences.csv": "bf8bc0705f28a2dc9ddcb628cd3df88a9b1dae32b1aac9372b667c3343eda5f9",
+      "f_paired_summary.csv": "164148db60318242287c0c68a97cb20ee49588c43af259fc05f40019108c71c1",
+      "per_chi_correlations.csv": "d90af24843fc5d5fb08abd0a9d799b38ea7e4fe0afd8fb229d7c370f3c544205",
+      "ubiquitin_72_position_profile_with_original_mask.csv": "90feb25545703d3e56347a627e2cf3461b08d493f4cf82e62ad89cce1c4a87bc",
+      "ubiquitin_all6_Gln_Hchi_SASA_plot.csv": "a9128a417e808da91afa87b3a112816691554e6710693a15ba3aeea04fc7ddc4"
+    },
+    "approved_panel_ids": [
+      "b_rmsf_all25",
+      "b_detail_md_full",
+      "c_ubiquitin_parity",
+      "d_gln_pairs",
+      "e_chi1",
+      "e_chi2",
+      "e_chi3",
+      "e_chi4",
+      "f_fine_entropy",
+      "f_lowF_width"
+    ],
+    "style_scope": "User exact style and approved scientific purpose; native implementation and layout refinements within approved scope."
+  },
+  "smoke_report": {
+    "schema_version": 1,
+    "status": "passed",
+    "connection_mode": "new_isolated",
+    "keep_open": false,
+    "stages": [
+      {
+        "name": "activate",
+        "status": "passed",
+        "connection_mode": "new_isolated"
+      },
+      {
+        "name": "read_version",
+        "status": "passed",
+        "origin_version": "10.15",
+        "origin_version_raw": 10.150132000000001,
+        "origin_product": "2024b",
+        "version_status": "recognized",
+        "known_version_risks": [],
+        "probe_priority": "normal",
+        "advisory_only": true,
+        "blocks_render": false
+      },
+      {
+        "name": "read_program_path",
+        "status": "passed",
+        "detected": true
+      },
+      {
+        "name": "ready",
+        "status": "passed",
+        "command": "sec -poc 3;"
+      },
+      {
+        "name": "create_book",
+        "status": "passed",
+        "rows": 4,
+        "columns": 2
+      },
+      {
+        "name": "create_graph",
+        "status": "passed",
+        "template": "Line",
+        "plot_count": 1
+      },
+      {
+        "name": "style_graph",
+        "status": "passed",
+        "font_family": "Arial",
+        "axis_title_size_pt": 18.0,
+        "tick_label_size_pt": 15.0,
+        "line_width_pt": 2.4
+      },
+      {
+        "name": "save_project",
+        "status": "passed"
+      },
+      {
+        "name": "export",
+        "status": "passed",
+        "png": true,
+        "pdf": true,
+        "tif": true
+      },
+      {
+        "name": "readback",
+        "status": "passed",
+        "x_axis_object": true,
+        "y_axis_object": true,
+        "program_path": true
+      },
+      {
+        "name": "cleanup",
+        "status": "passed"
+      }
+    ],
+    "capability_probe": {
+      "available_capabilities": [
+        "axis_readback",
+        "core_2d",
+        "editable_opju",
+        "pdf_export",
+        "png_export",
+        "text_readback",
+        "tif_export"
+      ],
+      "unavailable_capabilities": [],
+      "probe_complete": false
+    },
+    "version_advisory": {
+      "version_status": "recognized",
+      "known_version_risks": [],
+      "probe_priority": "normal",
+      "requires_full_capability_probe": false,
+      "advisory_only": true,
+      "blocks_render": false
+    },
+    "artifacts": {
+      "result.opju": {
+        "generated": true,
+        "size_bytes": 40097
+      },
+      "result.png": {
+        "generated": true,
+        "size_bytes": 30817
+      },
+      "result.pdf": {
+        "generated": true,
+        "size_bytes": 1098425
+      },
+      "result.tif": {
+        "generated": true,
+        "size_bytes": 51485
+      },
+      "environment_report.json": {
+        "generated": true,
+        "size_bytes": 794
+      },
+      "origin_verify_report.json": {
+        "generated": true,
+        "size_bytes": 4890
+      }
+    },
+    "privacy": {
+      "raw_exception_included": false,
+      "hresult_included": false,
+      "program_path_included": false
+    }
+  },
+  "panels": [
+    {
+      "id": "b_rmsf_all25",
+      "directory": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_panels_final\\b_rmsf_all25"
+    },
+    {
+      "id": "b_detail_md_full",
+      "directory": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_panels_final\\b_detail_md_full"
+    },
+    {
+      "id": "c_ubiquitin_parity",
+      "directory": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_panels_final\\c_ubiquitin_parity"
+    },
+    {
+      "id": "d_gln_pairs",
+      "directory": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_panels_final\\d_gln_pairs"
+    },
+    {
+      "id": "e_chi1",
+      "directory": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_panels_final\\e_chi1"
+    },
+    {
+      "id": "e_chi2",
+      "directory": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_panels_final\\e_chi2"
+    },
+    {
+      "id": "e_chi3",
+      "directory": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_panels_final\\e_chi3"
+    },
+    {
+      "id": "e_chi4",
+      "directory": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_panels_final\\e_chi4"
+    },
+    {
+      "id": "f_fine_entropy",
+      "directory": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_panels_final\\f_fine_entropy"
+    },
+    {
+      "id": "f_lowF_width",
+      "directory": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_panels_final\\f_lowF_width"
+    }
+  ],
+  "object_readback_passed": true,
+  "visual_qa_status": "passed",
+  "all_saved_numeric_exact": true,
+  "all_reopened_png_pixel_identical": true,
+  "native_style_verified": true,
+  "vector_only_pdf": true,
+  "output_scope": "10 editable subplot projects; original structure panels and DOCX unchanged"
+}

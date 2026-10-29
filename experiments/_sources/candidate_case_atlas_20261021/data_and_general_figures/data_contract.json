@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "folder": "Cxx/data",
+  "main_pair_file": "<a>_<b>_all_chain_alignment.csv",
+  "state_file": "<pdb>_absolute_state_values.csv",
+  "subset_files": ["<a>_<b>_complete_peptide.csv", "<a>_<b>_all_CDR_projected.csv", "<a>_<b>_complete_pMHC_interface.csv"],
+  "main_columns": ["case_id", "a", "b", "role", "alignment_column", "paired", "gap_a", "gap_b", "index_a", "index_b", "position_a", "position_b", "chain_a", "chain_b", "id_a", "id_b", "aa_a", "aa_b", "same_aa", "region_a", "region_b_legacy", "region_b_projected", "interface_union", "near_related_for_CDR_comparison", "CDR_annotation_source", "label"],
+  "metric_prefixes": ["rmsf", "hchi"],
+  "metric_suffixes": ["full_a", "full_b", "md_a", "md_b", "var_a", "var_b", "nrep_a", "nrep_b", "valid_a", "valid_b", "valid", "full_delta", "md_delta", "delta_sem"],
+  "units": {"rmsf": "angstrom", "hchi": "nats"},
+  "changes": "b minus a",
+  "alignment": "All complete chains global PairwiseAligner. Match=2 mismatch=-1 gap_open=-6 gap_extend=-0.5. Protein terminal gaps unpenalized, peptide terminal gaps penalized. Gaps retained explicitly and every state residue occurs exactly once per role.",
+  "CDR": "a-state complete CDR boundaries projected globally to b; MEL5 family uses original 3HG1 WT boundaries. Unrelated TCR loop maps marked exploratory, not homologous mechanism proof.",
+  "filters": {"rmsf_pairs": "paired & rmsf_valid", "same_chemistry_hchi": "paired & hchi_valid & same_aa", "no_chi": "hchi_valid false is missing/undefined, not zero entropy"},
+  "replicates": "ITrace=3 independent existing MD replicas per state; CatchBond=10. SEM=sqrt(var_a/n_a+var_b/n_b), no frame/residue pseudoreplication. No significance tests.",
+  "MD_role": "Corroboration only; not physical truth or a measurement of affinity.",
+  "source_fields": "<pdb>_source_audit.json has exact source NPZ/structure path and SHA256, actual chain-role mapping; every <a>_<b>_alignment_audit.json includes sequences and full alignments."
+}

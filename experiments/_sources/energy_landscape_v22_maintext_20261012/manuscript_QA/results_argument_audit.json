@@ -1,0 +1,26 @@
+{
+  "scope": "v22 Results3.1–3.6.1/2/3 Discussion4 Conclusion5",
+  "input_sha256": "24257b74912586931acb9650fcdfb4ae573073bf53e7a5261e576efe3512fa72",
+  "artifact": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v22_maintext_20261012\\manuscript_QA\\results_argument_audit_zh.md",
+  "status": "review_complete",
+  "necessary_claim_limits": [
+    "FlexPPI not best overall RMSF among released models",
+    "Reference discordant combinations exist but model recall15.8%/16.5% is weak relative to concordant recall",
+    "Fstar comes from trajectory and is not added model output",
+    "KIX evidence is within-state localization rather than binding response",
+    "Partition sensitivity and RMSF2decomposition descriptive, not new prediction performance"
+  ],
+  "editing_recommendations": [
+    "Compress seed/system repetition in3.1",
+    "Prioritize type-within evidence in3.2",
+    "Distinguish reference information and prediction ability in3.3",
+    "Remove repeated external exclusions in3.4",
+    "Avoid duplicated Q41/Q62 values between3.5and3.6.1",
+    "Shorten3.6.2to partition core andCAdecomposition;move changes/JSD/allphase detail toK",
+    "Keep3.6.3shapes,reduce long number lists",
+    "Merge discussionP124P126P127",
+    "Conclusion name trajectory explanation layer explicitly"
+  ],
+  "docx_changed": false,
+  "network_used": false
+}

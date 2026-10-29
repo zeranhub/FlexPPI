@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-10-24T01:13:53.277026+00:00",
+  "status": "PASS_RECOVERED_FROZEN_STRICT_SOURCES",
+  "recovered_base": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline",
+  "training_records": 2431,
+  "training_source_counts": {
+    "atlas": 1866,
+    "dynarepo": 565
+  },
+  "primary_training_universe": 3063,
+  "existing_external_records": 32,
+  "existing_external_original_input_and_label_hashes_passed": 32,
+  "existing_external_actual_chain_count_distribution": {
+    "3": 31,
+    "2": 1
+  },
+  "existing_external_same_sequence_multichain": 0,
+  "existing_external_sample_id_overlap_with_primary": [],
+  "existing_external_sample_id_overlap_with_strict": [],
+  "existing_external_exact_chain_overlap_strict_records": 0,
+  "existing_frozen_homology_validation": "Absence under the declared all-chain MMseqs search and exact-short rule; not proof of absence of every evolutionary relationship.",
+  "existing_frozen_homology_external_chains": 95,
+  "existing_primary10_multichain_protein_ids": [
+    "A000J",
+    "A0046",
+    "A004V",
+    "A007Q",
+    "A0088",
+    "A009H",
+    "A00C7",
+    "A00CS",
+    "A00K8",
+    "A00PW"
+  ],
+  "primary10_still_in_strict_training": [
+    "A000J",
+    "A004V",
+    "A007Q",
+    "A0088",
+    "A009H",
+    "A00C7",
+    "A00CS",
+    "A00K8",
+    "A00PW"
+  ],
+  "primary10_not_in_strict_training": [
+    "A0046"
+  ],
+  "strict_checkpoint_selection": "A distinct predeclared purged experiment; do not relabel as arbitrary original OOF fold. Original3063 use corresponding frozen OOF fold. New test records require explicit overlap audit of fixed checkpoint training membership before inference.",
+  "new_external_test_selection": "For candidates demonstrably absent from the complete3063 training universe, a predeclared equal five-fold Full ensemble is an available source-out protocol, with family exposure separately audited. A single strict_full alternative must be declared separately and checked against its2431 records; never choose weights by test score.",
+  "local_thermopcd_production_directory_count": 229,
+  "no_inference": true,
+  "no_new_sequence_search": true,
+  "no_scores_read": true,
+  "source_sha256": {
+    "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\strict_external_payload\\strict_external_freeze.json": "16be2a49c6cd2b295a8f150de5e0354d3f6e20028de05f530ae8908c26dbacea",
+    "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\strict_external_payload\\splits\\strict_external_train.jsonl": "e0c84c566dea09b436dd7d07e9e6fd8ce1a8cf0c72be20931179e6689c8b44bd",
+    "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\sequence_audit\\chain_inventory.json": "81f03c1d4f695dbd559c1d7e4fc5e30fb5bc9e6d7a214f505207b71798f2cf9c",
+    "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\sequence_audit\\sequence_audit_summary.json": "2784a411ea3ae18464a8e43833d03669b51bdb2208b8ff7ff95c3235f9c431af",
+    "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\sequence_audit\\strict_overlap_validation.json": "5f9cb61a4a45fcc94267dd83fd005107015c2f392cb3053465420ae50b2e6961",
+    "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\external_payload\\external\\ready_test.jsonl": "1a778e4cc48a06f7afa17ddf4cd99341122b4b14c85af391beb8198fbd387be7",
+    "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\external_payload\\external\\external_payload_freeze.json": "4dc8c3d560ac7e11eb2bef1be5bab431c58be32281f2712e4c8019715fe5781b",
+    "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\external_payload\\external\\prespecified_protocol.json": "a3a0ae81bf3c29ae141eb80b95682e3c78e7ec0693e8e27ffa80f07d833253c5",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\multichain_expansion_20261024\\inference_readiness\\bind_recovered_strict_sources.py": "d728e7a3620acfb37b72b95cf4d4c992447e2b00db5dcaabfe6690373646f0fb",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\multichain_expansion_20261024\\inference_readiness\\readiness_audit.json": "e31b98e6a4b6f2d8869d517750b0036901c9e0247f45d6069ac4a682e3d0d6ea"
+  }
+}

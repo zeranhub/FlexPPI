@@ -1,0 +1,1 @@
+v48源文件和核查记录。figure4目录含Word实际使用PNG、PDF/SVG导出、绘图脚本、全部20个绘图值及旧图源档案；literature核实原研究实验与机制；audit核实原预测和结构近接触及最终科学结论；manuscript_QA核查原生文档包与最终28页。build_v48.py仅局部修改原生OOXML，不重建其他文档部件。CURRENT_FIGURE_MAP.json索引现用全部图源。原始v47稿和旧图不改动。

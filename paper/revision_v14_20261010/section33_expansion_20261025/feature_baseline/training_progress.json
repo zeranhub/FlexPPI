@@ -1,0 +1,275 @@
+{
+  "status": "complete",
+  "jobs": [
+    {
+      "variant": "aa_sasa",
+      "fold": 0,
+      "metric": "rmsf",
+      "n_train": 768116,
+      "n_test": 193205,
+      "mae": 0.677882730960846,
+      "seconds": 5.75
+    },
+    {
+      "variant": "aa_sasa",
+      "fold": 0,
+      "metric": "hchi",
+      "n_train": 658968,
+      "n_test": 166020,
+      "mae": 0.19152121245861053,
+      "seconds": 4.75
+    },
+    {
+      "variant": "aa_sasa",
+      "fold": 1,
+      "metric": "rmsf",
+      "n_train": 770616,
+      "n_test": 190705,
+      "mae": 0.660873532295227,
+      "seconds": 5.077999999979511
+    },
+    {
+      "variant": "aa_sasa",
+      "fold": 1,
+      "metric": "hchi",
+      "n_train": 661360,
+      "n_test": 163628,
+      "mae": 0.1920514702796936,
+      "seconds": 4.51600000000326
+    },
+    {
+      "variant": "aa_sasa",
+      "fold": 2,
+      "metric": "rmsf",
+      "n_train": 767822,
+      "n_test": 193499,
+      "mae": 0.649627685546875,
+      "seconds": 4.76500000001397
+    },
+    {
+      "variant": "aa_sasa",
+      "fold": 2,
+      "metric": "hchi",
+      "n_train": 658781,
+      "n_test": 166207,
+      "mae": 0.19256417453289032,
+      "seconds": 4.2189999999827705
+    },
+    {
+      "variant": "aa_sasa",
+      "fold": 3,
+      "metric": "rmsf",
+      "n_train": 772046,
+      "n_test": 189275,
+      "mae": 0.7117560505867004,
+      "seconds": 5.51600000000326
+    },
+    {
+      "variant": "aa_sasa",
+      "fold": 3,
+      "metric": "hchi",
+      "n_train": 662752,
+      "n_test": 162236,
+      "mae": 0.19112147390842438,
+      "seconds": 4.532000000006519
+    },
+    {
+      "variant": "aa_sasa",
+      "fold": 4,
+      "metric": "rmsf",
+      "n_train": 766684,
+      "n_test": 194637,
+      "mae": 0.6595316529273987,
+      "seconds": 5.422000000020489
+    },
+    {
+      "variant": "aa_sasa",
+      "fold": 4,
+      "metric": "hchi",
+      "n_train": 658091,
+      "n_test": 166897,
+      "mae": 0.19356566667556763,
+      "seconds": 5.577999999979511
+    },
+    {
+      "variant": "aa_sasa_contacts",
+      "fold": 0,
+      "metric": "rmsf",
+      "n_train": 768116,
+      "n_test": 193205,
+      "mae": 0.5848605632781982,
+      "seconds": 7.577999999979511
+    },
+    {
+      "variant": "aa_sasa_contacts",
+      "fold": 0,
+      "metric": "hchi",
+      "n_train": 658968,
+      "n_test": 166020,
+      "mae": 0.1849445402622223,
+      "seconds": 8.14000000001397
+    },
+    {
+      "variant": "aa_sasa_contacts",
+      "fold": 1,
+      "metric": "rmsf",
+      "n_train": 770616,
+      "n_test": 190705,
+      "mae": 0.5754767060279846,
+      "seconds": 7.202999999979511
+    },
+    {
+      "variant": "aa_sasa_contacts",
+      "fold": 1,
+      "metric": "hchi",
+      "n_train": 661360,
+      "n_test": 163628,
+      "mae": 0.18535122275352478,
+      "seconds": 7.672000000020489
+    },
+    {
+      "variant": "aa_sasa_contacts",
+      "fold": 2,
+      "metric": "rmsf",
+      "n_train": 767822,
+      "n_test": 193499,
+      "mae": 0.5607410073280334,
+      "seconds": 7.1560000000172295
+    },
+    {
+      "variant": "aa_sasa_contacts",
+      "fold": 2,
+      "metric": "hchi",
+      "n_train": 658781,
+      "n_test": 166207,
+      "mae": 0.1857733130455017,
+      "seconds": 7.657000000006519
+    },
+    {
+      "variant": "aa_sasa_contacts",
+      "fold": 3,
+      "metric": "rmsf",
+      "n_train": 772046,
+      "n_test": 189275,
+      "mae": 0.6258893013000488,
+      "seconds": 7.10999999998603
+    },
+    {
+      "variant": "aa_sasa_contacts",
+      "fold": 3,
+      "metric": "hchi",
+      "n_train": 662752,
+      "n_test": 162236,
+      "mae": 0.1845303326845169,
+      "seconds": 8.59299999999348
+    },
+    {
+      "variant": "aa_sasa_contacts",
+      "fold": 4,
+      "metric": "rmsf",
+      "n_train": 766684,
+      "n_test": 194637,
+      "mae": 0.5705226063728333,
+      "seconds": 7.51600000000326
+    },
+    {
+      "variant": "aa_sasa_contacts",
+      "fold": 4,
+      "metric": "hchi",
+      "n_train": 658091,
+      "n_test": 166897,
+      "mae": 0.18670615553855896,
+      "seconds": 7.5
+    },
+    {
+      "variant": "static47_sasa",
+      "fold": 0,
+      "metric": "rmsf",
+      "n_train": 768116,
+      "n_test": 193205,
+      "mae": 0.577499508857727,
+      "seconds": 17.43799999996554
+    },
+    {
+      "variant": "static47_sasa",
+      "fold": 0,
+      "metric": "hchi",
+      "n_train": 658968,
+      "n_test": 166020,
+      "mae": 0.1750938445329666,
+      "seconds": 21.54700000002049
+    },
+    {
+      "variant": "static47_sasa",
+      "fold": 1,
+      "metric": "rmsf",
+      "n_train": 770616,
+      "n_test": 190705,
+      "mae": 0.5536558628082275,
+      "seconds": 18.514999999955762
+    },
+    {
+      "variant": "static47_sasa",
+      "fold": 1,
+      "metric": "hchi",
+      "n_train": 661360,
+      "n_test": 163628,
+      "mae": 0.17562733590602875,
+      "seconds": 22.78100000001723
+    },
+    {
+      "variant": "static47_sasa",
+      "fold": 2,
+      "metric": "rmsf",
+      "n_train": 767822,
+      "n_test": 193499,
+      "mae": 0.5679384469985962,
+      "seconds": 17.875
+    },
+    {
+      "variant": "static47_sasa",
+      "fold": 2,
+      "metric": "hchi",
+      "n_train": 658781,
+      "n_test": 166207,
+      "mae": 0.1756986677646637,
+      "seconds": 20.280999999959022
+    },
+    {
+      "variant": "static47_sasa",
+      "fold": 3,
+      "metric": "rmsf",
+      "n_train": 772046,
+      "n_test": 189275,
+      "mae": 0.5834397077560425,
+      "seconds": 16.73399999999674
+    },
+    {
+      "variant": "static47_sasa",
+      "fold": 3,
+      "metric": "hchi",
+      "n_train": 662752,
+      "n_test": 162236,
+      "mae": 0.17452606558799744,
+      "seconds": 20.985000000044238
+    },
+    {
+      "variant": "static47_sasa",
+      "fold": 4,
+      "metric": "rmsf",
+      "n_train": 766684,
+      "n_test": 194637,
+      "mae": 0.5974669456481934,
+      "seconds": 16.5
+    },
+    {
+      "variant": "static47_sasa",
+      "fold": 4,
+      "metric": "hchi",
+      "n_train": 658091,
+      "n_test": 166897,
+      "mae": 0.17697839438915253,
+      "seconds": 18.76600000000326
+    }
+  ]
+}

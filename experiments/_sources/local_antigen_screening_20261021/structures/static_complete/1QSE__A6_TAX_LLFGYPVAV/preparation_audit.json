@@ -1,0 +1,412 @@
+{
+  "status": "passed",
+  "input": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\fixed_backbone\\1QSE__A6_TAX_LLFGYPVAV\\model_input_fixed_backbone.pdb",
+  "input_sha256": "e8cabbe0dcd693cd4659992f666a8fdd658447d89b589fbbeca89835696055c8",
+  "output": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\static_complete\\1QSE__A6_TAX_LLFGYPVAV\\complete_heavy_atoms.pdb",
+  "output_sha256": "c5f85f27a324f04580042da5e3f5f686d5d02d0ffeffbc4f348d154972e0c9b6",
+  "residues": 826,
+  "new_sidechain_atoms": [
+    {
+      "chain": "A",
+      "residue_id": "176",
+      "name": "LYS",
+      "atoms": [
+        "CB",
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue_id": "191",
+      "name": "HIS",
+      "atoms": [
+        "CG",
+        "ND1",
+        "CE1",
+        "NE2",
+        "CD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue_id": "192",
+      "name": "HIS",
+      "atoms": [
+        "CG",
+        "ND1",
+        "CE1",
+        "NE2",
+        "CD2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue_id": "198",
+      "name": "GLU",
+      "atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "OE2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue_id": "222",
+      "name": "GLU",
+      "atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "OE2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue_id": "224",
+      "name": "GLN",
+      "atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "NE2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue_id": "226",
+      "name": "GLN",
+      "atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "NE2"
+      ]
+    },
+    {
+      "chain": "A",
+      "residue_id": "256",
+      "name": "ARG",
+      "atoms": [
+        "CG",
+        "CD",
+        "NE",
+        "CZ",
+        "NH1",
+        "NH2"
+      ]
+    },
+    {
+      "chain": "C",
+      "residue_id": "7",
+      "name": "VAL",
+      "atoms": [
+        "CB",
+        "CG1",
+        "CG2"
+      ]
+    },
+    {
+      "chain": "C",
+      "residue_id": "8",
+      "name": "ALA",
+      "atoms": [
+        "CB"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "129",
+      "name": "ARG",
+      "atoms": [
+        "CG",
+        "CD",
+        "NE",
+        "CZ",
+        "NH1",
+        "NH2"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "132",
+      "name": "LYS",
+      "atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "133",
+      "name": "SER",
+      "atoms": [
+        "OG"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "134",
+      "name": "SER",
+      "atoms": [
+        "OG"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "135",
+      "name": "ASP",
+      "atoms": [
+        "CG",
+        "OD1",
+        "OD2"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "136",
+      "name": "LYS",
+      "atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "137",
+      "name": "SER",
+      "atoms": [
+        "OG"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "154",
+      "name": "LYS",
+      "atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "156",
+      "name": "SER",
+      "atoms": [
+        "OG"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "163",
+      "name": "LYS",
+      "atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "170",
+      "name": "SER",
+      "atoms": [
+        "OG"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "171",
+      "name": "MET",
+      "atoms": [
+        "CG",
+        "SD",
+        "CE"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "172",
+      "name": "ASP",
+      "atoms": [
+        "CG",
+        "OD1",
+        "OD2"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "185",
+      "name": "SER",
+      "atoms": [
+        "OG"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "186",
+      "name": "ASP",
+      "atoms": [
+        "CG",
+        "OD1",
+        "OD2"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "191",
+      "name": "ASN",
+      "atoms": [
+        "CG",
+        "OD1",
+        "ND2"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "194",
+      "name": "ASN",
+      "atoms": [
+        "CG",
+        "OD1",
+        "ND2"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "200",
+      "name": "GLU",
+      "atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "OE2"
+      ]
+    },
+    {
+      "chain": "E",
+      "residue_id": "137",
+      "name": "ILE",
+      "atoms": [
+        "CG2",
+        "CG1",
+        "CD1"
+      ]
+    },
+    {
+      "chain": "E",
+      "residue_id": "180",
+      "name": "LYS",
+      "atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    },
+    {
+      "chain": "E",
+      "residue_id": "187",
+      "name": "ASP",
+      "atoms": [
+        "CG",
+        "OD1",
+        "OD2"
+      ]
+    },
+    {
+      "chain": "E",
+      "residue_id": "189",
+      "name": "ARG",
+      "atoms": [
+        "CG",
+        "CD",
+        "NE",
+        "CZ",
+        "NH1",
+        "NH2"
+      ]
+    },
+    {
+      "chain": "E",
+      "residue_id": "221",
+      "name": "GLU",
+      "atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "OE2"
+      ]
+    },
+    {
+      "chain": "E",
+      "residue_id": "222",
+      "name": "ASN",
+      "atoms": [
+        "CG",
+        "OD1",
+        "ND2"
+      ]
+    },
+    {
+      "chain": "E",
+      "residue_id": "224",
+      "name": "GLU",
+      "atoms": [
+        "CG",
+        "CD",
+        "OE1",
+        "OE2"
+      ]
+    },
+    {
+      "chain": "E",
+      "residue_id": "226",
+      "name": "THR",
+      "atoms": [
+        "CG2",
+        "OG1"
+      ]
+    },
+    {
+      "chain": "E",
+      "residue_id": "228",
+      "name": "ASP",
+      "atoms": [
+        "CG",
+        "OD1",
+        "OD2"
+      ]
+    },
+    {
+      "chain": "E",
+      "residue_id": "231",
+      "name": "LYS",
+      "atoms": [
+        "CG",
+        "CD",
+        "CE",
+        "NZ"
+      ]
+    }
+  ],
+  "new_terminal_atoms": [],
+  "all_observed_backbone_values_bit_identical": true,
+  "sidechain_rebuilt": true,
+  "backbone_rebuilt": false,
+  "OpenMM": "8.6.1",
+  "platform": "CPU",
+  "seed": 17,
+  "MD": false,
+  "elapsed_seconds": 25.93209720001323
+}

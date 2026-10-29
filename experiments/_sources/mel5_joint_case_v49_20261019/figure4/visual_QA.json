@@ -1,0 +1,123 @@
+{
+  "status": "passed",
+  "PNG_SHA256": "1dcdd71627d722788e71feeab552f818baf51ef416ffa8797630312979fe773f",
+  "PDF_SHA256": "2ddb740b3fbfb7d011967d11a61bb7f59ce2fe43559e676993650bfaffe499ac",
+  "SVG_SHA256": "e56050e8ba2f864d00dabfc18fb939512b26ff6401d03cac9610e5d6a252a756",
+  "reviewed_actual_final_PNG": true,
+  "reviewer": "mel5_figure_v49 agent; final PNG opened with view_image after last generation",
+  "dimensions_mm": [
+    183,
+    185
+  ],
+  "raster_pixels": [
+    3242,
+    3277
+  ],
+  "raster_dpi": 450,
+  "font": {
+    "family": "Arial",
+    "resolved_file": "C:\\Windows\\Fonts\\arial.ttf",
+    "minimum_pt": 9,
+    "all_visible_text_inside_canvas": true
+  },
+  "panel_content_densities": {
+    "a": 0.12732581225328754,
+    "b": 0.061454841794856094,
+    "c": 0.04260549695868695,
+    "d": 0.04107186229473573
+  },
+  "AP_0_to_7": "passed: no generic placeholder, default palette, rainbow, four spines, hidden observations, decorative gradients, arbitrary subsampling or smoothing",
+  "CL_1_to_7": "passed: 9 pt minimum, fixed 183 x185 mm, semantic orange/purple, outward ticks, thin open spines, complete vector+raster export",
+  "VI_1_to_7": "passed: model b/c dominant; structure supplies residue contact map; MD d subordinate; 45/45 CDR positions,23/23 valid pMHC interface sites; no noncontiguous-residue connecting lines; no causal arrow Hchi to RMSF; all three replicas visible",
+  "VV_1": "passed: no visible label/data occlusion after second layout correction",
+  "VV_2": "passed: four aligned narrative sections; local molecular inset labels identify true atoms",
+  "VV_3": "passed: all axis labels, per-residue labels and annotations >=9 pt; readable in final rendered preview",
+  "VV_4": "passed: orange hollow circles and purple filled squares give redundant state encoding; teal only HLA/residue identity in structural view",
+  "VV_5": "passed: all numerical observations inside axes; RMSF range [0.46215909719467163, 1.349196195602417] within [0,1.45]; Hchi range [0.338258296251297, 3.0165820121765137] within [0,3.4]; occupancies within [0,100]",
+  "resolved_first_preview_findings": [
+    "RMSF upper bound raised from1.28 to1.45 to retain the CDR1beta maximum",
+    "Hchi upper bound raised from3.0 to3.4",
+    "x-axis explanation moved clear of residue ticks",
+    "MD state mean text vertically separated",
+    "three zero-occupancy replicas separated vertically",
+    "local atom identities and distances labeled"
+  ],
+  "molecular_integrity": {
+    "status": "passed",
+    "input_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\mel5_validation\\4jff_model_input.pdb",
+    "input_SHA256": "d9d88e83d6381e03905b0cfdd39ee9bffc3d3d64c9b7981a7867b45610601b7e",
+    "common_numbering": {
+      "HLA_Q72": "input A72",
+      "beta_Phe53": "input E54",
+      "beta_Gly54": "input E55"
+    },
+    "overview_view": [
+      0.06614458560943604,
+      -0.8752993941307068,
+      -0.4790363311767578,
+      0.9640218615531921,
+      0.1799342930316925,
+      -0.19566690921783447,
+      0.25746214389801025,
+      -0.44885921478271484,
+      0.855709433555603,
+      0.0,
+      0.0,
+      -250.98492431640625,
+      66.50013732910156,
+      60.35551452636719,
+      52.40727996826172,
+      197.87841796875,
+      304.0914306640625,
+      -20.0
+    ],
+    "local_view": [
+      -0.8413222432136536,
+      -0.3473830819129944,
+      0.41412782669067383,
+      -0.5073828101158142,
+      0.24334856867790222,
+      -0.8266463279724121,
+      0.18638555705547333,
+      -0.9055972695350647,
+      -0.38099077343940735,
+      0.0,
+      0.0,
+      -38.22443389892578,
+      67.20250701904297,
+      63.60624694824219,
+      38.07374954223633,
+      30.13643455505371,
+      46.31243133544922,
+      -20.0
+    ],
+    "atom_coordinates": {
+      "Q72_OE1": [
+        66.55000305175781,
+        63.0099983215332,
+        39.66999816894531
+      ],
+      "Q72_NE2": [
+        65.6500015258789,
+        60.970001220703125,
+        39.58000183105469
+      ],
+      "beta_F53_N": [
+        65.63999938964844,
+        65.11000061035156,
+        37.81999969482422
+      ],
+      "beta_G54_O": [
+        62.689998626708984,
+        61.93000030517578,
+        39.36000061035156
+      ]
+    },
+    "distances_A": {
+      "Q72_OE1_to_beta_Phe53_N": 2.9428915977478027,
+      "Q72_NE2_to_beta_Gly54_O": 3.119553804397583
+    },
+    "data_integrity": "Real existing MD input coordinates, no conformational editing. All-heavy structure shown for interpretation only; model uses N/CA/C."
+  },
+  "ready_for_manuscript": true
+}

@@ -1,0 +1,27 @@
+{
+  "version": "gnm_ckdtree_float32_v2",
+  "source_commit": "08e4e0a5168551a51ab3a9bb2fb97d462236454a",
+  "source_code_hashes": {
+    "KDTree.c": "c7d71fe8c2918d724555a72e7529d6e54a30b092b3369837a8b27595af92c65c",
+    "kdtree.py": "6947a24884212320a880f1949e64a39d304956c84b4f1dd1e4a1de97d7feccd5",
+    "KDTreemodule.c": "d6ea280afe0762a0c42f3e2255e3ccbca7b6d269e761f7809220f6847af302f4"
+  },
+  "official_path": "gnm.GNMBase.buildKirchhoff default kdtree=True -> ProDy _CKDTree: coordinate and sum float32; Kirchhoff float64",
+  "geometry_rule": "Each coordinate cast float32, sequential float32 squared-distance accumulation, <=float32(15)^2; gamma1; same20-mode solver",
+  "scanned_records": 3063,
+  "changed_graph_records": 1,
+  "overlays": [
+    {
+      "sample_id": "4f55_A",
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\rmsfnet_nma\\gnm_ckdtree_v2\\predictions\\record_87a406a20cf12f92855d78ca.npz",
+      "status_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\rmsfnet_nma\\gnm_ckdtree_v2\\predictions\\record_87a406a20cf12f92855d78ca.json"
+    }
+  ],
+  "base_predictions": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\rmsfnet_nma\\nma_scipy\\predictions",
+  "unchanged_graphs_keep_fresh_local_v1": true,
+  "original_v1_untouched": true,
+  "benchmark_performance_used_for_selection": false,
+  "new_local_recalculations": true,
+  "wall_seconds": 181.60352790000616,
+  "script_sha256": "eb6a908405577b98a79882e5e3e9b80f4589c6dbb9b2b39e674f4514c1ad6aac"
+}

@@ -1,0 +1,46 @@
+{
+  "generated_utc": "2026-10-24T04:09:50.841942+00:00",
+  "script_sha256": "71e31a46dd3c3f25db50904d6a53dcd93664e256c8a01f7729d9a46f77f6f00c",
+  "input_sha256": {
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\classification\\membership_frozen.csv": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\per_record_metrics.csv": "87420afc23a9dce44919eb1e58bb6620da2b04a8c1075099d23df06ea538e6ef",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\classification\\ppi_interfaces_20261024.csv": "fd8fc6c7ac6416572673a032546334d87923bc963538463e5c5df82e9154c18b"
+  },
+  "strata": {
+    "i1": {
+      "records": 414,
+      "families": 196
+    },
+    "i23": {
+      "records": 144,
+      "families": 58
+    },
+    "i4": {
+      "records": 57,
+      "families": 34
+    }
+  },
+  "excluded_sources": "atlas, itrace, single-chain inputs",
+  "methods": [
+    "FlexPPI",
+    "BackFlip-2.1",
+    "BackFlip-1.0",
+    "DynaProt-M",
+    "FastProtFlex",
+    "ANM",
+    "GNM"
+  ],
+  "metrics": [
+    "spearman",
+    "top10_ap",
+    "z_mae"
+  ],
+  "cells": 63,
+  "stratum_definition": "protein entity (any chain count) / complexes with 2, 3, >=4 chains",
+  "statistics": "record-weighted mean, 95% family-cluster percentile, seed=20261024, draws=2000",
+  "artifacts": {
+    "benchmark_v12.pdf": "8eefd5628a9183a8c25f1af9d96805b1ca645981843cd801bac4b7ea6c9a212b",
+    "benchmark_v12.png": "d3c486ff82598dd9c673afbc60f9451cdc1b644633da9b34d244db0e1b453625",
+    "benchmark_v12.svg": "c798cf00cb58d49765ba441d703654f44d48bbc783974ce9bdd0268b911a0df3"
+  }
+}

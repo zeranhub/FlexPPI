@@ -1,0 +1,48 @@
+{
+  "candidate_id": "2BNQ__1G4_NYESO_SLAMWITQV",
+  "biological_candidate_id": "1G4_NYESO_SLAMWITQV",
+  "panel_id": "1G4_NYESO",
+  "template_pdb": "2BNQ",
+  "primary": true,
+  "sensitivity": false,
+  "is_primary_template": true,
+  "is_sensitivity_template": false,
+  "is_panel_parent": false,
+  "parent_biological_candidate_id": "1G4_NYESO_SLLMWITQV",
+  "parent_inference_candidate_id": "2BNQ__1G4_NYESO_SLLMWITQV",
+  "tcr": "1G4",
+  "hla": "HLA-A*02:01",
+  "antigen": "NY-ESO-1",
+  "peptide_sequence": "SLAMWITQV",
+  "peptide_length": 9,
+  "peptide_chain": "C",
+  "roles": {
+    "hla_heavy": "A",
+    "beta2m": "B",
+    "peptide": "C",
+    "tcr_alpha": "D",
+    "tcr_beta": "E"
+  },
+  "panel_reference_peptide": "SLLMWITQV",
+  "native_peptide": "SLLMWITQC",
+  "template_peptide_sequence": "SLLMWITQV",
+  "mutations_vs_panel_reference": "L3A",
+  "mutations_vs_template": [
+    "L3A"
+  ],
+  "input_mode": "fixed-backbone",
+  "input_pdb": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\raw\\github\\mutation_effects\\nyeso\\pdbs\\2bnq.pdb",
+  "template_input_pdb": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\raw\\github\\mutation_effects\\nyeso\\pdbs\\2bnq.pdb",
+  "template_input_sha256": "d59168822f514193544415057787c969101079947bdc42fceccdec46bda66f52",
+  "chain_sequences": {
+    "C": "SLAMWITQV"
+  },
+  "prepared_input_pdb": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\fixed_backbone\\2BNQ__1G4_NYESO_SLAMWITQV\\model_input_fixed_backbone.pdb",
+  "prepared_input_sha256": "66432ee9dca47c8a0f3dfa9e76b7f0c664278e9c919f76d5d09d0dfe0565cc12",
+  "prepared_input_residues": 829,
+  "geometry_valid_count": 829,
+  "all_backbone_coordinates_bit_identical_to_template": true,
+  "prepared_input_audit": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\fixed_backbone\\2BNQ__1G4_NYESO_SLAMWITQV\\input_preparation_audit.json",
+  "labels_or_closest_template_used_for_preparation": false,
+  "predictions_generated": false
+}

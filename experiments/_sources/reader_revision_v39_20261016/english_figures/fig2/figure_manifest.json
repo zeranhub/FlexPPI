@@ -1,0 +1,60 @@
+{
+  "fig2_accuracy_and_chain_context": {
+    "caption_zh": "图2：五折折外预测的整体准确率及输入链数分层。Full为完整结构模型，Intra为分别训练的链内模型，Static为静态特征回归对照，AA为氨基酸类型均值对照。（a,b）两项目标逐记录MAE的经验累积分布；每条曲线包含全部3,063条记录，RMSF横轴在近零区域线性、远端为对数。（c,d）逐记录Spearman相关的分布，箱体为四分位区间，线为中位数，须线覆盖完整范围，圆点及右侧数字为记录等权均值。（e,f）按静态输入中的实际链数分为1、2、3条及以上，展示同一记录的Intra减Full MAE；正值表示Full误差较低，每点为一条记录，黑色菱形为组内记录等权均值。差值轴在零附近线性、两端为对数。1链组的差值反映两种分别训练模型的预测差异，不能解释为加入伙伴链带来的改善。所有分布和分层均为描述性统计，未绘制置信区间或进行显著性检验。",
+    "panels": [
+      "a RMSF MAE ECDF",
+      "b Hχ MAE ECDF",
+      "c RMSF Spearman",
+      "d Hχ Spearman",
+      "e RMSF gain by actual chain count",
+      "f Hχ gain by actual chain count"
+    ],
+    "statistics_csv": "fig2_accuracy_and_chain_context_statistics.csv",
+    "inputpaths": [
+      "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\figures\\corrected_main_results_preparation\\completed\\20261003T212155Z_0caa2efe\\per_record_metrics.csv",
+      "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\figures\\corrected_cohort_lineage\\all_chain_lengths_and_overlap.csv"
+    ],
+    "input_sha256": {
+      "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\figures\\corrected_main_results_preparation\\completed\\20261003T212155Z_0caa2efe\\per_record_metrics.csv": "22cc931321f0962e7f89d736b9036dea5e0802fce89fd906ea191f56ea1e83be",
+      "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\figures\\corrected_cohort_lineage\\all_chain_lengths_and_overlap.csv": "8338bbbf3ebd028e9517e103a0f4f9431727c5305c016a2010780cd94faf5bda"
+    },
+    "qa": {
+      "width_mm": 183.0,
+      "height_mm": 188.0,
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "minimum_text_pt": 7.5,
+      "text_outside_canvas": [],
+      "svg_raster_images": 0,
+      "svg_editable_text": 105,
+      "pixel_content_density": [
+        0.04158550594346219,
+        0.04661434921586255,
+        0.09552304964539007,
+        0.08401383478174008,
+        0.20523673958645489,
+        0.20158450704225353
+      ],
+      "visual_review": "passed: full PNG inspection, no clipping or overlap",
+      "font": "Arial; TrueType PDF fonts, editable SVG text",
+      "all_data_preserved": true,
+      "no_ci_or_p_values": true
+    },
+    "outputs": {
+      "png": {
+        "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\reader_revision_v39_20261016\\english_figures\\fig2\\fig2_accuracy_and_chain_context.png",
+        "sha256": "80fdc3c3a006549d57d6a2e4c8319ea5d69e50b6bda023e967460203405bf0fc"
+      },
+      "pdf": {
+        "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\reader_revision_v39_20261016\\english_figures\\fig2\\fig2_accuracy_and_chain_context.pdf",
+        "sha256": "1f6999a77dd4cd22314e415cf6ee4f320e6c442ba135848df56f08c1f7c5cb6a"
+      },
+      "svg": {
+        "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\reader_revision_v39_20261016\\english_figures\\fig2\\fig2_accuracy_and_chain_context.svg",
+        "sha256": "b0e43cf20df32144db232e9f9767bf06cfaa2c73bcf77e4482fb798ed963dcb6"
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "url": "https://data.rcsb.org/rest/v1/holdings/removed/3RVW",
+  "http_status": 200,
+  "response": {
+    "rcsb_repository_holdings_removed": {
+      "audit_authors": [
+        "Chruszcz, M.",
+        "Vailes, L.D.",
+        "Chapman, M.D.",
+        "Pomes, A.",
+        "Minor, W."
+      ],
+      "deposit_date": "2011-05-06T00:00:00.000+00:00",
+      "id_codes_replaced_by": [
+        "5VPG"
+      ],
+      "release_date": "2012-01-11T00:00:00.000+00:00",
+      "remove_date": "2022-04-27T00:00:00.000+00:00",
+      "repository_content_types": [
+        "entry PDB",
+        "entry PDBML",
+        "entry mmCIF",
+        "structure factors"
+      ],
+      "title": "Crystal structure of Der p 1 complexed with Fab 4C1"
+    },
+    "rcsb_repository_holdings_removed_audit_author": [
+      {
+        "audit_author": "Chruszcz, M.",
+        "ordinal_id": 1
+      },
+      {
+        "audit_author": "Vailes, L.D.",
+        "ordinal_id": 2
+      },
+      {
+        "audit_author": "Chapman, M.D.",
+        "ordinal_id": 3
+      },
+      {
+        "audit_author": "Pomes, A.",
+        "ordinal_id": 4
+      },
+      {
+        "audit_author": "Minor, W.",
+        "ordinal_id": 5
+      }
+    ],
+    "rcsb_repository_holdings_removed_entry_container_identifiers": {
+      "entry_id": "3RVW",
+      "rcsb_id": "3RVW",
+      "update_id": "2026_42"
+    },
+    "rcsb_id": "3RVW"
+  }
+}

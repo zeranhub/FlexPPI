@@ -1,0 +1,587 @@
+[
+  {
+    "tag": "p",
+    "id": null,
+    "text": "A key challenge in assessing discrimination is the accurate measurements of very weak TCR/pMHC affinities, with KD ranging from 1 to >100 μM (van der Merwe and Davis, 2003). A highly sensitive method for analysing molecular interactions is surface plasmon resonance (SPR), but even with this method, accurate measurements are difficult to make, especially at 37°C. In the case of OT-I, for example, measurements were performed at 37°C but high-affinity biphasic binding was observed (Alam et al., 1999), which has not been observed for other TCRs and may represent protein aggregates that often form at the high concentrations necessary for making these measurements. It follows that the reported small threefold change in affinity between the activating OVA and non-activating E1 ligands (Alam et al., 1999) may be a consequence of multivalent interactions. Indeed, more recent studies found the expected low-affinity monophasic binding for OT-I/OVA (Stepanek et al., 2014; Liu et al., 2015) and no detectable binding for OT-I/E1 (Stepanek et al., 2014). This raises the possibility that E1 does not activate T cells not because of near-perfect discrimination but simply because it does not bind the TCR. These studies highlight the challenges of accurately measuring TCR/pMHC affinities and underline their importance in our understanding of antigen discrimination."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Here, we introduce a new SPR protocol that can accurately determine ultra-low TCR/pMHC affinities at 37°C into the KD ∼1 mM regime. We found that T cell responses were gradually lost as the affinity was decreased without a sharp affinity threshold and remarkably responses were detected to ultra-low-affinity pMHCs. By introducing a quantitative measure of discrimination, we are able to not only analyse our data but also analyse the published literature finding that the discriminatory power of the T cell receptor is imperfect yet remains above the baseline produced by other conventional surface receptors."
+  },
+  {
+    "tag": "title",
+    "id": null,
+    "text": "Measurements of ultra-low TCR/pMHC affinities at 37°C"
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "To assess discrimination, we first generated ligands to the anti-tumour 1G4 (Chen et al., 2005) and anti-viral A6 (Garboczi et al., 1996) TCRs recognising peptides on HLA-A*02:01. The standard SPR protocol is based on injecting the TCR at increasing concentrations over a pMHC-coated surface (Figure 1A and B) with the resulting steady-state binding response plotted over the TCR concentration (Figure 1C). This curve is fitted by a two-parameter Hill function to determine Bmax (the maximum response when all pMHCs are bound by TCR) and the KD, which is the TCR concentration where binding is half the Bmax. Therefore, an accurate determination of KD requires an accurate determination of Bmax."
+  },
+  {
+    "tag": "fig",
+    "id": "fig1",
+    "text": "Figure 1.Measuring ultra-low T cell receptor (TCR)/peptides presented on major histocompatibility complex (pMHC) affinities using surface plasmon resonance (SPR) at 37°C using a constrained Bmax method.(A–C) Comparison of 1G4 TCR binding to a higher (left panels, NYE 9V) and lower (right panels, NYE 5F) affinity pMHC. (A) Schematic comparing TCR and W6/32 binding. (B) Example SPR sensograms showing injections of different TCR concentrations followed by the W6/32 antibody. (C) Steady-state binding response from (B) over the TCR concentration (filled circles) fitted to determine KD when Bmax is either fitted (standard method) or constrained (new method). Bmax obtained from either method is indicated for the high-affinity pMHC. For the low-affinity pMHC, the Bmax is out of the axes range (251 and 1671 RU for Bmax fitted and Bmax constrained, respectively). (D) Empirical standard curve relating W6/32 binding to fitted Bmax obtained using higher-affinity interactions. Immobilisation levels of NYE 9V are indicated showing that both W6/32 binding and fitted Bmax depend on the amount of pMHC immobilised. Although immobilisation levels are related to Bmax, they cannot be used directly because of variations in the fraction of inactive pMHC across different protein preparations (e.g. MHC that binds to the chip surface and hence contributes to immobilisation but is unfolded and cannot bind the TCR). Therefore, W6/32 binding provides an accurate proxy for the amount of active pMHC on the chip surface. (E) Correlation of KDs obtained using the fitted and constrained methods. Each dot represents an individual measurement (n = 132; 61 for 1G4 TCR, 71 for A6 TCR). (F) Coefficient of variation for higher- (<100 μM) or lower-affinity (>100 μM) interactions. (G) Selected pMHC panel for A6 TCR. (H) Selected pMHC panel for 1G4 TCR. Mean values with SDs of KDs are indicated in bars and ligands used for functional experiments in the main text are coloured. Data in (A) and (B) was double-referenced. The high- and low-affinity examples originate from different experiments. Figure 1—source data 1.Double-referenced surface plasmon resonance data for Figure 1. Figure 1—source data 2.Fitted KDs with the indicated method for the 1G4 TCR in SPR at 37°C.Includes all peptides used for SPR standard curve and functional experiments. Figure 1—source data 3.Fitted KDs with the indicated method for the A6 TCR in SPR at 37°C.Includes all peptides used for SPR standard curve and functional experiments. N/A: not applicable."
+  },
+  {
+    "tag": "title",
+    "id": null,
+    "text": "Measuring ultra-low T cell receptor (TCR)/peptides presented on major histocompatibility complex (pMHC) affinities using surface plasmon resonance (SPR) at 37°C using a constrained Bmax method."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "(A–C) Comparison of 1G4 TCR binding to a higher (left panels, NYE 9V) and lower (right panels, NYE 5F) affinity pMHC. (A) Schematic comparing TCR and W6/32 binding. (B) Example SPR sensograms showing injections of different TCR concentrations followed by the W6/32 antibody. (C) Steady-state binding response from (B) over the TCR concentration (filled circles) fitted to determine KD when Bmax is either fitted (standard method) or constrained (new method). Bmax obtained from either method is indicated for the high-affinity pMHC. For the low-affinity pMHC, the Bmax is out of the axes range (251 and 1671 RU for Bmax fitted and Bmax constrained, respectively). (D) Empirical standard curve relating W6/32 binding to fitted Bmax obtained using higher-affinity interactions. Immobilisation levels of NYE 9V are indicated showing that both W6/32 binding and fitted Bmax depend on the amount of pMHC immobilised. Although immobilisation levels are related to Bmax, they cannot be used directly because of variations in the fraction of inactive pMHC across different protein preparations (e.g. MHC that binds to the chip surface and hence contributes to immobilisation but is unfolded and cannot bind the TCR). Therefore, W6/32 binding provides an accurate proxy for the amount of active pMHC on the chip surface. (E) Correlation of KDs obtained using the fitted and constrained methods. Each dot represents an individual measurement (n = 132; 61 for 1G4 TCR, 71 for A6 TCR). (F) Coefficient of variation for higher- (<100 μM) or lower-affinity (>100 μM) interactions. (G) Selected pMHC panel for A6 TCR. (H) Selected pMHC panel for 1G4 TCR. Mean values with SDs of KDs are indicated in bars and ligands used for functional experiments in the main text are coloured. Data in (A) and (B) was double-referenced. The high- and low-affinity examples originate from different experiments."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Figure 1—source data 2.Fitted KDs with the indicated method for the 1G4 TCR in SPR at 37°C.Includes all peptides used for SPR standard curve and functional experiments."
+  },
+  {
+    "tag": "title",
+    "id": null,
+    "text": "Fitted KDs with the indicated method for the 1G4 TCR in SPR at 37°C."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Includes all peptides used for SPR standard curve and functional experiments."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Figure 1—source data 3.Fitted KDs with the indicated method for the A6 TCR in SPR at 37°C.Includes all peptides used for SPR standard curve and functional experiments. N/A: not applicable."
+  },
+  {
+    "tag": "title",
+    "id": null,
+    "text": "Fitted KDs with the indicated method for the A6 TCR in SPR at 37°C."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Includes all peptides used for SPR standard curve and functional experiments. N/A: not applicable."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "In the case of the 1G4 TCR binding to its cognate NY-ESO-1 peptide, this protocol produces KD ≈ 7 μM (Figure 1A–C, left column). However, the binding response curves do not saturate for lower-affinity pMHCs (Figure 1A–C, right column). Because of this, the fitted Bmax and therefore the fitted KD may not be accurate. Saturating the binding curves by increasing the TCR concentration is limited by the tendency of soluble recombinant proteins, including the TCR, to accumulate aggregates at high concentrations, which precludes accurate SPR measurements."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "To determine Bmax when saturating pMHC with TCR was not feasible (i.e. for lower-affinity interactions), we generated a standard curve using the conformation-sensitive, pan-HLA-A/B/C antibody (W6/32) that only binds correctly folded pMHC (Brodskys and Parham, 1982). By injecting the W6/32 antibody at the end of each experiment (Figure 1B, black line), we were able to plot the fitted Bmax from higher-affinity interactions (where binding saturated) over the maximum W6/32 binding (Figure 1D). We observed a linear relationship even when including different TCRs binding different pMHC across multiple protein preparations immobilised at different levels. Together, this strongly suggested that W6/32 and the TCR recognise the same correctly folded active pMHC population and justified the use of the standard curve to estimate Bmax. While the level of W6/32 binding and Bmax is approximately proportional to the pMHC immobilisation level (see data for the NYE 9V pMHC in Figure 1D), the immobilisation level cannot be used to estimate Bmax because only a fraction of the pMHC immobilised is correctly folded and this fraction varies between protein preparations. We noted that W6/32 antibody binding was generally lower than TCR binding (e.g. Figure 1B and a slope of >1 in Figure 1D), which is unexpected because the molecular weight of the antibody is larger than the TCR. A likely explanation is that by injecting the antibody at a single concentration we have not saturated antibody binding. This is mitigated by ensuring that the same W6/32 antibody concentration is used and that Bmax is only interpolated within the standard curve."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "We next fitted KD values for 132 interactions using the standard method where Bmax is fitted and the new method where Bmax is constrained to the value obtained using the standard curve (Figure 1E). In the new method, the only fitted parameter is KD. Both methods produced similar KD values for higher affinities, validating the method (e.g. Figure 1C, left). In contrast, large (100-fold) discrepancies appeared for lower-affinity interactions, with the fitted Bmax method consistently underestimating the KD. These large discrepancies were observed despite both methods providing a similar fit (e.g. Figure 1C, right). This suggested that for the fitted Bmax method different combinations of Bmax and KD can provide a fit of similar quality so that the fitted KD can exhibit large variations for the same interaction (also known as ‘over-fitting’). We explored this by comparing the precision of both methods using the coefficient of variance (CV) of multiple measurements of the same TCR/pMHC combination. We found a similar CV for higher-affinity interactions (<100 μM KD) and lower-affinity interactions when Bmax was constrained, but an increased CV for low-affinity interaction when Bmax was fitted (Figure 1F). Therefore, the standard method has lower precision for low-affinity interactions as a result of over-fitting."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "We next used the new SPR method to accurately measure ultra-low affinities in order to identify panels of pMHCs that spanned the full physiological affinity range required to quantitate TCR discrimination (Figure 1G and H)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The OT-I, 3.L2, and 2B4 transgenic mice continue to be instrumental in studies of T cell immunity, and as such, substantial data has been generated relating to these TCRs over the years, including new TCR/pMHC binding measurements. Revised SPR data for OT-I revealed no binding for the E1 peptide variant (Stepanek et al., 2014), and therefore, we could not use the original potency data. To produce an estimate of α for OT-I, we combined measurements of antigen potency (Daniels et al., 2006) and binding (Stepanek et al., 2014) that were now available for four peptides and found an appreciably lower discrimination power of 2.1 (Figure 3D). In the case of the 3.L2 TCR, revised SPR data for the original four peptide variants showed a wider variation in KD than originally reported (Hong et al., 2015). We re-plotted the original potency data over the revised KD value (as koff was not available for all peptides) and found a lower power of 3.2 (Figure 3E). Similarly, re-plotting the 2B4 TCR potency data over revised binding data (Wu et al., 2002) produced a lower discrimination power of 2.8 (Figure 3F). Although this calculation included only two data points, we identified two additional studies with 4–5 data points (Birnbaum et al., 2014; Newell et al., 2011) that also produced lower powers of 2.3 and 0.95 for 2B4 (Figure 3—source data 1 ID 18 and 19)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Thus, estimates of discrimination powers of the OT-I, 3.L2, and 2B4 TCRs based on the early binding data were much higher (mean value of α∼9) than those obtained when using more recent binding data (mean value of α=2.2) (Figure 3I), with the revised estimate being similar to the values obtained in this study for two TCRs (Figure 2K). This strongly suggests that discrepancies between the original mouse TCR data suggesting near-perfect discrimination (α∼9) and our human TCR data suggesting imperfect discrimination (α=2.0) is a consequence of issues with the original SPR measurements."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "In contrast to the prevailing view that the TCR exhibits near-perfect discrimination, we have shown here that the discriminatory power of the TCR is imperfect and that it is able to respond to ultra-low-affinity antigens. Our estimates of TCR discrimination were facilitated by the development of a revised SPR method to accurately measure TCR/pMHC affinities."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Although ligand potency usually correlates with solution or three-dimensional (3D) affinity measured by SPR, there are occasional exceptions. In one example, a structural explanation was provided for a pMHC that could bind the TCR but could not activate T cells; it exhibited an unusual docking geometry that prevented co-receptor binding (Adams et al., 2011). In another example, it was suggested that mechanical forces could affect the TCR binding affinity to different ligands in a different way (Liu et al., 2014; Sibener et al., 2018). Finally, in a third example, it was shown that the surface or two-dimensional (2D) TCR/pMHC binding parameters measured within the T cell contact interface predicted the T cell response more accurately compared to the 3D binding parameters measured in SPR (Huang et al., 2010). However, this was based on the earlier inaccurate SPR data for the OT-I system, which was the only data available at the time. A subsequent study found that the 2D and 3D binding parameters for the 1E6 TCR were equally accurate at predicting the T cell response (Cole et al., 2016). Taken together, these studies suggest that there are likely to be occasional exceptions where 3D binding properties do not correlate with potency. This may partly explain the lack of correlation between potency and 3D affinity reported in a subset of the published studies we have analysed (Figure 3—source data 1)."
+  },
+  {
+    "tag": "table-wrap",
+    "id": "keyresource",
+    "text": "Key resources tableReagent type (species) or resourceDesignationSource or referenceIdentifiersAdditional informationCell line (human)U87Vincenzo CerundoloUniversity of Oxford, UKCell line (human)Freestyle 293 FThermo Fisher ScientificRRID:CVCL_D603For protein production by transient transfection.Cell line (human)Lenti-X 293TTakara BioRRID:CVCL_4401For production of lentivirus.Transfected construct (human)pTT3-ecdCD58This paperPlasmid for production of recombinant, soluble CD58 through transient transfection of mammalian cells.Transfected construct (human)pTT3-ecdICAM1This paperPlasmid for production of recombinant, soluble ICAM1 through transient transfection of mammalian cells.Transfected construct (human)pTT3-BirA-FLAGAddgeneRRID:Addgene_64395Plasmid for in-flask biotinylation by co-transfection. Bushell et al., 2008.AntibodyAnti-human CD69 (mouse monoclonal)BiolegendRRID:AB_314839; RRID:AB_528869; RRID:AB_2561909; RRID:AB_528871Colours: FITC, AF488, BV421, AF647; dilution: (1:200); clone: FN50.AntibodyAnti-human CD45 (mouse monoclonal)BiolegendRRID:AB_2561357; RRID:AB_2563466Colours: BV421, BV711; dilution: (1:200); clone: HI30.AntibodyAnti-HLA-A2 (mouse monoclonal)BiolegendRRID:AB_2721523; RRID:AB_1877227Colours: BV421, PE; dilution: (1:100–1:200); clone: BB7.2.AntibodyHuman TruStain Fc blockBiolegendRRID:AB_2818986Dilution: (1:100).AntibodyW6/32BiolegendRRID:AB_314871Unconjugated; for SPR; lot: B233942.Recombinant DNA reagentpLEX-A6This paperLentiviral transfer plasmid based on pLEX307. See Supplementary file 1 for insert sequence.Recombinant DNA reagentpHR-1G4This paperLentiviral transfer plasmid with EF1α promoter for transduction of the 1G4 TCR into T cells. See Supplementary file 1 for insert sequence.Recombinant DNA reagentA6αThis paperSoluble A6 alpha chain for production in Escherichia coli and in vitro refolding. See Supplementary file 2 for insert sequence.Recombinant DNA reagentA6β-HisThis paperSoluble A6 beta chain for production in E. coli and in vitro refolding. See Supplementary file 2 for insert sequence.Recombinant DNA reagent1G4α Aleksic et al., 2010 Soluble 1G4 alpha chain for production in E. coli and in vitro refolding.Recombinant DNA reagent1G4β Aleksic et al., 2010 Soluble 1G4 beta chain for production in E. coli and in vitro refolding.Recombinant DNA reagent1G4β Abu-Shah et al., 2019 For mRNA electroporation.Recombinant DNA reagent1G4α Abu-Shah et al., 2019 For mRNA electroporation.Recombinant DNA reagentCD3ζ Abu-Shah et al., 2019 For mRNA electroporation.Recombinant DNA reagentHLA-A*02:01 heavy chain Aleksic et al., 2010 Soluble MHC heavy chain for production in E. coli and in vitro refolding.Recombinant DNA reagentβ2M Aleksic et al., 2010 beta-2 microglobulin for production in E. coli and in vitro refolding.Peptide, recombinant proteinRetronectinTakara BioT100BPeptide, recombinant proteinStreptavidin-PEBiolegend405245Peptide, recombinant proteinBiotinylated BSAThermo Fisher Scientific29130Peptide, recombinant proteinStreptavidinThermo Fisher Scientific434301Peptide, recombinant proteinPeptide ligandsPeptide Protein ResearchSee Figure 1—source data for details.Peptide, recombinant proteinRefolded recombinant pMHCsThis paperExpressed in E. coli.Peptide, recombinant proteinIL2PeproTech200-02Peptide, recombinant proteinIL4PeproTech200-04Peptide, recombinant proteinTNFPeproTech300-01APeptide, recombinant proteinIFNγR&D Systems285-IF-100/CFPeptide, recombinant proteinGM-CSFImmunotools11343127Peptide, recombinant proteinIL1βR&D Systems201-LB-025/CFCommercial assay or kitRosetteSep Human CD8+ T Cell Enrichment CocktailSTEMCELL Technologies15063Isolation kits used to enrich for human immune cells from blood.Commercial assay or kitRosetteSep Human Monocyte Enrichment CocktailSTEMCELL Technologies15068Isolation kits used to enrich for human immune cells from blood.Commercial assay or kitEasySep Human Memory CD8+ T Cell Enrichment KitSTEMCELL Technologies19159Isolation kits used to enrich for human immune cells from blood.Commercial assay or kitEasySep Human NaÃ¯ve CD8+ T Cell Isolation Kit IISTEMCELL Technologies17968Isolation kits used to enrich for human immune cells from blood.Commercial assay or kitmMESSAGE mMACHINE T7 ULTRA Transcription KitThermo Fisher ScientificAM1345Prepare in vitro RNA transcripts.Commercial assay or kitMEGAclear Transcription Clean-Up KitThermo Fisher ScientificAM1908Isolate in vitro RNA transcripts.Commercial assay or kitAmine coupling kitGE Healthcare Life SciencesBR100050For immobilisation of protein on SPR chip.Commercial assay or kitIL-2 Human Uncoated ELISA KitThermo Fisher Scientific88-7025-77Chemical compound, drugPGE2Sigma-AldrichP6532Chemical compound, drugFixable Viability Dye eFluor 780Thermo Fisher Scientific65-0865-14Chemical compound, drugCD3/CD28 Human T-activator dynabeadsThermo Fisher Scientific11132DChemical compound, drugX-tremeGENE HPSigma-Aldrich6366546001Chemical compound, drugZombie Fixable viability kitBiolegend423107; 423105Colours: UV, NIR; dilution: 1:1000.Software, algorithmPrismGraphPadData fitting and statistics.Software, algorithmMatlabMathworksModel fitting.Software, algorithmFlowJoBD BiosciencesOther96 Well SensoPlateGreiner655892OtherTetramersThis paperMade with NYE 9V or Tax WT and commercial streptavidin-PE.OtherCM5 sensor chipsGE Healthcare Life Sciences"
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Class I pMHCs were refolded as previously described (Achour et al., 1999). Human HLA-A*0201 heavy chain (UniProt residues 25–298) with a C-terminal AviTag/BirA recognition sequence and human beta-2 microgolublin were expressed in Escherichia coli and isolated from inclusion bodies. Trimer was refolded by consecutively adding peptide, β2M, and heavy chain into refolding buffer and incubating for 2–3 days at 4°C. Protein was filtered, concentrated using centrifugal filters, biotinylated (BirA biotin-protein ligase bulk reaction kit [Avidity, USA]), and purified by size exclusion chromatography (Superdex 75 column [GE Healthcare]) in HBS-EP (0.01 M HEPES pH 7.4, 0.15 M NaCl, 3 mM EDTA, 0.005% v/v Tween20). Purified protein was aliquoted and stored at –80°C until use. Soluble α and β subunits of 1G4 and A6 TCRs were produced in E. coli, isolated from inclusion bodies, refolded in vitro, and purified using size exclusion chromatography in HBS-EP, as described previously (Aleksic et al., 2010)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "TCR–pMHC interactions were analysed on a Biacore T200 instrument (GE Healthcare Life Sciences) at 37°C and a flow rate of 10 μl/min. Running buffer was HBS-EP. Streptavidin was coupled to CM5 sensor chips using an amino coupling kit (GE Healthcare Life Sciences) to near saturation, typically 10,000–12,000 response units (RU). Biotinylated pMHCs (47 kDa) were injected into the experimental flow cells (FCs) for different lengths of time to produce desired immobilisation levels (typically 500–1500 RU), which were matched as closely as feasible in each chip. Usually, FC1 was as a reference for FC2–FC4. Biotinylated CD58 ECD (24 kDa + ∼25 kDa glycosylation) was immobilised in FC1 at a level matching those of pMHCs. In some experiments, another FC was used as a reference. Excess streptavidin was blocked with two 40 s injections of 250 μM biotin (Avidity). Before injections of soluble 1G4 or A6 α⁢β TCR (51 kDa), the chip surface was conditioned with eight injections of the running buffer. Dilution series of TCRs were injected simultaneously in all FCs; the duration of injections (30–70 s) was the same for conditioning and TCR injections. After every 2–3 TCR injections, buffer was injected to generate data for double referencing. After the final TCR injection and an additional buffer injection, W6/32 antibody (10 μg/ml; Biolegend; lot: B233942) was injected for 10 min."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "TCR steady-state binding was measured >10 s post-injection. In addition to subtracting the signal from the reference FC with immobilised CD58 (single referencing), all TCR binding data was double referenced (Myszka, 1999) versus the average of the closest buffer injections before and after TCR injection. This allows to exclude small differences in signal between flow cells (e.g. drifts). TCR binding versus TCR concentration was fitted with the following model: B=Bm⁢a⁢x*[T⁢C⁢R]/(KD+[T⁢C⁢R]), where B is the response/binding, Bmax the maximal binding (this parameter is either kept free or is fixed with the W6/32-derived Bmax), and [T⁢C⁢R] the injected TCR concentration. Maximal W6/32 binding (Rmax) was used to generate the empirical standard curve and to infer the Bmax of TCRs from the standard curve. Rmax was derived by fitting the W6/32 binding data after double referencing with the following, empirically chosen, model: R=Rm⁢a⁢x*t/(Kt+t), where t is time (s), R the sensogram response after single referencing, and Kt a nuisance parameter. The empirical standard curve only contained data where the ratio of the highest concentration of TCR to the fitted KD value (obtained using the standard method with Bmax fitted) was 2.5 or more. This threshold ensured that the binding response curves saturated so that only accurate measurements of Bmax were included. All interactions were fit using both the fitted and constrained Bmax method (Figure 1E). For constrained KD above 20 μM, we reported the constrained KD, otherwise we use the Bmax fitted KD. SPR data was analysed using GraphPad Prism 8 (GraphPad software) or using a custom Python script (Python v3.7 and lmfit v0.9.13)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Autologous monocytes were enriched from the same blood product using RosetteSep Human Monocyte Enrichment Cocktail (Stemcell), cultured at 1–2 Mio/ml in 12-well plates in the presence of 50 ng/ml IL4 (PeproTech) and 100 ng/ml GM-CSF (Immunotools) for 24 hr to induce differentiation. Maturation into moDCs was induced by adding 1 μM PGE2 (Sigma Aldrich), 10 ng/ml IL1β (Biotechne), 20 ng/ml IFNγ, and 50 ng/ml TNF (PeproTech) for an additional 24 hr. MoDCs (50,000/well) were loaded for 60–90 min at 37°C with peptide and labelled with Cell Trace Violet (Thermo Fisher) to distinguish them from T cells prior to co-culturing with 50,000 T cells/well in a 96-well plate for 24 hr. T cell activation was assessed by flow cytometry and testing culture supernatant for cytokines using ELISAs."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "All cell culture of human T cells was done using complete RPMI (10% FCS, 1% penicillin/streptomycin) at 37°C, 5% CO2. T cells were isolated from whole blood from healthy donors or leukocyte cones purchased from the NHS Blood and Transplantation service at the John Radcliffe Hospital. For whole blood donations, a maximum of 50 ml was collected by a trained phlebotomist after informed consent had been given. This project has been approved by the Medical Sciences Inter-Divisional Research Ethics Committee of the University of Oxford (R51997/RE001), and all samples were anonymised in compliance with the Data Protection Act."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "For plate stimulations and experiments with U87 target cells, CD8+ T cells were isolated using RosetteSep Human CD8+ enrichment cocktail (STEMCELL) at 6 μl/ml for whole blood or 150 μl/ml for leukocyte cones. After 20 min incubation at room temperature, blood cone samples were diluted 3.125-fold with PBS, while whole blood samples were used directly. Samples were layered on Ficoll Paque Plus (GE) at a 0.8:1.0 Ficoll:sample ratio and spun at 1200 g for 20–30 min at room temperature. Buffy coats were collected, washed twice, counted, and cells were resuspended in complete RMPI with 50 U/ml IL2 (PeproTech) and CD3/CD28 Human T-activator dynabeads (Thermo Fisher) at a 1:1 bead:cell ratio. Aliquots of 1 Mio cells in 1 ml medium were grown overnight in 12- or 24-well plates (either TC-treated or coated with 5 μg/cm2 retronectin [Takara Bio]) and then transduced with VSV-pseudotyped lentivirus encoding for either the 1G4 or the A6 TCR. After 2 days (4 days after transduction), 1 ml of medium was exchanged, and IL2 was added to a final concentration of 50 U/ml. Beads were magnetically removed at day 5 post-transduction, and T cells from thereon were resuspended at 1 Mio/ml with 50 U/ml IL2 every other day. For functional experiments, T cells were used between 10 and 16 days after transduction."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "For co-culture experiments with U87 (a kind gift of Vincenzo Cerundolo, University of Oxford), 30,000 target cells were seeded in a TC-coated 96-well F-bottom plate and incubated overnight. Peptides were diluted in complete DMEM (10% FCS, 1% penicillin/streptomycin) to their final concentration and incubated with U87 cells for 1–2 hr at 37°C. Peptide-containing medium was removed and 60,000 TCR-transduced primary human CD8+ T cell blasts were added, spun for 2 min at 50 g, and incubated for 5 hr at 37 °C. At the end of the experiment, 10 mM EDTA was added and cells were detached by vigorous pipetting. Cells were stained for flow cytometry and analysed immediately, or fixed and stored for up to 1 day before running. Supernatants were saved for cytokine ELISAs."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Glass-bottom Sensoplates (96-well; Greiner) were washed with 1 M HCl/70% EtOH, thoroughly rinsed twice with PBS, and coated overnight at 4°C with 100 μl/well of 1 mg/ml biotinylated BSA (Thermo Fisher) in PBS. Plates were washed with PBS twice and incubated for at least 1 hr with 20 μg/ml streptavidin (Thermo Fisher) in 1% BSA/PBS at room temperature. Plates were washed again with PBS and biotinylated pMHC (in-house) was added for at least 1 hr at room temperature or overnight at 4°C. Plates were emptied and accessory ligand (CD58 or ICAM1, in-house) or PBS was added for the same duration as above. Upon completion, plates were washed once and stored for up to 1 day in PBS at 4°C."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "For stimulation, T cells were counted, washed once to remove excess IL2, and 75,000 cells in 180–200 μl complete RMPI were dispensed per well. Cells were briefly spun down at 50 g to settle to the bottom and subsequently incubated for 4 hr at 37°C. At the end of the experiment, 10 mM EDTA was added and cells were detached by vigorous pipetting. Cells were stained for flow cytometry and analysed immediately, or fixed and stored for up to 1 day. Supernatants were saved for cytokine ELISAs."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "We used peptide ligands that were either described previously (Aleksic et al., 2010; Lever et al., 2016; Ding et al., 1998; Ding et al., 1999; Gagnon et al., 2006; Borbulevych et al., 2009; Borbulevych et al., 2011) or designed by us based on the published crystal structures of these TCRs in complex with MHC (1G4: PDB 2BNQ, A6: PDB 1AO7)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Loading efficiency was evaluated by pulsing T2 cells for 1–2 hr at 37°C with a titration of peptides. Loading was assessed as upregulation of HLA-A2 (clone: BB7.2; Biolegend) by flow cytometry."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Tetramers were produced in-house using refolded monomeric, biotinylated pMHC, and streptavidin-PE (Biolegend) at a 1:4 molar ratio. Streptavidin-PE was added in 10 steps and incubated for 10 min while shaking at room temperature. Insoluble proteins were removed by brief centrifugation at 13,000 g and 0.05–0.1% sodium azide added for preservation. Tetramers were kept for up to 3 months at 4°C. Cells were stained for CD69 with clones FN50 (Biolegend). Staining for CD45 (clone HI30; Biolegend) was used to distinguish target and effector cells in co-culture assays with U87 cells. Cell viability staining was routinely performed for plate stimulations and U87 co-culture using fixable violet or near-infrared viability dyes (Zombie UV fixable viability kit [Biolegend], Zombie NIR fixable viability kit [Biolegend], eBioscience fixable viability dye eFluor 780 [Invitrogen]). Samples were analysed using a BD X-20 flow cytometer, and data analysis was performed using FlowJo v10 (BD Biosciences)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "where λ^=λ/γ and δ^=δ/γ. These rescalings ensure that the parameters are orthogonal and thus parameter space can be searched efficiently. The fast kinetics of the low-affinity pMHCs precluded direct measurements of koff, and instead, we noted that on-rates exhibit small variations between pMHCs that differ by few amino acids (Aleksic et al., 2010; Lever et al., 2016). Therefore, we estimated koff using KD and a fixed kon of 0.0447 μM-1s-1 taken as the average kon of NYE 9C, 9V, 3A, 3I, 3M, 3Y, and 6V previously measured at 37°C (Aleksic et al., 2010)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Each study often contained or cited a study that contained estimates of KD or koff for the specific TCR/pMHC interactions used in the study. We only included studies where monomeric SPR binding data was available to avoid multimeric binding parameters (e.g. when using tetramers). However, when analysing discrimination by other non-TCR receptors, we included binding data from various methods (e.g. SPR, radio labelled ligands) provided they were monomeric measurements. The use of SPR is important for weak interactions, such as TCR/pMHC, but various methods are available for higher-affinity interactions."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "We only included discrimination powers in final comparisons (Figures 3I–O–6F) that were statistically significant (p§lt;0.05) with the exception of the original and revised mouse TCR data (Figure 3I) because only few data were available. We found more studies that performed functional experiments on the original mouse TCRs compared to those that measured binding, and therefore to avoid introducing a potential bias in the analysis, we included only a single calculated α for each independent SPR measurement. In the case of the original mouse TCR data, we included four calculations of α (Figure 3—source data 1, ID 1, 2, 11, 14), and in the case of the revised mouse TCR data, we included six calculations of α (Figure 3—source data 1, ID 5, 13, 15, 17, 18, 19). We also note that discrimination powers obtained using artificial conditions, when antigen was presented on plates as recombinant protein or when presented on APCs but co-receptors were blocked, were not included in aggregated analyses (Figures 3I–O–6F)."
+  },
+  {
+    "tag": "ref",
+    "id": "bib19",
+    "text": "BorbulevychOY PiepenbrinkKH BakerBM 2011Conformational Melding Permits a Conserved Binding Geometry in TCR Recognition of Foreign and Self Molecular MimicsThe Journal of Immunology1862950295810.4049/jimmunol.100315021282516PMC3076315"
+  },
+  {
+    "tag": "ref",
+    "id": "bib34",
+    "text": "ColeDK BulekAM DoltonG SchauenbergAJ SzomolayB RittaseW TrimbyA JothikumarP FullerA SkoweraA RossjohnJ ZhuC MilesJJ PeakmanM WooldridgeL RizkallahPJ SewellAK 2016Hotspot autoimmune T cell receptor binding underlies pathogen and insulin peptide cross-reactivityJournal of Clinical Investigation1262191220410.1172/JCI8567927183389PMC4887163"
+  },
+  {
+    "tag": "ref",
+    "id": "bib36",
+    "text": "DaS IrvingMB PosevitzV HebeisenM Posevitz-FejfarA SarriaJCF Gomez-EerlandR ThomeM SchumacherTNM RomeroP SpeiserDE ZoeteV MichielinO RuferN 2010Evidence for a TCR affinity threshold delimiting maximal CD8 T cell functionJournal of Immunology1844936494610.4049/jimmunol.100017320351194"
+  },
+  {
+    "tag": "ref",
+    "id": "bib58",
+    "text": "HongJ GeC JothikumarP YuanZ LiuB BaiK LiK RittaseW ShinzawaM ZhangY PalinA LoveP YuX SalaitaK EvavoldBD SingerA ZhuC 2018A TCR mechanotransduction signaling loop induces negative selection in the thymusNature Immunology191379139010.1038/s41590-018-0259-z30420628PMC6452639"
+  },
+  {
+    "tag": "ref",
+    "id": "bib59",
+    "text": "HuangJ ZarnitsynaVI LiuB EdwardsLJ JiangN EvavoldBD ZhuC 2010The kinetics of two-dimensional TCR and pMHC interactions determine T-cell responsivenessNature46493293610.1038/nature0894420357766PMC2925443"
+  },
+  {
+    "tag": "ref",
+    "id": "bib60",
+    "text": "HuangJ BrameshuberM ZengX XieJ QjL YhC ValituttiS DavisM 2013A Single Peptide-Major Histocompatibility Complex Ligand Triggers Digital Cytokine Secretion in CD4+ T CellsImmunity3984685710.1016/j.immuni.2013.08.03624120362PMC3846396"
+  },
+  {
+    "tag": "ref",
+    "id": "bib61",
+    "text": "HuseM KleinLO GirvinAT FarajJM LiQJ KuhnsMS DavisMM 2007Spatial and temporal dynamics of T cell receptor signaling with a photoactivatable agonistImmunity27768810.1016/j.immuni.2007.05.01717629516"
+  },
+  {
+    "tag": "ref",
+    "id": "bib71",
+    "text": "LeverM MainiPK van der MerwePA DushekO 2014Phenotypic models of T cell activationNature Reviews Immunology1461962910.1038/nri372825145757"
+  },
+  {
+    "tag": "ref",
+    "id": "bib76",
+    "text": "LoWL ShahNH RubinSA ZhangW HorkovaV FallaheeIR StepanekO ZonLI KuriyanJ WeissA 2019Slow phosphorylation of a tyrosine residue in lat optimizes t cell ligand discriminationNature Immunology201481149310.1038/s41590-019-0502-231611699PMC6858552"
+  },
+  {
+    "tag": "ref",
+    "id": "bib89",
+    "text": "ReddyCC NiyogiSK WellsA WileyHS LauffenburgerDA 1996Engineering epidermal growth factor for enhanced mitogenic potencyNature Biotechnology141696169910.1038/nbt1296-16969634854"
+  },
+  {
+    "tag": "ref",
+    "id": "bib103",
+    "text": "van der MerwePA DavisSJ 2003Molecular interactions mediating T cell antigen recognitionAnnual Review of Immunology2165968410.1146/annurev.immunol.21.120601.14103612615890"
+  },
+  {
+    "tag": "ref",
+    "id": "bib104",
+    "text": "WangH KadlecekTA Au-YeungBB GoodfellowHES HsuLY FreedmanTS WeissA 2010ZAP-70: an essential kinase in T-cell signalingCold Spring Harbor Perspectives in Biology2a00227910.1101/cshperspect.a00227920452964PMC2857167"
+  },
+  {
+    "tag": "ref",
+    "id": "bib106",
+    "text": "WooldridgeL LaugelB EkerucheJ ClementM van den BergHA PriceDA SewellAK 2010CD8 Controls T Cell Cross-ReactivityThe Journal of Immunology1854625463210.4049/jimmunol.100148020844204PMC3018649"
+  },
+  {
+    "tag": "ref",
+    "id": "bib113",
+    "text": "ZhongS MalecekK LaJ YuZ Vega-Saenz de MieraE DarvishianF McGaryK HuangK BoyerJ CorseE ShaoY SaR RestifoNP OsmanI KrogsgaardM 2013T-cell receptor affinity and avidity defines antitumor response and autoimmunity in T-cell immunotherapyPNAS1106973697810.1073/pnas.122160911023576742PMC3637771"
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Experiments were performed with the murine transgenic TCR OT-I that binds to a peptide from ovalbumin (OVA) presented on H2Kb. Affinity was measured by SPR at 25°C. Affinity values were taken from Table 1 and Figure 3f. For the power analysis, we used KD values estimated from the binding kinetics (kinetic KD values). Potency measures for the OVA peptide and peptide variants were previously measured by Hogquist et al., 1995. OT-I T cell responses to OVA and single amino acid peptide variants (A2 and E1) were measured in a cell lysis assay. For the power analysis, we extracted the potency of the peptides by reading the P10 (peptide concentration producing 10% specific lysis) from dose-response curve in Figure 2. We excluded peptides that did not result in any response. We were able to include two data points with potency and affinity values for the power analysis producing α=12 (ID 1)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The OT-I TCR binding to the peptides derived from OVA was used with affinity and kinetics measured by SPR at 6, 25°C, and 37°C. Unusual biphasic binding was observed at 37°C for some peptides with two kon and two koff values reported based on a slow first and fast second step binding. Affinity values were provided in Table 1. To avoid picking the fast or slow phase parameters, we used the monophasic affinity data measured at 25°C for the power analysis. Potency data was taken from Hogquist et al., 1995. Three data points were included in the analysis producing α=10 (ID 2)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "OT-I TCR affinity and functional activity were measured when binding its wild-type ligand OVA or single amino acid variants (G4). Affinity values of TCR-pMHC interaction, measured by SPR at 25°C and 37°C, were provided in Table 1. Similar to Alam et al., 1999, TCR binding to MHC loaded with OVA showed biphasic binding at 37°C. As before, we used the data measured at 25°C for the power analysis. Functional data was generated with T cells isolated from OT-I transgenic mice. T cells were then stimulated with peptide-MHC complexes immobilised on plates. We read off potency data from dose-response curves in Figure 1. Only two data points were available for calculating the discrimination power α producing α=18 (ID 3)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "This paper contains affinity and kinetic data for 3.L2 TCR which recognises murine haemoglobin (Hb 64–76) measured by SPR at 25°C. We used koff values for the power analysis as KD values did not correlate (see main text). The D73 peptide was excluded from power analysis because this mutation impacted peptide loading to MHC. Potency data for this TCR was taken from Kersh and Allen, 1996. In the functional experiments, 3.L2 T cell hybridoma cells were incubated with antigen-presenting cells pulsed with peptides. Activation was measured by lysis of target cells. P40 values (ligand concentration at 40% lysis) of T cell response were given in Figure 4, and the corresponding dose-response curve was shown in Figure 5. Four data points were included in the analysis and produced α=6.8 (ID 11)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The 2B4 TCR used in this study recognises a moth cytochrome c (MCC) peptide bound to MHC class II molecule I-Ek. Table 2 provides KD values using SPR at 25°C. The potency of the peptides was determined with T cell hybridomas, stimulated by peptide-pulsed APCs, with activation determined by IL-2 production. For the power analysis, we extracted the P10 from the dose-response curve in Figure 1A. Two data points were available for the power analysis producing an α=6.7 (ID 14)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "In this study, the 3.L2 TCR as well as the M15 TCR, a high-affinity TCR engineered from the 3.L2 TCR system, were used, both TCRs bind to murine haemoglobin (Hb 64–76). Table 1 provides KD values using SPR with at 25°C. Functional data was generated by incubating T hybridoma cells with peptide-pulsed APCs and measuring IL-2 production. We extracted potency values from dose-response curves in Figure 1b and c. Potency values from both TCR systems produce α = 0.37 (ID 12)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "This paper contains binding and potency data for the 3.L2 TCR interacting with the WT haemoglobin peptide and a panel of altered peptide ligands. Table 2 provides KD values using SPR at 25°C. The paper does not contain new potency measurement, and therefore, we used potency values measured by Kersh and Allen, 1996 for the power analysis. This dataset produces α=3.2 (ID 13)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "This paper contains affinity data for 2B4 TCR binding to its cognate MCC antigen and a set of variant peptides. Table 1 contains KD values determined by SPR at 25°C. To compare with the original discrimination power, we used the original potency data (Lyons et al., 1996) to produce α = 2.8 (ID 17)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Revised data for 2B4 TCR is provided by Krogsgaard et al., 2003. Table 1 provides KD values measured by SPR at 25°C. For potency measurement, T cells from transgenic 2B4 mice were incubated peptide MHC molecules immobilised on plates, activation was measured by IL-2 production (EC50 values were given in Table 1). All ligands were included in the analysis, including those initially labelled as outliers in the publication. The resulting α is 1.2 (ID 16). We also calculated α with affinity data from this study and potency data from Lyons et al., 1996 (α = 2.2, ID 15)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Newell et al., 2011 studied the 2B4 and the 226 TCRs that bind to MCC. The KD values were measured by SPR at 25°C and provided in Figures 5D (2B4) and 6B (266). T cell hybridomas were incubated with peptide-pulsed cells and T cell activation measured by IL-2 production. P10 (concentration at 10% maximal IL-2 produced by wild-type 2B4) values given in Figure 5C (2B4) and 6 (266). Data for 2B4 produces α = 2.3 (ID 18). The 266 TCR was not included in the analysis because not enough data points were available."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The affinity and potency of the 2B4 and the related 5cc7 TCR, which both interact with MCC, were reported. As before, SPR was used to report KD values. Functional assays were done with blasted transgenic T cell incubated with peptide pulsed cells. To determine potency, IL-2 production was measured. We extracted both KD values and EC50 values from Figure 4C. Data for 2B4 produced α=0.95 (ID 19) and for 5cc7 produced α = 0.74 (ID 20)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The mouse P14 TCR that recognises a set of altered peptides from the lymphocytic choriomeningitis virus epitope gp3341 on murine class I MHC Db. All binding parameters were measured by SPR at 25°C. In functional assays, T cell cytotoxicity and IFN-γ production of blasted splenocytes from P14 TCR transgenic mice were measured when binding peptide-MHC. Cytotoxicity was measured in a cellular assay, IFNγ production in a plate assay. The E⁢C50 is used as potency measurement. All affinity and potency data were provided in Table 2. The α values for this TCR system are 2.1 for cytotoxicity assay (ID 21) and 1.3 for IFNγ assay (ID 22)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The MHC-II restricted B3K506 and B3K508 TCRs that recognise the 3K peptide were studied. The KD values were measured by SPR at 25°C. T cell response was measured by T cell proliferation and cytokine production after stimulation with peptide-pulsed APCs. All KD and EC50 values were given in Table S1. The B3K506 system produced α = 2.9 (ID 23) and α = 2.4 (ID 24) and the B3K508 system produced α = 2.9 (ID 25) and α = 2.5 (ID 26) for proliferation and TNFα production, respectively."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "A panel of TCRs, derived from the murine 2C TCR, that differed in their affinity to the SIYR peptide presented on H-2Kb was used. The KD values were measured by SPR at 25°C and provided in Table 1. Functional experiments were done with T cell hybridomas with or without CD8 expression. T cells were either incubated with peptides immobilised on plates or with antigen-presenting cells pulsed with peptides. For cellular experiments, EC50 values are given in Figure 3B and D (with and without CD8, respectively), for plate assays in Figure 4 (only CD8 negative data). Most of the ligands have a KD < 1 μM, hence the data points were excluded from the analysis (see inclusion/exclusion criteria in Materials and methods), and therefore, only few data points remained for the power analysis. CD8-negative T cell expressing TCRs stimulated in a plate assay produced α=0.12 (ID 27); however in the cellular assay; TCRs binding to the antigen with a KD < 1 µM were not activated in CD8-negative T cells (no data points to calculate α) (ID 28). TCRs in CD8-positive T cells stimulated in the cellular assay produce α=0.66 (ID 29)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The 2C high-affinity TCR and variants thereof binding to the QL9 and the altered QL9 peptide F5R were studied. The KD values were measured by SPR at 25°C. Functional data was generated with T cell hybridomas stimulated by peptide-pulsed APCs with T cell activation assessed by IL-2 production. KD and EC50 values were taken from Table 1. KD values below 1 µM were excluded from our power analysis. This data produces α = 2.7 (ID 30)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The authors report binding and functional responses of high-affinity 2C TCR variants interacting with SIY peptide on MHC Kb and QL9 peptide on Ld. In total, eight different TCR/pMHC ligand pairs were included. The KD values were measured by SPR at 25°C and provided in Table 1. KD values lower than 1 μM were excluded from the analysis. Functional assays were done with T cell hybridoma with and without CD8 expression with T cell activation assessed by IL-2 production in response to peptide-pulsed APCs. We extracted potency values as P50 from dose-response curves in Figure 3. TCR variants m6 and m13 when binding to SIY-Kb showed no activation (P50 > 100 µM). The calculated discrimination power is α = 4.7 for CD8-positive (ID 31) and α = 6.5 for CD8-negative T cells (ID 32)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "This study provided binding and affinity data for the 2C TCR with and without CD8. However, when applying our inclusion/exclusion criteria only a single data point was available, and therefore, we were unable to calculate α. The reason is that only a few interactions were measured by SPR and the majority of these produced KD values below 1 μM."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The 42F3 TCR recognises the class I MHC molecule H2-Ld presenting the peptide p2Ca. The KD values were measured by SPR at 25°C and potency data (EC50 of IL2 production after cellular stimulation) were taken from Table 1 and Supplementary Figure 3C. The resulting α is 0.15 (ID 33)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The TCR used in this study recognises the AH1 peptide which is derived from the endogenous retroviral protein gp70(423–431), a MHC class I restricted tumour-associated antigen. The authors used a set of AH1 variants with optimised affinities. The KD values were measured by SPR at 25°C and provided in Figure 1B. Functional data was generated with a T cell line incubated with peptide-pulsed APCs. EC50 values of a proliferation assay are provided in Figure 2B. The calculated discrimination power was α=5.2 (ID 34)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The 1G4 TCR used in this study binds the NY-ESO-1 (157–165) peptide loaded on MHC class I HLA-A2. The authors generated a panel of TCRs derived from the human 1G4 TCR that bind with higher affinity than the wild-type TCR. The KD values were measured by SPR at 25°C and provided in a table in Figure 1A. Potency was measured with a cytotoxicity assay, and we extracted the mean EC50 values from Figure 5E . A decrease in potency was observed for TCRs with an affinity of KD < 1 μM, which were excluded as per our exclusion criteria (see Materials and methods). This data produced α=0.67 (ID 35)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Here, TCR peptide MHC binding parameters and T cell function were investigated with a panel of 1G4 TCR variants binding to the NY-ESO-1 peptide. The KD values were measured by SPR and provided in Table 1. The functional response of T cells was determined in a cytotoxic T cell assay. We extracted the mean E⁢C50 values from Figure 4B. Data points with KD < 1µM are excluded from the power analysis. The resulting α is 0.69 (ID 36)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Here, the interaction between 1G4 TCR binding a set of variant NY-ESO-1 (157–165) peptides on MHC class I was studied. The KD values were measured by SPR at 37°C. The potency was determined by IFNγ production of T cell after stimulation by plate-immobilised pMHC or cytotoxicity by peptide-pulsed T2 APCs. The 1G4 TCR clone was used for both experiments. All affinity and EC50 values were given in Table S1. Discrimination power α for the 1G4 system is 0.6 (IFNγ, ID 37) and 1.6 (cytotoxicity assay, ID 38)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Experimental data was generated with the 1G4 and G10 TCR clones binding to a panel of peptide variants. The 1G4 TCR recognises the NY-ESO-1 antigen, and the G10 TCR recognises the HIV gag p17 antigen in the context of MHC class I HLA-A2. The KD values were measured by SPR at 37°C. Potency was determined by measuring IFNγ production in response to plate-immobilised recombinant pMHC. All KD and EC50 values were given in Table S1 and S2. For the 1G4 system, we found α = 0.55 (ID 39); and for the G10 system, we found α = 0.95 (ID 40)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The MHC-I-restricted 1E6 TCR reactive to preproinsulin (INS) and variants were studied. The KD values were measured by SPR at 25°C and 37°C and provided in Figure 2. All KD values lower than 1 μM were excluded from the power analysis (see Materials and methods). Functional assays were done with primary T cells responding to peptide-pulsed APCs and target cell lysis was measured for T cell activation. The EC50 was determined from the data in Figure 2K. We calculated α = 1.1 for KD values measured at 25°C (ID 41) and α = 1.2 for KD values measured at 37°C (ID 42)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The A6 and engineered variants recognising the Tax or HuD peptides were used. The KD values were measured by SPR at 25°C and provided in Figure 1A. T cell activation in response to peptide-pulsed APCs was assessed by CD107a expression and IFNγ production. Potency data was extracted as P20 for CD107a assay from dose-response curve in Figure 4C and as P10 for IFNγ assay from dose-response curve in Figure 5A. Data point with KD < 1 µM was not included in the power analysis. The resulting α is 2.0 (ID 43) and 2.2 (ID 44) for CD107 and IFNγ readout, respectively."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Seven TCRs specific to human melanoma gp2092M epitope (modified from gp100 (209–217)) were isolated from patients vaccinated with gp2092M. The KD values of these TCRs measured by SPR at 25°C were provided in Table 1. Functional activity was determined by IFNγ production and ERK phosphorylation of transduced CD8+ splenocytes mixed with peptide-pulsed APCs. Potency values were extracted from Figure S3A and C as P10. The L2G2 TCR, which appeared as an extreme outlier showing the highest potency despite having the lowest affinity, was excluded from the analysis. This data point is shown in the plots as an open circle and including it would have further reduced the estimates α. The calculated powers were α = 1.3 for IFNγ production (ID 45) and α = 1.2 for ERK phosphorylation assay (ID 46)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "T cell responses of a TCR specific to melanoma epitope gp100(280–288) were studied using a set of altered peptides. The KD values were measured by SPR at 25°C and provided in Table 2. Functional assays used gp100 TCR-transduced CD8+ T cells stimulated by peptide-pulsed APCs with T cell activation assessed by cytotoxic lysis and MIP-1β production. We extracted the potency data as P10 from dose-response curves in Figure 6. The resulting α values were 2.3 (lysis assay, ID 47) and 3.6 (MIP-1β production, ID 48)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "T cell responses were measured using variants of the Staphylococcus enterotoxin C3 (SEC3) super antigen. In addition, binding of a panel of mutated variants of the antibody F23.1 was also used. The KD values of SEC3 were measured by SPR and provided in Table 1. The KD values of the antibodies were provided in Table 1 of different publication (Andersen et al., 2001). T cell hybridomas, containing a NFAT-GFP expression cassette, were stimulated with SEC3 or antibody molecules immobilised onto plate surfaces to observe functional responses. We extracted all potency values as EC20 from Figure 4. According to our exclusion criteria (see Materials and methods), we did not include any data point where KD < 1 μM. The remaining data points generated with the SEC3 variants produced α=0.81 (ID 49) and with the F23.1 antibody variants produced α=0.66 (ID50)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "This study used TCRs specific for HLA-B35-HIV(Pol448–456) binding to a set of variant peptides. The KD values were measured by SPR at 25°C. T cell activation after stimulation with peptide pulsed on APCs was measured by CD69 expression. All KD and EC50 values were given in Figure S5C. We calculated α=0.19 (ID 51)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The MHC class I-restricted ILA1 TCR is specific for the human telomerase reverse transcriptase (hTERT) epitope ILAKFLHWL (hTERT540-548). The KD values were measured by SPR at 25°C and provided in Table 1. Three different assays were used to measure T cell activation: degranulation assay, CD107a expression, and IFNγ production. Each assay was performed using APCs expressing either WT MHC or CD8-null MHC which cannot bind CD8. Potency values for degranulation were given in Table 1, CD107a and IFNγ potency data was extracted from dose-response curves in Figure 7. For potency data measured with wild-type (WT) and CD8 null MHC, respectively, we calculated an α of 1.5 (WT, ID 52) and 2.5 (CD8 neg., ID 52) for degranulation, 2.2 (WT, ID 54) and 3.6 (CD8 neg., ID 55) for CD107a, and 2.2 (WT, ID 56) and 3.2 (CD8 neg., ID 57) for IFNγ production."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The ILA1 TCR was studied interacting with peptide variants. The KD values were measured by SPR at 25°C and provided in Table 1. T cell activation was measured by peptide-pulsed APCs and determined by MIP-1β, IFNγ, TNFα, and IL-2 production using intracellular cytokine staining. The potency values were read of as P50 from the dose-response curves in Figure 2. Authors suggested that the TCR shows a plateau at KD values < 5 μM. Therefore, we decided to exclude KD values < 5 μM from the power analysis to avoid underestimating the discrimination power α. The data produces α = 1.4 (ID 58), 0.77 (ID 59), 0.97 (ID 60), and 1.1 (ID 61) for MIP-1β, IFNγ, TNFα, and IL-2 production, respectively."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Four TCRs binding to the tumorigenic antigen NY-ESO-1 (60–72) were obtained from patients with melanomas expressing NY-ESO-1. The KD values were measured by SPR 25°C and given in Figure 2C. Functional response of TCRs to exogenous peptide stimulation was assessed by measuring IFNγ production of T cells incubated with NY-ESO-1-expressing melanoma cells. We extracted EC50 values from dose-response curves in Figure 1F. We calculated α=-0.59 (ID 62)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Seven DQ8-glia-a1-restricted TCRs isolated from celiac disease patients were characterised for their binding affinity to a-I- gliadin and their functional response. The KD values were measured by SPR at 25°C and provided in Figure 2 and S5. T cell activation was assessed by proliferation in response to peptide-pulsed APCs. We extracted P20 values from the dose-response curves in Figure 1 (black curve Q-Q). We calculated an α = 0.83 (ID 63)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The LC13 and SB27 TCRs were studied using an alanine scan. The KD values were measured by SPR and provided in Table S2. T cell activation was measured using Jurkat T cells expressing the TCR with CD69 and cytotoxicity assessed in response to peptide-pulsed APCs. Figure 1C and 1D showed the dose-response curves for CD69 upregulation for either CD8-positive or CD8-negative cells. We extracted the P30 as potency measure. EC50 of cytotoxicity assay was given in Figure 2 for LC13 and Figure S2 for SB27. Potency values from CD69 produced α = 1.9 (ID 64) for CD8-positive cells and α= 7.8 (ID 65) for CD8-negative cells. Lysis assays produced α = 4.1 (ID 66) for the LC13 and α = 0.11 (ID 67) for SB27 TCR."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "TCRs specific to HIV Gag293 protein were isolated from patients infected with HIV. The KD values were measured by SPR and provided in Table 3. T cell activation was assessed using TCR-transduced J76 cells measuring CD69 expression in response to peptide-pulsed APCs. We extracted the mean EC50 values from Figure 6D. We calculated α=1.0 (ID 68)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The MEL5 and MEL187.c5 TCRs were studied that bind the MART-1 antigen and variants thereof. The KD values were measured by SPR at 25°C and provided in Table 1. T cell activation was measured by MIP-1β production in response to peptide-pulsed APCs. We extracted potency values as P50 from dose-response curves in Figure 2 and S1. Because responses to peptides were measured in separate experiments, potency data is normalised to wild-type peptide. This produced α=2.3 (ID 69)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The MEL5, MEL187.c5, DMF4, and DMF5 were studied that recognise the MART-1 antigen. Two overlapping peptides were used: nonapeptide MART-1 (27–35) and decapeptide MART-1 (26–35). The KD values were measured by SPR at 25°C and provided in Table 1. T cell activation was assessed using primary human T cells responding to peptide-pulsed APCs with MIP-1β used as a marker of T cell activation. We determined P30 directly from does-response curves in Figure 1A. Data produced α=4.5 (ID 70)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Engineered IL-2 variants with increased binding affinity for theIL-2 receptor subunit β (IL-2Rb) were studied. The KD values for IL-2 variants to IL-2Rβ are given in Supplementary Figure 3 and determined by SPR at 25°C. As only the affinities to a single subunit were varied between ligands, potency was plotted over these KD values. Functional experiments were performed with either CD25-negative human Natural Killer cells or CD25-negative murine T cells. We extracted the EC50 values as a measure of potency from dose-response curves in Figure 3a and 3e. We calculated α = 0.55 (ID 1) for experiments done with Natural Killer cells and α = 0.74 (ID 2) for T cells."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Study of IFN1 receptor activation with engineered higher-affinity type I IFNs. Affinity constants for peptides to each receptor subunit were measured by SPR. To get the effective KD, we multiplied KD of IFN-αR1 binding with KD of IFN-αR2 binding (R1xR2) Ligand activity was measured by STAT phosphorylation, antiviral activity, and antiproliferation activity. All affinity and EC50 values were provided in Table S2. The data produced α=0.024 for STAT1 phosphorylation (ID 9), α=0.034 for antiviral activity (ID 10), and α = 0.50 (ID 11) for the anti-proliferation assay."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Paper contains data on the c-Kit receptor tyrosine kinase which is activated by the SCF. Affinity and functional response of the receptor to SCF variants was studied. Binding parameters were measured by SPR and provided in Figure 1F. Cell activation after stimulation with ligands was determined by the amount of ERK and AKT phosphorylation (pERK and pAKT). We extracted the potency data for each variant as EC50 from dose-response curves in Figure 2D and 2E. We calculated α = 0.83 (ID 15) and α = 0.88 (ID 16) for pERK and pAKT measurements, respectively."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "This study characterised a panel of CARs that bind to the ErbB2 surface protein. CARs were constructed by linking the various anti-ErB2 single-chain variable fragments to the CD8αD hinge and transmembrane domain followed by the 4-1BB and CD3ζ intracellular signalling domains. The KD values were measured by SPR and provided in Table S1. For functional experiments, CAR T cells were incubated with ErbB2-expressing cells. We obtained potency data by using CD107a expression and proliferation assay data in Figure 2A and C to the respective plot dose-response curves. P50 values were extracted from these plots. The resulting α values are 1.1 for CD107 (ID 26) and 0.64 for proliferation assay (ID 27)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The study used the HyHEL10 and D1.3 BCRs, which have a high affinity to the hen egg lysozyme (HEL) and variants thereof. The KD values were measured by SPR at 25°C, and dissociation rates were provided in Table 1. For functional experiments, the ability of B cells to mediate HEL presentation to T cell hybridomas after stimulation with mutant lysozymes was determined by measuring IL-2 production of T cells specific to HEL. We extracted the potency data from doseresponse curves in Figures 3 and 4 as EC50. The authors described an affinity floor for the B cell receptor when the dissociation rate was below 10-4 s-1 so that potency did not longer decrease for these interactions. To avoid underestimating α, we did not include these higher-affinity ligands in the power analysis. The resulting α values were α = 1.4 for the D1.3 BCR (ID 29) and α = 1.3 for the HyHEL10 BCR (ID 30)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "– The authors state that when fitting the 2-parameter Hill-function to the TCR binding curves, that different combinations of Bmax and KD are suggested to explain the data if Bmax was estimated. The coefficient of variance was used to assess this effect but wouldn't it be more straightforward to use methods such as Profile likelihood analysis to clearly address parameter non-identifiability?"
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "1. Please further clarify and explain the extrapolation of the connection between Bmax of the TRC-peptide binding curve and W6/32 binding curves based on Figure 1D."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "2. Please address the potential overfitting issue in the KPR model, and the parameter value spread in Figure S8."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "i. A detailed description of the SPR-protocol including primary data would render the reading more complete. The methods section is already fairly detailed, but it would be more than helpful to understand how the streptavidin and pMHC-bio run, as well as the TCR-runs and the final W6/32 run were computed against one another to arrive a the Bmax of low affinity ligands. TCR-binding to pMHC (even if saturated) will result in a different SPR signal than antibody binding (given the different molecular masses). Since this methodology is central to the manuscript, I would argue in favor of introducing it more thoroughly in Figure 1A (and B, with representative raw data leading to corrected Bmax). This may also help to understand why the addition of W6/32 in both panels of figure 1B led to a much lower signal than the highest concentration of TCR."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "iv. The Discussion section would benefit from a short paragraph reflecting on work on TCR-pMHC binding as measured within the confines of the immunological synapse. Reasons are that binding constants (if there is such a thing in synapses) differ in some cases substantially from what has been measured via SPR for reasons that are still being debated. Clearly, one major strength of this manuscript is that cellular behavior correlates with SPR measurements of TCR-pMHC binding. Nonetheless scenarios, especially those involving KP, may turn out differently in case serial TCR engagement by few antigens is supported."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "1. One remaining concern mainly addresses the interpretation of the relationship between the values of Bmax and the AB binding to pMHC in Figure 1D. The data suggest that this linear relationship could be extrapolated to very weak pMHC's but it does not need to be the case (see also comment reviewer 2). Although this is acknowledged in your statement (line 95-96), we recommend to discuss this in more detail. It seems that this assumption mainly drives the selection for the method to analyze the low affinities, with Bmax constrained by this relationship. We would recommend to acknowledge this in your discussion or provide additional evidence."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "I am still somewhat confused about the correspondence between the TCR Bmax of binding to pMHCs in figure 1 B, but I think the importance of the results is compelling, and I am happy if this debate plays out in the literature rather than here. To summarize:"
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "We have now increased the amount of information we provide when describing data fitting. In the case of fitting the SPR data to determine KD, we have revised the Results section and the methods section. In relation to fitting the kinetic proofreading model, we have explicitly stated the number of fitted parameters and the number of data points, which supports our conclusions based on ABC-SMC that we can uniquely identify the KP parameters."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "– The authors state that when fitting the 2-parameter Hill-function to the TCR binding curves, that different combinations of Bmax and KD are suggested to explain the data if Bmax was estimated. The coefficient of variance was used to assess this effect but wouldn't it be more straightforward to use methods such as Profile likelihood analysis to clearly address parameter non-identifiability?"
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Thank you for this suggestion that we have now investigated. We produced the profiles for the high affinity (where we expect to identify both KD and Bmax) and the low affinity (where we do not expect to identify these parameters) pMHC data from Fig 1C in the main text. As the reviewer suggests, these profiles suggest that KD and Bmax cannot be accurately determined for the low affinity data (see red lines in the top row of sa2fig1). We wondered why GraphPad Prism did not detect any issues when fitting the low affinity data as it produces estimates for KD and Bmax without any cautionary prompts. This program is heavily used by the scientific community and it can detect parameter identifiable issues. We noticed that when plotting the same profiles but with a log-scale for the y-axis, a clear trough is visible even for the low affinity data (see red lines in the bottom row of sa2fig1). This likely explains why Prism does not flag the fit and highlights that interpreting these profiles in our case can be difficult and possibly subjective. On balance, given the target audience of our manuscript and the challenge of explaining profile likelihood and how they should be interpreted, we think that it may be easier to explain the issue with the more familiar CV."
+  },
+  {
+    "tag": "fig",
+    "id": "sa2fig1",
+    "text": "Author response image 1.Profiles for the data in main text Fig 1C for KD (left) and Bmax (right) when using a linear y-axis (top row) or log y-axis (bottom row).The y-axis is scaled such that the minima is at one, this facilitates comparing the profiles between high affinity and low affinity data sets."
+  },
+  {
+    "tag": "title",
+    "id": null,
+    "text": "Profiles for the data in main text Fig 1C for KD (left) and Bmax (right) when using a linear y-axis (top row) or log y-axis (bottom row)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "1. Please further clarify and explain the extrapolation of the connection between Bmax of the TRC-peptide binding curve and W6/32 binding curves based on Figure 1D."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "We have modified the 1st Results section to explicitly discuss the quantitative relationship between Bmax and W6/32 binding. This relationship is expected to be independent of the TCR affinity to pMHC because Bmax is the amount of TCR binding when all pMHC are bound (which is independent of affinity) and W6/32 is a conformationally-sensitive antibody that does not depend on the precise peptide sequence. These two assumptions are borne out since we have used different affinity pMHCs to generate the standard curve."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "2. Please address the potential overfitting issue in the KPR model, and the parameter value spread in Figure S8."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "i. A detailed description of the SPR-protocol including primary data would render the reading more complete. The methods section is already fairly detailed, but it would be more than helpful to understand how the streptavidin and pMHC-bio run, as well as the TCR-runs and the final W6/32 run were computed against one another to arrive a the Bmax of low affinity ligands. TCR-binding to pMHC (even if saturated) will result in a different SPR signal than antibody binding (given the different molecular masses). Since this methodology is central to the manuscript, I would argue in favor of introducing it more thoroughly in Figure 1A (and B, with representative raw data leading to corrected Bmax). This may also help to understand why the addition of W6/32 in both panels of figure 1B led to a much lower signal than the highest concentration of TCR."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "(iv) The Discussion section would benefit from a short paragraph reflecting on work on TCR-pMHC binding as measured within the confines of the immunological synapse. Reasons are that binding constants (if there is such a thing in synapses) differ in some cases substantially from what has been measured via SPR for reasons that are still being debated. Clearly, one major strength of this manuscript is that cellular behavior correlates with SPR measurements of TCR-pMHC binding. Nonetheless scenarios, especially those involving KP, may turn out differently in case serial TCR engagement by few antigens is supported."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "We have now included a new discussion paragraph explaining that there are occasional exceptions where the 3D binding parameters measured by SPR have not correlated with the T cell response and possible explanations for why this may be the case."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "1. One remaining concern mainly addresses the interpretation of the relationship between the values of Bmax and the AB binding to pMHC in Figure 1D. The data suggest that this linear relationship could be extrapolated to very weak pMHC's but it does not need to be the case (see also comment reviewer 2). Although this is acknowledged in your statement (line 95-96), we recommend to discuss this in more detail. It seems that this assumption mainly drives the selection for the method to analyze the low affinities, with Bmax constrained by this relationship. We would recommend to ackknowledge this in your discussion or provide additional evidence."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "We apologise for this and believe that there is some confusion over what the TCR Bmax (y-axis) and W6/32 binding (x-axis) are showing in Figure 1D and their relationship to the TCR/pMHC affinity. The Bmax is the RU of TCR binding when all pMHC are bound, which is independent of TCR/pMHC affinity. It is the ability to experimentally estimate Bmax that is practically limited by a low TCR/pMHC affinity. The W6/32 antibody binds all folded peptide-loaded human MHC class I molecules, independent of the specific peptide, and again, this is independent of TCR/pMHC affinity. In Figure 1D, we show that Bmax and W6/32 correlate, which is expected and validates the use of W6/32 binding to estimate the Bmax."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "The individual data points that make up Figure 1D include different pMHCs but also the same pMHC produced in different protein preparations and immobilised at different levels. This is why, for example, NYE 9V appears 6 times on this plot with a wide range of W6/32 binding and Bmax values (larger values are obtained when more of this pMHC is immobilised on the surface). What the figures shows is that even when we have a large number of different pMHCs that bind their respective TCRs with different affinities, it is the level of pMHC immobilisation, not their affinity for a given TCR, that determines where along this line they reside. When we immobilised lower-affinity pMHCs, the W6/32 binding was always within the range used in this standard curve. Therefore, when determining their Bmax we always interpolated within the standard curve but never extrapolated. This means that we always stayed within the linear part of the curve."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "I am still somewhat confused about the correspondence between the TCR Bmax of binding to pMHCs in figure 1 B, but I think the importance of the results is compelling, and I am happy if this debate plays out in the literature rather than here. To summarize:"
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "We think the confusion is partly because of the error in the labelling of the legend in Figure 1D and we thank you for bringing this to our attention (it’s now fixed). The TCR Bmax and W6/32 binding is not dependent on the specific peptide but rather how much correctly-folded pMHC has been immobilised on the surface. This is why NYE 9V appears 6 times in this plot with large variations of W6/32 binding and Bmax (see response to point 1 above). Put differently, the reason W6/32 binding is different for different pMHCs is because there is a different amount of correctly folded pMHC on the chip surface even though in many cases we aimed to put a similar amount of pMHC on the chip surface (in some cases, such as for NYE 9V, we purposely put different amounts to check that W6/32 and Bmax continued to be related). Whenever we used this curve to estimate Bmax for lower-affinity pMHCs, the amount of W6/32 binding was always within the standard curve and therefore, we always stayed within the linear regime. We agree that had we immobilised very low levels of pMHCs (or very high levels) such that the W6/32 binding was outside of the linear regime, we would need to extrapolate and that could potentially introduce large errors (but we never did this)."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "As explained above, we performed experiments using the same pMHC immobilised at different levels on the chip surface and repeated the experiments when using independent protein preparations. This results in variations in the amount of correctly-folded pMHC that is on the chip surface that the TCR and the W6/32 antibody can recognise leading to variations in Bmax and W6/32 binding RU. This confusion is a result of the incorrect legend labelling, which is now corrected and we apologise for this."
+  }
+]

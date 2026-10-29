@@ -1,0 +1,16 @@
+{
+  "pdb": "5c0c",
+  "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_5c0c.npz",
+  "prediction_sha256": "b2fe4eaea10ff75599b5f8a98e383c545c563be2737ea7fe99a53936dfb4ff27",
+  "structure": "E:\\data\\ITrace\\trajectories\\5c0c_run1_topology.pdb",
+  "structure_sha256": "9e6aa2f4176acdf43f6324f666537367a26ac80d780ad9c3a549321acbd9f286",
+  "chain_roles": {
+    "A": "tcr_alpha",
+    "B": "tcr_beta",
+    "C": "mhc",
+    "D": "b2m",
+    "E": "peptide"
+  },
+  "label_mean_source": "NPZ target first two columns",
+  "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+}

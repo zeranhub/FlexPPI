@@ -1,0 +1,120 @@
+{
+  "status": "layout_recommended_pending_new_composite_visual_QA",
+  "scope": "Read-only review of all five user attachment images; no source data or manuscript edited.",
+  "attachments_reviewed": [
+    "codex-clipboard-91e792f3-55bd-43f6-aeb0-beae0d2f2d46.png",
+    "codex-clipboard-879eb3cc-87c8-4638-89aa-a155b3a4217c.png",
+    "codex-clipboard-4ff8b9df-7bed-46cf-a549-0d2267dcfb49.png",
+    "codex-clipboard-ef2b604f-d5f1-4567-a4d2-2a1aad356037.png",
+    "codex-clipboard-165d2fa0-4a08-4d31-9d9a-64e70db1a2e9.png"
+  ],
+  "canvas_mm": {
+    "width": 183,
+    "height": 208
+  },
+  "layout": {
+    "outer_margins_mm": {
+      "top": 4,
+      "bottom": 3,
+      "left": 4,
+      "right": 3
+    },
+    "rows": [
+      {
+        "top_mm": 4,
+        "height_mm": 51,
+        "panels": [
+          "a",
+          "b"
+        ],
+        "a_width_mm": 109,
+        "gutter_mm": 7,
+        "b_width_mm": 60
+      },
+      {
+        "top_mm": 59,
+        "height_mm": 39,
+        "panels": [
+          "c"
+        ],
+        "full_width": true
+      },
+      {
+        "top_mm": 102,
+        "height_mm": 29,
+        "panels": [
+          "d"
+        ],
+        "full_width": true
+      },
+      {
+        "top_mm": 135,
+        "height_mm": 31,
+        "panels": [
+          "e"
+        ],
+        "full_width": true
+      },
+      {
+        "top_mm": 170,
+        "height_mm": 31,
+        "panels": [
+          "f"
+        ],
+        "full_width": true
+      }
+    ],
+    "rationale": "Keep all residue-dense line plots and heatmaps full width. Only the structural composite and ten-position peptide curve share a row. Do not place the 45-position CDR track beside the 23-site Hchi bar chart.",
+    "panel_scope": {
+      "a": "Real complex overview + one close-up of Q72–beta53/Gly54; approximate 40/60 mm split within 109 mm. Real molecular close-up remains the first-row visual anchor.",
+      "b": "All four peptide RMSF states and all ten peptide positions; compact two-column legend. P4/P10 vertical guide labels replace prose.",
+      "c": "Both model states, all 45 aligned residues across all six CDRs. Separate CDR segments, with beta-CDR2 subtle highlight; Gly54 label stays concise.",
+      "d": "All 23 valid interface positions ranked by delta-Hchi. Q72 receives teal emphasis and other positions a common neutral.",
+      "e": "Full 3-by-45 TCR delta-RMSF heatmap. Six CDR group headers, all residue ticks, vertical colorbar at far right.",
+      "f": "Full pMHC delta-Hchi heatmap. HLA and peptide group headers; all original positions retained, and invalid/unmatched cells visually distinguished from zero."
+    }
+  },
+  "fonts_pt": {
+    "panel_letters": 9,
+    "titles": 7.5,
+    "axis_labels": 7,
+    "ticks": 6.2,
+    "heatmap_residue_labels": 6.2,
+    "legends": 6.5,
+    "minimum_any_text": 6
+  },
+  "palette": {
+    "MEL5": "#D2872A",
+    "alpha24beta17": "#71458F",
+    "peptide_G4A": "#4C78A8",
+    "peptide_I7A": "#39836E",
+    "HLA_structure_and_Q72": "#2A7F86",
+    "TCRalpha_structure": "#A7A7AB",
+    "other_interface_bars": "#ADB6BE",
+    "delta_negative": "#3F77A8",
+    "delta_zero": "#F8F7F3",
+    "delta_positive": "#B75D69",
+    "not_comparable": "#D0D0D0"
+  },
+  "color_semantics": [
+    "Use orange open circles for MEL5 and purple filled squares for alpha24beta17 everywhere absolute states are compared.",
+    "Use two additional restrained colors and distinct dashed/dotted lines for peptide mutants. Retain four-state legend labels that specify backgrounds.",
+    "Heatmaps must share negative/positive meaning and visual diverging palette, but keep independent numerical color scales for RMSF (A) and Hchi (nats).",
+    "The bar chart highlights Q72 in the same teal used for its molecular label, without implying those bars represent the state colors.",
+    "Do not recolor missing Hchi/invalid comparisons white, because white has the legitimate value zero."
+  ],
+  "specific_risks": [
+    "Do not reuse the old 23/23/22 valid-count note or four-state labels without verifying exact source table.",
+    "Close-up distances and atom labels must remain legible at final 183 mm width; omit decorative prose before reducing atom text below 6 pt.",
+    "Cropping screenshot panels would leave inconsistent fonts, axes and partial heatmap colorbars. Redraw quantitative panels from verified numerical tables.",
+    "Heatmap colorbar belongs vertically at right to save height; include its quantity and unit so the two distinct scales are not confused.",
+    "Full-width curve/heatmap alignment should preserve intuitive CDR boundaries, even where pMHC width differs."
+  ],
+  "pass_conditions_for_new_composite": [
+    "All six panels retain the data scopes shown in user attachments.",
+    "No title or annotation is smaller than 6 pt at print dimensions.",
+    "No panel letter/title overlap and no inter-row residue-label collision.",
+    "At 183 mm printed width the local Q72 contact labels, all heatmap residue IDs, and four-state legend are readable.",
+    "Shared colors encode shared conditions and continuous colors encode a different quantity with explicit units."
+  ]
+}

@@ -1,0 +1,498 @@
+{
+  "status": "passed",
+  "date": "2026-10-22",
+  "new_inference": 0,
+  "new_MD": 0,
+  "new_training": 0,
+  "main_manuscript_edited": false,
+  "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+  "training_records": 2430,
+  "training_ITrace": 0,
+  "fixed_pairs": [
+    [
+      "3hg1",
+      "4jff",
+      "TCR affinity maturation"
+    ],
+    [
+      "4jff",
+      "4jfd",
+      "peptide G4A"
+    ],
+    [
+      "4jff",
+      "4jfe",
+      "peptide I7A"
+    ]
+  ],
+  "fixed_regions": [
+    "complete_peptide",
+    "all_six_CDR",
+    "four_state_union_pMHC_interface",
+    "CDR1α",
+    "CDR2α",
+    "CDR3α",
+    "CDR1β",
+    "CDR2β",
+    "CDR3β"
+  ],
+  "four_state_union_interface_ref_position_n": 30,
+  "MD_target_mapping_checks": [
+    {
+      "pdb": "3hg1",
+      "source_target_first2_columns_verified": true,
+      "checks": [
+        {
+          "metric": "rmsf",
+          "target_column": 0,
+          "checked": 824,
+          "max_abs_mean_error": 4.481718995918982e-07
+        },
+        {
+          "metric": "hchi",
+          "target_column": 1,
+          "checked": 717,
+          "max_abs_mean_error": 1.1918448761250033e-07
+        }
+      ]
+    },
+    {
+      "pdb": "4jff",
+      "source_target_first2_columns_verified": true,
+      "checks": [
+        {
+          "metric": "rmsf",
+          "target_column": 0,
+          "checked": 828,
+          "max_abs_mean_error": 3.746716625840918e-07
+        },
+        {
+          "metric": "hchi",
+          "target_column": 1,
+          "checked": 720,
+          "max_abs_mean_error": 1.1911317798762866e-07
+        }
+      ]
+    }
+  ],
+  "target_column_meaning": {
+    "0": "RMSF Angstrom",
+    "1": "joint sidechain Hchi nats",
+    "2": "unused third metric; not Hchi"
+  },
+  "metadata": [
+    {
+      "pdb": "3hg1",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_3hg1.npz",
+      "prediction_sha256": "5a938a40d8c4a0804d06a3699a8e29299c69214cb47dd54c13e28d796b50c230",
+      "structure": "E:\\data\\ITrace\\trajectories\\3hg1_run1_topology.pdb",
+      "structure_sha256": "7498db57b5ed1db5438170241380baf21e395bba8498952c6d6d0fb6ebe0aa2d",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    },
+    {
+      "pdb": "4jff",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_4jff.npz",
+      "prediction_sha256": "9a2727acb36db166d3fde39ae47a59a067cb4cd7f1c07d4724a892131482bf57",
+      "structure": "E:\\data\\ITrace\\trajectories\\4jff_run1_topology.pdb",
+      "structure_sha256": "51a1f3de5f305faca6ca83cc4c40a5b26912e19d88170ab30baaf9a25b81cf7f",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    },
+    {
+      "pdb": "4jfd",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_4jfd.npz",
+      "prediction_sha256": "990446eb8ee9601fa5b2c49aef194292615f31f8cb6377c66fb30cd177b5705d",
+      "structure": "E:\\data\\ITrace\\trajectories\\4jfd_run1_topology.pdb",
+      "structure_sha256": "942055778791ff763728a8391bcc0257137a9f7dc4cd5f98aaa37bf9b805611c",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    },
+    {
+      "pdb": "4jfe",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_4jfe.npz",
+      "prediction_sha256": "c7039c04e2eef2d7400aab122387f59de64004b074c43cf7f4e40c910e1f4364",
+      "structure": "E:\\data\\ITrace\\trajectories\\4jfe_run1_topology.pdb",
+      "structure_sha256": "630c1da476ad581283310a051f4ece941901c60853f1c6a00d288696eec3e741",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    }
+  ],
+  "original_prediction_manifest_records": [
+    {
+      "variant": "full",
+      "fold": 0,
+      "sample_id": "itrace_3hg1",
+      "dataset": "itrace",
+      "cache_path": "/root/flexppi_completion_20261010/family_folds/evaluation/full/itrace_3hg1.npz",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "input_sha256": "4821006d6b94fa5fb210a70b097ffc7155bad492fd9e6f4b433a877b0bc49bc0",
+      "label_sha256": "b7282dbe845c4bb106cf55a308895336759393e0fc6e7ea6d85777ec61458c82",
+      "record": {
+        "sample_id": "itrace_3hg1",
+        "dataset": "itrace",
+        "structure_path": "/root/flexppi_revision_20261002/corrected_training_v1/dataset/structures/itrace_3hg1.pdb",
+        "label_path": "/root/flexppi_revision_20261002/corrected_training_v1/dataset/labels/itrace_3hg1.npz",
+        "trajectory_paths": [],
+        "temperature": 310.0,
+        "window_ns": 200.0,
+        "target_chains": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "source_group": "itrace_complex",
+        "metadata": {
+          "analysis_only": false,
+          "biological_system": "pdb:3HG1",
+          "cluster_id": "biogroup_1e0ec68fa244",
+          "complex_signature": "complex_0c34587364245035",
+          "fold": 0,
+          "hchi_labels": 692,
+          "hchi_replica_count_histogram": {
+            "3": 692
+          },
+          "historical_diagnostic_use": true,
+          "label_protocol": "canonical_His_ILE_CD1_sequence_mapped_replicas_v1",
+          "label_status": "ready",
+          "original_record_sha256": "d6fe64b1c09e19a7b9151ce6aa9a6ed02967865accc7cbf8e0f9b50c1ee0af91",
+          "pdb_id": "3HG1",
+          "pdb_ids": [
+            "3HG1"
+          ],
+          "ppi_classification": "not_audited",
+          "quality_tier": "training_ready",
+          "replicates": 3,
+          "residue_count": 824,
+          "sequence_clusters": [
+            "V2SEQ002860_03",
+            "V2SEQ002876_02",
+            "V2SEQ003021_01",
+            "V2SEQ003103_00"
+          ],
+          "source_split_version": "state_rmsf_hchi_v2_performance_first",
+          "split_version": "all_chain_family_disjoint_v14_20261010",
+          "training_metrics": [
+            "rmsf",
+            "chi_entropy"
+          ],
+          "training_role": "performance_first_pool",
+          "used_for_failure_discovery": true,
+          "original_combination_fold": 2,
+          "family_component_id": "family_9cd89939c749e38c"
+        }
+      }
+    },
+    {
+      "variant": "full",
+      "fold": 0,
+      "sample_id": "itrace_4jff",
+      "dataset": "itrace",
+      "cache_path": "/root/flexppi_completion_20261010/family_folds/evaluation/full/itrace_4jff.npz",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "input_sha256": "d9d88e83d6381e03905b0cfdd39ee9bffc3d3d64c9b7981a7867b45610601b7e",
+      "label_sha256": "c76c236281717ad58f7a98410fbef699c2a6544e5eb5f735b3efc25b399d5ab4",
+      "record": {
+        "sample_id": "itrace_4jff",
+        "dataset": "itrace",
+        "structure_path": "/root/flexppi_revision_20261002/corrected_training_v1/dataset/structures/itrace_4jff.pdb",
+        "label_path": "/root/flexppi_revision_20261002/corrected_training_v1/dataset/labels/itrace_4jff.npz",
+        "trajectory_paths": [],
+        "temperature": 310.0,
+        "window_ns": 200.0,
+        "target_chains": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "source_group": "itrace_complex",
+        "metadata": {
+          "analysis_only": false,
+          "biological_system": "pdb:4JFF",
+          "cluster_id": "biogroup_1d6288aa5947",
+          "complex_signature": "complex_6cbf83a1b9e6159d",
+          "fold": 0,
+          "hchi_labels": 697,
+          "hchi_replica_count_histogram": {
+            "3": 697
+          },
+          "historical_diagnostic_use": true,
+          "label_protocol": "canonical_His_ILE_CD1_sequence_mapped_replicas_v1",
+          "label_status": "ready",
+          "original_record_sha256": "8c4581693e99c3b8fc55c2253425af5c1e79cf380658b475911210832b8ae734",
+          "pdb_id": "4JFF",
+          "pdb_ids": [
+            "4JFF"
+          ],
+          "ppi_classification": "not_audited",
+          "quality_tier": "training_ready",
+          "replicates": 3,
+          "residue_count": 828,
+          "sequence_clusters": [
+            "V2SEQ002860_03",
+            "V2SEQ002876_02",
+            "V2SEQ003021_01",
+            "V2SEQ003103_00"
+          ],
+          "source_split_version": "state_rmsf_hchi_v2_performance_first",
+          "split_version": "all_chain_family_disjoint_v14_20261010",
+          "training_metrics": [
+            "rmsf",
+            "chi_entropy"
+          ],
+          "training_role": "performance_first_pool",
+          "used_for_failure_discovery": true,
+          "original_combination_fold": 3,
+          "family_component_id": "family_9cd89939c749e38c"
+        }
+      }
+    },
+    {
+      "variant": "full",
+      "fold": 0,
+      "sample_id": "itrace_4jfd",
+      "dataset": "itrace",
+      "cache_path": "/root/flexppi_completion_20261010/family_folds/evaluation/full/itrace_4jfd.npz",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "input_sha256": "2b70d3346f1800e06c689e06a092800e732e572f6df572d73987abb7b8e22469",
+      "label_sha256": "2655374b514536602ff9957a286a4d337b9684448d7e7fbe02d4bef018c9a40f",
+      "record": {
+        "sample_id": "itrace_4jfd",
+        "dataset": "itrace",
+        "structure_path": "/root/flexppi_revision_20261002/corrected_training_v1/dataset/structures/itrace_4jfd.pdb",
+        "label_path": "/root/flexppi_revision_20261002/corrected_training_v1/dataset/labels/itrace_4jfd.npz",
+        "trajectory_paths": [],
+        "temperature": 310.0,
+        "window_ns": 200.0,
+        "target_chains": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "source_group": "itrace_complex",
+        "metadata": {
+          "analysis_only": false,
+          "biological_system": "pdb:4JFD",
+          "cluster_id": "biogroup_f313fea3ec41",
+          "complex_signature": "complex_53b7074fc7e8f9e1",
+          "fold": 0,
+          "hchi_labels": 696,
+          "hchi_replica_count_histogram": {
+            "3": 696
+          },
+          "historical_diagnostic_use": true,
+          "label_protocol": "canonical_His_ILE_CD1_sequence_mapped_replicas_v1",
+          "label_status": "ready",
+          "original_record_sha256": "8eadca355d7ed1da3dc23b0295367ee32dcdf6161e97b0bd7c58bb2e99423076",
+          "pdb_id": "4JFD",
+          "pdb_ids": [
+            "4JFD"
+          ],
+          "ppi_classification": "not_audited",
+          "quality_tier": "training_ready",
+          "replicates": 3,
+          "residue_count": 827,
+          "sequence_clusters": [
+            "V2SEQ002860_03",
+            "V2SEQ002876_02",
+            "V2SEQ003021_01",
+            "V2SEQ003103_00"
+          ],
+          "source_split_version": "state_rmsf_hchi_v2_performance_first",
+          "split_version": "all_chain_family_disjoint_v14_20261010",
+          "training_metrics": [
+            "rmsf",
+            "chi_entropy"
+          ],
+          "training_role": "performance_first_pool",
+          "used_for_failure_discovery": true,
+          "original_combination_fold": 1,
+          "family_component_id": "family_9cd89939c749e38c"
+        }
+      }
+    },
+    {
+      "variant": "full",
+      "fold": 0,
+      "sample_id": "itrace_4jfe",
+      "dataset": "itrace",
+      "cache_path": "/root/flexppi_completion_20261010/family_folds/evaluation/full/itrace_4jfe.npz",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "input_sha256": "f339645446121f1790d8b97963522c6db7d3e5a9e6612050064346a2fa57c4ae",
+      "label_sha256": "5138a1f0f6f24760f2212ca7aec7124a58fb2bb18db69db8001df1354088bb80",
+      "record": {
+        "sample_id": "itrace_4jfe",
+        "dataset": "itrace",
+        "structure_path": "/root/flexppi_revision_20261002/corrected_training_v1/dataset/structures/itrace_4jfe.pdb",
+        "label_path": "/root/flexppi_revision_20261002/corrected_training_v1/dataset/labels/itrace_4jfe.npz",
+        "trajectory_paths": [],
+        "temperature": 310.0,
+        "window_ns": 200.0,
+        "target_chains": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "source_group": "itrace_complex",
+        "metadata": {
+          "analysis_only": false,
+          "biological_system": "pdb:4JFE",
+          "cluster_id": "biogroup_ed5c53d70b68",
+          "complex_signature": "complex_095e244182673941",
+          "fold": 0,
+          "hchi_labels": 697,
+          "hchi_replica_count_histogram": {
+            "3": 697
+          },
+          "historical_diagnostic_use": true,
+          "label_protocol": "canonical_His_ILE_CD1_sequence_mapped_replicas_v1",
+          "label_status": "ready",
+          "original_record_sha256": "1e5a361ab4fb182c96bd55e3ae0053d79e3c4e85182516c9a2c1af22853817ff",
+          "pdb_id": "4JFE",
+          "pdb_ids": [
+            "4JFE"
+          ],
+          "ppi_classification": "not_audited",
+          "quality_tier": "training_ready",
+          "replicates": 3,
+          "residue_count": 828,
+          "sequence_clusters": [
+            "V2SEQ002860_03",
+            "V2SEQ002876_02",
+            "V2SEQ003021_01",
+            "V2SEQ003103_00"
+          ],
+          "source_split_version": "state_rmsf_hchi_v2_performance_first",
+          "split_version": "all_chain_family_disjoint_v14_20261010",
+          "training_metrics": [
+            "rmsf",
+            "chi_entropy"
+          ],
+          "training_role": "performance_first_pool",
+          "used_for_failure_discovery": true,
+          "original_combination_fold": 4,
+          "family_component_id": "family_9cd89939c749e38c"
+        }
+      }
+    }
+  ],
+  "sources": [
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\candidate_case_atlas_20261021\\catalog\\candidate_inventory.json",
+      "sha256": "1540610e865be2a470d0f46448edc35ea19ca8579455a89f248d21f0d5d2fcba",
+      "kind": "prior exhaustive 30-series inventory"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v49_20261019_中文修订_MEL5双动态机制实例_三线表.docx",
+      "sha256": "5f79ddf7d657dc9b782c9fb432e373a1e7c170c1c88d019e528fbf73c366c222",
+      "kind": "current manuscript read only"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\output\\itrace_residue_biology\\raw\\matched_residue_context_responses.csv",
+      "sha256": "156a0cdacf7eaaa6ba121b3a0aa205dfb53bed1f74e0d6d324039f30436dcd6f",
+      "kind": "prior per-residue biological annotation"
+    },
+    {
+      "path": "E:\\data\\ITrace\\tables\\manifest.csv",
+      "sha256": "abc2f626e3281947549840d3b31287f84d8a62ff0c1efc8f40c8a37a2bb00f03",
+      "kind": "ITrace trajectory inventory"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_3hg1.npz",
+      "sha256": "5a938a40d8c4a0804d06a3699a8e29299c69214cb47dd54c13e28d796b50c230",
+      "kind": "existing 2430 joint Full fold0 prediction"
+    },
+    {
+      "path": "E:\\data\\ITrace\\trajectories\\3hg1_run1_topology.pdb",
+      "sha256": "7498db57b5ed1db5438170241380baf21e395bba8498952c6d6d0fb6ebe0aa2d",
+      "kind": "original ITrace run1 topology for static geometry"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_4jff.npz",
+      "sha256": "9a2727acb36db166d3fde39ae47a59a067cb4cd7f1c07d4724a892131482bf57",
+      "kind": "existing 2430 joint Full fold0 prediction"
+    },
+    {
+      "path": "E:\\data\\ITrace\\trajectories\\4jff_run1_topology.pdb",
+      "sha256": "51a1f3de5f305faca6ca83cc4c40a5b26912e19d88170ab30baaf9a25b81cf7f",
+      "kind": "original ITrace run1 topology for static geometry"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_4jfd.npz",
+      "sha256": "990446eb8ee9601fa5b2c49aef194292615f31f8cb6377c66fb30cd177b5705d",
+      "kind": "existing 2430 joint Full fold0 prediction"
+    },
+    {
+      "path": "E:\\data\\ITrace\\trajectories\\4jfd_run1_topology.pdb",
+      "sha256": "942055778791ff763728a8391bcc0257137a9f7dc4cd5f98aaa37bf9b805611c",
+      "kind": "original ITrace run1 topology for static geometry"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_4jfe.npz",
+      "sha256": "c7039c04e2eef2d7400aab122387f59de64004b074c43cf7f4e40c910e1f4364",
+      "kind": "existing 2430 joint Full fold0 prediction"
+    },
+    {
+      "path": "E:\\data\\ITrace\\trajectories\\4jfe_run1_topology.pdb",
+      "sha256": "630c1da476ad581283310a051f4ece941901c60853f1c6a00d288696eec3e741",
+      "kind": "original ITrace run1 topology for static geometry"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\prediction_manifest.jsonl",
+      "sha256": "52116f353bdd80000ab99ad23ac6a9509e2b4d160aba930cf731c9e87901a521",
+      "kind": "checkpoint and input provenance for all four predictions"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\mel5_validation\\3hg1_all_residue_replica_labels.npz",
+      "sha256": "adb1e32fbe65dd8238965846da5e4d703c85139c383cf5c4c476218413ec2630",
+      "kind": "previously independently recomputed three-replica MD labels"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\mel5_validation\\4jff_all_residue_replica_labels.npz",
+      "sha256": "fd3ce476bb13bb0800267acad9bb74fa50fbd915243d1f5649fb79386a0b9933",
+      "kind": "previously independently recomputed three-replica MD labels"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_joint_case_v49_20261019\\case_sources\\primary_literature\\mel5_thermodynamics_2013.md",
+      "sha256": "26cfbe8ac523d60f88058d761a817338d18d8e2b998331d29a516c6c6d142e41",
+      "kind": "locally archived original JBC article"
+    }
+  ],
+  "scope": "Exploratory case comparison from existing observed complex structures, not an affinity predictor validation."
+}

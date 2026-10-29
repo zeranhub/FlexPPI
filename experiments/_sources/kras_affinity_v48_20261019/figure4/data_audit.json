@@ -1,0 +1,266 @@
+{
+  "status": "passed",
+  "dimensions_mm": [
+    183,
+    130
+  ],
+  "PNG_dpi": 450,
+  "all_peptide_positions_retained": 10,
+  "plotted_points": 20,
+  "unchanged_positions": 9,
+  "substituted_peptide_position": 6,
+  "WT_sequence": "VVVGAGGVGK",
+  "G12D_sequence": "VVVGADGVGK",
+  "model": "family_full_no_ITrace, joint two-output model; RMSF head only",
+  "model_checkpoint_SHA256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+  "no_new_training_inference_MD_or_calibration": true,
+  "no_smoothing_or_residue_selection": true,
+  "panel_a": {
+    "molecular_PNG_assets": {
+      "7ow5_binding.png": {
+        "SHA256": "055c8af6ffd073fe85258159a3ecd81d3da8c8eb34ba96685256745c35183301",
+        "archive_SHA256": "055c8af6ffd073fe85258159a3ecd81d3da8c8eb34ba96685256745c35183301",
+        "unchanged": true
+      },
+      "7ow6_binding.png": {
+        "SHA256": "091357d575dd64211c1611accd885f2104fd9f633790e686f5dc2479d0186323",
+        "archive_SHA256": "091357d575dd64211c1611accd885f2104fd9f633790e686f5dc2479d0186323",
+        "unchanged": true
+      },
+      "peptide_superposition.png": {
+        "SHA256": "bfbde040c097e8fc3acc9fa0dae6901579b981621d6828cd53b164e50c8c6cbe",
+        "archive_SHA256": "bfbde040c097e8fc3acc9fa0dae6901579b981621d6828cd53b164e50c8c6cbe",
+        "unchanged": true
+      }
+    },
+    "complex_shared_crop": [
+      413,
+      79,
+      1045,
+      883
+    ],
+    "peptide_crop": [
+      438,
+      288,
+      1240,
+      591
+    ],
+    "crop_parameters_unchanged": true,
+    "layout_preserved": true,
+    "quantitative_values_preserved": true,
+    "annotation_font_pt": 9,
+    "annotation_changes": "Font increased from 7–8 pt to 9 pt; overlay title padding increased to avoid collision."
+  },
+  "panel_b": {
+    "x": "all 10 peptide positions",
+    "y": "absolute, untransformed model RMSF in Å",
+    "WT_source_column": "rmsf_full_a",
+    "G12D_source_column": "rmsf_full_b",
+    "two_lines_only": true,
+    "MD_curve_plotted": false,
+    "MD_similarity_metrics_displayed": false,
+    "error_bars": null,
+    "statistical_tests": null,
+    "color_mapping": {
+      "WT": "#CF8C27",
+      "G12D": "#762A83"
+    },
+    "font_pt": 9,
+    "y_limits": [
+      0,
+      1.4
+    ]
+  },
+  "source_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\kras_affinity_v48_20261019\\figure4\\source_archive\\source_all10_peptide_model_and_MD_changes.csv",
+  "source_SHA256": "4d63663fadbd9945b95719bc334f8f7541be80cc4b2ee9f4a8400ff80e6b75b2",
+  "source_archive_file_count": 17,
+  "binding_source": "ref. [28], doi:10.1038/s41467-022-32811-1; literature experiment, not model output",
+  "visible_text": [
+    "a",
+    "Single-residue antigen change in the same TCR–HLA complex",
+    "Peptide Cα RMSD = 0.61 Å",
+    "MHC-aligned coordinates",
+    "WT",
+    "V",
+    "V",
+    "V",
+    "G",
+    "A",
+    "G",
+    "G",
+    "V",
+    "G",
+    "K",
+    "$K_D$ = 3 μM",
+    "G12D",
+    "V",
+    "V",
+    "V",
+    "G",
+    "A",
+    "D",
+    "G",
+    "V",
+    "G",
+    "K",
+    "$K_D$ = 743 pM",
+    "Binding measurements from ref. [28]",
+    "b",
+    "Predicted peptide RMSF in the WT and G12D complexes",
+    "",
+    "",
+    "WT · 7OW5",
+    "−200",
+    "0",
+    "200",
+    "400",
+    "600",
+    "800",
+    "−200",
+    "0",
+    "200",
+    "400",
+    "600",
+    "800",
+    "1000",
+    "",
+    "",
+    "G12D · 7OW6",
+    "−200",
+    "0",
+    "200",
+    "400",
+    "600",
+    "800",
+    "−200",
+    "0",
+    "200",
+    "400",
+    "600",
+    "800",
+    "1000",
+    "G6 / D6",
+    "",
+    "",
+    "Peptide superposition",
+    "−200",
+    "0",
+    "200",
+    "400",
+    "600",
+    "800",
+    "1000",
+    "−100",
+    "0",
+    "100",
+    "200",
+    "300",
+    "400",
+    "WT",
+    "G12D",
+    "Peptide position",
+    "RMSF (Å)",
+    "",
+    "V1",
+    "V2",
+    "V3",
+    "G4",
+    "A5",
+    "G6→D6",
+    "G7",
+    "V8",
+    "G9",
+    "K10",
+    "0.0",
+    "0.4",
+    "0.8",
+    "1.2"
+  ],
+  "model_values_all10": [
+    {
+      "peptide_position": 1,
+      "WT_aa": "V",
+      "G12D_aa": "V",
+      "WT_model_RMSF_A": 0.6062613129615784,
+      "G12D_model_RMSF_A": 0.6055277585983276
+    },
+    {
+      "peptide_position": 2,
+      "WT_aa": "V",
+      "G12D_aa": "V",
+      "WT_model_RMSF_A": 0.5743178725242615,
+      "G12D_model_RMSF_A": 0.5768380165100098
+    },
+    {
+      "peptide_position": 3,
+      "WT_aa": "V",
+      "G12D_aa": "V",
+      "WT_model_RMSF_A": 0.6594159007072449,
+      "G12D_model_RMSF_A": 0.6483897566795349
+    },
+    {
+      "peptide_position": 4,
+      "WT_aa": "G",
+      "G12D_aa": "G",
+      "WT_model_RMSF_A": 0.7660970091819763,
+      "G12D_model_RMSF_A": 0.654137134552002
+    },
+    {
+      "peptide_position": 5,
+      "WT_aa": "A",
+      "G12D_aa": "A",
+      "WT_model_RMSF_A": 0.8852733969688416,
+      "G12D_model_RMSF_A": 0.6797102093696594
+    },
+    {
+      "peptide_position": 6,
+      "WT_aa": "G",
+      "G12D_aa": "D",
+      "WT_model_RMSF_A": 1.080294489860535,
+      "G12D_model_RMSF_A": 0.7178232073783875
+    },
+    {
+      "peptide_position": 7,
+      "WT_aa": "G",
+      "G12D_aa": "G",
+      "WT_model_RMSF_A": 1.2462451457977295,
+      "G12D_model_RMSF_A": 0.9043732285499572
+    },
+    {
+      "peptide_position": 8,
+      "WT_aa": "V",
+      "G12D_aa": "V",
+      "WT_model_RMSF_A": 1.0523061752319336,
+      "G12D_model_RMSF_A": 0.885739803314209
+    },
+    {
+      "peptide_position": 9,
+      "WT_aa": "G",
+      "G12D_aa": "G",
+      "WT_model_RMSF_A": 1.0190951824188232,
+      "G12D_model_RMSF_A": 0.8807145953178406
+    },
+    {
+      "peptide_position": 10,
+      "WT_aa": "K",
+      "G12D_aa": "K",
+      "WT_model_RMSF_A": 1.142025113105774,
+      "G12D_model_RMSF_A": 0.9001185297966003
+    }
+  ],
+  "output_SHA256": {
+    "fig4_kras_affinity.png": "012d80f6bf0ed5f35a3736835e24dca137c9e53036cc2502586286229d865c47",
+    "fig4_kras_affinity.pdf": "d897ac981930e0aea1af479169a9065d40a968872c631f3372437a5a068e5685",
+    "fig4_kras_affinity.svg": "11ceb30d1863c4482f20c64f339877209566908a8859af34c24fc1017b460dcd"
+  },
+  "export_audit": {
+    "PDF_image_objects": 3,
+    "SVG_image_layers": 3,
+    "SVG_text_nodes": 53,
+    "PDF_Type0_fonts": 3,
+    "PDF_width_mm": 182.9999999999947,
+    "PDF_height_mm": 130.00000000000915,
+    "new_text_font_pt": 9,
+    "new_text_font_at_167_64_mm": 8.244590163934426
+  }
+}

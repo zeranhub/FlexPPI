@@ -1,0 +1,186 @@
+{
+  "case_id": "C17",
+  "a": "9nmu",
+  "b": "9nmx",
+  "alignment_method": "Complete-chain global PairwiseAligner, affine gap; all gaps and residues retained",
+  "scores": {
+    "match": 2,
+    "mismatch": -1,
+    "gap_open": -6,
+    "gap_extend": -0.5,
+    "protein_terminal_gap": 0,
+    "peptide_terminal_gap": "penalized"
+  },
+  "source_a": {
+    "pdb": "9nmu",
+    "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\catchbond_validation\\catchbond_WT_experimental_matched_prediction.npz",
+    "prediction_sha256": "447abbd282e0190e1538bf8fb987a42d5f2e4bfb995a58cc5abe09bbee2d7003",
+    "structure": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\catchbond_validation\\catchbond_WT_experimental_matched.pdb",
+    "structure_sha256": "1f6b4371473b4f6c7262776425268aae717ee829f792df07a96d36c179767081",
+    "chain_roles": {
+      "A": "mhc",
+      "C": "peptide",
+      "D": "tcr_alpha",
+      "E": "tcr_beta"
+    },
+    "label_mean_source": "ten-replica mean CSV",
+    "label_variance_source": "SD squared across 10 independent MD runs"
+  },
+  "source_b": {
+    "pdb": "9nmx",
+    "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\catchbond_validation\\catchbond_S32M_experimental_matched_prediction.npz",
+    "prediction_sha256": "81f7484c20e9f2730b500ab7084d3c548f7ef5b518a04c791c8a5bd38338514b",
+    "structure": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\catchbond_validation\\catchbond_S32M_experimental_matched.pdb",
+    "structure_sha256": "0ddcd9f9b31b20ca92d1d1e0037b30d6d167b637ef2cd66f1787e08ed2491a78",
+    "chain_roles": {
+      "A": "mhc",
+      "C": "peptide",
+      "D": "tcr_alpha",
+      "E": "tcr_beta"
+    },
+    "label_mean_source": "ten-replica mean CSV",
+    "label_variance_source": "SD squared across 10 independent MD runs"
+  },
+  "chain_alignments": [
+    {
+      "role": "mhc",
+      "length_a": 181,
+      "length_b": 181,
+      "aligned_columns": 181,
+      "paired_positions": 181,
+      "identity": 1.0,
+      "variable_identity_first125": 1.0,
+      "near_related_for_CDR_comparison": true,
+      "substitution_n": 0,
+      "gap_a": 0,
+      "gap_b": 0,
+      "score": 362.0,
+      "sequence_a": "GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDGKDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENGKETLQR",
+      "sequence_b": "GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDGKDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENGKETLQR",
+      "alignment": "target            0 GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYW\n                  0 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\nquery             0 GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYW\n\ntarget           60 DGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDG\n                 60 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\nquery            60 DGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDG\n\ntarget          120 KDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENGKETLQ\n                120 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\nquery           120 KDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENGKETLQ\n\ntarget          180 R 181\n                180 | 181\nquery           180 R 181\n"
+    },
+    {
+      "role": "peptide",
+      "length_a": 9,
+      "length_b": 9,
+      "aligned_columns": 9,
+      "paired_positions": 9,
+      "identity": 1.0,
+      "variable_identity_first125": 1.0,
+      "near_related_for_CDR_comparison": true,
+      "substitution_n": 0,
+      "gap_a": 0,
+      "gap_b": 0,
+      "score": 18.0,
+      "sequence_a": "TLMSAMTNL",
+      "sequence_b": "TLMSAMTNL",
+      "alignment": "target            0 TLMSAMTNL 9\n                  0 ||||||||| 9\nquery             0 TLMSAMTNL 9\n"
+    },
+    {
+      "role": "tcr_alpha",
+      "length_a": 108,
+      "length_b": 108,
+      "aligned_columns": 108,
+      "paired_positions": 108,
+      "identity": 0.9907407407407407,
+      "variable_identity_first125": 0.9907407407407407,
+      "near_related_for_CDR_comparison": true,
+      "substitution_n": 1,
+      "gap_a": 0,
+      "gap_b": 0,
+      "score": 213.0,
+      "sequence_a": "KEVEQNSGPLSVPEGAIASLCTYSDRGSQSFFWYRQYSGKSPELIMFIYSNGDKEDGRFTAQLNKASQYVSLLIRDSQPSDSATYLCAVNNARLMFGDGTQLVVKPNI",
+      "sequence_b": "KEVEQNSGPLSVPEGAIASLCTYSDRGSQMFFWYRQYSGKSPELIMFIYSNGDKEDGRFTAQLNKASQYVSLLIRDSQPSDSATYLCAVNNARLMFGDGTQLVVKPNI",
+      "alignment": "target            0 KEVEQNSGPLSVPEGAIASLCTYSDRGSQSFFWYRQYSGKSPELIMFIYSNGDKEDGRFT\n                  0 |||||||||||||||||||||||||||||.||||||||||||||||||||||||||||||\nquery             0 KEVEQNSGPLSVPEGAIASLCTYSDRGSQMFFWYRQYSGKSPELIMFIYSNGDKEDGRFT\n\ntarget           60 AQLNKASQYVSLLIRDSQPSDSATYLCAVNNARLMFGDGTQLVVKPNI 108\n                 60 |||||||||||||||||||||||||||||||||||||||||||||||| 108\nquery            60 AQLNKASQYVSLLIRDSQPSDSATYLCAVNNARLMFGDGTQLVVKPNI 108\n"
+    },
+    {
+      "role": "tcr_beta",
+      "length_a": 110,
+      "length_b": 110,
+      "aligned_columns": 110,
+      "paired_positions": 110,
+      "identity": 1.0,
+      "variable_identity_first125": 1.0,
+      "near_related_for_CDR_comparison": true,
+      "substitution_n": 0,
+      "gap_a": 0,
+      "gap_b": 0,
+      "score": 220.0,
+      "sequence_a": "GVTQTPKHLITATGQRVTLRCSPRSGDLSVYWYQQSLDQGLQFLIQYYNGEERAKGNILERFSAQQFPDLHSELLSSLELGDSALYFCASSVAGSPEAFFGQGTRLTVVE",
+      "sequence_b": "GVTQTPKHLITATGQRVTLRCSPRSGDLSVYWYQQSLDQGLQFLIQYYNGEERAKGNILERFSAQQFPDLHSELLSSLELGDSALYFCASSVAGSPEAFFGQGTRLTVVE",
+      "alignment": "target            0 GVTQTPKHLITATGQRVTLRCSPRSGDLSVYWYQQSLDQGLQFLIQYYNGEERAKGNILE\n                  0 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\nquery             0 GVTQTPKHLITATGQRVTLRCSPRSGDLSVYWYQQSLDQGLQFLIQYYNGEERAKGNILE\n\ntarget           60 RFSAQQFPDLHSELLSSLELGDSALYFCASSVAGSPEAFFGQGTRLTVVE 110\n                 60 |||||||||||||||||||||||||||||||||||||||||||||||||| 110\nquery            60 RFSAQQFPDLHSELLSSLELGDSALYFCASSVAGSPEAFFGQGTRLTVVE 110\n"
+    }
+  ],
+  "total_rows": 408,
+  "paired_rows": 408,
+  "all_residues_accounted_once": true,
+  "CDR_rule": "a-state WT boundaries projected through complete-chain alignment; canonical 3HG1 for MEL5 family",
+  "metrics": [
+    {
+      "scope": "whole_peptide",
+      "metric": "rmsf",
+      "n": 9,
+      "rho": -0.016666666666666666,
+      "MAE": 0.02880023837641689,
+      "zero_change_MAE": 0.02743915299280286,
+      "relative_MAE_gain": -0.049603768161904815,
+      "near_related_for_CDR_comparison": true,
+      "caution": "MD comparison is corroboration, not experimental truth"
+    },
+    {
+      "scope": "whole_peptide",
+      "metric": "hchi",
+      "n": 8,
+      "rho": -0.261904761904762,
+      "MAE": 0.08040766116015038,
+      "zero_change_MAE": 0.07433828937152293,
+      "relative_MAE_gain": -0.08164529800106579,
+      "near_related_for_CDR_comparison": true,
+      "caution": "MD comparison is corroboration, not experimental truth"
+    },
+    {
+      "scope": "natural_pMHC_interface",
+      "metric": "rmsf",
+      "n": 0,
+      "rho": null,
+      "MAE": null,
+      "zero_change_MAE": null,
+      "relative_MAE_gain": null,
+      "near_related_for_CDR_comparison": null,
+      "caution": "MD comparison is corroboration, not experimental truth"
+    },
+    {
+      "scope": "natural_pMHC_interface",
+      "metric": "hchi",
+      "n": 0,
+      "rho": null,
+      "MAE": null,
+      "zero_change_MAE": null,
+      "relative_MAE_gain": null,
+      "near_related_for_CDR_comparison": null,
+      "caution": "MD comparison is corroboration, not experimental truth"
+    },
+    {
+      "scope": "all_CDR",
+      "metric": "rmsf",
+      "n": 30,
+      "rho": 0.4006674082313682,
+      "MAE": 0.04121431977237948,
+      "zero_change_MAE": 0.026947894268031087,
+      "relative_MAE_gain": -0.5294078031645308,
+      "near_related_for_CDR_comparison": true,
+      "caution": "MD comparison is corroboration, not experimental truth"
+    },
+    {
+      "scope": "all_CDR",
+      "metric": "hchi",
+      "n": 22,
+      "rho": -0.21626199887069456,
+      "MAE": 0.1034546719148584,
+      "zero_change_MAE": 0.08716811849031379,
+      "relative_MAE_gain": -0.18684071317146045,
+      "near_related_for_CDR_comparison": true,
+      "caution": "MD comparison is corroboration, not experimental truth"
+    }
+  ]
+}

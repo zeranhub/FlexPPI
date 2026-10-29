@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-10-24T00:55:13.4029117Z",
+  "scope": "Read-only BackFlip-2.1 source and all3063 static-input audit; no inference or performance-value analysis",
+  "status": "PASS",
+  "files": [
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\investigations\\protein_gap_20261024\\backflip_review\\README_zh.md",
+      "bytes": 6613,
+      "sha256": "f94fd4b985eda31416e16ba0ad060f13e1e098883ac9f24812358a92790bc812"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\investigations\\protein_gap_20261024\\backflip_review\\static_input_audit.json",
+      "bytes": 9367,
+      "sha256": "fcba469f571b40438221a02b71e14f2f8bde4f22567bd9e14f7dcc2b51de3e90"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\investigations\\protein_gap_20261024\\backflip_review\\static_input_per_record_audit.csv",
+      "bytes": 682616,
+      "sha256": "6a5cbdf6bab39df5a7335d4d07fa6a9e8772127cbeab1ac670d9917110e43375"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\investigations\\protein_gap_20261024\\backflip_review\\source_feature_audit.json",
+      "bytes": 3083,
+      "sha256": "2e72a64503196f2de35951f9c7519c347517c6689a0816a5fb9ac271a1ce9b54"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\investigations\\protein_gap_20261024\\backflip_review\\audit_static_inputs.py",
+      "bytes": 10963,
+      "sha256": "f7af7dae22a65442a878a44fae580325e53b5e5285f4195475b11cfae1d85819"
+    }
+  ]
+}

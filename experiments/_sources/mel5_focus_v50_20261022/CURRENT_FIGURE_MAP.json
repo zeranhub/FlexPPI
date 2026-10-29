@@ -1,0 +1,74 @@
+{
+  "1": {
+    "source_folder": "figure1",
+    "absolute_source_folder": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\framework_v47_20261019\\figure1",
+    "png": "fig1_framework.png",
+    "svg": "fig1_framework.svg",
+    "pdf": "fig1_framework.pdf",
+    "new_in_revision": "v47",
+    "panels": [
+      "a model overview",
+      "b residue local geometry",
+      "c fixed-frame invariant point attention",
+      "d MD supervision"
+    ]
+  },
+  "2": {
+    "source_folder": "figure2",
+    "absolute_source_folder": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\dense_figure_v45_20261018\\figure2",
+    "png": "fig2_dense_capability.png",
+    "pdf": "fig2_dense_capability.pdf",
+    "svg": "fig2_dense_capability.svg",
+    "new_in_revision": "v45",
+    "panels": [
+      "a prediction agreement RMSF",
+      "b prediction agreement Hchi",
+      "c high-dynamic PR RMSF",
+      "d high-dynamic PR Hchi",
+      "e within-type Hchi PR",
+      "f source-stratified AP"
+    ]
+  },
+  "3": {
+    "source_folder": "english_figures/fig6",
+    "png": "fig6_english.png",
+    "pdf": "fig6_english.pdf",
+    "svg": "fig6_english.svg",
+    "previous_figure_number": "5",
+    "absolute_source_folder": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\reader_revision_v39_20261016\\english_figures\\fig6"
+  },
+  "4": {
+    "source_folder": "figure4",
+    "absolute_source_folder": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_focus_v50_20261022\\figure4",
+    "png": "fig4_mel5_focus.png",
+    "pdf": "fig4_mel5_focus.pdf",
+    "svg": "fig4_mel5_focus.svg",
+    "new_in_revision": "v50",
+    "panels": [
+      "a Q72-betaPhe53/betaGly54 contact network, published SPR affinity and model response",
+      "b absolute model RMSF across all 45 positions in all six CDRs",
+      "c all 23 interface Hchi changes ranked, paired with Q72 input-context comparison"
+    ],
+    "previous_panel_d": "removed; existing MD corroboration retained briefly in prose"
+  },
+  "5": {
+    "source_folder": "figure5",
+    "absolute_source_folder": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\figure_merge_v43_20261018\\figure5",
+    "png": "fig5_joint_readouts_conformations.png",
+    "pdf": "fig5_joint_readouts_conformations.pdf",
+    "svg": "fig5_joint_readouts_conformations.svg",
+    "merged_previous_figures": [
+      "4",
+      "7"
+    ],
+    "new_in_revision": "v43"
+  },
+  "S1": {
+    "source_folder": "english_figures/figS1",
+    "png": "figS1_observed_label_variation.png",
+    "pdf": "figS1_observed_label_variation.pdf",
+    "svg": "figS1_observed_label_variation.svg",
+    "absolute_source_folder": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\reader_revision_v39_20261016\\english_figures\\figS1",
+    "previous_figure_number": "S1"
+  }
+}

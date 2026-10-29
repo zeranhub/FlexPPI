@@ -1,0 +1,22 @@
+[
+  {
+    "partner": "NHE1",
+    "sample_id": "A004C",
+    "input_source": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A004C.pdb",
+    "input_sha256": "c30caadbf3a40376a0b6632d66b5b4ffd025c306d52f19d71f669ed29880787c",
+    "output": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_cam_model_story\\inputs\\NHE1_mature_CaM_and_partner.pdb",
+    "output_sha256": "ac71b535b354a0e076f1e6fcef475a10930e535801c7e3addf12639cd749339f",
+    "coordinate_changes": false,
+    "changes": "Only chain/residue identifiers changed; extra CaM expression-tail Ala149 excluded; no atoms rebuilt."
+  },
+  {
+    "partner": "IQCG",
+    "sample_id": "A007U",
+    "input_source": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A007U.pdb",
+    "input_sha256": "b666a79cd087a94ea5fa2a4ce1b4936460c81bfed4f73dfb86806e90b0aad977",
+    "output": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_cam_model_story\\inputs\\IQCG_mature_CaM_and_partner.pdb",
+    "output_sha256": "d0a0213e11a3a746d497c4094df8cef57dc23c7600b50d5ad14e18aa948d8c22",
+    "coordinate_changes": false,
+    "changes": "Only chain/residue identifiers changed; extra CaM expression-tail Ala149 excluded; no atoms rebuilt."
+  }
+]

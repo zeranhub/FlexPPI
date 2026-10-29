@@ -1,0 +1,103 @@
+{
+  "status": "passed_independent_sample_and_focused_full_trace_recomputation",
+  "full_H3_sampled_frames": [
+    0,
+    111,
+    249,
+    250,
+    499,
+    500,
+    749,
+    750,
+    888,
+    999
+  ],
+  "sampled_PBC_method": "manual minimum image over orthorhombic box, rather than MDAnalysis distance_array",
+  "max_stored_pair_minimum_distance_error_A": 8.326336768504916e-06,
+  "full_trace_focus_authors": [
+    96,
+    97,
+    101,
+    104,
+    105,
+    109
+  ],
+  "max_sidechain_backbone_and_joint_contact_fraction_error": 0.0,
+  "max_joint_chi_entropy_difference_nats": 0.0,
+  "chi_method": "independent MDAnalysis calc_dihedrals + same specified 120-degree three-state bins",
+  "focus_values": [
+    {
+      "author": "96",
+      "resname": "ARG",
+      "sidechain_A_fraction_4A": "0.0",
+      "sidechain_B_fraction_4A": "0.0",
+      "sidechain_both_A_and_B_fraction_4A": "0.0",
+      "backbone_B_fraction_4A": "0.0",
+      "chi_joint_entropy": "1.8014270105916776"
+    },
+    {
+      "author": "97",
+      "resname": "GLU",
+      "sidechain_A_fraction_4A": "0.968",
+      "sidechain_B_fraction_4A": "0.0",
+      "sidechain_both_A_and_B_fraction_4A": "0.0",
+      "backbone_B_fraction_4A": "0.0",
+      "chi_joint_entropy": "2.227589497902099"
+    },
+    {
+      "author": "101",
+      "resname": "ARG",
+      "sidechain_A_fraction_4A": "0.161",
+      "sidechain_B_fraction_4A": "0.023",
+      "sidechain_both_A_and_B_fraction_4A": "0.0",
+      "backbone_B_fraction_4A": "0.903",
+      "chi_joint_entropy": "3.4192116614138652"
+    },
+    {
+      "author": "104",
+      "resname": "TYR",
+      "sidechain_A_fraction_4A": "0.994",
+      "sidechain_B_fraction_4A": "0.994",
+      "sidechain_both_A_and_B_fraction_4A": "0.988",
+      "backbone_B_fraction_4A": "0.004",
+      "chi_joint_entropy": "0.5465842296829511"
+    },
+    {
+      "author": "105",
+      "resname": "TYR",
+      "sidechain_A_fraction_4A": "0.749",
+      "sidechain_B_fraction_4A": "0.998",
+      "sidechain_both_A_and_B_fraction_4A": "0.748",
+      "backbone_B_fraction_4A": "1.0",
+      "chi_joint_entropy": "0.6526297489503066"
+    },
+    {
+      "author": "109",
+      "resname": "TYR",
+      "sidechain_A_fraction_4A": "0.0",
+      "sidechain_B_fraction_4A": "0.088",
+      "sidechain_both_A_and_B_fraction_4A": "0.0",
+      "backbone_B_fraction_4A": "0.008",
+      "chi_joint_entropy": "0.9080771677525514"
+    }
+  ],
+  "code_findings": [
+    "All protein heavy atoms retained; all elements explicitly H/C/N/O/S; chainIDs equal segids.",
+    "Residue heavy atoms are contiguous; minimum.reduceat correctly reduces atom minima into 519 residue minima.",
+    "Backbone N/CA/C/O/OXT and remaining sidechain heavy atoms partition residues correctly.",
+    "Both-chain contact fractions require simultaneous events in the same frame.",
+    "Whole-heavy-chain fit reproduces label; other fits define different observables and do not validate alternative labels."
+  ],
+  "claim_limits": [
+    "One correlated trajectory only. Four contiguous blocks do not constitute independent replicate evidence.",
+    "A contact is a geometric proximity event. It does not itself define a hydrogen bond, interaction energy, hotspot, or causal binding requirement.",
+    "Low coarse joint Hchi means concentrated occupancy under fixed bins; it is not zero motion or thermodynamic binding entropy.",
+    "R96/R101 are a useful same-residue-type contrast; they do not isolate Full-model benefit because Intra also recovers the entropy contrast.",
+    "Y104/Y105 may illustrate simultaneous cross-chain contact and relatively concentrated sidechain occupancy in the sampled bound state, but not an accurately recovered complete same-Tyr ranking or affinity mechanism."
+  ],
+  "sha256": {
+    "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A00LZ.pdb": "746df500c64ae69289592a5ca7588210bc45e8f5eaa3437893feb009f4e61624",
+    "D:\\data\\dynarepo_non_nucleic_full\\A00LZ\\trajectory.xtc": "9adae14b9b07eb6e75f10ad1e6b7747079ccaaa983bd2681d5d4f5535cb79fd0",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\bcr_case_choice_20261028\\hcd3_functional_analysis_20261029\\independent_review\\independent_md_contacts_review.py": "bc1ce2d67c4510fb32c90262bea5fffa3528e631e3f363ea1c400cd8350e71eb"
+  }
+}

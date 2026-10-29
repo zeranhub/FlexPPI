@@ -1,0 +1,59 @@
+{
+  "status": "complete",
+  "contrast": "IQCG / apo-CaM 4LZX minus NHE1 / Ca-bound CaM 2YGG",
+  "caveat": "Both partner and calcium occupancy differ; not partner-only causal inference. RMSF fitted per complete CaM chain, not independently per lobe.",
+  "common_mature_numbers": "4 through 148; NHE1 CaM expression-tail Ala149 excluded",
+  "fixed_regions": {
+    "N_lobe": [
+      4,
+      75
+    ],
+    "linker": [
+      76,
+      81
+    ],
+    "C_lobe": [
+      82,
+      148
+    ]
+  },
+  "baseline_checkpoints": [
+    {
+      "model": "aa_sasa",
+      "metric": "rmsf",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\feature_baseline\\models\\aa_sasa_fold0_rmsf.joblib",
+      "sha256": "e2e442df6e4c3f8c133bea9ddd5c07d8d13684fd2cdeed8667258c8303e68168"
+    },
+    {
+      "model": "aa_sasa",
+      "metric": "hchi",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\feature_baseline\\models\\aa_sasa_fold0_hchi.joblib",
+      "sha256": "4bf34138302d96757c2a8519e5aa8dae9a56658ed6c2bbfc62e04ebb0709e15b"
+    },
+    {
+      "model": "aa_sasa_contacts",
+      "metric": "rmsf",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\feature_baseline\\models\\aa_sasa_contacts_fold0_rmsf.joblib",
+      "sha256": "677fc8f0d724dc506a2a0154be8cd0513b5d3fc72ea0f725146c7832359d8ce6"
+    },
+    {
+      "model": "aa_sasa_contacts",
+      "metric": "hchi",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\feature_baseline\\models\\aa_sasa_contacts_fold0_hchi.joblib",
+      "sha256": "5972e19350d8551a7d1c6bb6020dbba93e70741eba60b23538fa8de6a49507da"
+    },
+    {
+      "model": "static47_sasa",
+      "metric": "rmsf",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\feature_baseline\\models\\static47_sasa_fold0_rmsf.joblib",
+      "sha256": "75739dd636afc05806db27cc796df179e441c4637c84c6279f2c930a1e8b6e81"
+    },
+    {
+      "model": "static47_sasa",
+      "metric": "hchi",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\feature_baseline\\models\\static47_sasa_fold0_hchi.joblib",
+      "sha256": "4437713eafc675098ecb04712baaff3a97417415641b5b192dba076e0f5051f9"
+    }
+  ],
+  "model_scope": "Frozen corrected fold0 epoch40, both states in fold0 training set; no heldout-generalization claim."
+}

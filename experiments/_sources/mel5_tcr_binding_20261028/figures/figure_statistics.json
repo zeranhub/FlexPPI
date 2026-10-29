@@ -1,0 +1,24 @@
+{
+  "figure": "figS8_TCR_binding_scores",
+  "source": "combined_binding_scores_wide.csv",
+  "sha256": "ea15814e94a47e3f17c2b75976572e1e42a8e59ef9813c347b32ce408f139faf",
+  "configurations": [
+    "ERGO-II McPAS",
+    "ERGO-II VDJdb",
+    "NetTCR2.2 known-overlap-excluded",
+    "NetTCR2.2 all20",
+    "ImRex downsample",
+    "ImRex full"
+  ],
+  "model_families": 3,
+  "rows": 12,
+  "points": 72,
+  "experimental_positive": 8,
+  "experimental_negative": 4,
+  "score_scale": "Each method raw sigmoid score; not a common calibrated probability or KD scale.",
+  "model_selection": "All six configurations retained. NetTCR primary four exclude known exact CDR3-pair overlap; all20 shown as sensitivity.",
+  "inference_unit": "One sequence pair scored per model; CV models are not biological repeats.",
+  "threshold": "No cutoff used in this figure; 0.5 reference classification is saved only in CSV.",
+  "all_rows_retained": true,
+  "statistical_tests": "None; descriptive single-family case panel, not population performance benchmark."
+}

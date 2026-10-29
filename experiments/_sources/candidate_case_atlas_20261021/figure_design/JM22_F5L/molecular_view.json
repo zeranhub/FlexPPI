@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "source": "Canonical preprocessed model-input PDBs, not a redrawn cartoon",
+  "MHC_fit": "All matching chain A C-alpha residues1-180; cycles0 means no outlier rejection",
+  "MHC_alignment_RMSD_A": 0.7924569845199585,
+  "MHC_alignment_atoms": 180,
+  "peptide_CA_RMSD_after_MHC_alignment_A": 0.5126554318368991,
+  "shared_overview_view": [
+    -0.6779584884643555,
+    -0.47536569833755493,
+    -0.5607136487960815,
+    0.60338294506073,
+    0.07583042234182358,
+    -0.7938379645347595,
+    0.41988250613212585,
+    -0.8765142560005188,
+    0.2354176938533783,
+    0.0,
+    0.0,
+    -250.57339477539062,
+    75.17777252197266,
+    45.29996871948242,
+    58.90181350708008,
+    197.55397033691406,
+    303.5928039550781,
+    -20.0
+  ],
+  "peptide_only_view": [
+    -0.6779584884643555,
+    -0.47536569833755493,
+    -0.5607136487960815,
+    0.60338294506073,
+    0.07583042234182358,
+    -0.7938379645347595,
+    0.41988250613212585,
+    -0.8765142560005188,
+    0.2354176938533783,
+    0.0,
+    0.0,
+    -88.68370056152344,
+    81.14180755615234,
+    49.26614761352539,
+    63.66939163208008,
+    69.91890716552734,
+    107.44849395751953,
+    -20.0
+  ],
+  "focal_position": 5,
+  "input_paths": [
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\jm22_f5l_validation\\1oga_model_input.pdb",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\jm22_f5l_validation\\5hhm_model_input.pdb"
+  ],
+  "input_SHA256": [
+    "e3458f62f716974a9043cb5f3407d0aa6b1b19d2f4c0e258c6906aed20275099",
+    "addeccdad3587716e9fd39c474ca80d134bdb50f3c75cbf2d8d074a15cc4ddf7"
+  ],
+  "no_independent_peptide_fit": true
+}

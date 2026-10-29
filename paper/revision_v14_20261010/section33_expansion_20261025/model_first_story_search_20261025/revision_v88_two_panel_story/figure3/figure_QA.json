@@ -1,0 +1,62 @@
+{
+  "canvas_mm": [
+    183.0,
+    100.0
+  ],
+  "source": "family OOF fold1",
+  "panels": [
+    "a",
+    "b"
+  ],
+  "removed_independent_panels": [
+    "b_static_context",
+    "d",
+    "e",
+    "f"
+  ],
+  "all25_RMSF_and21_Hchi_positions": true,
+  "plotted_profile_values": 92,
+  "all_quantitative_axes_start_at_zero": true,
+  "axes": [
+    {
+      "metric": "rmsf",
+      "ylim": [
+        0,
+        8.2
+      ],
+      "range": [
+        0.44702804,
+        7.6058745
+      ]
+    },
+    {
+      "metric": "chi_entropy",
+      "ylim": [
+        0,
+        4.3
+      ],
+      "range": [
+        0.47041768,
+        3.8425083
+      ]
+    }
+  ],
+  "no_MD_in_main": true,
+  "no_numeric_tables": true,
+  "no_gray_explanatory_notes": true,
+  "static_context_retired_to_source_files": true,
+  "outside_text": [],
+  "min_font": 7.2,
+  "visual_review": "passed: primary full figure and Word page11; independent main figure,92 values and pages10–19; independent supplementary pages19–29",
+  "sha256": {
+    "png": "868e9873003983fc3dcd11b80a130fb14cc95f7289f3f1fc040794efc753fc66",
+    "pdf": "5172ae8975b6f6dedcbc686271315fbe78104c09aeb25a4806053477da703466",
+    "svg": "faaa36c6cac1e68c73456000715f14f8d6dd18383205145fd5f5bd1e0cd6bcb0"
+  },
+  "font_embedding": "ArialMT and Arial-BoldMT TrueType subsets embedded, pdffonts verified",
+  "fontsize_note": "7.2pt minimum at183mm master; approximately6.45pt after164mm placement inWord, visually checked",
+  "manual_style_resolutions": {
+    "AP-0": "Mandatory palette literal has three spaces after DIVERGING; validator falsely requires one. All required baseline values unchanged.",
+    "AP-4": "Figure-coordinate numerical and structural legends are placed in dedicated white space outside data axes."
+  }
+}

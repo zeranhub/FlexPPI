@@ -1,0 +1,30 @@
+{
+  "review": "Read-only v21 main-text integration review",
+  "input": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\manuscript_QA\\v21_content.txt",
+  "input_sha256": "6ce2a0f0ba81dcbc899fa021436714804e0b3ef59c5ebf4b7dbbca5a9360c036",
+  "output": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\manuscript_QA\\free_energy_integration_review_zh.md",
+  "output_sha256": "ef5481fd996c7bb0c058aa4a673eea09163ef2d8026125ff5b5bbd6c6e01f0f2",
+  "status": "recommendations_ready",
+  "source_paragraphs": [
+    "P55–59",
+    "P100–105",
+    "P107–110",
+    "P228–237"
+  ],
+  "core_additions": [
+    "Probability-level connection among RMSF squared, joint occupancy entropy and continuous empirical Fstar",
+    "Main-text state-conditioned CA variance decomposition6.2%/7.8%",
+    "Main-text fixed-trajectory partition sensitivity",
+    "Representative full profiles connected to selected angle projections"
+  ],
+  "precision_issues": [
+    "Joint versus nonProchi1 JSD must be distinguished",
+    "Window-mean entropy versus pooled Fstar must be distinguished",
+    "Keep NaN histogram gaps",
+    "Distance<=10degrees means10degrees each side",
+    "Do not claim representative Hchi magnitude contrasts completely recovered",
+    "Spearman rho is not decomposable explained variance"
+  ],
+  "docx_edited": false,
+  "network_used": false
+}

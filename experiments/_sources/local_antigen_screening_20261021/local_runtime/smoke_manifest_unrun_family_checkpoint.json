@@ -1,0 +1,11 @@
+{
+  "description": "One observed, unmodified input for exact no-ITrace checkpoint reproduction; CPU only.",
+  "candidates": [
+    {
+      "candidate_id": "MEL5_3hg1_original_smoke",
+      "input_pdb": "E:/Project/FlexPPI/paper/revision_v14_20261010/experiment_completion/tcr_expanded_screen_v41_20261017/mel5_validation/3hg1_model_input.pdb",
+      "input_mode": "observed_structure",
+      "reference_prediction": "E:/Project/FlexPPI/paper/revision_v14_20261010/experiment_completion/mel5_joint_case_v49_20261019/case_sources/original_predictions/itrace_3hg1.npz"
+    }
+  ]
+}

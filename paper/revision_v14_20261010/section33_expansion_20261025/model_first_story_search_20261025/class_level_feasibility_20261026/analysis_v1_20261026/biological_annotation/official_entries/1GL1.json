@@ -1,0 +1,1139 @@
+{
+  "source_url": "https://data.rcsb.org/rest/v1/core/entry/1GL1",
+  "retrieved_utc": "2026-10-26T08:30:26.697135+00:00",
+  "response": {
+    "audit_author": [
+      {
+        "name": "Roussel, A.",
+        "pdbx_ordinal": 1
+      },
+      {
+        "name": "Kellenberger, C.",
+        "pdbx_ordinal": 2
+      }
+    ],
+    "cell": {
+      "Z_PDB": 18,
+      "angle_alpha": 90.0,
+      "angle_beta": 90.0,
+      "angle_gamma": 120.0,
+      "length_a": 92.958,
+      "length_b": 92.958,
+      "length_c": 165.841
+    },
+    "citation": [
+      {
+        "country": "US",
+        "id": "primary",
+        "journal_abbrev": "J.Biol.Chem.",
+        "journal_id_ASTM": "JBCHA3",
+        "journal_id_CSD": "0071",
+        "journal_id_ISSN": "0021-9258",
+        "journal_volume": "276",
+        "page_first": "38893",
+        "pdbx_database_id_DOI": "10.1074/JBC.M105707200",
+        "pdbx_database_id_PubMed": 11495915,
+        "rcsb_authors": [
+          "Roussel, A.",
+          "Mathieu, M.",
+          "Dobbs, A.",
+          "Luu, B.",
+          "Cambillau, C.",
+          "Kellenberger, C."
+        ],
+        "rcsb_is_primary": "Y",
+        "rcsb_journal_abbrev": "J Biol Chem",
+        "title": "Complexation of Two Proteic Insect Inhibitors to the Active Site of Chymotrypsin Suggests Decoupled Roles for Binding and Selectivity",
+        "year": 2001
+      }
+    ],
+    "database_2": [
+      {
+        "database_code": "1GL1",
+        "database_id": "PDB",
+        "pdbx_DOI": "10.2210/pdb1gl1/pdb",
+        "pdbx_database_accession": "pdb_00001gl1"
+      },
+      {
+        "database_code": "EBI-8477",
+        "database_id": "PDBE"
+      },
+      {
+        "database_code": "D_1290008477",
+        "database_id": "WWPDB"
+      }
+    ],
+    "diffrn": [
+      {
+        "ambient_temp": 300.0,
+        "crystal_id": "1",
+        "id": "1"
+      }
+    ],
+    "diffrn_detector": [
+      {
+        "diffrn_id": "1",
+        "pdbx_collection_date": "1997-11-15T00:00:00.000+00:00"
+      }
+    ],
+    "diffrn_radiation": [
+      {
+        "diffrn_id": "1",
+        "pdbx_diffrn_protocol": "SINGLE WAVELENGTH",
+        "pdbx_monochromatic_or_laue_m_l": "M",
+        "pdbx_scattering_type": "x-ray",
+        "wavelength_id": "1"
+      }
+    ],
+    "diffrn_source": [
+      {
+        "diffrn_id": "1",
+        "pdbx_synchrotron_beamline": "DW32",
+        "pdbx_synchrotron_site": "LURE",
+        "pdbx_wavelength": "0.97",
+        "source": "SYNCHROTRON",
+        "type": "LURE BEAMLINE DW32"
+      }
+    ],
+    "entry": {
+      "id": "1GL1"
+    },
+    "exptl": [
+      {
+        "crystals_number": 1,
+        "method": "X-RAY DIFFRACTION"
+      }
+    ],
+    "exptl_crystal": [
+      {
+        "density_Matthews": 2.34,
+        "density_percent_sol": 50.0,
+        "id": "1"
+      }
+    ],
+    "exptl_crystal_grow": [
+      {
+        "crystal_id": "1",
+        "pH": 5.0,
+        "pdbx_details": "0.1 M NA ACETATE PH 5, 29% PEG 400, 0.1 M CDCL2"
+      }
+    ],
+    "pdbx_audit_revision_category": [
+      {
+        "category": "chem_comp_atom",
+        "data_content_type": "Structure model",
+        "ordinal": 1,
+        "revision_ordinal": 4
+      },
+      {
+        "category": "chem_comp_bond",
+        "data_content_type": "Structure model",
+        "ordinal": 2,
+        "revision_ordinal": 4
+      },
+      {
+        "category": "database_2",
+        "data_content_type": "Structure model",
+        "ordinal": 3,
+        "revision_ordinal": 4
+      },
+      {
+        "category": "pdbx_database_status",
+        "data_content_type": "Structure model",
+        "ordinal": 4,
+        "revision_ordinal": 4
+      },
+      {
+        "category": "pdbx_initial_refinement_model",
+        "data_content_type": "Structure model",
+        "ordinal": 5,
+        "revision_ordinal": 4
+      },
+      {
+        "category": "pdbx_struct_conn_angle",
+        "data_content_type": "Structure model",
+        "ordinal": 6,
+        "revision_ordinal": 4
+      },
+      {
+        "category": "struct_conn",
+        "data_content_type": "Structure model",
+        "ordinal": 7,
+        "revision_ordinal": 4
+      },
+      {
+        "category": "pdbx_entry_details",
+        "data_content_type": "Structure model",
+        "ordinal": 8,
+        "revision_ordinal": 5
+      },
+      {
+        "category": "pdbx_modification_feature",
+        "data_content_type": "Structure model",
+        "ordinal": 9,
+        "revision_ordinal": 5
+      }
+    ],
+    "pdbx_audit_revision_details": [
+      {
+        "data_content_type": "Structure model",
+        "ordinal": 1,
+        "provider": "repository",
+        "revision_ordinal": 1,
+        "type": "Initial release"
+      }
+    ],
+    "pdbx_audit_revision_group": [
+      {
+        "data_content_type": "Structure model",
+        "group": "Version format compliance",
+        "ordinal": 1,
+        "revision_ordinal": 2
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Version format compliance",
+        "ordinal": 2,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Data collection",
+        "ordinal": 3,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Database references",
+        "ordinal": 4,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Derived calculations",
+        "ordinal": 5,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Other",
+        "ordinal": 6,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Refinement description",
+        "ordinal": 7,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Structure summary",
+        "ordinal": 8,
+        "revision_ordinal": 5
+      }
+    ],
+    "pdbx_audit_revision_history": [
+      {
+        "data_content_type": "Structure model",
+        "major_revision": 1,
+        "minor_revision": 0,
+        "ordinal": 1,
+        "revision_date": "2001-11-28T00:00:00.000+00:00"
+      },
+      {
+        "data_content_type": "Structure model",
+        "major_revision": 1,
+        "minor_revision": 1,
+        "ordinal": 2,
+        "revision_date": "2011-05-08T00:00:00.000+00:00"
+      },
+      {
+        "data_content_type": "Structure model",
+        "major_revision": 1,
+        "minor_revision": 2,
+        "ordinal": 3,
+        "revision_date": "2011-07-13T00:00:00.000+00:00"
+      },
+      {
+        "data_content_type": "Structure model",
+        "major_revision": 1,
+        "minor_revision": 3,
+        "ordinal": 4,
+        "revision_date": "2023-12-13T00:00:00.000+00:00"
+      },
+      {
+        "data_content_type": "Structure model",
+        "major_revision": 1,
+        "minor_revision": 4,
+        "ordinal": 5,
+        "revision_date": "2024-11-06T00:00:00.000+00:00"
+      }
+    ],
+    "pdbx_audit_revision_item": [
+      {
+        "data_content_type": "Structure model",
+        "item": "_database_2.pdbx_DOI",
+        "ordinal": 1,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_database_2.pdbx_database_accession",
+        "ordinal": 2,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_database_status.status_code_sf",
+        "ordinal": 3,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr1_auth_asym_id",
+        "ordinal": 4,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr1_auth_comp_id",
+        "ordinal": 5,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr1_auth_seq_id",
+        "ordinal": 6,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr1_label_asym_id",
+        "ordinal": 7,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr1_label_atom_id",
+        "ordinal": 8,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr1_label_comp_id",
+        "ordinal": 9,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr1_label_seq_id",
+        "ordinal": 10,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr1_symmetry",
+        "ordinal": 11,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr2_auth_asym_id",
+        "ordinal": 12,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr2_auth_seq_id",
+        "ordinal": 13,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr2_label_asym_id",
+        "ordinal": 14,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr3_auth_asym_id",
+        "ordinal": 15,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr3_auth_comp_id",
+        "ordinal": 16,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr3_auth_seq_id",
+        "ordinal": 17,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr3_label_asym_id",
+        "ordinal": 18,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr3_label_atom_id",
+        "ordinal": 19,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr3_label_comp_id",
+        "ordinal": 20,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr3_label_seq_id",
+        "ordinal": 21,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.ptnr3_symmetry",
+        "ordinal": 22,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_pdbx_struct_conn_angle.value",
+        "ordinal": 23,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.pdbx_dist_value",
+        "ordinal": 24,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr1_auth_asym_id",
+        "ordinal": 25,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr1_auth_comp_id",
+        "ordinal": 26,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr1_auth_seq_id",
+        "ordinal": 27,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr1_label_asym_id",
+        "ordinal": 28,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr1_label_atom_id",
+        "ordinal": 29,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr1_label_comp_id",
+        "ordinal": 30,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr1_label_seq_id",
+        "ordinal": 31,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr1_symmetry",
+        "ordinal": 32,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr2_auth_asym_id",
+        "ordinal": 33,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr2_auth_comp_id",
+        "ordinal": 34,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr2_auth_seq_id",
+        "ordinal": 35,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr2_label_asym_id",
+        "ordinal": 36,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr2_label_atom_id",
+        "ordinal": 37,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr2_label_comp_id",
+        "ordinal": 38,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr2_label_seq_id",
+        "ordinal": 39,
+        "revision_ordinal": 4
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr2_symmetry",
+        "ordinal": 40,
+        "revision_ordinal": 4
+      }
+    ],
+    "pdbx_database_related": [
+      {
+        "content_type": "unspecified",
+        "db_id": "1AB9",
+        "db_name": "PDB",
+        "details": "CRYSTAL STRUCTURE OF BOVINE GAMMA-CHYMOTRYPSIN"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1ACB",
+        "db_name": "PDB",
+        "details": "ALPHA-CHYMOTRYPSIN COMPLEX WITH EGLIN C"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1AFQ",
+        "db_name": "PDB",
+        "details": "CRYSTAL STRUCTURE OF BOVINE GAMMA-CHYMOTRYPSIN COMPLEXED WITH A SYNTHETIC INHIBITOR"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1CA0",
+        "db_name": "PDB",
+        "details": "BOVINE CHYMOTRYPSIN COMPLEXED TO APPI"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1CBW",
+        "db_name": "PDB",
+        "details": "BOVINE CHYMOTRYPSIN COMPLEXED TO BPTI"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1CGI",
+        "db_name": "PDB",
+        "details": "ALPHA-CHYMOTRYPSINOGEN COMPLEX WITH HUMAN PANCREATIC SECRETORY TRYPSIN INHIBITOR VARIANT 3"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1CGJ",
+        "db_name": "PDB",
+        "details": "ALPHA-CHYMOTRYPSINOGEN COMPLEX WITH HUMAN PANCREATIC SECRETORY TRYPSIN INHIBITOR VARIANT 4"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1CHG",
+        "db_name": "PDB",
+        "details": "CHYMOTRYPSINOGEN A"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1DLK",
+        "db_name": "PDB",
+        "details": "CRYSTAL STRUCTURE ANALYSIS OF DELTA- CHYMOTRYPSIN BOUND TO A PEPTIDYL CHLOROMETHYL KETONE INHIBITOR"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1EX3",
+        "db_name": "PDB",
+        "details": "CRYSTAL STRUCTURE OF BOVINE CHYMOTRYPSINOGEN A (TETRAGONAL)"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1GCD",
+        "db_name": "PDB",
+        "details": "GAMMA CHYMOTRYPSIN COMPLEXED WITH DIETHYL PHOSPHORYL (PH 5.6, TEMPERATURE 90K)"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1GCT",
+        "db_name": "PDB",
+        "details": "GAMMA-CHYMOTRYPSIN A (PH 7.0)"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1GG6",
+        "db_name": "PDB",
+        "details": "CRYSTAL STUCTURE OF GAMMA CHYMOTRYPSIN WITH N-ACETYL-PHENYLALANINE TRIFLUOROMETHYL KETONE BOUND AT THE ACTIVESITE"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1GGD",
+        "db_name": "PDB",
+        "details": "CRYSTAL STUCTURE OF GAMMA CHYMOTRYPSIN WITH N-ACETYL-LEUCIL-PHENYLALANINE ALDEHYDE BOUND AT THE ACTIVE SITE"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1GHA",
+        "db_name": "PDB",
+        "details": "GAMMA CHYMOTRYPSIN IN 4% AQUEOUS SOLUTION OF ISOPROPANOL"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1GHB",
+        "db_name": "PDB",
+        "details": "GAMMA CHYMOTRYPSIN COMPLEXED WITH N-ACETYL D -TRYPTOPHAN"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1GL0",
+        "db_name": "PDB",
+        "details": "STRUCTURE OF THE COMPLEX BETWEEN BOVINE ALPHA-CHYMOTRYPSIN AND PMP-D2V, AN INHIBITOR FROM THE INSECT LOCUSTA MIGRATORIA"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1GMC",
+        "db_name": "PDB",
+        "details": "GAMMA CHYMOTRYPSIN"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1GMD",
+        "db_name": "PDB",
+        "details": "GAMMA CHYMOTRYPSIN"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1GMH",
+        "db_name": "PDB",
+        "details": "GAMMA CHYMOTRYPSIN COMPLEXED WITH DIISOPROPYLPHOSPHOROFLUORIDATE"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1HJA",
+        "db_name": "PDB",
+        "details": "LYS 18 VARIANT OF TURKEY OVOMUCOID INHIBITOR THIRD DOMAIN COMPLEXED WITH ALPHA- CHYMOTRYPSIN"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1MTN",
+        "db_name": "PDB",
+        "details": "BOVINE ALPHA-CHYMOTRYPSIN:BPTI CRYSTALLIZATION"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1PMC",
+        "db_name": "PDB",
+        "details": "PROTEINASE INHIBITOR PMP-C (NMR, 36 STRUCTURES) 1PMC 3"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1VGC",
+        "db_name": "PDB",
+        "details": "GAMMA-CHYMOTRYPSIN L-PARA-CHLORO-1-ACETAMIDO BORONIC ACID INHIBITOR COMPLEX"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "2CGA",
+        "db_name": "PDB",
+        "details": "CHYMOTRYPSINOGEN A"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "2GCH",
+        "db_name": "PDB",
+        "details": "GAMMA CHYMOTRYPSIN A"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "2GCT",
+        "db_name": "PDB",
+        "details": "GAMMA-CHYMOTRYPSIN A (PH 2.0)"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "2GMT",
+        "db_name": "PDB",
+        "details": "GAMMA CHYMOTRYPSIN ALKYLATED WITH N-ACETYL-L -ALANYL-L-PHENYLALANYL-ALPHA-CHLOROETHYLKETONE"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "2VGC",
+        "db_name": "PDB",
+        "details": "GAMMA-CHYMOTRYPSIN D-PARA-CHLORO-1-ACETAMIDO BORONIC ACID INHIBITOR COMPLEX"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "3GCH",
+        "db_name": "PDB",
+        "details": "GAMMA CHYMOTRYPSIN COMPLEX WITH TRANS-O- HYDROXY-ALPHA-METHYL CINNAMATE"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "3GCT",
+        "db_name": "PDB",
+        "details": "GAMMA-CHYMOTRYPSIN A (PH 10.5)"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "3VGC",
+        "db_name": "PDB",
+        "details": "GAMMA-CHYMOTRYPSIN L-NAPHTHYL-1-ACETAMIDO BORONIC ACID ACID INHIBITOR COMPLEX"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "4GCH",
+        "db_name": "PDB",
+        "details": "GAMMA CHYMOTRYPSIN COMPLEX WITH P-DIETHYLAMINO -O-HYDROXY-ALPHA-METHYL CINNAMATE"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "4VGC",
+        "db_name": "PDB",
+        "details": "GAMMA-CHYMOTRYPSIN D-NAPHTHYL-1-ACETAMIDO BORONIC ACID INHIBITOR COMPLEX"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "5GCH",
+        "db_name": "PDB",
+        "details": "PHOTOLYSIS PRODUCT OF P-DIETHYLAMINO-O- HYDROXY-ALPHA-METHYL CINNAMATE INHIBITED GAMMA CHYMOTRYPSIN"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "6GCH",
+        "db_name": "PDB",
+        "details": "GAMMA CHYMOTRYPSIN WITH N-ACETYL-L- PHENYLALANYL TRIFLUOROMETHYL KETONE BOUND AT THE ACTIVE SITE"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "7GCH",
+        "db_name": "PDB",
+        "details": "GAMMA CHYMOTRYPSIN WITH N-ACETYL-L-LEUCYL- L-PHENYLALANYL TRIFLUOROMETHYL KETONE BOUND AT THE ACTIVE SITE"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "8GCH",
+        "db_name": "PDB",
+        "details": "GAMMA CHYMOTRYPSIN COMPLEX WITH GLY-ALA-TRP"
+      }
+    ],
+    "pdbx_database_status": {
+      "deposit_site": "PDBE",
+      "pdb_format_compatible": "Y",
+      "process_site": "PDBE",
+      "recvd_initial_deposition_date": "2001-08-22T00:00:00.000+00:00",
+      "status_code": "REL",
+      "status_code_sf": "REL"
+    },
+    "pdbx_initial_refinement_model": [
+      {
+        "accession_code": "1CHO",
+        "details": "PDB ENTRY 1CHO",
+        "id": 1,
+        "source_name": "PDB",
+        "type": "experimental model"
+      }
+    ],
+    "pdbx_vrpt_summary": {
+      "attempted_validation_steps": "molprobity,validation-pack,xtriage,eds,mogul,validation_schema,percentiles,writexml,writecif,writepdf",
+      "ligands_for_buster_report": "N",
+      "report_creation_date": "2026-03-05T14:30:00.000+00:00"
+    },
+    "pdbx_vrpt_summary_diffraction": [
+      {
+        "B_factor_type": "FULL",
+        "CCP4_version": "9.0.010 (Gargrove)",
+        "DCC_R": 0.1889,
+        "DCC_Rfree": 0.2272,
+        "EDS_R": 0.1866,
+        "EDS_res_high": 2.1,
+        "EDS_res_low": 19.66,
+        "Fo_Fc_correlation": 0.958,
+        "I_over_sigma": "2.18(2.09A)",
+        "Padilla_Yeates_L2_mean": 0.334,
+        "Padilla_Yeates_L_mean": 0.5,
+        "Wilson_B_aniso": "[23.297,23.297,25.665,0.000,0.000,0.000]",
+        "Wilson_B_estimate": 24.048,
+        "acentric_outliers": 1,
+        "bulk_solvent_b": 65.059,
+        "bulk_solvent_k": 0.338,
+        "centric_outliers": 1,
+        "data_anisotropy": 0.098,
+        "data_completeness": 98.15,
+        "density_fitness_version": "1.0.12",
+        "exp_method": "x-ray",
+        "num_miller_indices": 46358,
+        "number_reflns_R_free": 2311,
+        "percent_RSRZ_outliers": 4.53,
+        "percent_free_reflections": 4.99,
+        "trans_NCS_details": "The analyses of the Patterson function reveals a significant off-origin peak that is 36.83 % of the origin peak, indicating pseudo-translational symmetry.  The chance of finding a peak of this or larger height by random in a structure without pseudo-translational symmetry is equal to 4.7031e-04. The detected translational NCS is most likely also responsible for the elevated intensity ratio.  See the relevant section of the logfile for more details.",
+        "twin_fraction": "h,-h-k,-l:0.052"
+      }
+    ],
+    "pdbx_vrpt_summary_geometry": [
+      {
+        "angles_RMSZ": 0.93,
+        "bonds_RMSZ": 0.44,
+        "clashscore": 7.02,
+        "num_H_reduce": 5858,
+        "num_angles_RMSZ": 8246,
+        "num_bonds_RMSZ": 6074,
+        "percent_ramachandran_outliers": 0.63,
+        "percent_rotamer_outliers": 2.11
+      }
+    ],
+    "rcsb_accession_info": {
+      "deposit_date": "2001-08-22T00:00:00.000+00:00",
+      "has_released_experimental_data": "Y",
+      "initial_release_date": "2001-11-28T00:00:00.000+00:00",
+      "major_revision": 1,
+      "minor_revision": 4,
+      "revision_date": "2024-11-06T00:00:00.000+00:00",
+      "status_code": "REL"
+    },
+    "rcsb_entry_container_identifiers": {
+      "assembly_ids": [
+        "1",
+        "2",
+        "3"
+      ],
+      "entity_ids": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "entry_id": "1GL1",
+      "model_ids": [
+        1
+      ],
+      "non_polymer_entity_ids": [
+        "3"
+      ],
+      "polymer_entity_ids": [
+        "1",
+        "2"
+      ],
+      "pubmed_id": 11495915,
+      "rcsb_id": "1GL1"
+    },
+    "rcsb_entry_info": {
+      "assembly_count": 3,
+      "branched_entity_count": 0,
+      "cis_peptide_count": 0,
+      "deposited_atom_count": 6341,
+      "deposited_branched_entity_instance_count": 0,
+      "deposited_deuterated_water_count": 0,
+      "deposited_hydrogen_atom_count": 0,
+      "deposited_model_count": 1,
+      "deposited_modeled_polymer_monomer_count": 817,
+      "deposited_nonpolymer_entity_instance_count": 6,
+      "deposited_polymer_entity_instance_count": 6,
+      "deposited_polymer_monomer_count": 843,
+      "deposited_solvent_atom_count": 369,
+      "deposited_unmodeled_polymer_monomer_count": 26,
+      "diffrn_radiation_wavelength_maximum": 0.97,
+      "diffrn_radiation_wavelength_minimum": 0.97,
+      "disulfide_bond_count": 24,
+      "entity_count": 4,
+      "experimental_method": "X-ray",
+      "experimental_method_count": 1,
+      "inter_mol_covalent_bond_count": 0,
+      "inter_mol_metalic_bond_count": 35,
+      "molecular_weight": 89.09,
+      "na_polymer_entity_types": "Other",
+      "nonpolymer_bound_components": [
+        "CD"
+      ],
+      "nonpolymer_entity_count": 1,
+      "nonpolymer_molecular_weight_maximum": 0.11,
+      "nonpolymer_molecular_weight_minimum": 0.11,
+      "polymer_composition": "heteromeric protein",
+      "polymer_entity_count": 2,
+      "polymer_entity_count_DNA": 0,
+      "polymer_entity_count_RNA": 0,
+      "polymer_entity_count_nucleic_acid": 0,
+      "polymer_entity_count_nucleic_acid_hybrid": 0,
+      "polymer_entity_count_protein": 2,
+      "polymer_entity_taxonomy_count": 2,
+      "polymer_molecular_weight_maximum": 25.69,
+      "polymer_molecular_weight_minimum": 3.79,
+      "polymer_monomer_count_maximum": 245,
+      "polymer_monomer_count_minimum": 36,
+      "resolution_combined": [
+        2.1
+      ],
+      "selected_polymer_entity_types": "Protein (only)",
+      "software_programs_combined": [
+        "AMORE",
+        "DENZO",
+        "SCALEPACK",
+        "X-PLOR"
+      ],
+      "solvent_entity_count": 1,
+      "structure_determination_methodology": "experimental",
+      "structure_determination_methodology_priority": 10,
+      "diffrn_resolution_high": {
+        "provenance_source": "Depositor assigned",
+        "value": 2.1
+      }
+    },
+    "rcsb_primary_citation": {
+      "country": "US",
+      "id": "primary",
+      "journal_abbrev": "J.Biol.Chem.",
+      "journal_id_ASTM": "JBCHA3",
+      "journal_id_CSD": "0071",
+      "journal_id_ISSN": "0021-9258",
+      "journal_volume": "276",
+      "page_first": "38893",
+      "pdbx_database_id_DOI": "10.1074/JBC.M105707200",
+      "pdbx_database_id_PubMed": 11495915,
+      "rcsb_ORCID_identifiers": [
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "rcsb_authors": [
+        "Roussel, A.",
+        "Mathieu, M.",
+        "Dobbs, A.",
+        "Luu, B.",
+        "Cambillau, C.",
+        "Kellenberger, C."
+      ],
+      "rcsb_journal_abbrev": "J Biol Chem",
+      "title": "Complexation of Two Proteic Insect Inhibitors to the Active Site of Chymotrypsin Suggests Decoupled Roles for Binding and Selectivity",
+      "year": 2001
+    },
+    "refine": [
+      {
+        "B_iso_mean": 31.9,
+        "aniso_B_1_1": -0.53,
+        "aniso_B_1_2": 0.58,
+        "aniso_B_1_3": 0.0,
+        "aniso_B_2_2": -0.53,
+        "aniso_B_2_3": 0.0,
+        "aniso_B_3_3": 1.06,
+        "ls_R_factor_R_free": 0.228,
+        "ls_R_factor_R_free_error": 0.005,
+        "ls_R_factor_R_work": 0.189,
+        "ls_R_factor_obs": 0.189,
+        "ls_d_res_high": 2.1,
+        "ls_d_res_low": 19.66,
+        "ls_number_reflns_R_free": 2311,
+        "ls_number_reflns_obs": 46356,
+        "ls_percent_reflns_R_free": 5.0,
+        "ls_percent_reflns_obs": 98.2,
+        "pdbx_R_Free_selection_details": "RANDOM",
+        "pdbx_data_cutoff_high_absF": 6553111.26,
+        "pdbx_data_cutoff_low_absF": 0.0,
+        "pdbx_diffrn_id": [
+          "1"
+        ],
+        "pdbx_isotropic_thermal_model": "RESTRAINED",
+        "pdbx_ls_cross_valid_method": "THROUGHOUT",
+        "pdbx_ls_sigma_F": 0.0,
+        "pdbx_method_to_determine_struct": "MOLECULAR REPLACEMENT",
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "pdbx_starting_model": "PDB ENTRY 1CHO"
+      }
+    ],
+    "refine_analyze": [
+      {
+        "Luzzati_coordinate_error_free": 0.29,
+        "Luzzati_coordinate_error_obs": 0.24,
+        "Luzzati_d_res_low_obs": 5.0,
+        "Luzzati_sigma_a_free": 0.27,
+        "Luzzati_sigma_a_obs": 0.25,
+        "pdbx_refine_id": "X-RAY DIFFRACTION"
+      }
+    ],
+    "refine_hist": [
+      {
+        "cycle_id": "LAST",
+        "d_res_high": 2.1,
+        "d_res_low": 19.66,
+        "number_atoms_solvent": 369,
+        "number_atoms_total": 6341,
+        "pdbx_number_atoms_ligand": 6,
+        "pdbx_number_atoms_nucleic_acid": 0,
+        "pdbx_number_atoms_protein": 5966,
+        "pdbx_refine_id": "X-RAY DIFFRACTION"
+      }
+    ],
+    "refine_ls_restr": [
+      {
+        "dev_ideal": 0.006,
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_bond_d"
+      },
+      {
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_bond_d_na"
+      },
+      {
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_bond_d_prot"
+      },
+      {
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_angle_d"
+      },
+      {
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_angle_d_na"
+      },
+      {
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_angle_d_prot"
+      },
+      {
+        "dev_ideal": 1.3,
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_angle_deg"
+      },
+      {
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_angle_deg_na"
+      },
+      {
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_angle_deg_prot"
+      },
+      {
+        "dev_ideal": 26.1,
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_dihedral_angle_d"
+      },
+      {
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_dihedral_angle_d_na"
+      },
+      {
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_dihedral_angle_d_prot"
+      },
+      {
+        "dev_ideal": 0.75,
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_improper_angle_d"
+      },
+      {
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_improper_angle_d_na"
+      },
+      {
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_improper_angle_d_prot"
+      },
+      {
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_mcbond_it"
+      },
+      {
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_mcangle_it"
+      },
+      {
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_scbond_it"
+      },
+      {
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "x_scangle_it"
+      }
+    ],
+    "reflns": [
+      {
+        "B_iso_Wilson_estimate": 14.6,
+        "d_resolution_high": 2.1,
+        "d_resolution_low": 19.66,
+        "number_obs": 46359,
+        "observed_criterion_sigma_I": 0.0,
+        "pdbx_Rmerge_I_obs": 0.079,
+        "pdbx_diffrn_id": [
+          "1"
+        ],
+        "pdbx_ordinal": 1,
+        "pdbx_redundancy": 3.9,
+        "percent_possible_obs": 98.2
+      }
+    ],
+    "reflns_shell": [
+      {
+        "Rmerge_I_obs": 0.371,
+        "d_res_high": 2.1,
+        "d_res_low": 2.2,
+        "pdbx_diffrn_id": [
+          "1"
+        ],
+        "pdbx_ordinal": 1,
+        "pdbx_redundancy": 2.1,
+        "percent_possible_all": 89.6
+      }
+    ],
+    "software": [
+      {
+        "classification": "refinement",
+        "name": "X-PLOR",
+        "pdbx_ordinal": 1
+      },
+      {
+        "classification": "data reduction",
+        "name": "DENZO",
+        "pdbx_ordinal": 2
+      },
+      {
+        "classification": "data scaling",
+        "name": "SCALEPACK",
+        "pdbx_ordinal": 3
+      },
+      {
+        "classification": "phasing",
+        "name": "AMoRE",
+        "pdbx_ordinal": 4
+      }
+    ],
+    "struct": {
+      "title": "structure of the complex between bovine alpha-chymotrypsin and PMP-C, an inhibitor from the insect Locusta migratoria"
+    },
+    "struct_keywords": {
+      "pdbx_keywords": "HYDROLASE/INHIBITOR",
+      "text": "HYDROLASE/INHIBITOR, COMPLEX (PROTEASE-INHIBITOR), HYDROLASE, SERINE PROTEASE, SERINE PROTEASE INHIBITOR, HYDROLASE-INHIBITOR complex"
+    },
+    "symmetry": {
+      "Int_Tables_number": 170,
+      "space_group_name_H_M": "P 65"
+    },
+    "rcsb_id": "1GL1"
+  }
+}

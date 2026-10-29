@@ -1,0 +1,15 @@
+# 多链蛋白扩充：本地推理准备审查
+
+截至本次只读检查，**ThermoPCD 没有可以直接批准新增的同序列同源多聚体测试记录**。实际扫描 `D:/data/ThermoPCD_trajectories` 的 1,175 个目录、5,587 个非零 PDB（3,012 个独立文件哈希），不仅检查首选输入，也检查所有现有拓扑；其中两条及以上蛋白链且全部链序列完全相同的候选为 0。229 个目录具有非零、名称符合 production 规则的 XTC，涉及 59 个 PDB 标识；首选拓扑分别为 55 个单链目录、13 个双链、158 个三链、2 个四链和 1 个六链。XTC 在此仅做名称/文件大小检查，未读取轨迹内容，因而 production 命名不等于已确认连续帧、原子顺序和可提取统一标签。888 个目录的首选拓扑是不同序列多链，其身份仍标为待核，不能仅凭序列不同宣布 heteromer；缺端片段或不同构建体也可能来自同一蛋白。本次“0”是可直接确认的严格同序列候选数，不是对所有这些身份未决记录的生物学排除证明。
+
+几个容易误计的例子是：5DK3 的四链输入为两条 218 残基链与两条 444 残基链，共两种序列，目录标注为完整 IgG4 抗体，不能因链成对相同而算成只有一种蛋白的同源多聚体；7U8M 六链输入也只有两种重复序列，目录明确包含病毒血凝素与抗体，不能截取或删去结合伴侣以制造新增 protein。3WD5/4G3Y 的部分目录虽写 TNFα，其被模拟的孤立输入实际为一条链，不能按该蛋白在生物体中的寡聚状态复制成三链。5OTJ 的现存输入为三条不同序列，目录所称“两个相同抗体”不表示整个体系由同一种蛋白组成。需要扩充用户要求的真实多链 protein 时，应继续从其他本地来源或新增公开 MD 数据寻找，而不是使用这些单链输入拼装。
+
+现成 ThermoPCD 32 条严格外测已恢复到原始冻结来源，并逐一验证输入 PDB 与标签 SHA：**32/32 通过**，与 ready manifest、external payload freeze 及实际预测导出清单一致；其中 31 条有三链，1 条有双链，全部链同序列的多链记录为 0。这 32 条确实有可复用的冻结结构、标签和既有 Full 预测，但并不提供本次所需的同源多聚体扩充值。它们与主 3,063 的 sample_id 交集为 0；5 条存在与主训练宇宙完全相同的某条链，因此“另一个来源”不等于“未见家族”。既有严格训练实验已根据预定 MMseqs 与短肽精确匹配规则排除 632 条关联记录，留下 2,431 条（ATLAS 1,866 / DynaRepo 565）；其已存验证涵盖 95 条外部链，严格训练命中为 0。该结果只适用于原 32 条及原声明搜索规则，不能自动扩展为新增记录的训练隔离证明，也不能证明不存在一切进化关系。
+
+Full 的可用权重与后续使用规则如下。现成 `strict_full/fold_0/epoch_040.pt` 为固定 seed7、epoch40 的另一项从头训练实验，真实 SHA 为 `b3eed060919df15f075329bc892f959d9355232be5feb561417edd49ea82b39f`，大小 16,526,522 字节。其配置是 full、learned 序列嵌入、condition 特征关闭，训练清单为 `strict_external_train.jsonl`、没有 test manifest、初始化权重为空；本次仅通过 ZIP 内 54 KB pickle 元数据的原始 opcode 读取配置，没有反序列化对象或加载张量。更关键的是，现有 10 条多链 protein 中 **9 条仍在 strict_full 训练清单中**（A000J、A004V、A007Q、A0088、A009H、A00C7、A00CS、A00K8、A00PW），仅 A0046 不在。因此现有记录继续使用其原本冻结的对应折外预测；不能随机换 fold，也不能整体切换 strict_full 后称作未见测试。对于真正不在全部 3,063 训练记录中的新增外部测试，可预先声明使用原五折 Full 的等权平均，并另外报告家族暴露；若选择单个 strict_full，则必须先对其明确的 2,431 条训练名单核对新记录身份与链同源关系，并将它标注为独立 purged 模型。两种协议都不能根据测试成绩挑选。
+
+BackFlip 代表固定为 1.0 chains 与 2.1 chains，同一逐链预测并拼回完整记录的上下文，不因新增候选表现改变选择；DynaProt、FastProtFlex、ANM/GNM 及 Static/AA 快速对照的既定方法定义保持。新可用记录须先冻结真实生物身份（至少两条实际蛋白链、用户定义的同一蛋白体系）、静态输入来源、轨迹/拓扑身份、统一 RMSF/侧链熵标签和训练重叠说明，再启动任何模型；Static/AA 也需使用预先声明且与 Full 协议对应的训练拟合版本。先前 `readiness_audit.json` 的 `missing_local_evidence` 只反映迁移后的 E 盘 core 目录缺件；后续已在旧本地工作树找回并验证原件，恢复证据见 `recovered_strict_source_audit.json`，不改写前一份检查的真实历史状态。
+
+原件恢复路径为 `C:/Users/DELL/.codex/worktrees/4666/FlexPPI/paper/revision_20261002/experiments/corrected_pipeline`。其中 `strict_external_payload/splits/strict_external_train.jsonl` 的 SHA `e0c84c566dea09b436dd7d07e9e6fd8ce1a8cf0c72be20931179e6689c8b44bd` 与严格冻结清单完全匹配，严格冻结清单本身 SHA `16be2a49c6cd2b295a8f150de5e0354d3f6e20028de05f530ae8908c26dbacea` 与现存实际评估审计一致；external payload SHA `4dc8c3d560ac7e11eb2bef1be5bab431c58be32281f2712e4c8019715fe5781b` 也一致。详细输出包括 `thermopcd_directory_readiness.csv`、`thermopcd_topology_inventory.csv`、`existing_strict32_identity.csv`、`recovered_strict32_source_binding.csv` 和 `thermopcd_production_exact_training_exposure.csv`；后者只报告精确链匹配，没有新做序列同源搜索。229 个 production 候选目录中 33 个与主训练宇宙有精确链重叠，1 个与 strict 训练有精确链重叠；目录和温度/种子重复不应当成独立蛋白家族。
+
+本轮仅写入本目录的新审查脚本、CSV 和 JSON，不读取模型性能用于选样、不推理、不重训练、不读取轨迹内容、不修改旧图或冻结输入。`evidence_sha256.json` 记录新增说明与证据文件的 SHA。

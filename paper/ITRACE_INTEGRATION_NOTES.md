@@ -1,5 +1,7 @@
 # ITrace 测评整合说明
 
+> 历史记录：以下说明描述早期版本，不是 2026-09-18 当前双目标正文的模型、划分与指标口径。当前稿已将 ITrace 纳入五折训练/测试，允许链家族共享，不称为独立外部测试。请以 `README.md`、`WRITING_REVISION_NOTES.md` 和主文件实际加载的 `sections/appendix_current.tex` 为准；本文保留用于追溯旧实验。
+
 本目录中的 ITrace 内容来自 `E:\Project\FlexPPI\output\itrace_benchmark`。
 正文主分析使用排除精确训练 PDB 重叠 3KXF 后的 244 个 TCR–pMHC 复合体，
 每个复合体包含三条独立 MD 重复；FastProtFlex 对各链分别推理，FlexPPI 对完整

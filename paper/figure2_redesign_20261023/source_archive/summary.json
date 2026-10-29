@@ -1,0 +1,300 @@
+{
+  "status": "complete",
+  "protocol_sha256": "532bdc9c0cac43dfc0c834fc3a32a27e11244bb41ace196d7a747bede2289ea8",
+  "code_sha256": "7d669fafb8f1477c9ccfad051d91a1fea08ce32b65fab711c5272668dff0d5b2",
+  "seed": 20261018,
+  "bootstrap_replicates": 10000,
+  "curve_bootstrap_replicates": 1000,
+  "statistical_unit": "record",
+  "bootstrap_strata": [
+    "atlas",
+    "dynarepo",
+    "itrace"
+  ],
+  "metrics": {
+    "rmsf": {
+      "Full": {
+        "mean_ap": 0.7300365341292498,
+        "ap_ci": [
+          0.7242412711594066,
+          0.7360574150410882
+        ],
+        "mean_auroc": 0.9343905203641495,
+        "auroc_ci": [
+          0.9323176175173141,
+          0.9364948036176974
+        ],
+        "macro_mae": 0.5771038628004095,
+        "mean_spearman": 0.7961867220004638,
+        "n_records": 3063,
+        "n_total_records": 3063,
+        "n_positions": 961321,
+        "prevalence_mean": 0.10257909653812106,
+        "prevalence_min": 0.1,
+        "prevalence_max": 0.12195121951219512,
+        "undefined_records": 0
+      },
+      "Intra": {
+        "mean_ap": 0.6955425480429748,
+        "ap_ci": [
+          0.6893149093923974,
+          0.7018544681918509
+        ],
+        "mean_auroc": 0.9214558086206902,
+        "auroc_ci": [
+          0.9189071052643324,
+          0.924061658004643
+        ],
+        "macro_mae": 0.6355266012703227,
+        "mean_spearman": 0.7765746491094271,
+        "n_records": 3063,
+        "n_total_records": 3063,
+        "n_positions": 961321,
+        "prevalence_mean": 0.10257909653812106,
+        "prevalence_min": 0.1,
+        "prevalence_max": 0.12195121951219512,
+        "undefined_records": 0
+      },
+      "Static": {
+        "mean_ap": 0.6571306899778864,
+        "ap_ci": [
+          0.6512488469285678,
+          0.663246885279877
+        ],
+        "mean_auroc": 0.9103457152250222,
+        "auroc_ci": [
+          0.9081759682230929,
+          0.9126084959436274
+        ],
+        "macro_mae": 0.6773283014111061,
+        "mean_spearman": 0.7560924913700227,
+        "n_records": 3063,
+        "n_total_records": 3063,
+        "n_positions": 961321,
+        "prevalence_mean": 0.10257909653812106,
+        "prevalence_min": 0.1,
+        "prevalence_max": 0.12195121951219512,
+        "undefined_records": 0
+      },
+      "AA": {
+        "mean_ap": 0.1680527305401422,
+        "ap_ci": [
+          0.16547310925858408,
+          0.17070968992028437
+        ],
+        "mean_auroc": 0.625688076245388,
+        "auroc_ci": [
+          0.6228916222817721,
+          0.6284612174808598
+        ],
+        "macro_mae": 0.9088715022058005,
+        "mean_spearman": 0.25636387896890833,
+        "n_records": 3063,
+        "n_total_records": 3063,
+        "n_positions": 961321,
+        "prevalence_mean": 0.10257909653812106,
+        "prevalence_min": 0.1,
+        "prevalence_max": 0.12195121951219512,
+        "undefined_records": 0
+      }
+    },
+    "chi_entropy": {
+      "Full": {
+        "mean_ap": 0.9262696667415228,
+        "ap_ci": [
+          0.9242291168113527,
+          0.9282332802004186
+        ],
+        "mean_auroc": 0.9892377533699649,
+        "auroc_ci": [
+          0.9889202186687428,
+          0.9895355808583407
+        ],
+        "macro_mae": 0.16586574902130047,
+        "mean_spearman": 0.9411305304037728,
+        "n_records": 3063,
+        "n_total_records": 3063,
+        "n_positions": 824988,
+        "prevalence_mean": 0.10291394329994574,
+        "prevalence_min": 0.1,
+        "prevalence_max": 0.12903225806451613,
+        "undefined_records": 0
+      },
+      "Intra": {
+        "mean_ap": 0.9203779513546311,
+        "ap_ci": [
+          0.9181826477288799,
+          0.9224934394358201
+        ],
+        "mean_auroc": 0.9885655678116402,
+        "auroc_ci": [
+          0.9882248317877301,
+          0.9888937993838872
+        ],
+        "macro_mae": 0.16961745654268454,
+        "mean_spearman": 0.9384564817696236,
+        "n_records": 3063,
+        "n_total_records": 3063,
+        "n_positions": 824988,
+        "prevalence_mean": 0.10291394329994574,
+        "prevalence_min": 0.1,
+        "prevalence_max": 0.12903225806451613,
+        "undefined_records": 0
+      },
+      "Static": {
+        "mean_ap": 0.906589473047831,
+        "ap_ci": [
+          0.9042555966402207,
+          0.9088051951998614
+        ],
+        "mean_auroc": 0.986724177973742,
+        "auroc_ci": [
+          0.9863765215667659,
+          0.9870606234753853
+        ],
+        "macro_mae": 0.18698759641798685,
+        "mean_spearman": 0.9294127560685708,
+        "n_records": 3063,
+        "n_total_records": 3063,
+        "n_positions": 824988,
+        "prevalence_mean": 0.10291394329994574,
+        "prevalence_min": 0.1,
+        "prevalence_max": 0.12903225806451613,
+        "undefined_records": 0
+      },
+      "AA": {
+        "mean_ap": 0.7789229917088459,
+        "ap_ci": [
+          0.7752987974412595,
+          0.7825316534525595
+        ],
+        "mean_auroc": 0.9748943697813532,
+        "auroc_ci": [
+          0.9743771951534802,
+          0.9754136709864654
+        ],
+        "macro_mae": 0.24177602810322707,
+        "mean_spearman": 0.8882664140178399,
+        "n_records": 3063,
+        "n_total_records": 3063,
+        "n_positions": 824988,
+        "prevalence_mean": 0.10291394329994574,
+        "prevalence_min": 0.1,
+        "prevalence_max": 0.12903225806451613,
+        "undefined_records": 0
+      }
+    }
+  },
+  "within_type": {
+    "Full": {
+      "mean_ap": 0.622603905736452,
+      "ap_ci": [
+        0.6192372957532796,
+        0.6259409398652697
+      ],
+      "mean_auroc": 0.8043844147345386,
+      "auroc_ci": [
+        0.8017980284975199,
+        0.8069012686657911
+      ],
+      "n_records": 3063,
+      "n_eligible_record_types": 42108,
+      "undefined_record_types": {
+        "fewer_than_four_positions": 10493,
+        "one_class_after_reference_q90_ties": 2533
+      },
+      "mean_record_type_prevalence": 0.14633027306649204
+    },
+    "Intra": {
+      "mean_ap": 0.6089206939928457,
+      "ap_ci": [
+        0.6055188642728,
+        0.6123049588969341
+      ],
+      "mean_auroc": 0.7954855187753664,
+      "auroc_ci": [
+        0.7927630652662738,
+        0.7981570529914406
+      ],
+      "n_records": 3063,
+      "n_eligible_record_types": 42108,
+      "undefined_record_types": {
+        "fewer_than_four_positions": 10493,
+        "one_class_after_reference_q90_ties": 2533
+      },
+      "mean_record_type_prevalence": 0.14633027306649204
+    },
+    "Static": {
+      "mean_ap": 0.5545242004032818,
+      "ap_ci": [
+        0.5511486402947867,
+        0.5580336186161879
+      ],
+      "mean_auroc": 0.7548890043602955,
+      "auroc_ci": [
+        0.7521176057786146,
+        0.7577267049046511
+      ],
+      "n_records": 3063,
+      "n_eligible_record_types": 42108,
+      "undefined_record_types": {
+        "fewer_than_four_positions": 10493,
+        "one_class_after_reference_q90_ties": 2533
+      },
+      "mean_record_type_prevalence": 0.14633027306649204
+    },
+    "AA": {
+      "mean_ap": 0.14633027306649204,
+      "ap_ci": [
+        0.14558890447528977,
+        0.14707850509659776
+      ],
+      "mean_auroc": 0.5,
+      "auroc_ci": [
+        0.5,
+        0.5
+      ],
+      "n_records": 3063,
+      "n_eligible_record_types": 42108,
+      "undefined_record_types": {
+        "fewer_than_four_positions": 10493,
+        "one_class_after_reference_q90_ties": 2533
+      },
+      "mean_record_type_prevalence": 0.14633027306649204
+    }
+  },
+  "coverage": {
+    "rmsf": {
+      "n_total_records": 3063,
+      "n_eligible_records": 3063,
+      "n_valid_positions": 961321,
+      "undefined_reasons": {},
+      "reference_min": 0.20509372651576996,
+      "reference_max": 33.18666458129883,
+      "prediction_min": 0.23427285254001617,
+      "prediction_max": 14.297941207885742,
+      "density_weight_sum": 0.9999999999999989,
+      "density_axis_scale": "symlog",
+      "density_linthresh": 1.0
+    },
+    "chi_entropy": {
+      "n_total_records": 3063,
+      "n_eligible_records": 3063,
+      "n_valid_positions": 824988,
+      "undefined_reasons": {},
+      "reference_min": 0.0,
+      "reference_max": 4.047488689422607,
+      "prediction_min": 2.747852704487741e-06,
+      "prediction_max": 4.057138919830322,
+      "density_weight_sum": 1.0000000000000036,
+      "density_axis_scale": "linear",
+      "density_linthresh": 0.0
+    }
+  },
+  "display_full_selection_endpoint": {
+    "file": "all_selected_endpoint.csv",
+    "source": "last original score-threshold point per record",
+    "added_after_grid": true,
+    "changes_exact_AP_or_AUROC": false
+  }
+}

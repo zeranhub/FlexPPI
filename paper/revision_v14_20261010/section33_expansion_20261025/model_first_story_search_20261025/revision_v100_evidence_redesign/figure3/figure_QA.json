@@ -1,0 +1,122 @@
+{
+  "size_mm": [
+    183.0,
+    222.0
+  ],
+  "min_font": 9.0,
+  "font_at_167p6mm": 8.242622950819671,
+  "style": "same as verified current Fig2; Arial9/10/11, fine axes, semantic palette",
+  "main_plot_counts": {
+    "b": 75,
+    "c": 132,
+    "d": 18,
+    "e": 302,
+    "f": 332
+  },
+  "new_geometry_values": 31,
+  "original_inventory_853_unchanged": true,
+  "Intra_25_values_moved_to_supplement": true,
+  "all_masks_preserved": true,
+  "all6_Gln_preserved": true,
+  "per_chi_all151_points": true,
+  "e_four_horizontal": true,
+  "f_all83_matched_per_metric": true,
+  "f_higher_counts": {
+    "fine_entropy": 79,
+    "lowF_width": 78
+  },
+  "no_joint_CI_constructed": true,
+  "no_binding_free_energy_or_apo_holo_claim": true,
+  "static_geometry_not_binding_dynamics": true,
+  "structure_assets_unchanged": true,
+  "annotation_metrics": {
+    "CaMKI_Full_RMSF_MAE_A": 0.1148592012,
+    "CaMKI_Intra_RMSF_MAE_A": 2.383203344,
+    "Ubiquitin_Full_Hchi_MAE_nats": 0.07953050649754886
+  },
+  "outside_text": [],
+  "axes_bounds_mm": {
+    "b_RMSF": [
+      111.0,
+      18.0,
+      69.0,
+      22.0
+    ],
+    "b_static_shielding": [
+      111.0,
+      44.0,
+      69.0,
+      9.0
+    ],
+    "c": [
+      14.0,
+      74.0,
+      70.0,
+      30.0
+    ],
+    "d_Hchi": [
+      111.0,
+      74.0,
+      69.0,
+      20.0
+    ],
+    "d_SASA": [
+      111.0,
+      98.0,
+      69.0,
+      9.0
+    ],
+    "e_chi1": [
+      14.0,
+      132.0,
+      35.5,
+      25.0
+    ],
+    "e_chi2": [
+      57.5,
+      132.0,
+      35.5,
+      25.0
+    ],
+    "e_chi3": [
+      101.0,
+      132.0,
+      35.5,
+      25.0
+    ],
+    "e_chi4": [
+      144.5,
+      132.0,
+      35.5,
+      25.0
+    ],
+    "f_fine_entropy": [
+      28.0,
+      186.0,
+      49.0,
+      25.0
+    ],
+    "f_lowF_width": [
+      119.0,
+      186.0,
+      49.0,
+      25.0
+    ]
+  },
+  "visual_review": "passed: root and independent reviewer opened main and supplementary PNG; complete horizontal e row, intelligible b/d/f, no clipping/collisions",
+  "sha256": {
+    "png": "c6489f3cb2ebd0989a32e5ffa68dc555850bd7566c8d84dce25bc2c43d7a0543",
+    "pdf": "16ecb7b6b7936393cfb9b294baa752e607afafaf0bedf319a5c27350482f97d4",
+    "svg": "595d24933ac7df32cd71cabec954f38a3d518d6bb63cc78b37b6cd88b2f2c815"
+  },
+  "original_values_exactly_preserved_in_main": 828,
+  "original_Intra_values_in_supplement": 25,
+  "additional_preexisting_geometry_values": 31,
+  "frozen_source_and_structure_bytes_unchanged": true,
+  "existing_word_unchanged": true,
+  "embedded_Arial_fonts": [
+    "/ELUGPM+ArialMT",
+    "/ELUGPM+Arial-BoldMT"
+  ],
+  "science_review": "passed: static SASA shielding explicitly distinguished from dynamic binding effect; no monotonic SASA claim; f compares matched records without joint confidence intervals"
+}

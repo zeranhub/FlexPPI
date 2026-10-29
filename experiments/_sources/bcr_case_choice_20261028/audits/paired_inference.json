@@ -1,0 +1,401 @@
+{
+  "status": "complete",
+  "states": 15,
+  "forward_passes": 30,
+  "residue_rows": 10424,
+  "strict_load": true,
+  "contract_sha256": "e5d3de869d10fcc17b1ed18289a626d99c13a9de034bc8ebc4651aa2d7817d54",
+  "states_sha256": "94badda74917b71c95177258a8ccb73acc3ea92dad485f99079ace45c200cc2c",
+  "source": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\src",
+  "torch": "2.4.1",
+  "numpy": "2.2.6",
+  "seconds": 11.718999999924563,
+  "entries": [
+    {
+      "state_id": "scfv_WT_copy1",
+      "variant": "full",
+      "residues": 319,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "742f4409e06a9a38539375a7f7a6039cd83a312323bc11cad5fd98ec0296fb2b",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_WT_copy2",
+      "variant": "full",
+      "residues": 322,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "2f86a404710efa1af724fbea4780ea9cae8bd847d22cf3fa4f7e7bb6793aced0",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_P103A_copy1",
+      "variant": "full",
+      "residues": 320,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "465cba5e2edadf79044a4e55803ecc7b8a93e09073d2bddb9c8297e65ac91c10",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_P103A_copy2",
+      "variant": "full",
+      "residues": 321,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "b1ba14678f10b578c71f30dfe77f3508cb98989cdc5073770b3a871939ea585a",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_WT_P103A_cf_copy1",
+      "variant": "full",
+      "residues": 319,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "618e504e54f73763015ce180d59ad2a2c3cb5e35e5cab946c62687cd25d54044",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_P103A_A103P_cf_copy1",
+      "variant": "full",
+      "residues": 320,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "06c0d51a5e42b5cfbcacae00e8f96a56b451dc7b1fbcbd3e6205e83081b7dccb",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_WT_P103A_cf_copy2",
+      "variant": "full",
+      "residues": 322,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "11f9863f08710fd0213c1d9c008158b28ea06a5587da5b01bed7b19a997ecdd3",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_P103A_A103P_cf_copy2",
+      "variant": "full",
+      "residues": 321,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "c649f92abc6f620cca23b9c0eb1aa5322188d966c1b17c795ba083ff49f6c937",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_WT_copy1_shared",
+      "variant": "full",
+      "residues": 319,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "742f4409e06a9a38539375a7f7a6039cd83a312323bc11cad5fd98ec0296fb2b",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_WT_copy2_shared",
+      "variant": "full",
+      "residues": 319,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "b6274261bea59a1579f30f6e68bfbf285b5a48005c49bfde7481db9ffd421730",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_P103A_copy1_shared",
+      "variant": "full",
+      "residues": 319,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "cbe61d5bb9b64d186a6b7496bf7217b24d50c1b4c1a257665a973110c31eea19",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_P103A_copy2_shared",
+      "variant": "full",
+      "residues": 319,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "f1adc0d3f1435567ab5f015cd2889bc85771d15bfc0ee731d69aaf5f7cc45511",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "finite": true
+    },
+    {
+      "state_id": "fab_apo",
+      "variant": "full",
+      "residues": 425,
+      "chains": [
+        "L",
+        "H"
+      ],
+      "input_sha256": "fd00ea124e61a84175913bf043f84ff448aa049a2839f480e657199c21a889d2",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "finite": true
+    },
+    {
+      "state_id": "fab_bound",
+      "variant": "full",
+      "residues": 519,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "5cd587df5bd00bf5a1e3ad8bb021201e423dcede204f2e3b51a194a2ccefe279",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "finite": true
+    },
+    {
+      "state_id": "fab_bound_antigen_stripped",
+      "variant": "full",
+      "residues": 428,
+      "chains": [
+        "L",
+        "H"
+      ],
+      "input_sha256": "654fdf7fe3877185f4deda2c7baf1cb61a8c6692eabd9406fb8f44e74de6bc0b",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_WT_copy1",
+      "variant": "intrachain",
+      "residues": 319,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "742f4409e06a9a38539375a7f7a6039cd83a312323bc11cad5fd98ec0296fb2b",
+      "checkpoint_sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_WT_copy2",
+      "variant": "intrachain",
+      "residues": 322,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "2f86a404710efa1af724fbea4780ea9cae8bd847d22cf3fa4f7e7bb6793aced0",
+      "checkpoint_sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_P103A_copy1",
+      "variant": "intrachain",
+      "residues": 320,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "465cba5e2edadf79044a4e55803ecc7b8a93e09073d2bddb9c8297e65ac91c10",
+      "checkpoint_sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_P103A_copy2",
+      "variant": "intrachain",
+      "residues": 321,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "b1ba14678f10b578c71f30dfe77f3508cb98989cdc5073770b3a871939ea585a",
+      "checkpoint_sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_WT_P103A_cf_copy1",
+      "variant": "intrachain",
+      "residues": 319,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "618e504e54f73763015ce180d59ad2a2c3cb5e35e5cab946c62687cd25d54044",
+      "checkpoint_sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_P103A_A103P_cf_copy1",
+      "variant": "intrachain",
+      "residues": 320,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "06c0d51a5e42b5cfbcacae00e8f96a56b451dc7b1fbcbd3e6205e83081b7dccb",
+      "checkpoint_sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_WT_P103A_cf_copy2",
+      "variant": "intrachain",
+      "residues": 322,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "11f9863f08710fd0213c1d9c008158b28ea06a5587da5b01bed7b19a997ecdd3",
+      "checkpoint_sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_P103A_A103P_cf_copy2",
+      "variant": "intrachain",
+      "residues": 321,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "c649f92abc6f620cca23b9c0eb1aa5322188d966c1b17c795ba083ff49f6c937",
+      "checkpoint_sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_WT_copy1_shared",
+      "variant": "intrachain",
+      "residues": 319,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "742f4409e06a9a38539375a7f7a6039cd83a312323bc11cad5fd98ec0296fb2b",
+      "checkpoint_sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_WT_copy2_shared",
+      "variant": "intrachain",
+      "residues": 319,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "b6274261bea59a1579f30f6e68bfbf285b5a48005c49bfde7481db9ffd421730",
+      "checkpoint_sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_P103A_copy1_shared",
+      "variant": "intrachain",
+      "residues": 319,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "cbe61d5bb9b64d186a6b7496bf7217b24d50c1b4c1a257665a973110c31eea19",
+      "checkpoint_sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3",
+      "finite": true
+    },
+    {
+      "state_id": "scfv_P103A_copy2_shared",
+      "variant": "intrachain",
+      "residues": 319,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "f1adc0d3f1435567ab5f015cd2889bc85771d15bfc0ee731d69aaf5f7cc45511",
+      "checkpoint_sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3",
+      "finite": true
+    },
+    {
+      "state_id": "fab_apo",
+      "variant": "intrachain",
+      "residues": 425,
+      "chains": [
+        "L",
+        "H"
+      ],
+      "input_sha256": "fd00ea124e61a84175913bf043f84ff448aa049a2839f480e657199c21a889d2",
+      "checkpoint_sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3",
+      "finite": true
+    },
+    {
+      "state_id": "fab_bound",
+      "variant": "intrachain",
+      "residues": 519,
+      "chains": [
+        "A",
+        "L",
+        "H"
+      ],
+      "input_sha256": "5cd587df5bd00bf5a1e3ad8bb021201e423dcede204f2e3b51a194a2ccefe279",
+      "checkpoint_sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3",
+      "finite": true
+    },
+    {
+      "state_id": "fab_bound_antigen_stripped",
+      "variant": "intrachain",
+      "residues": 428,
+      "chains": [
+        "L",
+        "H"
+      ],
+      "input_sha256": "654fdf7fe3877185f4deda2c7baf1cb61a8c6692eabd9406fb8f44e74de6bc0b",
+      "checkpoint_sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3",
+      "finite": true
+    }
+  ]
+}

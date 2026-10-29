@@ -1,0 +1,13 @@
+# KIX历史单轨迹与当前稿件的对应
+
+主文和表S7/S8模型必须取`E:\Project\FlexPPI\paper\figures\case_validation_v13_20261009\data\kix_fold1_all_residues.csv`，SHA256为`427cefe8d50d8b7226f1430e72e35dda9ca455d1edd2b619ee6fd395344971a5`；四状态汇总表SHA256为`6f9c5ccc312f470ba4c576c58fd35a345e19b596519946e3f89976652e91cf9d`。当前图件QA（`kix/kix_v13_refresh_QA.json`，SHA256 `1c7c9b007d3ae23769c9900d36da12cbf77ec7392697ee716614fc8da66b0ff9`）逐状态记录相同MD源表和原输入几何。`E:\Project\FlexPPI\paper\data\case_validation_20261009`中的同名文件仍是早期模型版本（例如apoρ0.754），不能用于此次响应补充。旧五模型pilot/frame-evaluation也不用于当前第1折差值。
+
+原始生产轨迹在`E:\Project\FlexPPI\artifacts\external\kix_md_20260914\{apo,myb,mll,both}\production\segment_0000.dcd`至`segment_0099.dcd`，每状态100段、100000帧、100 ns，蛋白拓扑为各状态同目录`protein.pdb`。原远程目录为`/ranze/runs/flexppi_kix_md_20260914/runs/{state}/rep01`。参数文件中的repeats=5是初始设计；`PILOT_POLICY.json`及远程queue快照明确实际只执行rep01，其他重复未完成。没有将2026-10-10重建体系的短smoke或尚未执行的生产批次混入旧轨迹。
+
+逐位MD来源为`E:\Project\FlexPPI\artifacts\kix_md_20260914\pilot_results_20260916\{state}\residue_metrics.csv`。四状态SHA256依次为apo `5361260a4b0d847d5851c70a2dd155906f27f7ec0bdfb83c640648dd6e59dfc9`、myb `71263d9fdf41becbac77bc60f73040d376515133c04ef523284c5677fee91564`、mll `0b80b1997b86e488445777b38b68f191b5a2226b0eec7c266028d59acb03c54d`、both `bc6accd63d8c92e0d10b87e0531f9a3667dd2c1496d8d8f95dc07e2def414c77`。本轮核对每条87位的链、作者编号、氨基酸和RMSF，与当前图件源表完全对应；区域值直接从614–621的八位算术平均计算，非RMSF平方后再开方。
+
+已有quality源位于`pilot_results_20260916/quality`。summary SHA256为`9bc5b7edc4368c74aaa7685fbc8acaf9e68a319b1486d76487ece7c86a0a2042`；全帧RMSD/接触trace SHA256为`0cd696d55e858adbcca7fe6f1512dfb70a28fc141a55f04c823dfba4a34e2df1`；分窗口逐位CSV SHA256为`c9a4a1604178cf05bc0c018749c937d3f49cd1a8cd28996564813e29bd162dad`；固定接触占有率SHA256为`99e20cbeb69bed48f0cf674c978aaa500dc5a76310b08cf550780ac19f6c4a5e`；温度/能量全部40000个reporter样本SHA256为`de6317fd584d42bb72dd56bbb64c2e54a86da77c6c16123afd30c4dc9bda8953`。这些已有输出都在本轮重新核对哈希；生产首帧参考、全部帧纳入以及分窗口定义均沿用原脚本，没有删burn-in或选最佳窗口。本轮也重新实读全部400段DCD，SHA256、帧数、蛋白原子数和文件大小均与原分析一致；`reuse_audit.json`的`raw_file_hashes_rechecked_now=true`，逐段实际/预期哈希在`summary/original_trajectory_inventory.csv`中一一对应。
+
+当前工作树7471不作为科学数值来源。工作树4a6f的`output/v13_case_refresh_20261009/kix`留有校正版推理代码、全链预测与独立QA，其四状态RMSF源表与正式图件一致。旧工作树4666的`paper/revision_20261002/reproducibility/scripts/kix_md`留有原分析和quality代码。历史案例的生物学背景及早期静态说明另外位于项目`artifacts/apo_holo_mechanistic_literature_v2_20260913`，不能把旧编号MLL840–858与本次MLL839–857直接混用。
+
+表格入口是`summary/state_summary.csv`（四状态RMSF MAE、ρ、命中数、L12模拟/预测均值），`summary/l12_delta_summary.csv`（六组L12差值、绝对偏差和方向），`summary/quality_summary.csv`（RMSD、温度与初始接触比例的全部/前后半程均值）和`summary/half_window_stability.csv`（两半程逐状态L12/RMSF/Hχ描述）。完整原精度保留在CSV；论文显示三位小数，不把小于0.001的差别写成有方向的0.000。所有数字只支持单轨迹描述，不支持独立重复统计。

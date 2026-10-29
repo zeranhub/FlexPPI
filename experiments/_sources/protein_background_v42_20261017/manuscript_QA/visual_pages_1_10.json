@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "document_sha256": "0d56dd11e3abab0b7e12bbd75ef33c352d949bc305212c01f9eb5509541df887",
+  "render_directory": "C:/Users/DELL/AppData/Local/Temp/flexppi_completion_20261010/render_v42",
+  "method": "Viewed every original individual PNG for pages 1–10 using view_image; no contact sheet and no reuse of prior-render visual approval.",
+  "pages": [
+    {"page": 1, "status": "passed", "observations": "Title, abstract, keyword line and introduction remain legible and inside page margins. Updated KRAS figures are readable. No body/footer collision or cropped glyphs.", "required_fixes": []},
+    {"page": 2, "status": "passed", "observations": "Introduction continuation and methods/2.1 headings with complete following paragraphs. No clipping or overlap. Bottom whitespace keeps Figure 1 together on following page.", "required_fixes": []},
+    {"page": 3, "status": "passed", "observations": "Figure 1 panels a–d, all English figure labels and complete Chinese caption fit. Caption and subsequent data-description text are separated. No cropped panel or text overlap.", "required_fixes": []},
+    {"page": 4, "status": "passed", "observations": "Sections 2.2/2.3 and equations (1)/(2) render completely. Radicals, sum limits, equation numbers and inline Greek notation are readable; no equation/paragraph collision.", "required_fixes": []},
+    {"page": 5, "status": "passed", "observations": "Encoding and training descriptions, equations (3)/(4), optimizer parameters and scientific notation are all legible. Display equations remain inside margins and do not collide with text.", "required_fixes": []},
+    {"page": 6, "status": "passed", "observations": "Sections 2.5/2.6 with family-split and baseline details fit cleanly. No cropped line or overflow near footer. Mathematical units remain legible.", "required_fixes": []},
+    {"page": 7, "status": "passed", "observations": "Section 2.7 updated CBP/KIX identity and KRAS methods text are readable. KIX construct numbering, KRAS sequences, HLA notation and replicate description fit within margins. Final KRAS paragraph continues normally onto page 8; no clipped continuation.", "required_fixes": []},
+    {"page": 8, "status": "passed", "observations": "KRAS difference-SEM continuation, expanded ubiquitin–EDD UBA wording, section 2.8 and equation (5) are complete. Sum limits and F-star/log notation are visible. Added background slightly lengthens text but bottom line remains clear and separate from page number.", "required_fixes": []},
+    {"page": 9, "status": "passed", "observations": "Low-relative-free-energy and entropy-method continuation, results heading and 3.1 introductory paragraph remain readable. No overlap or missing content; whitespace keeps Table 1 intact on following page.", "required_fixes": []},
+    {"page": 10, "status": "passed", "observations": "Table 1 title, full grouped three-line table, all method/numeric rows, table note and three following result paragraphs fit on one page. Columns align; no cropped cell, detached header, caption collision or overflow.", "required_fixes": []}
+  ],
+  "required_fixes": [],
+  "document_edited": false,
+  "scope": "Visual layout QA of pages 1–10 only, linked to the specified v42 document hash."
+}

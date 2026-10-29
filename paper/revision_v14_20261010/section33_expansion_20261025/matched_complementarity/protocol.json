@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-10-25T01:22:32.332975+00:00",
+  "fixed_rules": {
+    "version": "section33_matched_complementarity_v1",
+    "primary_cohort": "Original preselected 83 records, exact original 33493 common positions; same-record same-AA groups >=4 give 33142 positions.",
+    "truth": "Primary: original cached 0-100 ns/200 ps/501-frame labels uniform_rep1. Sensitivity: equal available-replica mean of the same window; original training/reference label. Predictions are the unchanged original OOF predictions.",
+    "percentiles": "Within the exact common valid positions of a record/AA group, average ranks divided by n; ties share their average rank. Matching uses no prediction.",
+    "matching": "Enumerate every unordered pair i<j within each eligible record/AA group. Rank-close rule: absolute truth-conditioning percentile difference <=0.25. Physical rules: absolute truth-conditioning difference <=0.10 primary, <=0.05 and <=0.20 sensitivities. Apply both directions (condition on RMSF, target Hchi; condition on Hchi, target RMSF).",
+    "target_subsets": "all_close contains all matched pairs; separated_target_p50 additionally requires absolute target truth percentile difference >=0.50. This is an explanatory truth-separated stratum, not prediction-led selection.",
+    "metrics": "Actual target and conditioning differences in Angstrom or nats; target pair-order concordance for dedicated Full output, cross-output surrogate, and dedicated Intra output; paired Full-minus-surrogate and Full-minus-Intra differences; dedicated-output difference MAE. True ties are excluded only from ordering scores; predicted ties score 0.5.",
+    "aggregation": "First all pairs equally within a record/AA group; then eligible AA groups equally within each record; then records equally. Counts are descriptive, never the inferential sample size. Accuracy denominators exclude true ties. Undefined groups/records remain in audit tables.",
+    "resampling": "10000 percentile bootstrap draws, entire available family_components clusters sampled with replacement. Overall cluster sampling preserves cross-source links; source-specific analyses resample clusters represented in that source. Chunked computation. Report family-equal and leave-largest-family-out descriptive sensitivity.",
+    "family_caveat": "Cluster resampling addresses dependence; it does not convert original OOF into family-held-out predictions or remove train/test family overlap.",
+    "full_cohort_review": "Recompute previous within-record/AA inclusive 25th/75th-quartile five-way classes, confusion and per-record recall on all 3063 original OOF records/824988 positions. Require >=4 and q25<q75 per output. Collapsed and middle groups are unclassified. Verify previous labels and per-record recall numerically.",
+    "sasa_extension": "Predeclared optional extension only: complex sidechain SASA average-rank percentile difference <=0.25 in addition to RMSF percentile-close <=0.25 or physical RMSF-close <=0.10 A. Same-AA counts/ranks use finite SASA positions; missingness audited. Analyze Hchi target for all_close and separated_target_p50; no outcome or prediction-based case picking.",
+    "interpretation": "MD-conditioned matching is explanatory. Relative quartiles are within record/type; they are not absolute physical high/low states. Hchi is coarse joint angular occupancy entropy and not full thermodynamic entropy. Consecutive windows are not independent replicas."
+  },
+  "code_sha256_at_freeze": "67bf6ba932fe9b91746b8e9f8df1502544a56a012005b9c72955f02d1f2cf700"
+}

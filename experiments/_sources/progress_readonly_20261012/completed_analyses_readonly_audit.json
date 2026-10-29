@@ -1,0 +1,138 @@
+{
+  "status": "complete_readonly_snapshot",
+  "checked_utc": "2026-10-12T00:40:01.496860+00:00",
+  "pipeline_snapshot_status": "failed",
+  "pipeline_snapshot_step": "evaluate_external_2430",
+  "trained_fits": 20,
+  "completed_oof_analyses": [
+    "single_target",
+    "all_chain_family"
+  ],
+  "family_complete_records_per_arm": 3063,
+  "valid_rmsf": 961321,
+  "valid_hchi": 824988,
+  "ITrace_test_fold": 0,
+  "ITrace_records": 244,
+  "ITrace_five_fold_SD_identifiable": false,
+  "PLANET_full_seq_queue_certified": true,
+  "RMSF_run_audit_seen": false,
+  "notes": [
+    "RMSF raw prediction count completion is not an independent run_audit certificate.",
+    "Primary family macro means weight each record equally; unweighted fold means differ because folds are unequal and source-concentrated.",
+    "Single-target comparison uses original five heldout folds; compare original dual, not new-family dual.",
+    "Descriptive record wins and fold SD are not independent-seed significance tests."
+  ],
+  "sources": [
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\single_target\\evaluation\\evaluation_audit.json",
+      "sha256": "d6d5e6b0ee904ec7cb0160381fd7cfa238bfbfe6cef2569d41fb89bad31bbaef",
+      "status": "complete"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\single_target\\analysis\\analysis_audit.json",
+      "sha256": "e8c5cd3993c792f7c37be02332b1a5d1b12965229c4726cbb8173aad83fbc8aa",
+      "status": "complete"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\family_folds\\evaluation\\evaluation_audit.json",
+      "sha256": "b0e9ce03db4aa65c4372797f1727637f2fed5e07d4f1ebe6fbe88fabdeb2d06f",
+      "status": "complete"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\single_target\\analysis\\metrics_five_fold_mean_sample_sd.csv",
+      "sha256": "ba61e6f8e23ba63eea8384c51473c53aa5349ccd08bfba64f7b5ff2b60b4e1dc",
+      "bytes": 3746
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\single_target\\analysis\\metrics_source_fold_macro.csv",
+      "sha256": "625f1ef85c858d0777c72119b0b5699d24ec190f5a7d78bad0e8bdbab3b20be7",
+      "bytes": 9941
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\single_target\\analysis\\per_record_metrics.csv",
+      "sha256": "a45f8256e00e2af1b2e592b66823866a60cb17edde0eb27d1a1b0de251417074",
+      "bytes": 1650535
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\single_target\\analysis\\single_vs_dual_five_fold_mean_sample_sd.csv",
+      "sha256": "ac52a84c6052e8b1ccdc658392e16437a60fc7bb0b79f91758492b50f58ec639",
+      "bytes": 4695
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\single_target\\analysis\\single_vs_dual_per_record.csv",
+      "sha256": "69e57e41a8cb949c0182ff845463aa392d13ec5bbeabc658bfe7eb0bf095975f",
+      "bytes": 1714274
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\single_target\\analysis\\single_vs_dual_source_fold_macro.csv",
+      "sha256": "9515d3839cd7a1b3851c43daddbbe31f5cf9e6bb5c0e190dc6cf6d32d107c6ec",
+      "bytes": 11049
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\single_target\\analysis\\uncertainty_coverage_five_fold_mean_sample_sd.csv",
+      "sha256": "2b6ca33a47f27dab30ef7299b751870935a422c40d1daf289cfe402884bf0bc4",
+      "bytes": 19269
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\single_target\\analysis\\uncertainty_coverage_source_fold_macro.csv",
+      "sha256": "efa8faddf0d26243875cdd62c28e16f0b78f19ea0915aea35ed0be22cdbe61d1",
+      "bytes": 64467
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\single_target\\analysis\\uncertainty_diagnostics_five_fold_mean_sample_sd.csv",
+      "sha256": "178f2120d63a323f17078a0fff1e123eee08da62c070a4e43debb68018bd4846",
+      "bytes": 7804
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\single_target\\analysis\\uncertainty_diagnostics_source_fold_macro.csv",
+      "sha256": "547aed301903816469cf7c5a60684f2ce7c65a46885aae885034a76764d7cb5d",
+      "bytes": 21757
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\single_target\\analysis\\uncertainty_reliability_five_fold_mean_sample_sd.csv",
+      "sha256": "e115b203e0ed02646d4649e8b83664cb21555b13bd82c534e800c3f2b4010eb9",
+      "bytes": 38538
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\single_target\\analysis\\uncertainty_reliability_source_fold_macro.csv",
+      "sha256": "46c0009afc97a0ea76081e0419680e1bd0e189ea872c60d259ccae549dc63efb",
+      "bytes": 128182
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\single_target\\analysis\\uncertainty_risk_five_fold_mean_sample_sd.csv",
+      "sha256": "3c9ce4208d9fb447c41325888357f98b383698936dabb9fc53b67eb07959dc0e",
+      "bytes": 38823
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\single_target\\analysis\\uncertainty_risk_source_fold_macro.csv",
+      "sha256": "76c6d04dec868232564ff7e0d41042c1b7bd3489b84539763077c4465e2f32d3",
+      "bytes": 129658
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\family_folds\\evaluation\\five_fold_mean_sample_sd.csv",
+      "sha256": "7abb2699da23f9bf790ca385d340c21bd880271050823aa751e1ac8bf347027f",
+      "bytes": 3322
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\family_folds\\evaluation\\overall_record_macro_metrics.csv",
+      "sha256": "304bdd60ed5d28f324af0a2a119cdb2fa120bdf770d584f25931ad4741eeeb5f",
+      "bytes": 501
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\family_folds\\evaluation\\per_record_metrics.csv",
+      "sha256": "aac77ba2b75c21599a3ec7220e0f703f4c42ecb4f9d69ba3cab13edeb4128d37",
+      "bytes": 1633924
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\family_folds\\evaluation\\record_macro_metrics.csv",
+      "sha256": "ba5113b2cd41741ac5bcc8883556df0792afb669c5a2b10c0aaceb00668d726c",
+      "bytes": 1508
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\family_folds\\evaluation\\source_fold_macro_metrics.csv",
+      "sha256": "f005e01b8a835a563c11387429ff39b69d55cbc0e2dbdd33693c6e6369adc0d8",
+      "bytes": 7849
+    }
+  ],
+  "code_sha256": "b287d3b7707eae178f10891183a9e674e4c6d5b9c8ffbc7783c1a6a4006d1666"
+}

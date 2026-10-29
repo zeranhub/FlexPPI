@@ -1,0 +1,139 @@
+{
+  "canvas_mm": [
+    183.0,
+    245.0
+  ],
+  "all_axes_absolute": true,
+  "two_state_profiles": true,
+  "all_residue_counts": {
+    "backbone": 145,
+    "sidechain": 122,
+    "Met": 9,
+    "contact_groups": [
+      8,
+      21,
+      3,
+      90
+    ]
+  },
+  "plotted_rows": {
+    "a": 244,
+    "b": 1068,
+    "c": 16,
+    "d": 36
+  },
+  "outside_text": [],
+  "min_font_pt": 6.1,
+  "axis_checks": [
+    {
+      "label": "RMSF (Å)",
+      "limits": [
+        0.0,
+        4.0
+      ],
+      "range": [
+        0.6228830218315125,
+        3.739128589630127
+      ]
+    },
+    {
+      "label": "RMSF (Å)",
+      "limits": [
+        0.0,
+        4.0
+      ],
+      "range": [
+        0.5927063822746277,
+        3.7241034507751465
+      ]
+    },
+    {
+      "label": "Hχ (nats)",
+      "limits": [
+        0.0,
+        4.1
+      ],
+      "range": [
+        0.2209544330835342,
+        3.920966148376465
+      ]
+    },
+    {
+      "label": "Hχ (nats)",
+      "limits": [
+        0.0,
+        4.1
+      ],
+      "range": [
+        0.45310178399086,
+        3.913898944854736
+      ]
+    },
+    {
+      "label": "Mean Hχ (nats)",
+      "limits": [
+        1.3,
+        2.2
+      ],
+      "range": [
+        1.5726840368338995,
+        1.9265032211939495
+      ]
+    },
+    {
+      "label": "",
+      "limits": [
+        1.3,
+        2.2
+      ],
+      "range": [
+        1.5890801350275676,
+        1.9443964138627052
+      ]
+    },
+    {
+      "label": "Hχ (nats)",
+      "limits": [
+        1.0,
+        3.4
+      ],
+      "range": [
+        1.4656245708465576,
+        2.838612794876098
+      ]
+    },
+    {
+      "label": "",
+      "limits": [
+        1.0,
+        3.4
+      ],
+      "range": [
+        1.7418729066848757,
+        2.6901867389678955
+      ]
+    }
+  ],
+  "visual_review": "passed: root and independent numerical/visual audit",
+  "output_sha256": {
+    "png": "b71da0669d7eadade87ea6004378ea53903e500e8f24f238bd7bc50c77939fac",
+    "pdf": "0e1e08a99059e08cd2f370db64d9094eb9a03793f216f9e1bd92156b2672b5e5",
+    "svg": "97a2cfe021c5508928ab64aa1923249e8cc65b1c0f4c51245360e8e5aa7c1933"
+  },
+  "five_window_ranges_checked": {
+    "contact_groups": [
+      1.4945191951938679,
+      2.0640175539009173
+    ],
+    "all_nine_Met": [
+      1.3599102297987613,
+      2.902408651858756
+    ],
+    "all_intervals_within_axes": true
+  },
+  "pdf_fonts": "Arial and Arial Bold: embedded CID TrueType; confirmed by pdffonts",
+  "source_data_identical_to_v80": {
+    "cam_md_state_contrast_all_common_residues.csv": "22c791ab3ba468d11d11cda38f6c2b96417bd8dbaa48698c02cbf440da63e34d",
+    "cam_md_state_contrast_all_residues_five_blocks.csv": "ad1d2b91374192111eb09c527bd9f73d03a7575cff8266064cf566dd3d1a3776"
+  }
+}

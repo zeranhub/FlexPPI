@@ -1,0 +1,126 @@
+{
+  "status": "complete",
+  "elapsed_seconds": 19.67100429534912,
+  "inputs": [
+    {
+      "sample_id": "A001K",
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A001K.pdb",
+      "sha256": "c6cbc775db075532c001f67dc364821f4664435e6491b0a23655de40fd838cc0",
+      "n": 169,
+      "original_fold": 4,
+      "present_in_fold0_training": true
+    },
+    {
+      "sample_id": "A004C",
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A004C.pdb",
+      "sha256": "c30caadbf3a40376a0b6632d66b5b4ffd025c306d52f19d71f669ed29880787c",
+      "n": 212,
+      "original_fold": 3,
+      "present_in_fold0_training": true
+    },
+    {
+      "sample_id": "A007U",
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A007U.pdb",
+      "sha256": "b666a79cd087a94ea5fa2a4ce1b4936460c81bfed4f73dfb86806e90b0aad977",
+      "n": 182,
+      "original_fold": 4,
+      "present_in_fold0_training": true
+    },
+    {
+      "sample_id": "A00BZ",
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A00BZ.pdb",
+      "sha256": "65b9766c38aff41c1a93c6231a96e79fdab11bfbc097013e8707e5ede1fd24b3",
+      "n": 383,
+      "original_fold": 2,
+      "present_in_fold0_training": true
+    },
+    {
+      "sample_id": "A00C4",
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A00C4.pdb",
+      "sha256": "3ce10bcc6883b06564d953e1a0b0d7c60e6405d3ec96d8c981bb05d4c9436724",
+      "n": 668,
+      "original_fold": 3,
+      "present_in_fold0_training": true
+    },
+    {
+      "sample_id": "A00C5",
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A00C5.pdb",
+      "sha256": "346ff1acb0b82c71e41df9805ea518481d5b3c95af73054f916846c56dbe4cb7",
+      "n": 460,
+      "original_fold": 1,
+      "present_in_fold0_training": true
+    },
+    {
+      "sample_id": "A00CA",
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A00CA.pdb",
+      "sha256": "a025cd0d5a3fddd31c219f79ba67d552062aa8ee711fbcc9bc1e58be1ae7eaae",
+      "n": 639,
+      "original_fold": 0,
+      "present_in_fold0_training": false
+    },
+    {
+      "sample_id": "A00CS",
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A00CS.pdb",
+      "sha256": "d8e3dd6b8e8dfa467ec9c4c475956866fedfd7be049e47cd9ffb2fd07bfff1cc",
+      "n": 386,
+      "original_fold": 3,
+      "present_in_fold0_training": true
+    },
+    {
+      "sample_id": "A00D8",
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A00D8.pdb",
+      "sha256": "d7ba8d726e0bd25e9239dca25bf421450b2726ba7b101c66e0a3e64badb23dd3",
+      "n": 340,
+      "original_fold": 2,
+      "present_in_fold0_training": true
+    },
+    {
+      "sample_id": "A00DD",
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A00DD.pdb",
+      "sha256": "3e6e69eccfe9fbb858958fe156018949d13b7f080d42ecf9857369d61f1d84de",
+      "n": 234,
+      "original_fold": 3,
+      "present_in_fold0_training": true
+    },
+    {
+      "sample_id": "A00DE",
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A00DE.pdb",
+      "sha256": "6a7355e85685b0d86a08823422dc22556f07b89f85493c9b8fd842a2ddec2166",
+      "n": 356,
+      "original_fold": 1,
+      "present_in_fold0_training": true
+    },
+    {
+      "sample_id": "A00DL",
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A00DL.pdb",
+      "sha256": "3b37200842dd633a58bbb7a2927c614dd50ed40cd0a1ed50b831e9219b53fa36",
+      "n": 282,
+      "original_fold": 0,
+      "present_in_fold0_training": false
+    },
+    {
+      "sample_id": "A00E7",
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A00E7.pdb",
+      "sha256": "4b11b1dd70d0a1707d2eb9e6b79c9f700086c080885c9c42e2d196c09789b3ac",
+      "n": 302,
+      "original_fold": 3,
+      "present_in_fold0_training": true
+    }
+  ],
+  "checkpoints": [
+    {
+      "variant": "full",
+      "fold": 0,
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\trained_checkpoints\\full\\fold_0\\epoch_040.pt",
+      "sha256": "c89d8bc3ed8bb13327edb01dd182957be241ab5f0440283d62e2792ca50d6d1e"
+    },
+    {
+      "variant": "intrachain",
+      "fold": 0,
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\trained_checkpoints\\intrachain\\fold_0\\epoch_040.pt",
+      "sha256": "08baa694e583cf59b4267e62821a885487468241136a075d8bc4ca1e2d9a079e"
+    }
+  ],
+  "script_sha256": "2413cd20142d77a34cf0220f476bb64499b44b2c64bbba0950b5a317d3b8b46f",
+  "scope": "Fixed fold 0; most states occur in its training set. No independent validation claim."
+}

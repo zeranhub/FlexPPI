@@ -1,0 +1,481 @@
+{
+  "audit_author": [
+    {
+      "identifier_ORCID": "0000-0003-2086-0190",
+      "name": "Wu, D.C.",
+      "pdbx_ordinal": 1
+    },
+    {
+      "identifier_ORCID": "0000-0003-0748-5875",
+      "name": "Mariuzza, R.A.",
+      "pdbx_ordinal": 2
+    }
+  ],
+  "cell": {
+    "Z_PDB": 8,
+    "angle_alpha": 90.0,
+    "angle_beta": 90.0,
+    "angle_gamma": 90.0,
+    "length_a": 71.144,
+    "length_b": 133.223,
+    "length_c": 222.468
+  },
+  "citation": [
+    {
+      "country": "US",
+      "id": "primary",
+      "journal_abbrev": "Sci Adv",
+      "journal_id_ISSN": "2375-2548",
+      "journal_volume": "10",
+      "page_first": "eadq6150",
+      "page_last": "eadq6150",
+      "pdbx_database_id_DOI": "10.1126/sciadv.adq6150",
+      "pdbx_database_id_PubMed": 39576860,
+      "rcsb_authors": [
+        "Wu, D.",
+        "Yin, R.",
+        "Chen, G.",
+        "Ribeiro-Filho, H.V.",
+        "Cheung, M.",
+        "Robbins, P.F.",
+        "Mariuzza, R.A.",
+        "Pierce, B.G."
+      ],
+      "rcsb_is_primary": "Y",
+      "rcsb_journal_abbrev": "Sci Adv",
+      "title": "Structural characterization and AlphaFold modeling of human T cell receptor recognition of NRAS cancer neoantigens.",
+      "year": 2024
+    }
+  ],
+  "database_2": [
+    {
+      "database_code": "8YIV",
+      "database_id": "PDB",
+      "pdbx_DOI": "10.2210/pdb8yiv/pdb",
+      "pdbx_database_accession": "pdb_00008yiv"
+    },
+    {
+      "database_code": "D_1300045748",
+      "database_id": "WWPDB"
+    }
+  ],
+  "diffrn": [
+    {
+      "ambient_temp": 100.0,
+      "crystal_id": "1",
+      "id": "1",
+      "pdbx_serial_crystal_experiment": "N"
+    }
+  ],
+  "diffrn_detector": [
+    {
+      "detector": "PIXEL",
+      "diffrn_id": "1",
+      "pdbx_collection_date": "2022-02-14T00:00:00.000+00:00",
+      "type": "DECTRIS EIGER X 16M"
+    }
+  ],
+  "diffrn_radiation": [
+    {
+      "diffrn_id": "1",
+      "pdbx_diffrn_protocol": "SINGLE WAVELENGTH",
+      "pdbx_monochromatic_or_laue_m_l": "M",
+      "pdbx_scattering_type": "x-ray",
+      "wavelength_id": "1"
+    }
+  ],
+  "diffrn_source": [
+    {
+      "diffrn_id": "1",
+      "pdbx_synchrotron_beamline": "23-ID-B",
+      "pdbx_synchrotron_site": "APS",
+      "pdbx_wavelength_list": "0.9793",
+      "source": "SYNCHROTRON",
+      "type": "APS BEAMLINE 23-ID-B"
+    }
+  ],
+  "entry": {
+    "id": "8YIV"
+  },
+  "exptl": [
+    {
+      "crystals_number": 1,
+      "method": "X-RAY DIFFRACTION"
+    }
+  ],
+  "exptl_crystal": [
+    {
+      "density_Matthews": 2.74,
+      "density_percent_sol": 55.12,
+      "id": "1"
+    }
+  ],
+  "exptl_crystal_grow": [
+    {
+      "crystal_id": "1",
+      "method": "VAPOR DIFFUSION, HANGING DROP",
+      "pdbx_details": "10mg/ml, 8% TacsimateTM pH7.0, 20% PEG4K",
+      "temp": 293.0
+    }
+  ],
+  "pdbx_audit_revision_details": [
+    {
+      "data_content_type": "Structure model",
+      "ordinal": 1,
+      "provider": "repository",
+      "revision_ordinal": 1,
+      "type": "Initial release"
+    }
+  ],
+  "pdbx_audit_revision_history": [
+    {
+      "data_content_type": "Structure model",
+      "major_revision": 1,
+      "minor_revision": 0,
+      "ordinal": 1,
+      "revision_date": "2024-12-04T00:00:00.000+00:00"
+    }
+  ],
+  "pdbx_audit_support": [
+    {
+      "country": "China",
+      "funding_organization": "National Natural Science Foundation of China (NSFC)",
+      "grant_number": "32270995",
+      "ordinal": 1
+    },
+    {
+      "country": "China",
+      "funding_organization": "National Natural Science Foundation of China (NSFC)",
+      "grant_number": "32100985",
+      "ordinal": 2
+    }
+  ],
+  "pdbx_database_status": {
+    "SG_entry": "N",
+    "deposit_site": "PDBJ",
+    "pdb_format_compatible": "Y",
+    "process_site": "PDBJ",
+    "recvd_initial_deposition_date": "2024-02-29T00:00:00.000+00:00",
+    "status_code": "REL",
+    "status_code_sf": "REL"
+  },
+  "pdbx_initial_refinement_model": [
+    {
+      "accession_code": "4NDM, 6VQO, 6MPP",
+      "id": 1,
+      "source_name": "PDB",
+      "type": "experimental model"
+    }
+  ],
+  "pdbx_vrpt_summary": {
+    "attempted_validation_steps": "molprobity,validation-pack,xtriage,eds,mogul,validation_schema,percentiles,writexml,writecif,writepdf",
+    "ligands_for_buster_report": "N",
+    "report_creation_date": "2026-03-09T06:16:00.000+00:00"
+  },
+  "pdbx_vrpt_summary_diffraction": [
+    {
+      "B_factor_type": "FULL",
+      "CCP4_version": "9.0.010 (Gargrove)",
+      "DCC_R": 0.1956,
+      "DCC_Rfree": 0.2276,
+      "EDS_R": 0.2077,
+      "EDS_res_high": 2.1,
+      "EDS_res_low": 42.69,
+      "Fo_Fc_correlation": 0.948,
+      "I_over_sigma": "1.93(2.10A)",
+      "Padilla_Yeates_L2_mean": 0.334,
+      "Padilla_Yeates_L_mean": 0.501,
+      "Wilson_B_aniso": "[39.349,33.793,29.576,0.000,0.000,0.000]",
+      "Wilson_B_estimate": 33.882,
+      "acentric_outliers": 0,
+      "bulk_solvent_b": 39.684,
+      "bulk_solvent_k": 0.345,
+      "centric_outliers": 0,
+      "data_anisotropy": 0.285,
+      "data_completeness": 99.69,
+      "density_fitness_version": "1.0.12",
+      "exp_method": "x-ray",
+      "num_miller_indices": 61738,
+      "number_reflns_R_free": 3117,
+      "percent_RSRZ_outliers": 3.84,
+      "percent_free_reflections": 5.03,
+      "trans_NCS_details": "The largest off-origin peak in the Patterson function is 3.76% of the height of the origin peak. No significant pseudotranslation is detected."
+    }
+  ],
+  "pdbx_vrpt_summary_geometry": [
+    {
+      "angles_RMSZ": 0.73,
+      "bonds_RMSZ": 0.52,
+      "clashscore": 9.49,
+      "num_H_reduce": 6434,
+      "num_angles_RMSZ": 9302,
+      "num_bonds_RMSZ": 6854,
+      "percent_ramachandran_outliers": 0.0,
+      "percent_rotamer_outliers": 1.1
+    }
+  ],
+  "rcsb_accession_info": {
+    "deposit_date": "2024-02-29T00:00:00.000+00:00",
+    "has_released_experimental_data": "Y",
+    "initial_release_date": "2024-12-04T00:00:00.000+00:00",
+    "major_revision": 1,
+    "minor_revision": 0,
+    "revision_date": "2024-12-04T00:00:00.000+00:00",
+    "status_code": "REL"
+  },
+  "rcsb_entry_container_identifiers": {
+    "assembly_ids": [
+      "1"
+    ],
+    "entity_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "entry_id": "8YIV",
+    "model_ids": [
+      1
+    ],
+    "non_polymer_entity_ids": [
+      "6",
+      "7"
+    ],
+    "polymer_entity_ids": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "pubmed_id": 39576860,
+    "rcsb_id": "8YIV"
+  },
+  "rcsb_entry_info": {
+    "assembly_count": 1,
+    "branched_entity_count": 0,
+    "cis_peptide_count": 4,
+    "deposited_atom_count": 7286,
+    "deposited_branched_entity_instance_count": 0,
+    "deposited_deuterated_water_count": 0,
+    "deposited_hydrogen_atom_count": 0,
+    "deposited_model_count": 1,
+    "deposited_modeled_polymer_monomer_count": 834,
+    "deposited_nonpolymer_entity_instance_count": 10,
+    "deposited_polymer_entity_instance_count": 5,
+    "deposited_polymer_monomer_count": 840,
+    "deposited_solvent_atom_count": 547,
+    "deposited_unmodeled_polymer_monomer_count": 6,
+    "diffrn_radiation_wavelength_maximum": 0.9793,
+    "diffrn_radiation_wavelength_minimum": 0.9793,
+    "disulfide_bond_count": 8,
+    "entity_count": 8,
+    "experimental_method": "X-ray",
+    "experimental_method_count": 1,
+    "inter_mol_covalent_bond_count": 0,
+    "inter_mol_metalic_bond_count": 0,
+    "molecular_weight": 97.04,
+    "na_polymer_entity_types": "Other",
+    "nonpolymer_entity_count": 2,
+    "nonpolymer_molecular_weight_maximum": 0.09,
+    "nonpolymer_molecular_weight_minimum": 0.06,
+    "polymer_composition": "heteromeric protein",
+    "polymer_entity_count": 5,
+    "polymer_entity_count_DNA": 0,
+    "polymer_entity_count_RNA": 0,
+    "polymer_entity_count_nucleic_acid": 0,
+    "polymer_entity_count_nucleic_acid_hybrid": 0,
+    "polymer_entity_count_protein": 5,
+    "polymer_entity_taxonomy_count": 5,
+    "polymer_molecular_weight_maximum": 31.9,
+    "polymer_molecular_weight_minimum": 1.14,
+    "polymer_monomer_count_maximum": 276,
+    "polymer_monomer_count_minimum": 10,
+    "resolution_combined": [
+      2.101
+    ],
+    "selected_polymer_entity_types": "Protein (only)",
+    "software_programs_combined": [
+      "HKL-2000",
+      "PHENIX"
+    ],
+    "solvent_entity_count": 1,
+    "structure_determination_methodology": "experimental",
+    "structure_determination_methodology_priority": 10,
+    "diffrn_resolution_high": {
+      "provenance_source": "Depositor assigned",
+      "value": 2.1
+    }
+  },
+  "rcsb_primary_citation": {
+    "country": "US",
+    "id": "primary",
+    "journal_abbrev": "Sci Adv",
+    "journal_id_ISSN": "2375-2548",
+    "journal_volume": "10",
+    "page_first": "eadq6150",
+    "page_last": "eadq6150",
+    "pdbx_database_id_DOI": "10.1126/sciadv.adq6150",
+    "pdbx_database_id_PubMed": 39576860,
+    "rcsb_ORCID_identifiers": [
+      "0000-0003-2086-0190",
+      "0000-0001-5330-8306",
+      "0009-0003-5196-2007",
+      "0000-0001-8471-207X",
+      "?",
+      "0000-0002-1260-8123",
+      "0000-0003-0748-5875",
+      "0000-0003-4821-0368"
+    ],
+    "rcsb_authors": [
+      "Wu, D.",
+      "Yin, R.",
+      "Chen, G.",
+      "Ribeiro-Filho, H.V.",
+      "Cheung, M.",
+      "Robbins, P.F.",
+      "Mariuzza, R.A.",
+      "Pierce, B.G."
+    ],
+    "rcsb_journal_abbrev": "Sci Adv",
+    "title": "Structural characterization and AlphaFold modeling of human T cell receptor recognition of NRAS cancer neoantigens.",
+    "year": 2024
+  },
+  "refine": [
+    {
+      "ls_R_factor_R_free": 0.2259,
+      "ls_R_factor_R_work": 0.1907,
+      "ls_R_factor_obs": 0.1925,
+      "ls_d_res_high": 2.101,
+      "ls_d_res_low": 42.692,
+      "ls_number_reflns_R_free": 3116,
+      "ls_number_reflns_obs": 61738,
+      "ls_percent_reflns_R_free": 5.05,
+      "ls_percent_reflns_obs": 99.73,
+      "overall_SU_ML": 0.23,
+      "pdbx_diffrn_id": [
+        "1"
+      ],
+      "pdbx_ls_cross_valid_method": "FREE R-VALUE",
+      "pdbx_ls_sigma_F": 1.36,
+      "pdbx_method_to_determine_struct": "MOLECULAR REPLACEMENT",
+      "pdbx_overall_phase_error": 23.74,
+      "pdbx_refine_id": "X-RAY DIFFRACTION",
+      "pdbx_solvent_shrinkage_radii": 0.9,
+      "pdbx_solvent_vdw_probe_radii": 1.11,
+      "pdbx_stereochemistry_target_values": "ML",
+      "solvent_model_details": "FLAT BULK SOLVENT MODEL"
+    }
+  ],
+  "refine_hist": [
+    {
+      "cycle_id": "LAST",
+      "d_res_high": 2.101,
+      "d_res_low": 42.692,
+      "number_atoms_solvent": 547,
+      "number_atoms_total": 7286,
+      "pdbx_number_atoms_ligand": 56,
+      "pdbx_number_atoms_nucleic_acid": 0,
+      "pdbx_number_atoms_protein": 6683,
+      "pdbx_refine_id": "X-RAY DIFFRACTION"
+    }
+  ],
+  "refine_ls_restr": [
+    {
+      "dev_ideal": 0.011,
+      "number": 6919,
+      "pdbx_refine_id": "X-RAY DIFFRACTION",
+      "type": "f_bond_d"
+    },
+    {
+      "dev_ideal": 1.131,
+      "number": 9374,
+      "pdbx_refine_id": "X-RAY DIFFRACTION",
+      "type": "f_angle_d"
+    },
+    {
+      "dev_ideal": 7.867,
+      "number": 4124,
+      "pdbx_refine_id": "X-RAY DIFFRACTION",
+      "type": "f_dihedral_angle_d"
+    },
+    {
+      "dev_ideal": 0.061,
+      "number": 985,
+      "pdbx_refine_id": "X-RAY DIFFRACTION",
+      "type": "f_chiral_restr"
+    },
+    {
+      "dev_ideal": 0.008,
+      "number": 1223,
+      "pdbx_refine_id": "X-RAY DIFFRACTION",
+      "type": "f_plane_restr"
+    }
+  ],
+  "reflns": [
+    {
+      "d_resolution_high": 2.1,
+      "d_resolution_low": 42.7,
+      "number_obs": 387710,
+      "pdbx_CC_half": 0.992,
+      "pdbx_diffrn_id": [
+        "1"
+      ],
+      "pdbx_netI_over_sigmaI": 13.7,
+      "pdbx_ordinal": 1,
+      "pdbx_redundancy": 6.3,
+      "percent_possible_obs": 99.8
+    }
+  ],
+  "reflns_shell": [
+    {
+      "d_res_high": 2.1,
+      "d_res_low": 2.18,
+      "pdbx_CC_half": 0.857,
+      "pdbx_diffrn_id": [
+        "1"
+      ],
+      "pdbx_ordinal": 1
+    }
+  ],
+  "software": [
+    {
+      "classification": "refinement",
+      "name": "PHENIX",
+      "pdbx_ordinal": 1,
+      "version": "(1.16_3549: ???)"
+    },
+    {
+      "classification": "data reduction",
+      "name": "HKL-2000",
+      "pdbx_ordinal": 2
+    },
+    {
+      "classification": "data scaling",
+      "name": "HKL-2000",
+      "pdbx_ordinal": 3
+    },
+    {
+      "classification": "phasing",
+      "name": "PHENIX",
+      "pdbx_ordinal": 4
+    }
+  ],
+  "struct": {
+    "pdbx_CASP_flag": "N",
+    "title": "N17.1.2 recognition of NRAS neoantigens"
+  },
+  "struct_keywords": {
+    "pdbx_keywords": "IMMUNE SYSTEM",
+    "text": "T cell receptor, p-MHC, IMMUNE SYSTEM"
+  },
+  "symmetry": {
+    "Int_Tables_number": 20,
+    "space_group_name_H_M": "C 2 2 21"
+  },
+  "rcsb_id": "8YIV"
+}

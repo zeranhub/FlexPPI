@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "created_at_utc": "2026-10-21T14:14:03.216584+00:00",
+  "checkpoint_sha256": "b3eed060919df15f075329bc892f959d9355232be5feb561417edd49ea82b39f",
+  "protocol_id": "local_antigen_retrospective_v1_1_local2431pilot_20261021",
+  "protocol_sha256": "79e2bb8d848c5843619fdb58452d008e8637bb30ae1b26284969c11a2e2406dc",
+  "fixed_regions_sha256": "8666f5fb4a112c14210bfd0231d6797a6a2356e5e652aee254c30afdff5cf8c4",
+  "prediction_audit": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\predictions\\fixed_backbone\\run_audit.json",
+  "prediction_audit_sha256": "8ecfa8807c6619b5a03c8c6171de08f33f670cb5de07b051f21f62de79dcfb43",
+  "input_bindings": {
+    "fixed_manifest": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\fixed_backbone_manifest.json",
+    "fixed_manifest_sha256": "906296b0eef056d53c13d16b2be9ef81a67944017378e2f4ad08dc16bceedf77",
+    "static_manifest": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\static_complete_inputs.json",
+    "static_manifest_sha256": "12059fd0556a53bc0a63588df7c22c246e87780db033346e3548d9bbee8960e4"
+  },
+  "n_inputs": 76,
+  "n_primary_candidates": 30,
+  "per_template_counts": {
+    "2BNQ": 14,
+    "2BNR": 14,
+    "1AO7": 16,
+    "1QSE": 16,
+    "1QSF": 16
+  },
+  "n_static_eligible": 76,
+  "n_dynamic_eligible": 76,
+  "all_parent_features_zero": true,
+  "SASA_settings": {
+    "method": "Bio.PDB.SASA.ShrakeRupley",
+    "biopython_version": "1.86",
+    "probe_radius_A": 1.4,
+    "n_points": 960,
+    "element_radii_A": {
+      "C": 1.7,
+      "N": 1.55,
+      "O": 1.52,
+      "S": 1.8
+    },
+    "definition": "[SASA(TCR)+SASA(pMHC incl beta2m)-SASA(full)]/2"
+  },
+  "contact_definition": "unique peptide/TCR heavy-atom residue pairs with distance<=4.5A",
+  "dynamic_definition": "mean of candidate-minus-same-template-parent per-residue physical-scale means in fixed U; no expm1 or variance weighting",
+  "static_source_policy": "Complete canonical side-chain PDBs only; deleted-sidechain inference inputs never used as SASA/contact structures",
+  "labels_or_outcomes_read": false,
+  "scripts": {
+    "extract_features.py": "70f9179b9e4842e8c72e3c13cd34b8f829fcc4488b94c15568543cb9df57d5a1"
+  },
+  "files": {
+    "candidate_features.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\feature_extraction\\candidate_features.csv",
+      "sha256": "f28d14f1b549cea6bd2c21f883b8854336cd84d95cf36527636a2f259c36fe3e"
+    },
+    "fixed_regions.json": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\feature_extraction\\fixed_regions.json",
+      "sha256": "8666f5fb4a112c14210bfd0231d6797a6a2356e5e652aee254c30afdff5cf8c4"
+    },
+    "archive_U_residue_profiles.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\feature_extraction\\archive_U_residue_profiles.csv",
+      "sha256": "bc749e8b86f11a94954dbd02780488908ac71fcf43e63031651cbc2703172b19"
+    },
+    "archive_peptide_profiles.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\feature_extraction\\archive_peptide_profiles.csv",
+      "sha256": "5aa223f35e0c6e81b85fba585d42e3a45c0e53562ea654e30312dc25e45f590f"
+    },
+    "archive_U_role_summaries.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\feature_extraction\\archive_U_role_summaries.csv",
+      "sha256": "1b4d6b2a865a559ae09afcb2c3c73f65e55d5dc4cb3ec1e32e9112cdb7120d2c"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "canvas_mm": [
+    183.0,
+    190.0
+  ],
+  "font_pt": {
+    "axes_ticks_legend": 9,
+    "titles": 10,
+    "bold_letters": 11
+  },
+  "actual_PaperBanana_run": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\paperbanana_layout_v111_20261027\\generation_retry_20261027_155023",
+  "selected_candidate_id": 0,
+  "selected_saved_image": "candidate_2_final.png",
+  "candidate_image_sha256": "104069eb46d1670d9b84ea5512e7122e2b9483839200822e4ee7a128d5aab9d0",
+  "layout": "row1 structures and compact global density; row2 equal case trace+SASA blocks; row3 all4chi horizontal",
+  "display_panel_mapping": {
+    "a": "structures",
+    "b": "global RMSF-Hchi density",
+    "c": "CaMKI curves+SASA",
+    "d": "Ubiquitin curves+SASA",
+    "e": "4chi occupancy"
+  },
+  "all767_scalar_values_exactly_preserved": true,
+  "profile_values": 368,
+  "SASA_values": 97,
+  "occupancy_coordinates": 302,
+  "case_curve_box_mm": {
+    "CaMKI": [
+      14,
+      76,
+      63,
+      25
+    ],
+    "Ubiquitin": [
+      108,
+      76,
+      63,
+      25
+    ]
+  },
+  "case_SASA_box_mm": {
+    "CaMKI": [
+      14,
+      105,
+      63,
+      10
+    ],
+    "Ubiquitin": [
+      108,
+      105,
+      63,
+      10
+    ]
+  },
+  "density": {
+    "populations": [
+      {
+        "population": "MD",
+        "all_positions": 824988,
+        "visible_positions": 820754,
+        "out_of_view_positions": 4234,
+        "bin_count_sum": 820754
+      },
+      {
+        "population": "Full",
+        "all_positions": 824988,
+        "visible_positions": 824082,
+        "out_of_view_positions": 906,
+        "bin_count_sum": 824082
+      }
+    ],
+    "common_grid": true,
+    "same_residue_cohort": true,
+    "count_scale": "both: nonzero alpha=0.10+0.25*log1p(count)/log1p(shared_max); zero alpha=0",
+    "shared_max_count": 12714.0,
+    "colors": {
+      "MD": "#62676B",
+      "Full": "#2166AC"
+    },
+    "overlay": "complete MD gray density + complete Full light blue density; subtle natural alpha blend",
+    "all_nonzero_cells_visible": {
+      "MD": true,
+      "Full": true
+    },
+    "no_density_threshold_for_filled_cells": true,
+    "contours": false,
+    "no_kernel_smoothing_or_subsampling": true,
+    "marginals": "same bins, denominator824988, MD dashed, Full solid",
+    "rho_all_positions": {
+      "MD": 0.20861515505308,
+      "Full": 0.2619048885568794
+    }
+  },
+  "outside_text": [],
+  "generated_scientific_pixels_reused": false,
+  "real_structure_renders_preserved": true,
+  "Word_modified": false,
+  "new_model_or_MD_run": false,
+  "visual_review": "passed: root and two independent reviewers opened final native PNG and actual PaperBanana A; no clipped labels or collisions",
+  "sha256": {
+    "png": "05c3d4960a18536bcf54d06468071220f083408556cce0265688d9fcad1d292f",
+    "pdf": "c8c92593bfbd6854fa2e66e9be94d67992d8a12b92ade0d6536ab7724720da39",
+    "svg": "af1d6ed1d63fd77d7a89afa1615d8503248faa502ef5124a15e9b926bb8f1c8d"
+  },
+  "embedded_Arial_fonts": [
+    "/ELUGPM+ArialMT",
+    "/ELUGPM+Arial-BoldMT"
+  ],
+  "all767_values_independently_exact": true,
+  "original_structure_pixels_preserved": true,
+  "Word_unchanged": true
+}

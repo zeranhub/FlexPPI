@@ -1,0 +1,113 @@
+{
+  "case": "C31",
+  "model": "chemical_identity_corrected_v1 full fold1; KIX A00AQ excluded from training",
+  "n_states": 4,
+  "n_residues_per_state": 87,
+  "n_L12": 8,
+  "MD_independent_trajectories_per_state": 1,
+  "MD_duration_ns": 100,
+  "metric": "Spearman within each complete KIX chain; exact percentages across87 positions",
+  "spread": "None; no replicate uncertainty claimed",
+  "top20_counts": [
+    14,
+    16,
+    11,
+    14
+  ],
+  "top20_n": 18,
+  "spearman": {
+    "apo": 0.8962965663045855,
+    "myb": 0.8811693518991032,
+    "mll": 0.7290223809870962,
+    "both": 0.8464861121236421
+  },
+  "all_source_points_retained": true,
+  "subsampling": false,
+  "source_sha256": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\reader_revision_v39_20261016\\english_figures\\fig6\\data\\kix_fold1_all_residues.csv": "427cefe8d50d8b7226f1430e72e35dda9ca455d1edd2b619ee6fd395344971a5",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\reader_revision_v39_20261016\\english_figures\\fig6\\data\\kix_fold1_case_metrics.csv": "6f9c5ccc312f470ba4c576c58fd35a345e19b596519946e3f89976652e91cf9d"
+  },
+  "boundary": "Common flexible-loop localization, not cooperative state differences or binding thermodynamics",
+  "status": "passed",
+  "canvas_mm": [
+    183.0,
+    205.0
+  ],
+  "dpi": 450,
+  "minimum_font_pt": 9,
+  "visible_language": "English",
+  "axes": [
+    [
+      0.02622950819672136,
+      0.7073170731707317,
+      0.2754098360655737,
+      0.20487804878048776
+    ],
+    [
+      0.3627049180327869,
+      0.7073170731707317,
+      0.2581967213114754,
+      0.20487804878048776
+    ],
+    [
+      0.6905737704918032,
+      0.7073170731707317,
+      0.2581967213114754,
+      0.20487804878048776
+    ],
+    [
+      0.13114754098360656,
+      0.4878048780487805,
+      0.5081967213114754,
+      0.13658536585365855
+    ],
+    [
+      0.6557377049180327,
+      0.5024390243902439,
+      0.013661202185792365,
+      0.1121951219512195
+    ],
+    [
+      0.7978142076502732,
+      0.4975609756097561,
+      0.17486338797814205,
+      0.12682926829268293
+    ],
+    [
+      0.09289617486338798,
+      0.22439024390243903,
+      0.3770491803278688,
+      0.11219512195121953
+    ],
+    [
+      0.5956284153005464,
+      0.22439024390243903,
+      0.3770491803278688,
+      0.11219512195121953
+    ],
+    [
+      0.09289617486338798,
+      0.05365853658536585,
+      0.3770491803278688,
+      0.11219512195121953
+    ],
+    [
+      0.5956284153005464,
+      0.05365853658536585,
+      0.3770491803278688,
+      0.11219512195121953
+    ]
+  ],
+  "point_rows": 1400,
+  "text_outside_canvas": [],
+  "source_paths_unmodified": true,
+  "statistical_tests": "None; descriptive complete-region evaluation",
+  "output_sha256": {
+    "png": "7a6ecd44dd94f1ef32e41981f9cfc578ce91a2781753df62fa9f542d9e7724dc",
+    "pdf": "780fd2cdd2f21fb9890e20019f058d01ffa7898e3346dd41b2f0c66896c9587d",
+    "svg": "50736ba05109dbba3481ef6cc107726dbe8d08a3fb5792662fad94531ae8f497"
+  },
+  "visual_QA": "passed",
+  "direct_source_check_count": 16,
+  "source_SVG_font_min_pt": 9.0
+}

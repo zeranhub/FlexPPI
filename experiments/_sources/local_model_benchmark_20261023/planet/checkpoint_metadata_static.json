@@ -1,0 +1,132 @@
+[
+  {
+    "path": "E:\\Project\\protein_flexibility_models\\hf_cache\\hub\\models--samsl--rocketshp\\snapshots\\7831d318182d4f4fc1acbdafdbf23862d8bc1657\\checkpoints\\rocketshp_pretrained_20250505_v1.ckpt",
+    "file_bytes": 356157598,
+    "hyper_parameters": {
+      "num_parameters": 30193697,
+      "batch_size": 16,
+      "crop_size": 512,
+      "lr": 5e-05,
+      "grad_norm": false,
+      "max_epochs": 75,
+      "epoch_scale": -1,
+      "num_data_workers": 31,
+      "shuffle": true,
+      "random_seed": 0,
+      "train_pct": 0.8,
+      "val_pct": 0.1,
+      "precision": "medium",
+      "embedding_dim": 1536,
+      "output_dim": 1,
+      "d_model": 512,
+      "n_heads": 8,
+      "n_layers": 8,
+      "square_loss": false,
+      "variance_norm": false,
+      "rmsf_alpha": 1.0,
+      "ca_dist_alpha": 1.0,
+      "dyn_corr_alpha": 0.0,
+      "autocorr_alpha": 0.0,
+      "gcc_lmi_alpha": 1.0,
+      "shp_alpha": 0.01,
+      "seq_features": true,
+      "struct_features": true,
+      "struct_stage": "encoded",
+      "struct_dim": 1024
+    },
+    "state_tensor_count": 110,
+    "state_elements_by_storage_dtype": {
+      "FloatStorage": 29667357
+    },
+    "default_temp_shape": [
+      1
+    ],
+    "default_temp_K": 300.0
+  },
+  {
+    "path": "E:\\Project\\protein_flexibility_models\\hf_cache\\hub\\models--samsl--rocketshp\\snapshots\\7831d318182d4f4fc1acbdafdbf23862d8bc1657\\checkpoints\\rocketshp_pretrained_20250507_v1_seq.ckpt",
+    "file_bytes": 351949258,
+    "hyper_parameters": {
+      "num_parameters": 30193697,
+      "batch_size": 16,
+      "crop_size": 512,
+      "lr": 5e-05,
+      "grad_norm": false,
+      "max_epochs": 75,
+      "epoch_scale": -1,
+      "num_data_workers": 31,
+      "shuffle": true,
+      "random_seed": 0,
+      "train_pct": 0.8,
+      "val_pct": 0.1,
+      "precision": "medium",
+      "embedding_dim": 1536,
+      "output_dim": 1,
+      "d_model": 512,
+      "n_heads": 8,
+      "n_layers": 8,
+      "square_loss": false,
+      "variance_norm": false,
+      "rmsf_alpha": 1.0,
+      "ca_dist_alpha": 1.0,
+      "dyn_corr_alpha": 0.0,
+      "autocorr_alpha": 0.0,
+      "gcc_lmi_alpha": 1.0,
+      "shp_alpha": 0.01,
+      "seq_features": true,
+      "struct_features": false,
+      "struct_stage": "encoded",
+      "struct_dim": 1024
+    },
+    "state_tensor_count": 110,
+    "state_elements_by_storage_dtype": {
+      "FloatStorage": 29667357
+    },
+    "default_temp_shape": [],
+    "default_temp_K": 300.0
+  },
+  {
+    "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\weights\\planet\\checkpoints\\rocketshp_pretrained_20250505_v1_mini.ckpt",
+    "file_bytes": 16441978,
+    "hyper_parameters": {
+      "num_parameters": 1483297,
+      "batch_size": 16,
+      "crop_size": 512,
+      "lr": 5e-05,
+      "grad_norm": false,
+      "max_epochs": 75,
+      "epoch_scale": -1,
+      "num_data_workers": 31,
+      "shuffle": true,
+      "random_seed": 0,
+      "train_pct": 0.8,
+      "val_pct": 0.1,
+      "precision": "medium",
+      "embedding_dim": 1536,
+      "output_dim": 1,
+      "d_model": 128,
+      "n_heads": 4,
+      "n_layers": 4,
+      "square_loss": false,
+      "variance_norm": false,
+      "rmsf_alpha": 1.0,
+      "ca_dist_alpha": 1.0,
+      "dyn_corr_alpha": 0.0,
+      "autocorr_alpha": 0.0,
+      "gcc_lmi_alpha": 1.0,
+      "shp_alpha": 0.01,
+      "seq_features": true,
+      "struct_features": false,
+      "struct_stage": "encoded",
+      "struct_dim": 1024
+    },
+    "state_tensor_count": 70,
+    "state_elements_by_storage_dtype": {
+      "FloatStorage": 1450013
+    },
+    "default_temp_shape": [
+      1
+    ],
+    "default_temp_K": 300.0
+  }
+]

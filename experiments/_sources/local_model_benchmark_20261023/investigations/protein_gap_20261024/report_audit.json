@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-24T00:53:40.770153+00:00",
+  "report_script_sha256": "3748b407e1625a93b3acf1b42949bf6f6d6c2b90eb3d3e5969449aa50e38092d",
+  "input_sha256": {
+    "prediction_profile_by_dataset.csv": "13157c277b8cd503bf3de765fc43bab4fef119babc4ddb569575e35b02e17664",
+    "gap_by_record_attributes.csv": "7f6f66f87b85e8517626b8eb26a1581815c6ed012b3b0ca1aa9b89f10956bb10",
+    "region_summary.csv": "8261c124eb296365b03e7f3214004e118622214537ee5ec803facf1624319b66",
+    "all_2203_test_proteins_with_names.csv": "dc2a96cc62ada58fdf42ee9043a3a2fa536889963b5c09f8e597bca612c66a24",
+    "outlier_influence_diagnostic_only.csv": "6571ad7b204bbaf590399fc99d29855fc36fde88d8a1148935ebe514d355da55",
+    "profile_audit.json": "588f9508430a1fc366f2f4bb59fa9a0939bd131348448b9a1138f2e7be4943c2",
+    "split_review\\protein_gap_source_contribution.csv": "d736ce9586868db086841b75877b2f248e40fe281cf667bde269801258be3f89",
+    "split_review\\REPORT_zh.md": "7258cd48dffee46406169248e8a619f9203c141a6ea522db1e77ff1fd0bac060",
+    "scoring_review\\SCORING_REVIEW_zh.md": "9729afacd42ca8bbb65fde2e17d3af4ec24998d9255ec65914fc55f89000af84",
+    "scoring_review\\backflip_checkpoint_identity.json": "fec042adadf1b9791f87045b344b45bed8d4f2b1f4c29a0353dd1cc0adcca7fc",
+    "backflip_review\\static_input_audit.json": "fcba469f571b40438221a02b71e14f2f8bde4f22567bd9e14f7dcc2b51de3e90",
+    "backflip_review\\source_feature_audit.json": "2e72a64503196f2de35951f9c7519c347517c6689a0816a5fb9ac271a1ce9b54"
+  },
+  "report_sha256": "12c650f7870cccf63f5e5bd6a73e7203942ed0e7253f5731c669740618da60f5",
+  "benchmark_modified": false,
+  "new_inference_or_training": false
+}

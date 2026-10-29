@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "cohort": "uniform83",
+  "input": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\feature_baseline\\features_priority83.parquet",
+  "rows_before_filter": 38599,
+  "quality_and_label_valid": 33493,
+  "same_type_n_ge4": 33142,
+  "records": 83,
+  "families": 42,
+  "truth": "uniform first 0-100ns window",
+  "structure": "initial complete protein assembly, not trajectory averaged",
+  "quartiles": "same record and AA, average rank; constant SASA types excluded from gradient",
+  "buried": "sidechain SASA <= 1 A^2",
+  "exposed": "sidechain SASA >= 50 A^2",
+  "limitation": "Correlations are descriptive; not an independently calibrated SASA baseline. Quartile, buried/exposed and exception selections do not use predictions."
+}

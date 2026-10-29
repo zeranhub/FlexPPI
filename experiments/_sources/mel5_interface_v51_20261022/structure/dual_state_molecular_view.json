@@ -1,0 +1,342 @@
+{
+  "status": "passed",
+  "sources": {
+    "WT_original": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_joint_case_v49_20261019\\figure4\\source_archive\\3hg1_model_input.pdb",
+    "mature": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_joint_case_v49_20261019\\figure4\\source_archive\\4jff_model_input.pdb",
+    "alignment_audit": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_interface_v51_20261022\\analysis\\geometry_audit.json"
+  },
+  "view": [
+    -0.8413222432136536,
+    -0.3473830819129944,
+    0.41412782669067383,
+    -0.5073828101158142,
+    0.24334856867790222,
+    -0.8266463279724121,
+    0.18638555705547333,
+    -0.9055972695350647,
+    -0.38099077343940735,
+    0.0,
+    0.0,
+    -57.74099349975586,
+    66.04369354248047,
+    64.27613067626953,
+    38.11384963989258,
+    45.5234375,
+    69.95854949951172,
+    20.0
+  ],
+  "image_size": [
+    1800,
+    1500
+  ],
+  "camera": "Single orthographic camera, fitted on union of both states, then unchanged. WT is transformed in memory at full float precision; the separately written aligned PDB is not the numerical source for the rendering.",
+  "numbering": "Common MEL5 numbering; mature input beta = common+1.",
+  "structures": {
+    "wt": {
+      "PNG": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_interface_v51_20261022\\structure\\MEL5_local_common_view.png",
+      "atom_coordinates": {
+        "Q72_CA": [
+          70.51586151123047,
+          61.63346481323242,
+          40.37580490112305
+        ],
+        "Q72_OE1": [
+          67.6731185913086,
+          62.163936614990234,
+          38.5660514831543
+        ],
+        "Q72_NE2": [
+          68.64663696289062,
+          64.12572479248047,
+          38.26496124267578
+        ],
+        "beta52_CA": [
+          64.07960510253906,
+          64.71627044677734,
+          39.641048431396484
+        ],
+        "beta53_CA": [
+          62.611846923828125,
+          66.35086822509766,
+          36.480995178222656
+        ],
+        "beta53_N": [
+          63.337013244628906,
+          65.99623107910156,
+          37.71762466430664
+        ],
+        "beta54_CA": [
+          59.80896759033203,
+          64.29307556152344,
+          34.90937042236328
+        ],
+        "beta54_O": [
+          58.74475860595703,
+          62.15824890136719,
+          35.08503723144531
+        ],
+        "beta52_sidechain_center": [
+          64.07960510253906,
+          64.71627044677734,
+          39.641048431396484
+        ],
+        "beta53_sidechain_center": [
+          63.222299575805664,
+          67.48743438720703,
+          34.84862422943115
+        ]
+      },
+      "distances_A": {
+        "Q72_OE1_beta53_N": 5.848770618438721,
+        "Q72_NE2_beta54_O": 10.584425926208496
+      },
+      "atom_screen_pixels_top_left": {
+        "Q72_CA": [
+          752.1035963546201,
+          1062.1394024274873
+        ],
+        "Q72_OE1": [
+          883.649244067773,
+          859.2331615269832
+        ],
+        "Q72_NE2": [
+          745.8247691145571,
+          828.9042797389075
+        ],
+        "beta52_CA": [
+          1025.789992688915,
+          793.2907706469373
+        ],
+        "beta53_CA": [
+          1012.2685897772162,
+          515.7157595349413
+        ],
+        "beta53_N": [
+          997.5569735708332,
+          623.0895615831228
+        ],
+        "beta54_CA": [
+          1241.3670093216251,
+          376.08175893702673
+        ],
+        "beta54_O": [
+          1389.5592556150932,
+          398.8265625932104
+        ],
+        "beta52_sidechain_center": [
+          1025.789992688915,
+          793.2907706469373
+        ],
+        "beta53_sidechain_center": [
+          909.5114595204277,
+          402.1001460559296
+        ]
+      },
+      "PNG_sha256": "0294a3ce0e35d9483ab2d9ea4aa0e9cec2e3f462adf8c6743be45cbc9c851cbd",
+      "nontransparent_pixel_bbox": [
+        118,
+        306,
+        1665,
+        1470
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "beta52_sidechain_center_note": "WT Gly52 has no heavy sidechain; its sidechain_center label anchor is CA. Mature Pro52 and beta53 use the mean of sidechain heavy atoms."
+    },
+    "eng": {
+      "PNG": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_interface_v51_20261022\\structure\\alpha24beta17_local_common_view.png",
+      "atom_coordinates": {
+        "Q72_CA": [
+          70.56999969482422,
+          61.81999969482422,
+          40.56999969482422
+        ],
+        "Q72_OE1": [
+          66.55000305175781,
+          63.0099983215332,
+          39.66999816894531
+        ],
+        "Q72_NE2": [
+          65.6500015258789,
+          60.970001220703125,
+          39.58000183105469
+        ],
+        "beta52_CA": [
+          65.66000366210938,
+          66.87999725341797,
+          39.65999984741211
+        ],
+        "beta53_CA": [
+          65.6500015258789,
+          64.69000244140625,
+          36.38999938964844
+        ],
+        "beta53_N": [
+          65.63999938964844,
+          65.11000061035156,
+          37.81999969482422
+        ],
+        "beta54_CA": [
+          62.400001525878906,
+          62.72999954223633,
+          37.11000061035156
+        ],
+        "beta54_O": [
+          62.689998626708984,
+          61.93000030517578,
+          39.36000061035156
+        ],
+        "beta52_sidechain_center": [
+          67.20333353678386,
+          66.55666605631511,
+          40.70333353678385
+        ],
+        "beta53_sidechain_center": [
+          68.81714194161552,
+          65.98714229038784,
+          36.14285659790039
+        ]
+      },
+      "distances_A": {
+        "Q72_OE1_beta53_N": 2.9428915977478027,
+        "Q72_NE2_beta54_O": 3.119553804397583
+      },
+      "atom_screen_pixels_top_left": {
+        "Q72_CA": [
+          744.4421784216684,
+          1073.1332994338736
+        ],
+        "Q72_OE1": [
+          936.8165308063981,
+          888.9743934021676
+        ],
+        "Q72_NE2": [
+          1067.6341178183493,
+          896.5024482087542
+        ],
+        "beta52_CA": [
+          847.1895729428725,
+          796.2097906779877
+        ],
+        "beta53_CA": [
+          884.7515446801754,
+          617.1075201854387
+        ],
+        "beta53_N": [
+          889.3167821773914,
+          704.6964104437097
+        ],
+        "beta54_CA": [
+          1169.3961645386053,
+          617.1187309424845
+        ],
+        "beta54_O": [
+          1212.2329691026325,
+          788.9252843789022
+        ],
+        "beta52_sidechain_center": [
+          777.9296506960418,
+          911.0569319977067
+        ],
+        "beta53_sidechain_center": [
+          636.5186470200488,
+          658.3887744039766
+        ]
+      },
+      "PNG_sha256": "d5ce8224e967227437b563c411374813fee2371097feff53ba734ef5e26c4c0a",
+      "nontransparent_pixel_bbox": [
+        90,
+        531,
+        1557,
+        1463
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "beta52_sidechain_center_note": "WT Gly52 has no heavy sidechain; its sidechain_center label anchor is CA. Mature Pro52 and beta53 use the mean of sidechain heavy atoms."
+    }
+  },
+  "screen_projection": {
+    "mapping_xyz1_to_xy": [
+      [
+        -61.99563046192268,
+        25.576154806491953
+      ],
+      [
+        -37.381321675043836,
+        -17.91603432512337
+      ],
+      [
+        13.737923929674377,
+        66.69187951151287
+      ],
+      [
+        6873.039526108915,
+        -2329.896232372784
+      ]
+    ],
+    "calibration_probe_world": [
+      [
+        66.20666758219402,
+        63.08000055948893,
+        38.02333323160807
+      ],
+      [
+        69.20666758219402,
+        63.08000055948893,
+        38.02333323160807
+      ],
+      [
+        66.20666758219402,
+        66.08000055948892,
+        38.02333323160807
+      ],
+      [
+        66.20666758219402,
+        63.08000055948893,
+        41.02333323160807
+      ]
+    ],
+    "calibration_probe_screen": [
+      [
+        932.8632958801498,
+        769.1198501872659
+      ],
+      [
+        746.876404494382,
+        845.8483146067416
+      ],
+      [
+        820.7193308550186,
+        715.3717472118959
+      ],
+      [
+        974.077067669173,
+        969.1954887218045
+      ]
+    ],
+    "holdout_world": [
+      67.95666758219402,
+      62.63000055948893,
+      39.47333323160807
+    ],
+    "holdout_predicted": [
+      861.1125270235834,
+      918.6435618366258
+    ],
+    "holdout_observed": [
+      861.1003717472119,
+      918.6672862453531
+    ],
+    "holdout_error_pixels": 0.026657049970470213,
+    "note": "Pixel coordinates measured at original 1800x1500 canvas; origin upper-left."
+  },
+  "visual_QA": {
+    "review": "Manual visual inspection of both final 1800x1500 PNGs, same camera and scale; primary two atom pairs visible; no burned-in text; no molecular coordinate editing other than rigid HLA fit.",
+    "background": "Fine tube representation radius 0.20; HLA teal, WT TCR orange, mature TCR purple.",
+    "bounds_note": "The HLA short segment terminates near the lower image edge; no key residues or distance endpoints are clipped. Use a common crop for both states."
+  }
+}

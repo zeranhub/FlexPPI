@@ -1,0 +1,202 @@
+{
+  "status": "passed",
+  "document": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v48_20261019_中文修订_KRAS亲和力机制与绝对RMSF_三线表.docx",
+  "document_sha256": "952c789ef6271f88f7ac619ac78291f71536c53f3a7bdeddb00eaebdcf003726",
+  "figure4": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\kras_affinity_v48_20261019\\figure4\\fig4_kras_affinity.png",
+  "figure4_sha256": "012d80f6bf0ed5f35a3736835e24dca137c9e53036cc2502586286229d865c47",
+  "source": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v47_20261019_中文修订_模型框架图重绘_三线表.docx",
+  "source_sha256": "7b37df1a8726609844681969befeb15e8f77a8ac342ef2a59d7345d05320dd7f",
+  "reviewer": "independent kras_model_mechanism_audit agent",
+  "checks": [
+    {
+      "check": "source_and_target_hashes",
+      "passed": true,
+      "detail": {
+        "source": "7b37df1a8726609844681969befeb15e8f77a8ac342ef2a59d7345d05320dd7f",
+        "document": "952c789ef6271f88f7ac619ac78291f71536c53f3a7bdeddb00eaebdcf003726"
+      }
+    },
+    {
+      "check": "unchanged_zip_inventory",
+      "passed": true,
+      "detail": {
+        "added": [],
+        "removed": []
+      }
+    },
+    {
+      "check": "only_document_and_figure4_parts_changed",
+      "passed": true,
+      "detail": [
+        "word/document.xml",
+        "word/media/image41.png"
+      ]
+    },
+    {
+      "check": "all_protected_body_nodes_identical",
+      "passed": true,
+      "detail": {
+        "old_body_nodes": 188,
+        "new_body_nodes": 188,
+        "protected_changes": [],
+        "allowed_indices": [
+          2,
+          9,
+          52,
+          53,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          111,
+          113
+        ]
+      }
+    },
+    {
+      "check": "all_document_changes_accounted_for",
+      "passed": true,
+      "detail": [
+        2,
+        9,
+        52,
+        53,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        111,
+        113
+      ]
+    },
+    {
+      "check": "all_prose_replacements_exact",
+      "passed": true,
+      "detail": [
+        {
+          "index": 2,
+          "before_exact": true,
+          "after_exact": true
+        },
+        {
+          "index": 9,
+          "before_exact": true,
+          "after_exact": true
+        },
+        {
+          "index": 52,
+          "before_exact": true,
+          "after_exact": true
+        },
+        {
+          "index": 53,
+          "before_exact": true,
+          "after_exact": true
+        },
+        {
+          "index": 90,
+          "before_exact": true,
+          "after_exact": true
+        },
+        {
+          "index": 91,
+          "before_exact": true,
+          "after_exact": true
+        },
+        {
+          "index": 93,
+          "before_exact": true,
+          "after_exact": true
+        },
+        {
+          "index": 94,
+          "before_exact": true,
+          "after_exact": true
+        },
+        {
+          "index": 95,
+          "before_exact": true,
+          "after_exact": true
+        },
+        {
+          "index": 111,
+          "before_exact": true,
+          "after_exact": true
+        },
+        {
+          "index": 113,
+          "before_exact": true,
+          "after_exact": true
+        }
+      ]
+    },
+    {
+      "check": "native_three_line_tables_preserved",
+      "passed": true,
+      "detail": {
+        "old": 10,
+        "new": 10,
+        "all_native_table_xml_identical": true
+      }
+    },
+    {
+      "check": "native_equations_preserved",
+      "passed": true,
+      "detail": {
+        "old": 36,
+        "new": 36
+      }
+    },
+    {
+      "check": "all_28_references_preserved",
+      "passed": true,
+      "detail": {
+        "old": 28,
+        "new": 28,
+        "reference28": "[28] Andrew Poole, Vijaykumar Karuppiah, Annabelle Hartt, Jaafar N. Haidar, Sylvie Moureau, Tomasz Dobrzycki, Conor Hayes, Christopher Rowley, Jorge Dias, Stephen Harper, Keir Barnbrook, Miriam Hock, Charlotte Coles, Wei Yang, Milos Aleksic, Aimee Bence Lin, Ross Robinson, Joe D. Dukes, Nathaniel Liddy, Marc Van der Kamp, Gregory D. Plowman, Annelise Vuidepot, David K. Cole, Andrew D. Whale, and Chandramouli Chillakuri. Therapeutic high affinity T cell receptor targeting a KRASG12D cancer neoantigen. Nature Communications, 13:5333, 2022. doi:10.1038/s41467-022-32811-1."
+      }
+    },
+    {
+      "check": "comments_and_anchors_preserved",
+      "passed": true,
+      "detail": {
+        "commentRangeStart": [
+          5,
+          5
+        ],
+        "commentRangeEnd": [
+          5,
+          5
+        ],
+        "commentReference": [
+          6,
+          6
+        ]
+      }
+    },
+    {
+      "check": "active_images_and_order_preserved",
+      "passed": true,
+      "detail": [
+        "rId9",
+        "rId10",
+        "rId13",
+        "rId52",
+        "rId51",
+        "rId15"
+      ]
+    },
+    {
+      "check": "embedded_figure4_is_reviewed_final_asset",
+      "passed": true,
+      "detail": {
+        "figure4_sha256": "012d80f6bf0ed5f35a3736835e24dca137c9e53036cc2502586286229d865c47",
+        "embedded_sha256": "012d80f6bf0ed5f35a3736835e24dca137c9e53036cc2502586286229d865c47"
+      }
+    }
+  ]
+}

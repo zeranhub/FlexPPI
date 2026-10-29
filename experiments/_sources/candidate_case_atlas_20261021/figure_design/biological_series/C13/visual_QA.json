@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "case_id": "C13",
+  "image_actually_opened": true,
+  "reviewed_PNG_SHA256": "ab7ad308f80ce5eddc9cce8a7c644c168dfc1fe9ef14434c2657e0fe714671f7",
+  "reviewer": "case_figure_design_20261021",
+  "target_dimensions_mm": [
+    183.0,
+    200.0
+  ],
+  "minimum_font_pt": 9.0,
+  "Pass0": "Semantic nondefault colours, distinct markers, no rainbow or four-sided frames; no selected best residues.",
+  "Pass1": "All visible English text >=9 pt and inside canvas; PDF/SVG preserve editable lines and text; 450 dpi PNG.",
+  "Pass2": "All source positions in the defined complete scope retained. Gaps and undefined chi not zero-filled. Complete multi-contrast controls displayed.",
+  "Pass3": "Final actual PNG opened at exported dimensions. Structural views present, readable state labels, all data within axes, zero-valued chi markers retain margin, no overlapping labels or legends.",
+  "case_specific_scope": "Complete predefined region and all defined biological contrasts retained.",
+  "new_training_inference_MD": false
+}

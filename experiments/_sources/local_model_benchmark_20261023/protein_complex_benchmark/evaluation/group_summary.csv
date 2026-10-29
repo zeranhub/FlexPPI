@@ -1,0 +1,179 @@
+method,group,metric,mean,ci_low,ci_high,n_records,n_families,primary_complete_cohort,uncertainty
+Full,protein,spearman,0.7912009159857208,0.7826070919262291,0.799634703550307,2203,1500,True,record_weighted_family_cluster_bootstrap
+Full,protein,pearson,0.8312688107689437,0.8251785221523098,0.8382259935243521,2203,1500,True,record_weighted_family_cluster_bootstrap
+Full,protein,z_mae,0.36631897083099063,0.3583878632442717,0.37333696561728774,2203,1500,True,record_weighted_family_cluster_bootstrap
+Full,protein,top10_ap,0.7376032342321146,0.7273148926688453,0.7482932252864275,2203,1500,True,record_weighted_family_cluster_bootstrap
+Full,protein,mae,0.6854117342230021,0.6413865926420919,0.7318613284378366,2203,1500,True,record_weighted_family_cluster_bootstrap
+Full,protein,rmse,0.9093579674737844,0.8595540425043795,0.9618989739944043,2203,1500,True,record_weighted_family_cluster_bootstrap
+Full,protein,bias,-0.30805361477775794,-0.37125872458337505,-0.2475256861310645,2203,1500,True,record_weighted_family_cluster_bootstrap
+Intra,protein,spearman,0.77735688158383,0.7678062831878486,0.7863855538781483,2203,1500,True,record_weighted_family_cluster_bootstrap
+Intra,protein,pearson,0.8074228672875866,0.8003079596256564,0.8153820403668294,2203,1500,True,record_weighted_family_cluster_bootstrap
+Intra,protein,z_mae,0.38840193204074097,0.3800064684727183,0.3961797172378902,2203,1500,True,record_weighted_family_cluster_bootstrap
+Intra,protein,top10_ap,0.7125086944920027,0.7022516808453071,0.7232521913983841,2203,1500,True,record_weighted_family_cluster_bootstrap
+Intra,protein,mae,0.7352872126643524,0.6827289368031771,0.7920202261249099,2203,1500,True,record_weighted_family_cluster_bootstrap
+Intra,protein,rmse,0.9927104621380778,0.9323837525588935,1.058331652596135,2203,1500,True,record_weighted_family_cluster_bootstrap
+Intra,protein,bias,-0.44207998103583684,-0.5137193441110751,-0.3760214319718928,2203,1500,True,record_weighted_family_cluster_bootstrap
+Static,protein,spearman,0.7593174628494992,0.7523772637736521,0.7660138037429638,2203,1500,True,record_weighted_family_cluster_bootstrap
+Static,protein,pearson,0.7815964152086387,0.7742404282504946,0.7896213635473913,2203,1500,True,record_weighted_family_cluster_bootstrap
+Static,protein,z_mae,0.4161317542599581,0.4076455656141257,0.42369754855263564,2203,1500,True,record_weighted_family_cluster_bootstrap
+Static,protein,top10_ap,0.6734173439261296,0.6636490260914378,0.6843729719971275,2203,1500,True,record_weighted_family_cluster_bootstrap
+Static,protein,mae,0.7755647806582828,0.7286188140519095,0.8276113070778468,2203,1500,True,record_weighted_family_cluster_bootstrap
+Static,protein,rmse,1.0289435675800667,0.9731531428062005,1.0874581964153438,2203,1500,True,record_weighted_family_cluster_bootstrap
+Static,protein,bias,-0.13562084160080784,-0.20565143847831965,-0.07238987376737607,2203,1500,True,record_weighted_family_cluster_bootstrap
+AA,protein,spearman,0.25180321602429523,0.24637712527701616,0.2571204733534204,2203,1500,True,record_weighted_family_cluster_bootstrap
+AA,protein,pearson,0.19465871405841195,0.18976225270225758,0.19919709641914723,2203,1500,True,record_weighted_family_cluster_bootstrap
+AA,protein,z_mae,0.9958043021863116,0.9930737334422867,0.9986126224316816,2203,1500,True,record_weighted_family_cluster_bootstrap
+AA,protein,top10_ap,0.17591244365907138,0.17165447373451695,0.1805310030110163,2203,1500,True,record_weighted_family_cluster_bootstrap
+AA,protein,mae,1.0172621069908439,0.9546041909568797,1.0852121567500372,2203,1500,True,record_weighted_family_cluster_bootstrap
+AA,protein,rmse,1.4498630071955547,1.3644820206730652,1.5364705076861045,2203,1500,True,record_weighted_family_cluster_bootstrap
+AA,protein,bias,-0.3766436147546121,-0.47024403742885496,-0.284003627124863,2203,1500,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,protein,spearman,0.8639543793893593,0.8586887055335661,0.8696068538355876,2203,1500,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,protein,pearson,0.864642113640721,0.8558991012571676,0.8729098521213002,2203,1500,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,protein,z_mae,0.3087227803163842,0.2983963917222366,0.3192321268512886,2203,1500,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,protein,top10_ap,0.7899728433776181,0.7785151369805029,0.8012477416489928,2203,1500,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,protein,mae,0.5065603556897205,0.4726779368019286,0.5435398125183125,2203,1500,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,protein,rmse,0.7462531817360973,0.70447537476927,0.789672375735947,2203,1500,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,protein,bias,-0.10296699072038208,-0.1407753448501562,-0.06727081784095061,2203,1500,True,record_weighted_family_cluster_bootstrap
+ANM,protein,spearman,0.7846766942879506,0.7785157970417695,0.7906994046074771,2203,1500,True,record_weighted_family_cluster_bootstrap
+ANM,protein,pearson,0.7555440624199142,0.7469800985455028,0.7644951864462021,2203,1500,True,record_weighted_family_cluster_bootstrap
+ANM,protein,z_mae,0.39579799361433654,0.38737137079104245,0.4033447022318035,2203,1500,True,record_weighted_family_cluster_bootstrap
+ANM,protein,top10_ap,0.6857469518387453,0.6759695130848171,0.6963780316670488,2203,1500,True,record_weighted_family_cluster_bootstrap
+GNM,protein,spearman,0.7387079341118371,0.7320897996432926,0.7449984307049373,2203,1500,True,record_weighted_family_cluster_bootstrap
+GNM,protein,pearson,0.7258377255482474,0.7187963746891652,0.7339595167425921,2203,1500,True,record_weighted_family_cluster_bootstrap
+GNM,protein,z_mae,0.4445916672598843,0.43750788389519774,0.45113254613667786,2203,1500,True,record_weighted_family_cluster_bootstrap
+GNM,protein,top10_ap,0.6806997476297225,0.6716529659499423,0.6910267643722888,2203,1500,True,record_weighted_family_cluster_bootstrap
+FastProtFlex,protein,spearman,0.7955941644802281,0.7889934633002273,0.801863484159952,2203,1500,True,record_weighted_family_cluster_bootstrap
+FastProtFlex,protein,pearson,0.7667590350232228,0.7615710992317355,0.7723618406215335,2203,1500,True,record_weighted_family_cluster_bootstrap
+FastProtFlex,protein,z_mae,0.4931544868571962,0.487231715063873,0.49851303836067506,2203,1500,True,record_weighted_family_cluster_bootstrap
+FastProtFlex,protein,top10_ap,0.7124765870163633,0.7024469021569929,0.722776250272499,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),protein,spearman,0.8971102864547983,0.8902059810890741,0.903335071492953,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),protein,pearson,0.9152810777624081,0.9029797626663998,0.9246986839346931,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),protein,z_mae,0.2374966906984941,0.22533329430253987,0.25193535213328616,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),protein,top10_ap,0.8503601174461577,0.8332576098458079,0.8641707771307195,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),protein,mae,0.4066413817086348,0.38048124670615396,0.43530745513923996,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),protein,rmse,0.5708507653839245,0.5409729077162218,0.6040767338015385,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),protein,bias,0.09265737065936407,0.06390189477324182,0.12077024465361162,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),protein,spearman,0.8979015255702104,0.8912029339549872,0.9039721519596807,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),protein,pearson,0.9160738483611925,0.904174367156712,0.9252840575920142,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),protein,z_mae,0.23672333662504544,0.22490144763338352,0.2506027658413847,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),protein,top10_ap,0.8511288068613316,0.8344907068019586,0.864702885316928,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),protein,mae,0.4088276377639775,0.38249699486397143,0.4370883546835448,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),protein,rmse,0.5735161353478372,0.5431098115962052,0.6069190758442726,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),protein,bias,0.09607609093816932,0.06704818921321704,0.124871055783073,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),protein,spearman,0.8078778109431547,0.8031207166961121,0.8126671853211158,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),protein,pearson,0.8414692380772137,0.8326123293524725,0.8500173174782195,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),protein,z_mae,0.34738767170356183,0.3378924315347247,0.3563099685602369,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),protein,top10_ap,0.7459703499432441,0.7350260390136582,0.7569426166960247,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),protein,mae,0.5125492242780182,0.4852068343132753,0.5425250554023743,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),protein,rmse,0.7337228782630907,0.7000027858682583,0.7707133246195368,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),protein,bias,-0.16037671929866704,-0.20740479857122998,-0.11240400351584606,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),protein,spearman,0.8085921431763416,0.8036445006951125,0.8132717007133377,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),protein,pearson,0.8421068003500263,0.8336283564989582,0.8504684141807103,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),protein,z_mae,0.346729616440799,0.33749164925433384,0.355300503492023,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),protein,top10_ap,0.7467372341910877,0.7363459872449944,0.757498962941045,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),protein,mae,0.513563563333976,0.4862889607656307,0.5438784659280326,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),protein,rmse,0.7348748090606415,0.701433888000658,0.7728281067177982,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),protein,bias,-0.15750310276941262,-0.20589849834377436,-0.10817089097472411,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),protein,spearman,0.8310350723122144,0.826927101799693,0.8354941352161428,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),protein,pearson,0.8676042063985118,0.8583169977038254,0.8756821363652669,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),protein,z_mae,0.3190448784237803,0.30924209213234016,0.32905620933989904,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),protein,top10_ap,0.7807156265597958,0.7691527229611008,0.7919413369607539,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),protein,mae,0.45496498167561267,0.43149559000129556,0.4797573327041657,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),protein,rmse,0.6485026425305005,0.620841478229958,0.6777453750962825,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),protein,bias,-0.025404301950043513,-0.05876781483911896,0.005680108840796832,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),protein,spearman,0.8317557172903803,0.8277194547313831,0.8360959706939326,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),protein,pearson,0.8683637862752112,0.8595122229988981,0.8762583536343941,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),protein,z_mae,0.3183098454846229,0.3087311664463584,0.3279311795116389,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),protein,top10_ap,0.7814998846919632,0.7704969683043317,0.7925061068310588,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),protein,mae,0.4555777896739407,0.43214340854556693,0.48055606337575807,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),protein,rmse,0.64924674346814,0.6215945561970215,0.6788082947434649,2203,1500,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),protein,bias,-0.02314418992152682,-0.0566160588897421,0.0081116353897044,2203,1500,True,record_weighted_family_cluster_bootstrap
+Full,protein_complex,spearman,0.8089585018266019,0.7277664213097712,0.8406324129229772,860,261,True,record_weighted_family_cluster_bootstrap
+Full,protein_complex,pearson,0.7960435409391604,0.7346104585562396,0.820347444844118,860,261,True,record_weighted_family_cluster_bootstrap
+Full,protein_complex,z_mae,0.3823812848649004,0.35322363839998333,0.4531047567047589,860,261,True,record_weighted_family_cluster_bootstrap
+Full,protein_complex,top10_ap,0.7106534639820279,0.6437300724309114,0.7371008127518649,860,261,True,record_weighted_family_cluster_bootstrap
+Full,protein_complex,mae,0.29965939681904685,0.2620850013165456,0.40008484814842016,860,261,True,record_weighted_family_cluster_bootstrap
+Full,protein_complex,rmse,0.4908132136182886,0.4444795418025854,0.6099685024821174,860,261,True,record_weighted_family_cluster_bootstrap
+Full,protein_complex,bias,-0.07119267750965157,-0.08982009531174538,-0.018872570925390655,860,261,True,record_weighted_family_cluster_bootstrap
+Intra,protein_complex,spearman,0.7745708605732523,0.6732492031076518,0.813813843292296,860,261,True,record_weighted_family_cluster_bootstrap
+Intra,protein_complex,pearson,0.7293155587125567,0.6290448488325536,0.7683182197418053,860,261,True,record_weighted_family_cluster_bootstrap
+Intra,protein_complex,z_mae,0.42475880902896784,0.3862254729772764,0.5213793374294918,860,261,True,record_weighted_family_cluster_bootstrap
+Intra,protein_complex,top10_ap,0.6520815938252905,0.5488006553590031,0.6916523627170629,860,261,True,record_weighted_family_cluster_bootstrap
+Intra,protein_complex,mae,0.37997703510631364,0.3120355085576802,0.5600053150969335,860,261,True,record_weighted_family_cluster_bootstrap
+Intra,protein_complex,rmse,0.6163370543066449,0.5268179222419863,0.8441872310008495,860,261,True,record_weighted_family_cluster_bootstrap
+Intra,protein_complex,bias,0.04532920284887978,-0.00714067851329906,0.1940206757662764,860,261,True,record_weighted_family_cluster_bootstrap
+Static,protein_complex,spearman,0.7478313144289916,0.6886151581604906,0.7719808045840062,860,261,True,record_weighted_family_cluster_bootstrap
+Static,protein_complex,pearson,0.7304099336266251,0.6842926949305062,0.7486555631212712,860,261,True,record_weighted_family_cluster_bootstrap
+Static,protein_complex,z_mae,0.4573390068216014,0.4386487139806771,0.5035000267131706,860,261,True,record_weighted_family_cluster_bootstrap
+Static,protein_complex,top10_ap,0.6154103427127937,0.5685123455098333,0.6335115049950811,860,261,True,record_weighted_family_cluster_bootstrap
+Static,protein_complex,mae,0.42568299468839627,0.3780342495953071,0.5442346579718192,860,261,True,record_weighted_family_cluster_bootstrap
+Static,protein_complex,rmse,0.616275708983485,0.5614379416678883,0.752252176311004,860,261,True,record_weighted_family_cluster_bootstrap
+Static,protein_complex,bias,0.16427191874796868,0.12173449029860021,0.2798169191086273,860,261,True,record_weighted_family_cluster_bootstrap
+AA,protein_complex,spearman,0.2680466004421439,0.23679738604503026,0.2812499140057962,860,261,True,record_weighted_family_cluster_bootstrap
+AA,protein_complex,pearson,0.2106374486568925,0.17935484688518033,0.2241837504605763,860,261,True,record_weighted_family_cluster_bootstrap
+AA,protein_complex,z_mae,0.9760615878501854,0.9661399536609161,0.9994073242533122,860,261,True,record_weighted_family_cluster_bootstrap
+AA,protein_complex,top10_ap,0.14791907007386187,0.14264825170970635,0.14974469683171493,860,261,True,record_weighted_family_cluster_bootstrap
+AA,protein_complex,mae,0.6312151041343464,0.5995054180525402,0.7107476306566128,860,261,True,record_weighted_family_cluster_bootstrap
+AA,protein_complex,rmse,0.8237283334209431,0.7882689777126651,0.9188612694887245,860,261,True,record_weighted_family_cluster_bootstrap
+AA,protein_complex,bias,0.28057385591554423,0.2547373906128875,0.33327382335563566,860,261,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,protein_complex,spearman,0.700046485326754,0.6731070951196595,0.7119334618115677,860,261,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,protein_complex,pearson,0.5367093557024712,0.4950587341975014,0.636694895503003,860,261,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,protein_complex,z_mae,0.5258668471813378,0.5047295633317948,0.5393507086762972,860,261,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,protein_complex,top10_ap,0.5065092036419375,0.48029105152452156,0.5729797411935931,860,261,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,protein_complex,mae,0.6967959140425454,0.6582966877191759,0.7743801477048695,860,261,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,protein_complex,rmse,1.2161836921150628,1.070820202342513,1.2723879735794896,860,261,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,protein_complex,bias,0.5233782261524845,0.4360283987321473,0.565403187760032,860,261,True,record_weighted_family_cluster_bootstrap
+ANM,protein_complex,spearman,0.5367332729119636,0.5099966593021249,0.6062420326750216,860,261,True,record_weighted_family_cluster_bootstrap
+ANM,protein_complex,pearson,0.5584025951399134,0.538685804325416,0.6096112351789726,860,261,True,record_weighted_family_cluster_bootstrap
+ANM,protein_complex,z_mae,0.5893243911382197,0.5306306595296048,0.614054214673399,860,261,True,record_weighted_family_cluster_bootstrap
+ANM,protein_complex,top10_ap,0.49313593564587377,0.47188532970727076,0.5518307770530696,860,261,True,record_weighted_family_cluster_bootstrap
+GNM,protein_complex,spearman,0.468368016773921,0.43282894765134855,0.557679404039807,860,261,True,record_weighted_family_cluster_bootstrap
+GNM,protein_complex,pearson,0.5573149716212806,0.5363323918894836,0.609947215807451,860,261,True,record_weighted_family_cluster_bootstrap
+GNM,protein_complex,z_mae,0.5959391436112622,0.5353632665952436,0.621852357709963,860,261,True,record_weighted_family_cluster_bootstrap
+GNM,protein_complex,top10_ap,0.5170392249392323,0.5001181206998214,0.5643850085811498,860,261,True,record_weighted_family_cluster_bootstrap
+FastProtFlex,protein_complex,spearman,0.7028558434661124,0.6937561494015781,0.730698575118725,860,261,True,record_weighted_family_cluster_bootstrap
+FastProtFlex,protein_complex,pearson,0.679251173983761,0.6748751509742505,0.6924422875900903,860,261,True,record_weighted_family_cluster_bootstrap
+FastProtFlex,protein_complex,z_mae,0.5769225851361677,0.5657340364912754,0.5810679762642257,860,261,True,record_weighted_family_cluster_bootstrap
+FastProtFlex,protein_complex,top10_ap,0.6287835836906837,0.6217851590863528,0.6489890978882981,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),protein_complex,spearman,0.6511873114491384,0.6343250143842406,0.6959337011650971,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),protein_complex,pearson,0.6768127978138819,0.6591656113293402,0.7213881872383021,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),protein_complex,z_mae,0.5276180103075901,0.4764051101177011,0.5480976108691388,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),protein_complex,top10_ap,0.5846114387539718,0.5632108548955022,0.6427929188759554,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),protein_complex,mae,0.645448152268094,0.5496113706479585,0.6820594673076849,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),protein_complex,rmse,0.8580072246384911,0.7510017847528699,0.8982026777967883,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),protein_complex,bias,0.50378217298369,0.34627387217124295,0.5641158322480283,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),protein_complex,spearman,0.7196265102212168,0.7010997944471163,0.7679755764685586,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),protein_complex,pearson,0.6192012617454313,0.5784408029078002,0.7156168688974918,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),protein_complex,z_mae,0.5035380674094911,0.43732334943316387,0.5304802476795547,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),protein_complex,top10_ap,0.5097317743374933,0.45683725709064654,0.6305172855763569,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),protein_complex,mae,0.8645859113181988,0.6246753718167347,0.9661135204626244,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),protein_complex,rmse,1.332759721804296,1.0006520214391879,1.4670422411484692,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),protein_complex,bias,0.7286071862980461,0.44712068225056933,0.8502879899144026,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),protein_complex,spearman,0.6365201212371087,0.6181690051839116,0.6874607330205106,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),protein_complex,pearson,0.6410545665124472,0.6224096066810954,0.6894040395723336,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),protein_complex,z_mae,0.560532317526234,0.5072855616941739,0.5823242646010812,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),protein_complex,top10_ap,0.5463483531290707,0.5255306909701091,0.6023675981757648,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),protein_complex,mae,0.5369643350033632,0.5208062782811687,0.5785461601725606,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),protein_complex,rmse,0.7047680013540238,0.6830385432884499,0.7466273449433338,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),protein_complex,bias,0.3388045377174219,0.2987671254153062,0.37041692922170627,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),protein_complex,spearman,0.7390632243151353,0.7294877315332156,0.7604006763076536,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),protein_complex,pearson,0.6014748769272278,0.5580403057509563,0.7038711082811114,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),protein_complex,z_mae,0.48390627425614774,0.45156645165126263,0.49463495003093905,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),protein_complex,top10_ap,0.5326444013285583,0.5017673122276617,0.6113672442849307,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),protein_complex,mae,0.5462528185464359,0.5212635873609105,0.6303714254467727,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),protein_complex,rmse,0.8884315146822211,0.811400343806245,0.9447320459329681,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),protein_complex,bias,0.36722830971772863,0.33457865498219785,0.42794052262380766,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),protein_complex,spearman,0.7012539002894141,0.6920150266556,0.7236115266970504,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),protein_complex,pearson,0.7045200180948769,0.6981624948751933,0.7224683913392728,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),protein_complex,z_mae,0.5090332173975609,0.47742478891648826,0.5203096939101834,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),protein_complex,top10_ap,0.6199249104615785,0.6094950026134559,0.6531596565678114,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),protein_complex,mae,0.6539454673244675,0.5426317810073916,0.6961174870369395,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),protein_complex,rmse,0.8232324121873288,0.711736289602631,0.8629356104927288,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),protein_complex,bias,0.5230016777360394,0.3499168022741463,0.5908599224386866,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),protein_complex,spearman,0.7629387154181674,0.746852103581246,0.7759914661396344,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),protein_complex,pearson,0.7067009768462132,0.6851179897918828,0.723420529940842,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),protein_complex,z_mae,0.4596558778040126,0.4366420316915689,0.47003977206686126,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),protein_complex,top10_ap,0.5858159065944523,0.5693154994251896,0.6327382458968225,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),protein_complex,mae,0.6000145459293015,0.5649766697274573,0.6609755966412748,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),protein_complex,rmse,0.8690503186365315,0.8307999771773553,0.9682865504442073,860,261,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),protein_complex,bias,0.46363583694327193,0.38767130889600604,0.49913150163041103,860,261,True,record_weighted_family_cluster_bootstrap

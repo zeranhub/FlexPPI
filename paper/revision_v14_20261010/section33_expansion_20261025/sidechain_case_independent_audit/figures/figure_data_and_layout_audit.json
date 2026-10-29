@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "sample": "A00C9",
+  "pdb": "3O5T",
+  "chain": "A",
+  "archetype": "asymmetric_mixed",
+  "figure_size_inches": [
+    7.2,
+    8.9
+  ],
+  "preview_pixels": [
+    2160,
+    2670
+  ],
+  "font_size_pt": 8,
+  "resolved_font": "C:\\Windows\\Fonts\\arial.ttf",
+  "n_pairs": 211,
+  "n_unique_residues": 122,
+  "n_large_gap_pairs": 46,
+  "n_time_blocks": 5,
+  "negative_cells": 4,
+  "all5_positive_pairs": 42,
+  "minimum_positive_blocks_per_pair": 4,
+  "heatmap_range": [
+    -0.9351409779528108,
+    1.8876686810642984
+  ],
+  "color_scale": [
+    -2,
+    2
+  ],
+  "heatmap_unique_values": 230,
+  "heatmap_mean_row_sd": 0.1982079213041045,
+  "generic_heatmap_sd_threshold": "Not applied: this is a time-consistency audit, not expression clustering; low time variation is meaningful and was not changed.",
+  "text_outside_canvas": [],
+  "data_downsampling": false,
+  "model_performance_selection": false,
+  "intervals": "None: shared-residue pairs and time blocks are not independent replicates.",
+  "source_sha256": "38351480c0fa3e15f4e75ed928d87b0fcf2608f83e272c6190d57396b35d57fe",
+  "script_sha256": "8c757d345711957e7c413b68389a42560bb50c906b3471f5af71914516056ebd",
+  "metrics": [
+    {
+      "method": "full",
+      "label": "Full",
+      "n_pairs": 211,
+      "correct_order_percent": 61.61137440758294,
+      "mean_absolute_gap_error": 0.24363748566799254
+    },
+    {
+      "method": "intra",
+      "label": "Intra",
+      "n_pairs": 211,
+      "correct_order_percent": 56.872037914691944,
+      "mean_absolute_gap_error": 0.2670127832776562
+    },
+    {
+      "method": "aa_sasa_contacts",
+      "label": "AA + SASA + contacts",
+      "n_pairs": 211,
+      "correct_order_percent": 50.71090047393365,
+      "mean_absolute_gap_error": 0.26229028608561694
+    },
+    {
+      "method": "static47_sasa",
+      "label": "Static47 + SASA",
+      "n_pairs": 211,
+      "correct_order_percent": 52.60663507109005,
+      "mean_absolute_gap_error": 0.2562729545396651
+    }
+  ]
+}

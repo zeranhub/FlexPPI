@@ -1,0 +1,97 @@
+[
+  {
+    "name": "wait_resume_verify_rmsf_net",
+    "command": [
+      "/root/flexppi_completion_20261010/cpu_env/bin/python",
+      "-u",
+      "/root/flexppi_completion_20261010/baselines/execute_frozen_baseline_step.py",
+      "--contract",
+      "/root/flexppi_completion_20261010/baselines/additional_cpu_execution_contract.json",
+      "--contract-sha256",
+      "419e132ac514e519d10105fd28194d13f688381b46140eb0a52ee6a862e81fa7",
+      "--step",
+      "wait_resume_verify_rmsf_net"
+    ],
+    "check": [
+      "/root/flexppi_completion_20261010/baselines/rmsf_net/run_audit.json",
+      "/root/flexppi_completion_20261010/baselines/rmsf_net_resume_state.json",
+      "/root/flexppi_completion_20261010/baselines/dispatch_wait_resume_verify_rmsf_net_audit.json"
+    ]
+  },
+  {
+    "name": "wait_verify_planet_full_cpu",
+    "command": [
+      "/root/flexppi_completion_20261010/cpu_env/bin/python",
+      "-u",
+      "/root/flexppi_completion_20261010/baselines/execute_frozen_baseline_step.py",
+      "--contract",
+      "/root/flexppi_completion_20261010/baselines/additional_cpu_execution_contract.json",
+      "--contract-sha256",
+      "419e132ac514e519d10105fd28194d13f688381b46140eb0a52ee6a862e81fa7",
+      "--step",
+      "wait_verify_planet_full_cpu"
+    ],
+    "check": [
+      "/root/flexppi_completion_20261010/baselines/planet_full/run_audit.json",
+      "/root/flexppi_completion_20261010/baselines/planet_full_cpu_wait_audit.json",
+      "/root/flexppi_completion_20261010/baselines/dispatch_wait_verify_planet_full_cpu_audit.json"
+    ]
+  },
+  {
+    "name": "wait_verify_planet_seq_cpu",
+    "command": [
+      "/root/flexppi_completion_20261010/cpu_env/bin/python",
+      "-u",
+      "/root/flexppi_completion_20261010/baselines/execute_frozen_baseline_step.py",
+      "--contract",
+      "/root/flexppi_completion_20261010/baselines/additional_cpu_execution_contract.json",
+      "--contract-sha256",
+      "419e132ac514e519d10105fd28194d13f688381b46140eb0a52ee6a862e81fa7",
+      "--step",
+      "wait_verify_planet_seq_cpu"
+    ],
+    "check": [
+      "/root/flexppi_completion_20261010/baselines/planet_seq/run_audit.json",
+      "/root/flexppi_completion_20261010/baselines/planet_seq_cpu_wait_audit.json",
+      "/root/flexppi_completion_20261010/baselines/dispatch_wait_verify_planet_seq_cpu_audit.json"
+    ]
+  },
+  {
+    "name": "score_additional_original_oof",
+    "command": [
+      "/root/flexppi_completion_20261010/cpu_env/bin/python",
+      "-u",
+      "/root/flexppi_completion_20261010/baselines/execute_frozen_baseline_step.py",
+      "--contract",
+      "/root/flexppi_completion_20261010/baselines/additional_cpu_execution_contract.json",
+      "--contract-sha256",
+      "419e132ac514e519d10105fd28194d13f688381b46140eb0a52ee6a862e81fa7",
+      "--step",
+      "score_additional_original_oof"
+    ],
+    "check": [
+      "/root/flexppi_completion_20261010/baselines/additional_original_oof/scoring_audit.json",
+      "/root/flexppi_completion_20261010/baselines/additional_original_oof/record_macro_metrics.csv",
+      "/root/flexppi_completion_20261010/baselines/dispatch_score_additional_original_oof_audit.json"
+    ]
+  },
+  {
+    "name": "score_additional_family_oof",
+    "command": [
+      "/root/flexppi_completion_20261010/cpu_env/bin/python",
+      "-u",
+      "/root/flexppi_completion_20261010/baselines/execute_frozen_baseline_step.py",
+      "--contract",
+      "/root/flexppi_completion_20261010/baselines/additional_cpu_execution_contract.json",
+      "--contract-sha256",
+      "419e132ac514e519d10105fd28194d13f688381b46140eb0a52ee6a862e81fa7",
+      "--step",
+      "score_additional_family_oof"
+    ],
+    "check": [
+      "/root/flexppi_completion_20261010/baselines/additional_family_oof/scoring_audit.json",
+      "/root/flexppi_completion_20261010/baselines/additional_family_oof/record_macro_metrics.csv",
+      "/root/flexppi_completion_20261010/baselines/dispatch_score_additional_family_oof_audit.json"
+    ]
+  }
+]

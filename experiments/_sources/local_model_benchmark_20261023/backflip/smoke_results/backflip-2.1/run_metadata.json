@@ -1,0 +1,23 @@
+{
+  "tag": "backflip-2.1",
+  "device": "cpu",
+  "threads": 4,
+  "batch_size": 1,
+  "torch_version": "2.12.0+cpu",
+  "checkpoint_sha256": "1af6e13a0e0161b2b92fa6fb9cddd2dee8f3e71c284f5059c77d7a30b9c527b9",
+  "checkpoint_config_sha256": "acb6eb8683370fd6f2da3c2899a7025e524309e79b646b3bb94d79c1781e9ba8",
+  "source_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\upstream_archive\\backflip-887c6a73b216e3fe2ff9f551ae6e2c983c21b292",
+  "source_commit": "887c6a73b216e3fe2ff9f551ae6e2c983c21b292",
+  "runner_sha256": "df18c095cdb2271e4f73aee6b43d1cf93e063dc1fbfb77aef3db891a88e39a46",
+  "input_manifest_sha256": "685cf80f8bbf57552fd48504407efe0fcb8cd208b2a06f5d1f2989cf73598177",
+  "torch_scatter_unreachable_import_guard": true,
+  "guard_definition": "Missing optional torch_scatter training/MD-label functions raise if called. Network forward and official frame conversion remain unchanged.",
+  "output_origin": "Fresh inference on this local workstation; no reused predictions.",
+  "primary_reference": "Existing per-chain Kabsch RMSF labels. Official globally aligned covariance target differs for multichain input; no claim of training target equivalence.",
+  "positional_encoding": "Official default concatenated arange across all valid input residues; no chain identity supplied to model.",
+  "coverage": "Only complete N/CA/C geometry predicted; original residue identity retained. Failures disclosed.",
+  "timings_scope": "Parse canonical PDB, official frame conversion, official CPU forward, output conversion; excludes checkpoint import/load and input preparation.",
+  "model_load_seconds": 0.3247148999944329,
+  "parameters": 965180,
+  "completed_utc": "2026-10-23T12:06:17Z"
+}

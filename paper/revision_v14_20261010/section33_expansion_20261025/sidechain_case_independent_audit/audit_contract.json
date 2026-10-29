@@ -1,0 +1,79 @@
+{
+  "samples": [
+    "A0064",
+    "A00C9"
+  ],
+  "primary_criteria": "Same sample, same chain and amino acid, >=4 valid complete nonPro sidechains of that type before terminal exclusion; exactly first/last 3 excluded (distance>=3); absolute sidechain complex SASA difference <=10A2 and true C-alpha RMSF difference <=0.10A; all unordered pairs, no Hchi-gap or prediction selection.",
+  "sensitivities": "Previous end-distance>3 and within-AA SASA-percentile difference<=0.25 are both reported separately; interface masks and truth-gap>=0.4 are post-stratifications of the entire retained pair set.",
+  "scope": "No amino-acid substitutions, sequence designs, biological experiments or new model training. Proline excluded because the frozen Hchi label is constant zero and gives no ordering information. Directional ties in model count 0.5; true numerical ties excluded (threshold 1e-7).",
+  "caution": "Pairs share residues and are not independent observations. Five 100ns windows are segments of one 500ns trajectory, not independent replicates. No pairwise p-values or independence-based confidence intervals are used. Physical fine metrics are per-chi averages with four 5degree histogram origins. Shifted60 120degree joint bins are an alternative coarse definition, not an experimental truth.",
+  "n_valid_nonpro_residues": 535,
+  "n_pairs": 283,
+  "verified_input_audits": {
+    "A0064": {
+      "status": "passed",
+      "sample_id": "A0064",
+      "n_frames": 5001,
+      "n_frames_used": 5000,
+      "first_time_ps": 0.0,
+      "last_time_ps": 500000.0,
+      "dt_ps": 100.0,
+      "duration_ns": 500.0,
+      "n_original_windows": 5,
+      "original_window_duration_ns": 100.0,
+      "n_sidechains": 250,
+      "hchi_max_recomputation_error": 1.1819772272048112e-07,
+      "rmsf_max_recomputation_error": null,
+      "min_chi_bond_A": 1.1331827640533447,
+      "max_chi_bond_A": 1.9741086959838867,
+      "source_files": [
+        {
+          "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A0064.pdb",
+          "sha256": "b4bf6057a65ece1101683d0dcd9290eb9dcbf3d16c6c77c2d488e29c4a82fb11"
+        },
+        {
+          "path": "D:\\data\\dynarepo_non_nucleic_full\\A0064\\trajectory.xtc",
+          "sha256": "cf0460a40d0a257d2376b21006a33d94c55d17cad9f255c690582b17d96d75da"
+        },
+        {
+          "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\neural_exports\\evaluation\\full\\A0064.npz",
+          "sha256": "9483fad94ff9d8b1210a27734ffef6e11d8d1b989479d355369a680941bb7e66"
+        }
+      ],
+      "interpretation": "All sidechains; original bins revalidated; 5deg angular histograms use four origins. Offset60deg joint bins center on conventional rotamers and are only a sensitivity. Time windows of one trajectory, not independent repeats."
+    },
+    "A00C9": {
+      "status": "passed",
+      "sample_id": "A00C9",
+      "n_frames": 5001,
+      "n_frames_used": 5000,
+      "first_time_ps": 0.0,
+      "last_time_ps": 500000.0,
+      "dt_ps": 100.0,
+      "duration_ns": 500.0,
+      "n_original_windows": 5,
+      "original_window_duration_ns": 100.0,
+      "n_sidechains": 311,
+      "hchi_max_recomputation_error": 1.1662580412519219e-07,
+      "rmsf_max_recomputation_error": null,
+      "min_chi_bond_A": 1.1330492496490479,
+      "max_chi_bond_A": 1.9898173809051514,
+      "source_files": [
+        {
+          "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A00C9.pdb",
+          "sha256": "3625780654755806421e78472f962cba77b72ff325ac64617f1f04416c7cfec4"
+        },
+        {
+          "path": "D:\\data\\dynarepo_non_nucleic_full\\A00C9\\trajectory.xtc",
+          "sha256": "63909afd4e3d0df4adc99abc38a930ef337792d473997010d613060ddbfb2178"
+        },
+        {
+          "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\neural_exports\\evaluation\\full\\A00C9.npz",
+          "sha256": "c3e0497afb578673d498ef1281a50e56a802ee7d0a803fe74ebeedc6dbcd0c95"
+        }
+      ],
+      "interpretation": "All sidechains; original bins revalidated; 5deg angular histograms use four origins. Offset60deg joint bins center on conventional rotamers and are only a sensitivity. Time windows of one trajectory, not independent repeats."
+    }
+  },
+  "script_sha256": "b02e2544b501232c5c5efeccd0ea7828f3c9fdec6f9c9dc24aca40d30601a00a"
+}

@@ -1,0 +1,176 @@
+data:
+  dataset:
+    seed: 123
+    max_num_res: 512
+    cache_num_res: 0
+    min_num_res: 60
+    subset: null
+    flexibility: true
+    pick_random_conf: true
+    num_confs: 100
+    pick_random_conf_prob: 0.0
+    dataset_type: ATLAS
+    allowed_oligomers:
+    - monomeric
+    apply_clustering: false
+    filter_scrmsd: 'inf'
+    max_coil_pct: 1.0
+    train_csv_path: ./alphaflow_train.csv
+    val_csv_path: ./alphaflow_val.csv
+    test_csv_path: ./alphaflow_test.csv
+    csv_path: null
+    extra_features:
+    - global_rmsf
+    - per_res_covariance
+    - pairwise_couplings
+    - pairwise_DCCM
+    target_sec_content:
+      helix_percent: 0.32
+      strand_percent: 0.27
+  loader:
+    num_workers: 4
+    prefetch_factor: 10
+  sampler:
+    max_batch_size: 150
+    max_num_res_squared: 1000000
+    clustered: ${data.dataset.apply_clustering}
+experiment:
+  debug: false
+  use_wandb: true
+  use_tqdm: true
+  seed: 123
+  num_devices: 1
+  warm_start: null
+  warm_start_cfg_override: true
+  use_swa: false
+  first_val_epoch: 0
+  mask_termini: false
+  wandb:
+    name: atlas
+    project: backflip_edge
+    entity: proteinator
+    save_dir: outputs/
+    tags: []
+  optimizer:
+    lr: 0.0001
+  reset_optimizer_on_load: false
+  warmup_lr: false
+  warmup_lr_factor: 0.01
+  plot_val_every_n: null
+  node_loss_weights:
+    mse: 0.0
+    huber: 1.0
+  huber_beta: 2
+  edge_loss_weights:
+    mse: 1.0
+    log_frobenius: 1.0
+    corr_matrix_dist: 1.0
+  node_prediction_weights:
+    global_rmsf: 0.0
+  edge_prediction_weights:
+    per_res_covariance: 1.0
+    pairwise_couplings: 1.0
+    pairwise_DCCM: 1.0
+  reduction_frobenius: mean
+  mae_cmd: true
+  mae_cmd_weight: 0.5
+  mse_rmsf: false
+  mse_rmsf_weight: 0.5
+  huber_cmd: false
+  huber_cmd_weight: 0.5
+  pearson_dccm: false
+  pearson_dccm_weight: 0.1
+  trainer:
+    overfit_batches: 0
+    min_epochs: 1
+    max_epochs: 500
+    accelerator: gpu
+    log_every_n_steps: 1
+    deterministic: false
+    strategy: ddp
+    check_val_every_n_epoch: 1
+    default_root_dir: outputs/
+    accumulate_grad_batches: 1
+  checkpointer:
+    dirpath: ckpt/${experiment.wandb.project}/${experiment.wandb.name}/${now:%Y-%m-%d}_${now:%H-%M-%S}
+    save_last: true
+    filename: best
+    every_n_epochs: 2
+    save_top_k: 5
+    monitor: valid/loss
+    mode: min
+    auto_insert_metric_name: false
+model:
+  model_type: ipa
+  new_node_embedder: true
+  flexibility:
+    node_outputs:
+    - name: None
+    edge_outputs:
+    - name: per_res_covariance
+    - name: pairwise_couplings
+    - name: pairwise_DCCM
+  global_rmsf_max_value: 20.0
+  node_embed_size: 96
+  edge_embed_size: 64
+  symmetric: false
+  node_features:
+    c_s: ${model.node_embed_size}
+    c_pos_emb: 64
+    embed_diffuse_mask: false
+    max_num_res: 2000
+    embed_aatype: true
+    aatype_embed_size: 64
+    embed_breaks: false
+    embed_res_idx: false
+    embed_esm: false
+    esm_input_dim: 1024
+    esm_embed_size: 128
+    layer_norm_esm: true
+  edge_features:
+    single_bias_transition_n: 2
+    c_s: ${model.node_embed_size}
+    c_p: ${model.edge_embed_size}
+    relpos_k: 64
+    use_rbf: true
+    num_rbf: 32
+    feat_dim: 32
+    num_bins: 22
+    embed_breaks: false
+    embed_res_idx: true
+    embed_distance_encoding: true
+    distance_encoding_dim: 32
+    embed_esmfold_pair_repr: false
+    esmfold_pair_repr_dim: 128
+    equivariant_covariance: true
+    symmetrize_edges_CA: false
+    fuse_node_edges_per_res_cov: false
+    fuse_node_edges_ca_cov: false
+    ablate_cholesky_CA_head: true
+    ablate_cholesky_per_res_head: true
+    use_only_nodes_per_res_cov: true
+    ca_cov_head_dropout: 0.0
+  gfa:
+    c_s: ${model.node_embed_size}
+    c_z: ${model.edge_embed_size}
+    c_hidden: 32
+    no_heads: 4
+    no_qk_points: 4
+    no_v_points: 4
+    body_order: 3
+    seq_tfmr_num_heads: 4
+    seq_tfmr_num_layers: 1
+    num_blocks: 4
+    readout_c_hidden: 16
+  ipa:
+    c_s: ${model.node_embed_size}
+    c_z: ${model.edge_embed_size}
+    c_hidden: 32
+    no_heads: 4
+    no_qk_points: 4
+    no_v_points: 4
+    body_order: 3
+    seq_tfmr_num_heads: 4
+    seq_tfmr_num_layers: 1
+    num_blocks: 4
+    readout_c_hidden: 16

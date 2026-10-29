@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "review_scope": "Independent read-only review of current DOCX, build_v39.py and v39_content.txt; image translation excluded as requested.",
+  "document": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v39_20261017_中文修订_读者表述与英文图表_三线表.docx",
+  "document_sha256": "61c88902753e1b0a826f2f3750a3dbdb40e1e57a8dbf08c5d60fa8d559721f48",
+  "findings": {
+    "main_table_A_numeric_values_exactly_preserved": true,
+    "main_table_B_all_five_methods_and_both_targets_exactly_preserved": true,
+    "all_nine_supplementary_tables_numeric_values_unchanged": true,
+    "external_result_statement_matches_cached_data": true,
+    "external_abstract_emphasis_removed": true,
+    "no_broad_external_generalization_claim": true,
+    "external_methods_preserve_633_purged_2430_training_32_external_one_family_single_model_protocol": true,
+    "banned_jargon_removed_from_body_and_native_tables": true,
+    "main_figures_1_to_6_and_S1_references_have_matching_captions": true,
+    "main_table_1_and_S1_to_S9_references_have_matching_tables": true,
+    "result_sections_3_1_to_3_5_and_3_5_1_3_5_2_contiguous": true,
+    "main_physical_occupancy_evidence_retained": true,
+    "new_factual_errors_found": false,
+    "figure6a_reference_attached_to_raw_rho_0_979": true
+  },
+  "necessary_fixes": [],
+  "optional_suggestions": [],
+  "numeric_audit": "independent_content_numeric_check.json",
+  "no_docx_modified": true,
+  "no_new_training_inference_or_MD": true,
+  "resolved_fix": {
+    "kind": "figure_reference_placement",
+    "verified": true,
+    "paragraph": "泛素–EDD UBA复合物提供同类型侧链的留出验证[23]。完整模型在泛素链的15个预测最高主链波动位点中命中14个（图5e、g）。在具有侧链联合熵参考值的全部66个残基上，Hχ预测的平均绝对误差为0.080 nats，参考与预测的排序相关为0.979（图6a）。将预测值与MD参考值均减去相应氨基酸在训练集中的平均Hχ后，相关仍为0.868。模型由静态主链输入同时定位活动区域，并区分残基类型平均值之外的侧链状态差异。"
+  },
+  "final_check_scope": "Only rechecked requested figure6a citation correction and current DOCX SHA256; prior numeric audit not rerun."
+}

@@ -1,0 +1,31 @@
+{
+  "protocol": "Retrospective_six_GLN_original_joint_entropy_decomposition_v1",
+  "created_utc": "2026-10-14T12:01:58.342565+00:00",
+  "analysis_code_sha256": "058574b50ab416c12ca278fedc3410d833e70a8712a07b80f20d5af20f6227e0",
+  "source_hash_files": {
+    "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\neural_exports\\evaluation\\full\\A003R.npz": "b8a764739993e3bce18dedb3cff493c50a1a52613a08baac16f1803c4edabb5a",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\free_energy_curves_v27_20261014\\case_curves\\angles_5000frames_all6GLN.csv": "91fdc01194e193494483fdfe7cef6b91867f3b164817a3939f2a2a4c03efc3c1",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\free_energy_curves_v27_20261014\\case_curves\\angles_501frames_all6GLN.csv": "39eaac1ccad36fdbc63c7b70bbbaeb31debcbcec99268d3ca60250d958c01207",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\free_energy_curves_v27_20261014\\case_curves\\joint_entropy_original_five_windows.csv": "5e17ddcfb35c2c07ad0cb99678450ec65c5e0db1c7f11ed2833aa5daa62dfe20",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\free_energy_curves_v27_20261014\\case_curves\\selection_inventory_with_MD_outcomes.csv": "8c7ed6d08dfd31b78c4b1094c73e3b58bf3054ece6cf4d071b751a62160e564d",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\rich_angle_figure_v30_20261014\\experiment\\all66_residue_summary.csv": "fec153f86b3b8ba808d2ee731937754427902660c5b29a955cacf25f5d8ab4ab"
+  },
+  "motivation": "User asks why Q40 joint Hchi prediction error is larger; descriptive diagnosis after the error was observed; no independent or prespecified hypothesis-testing claim",
+  "positions": [
+    "Q2",
+    "Q31",
+    "Q40",
+    "Q41",
+    "Q49",
+    "Q62"
+  ],
+  "original_joint_label": "Three equal 120degree sectors per chi, [-180,-60),[-60,60),[60,180]; original float32 arithmetic and +180 final-sector rule; all three GLN chis form27 joint states",
+  "time_scopes": "Original five nonoverlapping 1000frame windows0-99.9,100-199.9,...400-499.9ns. Report window arithmetic means/SD(ddof1)/range; also pooled5000 and common501(0-100ns,200ps) as separately labelled descriptive scopes",
+  "decomposition": "Hchi1+Hchi2+Hchi3-Hjoint = total correlation, nonnegative descriptive dependence among coarse states; not a causal mechanical coupling energy and not equal to pairwise mutual information sum",
+  "additional_measures": "Each-angle original-sector probabilities, marginal Shannon entropies;27jointstate counts/probabilities; occupied states/minimum number of largest states covering>=90%; pairwise coarse-state mutual information",
+  "fine_bins": "Separate 5degree marginal Shannon entropy and Fstar<=1 total occupied-bin angular width, four origins0,1.25,2.5,3.75 averaged; exact v27/v30 definition; never relabel as original120degree joint entropy",
+  "inference": "No pvalues or confidence intervals from five temporally consecutive windows; describe variation and error direction only; no new MD/training/model inference",
+  "source_preservation": "All existing data/model files read-only; all source SHA256/size/mtime verified before and after; write only trajectory subdirectory",
+  "initial_analysis_code_sha256": "c6988cfc7cbd91fbf9bc7d1774043773d847aca34e48713d49e9c2939e5b5121",
+  "execution_QA_repair": "Before any result output, exact-zero check between decimal CSV float64 read and restored original float32 found maximum1.42e-14 degree serialization difference; changed only that check tolerance to1e-12, far tighter than original1e-5 angle audit. Diagnostic definitions and source data unchanged; initial script archived."
+}

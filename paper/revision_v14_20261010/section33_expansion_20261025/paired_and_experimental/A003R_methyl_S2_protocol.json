@@ -1,0 +1,26 @@
+{
+  "sample_id": "A003R",
+  "state": "2QHO_ubiquitin_EDD1_UBA_bound",
+  "temperature_K": 310,
+  "atom_selection": "48 methyl axes present in72residue chainA; includes axes without identifiable NMR fit",
+  "source_NMR_valid_axes_present": 35,
+  "alignment": "Independent proper Kabsch fit of72 chainA CA to first trajectory frame, then rotate every methyl axial unit vector by same rotation.",
+  "estimator": "S2=1.5*sum_ij(mean_t(u_i*u_j)^2)-0.5; axis methyl rotation excluded",
+  "time_sampling": "5000frames;100ps spacing;0-499.9ns;five nonoverlapping100ns blocks; blocks not replicates",
+  "interpretation": "Ensemble geometrical order parameter.100ps saving cannot resolve fast correlation functions; finite500ns coverage does not match all RDC averaging times. Bound vs free mismatch prevents direct validation; no correlation or fitted calibration is performed.",
+  "PBC": "Raw coordinates, no wrapping/unwrapping; every axis bond1.1-2.2A and all consecutive targetCA <=4.5A checked for every frame.",
+  "bond_min_angstrom": 1.3969263169264683,
+  "bond_max_angstrom": 1.9416238367601384,
+  "consecutive_CA_max_angstrom": 4.102514674449032,
+  "checks": "rigid-axisS2=1; isotropicS2~0; proper Kabsch recovery ofknown rigid rotation; exact48axis5001frame shape;100ps spacing; atom-name uniqueness",
+  "source_files": [
+    {
+      "path": "D:\\data\\dynarepo_non_nucleic_full\\A003R\\structure.pdb",
+      "sha256": "4b2206ae6e9b71d9b8659e661d6825320eebae563ec4e7c2643a43a5225bf1f5"
+    },
+    {
+      "path": "D:\\data\\dynarepo_non_nucleic_full\\A003R\\trajectory.xtc",
+      "sha256": "9d5ffa6a837e7400a5ed571fa9ba2cbeb9838606449aa5c2d145477d725510df"
+    }
+  ]
+}

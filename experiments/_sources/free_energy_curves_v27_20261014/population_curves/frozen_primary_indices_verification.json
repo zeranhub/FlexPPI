@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "finished_utc": "2026-10-13T16:32:54.011508+00:00",
+  "code_sha256": "c076014fa5479047c279fff6ea44ffd6d803ba2ea0a73def228d764f44da9b7e",
+  "source_original_bootstrap_sha256": "b786498e95a3501ba50b8a9cc80075cc2587e4cc606e4c3823d6e097951c57cf",
+  "all_indices_and_record_ids_exact": true,
+  "source_counts_each_draw": [
+    30,
+    23,
+    30
+  ],
+  "all31points_replayed": true,
+  "paired_bootstrap_arrays": 3,
+  "draws_per_curve": 10000,
+  "compared_draw_elements": 930000,
+  "E1_original_delta_draws_and_mean_and_CI_exact": true,
+  "source_hashes_checked": true,
+  "verification_scope": "Separate replay implementation by same experiment agent; no imports from producer/adapter; original v27 plan and outputs preserved"
+}

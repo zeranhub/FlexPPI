@@ -1,0 +1,230 @@
+{
+  "status": "prepared_cpu_rebuilt_and_audited_local_copy_verified",
+  "created_utc": "2026-10-10T07:29:39.022431+00:00",
+  "batch": "KIX_rebuilt_triplicate_20261010",
+  "old_rep01_included": false,
+  "physical_protocol": {
+    "protocol": "KIX_C36_NVT_v1",
+    "temperature_k": 298.0,
+    "friction_per_ps": 5.0,
+    "timestep_ps": 0.002,
+    "cutoff_nm": 1.2,
+    "switch_nm": 1.0,
+    "salt_molar": 0.1,
+    "edge_clearance_nm": 1.0,
+    "equilibration_ns": 10.0,
+    "production_ns": 100.0,
+    "repeats": 3,
+    "segment_ns": 1.0,
+    "protein_frame_ps": 1.0,
+    "restraint_equation": "U=k*periodicdistance^2 (no factor 1/2)",
+    "equilibration_restraint_k_kj_mol_nm2": 4184.0,
+    "minimization_restraint_k_kj_mol_nm2": 16736.0,
+    "forcefield_files": [
+      "charmm36.xml",
+      "charmm36/water.xml"
+    ],
+    "constraints": "HBonds; rigidWater=True; tolerance=1e-6",
+    "thermostat": "OpenMM LangevinIntegrator",
+    "pressure_control": "none (NVT)",
+    "termini": "charged, not capped",
+    "histidines": "HID (all five KIX His)",
+    "minimizer": "OpenMM L-BFGS, two stages, max 2000 iterations each"
+  },
+  "openmm_version": "8.4",
+  "environment_interpreter": "/root/flexppi_completion_20261010/md_conda/bin/python",
+  "remote_prepared": "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/prepared",
+  "cpu_prepare_environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OPENMM_CPU_THREADS": "4"
+  },
+  "this_agent_created_gpu_context": false,
+  "gpu_smoke_and_production": "Root agent owns subsequent GPU smoke and production; this is a CPU preparation handoff only.",
+  "existing_heavy_atom_repair_displacement_nm": 0.0,
+  "state_input_audit": {
+    "apo": {
+      "passed": true,
+      "source_heavy_atoms": 729,
+      "added_heavy_atoms": [],
+      "max_coordinate_deviation_after_translation_angstrom": 6.191922332457791e-13,
+      "translation_angstrom": [
+        48.01900000000019,
+        32.97799999999947,
+        24.573000000000235
+      ],
+      "protein_sha256": "feb0bc2aeaf753a45144dbcd6f91c393fd1e6494131334f9a7adc6d11e550ee7",
+      "system_sha256": "b1a37a9fc7b38ac43874f45a5916fc26f7d6c0cd5e0580ce8b1bea11d0888e05",
+      "solvated_pdb_sha256": "04fa95e267520989d0a202d7637fa97060d82f62cae937546b4d05d5d87637bf",
+      "total_atoms": 45816
+    },
+    "myb": {
+      "passed": true,
+      "source_heavy_atoms": 934,
+      "added_heavy_atoms": [],
+      "max_coordinate_deviation_after_translation_angstrom": 6.819359640548424e-13,
+      "translation_angstrom": [
+        47.24700000000046,
+        28.281999999999513,
+        24.572000000000102
+      ],
+      "protein_sha256": "44c79d91ebfa30647952332988c35d4761c1136c07a24effd1ede5af93b39479",
+      "system_sha256": "1ba9c66bd98da328b1b7a236e0d1440441e0da3b9dbd452136e226cc26856c9d",
+      "solvated_pdb_sha256": "52627fcf593d31924429f6a9d4f26beabf755cb2f53e7d65cde31074b6693320",
+      "total_atoms": 45803
+    },
+    "mll": {
+      "passed": true,
+      "source_heavy_atoms": 871,
+      "added_heavy_atoms": [
+        [
+          "C",
+          "841",
+          "CG"
+        ],
+        [
+          "C",
+          "841",
+          "OD1"
+        ],
+        [
+          "C",
+          "841",
+          "OD2"
+        ],
+        [
+          "C",
+          "857",
+          "OXT"
+        ]
+      ],
+      "max_coordinate_deviation_after_translation_angstrom": 6.259333045488527e-13,
+      "translation_angstrom": [
+        47.73399999999956,
+        33.975999999999566,
+        24.036000000000055
+      ],
+      "protein_sha256": "c6dd338476f085403c4a0047947cb759ad4ec4221ea9b82bb6467f3f593be571",
+      "system_sha256": "5097756845d9043c7e4f5b67bfeb6ec04a1d04ed1e6520ceea803ed663b51a14",
+      "solvated_pdb_sha256": "dcf07a9e894a8544f5774e0b8f3cb6af90e4462a2addbb9907152b38f357d425",
+      "total_atoms": 45057
+    },
+    "both": {
+      "passed": true,
+      "source_heavy_atoms": 1076,
+      "added_heavy_atoms": [
+        [
+          "C",
+          "841",
+          "CG"
+        ],
+        [
+          "C",
+          "841",
+          "OD1"
+        ],
+        [
+          "C",
+          "841",
+          "OD2"
+        ],
+        [
+          "C",
+          "857",
+          "OXT"
+        ]
+      ],
+      "max_coordinate_deviation_after_translation_angstrom": 4.5330176327913083e-13,
+      "translation_angstrom": [
+        47.23999999999973,
+        29.550999999999654,
+        24.572000000000102
+      ],
+      "protein_sha256": "b88354dfc768a31187de0bc27ad59ca614bc086bef7016c2a114682eade53d9b",
+      "system_sha256": "7af0b83ffcfef7ded227e8ea42ecf08390c4549bf47950983cdb177f7ca39548",
+      "solvated_pdb_sha256": "1ccf27163df8507a6770e62cd0daec9ea1bec3c62bc17413b0ee1d441b669f63",
+      "total_atoms": 45931
+    }
+  },
+  "prepared_files": {
+    "prepared/apo/metadata.json": {
+      "bytes": 243169,
+      "sha256": "bb0e93eca9c9d259ff27a454e6dccdf3cea180e533b52fb8dc76c18b441c68f0"
+    },
+    "prepared/apo/protein.pdb": {
+      "bytes": 118734,
+      "sha256": "feb0bc2aeaf753a45144dbcd6f91c393fd1e6494131334f9a7adc6d11e550ee7"
+    },
+    "prepared/apo/solvated.pdb": {
+      "bytes": 3711300,
+      "sha256": "04fa95e267520989d0a202d7637fa97060d82f62cae937546b4d05d5d87637bf"
+    },
+    "prepared/apo/system.xml": {
+      "bytes": 13679441,
+      "sha256": "b1a37a9fc7b38ac43874f45a5916fc26f7d6c0cd5e0580ce8b1bea11d0888e05"
+    },
+    "prepared/both/metadata.json": {
+      "bytes": 362202,
+      "sha256": "2cb01d6d26ee4464cc8e05a0d5ede4e507984ba2b624b174ddbaa51905d524a6"
+    },
+    "prepared/both/protein.pdb": {
+      "bytes": 176865,
+      "sha256": "b88354dfc768a31187de0bc27ad59ca614bc086bef7016c2a114682eade53d9b"
+    },
+    "prepared/both/solvated.pdb": {
+      "bytes": 3720669,
+      "sha256": "1ccf27163df8507a6770e62cd0daec9ea1bec3c62bc17413b0ee1d441b669f63"
+    },
+    "prepared/both/system.xml": {
+      "bytes": 14593964,
+      "sha256": "7af0b83ffcfef7ded227e8ea42ecf08390c4549bf47950983cdb177f7ca39548"
+    },
+    "prepared/both_repaired_heavy.pdb": {
+      "bytes": 87612,
+      "sha256": "117df1e8878c778adfe526125e6393dccf8ffd94c5070658c2fcf14655fdc1f2"
+    },
+    "prepared/input_audit.json": {
+      "bytes": 3345,
+      "sha256": "78e0739658411e18158fdf05f90788ccd5bf04f444184523826744ddd8568b9c"
+    },
+    "prepared/mll/metadata.json": {
+      "bytes": 290976,
+      "sha256": "da920cd25e4a00f537b7969591d495a24f3b5dae870a9116175cd81ade991950"
+    },
+    "prepared/mll/protein.pdb": {
+      "bytes": 142008,
+      "sha256": "c6dd338476f085403c4a0047947cb759ad4ec4221ea9b82bb6467f3f593be571"
+    },
+    "prepared/mll/solvated.pdb": {
+      "bytes": 3649848,
+      "sha256": "dcf07a9e894a8544f5774e0b8f3cb6af90e4462a2addbb9907152b38f357d425"
+    },
+    "prepared/mll/system.xml": {
+      "bytes": 13839274,
+      "sha256": "5097756845d9043c7e4f5b67bfeb6ec04a1d04ed1e6520ceea803ed663b51a14"
+    },
+    "prepared/myb/metadata.json": {
+      "bytes": 314379,
+      "sha256": "fdbfadcd99eb0e9ea80c8b2e4fcb536afb6644cb75942f44024c99dc810c88b6"
+    },
+    "prepared/myb/protein.pdb": {
+      "bytes": 153591,
+      "sha256": "44c79d91ebfa30647952332988c35d4761c1136c07a24effd1ede5af93b39479"
+    },
+    "prepared/myb/solvated.pdb": {
+      "bytes": 3710274,
+      "sha256": "52627fcf593d31924429f6a9d4f26beabf755cb2f53e7d65cde31074b6693320"
+    },
+    "prepared/myb/system.xml": {
+      "bytes": 14205292,
+      "sha256": "1ba9c66bd98da328b1b7a236e0d1440441e0da3b9dbd452136e226cc26856c9d"
+    },
+    "prepared/READY.json": {
+      "bytes": 10291,
+      "sha256": "58807fb464bd7e2d8eed856c923d5ac65e7ef754b9e90639514b259c7f9f4fc8"
+    },
+    "prepared/repair_audit.json": {
+      "bytes": 486,
+      "sha256": "63feb41dcc0967e4f6a79bd2a3dba36295f530a51fc6651a7f8f051ad225d4f8"
+    }
+  }
+}

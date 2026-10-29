@@ -1,0 +1,1 @@
+本包包含v37图7全矢量PDF/SVG、300dpi PNG、715条完整绘图数据、全部151角明细与原始缓存、作图和文稿集成/核验脚本。figures/plot_clean_chi_scatter_and_MD_curves.py优先读取包内source及experiment。b下汇总表已删除，原8个系数仍保存于来源统计文件。旧源包 E:\Project\FlexPPI\paper\revision_v14_20261010\paper_v36_20261015_图7逐角散点与源数据.zip，SHA256 3708663aeac8193848e36cff58caf69124bac221f48cb47fa7c6a0dfe232eacb。本轮为图形精简与对应文字修订，没有新增实验或分析。

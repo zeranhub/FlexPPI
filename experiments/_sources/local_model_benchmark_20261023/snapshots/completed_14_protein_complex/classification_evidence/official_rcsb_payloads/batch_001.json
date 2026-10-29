@@ -1,0 +1,2087 @@
+{
+  "retrieved_utc": "2026-10-23T23:43:06.004203+00:00",
+  "source_url": "https://data.rcsb.org/graphql",
+  "method": "GET",
+  "requested_ids": [
+    "1EMV",
+    "1EWY",
+    "1F34",
+    "1F3V",
+    "1F51",
+    "1F6M",
+    "1FAK",
+    "1FC2",
+    "1FCC",
+    "1FFW",
+    "1FLE",
+    "1FLT",
+    "1FQ1",
+    "1FQJ",
+    "1FSK",
+    "1GCQ",
+    "1GHQ",
+    "1GL1",
+    "1GLA",
+    "1GP2",
+    "1GPW",
+    "1GRN",
+    "1GUA",
+    "1H1V",
+    "1H9D"
+  ],
+  "query": "{entries(entry_ids:[\"1EMV\", \"1EWY\", \"1F34\", \"1F3V\", \"1F51\", \"1F6M\", \"1FAK\", \"1FC2\", \"1FCC\", \"1FFW\", \"1FLE\", \"1FLT\", \"1FQ1\", \"1FQJ\", \"1FSK\", \"1GCQ\", \"1GHQ\", \"1GL1\", \"1GLA\", \"1GP2\", \"1GPW\", \"1GRN\", \"1GUA\", \"1H1V\", \"1H9D\"]){rcsb_id struct {title} polymer_entities {\n rcsb_id entity_poly {pdbx_seq_one_letter_code_can type}\n rcsb_polymer_entity {pdbx_description pdbx_fragment}\n rcsb_polymer_entity_container_identifiers {auth_asym_ids uniprot_ids}\n rcsb_polymer_entity_align {reference_database_accession reference_database_name aligned_regions {entity_beg_seq_id ref_beg_seq_id length}}\n}}}",
+  "response": {
+    "data": {
+      "entries": [
+        {
+          "rcsb_id": "1EMV",
+          "struct": {
+            "title": "CRYSTAL STRUCTURE OF COLICIN E9 DNASE DOMAIN WITH ITS COGNATE IMMUNITY PROTEIN IM9 (1.7 ANGSTROMS)"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1EMV_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "MESKRNKPGKATGKGKPVGDKWLDDAGKDSGAPIPDRIADKLRDKEFKSFDDFRKAVWEEVSKDPELSKNLNPSNKSSVSKGYSPFTPKNQQVGGRKVYELHHDKPISQGGEVYDMDNIRVTTPKRHIDIHRGK",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "COLICIN E9",
+                "pdbx_fragment": "C-TERMINAL DOMAIN, DNASE DOMAIN"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P09883"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P09883",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 2,
+                      "ref_beg_seq_id": 450,
+                      "length": 133
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1EMV_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "MELKHSISDYTEAEFLQLVTTICNADTSSEEELVKLVTHFEEMTEHPSGSDLIYYPKEGDDDSPSGIVNTVKQWRAANGKSGFKQG",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "IMMUNITY PROTEIN IM9",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P13479"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P13479",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 1,
+                      "length": 86
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1EWY",
+          "struct": {
+            "title": "ANABAENA PCC7119 FERREDOXIN:FERREDOXIN-NADP+-REDUCTASE COMPLEX"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1EWY_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "ATFKVTLINEAEGTKHEIEVPDDEYILDAAEEQGYDLPFSCRAGACSTCAGKLVSGTVDQSDQSFLDDDQIEAGYVLTCVAYPTSDVVIQTHKEEDLY",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "FERREDOXIN I",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P0A3C8"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P0A3C8",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 2,
+                      "length": 98
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1EWY_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "TQAKAKHADVPVNLYRPNAPFIGKVISNEPLVKEGGIGIVQHIKFDLTGGNLKYIEGQSIGIIPPGVDKNGKPEKLRLYSIASTRHGDDVDDKTISLCVRQLEYKHPESGETVYGVCSTYLTHIEPGSEVKITGPVGKEMLLPDDPEANVIMLATGTGIAPMRTYLWRMFKDAERAANPEYQFKGFSWLVFGVPTTPNILYKEELEEIQQKYPDNFRLTYAISREQKNPQGGRMYIQDRVAEHADELWQLIKNQKTHTYICGLRGMEEGIDAALSAAAAKEGVTWSDYQKDLKKAGRWHVETY",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "FERREDOXIN-NADP REDUCTASE",
+                "pdbx_fragment": "138-440"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P21890"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P21890",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 138,
+                      "length": 303
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1F34",
+          "struct": {
+            "title": "CRYSTAL STRUCTURE OF ASCARIS PEPSIN INHIBITOR-3 BOUND TO PORCINE PEPSIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1F34_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "QFLFSMSTGPFICTVKDNQVFVANLPWTMLEGDDIQVGKEFAARVEDCTNVKHDMAPTCTKPPPFCGPQDMKMFNFVGCSVLGNKLFIDQKYVRDLTAKDHAEVQTFREKIAAFEEQQENQPPSSGMPHGAVPAGGLSPPPPPSFCTVQ",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "MAJOR PEPSIN INHIBITOR PI-3",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P19400"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P19400",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 21,
+                      "length": 149
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1F34_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "IGDEPLENYLDTEYFGTIGIGTPAQDFTVIFDTGSSNLWVPSVYCSSLACSDHNQFNPDDSSTFEATSQELSITYGTGSMTGILGYDTVQVGGISDTNQIFGLSETEPGSFLYYAPFDGILGLAYPSISASGATPVFDNLWDQGLVSQDLFSVYLSSNDDSGSVVLLGGIDSSYYTGSLNWVPVSVEGYWQITLDSITMDGETIACSGGCQAIVDTGTSLLTGPTSAIANIQSDIGASENSDGEMVISCSSIDSLPDIVFTINGVQYPLSPSAYILQDDDSCTSGFEGMDVPTSSGELWILGDVFIRQYYTVFDRANNKVGLAPVA",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PEPSIN A",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P00791"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P00791",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 60,
+                      "length": 326
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1F3V",
+          "struct": {
+            "title": "Crystal structure of the complex between the N-terminal domain of TRADD and the TRAF domain of TRAF2"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1F3V_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "KDLAMADLEQKVLEMEASTYDGVFIWKISDFPRKRQEAVAGRIPAIFSPAFYTSRYGYKMCLRIYLNGDGTGRGTHLSLFFVVMKGPNDALLRWPFNQKVTLMLLDQNNREHVIDAFRPDVTSSSFQRPVNDMNIASGCPLFCPVSKMEAKNSYVRDDAIFIKAIVDLTGL",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "TUMOR NECROSIS FACTOR RECEPTOR-ASSOCIATED PROTEIN",
+                "pdbx_fragment": "TRAF DOMAIN"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "Q12933"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "Q12933",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 331,
+                      "length": 171
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1F3V_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "MAAGQNGHEEWVGSAYLFVESSLDKVVLSDAYAHPQQKVAVYRALQAALAESGGSPDVLQMLKIHRSDPQLIVQLRFCGRQPCGRFLRAYREGALRAALQRSLAAALAQHSVPLQLELRAGAERLDALLADEERCLSCILAQQPDRLRDEELAELEDALRNLKCGSGARGGDGEVASAP",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "TUMOR NECROSIS FACTOR RECEPTOR TYPE 1 ASSOCIATED DEATH DOMAIN PROTEIN",
+                "pdbx_fragment": "N-TERMINAL DOMAIN"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "Q15628"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "Q15628",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 1,
+                      "length": 179
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1F51",
+          "struct": {
+            "title": "A TRANSIENT INTERACTION BETWEEN TWO PHOSPHORELAY PROTEINS TRAPPED IN A CRYSTAL LATTICE REVEALS THE MECHANISM OF MOLECULAR RECOGNITION AND PHOSPHOTRANSFER IN SINGAL TRANSDUCTION"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1F51_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "NEKILIVDDQSGIRILLNEVFNKEGYQTFQAANGLQALDIVTKERPDLVLLDMKIPGMDGIEILKRMKVIDENIRVIIMTAYGELDMIQESKELGALTHFAKPFDIDEIRDAVKKYLPL",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "SPORULATION INITIATION PHOSPHOTRANSFERASE F",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E",
+                  "F",
+                  "G",
+                  "H"
+                ],
+                "uniprot_ids": [
+                  "P06628"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P06628",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 3,
+                      "length": 119
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1F51_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "NISDTALTNELIHLLGHSRHDWMNKLQLIKGNLSLQKYDRVFEMIEEMVIDAKHESKLSNLKTPHLAFDFLTFNWKTHYMTLEYEVLGEIKDLSAYDQKLAKLMRKLFHLFDQAVSRESENHLTVSLQTDHPDRQLILYLDFHGAFADPSAFDDIRQNGYEDVDIMRFEITSHECLIEIGLD",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "SPORULATION INITIATION PHOSPHOTRANSFERASE B",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "P06535"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P06535",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 11,
+                      "length": 182
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1F6M",
+          "struct": {
+            "title": "CRYSTAL STRUCTURE OF A COMPLEX BETWEEN THIOREDOXIN REDUCTASE, THIOREDOXIN, AND THE NADP+ ANALOG, AADP+"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1F6M_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "SDKIIHLTDDSFDTDVLKADGAILVDFWAEWCGPSKMIAPILDEIADEYQGKLTVAKLNIDQNPGTAPKYGIRGIPTLLLFKNGEVAATKVGALSKGQLKEFLDANLA",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "THIOREDOXIN 1",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C",
+                  "D",
+                  "G",
+                  "H"
+                ],
+                "uniprot_ids": [
+                  "P0AA25"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P0AA25",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 2,
+                      "length": 108
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1F6M_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "GTTKHSKLLILGSGPAGYTAAVYAARANLQPVLITGMEKGGQLTTTTEVENWPGDPNDLTGPLLMERMHEHATKFETEIIFDHINKVDLQNRPFRLNGDNGEYTCDALIIATGASARYLGLPSEEAFKGRGVSASATCDGFFYRNQKVAVIGGGNTAVEEALYLSNIASEVHLIHRRDGFRAEKILIKRLMDKVENGNIILHTNRTLEEVTGDQMGVTGVRLRDTQNSDNIESLDVAGLFVAIGHSPNTAIFEGQLELENGYIKVQSGIHGNATQTSIPGVFAAGDVMDHIYRQAITSAGTGCMAALDAERYLDGLADAK",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "THIOREDOXIN REDUCTASE",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "E",
+                  "F"
+                ],
+                "uniprot_ids": [
+                  "P0A9P4"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P0A9P4",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 2,
+                      "length": 320
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1FAK",
+          "struct": {
+            "title": "HUMAN TISSUE FACTOR COMPLEXED WITH COAGULATION FACTOR VIIA INHIBITED WITH A BPTI-MUTANT"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1FAK_4",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "APDFCLEPPYDGPCRALHLRYFYNAKAGLCQTFYYGGCLAKRNNFESAEDCMRTC",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (5L15)",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "I"
+                ],
+                "uniprot_ids": [
+                  "P00974"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P00974",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 2,
+                      "ref_beg_seq_id": 37,
+                      "length": 54
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1FAK_3",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "NTVAAYNLTWKSTNFKTILEWEPKPVNQVYTVQISTKSGDWKSKCFYTTDTECDLTDEIVKDVKQTYLARVFSYPAGNVESTGSAGEPLYENSPEFTPYLETNLGQPTIQSFEQVGTKVNVTVEDERTLVRRNNTFLSLRDVFGKDLIYTLYYWKSSSSGKKTAKTNTNEFLIDVDKGENYCFSVQAVIPSRTVNRKSTDSPVECM",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (SOLUBLE TISSUE FACTOR)",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "T"
+                ],
+                "uniprot_ids": [
+                  "P13726"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P13726",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 37,
+                      "length": 206
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1FAK_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "IVGGKVCPKGECPWQVLLLVNGAQLCGGTLINTIWVVSAAHCFDKIKNWRNLIAVLGEHDLSEHDGDEQSRRVAQVIIPSTYVPGTTNHDIALLRLHQPVVLTDHVVPLCLPERTFSERTLAFVRFSLVSGWGQLLDRGATALELMVLNVPRLMTQDCLQQSRKVGDSPNITEYMFCAGYSDGSKDSCKGDSGGPHATHYRGTWYLTGIVSWGQGCATVGHFGVYTRVSQYIEWLQKLMRSEPRPGVLLRAPFP",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (BLOOD COAGULATION FACTOR VIIA)",
+                "pdbx_fragment": "HEAVY CHAIN"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "H"
+                ],
+                "uniprot_ids": [
+                  "P08709"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P08709",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 213,
+                      "length": 254
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1FAK_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "ANAFLEELRPGSLERECKEEQCSFEEAREIFKDAERTKLFWISYSDGDQCASSPCQNGGSCKDQLQSYICFCLPAFEGRNCETHKDDQLICVNENGGCEQYCSDHTGTKRSCRCHEGYSLLADGVSCTPTVEYPCGKIPILEKRNASKPQGR",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (BLOOD COAGULATION FACTOR VIIA)",
+                "pdbx_fragment": "LIGHT CHAIN"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "L"
+                ],
+                "uniprot_ids": [
+                  "P08709"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P08709",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 61,
+                      "length": 152
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1FC2",
+          "struct": {
+            "title": "Crystallographic Refinement and Atomic Models of a Human FC Fragment and its Complex with Fragment B of Protein A from Staphylococcus Aureus at 2.9-and 2.8-Angstroms Resolution"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1FC2_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "THTCPPCPAPELLGGPSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPQVKFNWYVDGVQVHNAKTKPREQQYNSTYRVVSVLTVLHQNWLDGKEYKCKVSNKALPAPIEKTISKAKGQPREPQVYTLPPSREEMTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHEALHNHYTQKSLSLSPG",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "IMMUNOGLOBULIN FC",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "P01857"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P01857",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 106,
+                      "length": 223
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1FC2_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "ADNKFNKEQQNAFYEILHLPNLNEEQRNGFIQSLKDDPSQSANLLAEAKKLNDAQXXK",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "FRAGMENT B OF PROTEIN A COMPLEX",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P38507"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P38507",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 212,
+                      "length": 58
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1FCC",
+          "struct": {
+            "title": "CRYSTAL STRUCTURE OF THE C2 FRAGMENT OF STREPTOCOCCAL PROTEIN G IN COMPLEX WITH THE FC DOMAIN OF HUMAN IGG"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1FCC_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "TTYKLVINGKTLKGETTTEAVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTE",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "STREPTOCOCCAL PROTEIN G (C2 FRAGMENT)",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "P19909"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P19909",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 372,
+                      "length": 56
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1FCC_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "PSVFLFPPKPKDTLMISRTPEVTCVVVDVSHEDPQVKFNWYVDGVQVHNAKTKPREQQYNSTYRVVSVLTVLHQNWLDGKEYKCKVSNKALPAPIEKTISKAKGQPREPQVYTLPPSREEMTKNQVSLTCLVKGFYPSDIAVEWESNGQPENNYKTTPPVLDSDGSFFLYSKLTVDKSRWQQGNVFSCSVMHEALHNHYTQKSLSL",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "IGG1 MO61 FC",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P01857"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P01857",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 121,
+                      "length": 206
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1FFW",
+          "struct": {
+            "title": "CHEY-BINDING DOMAIN OF CHEA IN COMPLEX WITH CHEY WITH A BOUND IMIDO DIPHOSPHATE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1FFW_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "RQLALEAKGETPSAVTRLSVVAKSEPQDEQSRSQSARRIILSRLKAGEVDLLEEELGHLTTLTDVVKGADSLSAILPGDIAEDDITAVLCFVIEADQITFETVEVSPKISTPPVLKLAAEQAPTGRVEREKTTR",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "CHEMOTAXIS PROTEIN CHEA",
+                "pdbx_fragment": "RESIDUES 124-257"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "P07363"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P07363",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 124,
+                      "length": 134
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1FFW_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "ADKELKFLVVDDFSTMRRIVRNLLKELGFNNVEEAEDGVDALNKLQAGGYGFVISDWNMPNMDGLELLKTIRADGAMSALPVLMVTAEAKKENIIAAAQAGASGYVVKPFTAATLEEKLNKIFEKLGM",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "CHEMOTAXIS PROTEIN CHEY",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P0AE67"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P0AE67",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 2,
+                      "length": 128
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1FLE",
+          "struct": {
+            "title": "CRYSTAL STRUCTURE OF ELAFIN COMPLEXED WITH PORCINE PANCREATIC ELASTASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1FLE_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "AQEPVKGPVSTKPGSCPIILIRCAMLNPPNRCLKDTDCPGIKKCCEGSCGMACFVPQ",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "ELAFIN",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "I"
+                ],
+                "uniprot_ids": [
+                  "P19957"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P19957",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 61,
+                      "length": 57
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1FLE_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "VVGGTEAQRNSWPSQISLQYRSGSSWAHTCGGTLIRQNWVMTAAHCVDRELTFRVVVGEHNLNQNNGTEQYVGVQKIVVHPYWNTDDVAAGYDIALLRLAQSVTLNSYVQLGVLPRAGTILANNSPCYITGWGLTRTNGQLAQTLQQAYLPTVDYAICSSSSYWGSTVKNSMVCAGGDGVRSGCQGDSGGPLHCLVNGQYAVHGVTSFVSRLGCNVTRKPTVFTRVSAYISWINNVIASN",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "ELASTASE",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E"
+                ],
+                "uniprot_ids": [
+                  "P00772"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P00772",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 27,
+                      "length": 240
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1FLT",
+          "struct": {
+            "title": "VEGF IN COMPLEX WITH DOMAIN 2 OF THE FLT-1 RECEPTOR"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1FLT_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "GRPFVEMYSEIPEIIHMTEGRELVIPCRVTSPNITVTLKKFPLDTLIPDGKRIIWDSRKGFIISNATYKEIGLLTCEATVNGHLYKTNYLTHRQT",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "FMS-LIKE TYROSINE KINASE 1",
+                "pdbx_fragment": "SECOND EXTRACELLULAR IGG LIKE DOMAIN, RESIDUES 129 - 229"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "X",
+                  "Y"
+                ],
+                "uniprot_ids": [
+                  "P17948"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P17948",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 132,
+                      "length": 95
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1FLT_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "HEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKD",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "VASCULAR ENDOTHELIAL GROWTH FACTOR",
+                "pdbx_fragment": "RECEPTOR BINDING DOMAIN, RESIDUES 8 - 109"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "V",
+                  "W"
+                ],
+                "uniprot_ids": [
+                  "P15692"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P15692",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 218,
+                      "length": 98
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1FQ1",
+          "struct": {
+            "title": "CRYSTAL STRUCTURE OF KINASE ASSOCIATED PHOSPHATASE (KAP) IN COMPLEX WITH PHOSPHO-CDK2"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1FQ1_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "MENFQKVEKIGEGTYGVVYKARNKLTGEVVALKKIRLDTETEGVPSTAIREISLLKELNHPNIVKLLDVIHTENKLYLVFEFLHQDLKKFMDASALTGIPLPLIKSYLFQLLQGLAFCHSHRVLHRDLKPQNLLINTEGAIKLADFGLARAFGVPVRTYTHEVVTLWYRAPEILLGCKYYSTAVDIWSLGCIFAEMVTRRALFPGDSEIDQLFRIFRTLGTPDEVVWPGVTSMPDYKPSFPKWARQDFSKVVPPLDEDGRSLLSQMLHYDPNKRISAKAALAHPFFQDVTKPVPHLRL",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "CELL DIVISION PROTEIN KINASE 2",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P24941"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P24941",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 1,
+                      "length": 298
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1FQ1_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "MKPPSSIQTSEFDSSDEEPIEDEQTPIHISWLSLSRVNCSQFLGLCALPGCKFKDVRRNVQKDTEELKSCGIQDIFVFCTRGELSKYRVPNLLDLYQQCGIITHHHPIADGGTPDIASCCEIMEELTTCLKNYRKTLIHSYGGLGRSCLVAACLLLYLSDTISPEQAIDSLRDLRGSGAIQTIKQYNYLHEFRDKLAAHLSSRDSQSRSVSR",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "CYCLIN-DEPENDENT KINASE INHIBITOR 3",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "Q16667"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "Q16667",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 1,
+                      "length": 212
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1FQJ",
+          "struct": {
+            "title": "CRYSTAL STRUCTURE OF THE HETEROTRIMERIC COMPLEX OF THE RGS DOMAIN OF RGS9, THE GAMMA SUBUNIT OF PHOSPHODIESTERASE AND THE GT/I1 CHIMERA ALPHA SUBUNIT [(RGS9)-(PDEGAMMA)-(GT/I1ALPHA)-(GDP)-(ALF4-)-(MG2+)]"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1FQJ_3",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "GVQGFGDDIPGMEGLGTDITVICPWEAFNHLELHELAQYGII",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Retinal rod rhodopsin-sensitive cGMP 3',5'-cyclic phosphodiesterase subunit gamma",
+                "pdbx_fragment": "UNP RESIDUES 46-87"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P04972"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P04972",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 46,
+                      "length": 42
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1FQJ_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "QFWDLNAKLVDIPTKMRVERWAFNFSELIRDPKGRQSFQHFLRKEFSGENLGFWEACEDLKYGDQSKVKEKAEEIYKLFLAPGARRWINIDGKTMDITVKGLKHPHRYVLDAAQTHIYMLMKKDSYARYLKSPIYKEMLAKAIEPQG",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Regulator of G-protein signaling 9",
+                "pdbx_fragment": "RGS DOMAIN UNP RESIDUES 276-422"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "E"
+                ],
+                "uniprot_ids": [
+                  "O46469"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "O46469",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 276,
+                      "length": 147
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1FQJ_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "DARTVKLLLLGAGESGKSTIVKQMKIIHQDGYSLEECLEFIAIIYGNTLQSILAIVRAMTTLNIQYGDSARQDDARKLMHMADTIEEGTMPKEMSDIIQRLWKDSGIQACFDRASEYQLNDSAGYYLSDLERLVTPGYVPTEQDVLRSRVKTTGIIETQFSFKDLNFRMFDVGGQRSERKKWIHCFEGVTAIIFCVALSDYDLVLAEDEEMNRMHESMKLFDSICNNKWFTDTSIILFLNKKDLFEEKIKKSPLTICYPEYAGSNTYEEAGNYIKVQFLELNMRRDVKEIYSHMTCATDTQNVKFVFDAVTDIIIKENLKDCGLF",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Guanine nucleotide-binding protein G(t) subunit alpha-1,Guanine nucleotide-binding protein G(i) subunit alpha-1,Guanine nucleotide-binding protein G(t) subunit alpha-1",
+                "pdbx_fragment": "UNP P04695 residues 26-215 and 295-350 linked via UNP P10824 residues 220-298"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "P04695",
+                  "P10824"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P04695",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 26,
+                      "length": 190
+                    },
+                    {
+                      "entity_beg_seq_id": 271,
+                      "ref_beg_seq_id": 296,
+                      "length": 55
+                    }
+                  ]
+                },
+                {
+                  "reference_database_accession": "P10824",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 191,
+                      "ref_beg_seq_id": 220,
+                      "length": 80
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1FSK",
+          "struct": {
+            "title": "COMPLEX FORMATION BETWEEN A FAB FRAGMENT OF A MONOCLONAL IGG ANTIBODY AND THE MAJOR ALLERGEN FROM BIRCH POLLEN BET V 1"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1FSK_3",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "QVQLQQPGTELVRPGASVILSCKASGYTFTSYWINWVKQRPGQGLEWVGNIFPSDSYTNYNQKFKDKATLTVDKSSSTAYMQVNSPTSEDSAVYYCTRGARDTWFAYWGQGTLVTVSVAKTTPPSVFPLAPGSAAQTNSMVTLGCLVKGYFPEPVTVTWNSGSLSSGVHTFPAVLQSDLYTLSSSVTVPSSTWPSETVTCNVAHPASSTKVDKKIVPRDC",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "ANTIBODY HEAVY CHAIN FAB",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C",
+                  "F",
+                  "I",
+                  "L"
+                ],
+                "uniprot_ids": null
+              },
+              "rcsb_polymer_entity_align": null
+            },
+            {
+              "rcsb_id": "1FSK_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "NIVLTQSPKSMSVSVGERVTLSCKASENVDTYVFWFQQKPDQSPKLLLYGPSNRYTGVPDRFTGSGSTTDFTLTISSVQAEDLADYHCGQSYSYPYTFGGGTKLEIKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNRNEC",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "IMMUNOGLOBULIN KAPPA LIGHT CHAIN",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "E",
+                  "H",
+                  "K"
+                ],
+                "uniprot_ids": [
+                  "P01837"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P01837",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 1,
+                      "length": 214
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1FSK_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "GVFNYETETTSVIPAARLFKAFILDGDNLFPKVAPQAISSVENIEGNGGPGTIKKISFPEGLPFKYVKDRVDEVDHTNFKYNYSVIEGGPIGDTLEKISNEIKIVATPDGGSILKISNKYHTKGDHEVKAEQVKASKEMGETLLRAVESYLLAHSDAYN",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "MAJOR POLLEN ALLERGEN BET V 1-A",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "D",
+                  "G",
+                  "J"
+                ],
+                "uniprot_ids": [
+                  "P15494"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P15494",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 1,
+                      "length": 159
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1GCQ",
+          "struct": {
+            "title": "CRYSTAL STRUCTURE OF VAV AND GRB2 SH3 DOMAINS"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1GCQ_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "GSHMPKMEVFQEYYGIPPPPGAFGPFLRLNPGDIVELTKAEAEHNWWEGRNTATNEVGWFPCNRVHPYVH",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "VAV PROTO-ONCOGENE",
+                "pdbx_fragment": "N-TERMINAL SH3 DOMAIN"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P27870"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P27870",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 5,
+                      "ref_beg_seq_id": 595,
+                      "length": 66
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1GCQ_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "GSTYVQALFDFDPQEDGELGFRRGDFIHVMDNSDPNWWKGACHGQTGMFPRNYVTPVNRNV",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "GROWTH FACTOR RECEPTOR-BOUND PROTEIN 2",
+                "pdbx_fragment": "C-TERMINAL SH3 DOMAIN"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P62993"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P62993",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 3,
+                      "ref_beg_seq_id": 159,
+                      "length": 59
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1GHQ",
+          "struct": {
+            "title": "CR2-C3D COMPLEX STRUCTURE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1GHQ_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "MLDAERLKHLIVTPSGAGEQNMIGMTPTVIAVHYLDETEQWEKFGLEKRQGALELIKKGYTQQLAFRQPSSAFAAFVKRAPSTWLTAYVVKVFSLAVNLIAIDSQVLCGAVKWLILEKQKPDGVFQEDAPVIHQEMIGGLRNNNEKDMALTAFVLISLQEAKDICEEQVNSLPGSITKAGDFLEANYMNLQRSYTVAIAGYALAQMGRLKGPLLNKFLTTAKDKNRWEDPGKQLYNVEATSYALLALLQLKDFDFVPPVVRWLNEQRYYGGGYGSTQATFMVFQALAQYQKDAPSDHQELNLDVSLQL",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "COMPLEMENT C3",
+                "pdbx_fragment": "FRAGMENT OF ALPHA CHAIN"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P01024"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P01024",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 3,
+                      "ref_beg_seq_id": 996,
+                      "length": 292
+                    },
+                    {
+                      "entity_beg_seq_id": 296,
+                      "ref_beg_seq_id": 1288,
+                      "length": 13
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1GHQ_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "AISCGSPPPILNGRISYYSTPIAVGTVIRYSCSGTFRLIGEKSLLCITKDKVDGTWDKPAPKCEYFNKYSSCPEPIVPGGYKIRGSTPYRHGDSVTFACKTNFSMNGNKSVWCQANNMWGPTRLPTCVSVFPLE",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "CR2/CD121/C3D/EPSTEIN-BARR VIRUS RECEPTOR",
+                "pdbx_fragment": "SEQUENCE DATABASE RESIDUES 21-153"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P20023"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P20023",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 2,
+                      "ref_beg_seq_id": 21,
+                      "length": 133
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1GL1",
+          "struct": {
+            "title": "structure of the complex between bovine alpha-chymotrypsin and PMP-C, an inhibitor from the insect Locusta migratoria"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1GL1_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "EISCEPGKTFKDKCNTCRCGADGKSAACTLKACPNQ",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEASE INHIBITOR LCMI II",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "I",
+                  "J",
+                  "K"
+                ],
+                "uniprot_ids": [
+                  "P80060"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P80060",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 57,
+                      "length": 36
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1GL1_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "CGVPAIQPVLSGLSRIVNGEEAVPGSWPWQVSLQDKTGFHFCGGSLINENWVVTAAHCGVTTSDVVVAGEFDQGSSSEKIQKLKIAKVFKNSKYNSLTINNDITLLKLSTAASFSQTVSAVCLPSASDDFAAGTTCVTTGWGLTRYTNANTPDRLQQASLPLLSNTNCKKYWGTKIKDAMICAGASGVSSCMGDSGGPLVCKKNGAWTLVGIVSWGSSTCSTSTPGVYARVTALVNWVQQTLAAN",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "ALPHA-CHYMOTRYPSIN",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P00766"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P00766",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 1,
+                      "length": 245
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1GLA",
+          "struct": {
+            "title": "STRUCTURE OF THE REGULATORY COMPLEX OF ESCHERICHIA COLI IIIGLC WITH GLYCEROL KINASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1GLA_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "TEKKYIVALDQGTTSSRAVVMDHDANIISVSQREFEQIYPKPGWVEHDPMEIWATQSSTLVEVLAKADISSDQIAAIGITNQRETTIVWEKETGKPIYNAIVWQCRRTAEICEHLKRDGLEDYIRSNTGLVIDPYFSGTKVKWILDHVEGSRERARRGELLFGTVDTWLIWKMTQGRVHVTDYTNASRTMLFNIHTLDWDDKMLEVLDIPREMLPEVRRSSEVYGQTNIGGKGGTRIPISGIAGDQQAALFGQLCVKEGMAKNTYGTGCFMLMNTGEKAVKSENGLLTTIACGPTGEVNYALEGAVFMAGASIQWLRDEMKLINDAYDSEYFATKVQNTNGVYVVPAFTGLGAPYWDPYARGAIFGLTRGVNANHIIRATLESIAYQTRDVLEAMQADSGIRLHALRVDGGAVANNFLMQFQSDILGTRVERPEVREVTALGAAYLAGLAVGFWQNLDELQEKAVIEREFRPGIETTERNYRYAGWKKAVKRAMAWEEHDE",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "GLYCEROL KINASE",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "G"
+                ],
+                "uniprot_ids": [
+                  "P0A6F3"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P0A6F3",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 2,
+                      "length": 501
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1GLA_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "GLFDKLKSLVSDDKKDTGTIEIIAPLSGEIVNIEDVPDVVFAEKIVGDGIAIKPTGNKMVAPVDGTIGKIFETNHAFSIESDSGVELFVHFGIDTVELKGEGFKRIAEEGQRVKVGDTVIEFDLPLLEEKAKSTLTPVVISNMDEIKELIKLSGSVTVGETPVIRIKK",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "GLUCOSE-SPECIFIC PROTEIN IIIGlc",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "F"
+                ],
+                "uniprot_ids": [
+                  "P69783"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P69783",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 2,
+                      "length": 168
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1GP2",
+          "struct": {
+            "title": "G PROTEIN HETEROTRIMER GI_ALPHA_1 BETA_1 GAMMA_2 WITH GDP BOUND"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1GP2_3",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "MASNNTASIAQARKLVEQLKMEANIDRIKVSKAAADLMAYCEAHAKEDPLLTPVPASENPFREKKFFSAIL",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "G PROTEIN GI GAMMA 2",
+                "pdbx_fragment": "GAMMA 2"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "G"
+                ],
+                "uniprot_ids": [
+                  "P63212"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P63212",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 1,
+                      "length": 71
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1GP2_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "MSELDQLRQEAEQLKNQIRDARKACADATLSQITNNIDPVGRIQMRTRRTLRGHLAKIYAMHWGTDSRLLVSASQDGKLIIWDSYTTNKVHAIPLRSSWVMTCAYAPSGNYVACGGLDNICSIYNLKTREGNVRVSRELAGHTGYLSCCRFLDDNQIVTSSGDTTCALWDIETGQQTTTFTGHTGDVMSLSLAPDTRLFVSGACDASAKLWDVREGMCRQTFTGHESDINAICFFPNGNAFATGSDDATCRLFDLRADQELMTYSHDNIICGITSVSFSKSGRLLLAGYDDFNCNVWDALKADRAGVLAGHDNRVSCLGVTDDGMAVATGSWDSFLKIWN",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "G PROTEIN GI BETA 1",
+                "pdbx_fragment": "BETA 1"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P62871"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P62871",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 1,
+                      "length": 340
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1GP2_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "GCTLSAEDKAAVERSKMIDRNLREDGEKAAREVKLLLLGAGESGKSTIVKQMKIIHEAGYSEEECKQYKAVVYSNTIQSIIAIIRAMGRLKIDFGDAARADDARQLFVLAGAAEEGFMTAELAGVIKRLWKDSGVQACFNRSREYQLNDSAAYYLNDLDRIAQPNYIPTQQDVLRTRVKTTGIVETHFTFKDLHFKMFDVGGQRSERKKWIHCFEGVTAIIFCVALSDYDLVLAEDEEMNRMHESMKLFDSICNNKWFTDTSIILFLNKKDLFEEKIKKSPLTICYPEYAGSNTYEEAAAYIQCQFEDLNKRKDTKEIYTHFTCATDTKNVQFVFDAVTDVIIKNNLKDCGLF",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "G PROTEIN GI ALPHA 1",
+                "pdbx_fragment": "ALPHA 1"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P10824"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P10824",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 2,
+                      "length": 353
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1GRN",
+          "struct": {
+            "title": "CRYSTAL STRUCTURE OF THE CDC42/CDC42GAP/ALF3 COMPLEX."
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1GRN_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "MQTIKCVVVGDGAVGKTCLLISYTTNKFPSEYVPTVFDNYAVTVMIGGEPYTLGLFDTAGQEDYDRLRPLSYPQTDVFLVCFSVVSPSSFENVKEKWVPEITHHCPKTPFLLVGTQIDLRDDPSTIEKLAKNKQKPITPETAEKLARDLKAVKYVECSALTQKGLKNVFDEAILAALEPPEPKKSRRCVLL",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (GTP BINDING PROTEIN)",
+                "pdbx_fragment": "CDC42"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P60953"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P60953",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 1,
+                      "length": 191
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1GRN_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "LPNQQFGVSLQHLQEKNPEQEPIPIVLRETVAYLQAHALTTEGIFRRSANTQVVREVQQKYNMGLPVDFDQYNELHLPAVILKTFLRELPEPLLTFDLYPHVVGFLNIDESQRVPATLQVLQTLPEENYQVLRFLTAFLVQISAHSDQNKMTNTNLAVVFGPNLLWAKDAAITLKAINPINTFTKFLLDHQGELFPSPDPSGL",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (RHO GTPASE ACTIVATING PROTEIN)",
+                "pdbx_fragment": "C-TERMINAL DOMAIN OF CDC42GAP"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "Q07960"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "Q07960",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 237,
+                      "length": 203
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1GUA",
+          "struct": {
+            "title": "HUMAN RAP1A, RESIDUES 1-167, DOUBLE MUTANT (E30D,K31E) COMPLEXED WITH GPPNHP AND THE RAS-BINDING-DOMAIN OF HUMAN C-RAF1, RESIDUES 51-131"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1GUA_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "PSKTSNTIRVFLPNKQRTVVNVRNGMSLHDCLMKALKVRGLQPECCAVFRLLHEHKGKKARLDWNTDAASLIGEELQVDFL",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "C-RAF1",
+                "pdbx_fragment": "RESIDUES 51-131"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P04049"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P04049",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 51,
+                      "length": 81
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1GUA_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "MREYKLVVLGSGGVGKSALTVQFVQGIFVDEYDPTIEDSYRKQVEVDCQQCMLEILDTAGTEQFTAMRDLYMKNGQGFALVYSITAQSTFNDLQDLREQILRVKDTEDVPMILVGNKCDLEDERVVGKEQGQNLARQWCNCAFLESSAKSKINVNEIFYDLVRQINR",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "RAP1A",
+                "pdbx_fragment": "RESIDUES 1-167"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P62834"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P62834",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 1,
+                      "length": 167
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1H9D",
+          "struct": {
+            "title": "Aml1/cbf-beta/dna complex"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1H9D_4",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "CAACCGCAAC",
+                "type": "polydeoxyribonucleotide"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "DNA (5'-(*CP*AP*AP*CP*CP*GP*CP*AP*AP*C)-3')",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "F",
+                  "H"
+                ],
+                "uniprot_ids": null
+              },
+              "rcsb_polymer_entity_align": null
+            },
+            {
+              "rcsb_id": "1H9D_3",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "GTTGCGGTTG",
+                "type": "polydeoxyribonucleotide"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "DNA (5'-(*GP*TP*TP*GP*CP*GP*GP*TP*TP*G)-3')",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E",
+                  "G"
+                ],
+                "uniprot_ids": null
+              },
+              "rcsb_polymer_entity_align": null
+            },
+            {
+              "rcsb_id": "1H9D_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "PRVVPDQRSKFENEEFFRKLSRECEIKYTGFRDRPHEERQARFQNACRDGRSEIAFVATGTNLSLQFFPASWQGEQRQTPSREYVDLEREAGKVYLKAPMILNGVCVIWKGWIDLQRLDGMGCLEFDEERAQQE",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "CORE-BINDING FACTOR CBF-BETA",
+                "pdbx_fragment": "HETERODIMERISATION DOMAIN RESIDUES 2-135"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "Q13951"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "Q13951",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 2,
+                      "length": 134
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1H9D_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "SMVEVLADHPGELVRTDSPNFLCSVLPTHWRCNKTLPIAFKVVALGDVPDGTLVTVMAGNDENYSAELRNATAAMKNQVARFNDLRFVGRSGRGKSFTLTITVFTNPPQVATYHRAIKITVDGPREPRRHRQKL",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "CORE-BINDING FACTOR ALPHA SUBUNIT1",
+                "pdbx_fragment": "RUNT DOMAIN RESIDUES 50-183"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "Q01196"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "Q01196",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 50,
+                      "length": 134
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1H1V",
+          "struct": {
+            "title": "gelsolin G4-G6/actin complex"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1H1V_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "MDDDGTGQKQIWRIEGSNKVPVDPATYGQFYGGDSYIILYNYRHGGRQGQIIYNWQGAQSTQDEVAASAILTAQLDEELGGTPVQSRVVQGKEPAHLMSLFGGKPMIIYKGGTSREGGQTAPASTRLFQVRANSAGATRAVEVLPKAGALNSNDAFVLKTPSAAYLWVGTGASEAEKTGAQELLRVLRAQPVQVAEGSEPDGFWEALGGKAAYRTSPRLKDKKMDAHPPRLFACSNKIGRFVIEEVPGELMQEDLATDDVMLLDTWDQVFVWVGKDSQEEEKTEALTSAKRYIETDPANRDRRTPITVVKQGFEPPSFVGWFLGWDDDYWS",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "GELSOLIN",
+                "pdbx_fragment": "G4-G6, RESIDUES 412-742 OF CYTOPLASMIC ISOFORM"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "G"
+                ],
+                "uniprot_ids": [
+                  "P06396"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P06396",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 439,
+                      "length": 331
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1H1V_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "DEDETTALVCDNGSGLVKAGFAGDDAPRAVFPSIVGRPRHQGVMVGMGQKDSYVGDEAQSKRGILTLKYPIEHGIITNWDDMEKIWHHTFYNELRVAPEEHPTLLTEAPLNPKANREKMTQIMFETFNVPAMYVAIQAVLSLYASGRTTGIVLDSGDGVTHNVPIYEGYALPHAIMRLDLAGRDLTDYLMKILTERGYSFVTTAEREIVRDIKEKLCYVALDFENEMATAASSSSLEKSYELPDGQVITIGNERFRCPETLFQPSFIGMESAGIHETTYNSIMKCDIDIRKDLYANNVMSGGTTMYPGIADRMQKEITALAPSTMKIKIIAPPERKYSVWIGGSILASLSTFQQMWITKQEYDEAGPSIVHRKCF",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "ACTIN",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P68135"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "P68135",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 3,
+                      "length": 375
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1GPW",
+          "struct": {
+            "title": "Structural evidence for ammonia tunneling across the (beta/alpha)8 barrel of the imidazole glycerol phosphate synthase bienzyme complex."
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1GPW_2",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "MRIGIISVGPGNIMNLYRGVKRASENFEDVSIELVESPRNDLYDLLFIPGVGHFGEGMRRLRENDLIDFVRKHVEDERYVVGVCLGMQLLFEESEEAPGVKGLSLIEGNVVKLRSRRLPHMGWNEVIFKDTFPNGYYYFVHTYRAVCEEEHVLGTTEYDGEIFPSAVRKGRILGFQFHPEKSSKIGRKLLEKVIECSLSRR",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "AMIDOTRANSFERASE HISH",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "D",
+                  "F"
+                ],
+                "uniprot_ids": [
+                  "Q9X0C8"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "Q9X0C8",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 1,
+                      "length": 201
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "rcsb_id": "1GPW_1",
+              "entity_poly": {
+                "pdbx_seq_one_letter_code_can": "MLAKRIIACLNVKDGRVVKGTNFENLRDSGDPVELGKFYSEIGIDELVFLDITASVEKRKTMLELVEKVAEQIDIPFTVGGGIHDFETASELILRGADKVSINTAAVENPSLITQIAQTFGSQAVVVAIDAKRVDGEFMVFTYSGKKNTGILLRDWVVEVEKRGAGEILLTSIDRDGTKSGYDTEMIRFVRPLTTLPIIASGGAGKMEHFLEAFLAGADAALAASVFHFREIDVRELKEYLKKHGVNVRLEGL",
+                "type": "polypeptide(L)"
+              },
+              "rcsb_polymer_entity": {
+                "pdbx_description": "HISF PROTEIN",
+                "pdbx_fragment": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "uniprot_ids": [
+                  "Q9X0C6"
+                ]
+              },
+              "rcsb_polymer_entity_align": [
+                {
+                  "reference_database_accession": "Q9X0C6",
+                  "reference_database_name": "UniProt",
+                  "aligned_regions": [
+                    {
+                      "entity_beg_seq_id": 1,
+                      "ref_beg_seq_id": 1,
+                      "length": 253
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "fold": 0,
+  "training_members": [
+    "A001K",
+    "A004C",
+    "A007U"
+  ],
+  "models": [
+    "full",
+    "intrachain",
+    "aa_sasa_contacts",
+    "static47_sasa"
+  ],
+  "common_exact_positions": 141,
+  "rationale": "Same frozen model and same population for all pair comparisons. No new fitting; source data values retained."
+}

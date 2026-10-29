@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "input": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\fixed_backbone\\1AO7__A6_TAX_LLFAYPVYV\\model_input_fixed_backbone.pdb",
+  "input_sha256": "7276614f155d1b87c5ceda9ae68a585f2065ab76c64968d306438dc083de889a",
+  "output": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\static_complete\\1AO7__A6_TAX_LLFAYPVYV\\complete_heavy_atoms.pdb",
+  "output_sha256": "edf70924154e818a91785d2148218eaca44365bfa50695c6daadef239f7f81f5",
+  "residues": 707,
+  "new_sidechain_atoms": [
+    {
+      "chain": "C",
+      "residue_id": "4",
+      "name": "ALA",
+      "atoms": [
+        "CB"
+      ]
+    }
+  ],
+  "new_terminal_atoms": [
+    {
+      "chain": "A",
+      "residue_id": "274",
+      "atoms": [
+        "OXT"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "121",
+      "atoms": [
+        "OXT"
+      ]
+    }
+  ],
+  "all_observed_backbone_values_bit_identical": true,
+  "sidechain_rebuilt": true,
+  "backbone_rebuilt": false,
+  "OpenMM": "8.6.1",
+  "platform": "CPU",
+  "seed": 17,
+  "MD": false,
+  "elapsed_seconds": 1.0739992000162601
+}

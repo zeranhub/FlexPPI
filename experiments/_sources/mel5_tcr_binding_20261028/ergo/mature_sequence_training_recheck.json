@@ -1,0 +1,411 @@
+{
+  "targets": {
+    "mature_alpha": "CAVNDGGRLTF",
+    "mature_beta": "CAWSETGLGMGGWQF",
+    "G4A": "ELAAIGILTV",
+    "I7A": "ELAGIGALTV"
+  },
+  "anchor_matching": "Compare literal training strings after uppercase/whitespace cleaning to all four target representations: both C104/F118 included, C only removed, F only removed, both removed; no fuzzy sequence called exact.",
+  "nearest_metric": "Levenshtein edit distance; for nearest ranking only remove paired leading C and final F/W when both present. Distinct training CDR3beta; not family-exclusion proof.",
+  "datasets": {
+    "mcpas": {
+      "training_rows": 69780,
+      "G4A_rows": 0,
+      "I7A_rows": 0,
+      "mature_alpha_exact_rows": 0,
+      "mature_beta_exact_rows": 0,
+      "mature_alpha_anchor_forms_rows": 0,
+      "mature_beta_anchor_forms_rows": 0,
+      "mature_pair_anchor_forms_rows": 0,
+      "mature_alpha_matches_first20": [],
+      "mature_beta_matches_first20": [],
+      "WT_beta_ELA_exact_rows": [],
+      "nearest_5_mature_beta": [
+        {
+          "tcrb": "CAISETGGGQPQHF",
+          "distance": 6,
+          "n_train_rows": 4,
+          "peptide_label_counts": [
+            {
+              "peptide": "SSLENFRAYV",
+              "sign": "0",
+              "rows": 2
+            },
+            {
+              "peptide": "ALYGSVPVL",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "ALSPVIPLI",
+              "sign": "1",
+              "rows": 1
+            }
+          ]
+        },
+        {
+          "tcrb": "CASSEGFGQGGIEQF",
+          "distance": 6,
+          "n_train_rows": 3,
+          "peptide_label_counts": [
+            {
+              "peptide": "NLVPMVATV",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "GLCTLVAML",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "RYPLTFGWCF",
+              "sign": "1",
+              "rows": 1
+            }
+          ]
+        },
+        {
+          "tcrb": "CASSEGLGLGYTF",
+          "distance": 6,
+          "n_train_rows": 7,
+          "peptide_label_counts": [
+            {
+              "peptide": "CRVLCCYVL",
+              "sign": "1",
+              "rows": 1
+            },
+            {
+              "peptide": "GILGFVFTL",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "SSYRRPVGI",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "KLWASPLHV",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "CRVLCCYVL",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "SSLENFRAYV",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "NLVPMVATV",
+              "sign": "0",
+              "rows": 1
+            }
+          ]
+        },
+        {
+          "tcrb": "CASSEGYGGGQYF",
+          "distance": 6,
+          "n_train_rows": 4,
+          "peptide_label_counts": [
+            {
+              "peptide": "LLAMTVPNV",
+              "sign": "1",
+              "rows": 1
+            },
+            {
+              "peptide": "NLVPMVATV",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "KMVAVFYTT",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "GLCTLVAML",
+              "sign": "0",
+              "rows": 1
+            }
+          ]
+        },
+        {
+          "tcrb": "CASSETGVGGYTF",
+          "distance": 6,
+          "n_train_rows": 8,
+          "peptide_label_counts": [
+            {
+              "peptide": "HSLGKWLGHPDKF",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "RCSDSDGLAPPQNLIRVEGNLRVEY",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "GLCTLVAML",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "LPRRSGAAGA",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "ASNENMETM",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "GILGFVFTL",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "GILGFVFTL",
+              "sign": "1",
+              "rows": 1
+            },
+            {
+              "peptide": "VTEHDTLLY",
+              "sign": "0",
+              "rows": 1
+            }
+          ]
+        }
+      ]
+    },
+    "vdjdb": {
+      "training_rows": 209316,
+      "G4A_rows": 0,
+      "I7A_rows": 0,
+      "mature_alpha_exact_rows": 0,
+      "mature_beta_exact_rows": 0,
+      "mature_alpha_anchor_forms_rows": 0,
+      "mature_beta_anchor_forms_rows": 0,
+      "mature_pair_anchor_forms_rows": 0,
+      "mature_alpha_matches_first20": [],
+      "mature_beta_matches_first20": [],
+      "WT_beta_ELA_exact_rows": [
+        {
+          "index": 10012,
+          "tcra": "CAVNVAGKSTFIF",
+          "tcrb": "CAWSETGLGTGELFF",
+          "peptide": "ELAGIGILTV",
+          "sign": 1,
+          "va": "TRAV12-2*01",
+          "vb": "TRBV30*01"
+        },
+        {
+          "index": 178141,
+          "tcra": "CAVNVAGKSTFIF",
+          "tcrb": "CAWSETGLGTGELFF",
+          "peptide": "ELAGIGILTV",
+          "sign": 0,
+          "va": "TRAV12-2*01",
+          "vb": "TRBV30*01"
+        }
+      ],
+      "nearest_5_mature_beta": [
+        {
+          "tcrb": "CAWSETGLGTGELFF",
+          "distance": 4,
+          "n_train_rows": 16,
+          "peptide_label_counts": [
+            {
+              "peptide": "NLVPMVATV",
+              "sign": "0",
+              "rows": 3
+            },
+            {
+              "peptide": "AVFDRKSDAK",
+              "sign": "0",
+              "rows": 2
+            },
+            {
+              "peptide": "KLGGALQAK",
+              "sign": "0",
+              "rows": 2
+            },
+            {
+              "peptide": "IVTDFSVIK",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "ELAGIGILTV",
+              "sign": "1",
+              "rows": 1
+            },
+            {
+              "peptide": "LLWNGPMAV",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "HGIRNASFI",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "EAAGIGILTV",
+              "sign": "1",
+              "rows": 1
+            },
+            {
+              "peptide": "GLCTLVAML",
+              "sign": "1",
+              "rows": 1
+            },
+            {
+              "peptide": "GLCTLVAML",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "RAKFKQLL",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "ELAGIGILTV",
+              "sign": "0",
+              "rows": 1
+            }
+          ]
+        },
+        {
+          "tcrb": "CASSPTGLGGGYTF",
+          "distance": 5,
+          "n_train_rows": 4,
+          "peptide_label_counts": [
+            {
+              "peptide": "GILGFVFTL",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "NLVPMVATV",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "IVTDFSVIK",
+              "sign": "1",
+              "rows": 1
+            },
+            {
+              "peptide": "GLCTLVAML",
+              "sign": "0",
+              "rows": 1
+            }
+          ]
+        },
+        {
+          "tcrb": "CASSEGLGLAGGEQFF",
+          "distance": 6,
+          "n_train_rows": 8,
+          "peptide_label_counts": [
+            {
+              "peptide": "KLGGALQAK",
+              "sign": "0",
+              "rows": 3
+            },
+            {
+              "peptide": "TTPESANL",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "RAKFKQLL",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "AVFDRKSDAK",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "VTEHDTLLY",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "KLGGALQAK",
+              "sign": "1",
+              "rows": 1
+            }
+          ]
+        },
+        {
+          "tcrb": "CASSEPGTGGGEQYF",
+          "distance": 6,
+          "n_train_rows": 7,
+          "peptide_label_counts": [
+            {
+              "peptide": "KLGGALQAK",
+              "sign": "0",
+              "rows": 3
+            },
+            {
+              "peptide": "GILGFVFTL",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "AVFDRKSDAK",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "NAITNAKII",
+              "sign": "1",
+              "rows": 1
+            },
+            {
+              "peptide": "ELAGIGILTV",
+              "sign": "0",
+              "rows": 1
+            }
+          ]
+        },
+        {
+          "tcrb": "CASSETGGWGYTF",
+          "distance": 6,
+          "n_train_rows": 6,
+          "peptide_label_counts": [
+            {
+              "peptide": "KLGGALQAK",
+              "sign": "0",
+              "rows": 3
+            },
+            {
+              "peptide": "VTEHDTLLY",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "SSYRRPVGI",
+              "sign": "0",
+              "rows": 1
+            },
+            {
+              "peptide": "KLGGALQAK",
+              "sign": "1",
+              "rows": 1
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

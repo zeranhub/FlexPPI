@@ -1,0 +1,20 @@
+{
+  "status": "checked",
+  "prediction_npz_files": 1128,
+  "input_PDBs_checked": 564,
+  "all_backbone_and_sequence_checks_passed": true,
+  "residue_rows": {
+    "full": 465864,
+    "intrachain": 465864
+  },
+  "intrachain_max_receptor_change_across_peptides": 0.0,
+  "independent_logistic_fits": 18,
+  "max_reproduced_probability_difference": 0.0030733769009082534,
+  "top10_hit_counts_all_agree": true,
+  "numerical_note": "Independent BFGS minimization of weighted logistic sum loss plus 0.5*L2 penalty; sklearn uses a different stopping rule. Any probability or top10 differences retained, not hidden.",
+  "source_sha256": {
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\antigen_incremental_value_20261028\\states.json": "666cbda4d825f97626d7060eef35476d5ab7596a534b69a60a6b76c883362a30",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\antigen_incremental_value_20261028\\protocol_frozen_before_new_predictions.json": "6d1f19b3a1e8cc43eff826ab4c8bca4c2e512a717325b6b025093bb18c6ffa49",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\antigen_incremental_value_20261028\\scripts\\verify_predictions_and_fits.py": "16de9b1eb34c952dca368ea66c91fcf2db57ce051114422893a7b72c602c53c4"
+  }
+}

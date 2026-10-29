@@ -1,0 +1,2195 @@
+{
+  "status": "passed_readonly_independent_arithmetic_and_sample_recomputation",
+  "utc": "2026-10-12T08:28:36.572675+00:00",
+  "run_audit_sha256": "bd565cbbde3b72176937d83161b2d1aeb59f9d6ea59be04a492f1b4c2b8c87bc",
+  "verification_code_sha256": "58753249c19abf409fddd69724e6871146014ab7b95979ab7e87d1ca74cfef82",
+  "checks": [
+    {
+      "name": "All certified output hashes remain exact",
+      "passed": true
+    },
+    {
+      "name": "3063 distinct record inputs",
+      "passed": true
+    },
+    {
+      "name": "Original source record counts",
+      "passed": true
+    },
+    {
+      "name": "Each correlation mode exactly same record IDs",
+      "passed": true
+    },
+    {
+      "name": "All record class counts partition exact common mask",
+      "passed": true
+    },
+    {
+      "name": "All confusion row sums match corresponding reference classes",
+      "passed": true
+    },
+    {
+      "name": "Source common counts exact",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling all/cross_type_raw/reference_spearman",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling all/cross_type_raw/prediction_spearman",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling all/cross_type_raw/reference_pearson",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling all/cross_type_raw/prediction_pearson",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling all/cross_type_raw/spearman_absolute_discrepancy",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling all/within_record_AA_centered/reference_spearman",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling all/within_record_AA_centered/prediction_spearman",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling all/within_record_AA_centered/reference_pearson",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling all/within_record_AA_centered/prediction_pearson",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling all/within_record_AA_centered/spearman_absolute_discrepancy",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling atlas/cross_type_raw/reference_spearman",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling atlas/cross_type_raw/prediction_spearman",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling atlas/cross_type_raw/reference_pearson",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling atlas/cross_type_raw/prediction_pearson",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling atlas/cross_type_raw/spearman_absolute_discrepancy",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling atlas/within_record_AA_centered/reference_spearman",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling atlas/within_record_AA_centered/prediction_spearman",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling atlas/within_record_AA_centered/reference_pearson",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling atlas/within_record_AA_centered/prediction_pearson",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling atlas/within_record_AA_centered/spearman_absolute_discrepancy",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling dynarepo/cross_type_raw/reference_spearman",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling dynarepo/cross_type_raw/prediction_spearman",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling dynarepo/cross_type_raw/reference_pearson",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling dynarepo/cross_type_raw/prediction_pearson",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling dynarepo/cross_type_raw/spearman_absolute_discrepancy",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling dynarepo/within_record_AA_centered/reference_spearman",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling dynarepo/within_record_AA_centered/prediction_spearman",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling dynarepo/within_record_AA_centered/reference_pearson",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling dynarepo/within_record_AA_centered/prediction_pearson",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling dynarepo/within_record_AA_centered/spearman_absolute_discrepancy",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling itrace/cross_type_raw/reference_spearman",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling itrace/cross_type_raw/prediction_spearman",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling itrace/cross_type_raw/reference_pearson",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling itrace/cross_type_raw/prediction_pearson",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling itrace/cross_type_raw/spearman_absolute_discrepancy",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling itrace/within_record_AA_centered/reference_spearman",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling itrace/within_record_AA_centered/prediction_spearman",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling itrace/within_record_AA_centered/reference_pearson",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling itrace/within_record_AA_centered/prediction_pearson",
+      "passed": true
+    },
+    {
+      "name": "Record-macro coupling itrace/within_record_AA_centered/spearman_absolute_discrepancy",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/high_RMSF_high_Hchi/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/high_RMSF_high_Hchi/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/high_RMSF_high_Hchi/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/high_RMSF_high_Hchi/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/high_RMSF_low_Hchi/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/high_RMSF_low_Hchi/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/high_RMSF_low_Hchi/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/high_RMSF_low_Hchi/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/low_RMSF_high_Hchi/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/low_RMSF_high_Hchi/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/low_RMSF_high_Hchi/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/low_RMSF_high_Hchi/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/low_RMSF_low_Hchi/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/low_RMSF_low_Hchi/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/low_RMSF_low_Hchi/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/low_RMSF_low_Hchi/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/unclassified/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/unclassified/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/unclassified/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class all/unclassified/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/high_RMSF_high_Hchi/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/high_RMSF_high_Hchi/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/high_RMSF_high_Hchi/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/high_RMSF_high_Hchi/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/high_RMSF_low_Hchi/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/high_RMSF_low_Hchi/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/high_RMSF_low_Hchi/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/high_RMSF_low_Hchi/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/low_RMSF_high_Hchi/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/low_RMSF_high_Hchi/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/low_RMSF_high_Hchi/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/low_RMSF_high_Hchi/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/low_RMSF_low_Hchi/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/low_RMSF_low_Hchi/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/low_RMSF_low_Hchi/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/low_RMSF_low_Hchi/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/unclassified/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/unclassified/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/unclassified/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class atlas/unclassified/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/high_RMSF_high_Hchi/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/high_RMSF_high_Hchi/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/high_RMSF_high_Hchi/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/high_RMSF_high_Hchi/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/high_RMSF_low_Hchi/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/high_RMSF_low_Hchi/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/high_RMSF_low_Hchi/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/high_RMSF_low_Hchi/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/low_RMSF_high_Hchi/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/low_RMSF_high_Hchi/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/low_RMSF_high_Hchi/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/low_RMSF_high_Hchi/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/low_RMSF_low_Hchi/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/low_RMSF_low_Hchi/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/low_RMSF_low_Hchi/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/low_RMSF_low_Hchi/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/unclassified/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/unclassified/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/unclassified/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class dynarepo/unclassified/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/high_RMSF_high_Hchi/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/high_RMSF_high_Hchi/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/high_RMSF_high_Hchi/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/high_RMSF_high_Hchi/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/high_RMSF_low_Hchi/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/high_RMSF_low_Hchi/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/high_RMSF_low_Hchi/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/high_RMSF_low_Hchi/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/low_RMSF_high_Hchi/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/low_RMSF_high_Hchi/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/low_RMSF_high_Hchi/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/low_RMSF_high_Hchi/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/low_RMSF_low_Hchi/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/low_RMSF_low_Hchi/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/low_RMSF_low_Hchi/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/low_RMSF_low_Hchi/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/unclassified/reference_fraction",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/unclassified/rmsf_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/unclassified/hchi_mae",
+      "passed": true
+    },
+    {
+      "name": "Record-macro class itrace/unclassified/rank_class_recall",
+      "passed": true
+    },
+    {
+      "name": "NPZ 16pk_A/cross_type_raw/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ 16pk_A/cross_type_raw/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ 16pk_A/cross_type_raw/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ 16pk_A/cross_type_raw/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ 16pk_A/within_record_AA_centered/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ 16pk_A/within_record_AA_centered/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ 16pk_A/within_record_AA_centered/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ 16pk_A/within_record_AA_centered/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count 16pk_A/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count 16pk_A/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection 16pk_A/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 16pk_A/high_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 16pk_A/high_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count 16pk_A/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count 16pk_A/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection 16pk_A/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 16pk_A/high_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 16pk_A/high_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count 16pk_A/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count 16pk_A/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection 16pk_A/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 16pk_A/low_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 16pk_A/low_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count 16pk_A/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count 16pk_A/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection 16pk_A/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 16pk_A/low_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 16pk_A/low_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count 16pk_A/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count 16pk_A/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection 16pk_A/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 16pk_A/unclassified/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 16pk_A/unclassified/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ 3h1d_A/cross_type_raw/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ 3h1d_A/cross_type_raw/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ 3h1d_A/cross_type_raw/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ 3h1d_A/cross_type_raw/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ 3h1d_A/within_record_AA_centered/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ 3h1d_A/within_record_AA_centered/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ 3h1d_A/within_record_AA_centered/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ 3h1d_A/within_record_AA_centered/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count 3h1d_A/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count 3h1d_A/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection 3h1d_A/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 3h1d_A/high_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 3h1d_A/high_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count 3h1d_A/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count 3h1d_A/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection 3h1d_A/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 3h1d_A/high_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 3h1d_A/high_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count 3h1d_A/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count 3h1d_A/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection 3h1d_A/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 3h1d_A/low_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 3h1d_A/low_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count 3h1d_A/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count 3h1d_A/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection 3h1d_A/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 3h1d_A/low_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 3h1d_A/low_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count 3h1d_A/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count 3h1d_A/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection 3h1d_A/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 3h1d_A/unclassified/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 3h1d_A/unclassified/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ 8htw_B/cross_type_raw/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ 8htw_B/cross_type_raw/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ 8htw_B/cross_type_raw/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ 8htw_B/cross_type_raw/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ 8htw_B/within_record_AA_centered/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ 8htw_B/within_record_AA_centered/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ 8htw_B/within_record_AA_centered/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ 8htw_B/within_record_AA_centered/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count 8htw_B/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count 8htw_B/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection 8htw_B/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 8htw_B/high_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 8htw_B/high_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count 8htw_B/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count 8htw_B/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection 8htw_B/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 8htw_B/high_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 8htw_B/high_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count 8htw_B/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count 8htw_B/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection 8htw_B/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 8htw_B/low_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 8htw_B/low_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count 8htw_B/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count 8htw_B/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection 8htw_B/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 8htw_B/low_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 8htw_B/low_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count 8htw_B/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count 8htw_B/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection 8htw_B/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 8htw_B/unclassified/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE 8htw_B/unclassified/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ A000A/cross_type_raw/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ A000A/cross_type_raw/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ A000A/cross_type_raw/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ A000A/cross_type_raw/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ A000A/within_record_AA_centered/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ A000A/within_record_AA_centered/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ A000A/within_record_AA_centered/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ A000A/within_record_AA_centered/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count A000A/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count A000A/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection A000A/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A000A/high_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A000A/high_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count A000A/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count A000A/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection A000A/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A000A/high_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A000A/high_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count A000A/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count A000A/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection A000A/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A000A/low_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A000A/low_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count A000A/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count A000A/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection A000A/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A000A/low_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A000A/low_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count A000A/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count A000A/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection A000A/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A000A/unclassified/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A000A/unclassified/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ A00DO/cross_type_raw/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ A00DO/cross_type_raw/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ A00DO/cross_type_raw/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ A00DO/cross_type_raw/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ A00DO/within_record_AA_centered/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ A00DO/within_record_AA_centered/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ A00DO/within_record_AA_centered/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ A00DO/within_record_AA_centered/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count A00DO/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count A00DO/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection A00DO/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00DO/high_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00DO/high_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count A00DO/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count A00DO/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection A00DO/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00DO/high_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00DO/high_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count A00DO/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count A00DO/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection A00DO/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00DO/low_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00DO/low_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count A00DO/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count A00DO/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection A00DO/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00DO/low_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00DO/low_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count A00DO/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count A00DO/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection A00DO/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00DO/unclassified/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00DO/unclassified/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ A00QN/cross_type_raw/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ A00QN/cross_type_raw/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ A00QN/cross_type_raw/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ A00QN/cross_type_raw/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ A00QN/within_record_AA_centered/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ A00QN/within_record_AA_centered/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ A00QN/within_record_AA_centered/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ A00QN/within_record_AA_centered/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count A00QN/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count A00QN/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection A00QN/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00QN/high_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00QN/high_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count A00QN/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count A00QN/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection A00QN/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00QN/high_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00QN/high_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count A00QN/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count A00QN/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection A00QN/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00QN/low_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00QN/low_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count A00QN/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count A00QN/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection A00QN/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00QN/low_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00QN/low_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count A00QN/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count A00QN/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection A00QN/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00QN/unclassified/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE A00QN/unclassified/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_1ao7/cross_type_raw/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_1ao7/cross_type_raw/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_1ao7/cross_type_raw/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_1ao7/cross_type_raw/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_1ao7/within_record_AA_centered/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_1ao7/within_record_AA_centered/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_1ao7/within_record_AA_centered/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_1ao7/within_record_AA_centered/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count itrace_1ao7/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count itrace_1ao7/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection itrace_1ao7/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_1ao7/high_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_1ao7/high_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count itrace_1ao7/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count itrace_1ao7/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection itrace_1ao7/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_1ao7/high_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_1ao7/high_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count itrace_1ao7/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count itrace_1ao7/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection itrace_1ao7/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_1ao7/low_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_1ao7/low_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count itrace_1ao7/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count itrace_1ao7/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection itrace_1ao7/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_1ao7/low_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_1ao7/low_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count itrace_1ao7/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count itrace_1ao7/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection itrace_1ao7/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_1ao7/unclassified/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_1ao7/unclassified/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_5yxn/cross_type_raw/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_5yxn/cross_type_raw/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_5yxn/cross_type_raw/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_5yxn/cross_type_raw/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_5yxn/within_record_AA_centered/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_5yxn/within_record_AA_centered/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_5yxn/within_record_AA_centered/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_5yxn/within_record_AA_centered/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count itrace_5yxn/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count itrace_5yxn/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection itrace_5yxn/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_5yxn/high_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_5yxn/high_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count itrace_5yxn/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count itrace_5yxn/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection itrace_5yxn/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_5yxn/high_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_5yxn/high_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count itrace_5yxn/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count itrace_5yxn/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection itrace_5yxn/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_5yxn/low_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_5yxn/low_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count itrace_5yxn/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count itrace_5yxn/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection itrace_5yxn/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_5yxn/low_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_5yxn/low_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count itrace_5yxn/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count itrace_5yxn/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection itrace_5yxn/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_5yxn/unclassified/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_5yxn/unclassified/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_9rxm/cross_type_raw/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_9rxm/cross_type_raw/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_9rxm/cross_type_raw/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_9rxm/cross_type_raw/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_9rxm/within_record_AA_centered/reference/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_9rxm/within_record_AA_centered/reference/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_9rxm/within_record_AA_centered/prediction/spearman",
+      "passed": true
+    },
+    {
+      "name": "NPZ itrace_9rxm/within_record_AA_centered/prediction/pearson",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count itrace_9rxm/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count itrace_9rxm/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection itrace_9rxm/high_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_9rxm/high_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_9rxm/high_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count itrace_9rxm/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count itrace_9rxm/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection itrace_9rxm/high_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_9rxm/high_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_9rxm/high_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count itrace_9rxm/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count itrace_9rxm/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection itrace_9rxm/low_RMSF_high_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_9rxm/low_RMSF_high_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_9rxm/low_RMSF_high_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count itrace_9rxm/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count itrace_9rxm/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection itrace_9rxm/low_RMSF_low_Hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_9rxm/low_RMSF_low_Hchi/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_9rxm/low_RMSF_low_Hchi/hchi",
+      "passed": true
+    },
+    {
+      "name": "NPZ class count itrace_9rxm/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ predicted class count itrace_9rxm/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ class intersection itrace_9rxm/unclassified",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_9rxm/unclassified/rmsf",
+      "passed": true
+    },
+    {
+      "name": "NPZ group MAE itrace_9rxm/unclassified/hchi",
+      "passed": true
+    },
+    {
+      "name": "No existing run certificate modified",
+      "passed": true
+    }
+  ],
+  "checked_samples": [
+    {
+      "sample_id": "16pk_A",
+      "count": 336,
+      "same_AA_types": 18
+    },
+    {
+      "sample_id": "3h1d_A",
+      "count": 360,
+      "same_AA_types": 18
+    },
+    {
+      "sample_id": "8htw_B",
+      "count": 161,
+      "same_AA_types": 18
+    },
+    {
+      "sample_id": "A000A",
+      "count": 255,
+      "same_AA_types": 18
+    },
+    {
+      "sample_id": "A00DO",
+      "count": 244,
+      "same_AA_types": 18
+    },
+    {
+      "sample_id": "A00QN",
+      "count": 347,
+      "same_AA_types": 18
+    },
+    {
+      "sample_id": "itrace_1ao7",
+      "count": 610,
+      "same_AA_types": 18
+    },
+    {
+      "sample_id": "itrace_5yxn",
+      "count": 717,
+      "same_AA_types": 18
+    },
+    {
+      "sample_id": "itrace_9rxm",
+      "count": 660,
+      "same_AA_types": 18
+    }
+  ],
+  "sample_selection": "First, middle, last alphabetical ID in each source; no result-dependent choice",
+  "no_GPU": true,
+  "no_inference": true,
+  "no_training": true,
+  "no_existing_audit_modified": true,
+  "raw_mask_inventory": [
+    {
+      "dataset": "atlas",
+      "amino_acid": "A",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 0,
+      "residue_count": 35107
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "C",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 6105
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "D",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 25601
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "E",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 30863
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "F",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 16733
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "G",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 0,
+      "residue_count": 30736
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "H",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 10530
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "I",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 24659
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "K",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 0,
+      "residue_count": 2
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "K",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 27141
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "L",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 39889
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "M",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 10079
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "N",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 18797
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "P",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 19399
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "Q",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 16116
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "R",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 21861
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "S",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 25897
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "T",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 23478
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "V",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 29406
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "W",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 5573
+    },
+    {
+      "dataset": "atlas",
+      "amino_acid": "Y",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 15235
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "A",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 0,
+      "residue_count": 22438
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "C",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 6942
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "D",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 18232
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "E",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 20604
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "F",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 12956
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "G",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 0,
+      "residue_count": 23059
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "H",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 7063
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "I",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 17459
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "K",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 19447
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "L",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 29105
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "M",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 6217
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "N",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 15669
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "P",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 15174
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "Q",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 13686
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "R",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 15373
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "S",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 24245
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "T",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 20343
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "V",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 23059
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "W",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 4919
+    },
+    {
+      "dataset": "dynarepo",
+      "amino_acid": "Y",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 12456
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "A",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 0,
+      "residue_count": 13285
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "C",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 3897
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "D",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 12725
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "E",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 13093
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "F",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 8524
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "G",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 0,
+      "residue_count": 11706
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "H",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 5497
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "I",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 6070
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "K",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 9253
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "L",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 14440
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "M",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 3134
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "N",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 7322
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "P",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 10249
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "Q",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 11410
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "R",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 11738
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "S",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 17271
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "T",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 13486
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "V",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 12541
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "W",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 4955
+    },
+    {
+      "dataset": "itrace",
+      "amino_acid": "Y",
+      "valid_rmsf": 1,
+      "valid_chi_entropy": 1,
+      "residue_count": 9072
+    }
+  ],
+  "absent_record_AA_groups": 1805,
+  "observed_record_AA_groups": 53329,
+  "validation_output_sha256": {
+    "raw_mask_inventory_by_AA_and_source.csv": "ff87d125848cca60761c114366c5bd3fa66c723646278c9fbad428166281de4f",
+    "absent_record_AA_groups.csv": "ba98ba7f8d2464628f6e7625dc92996dfddc06c925aee3578e1badcd3713f333"
+  }
+}

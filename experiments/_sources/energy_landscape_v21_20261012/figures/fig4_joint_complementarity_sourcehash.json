@@ -1,0 +1,83 @@
+{
+  "status": "complete_visual_QA_passed",
+  "source_sha256": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\frozen_input_records.csv": "01981240cadbe5ffe2ee6a56222094ef900a1dccd82e857ba876d0c8864f294f",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\per_record_correlations.csv": "72ff1df33e0c2ec04dcebd1b1409c844651d9f9f1e12945791765f83ee1943c4",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\per_record_reference_classes.csv": "d171e54b3da50085dc50e1e6d2a4bb23f88c4e7c16478fd6d5d828a60c372ae8",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\run_audit.json": "bd565cbbde3b72176937d83161b2d1aeb59f9d6ea59be04a492f1b4c2b8c87bc",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\input_freeze.json": "b6d042ffefd1bd70d0c8fdb513d52a4c1fdd88225295407a36533d3bfa35d96c",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\validation\\independent_validation.json": "d28140415aba14caaa8cdd7ead5c29bb9edd671fd4379e9119891ba8d4c8511c",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figures\\redraw_quantitative.py": "e2a2710ee16499d8f577a8d4c48a7779714f11fc9c3d6471ce5c4d285789cc2d"
+  },
+  "script_sha256": "bda9d7f3d604046d194a5c3beaf62faaca467279d182fb5f044f6b5365fdd3da",
+  "copy_first": {
+    "original": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figures\\redraw_quantitative.py",
+    "original_sha256": "e2a2710ee16499d8f577a8d4c48a7779714f11fc9c3d6471ce5c4d285789cc2d",
+    "initial_complete_copy_bytes": 32630,
+    "all_original_functions_and_style_preserved": true,
+    "copied_entrypoint_only_disabled": true,
+    "new_native_function_appended": true
+  },
+  "figure": {
+    "caption_zh": "图4：主链波动与侧链状态多样性的互补性及组合恢复。分析采用3,063条记录的完整模型折外预测，RMSF与Hχ共同有效位置共824,988个。（a）逐记录计算RMSF与Hχ在减去记录内同类型均值后的Spearman相关，再展示全部记录的经验累积分布；灰线为轨迹参考，蓝线为折外预测，标注值为记录等权均值。（b）四类组合在每条记录全部共同有效位置中的占比，再对3,063条记录等权平均。LL、LH、HL、HH的首位分别表示RMSF低或高，第二位表示Hχ低或高；每条记录内，同一种氨基酸至少具有4个共同有效位置且第25与第75百分位不同，低定义为不高于第25百分位，高定义为不低于第75百分位，并列值全部保留。中间位置、同类型位置少于4个或分位重合的情况归为未分类，其比例在图下保留，四类比例不重新归一化。（c）预测在自身同记录同类型分位中恢复各参考组合的召回率，定义为预测与参考同类位置的交集数除以参考组位置数。灰点为所有具有该参考组的记录，蓝色菱形为记录等权均值；横轴第二、三行分别为均值和对应记录数。四组均纳入所有可计算记录。",
+    "panels": [
+      "a all3063 same-AA-centered cross-output Spearman ECDF",
+      "b record-macro class fractions and retained unclassified fractions",
+      "c all12130 defined per-record class recalls and macro means"
+    ],
+    "statistics_csv": "fig4_joint_complementarity_statistics.csv",
+    "inputpaths": [
+      "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\per_record_correlations.csv",
+      "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\per_record_reference_classes.csv",
+      "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\frozen_input_records.csv",
+      "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\run_audit.json",
+      "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\input_freeze.json",
+      "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\validation\\independent_validation.json"
+    ],
+    "input_sha256": {
+      "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\per_record_correlations.csv": "72ff1df33e0c2ec04dcebd1b1409c844651d9f9f1e12945791765f83ee1943c4",
+      "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\per_record_reference_classes.csv": "d171e54b3da50085dc50e1e6d2a4bb23f88c4e7c16478fd6d5d828a60c372ae8",
+      "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\frozen_input_records.csv": "01981240cadbe5ffe2ee6a56222094ef900a1dccd82e857ba876d0c8864f294f",
+      "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\run_audit.json": "bd565cbbde3b72176937d83161b2d1aeb59f9d6ea59be04a492f1b4c2b8c87bc",
+      "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\input_freeze.json": "b6d042ffefd1bd70d0c8fdb513d52a4c1fdd88225295407a36533d3bfa35d96c",
+      "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\oof_analysis\\validation\\independent_validation.json": "d28140415aba14caaa8cdd7ead5c29bb9edd671fd4379e9119891ba8d4c8511c"
+    },
+    "qa": {
+      "width_mm": 183.0,
+      "height_mm": 80.0,
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "minimum_text_pt": 7.5,
+      "text_outside_canvas": [],
+      "svg_raster_images": 0,
+      "svg_editable_text": 63,
+      "pixel_content_density": [
+        0.06007596627431338,
+        0.2519325486267635,
+        0.2558978211870774
+      ],
+      "visual_review": "READY; actual full PNG reviewed with view_image; no visible defects.",
+      "font": "Microsoft YaHei / Arial; TrueType PDF fonts, editable SVG text",
+      "all_data_preserved": true,
+      "no_ci_or_p_values": true
+    },
+    "outputs": {
+      "png": {
+        "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\figures\\fig4_joint_complementarity.png",
+        "sha256": "63cef497b3a8e94c9d6100c369f938be046df161ad5b0bc1d366c64ca0ffeca4"
+      },
+      "pdf": {
+        "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\figures\\fig4_joint_complementarity.pdf",
+        "sha256": "2a7956d410e466a689843ff02875edc95b911591275a3ece7a182bf8d46d5197"
+      },
+      "svg": {
+        "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\figures\\fig4_joint_complementarity.svg",
+        "sha256": "56fa86072dc3920f0c3ea6b4024458a62153cad7aa1c82cbdf39b6a01d175543"
+      }
+    }
+  },
+  "output_metadata_sha256": "a6bdb0a349d0106dbf4aa79863819beec9cbed114196c9bff0dfcd59b9715e80",
+  "visual_QA_file": "fig4_joint_complementarity_QA.json"
+}

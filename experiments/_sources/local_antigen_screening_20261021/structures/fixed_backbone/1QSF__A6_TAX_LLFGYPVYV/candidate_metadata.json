@@ -1,0 +1,48 @@
+{
+  "candidate_id": "1QSF__A6_TAX_LLFGYPVYV",
+  "biological_candidate_id": "A6_TAX_LLFGYPVYV",
+  "panel_id": "A6_TAX",
+  "template_pdb": "1QSF",
+  "primary": false,
+  "sensitivity": true,
+  "is_primary_template": false,
+  "is_sensitivity_template": true,
+  "is_panel_parent": true,
+  "parent_biological_candidate_id": "A6_TAX_LLFGYPVYV",
+  "parent_inference_candidate_id": "1QSF__A6_TAX_LLFGYPVYV",
+  "tcr": "A6",
+  "hla": "HLA-A*02:01",
+  "antigen": "HTLV-1 Tax",
+  "peptide_sequence": "LLFGYPVYV",
+  "peptide_length": 9,
+  "peptide_chain": "C",
+  "roles": {
+    "hla_heavy": "A",
+    "beta2m": "B",
+    "peptide": "C",
+    "tcr_alpha": "D",
+    "tcr_beta": "E"
+  },
+  "panel_reference_peptide": "LLFGYPVYV",
+  "native_peptide": "LLFGYPVYV",
+  "template_peptide_sequence": "LLFGYPVAV",
+  "mutations_vs_panel_reference": "",
+  "mutations_vs_template": [
+    "A8Y"
+  ],
+  "input_mode": "fixed-backbone",
+  "input_pdb": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\raw\\github\\mutation_effects\\tax\\pdbs\\1qsf.pdb",
+  "template_input_pdb": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\raw\\github\\mutation_effects\\tax\\pdbs\\1qsf.pdb",
+  "template_input_sha256": "d7fad48cbd6b8da70a6b3e1c76340814405f4d3804d0f7b32b8ff5bf1315c29d",
+  "chain_sequences": {
+    "C": "LLFGYPVYV"
+  },
+  "prepared_input_pdb": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\fixed_backbone\\1QSF__A6_TAX_LLFGYPVYV\\model_input_fixed_backbone.pdb",
+  "prepared_input_sha256": "7c0bd435487054ebf5c1339aba0d524529039ceb43be4e3a72fd3e94dab9a72f",
+  "prepared_input_residues": 826,
+  "geometry_valid_count": 826,
+  "all_backbone_coordinates_bit_identical_to_template": true,
+  "prepared_input_audit": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\fixed_backbone\\1QSF__A6_TAX_LLFGYPVYV\\input_preparation_audit.json",
+  "labels_or_closest_template_used_for_preparation": false,
+  "predictions_generated": false
+}

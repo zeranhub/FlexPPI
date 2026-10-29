@@ -1,0 +1,3193 @@
+{
+  "retrieved_utc": "2026-10-10T05:19:22Z",
+  "requested_ids": [
+    "7JVA",
+    "7JWI",
+    "7JWJ",
+    "7K7P",
+    "7KET",
+    "7KF0",
+    "7KF1",
+    "7KFW",
+    "7KWT",
+    "7L0L",
+    "7L1D",
+    "7L5J",
+    "7L6V",
+    "7L7R",
+    "7LA6",
+    "7LAO",
+    "7LO6",
+    "7LP1",
+    "7LR4",
+    "7LSG",
+    "7LVW",
+    "7LZP",
+    "7M1H",
+    "7M3N",
+    "7M8H",
+    "7MF4",
+    "7MFU",
+    "7MHY",
+    "7MI2",
+    "7MMN",
+    "7MPG",
+    "7MQ3",
+    "7MZJ",
+    "7MZK",
+    "7MZM",
+    "7N0J",
+    "7N1E",
+    "7N1F",
+    "7N1N",
+    "7N2N",
+    "7N2O",
+    "7N2P",
+    "7N2Q",
+    "7N2R",
+    "7N2S",
+    "7N4J",
+    "7N4K",
+    "7N51",
+    "7N5C",
+    "7N5P"
+  ],
+  "response": {
+    "data": {
+      "entries": [
+        {
+          "rcsb_id": "7JVA",
+          "struct": {
+            "title": "SARS-CoV-2 spike in complex with the S2A4 neutralizing antibody Fab fragment (local refinement of the receptor-binding domain and Fab variable domains)"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "VIRAL PROTEIN/IMMUNE SYSTEM",
+            "text": "SARS-CoV-2, COVID-19, spike glycoprotein, fusion protein, neutralizing antibodies, Structural Genomics, Seattle Structural Genomics Center for Infectious Disease, SSGCID, VIRAL PROTEIN-IMMUNE SYSTEM complex"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7JVA_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Spike glycoprotein",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P0DTC2"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7JVA_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "S2A4 Fab light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "L"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7JVA_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "S2A4 Fab heavy chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "H"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7JWI",
+          "struct": {
+            "title": "Crystal structure of B17.R2 TCR in complex with H2D-b-NP366"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "TCR, MHC, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7JWI_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "B17.R2 TCR beta chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7JWI_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "B17.R2 TCR alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7JWI_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Nucleoprotein",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "Q9Q0U8"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7JWI_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Beta-2-microglobulin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7JWI_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "H-2 class I histocompatibility antigen, D-B alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P01899"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7JWJ",
+          "struct": {
+            "title": "Crystal Structure of B17-C1 TCR-H2Db"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "TCR, MHC, Complex, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7JWJ_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "B17.C1 TCR beta chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7JWJ_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "B17.C1 TCR alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7JWJ_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Nucleoprotein",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "Q9Q0U8"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7JWJ_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Beta-2-microglobulin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P01887"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7JWJ_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "H-2 class I histocompatibility antigen, D-B alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P01899"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7K7P",
+          "struct": {
+            "title": "Structure of SARS-CoV-2 nonstuctural protein 1"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "VIRAL PROTEIN",
+            "text": "SARS-CoV-2, coronavirus, NSP1, VIRAL PROTEIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7K7P_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Host translation inhibitor nsp1",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P0DTD1"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7KF0",
+          "struct": {
+            "title": "Crystal structure of bH1 Fab variant (CDR H3 loop design 13_0346) in complex with VEGF"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "Fab-antigen complex, CDR H3 loop, VEGF, antibody design, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7KF0_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Isoform L-VEGF206 of Vascular endothelial growth factor A",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C",
+                  "V"
+                ],
+                "uniprot_ids": [
+                  "P15692"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7KF0_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "anti-VEGF-A Fab bH1 light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "L"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7KF0_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "anti-VEGF-A Fab bH1 heavy chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "H"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7KF1",
+          "struct": {
+            "title": "Crystal structure of bH1 Fab variant (CDR H3 loop design 14_0130) in complex with VEGF"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "Fab-antigen complex, CDR H3 loop, VEGF, antibody design, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7KF1_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Isoform L-VEGF206 of Vascular endothelial growth factor A",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C",
+                  "F",
+                  "J",
+                  "V"
+                ],
+                "uniprot_ids": [
+                  "P15692"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7KF1_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "anti-VEGF-A Fab bH1 light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "E",
+                  "I",
+                  "L"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7KF1_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "anti-VEGF-A Fab bH1 heavy chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "D",
+                  "G",
+                  "H"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7KFW",
+          "struct": {
+            "title": "Structural basis for a germline-biased antibody response to SARS-CoV-2 (RBD:C1A-B3 Fab)"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM/Viral protein",
+            "text": "COVID-19, SARS-CoV-2, neutralizing antibody, affinity maturation, IMMUNE SYSTEM, IMMUNE SYSTEM-Viral protein complex"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7KFW_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Spike glycoprotein",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "E"
+                ],
+                "uniprot_ids": [
+                  "P0DTC2"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7KFW_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "light chain of antibody C1A-B3 Fab",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D",
+                  "G",
+                  "L"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7KFW_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "heavy chain of antibody C1A-B3 Fab",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C",
+                  "F",
+                  "H"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7L0L",
+          "struct": {
+            "title": "Cryo-EM structure of the VRC316 clinical trial, vaccine-elicited, human antibody 316-310-1B11 in complex with an H2 CAN05 HA trimer"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM/Viral protein",
+            "text": "VRC, IMMUNE SYSTEM, VRC316, H2, Fab, Flu, IMMUNE SYSTEM-Viral protein complex"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7L0L_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "316-310-1B11 Heavy Chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "G",
+                  "H",
+                  "I"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7L0L_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Hemagglutinin HA2 chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "E",
+                  "F"
+                ],
+                "uniprot_ids": [
+                  "Q4ZH98"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7L0L_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Hemagglutinin HA1 chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "C",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "Q4ZH98"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7L0L_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "316-310-1B11 Light Chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "J",
+                  "K",
+                  "L"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7L1D",
+          "struct": {
+            "title": "Crystal structure of human 21LT2-2 TCR bound to HLA-A*03:01 in complex with a mutant PIK3CA peptide"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "T cell receptor, peptide major histocompatibility complex, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7L1D_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "T cell receptor, beta chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7L1D_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "T cell receptor, alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7L1D_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Mutant PIK3CA peptide",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P42336"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7L1D_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Beta-2-microglobulin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7L1D_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "HLA class I histocompatibility antigen, A alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P04439"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7L5J",
+          "struct": {
+            "title": "Mouse Norovirus Protruding domain complexed with neutralizing Fab fragment from mAb A6.2"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "VIRAL PROTEIN/IMMUNE SYSTEM",
+            "text": "Antibody, norovirus, spike, VIRAL PROTEIN, VIRAL PROTEIN-IMMUNE SYSTEM complex"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7L5J_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Anti mouse norovirus mAb A6.2 Fab heavy chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "W",
+                  "Y"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7L5J_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Anti mouse norovirus mAb A6.2 Fab light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "L",
+                  "X"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7L5J_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Capsid protein",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "Q2V8W4"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7L6V",
+          "struct": {
+            "title": "Crystal structure of BoNT/A-LC-JPU-A5-JPU-C1-JPU-H7-JPU-D12-ciA-F12"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "ANTITOXIN",
+            "text": "neurotoxin, enzyme inhibitor, ANTITOXIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7L6V_6",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "JPU-D12",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "F"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7L6V_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Single-domain antibody VHH ciA-F12",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7L6V_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "JPU-H7",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7L6V_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "JPU-A5",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7L6V_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "JPU-C1",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7L6V_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "BoNT/A",
+                "pdbx_ec": "3.4.24.69"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P0DPI1"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7L7R",
+          "struct": {
+            "title": "CCHFV Gc prefusion monomer bound to ADI-36121 and ADI-37801 Fabs"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "VIRAL PROTEIN",
+            "text": "fusion protein, antibody, Fab complex, class II fusion, VIRAL PROTEIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7L7R_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Glycoprotein C",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "G"
+                ],
+                "uniprot_ids": [
+                  "Q8JSZ3"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7L7R_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "ADI-37801 Fab heavy chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7L7R_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "ADI-37801 Fab light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7L7R_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "ADI-36121 Fab heavy chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7L7R_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "ADI-36121 Fab light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7LA6",
+          "struct": {
+            "title": "THE STRUCTURE OF A SENSOR DOMAIN OF A HISTIDINE KINASE (VxrA) FROM VIBRIO CHOLERAE O1 BIOVAR ELTOR STR. N16961, N239 deletion mutant"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "SIGNALING PROTEIN",
+            "text": "VXRA, TWO-COMPONENT SYSTEM, HISTIDINE KINASE, SENSOR DOMAIN, Structural Genomics, Center for Structural Genomics of Infectious Diseases, CSGID, SIGNALING PROTEIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7LA6_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Sensor histidine kinase",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "Q9KM24"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7LR4",
+          "struct": {
+            "title": "Complex of Fab 2/1.12 with domain 3 of P. berghei HAP2"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "CELL ADHESION/IMMUNE SYSTEM",
+            "text": "transmission-blocking malaria vaccine, membrane fusion, gamete fusogen, monoclonal antibody, SURFACTANT PROTEIN, CELL ADHESION, CELL ADHESION-IMMUNE SYSTEM complex"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7LR4_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Hapless 2",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "Q4YCF6"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7LR4_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "D3_2/1.12 Fab light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "L"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7LR4_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "D3_2/1.12 Fab heavy chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "H"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7LSG",
+          "struct": {
+            "title": "Crystal structure of the human neutralizing antibody Fab fragment T025 bound to TBEV EDIII (Siberian Subtype)"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM/VIRAL PROTEIN",
+            "text": "Tick-borne encephalitis virus, antibody, EDIII, TBEV, IMMUNE SYSTEM, IMMUNE SYSTEM-VIRAL PROTEIN complex"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7LSG_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Core protein",
+                "pdbx_ec": "3.4.21.91,3.6.1.15,3.6.4.13"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P14336"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7LSG_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "T025 Fab Light Chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "L"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7LSG_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "T025 Fab Heavy Chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "H"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7LVW",
+          "struct": {
+            "title": "Structure of RSV F in Complex with VHH Cl184"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM/VIRAL PROTEIN",
+            "text": "nanobody, VHH, antibody, fusion protein, virus complex, IMMUNE SYSTEM, IMMUNE SYSTEM-VIRAL PROTEIN complex"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7LVW_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "F-VHH-Cl184",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7LVW_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Fusion glycoprotein F0",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F"
+                ],
+                "uniprot_ids": [
+                  "P03420"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7LZP",
+          "struct": {
+            "title": "LC/A-JPU-B9-JPU-A11-JPU-G11"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "ANTITOXIN",
+            "text": "Single domain antibody, VHH, protease inhibitor, ANTITOXIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7LZP_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "JPU-B9",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "G",
+                  "H"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7LZP_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "JPU-A11",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "E"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7LZP_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "JPU-G11",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C",
+                  "F"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7LZP_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Botulinum neurotoxin A light chain",
+                "pdbx_ec": "3.4.24.69"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "P0DPI1"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7M1H",
+          "struct": {
+            "title": "Crystal structure of LC/A-JPU-C10-JPU-D12-JPU-B8-JPU-G3-ciA-F12-ciA-D12"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "ANTITOXIN",
+            "text": "VHH, protease domain, TOXIN, ANTITOXIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7M1H_7",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "JPU-B8",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "G"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7M1H_6",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "JPU-C10",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "F"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7M1H_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "JPU-G3",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7M1H_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "ciA-D12",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7M1H_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "ciA-F12",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7M1H_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "JPU-D12",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7M1H_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Botulinum neurotoxin A light chain",
+                "pdbx_ec": "3.4.24.69"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P0DPI1"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7M8H",
+          "struct": {
+            "title": "Structure of Memo1 C244S metal binding site mutant at 1.75A"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "METAL BINDING PROTEIN",
+            "text": "Metal binding protein, Breast Cancer, iron binding protein"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7M8H_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Protein MEMO1",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "Q9Y316"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7MFU",
+          "struct": {
+            "title": "Crystal structure of synthetic nanobody (Sb14+Sb68) complexes with SARS-CoV-2 receptor binding domain"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "VIRAL PROTEIN",
+            "text": "SARS-CoV-2, Spike Protein, Receptor Binding Domain, RBD, Antibody, Nanobody, Sybody, Complex, Neutralization, VIRAL PROTEIN, Epitope"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7MFU_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Synthetic nanobody #68 (Sb68)",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C",
+                  "F"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7MFU_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Synthetic Nanobody #14 (Sb14)",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "E"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7MFU_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Spike protein S1",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "P0DTC2"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7MHY",
+          "struct": {
+            "title": "Human Hedgehog acyltransferase (HHAT) in complex with palmitoyl-CoA and two Fab antibody fragments"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "TRANSFERASE/IMMUNE SYSTEM",
+            "text": "MBOAT, GOAT, porcupine, acyl transferase, membrane protein, membrane enzyme, ER, palmitoyl-CoA, TRANSFERASE-IMMUNE SYSTEM complex"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7MHY_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Protein-cysteine N-palmitoyltransferase HHAT",
+                "pdbx_ec": "2.3.1"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "Q5VTY9"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7MHY_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "1C06 Fab heavy chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "M"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7MHY_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "1C06 Fab light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "N"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7MHY_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "3H02 Fab light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "P"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7MHY_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "3H02 Fab heavy chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "O"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7MMN",
+          "struct": {
+            "title": "Crystal Structure of the Prefusion RSV F Glycoprotein bound by human antibody AM14"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM/VIRAL PROTEIN",
+            "text": "viral particle, antibody, IMMUNE SYSTEM, IMMUNE SYSTEM-VIRAL PROTEIN complex"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7MMN_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "AM14 Fab Heavy Chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D",
+                  "H",
+                  "M"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7MMN_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Fusion glycoprotein F1,Fibritin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "I",
+                  "K"
+                ],
+                "uniprot_ids": [
+                  "P03420"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7MMN_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Fusion glycoprotein F2",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "C",
+                  "J"
+                ],
+                "uniprot_ids": [
+                  "P03420"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7MMN_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "AM14 Fab Light Chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E",
+                  "G",
+                  "L"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7MPG",
+          "struct": {
+            "title": "Cryo-EM structure of Prefusion-stabilized RSV F (DS-Cav1) in complex with Fab AM14"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "antigen, antibody, epitope, vaccine, structural vaccinology, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7MPG_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "AM14 Fab Light Chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E",
+                  "G",
+                  "I"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7MPG_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "AM14 Fab Heavy Chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D",
+                  "F",
+                  "H"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7MPG_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Fusion glycoprotein F0,Envelope glycoprotein",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P03420"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7MQ3",
+          "struct": {
+            "title": "C9A N55A Streptococcus pneumoniae CstR in the reduced state"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "TRANSCRIPTION",
+            "text": "CsoR family, persulfide sensor, DNA binding protein, TRANSCRIPTION"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7MQ3_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Copper-sensing transcriptional repressor csoR",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "A0A0H2ZNA4"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7MZJ",
+          "struct": {
+            "title": "SARS-CoV-2 receptor binding domain bound to Fab WCSL 129 and Fab PDI 93"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "VIRAL PROTEIN",
+            "text": "SARS-CoV-2, spike, RBD, human antibody, VIRAL PROTEIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7MZJ_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PDI 93 heavy chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "H",
+                  "N"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7MZJ_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PDI 93 light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "L",
+                  "M"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7MZJ_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Spike protein S1",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P0DTC2"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7MZJ_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "WCSL 129 heavy chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C",
+                  "F"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7MZJ_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "WCSL 129 light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D",
+                  "E"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7MZK",
+          "struct": {
+            "title": "SARS-CoV-2 receptor binding domain bound to Fab WCSL 129 and Fab PDI 96"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "VIRAL PROTEIN",
+            "text": "SARS-CoV-2, spike, RBD, human antibody, VIRAL PROTEIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7MZK_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PDI 96 light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "L",
+                  "M"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7MZK_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PDI 96 heavy chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "H",
+                  "N"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7MZK_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "WCSL 129 light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D",
+                  "E"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7MZK_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Spike protein S1",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P0DTC2"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7MZK_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "WCSL 129 heavy chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C",
+                  "F"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7MZM",
+          "struct": {
+            "title": "SARS-CoV-2 receptor binding domain bound to Fab PDI 215"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "VIRAL PROTEIN",
+            "text": "SARS-CoV-2, spike, RBD, human antibody, VIRAL PROTEIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7MZM_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PDI 215 heavy chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "H"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7MZM_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Spike protein S1",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P0DTC2"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7MZM_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PDI 215 light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "L"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7N1E",
+          "struct": {
+            "title": "SARS-CoV-2 RLQ peptide-specific TCR pRLQ3 binds to RLQ-HLA-A2"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "TCR-pMHC, SARS-CoV-2, SPIKE, RLQ, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7N1E_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "pRLQ3 T cell receptor beta chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7N1E_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "pRLQ3 T cell receptor alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7N1E_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Spike protein S2",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P0DTC2"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N1E_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Beta-2-microglobulin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N1E_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "MHC class I antigen, A-2 alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "A0A140T913"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7N1F",
+          "struct": {
+            "title": "SARS-CoV-2 YLQ peptide-specific TCR pYLQ7 binds to YLQ-HLA-A2"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "TCR-pMHC, SARS-CoV-2, SPIKE, YLQ, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7N1F_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Spike protein S1",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P0DTC2"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N1F_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Beta-2-microglobulin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N1F_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "MHC class I antigen, A-2 alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "A0A140T913"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N1F_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "pYLQ7 T cell receptor beta chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7N1F_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "pYLQ7 T cell receptor alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7N1N",
+          "struct": {
+            "title": "Prx in complex with ComR DNA-binding domain"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "VIRAL PROTEIN/TRANSCRIPTION",
+            "text": "Paratox, bacteriophage, quorum sensing, Streptococcus, ComR, natural competence, VIRAL PROTEIN-TRANSCRIPTION complex"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7N1N_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "ComR",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "Q8DWI6"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N1N_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Prx",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "A0A0H2UWN8"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7N2N",
+          "struct": {
+            "title": "TCR-antigen complex AS4.2-PRPF3-HLA*B27"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "TCR MHC HLA-B27, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7N2N_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "T cell receptor beta chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "F"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7N2N_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "T cell receptor alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7N2N_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Beta-2-microglobulin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N2N_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Human leukocyte antigen (HLA) B27",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "A3F718"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N2N_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Pre-MRNA Processing Factor 3",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "O43395"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7N2O",
+          "struct": {
+            "title": "AS4.2-YEIH-HLA*B27"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "TCR MHC HLA-B27, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7N2O_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "T-cell receptor beta chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "F"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7N2O_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "T-cell receptor alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7N2O_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Beta-2-microglobulin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N2O_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Human leukocyte antigen (HLA) B27",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "A3F718"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N2O_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "YeiH protein",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P62723"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7N2P",
+          "struct": {
+            "title": "AS4.3-RNASEH2b-HLA*B27"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "TCR MHC HLA-B27, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7N2P_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Human leukocyte antigen (HLA) B27",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "A3F718"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N2P_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "AS4.3 T cell receptor beta chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "F"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7N2P_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "AS4.3 T cell receptor alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7N2P_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Ribonuclease H2 subunit B",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "A0A2R8Y7R8"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N2P_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Beta-2-microglobulin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7N2Q",
+          "struct": {
+            "title": "AS4.3-YEIH-HLA*B27"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "TCR MHC HLA-B27, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7N2Q_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "YeiH protein",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C",
+                  "J"
+                ],
+                "uniprot_ids": [
+                  "P62723"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N2Q_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Beta-2-microglobulin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "I"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N2Q_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Human leukocyte antigen B27",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "H"
+                ],
+                "uniprot_ids": [
+                  "A3F718"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N2Q_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "AS4.3 T cell receptor beta chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "F",
+                  "G"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7N2Q_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "AS4.3 T cell receptor alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D",
+                  "E"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7N2R",
+          "struct": {
+            "title": "AS4.3-PRPF3-HLA*B27"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "TCR MHC HLA-B27, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7N2R_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Pre-MRNA Processing Factor 3",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "O43395"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N2R_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Beta-2-microglobulin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N2R_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Human leukocyte antigen (HLA) B27",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "A3F718"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N2R_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "AS4.3 T cell receptor beta chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "F"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7N2R_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "AS4.3 T cell receptor alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7N4J",
+          "struct": {
+            "title": "Crystal structure of SARS-CoV-2 receptor binding domain in complex with neutralizing human antibody WRAIR-2173."
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "VIRAL PROTEIN/IMMUNE SYSTEM",
+            "text": "Neutralizing antibody, SARS-CoV-2, WRAIR-2173, receptor binding domain, ANTIVIRAL PROTEIN, VIRAL PROTEIN-IMMUNE SYSTEM complex"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7N4J_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Spike protein S1",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P0DTC2"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N4J_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "WRAIR-2173 antibody Fab light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "L"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7N4J_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "WRAIR-2173 antibody Fab heavy chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "H"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7N4K",
+          "struct": {
+            "title": "6218 TCR in complex with H2-Db PA 224"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "Major Histocompatibility complex, MHC, mouse, Influenza A, polymerase acidic protein, H2Db, T cell receptor, PA224-233, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7N4K_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Fusion protein of T cell receptor beta, variable 29 and Human nkt tcr beta chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E"
+                ],
+                "uniprot_ids": [
+                  "A0A0G2LB96",
+                  "K7N5M4"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N4K_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Fusion protein of T cell receptor alpha variable 21-DV12 and T-cell receptor, sp3.4 alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "A0A075B6C4",
+                  "K7N5N2"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N4K_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Peptide from Polymerase acidic protein",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "O89752"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N4K_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Beta-2-microglobulin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N4K_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "H-2 class I histocompatibility antigen, D-B alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P01899"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7N5C",
+          "struct": {
+            "title": "6218 TCR in complex with H2Db PA with an engineered TCR-pMHC disulfide bond"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "Major Histocompatibility complex, MHC, mouse, Influenza A, polymerase acidic protein, H2Db, T cell receptor, PA224-233, disulfide bond, Cysteine, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7N5C_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Fusion protein of T cell receptor beta, variable 29 and Human nkt tcr beta chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E"
+                ],
+                "uniprot_ids": [
+                  "A0A0G2LB96",
+                  "K7N5M4"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N5C_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Fusion protein of T cell receptor alpha variable 21-DV12 with T-cell receptor, sp3.4 alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "A0A075B6C4",
+                  "K7N5N2"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N5C_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "peptide from Polymerase acidic protein",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "O89752"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N5C_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Beta-2-microglobulin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N5C_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "H-2 class I histocompatibility antigen, D-B alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P01899"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7N5P",
+          "struct": {
+            "title": "6218 TCR in complex with H2-Db PA224-233 with a cysteine mutant"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "Major Histocompatibility complex, MHC, mouse, Influenza A, polymerase acidic protein, H2Db, T cell receptor, PA224-233, cysteine, mutant, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7N5P_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Fusion protein of T cell receptor beta, variable 29 and Human nkt tcr beta chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E"
+                ],
+                "uniprot_ids": [
+                  "A0A0G2LB96",
+                  "K7N5M4"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N5P_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Fusion protein of T cell receptor alpha variable 21-DV12 and T-cell receptor, sp3.4 alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "A0A075B6C4",
+                  "K7N5N2"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N5P_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "peptide from Polymerase acidic protein",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "O89752"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N5P_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Beta-2-microglobulin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N5P_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "H-2 class I histocompatibility antigen, D-B alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P01899"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7N51",
+          "struct": {
+            "title": "Structure of a bacterial gasdermin from Vitiosangium sp."
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "gasdermin, immunity, membrane, pore-forming protein, lipid binding protein, palmitoylation, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7N51_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Gasdermin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "A0A2T4VDM4"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7N2S",
+          "struct": {
+            "title": "AS3.1-PRPF3-HLA*B27"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "TCR MHC HLA-B27, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7N2S_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "T cell receptor beta chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "F"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7N2S_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "T cell receptor alpha chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7N2S_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Beta-2-microglobulin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N2S_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Human leukocyte antigen (HLA) B27",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "A3F718"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7N2S_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Pre-MRNA Processing Factor 3",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "O43395"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7N0J",
+          "struct": {
+            "title": "Structure of YebY from E. coli K12"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "UNKNOWN FUNCTION",
+            "text": "periplasmic protein, UNKNOWN FUNCTION"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7N0J_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "YebY",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                "uniprot_ids": [
+                  "P64506"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7MI2",
+          "struct": {
+            "title": "Seb1-G476S RNA binding domain"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "RNA BINDING PROTEIN",
+            "text": "RRM, termination factor, transcription interference, RNA BINDING PROTEIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7MI2_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Rpb7-binding protein seb1",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "Q9UTE3"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7MF4",
+          "struct": {
+            "title": "Crystal structure of Trypanosoma cruzi cytosolic Malic Enzyme"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "OXIDOREDUCTASE",
+            "text": "cytosol, OXIDOREDUCTASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7MF4_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Malic enzyme",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "Q4DJ68"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7M3N",
+          "struct": {
+            "title": "Canine parvovirus and Fab14 asymmetric reconstruction"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "VIRUS/Immune System",
+            "text": "canine parvovirus, CPV, Fab14, VIRUS, VIRUS-Immune System complex"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7M3N_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Capsid protein 2",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P17455"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7M3N_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "CPV Fab14 heavy chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "H"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7M3N_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "CPV Fab14 light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "L"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7LP1",
+          "struct": {
+            "title": "Structure of Nedd4L WW3 domain"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "LIGASE",
+            "text": "PPxY binding, E3 Ubiquitin ligase, Nedd4L, LIGASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7LP1_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "E3 ubiquitin-protein ligase NEDD4-like",
+                "pdbx_ec": "2.3.2.26"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "Q96PU5"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7LO6",
+          "struct": {
+            "title": "Structure of CD4 mimetic BNM-III-170 in complex with BG505 SOSIP.664 HIV-1 Env trimer and 17b Fab"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "VIRAL PROTEIN/IMMUNE SYSTEM",
+            "text": "CD4m, fusion, HIV-1, entry, VIRAL PROTEIN, VIRAL PROTEIN-IMMUNE SYSTEM complex"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7LO6_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "17b Fab Heavy Chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "H",
+                  "J",
+                  "L"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7LO6_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "17b Fab Light Chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "G",
+                  "I",
+                  "K"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7LO6_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "HIV-1 Envelope Glycoprotein BG505 SOSIP.664 gp41",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "D",
+                  "F"
+                ],
+                "uniprot_ids": [
+                  "Q2N0S6"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7LO6_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Envelope glycoprotein BG505 SOSIP.664 gp120",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "C",
+                  "E"
+                ],
+                "uniprot_ids": [
+                  "Q2N0S6"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7LAO",
+          "struct": {
+            "title": "Crystal structure of aminoglycoside acetyltransferase AAC(3)-IIb"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "TRANSFERASE",
+            "text": "AAC(3)-IIb, RESISTANCE, CSGID, TRANSFERASE, CENTER FOR STRUCTURAL GENOMICS OF INFECTIOUS DISEASES, NATIONAL INSTITUTE OF ALLERGY AND INFECTIOUS DISEASES, NIAID"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7LAO_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Aminoglycoside N(3)-acetyltransferase III",
+                "pdbx_ec": "2.3.1.81"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "Q01515"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7KWT",
+          "struct": {
+            "title": "X-ray Crystal Structure of PlyCB Mutant Y28H"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "ANTIMICROBIAL PROTEIN",
+            "text": "ENDOLYSIN, VIRAL PROTEIN, PHAGE EFFECTOR PROTEIN, ANTIMICROBIAL PROTEIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7KWT_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PlyCB",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "Q7Y3F3"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "7KET",
+          "struct": {
+            "title": "Factor H enhancing human antibody fragment (Fab) to meningococcal Factor H binding protein"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "human, antibody, Fab, meningococcal vaccine, Factor H binding protein, complex, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "7KET_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Factor H binding protein",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "Q9JXV4"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "7KET_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Immunoglobulin gamma, heavy chain Fd fragment",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "7KET_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Immunoglobulin gamma, kappa light chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

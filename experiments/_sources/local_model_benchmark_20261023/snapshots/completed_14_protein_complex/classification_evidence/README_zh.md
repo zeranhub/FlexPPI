@@ -1,0 +1,13 @@
+# 按实际生物组成冻结的两组成员
+
+2026-10-24按用户确认的定义，将3,063条实际MD输入记录划分为 **protein 2,203条** 与 **protein_complex 860条**，没有未决记录。protein包括实际单链输入、同一种蛋白的同源多聚体，以及同一成熟功能蛋白拆开的链或结构域；protein_complex表示实际输入包含不同蛋白或独立多肽伙伴。分组依据是实际输入的生物组成，原来的single_chain、other_multichain、TCR三栏与原PPI标签均没有被当成新的二组答案。用户明确授权2,193条实际单链为protein、244条来源确认的TCR–pMHC为protein_complex；其余626条多链输入逐链核对后，10条属于protein、616条属于protein_complex。
+
+冻结入口是`membership_frozen.csv`，每条记录给出最终组别、分类状态、置信度、实际输入链数、标称PDB、实际用于对应的PDB、完整链序列证据及人工审读依据。下游必须同时核对`membership_freeze_audit.json`的`status=frozen`以及成员CSV的SHA256。当前成员SHA256为`23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac`，policy SHA256为`c5e0868acd3fb90639d3205843c5f281e8292c6b1868e115210e958130493bdb`。原始cohort、模型输入、预测、评分和图件均未修改；本目录没有读取模型性能、没有运行模型推理。
+
+626条多链输入共1,560条实际输入链，全部完成官方蛋白实体的序列对应。对应首先检查完整观测序列是否为官方canonical序列的精确连续片段；其余使用Biopython 1.84的半全局比对，允许源序列两端因截断而未进入MD输入，并明确统计匹配、错配和内部缺口。自动匹配要求至少97%的已知MD残基精确匹配，短于20 aa的链必须精确连续匹配；MD重命名后的链字母没有参与来源实体选择。`chain_entity_matches.csv`保留每个链的全部接近最佳候选、匹配比例、对应区间、官方名称与UniProt注释，`chain_biological_identity_evidence.csv`进一步记录成熟功能蛋白的身份解释。实体ID只作为来源定位，实体数与不同序列数均没有被直接当成不同蛋白数。
+
+首轮自动审查后仍有108条身份边界：其中98条在`reviewed_identity_decisions.json`及同名CSV中逐条保存了实际链对应、官方entry标题、抗原或结合蛋白名称及原payload哈希，明确为异源蛋白/独立binder复合物；另10条经过`boundary_review/review.json`、`review.csv`、`review_zh.md`独立复核并由root在查看二组性能前裁定，最终6条protein、4条protein_complex。共享UniProt不自动意味着同一种成熟功能蛋白；NS3与NS4A、成熟subtilisin与已切除且独立作用的前肽均归complex，Merlin、CERT、KCNH1、Vinculin等同一功能蛋白拆域则归protein。3F4Y的gp41派生设计变体按预先确认的同源派生拆域规则归protein，保留其约50%修改及抑制剂用途的边界事实；3P9W的一个官方entity错误命名为humanVEGF，依据entry标题、VH序列与原论文修正为独立VH binder。4BQD的独立筛选拮抗肽归complex，原化学20-mer与PDB canonical 21符号表述存在差异，不能把后者长度当成天然蛋白长度。
+
+`source_identity_overrides.json`与`source_identity_conflicts.csv`记录7条来源标识冲突的恢复。四条是PDB字符转置：2FGJ→2FJG、2WE9→2W9E、2OV8→2O8V、1RS8→1R8S；两条由RCSB移除记录明确给出替代：3RVW→5VPG、1A2K→5BXQ；另一条1VDD只标注RecR来源，而实际MD输入包含RecR与RecO，按官方2V1C序列恢复完整组成。这些修正仅用于本次审计，不改原cohort。`official_sequence_search/`保存原始官方序列检索与移除记录响应，`official_rcsb_payloads/`保存全部canonical序列与UniProt对应的原始GraphQL响应。另有4条链因已建模环区、少量额外残基或单次替换，未满足97%自动阈值；`reviewed_sequence_exceptions.json`逐条保存精确比例与独立身份依据，没有降低全体自动阈值，也没有据模型性能挑选例外。
+
+`policy_frozen.json`、`source_hashes_frozen.json`在分类前固定定义与输入哈希，最终审计再次核对这些输入完全未变，并记录所有新官方来源、人工决定和代码哈希。重算仅需本目录已缓存payload与原cohort身份元数据：先运行`python -X utf8 map_biological_identity.py --classify`，需要重建98条审读表时运行`python -X utf8 write_identity_reviews.py`后再次运行前一命令，最后运行`python -X utf8 freeze_membership.py`核查并冻结。`--fetch`仅用于从官方RCSB重新获取原始canonical注释；复现已有冻结结果时无需联网。`runtime/`保存本次使用的Biopython 1.84，其他依赖为现有NumPy、Pandas与Requests。任何后续成员修改都必须重新审阅依据并生成新的冻结审计，不应静默改动已经供下游聚合的CSV。

@@ -1,0 +1,35 @@
+{
+  "sample_id": "itrace_6am5",
+  "dataset": "itrace",
+  "fold": 4,
+  "status": "complete",
+  "plan_sha256": "09f029e2107e2e77e05271d7c2e65c6f2efdc0fed6f0fcd3d7a3dba9eec2ba83",
+  "tables": {
+    "per_residue_trajectory": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\trajectory_analysis\\table_parts\\itrace_6am5\\per_residue_trajectory.csv.gz",
+      "sha256": "2cf26947c5f70f2165a7b198d07f190b945f643b42152f9ffb5113de84244a7c",
+      "rows": 8364
+    },
+    "repeat_jsd_per_residue": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\trajectory_analysis\\table_parts\\itrace_6am5\\repeat_jsd_per_residue.csv.gz",
+      "sha256": "fb36756e85993857cdc28b02c445f2a113eb42ea6407b9172d0479ea83d947f7",
+      "rows": 8364
+    },
+    "per_record_trajectory": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\trajectory_analysis\\table_parts\\itrace_6am5\\per_record_trajectory.csv.gz",
+      "sha256": "6b0d6dc09f6f115743357f50c4918ceb4402be3089ee0c0297993679fcd63e67",
+      "rows": 12
+    },
+    "prediction_effect_per_record": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\trajectory_analysis\\table_parts\\itrace_6am5\\prediction_effect_per_record.csv.gz",
+      "sha256": "3c2cf764842e56dcf01ffb1790e26c303c7ce07c27ff361e8292f42644ad974e",
+      "rows": 16
+    },
+    "valid_mask_audit": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\trajectory_analysis\\table_parts\\itrace_6am5\\valid_mask_audit.csv.gz",
+      "sha256": "6bb4622455d73e55e48cebb9b122094c34fa30b21d2350faaee135a05aaba65c",
+      "rows": 16
+    }
+  },
+  "elapsed_seconds": 11.422000000020489
+}

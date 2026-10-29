@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "data_type": "Synthetic algebra and metadata fixtures only; not MD results",
+  "tests": [
+    "Average tie ranks and 0..100 percentile",
+    "Zero exact-prediction MAE and undefined constant correlation",
+    "All 12 job source/commit validations and 77/6 Hchi mask",
+    "Raw state differences recover known toy effects",
+    "Full exact delta beats zero and static by known amount",
+    "Intentional DCD corruption rejected"
+  ],
+  "GPU_used": false,
+  "real_MD_metrics_recomputed": false,
+  "script_sha256": "8689d6dc0c7d66d5de24f42a2ef5fa48fdcdcbfa2e686a9e199d1652281bb30f"
+}

@@ -1,0 +1,106 @@
+{
+  "a": {
+    "n": 66,
+    "unit": "residue, not independent protein",
+    "prediction": "Frozen full-model fold0 per-residue joint Hchi, original test output.",
+    "reference": "Mean of original five consecutive 1000-frame windows; same MD trajectory, not independent MD replicates.",
+    "metrics": {
+      "all66_Hchi_MAE_nats": 0.07953050649754886,
+      "all66_Spearman_rho": 0.979374987806399,
+      "all66_training_type_mean_corrected_rho": 0.8681919720319797,
+      "all6_Gln_MAE_nats": 0.1050252914428711,
+      "all6_errors": {
+        "2": 0.019122838973999023,
+        "31": 0.02296161651611328,
+        "40": 0.3676173686981201,
+        "41": 0.10959291458129883,
+        "49": 0.05805158615112305,
+        "62": 0.052805423736572266
+      },
+      "all66_count": 66,
+      "GLN_count": 6,
+      "valid_zero_reference_count": 3
+    },
+    "MAE_definition": "mean absolute prediction-reference difference, nats",
+    "rho_definition": "Spearman rank correlation; type-corrected rho frozen from earlier analysis",
+    "spread_CI_test": "No interval or new significance test.",
+    "type_mean_correction": "For each residue, subtract the same ordinary-residue-weighted fold0 training reference mean of its amino-acid type from both frozen prediction and MD reference; compute Spearman rho. Not a ubiquitin mean, not separately fitted prediction/reference means. Panel b uses separate within-layer means.",
+    "annotation_update": "Plain-language type-mean caption, same frozen rho0.868. X-axis wording removed; numeric ticks and Q2/Q41 retained. Six NaN positions10/28/35/46/47/53 retained."
+  },
+  "b": {
+    "n_defined_by_chi": {
+      "1": 66,
+      "2": 52,
+      "3": 23,
+      "4": 10
+    },
+    "all_defined_observations": 151,
+    "undefined_slots": 113,
+    "x": "Frozen model joint Hchi minus mean prediction of same amino-acid type within chi layer, nats.",
+    "y": "MD per-angle fine-bin entropy minus mean of same amino-acid type within chi layer, nats.",
+    "model_output_scope": "One joint Hchi per residue; no single-angle model prediction or per-angle prediction error.",
+    "MD_metric": "Shannon entropy in 5-degree bins, averaged across four origins 0/1.25/2.5/3.75 degrees.",
+    "time_scope": "Original 0-100ns, 501 frames at 200ps intervals.",
+    "rho": "Unchanged average-rank Spearman of all within-type-centered paired values per chi layer; shown in four scatter titles.",
+    "zero_ties": "Singleton types and constant groups retained; zero-overlap counts 3/3/1/0. No jitter or deduplication.",
+    "scatter_range": {
+      "x": [
+        -0.7,
+        0.5
+      ],
+      "y": [
+        -1,
+        0.75
+      ]
+    },
+    "Pro": "All three valid Pro residues retained in all defined chi layers.",
+    "pvalues_intervals": "None; no new analysis, training or MD run.",
+    "removed_summary": "Whole2x4 coefficient table omitted at user request; all original8coefficients remain unchanged in experiment archive."
+  },
+  "c": {
+    "n": 432,
+    "definition": "2 residues x3 angles x72 five-degree bins; retains original NaN zero-count bins",
+    "selection": "Minimum Q41 and maximum Q2 frozen predicted joint Hchi among all six ubiquitin glutamines.",
+    "time_scope": "Same501 frames, origin0 bins",
+    "Fstar": "-ln(p/pmax), dimensionless; zero-count bins remain disconnected",
+    "low_F_width": "5deg times number of finite boxes with Fstar<=1, origin0, unchanged",
+    "axes": {
+      "x": [
+        -180,
+        180
+      ],
+      "y": [
+        -0.8,
+        6.628313737302301
+      ]
+    }
+  },
+  "source_traceability": {
+    "a": "source/all66_residue_summary.csv and source/ubiquitin_all66_chi_501frames.npz",
+    "b_scatter": "experiment/defined_angles_long.csv, centered fields",
+    "b_rho": "experiment/per_chi_correlations.csv, predicted_joint_Hchi/fine_entropy rows, rho_AA_centered",
+    "c": "source/histograms_501frames.csv"
+  },
+  "export": {
+    "configured_mm": [
+      183,
+      147
+    ],
+    "actual_mm": [
+      181.86436372872745,
+      146.4736262805859
+    ],
+    "actual_pixels": [
+      2148,
+      1730
+    ],
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "vector": [
+      "PDF embedded TrueType",
+      "SVG editable text, no raster image nodes"
+    ]
+  }
+}

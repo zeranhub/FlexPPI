@@ -1,0 +1,33 @@
+{
+  "input_pdb": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A00LZ.pdb",
+  "input_pdb_sha256": "746df500c64ae69289592a5ca7588210bc45e8f5eaa3437893feb009f4e61624",
+  "n_residues": 519,
+  "n_heavy_atoms": 3933,
+  "HCDR3_author_positions": [
+    "95",
+    "96",
+    "97",
+    "98",
+    "99",
+    "100",
+    "101",
+    "102",
+    "103",
+    "104",
+    "105",
+    "106",
+    "107",
+    "108",
+    "109"
+  ],
+  "heavy_distance_thresholds_A": [
+    4.0,
+    4.5,
+    5.0
+  ],
+  "same_chain_exclusion": "exclude sequence index separations <=2; number by coordinate order within chain",
+  "sasa_method": "Bio.PDB.SASA.ShrakeRupley, 240 sphere points, probe radius1.4A, H/D removed, default atomic radii",
+  "sasa_antigen_burial": "Fab (chainsB+C) minus complex (A+B+C), identical coordinates; per-residue values, no /2 convention",
+  "reference_scope": "Single bound-state MD reference, no WT-mutant or apo-holo validation",
+  "analysis_status": "Exploratory complete-region descriptive structural analysis; no energetic hotspot or affinity attribution"
+}

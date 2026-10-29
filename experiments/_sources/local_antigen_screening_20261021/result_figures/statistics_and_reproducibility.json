@@ -1,0 +1,50 @@
+{
+  "independent_observation": "A biological peptide candidate, not a residue, template, conformer or fit variant.",
+  "primary_n": {
+    "1G4": 13,
+    "A6": 13,
+    "total": 26
+  },
+  "independent_TCR_HLA_contexts": 2,
+  "HLA": "Both HLA-A*02:01; related systems, not a broad-generalization sample.",
+  "base_model": "Historical strict_full2431 ATLAS/DynaRepo no-ITrace model,seed7,epoch40; no fine-tuning. A different model from current manuscript2430.",
+  "model_sha256": "b3eed060919df15f075329bc892f959d9355232be5feb561417edd49ea82b39f",
+  "split": "Within each system, leave one single-mutation position out; six position folds. All substitutions at the held position are tested together.",
+  "calibration": "Prespecified ridge,lambda1,no intercept; source training-fold RMS scaling only. No hyperparameter selection or refitting for figure.",
+  "label": "Reported-hybrid SPR pKD candidate-minus-parent; all-constrained and all-Bmax-fitted are sensitivity fits,not independent samples.",
+  "center_statistic": "MAE=mean absolute candidate-level heldout delta_pKD error across13 candidates per system.",
+  "spread_or_interval": "None plotted; finite retrospective panels without confidence intervals.",
+  "statistical_test": "None",
+  "multiple_comparison_adjustment": "Not applicable",
+  "baseline": "Sequence plus static BSA/contact features; R/H are unchanged fixed-environment mean predicted RMSF/Hchi changes.",
+  "zero_change": "Shown only as its MAE; no Spearman or lexical tie-resolved top3 ranking is plotted.",
+  "scatter_source_columns": [
+    "true_delta_pKD",
+    "predicted_delta_pKD",
+    "candidate_id",
+    "system",
+    "template_pdb",
+    "model"
+  ],
+  "method_source_column": "candidate_level_metrics.MAE_delta_pKD",
+  "heatmap_source_column": "dynamic_increment_comparisons.joint_increment_vs_baseline",
+  "complete_sources": {
+    "candidate_predictions.csv": {
+      "original": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\evaluation_review\\results_fixed_protocol\\candidate_predictions.csv",
+      "archive": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\result_figures\\source_data\\candidate_predictions.csv",
+      "SHA256": "3f04a2a69db6d0520ffb1e2b0d742c615996b17196ae3ee24f7f34c45e96d6f4"
+    },
+    "candidate_level_metrics.csv": {
+      "original": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\evaluation_review\\results_fixed_protocol\\candidate_level_metrics.csv",
+      "archive": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\result_figures\\source_data\\candidate_level_metrics.csv",
+      "SHA256": "63716e341e334269efa4f8366b26114c9182a3e910771c4538394995fbf42b83"
+    },
+    "dynamic_increment_comparisons.csv": {
+      "original": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\evaluation_review\\results_fixed_protocol\\dynamic_increment_comparisons.csv",
+      "archive": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\result_figures\\source_data\\dynamic_increment_comparisons.csv",
+      "SHA256": "619eed08e477e1fe7785460fd884490da29ead1a4ae1909290f955f6739f4281"
+    }
+  },
+  "unplotted_source_scope": "All original2037 prediction rows,210 metric rows and30 increment rows are archived. This figure addresses the predeclared primary single-mutation within-system question; secondary cross-system transport and double-substitution evaluations remain in the full source files,not silently discarded.",
+  "limits": "Retrospective known panels with fixed backbone and deterministic sidechain completion; no prospective design,activation,affinity-free-energy or causal Hchi-to-RMSF claim."
+}

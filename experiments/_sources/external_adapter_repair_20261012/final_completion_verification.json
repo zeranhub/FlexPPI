@@ -1,0 +1,212 @@
+{
+  "status": "all_server_computations_complete_pending_manuscript_update",
+  "verified_utc": "2026-10-12T00:34:20.568067+00:00",
+  "pipeline_parent_pid": 19962,
+  "pipeline_finished_utc": "2026-10-12T00:32:46Z",
+  "pipeline_state_sha256": "2aae2498caee5e3284c4dea5673c1f439254193c5c7105bc0d67e83201c93d80",
+  "single_target_completed_fits": 10,
+  "family_completed_fits": 10,
+  "twenty_final_weights_hashes_unchanged": true,
+  "completed_checkpoints": [
+    {
+      "path": "/root/flexppi_completion_20261010/family_folds/runs/full/fold_0/epoch_040.pt",
+      "sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/family_folds/runs/full/fold_1/epoch_040.pt",
+      "sha256": "c1d7b1856190895ff5c5ce8442810c203ad0deb90b80e8fec029f82b616fdcf9"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/family_folds/runs/full/fold_2/epoch_040.pt",
+      "sha256": "fa73ce282fcd23526ec3d4434468e06764e44d3fb2d13364f340e9ca95ce3b6b"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/family_folds/runs/full/fold_3/epoch_040.pt",
+      "sha256": "40806bee9d582b3f18025556119a829e5da333ae475fa969b03a9bd02182c315"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/family_folds/runs/full/fold_4/epoch_040.pt",
+      "sha256": "027d9d645ee202762474b4782e68fb02e4969fa806aa5397327dc63eabbcaa64"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/family_folds/runs/intrachain/fold_0/epoch_040.pt",
+      "sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/family_folds/runs/intrachain/fold_1/epoch_040.pt",
+      "sha256": "8bd8657ef3a8f85a60e9e5802ccda90ac62ccf386e8d0b0a4d02ece2143aa68c"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/family_folds/runs/intrachain/fold_2/epoch_040.pt",
+      "sha256": "85bc8b294533c4fcb47f792910d38085d90f0cc091bef84f3385d5d4614b5f17"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/family_folds/runs/intrachain/fold_3/epoch_040.pt",
+      "sha256": "89e849aae0cc03d90dfac6d42ea5a1f65ca1fecb561f75af32c3846f9b8a84ce"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/family_folds/runs/intrachain/fold_4/epoch_040.pt",
+      "sha256": "32f44c767f8d8fe51ba7a2cb848343f9dbcb863ed3d09b93383298ab13a842c1"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_0/epoch_040.pt",
+      "sha256": "24736dc2361e147add8d7ab338d78f6c9568cbc357ed4e6d69ca64df07c3c43a"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_0/epoch_040.pt",
+      "sha256": "b23e9c7892d1b0ccb9a8e30253621369e7644d3b0e556aaa65fe68903cae8674"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_1/epoch_040.pt",
+      "sha256": "a597da0463e3dac3d94e5ff597d59289843a55ce2dba8a1b6a6f20159246b393"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_1/epoch_040.pt",
+      "sha256": "57d17cb0eeaf88803297aaaa867da0c14274d5e487bac56715ea2812a4cdef9e"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_2/epoch_040.pt",
+      "sha256": "7e07a29ddff20d45117dc056a279009c3669e369bde2e1bffd722aa7e3a9610e"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_2/epoch_040.pt",
+      "sha256": "21708e8a80d7cd637001f89fb59e6568408076d234573d1d49329b1bedb7f8fd"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_3/epoch_040.pt",
+      "sha256": "47457bbe7e78dc8ec445ecc792e38dc90aa104680f48b783d57b0eb5e46c63ce"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_3/epoch_040.pt",
+      "sha256": "8234417c3ca64021ee3f7d1fd5f8cdc3963a94c08df80c5715212373cad4f265"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_4/epoch_040.pt",
+      "sha256": "68ab61f9ee59432b080865b5d75a5bff6978cd0689e4c5528b292b902b02fd0b"
+    },
+    {
+      "path": "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_4/epoch_040.pt",
+      "sha256": "6b568a0a4a8513c84531b8dc202a4549a1504925710eef7bcf8ff0fec989a8fb"
+    }
+  ],
+  "source_files_checked": 31,
+  "training_source_hashes_unchanged": true,
+  "external32_two_channel_evaluation_passed": true,
+  "external_rmsf_valid": 18748,
+  "external_chi_entropy_valid": 16265,
+  "external_wall_seconds": 15.791881838813424,
+  "external_input32_unchanged": true,
+  "external_adapter_before_sha256": "03f865c7c477f05a67d747325af22b251965d69141a2cc3c72ed5fb24564a07a",
+  "external_adapter_after_sha256": "0d28fb4f8778f31441ada7b812cab48fe7f2ae0b9845ec4873c451e78eff291b",
+  "baseline_certificates": {
+    "rmsf_net": {
+      "status": "complete",
+      "verified_items": 3063,
+      "verified_records": 3063,
+      "verified_residues": 961321,
+      "failure_count": 0,
+      "sha256": "e38486b1e146d9002df7c3f7fd71b56ef052ed42d06237ea4a95e4d69a201602"
+    },
+    "planet_full": {
+      "status": "complete",
+      "verified_items": 4973,
+      "verified_records": 3063,
+      "verified_residues": 961321,
+      "failure_count": 0,
+      "sha256": "8fdebab3f857f5c1c597977276e2f40f7dd0f54995ad50cc79baa2cd6f27dad6"
+    },
+    "planet_seq": {
+      "status": "complete",
+      "verified_items": 4973,
+      "verified_records": 3063,
+      "verified_residues": 961321,
+      "failure_count": 0,
+      "sha256": "c6fdf512cda6eaf224b5a4146019b93220ffb2ef765de3b26e36837bdcb03475"
+    }
+  },
+  "planet_completion_certificates_not_rewritten": true,
+  "common_scoring": {
+    "additional_original_oof": {
+      "status": "full_cohort_common_masks_passed",
+      "methods": [
+        "anm",
+        "flexppi",
+        "gnm",
+        "intrachain",
+        "planet_full",
+        "planet_seq",
+        "rmsf_net_pdb"
+      ],
+      "records_per_method": 3063,
+      "common_rmsf_residues_per_method": 961321,
+      "per_record_rows": 21441,
+      "scoring_audit_sha256": "92df7446e4f155643d7c9456a16f91803614cf41e2439b77147d6030b54cc012",
+      "record_macro_metrics_sha256": "db8f50b1b3e530dff3f98088ed24d54afa98e976483768dfb58650f6f7555902"
+    },
+    "additional_family_oof": {
+      "status": "full_cohort_common_masks_passed",
+      "methods": [
+        "anm",
+        "flexppi",
+        "gnm",
+        "intrachain",
+        "planet_full",
+        "planet_seq",
+        "rmsf_net_pdb"
+      ],
+      "records_per_method": 3063,
+      "common_rmsf_residues_per_method": 961321,
+      "per_record_rows": 21441,
+      "scoring_audit_sha256": "3bf9b2cf972042266599603bc39793c85cab5ecb5cd03294f54d141c929fb404",
+      "record_macro_metrics_sha256": "e7c16c04d2d4fc9d9ef243d2ad9b99b86b50494c1e0657dc5e5fb005a38bafee"
+    }
+  },
+  "actual_final_steps_seconds": [
+    {
+      "name": "evaluate_external_2430",
+      "status": "complete",
+      "seconds": 25.0
+    },
+    {
+      "name": "wait_resume_verify_rmsf_net",
+      "status": "complete",
+      "seconds": 36.0
+    },
+    {
+      "name": "wait_verify_planet_full_cpu",
+      "status": "complete",
+      "seconds": 6.0
+    },
+    {
+      "name": "wait_verify_planet_seq_cpu",
+      "status": "complete",
+      "seconds": 7.0
+    },
+    {
+      "name": "score_additional_original_oof",
+      "status": "complete",
+      "seconds": 93.0
+    },
+    {
+      "name": "score_additional_family_oof",
+      "status": "complete",
+      "seconds": 86.0
+    }
+  ],
+  "cancelled_md_steps": [
+    "md_triplicate_production",
+    "analyze_md_triplicates",
+    "quality_md_rep01",
+    "quality_md_rep02",
+    "quality_md_rep03"
+  ],
+  "cancelled_new_md_runs": 12,
+  "md_control_sha256": "837494a7ecbdc8cb87d464b34d1e8bdfdd5bb77cbe8dd525dbc8896f8d2661a5",
+  "production_done_files": 0,
+  "remaining_server_compute_work": false,
+  "remaining_manuscript_active_hours_estimate": [
+    2,
+    4
+  ],
+  "docx_not_modified": true
+}

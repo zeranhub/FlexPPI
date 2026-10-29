@@ -1,0 +1,49 @@
+A  Domain motions
+B  Localunfolding
+c-di-GMP receptor  moduleLAO-binding proteinAdenylate Kinase
+Rhomboid intramemembrane proteaseCaM kinase II21
+21
+2vn9
+21
+3
+2
+1
+3
+6pwj
+6pwk
+1ake
+4ake
+Unfolding
+Folding
+CCrypticpockets Glu PRPP amidotransferaseSialic acid binding factor
+Apo
+Holo
+6h76
+2cey
+1ecc
+1ecj
+4hdd
+2lep
+Ras p2121
+2
+1
+6ml0
+6mlp
+RMSD to 2ceyRMSD to 6h76 RMSD to 1ecjRMSD to 1ecc
+1q215p21Fascin
+RMSD to 3p53RMSD to 6i11
+6i11
+3p53
+RMSD to 6pwjRMSD to 6pwkRMSD to 6ml0RMSD to 6mlpRMSD to 1akeRMSD to 4ake
+Figure 2: BioEmu samples functionally distinct protein conformations.(A) Large-scale domain
+motions. (B) Local unfolding or unbinding of parts of the protein. (C) Formation of cryptic binding
+pockets that are not present in the apo ground state. Left column: coverage of pretrained and fine-
+tuned BioEmu models, defined as the percentage of reference structures that are sampled by at least
+0.1% of samples within a given distance. Global and local root mean square deviation (RMSD)
+are used for domain motions and cryptic pocket formation benchmarks, respectively, and fraction
+of native contacts (FNC) for local unfolding. Successful coverage of reference states is defined
+by probability density left of and below the dashed lines in A,C and outside the dashed lines in
+B. BioEmu sampled structures: green, PDB structures: grey, key secondary structure elements:
+blue. Abbreviations: Lysine arginine ornithine (LAO), guanosine monophosphate (GMP), calcium-
+calmodulin dependent (CaM). See Table S4 for 12-letter PDB codes and original citations.
+16

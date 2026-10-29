@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "files": {
+    "wt": {
+      "PNG": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_interface_v51_20261022\\structure\\MEL5_local_common_view.png",
+      "sha256": "0294a3ce0e35d9483ab2d9ea4aa0e9cec2e3f462adf8c6743be45cbc9c851cbd",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    "eng": {
+      "PNG": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_interface_v51_20261022\\structure\\alpha24beta17_local_common_view.png",
+      "sha256": "d5ce8224e967227437b563c411374813fee2371097feff53ba734ef5e26c4c0a",
+      "alpha_range": [
+        0,
+        255
+      ]
+    }
+  },
+  "projection_holdout_error_pixels": 0.026657049970470213,
+  "visual_review": {
+    "review": "Manual visual inspection of both final 1800x1500 PNGs, same camera and scale; primary two atom pairs visible; no burned-in text; no molecular coordinate editing other than rigid HLA fit.",
+    "background": "Fine tube representation radius 0.20; HLA teal, WT TCR orange, mature TCR purple.",
+    "bounds_note": "The HLA short segment terminates near the lower image edge; no key residues or distance endpoints are clipped. Use a common crop for both states."
+  }
+}

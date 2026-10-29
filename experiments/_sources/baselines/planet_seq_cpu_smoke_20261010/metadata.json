@@ -1,0 +1,14 @@
+{
+  "manifest_sha256": "5d77d385daff97fb259c875432b976eb1416ba9a5034b6007fc0ba9fd8864074",
+  "weights_sha256": "54f8ee6df8ed0c45e33995431b720cb7676b38d7521a5101602fae58f574e243",
+  "code_sha256": "fae56fc2df6dfa50f8aa1301020d3a07b7bb70ccffc5408d615e3e99c93dc910",
+  "variant": "seq",
+  "structure_feature_stage": "encoded",
+  "device": "cpu",
+  "input": "Independent chain from corrected frozen first static structure; exact original residue mapping",
+  "temperature_policy": "Released default300K for every input, preserving the static sequence/structure-only baseline protocol",
+  "esm_loading_policy": "Load the exact released float32 weights on CPU before transfer to inference device, avoiding simultaneous duplicate GPU state dictionaries; no dtype or weight changes",
+  "rmsf_native_unit": "nm from unscaled MDTraj md.rmsf labels in released preprocessing",
+  "rmsf_conversion": "10*native_nm to Angstrom, no fitted calibration",
+  "limitations": "Released weights may overlap ATLAS/mdCATH; independent-chain input does not encode partners; SHP is not the chi-state entropy target."
+}

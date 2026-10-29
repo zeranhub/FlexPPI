@@ -1,0 +1,113 @@
+{
+  "status": "completed",
+  "generated_at_utc": "2026-10-21T14:18:05.924644+00:00",
+  "mode": "full",
+  "protocol_id": "local_antigen_retrospective_v1_1_local2431pilot_20261021",
+  "checkpoint_sha256": "b3eed060919df15f075329bc892f959d9355232be5feb561417edd49ea82b39f",
+  "actual_checkpoint_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\model\\epoch_040.pt",
+  "actual_checkpoint_sha256": "b3eed060919df15f075329bc892f959d9355232be5feb561417edd49ea82b39f",
+  "training_records": 2431,
+  "same_weights_as_current_manuscript_2430": false,
+  "completely_transitive_family_disjoint": false,
+  "source_files": [
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\evaluation_review\\fixed_analysis_protocol.json",
+      "sha256": "79e2bb8d848c5843619fdb58452d008e8637bb30ae1b26284969c11a2e2406dc"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\evaluation_review\\candidate_splits.json",
+      "sha256": "114daac2dff465b259a6b274920eb9147774cb7409d324a1dc4935669e2eab61"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\evaluation_review\\protocol_freeze_binding.json",
+      "sha256": "86cb24db71ae4c0618a1c93edc4b5137c835549c87c2873a84489479605ff4bc"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\feature_extraction\\candidate_features.csv",
+      "sha256": "f28d14f1b549cea6bd2c21f883b8854336cd84d95cf36527636a2f259c36fe3e"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\label_rule_freeze.json",
+      "sha256": "858804c15beb49e6a60006cb57ad981b5d379437a8cf14814ba5760d550c7707"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\evaluation_review\\evaluate_screening.py",
+      "sha256": "f303f3fec546559ce7369e5570a81efa1d02cd51885a6fb9713de1d7be05b779"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\feature_extraction\\feature_manifest.json",
+      "sha256": "4d7fe9738af04d9e044a4398c586841c38c7649bea9ba8c0866c6a56feb7476c"
+    },
+    {
+      "role": "SPR_candidates",
+      "variant": "reported_hybrid",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_candidates_reported_hybrid.csv",
+      "sha256": "c834147811244b856f7ce49f4e59b85f4268a7d98e11a272be122773197148ae"
+    },
+    {
+      "role": "SPR_observations",
+      "variant": "reported_hybrid",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_observations_reported_hybrid.csv",
+      "sha256": "bec742b44a2355275a668a0b5a20ed570096d19a757a40905edd59b4ed09bd3b"
+    },
+    {
+      "role": "SPR_candidates",
+      "variant": "all_constrained",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_candidates_all_constrained.csv",
+      "sha256": "2f0ea5ab1e6daf03eb2c48002cd8ec9a146b1dc96cde6f3f623d4b30cdd02425"
+    },
+    {
+      "role": "SPR_observations",
+      "variant": "all_constrained",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_observations_all_constrained.csv",
+      "sha256": "3be433c8f1a43477837f33ec3f30aa0c6c41dbd71e82e7b2fc1ee8c8d69ee495"
+    },
+    {
+      "role": "SPR_candidates",
+      "variant": "all_fitted",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_candidates_all_fitted.csv",
+      "sha256": "464e48e0cbffdad0e04080b46161dbf1bde93b0db16fe24fbf6f0140933393dc"
+    },
+    {
+      "role": "SPR_observations",
+      "variant": "all_fitted",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_observations_all_fitted.csv",
+      "sha256": "c1160abce13093d3951e1a5979f30ce089e72e40a5992f82b94aceeecbadda6a"
+    }
+  ],
+  "n_biological_candidates": 30,
+  "n_input_template_rows": 76,
+  "independent_TCR_systems": 2,
+  "prediction_rows": 2037,
+  "candidate_prediction_rows_are_not_independent_n": true,
+  "n_primary_single_substitution_candidates": 26,
+  "all_prelisted_templates_evaluated": true,
+  "label_versions": [
+    "reported_hybrid",
+    "all_constrained",
+    "all_fitted"
+  ],
+  "primary_label_version": "reported_hybrid",
+  "ridge_lambda_mean_MSE": 1.0,
+  "intercept": false,
+  "scaler_training_fold_only": true,
+  "candidate_and_position_leak_checks_passed": true,
+  "model_inference_performed": false,
+  "neural_weight_training_performed": false,
+  "remote_access": false,
+  "base_model_weight_updates": false,
+  "feature_selection": false,
+  "hyperparameter_search": false,
+  "primary_metrics": "Candidate-level MAE for the13 prelisted single mutants per system after technical and label eligibility, with every candidate held out by mutation position.",
+  "static_increment_claim_eligible": true,
+  "study_sensitivity": "Each contributing study scores the same already-held-out candidate predictions. No study model is selected and these additional rows do not increase independent candidate n.",
+  "limitations": [
+    "Historical2431 pilot differs from the manuscript2430 weights and contains one disclosed indirect family-component member.",
+    "Only2 related HLA-A2 TCR systems; transport is exploratory.",
+    "Fixed-backbone sequence changes do not sample new conformations.",
+    "No candidate, position or structural feature is selected by the observed score.",
+    "Published study/assay-matched parent normalization is not evidence of a known same-batch paired experiment."
+  ],
+  "undefined_rho_and_tie_rules": "Spearman requires at least3 candidates and nonconstant ranks; ties use average ranks. Pairwise prediction ties receive0.5 credit. Top3 cutoff ties use lexical biological candidate ID and are flagged.",
+  "skipped_analyses": []
+}

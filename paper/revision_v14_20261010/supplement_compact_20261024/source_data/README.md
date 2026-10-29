@@ -1,0 +1,5 @@
+# 配套源数据说明
+
+标签观测诊断图已从论文补充图中移出，保存在label_observation_diagnostics.png。该图沿用原图S1，数据与图形均未修改。
+
+supplement_v73_complete_source.json及supplement_v73_original.xml保存精简前的全部补充文字和表格，其中包括完整实现设置、来源分层汇总、KIX状态差值和双读数组合统计。原始比较的样本与推理口径继续分别报告，未按结果优劣筛选。

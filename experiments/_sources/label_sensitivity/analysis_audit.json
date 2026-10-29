@@ -1,0 +1,83 @@
+{
+  "status": "complete",
+  "selected": 83,
+  "completed_samples": 83,
+  "effective_samples_by_variant_source_metric": [
+    {
+      "variant": "uniform_available_replicas",
+      "dataset": "atlas",
+      "metric": "chi_entropy",
+      "n": 30
+    },
+    {
+      "variant": "uniform_available_replicas",
+      "dataset": "atlas",
+      "metric": "rmsf",
+      "n": 30
+    },
+    {
+      "variant": "uniform_available_replicas",
+      "dataset": "dynarepo",
+      "metric": "chi_entropy",
+      "n": 23
+    },
+    {
+      "variant": "uniform_available_replicas",
+      "dataset": "dynarepo",
+      "metric": "rmsf",
+      "n": 23
+    },
+    {
+      "variant": "uniform_available_replicas",
+      "dataset": "itrace",
+      "metric": "chi_entropy",
+      "n": 30
+    },
+    {
+      "variant": "uniform_available_replicas",
+      "dataset": "itrace",
+      "metric": "rmsf",
+      "n": 30
+    },
+    {
+      "variant": "uniform_rep1",
+      "dataset": "atlas",
+      "metric": "chi_entropy",
+      "n": 30
+    },
+    {
+      "variant": "uniform_rep1",
+      "dataset": "atlas",
+      "metric": "rmsf",
+      "n": 30
+    },
+    {
+      "variant": "uniform_rep1",
+      "dataset": "dynarepo",
+      "metric": "chi_entropy",
+      "n": 23
+    },
+    {
+      "variant": "uniform_rep1",
+      "dataset": "dynarepo",
+      "metric": "rmsf",
+      "n": 23
+    },
+    {
+      "variant": "uniform_rep1",
+      "dataset": "itrace",
+      "metric": "chi_entropy",
+      "n": 30
+    },
+    {
+      "variant": "uniform_rep1",
+      "dataset": "itrace",
+      "metric": "rmsf",
+      "n": 30
+    }
+  ],
+  "plan_sha256": "fe7c01b66ae16f4101e28c13fdb93246f054acc7d6f26ac758caf8aec9995ffd",
+  "code_sha256": "bb1b02959a29f866c2ff6b0bb373c02566d76b27b4effa1d5ffa49eb712c15d6",
+  "interpretation": "Frozen OOF means re-scored under alternate labels on identical paired valid intersections; no retraining and no claim of uniform simulation conditions",
+  "variability": "Sample SD across selected records within each source; not five-fold SD or SE"
+}

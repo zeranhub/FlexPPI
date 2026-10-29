@@ -1,0 +1,41 @@
+{
+  "status": "passed_synthetic_integration",
+  "tested_at_utc": "2026-10-21T13:36:30.458674+00:00",
+  "evaluator_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\evaluation_review\\evaluate_screening.py",
+  "evaluator_sha256": "f303f3fec546559ce7369e5570a81efa1d02cd51885a6fb9713de1d7be05b779",
+  "real_SPR_numeric_values_read": false,
+  "real_candidate_features_or_predictions_read": false,
+  "actual_neural_checkpoint_loaded": false,
+  "neural_inference_performed": false,
+  "neural_training_performed": false,
+  "complete_fixed_pipeline_tested_with_synthetic_labels_and_features": true,
+  "synthetic_fixtures_removed_after_test": true,
+  "checks": [
+    {
+      "mode": "full",
+      "status": "passed",
+      "prediction_rows": 2037,
+      "analysis_row_counts": {
+        "within_system_leave_position_out": 1365,
+        "secondary_multiple_substitution": 126,
+        "secondary_cross_system_transport": 546
+      },
+      "all_candidate_and_position_and_system_exclusions_verified": true,
+      "parent_and_double_mutants_never_enter_fit": true,
+      "study_stratification_outputs_checked": true
+    },
+    {
+      "mode": "restricted",
+      "status": "passed",
+      "prediction_rows": 1455,
+      "analysis_row_counts": {
+        "within_system_leave_position_out": 975,
+        "secondary_multiple_substitution": 90,
+        "secondary_cross_system_transport": 390
+      },
+      "all_candidate_and_position_and_system_exclusions_verified": true,
+      "parent_and_double_mutants_never_enter_fit": true,
+      "study_stratification_outputs_checked": true
+    }
+  ]
+}

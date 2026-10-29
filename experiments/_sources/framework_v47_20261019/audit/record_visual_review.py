@@ -1,0 +1,24 @@
+"""Record the seven individually opened final manuscript page images."""
+from pathlib import Path
+import json
+import hashlib
+ROOT=Path(__file__).resolve().parent.parent
+DOC=ROOT.parent.parent/'paper_v47_20261019_中文修订_模型框架图重绘_三线表.docx'
+RENDER=Path(r'C:\Users\DELL\AppData\Local\Temp\flexppi_completion_20261010\render_v47')
+sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+assert sha(DOC)=='7b37df1a8726609844681969befeb15e8f77a8ac342ef2a59d7345d05320dd7f'
+notes={
+11:'实际单独打开page-11原尺寸PNG：新版图2 a–f完整，统一方法图例、双目标密度和PR曲线、来源热图及所有刻度均在页面内；完整图注与图同页，来源分层结果段落及页脚相互分离，无裁切或压字。',
+12:'实际单独打开page-12原尺寸PNG：ThermoPCD续段、3.2同类型差异、3.3 KIX背景与结果连续排布；Hχ及Å/nats符号、AP与AUROC数值均正常显示，标题未孤立，正文无溢出。',
+13:'实际单独打开page-13原尺寸PNG：图3 KIX a–d和泛素–UBA e–h全部显示，局部结构、热图、残基曲线和状态覆盖轴图例完整；中文图注保留整段且与页脚有间隔，无跨页截断。',
+14:'实际单独打开page-14原尺寸PNG：3.4 KRAS G12D背景、图4两行结构/变化曲线和图注完整，全部十肽位置及G6→D6标注可见，误差线和图内统计不受覆盖；末尾结果正文与页脚分离。',
+15:'实际单独打开page-15原尺寸PNG：KRAS续段、3.5群体论证、3.5.1自由能/角度占据、3.5.2泛素背景排布连续，Hχ、F*及区间/单位清楚，标题均有后续正文，未见文字或符号缺失。',
+16:'实际单独打开page-16原尺寸PNG：泛素Q41/Q62与逐χ说明两段完整，正文无溢出或遮挡；下方保留既有分页留白，图5完整置于次页，未将该留白误判为内容丢失。',
+17:'实际单独打开page-17原尺寸PNG：图5 a–f及整段图注完整，群体点图、泛素66残基曲线、χ1–χ4关联散点和三条自由能曲线均显示，Q2/Q41标签与低值角区条带清楚，图注/页脚分离，无裁切。',
+}
+report={'status':'passed','document':str(DOC),'document_sha256':sha(DOC),
+        'reviewer':'fig1_method_audit','review_method':'Each page 11–17 was opened individually using view_image(detail=original); no contact-sheet-only review.',
+        'pages':[{'page':page,'status':'passed','image':str(RENDER/f'page-{page}.png'),
+                  'image_sha256':sha(RENDER/f'page-{page}.png'),'notes':note} for page,note in notes.items()]}
+(ROOT/'manuscript_QA/visual_pages_11_17.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps({'status':'passed','pages':list(notes),'document_sha256':sha(DOC)}))

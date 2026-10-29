@@ -1,0 +1,485 @@
+{
+  "status": "independent_number_and_mechanism_contract_ready",
+  "date": "2026-10-19",
+  "scope": "Existing model predictions and already available ITrace trajectories; no new inference/training/MD. Contract is not final manuscript or figure approval.",
+  "state_order": [
+    "MEL5 / 3HG1",
+    "alpha24beta17 / 4JFF"
+  ],
+  "unit_contract": {
+    "RMSF": "angstrom; absolute output, not change, unless delta is explicitly labelled",
+    "Hchi": "nats; entropy of fixed sidechain-chi joint states, not thermodynamic binding entropy",
+    "delta": "engineered minus WT"
+  },
+  "prediction_source_of_record": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\mel5_validation\\corrected_pair_all_aligned_positions.csv",
+  "prediction_roundoff_note": "The original corrected table is authoritative for figure absolute predictions. The context experiment rerun reproduces full outputs within 2e-5 and can differ in last decimals; it is valid only for context sensitivity analyses. Do not silently replace the authoritative original curve with the rerun.",
+  "key_model_values": {
+    "HLA_Q72_Hchi_WT_engineered_nats": [
+      1.792447805404663,
+      1.3750499486923218
+    ],
+    "unchanged_beta_Gly54_RMSF_WT_engineered_A": [
+      1.1178646087646484,
+      0.7468647956848145
+    ],
+    "all5_CDR2beta_RMSF_WT_engineered_mean_A": [
+      0.8961336731910705,
+      0.6356326818466187
+    ],
+    "all5_CDR2beta_model_RMSF_decreases": true,
+    "Q72_model_change_without_TCR_nats": 0.10356616973876953
+  },
+  "scope_contract": {
+    "RMSF": "All six projected CDR loops, all 45 aligned positions, including substitutions. No best-loop/same-AA filtering for the overall plot.",
+    "Hchi": "All 23 valid chi-bearing positions in the sequence-identical pMHC interface, from the pre-existing geometric union interface definition (8 Å in either input). This is 18 HLA plus 5 peptide residues, not the entire pMHC.",
+    "CDR2_focus": "All five aligned beta positions are retained; Q72/Gly54 is a structural focus within complete regional data.",
+    "sidechain_comparability": "TCR substitutions between different residue types do not permit a simple same-chi-state Hchi comparison; use unchanged pMHC for the Hchi response."
+  },
+  "all45_CDR_RMSF": {
+    "n": 45,
+    "Spearman_change": 0.43952569169960476,
+    "same_direction_n": 29,
+    "MAE_change": 0.21051770342466036,
+    "model_mean_WT": 0.7942589951886071,
+    "model_mean_engineered": 0.7090518752733866,
+    "MD_mean_WT": 1.358582910595549,
+    "MD_mean_engineered": 1.0930516874737792
+  },
+  "all23_pMHC_interface_Hchi_original_predictions": {
+    "n": 23,
+    "Spearman_change": 0.7549407114624506,
+    "same_direction_n": 19,
+    "MAE_change": 0.2024143569765595,
+    "model_mean_WT": 1.341599853142448,
+    "model_mean_engineered": 1.277698462424071,
+    "MD_mean_WT": 1.4785071393988236,
+    "MD_mean_engineered": 1.4233101217544624
+  },
+  "all23_pMHC_interface_Hchi_context_full_reproduction": {
+    "n": 23,
+    "Spearman_change": 0.7549407114624506,
+    "same_direction_n": 19,
+    "MAE_change": 0.2024141677966,
+    "model_mean_WT": 1.341599869987239,
+    "model_mean_engineered": 1.2776982745398646,
+    "MD_mean_WT": 1.4785071393988236,
+    "MD_mean_engineered": 1.4233101217544624
+  },
+  "all23_pMHC_interface_Hchi_without_TCR": {
+    "n": 23,
+    "Spearman_change": 0.05731225296442688,
+    "same_direction_n": 12,
+    "MAE_change": 0.2706668615264284,
+    "model_mean_WT": 1.6009775335374086,
+    "model_mean_engineered": 1.614586512679639,
+    "MD_mean_WT": 1.4785071393988236,
+    "MD_mean_engineered": 1.4233101217544624
+  },
+  "all6_CDR_means": {
+    "CDR1α": {
+      "n": 6,
+      "Spearman_change": -0.7142857142857143,
+      "same_direction_n": 2,
+      "MAE_change": 0.16735399429298728,
+      "model_mean_WT": 0.7011680801709493,
+      "model_mean_engineered": 0.7085833549499512,
+      "MD_mean_WT": 1.447294144958399,
+      "MD_mean_engineered": 1.4608165776215554
+    },
+    "CDR1β": {
+      "n": 6,
+      "Spearman_change": -0.08571428571428572,
+      "same_direction_n": 5,
+      "MAE_change": 0.1738173415365549,
+      "model_mean_WT": 1.0041841864585876,
+      "model_mean_engineered": 0.8553666571776072,
+      "MD_mean_WT": 1.5227373042974357,
+      "MD_mean_engineered": 1.2364403031513762
+    },
+    "CDR2α": {
+      "n": 6,
+      "Spearman_change": -0.37142857142857144,
+      "same_direction_n": 0,
+      "MAE_change": 0.3682480112753043,
+      "model_mean_WT": 0.8038164377212524,
+      "model_mean_engineered": 0.8783601423104604,
+      "MD_mean_WT": 1.446745263918181,
+      "MD_mean_engineered": 1.1530409572320848
+    },
+    "CDR2β": {
+      "n": 5,
+      "Spearman_change": 0.7,
+      "same_direction_n": 5,
+      "MAE_change": 0.1795144341279668,
+      "model_mean_WT": 0.8961336731910705,
+      "model_mean_engineered": 0.6356326818466187,
+      "MD_mean_WT": 1.4656624902407918,
+      "MD_mean_engineered": 1.040876850299099
+    },
+    "CDR3α": {
+      "n": 9,
+      "Spearman_change": 0.4666666666666667,
+      "same_direction_n": 4,
+      "MAE_change": 0.1782882527254766,
+      "model_mean_WT": 0.6432314746909671,
+      "model_mean_engineered": 0.6285684638553195,
+      "MD_mean_WT": 1.1727922615401114,
+      "MD_mean_engineered": 0.9824819925422835
+    },
+    "CDR3β": {
+      "n": 13,
+      "Spearman_change": 0.7857142857142857,
+      "same_direction_n": 13,
+      "MAE_change": 0.2088164712547318,
+      "model_mean_WT": 0.801299301477579,
+      "model_mean_engineered": 0.6475533751341013,
+      "MD_mean_WT": 1.2886252225146646,
+      "MD_mean_engineered": 0.9260628249164552
+    }
+  },
+  "all23_site_identities": [
+    {
+      "role": "mhc",
+      "WT_input_id": "58",
+      "engineered_input_id": "58",
+      "aa": "E"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "59",
+      "engineered_input_id": "59",
+      "aa": "Y"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "61",
+      "engineered_input_id": "61",
+      "aa": "D"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "63",
+      "engineered_input_id": "63",
+      "aa": "E"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "64",
+      "engineered_input_id": "64",
+      "aa": "T"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "65",
+      "engineered_input_id": "65",
+      "aa": "R"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "66",
+      "engineered_input_id": "66",
+      "aa": "K"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "68",
+      "engineered_input_id": "68",
+      "aa": "K"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "70",
+      "engineered_input_id": "70",
+      "aa": "H"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "72",
+      "engineered_input_id": "72",
+      "aa": "Q"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "73",
+      "engineered_input_id": "73",
+      "aa": "T"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "75",
+      "engineered_input_id": "75",
+      "aa": "R"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "76",
+      "engineered_input_id": "76",
+      "aa": "V"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "152",
+      "engineered_input_id": "152",
+      "aa": "V"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "155",
+      "engineered_input_id": "155",
+      "aa": "Q"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "159",
+      "engineered_input_id": "159",
+      "aa": "Y"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "163",
+      "engineered_input_id": "163",
+      "aa": "T"
+    },
+    {
+      "role": "mhc",
+      "WT_input_id": "167",
+      "engineered_input_id": "167",
+      "aa": "W"
+    },
+    {
+      "role": "peptide",
+      "WT_input_id": "1",
+      "engineered_input_id": "1",
+      "aa": "E"
+    },
+    {
+      "role": "peptide",
+      "WT_input_id": "5",
+      "engineered_input_id": "5",
+      "aa": "I"
+    },
+    {
+      "role": "peptide",
+      "WT_input_id": "7",
+      "engineered_input_id": "7",
+      "aa": "I"
+    },
+    {
+      "role": "peptide",
+      "WT_input_id": "8",
+      "engineered_input_id": "8",
+      "aa": "L"
+    },
+    {
+      "role": "peptide",
+      "WT_input_id": "9",
+      "engineered_input_id": "9",
+      "aa": "T"
+    }
+  ],
+  "all5_beta_CDR2_residue_contract": [
+    {
+      "paper_compatible_beta_position": 50,
+      "WT_input_id": "50",
+      "engineered_input_id": "51",
+      "AA_WT": "S",
+      "AA_engineered": "W",
+      "RMSF_WT_A": 0.6083192825317383,
+      "RMSF_engineered_A": 0.4807589650154114
+    },
+    {
+      "paper_compatible_beta_position": 51,
+      "WT_input_id": "51",
+      "engineered_input_id": "52",
+      "AA_WT": "V",
+      "AA_engineered": "G",
+      "RMSF_WT_A": 0.7741145491600037,
+      "RMSF_engineered_A": 0.5518215894699097
+    },
+    {
+      "paper_compatible_beta_position": 52,
+      "WT_input_id": "52",
+      "engineered_input_id": "53",
+      "AA_WT": "G",
+      "AA_engineered": "P",
+      "RMSF_WT_A": 1.0115699768066406,
+      "RMSF_engineered_A": 0.6438723206520081
+    },
+    {
+      "paper_compatible_beta_position": 53,
+      "WT_input_id": "53",
+      "engineered_input_id": "54",
+      "AA_WT": "I",
+      "AA_engineered": "F",
+      "RMSF_WT_A": 0.9687999486923218,
+      "RMSF_engineered_A": 0.7548457384109497
+    },
+    {
+      "paper_compatible_beta_position": 54,
+      "WT_input_id": "54",
+      "engineered_input_id": "55",
+      "AA_WT": "G",
+      "AA_engineered": "G",
+      "RMSF_WT_A": 1.1178646087646484,
+      "RMSF_engineered_A": 0.7468647956848145
+    }
+  ],
+  "numbering_contract": "Primary article explicitly names beta Ile53 -> Phe53. Five-position publication-compatible beta50–54 is the continuous aligned SVGIG -> WGPFG patch. Engineered model input is beta51–55 due an extra N-terminal residue; common beta Gly54 is WT input E54 and engineered E55. Never conflate engineered input E54 Phe with paper/common beta54 Gly.",
+  "trajectory_independent_support": {
+    "3hg1": {
+      "Q72_Hchi_nats": [
+        2.159248474667678,
+        1.0802630813441998,
+        1.8111800281159296
+      ],
+      "beta_CA_RMSF_A": [
+        1.5704137079364806,
+        1.5821510954736735,
+        2.526028450898681
+      ],
+      "min_heavy_contact_le4_A_fraction": [
+        0.0,
+        0.4565434565434565,
+        0.27672327672327673
+      ],
+      "Q72_NE2_beta_GlyO_hbond_fraction": [
+        0.0,
+        0.027972027972027972,
+        0.0
+      ],
+      "Q72_OE1_beta_Ile_or_PheN_hbond_fraction": [
+        0.0,
+        0.001998001998001998,
+        0.0
+      ],
+      "dual_same_frame_hbond_geometry_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "three_replica_arithmetic_means": {
+        "Q72_Hchi_nats": 1.6835638613759358,
+        "beta_CA_RMSF_A": 1.892864418102945,
+        "min_heavy_contact_le4_A_fraction": 0.24442224442224442,
+        "Q72_NE2_beta_GlyO_hbond_fraction": 0.009324009324009324,
+        "Q72_OE1_beta_Ile_or_PheN_hbond_fraction": 0.000666000666000666,
+        "dual_same_frame_hbond_geometry_fraction": 0.0
+      },
+      "within_replica_20ns_Hchi_Gly_RMSF_Spearman": [
+        -0.5272727272727272,
+        0.23636363636363633,
+        0.38181818181818183
+      ]
+    },
+    "4jff": {
+      "Q72_Hchi_nats": [
+        1.5153777011198473,
+        1.0352622760982046,
+        1.1052867615736748
+      ],
+      "beta_CA_RMSF_A": [
+        1.0294275317785577,
+        0.9999793433494741,
+        1.2035145324301653
+      ],
+      "min_heavy_contact_le4_A_fraction": [
+        0.9322033898305084,
+        0.9900299102691924,
+        0.999000999000999
+      ],
+      "Q72_NE2_beta_GlyO_hbond_fraction": [
+        0.386839481555334,
+        0.45164506480558325,
+        0.44455544455544455
+      ],
+      "Q72_OE1_beta_Ile_or_PheN_hbond_fraction": [
+        0.7587238285144566,
+        0.843469591226321,
+        0.8581418581418582
+      ],
+      "dual_same_frame_hbond_geometry_fraction": [
+        0.3320039880358923,
+        0.3948155533399801,
+        0.3876123876123876
+      ],
+      "three_replica_arithmetic_means": {
+        "Q72_Hchi_nats": 1.2186422462639088,
+        "beta_CA_RMSF_A": 1.0776404691860657,
+        "min_heavy_contact_le4_A_fraction": 0.9737447663669,
+        "Q72_NE2_beta_GlyO_hbond_fraction": 0.4276799969721206,
+        "Q72_OE1_beta_Ile_or_PheN_hbond_fraction": 0.820111759294212,
+        "dual_same_frame_hbond_geometry_fraction": 0.37147730966275333
+      },
+      "within_replica_20ns_Hchi_Gly_RMSF_Spearman": [
+        -0.05454545454545454,
+        -0.16363636363636364,
+        0.09090909090909088
+      ]
+    }
+  },
+  "trajectory_protocol": {
+    "sampling": "All saved frames from 0–200 ns, 1001–1003 per trajectory, all three independent replicas per state. Replicas, not frames, are replication units.",
+    "RMSF": "Entire beta chain C-alpha aligned per replica to its first frame; per-residue C-alpha RMSF.",
+    "Hchi": "3 fixed bins per chi with natural log; Q72 has 3 chis; all original labels reproduced.",
+    "contact": "Q72 sidechain heavy atoms to target beta residue heavy atoms <=4 Å, periodic minimum image.",
+    "Hbond_geometry": "D-A <=3.5 Å and D-H-A >=150 degrees, explicit donor hydrogens; name as occupancy of hydrogen-bond geometry.",
+    "residence": "Occupancy is not a continuous lifetime or dissociation rate.",
+    "twenty_ns_windows": "Descriptive only; mixed correlation signs across replicas do not support Hchi -> RMSF direction."
+  },
+  "context_control_contract": "TCR coordinates/chains D/E are removed while all pMHC coordinates, sequence, chain order remain. This demonstrates the model output depends on binding-partner context; it is not a simulated biological apo state, causal residue perturbation, or experimental unbinding.",
+  "primary_article_contract": {
+    "title": "T-cell Receptor Specificity Maintained by Altered Thermodynamics",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3696650/",
+    "experiments": [
+      "phage-display-derived receptor comparison",
+      "SPR affinity and kinetics",
+      "X-ray crystallography",
+      "peptide Ala substitution",
+      "temperature-dependent SPR thermodynamics"
+    ],
+    "reported_MD": false,
+    "KD_WT_uM": 18,
+    "KD_engineered_nM": 0.6,
+    "affinity_fold": 30000,
+    "engineered_koff_per_second": 0.000109,
+    "WT_koff_per_second": ">0.1; too fast to measure",
+    "total_MHC_contacts_WT_engineered": [
+      56,
+      97
+    ],
+    "CDR2beta_contacts_WT_engineered": [
+      6,
+      38
+    ],
+    "binding_entropy": "The article discusses total thermodynamic entropy and solvent reorganization; bound-state sidechain Hchi cannot substitute for that quantity."
+  },
+  "argument_contract": {
+    "supported": "The previously published affinity-matured receptor has a rearranged MHC contact network. Model outputs locate Q72 sidechain state restriction and lower motion of unchanged adjacent Gly54 in this patch. Existing trajectories independently support greater local contact occupancy and reduced Gly54 motion. This complements the primary structural/SPR result at residue resolution.",
+    "not_supported": [
+      "Hchi directly causes Gly54 RMSF",
+      "Q72 alone explains the 30000-fold affinity change or a measured off-rate contribution",
+      "Lower bound-state Hchi is favorable total binding entropy or implies larger affinity",
+      "The original paper performed MD",
+      "All loops or all sidechains are predicted accurately or uniformly become rigid",
+      "All Q72 MD replica Hchi values are separated by state",
+      "Contact occupancy establishes longer residence times",
+      "Removing the TCR from the model is a physical apo experiment"
+    ],
+    "figure_arrow_rule": "Contact or common-residue association may be shown with a line/brace; never draw a one-way causal arrow Hchi -> RMSF or Hchi -> affinity."
+  },
+  "source_SHA256": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\mel5_validation\\corrected_pair_all_aligned_positions.csv": "b5fe2438552c6c20f145a7f41f3f0f9c2b9e767e787ada9f4e907ea027a156c1",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\mel5_context\\all_natural_pMHC_context_comparison.csv": "37145f2739254e454e92400c3af865fcc075bdfb25704a7d6204172d6081a633",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\mel5_context\\mel5_context_inference_audit.json": "0276e851143ab3e9ba22d3a1686cc6b69112182f9eae67c7d79bfbbd28d4b6e2",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\mel5_validation\\corrected_alignment_and_CDR_audit.json": "2140d0eeb2a487f0478c2923b7d1b2443eaa77c27d28af715aeb2648a3c74238",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\biology_sources\\mel5_thermodynamics_2013.md": "26cfbe8ac523d60f88058d761a817338d18d8e2b998331d29a516c6c6d142e41",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\analysis_audit.json": "02675dbbb1eb581a8f5e1412ffd33b037f5837a1006bc6e3fe27c47eed59e388",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\per_replica_Q72_beta_contact_and_RMSF.csv": "fee8cc1fd48323b73211ba3d7dbb0176f66cf23caefd663b43d5e49a73371bbe",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\three_replica_summary.csv": "66096333f4efda318e74bf13ce6b0c785fae9010cbdd6e64b5ef588c699ac933",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\within_replica_20ns_descriptive_correlations.csv": "b12d082275a907e684f524a2651f2506bd986e50a5c273cbc3971391a4f42912",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\Q72_two_end_backbone_Hbond_same_frame_per_replica.csv": "34bc5a14f5a0155bfd00d74468106dfb8697da09b6d8b0057ec2d95208e785c5",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\independent_review\\final_evidence_chain_review.json": "7330eed0c1f06f2c33002f7b177a8e10515c5788c60d59a24c93c5ea4c3f55c0",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_3hg1.npz": "5a938a40d8c4a0804d06a3699a8e29299c69214cb47dd54c13e28d796b50c230",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_4jff.npz": "9a2727acb36db166d3fde39ae47a59a067cb4cd7f1c07d4724a892131482bf57"
+  }
+}

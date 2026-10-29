@@ -1,0 +1,101 @@
+{
+  "task": "为v41 KRAS G12D实例补充简洁生物学背景；仅为提案，不编辑DOCX或图",
+  "manuscript": "E:/Project/FlexPPI/paper/revision_v14_20261010/paper_v41_20261017_中文修订_KRAS新抗原动态响应_三线表.docx",
+  "recommended_background_paragraph": "KRAS是一种参与细胞生长信号传递的小GTP酶，通过结合GTP和GDP在活化与失活状态间切换。G12D将KRAS第12位的甘氨酸替换为天冬氨酸，使其更难通过GTP水解回到失活状态，可推动持续的致癌信号。KRAS经细胞内蛋白降解产生的短肽可由HLA-I类分子呈递到细胞表面，其中携带G12D的肽可成为TCR识别的肿瘤新抗原[28]。",
+  "sentence_count": 3,
+  "insertion_position": {
+    "section": "3.5 KRAS G12D单点抗原变化的主链动态响应",
+    "before_paragraph_start": "JDIa41b1 TCR对HLA-A*11:01呈递的KRAS野生型与G12D肽具有明显不同的结合亲和力",
+    "suggested_operation": "可将三句背景直接放在该段开头，保留后续亲和力、整体结合姿态、模型问题及全部数据；无需另增小标题。",
+    "existing_opening_phrase_old": "JDIa41b1 TCR对HLA-A*11:01呈递的KRAS野生型与G12D肽",
+    "existing_opening_phrase_new": "经亲和力优化的JDIa41b1 TCR对HLA-A*11:01呈递的KRAS野生型与G12D十肽"
+  },
+  "reason_for_bridge": "前三句依次回答KRAS是什么、G12D为何具有生物学意义、胞内蛋白为何能成为TCR识别对象；接回现有十肽复合物比较后，读者能够理解本节考察的是新抗原肽在免疫识别复合物中的运动。",
+  "primary_source": {
+    "existing_reference_number": 28,
+    "title": "Therapeutic high affinity T cell receptor targeting a KRASG12D cancer neoantigen",
+    "authors_short": "Poole et al.",
+    "year": 2022,
+    "doi": "10.1038/s41467-022-32811-1",
+    "urls": [
+      "https://www.nature.com/articles/s41467-022-32811-1",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC9464187/"
+    ],
+    "reviewed_cached_primary_text": "E:/Project/FlexPPI/paper/revision_v14_20261010/experiment_completion/tcr_case_v40_20261017/biology_sources/kras_g12d.md",
+    "verification_method": "读取已有完整原文缓存中Introduction和Results相关段落；未用二手综述替代原研究，未增加参考文献编号。"
+  },
+  "supported_claims": [
+    {
+      "claim": "KRAS编码小GTP酶，在GDP结合失活态与GTP结合活化态间切换，参与细胞生长、生存和分化信号。",
+      "source_location": "Introduction第2段",
+      "used_in_sentence": 1
+    },
+    {
+      "claim": "第12位是KRAS致癌变化热点；G12D为该位点Gly到Asp的替换，失常GTPase调控与持续致癌信号相关。",
+      "source_location": "Introduction第2段，及KRAS G12D与WT十肽序列对照",
+      "used_in_sentence": 2,
+      "precision_note": "采用更难回到失活状态，避免绝对化为完全不水解GTP或永远处于GTP态。"
+    },
+    {
+      "claim": "来自胞内突变蛋白的新抗原肽经HLA-I类分子呈递，可被TCR识别；该研究讨论HLA-A*11:01呈递的KRAS G12D十肽，并检验其天然呈递。",
+      "source_location": "Introduction第4段及末段，Results中naturally expressing KRAS G12D章节",
+      "used_in_sentence": 3,
+      "precision_note": "短肽来自细胞内抗原加工的概括对应这一呈递途径；无需展开蛋白酶体/TAP等与本例模型论证无关的过程。"
+    },
+    {
+      "claim": "JDIa41b1为经过亲和成熟的工程TCR，7OW5/7OW6分别为其结合WT/G12D十肽与HLA-A*11:01的结构。",
+      "source_location": "Results中Affinity-enhanced JDI TCRs及virtually identical binding mode章节；原文Table2/Figure2",
+      "used_in_following_existing_paragraph": true
+    }
+  ],
+  "scope_limits_for_editor": [
+    "本节分析对象是HLA结合的10残基KRAS来源抗原肽，不是完整KRAS蛋白的GDP/GTP开关环或催化动力学。",
+    "模型结果支持肽段主链运动差异的辨认，不对应GTP水解活性、癌细胞表型或临床疗效预测。",
+    "亲和力背景来自原研究，本模型未预测亲和力数值；背景段不增加肽变硬导致亲和力提高的因果论断。",
+    "上述范围用清楚的对象衔接表达即可，不必将这些编辑注意事项写成正文防御性段落。"
+  ],
+  "whole_v41_first_introduction_audit": [
+    {
+      "entity": "KRAS G12D、HLA-A*11:01、JDIa41b1",
+      "needs_change": true,
+      "where": "3.5开头",
+      "current_issue": "直接从工程受体的结合亲和力开始，尚未解释KRAS本身的功能、G12D的含义，以及胞内蛋白与TCR识别之间的联系。",
+      "recommended_extent": "补上述3句，接回经亲和力优化的TCR与十肽比较。"
+    },
+    {
+      "entity": "KIX、cMyb、MLL",
+      "needs_change": true,
+      "where": "3.4开头",
+      "current_issue": "现有KIX转录共激活结构域仅提示类别，未明确KIX属于CBP共激活蛋白、cMyb/MLL在此作为结合伙伴，读者难以理解为何有四种伙伴组成。",
+      "recommended_extent": "1–2句交代CBP的KIX结构域和两类转录调控伙伴，再接不同表面结合与活动区域定位问题。",
+      "existing_reference_to_check": 22,
+      "do_not_add": "不借功能背景扩展为本模型已证明KIX变构或协同效应。"
+    },
+    {
+      "entity": "泛素、EDD、UBA",
+      "needs_change": true,
+      "where": "3.6.1首句",
+      "current_issue": "现有泛素–EDD UBA复合物仅为对象标签，未解释泛素的细胞调控作用、UBA是识别泛素的结构域，以及它与EDD的关系。",
+      "recommended_extent": "补1–2句，说明泛素及EDD的泛素识别结构域，再回到同类型侧链状态多样性的模型检验。",
+      "existing_reference_to_check": 23,
+      "do_not_add": "无需列出泛素化整个E1/E2/E3反应流程或疾病背景。"
+    },
+    {
+      "entity": "TCR、pMHC、HLA基本关系",
+      "needs_change": false,
+      "where": "2.1及3.5背景衔接",
+      "reason": "2.1已展开pMHC–TCR概念；补KRAS来源短肽的细胞表面呈递一句即可建立生物学联系，无需另设免疫学教程。"
+    },
+    {
+      "entity": "ATLAS、DynaRepo、ITrace、ThermoPCD",
+      "needs_change": false,
+      "where": "数据来源与评价章节",
+      "reason": "这些是数据资源而非具体蛋白；原稿已解释其来源与用途，本次无需借补蛋白背景扩写。"
+    },
+    {
+      "entity": "摘要、引言末概述、方法2.7、图注、补充材料",
+      "needs_change": false,
+      "reason": "生物学背景应集中在各实例结果的开头；这些位置仅保留识别名称、对象和技术定义，避免重复加入完整功能介绍。"
+    }
+  ]
+}

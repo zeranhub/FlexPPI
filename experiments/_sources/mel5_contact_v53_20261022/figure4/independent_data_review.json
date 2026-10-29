@@ -1,0 +1,145 @@
+{
+  "status": "passed",
+  "reviewed_PNG": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_contact_v53_20261022\\figure4\\fig4_mel5_contact_map.png",
+  "PNG_sha256": "e1b3036e017da4efda8e30fcb35ffa6964daed14f13a31f537d9c1ecd356e283",
+  "plot_py_sha256": "fc19c2f8d9eadbdba434b7c9381d6c76e50681b4cc3fb87daaabb889c8c8014a",
+  "visual_review": "PNG independently viewed in full; Q72 highlighted row has all18 rounded paired distances, correct left WT circle/right mature square placement, readable label mapping; no numeric mismatch seen.",
+  "checks": {
+    "geometry_pairs": 54,
+    "state_markers": 108,
+    "Q72_displayed_values": 18,
+    "local_Hchi_sites": 6,
+    "local_RMSF_sites": 9,
+    "CDR_sites": 45,
+    "CDR_state_values": 90,
+    "source_csv_copies_exact": true,
+    "row_and_column_mapping": true,
+    "state_order": true,
+    "all_marker_threshold_classes": true,
+    "all_plotted_model_values": true,
+    "minimum_heavy_atom_distance_not_fixed_atom_pair": true
+  },
+  "geometry_categories": {
+    "WT": {
+      "contact_le4A": 5,
+      "near_4_to_6A": 5,
+      "far_gt6A": 44
+    },
+    "mature": {
+      "contact_le4A": 9,
+      "near_4_to_6A": 9,
+      "far_gt6A": 36
+    }
+  },
+  "Q72_numeric_labels": [
+    {
+      "beta_common_position": 48,
+      "state": "WT",
+      "displayed": "14.31",
+      "unrounded_A": 14.310981797207345
+    },
+    {
+      "beta_common_position": 48,
+      "state": "mature",
+      "displayed": "11.04",
+      "unrounded_A": 11.04083783052718
+    },
+    {
+      "beta_common_position": 49,
+      "state": "WT",
+      "displayed": "6.92",
+      "unrounded_A": 6.918641485147216
+    },
+    {
+      "beta_common_position": 49,
+      "state": "mature",
+      "displayed": "6.93",
+      "unrounded_A": 6.933346955114831
+    },
+    {
+      "beta_common_position": 50,
+      "state": "WT",
+      "displayed": "7.34",
+      "unrounded_A": 7.335782166885816
+    },
+    {
+      "beta_common_position": 50,
+      "state": "mature",
+      "displayed": "5.53",
+      "unrounded_A": 5.5303706928197816
+    },
+    {
+      "beta_common_position": 51,
+      "state": "WT",
+      "displayed": "3.53",
+      "unrounded_A": 3.5277755030613784
+    },
+    {
+      "beta_common_position": 51,
+      "state": "mature",
+      "displayed": "3.25",
+      "unrounded_A": 3.2515996063476234
+    },
+    {
+      "beta_common_position": 52,
+      "state": "WT",
+      "displayed": "4.47",
+      "unrounded_A": 4.469966442827054
+    },
+    {
+      "beta_common_position": 52,
+      "state": "mature",
+      "displayed": "3.33",
+      "unrounded_A": 3.3252669065805778
+    },
+    {
+      "beta_common_position": 53,
+      "state": "WT",
+      "displayed": "5.46",
+      "unrounded_A": 5.455098532565656
+    },
+    {
+      "beta_common_position": 53,
+      "state": "mature",
+      "displayed": "2.94",
+      "unrounded_A": 2.942889736296623
+    },
+    {
+      "beta_common_position": 54,
+      "state": "WT",
+      "displayed": "8.27",
+      "unrounded_A": 8.265040834744864
+    },
+    {
+      "beta_common_position": 54,
+      "state": "mature",
+      "displayed": "3.12",
+      "unrounded_A": 3.119551249779373
+    },
+    {
+      "beta_common_position": 55,
+      "state": "WT",
+      "displayed": "3.94",
+      "unrounded_A": 3.94333615102745
+    },
+    {
+      "beta_common_position": 55,
+      "state": "mature",
+      "displayed": "4.76",
+      "unrounded_A": 4.756490302733736
+    },
+    {
+      "beta_common_position": 56,
+      "state": "WT",
+      "displayed": "9.58",
+      "unrounded_A": 9.583162317314683
+    },
+    {
+      "beta_common_position": 56,
+      "state": "mature",
+      "displayed": "3.29",
+      "unrounded_A": 3.2912459646766035
+    }
+  ],
+  "scientific_scope": "Edges/markers describe distances in archived model-input starting structures. Node/curve values are existing bound-complex model outputs. No claim of hydrogen-bond number, MD occupancy, direct causal influence, or affinity prediction."
+}

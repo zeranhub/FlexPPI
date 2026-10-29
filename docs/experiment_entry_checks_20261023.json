@@ -1,0 +1,77 @@
+{
+  "scope": "入口语法与登记文件存在性；未重跑训练、MD或冻结生产分析",
+  "entries": [
+    {
+      "entry": "3_1_两类动态预测与完整结构环境的贡献.py",
+      "exit_code": 0,
+      "output": "OK train_full_intra\nOK export_oof\nOK fit_static_aa\nOK prediction_metrics\nOK dense_metrics\nOK thermopcd2430\nOK thermopcd_static\nOK reproduce_final_figure\n只检查登记路径；不验证外部轨迹、科学环境、冻结哈希或GPU可用性。\n",
+      "stderr": ""
+    },
+    {
+      "entry": "3_2_同类型残基的局部动态差异.py",
+      "exit_code": 0,
+      "output": "OK within_type_retrieval\nOK within_type_curves\nOK within_type_mae_production\nOK within_type_mae\nOK reproduce_final_figure\n只检查登记路径；不验证外部轨迹、科学环境、冻结哈希或GPU可用性。\n",
+      "stderr": ""
+    },
+    {
+      "entry": "3_3_KIX结构域中主链活动区域的定位.py",
+      "exit_code": 0,
+      "output": "OK reuse_four_states\nOK freeze_predictions\nOK md_job\nOK analyze_md_job\nOK reproduce_final_figure\n只检查登记路径；不验证外部轨迹、科学环境、冻结哈希或GPU可用性。\n",
+      "stderr": ""
+    },
+    {
+      "entry": "3_4_MEL5体系中跨界面接触与双动态响应的残基解析.py",
+      "exit_code": 0,
+      "output": "OK recompute_md_labels\nOK align_mel5_positions\nOK q72_beta_contact\nOK q72_summary\nOK pair_geometry\nOK reproduce_final_figure\n只检查登记路径；不验证外部轨迹、科学环境、冻结哈希或GPU可用性。\n",
+      "stderr": ""
+    },
+    {
+      "entry": "3_5_联合读数的构象对应与群体验证.py",
+      "exit_code": 0,
+      "output": "OK paired_readouts\nOK angular_caches\nOK fine_occupancy\nOK low_free_energy_width\nOK ubiquitin_selected_curves\nOK ubiquitin_q41_q62\nOK reproduce_final_figure\n只检查登记路径；不验证外部轨迹、科学环境、冻结哈希或GPU可用性。\n",
+      "stderr": ""
+    },
+    {
+      "entry": "A_数据来源与标签观测.py",
+      "exit_code": 0,
+      "output": "OK prepare_corrected_labels\nOK freeze_training_payload\nOK reproduce_final_figure\n只检查登记路径；不验证外部轨迹、科学环境、冻结哈希或GPU可用性。\n",
+      "stderr": ""
+    },
+    {
+      "entry": "B_训练方案与随机初始化.py",
+      "exit_code": 0,
+      "output": "OK seed_stability\nOK prepare_single_target\nOK train_single_target\nOK export_single_target\nOK compare_single_joint\n只检查登记路径；不验证外部轨迹、科学环境、冻结哈希或GPU可用性。\n",
+      "stderr": ""
+    },
+    {
+      "entry": "C_基线实现与来源比较.py",
+      "exit_code": 0,
+      "output": "OK prepare_cohort\nOK prepare_backflip2\nOK score_backflip2\nOK planet_md\nOK rmsf_net\nOK prody\nOK score_common\n只检查登记路径；不验证外部轨迹、科学环境、冻结哈希或GPU可用性。\n",
+      "stderr": ""
+    },
+    {
+      "entry": "D_全组成链家族隔离评价.py",
+      "exit_code": 0,
+      "output": "OK prepare_family_folds\nOK train_family_models\nOK evaluate_family_models\nOK evaluate_external2430\n只检查登记路径；不验证外部轨迹、科学环境、冻结哈希或GPU可用性。\n",
+      "stderr": ""
+    },
+    {
+      "entry": "E_共同窗口与预测驱动的构象占据验证.py",
+      "exit_code": 0,
+      "output": "OK label_sensitivity\nOK compare_controls\nOK angular_caches\nOK fine_occupancy\nOK low_free_energy_width\n只检查登记路径；不验证外部轨迹、科学环境、冻结哈希或GPU可用性。\n",
+      "stderr": ""
+    },
+    {
+      "entry": "F_KIX轨迹与状态比较.py",
+      "exit_code": 0,
+      "output": "OK reuse_four_states\nOK analyze_md_job\n只检查登记路径；不验证外部轨迹、科学环境、冻结哈希或GPU可用性。\n",
+      "stderr": ""
+    },
+    {
+      "entry": "G_双读数组合的完整统计.py",
+      "exit_code": 0,
+      "output": "OK paired_readouts\nOK summarize_for_manuscript\n只检查登记路径；不验证外部轨迹、科学环境、冻结哈希或GPU可用性。\n",
+      "stderr": ""
+    }
+  ]
+}

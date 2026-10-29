@@ -1,0 +1,13 @@
+# 图3 V91：定量结构与完整序列
+
+本目录是参考研究后的新布局稿，不包含论文Word改动。主图为figure3/fig3_spatial_sequence_study.png，矢量输出为同名PDF和SVG。PDF/SVG保留可编辑文字与曲线，PyMOL结构为高分辨率栅格；并非整幅均为矢量。画布183×142 mm，PNG为450 dpi，Arial字体嵌入PDF，最小文字8.2 pt。
+
+a和b使用1MXE实际结合态坐标、同一相机和同一裁切。a的25个主链RMSF、b的21个有效侧链Hχ均来自既有Full预测。b采用pymol_quantitative/b_environment_candidates/1MXE_Hchi_local_surface_focus.png；原始无局部表面版和未选用的细sticks版保留为工作记录。b的局部CaM表面只表示与两个Asn侧链重原子相距5 Å以内的真实邻域，不代表完整CaM表面。N297没有这个范围内的CaM原子，N308邻域来自E11/A15/L18/M72。84.3%遮蔽来自另行SASA计算，不能从该表面片段读出。
+
+所有25个位点都保留在曲线中；四个Ala无可定义Hχ，曲线对应处断开，未填零。曲线共有92个唯一数值，结构映射共有46个有效数值。N297/N308在RMSF曲线以空心圈定位，在Hχ曲线以带描边圆点定位；W303/M316为既知锚点的位置标示。Full与Intra是同一结合态输入下的两个模型，不能作为结合态与游离态对照。本图可以承接机制假说，但没有激活实验或结合时间顺序证据。
+
+主数据表在figure3/source_data/all25_dynamics_and_static_lobe_contacts.csv，包含预测、MD参考和静态环境；实际曲线的92个值另存all_plotted_dynamics.csv。geometry_data_color_audit.json和b_environment_candidates/independent_geometry_color_audit.json保存独立坐标与实际原子RGB审计；figure3/figure_QA.json保存本次交付图哈希、范围、字体及独立审核结果。描述性统计不将单条轨迹的时间窗当作生物学重复，也不执行没有独立样本依据的显著性检验。
+
+复现整图需要Python、NumPy、Pandas、Matplotlib、Pillow：在本目录执行python figure3/compose_fig3_1MXE.py，脚本用相对路径读取已交付结构图并重新输出主图。重建结构需要PyMOL环境，render_quantitative_structure.py和局部环境脚本保存在pymol_quantitative中；其中DLL定位针对本机D:/Anaconda/envs/pvb_cpu，移机时按自己的PyMOL安装修改。实际采用的RMSF PSE为1MXE_Full_RMSF.pse，Hχ PSE为b_environment_candidates/1MXE_Hchi_local_surface.pse。原始PDB和冻结数据均随附。
+
+图注、正文措辞及推断边界见同目录“图3图注与叙述建议.md”。本轮研究的60组参考图及34篇原文链接保存在相邻figure_reference_research_20261026目录，详见其中“模型实例图参考库.html”和“调研结论与图3取舍.md”。该参考库包含有用的表达与不适用的反例；数量不是质量保证，最终取舍依据现有数据能否直接支持视觉表达。

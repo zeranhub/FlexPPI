@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "sample_id": "1AY7_holo_complex",
+  "chemical_changes": {
+    "ILE_CD->CD1_atoms": 11
+  },
+  "n_residues": 185,
+  "frames": 7501,
+  "dt_ps": 40.0,
+  "duration_ns": 300.0,
+  "windows": 3,
+  "window_frames": 2500,
+  "frames_used": 7500,
+  "chi_bond_min_A": 1.1226295232772827,
+  "chi_bond_max_A": 1.9597196578979492,
+  "legacy_label_max_difference": {
+    "rmsf": 8.478139383871763e-07,
+    "hchi": NaN
+  },
+  "source": [
+    {
+      "path": "E:\\Project\\FlexPPI\\artifacts\\zenodo_6638504\\data\\structures\\1AY7\\holo_complex.pdb",
+      "sha256": "cfbd54bc1ad0168be03d8ba6d22a9e743e243d7b35daabf67b220a0cc2a47174"
+    },
+    {
+      "path": "E:\\data\\protein_md_datasets\\zenodo_6638504_ppi_md\\extracted\\1AY7\\complex\\without_water\\md.xtc",
+      "sha256": "ffe49338f13a708257230c073eafc94bd2ce47383db4decb89764358925d9ac9"
+    }
+  ],
+  "script_sha256": "9a557e6759f4144fc51f552c44dc85e6c2bd6dcb28e6e098a801c1a8ce2875db",
+  "interpretation": "100ns contiguous blocks within one trajectory, not independent repeats; per-chain all-CA fitting; no silent PBC repair."
+}

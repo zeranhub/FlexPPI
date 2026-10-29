@@ -1,0 +1,47 @@
+{
+  "hypothesis": "User-specified: a sufficiently large predicted RMSF decrease at any peptide position nominates an antigen candidate.",
+  "frozen_at_utc": "2026-10-22T01:26:42.091029+00:00",
+  "status": "frozen_before_new_score_utility_calculation",
+  "study_type": "New exploratory hypothesis after prior analyses; not an independent prospective validation.",
+  "previous_functional_labels_and_other_method_results_already_seen": true,
+  "new_max_peptide_score_results_seen": false,
+  "primary_score": "max over all9 peptide positions of parent_predicted_RMSF minus mutant_predicted_RMSF, Angstrom. Keep sign, no position exclusions.",
+  "candidate_scope": "All7TCR contexts,171 nonparent single substitutions each,1197 total. Same parent backbone and model as original archive.",
+  "primary_mode": "Zero functional calibration labels; top30 candidates per context.",
+  "companion_budgets": [
+    10,
+    20,
+    60
+  ],
+  "curves_archive": "All budgets1..171; no best-budget choice",
+  "threshold": "No physically validated absolute Angstrom threshold. Export full threshold-vs-selected-count/hit-rate curve and D>0 descriptive gate; do not pick best threshold from outcomes.",
+  "zero_label_comparators": [
+    "random_expected_hypergeometric",
+    "raw_BLOSUM62_parent_mutant_similarity",
+    "published_HERMES_py000_fixed",
+    "published_ProteinMPNN020_full_peptide",
+    "published_ProteinMPNN002_full_peptide"
+  ],
+  "score_ties": "Randomly exchangeable exact-score ties; report expected top-k hits. A lexical ordering is exported solely as a concrete deterministic list.",
+  "label_endpoint": "Source normalized highest-dose4-1BB CD8 response, hit>=0.3; operational recognition retention, not KD or above-parent improvement.",
+  "secondary_endpoint": "Relative top-decile response retrieval, same selections; Spearman over continuous original functional response.",
+  "metrics": [
+    "top30 functional hits and precision",
+    "enrichment over pool prevalence",
+    "AUROC",
+    "average_precision",
+    "Spearman"
+  ],
+  "diagnostics": [
+    "Second-largest decrease across9 sites, never replace primary by better result.",
+    "Archive maximum site,parent RMSF,mutated-site identity, parent4.5A contacts toTCR/HLA; no phenotype-dependent region masks.",
+    "Mutation-position-matched random expected yield: same count at each mutated peptide position as the selected list; tests within-position amino-acid discrimination."
+  ],
+  "optional_observed_label_context": "Compare max-drop selection to old sequence/BLOSUM policies on identical remaining pools after18 common observed candidates,20 old fixed seeds. Distinguish this from primary zero-label mode; do not call observation budgets equal to zero-label experiment.",
+  "no_model_training": true,
+  "no_new_neural_inference": true,
+  "no_MD": true,
+  "main_manuscript_not_modified": true,
+  "checkpoint_sha256": "b3eed060919df15f075329bc892f959d9355232be5feb561417edd49ea82b39f",
+  "source_labels_sha256": "d658310d37a04b0c22e609343b295c28dd682fa6492a04c37982b21fbcc8db89"
+}

@@ -1,0 +1,347 @@
+{
+  "started_utc": "2026-10-10T05:40:32Z",
+  "steps": [
+    {
+      "name": "freeze_kix_predictions",
+      "status": "complete",
+      "started_utc": "2026-10-10T05:40:32Z",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/freeze_kix_predictions.py",
+        "--training-root",
+        "/root/flexppi_revision_20261002/corrected_training_v1",
+        "--static-root",
+        "/root/flexppi_revision_20261002/deployment_cost_v1",
+        "--md-root",
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010"
+      ],
+      "completion_files": [
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/frozen_predictions/FROZEN.json",
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/frozen_predictions/residue_predictions.csv"
+      ],
+      "finished_utc": "2026-10-10T05:43:12Z",
+      "exit_code": 0,
+      "log": "/root/flexppi_completion_20261010/pipeline_logs/freeze_kix_predictions.log",
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/frozen_predictions/FROZEN.json": "787930017a3587c83623b79e62695106d721bd46927ad72770e833dad9f76eba",
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/frozen_predictions/residue_predictions.csv": "348d4201f842b940570a5fd389ba431726d678b7b643294c59c92f8ba2e3decc"
+      }
+    },
+    {
+      "name": "verify_prior_kix_predictions",
+      "status": "complete",
+      "started_utc": "2026-10-10T05:43:12Z",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/verify_kix_predictions.py",
+        "--md-root",
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010",
+        "--prior-csv",
+        "/root/flexppi_completion_20261010/kix_fold1_all_residues.csv"
+      ],
+      "completion_files": [
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/frozen_predictions/prior_comparison_audit.json"
+      ],
+      "finished_utc": "2026-10-10T05:43:12Z",
+      "exit_code": 0,
+      "log": "/root/flexppi_completion_20261010/pipeline_logs/verify_prior_kix_predictions.log",
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/frozen_predictions/prior_comparison_audit.json": "25b335da82cfd345a365a8dd9ddd338c2a25dd9047c789cd9d53f59b20b05f6e"
+      }
+    },
+    {
+      "name": "prepare_md",
+      "status": "complete",
+      "started_utc": "2026-10-10T05:43:12Z",
+      "command": [
+        "/root/flexppi_completion_20261010/md_conda/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/code/run_md.py",
+        "prepare",
+        "--root",
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010"
+      ],
+      "completion_files": [
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/prepared/READY.json"
+      ],
+      "finished_utc": "2026-10-10T05:43:13Z",
+      "exit_code": 0,
+      "log": "/root/flexppi_completion_20261010/pipeline_logs/prepare_md.log",
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/prepared/READY.json": "58807fb464bd7e2d8eed856c923d5ac65e7ef754b9e90639514b259c7f9f4fc8"
+      }
+    },
+    {
+      "name": "audit_md_inputs",
+      "status": "complete",
+      "started_utc": "2026-10-10T05:43:13Z",
+      "command": [
+        "/root/flexppi_completion_20261010/md_conda/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/code/audit_rebuilt_prepared.py",
+        "--root",
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010"
+      ],
+      "completion_files": [
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/prepared/input_audit.json"
+      ],
+      "finished_utc": "2026-10-10T05:43:13Z",
+      "exit_code": 0,
+      "log": "/root/flexppi_completion_20261010/pipeline_logs/audit_md_inputs.log",
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/prepared/input_audit.json": "78e0739658411e18158fdf05f90788ccd5bf04f444184523826744ddd8568b9c"
+      }
+    },
+    {
+      "name": "smoke_md_cuda",
+      "status": "complete",
+      "started_utc": "2026-10-10T05:43:13Z",
+      "command": [
+        "/root/flexppi_completion_20261010/md_conda/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/code/run_md.py",
+        "smoke",
+        "--root",
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010"
+      ],
+      "completion_files": [
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/PASSED.json"
+      ],
+      "finished_utc": "2026-10-10T07:02:11Z",
+      "exit_code": 0,
+      "log": "/root/flexppi_completion_20261010/pipeline_logs/smoke_md_cuda_nvrtc124_preload.log",
+      "completed_outside_orchestrator": true,
+      "compatibility_audit": "/root/flexppi_completion_20261010/md_cuda_compatibility_audit.json",
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/PASSED.json": "a098338dbccff7ef85b51b5e71796a101d42ec362d4cdc2501f9aa008acb6bc7"
+      }
+    },
+    {
+      "name": "verify_md_queue",
+      "status": "complete",
+      "started_utc": "2026-10-10T07:02:42Z",
+      "command": [
+        "/root/flexppi_completion_20261010/md_conda/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/code/queue_triplicate.py",
+        "--root",
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010",
+        "--verify-only"
+      ],
+      "completion_files": [],
+      "finished_utc": "2026-10-10T07:02:42Z",
+      "exit_code": 0,
+      "log": "/root/flexppi_completion_20261010/pipeline_logs/verify_md_queue.log",
+      "completion_sha256": {}
+    },
+    {
+      "name": "smoke_single_targets",
+      "status": "complete",
+      "started_utc": "2026-10-10T07:02:42Z",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/single_target/smoke_single_target.py",
+        "--plan",
+        "/root/flexppi_completion_20261010/single_target/single_target_plan.json",
+        "--device",
+        "cuda"
+      ],
+      "completion_files": [
+        "/root/flexppi_completion_20261010/single_target/smoke_audit.json"
+      ],
+      "finished_utc": "2026-10-10T07:02:45Z",
+      "exit_code": 0,
+      "log": "/root/flexppi_completion_20261010/pipeline_logs/smoke_single_targets.log",
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/single_target/smoke_audit.json": "3f2efa6972d5f3975a8deb29d1e816665c8823cf707c5267d850deee4ae11e52"
+      }
+    },
+    {
+      "name": "train_single_targets",
+      "status": "complete",
+      "started_utc": "2026-10-10T07:02:45Z",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/single_target/run_single_target_queue.py",
+        "--plan",
+        "/root/flexppi_completion_20261010/single_target/single_target_plan.json"
+      ],
+      "completion_files": [
+        "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_0/epoch_040.pt",
+        "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_0/epoch_040.pt",
+        "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_1/epoch_040.pt",
+        "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_1/epoch_040.pt",
+        "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_2/epoch_040.pt",
+        "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_2/epoch_040.pt",
+        "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_3/epoch_040.pt",
+        "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_3/epoch_040.pt",
+        "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_4/epoch_040.pt",
+        "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_4/epoch_040.pt"
+      ],
+      "preserved_process": {
+        "pid": 71188,
+        "start_ticks": 388347918,
+        "state": "S",
+        "command": [
+          "/root/flexppi_completion_20261010/env/bin/python",
+          "-u",
+          "/root/flexppi_completion_20261010/single_target/run_single_target_queue.py",
+          "--plan",
+          "/root/flexppi_completion_20261010/single_target/single_target_plan.json"
+        ]
+      },
+      "resumed_monitor_utc": "2026-10-10T09:54:00Z",
+      "parent_pid": 76963,
+      "training_not_restarted": true,
+      "finished_utc": "2026-10-10T23:23:25Z",
+      "exit_code": null,
+      "completion_method": "Original surviving child committed all ten jobs; final checkpoint configs/hashes independently rechecked",
+      "preserved_completion_audit": {
+        "status": "complete",
+        "jobs": 10,
+        "queue_state_sha256": "5f47e8df8f0a661aded95331ce70eece2d0ec7c3f2e32462d7c8b2fa648b8c7e",
+        "all_epoch040_strictly_validated": true,
+        "no_training_restarted": true
+      },
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_0/epoch_040.pt": "b23e9c7892d1b0ccb9a8e30253621369e7644d3b0e556aaa65fe68903cae8674",
+        "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_0/epoch_040.pt": "24736dc2361e147add8d7ab338d78f6c9568cbc357ed4e6d69ca64df07c3c43a",
+        "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_1/epoch_040.pt": "57d17cb0eeaf88803297aaaa867da0c14274d5e487bac56715ea2812a4cdef9e",
+        "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_1/epoch_040.pt": "a597da0463e3dac3d94e5ff597d59289843a55ce2dba8a1b6a6f20159246b393",
+        "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_2/epoch_040.pt": "21708e8a80d7cd637001f89fb59e6568408076d234573d1d49329b1bedb7f8fd",
+        "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_2/epoch_040.pt": "7e07a29ddff20d45117dc056a279009c3669e369bde2e1bffd722aa7e3a9610e",
+        "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_3/epoch_040.pt": "8234417c3ca64021ee3f7d1fd5f8cdc3963a94c08df80c5715212373cad4f265",
+        "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_3/epoch_040.pt": "47457bbe7e78dc8ec445ecc792e38dc90aa104680f48b783d57b0eb5e46c63ce",
+        "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_4/epoch_040.pt": "6b568a0a4a8513c84531b8dc202a4549a1504925710eef7bcf8ff0fec989a8fb",
+        "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_4/epoch_040.pt": "68ab61f9ee59432b080865b5d75a5bff6978cd0689e4c5528b292b902b02fd0b"
+      }
+    },
+    {
+      "name": "export_single_targets",
+      "status": "complete",
+      "started_utc": "2026-10-10T23:23:36Z",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/single_target/export_completion_oof.py",
+        "--plan",
+        "/root/flexppi_completion_20261010/single_target/single_target_plan.json"
+      ],
+      "completion_files": [
+        "/root/flexppi_completion_20261010/single_target/evaluation/evaluation_audit.json"
+      ],
+      "finished_utc": "2026-10-10T23:27:35Z",
+      "exit_code": 0,
+      "log": "/root/flexppi_completion_20261010/pipeline_logs/export_single_targets.log",
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/single_target/evaluation/evaluation_audit.json": "d6d5e6b0ee904ec7cb0160381fd7cfa238bfbfe6cef2569d41fb89bad31bbaef"
+      }
+    },
+    {
+      "name": "analyze_single_targets",
+      "status": "complete",
+      "started_utc": "2026-10-10T23:27:35Z",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/single_target/analyze_completion_oof.py",
+        "--dual-evaluation",
+        "/root/flexppi_revision_20261002/corrected_training_v1/evaluation",
+        "--single-evaluation",
+        "/root/flexppi_completion_20261010/single_target/evaluation",
+        "--output",
+        "/root/flexppi_completion_20261010/single_target/analysis"
+      ],
+      "completion_files": [
+        "/root/flexppi_completion_20261010/single_target/analysis/analysis_audit.json",
+        "/root/flexppi_completion_20261010/single_target/analysis/single_vs_dual_per_record.csv"
+      ],
+      "finished_utc": "2026-10-10T23:28:26Z",
+      "exit_code": 0,
+      "log": "/root/flexppi_completion_20261010/pipeline_logs/analyze_single_targets.log",
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/single_target/analysis/analysis_audit.json": "e8c5cd3993c792f7c37be02332b1a5d1b12965229c4726cbb8173aad83fbc8aa",
+        "/root/flexppi_completion_20261010/single_target/analysis/single_vs_dual_per_record.csv": "69e57e41a8cb949c0182ff845463aa392d13ec5bbeabc658bfe7eb0bf095975f"
+      }
+    },
+    {
+      "name": "train_evaluate_family_folds",
+      "status": "complete",
+      "started_utc": "2026-10-10T23:28:26Z",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/family_folds/run_family_queue.py",
+        "--source-root",
+        "/root/flexppi_revision_20261002/corrected_training_v1/src",
+        "--evaluate"
+      ],
+      "completion_files": [
+        "/root/flexppi_completion_20261010/family_folds/evaluation/evaluation_audit.json"
+      ],
+      "finished_utc": "2026-10-11T15:35:48Z",
+      "exit_code": 0,
+      "log": "/root/flexppi_completion_20261010/pipeline_logs/train_evaluate_family_folds.log",
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/family_folds/evaluation/evaluation_audit.json": "b0e9ce03db4aa65c4372797f1727637f2fed5e07d4f1ebe6fbe88fabdeb2d06f"
+      }
+    },
+    {
+      "name": "evaluate_external_2430",
+      "status": "failed",
+      "started_utc": "2026-10-11T15:35:48Z",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/family_folds/evaluate_external_2430.py",
+        "--source-root",
+        "/root/flexppi_revision_20261002/corrected_training_v1/src",
+        "--external-root",
+        "/root/flexppi_revision_20261002/corrected_training_v1/external",
+        "--static-output",
+        "/root/flexppi_completion_20261010/baselines/static_external_2430",
+        "--static-reference",
+        "/root/flexppi_completion_20261010/baselines/static_reference"
+      ],
+      "completion_files": [
+        "/root/flexppi_completion_20261010/family_folds/external_2430_evaluation/evaluation_audit.json"
+      ],
+      "finished_utc": "2026-10-11T15:35:52Z",
+      "exit_code": 1,
+      "log": "/root/flexppi_completion_20261010/pipeline_logs/evaluate_external_2430.log"
+    }
+  ],
+  "status": "failed",
+  "pid": 76963,
+  "current_step": "evaluate_external_2430",
+  "updated_utc": "2026-10-11T15:35:52Z",
+  "runtime_control_file": "/root/flexppi_completion_20261010/pipeline_control.json",
+  "runtime_control_sha256": "837494a7ecbdc8cb87d464b34d1e8bdfdd5bb77cbe8dd525dbc8896f8d2661a5",
+  "md_reuse_policy": {
+    "strategy": "reuse_existing_audited_single_trajectory",
+    "priority": "manuscript",
+    "allow_new_kix_production": false,
+    "additional_kix_production_runs": 0,
+    "cancelled_planned_new_runs": 12,
+    "independent_replicates_required": 1,
+    "never_claim_triplicate_uncertainty_from_single_trajectory": true,
+    "existing_md_search_hosts": [
+      "local",
+      "hmu-gpu",
+      "hit-gpu"
+    ],
+    "provenance_requirement": "Only actual audited production trajectories; short CPU/CUDA technical smoke does not count as biological MD validation"
+  },
+  "cancelled_pending_steps": [
+    "md_triplicate_production",
+    "analyze_md_triplicates",
+    "quality_md_rep01",
+    "quality_md_rep02",
+    "quality_md_rep03"
+  ],
+  "error": "RuntimeError('Completion step failed: evaluate_external_2430; inspect /root/flexppi_completion_20261010/pipeline_logs/evaluate_external_2430.log')"
+}

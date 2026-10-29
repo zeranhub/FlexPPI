@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "dimensions_mm": [
+    183.0,
+    214.0
+  ],
+  "all66_valid_including3zero_Pro": true,
+  "all151_defined_angles_retained": true,
+  "missing113_angle_slots_nan_not_zero": true,
+  "all6_Gln_all3angles_full72bins": true,
+  "all6_order": [
+    41,
+    31,
+    40,
+    62,
+    49,
+    2
+  ],
+  "all6_Q40_largesterror_included": true,
+  "panel_counts": {
+    "a_Hchi": 132,
+    "a_error": 66,
+    "a_width": 264,
+    "b_Hchi": 12,
+    "b_probability": 1296,
+    "c": 144,
+    "d": 144,
+    "e": 144
+  },
+  "all_points": 2202,
+  "MD_probability_color_scale": [
+    0,
+    0.25
+  ],
+  "MD_width_color_scale": [
+    0,
+    200.0
+  ],
+  "no_per_angle_prediction_claim": true,
+  "source_sha256": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\rich_angle_figure_v30_20261014\\experiment\\ubiquitin_all66_chi_501frames.npz": "562e14a3909718f99fa2471dc6503b3c244b39a04bc883073b50ba02a171c182",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\rich_angle_figure_v30_20261014\\experiment\\all66_residue_summary.csv": "fec153f86b3b8ba808d2ee731937754427902660c5b29a955cacf25f5d8ab4ab",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\rich_angle_figure_v30_20261014\\experiment\\all66_per_angle_metrics.csv": "f21d2c2dd47caa2ce510f85b64bda6fa6ecd12ffc278025044e1fe7c55582c58",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\free_energy_curves_v27_20261014\\case_curves\\histograms_501frames.csv": "e90410df3e05ad5004861601e9f8b7272da0889c589d056ef4a13b4a5e20dbad",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\all_residues_figure_v29_20261014\\figures\\fig7_all_residues_Gln_and_MD_free_energy.statistics.json": "5e164096e1f959087bffb328b6b9840a99f8e7f1bc023dcd91ec8e017983f418"
+  },
+  "output_sha256": {
+    "png": "ea1f10c45c34084f5fb8ae569451679d23507331add5de820dbeed88b599d9bd",
+    "pdf": "22c90ff41a62f4ce4e1c2d3c0d99472a66a76be107b94f0e1c84714854bcd54f",
+    "svg": "fa10285a6df055cab010087861697691757df11395bc385c6960e5a89489f275"
+  },
+  "minimum_font_pt": 7.5,
+  "text_outside_canvas": [],
+  "primary_metrics_unchanged": {
+    "all66_Hchi_MAE_nats": 0.07953050649754886,
+    "all66_Spearman_rho": 0.979374987806399,
+    "all66_training_type_mean_corrected_rho": 0.8681919720319797,
+    "all6_Gln_MAE_nats": 0.1050252914428711,
+    "all6_errors": {
+      "2": 0.019122838973999023,
+      "31": 0.02296161651611328,
+      "40": 0.3676173686981201,
+      "41": 0.10959291458129883,
+      "49": 0.05805158615112305,
+      "62": 0.052805423736572266
+    },
+    "all66_count": 66,
+    "GLN_count": 6,
+    "valid_zero_reference_count": 3
+  },
+  "visual_review": "passed_original_PNG_independent_review_and_final_Word_page17;66completepositions151angles6GLN18angles;no_clipping_or_legend_overlap",
+  "production_asset_review": "LineTrend/plot_trend.py and heatmap/plot_composition.py fullscriptsandcompanionPNGsreviewed;cross_type_parameter_inheritance;no_application_specific_native_run",
+  "script_sha256": "cc386571b6cc0d69d98d1bf103bf88251fafd25cbeae8e30549f12ef4b509a5c"
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "Added while base-model forward passes are running, before inspecting any comparative screening metrics or fitting downstream models.",
+  "reason": "The original B1 uses only Hamming distance for sequence content. FlexPPI outputs are learned representations of structure and residue identities, so any gain must also be checked against explicit peptide sequence controls before attributing it to dynamics.",
+  "original_primary_protocol_preserved": true,
+  "additional_models": {
+    "B1_AA": "B1 plus 20 peptide amino-acid fractions; same logistic model and C=1.",
+    "B2_AA": "B1_AA plus the same 8 predefined regional dynamic features.",
+    "B1_position_AA": "B1 plus 12-position x 20 amino-acid one-hot encoding, right zero padded; no learned sequence model.",
+    "B2_position_AA": "B1_position_AA plus the same 8 predefined dynamics."
+  },
+  "interpretation": "Success of the basic B2 only is insufficient if gains disappear against explicit sequence controls. No claim that deterministic FlexPPI output introduces an independent physical measurement or proves a causal flexibility-affinity relation.",
+  "primary_hyperparameters_unchanged": true,
+  "no_posthoc_region_search": true
+}

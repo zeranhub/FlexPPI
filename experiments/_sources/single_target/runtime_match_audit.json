@@ -1,0 +1,22 @@
+{
+  "status": "core_training_runtime_matches_frozen_dual_target_runtime",
+  "original_evidence": "original_runtime_environment.json",
+  "current_evidence": "current_runtime_environment.json",
+  "matched": {
+    "torch_base_version": "2.6.0",
+    "cuda_runtime": "12.4",
+    "gpu": "NVIDIA GeForce RTX 3080 Ti",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pandas": "2.3.3",
+    "pyyaml": "6.0.3"
+  },
+  "python": {
+    "original": "3.11.16",
+    "current": "3.11.11",
+    "same_minor_version": true,
+    "exact_micro_version_identical": false
+  },
+  "interpretation": "Frozen source, inputs, folds, sampling, seed7, fixed epoch40 and core numerical/CUDA packages match. Python patch versions differ and are retained in provenance; bitwise equivalence of the full training trajectories is not claimed.",
+  "cross_host_clock_rule": "Use durations measured on the same host or monotonic timers; the historical provenance records a server/local wall-clock offset."
+}

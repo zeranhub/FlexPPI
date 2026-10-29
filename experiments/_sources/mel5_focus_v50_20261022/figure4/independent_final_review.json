@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "reviewer": "independent mel5_v50_figure_review agent",
+  "scope": "Original NPZ and archived source recomputation, molecular-input geometry, full-figure visual QA, figure-prose internal consistency; no new inference or MD",
+  "checks": {
+    "CDR_45x2_matches_original_NPZ": {
+      "passed": true,
+      "max_absolute_error": 2.220446049250313e-16,
+      "all_45_retained": true
+    },
+    "interface_23x2_matches_original_NPZ": {
+      "passed": true,
+      "max_absolute_error": 4.440892098500626e-16,
+      "all_23_retained": true,
+      "negative_changes": 17,
+      "positive_changes": 6,
+      "largest_decrease": "HLA Q72",
+      "second_largest_decrease": "HLA R65",
+      "Q72_delta_nats": -0.4173978567123413
+    },
+    "context_four_values": {
+      "passed": true,
+      "values": {
+        "hchi_full_a": 1.792449712753296,
+        "hchi_full_b": 1.3750494718551636,
+        "hchi_pMHC_only_a": 2.141388416290283,
+        "hchi_pMHC_only_b": 2.2449545860290527,
+        "hchi_full_delta": -0.4174002408981323,
+        "hchi_pMHC_only_delta": 0.1035661697387695
+      },
+      "same_as_archived_context_source": true,
+      "original_full_reproduction_max_error_3hg1": 1.990795135498047e-05,
+      "original_full_reproduction_max_error_4jff": 6.9141387939453125e-06,
+      "intervention": "Remove D/E TCR from input; preserve every A/B/C pMHC atom coordinate, sequence, and chain order. This probes model input dependence; not a physical unbinding experiment."
+    },
+    "geometry_and_numbering": {
+      "passed": true,
+      "common_beta53": "4JFF E54 PHE",
+      "common_beta54": "4JFF E55 GLY",
+      "HLA_Q72": "A72 GLN",
+      "OE1_Phe53_N_A": 2.942889736296623,
+      "NE2_Gly54_O_A": 3.119551249779373,
+      "Q72_and_betaG54_unchanged": true
+    },
+    "region_summary": {
+      "passed": true,
+      "values": {
+        "CDR2β": {
+          "n": 5,
+          "MEL5_R_mean_A": 0.8961336731910705,
+          "mature_R_mean_A": 0.6356326818466187,
+          "all_decreased": true
+        },
+        "CDR3β": {
+          "n": 13,
+          "MEL5_R_mean_A": 0.801299301477579,
+          "mature_R_mean_A": 0.6475533751341013,
+          "all_decreased": true
+        }
+      }
+    },
+    "prose_caption_consistency": {
+      "passed": true,
+      "old_d_references_absent": true,
+      "all_a_b_c_references_present": true,
+      "MD_contact_percent": [
+        24.44222444222444,
+        97.37447663669
+      ],
+      "MD_sameframe_bridge_percent": [
+        0.0,
+        37.14773096627533
+      ],
+      "no_four_state_failure_case_added": true
+    },
+    "visual_review": {
+      "passed": true,
+      "full_PNG_reviewed": true,
+      "no_text_marker_clipping_or_overlap_observed": true,
+      "all_45_CDR_and_23_interface_sites_visible": true,
+      "absolute_RMSF_model_only": true,
+      "old_d_sparse_occupancy_removed": true,
+      "context_correctly_labeled_fixed_pMHC_coordinates": true,
+      "no_causal_Hchi_to_RMSF_arrow": true,
+      "minimum_font_pt": 6.2,
+      "dimensions_mm": [
+        183,
+        157
+      ],
+      "required_changes": []
+    }
+  },
+  "files_sha256": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_focus_v50_20261022\\figure4\\fig4_mel5_focus.png": "aac22e0f99b7086d7c11cbaab8ce6e9b3e4086e76018d87622042b09d6386787",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_focus_v50_20261022\\figure4\\source_CDR_RMSF_all45.csv": "cd9cfb7e2f06a543d2ae4db691add8ac2d1cea52dcfc7dfd42e7be456495e011",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_focus_v50_20261022\\figure4\\source_interface_Hchi_all23_ranked.csv": "32772b2f3aabacf0234c5ef7c99418de46f28a214a40e156c2e7675366b4e3b9",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_focus_v50_20261022\\figure4\\source_Q72_model_context.csv": "bcf1d2e2e2c6dcf2390d5820d37c2543d5baa6ca79c59521ae0d6012428de26e",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_focus_v50_20261022\\figure4\\caption_zh.md": "e3a2d7a2425a4dda0e3c30f6b16e04d7b6a07a10828e877ca1c9ae36b5c8f6ca",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_focus_v50_20261022\\prose_v50.json": "8f6ec08bfb523ab25d67ca7b622d6b300c6c63a8ad3f6fb2cd31b7f3e321c256"
+  },
+  "required_changes": []
+}

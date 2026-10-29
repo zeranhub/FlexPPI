@@ -1,0 +1,50 @@
+{
+  "candidate_id": "1QSE__A6_TAX_LLFAYPVAV",
+  "biological_candidate_id": "A6_TAX_LLFAYPVAV",
+  "panel_id": "A6_TAX",
+  "template_pdb": "1QSE",
+  "primary": false,
+  "sensitivity": true,
+  "is_primary_template": false,
+  "is_sensitivity_template": true,
+  "is_panel_parent": false,
+  "parent_biological_candidate_id": "A6_TAX_LLFGYPVYV",
+  "parent_inference_candidate_id": "1QSE__A6_TAX_LLFGYPVYV",
+  "tcr": "A6",
+  "hla": "HLA-A*02:01",
+  "antigen": "HTLV-1 Tax",
+  "peptide_sequence": "LLFAYPVAV",
+  "peptide_length": 9,
+  "peptide_chain": "C",
+  "roles": {
+    "hla_heavy": "A",
+    "beta2m": "B",
+    "peptide": "C",
+    "tcr_alpha": "D",
+    "tcr_beta": "E"
+  },
+  "panel_reference_peptide": "LLFGYPVYV",
+  "native_peptide": "LLFGYPVYV",
+  "template_peptide_sequence": "LLFGYPRYV",
+  "mutations_vs_panel_reference": "G4A|Y8A",
+  "mutations_vs_template": [
+    "G4A",
+    "R7V",
+    "Y8A"
+  ],
+  "input_mode": "fixed-backbone",
+  "input_pdb": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\raw\\github\\mutation_effects\\tax\\pdbs\\1qse.pdb",
+  "template_input_pdb": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\raw\\github\\mutation_effects\\tax\\pdbs\\1qse.pdb",
+  "template_input_sha256": "05ab3c1b9736a466d2a2e4fa1f6d4bbf917338e49ad00332754627f6b181b881",
+  "chain_sequences": {
+    "C": "LLFAYPVAV"
+  },
+  "prepared_input_pdb": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\fixed_backbone\\1QSE__A6_TAX_LLFAYPVAV\\model_input_fixed_backbone.pdb",
+  "prepared_input_sha256": "2d54988c09914e8e9f0e0a180c33800076538055e9740a48fde1a68495305234",
+  "prepared_input_residues": 826,
+  "geometry_valid_count": 826,
+  "all_backbone_coordinates_bit_identical_to_template": true,
+  "prepared_input_audit": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\fixed_backbone\\1QSE__A6_TAX_LLFAYPVAV\\input_preparation_audit.json",
+  "labels_or_closest_template_used_for_preparation": false,
+  "predictions_generated": false
+}

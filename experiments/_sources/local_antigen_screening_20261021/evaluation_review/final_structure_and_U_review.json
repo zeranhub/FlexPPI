@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "reviewed_at_utc": "2026-10-21T13:58:53.656625+00:00",
+  "scope": "Final76 complete protein-heavy structures, unchanged neural inputs, immutable static-path index, frozen5 template U regions, independent20AA/chi/canonical-atom definitions.",
+  "all76_files_independently_parsed": true,
+  "all4697_added_heavy_atoms_only": true,
+  "all_existing_protein_heavy_coordinates_exactly_unchanged": true,
+  "all_model_input_sequence_chain_order_author_ids_NCAO_and_masks_exactly_unchanged": true,
+  "all_canonical_heavy_atoms_complete": true,
+  "no_added_residues_or_loops": true,
+  "five_parents_receive_same_preparation": true,
+  "static_path_index_resolves_to_complete_files_not_deleted_sidechain_inputs": true,
+  "U_independent_method": "All reference residue/peptide atom distances recomputed with independent full NumPy distances, not the feature code cKDTree; all positions, roles,AA,chi counts,masks and distances matched.",
+  "U_counts": [
+    {
+      "template_pdb": "2BNQ",
+      "n_U_all": 111,
+      "n_U_RMSF": 111,
+      "n_U_Hchi": 95,
+      "role_counts": {
+        "hla_heavy": 78,
+        "tcr_alpha": 16,
+        "tcr_beta": 17
+      }
+    },
+    {
+      "template_pdb": "2BNR",
+      "n_U_all": 111,
+      "n_U_RMSF": 111,
+      "n_U_Hchi": 96,
+      "role_counts": {
+        "hla_heavy": 77,
+        "tcr_alpha": 17,
+        "tcr_beta": 17
+      }
+    },
+    {
+      "template_pdb": "1AO7",
+      "n_U_all": 109,
+      "n_U_RMSF": 109,
+      "n_U_Hchi": 91,
+      "role_counts": {
+        "hla_heavy": 77,
+        "tcr_alpha": 18,
+        "tcr_beta": 14
+      }
+    },
+    {
+      "template_pdb": "1QSE",
+      "n_U_all": 110,
+      "n_U_RMSF": 110,
+      "n_U_Hchi": 93,
+      "role_counts": {
+        "hla_heavy": 78,
+        "tcr_alpha": 19,
+        "tcr_beta": 13
+      }
+    },
+    {
+      "template_pdb": "1QSF",
+      "n_U_all": 113,
+      "n_U_RMSF": 113,
+      "n_U_Hchi": 94,
+      "role_counts": {
+        "hla_heavy": 82,
+        "tcr_alpha": 19,
+        "tcr_beta": 12
+      }
+    }
+  ],
+  "AA_mapping_implementation_repair": "Feature source had a19-amino-acid mapping missingLEU; it was corrected and independently compared for all20 names to the real model parser before candidate prediction analysis. This is an implementation repair, not a change in candidate eligibility, U definition, features or statistical rules.",
+  "structural_method": "PDBFixer1.12.0 seed17/OpenMM8.6.1 CPU; existing atoms fixed; only missing protein heavy atoms rebuilt. Internal new-atom clash integration is atom completion, not production protein MD.",
+  "feature_and_statistical_protocol_unchanged": true,
+  "analysis_protocol_sha256": "79e2bb8d848c5843619fdb58452d008e8637bb30ae1b26284969c11a2e2406dc",
+  "candidate_split_sha256": "114daac2dff465b259a6b274920eb9147774cb7409d324a1dc4935669e2eab61",
+  "model_checkpoint_sha256": "b3eed060919df15f075329bc892f959d9355232be5feb561417edd49ea82b39f",
+  "historical2431_model_different_from_manuscript2430": true,
+  "indirect_training_component_overlap_still_disclosed": true,
+  "source_files": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\evaluation_review\\static_complete_inputs_independent_audit.json": "b8988c3bec93f9f230816c91ef77addd1e8720544a54116cbadbc4f80512de30",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\evaluation_review\\audit_static_complete_inputs.py": "8e6b2ed9bf24ec5f1d9d66f4c83de5c71cbc767eb18fd68dc231cf0873edd8c2",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\static_complete_manifest.json": "83d5861dab6134ae2bbd7afacde9ef690e4633c0963cef82f476802c09724fa9",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\static_complete_inputs.json": "12059fd0556a53bc0a63588df7c22c246e87780db033346e3548d9bbee8960e4",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\fixed_backbone_manifest.json": "906296b0eef056d53c13d16b2be9ef81a67944017378e2f4ad08dc16bceedf77",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\feature_extraction\\fixed_regions.json": "8666f5fb4a112c14210bfd0231d6797a6a2356e5e652aee254c30afdff5cf8c4",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\feature_extraction\\extract_features.py": "70f9179b9e4842e8c72e3c13cd34b8f829fcc4488b94c15568543cb9df57d5a1",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\feature_extraction\\input_contract_test.json": "8e4544e67202b01811d792f06e8acd265917a0c06ad96c9ed4a29c7b3546ad20",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\feature_extraction\\BUGFIX_AA_MAPPING_20261021.md": "dacfc3101ef98a76ef0acdfdec2cf635ed68f4ae732c03279aaa9f076d0403e7",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structure_preparation_protocol.json": "962b514e897bce79616195156d36f079027e0db77271cbceee9c95b0cd9d750b",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\prepare_complete_structures.py": "b5c96786a6e7762bd49ac6797e16f0e799d9bfeb54aeb4eea12cd882f017a313",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\evaluation_review\\structure_preparation_technical_binding.json": "7f8db45cbc6dc5d9c7add513aa015c5917abb3433215657723234e0edd938fa7"
+  },
+  "actual_SPR_values_read": false,
+  "candidate_predictions_read": false,
+  "neural_inference_or_training_performed_by_reviewer": false,
+  "review_only_no_source_or_main_manuscript_modified": true,
+  "required_changes": []
+}

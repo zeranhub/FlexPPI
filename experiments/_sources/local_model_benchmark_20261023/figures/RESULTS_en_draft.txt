@@ -1,0 +1,17 @@
+Completed-cohort results (14 method/configuration entries; snapshot scope defined in the scoring audit).
+
+All entries were evaluated on the same 3,063 records, comprising 2,193 single-chain proteins, 626 other multichain systems and 244 TCR–pMHC complexes. Performance was first calculated within each record using identical frozen valid residues and then averaged with equal record weights. The reference RMSF removes rigid-body motion separately for each chain.
+
+Mean Spearman correlation for single-chain proteins was FlexPPI 0.791, DynaProt-M 0.864, backflip-2.1 (assembly) 0.898, backflip-2.1 (chains) 0.898, backflip-1.0 (assembly) 0.809, backflip-1.0 (chains) 0.809, backflip-1.0-seq (assembly) 0.832, backflip-1.0-seq (chains) 0.832, FastProtFlex 0.796.
+
+Mean Spearman correlation for other multichain systems was FlexPPI 0.758, DynaProt-M 0.700, backflip-2.1 (assembly) 0.667, backflip-2.1 (chains) 0.750, backflip-1.0 (assembly) 0.654, backflip-1.0 (chains) 0.745, backflip-1.0-seq (assembly) 0.704, backflip-1.0-seq (chains) 0.760, FastProtFlex 0.712.
+
+Mean Spearman correlation for TCR–pMHC complexes was FlexPPI 0.938, DynaProt-M 0.705, backflip-2.1 (assembly) 0.612, backflip-2.1 (chains) 0.648, backflip-1.0 (assembly) 0.591, backflip-1.0 (chains) 0.727, backflip-1.0-seq (assembly) 0.693, backflip-1.0-seq (chains) 0.774, FastProtFlex 0.681.
+
+For BackFlip-2.1, the change in mean Spearman correlation from independent-chain to complete-structure input was other_multichain: -0.083, tcr_pmhc_itrace: -0.036. These comparisons retain interchain geometry but do not establish that the model explicitly encodes chain identities.
+
+In other multichain systems, the paired Spearman difference between FlexPPI and chain-wise BackFlip-2.1 was 0.008 (95% family-cluster bootstrap interval -0.026 to 0.027). Mean high-RMSF average precision was 0.658 and 0.585, respectively; mean absolute RMSF error was 0.352 and 0.656 Angstroms, respectively.
+
+These are evaluations of released weights under a common reference, rather than equal-training comparisons; overlap between external training data and this cohort has not been excluded. Family-cluster bootstrap intervals are reported for strata with multiple families. The TCR–pMHC stratum belongs to a single family component and is described without an independent-family confidence interval. Relative flexibility scores are not assigned Angstrom errors or substituted for the joint side-chain state entropy Hχ.
+
+The published training-ID audit identifies 1,262 ATLAS matches for DynaProt-M and 1,108 candidate Flexpert-split matches for each BackFlip-1 variant; the original BackFlip-1 checkpoint CSVs were unavailable and BackFlip-2 membership remains unresolved. Full/Intra exclude each evaluated record and its biological group from the corresponding training fold, but 904 records have related-family members in training. Thus the primary TCR–pMHC comparisons describe record-level OOF performance under the frozen reference, rather than generalization to unseen sequence families. All published training/validation/test/unlisted ID categories are retained in the separate matched-record sensitivity analysis.

@@ -1,0 +1,155 @@
+{
+  "status": "completed_with_disclosed_small_Hchi_difference",
+  "analyses": [
+    {
+      "sample_id": "A00EJ",
+      "source_pdb": "6P4B",
+      "structure": "D:\\data\\dynarepo_non_nucleic_full\\A00EJ\\structure.pdb",
+      "structure_sha256": "4adf7ee13f267013f342e2a825688e98d55c8781747990a6a5a273e453f84883",
+      "trajectory": "D:\\data\\dynarepo_non_nucleic_full\\A00EJ\\trajectory.xtc",
+      "trajectory_sha256": "5754c20a1740e3512cd5e5c7f6c5e93ad758ef3019c923b4d40c7d526c24556b",
+      "cached_label": "E:\\Project\\FlexPPI\\artifacts\\data\\dynarepo_labels\\A00EJ.npz",
+      "cached_label_sha256": "5e14bc4e498dec0f868ab2c842592f66fb9b1779d4244c77887e81712c886701",
+      "metadata_sha256": "9b997732e6dee102df273a2a77809b23cd30373ee6656dc5305abadc7bf08b33",
+      "residues": 128,
+      "chains": [
+        {
+          "chain": "D",
+          "role": "antigen",
+          "n_residues": 128,
+          "sequence": "KVFGRCELAAAMKRGLDNYQGYSLGNWVCAAKFESNFNTQATNRNTDGSTDYGILQINSRWWCNDGRTPGSENLSNIPCSALLSSDITASVNSAKKIVSDGNGMNAWVAWRNRCKGTDVQAWIRGCRL"
+        }
+      ],
+      "declared_replicates": 3,
+      "local_trajectory_files": [
+        "trajectory.xtc"
+      ],
+      "n_frames": 5001,
+      "time_ps_start": 0.0,
+      "time_ps_end": 500000.0,
+      "recomputed_windows": 5,
+      "max_cached_recomputed_value_difference": 9.5367431640625e-07,
+      "max_cached_recomputed_variance_difference": 8.344650268554688e-07,
+      "masks_identical": true,
+      "value_discrepancies_above_1e_minus5": [],
+      "reference_scope": "Antigen-only state; no antibody dynamics labels"
+    },
+    {
+      "sample_id": "A00KW",
+      "source_pdb": "1MLC",
+      "structure": "D:\\data\\dynarepo_non_nucleic_full\\A00KW\\structure.pdb",
+      "structure_sha256": "5b52c4032728024d0893fa064e5d4d8cb77174a91c9f5cc0e25ce0b669c752ec",
+      "trajectory": "D:\\data\\dynarepo_non_nucleic_full\\A00KW\\trajectory.xtc",
+      "trajectory_sha256": "091f4451f03034fcb31f9343d5443c7e7a88c07ace8cf6df72e44d99e9c38218",
+      "cached_label": "E:\\Project\\FlexPPI\\artifacts\\data\\dynarepo_labels\\A00KW.npz",
+      "cached_label_sha256": "55dabc36c4655474ceb605220ff0608ef6f6cf4f2bb83850fed03f1cf8c5e118",
+      "metadata_sha256": "b67203b7873e4b8a0512692330a7cfe17e4319f6baa19ed0e8c53bca19897c33",
+      "residues": 553,
+      "chains": [
+        {
+          "chain": "A",
+          "role": "antibody_light",
+          "n_residues": 210,
+          "sequence": "DIELTQSPATLSVTPGDSVSLSCRASQSISNNLWYQQKSESPRLLIKYVSQSSSGIPSRFSGSGSGTDFTLSINSVETEDFGMYFCQQSNSWPRTFGGGTKLEIKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERNSYTCEATKTSTSPIVKSFNRNEC"
+        },
+        {
+          "chain": "B",
+          "role": "antibody_heavy",
+          "n_residues": 215,
+          "sequence": "QVQLQESGAEVMKPGASVKISCKATGYTFSTYWIEWVKQRPGGLEWIGEILPGSGSTYYNEKFKGKATFTADTSSNTAYMQLSSLTSEDSAVYYCARGDGNYGYWGQGTTLTVSSASTTPPSVFPLAPGSAAQTNSMVTLGCLVKGYFPEPVTVTWNSGSLSSGVTFPAVLQSDLYTLSSSVTVPSSPRPSETVTCNVAPASSTKVDKKIVPRDC"
+        },
+        {
+          "chain": "E",
+          "role": "antigen",
+          "n_residues": 128,
+          "sequence": "KVFGRCELAAAMKRGLDNYRGYSLGNWVCAAKFESNFNTQATNRNTDGSTDYGILQINSRWWCNDGRTPGSRNLCNIPCSALLSSDITASVNCAKKIVSDGNGMNAWVAWRNRCKGTDVQAWIRGCRL"
+        }
+      ],
+      "declared_replicates": 3,
+      "local_trajectory_files": [
+        "trajectory.xtc"
+      ],
+      "n_frames": 1000,
+      "time_ps_start": 0.0,
+      "time_ps_end": 999.0,
+      "recomputed_windows": 1,
+      "max_cached_recomputed_value_difference": 7.152557373046875e-07,
+      "max_cached_recomputed_variance_difference": 0.0,
+      "masks_identical": true,
+      "value_discrepancies_above_1e_minus5": [],
+      "reference_scope": "Complete D44.1 antibody Fab–lysozyme complex; not HyHEL-10 mutation control"
+    },
+    {
+      "sample_id": "A00HE",
+      "source_pdb": "1VFB",
+      "structure": "D:\\data\\dynarepo_non_nucleic_full\\A00HE\\structure.pdb",
+      "structure_sha256": "e8297978af756ddd30d6b879dd2831acbde940a7a634eee07a8b2033c9f2728b",
+      "trajectory": "D:\\data\\dynarepo_non_nucleic_full\\A00HE\\trajectory.xtc",
+      "trajectory_sha256": "917572148acd953f4acd9f88fe207674100296f3ca3731d3ae2385ff97241a7d",
+      "cached_label": "E:\\Project\\FlexPPI\\artifacts\\data\\dynarepo_labels\\A00HE.npz",
+      "cached_label_sha256": "1cbc4e2d4cab7add7d80e9820cf8dbdd4cd474e361a0d21ce0521f2e11307515",
+      "metadata_sha256": "43c77c99a1921e982a3114806b83bed0e5ca1f2c4bfabb65e076a856d02d67ce",
+      "residues": 128,
+      "chains": [
+        {
+          "chain": "C",
+          "role": "antigen",
+          "n_residues": 128,
+          "sequence": "KVFGRCELAAAMKRGLDNYRGYSLGNWVCAAKFESNFNTQATNRNTDGSTDYGILQINSRWWCNDGRTPGSRNLCNIPCSALLSSDITASVNCAKKIVSDGNGMNAWVAWRNRCKGTDVQAWIRGCRL"
+        }
+      ],
+      "declared_replicates": 3,
+      "local_trajectory_files": [
+        "trajectory.xtc"
+      ],
+      "n_frames": 5001,
+      "time_ps_start": 0.0,
+      "time_ps_end": 500000.0,
+      "recomputed_windows": 5,
+      "max_cached_recomputed_value_difference": 0.0001341700553894043,
+      "max_cached_recomputed_variance_difference": 4.994682967662811e-05,
+      "masks_identical": true,
+      "value_discrepancies_above_1e_minus5": [
+        {
+          "model_index": 70,
+          "chain": "C",
+          "author_residue_id": "72",
+          "aa": "S",
+          "metric": "chi_entropy",
+          "cached_value": 0.8988777995109558,
+          "recomputed_value": 0.8987436294555664,
+          "absolute_difference": 0.0001341700553894043
+        }
+      ],
+      "reference_scope": "Antigen-only state; no antibody dynamics labels"
+    }
+  ],
+  "label_protocol": {
+    "source_function": "flexppi.data.labels.compute_dynarepo_labels",
+    "function_source_sha256": "b4bd55066faffeebe76f3fcf8c3ad1f6541ab592445a98b58b18277cfbcd7f10",
+    "constants_sha256": "c7b9113bc2b2e43995a31c841df6a24ccda6a2f88faf9311085081fa96796e30",
+    "pdb_parser_sha256": "595a69d3339e8d1c6675c28f347a7ac3adcba9fb8a41b79f52a6476b097d4b83",
+    "frame_stride": 1,
+    "window_frames": 1000,
+    "window_policy": "Non-overlapping complete 1000-frame windows; terminal incomplete window omitted, matching original source implementation.",
+    "RMSF": "C-alpha positions, chainwise least-squares fitting independently per window; Angstrom.",
+    "Hchi": "All chemically available chi dihedrals jointly binned into three 120 degree bins each; entropy=-sum(p ln p), nats. Undefined or incomplete side chains masked.",
+    "variance": "Across non-overlapping windows of one local trajectory; not between independent simulations.",
+    "SASA": "Not available in cached labels and not computed."
+  },
+  "runtime": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "MDAnalysis": "2.10.0",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "limits": [
+    "Only one local XTC exists for each accession despite metadata declaring three replicas.",
+    "No new MD was performed; no claim of three independent repetitions.",
+    "A00EJ and A00HE are different deposited lysozyme states with sequence changes; not a controlled rigid-versus-flex pair and not antibody dynamics.",
+    "A00KW is D44.1 Fab–lysozyme and lacks matched mutation/maturation states; useful absolute-label screen only.",
+    "These records exist in training inventory, so model comparison requires current full-chain family-held-out checkpoint audit, handled separately.",
+    "A00HE has one Hchi site differing by0.00013417 nats on recomputation; original and new values are both retained, no claim of exact Hchi identity for that record. Cause not established; discrete-bin sensitivity is a possibility, not confirmed.",
+    "No model predictions have been run by this analysis agent."
+  ]
+}

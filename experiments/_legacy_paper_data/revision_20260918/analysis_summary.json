@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "model_run": "performance_first_v2_atlas_hchi_v1",
+  "n_systems": 3068,
+  "rows": 959347,
+  "source_systems": {
+    "atlas": 1929,
+    "dynarepo": 895,
+    "itrace": 244
+  },
+  "valid_residues": {
+    "rmsf": 959347,
+    "chi_entropy": 798385
+  },
+  "invalid_metric_rows": {
+    "rmsf": 0,
+    "chi_entropy": 160962
+  },
+  "undefined_correlations": {
+    "raw": 0,
+    "aa_only": 0,
+    "residual": 0
+  },
+  "test_selection": "Fixed epoch 40; one held-out fold model per system; no ensemble.",
+  "baseline": "Residue-pooled AA-type means fitted on four training folds only.",
+  "residual": "Subtract training-fold AA mean from both prediction and target; MAE unchanged.",
+  "uncertainty": "Model variance is the single model's variance head, not five-fold ensemble variance.",
+  "coverage_warning": "Gaussian intervals are uncalibrated diagnostics, not validated confidence intervals. model_plus_label uses held-out label variance and is not deployment uncertainty.",
+  "statistics": "Descriptive only. Five-fold mean +/- sample SD where shown; no significance testing or independence claim for residues/folds.",
+  "server_max_absolute_difference": 0.00027612443136670883,
+  "strict_2e_4_exceedances": 2,
+  "platform_tolerance": "RMSF RMSE 0.001 Angstrom, other metrics 0.0002; initial strict audit retained.",
+  "source_manifest_sha256": "ec8be24d4b65851f8fe43c7570390aefcef34bddd5e14181ee834448526e78bb",
+  "oof_per_residue_sha256": "043678c54f22eccf87fc98cbd5a0a82d541e822c62033d26b6df08b8f9cbc704",
+  "analysis_script_sha256": "650891adb9a5e9227913b3f0aa64ea5f6d2f357280c387b7bd9b586fe0c734a2",
+  "source_files": {
+    "per_system_metrics.csv": "a83f12b76518fe1392179435c7f0eadc67f1229b763422470bba1f1e361d65e9",
+    "aa_only_per_system_metrics.csv": "4c3e71be90cc700fb226779f7b8cd334ff46d677f39178114ee4d650726f5b3e",
+    "hchi_residual_per_system_metrics.csv": "e5122f258c0f51b2c168af0d0b9c33777a33c3b599b401d1d3b269a4c6fa632d",
+    "source_fold_metrics.csv": "3c3bea1f4991184b09695e3f5f98416d41cfcd021940e1e19c184c58f8820757",
+    "training_fold_aa_priors.csv": "d3ef20b59250ac5aa1558408423d2f95470c29cf02506d7e229c3c3927d4fdf0",
+    "within_aa_metrics.csv": "024539185ded59ccab96c895f685eb589dd35a06d6bc7ac07a09a3d94f9d46c3",
+    "uncertainty_risk.csv": "97f1e013a2199bfd58da9d21ab37fb81e6b8a6b8fbddf7b72b1c2e0b6026783f",
+    "uncertainty_reliability.csv": "06d4e1df0bab928273541caa23e4184cf158817263a4d35b7ee7dc13574779e8",
+    "uncertainty_coverage.csv": "2f1f3ca8709124db483ebb0695587eb88265fc7a9f4550ced441a026cd413444",
+    "cpu_server_reproduction.csv": "3a7305ffd654a4b04a56b17d3a4879f991a6acc1fa9863c2ee8e84eaecfa2046"
+  }
+}

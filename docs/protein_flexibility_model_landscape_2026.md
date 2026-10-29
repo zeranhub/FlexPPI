@@ -195,7 +195,7 @@ MD 真值本身有随机噪声。每个测试体系最好有至少三条独立�
 
 ## 十一、检索覆盖、命名冲突和可复现性说明
 
-本次检索交叉使用了论文题名/摘要检索、官方论文页、PubMed/PMC、arXiv/OpenReview、实验室服务器页和 GitHub 仓库，关键词覆盖 `protein flexibility prediction`、`per-residue RMSF prediction`、`B-factor prediction`、`order parameter S2`、`normal mode flexibility`、`rigidity/hinge/disorder`、`conformational ensemble generation` 等组合。机器聚合检索存在明显噪声：OpenAlex 客户端因本地 Python 类型兼容错误不可用；Semantic Scholar 曾触发限流与 SSL EOF；一次包含非 ASCII 作者名的输出因 Windows GBK 编码中断；`agent-reach` 命令和 Exa MCP 后端在当前环境不可用；GitHub CLI 未登录。因此本文对核心条目均回到论文、官方仓库或实验室页面人工核查，而不是直接接受聚合搜索排序。完整机器检索审计和报错已追加到仓库根目录的 `allinone.md`，便于以后复查。
+本次检索交叉使用了论文题名/摘要检索、官方论文页、PubMed/PMC、arXiv/OpenReview、实验室服务器页和 GitHub 仓库，关键词覆盖 `protein flexibility prediction`、`per-residue RMSF prediction`、`B-factor prediction`、`order parameter S2`、`normal mode flexibility`、`rigidity/hinge/disorder`、`conformational ensemble generation` 等组合。机器聚合检索存在明显噪声：OpenAlex 客户端因本地 Python 类型兼容错误不可用；Semantic Scholar 曾触发限流与 SSL EOF；一次包含非 ASCII 作者名的输出因 Windows GBK 编码中断；`agent-reach` 命令和 Exa MCP 后端在当前环境不可用；GitHub CLI 未登录。因此本文对核心条目均回到论文、官方仓库或实验室页面人工核查，而不是直接接受聚合搜索排序。完整机器检索审计和报错保存在历史合并快照 `allinone.md`；该文件已于 2026-09-05 移入项目外清理归档，位置与恢复方法见 [备份说明](../BACKUP_MANIFEST.md)。
 
 还必须警惕同名：**FlexPred** 至少指 2008 年的构象开关残基分类器和 2012 年 Kihara 团队的静态结构到 MD 涨落 SVR；本文统一写成“FlexPred（Kuznetsov）”与“FlexPred-SVR（Kihara）”。“RMSF prediction”也可能指在某个配体或突变 MD 研究中用回归预测一个全蛋白汇总数，而不是逐残基曲线；这类工作只有在输出粒度与 FlexPPI 一致时才进入直接模型表。
 

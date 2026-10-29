@@ -1,0 +1,38 @@
+{
+  "root": "E:\\Project\\FlexPPI",
+  "final_document": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v58_20261022_中文修订_图2至5配色统一_三线表.docx",
+  "final_sha256": "2058acaf9dae807bef357338a1017541f8a4a4fc85583a2e745c36ac3f38cb2a",
+  "final_unchanged": true,
+  "organization_status": "final_figures_and_experiment_entries_organized",
+  "deletion_status": "not_requested_move_only",
+  "deleted_files": 0,
+  "deleted_bytes": 0,
+  "planned_deletion": {
+    "targets": 2800,
+    "files": 5806,
+    "bytes": 3475465161
+  },
+  "block_reason": null,
+  "moved_sources": [
+    "experiments/_sources",
+    "experiments/_case_validation_sources",
+    "experiments/_legacy_paper_data"
+  ],
+  "remaining_original_source_file": "paper/revision_v14_20261010/experiment_completion/opposite_affinity_rmsf_cases_20261022/局部柔性下降与相反亲和结果_案例分析_三线表_20261022.docx",
+  "remaining_original_source_file_reason": "A companion case report is locked by another process; it is not an old paper version.",
+  "cleanup_script": "scripts/stage_superseded_products.ps1",
+  "cleanup_script_review_command": "pwsh -File scripts/stage_superseded_products.ps1",
+  "cleanup_script_execution_requires_explicit_apply": true,
+  "requested_action": "Move the entire existing cleanup list into one holding folder; no permanent deletion.",
+  "staging": {
+    "status": "complete",
+    "folder": "E:\\Project\\FlexPPI\\待删除",
+    "manifest": "E:\\Project\\FlexPPI\\待删除\\移动清单.json",
+    "moved_targets": 2800,
+    "moved_files": 5806.0,
+    "moved_bytes": 3475464521.0,
+    "failed_targets": 0,
+    "remaining_sources": [],
+    "last_locked_v49_resolved": true
+  }
+}

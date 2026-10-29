@@ -1,0 +1,146 @@
+{
+  "pdb": "3hg1",
+  "model": "ProAffinity-GNN authors' simplified inference release",
+  "upstream_commit": "0dd07bb0fb0da9ef1578ee7ed9587a536fbe4c7e",
+  "torch_version": "2.2.2+cpu",
+  "torch_geometric_version": "2.3.1",
+  "source_sha256": "0e8663ffaf1a1153d69542a55a4d642c11745778c5f9ccd60ac70e1ddb8f63b2",
+  "upstream_source_sha256": "ae5c76ef9cc16698071a435ef2a5405c6ce5234770aa138506d723f20b4a7f68",
+  "upstream_bug_fix": "In the seq2 ESM loop, output1=model(**input2) replaced by output2=model(**input2), so pMHC uses its own chain ESM outputs rather than stale last-peptide output. One-variable correction; architecture and checkpoint unchanged.",
+  "checkpoint_sha256": "3e56a6842e2e67acc16273cbb0aa3e452868f0cecf7f8099581dc6b71db727d2",
+  "pdbqt_sha256": "45e3172f68398e6143b80d308184f79362ce921d34fec622930328df67b86cb3",
+  "chain_groups": [
+    "DE",
+    "ABC"
+  ],
+  "parsed_chain_lengths": {
+    "D": 194,
+    "E": 244,
+    "A": 276,
+    "B": 100,
+    "C": 10
+  },
+  "all_chain_sequences_match_input": true,
+  "state_dict_loading": [
+    {
+      "missing_keys": [],
+      "unexpected_keys": []
+    }
+  ],
+  "runtime_adapter": "CPU and weights_only=True checkpoint loading; frozen local ESM revision; inference under no_grad; reuse identical ESM token features in evaluation mode. Correct one upstream seq2 output variable; all graph node counts and edge indices validated. No architecture or learned parameters changed.",
+  "graph_checks": [
+    {
+      "name": "inter",
+      "nodes": 824,
+      "edges": 264,
+      "valid": true
+    },
+    {
+      "name": "TCR",
+      "nodes": 438,
+      "edges": 2456,
+      "valid": true
+    },
+    {
+      "name": "pMHC",
+      "nodes": 386,
+      "edges": 2270,
+      "valid": true
+    }
+  ],
+  "esm_revision": "08e4846e537177426273712802403f7ba8261b6c",
+  "esm_feature_cache": [
+    {
+      "cache": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\esm_feature_cache\\7d405e751dc9c4814f0d827d7b43b034f94b53af59fe616d8f3dbe4e19122fbf.pt",
+      "hit": true,
+      "shape": [
+        1,
+        196,
+        1280
+      ]
+    },
+    {
+      "cache": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\esm_feature_cache\\21c797bb177385ea56d706b49abc55ea855664f16ce5f564108c0d65eebb054f.pt",
+      "hit": true,
+      "shape": [
+        1,
+        246,
+        1280
+      ]
+    },
+    {
+      "cache": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\esm_feature_cache\\971ecf8135b7ec5de6e3590d6744e280881441a07a7396f8767dc61e05844a8e.pt",
+      "hit": true,
+      "shape": [
+        1,
+        278,
+        1280
+      ]
+    },
+    {
+      "cache": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\esm_feature_cache\\66f716d6663eb21dcbfe7785d2d8c3263c5e6c6a1340d88d3e9e4597d53c5c04.pt",
+      "hit": true,
+      "shape": [
+        1,
+        102,
+        1280
+      ]
+    },
+    {
+      "cache": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\esm_feature_cache\\2b060e1b5a10dcd552df3ede3f2c353467ba2038e466b4fa5b77e563ec65dd1b.pt",
+      "hit": true,
+      "shape": [
+        1,
+        12,
+        1280
+      ]
+    },
+    {
+      "cache": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\esm_feature_cache\\7d405e751dc9c4814f0d827d7b43b034f94b53af59fe616d8f3dbe4e19122fbf.pt",
+      "hit": true,
+      "shape": [
+        1,
+        196,
+        1280
+      ]
+    },
+    {
+      "cache": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\esm_feature_cache\\21c797bb177385ea56d706b49abc55ea855664f16ce5f564108c0d65eebb054f.pt",
+      "hit": true,
+      "shape": [
+        1,
+        246,
+        1280
+      ]
+    },
+    {
+      "cache": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\esm_feature_cache\\971ecf8135b7ec5de6e3590d6744e280881441a07a7396f8767dc61e05844a8e.pt",
+      "hit": true,
+      "shape": [
+        1,
+        278,
+        1280
+      ]
+    },
+    {
+      "cache": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\esm_feature_cache\\66f716d6663eb21dcbfe7785d2d8c3263c5e6c6a1340d88d3e9e4597d53c5c04.pt",
+      "hit": true,
+      "shape": [
+        1,
+        102,
+        1280
+      ]
+    },
+    {
+      "cache": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\esm_feature_cache\\2b060e1b5a10dcd552df3ede3f2c353467ba2038e466b4fa5b77e563ec65dd1b.pt",
+      "hit": true,
+      "shape": [
+        1,
+        12,
+        1280
+      ]
+    }
+  ],
+  "prediction_as_reported_pKa": 6.397427558898926,
+  "elapsed_seconds": 65.37271610007156
+}

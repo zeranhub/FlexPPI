@@ -1,0 +1,18 @@
+{
+  "reviewer": "free_energy_validation_design",
+  "status": "passed",
+  "checks": [
+    "aHchipredictions_errors_and_all151angle_ranges_aligned_by_position",
+    "b_all6Gln_Hchi_errors_3anglefulloccupancy_aligned_by_row",
+    "Q40_largestoverestimate_explicit",
+    "Q49_broadoccupancy_included",
+    "MD_curve_vs_scalar_model_scope_clear",
+    "common_probability_color_scale",
+    "no_actual_legend_or_text_overlap"
+  ],
+  "caption_precision_fixes_applied": [
+    "a_Fstar_le1_explicit",
+    "b_origin0_explicit"
+  ],
+  "required_remaining_fixes": []
+}

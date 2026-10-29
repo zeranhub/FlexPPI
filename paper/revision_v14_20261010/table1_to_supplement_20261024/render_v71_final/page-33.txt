@@ -1,0 +1,30 @@
+33 
+I 数值预测与对照结果 
+表 S11：与图 2模型口径一致的数值预测结果。A为 3,063条记录的五折体系留出内部比较，B为图 2d、e相同 615
+条 DynaRepo复合物上的七种方法，C为 ThermoPCD的 32条外部记录。各项先逐记录计算，再对记录等权平均；
+MAE越低越好，Spearman相关 ρ越高越好。 
+方法 
+RMSF (Å) Hχ (nats) 
+MAE ↓ ρ ↑ MAE ↓ ρ ↑ 
+A  五折体系留出：内部对照（3,063条记录） 
+FlexPPI (Full) 0.577 0.796 0.166 0.941 
+FlexPPI (Intra) 0.636 0.777 0.170 0.938 
+Static 0.677 0.756 0.187 0.929 
+AA 0.909 0.256 0.242 0.888 
+B  DynaRepo复合物：外部方法比较（615条记录） 
+FlexPPI (Full) 0.350 0.758 — — 
+BackFlip-2.1 (assembly) 0.620 0.667 — — 
+BackFlip-1.0 (assembly) 0.579 0.655 — — 
+DynaProt-M 0.671 0.698 — — 
+FastProtFlex — 0.712 — — 
+ANM — 0.570 — — 
+GNM — 0.512 — — 
+C  ThermoPCD：内部对照（32条记录） 
+FlexPPI (Full) 0.474 0.650 0.208 0.895 
+FlexPPI (Intra) 0.471 0.601 0.229 0.884 
+Static 0.471 0.645 0.211 0.886 
+AA 0.669 0.279 0.243 0.855 
+注：Full为完整结构模型，Intra为链内模型，Static为静态特征回归，AA为训练集氨基酸类型均值对照。B中
+BackFlip两个版本均采用 assembly模式，DynaProt-M按作者实现逐链推理后合并；FastProtFlex、ANM和 GNM输出
+相对分数，Å单位 MAE不适用。B只比较 RMSF，Hχ未在该子集中汇总；“—”表示不适用或未评价。其 AP与
+AUROC见表 S10。C中四种方法均使用排除关联记录后的 2,430条训练记录。 

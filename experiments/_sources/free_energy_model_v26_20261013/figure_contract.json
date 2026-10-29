@@ -1,0 +1,23 @@
+{
+  "scientific_question": "Frozen sidechain predictions identify actual lowFstar anglewidth and fineangularoccupancy differences amongsameAApositions",
+  "archetype": "quantitative_grid",
+  "panels": {
+    "a": "PerrecordsameAA-centered correlation of3predictors withMDthreshold1lowFstar total angularwidth",
+    "b": "Prediction-onlyhighlowhalfgroups actualMDlowFstarwidthdifference,3predictors",
+    "c": "Existingfrozen fineentropy correlation test",
+    "d": "Existingfrozen fineentropy predictiondefinedgroup test"
+  },
+  "all_data": "83records33142eligiblepositions; eachrecord83pointspermethod/panel; no favorablecase selection; allrawpoints retained",
+  "scope": "Scalar Hchi evaluated for empiricalFstar low-valuedanglecoverage and occupancy ranking, not densitycurve prediction",
+  "asset": "PairedBoxScatter1.R connection/pointparaminheritance; existingvalidatedfig8Pythoncode; no box or t-test adoption",
+  "export_mm": [
+    183,
+    167
+  ],
+  "formats": [
+    "pdf",
+    "svg",
+    "png"
+  ],
+  "statistics": "SameAAwithinrecord>=4typecontrol; source-stratified10000bootstrappairedrecordunit; meanand95percentileinterval; no pvalues"
+}

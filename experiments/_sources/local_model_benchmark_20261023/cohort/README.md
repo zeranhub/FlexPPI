@@ -1,0 +1,9 @@
+# Local benchmark cohort inventory
+
+Read records.csv for complete-structure inputs and chains.csv for independent-chain inputs. All paths point to existing local immutable files; their current content hashes were verified without rewriting original paths or original manifests. reference_table_path in records.csv resolves the common residue truth and masks. aligned_array_start/stop use the verified original static training-schema order for BackFlip/Static/AA NPZ slicing. Existing raw Full/Intra NPZ files additionally contain residue identities, masks and references.
+
+The candidate disjoint partition is single_chain / other_multichain / tcr_pmhc_itrace, pending optional user preference. other_multichain includes genuine complexes. all_multichain is an overlapping union, not a fourth disjoint group. annotation_architecture_candidates.csv is diagnostic only: source PDB author chains may have been renamed in the actual MD input, and no arbitrary sequence-identity threshold was introduced.
+
+ANM/GNM raw values are retained in their common-residue CSV; join on sample_id/residue_index/chain/author_residue_id. PLANET/RMSF-net historical completion certificates and per-record scores are local, but their 3063-cohort per-position NPZ predictions are not in the local copied baseline directories. Do not treat a certificate or a per-record score as raw per-position data. Their current inventory is explicit in external_official_result_inventory.csv.
+
+bootstrap_membership.csv preserves both original fold and family fold plus one stable family component for every sample. All methods must remain paired on sample_id. All ITrace records share one connected family, so that subgroup cannot yield independent-family confidence intervals. Published comparator training overlap is unresolved. No inference, fitting, normalization, calibration, new bootstrap or original-data mutation was performed.

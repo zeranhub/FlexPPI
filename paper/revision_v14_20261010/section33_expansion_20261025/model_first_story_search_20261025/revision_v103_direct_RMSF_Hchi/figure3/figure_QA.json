@@ -1,0 +1,58 @@
+{
+  "size_mm": [
+    183.0,
+    227.0
+  ],
+  "font_pt": 9,
+  "font_at_167p6mm": 8.242622950819671,
+  "panels_a_to_e_unchanged_from_v100": true,
+  "e_four_horizontal": true,
+  "f": "direct MD RMSF versus MD joint Hchi; corresponding Full prediction relationship",
+  "common_f_positions": 824988,
+  "f_records": 3063,
+  "f_rho": {
+    "MD": 0.20861515505308,
+    "Full": 0.2619048885568794
+  },
+  "density": {
+    "panels": [
+      {
+        "panel": "MD",
+        "all_input_positions": 824988,
+        "visible_positions": 820754,
+        "out_of_view_positions": 4234,
+        "density_count_sum": 820754,
+        "binned_nonempty_cells": 2286
+      },
+      {
+        "panel": "Full",
+        "all_input_positions": 824988,
+        "visible_positions": 824082,
+        "out_of_view_positions": 906,
+        "density_count_sum": 824082,
+        "binned_nonempty_cells": 1801
+      }
+    ],
+    "shared_log_color_count_range": [
+      1,
+      16895.0
+    ],
+    "common_physical_axis_limits": true,
+    "both_same_common_valid_positions": true
+  },
+  "outside_text": [],
+  "model_and_MD_rerun": false,
+  "word_changed": false,
+  "visual_review": "passed: root and independent reviewer opened density views; main root reviewed a–f; no clipped text or collision",
+  "sha256": {
+    "png": "2588c284a12679457ef42b0f8224c7542375d00ebbb28eaa20d68aaf5f5920c4",
+    "pdf": "adb343cadc8883d99a036f22bce208177366c59cc95e48ad841f4208c06259fe",
+    "svg": "39931ffcbd557f62c3c8b52679968a5a5d890588eaaaa2afb5283759f321ed76"
+  },
+  "embedded_Arial_fonts": [
+    "/ELUGPM+ArialMT",
+    "/ELUGPM+Arial-BoldMT"
+  ],
+  "all_values_exact_from_frozen_OOF": true,
+  "word_unchanged": true
+}

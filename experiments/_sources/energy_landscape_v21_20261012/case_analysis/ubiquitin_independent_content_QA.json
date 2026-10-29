@@ -1,0 +1,757 @@
+{
+  "status": "pass",
+  "review_type": "Read-only independent recomputation from existing saved angle CSV; no model, source or label mutation",
+  "checks": {
+    "source_angle_finite_and_in_closed_180_range": true,
+    "cache_hash_matches_provenance": true,
+    "code_hash_matches_analysis_audit": true,
+    "plan_hash_matches_analysis_audit": true,
+    "all_planned_inputs_hash_match": true,
+    "full119_label_masks_match_cache": true,
+    "full119_valid_targets_match_labels": true,
+    "full119_valid_variances_match_labels": true,
+    "phase60_direct_conventional_intervals_and_periodicity": true,
+    "trans_merges_both_sides_of_180_seam": true,
+    "phase0_preserves_original_exact_endpoint_rule": true,
+    "Q41_frame_map_complete": true,
+    "Q41_source_used_csv_matches": true,
+    "Q41_original_joint_codes_match": true,
+    "Q41_record_residue_and_mask_match": true,
+    "Q41_all27_joint_matrix_match": true,
+    "Q41_phase0_entropy_csv_reproduced": true,
+    "Q41_phase0_change_csv_reproduced": true,
+    "Q41_phase0_occupancies_reproduced": true,
+    "Q41_frozen_Hchi_reproduced": true,
+    "Q41_frozen_Hchi_variance_reproduced": true,
+    "Q41_frozen_predictions_match_case_summary": true,
+    "Q41_window1_archived_entropy_match": true,
+    "Q41_window2_archived_entropy_match": true,
+    "Q41_window3_archived_entropy_match": true,
+    "Q41_window4_archived_entropy_match": true,
+    "Q41_window5_archived_entropy_match": true,
+    "Q41_phase30_entropy_csv_reproduced": true,
+    "Q41_phase30_change_csv_reproduced": true,
+    "Q41_phase30_occupancies_reproduced": true,
+    "Q41_phase60_entropy_csv_reproduced": true,
+    "Q41_phase60_change_csv_reproduced": true,
+    "Q41_phase60_occupancies_reproduced": true,
+    "Q41_phase90_entropy_csv_reproduced": true,
+    "Q41_phase90_change_csv_reproduced": true,
+    "Q41_phase90_occupancies_reproduced": true,
+    "Q41_window0_chi1_histogram_and_Fstar_match": true,
+    "Q41_window0_chi2_histogram_and_Fstar_match": true,
+    "Q41_window0_chi3_histogram_and_Fstar_match": true,
+    "Q41_window1_chi1_histogram_and_Fstar_match": true,
+    "Q41_window1_chi2_histogram_and_Fstar_match": true,
+    "Q41_window1_chi3_histogram_and_Fstar_match": true,
+    "Q41_window2_chi1_histogram_and_Fstar_match": true,
+    "Q41_window2_chi2_histogram_and_Fstar_match": true,
+    "Q41_window2_chi3_histogram_and_Fstar_match": true,
+    "Q41_window3_chi1_histogram_and_Fstar_match": true,
+    "Q41_window3_chi2_histogram_and_Fstar_match": true,
+    "Q41_window3_chi3_histogram_and_Fstar_match": true,
+    "Q41_window4_chi1_histogram_and_Fstar_match": true,
+    "Q41_window4_chi2_histogram_and_Fstar_match": true,
+    "Q41_window4_chi3_histogram_and_Fstar_match": true,
+    "Q41_window5_chi1_histogram_and_Fstar_match": true,
+    "Q41_window5_chi2_histogram_and_Fstar_match": true,
+    "Q41_window5_chi3_histogram_and_Fstar_match": true,
+    "Q62_frame_map_complete": true,
+    "Q62_source_used_csv_matches": true,
+    "Q62_original_joint_codes_match": true,
+    "Q62_record_residue_and_mask_match": true,
+    "Q62_all27_joint_matrix_match": true,
+    "Q62_phase0_entropy_csv_reproduced": true,
+    "Q62_phase0_change_csv_reproduced": true,
+    "Q62_phase0_occupancies_reproduced": true,
+    "Q62_frozen_Hchi_reproduced": true,
+    "Q62_frozen_Hchi_variance_reproduced": true,
+    "Q62_frozen_predictions_match_case_summary": true,
+    "Q62_window1_archived_entropy_match": true,
+    "Q62_window2_archived_entropy_match": true,
+    "Q62_window3_archived_entropy_match": true,
+    "Q62_window4_archived_entropy_match": true,
+    "Q62_window5_archived_entropy_match": true,
+    "Q62_phase30_entropy_csv_reproduced": true,
+    "Q62_phase30_change_csv_reproduced": true,
+    "Q62_phase30_occupancies_reproduced": true,
+    "Q62_phase60_entropy_csv_reproduced": true,
+    "Q62_phase60_change_csv_reproduced": true,
+    "Q62_phase60_occupancies_reproduced": true,
+    "Q62_phase90_entropy_csv_reproduced": true,
+    "Q62_phase90_change_csv_reproduced": true,
+    "Q62_phase90_occupancies_reproduced": true,
+    "Q62_window0_chi1_histogram_and_Fstar_match": true,
+    "Q62_window0_chi2_histogram_and_Fstar_match": true,
+    "Q62_window0_chi3_histogram_and_Fstar_match": true,
+    "Q62_window1_chi1_histogram_and_Fstar_match": true,
+    "Q62_window1_chi2_histogram_and_Fstar_match": true,
+    "Q62_window1_chi3_histogram_and_Fstar_match": true,
+    "Q62_window2_chi1_histogram_and_Fstar_match": true,
+    "Q62_window2_chi2_histogram_and_Fstar_match": true,
+    "Q62_window2_chi3_histogram_and_Fstar_match": true,
+    "Q62_window3_chi1_histogram_and_Fstar_match": true,
+    "Q62_window3_chi2_histogram_and_Fstar_match": true,
+    "Q62_window3_chi3_histogram_and_Fstar_match": true,
+    "Q62_window4_chi1_histogram_and_Fstar_match": true,
+    "Q62_window4_chi2_histogram_and_Fstar_match": true,
+    "Q62_window4_chi3_histogram_and_Fstar_match": true,
+    "Q62_window5_chi1_histogram_and_Fstar_match": true,
+    "Q62_window5_chi2_histogram_and_Fstar_match": true,
+    "Q62_window5_chi3_histogram_and_Fstar_match": true,
+    "cache_unchanged_during_review": true
+  },
+  "failed_checks": [],
+  "input_sha256": {
+    "E:\\Project\\FlexPPI\\paper\\figures\\case_validation_v13_20261009\\ubiquitin\\inputs\\A003R_Q41_Q62_angles_all_5001_frames.csv": "cf1a8c73e2ea0ec2e1f4658c9e24321f16fc8dfbd49950b4eeebc4895e257aad",
+    "E:\\Project\\FlexPPI\\paper\\figures\\case_validation_v13_20261009\\data\\A003R_Q41_Q62_provenance_and_QA.json": "24596a40240963a9b573d8d0ec1384015cc1d166c967dfaf8e5b2e6db3e8e859",
+    "E:\\Project\\FlexPPI\\paper\\figures\\case_validation_v13_20261009\\data\\ubiquitin_Q41_Q62_validation_summary.csv": "fa72ab41562154c52c77860dfd65fbedc88bb0e712be95fa9f79c8875907dc00",
+    "E:\\Project\\FlexPPI\\paper\\figures\\case_validation_v13_20261009\\data\\ubiquitin_Q41_Q62_all27_joint_frequencies.csv": "67ae7937a0fc695521fed04cc28c56e77698b0cf9aed36a3dc23bc3afb91358b",
+    "E:\\Project\\FlexPPI\\paper\\figures\\case_validation_v13_20261009\\data\\A003R_Q41_Q62_label_windows.csv": "98e04d1d76644bf9aa8d65a67cf233d53a9a7944b3da995ccc00ad90341bd9cf",
+    "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\neural_exports\\evaluation\\full\\A003R.npz": "b8a764739993e3bce18dedb3cff493c50a1a52613a08baac16f1803c4edabb5a",
+    "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\training_payload\\dataset\\labels\\A003R.npz": "a528abc00e9df39370da04bf76957acb471b9b900ca66e53ccdde955e7d409c2",
+    "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\src\\flexppi\\data\\labels.py": "2fe0692b1b77b0e0cf9f7e69280b4debf9cf3529668f8e7841aa7dae9434110d",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\analyze_ubiquitin_landscape.py": "6d564a500001f649033545fe62dbae99ebe4d99c741c7af50c8416d9e3edeb15"
+  },
+  "cache_protocol": "chemical_identity_corrected_v1 full fold0 epoch40 seed7",
+  "cache_sha256": "b8a764739993e3bce18dedb3cff493c50a1a52613a08baac16f1803c4edabb5a",
+  "endpoint_and_frame_details": [
+    {
+      "residue": "Q41",
+      "retained_frame_range": [
+        0,
+        4999
+      ],
+      "retained_time_range_ns": [
+        0.0,
+        499.9
+      ],
+      "excluded_last_frame_time_ns": 500.0,
+      "exact_minus180_count_per_angle": [
+        0,
+        0,
+        0
+      ],
+      "exact_plus180_count_per_angle": [
+        0,
+        0,
+        0
+      ],
+      "raw_unwrapped_seam_crossings_per_angle": [
+        0,
+        2313,
+        6
+      ]
+    },
+    {
+      "residue": "Q62",
+      "retained_frame_range": [
+        0,
+        4999
+      ],
+      "retained_time_range_ns": [
+        0.0,
+        499.9
+      ],
+      "excluded_last_frame_time_ns": 500.0,
+      "exact_minus180_count_per_angle": [
+        0,
+        0,
+        0
+      ],
+      "exact_plus180_count_per_angle": [
+        0,
+        0,
+        0
+      ],
+      "raw_unwrapped_seam_crossings_per_angle": [
+        53,
+        342,
+        425
+      ]
+    }
+  ],
+  "boundary_change_details": [
+    {
+      "residue": "Q41",
+      "original_only_changes": 2023,
+      "centred_only_changes": 70,
+      "both_definitions_change": 195,
+      "fraction_original_changes_within_same_conventional_state": 0.912082957619477
+    },
+    {
+      "residue": "Q62",
+      "original_only_changes": 2381,
+      "centred_only_changes": 32,
+      "both_definitions_change": 66,
+      "fraction_original_changes_within_same_conventional_state": 0.9730281977932161
+    }
+  ],
+  "independent_entropies": [
+    {
+      "residue": "Q41",
+      "phase_degrees": 0,
+      "joint_window_mean": 1.890488441008932,
+      "joint_pooled": 1.9298184241155363,
+      "joint_pooled_minus_window_mean": 0.039329983106604294,
+      "chi1_window_mean": 0.8366214815807096,
+      "chi2_window_mean": 0.679581842201878,
+      "chi3_window_mean": 0.5742326169387189,
+      "chi1_pooled": 0.8551565360996856,
+      "chi2_pooled": 0.6854393565969992,
+      "chi3_pooled": 0.5961569358405485,
+      "conditional_chi2_chi3_given_chi1_window_mean": 1.0538669594282224,
+      "saved_chi1_frame_changes": 2218
+    },
+    {
+      "residue": "Q41",
+      "phase_degrees": 30,
+      "joint_window_mean": 0.5773007807574607,
+      "joint_pooled": 0.6255992618990346,
+      "joint_pooled_minus_window_mean": 0.04829848114157387,
+      "chi1_window_mean": 0.4975741646722208,
+      "chi2_window_mean": 0.004744353067339252,
+      "chi3_window_mean": 0.4789449776778795,
+      "chi1_pooled": 0.5437647103468171,
+      "chi2_pooled": 0.005050968505638118,
+      "chi3_pooled": 0.5173613760395811,
+      "conditional_chi2_chi3_given_chi1_window_mean": 0.0797266160852399,
+      "saved_chi1_frame_changes": 266
+    },
+    {
+      "residue": "Q41",
+      "phase_degrees": 60,
+      "joint_window_mean": 0.5278078218211169,
+      "joint_pooled": 0.5760404137634856,
+      "joint_pooled_minus_window_mean": 0.04823259194236873,
+      "chi1_window_mean": 0.49177734889688496,
+      "chi2_window_mean": 0.0,
+      "chi3_window_mean": 0.506262672493474,
+      "chi1_pooled": 0.5379674103250792,
+      "chi2_pooled": -0.0,
+      "chi3_pooled": 0.5511473767734615,
+      "conditional_chi2_chi3_given_chi1_window_mean": 0.03603047292423189,
+      "saved_chi1_frame_changes": 265
+    },
+    {
+      "residue": "Q41",
+      "phase_degrees": 90,
+      "joint_window_mean": 1.0400467964051496,
+      "joint_pooled": 1.0923818968138614,
+      "joint_pooled_minus_window_mean": 0.05233510040871181,
+      "chi1_window_mean": 0.4836898476582907,
+      "chi2_window_mean": 0.04454637791767031,
+      "chi3_window_mean": 0.7603689063439306,
+      "chi1_pooled": 0.5273941008621562,
+      "chi2_pooled": 0.04755598094933912,
+      "chi3_pooled": 0.7911840363387036,
+      "conditional_chi2_chi3_given_chi1_window_mean": 0.5563569487468589,
+      "saved_chi1_frame_changes": 353
+    },
+    {
+      "residue": "Q62",
+      "phase_degrees": 0,
+      "joint_window_mean": 2.6310663969411565,
+      "joint_pooled": 2.64840749892697,
+      "joint_pooled_minus_window_mean": 0.017341101985813623,
+      "chi1_window_mean": 0.832649723636773,
+      "chi2_window_mean": 0.8353092533465366,
+      "chi3_window_mean": 1.0317451111365923,
+      "chi1_pooled": 0.8376656480732882,
+      "chi2_pooled": 0.8400427528181948,
+      "chi3_pooled": 1.0331271980651295,
+      "conditional_chi2_chi3_given_chi1_window_mean": 1.7984166733043834,
+      "saved_chi1_frame_changes": 2447
+    },
+    {
+      "residue": "Q62",
+      "phase_degrees": 30,
+      "joint_window_mean": 1.5747120251542608,
+      "joint_pooled": 1.6051794951852392,
+      "joint_pooled_minus_window_mean": 0.030467470030978383,
+      "chi1_window_mean": 0.40420575736416336,
+      "chi2_window_mean": 0.6001273912689178,
+      "chi3_window_mean": 0.8213211689736338,
+      "chi1_pooled": 0.42179398904973764,
+      "chi2_pooled": 0.6096643411152991,
+      "chi3_pooled": 0.8227895470830204,
+      "conditional_chi2_chi3_given_chi1_window_mean": 1.1705062677900975,
+      "saved_chi1_frame_changes": 115
+    },
+    {
+      "residue": "Q62",
+      "phase_degrees": 60,
+      "joint_window_mean": 1.3988417028617879,
+      "joint_pooled": 1.4308498804157448,
+      "joint_pooled_minus_window_mean": 0.03200817755395691,
+      "chi1_window_mean": 0.4032949064307701,
+      "chi2_window_mean": 0.5680869404896872,
+      "chi3_window_mean": 0.7059867299302398,
+      "chi1_pooled": 0.4213015727992731,
+      "chi2_pooled": 0.5784851804654785,
+      "chi3_pooled": 0.7074098465688992,
+      "conditional_chi2_chi3_given_chi1_window_mean": 0.9955467964310178,
+      "saved_chi1_frame_changes": 98
+    },
+    {
+      "residue": "Q62",
+      "phase_degrees": 90,
+      "joint_window_mean": 1.5126668126244045,
+      "joint_pooled": 1.5442222065322861,
+      "joint_pooled_minus_window_mean": 0.031555393907881646,
+      "chi1_window_mean": 0.412822411105204,
+      "chi2_window_mean": 0.5603282111775438,
+      "chi3_window_mean": 0.8409518380488533,
+      "chi1_pooled": 0.43002960680455804,
+      "chi2_pooled": 0.5704950225101852,
+      "chi3_pooled": 0.8425533993076769,
+      "conditional_chi2_chi3_given_chi1_window_mean": 1.0998444015192006,
+      "saved_chi1_frame_changes": 126
+    }
+  ],
+  "frozen_window_entropies": [
+    {
+      "residue": "Q41",
+      "window": 1,
+      "joint_Hchi": 1.8447026097421133,
+      "start_frame": 0,
+      "stop_frame_exclusive": 1000
+    },
+    {
+      "residue": "Q41",
+      "window": 2,
+      "joint_Hchi": 1.828792171713198,
+      "start_frame": 1000,
+      "stop_frame_exclusive": 2000
+    },
+    {
+      "residue": "Q41",
+      "window": 3,
+      "joint_Hchi": 1.8711370903472861,
+      "start_frame": 2000,
+      "stop_frame_exclusive": 3000
+    },
+    {
+      "residue": "Q41",
+      "window": 4,
+      "joint_Hchi": 1.9774505322126332,
+      "start_frame": 3000,
+      "stop_frame_exclusive": 4000
+    },
+    {
+      "residue": "Q41",
+      "window": 5,
+      "joint_Hchi": 1.9303598010294296,
+      "start_frame": 4000,
+      "stop_frame_exclusive": 5000
+    },
+    {
+      "residue": "Q62",
+      "window": 1,
+      "joint_Hchi": 2.648424600282232,
+      "start_frame": 0,
+      "stop_frame_exclusive": 1000
+    },
+    {
+      "residue": "Q62",
+      "window": 2,
+      "joint_Hchi": 2.5364685460418674,
+      "start_frame": 1000,
+      "stop_frame_exclusive": 2000
+    },
+    {
+      "residue": "Q62",
+      "window": 3,
+      "joint_Hchi": 2.7083812282274744,
+      "start_frame": 2000,
+      "stop_frame_exclusive": 3000
+    },
+    {
+      "residue": "Q62",
+      "window": 4,
+      "joint_Hchi": 2.488072676379343,
+      "start_frame": 3000,
+      "stop_frame_exclusive": 4000
+    },
+    {
+      "residue": "Q62",
+      "window": 5,
+      "joint_Hchi": 2.7739849337748663,
+      "start_frame": 4000,
+      "stop_frame_exclusive": 5000
+    }
+  ],
+  "histogram_diagnostics": [
+    {
+      "residue": "Q41",
+      "window": 0,
+      "chi": 1,
+      "count_sum": 5000,
+      "density_integral": 0.9999999999999976,
+      "visited_bins": 39,
+      "empty_bins_as_NaN": 33,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 0,
+      "chi": 2,
+      "count_sum": 5000,
+      "density_integral": 0.9999999999999989,
+      "visited_bins": 17,
+      "empty_bins_as_NaN": 55,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 0,
+      "chi": 3,
+      "count_sum": 5000,
+      "density_integral": 0.9999999999999951,
+      "visited_bins": 50,
+      "empty_bins_as_NaN": 22,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 1,
+      "chi": 1,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999991,
+      "visited_bins": 26,
+      "empty_bins_as_NaN": 46,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 1,
+      "chi": 2,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999986,
+      "visited_bins": 15,
+      "empty_bins_as_NaN": 57,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 1,
+      "chi": 3,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999984,
+      "visited_bins": 43,
+      "empty_bins_as_NaN": 29,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 2,
+      "chi": 1,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999996,
+      "visited_bins": 32,
+      "empty_bins_as_NaN": 40,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 2,
+      "chi": 2,
+      "count_sum": 1000,
+      "density_integral": 1.0,
+      "visited_bins": 16,
+      "empty_bins_as_NaN": 56,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 2,
+      "chi": 3,
+      "count_sum": 1000,
+      "density_integral": 0.999999999999998,
+      "visited_bins": 40,
+      "empty_bins_as_NaN": 32,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 3,
+      "chi": 1,
+      "count_sum": 1000,
+      "density_integral": 1.0,
+      "visited_bins": 27,
+      "empty_bins_as_NaN": 45,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 3,
+      "chi": 2,
+      "count_sum": 1000,
+      "density_integral": 1.0,
+      "visited_bins": 14,
+      "empty_bins_as_NaN": 58,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 3,
+      "chi": 3,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999996,
+      "visited_bins": 43,
+      "empty_bins_as_NaN": 29,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 4,
+      "chi": 1,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999986,
+      "visited_bins": 31,
+      "empty_bins_as_NaN": 41,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 4,
+      "chi": 2,
+      "count_sum": 1000,
+      "density_integral": 1.0,
+      "visited_bins": 17,
+      "empty_bins_as_NaN": 55,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 4,
+      "chi": 3,
+      "count_sum": 1000,
+      "density_integral": 0.999999999999998,
+      "visited_bins": 45,
+      "empty_bins_as_NaN": 27,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 5,
+      "chi": 1,
+      "count_sum": 1000,
+      "density_integral": 0.999999999999999,
+      "visited_bins": 29,
+      "empty_bins_as_NaN": 43,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 5,
+      "chi": 2,
+      "count_sum": 1000,
+      "density_integral": 1.0,
+      "visited_bins": 14,
+      "empty_bins_as_NaN": 58,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q41",
+      "window": 5,
+      "chi": 3,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999974,
+      "visited_bins": 40,
+      "empty_bins_as_NaN": 32,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 0,
+      "chi": 1,
+      "count_sum": 5000,
+      "density_integral": 0.9999999999999941,
+      "visited_bins": 46,
+      "empty_bins_as_NaN": 26,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 0,
+      "chi": 2,
+      "count_sum": 5000,
+      "density_integral": 0.999999999999993,
+      "visited_bins": 55,
+      "empty_bins_as_NaN": 17,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 0,
+      "chi": 3,
+      "count_sum": 5000,
+      "density_integral": 0.9999999999999931,
+      "visited_bins": 70,
+      "empty_bins_as_NaN": 2,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 1,
+      "chi": 1,
+      "count_sum": 1000,
+      "density_integral": 0.999999999999999,
+      "visited_bins": 33,
+      "empty_bins_as_NaN": 39,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 1,
+      "chi": 2,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999991,
+      "visited_bins": 43,
+      "empty_bins_as_NaN": 29,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 1,
+      "chi": 3,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999986,
+      "visited_bins": 66,
+      "empty_bins_as_NaN": 6,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 2,
+      "chi": 1,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999996,
+      "visited_bins": 34,
+      "empty_bins_as_NaN": 38,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 2,
+      "chi": 2,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999991,
+      "visited_bins": 44,
+      "empty_bins_as_NaN": 28,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 2,
+      "chi": 3,
+      "count_sum": 1000,
+      "density_integral": 0.999999999999999,
+      "visited_bins": 63,
+      "empty_bins_as_NaN": 9,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 3,
+      "chi": 1,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999986,
+      "visited_bins": 34,
+      "empty_bins_as_NaN": 38,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 3,
+      "chi": 2,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999996,
+      "visited_bins": 43,
+      "empty_bins_as_NaN": 29,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 3,
+      "chi": 3,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999966,
+      "visited_bins": 67,
+      "empty_bins_as_NaN": 5,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 4,
+      "chi": 1,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999991,
+      "visited_bins": 34,
+      "empty_bins_as_NaN": 38,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 4,
+      "chi": 2,
+      "count_sum": 1000,
+      "density_integral": 1.0,
+      "visited_bins": 40,
+      "empty_bins_as_NaN": 32,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 4,
+      "chi": 3,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999987,
+      "visited_bins": 62,
+      "empty_bins_as_NaN": 10,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 5,
+      "chi": 1,
+      "count_sum": 1000,
+      "density_integral": 0.999999999999998,
+      "visited_bins": 40,
+      "empty_bins_as_NaN": 32,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 5,
+      "chi": 2,
+      "count_sum": 1000,
+      "density_integral": 0.9999999999999991,
+      "visited_bins": 46,
+      "empty_bins_as_NaN": 26,
+      "minimum_Fstar": -0.0
+    },
+    {
+      "residue": "Q62",
+      "window": 5,
+      "chi": 3,
+      "count_sum": 1000,
+      "density_integral": 0.999999999999999,
+      "visited_bins": 64,
+      "empty_bins_as_NaN": 8,
+      "minimum_Fstar": -0.0
+    }
+  ],
+  "interpretation": [
+    "Positive phase means wrap(theta-phase), not wrap(theta+phase). At phase60 it agrees exactly with non-Pro conventional chi1 intervals and merges the +/-180 trans seam.",
+    "Original phase0 deliberately preserves clip/frozen endpoint handling. The six retained angle series contain no exact +/-180 values, so the phase0 endpoint exception causes no numeric difference for this case.",
+    "Five-window mean entropy reproduces frozen Hchi; pooled entropy is a different statistic and is larger for these records by entropy concavity.",
+    "Phase60 joint entropy shifts all three angles uniformly and is a partition-sensitivity result. It is not a complete physical rotamer correction for Gln terminal chi3.",
+    "Phase60 chi1 marginal entropy is higher for Q41; the complete joint entropy remains higher for Q62. Conditional diversity of chi2/chi3 given chi1 accounts algebraically for that difference.",
+    "Saved-frame changes are changes at 100ps observation spacing, not transition rates. Most original changes stay within the same conventional chi1 state.",
+    "Every zero-count histogram bin retains NaN Fstar, every visited bin matches -ln(p/pmax), and each curve has minimum zero. Plotting must preserve gaps rather than joining through missing bins.",
+    "CSV name ubiquitin_chi1_histograms_and_Fstar.csv is inherited, but its chi column contains all three angles. A three-column figure must filter chi1/chi2/chi3 separately.",
+    "The analysis retains frames0..4999 (0..499.9ns) of the existing5001-frame trajectory and matches the five1000-frame label windows; frame5000 at500ns is excluded."
+  ]
+}

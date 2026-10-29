@@ -1,0 +1,106 @@
+{
+  "case_id": "C10",
+  "status": "passed",
+  "model": "Existing joint Full fold0; trained on ATLAS1866 + DynaRepo564; ITrace0",
+  "model_n": 1,
+  "model_error_bars": null,
+  "MD_independent_replicas_per_state": 3,
+  "MD_center": "Existing equal-weight replica mean",
+  "spread_displayed": null,
+  "n_definition": "Aligned residue comparisons; not independent experimental samples or MD frames",
+  "tests": null,
+  "multiple_comparison_correction": null,
+  "regression_fits": null,
+  "descriptive_metrics_by_complete_contrast": {
+    "rmsf": [
+      {
+        "a": "8rym",
+        "b": "8ryn",
+        "n_positions": 16,
+        "Spearman_rho": -0.19999999999999998,
+        "MAE": 0.09648068062961102,
+        "zero_change_MAE": 0.09595330618321896,
+        "direction_agreement": 0.625
+      }
+    ],
+    "hchi": [
+      {
+        "a": "8rym",
+        "b": "8ryn",
+        "n_positions": 15,
+        "Spearman_rho": 0.48571428571428565,
+        "MAE": 0.15153796275456746,
+        "zero_change_MAE": 0.17679044405619304,
+        "direction_agreement": 0.7333333333333333
+      }
+    ]
+  },
+  "scope_counts": [
+    {
+      "a": "8rym",
+      "b": "8ryn",
+      "backbone_scope_rows": 16,
+      "paired_valid_RMSF": 16,
+      "Hchi_same_AA_valid": 15,
+      "all_aligned_rows": 828,
+      "all_paired_rows": 828,
+      "all_gap_rows": 0,
+      "all_altered_AA_rows": 7
+    }
+  ],
+  "all_contrasts": [
+    [
+      "8rym",
+      "8ryn"
+    ]
+  ],
+  "source_traceability": "Source CSVs and exact SHA256 in data_audit.json; panel_b/c plotted CSV and all panel_d observations exported",
+  "limitations": "Intrachain同样好，不能据此证明完整复合物信息提供增量；HLA等位基因有多处差异，不能仅归因163位。 HLA alleles differ at multiple sites, not only 163. Do not treat 8RYN as an engineered S2 TCR.",
+  "PNG_SHA256": "800e9d9fa17e226d0c221af01f730ec36a4bf176bcc36195de1ab5ba8ee51555",
+  "original_NPZ_checks": [
+    {
+      "a": "8rym",
+      "b": "8ryn",
+      "state": "a",
+      "PDB": "8rym",
+      "metric": "rmsf",
+      "valid_state_values_checked": 828,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_8rym.npz",
+      "NPZ_SHA256": "f03211aa4e736f05c65d53d7c37180b43434a678a1255372f8ada866dd58ec66"
+    },
+    {
+      "a": "8rym",
+      "b": "8ryn",
+      "state": "a",
+      "PDB": "8rym",
+      "metric": "hchi",
+      "valid_state_values_checked": 720,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_8rym.npz",
+      "NPZ_SHA256": "f03211aa4e736f05c65d53d7c37180b43434a678a1255372f8ada866dd58ec66"
+    },
+    {
+      "a": "8rym",
+      "b": "8ryn",
+      "state": "b",
+      "PDB": "8ryn",
+      "metric": "rmsf",
+      "valid_state_values_checked": 828,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_8ryn.npz",
+      "NPZ_SHA256": "adc6eb25d1d4d5b0cb7db3bbea16fd9dbc47160b136dee8c7054d693c19a36ac"
+    },
+    {
+      "a": "8rym",
+      "b": "8ryn",
+      "state": "b",
+      "PDB": "8ryn",
+      "metric": "hchi",
+      "valid_state_values_checked": 720,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_8ryn.npz",
+      "NPZ_SHA256": "adc6eb25d1d4d5b0cb7db3bbea16fd9dbc47160b136dee8c7054d693c19a36ac"
+    }
+  ]
+}

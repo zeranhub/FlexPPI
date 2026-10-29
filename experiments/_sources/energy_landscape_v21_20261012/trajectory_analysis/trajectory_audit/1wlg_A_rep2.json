@@ -1,0 +1,37 @@
+{
+  "sample_id": "1wlg_A",
+  "dataset": "atlas",
+  "fold": 3,
+  "replica_index": 2,
+  "status": "complete",
+  "plan_sha256": "09f029e2107e2e77e05271d7c2e65c6f2efdc0fed6f0fcd3d7a3dba9eec2ba83",
+  "cache_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\trajectory_analysis\\cache\\1wlg_A_rep2.npz",
+  "cache_sha256": "bbb3799a617fd9f55a7e23395c8f964180345a489eca954dd328f395c5c7dcc1",
+  "mapping": [
+    {
+      "canonical_chain": "_",
+      "replica_chain": "_",
+      "identity": 1,
+      "coverage": 1.0
+    }
+  ],
+  "residue_count": 299,
+  "mapped_residues": 299,
+  "ca_valid": 299,
+  "chi_valid": 241,
+  "frames": 501,
+  "first_ps": 0.0,
+  "last_ps": 100000.0,
+  "bad_chi_bonds_gt5A": 0,
+  "chemistry_changes": {
+    "ILE_CD->CD1_atoms": 11
+  },
+  "byte_audit": {
+    "raw_sha256": "88b7c729bafaf20a513b352659e193ad85be684e8841fded922f6407c9ac938a",
+    "raw_bytes": 20170948,
+    "selected_xtc_sha256": "6bfe7b000260c8a9089223e3dbcf04190483255ddde0e803865b87b2a0721b9c",
+    "selected_bytes": 10096952,
+    "raw_size_and_mtime_unchanged": true
+  },
+  "elapsed_seconds": 1.0159999998286366
+}

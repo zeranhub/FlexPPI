@@ -1,0 +1,16 @@
+{
+  "timestamp_utc": "2026-10-21T23:48:58.905006+00:00",
+  "stage": "Initial primary and four sensitivity/control result sets already inspected",
+  "reason": "Sequence-only one-shot baseline already present is stronger than sequence+static in most panels. Extend that comparator and BLOSUM-only to feedback before interpreting downstream utility.",
+  "original_hypotheses_budgets_and_dynamic_methods_unchanged": true,
+  "new_dynamic_method_or_feature_tuning": false,
+  "extra_strategies": [
+    "sequence_only_control",
+    "BLOSUM_only_control"
+  ],
+  "same20seeds_same_initial_labels_same4plus1policy": true,
+  "not_pre_registered": true,
+  "may_strengthen_comparison_but_never_rescue_a_negative_primary_result": true,
+  "discovered_example": "TCR6 mode2 sequence-only18.30 hits, sequence+static15.40, joint18.65. Improvement over sequence+static is3.25, but over sequence-only0.35.",
+  "script_sha256": "42610355e4ab31dc58191744f64e5f9a54b6bfcd04ac9604644810fc7733c0df"
+}

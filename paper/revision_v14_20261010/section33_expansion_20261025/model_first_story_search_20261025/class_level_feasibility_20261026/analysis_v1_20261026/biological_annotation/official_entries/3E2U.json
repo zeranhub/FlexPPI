@@ -1,0 +1,822 @@
+{
+  "source_url": "https://data.rcsb.org/rest/v1/core/entry/3E2U",
+  "retrieved_utc": "2026-10-26T08:30:11.036361+00:00",
+  "response": {
+    "audit_author": [
+      {
+        "name": "Weisbrich, A.",
+        "pdbx_ordinal": 1
+      },
+      {
+        "name": "Honnappa, S.",
+        "pdbx_ordinal": 2
+      },
+      {
+        "name": "Capitani, G.",
+        "pdbx_ordinal": 3
+      },
+      {
+        "name": "Steinmetz, M.O.",
+        "pdbx_ordinal": 4
+      }
+    ],
+    "cell": {
+      "Z_PDB": 32,
+      "angle_alpha": 90.0,
+      "angle_beta": 90.0,
+      "angle_gamma": 90.0,
+      "length_a": 116.22,
+      "length_b": 116.31,
+      "length_c": 79.88
+    },
+    "citation": [
+      {
+        "country": "US",
+        "id": "primary",
+        "journal_abbrev": "Nat.Struct.Mol.Biol.",
+        "journal_id_ISSN": "1545-9993",
+        "journal_volume": "14",
+        "page_first": "959",
+        "page_last": "967",
+        "pdbx_database_id_DOI": "10.1038/nsmb1291",
+        "pdbx_database_id_PubMed": 17828277,
+        "rcsb_authors": [
+          "Weisbrich, A.",
+          "Honnappa, S.",
+          "Jaussi, R.",
+          "Okhrimenko, O.",
+          "Frey, D.",
+          "Jelesarov, I.",
+          "Akhmanova, A.",
+          "Steinmetz, M.O."
+        ],
+        "rcsb_is_primary": "Y",
+        "rcsb_journal_abbrev": "Nat Struct Mol Biol",
+        "title": "Structure-function relationship of CAP-Gly domains",
+        "year": 2007
+      }
+    ],
+    "database_2": [
+      {
+        "database_code": "3E2U",
+        "database_id": "PDB",
+        "pdbx_DOI": "10.2210/pdb3e2u/pdb",
+        "pdbx_database_accession": "pdb_00003e2u"
+      },
+      {
+        "database_code": "RCSB048804",
+        "database_id": "RCSB"
+      },
+      {
+        "database_code": "D_1000048804",
+        "database_id": "WWPDB"
+      }
+    ],
+    "diffrn": [
+      {
+        "ambient_temp": 100.0,
+        "crystal_id": "1",
+        "id": "1"
+      }
+    ],
+    "diffrn_detector": [
+      {
+        "details": "dynamically bendable mirror",
+        "detector": "CCD",
+        "diffrn_id": "1",
+        "pdbx_collection_date": "2006-10-26T00:00:00.000+00:00",
+        "type": "MARMOSAIC 225 mm CCD"
+      }
+    ],
+    "diffrn_radiation": [
+      {
+        "diffrn_id": "1",
+        "monochromator": "LN2 cooled fixed-exit Si(111)",
+        "pdbx_diffrn_protocol": "SINGLE WAVELENGTH",
+        "pdbx_monochromatic_or_laue_m_l": "M",
+        "pdbx_scattering_type": "x-ray",
+        "wavelength_id": "1"
+      }
+    ],
+    "diffrn_source": [
+      {
+        "diffrn_id": "1",
+        "pdbx_synchrotron_beamline": "X06SA",
+        "pdbx_synchrotron_site": "SLS",
+        "pdbx_wavelength_list": "1.039",
+        "source": "SYNCHROTRON",
+        "type": "SLS BEAMLINE X06SA"
+      }
+    ],
+    "entry": {
+      "id": "3E2U"
+    },
+    "exptl": [
+      {
+        "crystals_number": 1,
+        "method": "X-RAY DIFFRACTION"
+      }
+    ],
+    "exptl_crystal": [
+      {
+        "density_Matthews": 2.23,
+        "density_percent_sol": 44.91,
+        "id": "1"
+      }
+    ],
+    "exptl_crystal_grow": [
+      {
+        "crystal_id": "1",
+        "method": "VAPOR DIFFUSION, SITTING DROP",
+        "pH": 7.0,
+        "pdbx_details": "1.2M Trisodium Citrate, 0.1M HEPES, pH 7.0, VAPOR DIFFUSION, SITTING DROP, temperature 293K",
+        "temp": 293.0
+      }
+    ],
+    "pdbx_audit_revision_category": [
+      {
+        "category": "chem_comp_atom",
+        "data_content_type": "Structure model",
+        "ordinal": 1,
+        "revision_ordinal": 3
+      },
+      {
+        "category": "chem_comp_bond",
+        "data_content_type": "Structure model",
+        "ordinal": 2,
+        "revision_ordinal": 3
+      },
+      {
+        "category": "database_2",
+        "data_content_type": "Structure model",
+        "ordinal": 3,
+        "revision_ordinal": 3
+      },
+      {
+        "category": "pdbx_initial_refinement_model",
+        "data_content_type": "Structure model",
+        "ordinal": 4,
+        "revision_ordinal": 3
+      },
+      {
+        "category": "struct_conn",
+        "data_content_type": "Structure model",
+        "ordinal": 5,
+        "revision_ordinal": 3
+      },
+      {
+        "category": "struct_ncs_dom_lim",
+        "data_content_type": "Structure model",
+        "ordinal": 6,
+        "revision_ordinal": 3
+      },
+      {
+        "category": "struct_ref_seq_dif",
+        "data_content_type": "Structure model",
+        "ordinal": 7,
+        "revision_ordinal": 3
+      },
+      {
+        "category": "struct_site",
+        "data_content_type": "Structure model",
+        "ordinal": 8,
+        "revision_ordinal": 3
+      }
+    ],
+    "pdbx_audit_revision_details": [
+      {
+        "data_content_type": "Structure model",
+        "ordinal": 1,
+        "provider": "repository",
+        "revision_ordinal": 1,
+        "type": "Initial release"
+      }
+    ],
+    "pdbx_audit_revision_group": [
+      {
+        "data_content_type": "Structure model",
+        "group": "Derived calculations",
+        "ordinal": 1,
+        "revision_ordinal": 2
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Version format compliance",
+        "ordinal": 2,
+        "revision_ordinal": 2
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Data collection",
+        "ordinal": 3,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Database references",
+        "ordinal": 4,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Derived calculations",
+        "ordinal": 5,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "group": "Refinement description",
+        "ordinal": 6,
+        "revision_ordinal": 3
+      }
+    ],
+    "pdbx_audit_revision_history": [
+      {
+        "data_content_type": "Structure model",
+        "major_revision": 1,
+        "minor_revision": 0,
+        "ordinal": 1,
+        "revision_date": "2008-08-19T00:00:00.000+00:00"
+      },
+      {
+        "data_content_type": "Structure model",
+        "major_revision": 1,
+        "minor_revision": 1,
+        "ordinal": 2,
+        "revision_date": "2011-07-13T00:00:00.000+00:00"
+      },
+      {
+        "data_content_type": "Structure model",
+        "major_revision": 1,
+        "minor_revision": 2,
+        "ordinal": 3,
+        "revision_date": "2023-11-01T00:00:00.000+00:00"
+      }
+    ],
+    "pdbx_audit_revision_item": [
+      {
+        "data_content_type": "Structure model",
+        "item": "_database_2.pdbx_DOI",
+        "ordinal": 1,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_database_2.pdbx_database_accession",
+        "ordinal": 2,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr1_auth_comp_id",
+        "ordinal": 3,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr1_auth_seq_id",
+        "ordinal": 4,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr1_label_asym_id",
+        "ordinal": 5,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr1_label_atom_id",
+        "ordinal": 6,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr1_label_comp_id",
+        "ordinal": 7,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr1_label_seq_id",
+        "ordinal": 8,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr2_auth_comp_id",
+        "ordinal": 9,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr2_auth_seq_id",
+        "ordinal": 10,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr2_label_asym_id",
+        "ordinal": 11,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr2_label_atom_id",
+        "ordinal": 12,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr2_label_comp_id",
+        "ordinal": 13,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_conn.ptnr2_label_seq_id",
+        "ordinal": 14,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_ncs_dom_lim.beg_auth_comp_id",
+        "ordinal": 15,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_ncs_dom_lim.beg_label_comp_id",
+        "ordinal": 16,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_ncs_dom_lim.beg_label_seq_id",
+        "ordinal": 17,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_ncs_dom_lim.end_auth_comp_id",
+        "ordinal": 18,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_ncs_dom_lim.end_label_comp_id",
+        "ordinal": 19,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_ncs_dom_lim.end_label_seq_id",
+        "ordinal": 20,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_ref_seq_dif.details",
+        "ordinal": 21,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_site.pdbx_auth_asym_id",
+        "ordinal": 22,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_site.pdbx_auth_comp_id",
+        "ordinal": 23,
+        "revision_ordinal": 3
+      },
+      {
+        "data_content_type": "Structure model",
+        "item": "_struct_site.pdbx_auth_seq_id",
+        "ordinal": 24,
+        "revision_ordinal": 3
+      }
+    ],
+    "pdbx_database_PDB_obs_spr": [
+      {
+        "date": "2008-08-19T00:00:00.000+00:00",
+        "id": "SPRSDE",
+        "pdb_id": "3E2U",
+        "replace_pdb_id": "2PZO"
+      }
+    ],
+    "pdbx_database_related": [
+      {
+        "content_type": "unspecified",
+        "db_id": "2CP5",
+        "db_name": "PDB",
+        "details": "solution structure of the 1st CAP-Gly domain in human CLIP-170/Restin"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "2HKN",
+        "db_name": "PDB",
+        "details": "Crystal structure of the CAP-Gly domain of human dynactin-1 (p150-GLUED)"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "2HKQ",
+        "db_name": "PDB",
+        "details": "Crystal structure of the C-terminal domain of human EB1 in complex with the CAP-Gly domain of human dynactin-1 (p150-GLUED)"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "1TXQ",
+        "db_name": "PDB",
+        "details": "Crystal structure of the EB1 C-terminal domain complexed with the CAP-Gly domain of p150-GLUED"
+      },
+      {
+        "content_type": "unspecified",
+        "db_id": "2HQH",
+        "db_name": "PDB",
+        "details": "Crystal structure of p150-GLUED and CLIP-170"
+      }
+    ],
+    "pdbx_database_status": {
+      "deposit_site": "RCSB",
+      "pdb_format_compatible": "Y",
+      "process_site": "PDBJ",
+      "recvd_initial_deposition_date": "2008-08-06T00:00:00.000+00:00",
+      "status_code": "REL",
+      "status_code_sf": "REL"
+    },
+    "pdbx_initial_refinement_model": [
+      {
+        "accession_code": "2PZO",
+        "details": "2PZO (SOLVED BY MOLECULAR REPLACEMENT USING MOLREP)",
+        "id": 1,
+        "source_name": "PDB",
+        "type": "experimental model"
+      }
+    ],
+    "pdbx_reflns_twin": [
+      {
+        "crystal_id": "1",
+        "diffrn_id": "1",
+        "fraction": 0.352,
+        "operator": "-k,h,l"
+      }
+    ],
+    "pdbx_vrpt_summary": {
+      "attempted_validation_steps": "molprobity,validation-pack,xtriage,eds,mogul,validation_schema,percentiles,writexml,writecif,writepdf",
+      "ligands_for_buster_report": "N",
+      "report_creation_date": "2026-03-05T17:57:00.000+00:00"
+    },
+    "pdbx_vrpt_summary_diffraction": [
+      {
+        "B_factor_type": "FULL",
+        "CCP4_version": "9.0.010 (Gargrove)",
+        "DCC_R": 0.1899,
+        "DCC_Rfree": 0.2228,
+        "EDS_R": 0.1841,
+        "EDS_res_high": 2.6,
+        "EDS_res_low": 47.02,
+        "Fo_Fc_correlation": 0.958,
+        "I_over_sigma": "2.65(2.61A)",
+        "Padilla_Yeates_L2_mean": 0.317,
+        "Padilla_Yeates_L_mean": 0.485,
+        "Wilson_B_aniso": "[23.039,20.306,59.806,0.000,0.000,0.000]",
+        "Wilson_B_estimate": 31.275,
+        "acentric_outliers": 14,
+        "bulk_solvent_b": 41.967,
+        "bulk_solvent_k": 0.385,
+        "centric_outliers": 5,
+        "data_anisotropy": 1.149,
+        "data_completeness": 99.23,
+        "density_fitness_version": "1.0.12",
+        "exp_method": "x-ray",
+        "num_miller_indices": 16915,
+        "number_reflns_R_free": 853,
+        "percent_RSRZ_outliers": 0.0,
+        "percent_free_reflections": 5.04,
+        "trans_NCS_details": "The analyses of the Patterson function reveals a significant off-origin peak that is 34.28 % of the origin peak, indicating pseudo-translational symmetry.  The chance of finding a peak of this or larger height by random in a structure without pseudo-translational symmetry is equal to 7.0002e-04. The detected translational NCS is most likely also responsible for the elevated intensity ratio.  See the relevant section of the logfile for more details.",
+        "twin_fraction": "-k,-h,-l:0.308;-1/2*h-1/2*k+l,-1/2*h-1/2*k-l,1/2*h-1/2*k:0.000;-1/2*h-1/2*k-l,-1/2*h-1/2*k+l,-1/2*h+1/2*k:0.000;-1/2*h+1/2*k-l,1/2*h-1/2*k-l,-1/2*h-1/2*k:0.000;-1/2*h+1/2*k+l,1/2*h-1/2*k+l,1/2*h+1/2*k:0.000"
+      }
+    ],
+    "pdbx_vrpt_summary_geometry": [
+      {
+        "angles_RMSZ": 0.79,
+        "bonds_RMSZ": 0.45,
+        "clashscore": 18.17,
+        "num_H_reduce": 2874,
+        "num_angles_RMSZ": 4146,
+        "num_bonds_RMSZ": 3086,
+        "percent_ramachandran_outliers": 0.27,
+        "percent_rotamer_outliers": 9.65
+      }
+    ],
+    "rcsb_accession_info": {
+      "deposit_date": "2008-08-06T00:00:00.000+00:00",
+      "has_released_experimental_data": "Y",
+      "initial_release_date": "2008-08-19T00:00:00.000+00:00",
+      "major_revision": 1,
+      "minor_revision": 2,
+      "revision_date": "2023-11-01T00:00:00.000+00:00",
+      "status_code": "REL"
+    },
+    "rcsb_entry_container_identifiers": {
+      "assembly_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "entity_ids": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "entry_id": "3E2U",
+      "model_ids": [
+        1
+      ],
+      "non_polymer_entity_ids": [
+        "3"
+      ],
+      "polymer_entity_ids": [
+        "1",
+        "2"
+      ],
+      "pubmed_id": 17828277,
+      "rcsb_id": "3E2U"
+    },
+    "rcsb_entry_info": {
+      "assembly_count": 5,
+      "branched_entity_count": 0,
+      "cis_peptide_count": 0,
+      "deposited_atom_count": 3085,
+      "deposited_branched_entity_instance_count": 0,
+      "deposited_deuterated_water_count": 0,
+      "deposited_hydrogen_atom_count": 0,
+      "deposited_model_count": 1,
+      "deposited_modeled_polymer_monomer_count": 383,
+      "deposited_nonpolymer_entity_instance_count": 4,
+      "deposited_polymer_entity_instance_count": 8,
+      "deposited_polymer_monomer_count": 556,
+      "deposited_solvent_atom_count": 58,
+      "deposited_unmodeled_polymer_monomer_count": 173,
+      "diffrn_radiation_wavelength_maximum": 1.039,
+      "diffrn_radiation_wavelength_minimum": 1.039,
+      "disulfide_bond_count": 0,
+      "entity_count": 4,
+      "experimental_method": "X-ray",
+      "experimental_method_count": 1,
+      "inter_mol_covalent_bond_count": 0,
+      "inter_mol_metalic_bond_count": 16,
+      "molecular_weight": 60.72,
+      "na_polymer_entity_types": "Other",
+      "nonpolymer_bound_components": [
+        "ZN"
+      ],
+      "nonpolymer_entity_count": 1,
+      "nonpolymer_molecular_weight_maximum": 0.07,
+      "nonpolymer_molecular_weight_minimum": 0.07,
+      "polymer_composition": "heteromeric protein",
+      "polymer_entity_count": 2,
+      "polymer_entity_count_DNA": 0,
+      "polymer_entity_count_RNA": 0,
+      "polymer_entity_count_nucleic_acid": 0,
+      "polymer_entity_count_nucleic_acid_hybrid": 0,
+      "polymer_entity_count_protein": 2,
+      "polymer_entity_taxonomy_count": 2,
+      "polymer_molecular_weight_maximum": 10.31,
+      "polymer_molecular_weight_minimum": 4.8,
+      "polymer_monomer_count_maximum": 97,
+      "polymer_monomer_count_minimum": 42,
+      "resolution_combined": [
+        2.6
+      ],
+      "selected_polymer_entity_types": "Protein (only)",
+      "software_programs_combined": [
+        "PDB_EXTRACT",
+        "PHENIX",
+        "XDS",
+        "XSCALE"
+      ],
+      "solvent_entity_count": 1,
+      "structure_determination_methodology": "experimental",
+      "structure_determination_methodology_priority": 10,
+      "diffrn_resolution_high": {
+        "provenance_source": "Depositor assigned",
+        "value": 2.6
+      }
+    },
+    "rcsb_primary_citation": {
+      "country": "US",
+      "id": "primary",
+      "journal_abbrev": "Nat.Struct.Mol.Biol.",
+      "journal_id_ISSN": "1545-9993",
+      "journal_volume": "14",
+      "page_first": "959",
+      "page_last": "967",
+      "pdbx_database_id_DOI": "10.1038/nsmb1291",
+      "pdbx_database_id_PubMed": 17828277,
+      "rcsb_ORCID_identifiers": [
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?",
+        "?"
+      ],
+      "rcsb_authors": [
+        "Weisbrich, A.",
+        "Honnappa, S.",
+        "Jaussi, R.",
+        "Okhrimenko, O.",
+        "Frey, D.",
+        "Jelesarov, I.",
+        "Akhmanova, A.",
+        "Steinmetz, M.O."
+      ],
+      "rcsb_journal_abbrev": "Nat Struct Mol Biol",
+      "title": "Structure-function relationship of CAP-Gly domains",
+      "year": 2007
+    },
+    "refine": [
+      {
+        "B_iso_max": 163.85,
+        "B_iso_mean": 72.982,
+        "B_iso_min": 9.64,
+        "aniso_B_1_1": -33.12,
+        "aniso_B_1_2": -0.0,
+        "aniso_B_1_3": -0.0,
+        "aniso_B_2_2": -45.173,
+        "aniso_B_2_3": 0.0,
+        "aniso_B_3_3": -4.369,
+        "ls_R_factor_R_free": 0.238,
+        "ls_R_factor_R_work": 0.191,
+        "ls_R_factor_obs": 0.193,
+        "ls_d_res_high": 2.6,
+        "ls_d_res_low": 47.015,
+        "ls_number_reflns_R_free": 854,
+        "ls_number_reflns_obs": 16915,
+        "ls_percent_reflns_R_free": 5.05,
+        "ls_percent_reflns_obs": 99.46,
+        "occupancy_max": 1.0,
+        "occupancy_min": 0.0,
+        "overall_FOM_work_R_set": 0.628,
+        "pdbx_R_Free_selection_details": "random",
+        "pdbx_diffrn_id": [
+          "1"
+        ],
+        "pdbx_isotropic_thermal_model": "isotropic",
+        "pdbx_ls_cross_valid_method": "THROUGHOUT",
+        "pdbx_ls_sigma_F": 1.36,
+        "pdbx_method_to_determine_struct": "FOURIER SYNTHESIS",
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "pdbx_solvent_shrinkage_radii": 0.9,
+        "pdbx_solvent_vdw_probe_radii": 1.11,
+        "pdbx_starting_model": "2PZO (SOLVED BY MOLECULAR REPLACEMENT USING MOLREP)",
+        "pdbx_stereochemistry_target_values": "TWIN_LSQ_F",
+        "solvent_model_details": "FLAT BULK SOLVENT MODEL",
+        "solvent_model_param_bsol": 84.11,
+        "solvent_model_param_ksol": 0.391
+      }
+    ],
+    "refine_hist": [
+      {
+        "cycle_id": "LAST",
+        "d_res_high": 2.6,
+        "d_res_low": 47.015,
+        "number_atoms_solvent": 58,
+        "number_atoms_total": 3066,
+        "pdbx_number_atoms_ligand": 4,
+        "pdbx_number_atoms_nucleic_acid": 0,
+        "pdbx_number_atoms_protein": 3004,
+        "pdbx_refine_id": "X-RAY DIFFRACTION"
+      }
+    ],
+    "refine_ls_restr": [
+      {
+        "dev_ideal": 0.007,
+        "number": 3104,
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "f_bond_d"
+      },
+      {
+        "dev_ideal": 1.103,
+        "number": 4164,
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "f_angle_d"
+      },
+      {
+        "dev_ideal": 0.065,
+        "number": 433,
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "f_chiral_restr"
+      },
+      {
+        "dev_ideal": 0.004,
+        "number": 546,
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "f_plane_restr"
+      },
+      {
+        "dev_ideal": 18.707,
+        "number": 1086,
+        "pdbx_refine_id": "X-RAY DIFFRACTION",
+        "type": "f_dihedral_angle_d"
+      }
+    ],
+    "reflns": [
+      {
+        "B_iso_Wilson_estimate": 33.3,
+        "d_resolution_high": 2.6,
+        "d_resolution_low": 47.02,
+        "number_obs": 16917,
+        "observed_criterion_sigma_I": -3.0,
+        "pdbx_Rsym_value": 0.13,
+        "pdbx_diffrn_id": [
+          "1"
+        ],
+        "pdbx_netI_over_sigmaI": 10.0,
+        "pdbx_ordinal": 1,
+        "pdbx_redundancy": 5.2,
+        "percent_possible_obs": 99.5
+      }
+    ],
+    "reflns_shell": [
+      {
+        "d_res_high": 2.6,
+        "d_res_low": 2.8,
+        "meanI_over_sigI_obs": 3.3,
+        "number_measured_obs": 17204,
+        "number_unique_obs": 3307,
+        "pdbx_Rsym_value": 0.563,
+        "pdbx_diffrn_id": [
+          "1"
+        ],
+        "pdbx_ordinal": 1,
+        "pdbx_redundancy": 5.2,
+        "percent_possible_all": 99.7
+      }
+    ],
+    "software": [
+      {
+        "classification": "data processing",
+        "contact_author": "Wolfgang Kabsch",
+        "location": "http://www.mpimf-heidelberg.mpg.de/~kabsch/xds/html_doc/xscale_program.html",
+        "name": "XSCALE",
+        "pdbx_ordinal": 1,
+        "type": "package"
+      },
+      {
+        "classification": "refinement",
+        "contact_author": "Paul D. Adams",
+        "contact_author_email": "PDAdams@lbl.gov",
+        "language": "C++",
+        "location": "http://www.phenix-online.org/",
+        "name": "PHENIX",
+        "pdbx_ordinal": 2,
+        "type": "package"
+      },
+      {
+        "classification": "data extraction",
+        "contact_author": "PDB",
+        "contact_author_email": "help@deposit.rcsb.org",
+        "date": "June 11, 2008",
+        "language": "C++",
+        "location": "http://sw-tools.pdb.org/apps/PDB_EXTRACT/",
+        "name": "PDB_EXTRACT",
+        "pdbx_ordinal": 3,
+        "type": "package",
+        "version": "3.006"
+      },
+      {
+        "classification": "data reduction",
+        "name": "XDS",
+        "pdbx_ordinal": 4
+      },
+      {
+        "classification": "data scaling",
+        "name": "XSCALE",
+        "pdbx_ordinal": 5
+      }
+    ],
+    "struct": {
+      "pdbx_CASP_flag": "N",
+      "title": "Crystal structure of the zink-knuckle 2 domain of human CLIP-170 in complex with CAP-Gly domain of human dynactin-1 (p150-GLUED)"
+    },
+    "struct_keywords": {
+      "pdbx_keywords": "PROTEIN BINDING",
+      "text": "STRUCTURAL PROTEIN MICROTUBULE BINDING, DYNACTIN, CYTOSKELETON ASSOCIATED PROTEIN, P150GLUED, CLIP-170/RESTIN, +TIP PROTEIN COMPLEX STRUCTURE, ZINC-KNUCKLE, AUTOINHIBITION, PROTEIN BINDING, Cytoskeleton, Dynein, Microtubule, Motor protein, Phosphoprotein"
+    },
+    "symmetry": {
+      "Int_Tables_number": 20,
+      "space_group_name_H_M": "C 2 2 21"
+    },
+    "rcsb_id": "3E2U"
+  }
+}

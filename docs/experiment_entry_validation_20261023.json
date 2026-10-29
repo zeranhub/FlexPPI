@@ -1,0 +1,310 @@
+{
+  "scope": "CLI parsing, registered path existence and syntax only; no training, inference, MD, figure generation or scientific-statistics recomputation",
+  "entry_count": 12,
+  "cli_checks": [
+    {
+      "entry": "experiments\\3_1_两类动态预测与完整结构环境的贡献.py",
+      "mode": "--help",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\3_1_两类动态预测与完整结构环境的贡献.py",
+      "mode": "--list",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\3_1_两类动态预测与完整结构环境的贡献.py",
+      "mode": "--check",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\3_2_同类型残基的局部动态差异.py",
+      "mode": "--help",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\3_2_同类型残基的局部动态差异.py",
+      "mode": "--list",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\3_2_同类型残基的局部动态差异.py",
+      "mode": "--check",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\3_3_KIX结构域中主链活动区域的定位.py",
+      "mode": "--help",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\3_3_KIX结构域中主链活动区域的定位.py",
+      "mode": "--list",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\3_3_KIX结构域中主链活动区域的定位.py",
+      "mode": "--check",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\3_4_MEL5体系中跨界面接触与双动态响应的残基解析.py",
+      "mode": "--help",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\3_4_MEL5体系中跨界面接触与双动态响应的残基解析.py",
+      "mode": "--list",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\3_4_MEL5体系中跨界面接触与双动态响应的残基解析.py",
+      "mode": "--check",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\3_5_联合读数的构象对应与群体验证.py",
+      "mode": "--help",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\3_5_联合读数的构象对应与群体验证.py",
+      "mode": "--list",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\3_5_联合读数的构象对应与群体验证.py",
+      "mode": "--check",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\A_数据来源与标签观测.py",
+      "mode": "--help",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\A_数据来源与标签观测.py",
+      "mode": "--list",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\A_数据来源与标签观测.py",
+      "mode": "--check",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\B_训练方案与随机初始化.py",
+      "mode": "--help",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\B_训练方案与随机初始化.py",
+      "mode": "--list",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\B_训练方案与随机初始化.py",
+      "mode": "--check",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\C_基线实现与来源比较.py",
+      "mode": "--help",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\C_基线实现与来源比较.py",
+      "mode": "--list",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\C_基线实现与来源比较.py",
+      "mode": "--check",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\D_全组成链家族隔离评价.py",
+      "mode": "--help",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\D_全组成链家族隔离评价.py",
+      "mode": "--list",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\D_全组成链家族隔离评价.py",
+      "mode": "--check",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\E_共同窗口与预测驱动的构象占据验证.py",
+      "mode": "--help",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\E_共同窗口与预测驱动的构象占据验证.py",
+      "mode": "--list",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\E_共同窗口与预测驱动的构象占据验证.py",
+      "mode": "--check",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\F_KIX轨迹与状态比较.py",
+      "mode": "--help",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\F_KIX轨迹与状态比较.py",
+      "mode": "--list",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\F_KIX轨迹与状态比较.py",
+      "mode": "--check",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\G_双读数组合的完整统计.py",
+      "mode": "--help",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\G_双读数组合的完整统计.py",
+      "mode": "--list",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    },
+    {
+      "entry": "experiments\\G_双读数组合的完整统计.py",
+      "mode": "--check",
+      "exit_code": 0,
+      "output": null,
+      "stderr": null
+    }
+  ],
+  "syntax_files": [
+    "experiments\\3_1_两类动态预测与完整结构环境的贡献.py",
+    "experiments\\3_2_同类型残基的局部动态差异.py",
+    "experiments\\3_3_KIX结构域中主链活动区域的定位.py",
+    "experiments\\3_4_MEL5体系中跨界面接触与双动态响应的残基解析.py",
+    "experiments\\3_5_联合读数的构象对应与群体验证.py",
+    "experiments\\A_数据来源与标签观测.py",
+    "experiments\\B_训练方案与随机初始化.py",
+    "experiments\\C_基线实现与来源比较.py",
+    "experiments\\D_全组成链家族隔离评价.py",
+    "experiments\\E_共同窗口与预测驱动的构象占据验证.py",
+    "experiments\\F_KIX轨迹与状态比较.py",
+    "experiments\\G_双读数组合的完整统计.py",
+    "experiments\\_dispatch.py",
+    "experiments\\core_corrected_pipeline\\deployment_cost_backflip_adapter.py",
+    "experiments\\core_corrected_pipeline\\deployment_cost_neural_static_adapter.py",
+    "experiments\\core_corrected_pipeline\\deployment_cost_worker.py",
+    "experiments\\core_corrected_pipeline\\evaluate_corrected_models.py",
+    "experiments\\core_corrected_pipeline\\evaluate_external_models.py",
+    "experiments\\core_corrected_pipeline\\export_fixed_fold_seed_stability.py",
+    "experiments\\core_corrected_pipeline\\export_matched_static_members.py",
+    "experiments\\core_corrected_pipeline\\freeze_external_payload.py",
+    "experiments\\core_corrected_pipeline\\freeze_strict_external.py",
+    "experiments\\core_corrected_pipeline\\freeze_training_payload.py",
+    "experiments\\core_corrected_pipeline\\gpu_training_smoke.py",
+    "experiments\\core_corrected_pipeline\\launch_static_when_ready.py",
+    "experiments\\core_corrected_pipeline\\launch_when_ready.py",
+    "experiments\\core_corrected_pipeline\\prepare_corrected_backflip2.py",
+    "experiments\\core_corrected_pipeline\\prepare_corrected_labels.py",
+    "experiments\\core_corrected_pipeline\\prepare_deployment_cost.py",
+    "experiments\\core_corrected_pipeline\\prepare_external_thermopcd.py",
+    "experiments\\core_corrected_pipeline\\prepare_gpu_smoke_payload.py",
+    "experiments\\core_corrected_pipeline\\prepare_sequence_audit.py",
+    "experiments\\core_corrected_pipeline\\run_corrected_static.py",
+    "experiments\\core_corrected_pipeline\\run_deployment_cost.py",
+    "experiments\\core_corrected_pipeline\\run_strict_external_queue.py",
+    "experiments\\core_corrected_pipeline\\run_strict_static.py",
+    "experiments\\core_corrected_pipeline\\run_training_queue.py",
+    "experiments\\core_corrected_pipeline\\score_corrected_backflip2.py",
+    "experiments\\core_corrected_pipeline\\static_feature_definitions.py",
+    "experiments\\core_corrected_pipeline\\summarize_sequence_audit.py",
+    "experiments\\core_corrected_pipeline\\test_identity_corrections.py",
+    "experiments\\core_corrected_pipeline\\verify_strict_overlap.py",
+    "experiments\\core_corrected_pipeline\\type_analysis\\analyze_corrected_main_comparison.py",
+    "experiments\\core_corrected_pipeline\\type_analysis\\audit_corrected_neural_exports.py",
+    "experiments\\core_corrected_pipeline\\type_analysis\\collect_completed_neural_exports.py",
+    "experiments\\core_corrected_pipeline\\type_analysis\\prepare_and_plot_main_oof_typography_v2.py",
+    "experiments\\core_corrected_pipeline\\type_analysis\\recompute_type_metrics.py"
+  ],
+  "type_adapter_help_passed": true,
+  "original_sidechain_rows_function_ast_unchanged": true,
+  "all_passed": true
+}

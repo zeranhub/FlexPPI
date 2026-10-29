@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "reviewed_figure_sha256": "417cb447df74c15fb565295856db2ff8cad6117093612d405c2804d539a31fe3",
+  "review_scope": "Independent full-figure and enlarged state-specific visual inspection; numerical source and anchor-name verification.",
+  "passed_checks": {
+    "fixed_atom_distances_rounded_A": {
+      "WT": [
+        5.85,
+        10.58
+      ],
+      "mature": [
+        2.94,
+        3.12
+      ]
+    },
+    "Q72_Hchi_rounded": [
+      1.792,
+      1.375
+    ],
+    "betaGly54_RMSF_rounded_A": [
+      1.118,
+      0.747
+    ],
+    "same_camera_and_same_crop": true,
+    "same_axes_width_and_height": true,
+    "correct_numbering_and_beta52_53_54_targets": true,
+    "anchor_JSON_field_names_match_plot": true,
+    "all45_CDR_rows_preserved": true,
+    "no_Hchi_to_RMSF_causal_arrow": true
+  },
+  "anchor_note": "WT beta52_sidechain_center is a CA fallback because Gly52 has no heavy sidechain; used only as a residue-label target and never called a sidechain center in the figure.",
+  "must_fix": [],
+  "resolved_label_issues": [
+    {
+      "state": "mature",
+      "label": "N at beta53 backbone nitrogen",
+      "resolution": "Moved left/up; the blue nitrogen endpoint and adjoining distance dashes are now visible."
+    },
+    {
+      "state": "WT",
+      "label": "Q72 NE2",
+      "resolution": "Moved left; the blue NE2 endpoint is now visible. Mature NE2 label is also offset farther right/down."
+    }
+  ],
+  "other_geometry_assessment": "The two paired structures visibly show the sidechain reorientation and approach of beta53/beta54; distance definitions are the same named atom pairs in both states. No geometry or residue-label mismatch found."
+}

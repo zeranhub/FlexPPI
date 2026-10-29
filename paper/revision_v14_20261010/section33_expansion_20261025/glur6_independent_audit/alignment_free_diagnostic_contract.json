@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "n_pairs": 4508,
+  "units": "angstrom",
+  "pairs": "All sequence-separated-by-at-least-four C-alpha pairs within 12 A in the first monomer frame; fixed without examining dynamic response or model predictions",
+  "quantity": "Mean over five 100 ns blocks of within-block standard deviation of pairwise C-alpha distance",
+  "limitation": "Same MD trajectories; no independent experiment, causal mechanism, or model prediction of this distance statistic. Not a replacement for RMSF evaluation."
+}

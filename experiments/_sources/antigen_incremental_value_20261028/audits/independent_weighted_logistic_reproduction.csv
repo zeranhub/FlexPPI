@@ -1,0 +1,19 @@
+template_version,system,model,max_probability_difference,independent_top10_hits,original_top10_hits,objective_gradient_max,scipy_success,scipy_message
+primary,ebv,B0_binding,0.00035478720268689035,1,1,3.09950765470246e-07,False,Desired error not necessarily achieved due to precision loss.
+primary,ebv,B1_binding_static,0.00292110644197785,5,5,1.3521000111205161e-08,True,Optimization terminated successfully.
+primary,ebv,B2_binding_static_dynamics,0.0012651731807999944,4,4,5.1909292642093874e-08,True,Optimization terminated successfully.
+primary,mage,B0_binding,7.382741759409672e-05,2,2,7.303725180207721e-08,True,Optimization terminated successfully.
+primary,mage,B1_binding_static,0.0007069740868559937,5,5,8.047110622300124e-08,True,Optimization terminated successfully.
+primary,mage,B2_binding_static_dynamics,0.0030733769009082534,3,3,7.915393557267336e-08,True,Optimization terminated successfully.
+primary,nyeso,B0_binding,3.74100592376303e-05,1,1,4.660586139237921e-09,True,Optimization terminated successfully.
+primary,nyeso,B1_binding_static,0.0013683753130901977,8,8,2.968797221947206e-08,True,Optimization terminated successfully.
+primary,nyeso,B2_binding_static_dynamics,0.002119137950709671,9,9,4.3967256668775434e-08,True,Optimization terminated successfully.
+secondary,ebv,B0_binding,0.00035478720268689035,1,1,3.09950765470246e-07,False,Desired error not necessarily achieved due to precision loss.
+secondary,ebv,B1_binding_static,0.00292110644197785,5,5,1.3521000111205161e-08,True,Optimization terminated successfully.
+secondary,ebv,B2_binding_static_dynamics,0.0015232895162987647,4,4,1.7187640311000507e-08,True,Optimization terminated successfully.
+secondary,mage,B0_binding,7.382741759409672e-05,2,2,7.303725180207721e-08,True,Optimization terminated successfully.
+secondary,mage,B1_binding_static,0.0007069740868559937,5,5,8.047110622300124e-08,True,Optimization terminated successfully.
+secondary,mage,B2_binding_static_dynamics,0.0010469056796995613,5,5,5.700725458357425e-08,True,Optimization terminated successfully.
+secondary,nyeso,B0_binding,3.74100592376303e-05,1,1,4.660586139237921e-09,True,Optimization terminated successfully.
+secondary,nyeso,B1_binding_static,0.0013683753130901977,8,8,2.968797221947206e-08,True,Optimization terminated successfully.
+secondary,nyeso,B2_binding_static_dynamics,0.0007635855637371236,9,9,6.623817788709019e-08,True,Optimization terminated successfully.

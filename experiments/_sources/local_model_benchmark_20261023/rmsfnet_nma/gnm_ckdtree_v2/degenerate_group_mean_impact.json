@@ -1,0 +1,74 @@
+{
+  "groups": [
+    {
+      "group": "single_chain",
+      "n_records": 2193,
+      "n_degenerate_records": 7,
+      "affected_sample_ids": "1jyo_E;1sf9_A;2g7o_A;3rv1_B;4ue8_B;A00E6;A00F7",
+      "spearman_delta_sum": -0.012014965594354832,
+      "spearman_equal_record_mean_delta": -5.478780480781957e-06,
+      "top10_ap_delta_sum": -0.0054302713032241545,
+      "top10_ap_equal_record_mean_delta": -2.4761839047989763e-06,
+      "z_mae_delta_sum": 0.011564383611666562,
+      "z_mae_equal_record_mean_delta": 5.2733167403860295e-06
+    },
+    {
+      "group": "other_multichain",
+      "n_records": 626,
+      "n_degenerate_records": 2,
+      "affected_sample_ids": "A002R;A008Y",
+      "spearman_delta_sum": -0.000260675124756804,
+      "spearman_equal_record_mean_delta": -4.1641393731118847e-07,
+      "top10_ap_delta_sum": 0.004302976716769824,
+      "top10_ap_equal_record_mean_delta": 6.8737647232744795e-06,
+      "z_mae_delta_sum": -0.007811929635910819,
+      "z_mae_equal_record_mean_delta": -1.2479120824138689e-05
+    },
+    {
+      "group": "tcr_pmhc_itrace",
+      "n_records": 244,
+      "n_degenerate_records": 0,
+      "affected_sample_ids": "",
+      "spearman_delta_sum": 0,
+      "spearman_equal_record_mean_delta": 0.0,
+      "top10_ap_delta_sum": 0,
+      "top10_ap_equal_record_mean_delta": 0.0,
+      "z_mae_delta_sum": 0,
+      "z_mae_equal_record_mean_delta": 0.0
+    },
+    {
+      "group": "all_multichain",
+      "n_records": 870,
+      "n_degenerate_records": 2,
+      "affected_sample_ids": "A002R;A008Y",
+      "spearman_delta_sum": -0.000260675124756804,
+      "spearman_equal_record_mean_delta": -2.9962658018023445e-07,
+      "top10_ap_delta_sum": 0.004302976716769824,
+      "top10_ap_equal_record_mean_delta": 4.945950249160718e-06,
+      "z_mae_delta_sum": -0.007811929635910819,
+      "z_mae_equal_record_mean_delta": -8.97922946656416e-06
+    },
+    {
+      "group": "all",
+      "n_records": 3063,
+      "n_degenerate_records": 9,
+      "affected_sample_ids": "1jyo_E;1sf9_A;2g7o_A;3rv1_B;4ue8_B;A002R;A008Y;A00E6;A00F7",
+      "spearman_delta_sum": -0.012275640719111636,
+      "spearman_equal_record_mean_delta": -4.007718158377942e-06,
+      "top10_ap_delta_sum": -0.0011272945864543304,
+      "top10_ap_equal_record_mean_delta": -3.680361039681131e-07,
+      "z_mae_delta_sum": 0.003752453975755743,
+      "z_mae_equal_record_mean_delta": 1.2250910792542419e-06
+    }
+  ],
+  "diagnosed_records": 9,
+  "comparison": "Contribution from retained nine graph-identical degenerate-cutoff records: fresh local v2 minus frozen original ProDy values, using equal record means.",
+  "attribution_limit": "Uses only the nine diagnosed records, assigning zero contribution to other records. This is not an exact full-cohort old/new AP rescore; rounding/ties in other records are not evaluated here.",
+  "integration_review": "Read-only review found v2 overlay routing and SHA checks correct: ANM always base v1; GNM changed-graph sample overlay; all other GNM base v1. Full original v1 remains untouched.",
+  "sources": {
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\cohort\\records.csv": "5c1153ea9717e4c54a790e39dfda82e6d5e48f482ca0cb6a30e1e35cb903f08e",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\rmsfnet_nma\\gnm_ckdtree_v2\\rho_ap_metric_impact.csv": "efbdcce63c2e088f20881f3cddfd5bb71212b55ea46643aff25c95826b903a30",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\evaluate_benchmark.py": "664e86ec252ace3125ef0b91d5221e10f47ea0b4a5208efdfb3f41e5e3f43a7a"
+  },
+  "script_sha256": "9bad5de99f92d7100e3e9f1192a095617f2b483e53d323bd42b3029e1e6eec00"
+}

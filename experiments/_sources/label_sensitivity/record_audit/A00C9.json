@@ -1,0 +1,51 @@
+{
+  "sample_id": "A00C9",
+  "dataset": "dynarepo",
+  "fold": 4,
+  "plan_sha256": "fe7c01b66ae16f4101e28c13fdb93246f054acc7d6f26ac758caf8aec9995ffd",
+  "status": "complete",
+  "replica_audits": [
+    {
+      "mapping": [
+        {
+          "canonical_chain": "A",
+          "replica_chain": "A",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "B",
+          "replica_chain": "B",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "frames": 501,
+      "original_frames": 5001,
+      "chi_residues": 311,
+      "chi_bond_instances_gt5A": 0,
+      "residue_coverage": 1.0,
+      "replica_index": 1
+    }
+  ],
+  "labels": {
+    "uniform_rep1": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\label_sensitivity\\labels\\uniform_rep1\\A00C9.npz",
+      "sha256": "20e3dbffea5efb0502ac78605546670e0b668a46563634b801b5e3ce1a812fb0",
+      "valid_counts": [
+        395,
+        311
+      ]
+    },
+    "uniform_available_replicas": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\label_sensitivity\\labels\\uniform_available_replicas\\A00C9.npz",
+      "sha256": "20e3dbffea5efb0502ac78605546670e0b668a46563634b801b5e3ce1a812fb0",
+      "valid_counts": [
+        395,
+        311
+      ]
+    }
+  },
+  "replicas": 1,
+  "elapsed_seconds": 4.437000000150874
+}

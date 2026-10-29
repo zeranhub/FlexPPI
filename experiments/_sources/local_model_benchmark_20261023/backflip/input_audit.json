@@ -1,0 +1,15 @@
+{
+  "records": 3063,
+  "datasets": {
+    "atlas": 1929,
+    "dynarepo": 890,
+    "itrace": 244
+  },
+  "chains": 4973,
+  "valid_rmsf": 961321,
+  "label_definition": "Existing corrected RMSF labels, per-chain Kabsch; no trajectory recomputation.",
+  "input_definition": "All valid N/CA/C frames; chain names remapped A-Z and insertion codes retained by temporary integer renumbering with original identity map.",
+  "sampling": "No selection by prediction errors. Smoke record fixed before inference: itrace_1ao7.",
+  "code_sha256": "74cec89d5197a0cd31adb8f1aa8b873b48e8810ea8361faf62c2357131769753",
+  "manifest_sha256": "5f0bf1efd5838cff9ef41eade5a5f23374a4616d32f6454f8e2073f6442c9d26"
+}

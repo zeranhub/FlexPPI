@@ -1,0 +1,1097 @@
+{
+  "generated_utc": "2026-10-23T23:55:41.148822+00:00",
+  "scope": "independent read-only biological boundary audit; no performance or model output read",
+  "membership_files_modified": false,
+  "model_inference_run": false,
+  "approved_rule": "protein includes homooligomers and processed/split chains/domains of one mature functional protein, including source-derived domain design variants; independently functioning partner products/selected binders are protein_complex",
+  "normalized_entities_sha256": "4ac1ec0a39d791655067a4fe2d258e6f03ef9e3f71f3818628164a6abeb084b9",
+  "warnings": [
+    "P58502 当前 UniProt 自动预测 Propeptide 25–106 / Chain 107–422 与该实验原论文及 RCSB 25–93 / 94–422 不一致。原文以去信号肽构建体编号 Gly1–Leu69 / Gly70–Gly398。该处实验功能身份以原论文为据，不把当前预测 cleavage site 当作已验证实验边界。",
+    "3P9W entity 2 的描述 human VEGF 为误名，不能据此把两实体并为一个 VEGF 蛋白。",
+    "3F4Y 属人为定义的边界：同一成熟 gp41 派生的设计 CHR 抑制肽仍按源蛋白/拆域规则归 protein。应保留该定义；若后续做边界敏感性分析，应一次性预先指定移动该整个案例，不能按模型成绩挑选。当前未读取任何性能、未运行任何预测或性能敏感性计算。",
+    "4BQD 化学 compound 3 是 20-mer；RCSB entity canonical sequence 为 21 个符号，并含 X 与非标准化学残基。不能直接用规范化序列长度断言为天然 21 aa 蛋白。"
+  ],
+  "records": [
+    {
+      "pdb_id": "1E3U",
+      "decision_approved_by_root": "protein",
+      "rule": "same_mature_protein_variant",
+      "facts_zh": "两个实体均为 OXA-10，均映射 P14489 的 21–266；长度均 246 aa，仅一位不同。实体数不等于不同蛋白身份。",
+      "classification_reason_zh": "同一种成熟酶的同源/近同源变体；单点差异不产生异源蛋白伙伴。",
+      "factual_identity_resolved": true,
+      "remaining_unresolved_membership": false,
+      "operational_boundary_note": false,
+      "entry_title": "MAD structure of OXA10 class D beta-lactamase",
+      "rcsb_graphql_payloads_sha256": {
+        "official_rcsb_payloads\\batch_000.json": "4316ed5146520776fad160aaf3dfa3568774abfd30e8d97aab93c52a95537eb3"
+      },
+      "rcsb_entry_snapshot_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\grouping_protein_complex_20261024\\boundary_review\\1E3U_entry.json",
+      "rcsb_entry_snapshot_sha256": "8bbd91e79a8c48c68bd277b0b8dbd9b4c8b4a2b8fe9b956870d1012fdf85a87e",
+      "sources": [
+        "https://www.rcsb.org/structure/1E3U",
+        "https://data.rcsb.org/rest/v1/core/entry/1E3U"
+      ],
+      "primary_citation": {
+        "country": "UK",
+        "id": "primary",
+        "journal_abbrev": "Structure",
+        "journal_id_ASTM": "STRUE6",
+        "journal_id_CSD": "2005",
+        "journal_id_ISSN": "0969-2126",
+        "journal_volume": "8",
+        "page_first": "1289",
+        "pdbx_database_id_DOI": "10.1016/S0969-2126(00)00534-7",
+        "pdbx_database_id_PubMed": 11188693,
+        "rcsb_ORCID_identifiers": [
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?"
+        ],
+        "rcsb_authors": [
+          "Maveyraud, L.",
+          "Golemi, D.",
+          "Kotra, L.P.",
+          "Tranier, S.",
+          "Vakulenko, S.",
+          "Mobashery, S.",
+          "Samama, J.P."
+        ],
+        "rcsb_journal_abbrev": "Structure",
+        "title": "Insights Into Class D Beta-Lactamases are Revealed by the Crystal Structure of the Oxa10 Enzyme from Pseudomonas Aeruginosa",
+        "year": 2000
+      },
+      "entities": [
+        {
+          "pdb_id": "1E3U",
+          "entity_id": "1E3U_2",
+          "description": "BETA-LACTAMASE OXA-10",
+          "fragment": null,
+          "uniprot_ids": [
+            "P14489"
+          ],
+          "auth_asym_ids": [
+            "D"
+          ],
+          "reference_alignments": [
+            {
+              "reference_database_accession": "P14489",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 1,
+                  "ref_beg_seq_id": 21,
+                  "length": 246
+                }
+              ]
+            }
+          ],
+          "payload_path": "official_rcsb_payloads\\batch_000.json",
+          "payload_sha256": "4316ed5146520776fad160aaf3dfa3568774abfd30e8d97aab93c52a95537eb3"
+        },
+        {
+          "pdb_id": "1E3U",
+          "entity_id": "1E3U_1",
+          "description": "BETA-LACTAMASE OXA-10",
+          "fragment": null,
+          "uniprot_ids": [
+            "P14489"
+          ],
+          "auth_asym_ids": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reference_alignments": [
+            {
+              "reference_database_accession": "P14489",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 1,
+                  "ref_beg_seq_id": 21,
+                  "length": 246
+                }
+              ]
+            }
+          ],
+          "payload_path": "official_rcsb_payloads\\batch_000.json",
+          "payload_sha256": "4316ed5146520776fad160aaf3dfa3568774abfd30e8d97aab93c52a95537eb3"
+        }
+      ]
+    },
+    {
+      "pdb_id": "3F4Y",
+      "decision_approved_by_root": "protein",
+      "rule": "same_mature_protein_derived_domain_design",
+      "facts_zh": "NHR 与 CHR 均来源于成熟 gp41；NHR 对应 P04580 545–580，gp41 成熟链为 511–855。原论文明确 3F4Y 是 NHR peptide 1 与 CHR alpha-peptide 3 的六螺旋束；peptide 3 即 T-2635，较 native CHR 约 50% 位点修改，并具有独立融合抑制剂用途。",
+      "classification_reason_zh": "root 于本次性能分组前裁定：同一成熟 gp41 的拆域及同源派生设计变体仍归 protein，保留人工边界说明。不能称为未经修改的天然片段。",
+      "factual_identity_resolved": true,
+      "remaining_unresolved_membership": false,
+      "operational_boundary_note": true,
+      "entry_title": "HIV gp41 six-helix bundle containing a mutant CHR alpha-peptide sequence",
+      "rcsb_graphql_payloads_sha256": {
+        "official_rcsb_payloads\\batch_011.json": "0fd472224efc7d9e6a8fdeecfdd3ebd97349264b67a1a6eecd85b5d322c69378"
+      },
+      "rcsb_entry_snapshot_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\grouping_protein_complex_20261024\\boundary_review\\3F4Y_entry.json",
+      "rcsb_entry_snapshot_sha256": "86b8ff534b06b8523f1c93bfd9d9e5199c57f0acd67bd5baf3f37c9251e69f32",
+      "sources": [
+        "https://www.rcsb.org/structure/3F4Y",
+        "https://data.rcsb.org/rest/v1/core/entry/3F4Y",
+        "https://www.pnas.org/doi/10.1073/pnas.0902663106",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2736470/",
+        "https://rest.uniprot.org/uniprotkb/P04580.json"
+      ],
+      "primary_citation": {
+        "country": "US",
+        "id": "primary",
+        "journal_abbrev": "Proc.Natl.Acad.Sci.USA",
+        "journal_id_ASTM": "PNASA6",
+        "journal_id_CSD": "0040",
+        "journal_id_ISSN": "0027-8424",
+        "journal_volume": "106",
+        "page_first": "14751",
+        "page_last": "14756",
+        "pdbx_database_id_DOI": "10.1073/pnas.0902663106",
+        "pdbx_database_id_PubMed": 19706443,
+        "rcsb_ORCID_identifiers": [
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?"
+        ],
+        "rcsb_authors": [
+          "Horne, W.S.",
+          "Johnson, L.M.",
+          "Ketas, T.J.",
+          "Klasse, P.J.",
+          "Lu, M.",
+          "Moore, J.P.",
+          "Gellman, S.H."
+        ],
+        "rcsb_journal_abbrev": "Proc Natl Acad Sci U S A",
+        "title": "Structural and biological mimicry of protein surface recognition by alpha/beta-peptide foldamers",
+        "year": 2009
+      },
+      "entities": [
+        {
+          "pdb_id": "3F4Y",
+          "entity_id": "3F4Y_2",
+          "description": "Mutant peptide derived from HIV gp41 CHR domain",
+          "fragment": "HIV gp41 CHR domain mutant",
+          "uniprot_ids": [],
+          "auth_asym_ids": [
+            "D",
+            "E",
+            "F"
+          ],
+          "reference_alignments": [],
+          "payload_path": "official_rcsb_payloads\\batch_011.json",
+          "payload_sha256": "0fd472224efc7d9e6a8fdeecfdd3ebd97349264b67a1a6eecd85b5d322c69378"
+        },
+        {
+          "pdb_id": "3F4Y",
+          "entity_id": "3F4Y_1",
+          "description": "Envelope glycoprotein gp160",
+          "fragment": "HIV gp41 NHR domain",
+          "uniprot_ids": [
+            "P04580"
+          ],
+          "auth_asym_ids": [
+            "A",
+            "B",
+            "C"
+          ],
+          "reference_alignments": [
+            {
+              "reference_database_accession": "P04580",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 2,
+                  "ref_beg_seq_id": 545,
+                  "length": 36
+                }
+              ]
+            }
+          ],
+          "payload_path": "official_rcsb_payloads\\batch_011.json",
+          "payload_sha256": "0fd472224efc7d9e6a8fdeecfdd3ebd97349264b67a1a6eecd85b5d322c69378"
+        }
+      ]
+    },
+    {
+      "pdb_id": "3P9W",
+      "decision_approved_by_root": "protein_complex",
+      "rule": "antigen_engineered_antibody_domain",
+      "facts_zh": "entry 标题和原论文均明确为 engineered autonomous human VH domain 与 VEGF。entity 1 为 P15692 35–138 的 VEGF；entity 2 为 123 aa VH 序列，以 EVQLVESGGGLVQPGGSLRLSCAAS 起始。entity 2 的 human VEGF 描述与标题、序列及原论文相矛盾。",
+      "classification_reason_zh": "以原论文身份、entry 标题和 VH 序列共同判定为抗原–抗体域复合物；不机械使用错误实体描述。",
+      "factual_identity_resolved": true,
+      "remaining_unresolved_membership": false,
+      "operational_boundary_note": false,
+      "entry_title": "Crystal structure of an engineered human autonomous VH Domain in complex with VEGF",
+      "rcsb_graphql_payloads_sha256": {
+        "official_rcsb_payloads\\batch_012.json": "d738db97c79e71e6eed28545dd528feab7287ee03530961ba5ecc6c0426ce30b"
+      },
+      "rcsb_entry_snapshot_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\grouping_protein_complex_20261024\\boundary_review\\3P9W_entry.json",
+      "rcsb_entry_snapshot_sha256": "bd513106029c5e93b1b4aebd9acb7d261cb45c7f37e84e7b44563c541ade30b1",
+      "sources": [
+        "https://www.rcsb.org/structure/3P9W",
+        "https://data.rcsb.org/rest/v1/core/entry/3P9W",
+        "https://doi.org/10.1016/j.jmb.2013.03.020"
+      ],
+      "primary_citation": {
+        "country": "UK",
+        "id": "primary",
+        "journal_abbrev": "J.Mol.Biol.",
+        "journal_id_ASTM": "JMOBAK",
+        "journal_id_CSD": "0070",
+        "journal_id_ISSN": "0022-2836",
+        "journal_volume": "425",
+        "page_first": "2247",
+        "page_last": "2259",
+        "pdbx_database_id_DOI": "10.1016/j.jmb.2013.03.020",
+        "pdbx_database_id_PubMed": 23507309,
+        "rcsb_ORCID_identifiers": [
+          "?",
+          "?",
+          "?",
+          "?",
+          "?"
+        ],
+        "rcsb_authors": [
+          "Ma, X.",
+          "Barthelemy, P.A.",
+          "Rouge, L.",
+          "Wiesmann, C.",
+          "Sidhu, S.S."
+        ],
+        "rcsb_journal_abbrev": "J Mol Biol",
+        "title": "Design of Synthetic Autonomous VH Domain Libraries and Structural Analysis of a VH Domain Bound to Vascular Endothelial Growth Factor.",
+        "year": 2013
+      },
+      "entities": [
+        {
+          "pdb_id": "3P9W",
+          "entity_id": "3P9W_2",
+          "description": "human VEGF",
+          "fragment": null,
+          "uniprot_ids": [],
+          "auth_asym_ids": [
+            "B",
+            "D",
+            "F",
+            "H"
+          ],
+          "reference_alignments": [],
+          "payload_path": "official_rcsb_payloads\\batch_012.json",
+          "payload_sha256": "d738db97c79e71e6eed28545dd528feab7287ee03530961ba5ecc6c0426ce30b"
+        },
+        {
+          "pdb_id": "3P9W",
+          "entity_id": "3P9W_1",
+          "description": "Vascular endothelial growth factor A",
+          "fragment": "unp residues 7-110",
+          "uniprot_ids": [
+            "P15692"
+          ],
+          "auth_asym_ids": [
+            "A",
+            "C",
+            "E",
+            "G"
+          ],
+          "reference_alignments": [
+            {
+              "reference_database_accession": "P15692",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 3,
+                  "ref_beg_seq_id": 35,
+                  "length": 104
+                }
+              ]
+            }
+          ],
+          "payload_path": "official_rcsb_payloads\\batch_012.json",
+          "payload_sha256": "d738db97c79e71e6eed28545dd528feab7287ee03530961ba5ecc6c0426ce30b"
+        }
+      ]
+    },
+    {
+      "pdb_id": "4LLO",
+      "decision_approved_by_root": "protein",
+      "rule": "same_mature_protein_split_domains",
+      "facts_zh": "两个实体均映射同一个 mouse EAG1/KCNH1 蛋白 Q60603：eag domain 6–136，CNBHD 552–724。",
+      "classification_reason_zh": "同一成熟通道蛋白的两个实验拆分结构域，按用户规则归 protein；标题中的 complex 本身不足以判定异源复合物。",
+      "factual_identity_resolved": true,
+      "remaining_unresolved_membership": false,
+      "operational_boundary_note": false,
+      "entry_title": "Structure of the eag domain-CNBHD complex of the mouse EAG1 channel",
+      "rcsb_graphql_payloads_sha256": {
+        "official_rcsb_payloads\\batch_016.json": "4e22dddd99c77d640dfc75ed14e421e48a0dd594248c5351c37817944296ab5d"
+      },
+      "rcsb_entry_snapshot_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\grouping_protein_complex_20261024\\boundary_review\\4LLO_entry.json",
+      "rcsb_entry_snapshot_sha256": "c44fab599c2a9527a94244f220d54643cfc084b3dbb55da5f1337e127800d54c",
+      "sources": [
+        "https://www.rcsb.org/structure/4LLO",
+        "https://data.rcsb.org/rest/v1/core/entry/4LLO",
+        "https://doi.org/10.1038/nature12487"
+      ],
+      "primary_citation": {
+        "country": "UK",
+        "id": "primary",
+        "journal_abbrev": "Nature",
+        "journal_id_ASTM": "NATUAS",
+        "journal_id_CSD": "0006",
+        "journal_id_ISSN": "0028-0836",
+        "journal_volume": "501",
+        "page_first": "444",
+        "page_last": "448",
+        "pdbx_database_id_DOI": "10.1038/nature12487",
+        "pdbx_database_id_PubMed": 23975098,
+        "rcsb_ORCID_identifiers": [
+          "?",
+          "?",
+          "?"
+        ],
+        "rcsb_authors": [
+          "Haitin, Y.",
+          "Carlson, A.E.",
+          "Zagotta, W.N."
+        ],
+        "rcsb_journal_abbrev": "Nature",
+        "title": "The structural mechanism of KCNH-channel regulation by the eag domain.",
+        "year": 2013
+      },
+      "entities": [
+        {
+          "pdb_id": "4LLO",
+          "entity_id": "4LLO_2",
+          "description": "Potassium voltage-gated channel subfamily H member 1",
+          "fragment": "mEAG1 eag domain (unp residues 6-136)",
+          "uniprot_ids": [
+            "Q60603"
+          ],
+          "auth_asym_ids": [
+            "B",
+            "D",
+            "F",
+            "H"
+          ],
+          "reference_alignments": [
+            {
+              "reference_database_accession": "Q60603",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 4,
+                  "ref_beg_seq_id": 6,
+                  "length": 131
+                }
+              ]
+            }
+          ],
+          "payload_path": "official_rcsb_payloads\\batch_016.json",
+          "payload_sha256": "4e22dddd99c77d640dfc75ed14e421e48a0dd594248c5351c37817944296ab5d"
+        },
+        {
+          "pdb_id": "4LLO",
+          "entity_id": "4LLO_1",
+          "description": "Potassium voltage-gated channel subfamily H member 1",
+          "fragment": "mEAG1 cyclic nucleotide-binding homology domain (unp residues 552-724)",
+          "uniprot_ids": [
+            "Q60603"
+          ],
+          "auth_asym_ids": [
+            "A",
+            "C",
+            "E",
+            "G"
+          ],
+          "reference_alignments": [
+            {
+              "reference_database_accession": "Q60603",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 5,
+                  "ref_beg_seq_id": 552,
+                  "length": 173
+                }
+              ]
+            }
+          ],
+          "payload_path": "official_rcsb_payloads\\batch_016.json",
+          "payload_sha256": "4e22dddd99c77d640dfc75ed14e421e48a0dd594248c5351c37817944296ab5d"
+        }
+      ]
+    },
+    {
+      "pdb_id": "5JJD",
+      "decision_approved_by_root": "protein",
+      "rule": "same_mature_protein_split_domains",
+      "facts_zh": "PH 与 START 两实体均映射同一个 CERT/COL4A3BP 蛋白 Q9Y5P4。当前 RCSB reference alignment 为 20–122 与 385–624；depositor fragment 字段写 148–250 与 359–598，坐标采用的 isoform/编号不一致，因此不把 fragment 文本编号当作另一蛋白证据。",
+      "classification_reason_zh": "同一成熟神经酰胺转运蛋白的 PH/START 域互作，归 protein。域编号差异不影响身份结论。",
+      "factual_identity_resolved": true,
+      "remaining_unresolved_membership": false,
+      "operational_boundary_note": false,
+      "entry_title": "crystal structure of the ceramide transfer protein PH and START domain complex",
+      "rcsb_graphql_payloads_sha256": {
+        "official_rcsb_payloads\\batch_019.json": "8026e502e018a93f019e23e8fa77cf9d64a62fd9887174e99386dd2b228b49dc"
+      },
+      "rcsb_entry_snapshot_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\grouping_protein_complex_20261024\\boundary_review\\5JJD_entry.json",
+      "rcsb_entry_snapshot_sha256": "680e06f89f6ebe7d4e2b74146dba5f977aa1eaa9a9c97e678e9cb67aaf193599",
+      "sources": [
+        "https://www.rcsb.org/structure/5JJD",
+        "https://data.rcsb.org/rest/v1/core/entry/5JJD",
+        "https://doi.org/10.1074/jbc.M117.780007"
+      ],
+      "primary_citation": {
+        "country": "US",
+        "id": "primary",
+        "journal_abbrev": "J. Biol. Chem.",
+        "journal_id_ASTM": "JBCHA3",
+        "journal_id_CSD": "0071",
+        "journal_id_ISSN": "1083-351X",
+        "journal_volume": "292",
+        "page_first": "14217",
+        "page_last": "14228",
+        "pdbx_database_id_DOI": "10.1074/jbc.M117.780007",
+        "pdbx_database_id_PubMed": 28652409,
+        "rcsb_ORCID_identifiers": [
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?"
+        ],
+        "rcsb_authors": [
+          "Prashek, J.",
+          "Bouyain, S.",
+          "Fu, M.",
+          "Li, Y.",
+          "Berkes, D.",
+          "Yao, X."
+        ],
+        "rcsb_journal_abbrev": "J Biol Chem",
+        "title": "Interaction between the PH and START domains of ceramide transfer protein competes with phosphatidylinositol 4-phosphate binding by the PH domain.",
+        "year": 2017
+      },
+      "entities": [
+        {
+          "pdb_id": "5JJD",
+          "entity_id": "5JJD_2",
+          "description": "Collagen type IV alpha-3-binding protein",
+          "fragment": "UNP residues 359-598",
+          "uniprot_ids": [
+            "Q9Y5P4"
+          ],
+          "auth_asym_ids": [
+            "B"
+          ],
+          "reference_alignments": [
+            {
+              "reference_database_accession": "Q9Y5P4",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 7,
+                  "ref_beg_seq_id": 385,
+                  "length": 240
+                }
+              ]
+            }
+          ],
+          "payload_path": "official_rcsb_payloads\\batch_019.json",
+          "payload_sha256": "8026e502e018a93f019e23e8fa77cf9d64a62fd9887174e99386dd2b228b49dc"
+        },
+        {
+          "pdb_id": "5JJD",
+          "entity_id": "5JJD_1",
+          "description": "Collagen type IV alpha-3-binding protein",
+          "fragment": "UNP residues 148-250",
+          "uniprot_ids": [
+            "Q9Y5P4"
+          ],
+          "auth_asym_ids": [
+            "A"
+          ],
+          "reference_alignments": [
+            {
+              "reference_database_accession": "Q9Y5P4",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 4,
+                  "ref_beg_seq_id": 20,
+                  "length": 103
+                }
+              ]
+            }
+          ],
+          "payload_path": "official_rcsb_payloads\\batch_019.json",
+          "payload_sha256": "8026e502e018a93f019e23e8fa77cf9d64a62fd9887174e99386dd2b228b49dc"
+        }
+      ]
+    },
+    {
+      "pdb_id": "3VV2",
+      "decision_approved_by_root": "protein_complex",
+      "rule": "mature_enzyme_separate_inhibitory_propeptide",
+      "facts_zh": "P58502 同一前体的两个不同功能产物：RCSB 将 enzyme 映射 94–422，propeptide 映射 25–93。原论文明确先发生自切，留下抑制性 enzyme:propeptide 复合物；前肽随后解离并被降解才释放活性成熟酶。3VV2 是 L69P-propeptide 与 S324A-subtilisin 的共晶。",
+      "classification_reason_zh": "root 裁定独立前肽伙伴属于成熟功能酶之外的 inhibitor/chaperone，不是同一活性成熟蛋白保留的拆分链，归 protein_complex。共享 precursor accession 不充分。",
+      "factual_identity_resolved": true,
+      "remaining_unresolved_membership": false,
+      "operational_boundary_note": true,
+      "entry_title": "Crystal structure of complex form between S324A-subtilisin and mutant Tkpro",
+      "rcsb_graphql_payloads_sha256": {
+        "official_rcsb_payloads\\batch_014.json": "30f662b873ac1bc366301685e1025156249008d913f79d8ded9c07782c68fd70"
+      },
+      "rcsb_entry_snapshot_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\grouping_protein_complex_20261024\\boundary_review\\3VV2_entry.json",
+      "rcsb_entry_snapshot_sha256": "497955b0041b0e8a5f1f70ba2267c0f3b6fcd92749475f8d34e766b4e430535a",
+      "sources": [
+        "https://www.rcsb.org/structure/3VV2",
+        "https://data.rcsb.org/rest/v1/core/entry/3VV2",
+        "https://doi.org/10.1111/febs.12091",
+        "https://rest.uniprot.org/uniprotkb/P58502.json"
+      ],
+      "primary_citation": {
+        "country": "UK",
+        "id": "primary",
+        "journal_abbrev": "Febs J.",
+        "journal_id_ISSN": "1742-464X",
+        "journal_volume": "280",
+        "page_first": "994",
+        "page_last": "1006",
+        "pdbx_database_id_DOI": "10.1111/febs.12091",
+        "pdbx_database_id_PubMed": 23237738,
+        "rcsb_ORCID_identifiers": [
+          "?",
+          "?",
+          "?",
+          "?",
+          "?"
+        ],
+        "rcsb_authors": [
+          "Uehara, R.",
+          "Ueda, Y.",
+          "You, D.J.",
+          "Koga, Y.",
+          "Kanaya, S."
+        ],
+        "rcsb_journal_abbrev": "FEBS J",
+        "title": "Accelerated maturation of Tk-subtilisin by a Leu  Pro mutation at the C-terminus of the propeptide, which reduces the binding of the propeptide to Tk-subtilisin",
+        "year": 2013
+      },
+      "entities": [
+        {
+          "pdb_id": "3VV2",
+          "entity_id": "3VV2_2",
+          "description": "PROPEPTIDE from Tk-subtilisin",
+          "fragment": "UNP residues 25-93",
+          "uniprot_ids": [
+            "P58502"
+          ],
+          "auth_asym_ids": [
+            "B"
+          ],
+          "reference_alignments": [
+            {
+              "reference_database_accession": "P58502",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 1,
+                  "ref_beg_seq_id": 25,
+                  "length": 69
+                }
+              ]
+            }
+          ],
+          "payload_path": "official_rcsb_payloads\\batch_014.json",
+          "payload_sha256": "30f662b873ac1bc366301685e1025156249008d913f79d8ded9c07782c68fd70"
+        },
+        {
+          "pdb_id": "3VV2",
+          "entity_id": "3VV2_1",
+          "description": "Tk-subtilisin",
+          "fragment": "UNP residues 94-422",
+          "uniprot_ids": [
+            "P58502"
+          ],
+          "auth_asym_ids": [
+            "A"
+          ],
+          "reference_alignments": [
+            {
+              "reference_database_accession": "P58502",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 1,
+                  "ref_beg_seq_id": 94,
+                  "length": 329
+                }
+              ]
+            }
+          ],
+          "payload_path": "official_rcsb_payloads\\batch_014.json",
+          "payload_sha256": "30f662b873ac1bc366301685e1025156249008d913f79d8ded9c07782c68fd70"
+        }
+      ]
+    },
+    {
+      "pdb_id": "4ZRJ",
+      "decision_approved_by_root": "protein",
+      "rule": "same_mature_protein_split_domains",
+      "facts_zh": "两个实体均为 Merlin/NF2 P35240：FERM 1–320，CTD 506–595；论文描述 Merlin 自抑制尾部对 FERM 的调控。",
+      "classification_reason_zh": "同一成熟蛋白头尾的实验拆域互作，归 protein。",
+      "factual_identity_resolved": true,
+      "remaining_unresolved_membership": false,
+      "operational_boundary_note": false,
+      "entry_title": "Structure of Merlin-FERM and CTD",
+      "rcsb_graphql_payloads_sha256": {
+        "official_rcsb_payloads\\batch_018.json": "eef5a3f95ec868db589cd71ab7e5983adfc92e966dad120aae0e3c66f44f8ceb"
+      },
+      "rcsb_entry_snapshot_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\grouping_protein_complex_20261024\\boundary_review\\4ZRJ_entry.json",
+      "rcsb_entry_snapshot_sha256": "5a5b332a8254f3c3b85caf4a0a8c787644d20004df1569e273a095ca525748be",
+      "sources": [
+        "https://www.rcsb.org/structure/4ZRJ",
+        "https://data.rcsb.org/rest/v1/core/entry/4ZRJ",
+        "https://doi.org/10.1038/cr.2015.69"
+      ],
+      "primary_citation": {
+        "country": "CN",
+        "id": "primary",
+        "journal_abbrev": "Cell Res.",
+        "journal_id_ISSN": "1001-0602",
+        "journal_volume": "25",
+        "page_first": "801",
+        "page_last": "817",
+        "pdbx_database_id_DOI": "10.1038/cr.2015.69",
+        "pdbx_database_id_PubMed": 26045165,
+        "rcsb_ORCID_identifiers": [
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?"
+        ],
+        "rcsb_authors": [
+          "Li, Y.",
+          "Zhou, H.",
+          "Li, F.",
+          "Chan, S.W.",
+          "Lin, Z.",
+          "Wei, Z.",
+          "Yang, Z.",
+          "Guo, F.",
+          "Lim, C.J.",
+          "Xing, W.",
+          "Shen, Y.",
+          "Hong, W.",
+          "Long, J.",
+          "Zhang, M."
+        ],
+        "rcsb_journal_abbrev": "Cell Res",
+        "title": "Angiomotin binding-induced activation of Merlin/NF2 in the Hippo pathway",
+        "year": 2015
+      },
+      "entities": [
+        {
+          "pdb_id": "4ZRJ",
+          "entity_id": "4ZRJ_2",
+          "description": "Merlin",
+          "fragment": "C terminal domain, UNP residues 506-595",
+          "uniprot_ids": [
+            "P35240"
+          ],
+          "auth_asym_ids": [
+            "B"
+          ],
+          "reference_alignments": [
+            {
+              "reference_database_accession": "P35240",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 1,
+                  "ref_beg_seq_id": 506,
+                  "length": 90
+                }
+              ]
+            }
+          ],
+          "payload_path": "official_rcsb_payloads\\batch_018.json",
+          "payload_sha256": "eef5a3f95ec868db589cd71ab7e5983adfc92e966dad120aae0e3c66f44f8ceb"
+        },
+        {
+          "pdb_id": "4ZRJ",
+          "entity_id": "4ZRJ_1",
+          "description": "Merlin",
+          "fragment": "FERM domain, UNP residues 1-320",
+          "uniprot_ids": [
+            "P35240"
+          ],
+          "auth_asym_ids": [
+            "A"
+          ],
+          "reference_alignments": [
+            {
+              "reference_database_accession": "P35240",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 1,
+                  "ref_beg_seq_id": 1,
+                  "length": 320
+                }
+              ]
+            }
+          ],
+          "payload_path": "official_rcsb_payloads\\batch_018.json",
+          "payload_sha256": "eef5a3f95ec868db589cd71ab7e5983adfc92e966dad120aae0e3c66f44f8ceb"
+        }
+      ]
+    },
+    {
+      "pdb_id": "1RKE",
+      "decision_approved_by_root": "protein",
+      "rule": "same_mature_protein_split_domains",
+      "facts_zh": "Vinculin head 与 tail 均映射 P18206；head reference alignment 1–258，tail 当前 reference alignment 947–1131；depositor/title 使用 879–1066 的另一个编号，编号不完全一致但蛋白身份一致。",
+      "classification_reason_zh": "同一成熟 vinculin 头尾实验拆域，归 protein；不因为两条链或标题用 complex 而判定为不同蛋白。",
+      "factual_identity_resolved": true,
+      "remaining_unresolved_membership": false,
+      "operational_boundary_note": false,
+      "entry_title": "Human vinculin head (1-258) in complex with human vinculin tail (879-1066)",
+      "rcsb_graphql_payloads_sha256": {
+        "official_rcsb_payloads\\batch_004.json": "01e621d94012ff052c36c8100b89de53df8ba571d226124104858ff86befd70b"
+      },
+      "rcsb_entry_snapshot_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\grouping_protein_complex_20261024\\boundary_review\\1RKE_entry.json",
+      "rcsb_entry_snapshot_sha256": "ad012f00a1e585d3723697032a527e357319be2e327fa07ec28b95742fc63ad5",
+      "sources": [
+        "https://www.rcsb.org/structure/1RKE",
+        "https://data.rcsb.org/rest/v1/core/entry/1RKE",
+        "https://doi.org/10.1038/nature02281"
+      ],
+      "primary_citation": {
+        "country": "UK",
+        "id": "primary",
+        "journal_abbrev": "Nature",
+        "journal_id_ASTM": "NATUAS",
+        "journal_id_CSD": "0006",
+        "journal_id_ISSN": "0028-0836",
+        "journal_volume": "427",
+        "page_first": "171",
+        "page_last": "175",
+        "pdbx_database_id_DOI": "10.1038/nature02281",
+        "pdbx_database_id_PubMed": 14702644,
+        "rcsb_ORCID_identifiers": [
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?"
+        ],
+        "rcsb_authors": [
+          "Izard, T.",
+          "Evans, G.",
+          "Borgon, R.A.",
+          "Rush, C.L.",
+          "Bricogne, G.",
+          "Bois, P.R."
+        ],
+        "rcsb_journal_abbrev": "Nature",
+        "title": "Vinculin activation by talin through helical bundle conversion",
+        "year": 2004
+      },
+      "entities": [
+        {
+          "pdb_id": "1RKE",
+          "entity_id": "1RKE_1",
+          "description": "Vinculin",
+          "fragment": "vinculin head (residues 1-258)",
+          "uniprot_ids": [
+            "P18206"
+          ],
+          "auth_asym_ids": [
+            "A"
+          ],
+          "reference_alignments": [
+            {
+              "reference_database_accession": "P18206",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 5,
+                  "ref_beg_seq_id": 1,
+                  "length": 258
+                }
+              ]
+            }
+          ],
+          "payload_path": "official_rcsb_payloads\\batch_004.json",
+          "payload_sha256": "01e621d94012ff052c36c8100b89de53df8ba571d226124104858ff86befd70b"
+        },
+        {
+          "pdb_id": "1RKE",
+          "entity_id": "1RKE_2",
+          "description": "VCL protein",
+          "fragment": "vinculin tail (residues 879-1066)",
+          "uniprot_ids": [
+            "P18206"
+          ],
+          "auth_asym_ids": [
+            "B"
+          ],
+          "reference_alignments": [
+            {
+              "reference_database_accession": "P18206",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 1,
+                  "ref_beg_seq_id": 947,
+                  "length": 185
+                }
+              ]
+            }
+          ],
+          "payload_path": "official_rcsb_payloads\\batch_004.json",
+          "payload_sha256": "01e621d94012ff052c36c8100b89de53df8ba571d226124104858ff86befd70b"
+        }
+      ]
+    },
+    {
+      "pdb_id": "4BQD",
+      "decision_approved_by_root": "protein_complex",
+      "rule": "de_novo_selected_peptide_antagonist",
+      "facts_zh": "原论文 Results 的 Identification and Optimization of Peptides That Neutralize TFPI 节说明：27-mer mRNA display 文库筛出 hit，截短/替换后得到 compound 3。其化学序列为 Ac-FQSKpNVHVDGYFERL-Aib-AKL-NH2，是 20-mer TFPI 拮抗剂；RCSB 的 21 个位置包含端基/非标准残基的规范化表示。官方 Q59EE5 与 canonical TFPI P10646 均不含 FQSKPNVHVDGYFERLAAKL 这一连续序列。",
+      "classification_reason_zh": "其来源是独立文库筛选与优化，不是 TFPI 自身成熟蛋白的片段；归 protein_complex。判断依据不是 synthetic 标签。",
+      "factual_identity_resolved": true,
+      "remaining_unresolved_membership": false,
+      "operational_boundary_note": false,
+      "entry_title": "KD1 of human TFPI in complex with a synthetic peptide",
+      "rcsb_graphql_payloads_sha256": {
+        "official_rcsb_payloads\\batch_014.json": "30f662b873ac1bc366301685e1025156249008d913f79d8ded9c07782c68fd70"
+      },
+      "rcsb_entry_snapshot_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\grouping_protein_complex_20261024\\boundary_review\\4BQD_entry.json",
+      "rcsb_entry_snapshot_sha256": "928b93923a3d20f009db0e5027f97b193c3f4da49195b8679d7e5e32b2018420",
+      "sources": [
+        "https://www.rcsb.org/structure/4BQD",
+        "https://data.rcsb.org/rest/v1/core/entry/4BQD",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3894350/",
+        "https://doi.org/10.1074/jbc.M113.533836",
+        "https://rest.uniprot.org/uniprotkb/Q59EE5.json",
+        "https://rest.uniprot.org/uniprotkb/P10646.json"
+      ],
+      "primary_citation": {
+        "country": "US",
+        "id": "primary",
+        "journal_abbrev": "J.Biol.Chem.",
+        "journal_id_ASTM": "JBCHA3",
+        "journal_id_CSD": "0071",
+        "journal_id_ISSN": "0021-9258",
+        "journal_volume": "289",
+        "page_first": "1732",
+        "pdbx_database_id_DOI": "10.1074/JBC.M113.533836",
+        "pdbx_database_id_PubMed": 24275667,
+        "rcsb_ORCID_identifiers": [
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?",
+          "?"
+        ],
+        "rcsb_authors": [
+          "Dockal, M.",
+          "Hartman, R.",
+          "Fries, M.",
+          "Christella, M.",
+          "Thomassen, L.G.D.",
+          "Heizman, A.",
+          "Ehrlich, H.",
+          "Rosing, J.",
+          "Osterkamp, F.",
+          "Polakowski, T.",
+          "Reineke, U.",
+          "Griessner, A.",
+          "Brandstetter, H.",
+          "Scheiflinger, F."
+        ],
+        "rcsb_journal_abbrev": "J Biol Chem",
+        "title": "Small Peptides Blocking Inhibition of Factor Xa and Tissue Factor-Factor Viia by Tissue Factor Pathway Inhibitor (Tfpi)",
+        "year": 2014
+      },
+      "entities": [
+        {
+          "pdb_id": "4BQD",
+          "entity_id": "4BQD_2",
+          "description": "PEPTIDE",
+          "fragment": null,
+          "uniprot_ids": [],
+          "auth_asym_ids": [
+            "C",
+            "D"
+          ],
+          "reference_alignments": [],
+          "payload_path": "official_rcsb_payloads\\batch_014.json",
+          "payload_sha256": "30f662b873ac1bc366301685e1025156249008d913f79d8ded9c07782c68fd70"
+        },
+        {
+          "pdb_id": "4BQD",
+          "entity_id": "4BQD_1",
+          "description": "TISSUE FACTOR PATHWAY INHIBITOR (LIPOPROTEIN-ASSOCIATED COAGULATION INHIBITOR) VARIANT",
+          "fragment": "RESIDUES 40-118",
+          "uniprot_ids": [
+            "Q59EE5"
+          ],
+          "auth_asym_ids": [
+            "A",
+            "B"
+          ],
+          "reference_alignments": [
+            {
+              "reference_database_accession": "Q59EE5",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 1,
+                  "ref_beg_seq_id": 40,
+                  "length": 79
+                }
+              ]
+            }
+          ],
+          "payload_path": "official_rcsb_payloads\\batch_014.json",
+          "payload_sha256": "30f662b873ac1bc366301685e1025156249008d913f79d8ded9c07782c68fd70"
+        }
+      ]
+    },
+    {
+      "pdb_id": "4JO6",
+      "decision_approved_by_root": "protein_complex",
+      "rule": "streptavidin_independent_binding_tag",
+      "facts_zh": "主体为 streptavidin P22629 25–183；伙伴是独立 38 aa SBP-Tag。原论文及 RCSB 摘要说明该 tag 跨接两个 streptavidin 亚基的 biotin-binding pockets。",
+      "classification_reason_zh": "streptavidin 同源多聚体本身可归 protein，但存在独立 SBP-Tag 结合伙伴，完整体系归 protein_complex。",
+      "factual_identity_resolved": true,
+      "remaining_unresolved_membership": false,
+      "operational_boundary_note": false,
+      "entry_title": "Streptavidin complex with SBP-Tag",
+      "rcsb_graphql_payloads_sha256": {
+        "official_rcsb_payloads\\batch_016.json": "4e22dddd99c77d640dfc75ed14e421e48a0dd594248c5351c37817944296ab5d"
+      },
+      "rcsb_entry_snapshot_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\grouping_protein_complex_20261024\\boundary_review\\4JO6_entry.json",
+      "rcsb_entry_snapshot_sha256": "7d4a8df6427f4833a8d740d50bd0c953c03545d2adeee4ba81d1ed1b3067b65b",
+      "sources": [
+        "https://www.rcsb.org/structure/4JO6",
+        "https://data.rcsb.org/rest/v1/core/entry/4JO6",
+        "https://doi.org/10.1107/S0907444913002576"
+      ],
+      "primary_citation": {
+        "country": "DK",
+        "id": "primary",
+        "journal_abbrev": "Acta Crystallogr.,Sect.D",
+        "journal_id_ASTM": "ABCRE6",
+        "journal_id_CSD": "0766",
+        "journal_id_ISSN": "0907-4449",
+        "journal_volume": "69",
+        "page_first": "879",
+        "page_last": "887",
+        "pdbx_database_id_DOI": "10.1107/S0907444913002576",
+        "pdbx_database_id_PubMed": 23633599,
+        "rcsb_ORCID_identifiers": [
+          "?",
+          "?",
+          "?",
+          "?",
+          "?"
+        ],
+        "rcsb_authors": [
+          "Barrette-Ng, I.H.",
+          "Wu, S.C.",
+          "Tjia, W.M.",
+          "Wong, S.L.",
+          "Ng, K.K."
+        ],
+        "rcsb_journal_abbrev": "Acta Crystallogr D Biol Crystallogr",
+        "title": "The structure of the SBP-Tag-streptavidin complex reveals a novel helical scaffold bridging binding pockets on separate subunits",
+        "year": 2013
+      },
+      "entities": [
+        {
+          "pdb_id": "4JO6",
+          "entity_id": "4JO6_2",
+          "description": "SBP-Tag",
+          "fragment": null,
+          "uniprot_ids": [],
+          "auth_asym_ids": [
+            "Y",
+            "Z"
+          ],
+          "reference_alignments": [],
+          "payload_path": "official_rcsb_payloads\\batch_016.json",
+          "payload_sha256": "4e22dddd99c77d640dfc75ed14e421e48a0dd594248c5351c37817944296ab5d"
+        },
+        {
+          "pdb_id": "4JO6",
+          "entity_id": "4JO6_1",
+          "description": "Streptavidin",
+          "fragment": "UNP residues 25-183",
+          "uniprot_ids": [
+            "P22629"
+          ],
+          "auth_asym_ids": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "reference_alignments": [
+            {
+              "reference_database_accession": "P22629",
+              "reference_database_name": "UniProt",
+              "aligned_regions": [
+                {
+                  "entity_beg_seq_id": 1,
+                  "ref_beg_seq_id": 25,
+                  "length": 159
+                }
+              ]
+            }
+          ],
+          "payload_path": "official_rcsb_payloads\\batch_016.json",
+          "payload_sha256": "4e22dddd99c77d640dfc75ed14e421e48a0dd594248c5351c37817944296ab5d"
+        }
+      ]
+    }
+  ]
+}

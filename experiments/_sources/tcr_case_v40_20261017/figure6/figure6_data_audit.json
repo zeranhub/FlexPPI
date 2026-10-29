@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "peptide_sequence": "LPEPLPQGQLTAY",
+  "n_RMSF": 13,
+  "n_Hchi": 11,
+  "no_chi": [
+    "G8",
+    "A12"
+  ],
+  "all_positions_retained": true,
+  "RMSF_delta_spearman": 0.945054945054945,
+  "RMSF_change_MAE_A": 0.09310372059161846,
+  "RMSF_direction_agreement": 13,
+  "MD_error_bars": "independent-groups mean-difference SEM sqrt(s1^2/3+s2^2/3); n=3 per structure",
+  "Q7_MD": [
+    1.683035735119585,
+    2.757435435329237
+  ],
+  "Q7_full": [
+    1.7259212732315063,
+    2.8247501850128174
+  ],
+  "Q7_TCR_removed": [
+    2.680478811264038,
+    2.6626603603363037
+  ],
+  "structure_crop_shared_pixels": [
+    457,
+    99,
+    1139,
+    914
+  ],
+  "no_significance_test": true,
+  "scientific_message": "Test changes in the same peptide\u2013MHC sequence under two TCR docking contexts; same-model removal tests input dependence, not physical apo dynamics."
+}

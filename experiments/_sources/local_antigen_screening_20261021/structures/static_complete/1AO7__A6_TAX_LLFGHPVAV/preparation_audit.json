@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "input": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\fixed_backbone\\1AO7__A6_TAX_LLFGHPVAV\\model_input_fixed_backbone.pdb",
+  "input_sha256": "122d99d5019b789162b2af8d1c44575a682251b3dc5aeedc8fe4d932eab119b4",
+  "output": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\static_complete\\1AO7__A6_TAX_LLFGHPVAV\\complete_heavy_atoms.pdb",
+  "output_sha256": "9a9451622f9a696f1616cb72fd6a7d133fc6e618d40f042ec8fa69202646716e",
+  "residues": 707,
+  "new_sidechain_atoms": [
+    {
+      "chain": "C",
+      "residue_id": "5",
+      "name": "HIS",
+      "atoms": [
+        "CB",
+        "CG",
+        "ND1",
+        "CE1",
+        "NE2",
+        "CD2"
+      ]
+    },
+    {
+      "chain": "C",
+      "residue_id": "8",
+      "name": "ALA",
+      "atoms": [
+        "CB"
+      ]
+    }
+  ],
+  "new_terminal_atoms": [
+    {
+      "chain": "A",
+      "residue_id": "274",
+      "atoms": [
+        "OXT"
+      ]
+    },
+    {
+      "chain": "D",
+      "residue_id": "121",
+      "atoms": [
+        "OXT"
+      ]
+    }
+  ],
+  "all_observed_backbone_values_bit_identical": true,
+  "sidechain_rebuilt": true,
+  "backbone_rebuilt": false,
+  "OpenMM": "8.6.1",
+  "platform": "CPU",
+  "seed": 17,
+  "MD": false,
+  "elapsed_seconds": 1.1584582999930717
+}

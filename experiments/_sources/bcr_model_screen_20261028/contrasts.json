@@ -1,0 +1,203 @@
+[
+  {
+    "id": "bound_HR71A",
+    "case": "HyHEL10_2017",
+    "before": "hh10_bound_WT",
+    "after": "hh10_bound_HR71A",
+    "type": "fixed-backbone sequence sensitivity",
+    "same_context": true,
+    "reference": ">10-fold affinity increase; altered fluctuations",
+    "counterfactual": true
+  },
+  {
+    "id": "bound_LR45A",
+    "case": "HyHEL10_2017",
+    "before": "hh10_bound_WT",
+    "after": "hh10_bound_LR45A",
+    "type": "fixed-backbone sequence sensitivity",
+    "same_context": true,
+    "reference": ">10-fold affinity increase; altered fluctuations",
+    "counterfactual": true
+  },
+  {
+    "id": "bound_HQ3A_control",
+    "case": "HyHEL10_2017",
+    "before": "hh10_bound_WT",
+    "after": "hh10_bound_HQ3A_control",
+    "type": "fixed-backbone sequence sensitivity",
+    "same_context": true,
+    "reference": "little changed experimental affinity; not an asserted zero-dynamic-change control",
+    "counterfactual": true
+  },
+  {
+    "id": "bound_LH34A_control",
+    "case": "HyHEL10_2017",
+    "before": "hh10_bound_WT",
+    "after": "hh10_bound_LH34A_control",
+    "type": "fixed-backbone sequence sensitivity",
+    "same_context": true,
+    "reference": "little changed experimental affinity; not an asserted zero-dynamic-change control",
+    "counterfactual": true
+  },
+  {
+    "id": "apo_HR71A",
+    "case": "HyHEL10_2017",
+    "before": "hh10_apo_WT",
+    "after": "hh10_apo_HR71A",
+    "type": "fixed-backbone sequence sensitivity",
+    "same_context": true,
+    "reference": ">10-fold affinity increase; altered fluctuations",
+    "counterfactual": true
+  },
+  {
+    "id": "apo_LR45A",
+    "case": "HyHEL10_2017",
+    "before": "hh10_apo_WT",
+    "after": "hh10_apo_LR45A",
+    "type": "fixed-backbone sequence sensitivity",
+    "same_context": true,
+    "reference": ">10-fold affinity increase; altered fluctuations",
+    "counterfactual": true
+  },
+  {
+    "id": "apo_HQ3A_control",
+    "case": "HyHEL10_2017",
+    "before": "hh10_apo_WT",
+    "after": "hh10_apo_HQ3A_control",
+    "type": "fixed-backbone sequence sensitivity",
+    "same_context": true,
+    "reference": "little changed experimental affinity; not an asserted zero-dynamic-change control",
+    "counterfactual": true
+  },
+  {
+    "id": "apo_LH34A_control",
+    "case": "HyHEL10_2017",
+    "before": "hh10_apo_WT",
+    "after": "hh10_apo_LH34A_control",
+    "type": "fixed-backbone sequence sensitivity",
+    "same_context": true,
+    "reference": "little changed experimental affinity; not an asserted zero-dynamic-change control",
+    "counterfactual": true
+  },
+  {
+    "id": "stripped_HR71A",
+    "case": "HyHEL10_2017",
+    "before": "hh10_stripped_WT",
+    "after": "hh10_stripped_HR71A",
+    "type": "fixed-backbone sequence sensitivity",
+    "same_context": true,
+    "reference": ">10-fold affinity increase; altered fluctuations",
+    "counterfactual": true
+  },
+  {
+    "id": "stripped_LR45A",
+    "case": "HyHEL10_2017",
+    "before": "hh10_stripped_WT",
+    "after": "hh10_stripped_LR45A",
+    "type": "fixed-backbone sequence sensitivity",
+    "same_context": true,
+    "reference": ">10-fold affinity increase; altered fluctuations",
+    "counterfactual": true
+  },
+  {
+    "id": "stripped_HQ3A_control",
+    "case": "HyHEL10_2017",
+    "before": "hh10_stripped_WT",
+    "after": "hh10_stripped_HQ3A_control",
+    "type": "fixed-backbone sequence sensitivity",
+    "same_context": true,
+    "reference": "little changed experimental affinity; not an asserted zero-dynamic-change control",
+    "counterfactual": true
+  },
+  {
+    "id": "stripped_LH34A_control",
+    "case": "HyHEL10_2017",
+    "before": "hh10_stripped_WT",
+    "after": "hh10_stripped_LH34A_control",
+    "type": "fixed-backbone sequence sensitivity",
+    "same_context": true,
+    "reference": "little changed experimental affinity; not an asserted zero-dynamic-change control",
+    "counterfactual": true
+  },
+  {
+    "id": "hh10_observed_apo_to_bound",
+    "case": "HyHEL10_2017",
+    "before": "hh10_apo_WT",
+    "after": "hh10_bound_WT",
+    "type": "independent crystals plus partner context",
+    "same_context": false,
+    "counterfactual": false
+  },
+  {
+    "id": "hh10_same_backbone_partner_context",
+    "case": "HyHEL10_2017",
+    "before": "hh10_stripped_WT",
+    "after": "hh10_bound_WT",
+    "type": "fixed-backbone antigen addition",
+    "same_context": false,
+    "counterfactual": true
+  },
+  {
+    "id": "flex_joint_state_change_full",
+    "case": "FlexHEL_2020",
+    "before": "flex_rigid_WT_full",
+    "after": "flex_flexible_4X_full",
+    "type": "independent crystals; antibody and antigen both changed",
+    "same_context": false,
+    "counterfactual": false
+  },
+  {
+    "id": "flex_4X_apo_to_bound_full",
+    "case": "FlexHEL_2020",
+    "before": "flex_apo_4X_full",
+    "after": "flex_flexible_4X_full",
+    "type": "same antibody sequence apo/bound crystals plus antigen context",
+    "same_context": false,
+    "counterfactual": false
+  },
+  {
+    "id": "flex_joint_state_change_fv",
+    "case": "FlexHEL_2020",
+    "before": "flex_rigid_WT_fv",
+    "after": "flex_flexible_4X_fv",
+    "type": "independent crystals; antibody and antigen both changed",
+    "same_context": false,
+    "counterfactual": false
+  },
+  {
+    "id": "flex_4X_apo_to_bound_fv",
+    "case": "FlexHEL_2020",
+    "before": "flex_apo_4X_fv",
+    "after": "flex_flexible_4X_fv",
+    "type": "same antibody sequence apo/bound crystals plus antigen context",
+    "same_context": false,
+    "counterfactual": false
+  },
+  {
+    "id": "flex_antibody_only_forward_cf",
+    "case": "FlexHEL_2020",
+    "before": "flex_rigid_WT_fv",
+    "after": "flex_rigid_backbone_4X_cf",
+    "type": "fixed-backbone four-antibody-substitution sensitivity",
+    "same_context": true,
+    "counterfactual": true
+  },
+  {
+    "id": "flex_antibody_only_reverse_cf",
+    "case": "FlexHEL_2020",
+    "before": "flex_flexible_4X_fv",
+    "after": "flex_flexible_backbone_WT_cf",
+    "type": "fixed-backbone four-antibody-reversion sensitivity",
+    "same_context": true,
+    "counterfactual": true
+  },
+  {
+    "id": "flex_crystal_copy_sensitivity",
+    "case": "FlexHEL_2020",
+    "before": "flex_flexible_4X_full",
+    "after": "flex_flexible_4X_copy2_full",
+    "type": "two crystal copies of same complex, not biological repeats",
+    "same_context": true,
+    "counterfactual": false
+  }
+]

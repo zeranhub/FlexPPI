@@ -1,0 +1,30 @@
+{
+  "phase": "finished_with_failures_or_missing_coverage",
+  "updated_utc": "2026-10-23T13:34:29.489409+00:00",
+  "pid": 19792,
+  "complete_entries": [
+    "Full",
+    "Intra",
+    "Static",
+    "AA",
+    "DynaProt-M",
+    "ANM",
+    "GNM",
+    "FastProtFlex",
+    "backflip-2.1 (assembly)",
+    "backflip-2.1 (chains)",
+    "backflip-1.0 (assembly)",
+    "backflip-1.0 (chains)",
+    "backflip-1.0-seq (assembly)"
+  ],
+  "missing_selected_entries": [
+    "backflip-1.0-seq (chains)"
+  ],
+  "failed_phases": [],
+  "report": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\review_queue_failure_fixture\\missing_coverage\\RESULTS_zh.md",
+  "figure": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\review_queue_failure_fixture\\missing_coverage\\figures\\benchmark_current.pdf",
+  "deferred_heavy_models": {
+    "run_planet": false,
+    "run_rmsfnet": false
+  }
+}

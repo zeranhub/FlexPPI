@@ -1,0 +1,17 @@
+{
+  "original_experiment_doi": "10.1038/s41586-022-04735-9",
+  "processed_source_doi": "10.1073/pnas.2504783122",
+  "commit": "cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2",
+  "endpoint": "Source-normalized fraction of4-1BB+ transducedCD8 cells; cell functional response, not KD",
+  "dose_headers_in_raw_xlsx": [
+    0.01,
+    1,
+    100
+  ],
+  "dose_unit_not_annotated_in_raw_xlsx": true,
+  "note": "Original ExtendedData4 indexed PDF text labels peptide concentration as microgram/ml, but matching normalization/dose processing is not independently established from the source XLSX; primary reports highest tested source dose, with no EC50 conversion.",
+  "TCR1_beta_CDR3_repository": "CASSLAPGTTNEKLFF",
+  "TCR1_beta_CDR3_original_ED4_indexed_text": "CASSLAPGATNEKLFF",
+  "original_ED4_sequence_difference_status": "Flagged unresolved source discrepancy; retain all published-input results and qualify conclusions, no post-result structure substitution.",
+  "excluding_TCR1_changes_general_conclusion": false
+}

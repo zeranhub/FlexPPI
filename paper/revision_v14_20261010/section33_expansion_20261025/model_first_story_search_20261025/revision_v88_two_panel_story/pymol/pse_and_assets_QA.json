@@ -1,0 +1,69 @@
+{
+  "assets": {
+    "overview": {
+      "atom_count_in_editable_display_object": 1344,
+      "source_atom_keys_match": true,
+      "max_PyMOL_float_rounding_difference_A": 3.662109378410605e-06,
+      "max_saved_camera_difference": 0.0,
+      "RGBA": true,
+      "pixel_dimensions": [
+        2100,
+        1500
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pse_file_bytes": 448858,
+      "png_sha256": "801d5b72bcbda7cf560a52501ca3c913f41c67614b17548080f9165d3a1341d8",
+      "pse_sha256": "535261f203a34975b587bff8655a8fa887c442aae905cc3776a78bacb4656ecb"
+    },
+    "local_303": {
+      "atom_count_in_editable_display_object": 1344,
+      "source_atom_keys_match": true,
+      "max_PyMOL_float_rounding_difference_A": 3.662109378410605e-06,
+      "max_saved_camera_difference": 0.0,
+      "RGBA": true,
+      "pixel_dimensions": [
+        1200,
+        1500
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pse_file_bytes": 931806,
+      "png_sha256": "5ac5622b2fa6798efcc01c215aad71c89e40303d5d839517c5b9de9502415961",
+      "pse_sha256": "0387c60befd2842f27b0b6125caf901b5b63148467bb0bffdc4c17f96909208a"
+    },
+    "local_316": {
+      "atom_count_in_editable_display_object": 1344,
+      "source_atom_keys_match": true,
+      "max_PyMOL_float_rounding_difference_A": 3.662109378410605e-06,
+      "max_saved_camera_difference": 0.0,
+      "RGBA": true,
+      "pixel_dimensions": [
+        1200,
+        1500
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "pse_file_bytes": 952053,
+      "png_sha256": "05099d799b214d7b4e64956098b7e5e063fe5eb913d62303e7185762f5f63c31",
+      "pse_sha256": "2be14aab8a5c2f5657bb9f4a4d6b90dd05bc4dcc6cfcefacbc77069e873a4e5c"
+    }
+  },
+  "visual_review": "passed",
+  "native_coordinate_source_heavy_atoms": 1344,
+  "rotation_identical_overview_and_locals": true,
+  "optical_scale_identical_both_locals": true,
+  "visual_review_notes": [
+    "All three final assets inspected together at target-like scale in QA_structure_contact_sheet.png.",
+    "Both anchors and both Asn sidechains are visible in the complete overview.",
+    "Local images preserve common rotation and common optical scale; all cartoons remain continuous in depth.",
+    "The pocket surfaces are shown by real surrounding sidechain sticks and faded full-chain cartoons, without isolated floating anchor residues.",
+    "M316 is partly crossed by a real CaM loop; local CaM cartoon transparency is 50% to retain context while revealing the anchor."
+  ]
+}

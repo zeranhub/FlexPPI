@@ -1,0 +1,138 @@
+{
+  "status": "final_read_only_queue_snapshot_passed",
+  "snapshot_utc": "2026-10-10T10:14:19.475864+00:00",
+  "pipeline": {
+    "parent": {
+      "pid": 76963,
+      "start_ticks": 389375384,
+      "state": "S",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/run_completion_pipeline.py"
+      ]
+    },
+    "status": "running",
+    "current_step": "train_single_targets",
+    "original_queue": {
+      "pid": 71188,
+      "start_ticks": 388347918,
+      "state": "S",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/single_target/run_single_target_queue.py",
+        "--plan",
+        "/root/flexppi_completion_20261010/single_target/single_target_plan.json"
+      ]
+    },
+    "same_gpu_lock_held": true,
+    "preserved_training_not_restarted": true
+  },
+  "single_target": {
+    "completed_jobs": 1,
+    "planned_jobs": 10,
+    "current_job": {
+      "arm": "rmsf_only",
+      "fold": 0,
+      "config": "/root/flexppi_completion_20261010/single_target/configs/rmsf_only_fold0.yaml",
+      "config_sha256": "64312181a9cbc7e3ddf5c46028e0a8e96d2350bb767a44850a23867464d67b53",
+      "output_dir": "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_0",
+      "final_checkpoint": "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_0/epoch_040.pt",
+      "status": "running",
+      "started_utc": "2026-10-10T08:40:42Z"
+    },
+    "current_epoch_observed": 38,
+    "current_training_process": {
+      "pid": 75948,
+      "start_ticks": 388935558,
+      "state": "R",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "-m",
+        "flexppi",
+        "train",
+        "--config",
+        "/root/flexppi_completion_20261010/single_target/configs/rmsf_only_fold0.yaml"
+      ]
+    },
+    "current_log_tail": [
+      "epoch=38 step=92000 {'loss': 1.36227, 'state_loss': 1.36227}",
+      "epoch=38 step=92100 {'loss': -1.40379, 'state_loss': -1.40379}",
+      "epoch=38 step=92200 {'loss': -1.42111, 'state_loss': -1.42111}",
+      "epoch=38 step=92300 {'loss': -1.39812, 'state_loss': -1.39812}"
+    ],
+    "observed_error_lines": [],
+    "final_checkpoint_files": 1
+  },
+  "family": {
+    "completed_epoch040_files": 0,
+    "planned_fits": 10
+  },
+  "cpu_baselines": {
+    "rmsf_net": {
+      "observed_complete": 851,
+      "expected_items": 3063,
+      "observed_failed": 0,
+      "state_counts": {
+        "complete": 851
+      },
+      "corrupt_json": [],
+      "independent_run_audit_exists": false
+    },
+    "planet_full": {
+      "observed_complete": 2169,
+      "expected_items": 4973,
+      "observed_failed": 0,
+      "state_counts": {
+        "complete": 2169
+      },
+      "corrupt_json": [],
+      "independent_run_audit_exists": false
+    },
+    "planet_seq": {
+      "observed_complete": 2868,
+      "expected_items": 4973,
+      "observed_failed": 0,
+      "state_counts": {
+        "complete": 2868
+      },
+      "corrupt_json": [],
+      "independent_run_audit_exists": false
+    }
+  },
+  "md_cancellation": {
+    "runtime_effective": true,
+    "cancelled_unstarted_new_runs": 12,
+    "cancel_steps": [
+      "md_triplicate_production",
+      "analyze_md_triplicates",
+      "quality_md_rep01",
+      "quality_md_rep02",
+      "quality_md_rep03"
+    ],
+    "control_sha256": "837494a7ecbdc8cb87d464b34d1e8bdfdd5bb77cbe8dd525dbc8896f8d2661a5",
+    "pipeline_source_sha256": "009ee9c32e73ea65c52a7364c83f3fe26c70bbba1b731cbbbf7fe9bfec481a69",
+    "running_production_or_triplicate_analysis_processes": [],
+    "production_done_files": 0,
+    "production_summary_files": 0,
+    "md_reuse_policy": {
+      "strategy": "reuse_existing_audited_single_trajectory",
+      "priority": "manuscript",
+      "allow_new_kix_production": false,
+      "additional_kix_production_runs": 0,
+      "cancelled_planned_new_runs": 12,
+      "independent_replicates_required": 1,
+      "never_claim_triplicate_uncertainty_from_single_trajectory": true,
+      "existing_md_search_hosts": [
+        "local",
+        "hmu-gpu",
+        "hit-gpu"
+      ],
+      "provenance_requirement": "Only actual audited production trajectories; short CPU/CUDA technical smoke does not count as biological MD validation"
+    }
+  },
+  "caution": "Observed counts certify progress only; full baselines require standalone strict run_audit. This audit uses no Torch or CUDA context and sends no signal; sources and documents unchanged.",
+  "no_source_no_docx_no_running_process_modified": true
+}

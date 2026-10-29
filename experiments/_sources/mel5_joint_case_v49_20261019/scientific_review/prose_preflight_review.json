@@ -1,0 +1,72 @@
+{
+  "status": "preflight_requires_two_small_wording_fixes",
+  "prose": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_joint_case_v49_20261019\\prose_v49.json",
+  "prose_sha256": "81134bec624be657e4c16a0465b44c332b39e9e0d849ac0933fa9f6b994a652e",
+  "number_contract_sha256": "362213bf8900662211404694adfba86373e3d4983b7512c14ee5e24b79495362",
+  "checks": [
+    {
+      "check": "all13_betaCDR3_model_RMSF_decrease",
+      "passed": true,
+      "detail": "All 13 original corrected predictions are negative; minimum magnitude at common beta104 is -0.00340127945 A. Means 0.8012993015 -> 0.6475533751 A."
+    },
+    {
+      "check": "all5_betaCDR2_model_RMSF_decrease",
+      "passed": true,
+      "detail": [
+        0.8961336731910705,
+        0.6356326818466187
+      ]
+    },
+    {
+      "check": "all23_interface_model_Hchi_decrease_17",
+      "passed": true,
+      "detail": "17 / 23 original predicted Hchi changes are below zero; the complete scope is 18 HLA and 5 peptide chi-valid sites."
+    },
+    {
+      "check": "interface_definition_CA8A_confirmed",
+      "passed": true,
+      "detail": "Original scripts/evaluate_itrace_benchmark.py::interface_mask uses structure.backbone[:,1] C-alpha coordinates and query_ball_point cutoff8.0; union is defined before response analysis."
+    },
+    {
+      "check": "numerical_rounding_and_units",
+      "passed": true,
+      "detail": "Q72, Gly54, loop means and all ITrace trajectory values agree with independently recomputed contracts. Model outputs and MD are clearly attributed."
+    },
+    {
+      "check": "Hchi_not_binding_entropy_or_direct_force",
+      "passed": true,
+      "detail": "Draft does not equate bound-state Hchi with total binding entropy; local contact route is attributed to remodeled sequence and geometry."
+    }
+  ],
+  "issues": [
+    {
+      "severity": "required",
+      "location": "P93",
+      "finding": "The phrase that both betaCDR2 and betaCDR3 are newly increased-contact receptor regions conflates two loops. Primary Table1 betaCDR2 contacts increase 6->38; betaCDR3 decreases36->30.",
+      "replace_from": "这一模式将较强的骨架约束定位到亲和成熟后增加接触的受体识别区域。",
+      "replace_to": "这一模式将较强的骨架约束定位到β链的第二、第三识别环，其中βCDR2也是文献报告新增MHC接触集中的区域。"
+    },
+    {
+      "severity": "required",
+      "location": "insert_after_94",
+      "finding": "Cross-state paired beta53 is Ile in WT and Phe only in engineered receptor; naming betaPhe53 for the compared two-state occupancy is inaccurate.",
+      "replace_from": "Q72的OE1与βPhe53主链N",
+      "replace_to": "Q72的OE1与β53主链N"
+    },
+    {
+      "severity": "recommended",
+      "location": "insert_after_94",
+      "finding": "The sequence/geometry -> contact -> two correlated dynamic observations chain is defensible as a mechanistic interpretation. Avoid making Hchi the cause or implying the simulation independently proves a direction.",
+      "replace_from": "由此可以推断，亲和成熟对βCDR2序列及几何的改造重排了它与HLA的接触，使Q72更常采用与β53/β54骨架相容的取向，同时限制未替换Gly54的摆动。",
+      "replace_to": "这些结果支持这样的局部解释：亲和成熟对βCDR2序列及几何的改造重排了它与HLA的接触，在该片区表现为Q72更常形成与β53/β54骨架相容的接触，以及未替换Gly54的摆动收紧。"
+    },
+    {
+      "severity": "optional_precision",
+      "location": "P94",
+      "finding": "A lower scalar Hchi identifies concentration of fixed joint-state occupancy, not a specifically predicted rotamer orientation.",
+      "replace_from": "表明其三个χ角的联合取向状态更集中",
+      "replace_to": "表明其三个χ角的联合取向状态占据更集中"
+    }
+  ],
+  "final_review_pending": "DOCX and Figure4 package not yet received; no final figure/document approval implied."
+}

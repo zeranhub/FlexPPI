@@ -1,0 +1,36 @@
+{
+  "status": "selection_frozen_before_selected_angle_distributions",
+  "selection": "One record per source, average of within-source original OOF RMSF/Hchi MAE percentile ranks closest to 0.5; tie by sample_id",
+  "candidate_records": 83,
+  "input_sha256": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\label_sensitivity\\sensitivity_plan.json": "fe7c01b66ae16f4101e28c13fdb93246f054acc7d6f26ac758caf8aec9995ffd",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\label_sensitivity\\prediction_effect_per_record.csv": "2fb08081129037296d96a85be98383e394b027108002b4387c1ab96bade8eeb6"
+  },
+  "choices": [
+    {
+      "sample_id": "2py5_A",
+      "dataset": "atlas",
+      "mean_error_rank": 0.5,
+      "rmsf_mae_A": 0.2314295170099839,
+      "hchi_mae_nats": 0.1958164935993178
+    },
+    {
+      "sample_id": "A0022",
+      "dataset": "dynarepo",
+      "mean_error_rank": 0.5,
+      "rmsf_mae_A": 0.2516918443873817,
+      "hchi_mae_nats": 0.1798564202700219
+    },
+    {
+      "sample_id": "itrace_6p64",
+      "dataset": "itrace",
+      "mean_error_rank": 0.5,
+      "rmsf_mae_A": 0.1526836724655844,
+      "hchi_mae_nats": 0.1014078689884888
+    }
+  ],
+  "additional_existing_case": "2QHO ubiquitin Q41/Q62 from v20",
+  "residue_rule": "Among nonPro residues with both valid targets and chi1, group by AA with at least4; within each group use original reference RMSF/Hchi percentile-rank difference. Choose same-AA pair maximizing its largest minus smallest difference, tie by AA then input index; no prediction-score selection",
+  "angular_window": "0–100ns,200ps,501 actual frames,first trajectory; all three repeats shown when available",
+  "F_star": "5degree equal-width bins; -ln(probability/max probability); zero count missing; no smoothing"
+}

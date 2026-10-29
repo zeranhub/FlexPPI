@@ -1,0 +1,2432 @@
+{
+  "status": "PASS_CURRENT_SNAPSHOT_WITH_DOCUMENTED_VALIDATOR_LIMITATIONS",
+  "created_utc": "2026-10-24T00:01:50.069831+00:00",
+  "scope": "Only the saved current snapshot and exact hashes below; not future model results or future renders.",
+  "qa_script_sha256": "f076ad66a80eaa95fa850d945d3e21ce144066bc12a08780ff0fe8d41f5368a1",
+  "validator_path": "C:\\Users\\DELL\\.codex\\skills\\academic-figure-skill\\scripts\\qa_validator.py",
+  "validator_sha256": "14149c1e03abd708533595d75a5580a894f45ce3ca5fc3a1c9215797f527ba9c",
+  "validator_invocation": "importlib import plus explicit check_ap0..check_cl7 function calls; no nonexistent CLI relied upon",
+  "original_validator_findings": [
+    {
+      "check_id": "AP-0",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Typography baseline present",
+      "line": null
+    },
+    {
+      "check_id": "AP-0",
+      "pass_": false,
+      "category": "FAIL",
+      "message": "Missing CNS color palette (CATEGORICAL/DIVERGING)",
+      "line": null
+    },
+    {
+      "check_id": "AP-0",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Export baseline (pdf.fonttype=42, svg.fonttype='none') present",
+      "line": null
+    },
+    {
+      "check_id": "AP-1",
+      "pass_": true,
+      "category": "PASS",
+      "message": "No default palette detected",
+      "line": null
+    },
+    {
+      "check_id": "AP-2",
+      "pass_": true,
+      "category": "PASS",
+      "message": "No jet/rainbow colormap",
+      "line": null
+    },
+    {
+      "check_id": "AP-3",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Top/right spines removed",
+      "line": null
+    },
+    {
+      "check_id": "AP-4",
+      "pass_": false,
+      "category": "WARN",
+      "message": "Legend may occlude data — no bbox_to_anchor or external placement found",
+      "line": null
+    },
+    {
+      "check_id": "AP-5",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Vector export present",
+      "line": null
+    },
+    {
+      "check_id": "AP-6",
+      "pass_": false,
+      "category": "WARN",
+      "message": "Bar/box without individual points — add stripplot or geom_jitter",
+      "line": null
+    },
+    {
+      "check_id": "AP-7",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Arial/Helvetica font set",
+      "line": null
+    },
+    {
+      "check_id": "CL-1",
+      "pass_": true,
+      "category": "PASS",
+      "message": "All font sizes >= 5pt (min: 6pt)",
+      "line": null
+    },
+    {
+      "check_id": "CL-2",
+      "pass_": true,
+      "category": "WARN",
+      "message": "No explicit dimension declaration — verify matches 89/183mm column",
+      "line": null
+    },
+    {
+      "check_id": "CL-3",
+      "pass_": true,
+      "category": "PASS",
+      "message": "All DPI values >= 300",
+      "line": null
+    },
+    {
+      "check_id": "CL-4",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Font embedding configured",
+      "line": null
+    },
+    {
+      "check_id": "CL-5",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Spine linewidth 0.6pt in range",
+      "line": null
+    },
+    {
+      "check_id": "CL-6",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Ticks outward",
+      "line": null
+    },
+    {
+      "check_id": "CL-7",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Vector + raster both exported",
+      "line": null
+    }
+  ],
+  "original_validator_counts": {
+    "PASS": 13,
+    "FAIL": 1,
+    "WARN": 3
+  },
+  "supplementary_explanations": [
+    {
+      "check_id": "AP-0",
+      "raw_finding_preserved": true,
+      "disposition": "resolved_literal_whitespace_false_positive",
+      "explanation": "The shipped checker requires the exact substring 'DIVERGING = ['. Actual source uses 'DIVERGING   = ['. AST parsing verifies the complete named palette with the exact expected values; no source or raw finding was changed."
+    },
+    {
+      "check_id": "CL-2",
+      "raw_finding_preserved": true,
+      "disposition": "resolved_insufficient_arithmetic_parsing",
+      "explanation": "The shipped regular expressions do not evaluate figsize=(183/25.4,...). Safe AST arithmetic gives 183 mm for both source declarations. Exported PDF/PNG widths are separately measured; the new script exports the fixed canvas boundary."
+    },
+    {
+      "check_id": "PDF_TEXT_SIZE",
+      "disposition": "corrected_rotation_sensitive_bbox_size",
+      "explanation": "pdfplumber char['size'] is a vertical bounding-box measure: for a 90-degree label it can equal the glyph advance width (e.g. the 7pt letter i is reported as 1.554). Font-size compliance uses actual PDF Tf values from pypdf visitor_text, multiplied by the text and graphics matrix scale. Raw pdfplumber minima remain recorded for transparency."
+    },
+    {
+      "check_id": "AP-6",
+      "raw_finding_preserved": true,
+      "disposition": "not_applicable_no_bar_or_box_calls",
+      "explanation": "Any lexical warning is caused by words such as 'bars' in prose. AST contains no bar/barh/boxplot call; the figures use points/intervals and empirical CDFs."
+    },
+    {
+      "check_id": "AP-4",
+      "raw_finding_preserved": true,
+      "disposition": "supplemented_by_actual_current_image_review",
+      "explanation": "The shipped legend detector only searches 30 characters after .legend(. Both calls use bbox_to_anchor later in their arguments. The hash-bound current PNG review confirms external bottom legends; future renders need a new visual review."
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "AP0_AST_PALETTE",
+      "pass": true,
+      "detail": {
+        "DIVERGING": {
+          "line": 30,
+          "value": [
+            "#2166AC",
+            "#F7F7F7",
+            "#B2182B"
+          ]
+        },
+        "CATEGORICAL": {
+          "line": 25,
+          "value": [
+            "#2166AC",
+            "#B2182B",
+            "#1B7837",
+            "#F1A340",
+            "#762A83",
+            "#666666"
+          ]
+        }
+      }
+    },
+    {
+      "check_id": "CL2_AST_NOMINAL_WIDTH",
+      "pass": true,
+      "detail": [
+        {
+          "source_line": 257,
+          "width_mm": 183.0,
+          "expression": "MAIN_SIZE_MM[0] / 25.4"
+        },
+        {
+          "source_line": 305,
+          "width_mm": 183.0,
+          "expression": "ECDF_SIZE_MM[0] / 25.4"
+        }
+      ]
+    },
+    {
+      "check_id": "PRIMARY_GROUP_COUNTS",
+      "pass": true,
+      "detail": {
+        "plot_groups": {
+          "protein": 2203,
+          "protein_complex": 860
+        },
+        "records": 3063
+      }
+    },
+    {
+      "check_id": "GROUPING_CONFIRMED",
+      "pass": true,
+      "detail": "User-confirmed mutually exclusive grouping is required."
+    },
+    {
+      "check_id": "ALL_COMPLETE_METHODS_PLOTTED",
+      "pass": true,
+      "detail": {
+        "plotted": [
+          "AA",
+          "ANM",
+          "DynaProt-M",
+          "FastProtFlex",
+          "Full",
+          "GNM",
+          "Intra",
+          "Static",
+          "backflip-1.0 (assembly)",
+          "backflip-1.0 (chains)",
+          "backflip-1.0-seq (assembly)",
+          "backflip-1.0-seq (chains)",
+          "backflip-2.1 (assembly)",
+          "backflip-2.1 (chains)"
+        ],
+        "complete_in_scoring_audit": [
+          "AA",
+          "ANM",
+          "DynaProt-M",
+          "FastProtFlex",
+          "Full",
+          "GNM",
+          "Intra",
+          "Static",
+          "backflip-1.0 (assembly)",
+          "backflip-1.0 (chains)",
+          "backflip-1.0-seq (assembly)",
+          "backflip-1.0-seq (chains)",
+          "backflip-2.1 (assembly)",
+          "backflip-2.1 (chains)"
+        ],
+        "source_csv": [
+          "AA",
+          "ANM",
+          "DynaProt-M",
+          "FastProtFlex",
+          "Full",
+          "GNM",
+          "Intra",
+          "Static",
+          "backflip-1.0 (assembly)",
+          "backflip-1.0 (chains)",
+          "backflip-1.0-seq (assembly)",
+          "backflip-1.0-seq (chains)",
+          "backflip-2.1 (assembly)",
+          "backflip-2.1 (chains)"
+        ]
+      }
+    },
+    {
+      "check_id": "NO_INCOMPLETE_METHOD_IN_MAIN",
+      "pass": true,
+      "detail": {
+        "incomplete_in_main": [],
+        "not_yet_complete_metadata_entries": []
+      }
+    },
+    {
+      "check_id": "PROGRESS_SNAPSHOT_EXPLICIT",
+      "pass": true,
+      "detail": "This report does not claim all planned models have finished."
+    },
+    {
+      "check_id": "PLOT_AUDIT_SOURCE_BINDING:plot_script_sha256",
+      "pass": true,
+      "detail": {
+        "field": "plot_script_sha256",
+        "recorded_sha256": "44970402d3361ced92458e62a969573b4f1cc393a56c979a46bd81f4c1073e85",
+        "current_file_sha256": "44970402d3361ced92458e62a969573b4f1cc393a56c979a46bd81f4c1073e85",
+        "matches": true,
+        "disposition_if_missing_or_different": "regeneration_required"
+      }
+    },
+    {
+      "check_id": "PLOT_AUDIT_SOURCE_BINDING:summary_sha256",
+      "pass": true,
+      "detail": {
+        "field": "summary_sha256",
+        "recorded_sha256": "da655ae6593d97103d638cafeb9d41c5f8515ed9f0993d6ec6db1bfbd118f07b",
+        "current_file_sha256": "da655ae6593d97103d638cafeb9d41c5f8515ed9f0993d6ec6db1bfbd118f07b",
+        "matches": true,
+        "disposition_if_missing_or_different": "regeneration_required"
+      }
+    },
+    {
+      "check_id": "PLOT_AUDIT_SOURCE_BINDING:scoring_audit_sha256",
+      "pass": true,
+      "detail": {
+        "field": "scoring_audit_sha256",
+        "recorded_sha256": "f50b821b0982ad6d3602c9b0d5f1fe3e60af6b7d2000877f30677479064eb90a",
+        "current_file_sha256": "f50b821b0982ad6d3602c9b0d5f1fe3e60af6b7d2000877f30677479064eb90a",
+        "matches": true,
+        "disposition_if_missing_or_different": "regeneration_required"
+      }
+    },
+    {
+      "check_id": "PLOT_AUDIT_SOURCE_BINDING:training_exposure_audit_sha256",
+      "pass": true,
+      "detail": {
+        "field": "training_exposure_audit_sha256",
+        "recorded_sha256": "83b0fbbddd486633cf2bb2c3dd34de8da4d896d6fd05378ff2f9498836454575",
+        "current_file_sha256": "83b0fbbddd486633cf2bb2c3dd34de8da4d896d6fd05378ff2f9498836454575",
+        "matches": true,
+        "disposition_if_missing_or_different": "regeneration_required"
+      }
+    },
+    {
+      "check_id": "PLOT_AUDIT_SOURCE_BINDING:membership_sha256",
+      "pass": true,
+      "detail": {
+        "field": "membership_sha256",
+        "recorded_sha256": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac",
+        "current_file_sha256": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac",
+        "matches": true,
+        "disposition_if_missing_or_different": "regeneration_required"
+      }
+    },
+    {
+      "check_id": "PLOT_AUDIT_GENERATED_UTC",
+      "pass": true,
+      "detail": {
+        "recorded_generated_utc": "2026-10-24T00:00:12.163153+00:00",
+        "valid_UTC_timestamp": true,
+        "error": null,
+        "disposition_if_missing_or_invalid": "regeneration_required"
+      }
+    },
+    {
+      "check_id": "ECDF_FULL_NEGATIVE_RANGE_GUARD_IN_CURRENT_CODE",
+      "pass": true,
+      "detail": "Read the updated code's data-driven left limit and its actual xlim use. This does not prove an older saved export used the updated code."
+    },
+    {
+      "check_id": "SOURCE_METHOD_GROUP_METRIC_GRID",
+      "pass": true,
+      "detail": {
+        "rows": 78,
+        "expected_rows": 78,
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "check_id": "SOURCE_FULL_RECORD_COUNTS",
+      "pass": true,
+      "detail": "Every displayed mean uses all records of its stratum, rather than each method's advantageous surviving subset."
+    },
+    {
+      "check_id": "SOURCE_VALUES_FINITE",
+      "pass": true,
+      "detail": "Every displayed point estimate is finite."
+    },
+    {
+      "check_id": "SOURCE_MATCHES_SMALL_SCORING_SUMMARY",
+      "pass": true,
+      "detail": "Compared every displayed key/value/count to group_summary.csv; no residue-level or per-record score file was loaded."
+    },
+    {
+      "check_id": "FULL_RESIDUE_COVERAGE_FOR_PLOTTED_METHODS",
+      "pass": true,
+      "detail": [
+        {
+          "method": "AA",
+          "group": "protein",
+          "pass": true
+        },
+        {
+          "method": "AA",
+          "group": "protein_complex",
+          "pass": true
+        },
+        {
+          "method": "ANM",
+          "group": "protein",
+          "pass": true
+        },
+        {
+          "method": "ANM",
+          "group": "protein_complex",
+          "pass": true
+        },
+        {
+          "method": "DynaProt-M",
+          "group": "protein",
+          "pass": true
+        },
+        {
+          "method": "DynaProt-M",
+          "group": "protein_complex",
+          "pass": true
+        },
+        {
+          "method": "FastProtFlex",
+          "group": "protein",
+          "pass": true
+        },
+        {
+          "method": "FastProtFlex",
+          "group": "protein_complex",
+          "pass": true
+        },
+        {
+          "method": "Full",
+          "group": "protein",
+          "pass": true
+        },
+        {
+          "method": "Full",
+          "group": "protein_complex",
+          "pass": true
+        },
+        {
+          "method": "GNM",
+          "group": "protein",
+          "pass": true
+        },
+        {
+          "method": "GNM",
+          "group": "protein_complex",
+          "pass": true
+        },
+        {
+          "method": "Intra",
+          "group": "protein",
+          "pass": true
+        },
+        {
+          "method": "Intra",
+          "group": "protein_complex",
+          "pass": true
+        },
+        {
+          "method": "Static",
+          "group": "protein",
+          "pass": true
+        },
+        {
+          "method": "Static",
+          "group": "protein_complex",
+          "pass": true
+        },
+        {
+          "method": "backflip-1.0 (assembly)",
+          "group": "protein",
+          "pass": true
+        },
+        {
+          "method": "backflip-1.0 (assembly)",
+          "group": "protein_complex",
+          "pass": true
+        },
+        {
+          "method": "backflip-1.0 (chains)",
+          "group": "protein",
+          "pass": true
+        },
+        {
+          "method": "backflip-1.0 (chains)",
+          "group": "protein_complex",
+          "pass": true
+        },
+        {
+          "method": "backflip-1.0-seq (assembly)",
+          "group": "protein",
+          "pass": true
+        },
+        {
+          "method": "backflip-1.0-seq (assembly)",
+          "group": "protein_complex",
+          "pass": true
+        },
+        {
+          "method": "backflip-1.0-seq (chains)",
+          "group": "protein",
+          "pass": true
+        },
+        {
+          "method": "backflip-1.0-seq (chains)",
+          "group": "protein_complex",
+          "pass": true
+        },
+        {
+          "method": "backflip-2.1 (assembly)",
+          "group": "protein",
+          "pass": true
+        },
+        {
+          "method": "backflip-2.1 (assembly)",
+          "group": "protein_complex",
+          "pass": true
+        },
+        {
+          "method": "backflip-2.1 (chains)",
+          "group": "protein",
+          "pass": true
+        },
+        {
+          "method": "backflip-2.1 (chains)",
+          "group": "protein_complex",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "check_id": "ANY_SINGLE_FAMILY_NO_INDEPENDENT_CI",
+      "pass": true,
+      "detail": "Any single-family group must have no independent-family CI. TCR records remain a dependency family inside the larger complex group."
+    },
+    {
+      "check_id": "BIOLOGICAL_MEMBERSHIP_FROZEN_ZERO_UNRESOLVED",
+      "pass": true,
+      "detail": {
+        "groups": {
+          "protein": 2203,
+          "protein_complex": 860
+        },
+        "membership_sha256": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac",
+        "unresolved_records": 0
+      }
+    },
+    {
+      "check_id": "PREDICTIONS_TARGETS_AND_SCORES_UNCHANGED",
+      "pass": true,
+      "detail": "Binary biological grouping is a metadata and aggregation update, not a model rerun."
+    },
+    {
+      "check_id": "ALL_RECORDS_INCLUDED_IN_ECDF",
+      "pass": true,
+      "detail": "Plot runtime verifies each selected method uses the complete group, with no sampled or clipped observations."
+    },
+    {
+      "check_id": "benchmark_current:PNG_DPI_AND_DIMENSIONS",
+      "pass": true,
+      "detail": {
+        "pixels": [
+          2161,
+          1665
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ],
+        "physical_mm": [
+          182.96503259673187,
+          140.9702819405639
+        ],
+        "nonblank": true
+      }
+    },
+    {
+      "check_id": "benchmark_current:PDF_EMBEDDED_FONTS",
+      "pass": true,
+      "detail": [
+        {
+          "page": 1,
+          "resource": "/F1",
+          "basefont": "/ELUGPM+ArialMT",
+          "subtype": "/Type0",
+          "descendant_subtype": "/CIDFontType2",
+          "embedded": true,
+          "embedded_stream_keys": [
+            "/FontFile2"
+          ],
+          "embedded_bytes": 50368
+        },
+        {
+          "page": 1,
+          "resource": "/F2",
+          "basefont": "/ELUGPM+Arial-BoldMT",
+          "subtype": "/Type0",
+          "descendant_subtype": "/CIDFontType2",
+          "embedded": true,
+          "embedded_stream_keys": [
+            "/FontFile2"
+          ],
+          "embedded_bytes": 20748
+        }
+      ]
+    },
+    {
+      "check_id": "benchmark_current:PDF_TEXT_SIZE_FLOOR",
+      "pass": true,
+      "detail": {
+        "minimum_pt": 6.3,
+        "basis": "Actual PDF text extraction, not source regex."
+      }
+    },
+    {
+      "check_id": "benchmark_current:PDF_PAGE_AND_CROP",
+      "pass": true,
+      "detail": [
+        {
+          "page": 1,
+          "width_pt": 518.7401574803,
+          "height_pt": 399.6850393701,
+          "width_mm": 182.9999999999947,
+          "height_mm": 141.0000000000075,
+          "text_characters": 984,
+          "minimum_text_size_pt": 6.3,
+          "maximum_text_size_pt": 8.5,
+          "font_size_basis": "pypdf actual PDF Tf text operator with combined graphics/text matrix scale",
+          "font_size_text_run_counts": {
+            "6.3": 29,
+            "6.5": 30,
+            "6.7": 6,
+            "7.0": 2,
+            "8.5": 6
+          },
+          "minimum_pdfplumber_bbox_size_raw": 6.299999999999997,
+          "rotated_text_characters": 0,
+          "font_runs": [
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Spearman ρ ↑",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FlexPPI",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FlexPPI · intra",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-2.1 · assembly",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-2.1 · chains",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-1 · assembly",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-1 · chains",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-1 + seq · assembly",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-1 + seq · chains",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "DynaProt-M",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FastProtFlex",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "ANM",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "GNM",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Static features",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Residue-type mean",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "a",
+              "declared_Tf_pt": 8.5,
+              "effective_size_pt": 8.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "High-RMSF average precision ↑",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "b",
+              "declared_Tf_pt": 8.5,
+              "effective_size_pt": 8.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "RMSF MAE (Å) ↓",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "relative score",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "relative score",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "relative score",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "c",
+              "declared_Tf_pt": 8.5,
+              "effective_size_pt": 8.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Spearman ρ ↑",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FlexPPI",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FlexPPI · intra",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-2.1 · assembly",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-2.1 · chains",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-1 · assembly",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-1 · chains",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-1 + seq · assembly",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-1 + seq · chains",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "DynaProt-M",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FastProtFlex",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "ANM",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "GNM",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Static features",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Residue-type mean",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "d",
+              "declared_Tf_pt": 8.5,
+              "effective_size_pt": 8.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "High-RMSF average precision ↑",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "e",
+              "declared_Tf_pt": 8.5,
+              "effective_size_pt": 8.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "RMSF MAE (Å) ↓",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "relative score",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "relative score",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "relative score",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "f",
+              "declared_Tf_pt": 8.5,
+              "effective_size_pt": 8.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "Proteins",
+              "declared_Tf_pt": 7.0,
+              "effective_size_pt": 7.0,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "n = 2,203 records · 1,500 families",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Protein complexes",
+              "declared_Tf_pt": 7.0,
+              "effective_size_pt": 7.0,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "n = 860 records · 261 families",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "14 completed entries · same 3,063 records · mixed training exposure",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Points: mean across records; intervals: 95% family-cluster bootstrap.",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FlexPPI configurations",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Published learned models",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Graph / simple controls",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            }
+          ],
+          "characters_outside_page": 0
+        }
+      ]
+    },
+    {
+      "check_id": "benchmark_current:PNG_PDF_PHYSICAL_AGREEMENT",
+      "pass": true,
+      "detail": "Allow 0.5 mm for different PDF/raster text-metric tight crops; record actual dimensions rather than assuming exactly 183 mm."
+    },
+    {
+      "check_id": "benchmark_current:SVG_EDITABLE_TEXT_PRESENT",
+      "pass": true,
+      "detail": {
+        "text_elements": 73
+      }
+    },
+    {
+      "check_id": "MAIN_FOOTER_MIXED_TRAINING_EXPOSURE_VISIBLE_TEXT",
+      "pass": true,
+      "detail": "Read actual saved PDF text, supplemented by hash-bound PNG visual inspection. This is a training-exposure caveat, not a claim of matched training conditions."
+    },
+    {
+      "check_id": "benchmark_distributions_current:PNG_DPI_AND_DIMENSIONS",
+      "pass": true,
+      "detail": {
+        "pixels": [
+          2161,
+          921
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ],
+        "physical_mm": [
+          182.96503259673187,
+          77.97815595631191
+        ],
+        "nonblank": true
+      }
+    },
+    {
+      "check_id": "benchmark_distributions_current:PDF_EMBEDDED_FONTS",
+      "pass": true,
+      "detail": [
+        {
+          "page": 1,
+          "resource": "/F1",
+          "basefont": "/ELUGPM+ArialMT",
+          "subtype": "/Type0",
+          "descendant_subtype": "/CIDFontType2",
+          "embedded": true,
+          "embedded_stream_keys": [
+            "/FontFile2"
+          ],
+          "embedded_bytes": 42964
+        },
+        {
+          "page": 1,
+          "resource": "/F2",
+          "basefont": "/ELUGPM+Arial-BoldMT",
+          "subtype": "/Type0",
+          "descendant_subtype": "/CIDFontType2",
+          "embedded": true,
+          "embedded_stream_keys": [
+            "/FontFile2"
+          ],
+          "embedded_bytes": 15220
+        }
+      ]
+    },
+    {
+      "check_id": "benchmark_distributions_current:PDF_TEXT_SIZE_FLOOR",
+      "pass": true,
+      "detail": {
+        "minimum_pt": 6.3,
+        "basis": "Actual PDF text extraction, not source regex."
+      }
+    },
+    {
+      "check_id": "benchmark_distributions_current:PDF_PAGE_AND_CROP",
+      "pass": true,
+      "detail": [
+        {
+          "page": 1,
+          "width_pt": 518.7401574803,
+          "height_pt": 221.1023622047,
+          "width_mm": 182.9999999999947,
+          "height_mm": 77.99999999999139,
+          "text_characters": 285,
+          "minimum_text_size_pt": 6.3,
+          "maximum_text_size_pt": 8.5,
+          "font_size_basis": "pypdf actual PDF Tf text operator with combined graphics/text matrix scale",
+          "font_size_text_run_counts": {
+            "6.3": 19,
+            "6.7": 3,
+            "7.0": 2,
+            "8.5": 2
+          },
+          "minimum_pdfplumber_bbox_size_raw": 1.4873999999999938,
+          "rotated_text_characters": 19,
+          "font_runs": [
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Per-record Spearman ρ",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Fraction of records",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "a",
+              "declared_Tf_pt": 8.5,
+              "effective_size_pt": 8.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "Proteins (n = 2,203)",
+              "declared_Tf_pt": 7.0,
+              "effective_size_pt": 7.0,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Per-record Spearman ρ",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "b",
+              "declared_Tf_pt": 8.5,
+              "effective_size_pt": 8.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "Protein complexes (n = 860)",
+              "declared_Tf_pt": 7.0,
+              "effective_size_pt": 7.0,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "All records · six predeclared methods · mixed training exposure",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FlexPPI",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-2.1 · assembly",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-2.1 · chains",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "DynaProt-M",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FastProtFlex",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "ANM",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            }
+          ],
+          "characters_outside_page": 0
+        }
+      ]
+    },
+    {
+      "check_id": "benchmark_distributions_current:PNG_PDF_PHYSICAL_AGREEMENT",
+      "pass": true,
+      "detail": "Allow 0.5 mm for different PDF/raster text-metric tight crops; record actual dimensions rather than assuming exactly 183 mm."
+    },
+    {
+      "check_id": "benchmark_distributions_current:SVG_EDITABLE_TEXT_PRESENT",
+      "pass": true,
+      "detail": {
+        "text_elements": 26
+      }
+    },
+    {
+      "check_id": "INPUT_FILES_STABLE_DURING_QA",
+      "pass": true,
+      "detail": "Rerun after controller finishes rendering if any scoring/plot file changed during this snapshot audit."
+    }
+  ],
+  "passed_custom_checks": 37,
+  "total_custom_checks": 37,
+  "plot_methods": [
+    "Full",
+    "Intra",
+    "backflip-2.1 (assembly)",
+    "backflip-2.1 (chains)",
+    "backflip-1.0 (assembly)",
+    "backflip-1.0 (chains)",
+    "backflip-1.0-seq (assembly)",
+    "backflip-1.0-seq (chains)",
+    "DynaProt-M",
+    "FastProtFlex",
+    "ANM",
+    "GNM",
+    "Static",
+    "AA"
+  ],
+  "plot_groups": {
+    "protein": 2203,
+    "protein_complex": 860
+  },
+  "source_csv_rows": 78,
+  "artifact_refresh": {
+    "plot_script_mtime_ns": 1792800001183615800,
+    "plot_script_newer_than_export": false,
+    "plot_audit_records_new_ECDF_bounds": true,
+    "saved_ECDF_bounds": [
+      -0.4,
+      1
+    ],
+    "source_hash_bindings": {
+      "plot_script_sha256": {
+        "field": "plot_script_sha256",
+        "recorded_sha256": "44970402d3361ced92458e62a969573b4f1cc393a56c979a46bd81f4c1073e85",
+        "current_file_sha256": "44970402d3361ced92458e62a969573b4f1cc393a56c979a46bd81f4c1073e85",
+        "matches": true,
+        "disposition_if_missing_or_different": "regeneration_required"
+      },
+      "summary_sha256": {
+        "field": "summary_sha256",
+        "recorded_sha256": "da655ae6593d97103d638cafeb9d41c5f8515ed9f0993d6ec6db1bfbd118f07b",
+        "current_file_sha256": "da655ae6593d97103d638cafeb9d41c5f8515ed9f0993d6ec6db1bfbd118f07b",
+        "matches": true,
+        "disposition_if_missing_or_different": "regeneration_required"
+      },
+      "scoring_audit_sha256": {
+        "field": "scoring_audit_sha256",
+        "recorded_sha256": "f50b821b0982ad6d3602c9b0d5f1fe3e60af6b7d2000877f30677479064eb90a",
+        "current_file_sha256": "f50b821b0982ad6d3602c9b0d5f1fe3e60af6b7d2000877f30677479064eb90a",
+        "matches": true,
+        "disposition_if_missing_or_different": "regeneration_required"
+      },
+      "training_exposure_audit_sha256": {
+        "field": "training_exposure_audit_sha256",
+        "recorded_sha256": "83b0fbbddd486633cf2bb2c3dd34de8da4d896d6fd05378ff2f9498836454575",
+        "current_file_sha256": "83b0fbbddd486633cf2bb2c3dd34de8da4d896d6fd05378ff2f9498836454575",
+        "matches": true,
+        "disposition_if_missing_or_different": "regeneration_required"
+      },
+      "membership_sha256": {
+        "field": "membership_sha256",
+        "recorded_sha256": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac",
+        "current_file_sha256": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac",
+        "matches": true,
+        "disposition_if_missing_or_different": "regeneration_required"
+      }
+    },
+    "generation_timestamp": {
+      "recorded_generated_utc": "2026-10-24T00:00:12.163153+00:00",
+      "valid_UTC_timestamp": true,
+      "error": null,
+      "disposition_if_missing_or_invalid": "regeneration_required"
+    },
+    "source_hash_and_generation_bindings_valid": true,
+    "interpretation": "Missing/mismatched source hashes, invalid generation timestamp, a newer plot script, or missing range audit require regeneration. Matching hashes bind the actual current script, group summary, scoring audit, and training-exposure audit to the render; old absent fields are not accepted as PASS. Current saved export hashes are separately inspected below."
+  },
+  "exports": [
+    {
+      "stem": "benchmark_current",
+      "png": {
+        "sha256": "01a4936a15611e3af38e603cc95cc1cf6ac46143638a663c03d71667b4edd39f",
+        "pixels": [
+          2161,
+          1665
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ],
+        "physical_mm": [
+          182.96503259673187,
+          140.9702819405639
+        ]
+      },
+      "pdf": {
+        "sha256": "fff682c6f2ec9457af307f7d09e58bc74f0bd03838c159062853b6d01c894639",
+        "pages": [
+          {
+            "page": 1,
+            "width_pt": 518.7401574803,
+            "height_pt": 399.6850393701,
+            "width_mm": 182.9999999999947,
+            "height_mm": 141.0000000000075,
+            "text_characters": 984,
+            "minimum_text_size_pt": 6.3,
+            "maximum_text_size_pt": 8.5,
+            "font_size_basis": "pypdf actual PDF Tf text operator with combined graphics/text matrix scale",
+            "font_size_text_run_counts": {
+              "6.3": 29,
+              "6.5": 30,
+              "6.7": 6,
+              "7.0": 2,
+              "8.5": 6
+            },
+            "minimum_pdfplumber_bbox_size_raw": 6.299999999999997,
+            "rotated_text_characters": 0,
+            "font_runs": [
+              {
+                "text": "0.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "0.5",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "1.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "Spearman ρ ↑",
+                "declared_Tf_pt": 6.7,
+                "effective_size_pt": 6.7,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "FlexPPI",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "FlexPPI · intra",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "BackFlip-2.1 · assembly",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "BackFlip-2.1 · chains",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "BackFlip-1 · assembly",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "BackFlip-1 · chains",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "BackFlip-1 + seq · assembly",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "BackFlip-1 + seq · chains",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "DynaProt-M",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "FastProtFlex",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "ANM",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "GNM",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "Static features",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "Residue-type mean",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "a",
+                "declared_Tf_pt": 8.5,
+                "effective_size_pt": 8.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+Arial-BoldMT"
+              },
+              {
+                "text": "0.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "0.5",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "1.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "High-RMSF average precision ↑",
+                "declared_Tf_pt": 6.7,
+                "effective_size_pt": 6.7,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "b",
+                "declared_Tf_pt": 8.5,
+                "effective_size_pt": 8.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+Arial-BoldMT"
+              },
+              {
+                "text": "0.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "0.5",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "1.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "RMSF MAE (Å) ↓",
+                "declared_Tf_pt": 6.7,
+                "effective_size_pt": 6.7,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "relative score",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "relative score",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "relative score",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "c",
+                "declared_Tf_pt": 8.5,
+                "effective_size_pt": 8.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+Arial-BoldMT"
+              },
+              {
+                "text": "0.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "0.5",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "1.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "Spearman ρ ↑",
+                "declared_Tf_pt": 6.7,
+                "effective_size_pt": 6.7,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "FlexPPI",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "FlexPPI · intra",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "BackFlip-2.1 · assembly",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "BackFlip-2.1 · chains",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "BackFlip-1 · assembly",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "BackFlip-1 · chains",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "BackFlip-1 + seq · assembly",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "BackFlip-1 + seq · chains",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "DynaProt-M",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "FastProtFlex",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "ANM",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "GNM",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "Static features",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "Residue-type mean",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "d",
+                "declared_Tf_pt": 8.5,
+                "effective_size_pt": 8.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+Arial-BoldMT"
+              },
+              {
+                "text": "0.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "0.5",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "1.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "High-RMSF average precision ↑",
+                "declared_Tf_pt": 6.7,
+                "effective_size_pt": 6.7,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "e",
+                "declared_Tf_pt": 8.5,
+                "effective_size_pt": 8.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+Arial-BoldMT"
+              },
+              {
+                "text": "0.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "0.5",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "1.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "RMSF MAE (Å) ↓",
+                "declared_Tf_pt": 6.7,
+                "effective_size_pt": 6.7,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "relative score",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "relative score",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "relative score",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "f",
+                "declared_Tf_pt": 8.5,
+                "effective_size_pt": 8.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+Arial-BoldMT"
+              },
+              {
+                "text": "Proteins",
+                "declared_Tf_pt": 7.0,
+                "effective_size_pt": 7.0,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+Arial-BoldMT"
+              },
+              {
+                "text": "n = 2,203 records · 1,500 families",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "Protein complexes",
+                "declared_Tf_pt": 7.0,
+                "effective_size_pt": 7.0,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+Arial-BoldMT"
+              },
+              {
+                "text": "n = 860 records · 261 families",
+                "declared_Tf_pt": 6.5,
+                "effective_size_pt": 6.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "14 completed entries · same 3,063 records · mixed training exposure",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "Points: mean across records; intervals: 95% family-cluster bootstrap.",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "FlexPPI configurations",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "Published learned models",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "Graph / simple controls",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              }
+            ],
+            "characters_outside_page": 0
+          }
+        ],
+        "fonts": [
+          {
+            "page": 1,
+            "resource": "/F1",
+            "basefont": "/ELUGPM+ArialMT",
+            "subtype": "/Type0",
+            "descendant_subtype": "/CIDFontType2",
+            "embedded": true,
+            "embedded_stream_keys": [
+              "/FontFile2"
+            ],
+            "embedded_bytes": 50368
+          },
+          {
+            "page": 1,
+            "resource": "/F2",
+            "basefont": "/ELUGPM+Arial-BoldMT",
+            "subtype": "/Type0",
+            "descendant_subtype": "/CIDFontType2",
+            "embedded": true,
+            "embedded_stream_keys": [
+              "/FontFile2"
+            ],
+            "embedded_bytes": 20748
+          }
+        ]
+      },
+      "svg": {
+        "sha256": "e874f9f43d1cdc86827b0b50a7bd000ed301fcf90d5d2f39c78e790bbb052083"
+      }
+    },
+    {
+      "stem": "benchmark_distributions_current",
+      "png": {
+        "sha256": "36709cab40a2eb34b13c1be7cb973937e94599167c0869542f55920458d2000f",
+        "pixels": [
+          2161,
+          921
+        ],
+        "dpi": [
+          299.9994,
+          299.9994
+        ],
+        "physical_mm": [
+          182.96503259673187,
+          77.97815595631191
+        ]
+      },
+      "pdf": {
+        "sha256": "e6cd78b10775bba5544dc459eb0e220e4ccbcd39b04c55eff30d472adc45ec77",
+        "pages": [
+          {
+            "page": 1,
+            "width_pt": 518.7401574803,
+            "height_pt": 221.1023622047,
+            "width_mm": 182.9999999999947,
+            "height_mm": 77.99999999999139,
+            "text_characters": 285,
+            "minimum_text_size_pt": 6.3,
+            "maximum_text_size_pt": 8.5,
+            "font_size_basis": "pypdf actual PDF Tf text operator with combined graphics/text matrix scale",
+            "font_size_text_run_counts": {
+              "6.3": 19,
+              "6.7": 3,
+              "7.0": 2,
+              "8.5": 2
+            },
+            "minimum_pdfplumber_bbox_size_raw": 1.4873999999999938,
+            "rotated_text_characters": 19,
+            "font_runs": [
+              {
+                "text": "0.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "0.5",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "1.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "Per-record Spearman ρ",
+                "declared_Tf_pt": 6.7,
+                "effective_size_pt": 6.7,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "0.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "0.5",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "1.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "Fraction of records",
+                "declared_Tf_pt": 6.7,
+                "effective_size_pt": 6.7,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "a",
+                "declared_Tf_pt": 8.5,
+                "effective_size_pt": 8.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+Arial-BoldMT"
+              },
+              {
+                "text": "Proteins (n = 2,203)",
+                "declared_Tf_pt": 7.0,
+                "effective_size_pt": 7.0,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "0.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "0.5",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "1.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "Per-record Spearman ρ",
+                "declared_Tf_pt": 6.7,
+                "effective_size_pt": 6.7,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "0.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "0.5",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "1.0",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "b",
+                "declared_Tf_pt": 8.5,
+                "effective_size_pt": 8.5,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+Arial-BoldMT"
+              },
+              {
+                "text": "Protein complexes (n = 860)",
+                "declared_Tf_pt": 7.0,
+                "effective_size_pt": 7.0,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "All records · six predeclared methods · mixed training exposure",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "FlexPPI",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "BackFlip-2.1 · assembly",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "BackFlip-2.1 · chains",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "DynaProt-M",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "FastProtFlex",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              },
+              {
+                "text": "ANM",
+                "declared_Tf_pt": 6.3,
+                "effective_size_pt": 6.3,
+                "graphics_text_scale": 1.0,
+                "font": "/ELUGPM+ArialMT"
+              }
+            ],
+            "characters_outside_page": 0
+          }
+        ],
+        "fonts": [
+          {
+            "page": 1,
+            "resource": "/F1",
+            "basefont": "/ELUGPM+ArialMT",
+            "subtype": "/Type0",
+            "descendant_subtype": "/CIDFontType2",
+            "embedded": true,
+            "embedded_stream_keys": [
+              "/FontFile2"
+            ],
+            "embedded_bytes": 42964
+          },
+          {
+            "page": 1,
+            "resource": "/F2",
+            "basefont": "/ELUGPM+Arial-BoldMT",
+            "subtype": "/Type0",
+            "descendant_subtype": "/CIDFontType2",
+            "embedded": true,
+            "embedded_stream_keys": [
+              "/FontFile2"
+            ],
+            "embedded_bytes": 15220
+          }
+        ]
+      },
+      "svg": {
+        "sha256": "289bd3891e7dfdb8317772a5ab002c2d3c690635b11873ea0176548e45e52ae5"
+      }
+    }
+  ],
+  "visual_reviews": [
+    {
+      "file": "benchmark_current.png",
+      "sha256": "01a4936a15611e3af38e603cc95cc1cf6ac46143638a663c03d71667b4edd39f",
+      "reviewed_utc": "2026-10-24T00:01:48.801934+00:00",
+      "status": "inspected_current_hash_with_notes",
+      "observations": [
+        "Viewed the actual 2161 x 1665 PNG at original resolution after the final render. Two biological rows are Proteins (2203 records, 1500 families) and Protein complexes (860 records, 261 families), with panels a-f and 14 fixed method/configuration rows in each group.",
+        "Blue, ochre and teal are visibly retained. The plot is not rendered in grayscale; direct labels, circle/diamond/triangle/square markers and fixed row positions supplement color.",
+        "The final MAE axes show 0.0, 0.5 and 1.0 ticks. The previous awkward endpoint label is removed. No clipped labels or overlap among method names, axis text, group headings or the footer/legend was observed.",
+        "Points and family-cluster intervals fit within each axis. Protein-group intervals are often smaller than their markers; this is not a claim that intervals are absent. Larger complex-group intervals remain visible.",
+        "All six nonphysical-MAE cells for FastProtFlex, ANM and GNM visibly say relative score. No physical error values were fabricated for them.",
+        "The footer visibly states 14 completed entries, same 3063 records and mixed training exposure. It is on separate lines above the bottom color legend. This does not claim equal training or completion of deferred heavy models."
+      ]
+    },
+    {
+      "file": "benchmark_distributions_current.png",
+      "sha256": "36709cab40a2eb34b13c1be7cb973937e94599167c0869542f55920458d2000f",
+      "reviewed_utc": "2026-10-24T00:01:48.801934+00:00",
+      "status": "inspected_current_hash_with_notes",
+      "observations": [
+        "Viewed the actual 2161 x 921 PNG at original resolution after the final render. Two panels use the same two biological labels and n=2203/860.",
+        "The six displayed configurations are FlexPPI, BackFlip-2.1 assembly, BackFlip-2.1 chains, DynaProt-M, FastProtFlex and ANM. All six names fit in the external two-row legend.",
+        "Blue and teal curves and four ochre curves retain named solid/dashed/dotted/dash-dot patterns. ANM has its separate dash-dot-dot pattern; this supplements color even where some protein-group curves overlap.",
+        "Titles, axis labels, tick labels, legend and training-exposure footer are visible without observed clipping or overlap. Negative-rank observations remain within the data-driven full x range; no local zoom or nonlinear axis is used.",
+        "The distribution shape is descriptive across all records; the visual does not imply that the 244 related TCR-pMHC records are independent sequence families."
+      ]
+    }
+  ],
+  "input_sha256": {
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\plot_benchmark.py": "44970402d3361ced92458e62a969573b4f1cc393a56c979a46bd81f4c1073e85",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\figures\\benchmark_current_source.csv": "0bfb332c89653e99dbdce2898a7ac28b5a49c21d2227f14a69f366f1e63d6845",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\figures\\plot_audit.json": "658d201e62d97199b59ecf1dff1b41600414f0e3002e249175abe32cb3213457",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\scoring_audit.json": "f50b821b0982ad6d3602c9b0d5f1fe3e60af6b7d2000877f30677479064eb90a",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\group_summary.csv": "da655ae6593d97103d638cafeb9d41c5f8515ed9f0993d6ec6db1bfbd118f07b",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\coverage_summary.csv": "71cd4f2215f9a340467947088c339d4becc633badae1ab657a52fba4c892f5c4",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\references\\training_exposure_protocol_sources_sha256.json": "83b0fbbddd486633cf2bb2c3dd34de8da4d896d6fd05378ff2f9498836454575",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\classification\\membership_frozen.csv": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\classification\\membership_freeze_audit.json": "45d29a3f443e2b65ba1417eb440bff1f3221aa741c5f7da130d153802634ba45",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\classification\\policy_frozen.json": "c5e0868acd3fb90639d3205843c5f281e8292c6b1868e115210e958130493bdb",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\figures\\benchmark_current.png": "01a4936a15611e3af38e603cc95cc1cf6ac46143638a663c03d71667b4edd39f",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\figures\\benchmark_current.pdf": "fff682c6f2ec9457af307f7d09e58bc74f0bd03838c159062853b6d01c894639",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\figures\\benchmark_current.svg": "e874f9f43d1cdc86827b0b50a7bd000ed301fcf90d5d2f39c78e790bbb052083",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\figures\\benchmark_distributions_current.png": "36709cab40a2eb34b13c1be7cb973937e94599167c0869542f55920458d2000f",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\figures\\benchmark_distributions_current.pdf": "e6cd78b10775bba5544dc459eb0e220e4ccbcd39b04c55eff30d472adc45ec77",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\figures\\benchmark_distributions_current.svg": "289bd3891e7dfdb8317772a5ab002c2d3c690635b11873ea0176548e45e52ae5"
+  },
+  "limitations": [
+    "No future image is considered visually reviewed merely because this script runs successfully.",
+    "No color-vision simulation or printed-page inspection was performed.",
+    "ECDF all-observation inclusion was inspected in source code/audit assertions; this memory-light QA does not reload the large per-record or residue-level scoring files.",
+    "PNG is a 300 dpi preview; PDF/SVG are vector masters for line art. Canvas-bound exports preserve the 183 mm physical width; actual PDF and PNG dimensions are measured."
+  ]
+}

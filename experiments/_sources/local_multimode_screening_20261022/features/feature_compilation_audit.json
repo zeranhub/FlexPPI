@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "panels": [
+    {
+      "panel_id": "MSKCC_TCR1",
+      "N": 171,
+      "R_dimensions": 96,
+      "H_dimensions": 82,
+      "R_max_abs_delta": 0.3944813013076782,
+      "H_max_abs_delta": 0.30016422271728516,
+      "all_inputs_fixed_backbone": true,
+      "unchanged_chemical_identity_at_every_feature": true,
+      "no_spatial_means_or_selected_good_residues": true
+    },
+    {
+      "panel_id": "MSKCC_TCR2",
+      "N": 171,
+      "R_dimensions": 100,
+      "H_dimensions": 87,
+      "R_max_abs_delta": 0.25958549976348877,
+      "H_max_abs_delta": 0.29439401626586914,
+      "all_inputs_fixed_backbone": true,
+      "unchanged_chemical_identity_at_every_feature": true,
+      "no_spatial_means_or_selected_good_residues": true
+    },
+    {
+      "panel_id": "MSKCC_TCR3",
+      "N": 171,
+      "R_dimensions": 109,
+      "H_dimensions": 93,
+      "R_max_abs_delta": 0.17730110883712769,
+      "H_max_abs_delta": 0.27965497970581055,
+      "all_inputs_fixed_backbone": true,
+      "unchanged_chemical_identity_at_every_feature": true,
+      "no_spatial_means_or_selected_good_residues": true
+    },
+    {
+      "panel_id": "MSKCC_TCR4",
+      "N": 171,
+      "R_dimensions": 106,
+      "H_dimensions": 89,
+      "R_max_abs_delta": 0.25314563512802124,
+      "H_max_abs_delta": 0.31504392623901367,
+      "all_inputs_fixed_backbone": true,
+      "unchanged_chemical_identity_at_every_feature": true,
+      "no_spatial_means_or_selected_good_residues": true
+    },
+    {
+      "panel_id": "MSKCC_TCR5",
+      "N": 171,
+      "R_dimensions": 107,
+      "H_dimensions": 92,
+      "R_max_abs_delta": 0.20055586099624634,
+      "H_max_abs_delta": 0.35664260387420654,
+      "all_inputs_fixed_backbone": true,
+      "unchanged_chemical_identity_at_every_feature": true,
+      "no_spatial_means_or_selected_good_residues": true
+    },
+    {
+      "panel_id": "MSKCC_TCR6",
+      "N": 171,
+      "R_dimensions": 105,
+      "H_dimensions": 90,
+      "R_max_abs_delta": 0.2202562689781189,
+      "H_max_abs_delta": 0.38252443075180054,
+      "all_inputs_fixed_backbone": true,
+      "unchanged_chemical_identity_at_every_feature": true,
+      "no_spatial_means_or_selected_good_residues": true
+    },
+    {
+      "panel_id": "MSKCC_TCR7",
+      "N": 171,
+      "R_dimensions": 109,
+      "H_dimensions": 95,
+      "R_max_abs_delta": 0.34541499614715576,
+      "H_max_abs_delta": 0.34047532081604004,
+      "all_inputs_fixed_backbone": true,
+      "unchanged_chemical_identity_at_every_feature": true,
+      "no_spatial_means_or_selected_good_residues": true
+    }
+  ],
+  "compiled_at_utc": "2026-10-21T23:43:42.197710+00:00",
+  "source_sha256": "fc88e236bdd0f25ebaaddc305f83526878749bc8a84c0376e1ee86e677e1dc81",
+  "all1197primary_variants": true,
+  "weights_not_updated": true,
+  "endpoint_values_never_used_for_regions_or_dimension_choice": true
+}

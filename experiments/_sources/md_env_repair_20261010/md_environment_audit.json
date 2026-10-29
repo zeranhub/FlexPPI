@@ -1,0 +1,109 @@
+{
+  "status": "environment_ready_cpu_verified",
+  "created_utc": "2026-10-10T05:34:05.268550+00:00",
+  "python": "/root/flexppi_completion_20261010/md_conda/bin/python",
+  "python_version": "3.11.17 (main, Oct  7 2026, 00:02:24) [GCC 15.3.0]",
+  "libc": [
+    "glibc",
+    "2.31"
+  ],
+  "gpu_context_created": false,
+  "simulation_run": false,
+  "gpu_smoke_required_before_production": true,
+  "expected_versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "MDAnalysis": "2.9.0",
+    "pdbfixer": "1.12.0",
+    "OpenMM": "8.4.0"
+  },
+  "actual_versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "MDAnalysis": "2.9.0",
+    "pdbfixer": "1.12.0",
+    "OpenMM": "8.4.0"
+  },
+  "versions_match": true,
+  "historical_openmm": "8.4.0.post2 (PyPI; Linux wheel requires glibc >= 2.34)",
+  "current_openmm": "8.4.0 py311h1c77f12_0 (conda-forge; glibc >= 2.17)",
+  "version_difference_explicit": true,
+  "openmm_runtime_full_version": "8.4.0.dev-4768436",
+  "platforms": [
+    "Reference",
+    "CPU",
+    "CUDA"
+  ],
+  "plugin_load_failures": [
+    "Error loading library /root/flexppi_completion_20261010/md_conda/lib/plugins/libOpenMMHIP.so: libhiprtc.so.6: cannot open shared object file: No such file or directory",
+    "Error loading library /root/flexppi_completion_20261010/md_conda/lib/plugins/libOpenMMRPMDHIP.so: libhiprtc.so.6: cannot open shared object file: No such file or directory",
+    "Error loading library /root/flexppi_completion_20261010/md_conda/lib/plugins/libOpenMMDrudeHIP.so: libhiprtc.so.6: cannot open shared object file: No such file or directory",
+    "Error loading library /root/flexppi_completion_20261010/md_conda/lib/plugins/libOpenMMAmoebaHIP.so: libhiprtc.so.6: cannot open shared object file: No such file or directory"
+  ],
+  "forcefield_data_directory": "/root/flexppi_completion_20261010/md_conda/lib/python3.11/site-packages/openmm/app/data",
+  "historical_forcefield_manifest": "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/historical_audit/prepared_READY.json",
+  "historical_forcefield_manifest_sha256": "f678f19a2d01323ca82a32d3f12436f6a5ed62f3dc6b5d01697b35d4a9d30a2c",
+  "forcefield_sha256_match": true,
+  "forcefield_files": {
+    "charmm36.xml": {
+      "historical": "c5eeb1f030bc7e7bb1e88e7432f762ec1b909858691ffd36dbb81731874931ea",
+      "actual": "c5eeb1f030bc7e7bb1e88e7432f762ec1b909858691ffd36dbb81731874931ea",
+      "match": true
+    },
+    "charmm36/spce.xml": {
+      "historical": "b2eebfd823e249c38e724d41b2f4fa13ef1eea74505ebfa4a2dc9d47a031c873",
+      "actual": "b2eebfd823e249c38e724d41b2f4fa13ef1eea74505ebfa4a2dc9d47a031c873",
+      "match": true
+    },
+    "charmm36/tip3p-pme-b.xml": {
+      "historical": "7fcfd1976709ae95827cbc616f9a58648a24ec0b439a7e0d19d85df6fa768721",
+      "actual": "7fcfd1976709ae95827cbc616f9a58648a24ec0b439a7e0d19d85df6fa768721",
+      "match": true
+    },
+    "charmm36/tip3p-pme-f.xml": {
+      "historical": "73ae5c0d271ae2da7beb092b37ac88680bb1fe0cc416c0893081950135d51cfe",
+      "actual": "73ae5c0d271ae2da7beb092b37ac88680bb1fe0cc416c0893081950135d51cfe",
+      "match": true
+    },
+    "charmm36/tip4p2005.xml": {
+      "historical": "84c93abbb9bb62d64ccd93cb6f789bbfd63609a28c2fbce9f72f56e401f52c27",
+      "actual": "84c93abbb9bb62d64ccd93cb6f789bbfd63609a28c2fbce9f72f56e401f52c27",
+      "match": true
+    },
+    "charmm36/tip4pew.xml": {
+      "historical": "e9daad6afbdd61d1b340a47dc0132d0bb0210883490d3b9e9561e2a79f96826b",
+      "actual": "e9daad6afbdd61d1b340a47dc0132d0bb0210883490d3b9e9561e2a79f96826b",
+      "match": true
+    },
+    "charmm36/tip5p.xml": {
+      "historical": "7b63e13271d5595327cc562654df13432eafdbec717055088c16174011b25b5b",
+      "actual": "7b63e13271d5595327cc562654df13432eafdbec717055088c16174011b25b5b",
+      "match": true
+    },
+    "charmm36/tip5pew.xml": {
+      "historical": "8e7416d4b433359774118bbc89dac08f21719e6f639435ed77c5b6444d600aa2",
+      "actual": "8e7416d4b433359774118bbc89dac08f21719e6f639435ed77c5b6444d600aa2",
+      "match": true
+    },
+    "charmm36/water.xml": {
+      "historical": "0e748275a96ebe960c08443c9f571a7bcc6f164a48ebc1608d408ef9e54850d7",
+      "actual": "0e748275a96ebe960c08443c9f571a7bcc6f164a48ebc1608d408ef9e54850d7",
+      "match": true
+    }
+  },
+  "openmm_conda_archive": {
+    "path": "/root/flexppi_completion_20261010/md_conda_pkgs/openmm-8.4.0-py311h1c77f12_0.conda",
+    "sha256": "8542b87f2b86a567322db41a2f28616f9a57227b0e7a8f98326a8f6cb9417b7f",
+    "official_sha256": "8542b87f2b86a567322db41a2f28616f9a57227b0e7a8f98326a8f6cb9417b7f",
+    "official_source": "https://api.anaconda.org/release/conda-forge/openmm/8.4.0"
+  },
+  "pdbfixer_source": {
+    "commit": "94cfa4c0ca551cdc5f13320f9a658efd59f2b881",
+    "official_tag": "v1.12",
+    "path": "/root/flexppi_completion_20261010/md_install_sources/pdbfixer_94cfa4c0ca551cdc5f13320f9a658efd59f2b881.tar.gz",
+    "sha256": "eade9cc4abf6ebb44bde64b25e9dca3fdde71836876b6c337a0bfc905177bb6c",
+    "version_verified": true
+  },
+  "driver_version_text": "NVRM version: NVIDIA UNIX x86_64 Kernel Module  550.78  Sun Apr 14 06:35:45 UTC 2024\nGCC version:  gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) \n",
+  "caveat": "CUDA 12.6 NVRTC may require newer PTX support than driver 550.78; plugin enumeration is not a GPU smoke test."
+}

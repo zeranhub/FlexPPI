@@ -1,0 +1,166 @@
+{
+  "status": "passed",
+  "NPZ_to_CSV_pairs_checked": 30,
+  "delta_rows_checked": 8104,
+  "changed_site_H103_excluded_from_Hchi_differences": true,
+  "all_input_hashes_match": true,
+  "checks": [
+    {
+      "state": "scfv_WT_copy1",
+      "variant": "full",
+      "positions": 319
+    },
+    {
+      "state": "scfv_WT_copy1",
+      "variant": "intrachain",
+      "positions": 319
+    },
+    {
+      "state": "scfv_WT_copy2",
+      "variant": "full",
+      "positions": 322
+    },
+    {
+      "state": "scfv_WT_copy2",
+      "variant": "intrachain",
+      "positions": 322
+    },
+    {
+      "state": "scfv_P103A_copy1",
+      "variant": "full",
+      "positions": 320
+    },
+    {
+      "state": "scfv_P103A_copy1",
+      "variant": "intrachain",
+      "positions": 320
+    },
+    {
+      "state": "scfv_P103A_copy2",
+      "variant": "full",
+      "positions": 321
+    },
+    {
+      "state": "scfv_P103A_copy2",
+      "variant": "intrachain",
+      "positions": 321
+    },
+    {
+      "state": "scfv_WT_P103A_cf_copy1",
+      "variant": "full",
+      "positions": 319
+    },
+    {
+      "state": "scfv_WT_P103A_cf_copy1",
+      "variant": "intrachain",
+      "positions": 319
+    },
+    {
+      "state": "scfv_P103A_A103P_cf_copy1",
+      "variant": "full",
+      "positions": 320
+    },
+    {
+      "state": "scfv_P103A_A103P_cf_copy1",
+      "variant": "intrachain",
+      "positions": 320
+    },
+    {
+      "state": "scfv_WT_P103A_cf_copy2",
+      "variant": "full",
+      "positions": 322
+    },
+    {
+      "state": "scfv_WT_P103A_cf_copy2",
+      "variant": "intrachain",
+      "positions": 322
+    },
+    {
+      "state": "scfv_P103A_A103P_cf_copy2",
+      "variant": "full",
+      "positions": 321
+    },
+    {
+      "state": "scfv_P103A_A103P_cf_copy2",
+      "variant": "intrachain",
+      "positions": 321
+    },
+    {
+      "state": "scfv_WT_copy1_shared",
+      "variant": "full",
+      "positions": 319
+    },
+    {
+      "state": "scfv_WT_copy1_shared",
+      "variant": "intrachain",
+      "positions": 319
+    },
+    {
+      "state": "scfv_WT_copy2_shared",
+      "variant": "full",
+      "positions": 319
+    },
+    {
+      "state": "scfv_WT_copy2_shared",
+      "variant": "intrachain",
+      "positions": 319
+    },
+    {
+      "state": "scfv_P103A_copy1_shared",
+      "variant": "full",
+      "positions": 319
+    },
+    {
+      "state": "scfv_P103A_copy1_shared",
+      "variant": "intrachain",
+      "positions": 319
+    },
+    {
+      "state": "scfv_P103A_copy2_shared",
+      "variant": "full",
+      "positions": 319
+    },
+    {
+      "state": "scfv_P103A_copy2_shared",
+      "variant": "intrachain",
+      "positions": 319
+    },
+    {
+      "state": "fab_apo",
+      "variant": "full",
+      "positions": 425
+    },
+    {
+      "state": "fab_apo",
+      "variant": "intrachain",
+      "positions": 425
+    },
+    {
+      "state": "fab_bound",
+      "variant": "full",
+      "positions": 519
+    },
+    {
+      "state": "fab_bound",
+      "variant": "intrachain",
+      "positions": 519
+    },
+    {
+      "state": "fab_bound_antigen_stripped",
+      "variant": "full",
+      "positions": 428
+    },
+    {
+      "state": "fab_bound_antigen_stripped",
+      "variant": "intrachain",
+      "positions": 428
+    }
+  ],
+  "source_sha256": {
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\bcr_case_choice_20261028\\paired_all_residue_predictions.csv": "8fcded11e683a40becad986d1966d362d717562c2c2fee42f89d3039a4563af7",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\bcr_case_choice_20261028\\paired_complete_position_deltas.csv": "7b8ea8ce1a78e80543b2efa9eccee879584a1a4260837b1461907178d129207b",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\bcr_case_choice_20261028\\paired_predefined_region_deltas.csv": "a7483ef607354e154184dff07f01205d7ca887a8182bf47e1ab9a6266f9314d5",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\bcr_case_choice_20261028\\pair_screen_contract.json": "e5d3de869d10fcc17b1ed18289a626d99c13a9de034bc8ebc4651aa2d7817d54",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\bcr_case_choice_20261028\\scripts\\write_case_verdict.py": "c9ca812f3a63de05404150813baf3556e9e4041f5e9bdc77f2ac77b9b2e9c8fb"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "created_utc": "2026-10-23T17:07:44.741993+00:00",
+  "status": "audit_derived_secondary_analysis_after_initial_primary_snapshot",
+  "membership_sha256": "72521f5abc8609ce7bd4dcf10cf3e1e6c0d16626017f06e9a7be98fdf6942e5b",
+  "cases": [
+    [
+      "DynaProt-M",
+      "DynaProt-M"
+    ],
+    [
+      "backflip-1.0",
+      "backflip-1.0 (assembly)"
+    ],
+    [
+      "backflip-1.0-seq",
+      "backflip-1.0-seq (assembly)"
+    ]
+  ],
+  "strata": [
+    "all_atlas",
+    "train",
+    "val",
+    "test",
+    "unlisted"
+  ],
+  "metrics": [
+    "spearman",
+    "top10_ap",
+    "mae",
+    "z_mae"
+  ],
+  "bootstrap": 2000,
+  "seed": 20261024,
+  "cohort": "All 1929 ATLAS records; official train/val/test/unlisted categories all reported. Main 3063-record cohort unchanged.",
+  "pairing": "Full and each released comparator scored on the identical records within each published ID category.",
+  "eligibility": "Only methods with all 3063 main-cohort records complete. Partial methods are disclosed and omitted until complete.",
+  "singleton_context": "ATLAS records are single-chain; assembly and independent-chain BackFlip outputs are identical and collapsed here, without performance-based context selection.",
+  "unresolved": "BF2 has no bound training ID manifest, so no inferred split. Non-ATLAS original chain-ID resolution is insufficient for these exact-match strata.",
+  "inference": "Paired record-weighted family-cluster bootstrap, 2000 resamples; no independent-family interval for a one-family stratum.",
+  "limits": "ID membership does not prove historical SGD inclusion, identical MD trajectories or absence of homolog/pretraining exposure. BF1 candidate official IDs are weaker than original checkpoint CSVs. Different comparator test IDs must not be used for cross-model test ranking."
+}

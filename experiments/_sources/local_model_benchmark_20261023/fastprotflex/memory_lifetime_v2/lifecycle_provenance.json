@@ -1,0 +1,85 @@
+{
+  "status": "prepared_static_only_R_not_executed",
+  "created_utc": "2026-10-23T18:28:37.409198+00:00",
+  "official_function_path": "E:\\Project\\protein_flexibility_models\\FastProtFlex\\FUNCTION_GDV.r",
+  "official_function_sha256": "c3efdd8b31b65d33ea13ff70b6f777ca394f5566a19aa947d05c865a259a9b60",
+  "candidate_function_sha256": "5f7327911f1bcbf2b3c3c737c703a7970faeecda072c5b9d591b4642965f8c34",
+  "official_predict_sha256": "d339ac57f14ea92311bd864cd5855afcaee2fb1b9a6c5a5e02d6e123ff80c06f",
+  "capture_wrapper_sha256": "cb82e0def2861686d421cb9261d3726db903812f812973b3f0ea8fa056e1bc97",
+  "diff_sha256": "027fac09cd1390eef56dd37152f5020f0300a8c15b2d2a8d8dc2a316efc539db",
+  "non_cleanup_program_text_identical_in_order": true,
+  "all_diff_executable_lines_are_only_rm_or_gc": true,
+  "removed_cleanup_original_line": 18,
+  "insert_cleanup_after_original_lines": {
+    "14": [
+      "  rm(DD)",
+      "  gc()"
+    ],
+    "16": [
+      "  rm(adj)",
+      "  gc()"
+    ],
+    "19": [
+      "  rm(g)",
+      "  gc()"
+    ],
+    "22": [
+      "  rm(DDsave)",
+      "  gc()"
+    ],
+    "23": [
+      "  rm(DD)",
+      "  gc()"
+    ]
+  },
+  "numerical_changes": "none; thresholds, functions, smoothing order, normalization and all 15 coefficients unchanged",
+  "wrapper_source_resolution": "Byte-identical predict.r and capture_full_precision.R are copied into isolated per-case working directories. Their unchanged relative source calls resolve only to the candidate file in that same directory.",
+  "cases": [
+    {
+      "sample_id": "2o70_F",
+      "n_atoms": 1385,
+      "baseline_validation": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\fastprotflex\\records\\2o70_F\\validation.json",
+      "baseline_validation_sha256": "6239748f94f44457ea8f7b7ab307abb6aada861ec1865d6b0dfb2723b6cc8ab3",
+      "baseline_RDS": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\fastprotflex\\records\\2o70_F\\atom_predictions_exact.rds",
+      "baseline_RDS_sha256": "720975c0004d494e512699730eb89dbeb65a23834e4ae57128bcdb043820286b",
+      "input_sha256": "b5f4bc6b99adde385bad0d8bad24dd48112c34e3761800b55fe2f94b03084ded",
+      "baseline_R_process_peak_MiB": 276.06640625,
+      "baseline_wall_seconds": 1.2772427999880165
+    },
+    {
+      "sample_id": "A007V",
+      "n_atoms": 3072,
+      "baseline_validation": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\fastprotflex\\records\\A007V\\validation.json",
+      "baseline_validation_sha256": "fe8d117442d973ef42931d284a24a42bf017d0cd75230771f421a6561c75e66c",
+      "baseline_RDS": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\fastprotflex\\records\\A007V\\atom_predictions_exact.rds",
+      "baseline_RDS_sha256": "523afcb2fcde25f7a83363f1fdeb2141629d19983d49029a0e35b5ef0bb03b32",
+      "input_sha256": "e6599f24bfa49e38695e65e475e49f146d3b3383db8d66f50c3420b9b659151c",
+      "baseline_R_process_peak_MiB": 662.49609375,
+      "baseline_wall_seconds": 3.0006886999472044
+    },
+    {
+      "sample_id": "itrace_1qrn",
+      "n_atoms": 6620,
+      "baseline_validation": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\fastprotflex\\records\\itrace_1qrn\\validation.json",
+      "baseline_validation_sha256": "81344d55bebbd3e406242e10b6b4414c99313f92c451a58ea3507cfccd907697",
+      "baseline_RDS": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\fastprotflex\\records\\itrace_1qrn\\atom_predictions_exact.rds",
+      "baseline_RDS_sha256": "b34f900a386c323bece81f13035693d542736ee9ec3d71df1998d59d73a3f7ce",
+      "input_sha256": "690a87880fbafb4ab026acd17e3d12c905200bbee5536d73a4e3feb876a60536",
+      "baseline_R_process_peak_MiB": 2944.76171875,
+      "baseline_wall_seconds": 8.117448900011368
+    }
+  ],
+  "acceptance": {
+    "same_pdb_bytes": true,
+    "same_R_libraries_and_single_CPU": true,
+    "all_atom_table_identical_num_eq_FALSE": true,
+    "all_atom_identity_columns_identical_num_eq_FALSE": true,
+    "all_atom_xyz_identical_num_eq_FALSE": true,
+    "all_atom_prediction_vector_identical_num_eq_FALSE": true,
+    "maximum_absolute_prediction_difference_must_equal": 0,
+    "finite_predictions_and_same_atom_count": true,
+    "never_use_rounded_Bfactor_PDB_as_reference": true,
+    "no_candidate_adoption_on_any_validation_failure": true
+  },
+  "limits": "This preparation does not prove any measured RSS reduction. Original function, running wrapper, prediction outputs, and original memory gate are untouched. Run only after explicit root instruction and when no other R process exists."
+}

@@ -1,0 +1,98 @@
+{
+  "status": "READY",
+  "native_assembly": {
+    "width_mm": 183.0,
+    "height_mm": 214.44,
+    "raster_images_in_pdf": 0,
+    "raster_images_in_svg": 0,
+    "top_native_crop_mm": [
+      0,
+      0,
+      183.0,
+      86.0
+    ],
+    "bottom_scaling": 1.22,
+    "font_names": [
+      "Arial Bold",
+      "ELUGPM+Arial-BoldMT",
+      "ELUGPM+ArialMT"
+    ],
+    "all_panels_native_vector": true
+  },
+  "layout": [
+    {
+      "stem": "fig2_second_row",
+      "height_mm": 65.0,
+      "outside_text": []
+    }
+  ],
+  "main_letters": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ],
+  "second_row": [
+    "c: within-type Hchi PR",
+    "d: paired external RMSF PR and ROC"
+  ],
+  "internal_vertices_preserved": {
+    "rmsf": 408,
+    "chi_entropy": 408,
+    "within_type_hchi": 408
+  },
+  "external_mean_vertices": 14014,
+  "data_recomputed": false,
+  "models_retrained": false,
+  "source_data_dropped": false,
+  "original_top_a_b_preserved_with_independent_b_legend": true,
+  "original_bottom_three_metrics_preserved": true,
+  "grouped_external_curves": true,
+  "bottom_group_label": "e",
+  "bottom_legend": "3 short names centered above all bars at local y=9mm",
+  "removed_annotations": [
+    "c AP label and scalar values",
+    "external cohort subtitles",
+    "external AP/AUROC table",
+    "c Internal controls and record count",
+    "bottom group sample/family counts"
+  ],
+  "concise_external_titles": [
+    "RMSF PR",
+    "RMSF ROC"
+  ],
+  "main_internal_precision_scale": "Original continuous piecewise-linear precision scale, identical knots and tick values",
+  "external_precision_and_ROC_scales": "Linear 0-1; no smoothing",
+  "supplement": "S3 unchanged; external AP/AUROC moved to Table S10 by document editor",
+  "external_metric_policy": "Exact per-record AP/AUROC averaged equally across records; not area under displayed mean curve",
+  "known_limitations": [
+    "Original internal PR precision-axis transformation is retained at user request; external PR/ROC axes are linear.",
+    "A and B retain frozen native PDF content; numerical prediction evaluation is not rerun.",
+    "No new significance tests are added; source confidence intervals remain in archived tables."
+  ],
+  "visual_review": "Complete grouped main figure inspected. b has its independent four-method key; c retains its internal legend; external PR/ROC share d, with PR closer to ROC; bottom is e with a centered concise group legend. No curve occlusion or clipped text.",
+  "unchanged_panel_verification": {
+    "top_a_b_including_independent_b_legend_pixel_identical_160dpi": true,
+    "bottom_bars_axes_labels_excluding_repositioned_legend_and_panel_letter_pixel_identical_160dpi": true,
+    "curve_native_geometry_comparison_against_v65": [
+      {
+        "panel": "c",
+        "series": 4,
+        "geometry": "unchanged except 4mm up; PR additionally 5mm right to group with ROC"
+      },
+      {
+        "panel": "d_PR",
+        "series": 7,
+        "geometry": "unchanged except 4mm up; PR additionally 5mm right to group with ROC"
+      },
+      {
+        "panel": "d_ROC",
+        "series": 7,
+        "geometry": "unchanged except 4mm up; PR additionally 5mm right to group with ROC"
+      }
+    ],
+    "raster_images_in_pdf": 0,
+    "raster_images_in_svg": 0
+  }
+}

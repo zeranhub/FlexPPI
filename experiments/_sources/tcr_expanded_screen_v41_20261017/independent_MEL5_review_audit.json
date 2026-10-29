@@ -1,0 +1,417 @@
+{
+  "status": "passed",
+  "independent_reconstruction": "Original family NPZ, new MD per-replica NPZ, direct CA8A interface union from both model-input PDBs, global full-chain alignment; original outputs never changed.",
+  "aligned_residues": 824,
+  "all6_CDR_positions": 45,
+  "all_CDR3_positions": 22,
+  "CDR3_substitutions": 8,
+  "plot_source_completeness_passed": true,
+  "interface_geometry_matches_annotation": true,
+  "statistics": {
+    "CDR3_all22": {
+      "rmsf": {
+        "n": 22,
+        "substituted_n": 8,
+        "rho": 0.7786561264822135,
+        "MAE": 0.1963276545836729,
+        "zero_MAE": 0.29209561771623516,
+        "gain": 0.32786511444892286,
+        "MD_mean_delta": -0.29209561771623516,
+        "model_mean_delta": -0.09684836999936537,
+        "direction_fraction": 0.7727272727272727,
+        "robust_n": 15,
+        "robust_direction_fraction": 0.9333333333333333,
+        "all3_nonoverlap_n": 10
+      },
+      "hchi": {
+        "n": 14,
+        "substituted_n": 6,
+        "rho": 0.8021978021978022,
+        "MAE": 0.17238717250326083,
+        "zero_MAE": 0.5016098690242234,
+        "gain": 0.6563321753644843,
+        "MD_mean_delta": 0.16363584629278957,
+        "model_mean_delta": 0.10735866853169032,
+        "direction_fraction": 0.7142857142857143,
+        "robust_n": 11,
+        "robust_direction_fraction": 0.7272727272727273,
+        "all3_nonoverlap_n": 11
+      }
+    },
+    "CDR3_same14": {
+      "rmsf": {
+        "n": 14,
+        "substituted_n": 0,
+        "rho": 0.8285714285714285,
+        "MAE": 0.1750072179641967,
+        "zero_MAE": 0.29318307579765024,
+        "gain": 0.4030787163001742,
+        "MD_mean_delta": -0.29318307579765024,
+        "model_mean_delta": -0.1181758578334536,
+        "direction_fraction": 0.7142857142857143,
+        "robust_n": 10,
+        "robust_direction_fraction": 1.0,
+        "all3_nonoverlap_n": 6
+      },
+      "hchi": {
+        "n": 8,
+        "substituted_n": 0,
+        "rho": -0.04761904761904763,
+        "MAE": 0.16764988471133532,
+        "zero_MAE": 0.15429985451354455,
+        "gain": -0.0865200439746292,
+        "MD_mean_delta": -0.06402677113234401,
+        "model_mean_delta": -0.03399641066789627,
+        "direction_fraction": 0.5,
+        "robust_n": 5,
+        "robust_direction_fraction": 0.4,
+        "all3_nonoverlap_n": 5
+      }
+    },
+    "CDR3alpha_all9": {
+      "rmsf": {
+        "n": 9,
+        "substituted_n": 4,
+        "rho": 0.4666666666666666,
+        "MAE": 0.17828825272547663,
+        "zero_MAE": 0.19031026899782777,
+        "gain": 0.06317061257734002,
+        "MD_mean_delta": -0.19031026899782777,
+        "model_mean_delta": -0.014663010835647583,
+        "direction_fraction": 0.4444444444444444,
+        "robust_n": 2,
+        "robust_direction_fraction": 0.5,
+        "all3_nonoverlap_n": 3
+      },
+      "hchi": {
+        "n": 6,
+        "substituted_n": 3,
+        "rho": 0.7714285714285715,
+        "MAE": 0.2009339713492487,
+        "zero_MAE": 0.4990410589614007,
+        "gain": 0.5973598409569134,
+        "MD_mean_delta": 0.017712628187105856,
+        "model_mean_delta": 0.030279417832692463,
+        "direction_fraction": 0.6666666666666666,
+        "robust_n": 5,
+        "robust_direction_fraction": 0.6,
+        "all3_nonoverlap_n": 5
+      }
+    },
+    "CDR3beta_all13": {
+      "rmsf": {
+        "n": 13,
+        "substituted_n": 4,
+        "rho": 0.7857142857142857,
+        "MAE": 0.20881647125473177,
+        "zero_MAE": 0.36256239759820946,
+        "gain": 0.42405370044429835,
+        "MD_mean_delta": -0.36256239759820946,
+        "model_mean_delta": -0.1537459263434777,
+        "direction_fraction": 1.0,
+        "robust_n": 13,
+        "robust_direction_fraction": 1.0,
+        "all3_nonoverlap_n": 7
+      },
+      "hchi": {
+        "n": 8,
+        "substituted_n": 3,
+        "rho": 0.9523809523809524,
+        "MAE": 0.15097707336876992,
+        "zero_MAE": 0.5035364765713405,
+        "gain": 0.7001665611262233,
+        "MD_mean_delta": 0.27307825987205236,
+        "model_mean_delta": 0.16516810655593872,
+        "direction_fraction": 0.75,
+        "robust_n": 6,
+        "robust_direction_fraction": 0.8333333333333334,
+        "all3_nonoverlap_n": 6
+      }
+    },
+    "all6_CDR": {
+      "rmsf": {
+        "n": 45,
+        "substituted_n": 17,
+        "rho": 0.43952569169960476,
+        "MAE": 0.21051770342466034,
+        "zero_MAE": 0.2866424409285063,
+        "gain": 0.26557385311560633,
+        "MD_mean_delta": -0.2655312231217696,
+        "model_mean_delta": -0.08520711991522047,
+        "direction_fraction": 0.6444444444444445,
+        "robust_n": 24,
+        "robust_direction_fraction": 0.7916666666666666,
+        "all3_nonoverlap_n": 18
+      },
+      "hchi": {
+        "n": 31,
+        "substituted_n": 13,
+        "rho": 0.6879032258064517,
+        "MAE": 0.19138243622680176,
+        "zero_MAE": 0.4687785057386374,
+        "gain": 0.5917422964492637,
+        "MD_mean_delta": 0.08856637478889544,
+        "model_mean_delta": 0.028078663829341342,
+        "direction_fraction": 0.7096774193548387,
+        "robust_n": 17,
+        "robust_direction_fraction": 0.7058823529411765,
+        "all3_nonoverlap_n": 18
+      }
+    },
+    "pMHC_interface": {
+      "rmsf": {
+        "n": 30,
+        "substituted_n": 0,
+        "rho": 0.4206896551724138,
+        "MAE": 0.09939951433808868,
+        "zero_MAE": 0.07725994513842198,
+        "gain": -0.28655947347620514,
+        "MD_mean_delta": 0.031748958352875584,
+        "model_mean_delta": -0.05371712843577067,
+        "direction_fraction": 0.5666666666666667,
+        "robust_n": 4,
+        "robust_direction_fraction": 1.0,
+        "all3_nonoverlap_n": 4
+      },
+      "hchi": {
+        "n": 23,
+        "substituted_n": 0,
+        "rho": 0.7549407114624507,
+        "MAE": 0.20241435697655952,
+        "zero_MAE": 0.26908871799457634,
+        "gain": 0.24777835917803392,
+        "MD_mean_delta": -0.055197017644361204,
+        "model_mean_delta": -0.06390139071837715,
+        "direction_fraction": 0.8260869565217391,
+        "robust_n": 8,
+        "robust_direction_fraction": 0.875,
+        "all3_nonoverlap_n": 7
+      }
+    },
+    "pMHC_interface_without_MHC_R65": {
+      "rmsf": {
+        "n": 29,
+        "substituted_n": 0,
+        "rho": 0.4650246305418719,
+        "MAE": 0.09636786425996781,
+        "zero_MAE": 0.07710653073213015,
+        "gain": -0.2498015841842498,
+        "MD_mean_delta": 0.030026199574668348,
+        "model_mean_delta": -0.051927774116910734,
+        "direction_fraction": 0.5862068965517241,
+        "robust_n": 4,
+        "robust_direction_fraction": 1.0,
+        "all3_nonoverlap_n": 4
+      },
+      "hchi": {
+        "n": 22,
+        "substituted_n": 0,
+        "rho": 0.7221908526256353,
+        "MAE": 0.16165991256746237,
+        "zero_MAE": 0.2139768263851735,
+        "gain": 0.24449803607955645,
+        "MD_mean_delta": 0.009637223980960558,
+        "model_mean_delta": -0.04941789941354231,
+        "direction_fraction": 0.8181818181818182,
+        "robust_n": 7,
+        "robust_direction_fraction": 0.8571428571428571,
+        "all3_nonoverlap_n": 6
+      }
+    },
+    "MHC_interface": {
+      "rmsf": {
+        "n": 22,
+        "substituted_n": 0,
+        "rho": 0.18125352907961606,
+        "MAE": 0.11574730769010663,
+        "zero_MAE": 0.07618099932811806,
+        "gain": -0.5193723987732572,
+        "MD_mean_delta": 0.07246750543274226,
+        "model_mean_delta": -0.04327980225736445,
+        "direction_fraction": 0.4090909090909091,
+        "robust_n": 0,
+        "robust_direction_fraction": null,
+        "all3_nonoverlap_n": 0
+      },
+      "hchi": {
+        "n": 18,
+        "substituted_n": 0,
+        "rho": 0.7048503611971104,
+        "MAE": 0.22913674306609721,
+        "zero_MAE": 0.2991908257995187,
+        "gain": 0.23414515651079226,
+        "MD_mean_delta": -0.06586575057958884,
+        "model_mean_delta": -0.07070673174328274,
+        "direction_fraction": 0.7777777777777778,
+        "robust_n": 8,
+        "robust_direction_fraction": 0.875,
+        "all3_nonoverlap_n": 7
+      }
+    },
+    "TCR_interface_sameAA": {
+      "rmsf": {
+        "n": 14,
+        "substituted_n": 0,
+        "rho": 0.47252747252747257,
+        "MAE": 0.17204532499761443,
+        "zero_MAE": 0.2610481682175353,
+        "gain": 0.3409441400322467,
+        "MD_mean_delta": -0.2559351203322943,
+        "model_mean_delta": -0.12583779437201364,
+        "direction_fraction": 0.6428571428571429,
+        "robust_n": 6,
+        "robust_direction_fraction": 1.0,
+        "all3_nonoverlap_n": 5
+      },
+      "hchi": {
+        "n": 9,
+        "substituted_n": 0,
+        "rho": -0.4666666666666666,
+        "MAE": 0.2167514957791698,
+        "zero_MAE": 0.16288854528527785,
+        "gain": -0.33067365418211625,
+        "MD_mean_delta": -0.1124380342997114,
+        "model_mean_delta": -0.13583711783091226,
+        "direction_fraction": 0.5555555555555556,
+        "robust_n": 2,
+        "robust_direction_fraction": 0.5,
+        "all3_nonoverlap_n": 3
+      }
+    },
+    "CDR3_sameAA_sidechain": {
+      "rmsf": {
+        "n": 14,
+        "substituted_n": 0,
+        "rho": 0.8285714285714285,
+        "MAE": 0.1750072179641967,
+        "zero_MAE": 0.29318307579765024,
+        "gain": 0.4030787163001742,
+        "MD_mean_delta": -0.29318307579765024,
+        "model_mean_delta": -0.1181758578334536,
+        "direction_fraction": 0.7142857142857143,
+        "robust_n": 10,
+        "robust_direction_fraction": 1.0,
+        "all3_nonoverlap_n": 6
+      },
+      "hchi": {
+        "n": 8,
+        "substituted_n": 0,
+        "rho": -0.04761904761904763,
+        "MAE": 0.16764988471133532,
+        "zero_MAE": 0.15429985451354455,
+        "gain": -0.0865200439746292,
+        "MD_mean_delta": -0.06402677113234401,
+        "model_mean_delta": -0.03399641066789627,
+        "direction_fraction": 0.5,
+        "robust_n": 5,
+        "robust_direction_fraction": 0.4,
+        "all3_nonoverlap_n": 5
+      }
+    }
+  },
+  "alignment": [
+    {
+      "chain": "A",
+      "aligned": 276,
+      "mismatches": 0,
+      "blocks": [
+        [
+          [
+            0,
+            276
+          ]
+        ],
+        [
+          [
+            0,
+            276
+          ]
+        ]
+      ]
+    },
+    {
+      "chain": "B",
+      "aligned": 100,
+      "mismatches": 0,
+      "blocks": [
+        [
+          [
+            0,
+            100
+          ]
+        ],
+        [
+          [
+            0,
+            100
+          ]
+        ]
+      ]
+    },
+    {
+      "chain": "C",
+      "aligned": 10,
+      "mismatches": 0,
+      "blocks": [
+        [
+          [
+            0,
+            10
+          ]
+        ],
+        [
+          [
+            0,
+            10
+          ]
+        ]
+      ]
+    },
+    {
+      "chain": "D",
+      "aligned": 194,
+      "mismatches": 10,
+      "blocks": [
+        [
+          [
+            0,
+            194
+          ]
+        ],
+        [
+          [
+            1,
+            195
+          ]
+        ]
+      ]
+    },
+    {
+      "chain": "E",
+      "aligned": 244,
+      "mismatches": 9,
+      "blocks": [
+        [
+          [
+            0,
+            244
+          ]
+        ],
+        [
+          [
+            1,
+            245
+          ]
+        ]
+      ]
+    }
+  ],
+  "method_warning": "abs(delta)>2SEM is a descriptive repeat-to-repeat threshold, not a calibrated95%CI or multiple-test-adjusted significance claim.",
+  "source_SHA256": {
+    "mel5_validation\\corrected_pair_all_aligned_positions.csv": "b5fe2438552c6c20f145a7f41f3f0f9c2b9e767e787ada9f4e907ea027a156c1",
+    "mel5_validation\\corrected_predefined_region_change_metrics.csv": "8bb8216f82a9218558e58e2fad577dc9bde26db66b6996c68a0f12ae4d28614a",
+    "mel5_validation\\corrected_alignment_and_CDR_audit.json": "2140d0eeb2a487f0478c2923b7d1b2443eaa77c27d28af715aeb2648a3c74238",
+    "mel5_validation\\plot_sources\\mel5_all6_CDR_per_position_source.csv": "e99c61f897be99a6c1f186e2129f6dbfc115fed46425517509d529f7829f957f",
+    "mel5_validation\\plot_sources\\mel5_natural_pMHC_interface_source.csv": "b8f4999c35bdc184cb5096330899a7f394026825997986dbe2d2b348b9c2e786"
+  }
+}

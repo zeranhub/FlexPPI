@@ -1,0 +1,100 @@
+{
+  "status": "passed",
+  "input_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v124_figure4_compact_palette\\structure\\4jff_model_input.pdb",
+  "input_SHA256": "d9d88e83d6381e03905b0cfdd39ee9bffc3d3d64c9b7981a7867b45610601b7e",
+  "common_numbering": {
+    "HLA_Q72": "input A72",
+    "beta_Phe53": "input E54",
+    "beta_Gly54": "input E55"
+  },
+  "overview_view": [
+    0.06614458560943604,
+    -0.8752993941307068,
+    -0.4790363311767578,
+    0.9640218615531921,
+    0.1799342930316925,
+    -0.19566690921783447,
+    0.25746214389801025,
+    -0.44885921478271484,
+    0.855709433555603,
+    0.0,
+    0.0,
+    -250.98492431640625,
+    66.50013732910156,
+    60.35551452636719,
+    52.40727996826172,
+    197.87841796875,
+    304.0914306640625,
+    -20.0
+  ],
+  "local_view": [
+    -0.8413222432136536,
+    -0.3473830819129944,
+    0.41412782669067383,
+    -0.5073828101158142,
+    0.24334856867790222,
+    -0.8266463279724121,
+    0.18638555705547333,
+    -0.9055972695350647,
+    -0.38099077343940735,
+    0.0,
+    0.0,
+    -38.22443389892578,
+    67.20250701904297,
+    63.60624694824219,
+    38.07374954223633,
+    30.13643455505371,
+    46.31243133544922,
+    -20.0
+  ],
+  "atom_coordinates": {
+    "Q72_OE1": [
+      66.55000305175781,
+      63.0099983215332,
+      39.66999816894531
+    ],
+    "Q72_NE2": [
+      65.6500015258789,
+      60.970001220703125,
+      39.58000183105469
+    ],
+    "beta_F53_N": [
+      65.63999938964844,
+      65.11000061035156,
+      37.81999969482422
+    ],
+    "beta_G54_O": [
+      62.689998626708984,
+      61.93000030517578,
+      39.36000061035156
+    ]
+  },
+  "distances_A": {
+    "Q72_OE1_to_beta_Phe53_N": 2.9428915977478027,
+    "Q72_NE2_to_beta_Gly54_O": 3.119553804397583
+  },
+  "colors": {
+    "HLA": "#BAC1C7",
+    "TCR_alpha": "#92999F",
+    "TCR_beta": "#2166AC",
+    "peptide": "#B87936",
+    "Q72": "#B87936",
+    "oxygen": "same as parent residue",
+    "nitrogen": "same as parent residue"
+  },
+  "data_integrity": "Real existing MD input coordinates, no conformational editing. All-heavy structure shown for interpretation only; model uses N/CA/C.",
+  "recolour_v124": {
+    "all_atom_coordinates_exactly_preserved": true,
+    "all_18_overview_camera_values_exactly_preserved": true,
+    "all_18_local_camera_values_exactly_preserved": true,
+    "atom_count": 12925,
+    "atom_coordinates_SHA256": "2eac10297f45e5426ff4004fb3dcfc40a88cdac1e454d9f39efdbd224fe7c1ce",
+    "no_element_overrides": true,
+    "no_new_MD_or_model_predictions": true
+  },
+  "visual_review": "passed_actual_view_of_both_PNGs",
+  "image_SHA256": {
+    "4jff_overview.png": "9619d39f6108284718737e4af8f6670ff3be8b31c89ec1fcdfb23afe7613954d",
+    "4jff_Q72_F53_G54.png": "11f9e39f12111a7fac149e2028211a5e766447ec227e383e7096fde427fbd6b0"
+  }
+}

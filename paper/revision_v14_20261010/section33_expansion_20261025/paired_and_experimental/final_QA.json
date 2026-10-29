@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "original_pairs": 37,
+  "original_PDBs": 36,
+  "evaluated_pairs": 36,
+  "evaluated_PDBs": 35,
+  "full_cohort_components": 27,
+  "family_clean_pairs": 21,
+  "family_clean_PDBs": 20,
+  "mapping_complete_sequence_matches": 30,
+  "mapping_exact_global_alignment_pairs": 6,
+  "corrected_mapping_min_coverage": 0.8735955056179775,
+  "residual_counts": {
+    "chi_entropy": 9723,
+    "rmsf": 11842
+  },
+  "NMR_rows": 50,
+  "NMR_identifiable_axes": 37,
+  "identifiable_axes_present_in_bound_MD": 35,
+  "bound_backcalculated_axes": 48,
+  "original_A003R_structure_and_trajectory_SHA256_match_paper_archive": true,
+  "checks": "samefoldbothstates;chemicalsequenceexactmatching;legacyindexremapping;validitymasks;deltaidentity;4ETPequal-systemweight;27clusterjoin;20familyclean;S2missingzeroandupperbound;normalizedvectors;unchangedrawinputhashes"
+}

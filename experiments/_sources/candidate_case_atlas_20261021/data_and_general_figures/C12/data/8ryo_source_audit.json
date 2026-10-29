@@ -1,0 +1,16 @@
+{
+  "pdb": "8ryo",
+  "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_8ryo.npz",
+  "prediction_sha256": "8b0f5b8a565828c37ac2bcbaf0d9850e53b870f906b693fb1694ceeaf3849e9a",
+  "structure": "E:\\data\\ITrace\\trajectories\\8ryo_run1_topology.pdb",
+  "structure_sha256": "07c84706e5b25d7bdf0120bc0f3cba7087503d94ca41cd4e54ed2531feca0483",
+  "chain_roles": {
+    "A": "mhc",
+    "B": "b2m",
+    "C": "peptide",
+    "D": "tcr_alpha",
+    "E": "tcr_beta"
+  },
+  "label_mean_source": "NPZ target first two columns",
+  "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+}

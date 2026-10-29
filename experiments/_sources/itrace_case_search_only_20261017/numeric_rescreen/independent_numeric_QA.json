@@ -1,0 +1,252 @@
+{
+  "status": "passed",
+  "n_structures": 42,
+  "unique_pairs": 67,
+  "series_pair_memberships": 68,
+  "all_peptide_positions_retained": true,
+  "whole_MEL5_engineering_CDR3_RMSF_n": 22,
+  "all_models_metrics_rows": 8160,
+  "numerical_spotchecks": [
+    {
+      "a": "3hg1",
+      "b": "4jff",
+      "scope": "CDR3",
+      "metric": "rmsf",
+      "model": "full",
+      "n": 22,
+      "MAE_recalculated": 0.19632766057144513,
+      "zero_MAE_recalculated": 0.2920956313610077
+    },
+    {
+      "a": "3hg1",
+      "b": "4jff",
+      "scope": "CDR3",
+      "metric": "rmsf",
+      "model": "old_strict",
+      "n": 22,
+      "MAE_recalculated": 0.30281893096186896,
+      "zero_MAE_recalculated": 0.2920956313610077
+    },
+    {
+      "a": "3hg1",
+      "b": "4jff",
+      "scope": "CDR3",
+      "metric": "rmsf",
+      "model": "intrachain",
+      "n": 22,
+      "MAE_recalculated": 0.17985121634873474,
+      "zero_MAE_recalculated": 0.2920956313610077
+    },
+    {
+      "a": "3hg1",
+      "b": "4jff",
+      "scope": "CDR3",
+      "metric": "hchi",
+      "model": "full",
+      "n": 8,
+      "MAE_recalculated": 0.1676499042659998,
+      "zero_MAE_recalculated": 0.1542998421937227
+    },
+    {
+      "a": "3hg1",
+      "b": "4jff",
+      "scope": "CDR3",
+      "metric": "hchi",
+      "model": "old_strict",
+      "n": 8,
+      "MAE_recalculated": 0.14682147838175297,
+      "zero_MAE_recalculated": 0.1542998421937227
+    },
+    {
+      "a": "3hg1",
+      "b": "4jff",
+      "scope": "CDR3",
+      "metric": "hchi",
+      "model": "intrachain",
+      "n": 8,
+      "MAE_recalculated": 0.1438985858112573,
+      "zero_MAE_recalculated": 0.1542998421937227
+    },
+    {
+      "a": "7q99",
+      "b": "7q9a",
+      "scope": "whole_peptide",
+      "metric": "rmsf",
+      "model": "full",
+      "n": 10,
+      "MAE_recalculated": 0.16799957752227776,
+      "zero_MAE_recalculated": 0.15669179558753968
+    },
+    {
+      "a": "7q99",
+      "b": "7q9a",
+      "scope": "whole_peptide",
+      "metric": "rmsf",
+      "model": "old_strict",
+      "n": 10,
+      "MAE_recalculated": 0.1764820098876953,
+      "zero_MAE_recalculated": 0.15669179558753968
+    },
+    {
+      "a": "7q99",
+      "b": "7q9a",
+      "scope": "whole_peptide",
+      "metric": "rmsf",
+      "model": "intrachain",
+      "n": 10,
+      "MAE_recalculated": 1.0010382950305938,
+      "zero_MAE_recalculated": 0.15669179558753968
+    },
+    {
+      "a": "7q99",
+      "b": "7q9a",
+      "scope": "whole_peptide",
+      "metric": "hchi",
+      "model": "full",
+      "n": 2,
+      "MAE_recalculated": 0.27993422746658314,
+      "zero_MAE_recalculated": 0.2298865914344787
+    },
+    {
+      "a": "7q99",
+      "b": "7q9a",
+      "scope": "whole_peptide",
+      "metric": "hchi",
+      "model": "old_strict",
+      "n": 2,
+      "MAE_recalculated": 0.2351590394973754,
+      "zero_MAE_recalculated": 0.2298865914344787
+    },
+    {
+      "a": "7q99",
+      "b": "7q9a",
+      "scope": "whole_peptide",
+      "metric": "hchi",
+      "model": "intrachain",
+      "n": 2,
+      "MAE_recalculated": 0.2170237898826599,
+      "zero_MAE_recalculated": 0.2298865914344787
+    },
+    {
+      "a": "8rym",
+      "b": "8ryo",
+      "scope": "CDR3",
+      "metric": "rmsf",
+      "model": "full",
+      "n": 23,
+      "MAE_recalculated": 0.0922461009543875,
+      "zero_MAE_recalculated": 0.14683600612308667
+    },
+    {
+      "a": "8rym",
+      "b": "8ryo",
+      "scope": "CDR3",
+      "metric": "rmsf",
+      "model": "old_strict",
+      "n": 23,
+      "MAE_recalculated": 0.15285709370737485,
+      "zero_MAE_recalculated": 0.14683600612308667
+    },
+    {
+      "a": "8rym",
+      "b": "8ryo",
+      "scope": "CDR3",
+      "metric": "rmsf",
+      "model": "intrachain",
+      "n": 23,
+      "MAE_recalculated": 0.06885062222895415,
+      "zero_MAE_recalculated": 0.14683600612308667
+    },
+    {
+      "a": "8rym",
+      "b": "8ryo",
+      "scope": "CDR3",
+      "metric": "hchi",
+      "model": "full",
+      "n": 16,
+      "MAE_recalculated": 0.0943512789793885,
+      "zero_MAE_recalculated": 0.12038706056773657
+    },
+    {
+      "a": "8rym",
+      "b": "8ryo",
+      "scope": "CDR3",
+      "metric": "hchi",
+      "model": "old_strict",
+      "n": 16,
+      "MAE_recalculated": 0.10200267252730555,
+      "zero_MAE_recalculated": 0.12038706056773657
+    },
+    {
+      "a": "8rym",
+      "b": "8ryo",
+      "scope": "CDR3",
+      "metric": "hchi",
+      "model": "intrachain",
+      "n": 16,
+      "MAE_recalculated": 0.11886198141328913,
+      "zero_MAE_recalculated": 0.12038706056773657
+    },
+    {
+      "a": "2ak4",
+      "b": "4jry",
+      "scope": "natural_pMHC_interface",
+      "metric": "rmsf",
+      "model": "full",
+      "n": 26,
+      "MAE_recalculated": 0.23087954865052146,
+      "zero_MAE_recalculated": 0.1886848497849244
+    },
+    {
+      "a": "2ak4",
+      "b": "4jry",
+      "scope": "natural_pMHC_interface",
+      "metric": "rmsf",
+      "model": "old_strict",
+      "n": 26,
+      "MAE_recalculated": 0.33442765588943774,
+      "zero_MAE_recalculated": 0.1886848497849244
+    },
+    {
+      "a": "2ak4",
+      "b": "4jry",
+      "scope": "natural_pMHC_interface",
+      "metric": "rmsf",
+      "model": "intrachain",
+      "n": 26,
+      "MAE_recalculated": 0.18600512582522172,
+      "zero_MAE_recalculated": 0.1886848497849244
+    },
+    {
+      "a": "2ak4",
+      "b": "4jry",
+      "scope": "natural_pMHC_interface",
+      "metric": "hchi",
+      "model": "full",
+      "n": 21,
+      "MAE_recalculated": 0.23343936818015382,
+      "zero_MAE_recalculated": 0.2601859668890635
+    },
+    {
+      "a": "2ak4",
+      "b": "4jry",
+      "scope": "natural_pMHC_interface",
+      "metric": "hchi",
+      "model": "old_strict",
+      "n": 21,
+      "MAE_recalculated": 0.21457384047438868,
+      "zero_MAE_recalculated": 0.2601859668890635
+    },
+    {
+      "a": "2ak4",
+      "b": "4jry",
+      "scope": "natural_pMHC_interface",
+      "metric": "hchi",
+      "model": "intrachain",
+      "n": 21,
+      "MAE_recalculated": 0.257751537881978,
+      "zero_MAE_recalculated": 0.2601859668890635
+    }
+  ],
+  "CDR_boundaries": "All explicit sequences and indices retained in all_CDR_boundaries_and_sequences.csv"
+}

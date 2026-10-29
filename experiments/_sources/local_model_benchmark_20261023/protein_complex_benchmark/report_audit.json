@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-24T00:00:07.919136+00:00",
+  "report_script_sha256": "577de93e03b9d476d203d514d7a99be85a71fdd2360de092f252b5221e5a25c7",
+  "input_sha256": {
+    "evaluation\\scoring_audit.json": "f50b821b0982ad6d3602c9b0d5f1fe3e60af6b7d2000877f30677479064eb90a",
+    "evaluation\\group_summary.csv": "da655ae6593d97103d638cafeb9d41c5f8515ed9f0993d6ec6db1bfbd118f07b",
+    "evaluation\\paired_differences.csv": "6ea148ac03675e6967f122dbdadf091f3c5cca02b1fd9bd39a0ae1c0a06640dc",
+    "evaluation\\per_record_metrics.csv": "87420afc23a9dce44919eb1e58bb6620da2b04a8c1075099d23df06ea538e6ef",
+    "classification\\membership_frozen.csv": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac",
+    "references\\training_exposure_protocol_sources_sha256.json": "83b0fbbddd486633cf2bb2c3dd34de8da4d896d6fd05378ff2f9498836454575",
+    "references\\training_exposure_membership_frozen.csv": "72521f5abc8609ce7bd4dcf10cf3e1e6c0d16626017f06e9a7be98fdf6942e5b"
+  },
+  "outputs": {
+    "RESULTS_zh.md": "dfaf83c9d871bcc1d4d4cefa58e06c217edb2ae5f71e83b9657dff8a8e1a1605",
+    "figures\\RESULTS_en_draft.txt": "21f10b1bc25cea3e93051265a2b2369afca1e0a213662f4612d7ca11978b3bcf",
+    "figures\\CAPTION_en.txt": "00b9cc2b1c9abbc5a7cf150f903557947115fea467b98d0d6fd47587048bd9c7",
+    "evaluation\\boundary_sensitivity_3f4y.csv": "68651fb378d3b6348ae10d233d83cc9edc67cfb96a3adb8b399ea3e75316bbdb"
+  },
+  "no_inference": true,
+  "primary_groups": {
+    "protein": 2203,
+    "protein_complex": 860
+  },
+  "training_exposure_equalized": false
+}

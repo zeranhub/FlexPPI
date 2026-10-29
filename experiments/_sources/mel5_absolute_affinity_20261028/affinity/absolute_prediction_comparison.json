@@ -1,0 +1,228 @@
+{
+  "rows": [
+    {
+      "pdb": "3hg1",
+      "state": "MEL5 / ELA",
+      "model": "PRODIGY 2.4.0",
+      "input_kind": "crystal",
+      "temperature_C": "25.0",
+      "TCR_chains": "DE",
+      "pMHC_chains": "ABC",
+      "experimental_KD_M": "1.8e-05",
+      "experimental_pKD": "4.7447274948966935",
+      "predicted_DG_kcal_mol": "-12.70676829228243",
+      "predicted_KD_M": "4.78246134139122e-10",
+      "predicted_pKD": "9.320348531868012",
+      "pKD_error_pred_minus_exp": "4.575621036971318",
+      "intermolecular_contacts": "90"
+    },
+    {
+      "pdb": "4jff",
+      "state": "alpha24beta17 / ELA",
+      "model": "PRODIGY 2.4.0",
+      "input_kind": "crystal",
+      "temperature_C": "25.0",
+      "TCR_chains": "DE",
+      "pMHC_chains": "ABC",
+      "experimental_KD_M": "6e-10",
+      "experimental_pKD": "9.221848749616356",
+      "predicted_DG_kcal_mol": "-13.213630267111855",
+      "predicted_KD_M": "2.0317526866064315e-10",
+      "predicted_pKD": "9.692129157302915",
+      "pKD_error_pred_minus_exp": "0.470280407686559",
+      "intermolecular_contacts": "96"
+    },
+    {
+      "pdb": "4jfd",
+      "state": "alpha24beta17 / G4A",
+      "model": "PRODIGY 2.4.0",
+      "input_kind": "crystal",
+      "temperature_C": "25.0",
+      "TCR_chains": "DE",
+      "pMHC_chains": "ABC",
+      "experimental_KD_M": "3.6e-05",
+      "experimental_pKD": "4.443697499232712",
+      "predicted_DG_kcal_mol": "-13.223649555189457",
+      "predicted_KD_M": "1.9976607971710628e-10",
+      "predicted_pKD": "9.699478253058533",
+      "pKD_error_pred_minus_exp": "5.255780753825821",
+      "intermolecular_contacts": "98"
+    },
+    {
+      "pdb": "4jfe",
+      "state": "alpha24beta17 / I7A",
+      "model": "PRODIGY 2.4.0",
+      "input_kind": "crystal",
+      "temperature_C": "25.0",
+      "TCR_chains": "DE",
+      "pMHC_chains": "ABC",
+      "experimental_KD_M": "3.1e-05",
+      "experimental_pKD": "4.508638306165727",
+      "predicted_DG_kcal_mol": "-13.559646137479543",
+      "predicted_KD_M": "1.132582897503896e-10",
+      "predicted_pKD": "9.945930000696213",
+      "pKD_error_pred_minus_exp": "5.4372916945304866",
+      "intermolecular_contacts": "97"
+    },
+    {
+      "pdb": "3hg1",
+      "state": "MEL5 / ELA",
+      "model": "ProAffinity-GNN (simplified, corrected)",
+      "input_kind": "crystal",
+      "temperature_C": "",
+      "TCR_chains": "DE",
+      "pMHC_chains": "ABC",
+      "experimental_KD_M": "1.8e-05",
+      "experimental_pKD": "4.7447274948966935",
+      "predicted_DG_kcal_mol": "",
+      "predicted_KD_M": 4.0047226225369334e-07,
+      "predicted_pKD": 6.397427558898926,
+      "pKD_error_pred_minus_exp": 1.6527000640022322,
+      "intermolecular_contacts": ""
+    },
+    {
+      "pdb": "4jff",
+      "state": "alpha24beta17 / ELA",
+      "model": "ProAffinity-GNN (simplified, corrected)",
+      "input_kind": "crystal",
+      "temperature_C": "",
+      "TCR_chains": "DE",
+      "pMHC_chains": "ABC",
+      "experimental_KD_M": "6e-10",
+      "experimental_pKD": "9.221848749616356",
+      "predicted_DG_kcal_mol": "",
+      "predicted_KD_M": 5.646763299921667e-07,
+      "predicted_pKD": 6.248200416564941,
+      "pKD_error_pred_minus_exp": -2.9736483330514147,
+      "intermolecular_contacts": ""
+    },
+    {
+      "pdb": "4jfd",
+      "state": "alpha24beta17 / G4A",
+      "model": "ProAffinity-GNN (simplified, corrected)",
+      "input_kind": "crystal",
+      "temperature_C": "",
+      "TCR_chains": "DE",
+      "pMHC_chains": "ABC",
+      "experimental_KD_M": "3.6e-05",
+      "experimental_pKD": "4.443697499232712",
+      "predicted_DG_kcal_mol": "",
+      "predicted_KD_M": 4.1135050625290553e-07,
+      "predicted_pKD": 6.3857879638671875,
+      "pKD_error_pred_minus_exp": 1.9420904646344752,
+      "intermolecular_contacts": ""
+    },
+    {
+      "pdb": "4jfe",
+      "state": "alpha24beta17 / I7A",
+      "model": "ProAffinity-GNN (simplified, corrected)",
+      "input_kind": "crystal",
+      "temperature_C": "",
+      "TCR_chains": "DE",
+      "pMHC_chains": "ABC",
+      "experimental_KD_M": "3.1e-05",
+      "experimental_pKD": "4.508638306165727",
+      "predicted_DG_kcal_mol": "",
+      "predicted_KD_M": 5.939636151605538e-07,
+      "predicted_pKD": 6.226240158081055,
+      "pKD_error_pred_minus_exp": 1.7176018519153278,
+      "intermolecular_contacts": ""
+    }
+  ],
+  "contrasts": [
+    {
+      "model": "PRODIGY 2.4.0",
+      "contrast": "4jff-3hg1",
+      "description": "TCR maturation",
+      "experimental_pKD_after_minus_before": 4.477121254719663,
+      "predicted_pKD_after_minus_before": 0.3717806254349032,
+      "experimental_KD_after_over_before": 3.333333333333332e-05,
+      "predicted_KD_after_over_before": 0.4248341056146192,
+      "same_direction": true,
+      "note": "Differences derived only after separate absolute predictions; no dedicated ddG model."
+    },
+    {
+      "model": "PRODIGY 2.4.0",
+      "contrast": "4jfd-4jff",
+      "description": "G4A peptide substitution",
+      "experimental_pKD_after_minus_before": -4.778151250383644,
+      "predicted_pKD_after_minus_before": 0.007349095755618151,
+      "experimental_KD_after_over_before": 60000.00000000003,
+      "predicted_KD_after_over_before": 0.9832204531289159,
+      "same_direction": false,
+      "note": "Differences derived only after separate absolute predictions; no dedicated ddG model."
+    },
+    {
+      "model": "PRODIGY 2.4.0",
+      "contrast": "4jfe-4jff",
+      "description": "I7A peptide substitution",
+      "experimental_pKD_after_minus_before": -4.713210443450629,
+      "predicted_pKD_after_minus_before": 0.25380084339329834,
+      "experimental_KD_after_over_before": 51666.666666666686,
+      "predicted_KD_after_over_before": 0.557441319000106,
+      "same_direction": false,
+      "note": "Differences derived only after separate absolute predictions; no dedicated ddG model."
+    },
+    {
+      "model": "ProAffinity-GNN (simplified, corrected)",
+      "contrast": "4jff-3hg1",
+      "description": "TCR maturation",
+      "experimental_pKD_after_minus_before": 4.477121254719663,
+      "predicted_pKD_after_minus_before": -0.14922714233398438,
+      "experimental_KD_after_over_before": 3.333333333333332e-05,
+      "predicted_KD_after_over_before": 1.4100260697567426,
+      "same_direction": false,
+      "note": "Differences derived only after separate absolute predictions; no dedicated ddG model."
+    },
+    {
+      "model": "ProAffinity-GNN (simplified, corrected)",
+      "contrast": "4jfd-4jff",
+      "description": "G4A peptide substitution",
+      "experimental_pKD_after_minus_before": -4.778151250383644,
+      "predicted_pKD_after_minus_before": 0.1375875473022461,
+      "experimental_KD_after_over_before": 60000.00000000003,
+      "predicted_KD_after_over_before": 0.7284713107393962,
+      "same_direction": false,
+      "note": "Differences derived only after separate absolute predictions; no dedicated ddG model."
+    },
+    {
+      "model": "ProAffinity-GNN (simplified, corrected)",
+      "contrast": "4jfe-4jff",
+      "description": "I7A peptide substitution",
+      "experimental_pKD_after_minus_before": -4.713210443450629,
+      "predicted_pKD_after_minus_before": -0.02196025848388672,
+      "experimental_KD_after_over_before": 51666.666666666686,
+      "predicted_KD_after_over_before": 1.0518656150662333,
+      "same_direction": true,
+      "note": "Differences derived only after separate absolute predictions; no dedicated ddG model."
+    }
+  ],
+  "GNN_audits": [
+    {
+      "pdb": "3hg1",
+      "audit_sha256": "07c24e2e757fe87fb216842922ff3feb80542e37dad95defe3501db3ff95a113",
+      "upstream_bug_fix": "In the seq2 ESM loop, output1=model(**input2) replaced by output2=model(**input2), so pMHC uses its own chain ESM outputs rather than stale last-peptide output. One-variable correction; architecture and checkpoint unchanged.",
+      "GNN_checkpoint_sha256": "3e56a6842e2e67acc16273cbb0aa3e452868f0cecf7f8099581dc6b71db727d2"
+    },
+    {
+      "pdb": "4jff",
+      "audit_sha256": "f44bc0bdc1c33e34e51c2dc73b286d5c76a5dc94fe23f473bda8f1dfdec424f3",
+      "upstream_bug_fix": "In the seq2 ESM loop, output1=model(**input2) replaced by output2=model(**input2), so pMHC uses its own chain ESM outputs rather than stale last-peptide output. One-variable correction; architecture and checkpoint unchanged.",
+      "GNN_checkpoint_sha256": "3e56a6842e2e67acc16273cbb0aa3e452868f0cecf7f8099581dc6b71db727d2"
+    },
+    {
+      "pdb": "4jfd",
+      "audit_sha256": "a21778cc06a846fddf63fd55a59cb3c379dace0e9e85566e8afdc4488df93140",
+      "upstream_bug_fix": "In the seq2 ESM loop, output1=model(**input2) replaced by output2=model(**input2), so pMHC uses its own chain ESM outputs rather than stale last-peptide output. One-variable correction; architecture and checkpoint unchanged.",
+      "GNN_checkpoint_sha256": "3e56a6842e2e67acc16273cbb0aa3e452868f0cecf7f8099581dc6b71db727d2"
+    },
+    {
+      "pdb": "4jfe",
+      "audit_sha256": "67500fa1d2ba11b6d3c17bc9b894c6043c51363c84f35188ad6158267429e6d3",
+      "upstream_bug_fix": "In the seq2 ESM loop, output1=model(**input2) replaced by output2=model(**input2), so pMHC uses its own chain ESM outputs rather than stale last-peptide output. One-variable correction; architecture and checkpoint unchanged.",
+      "GNN_checkpoint_sha256": "3e56a6842e2e67acc16273cbb0aa3e452868f0cecf7f8099581dc6b71db727d2"
+    }
+  ],
+  "PRODIGY": "Official prodigy-prot 2.4.0 / FreeSASA 2.2.1, no approximation substitutions.",
+  "ProAffinity_scope": "Authors simplified inference checkpoint, single upstream variable correction and explicit PDBQT preparation differences. Report implementation conditions; do not assert general model or family-held-out performance."
+}

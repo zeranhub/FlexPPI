@@ -1,0 +1,68 @@
+{
+  "query": {
+    "query": {
+      "type": "terminal",
+      "service": "sequence",
+      "parameters": {
+        "evalue_cutoff": 0.1,
+        "identity_cutoff": 0.9,
+        "sequence_type": "protein",
+        "value": "MRILMVGLDAAGKTTILYKLKLGEIVTTIPTIGFNVETVEYKNISFTVWDVGGQDKIRPLWRHYFQNTQGLIFVVDSNDRERVNEAREELMRMLAEDELRDAVLLVFANKQDLPNAMNAAEITDKLGLHSLRHRNWYIQATCATSGDGLYEGLDWLSNQL"
+      }
+    },
+    "return_type": "polymer_entity",
+    "request_options": {
+      "paginate": {
+        "start": 0,
+        "rows": 10
+      }
+    }
+  },
+  "response": {
+    "query_id": "805b8d36-3c5e-4418-9657-b7c6e82b6eba",
+    "result_type": "polymer_entity",
+    "total_count": 61,
+    "result_set": [
+      {
+        "identifier": "1HUR_1",
+        "score": 1.0
+      },
+      {
+        "identifier": "1R8Q_1",
+        "score": 1.0
+      },
+      {
+        "identifier": "1R8S_1",
+        "score": 1.0
+      },
+      {
+        "identifier": "1RE0_1",
+        "score": 1.0
+      },
+      {
+        "identifier": "1RRF_1",
+        "score": 1.0
+      },
+      {
+        "identifier": "1RRG_1",
+        "score": 1.0
+      },
+      {
+        "identifier": "1S9D_1",
+        "score": 1.0
+      },
+      {
+        "identifier": "1U81_1",
+        "score": 1.0
+      },
+      {
+        "identifier": "3O47_1",
+        "score": 1.0
+      },
+      {
+        "identifier": "4C0A_2",
+        "score": 1.0
+      }
+    ]
+  }
+}

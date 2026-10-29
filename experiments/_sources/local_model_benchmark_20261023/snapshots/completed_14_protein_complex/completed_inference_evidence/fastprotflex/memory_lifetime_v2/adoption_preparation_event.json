@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-10-23T19:04:31.776162+00:00",
+  "reason": "Original unchanged implementation waiting for available RAM; validate isolated lifetime-only resource reduction",
+  "original_completed_records": 3055,
+  "last_wait": {
+    "status": "waiting_for_available_RAM",
+    "sample_id": "1tg7_A",
+    "available_mib": 4747.140625,
+    "required_available_mib": 4799.19225692749,
+    "estimated_R_process_tree_rss_mib": 3727.993267636009,
+    "wait_seconds": 60.00965459999861
+  },
+  "no_R_process_before_stop": true,
+  "stopped_controller_pid": 14592,
+  "stopped_waiting_Fast_pid": 43848,
+  "original_full_log_sha256": "e10c260b49beb9d7f6346fb119393a097ac3f84be48b7020e5d009bf9bec8e9a",
+  "not_yet_adopted": true,
+  "stopped_actual_processes_confirmed": true
+}

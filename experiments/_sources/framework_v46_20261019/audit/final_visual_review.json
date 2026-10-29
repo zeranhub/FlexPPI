@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "reviewer": "fig1_journal_design",
+  "figure1_sha256": "ee158b4acbeb651e11c991035912b94878bd765230f7ec8ff43ccd3b4bc917eb",
+  "figure1_pdf_sha256": "3740148da22d2f938f6f2f8cd7fee37efb8c9acd2aa0fab9f72cb96419c8504e",
+  "inspection": {
+    "final_png_opened": true,
+    "local_pdf_render_opened": true,
+    "pdf_renderer": "Poppler pdftoppm; local PDF rendered at 137.409836 dpi, corresponding to a 167.64 mm insertion at 150 dpi",
+    "pdf_review_image": "audit/fig1_pdf_at_manuscript_width_150dpi.png",
+    "original_figure_also_opened_for_comparison": true,
+    "automatic_audit_only": false
+  },
+  "checks": [
+    {
+      "name": "overall_hierarchy_and_visual_vocabulary",
+      "status": "passed",
+      "notes": "The final image has a coherent input-to-encoding-to-shared-encoder-to-joint-readout-to-dynamics path. Small node, feature-strip, pair-grid and frame glyphs replace several text-heavy boxes. Stage headings and lower-panel titles provide a clear hierarchy. The old repeated LayerNorm/Linear/SiLU strips no longer dominate the graphic."
+    },
+    {
+      "name": "panel_b_local_frame_explanation",
+      "status": "passed",
+      "notes": "The muted chain is now a locator. Two residue frames i/j are visible and frame i leads to a separate, enlarged N–Cα–C drawing. Origin at Cα, C direction, orthogonal y direction, out-of-plane z symbol and local point q_i can be followed without text crossing the ribbon. The old arbitrary residue-name labels, large global XYZ overlay and multiple crowded coordinate systems were removed. The local-to-global transform sits with its relevant geometry."
+    },
+    {
+      "name": "panel_a_profiles_and_labels",
+      "status": "passed",
+      "notes": "The residue-network glyph does not overlap its label. The color-bar endpoints occupy a separate row above the RMSF/Hχ profile titles. The profile carries a residue index and the two original unit/range labels. The rightmost color-bar annotation is close to the image edge but complete and readable in both inspected outputs."
+    },
+    {
+      "name": "panel_c_attention_flow_and_connectors",
+      "status": "passed",
+      "notes": "Scalar, pair and point-distance terms converge on the plain-language score and then softmax. Arrows stop above the score text and do not cross it. Weighted values, pair representation and points return to a visible merge/project/update operation. The three information colors remain consistent with panel a."
+    },
+    {
+      "name": "panel_d_supervision_flow",
+      "status": "passed",
+      "notes": "The MD-observation route and joint-readout route enter the loss separately. MD mean/observed variance and model mean/predicted variance are visually distinguishable. The summed variance is shown inside the Gaussian NLL module. Snapshot renderings are aligned and do not carry a misleading universal duration."
+    },
+    {
+      "name": "manuscript_width_and_export_legibility",
+      "status": "passed",
+      "notes": "The local PDF was rendered to about 990 px width for the intended 167.64 mm insertion and actually opened. Main labels, backbone atom labels, frame axes, profile units and loss text remain readable. No clipped letter, accidental text overlap or intersecting arrow/text was observed. Source 9.1 pt minimum becomes about 8.336 pt at this insertion scale, consistent with the separately recorded render audit."
+    },
+    {
+      "name": "scope_of_reference_claims",
+      "status": "passed",
+      "notes": "The official Genome Biology article/figure-caption references inform organizational comparisons only. Published image viewing was unavailable in the tools and is recorded honestly in design_references.md. This review does not assert a mandatory journal figure style or claim that unviewed publisher images were visually inspected."
+    }
+  ],
+  "blocking_issues": [],
+  "notes": "This is an independent visual review of the frozen final PNG and a locally rendered final PDF, not a replacement for the separate model-content and source-data audits. The image is visibly cleaner than the previous figure, particularly panel b."
+}

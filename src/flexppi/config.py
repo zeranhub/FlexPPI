@@ -23,6 +23,7 @@ class DataConfig:
 
 @dataclass
 class ModelConfig:
+    information_ablation: str = "full"
     sequence_backend: str = "learned"
     esm_model_name: str = "facebook/esm2_t6_8M_UR50D"
     freeze_esm: bool = True
@@ -45,6 +46,7 @@ class ModelConfig:
 class TrainConfig:
     epochs: int = 20
     val_fraction: float = 0.1
+    resume: bool = True
     learning_rate: float = 3e-4
     weight_decay: float = 1e-4
     grad_clip: float = 1.0

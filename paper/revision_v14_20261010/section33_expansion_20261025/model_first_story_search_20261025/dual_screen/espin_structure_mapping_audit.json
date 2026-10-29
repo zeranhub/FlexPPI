@@ -1,0 +1,34 @@
+[
+  {
+    "model_chain": "A",
+    "chosen_original_chain": "A",
+    "matched": 331,
+    "model_n": 331,
+    "candidate_coverage": [
+      [
+        331,
+        "A"
+      ],
+      [
+        331,
+        "B"
+      ]
+    ]
+  },
+  {
+    "model_chain": "B",
+    "chosen_original_chain": "C",
+    "matched": 23,
+    "model_n": 23,
+    "candidate_coverage": [
+      [
+        23,
+        "C"
+      ],
+      [
+        23,
+        "D"
+      ]
+    ]
+  }
+]

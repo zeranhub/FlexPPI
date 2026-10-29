@@ -1,0 +1,1 @@
+图5由既有图4a、图7a–c与83条记录现成逐记录统计重新编排。主文件为fig5_joint_readouts_conformations.pdf/png/svg，Word用caption_zh.md。所有绘图点见all_plotted_points.csv；b/c另有带记录ID的源表；source保留未修改的原始表、NPZ与原绘图脚本。data_audit.json包含计数、原统计、源SHA256、输出SHA256及所有曲线数值/零计数断线一致性检查。未运行新MD、训练或推断。最终源字体均≥9pt，183mm宽插入167.64mm后最小8.245pt。

@@ -1,0 +1,130 @@
+{
+  "raw_static_findings": [
+    {
+      "check_id": "AP-0",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Typography baseline present",
+      "line": null
+    },
+    {
+      "check_id": "AP-0",
+      "pass_": false,
+      "category": "FAIL",
+      "message": "Missing CNS color palette (CATEGORICAL/DIVERGING)",
+      "line": null
+    },
+    {
+      "check_id": "AP-0",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Export baseline (pdf.fonttype=42, svg.fonttype='none') present",
+      "line": null
+    },
+    {
+      "check_id": "AP-1",
+      "pass_": true,
+      "category": "PASS",
+      "message": "No default palette detected",
+      "line": null
+    },
+    {
+      "check_id": "AP-2",
+      "pass_": true,
+      "category": "PASS",
+      "message": "No jet/rainbow colormap",
+      "line": null
+    },
+    {
+      "check_id": "AP-3",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Top/right spines removed",
+      "line": null
+    },
+    {
+      "check_id": "AP-4",
+      "pass_": false,
+      "category": "WARN",
+      "message": "Legend may occlude data — no bbox_to_anchor or external placement found",
+      "line": null
+    },
+    {
+      "check_id": "AP-5",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Vector export present",
+      "line": null
+    },
+    {
+      "check_id": "AP-6",
+      "pass_": true,
+      "category": "PASS",
+      "message": "N/A — not a bar/box plot",
+      "line": null
+    },
+    {
+      "check_id": "AP-7",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Arial/Helvetica font set",
+      "line": null
+    },
+    {
+      "check_id": "CL-1",
+      "pass_": true,
+      "category": "PASS",
+      "message": "All font sizes >= 5pt (min: 6pt)",
+      "line": null
+    },
+    {
+      "check_id": "CL-2",
+      "pass_": true,
+      "category": "WARN",
+      "message": "No explicit dimension declaration — verify matches 89/183mm column",
+      "line": null
+    },
+    {
+      "check_id": "CL-3",
+      "pass_": true,
+      "category": "PASS",
+      "message": "All DPI values >= 300",
+      "line": null
+    },
+    {
+      "check_id": "CL-4",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Font embedding configured",
+      "line": null
+    },
+    {
+      "check_id": "CL-5",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Spine linewidth 0.6pt in range",
+      "line": null
+    },
+    {
+      "check_id": "CL-6",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Ticks outward",
+      "line": null
+    },
+    {
+      "check_id": "CL-7",
+      "pass_": true,
+      "category": "PASS",
+      "message": "Vector + raster both exported",
+      "line": null
+    }
+  ],
+  "independent_render_and_data_audit": "passed",
+  "manual_resolutions": {
+    "AP-0_color": "The mandatory source baseline uses DIVERGING with three spaces before =; the checker matches literal one-space spelling. Actual palette constants are copied verbatim and correct.",
+    "CL-2_dimensions": "PDF mediabox and canvas are 183 mm wide; the checker may not resolve tuple-assigned W,H and variable figsize.",
+    "CL-7_export": "PDF, SVG and 450dpi PNG are present and font embedding was verified with pdffonts.",
+    "AP-4_legend": "Legends are drawn explicitly in figure coordinates outside the quantitative axes, rather than via ax.legend; final PNGs independently inspected without occlusion."
+  }
+}

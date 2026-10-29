@@ -1,0 +1,209 @@
+{
+  "status": "passed_no_required_KIX_content_corrections",
+  "created_utc": "2026-10-10T10:12:09.750513+00:00",
+  "reviewed_docx": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v18_20261010_中文修订_复用KIX单轨迹_三线表.docx",
+  "reviewed_docx_sha256": "1ee8fed276ee8f86e854f79e242790af86def9d1352c9bc2881b2052e66485b1",
+  "docx_edited": false,
+  "scope": "Independent KIX content/data review only; not whole-manuscript layout or reference-list review",
+  "checks": {
+    "four_states_single_100ns": true,
+    "total_production_frames": 400000,
+    "no_independent_repeat_CI_or_p": true,
+    "all_six_L12_delta_directions_opposite": true,
+    "half_window_mll_minus_myb": [
+      -0.40217374999107935,
+      0.5113960820812633
+    ],
+    "ranking_range": [
+      0.7290223809870962,
+      0.8962965663045855
+    ],
+    "fold1_only": true,
+    "no_early_five_model_mix": true,
+    "KIX_tables_RMSF_only": true,
+    "AGP_Hchi_mask_not_mixed": true,
+    "note_Hchi": "KIX numerical tables report RMSF only. Historical full-frame Hchi recheck includes original Pro definition; no AG/P-excluded Hchi score or model Hchi value is imported into these tables.",
+    "hmu_auth_denial_not_used_as_absence_evidence": true,
+    "no_unjustified_convergence_binding_or_thermodynamic_function_claim": true,
+    "model_activity_localization_and_failed_response_prediction_distinguished": true
+  },
+  "state_results": {
+    "apo": {
+      "n_residues": 87,
+      "mae": 0.877400719018347,
+      "spearman": 0.8962965663045855,
+      "top20_n": 18,
+      "top20_overlap": 14,
+      "l12_model_top20": 7,
+      "l12_md_mean": 2.2785812355615658,
+      "l12_model_mean": 3.5241093625,
+      "table_S7_matches": true
+    },
+    "myb": {
+      "n_residues": 87,
+      "mae": 0.5039463653241248,
+      "spearman": 0.8811693518991032,
+      "top20_n": 18,
+      "top20_overlap": 16,
+      "l12_model_top20": 7,
+      "l12_md_mean": 2.5388618986463127,
+      "l12_model_mean": 3.250379175,
+      "table_S7_matches": true
+    },
+    "mll": {
+      "n_residues": 87,
+      "mae": 0.47717517253963765,
+      "spearman": 0.7290223809870962,
+      "top20_n": 18,
+      "top20_overlap": 11,
+      "l12_model_top20": 3,
+      "l12_md_mean": 2.5531209139889044,
+      "l12_model_mean": 1.9873276624999998,
+      "table_S7_matches": true
+    },
+    "both": {
+      "n_residues": 87,
+      "mae": 0.34136220614778184,
+      "spearman": 0.8464861121236421,
+      "top20_n": 18,
+      "top20_overlap": 14,
+      "l12_model_top20": 6,
+      "l12_md_mean": 3.2951148384600124,
+      "l12_model_mean": 1.93540095,
+      "table_S7_matches": true
+    }
+  },
+  "L12_deltas": [
+    {
+      "contrast": "myb-apo",
+      "md_delta": 0.26028066308474695,
+      "model_delta": -0.2737301875,
+      "absolute_error": 0.534010850584747,
+      "directions_opposite": true,
+      "table_S8_matches": true
+    },
+    {
+      "contrast": "mll-apo",
+      "md_delta": 0.2745396784273386,
+      "model_delta": -1.5367817000000001,
+      "absolute_error": 1.8113213784273388,
+      "directions_opposite": true,
+      "table_S8_matches": true
+    },
+    {
+      "contrast": "both-apo",
+      "md_delta": 1.0165336028984466,
+      "model_delta": -1.5887084125,
+      "absolute_error": 2.6052420153984466,
+      "directions_opposite": true,
+      "table_S8_matches": true
+    },
+    {
+      "contrast": "mll-myb",
+      "md_delta": 0.014259015342591663,
+      "model_delta": -1.2630515125000001,
+      "absolute_error": 1.2773105278425918,
+      "directions_opposite": true,
+      "table_S8_matches": true
+    },
+    {
+      "contrast": "both-myb",
+      "md_delta": 0.7562529398136997,
+      "model_delta": -1.314978225,
+      "absolute_error": 2.0712311648136996,
+      "directions_opposite": true,
+      "table_S8_matches": true
+    },
+    {
+      "contrast": "both-mll",
+      "md_delta": 0.741993924471108,
+      "model_delta": -0.051926712499999805,
+      "absolute_error": 0.7939206369711078,
+      "directions_opposite": true,
+      "table_S8_matches": true
+    }
+  ],
+  "quality_diagnostics": [
+    {
+      "state": "apo",
+      "metric": "KIX_CA_RMSD_angstrom",
+      "mean": 2.8426022913744458
+    },
+    {
+      "state": "both",
+      "metric": "KIX_CA_RMSD_angstrom",
+      "mean": 4.069939295360242
+    },
+    {
+      "state": "both",
+      "metric": "partner_A_native_atom_contact_fraction",
+      "mean": 0.33543186335403724
+    },
+    {
+      "state": "both",
+      "metric": "partner_A_native_residue_contact_fraction",
+      "mean": 0.5473003125
+    },
+    {
+      "state": "both",
+      "metric": "partner_C_native_atom_contact_fraction",
+      "mean": 0.2690047852760736
+    },
+    {
+      "state": "both",
+      "metric": "partner_C_native_residue_contact_fraction",
+      "mean": 0.4799306896551724
+    },
+    {
+      "state": "mll",
+      "metric": "KIX_CA_RMSD_angstrom",
+      "mean": 3.2316598293471257
+    },
+    {
+      "state": "mll",
+      "metric": "partner_C_native_atom_contact_fraction",
+      "mean": 0.23299631901840487
+    },
+    {
+      "state": "mll",
+      "metric": "partner_C_native_residue_contact_fraction",
+      "mean": 0.41586172413793104
+    },
+    {
+      "state": "myb",
+      "metric": "KIX_CA_RMSD_angstrom",
+      "mean": 3.902054611244832
+    },
+    {
+      "state": "myb",
+      "metric": "partner_A_native_atom_contact_fraction",
+      "mean": 0.27766360248447197
+    },
+    {
+      "state": "myb",
+      "metric": "partner_A_native_residue_contact_fraction",
+      "mean": 0.4673234375
+    }
+  ],
+  "numeric_comparison_tolerance": {
+    "absolute": 1e-07,
+    "relative": 1e-07,
+    "reason": "Float32 model predictions were exported as decimal residue CSV; recomputed source MAE differs from full-precision metric CSV only at approximately 1e-9 Angstrom. All manuscript table values match exact 0.001 formatting."
+  },
+  "issues": [],
+  "must_fix_issues": [],
+  "verified_source_sha256": {
+    "E:\\Project\\FlexPPI\\paper\\figures\\case_validation_v13_20261009\\data\\kix_fold1_all_residues.csv": "427cefe8d50d8b7226f1430e72e35dda9ca455d1edd2b619ee6fd395344971a5",
+    "E:\\Project\\FlexPPI\\paper\\figures\\case_validation_v13_20261009\\data\\kix_fold1_case_metrics.csv": "6f9c5ccc312f470ba4c576c58fd35a345e19b596519946e3f89976652e91cf9d",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\kix_existing_reuse_20261010\\summary\\state_summary.csv": "fc19039037f8e29c339fb7f6bd57255ff352e173affc93d5730d843bf7c06dbb",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\kix_existing_reuse_20261010\\summary\\l12_delta_summary.csv": "59cb96971c95bb76bf876749bfa841b654788364068aec8372e358ba686caca2",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\kix_existing_reuse_20261010\\summary\\quality_summary.csv": "b6e62293cd004e29a865f2f3091bac18d878f573f9e734e8ddd447a41fad86ee",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\kix_existing_reuse_20261010\\summary\\half_window_stability.csv": "270d1316e0af64380b2af1d1234de0c161203424273bd22a4863931aff52db91",
+    "E:\\Project\\FlexPPI\\artifacts\\kix_md_20260914\\pilot_results_20260916\\quality\\summary.json": "9bc5b7edc4368c74aaa7685fbc8acaf9e68a319b1486d76487ece7c86a0a2042",
+    "E:\\Project\\FlexPPI\\artifacts\\kix_md_20260914\\pilot_results_20260916\\quality\\trajectory_trace_binned.csv": "0cd696d55e858adbcca7fe6f1512dfb70a28fc141a55f04c823dfba4a34e2df1",
+    "E:\\Project\\FlexPPI\\artifacts\\kix_md_20260914\\pilot_results_20260916\\quality\\residue_window_metrics.csv": "c9a4a1604178cf05bc0c018749c937d3f49cd1a8cd28996564813e29bd162dad",
+    "E:\\Project\\FlexPPI\\artifacts\\kix_md_20260914\\pilot_results_20260916\\quality\\thermodynamics_all_samples.csv": "de6317fd584d42bb72dd56bbb64c2e54a86da77c6c16123afd30c4dc9bda8953",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\integrate_existing_kix.py": "578eb0ab160d3b2aa956c33dd2556ea5a8fced7ed9a093d20c5f0fcf5e5e0253"
+  },
+  "conclusion": "KIX tables S7/S8 and body statements match frozen Fold1 residue sources and independently recomputed summary data. All six state differences oppose MD; half-window sign reversal and single-trajectory limitations are explicit. The earlier optional wording suggestion has been incorporated; no remaining KIX content issue was found."
+}

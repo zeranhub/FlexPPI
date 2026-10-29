@@ -1,0 +1,77 @@
+{
+  "sample_id": "5b42_A",
+  "dataset": "atlas",
+  "fold": 1,
+  "plan_sha256": "fe7c01b66ae16f4101e28c13fdb93246f054acc7d6f26ac758caf8aec9995ffd",
+  "status": "complete",
+  "replica_audits": [
+    {
+      "mapping": [
+        {
+          "canonical_chain": "_",
+          "replica_chain": "_",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "frames": 501,
+      "original_frames": 1001,
+      "chi_residues": 96,
+      "chi_bond_instances_gt5A": 0,
+      "residue_coverage": 1.0,
+      "replica_index": 1
+    },
+    {
+      "mapping": [
+        {
+          "canonical_chain": "_",
+          "replica_chain": "_",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "frames": 501,
+      "original_frames": 1001,
+      "chi_residues": 96,
+      "chi_bond_instances_gt5A": 0,
+      "residue_coverage": 1.0,
+      "replica_index": 2
+    },
+    {
+      "mapping": [
+        {
+          "canonical_chain": "_",
+          "replica_chain": "_",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "frames": 501,
+      "original_frames": 1001,
+      "chi_residues": 96,
+      "chi_bond_instances_gt5A": 0,
+      "residue_coverage": 1.0,
+      "replica_index": 3
+    }
+  ],
+  "labels": {
+    "uniform_rep1": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\label_sensitivity\\labels\\uniform_rep1\\5b42_A.npz",
+      "sha256": "4da1b735c824d75b0b203935d375eebef9d45d41d5e88484b3a6440a77b2dd07",
+      "valid_counts": [
+        102,
+        96
+      ]
+    },
+    "uniform_available_replicas": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\label_sensitivity\\labels\\uniform_available_replicas\\5b42_A.npz",
+      "sha256": "c09f6b2b241f72c18c26521067aa016ec5e5e63394f62f03cf911ab0ddb7dc76",
+      "valid_counts": [
+        102,
+        96
+      ]
+    }
+  },
+  "replicas": 3,
+  "elapsed_seconds": 1.4840000001713634
+}

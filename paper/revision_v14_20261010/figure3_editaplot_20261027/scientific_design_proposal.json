@@ -1,0 +1,373 @@
+{
+  "status": "awaiting_user_confirmation",
+  "purpose": "用完整源数据重设计图3全部非结构子图，区分模型准确性、局部环境差异与MD占据关联。",
+  "panels": [
+    {
+      "panel": "b",
+      "purpose": "检验完整复合物环境是否恢复CaMKI连续调控核心的低RMSF。",
+      "primary": "全部25位点的原生编号294–318、MD/Full/Intra RMSF；303–316为预先定义的结构核心。",
+      "elements": "三条全序列绝对值曲线；可附同25位点MD/Full细节，两个视图均不裁剪观测。",
+      "source": "cam_all25.csv",
+      "n": 25
+    },
+    {
+      "panel": "c",
+      "purpose": "检验泛素全部有效侧链位置的预测幅值与MD是否一致。",
+      "primary": "MD Hχ、Full Hχ；66有效侧链，原72位置清单和有效掩码保留。",
+      "elements": "等物理比例的一致性散点、数学y=x线、MAE和Spearman；保留合法零值，标Q40/Q41/Q62。",
+      "source": "ubiquitin_72_position_profile_with_original_mask.csv",
+      "n": 66
+    },
+    {
+      "panel": "d",
+      "purpose": "检验同为Gln的六个位置能否恢复不同的局部侧链多样性。",
+      "primary": "全部6个Gln的MD/Full联合Hχ及起始复合物侧链SASA。",
+      "elements": "按MD Hχ排序的六组成对点，全部位点具名、右侧对齐SASA数值；不作SASA回归。",
+      "source": "ubiquitin_all6_Gln_Hchi_SASA_plot.csv",
+      "n": 6
+    },
+    {
+      "panel": "e",
+      "purpose": "检验同一个联合Hχ预测是否保留实际MD单角占据差异。",
+      "primary": "原表已经按氨基酸类型去均值的联合Full Hχ及逐χ角细箱熵。",
+      "elements": "四幅散点保留χ1/2/3/4的66/52/23/10点，零参考线、ρ和n；Q41/Q2特殊点形，不作拟合。",
+      "source": "defined_angles_long.csv",
+      "n": [
+        66,
+        52,
+        23,
+        10
+      ]
+    },
+    {
+      "panel": "f",
+      "purpose": "检验侧链Hχ相对主链RMSF的占据关联优势是否跨记录存在。",
+      "primary": "83记录内Full Hχ与Full RMSF对两个MD指标的同类型相关。",
+      "elements": "两指标各83个配对相关差Δρ点、零线、记录均值及来源分层重抽10000次的95%区间；来源用点形区分。",
+      "source": "retained_absolute_correlations_all498.csv",
+      "n": 83,
+      "explicit_analysis": "对同一记录作Full Hχ相关减Full RMSF相关；均值/CI保持记录等权，seed=20261026，来源ATLAS/DynaRepo/ITrace=30/23/30。"
+    }
+  ],
+  "editaplot_semantic_proposals": [
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_inputs\\b_camki_rmsf_understanding.json",
+      "file_sha256": "fb2bb61918a13707a5bba2a25ab78cd74bc78426f7c37a595e2a13c0532da7e1",
+      "proposal_hash": "6ca9875a2ef001afb382b8786a9f4d60bb414a8ae4a1e484ea5a2f4914500961",
+      "source_sha256": "63448cee6a43f802a6dfe41c53d7329ad6cdc58151bc445fe0b57365d0703261",
+      "column_decisions": [
+        {
+          "item_id": "source_000",
+          "item_type": "source_column",
+          "source_column": "CaMKI residue",
+          "semantic_role": "x",
+          "disposition": "render_primary",
+          "confidence": 1.0,
+          "evidence_codes": [
+            "user_confirmed_column_mapping"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        },
+        {
+          "item_id": "source_001",
+          "item_type": "source_column",
+          "source_column": "MD RMSF (A)",
+          "semantic_role": "series",
+          "disposition": "render_primary",
+          "confidence": 1.0,
+          "evidence_codes": [
+            "user_confirmed_column_mapping"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        },
+        {
+          "item_id": "source_002",
+          "item_type": "source_column",
+          "source_column": "Full RMSF (A)",
+          "semantic_role": "series",
+          "disposition": "render_primary",
+          "confidence": 1.0,
+          "evidence_codes": [
+            "user_confirmed_column_mapping"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        },
+        {
+          "item_id": "source_003",
+          "item_type": "source_column",
+          "source_column": "Intra RMSF (A)",
+          "semantic_role": "series",
+          "disposition": "render_primary",
+          "confidence": 1.0,
+          "evidence_codes": [
+            "user_confirmed_column_mapping"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        }
+      ],
+      "status": "awaiting_user_confirmation"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_inputs\\c_ubiquitin_agreement_understanding.json",
+      "file_sha256": "1896542a674b4b0b18c2998bd3e625333c9a1f227f514b7d2da871cc9619de35",
+      "proposal_hash": "9d0170d9fee5ca8c29a91e2b353acaed1ac83854610337c3dbea603adfe0c20b",
+      "source_sha256": "92bd39d4815e5647252f014d3343283464d96d05e88a001925229d35b00b0706",
+      "column_decisions": [
+        {
+          "item_id": "source_000",
+          "item_type": "source_column",
+          "source_column": "MD Hchi (nats)",
+          "semantic_role": "x",
+          "disposition": "render_primary",
+          "confidence": 1.0,
+          "evidence_codes": [
+            "user_confirmed_column_mapping"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        },
+        {
+          "item_id": "source_001",
+          "item_type": "source_column",
+          "source_column": "Full Hchi (nats)",
+          "semantic_role": "series",
+          "disposition": "render_primary",
+          "confidence": 1.0,
+          "evidence_codes": [
+            "user_confirmed_column_mapping"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        }
+      ],
+      "status": "awaiting_user_confirmation"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_inputs\\d_gln_pairs_understanding.json",
+      "file_sha256": "3668685a445e3423cb862a78adb48ffa7d9edcb244f831f604e6e57e2cd88745",
+      "proposal_hash": "e59f21b126f0f268f9e75a7d57609162a2d8f12764652dd740c19064f901fab4",
+      "source_sha256": "7923020bdc008f35cdbd73b8bfc61bf0466019a3f846b541a3a038536ad89c80",
+      "column_decisions": [
+        {
+          "item_id": "source_000",
+          "item_type": "source_column",
+          "source_column": "MD Hchi (nats)",
+          "semantic_role": "x",
+          "disposition": "render_primary",
+          "confidence": 1.0,
+          "evidence_codes": [
+            "user_confirmed_column_mapping"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        },
+        {
+          "item_id": "source_001",
+          "item_type": "source_column",
+          "source_column": "Full Hchi (nats)",
+          "semantic_role": "series",
+          "disposition": "render_primary",
+          "confidence": 1.0,
+          "evidence_codes": [
+            "user_confirmed_column_mapping"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        }
+      ],
+      "status": "awaiting_user_confirmation"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_inputs\\e_chi1_association_understanding.json",
+      "file_sha256": "29157563d92893d9ee8d05d8abd4075c6c92e14b82b97f7b01c23f7b5cd5d321",
+      "proposal_hash": "d2ee93a5e5e0140c3fa58407ddf2ea63d8e059bd26708bab07fe918e3751f4c2",
+      "source_sha256": "a484fdfc1f4b4f6d82f76987be495709418cdf68e812d5796384eaef074b235b",
+      "column_decisions": [
+        {
+          "item_id": "source_000",
+          "item_type": "source_column",
+          "source_column": "AA-centered joint Full Hchi (nats)",
+          "semantic_role": "x",
+          "disposition": "render_primary",
+          "confidence": 1.0,
+          "evidence_codes": [
+            "user_confirmed_column_mapping"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        },
+        {
+          "item_id": "source_001",
+          "item_type": "source_column",
+          "source_column": "AA-centered MD chi entropy (nats)",
+          "semantic_role": "series",
+          "disposition": "render_primary",
+          "confidence": 1.0,
+          "evidence_codes": [
+            "user_confirmed_column_mapping"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        }
+      ],
+      "status": "awaiting_user_confirmation"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_inputs\\e_chi2_association_understanding.json",
+      "file_sha256": "300645d779184f24083bc1c40ba103e12ab908ecb5682a6539bc666a2c3ea7be",
+      "proposal_hash": "d41cebd082d00724a94d3aba5043aa8b2630d79828df97a02e016a9d7d15ed29",
+      "source_sha256": "3ead351b0a6e264a7280be58031bf1067634aa75f97560ccf9b7755641a70e54",
+      "column_decisions": [
+        {
+          "item_id": "source_000",
+          "item_type": "source_column",
+          "source_column": "AA-centered joint Full Hchi (nats)",
+          "semantic_role": "x",
+          "disposition": "render_primary",
+          "confidence": 1.0,
+          "evidence_codes": [
+            "user_confirmed_column_mapping"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        },
+        {
+          "item_id": "source_001",
+          "item_type": "source_column",
+          "source_column": "AA-centered MD chi entropy (nats)",
+          "semantic_role": "series",
+          "disposition": "render_primary",
+          "confidence": 1.0,
+          "evidence_codes": [
+            "user_confirmed_column_mapping"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        }
+      ],
+      "status": "awaiting_user_confirmation"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_inputs\\e_chi3_association_understanding.json",
+      "file_sha256": "cafebea4d170a248fe95beda3b0f5f25a17eb0ac7c0ce7daf5afe13d4d4ef33c",
+      "proposal_hash": "4f2258082520342a8c834aa9ac488527dd8d53ba3ec61add92b1f6525aaf1bf5",
+      "source_sha256": "b2e2a2adcbe47726529eb6b1d45a9cf65cd6d3a670e3a8692fc1ad82fbec29b8",
+      "column_decisions": [
+        {
+          "item_id": "source_000",
+          "item_type": "source_column",
+          "source_column": "AA-centered joint Full Hchi (nats)",
+          "semantic_role": "x",
+          "disposition": "render_primary",
+          "confidence": 1.0,
+          "evidence_codes": [
+            "user_confirmed_column_mapping"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        },
+        {
+          "item_id": "source_001",
+          "item_type": "source_column",
+          "source_column": "AA-centered MD chi entropy (nats)",
+          "semantic_role": "series",
+          "disposition": "render_primary",
+          "confidence": 1.0,
+          "evidence_codes": [
+            "user_confirmed_column_mapping"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        }
+      ],
+      "status": "awaiting_user_confirmation"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_inputs\\e_chi4_association_understanding.json",
+      "file_sha256": "a9260de30894c8d0d2404c2e672bf91008929b452a0481368a2f93ffbdf1d5c5",
+      "proposal_hash": "7df4f844a698970b2cf1777e7fbccc0d4fe002e563f67cac58cb7205090b52ee",
+      "source_sha256": "a5157439d1a7bd07f203144342d5314a9789c0d668faad87863cb894bf021a95",
+      "column_decisions": [
+        {
+          "item_id": "source_000",
+          "item_type": "source_column",
+          "source_column": "AA-centered joint Full Hchi (nats)",
+          "semantic_role": "x",
+          "disposition": "render_primary",
+          "confidence": 1.0,
+          "evidence_codes": [
+            "user_confirmed_column_mapping"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        },
+        {
+          "item_id": "source_001",
+          "item_type": "source_column",
+          "source_column": "AA-centered MD chi entropy (nats)",
+          "semantic_role": "series",
+          "disposition": "render_primary",
+          "confidence": 1.0,
+          "evidence_codes": [
+            "user_confirmed_column_mapping"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        }
+      ],
+      "status": "awaiting_user_confirmation"
+    }
+  ],
+  "source_hashes": {
+    "all_plotted_values.csv": "233dcbf5e9222b248d46db9f5b377bde605c0905877209bfb8b375543b1a6b21",
+    "cam_all25.csv": "ebc5700ffcb1708f94d632816e854ea38e5397e7edba35d2d27b59503b36c473",
+    "contact_counts_retained_outside_main.csv": "309c3c0bbbd570dd8f8e630902c60d101acd425efc7531689e297cb05d00fa5d",
+    "defined_angles_long.csv": "8052306e31edf07f8cc7295ec8059c4e8dad6047354a834ea21fb0020e48ad0c",
+    "per_chi_correlations.csv": "d90af24843fc5d5fb08abd0a9d799b38ea7e4fe0afd8fb229d7c370f3c544205",
+    "retained_absolute_correlations_all498.csv": "0a503485bafbbf7f5604105936451610e2915949fcb00b17034f18dc43f41eae",
+    "retained_panel_statistics.csv": "452208e20db8dc345a85f18cd125e3526838d5b337b2dc092d0eb76b4a269552",
+    "retained_prediction_groups_all498.csv": "59f6c6e377bc62f2d129054207415b35680ffcefa4d3601901f0000edf559a7b",
+    "ubiquitin_72_position_profile_with_original_mask.csv": "90feb25545703d3e56347a627e2cf3461b08d493f4cf82e62ad89cce1c4a87bc",
+    "ubiquitin_all6_Gln_Hchi_SASA_plot.csv": "a9128a417e808da91afa87b3a112816691554e6710693a15ba3aeea04fc7ddc4"
+  },
+  "visual_contract": {
+    "font": "Arial",
+    "title_pt": 10,
+    "panel_letter_pt": 11,
+    "axis_and_tick_pt": 9,
+    "axis_width_pt": 0.6,
+    "Full": {
+      "color_hex": "#2166AC",
+      "line": "solid"
+    },
+    "Intra": {
+      "color_hex": "#9A633D",
+      "line": "dashed"
+    },
+    "MD": "black open symbols; dotted line where residue order is meaningful"
+  },
+  "origin_route": {
+    "kind": "task_specific_native_Origin_objects_using_EditaPlot_session_and_verification",
+    "reason": "The public CLI exact visual-style override currently covers XPS; this task requires ordinary line/scatter typography and line styles.",
+    "claim": "Only report an applied field after native object readback and exported visual QA pass."
+  },
+  "support_and_retained": "原始结构、掩码、编号、分组和来源仅用于身份/验证/标注；其余原始列完整保存，不增加曲线。Intra Hχ跨记录完整数据保留，不补造泛素Intra。",
+  "exclusions": [
+    "No smoothing, regression, outlier deletion or new experimental measurements.",
+    "Full/Intra are trained models using the same bound input, not measured bound/free states.",
+    "No MD resimulation, model refitting, generated conformations or binding free-energy prediction.",
+    "Original DOCX and structure panels are not modified by this figure design task."
+  ],
+  "requested_outputs": [
+    "editable Origin OPJU",
+    "vector PDF",
+    "PNG",
+    "TIF",
+    "source data and native object QA"
+  ],
+  "approval_record": null
+}

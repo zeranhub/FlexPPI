@@ -1,0 +1,75 @@
+{
+  "canvas_mm": [
+    183.0,
+    190.0
+  ],
+  "source": "family OOF fold1",
+  "panel_layout": "a,b top; d,e,f middle; c bottom",
+  "all3600_distances_used_in_counts": true,
+  "contact_counts": {
+    "le4": 53,
+    "le4p5": 79
+  },
+  "all21_sidechains_displayed": true,
+  "no_MD_drawn_in_main": true,
+  "no_numeric_tables": true,
+  "no_gray_notes": true,
+  "all_25_RMSF_and_21_Hchi_positions": true,
+  "core_defined_by_structural_anchors": [
+    303,
+    316
+  ],
+  "contacts_aggregated_by_lobe": true,
+  "all25_contact_rows_retained": true,
+  "main_figure_height_reduced_percent": 15.555555555555555,
+  "full_distance_matrix_in_source_data": true,
+  "plotted_counts": {
+    "c": 92,
+    "e": 42
+  },
+  "all_quantitative_axes_start_at_zero": true,
+  "axes": [
+    {
+      "metric": "rmsf",
+      "ylim": [
+        0,
+        8.2
+      ],
+      "range": [
+        0.44702804,
+        7.6058745
+      ]
+    },
+    {
+      "metric": "chi_entropy",
+      "ylim": [
+        0,
+        4.3
+      ],
+      "range": [
+        0.47041768,
+        3.8425083
+      ]
+    }
+  ],
+  "full_intra_are_model_variants_not_biological_states": true,
+  "model_palette": {
+    "Full": "#2166AC",
+    "Intra": "#B87936"
+  },
+  "outside_text": [],
+  "min_font": 6.2,
+  "context_render_present": true,
+  "visual_review": "passed: full-resolution composition, independent count/value and structure review, and final Word-scale page11 review",
+  "sha256": {
+    "png": "b4a20ef3baf14618bfb340d01d096201ce96ed8ef6353c2a09ea902ac57934f8",
+    "pdf": "3bfe2b6e0081aecc57ac04f8e1a6926a077ae6ee0c48beba66c04a9ef49c4f11",
+    "svg": "43475f22d3a665a04b022a2d0ac61bece684c52e2735d193123c7079f5e69374"
+  },
+  "font_embedding": "ArialMT and Arial-BoldMT embedded TrueType subsets; pdffonts verified",
+  "manual_style_resolutions": {
+    "AP-0": "Mandatory verbatim palette uses DIVERGING with three spaces, while the validator requires a single space; all baseline values match.",
+    "AP-4": "Legends occupy dedicated figure-coordinate white space outside data axes.",
+    "AP-6": "Contact bars represent exact per-residue counts; shielding bars represent one static descriptor per residue. Neither is a replicate group mean requiring a jitter layer."
+  }
+}

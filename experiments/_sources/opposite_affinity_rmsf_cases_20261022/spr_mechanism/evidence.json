@@ -1,0 +1,449 @@
+{
+  "analysis_id": "opposite_affinity_rmsf_SPR_mechanism_20261022",
+  "knowledge_scope": "Exploratory mechanism audit of already-seen predictions and affinity labels; not blinded selection or new experimental validation.",
+  "cases": [
+    {
+      "panel": "1G4_NYESO",
+      "mutation": "L3Y",
+      "parent_sequence": "SLLMWITQV",
+      "mutant_sequence": "SLYMWITQV",
+      "parent_crystal_template": "2BNQ",
+      "max_drop_A": 0.4511603116989136,
+      "max_drop_positions": "1",
+      "rmsf_all9_decrease": true,
+      "profile": [
+        {
+          "peptide_position": 1,
+          "parent_RMSF_A": 1.4543308019638062,
+          "mutant_RMSF_A": 1.0031704902648926,
+          "drop_A": 0.4511603116989136
+        },
+        {
+          "peptide_position": 2,
+          "parent_RMSF_A": 0.8377199769020081,
+          "mutant_RMSF_A": 0.6989970207214355,
+          "drop_A": 0.1387229561805725
+        },
+        {
+          "peptide_position": 3,
+          "parent_RMSF_A": 0.6842730045318604,
+          "mutant_RMSF_A": 0.6646771430969238,
+          "drop_A": 0.019595861434936523
+        },
+        {
+          "peptide_position": 4,
+          "parent_RMSF_A": 0.7878593802452087,
+          "mutant_RMSF_A": 0.7420222163200378,
+          "drop_A": 0.0458371639251709
+        },
+        {
+          "peptide_position": 5,
+          "parent_RMSF_A": 0.7348566651344299,
+          "mutant_RMSF_A": 0.6997843980789185,
+          "drop_A": 0.035072267055511475
+        },
+        {
+          "peptide_position": 6,
+          "parent_RMSF_A": 0.8292911648750305,
+          "mutant_RMSF_A": 0.7638934254646301,
+          "drop_A": 0.06539773941040039
+        },
+        {
+          "peptide_position": 7,
+          "parent_RMSF_A": 0.9768819212913512,
+          "mutant_RMSF_A": 0.9502438306808472,
+          "drop_A": 0.02663809061050404
+        },
+        {
+          "peptide_position": 8,
+          "parent_RMSF_A": 1.4250401258468628,
+          "mutant_RMSF_A": 1.3160525560379028,
+          "drop_A": 0.10898756980895996
+        },
+        {
+          "peptide_position": 9,
+          "parent_RMSF_A": 1.222287893295288,
+          "mutant_RMSF_A": 1.1171143054962158,
+          "drop_A": 0.10517358779907227
+        }
+      ],
+      "SPR_observations": [
+        {
+          "study_id": "pettmann_et_al",
+          "assay": "SPR",
+          "temperature_C": 37,
+          "KD_uM": 47.3,
+          "KD_error": 8.58,
+          "error_type": "SD",
+          "n": 3,
+          "n_min": 3,
+          "parent_KD_uM": 7.97,
+          "parent_KD_error": 2.55,
+          "parent_error_type": "SD",
+          "parent_n": 10,
+          "KD_ratio_mutant_over_parent": 5.934755332496863,
+          "affinity_ratio_mutant_over_parent": 0.16849894291754758,
+          "delta_pKD": -0.7734028193416993,
+          "doi": "10.7554/eLife.67092",
+          "source_url": "https://cdn.elifesciences.org/articles/67092/elife-67092-fig1-data2-v3.csv",
+          "source_locator": "Figure 1—source data 2; CSV line 6; columns 7-10 (Bmax constrained)",
+          "same_individual_assay_batch": "not_reported",
+          "selected_fit": "Bmax constrained",
+          "source_sha256": "8914db539f4ec2a42a879aea8571eaffbe39931fb09c34306e12a2587e047a62"
+        },
+        {
+          "study_id": "aleksic_et_al",
+          "assay": "SPR",
+          "temperature_C": 37,
+          "KD_uM": 30.0,
+          "KD_error": 1.0,
+          "error_type": "SEM",
+          "n": null,
+          "n_min": 3,
+          "parent_KD_uM": 7.2,
+          "parent_KD_error": 0.5,
+          "parent_error_type": "SEM",
+          "parent_n": null,
+          "KD_ratio_mutant_over_parent": 4.166666666666667,
+          "affinity_ratio_mutant_over_parent": 0.24000000000000002,
+          "delta_pKD": -0.6197887582883936,
+          "doi": "10.1016/j.immuni.2009.11.013",
+          "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2862301/supplementaryFiles",
+          "source_locator": "Table S1, PDF page 16, upper table data row 7, KD (μM) column; mean±SEM; n≥3 independent experiments",
+          "same_individual_assay_batch": "not_reported",
+          "selected_fit": "Aleksic conventional steady-state; unchanged across variants",
+          "source_sha256": "59b32f6d197f909a326a414cb8e689328a8829511a1244dcfb43adeeea882647"
+        }
+      ],
+      "input_scope": "all N/CA/C/O coordinates fixed to parent/template; amino-acid identity changed; no mutant conformational relaxation",
+      "dynamic_prediction_experimental_validation": "No matched mutant MD/NMR/residue-resolved RMSF validation identified in the retrieved primary sources."
+    },
+    {
+      "panel": "1G4_NYESO",
+      "mutation": "L3A",
+      "parent_sequence": "SLLMWITQV",
+      "mutant_sequence": "SLAMWITQV",
+      "parent_crystal_template": "2BNQ",
+      "max_drop_A": 0.16244852542877197,
+      "max_drop_positions": "1",
+      "rmsf_all9_decrease": false,
+      "profile": [
+        {
+          "peptide_position": 1,
+          "parent_RMSF_A": 1.4543308019638062,
+          "mutant_RMSF_A": 1.2918822765350342,
+          "drop_A": 0.16244852542877197
+        },
+        {
+          "peptide_position": 2,
+          "parent_RMSF_A": 0.8377199769020081,
+          "mutant_RMSF_A": 0.7825712561607361,
+          "drop_A": 0.05514872074127197
+        },
+        {
+          "peptide_position": 3,
+          "parent_RMSF_A": 0.6842730045318604,
+          "mutant_RMSF_A": 0.7143746614456177,
+          "drop_A": -0.030101656913757324
+        },
+        {
+          "peptide_position": 4,
+          "parent_RMSF_A": 0.7878593802452087,
+          "mutant_RMSF_A": 0.7636788487434387,
+          "drop_A": 0.02418053150177002
+        },
+        {
+          "peptide_position": 5,
+          "parent_RMSF_A": 0.7348566651344299,
+          "mutant_RMSF_A": 0.7304902076721191,
+          "drop_A": 0.004366457462310791
+        },
+        {
+          "peptide_position": 6,
+          "parent_RMSF_A": 0.8292911648750305,
+          "mutant_RMSF_A": 0.7849650979042053,
+          "drop_A": 0.044326066970825195
+        },
+        {
+          "peptide_position": 7,
+          "parent_RMSF_A": 0.9768819212913512,
+          "mutant_RMSF_A": 0.9466931223869324,
+          "drop_A": 0.030188798904418834
+        },
+        {
+          "peptide_position": 8,
+          "parent_RMSF_A": 1.4250401258468628,
+          "mutant_RMSF_A": 1.3997565507888794,
+          "drop_A": 0.0252835750579834
+        },
+        {
+          "peptide_position": 9,
+          "parent_RMSF_A": 1.222287893295288,
+          "mutant_RMSF_A": 1.2154699563980105,
+          "drop_A": 0.00681793689727761
+        }
+      ],
+      "SPR_observations": [
+        {
+          "study_id": "pettmann_et_al",
+          "assay": "SPR",
+          "temperature_C": 37,
+          "KD_uM": 7.04,
+          "KD_error": 1.49,
+          "error_type": "SD",
+          "n": 5,
+          "n_min": 5,
+          "parent_KD_uM": 7.97,
+          "parent_KD_error": 2.55,
+          "parent_error_type": "SD",
+          "parent_n": 10,
+          "KD_ratio_mutant_over_parent": 0.8833124215809285,
+          "affinity_ratio_mutant_over_parent": 1.1321022727272727,
+          "delta_pKD": 0.053885662254000266,
+          "doi": "10.7554/eLife.67092",
+          "source_url": "https://cdn.elifesciences.org/articles/67092/elife-67092-fig1-data2-v3.csv",
+          "source_locator": "Figure 1—source data 2; CSV line 4; columns 3-6 (Bmax fitted)",
+          "same_individual_assay_batch": "not_reported",
+          "selected_fit": "Bmax fitted",
+          "source_sha256": "8914db539f4ec2a42a879aea8571eaffbe39931fb09c34306e12a2587e047a62"
+        },
+        {
+          "study_id": "aleksic_et_al",
+          "assay": "SPR",
+          "temperature_C": 37,
+          "KD_uM": 6.6,
+          "KD_error": 0.5,
+          "error_type": "SEM",
+          "n": null,
+          "n_min": 3,
+          "parent_KD_uM": 7.2,
+          "parent_KD_error": 0.5,
+          "parent_error_type": "SEM",
+          "parent_n": null,
+          "KD_ratio_mutant_over_parent": 0.9166666666666666,
+          "affinity_ratio_mutant_over_parent": 1.090909090909091,
+          "delta_pKD": 0.037788560889400635,
+          "doi": "10.1016/j.immuni.2009.11.013",
+          "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2862301/supplementaryFiles",
+          "source_locator": "Table S1, PDF page 16, upper table data row 4, KD (μM) column; mean±SEM; n≥3 independent experiments",
+          "same_individual_assay_batch": "not_reported",
+          "selected_fit": "Aleksic conventional steady-state; unchanged across variants",
+          "source_sha256": "59b32f6d197f909a326a414cb8e689328a8829511a1244dcfb43adeeea882647"
+        }
+      ],
+      "input_scope": "all N/CA/C/O coordinates fixed to parent/template; amino-acid identity changed; no mutant conformational relaxation",
+      "dynamic_prediction_experimental_validation": "No matched mutant MD/NMR/residue-resolved RMSF validation identified in the retrieved primary sources."
+    },
+    {
+      "panel": "A6_TAX",
+      "mutation": "G4A",
+      "parent_sequence": "LLFGYPVYV",
+      "mutant_sequence": "LLFAYPVYV",
+      "parent_crystal_template": "1AO7",
+      "max_drop_A": 0.18181413412094105,
+      "max_drop_positions": "4",
+      "rmsf_all9_decrease": true,
+      "profile": [
+        {
+          "peptide_position": 1,
+          "parent_RMSF_A": 1.1401797533035278,
+          "mutant_RMSF_A": 0.9776408076286316,
+          "drop_A": 0.16253894567489624
+        },
+        {
+          "peptide_position": 2,
+          "parent_RMSF_A": 0.852332592010498,
+          "mutant_RMSF_A": 0.7483371496200562,
+          "drop_A": 0.1039954423904419
+        },
+        {
+          "peptide_position": 3,
+          "parent_RMSF_A": 0.8112903237342834,
+          "mutant_RMSF_A": 0.6899639964103699,
+          "drop_A": 0.12132632732391357
+        },
+        {
+          "peptide_position": 4,
+          "parent_RMSF_A": 0.9428350925445556,
+          "mutant_RMSF_A": 0.7610209584236145,
+          "drop_A": 0.18181413412094105
+        },
+        {
+          "peptide_position": 5,
+          "parent_RMSF_A": 0.7385733723640442,
+          "mutant_RMSF_A": 0.5970582962036133,
+          "drop_A": 0.1415150761604309
+        },
+        {
+          "peptide_position": 6,
+          "parent_RMSF_A": 0.6982616186141968,
+          "mutant_RMSF_A": 0.6037631630897522,
+          "drop_A": 0.09449845552444458
+        },
+        {
+          "peptide_position": 7,
+          "parent_RMSF_A": 0.7426339983940125,
+          "mutant_RMSF_A": 0.6545899510383606,
+          "drop_A": 0.08804404735565186
+        },
+        {
+          "peptide_position": 8,
+          "parent_RMSF_A": 1.0016851425170898,
+          "mutant_RMSF_A": 0.8822804093360901,
+          "drop_A": 0.11940473318099976
+        },
+        {
+          "peptide_position": 9,
+          "parent_RMSF_A": 1.038219928741455,
+          "mutant_RMSF_A": 0.951456904411316,
+          "drop_A": 0.08676302433013905
+        }
+      ],
+      "SPR_observations": [
+        {
+          "study_id": "pettmann_et_al",
+          "assay": "SPR",
+          "temperature_C": 37,
+          "KD_uM": 118.0,
+          "KD_error": 18.9,
+          "error_type": "SD",
+          "n": 3,
+          "n_min": 3,
+          "parent_KD_uM": 2.01,
+          "parent_KD_error": 0.437,
+          "parent_error_type": "SD",
+          "parent_n": 4,
+          "KD_ratio_mutant_over_parent": 58.70646766169155,
+          "affinity_ratio_mutant_over_parent": 0.017033898305084744,
+          "delta_pKD": -1.7686859498856369,
+          "doi": "10.7554/eLife.67092",
+          "source_url": "https://cdn.elifesciences.org/articles/67092/elife-67092-fig1-data3-v3.csv",
+          "source_locator": "Figure 1—source data 3; CSV line 15; columns 7-10 (Bmax constrained)",
+          "same_individual_assay_batch": "not_reported",
+          "selected_fit": "Bmax constrained",
+          "source_sha256": "abfc80f0edc5cbfcc9f9e60d242dff9c6a9bdcbb5b6d8b710c00c1172a1f2fdb"
+        }
+      ],
+      "input_scope": "all N/CA/C/O coordinates fixed to parent/template; amino-acid identity changed; no mutant conformational relaxation",
+      "dynamic_prediction_experimental_validation": "No matched mutant MD/NMR/residue-resolved RMSF validation identified in the retrieved primary sources."
+    }
+  ],
+  "all26_primary_single_mutants_positive_delta_pKD": [
+    {
+      "candidate": "1G4_NYESO_SLAMWITQV",
+      "delta_pKD": 0.0458371115717004
+    }
+  ],
+  "A6_G4A_mechanistic_evidence": {
+    "primary_paper": "Piepenbrink KH et al. Nature Communications 2013;4:1948",
+    "doi": "10.1038/ncomms2948",
+    "url": "https://www.nature.com/articles/ncomms2948",
+    "fulltext_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3708045/",
+    "fulltext_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3708045/fullTextXML",
+    "evidence_locators": [
+      "Results P13 / Fig3a",
+      "Discussion P28 / Fig7 caption",
+      "Methods Surface plasmon resonance"
+    ],
+    "experiment": "SPR double-mutant cycles, 25 C; inter-residue energetic coupling, not direct G4A dynamics.",
+    "measured_coupling_kcal_mol": {
+      "T98alpha_R65HLA": -2.8,
+      "D99alpha_R65HLA": [
+        -3.4,
+        -3.0
+      ],
+      "D99Nalpha_R65HLA": -2.5
+    },
+    "source_structural_explanation": "Tax peptide Gly4 lacks a Cbeta, allowing the bound CDR3alpha conformation that forms strong T98alpha/D99alpha interactions with HLA Arg65. Adding a position-4 Cbeta is shown to create steric crowding against the Thr98alpha carbonyl in Fig7.",
+    "important_distinction": "Fig7 added-Cbeta illustration is a structural rationale; no experimentally solved G4A-bound structure or G4A-specific MD/NMR validation is claimed.",
+    "no_cross_temperature_energy_conversion": true,
+    "checked_parent_1AO7_polar_heavy_atom_distances_A": [
+      {
+        "atom1": "D:THR98:OG1",
+        "atom2": "A:ARG65:NH2",
+        "distance": 2.942307710647583
+      },
+      {
+        "atom1": "D:ASP99:OD1",
+        "atom2": "A:ARG65:NE",
+        "distance": 2.850537061691284
+      },
+      {
+        "atom1": "D:ASP99:OD1",
+        "atom2": "A:ARG65:NH2",
+        "distance": 3.1347994804382324
+      }
+    ],
+    "geometry_definition": "Atom-atom distances in original parent PDB 1AO7; N/O pairs <=3.5 A are polar-contact-compatible geometry only, without hydrogen or angle test. No hydrogen-bond occupancy, free energy or mutant loss is inferred from distances alone.",
+    "verbatim_short_quote": "formation of the strong interactions with between CDR3α and Arg65 is dependent on the presence of glycine at peptide position 4",
+    "quote_note": "Original PMC Fig7 caption contains duplicated words with between; preserve verbatim. 25 words by whitespace."
+  },
+  "1G4_parent_structure_observations": {
+    "actual_sequences": {
+      "2BNQ": "SLLMWITQV",
+      "2BNR": "SLLMWITQC"
+    },
+    "peptide_P1_min_TCR_heavy_atom_distance_A": 6.984382152557373,
+    "peptide_P3_min_TCR_heavy_atom_distance_A": 5.04121208190918,
+    "P1_and_P3_contacts_within_4_5A": "Only HLA in parent 2BNQ; full contacts CSV retained.",
+    "interpretation": "Largest P1 RMSF decreases for L3Y and L3A concern the N-terminal MHC-groove region; not direct evidence that TCR-facing contacts improve.",
+    "L3Y_mutant_structure_or_dynamics": "Not identified in the retrieved primary sources; cannot claim a newly observed specific lost hydrogen bond, steric clash, or entropy mechanism.",
+    "L3A_affinity_interpretation": "Approximately preserved affinity; about 1.11-fold point-estimate improvement, not a strong enhancement and no significance inferred."
+  },
+  "dynamic_background_reference": {
+    "citation": "Scott DR et al. J Mol Biol 2011;414:385-400",
+    "doi": "10.1016/j.jmb.2011.10.006",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3230710/",
+    "methods": "Free A6 crystal structure; time-resolved fluorescence anisotropy; MD on free A6.",
+    "applies_to": "A6 CDR3 loop conformational flexibility, not G4A mutant peptide RMSF.",
+    "access": "Primary PMC text retrieved via agent-reach Exa search. EuropePMC fullTextXML endpoint returned JSON HTTP500 twice; archived errors, not accepted as XML."
+  },
+  "reserve_9C9V_background_not_main_case": {
+    "citation": "Chen JL et al. J Exp Med 2005;201:1243-1255",
+    "doi": "10.1084/jem.20042323",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2213140/",
+    "SPR_25C": {
+      "9C_KD_uM": 13.3,
+      "9V_KD_uM": 5.0,
+      "affinity_improvement_fold": 2.66
+    },
+    "real_paired_crystals": {
+      "9C": "2BNR",
+      "9V": "2BNQ"
+    },
+    "reason_not_main_opposite_group": "Only moderate 2.66-fold affinity improvement; native-template predicted P9 RMSF decline is only 0.0723 A, not the proposed large-drop positive arm. Different geometry inputs also differ from fixed-backbone mutant analysis."
+  },
+  "manuscript_use_verdict": {
+    "positive_model_validation": false,
+    "suitable_role": "Exploratory counterexample / mechanistically informed negative control for interpreting predicted flexibility; can motivate context-aware residue-level interpretation.",
+    "cannot_claim": [
+      "RMSF decrease experimentally verified for A6 G4A or 1G4 L3Y/L3A",
+      "Model predicted the G4A new bound conformation or loss of HLA Arg65 interactions",
+      "Reduced bound RMSF establishes a binding entropy benefit",
+      "A6/1G4 provide matched large-drop strong-affinity-up and strong-affinity-down groups"
+    ],
+    "pairing_with_real_structure_MD_cases": "Do not pool fixed-parent virtual mutant predictions with real paired-structure/MD cases as equal evidence levels."
+  },
+  "source_files": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_peptide_max_rmsf_drop_20261022\\direct_affinity\\primary_26_single_mutants_ranked.csv": {
+      "sha256": "d9def7b3ddeec5b05e93ee3a37c9cf1a300880c40fbefe4e594da9c6a31f181a",
+      "bytes": 25290
+    },
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_observations_reported_hybrid.csv": {
+      "sha256": "bec742b44a2355275a668a0b5a20ed570096d19a757a40905edd59b4ed09bd3b",
+      "bytes": 58712
+    },
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\opposite_affinity_rmsf_cases_20261022\\spr_mechanism\\piepenbrink2013_fullText.xml": {
+      "sha256": "7423800e77d35890b1c73b7fdc631f4e4b866562d352b2123c0a4938be6e1ff5",
+      "bytes": 107621
+    },
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\opposite_affinity_rmsf_cases_20261022\\spr_mechanism\\chen2005_fullText.xml": {
+      "sha256": "1fe2a5daffcd1081aec53ec2a4e0bb876f565ec8e19f32db58ce6b0f8517c665",
+      "bytes": 125601
+    },
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\opposite_affinity_rmsf_cases_20261022\\spr_mechanism\\parent_crystal_peptide_contacts.csv": {
+      "sha256": "1e85946862f0df41f3fe0ca1a1b60f9d314dece848f45ae7b2a4963a4db9a022",
+      "bytes": 17618
+    }
+  }
+}

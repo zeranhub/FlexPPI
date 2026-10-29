@@ -1,0 +1,17 @@
+{
+  "python": "3.11.16",
+  "platform": "Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.31",
+  "packages": {
+    "torch": "2.6.0",
+    "numpy": "2.4.6",
+    "pyyaml": "6.0.3",
+    "scipy": "1.17.1",
+    "pandas": "2.3.3",
+    "biopython": "not installed"
+  },
+  "cuda_runtime": "12.4",
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "gpu_memory_bytes": 12622954496,
+  "environment": "Isolated training_env inherits existing torch runtime without altering base environment",
+  "clock_note": "Server and local wall clocks differ by approximately 11.5 minutes; use recorded local durations, not cross-host timestamp subtraction."
+}

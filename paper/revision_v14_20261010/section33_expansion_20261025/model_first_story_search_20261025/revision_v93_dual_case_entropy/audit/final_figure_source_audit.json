@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "all908_values_and_SASA_checked": true,
+  "source_value_max_abs_difference": 7.105427357601002e-15,
+  "bootstrap_summary_rows": 24,
+  "CI_max_abs_difference": 7.105427357601002e-15,
+  "record_stratified_not_family_intervals": true,
+  "metrics": {
+    "CaM25_Full_RMSF_MAE_A": 0.1148592012,
+    "CaM25_Intra_RMSF_MAE_A": 2.383203344,
+    "Ub66_Hchi_MAE_nats": 0.07953050649754886,
+    "Gln6_Hchi_MAE_nats": 0.1050252914428711,
+    "Gln6_rho": 0.942857142857143
+  },
+  "native_session_geometry_audit": "passed",
+  "final_main_asset_sha256": {
+    "png": "a3b8c18fb3d52e0f5a1143ccd7af4a418940151af1f131a4233f70aae0cfc0bc",
+    "pdf": "ceee6ccbcc222101f55edb258f98168d63913d87ae07db5d6de5ed255adaae2b",
+    "svg": "622350a6199fcf676d343c37ee6d3a21202eb16e2b6ece605ac3edb3e2f92e60"
+  },
+  "actual_font_embedding": "passed",
+  "Word_managed_by_separate_build_audit": true,
+  "style_raw_counts": {
+    "PASS": 13,
+    "WARN": 2,
+    "FAIL": 2
+  }
+}

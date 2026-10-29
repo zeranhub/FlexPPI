@@ -1,0 +1,20 @@
+{
+  "interface_definition": "C-alpha to C-alpha distance <=8 \u00c5, union of either-state interface; same definition as evaluate_itrace_benchmark.py:interface_mask.",
+  "state_interface_flag_mismatches": {
+    "3hg1": [],
+    "4jff": []
+  },
+  "K68": {
+    "hchi_md_a": 3.28157680901765,
+    "hchi_md_b": 3.046540223547726,
+    "hchi_md_delta": -0.23503658546992412,
+    "hchi_full_a": 3.0165817737579346,
+    "hchi_full_b": 2.7691805362701416,
+    "hchi_full_delta": -0.24740123748779297,
+    "hchi_pMHC_only_a": 3.365015745162964,
+    "hchi_pMHC_only_b": 3.401029109954834,
+    "hchi_pMHC_only_delta": 0.03601336479187012
+  },
+  "status": "passed",
+  "interpretation": "Static input removal tests input dependence of this joint model, not causal biological entropy or affinity change; pMHC coordinates differ between structures and are retained in both inputs."
+}

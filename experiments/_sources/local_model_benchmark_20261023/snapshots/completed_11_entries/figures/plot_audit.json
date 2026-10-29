@@ -1,0 +1,40 @@
+{
+  "generated_utc": "2026-10-23T16:33:50.219805+00:00",
+  "plot_script_sha256": "6183f1f648a5516d0a87608675f1088aa65780a9a0ba71849c07ba87cdc30c89",
+  "summary_sha256": "d50bbcc4210fd97a904119dbd882739a5eaa9ecdb5e94e1cfb02e553756a491e",
+  "scoring_audit_sha256": "b16133f4f8a12f7ca760eef00b8b684b02e0da6681537a8b350171e2c6c7a86c",
+  "methods": [
+    "Full",
+    "Intra",
+    "backflip-2.1 (assembly)",
+    "backflip-2.1 (chains)",
+    "backflip-1.0 (assembly)",
+    "backflip-1.0 (chains)",
+    "DynaProt-M",
+    "ANM",
+    "GNM",
+    "Static",
+    "AA"
+  ],
+  "records": 3063,
+  "primary_groups": {
+    "single_chain": 2193,
+    "other_multichain": 626,
+    "tcr_pmhc_itrace": 244
+  },
+  "style_reference": "Science AlphaMissense Fig2A-C: fixed method rows and independent benchmark columns; adapted to dot intervals.",
+  "all_observations_in_ecdf": true,
+  "ecdf_x_limits": [
+    -0.2,
+    1
+  ],
+  "spearman_mean_x_limits": [
+    -0.1,
+    1
+  ],
+  "no_score_based_selection": true,
+  "confidence_intervals": "Record-weighted family-cluster bootstrap; TCR-pMHC single family descriptive points only.",
+  "absolute_mae_missing": "Relative outputs are explicitly labeled; no test-fitted scaling.",
+  "progress_snapshot": true,
+  "unfinished_methods_in_primary_figure": false
+}

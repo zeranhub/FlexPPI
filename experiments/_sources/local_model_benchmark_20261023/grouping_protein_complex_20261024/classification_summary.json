@@ -1,0 +1,21 @@
+{
+  "records": 3063,
+  "counts": {
+    "protein": 2203,
+    "protein_complex": 860
+  },
+  "classification_status_counts": {
+    "confirmed_single_input_chain": 2193,
+    "confirmed_distinct_uniprot_by_sequence": 514,
+    "confirmed_tcr_pmhc_source": 244,
+    "reviewed_official_protein_names_and_MD_sequence": 98,
+    "reviewed_mature_protein_boundary_root_approved": 10,
+    "confirmed_same_official_entity_by_sequence": 4
+  },
+  "source_PDB_with_sequences": 586,
+  "other_multichain_records": 626,
+  "policy_sha256": "c5e0868acd3fb90639d3205843c5f281e8292c6b1868e115210e958130493bdb",
+  "membership_sha256": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac",
+  "model_performance_read": false,
+  "model_inference_run": false
+}

@@ -1,0 +1,9 @@
+panel_kind,metric_key,value_key,contrast,n_records,mean,bootstrap_95_low,bootstrap_95_high,positive_records,negative_records
+correlation,fine_entropy,rho_type_centered,full_hchi_minus_intrachain_hchi,83,0.016654261316848818,0.0067178279530663099,0.026810573010429214,58,25
+correlation,fine_entropy,rho_type_centered,full_hchi_minus_full_rmsf,83,0.18932412493225415,0.1712002891077109,0.20649702502727774,79,4
+correlation,lowF_width,rho_type_centered,full_hchi_minus_intrachain_hchi,83,0.0085197693743222901,-0.0030375286390367578,0.020388185395645301,50,33
+correlation,lowF_width,rho_type_centered,full_hchi_minus_full_rmsf,83,0.16101672114553212,0.14300183264303865,0.17887273596344244,78,5
+prediction_selection,fine_entropy,high_minus_low_MD,full_hchi_minus_intrachain_hchi,83,0.011932508435837815,0.0017648875491740768,0.021925756334726411,52,31
+prediction_selection,fine_entropy,high_minus_low_MD,full_hchi_minus_full_rmsf,83,0.094698554795188586,0.081653664857371994,0.1074887412195985,73,10
+prediction_selection,lowF_width,high_minus_low_MD,full_hchi_minus_intrachain_hchi,83,0.21513030499998639,-0.12787535719964416,0.55272159574538438,42,41
+prediction_selection,lowF_width,high_minus_low_MD,full_hchi_minus_full_rmsf,83,2.6710566623003364,2.170291205668863,3.1840407617676791,71,12

@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "reviewer": "fig1_journal_design",
+  "figure1_sha256": "ba882effd76b9bd766686ddf6ed45cbe89a9c6d0de04a7a88da0407a6f7572de",
+  "figure1_pdf_sha256": "60cc8004abc94e32017510a17f70489788f0dbf5a55eb655566ce533c3a846b2",
+  "inspection": {
+    "final_native_png_opened": true,
+    "final_pdf_render_opened": true,
+    "original_v13_pdf_render_opened_at_same_width": true,
+    "pdf_renderer": "Poppler pdftoppm at 137.409836 dpi; equivalent to 167.64 mm manuscript insertion at 150 dpi",
+    "final_pdf_review_image": "audit/fig1_pdf_at_manuscript_width_150dpi.png",
+    "original_pdf_comparison_image": "audit/fig1_original_pdf_at_manuscript_width_150dpi.png",
+    "automatic_audit_only": false,
+    "review_scope": "Overall aesthetic comparison, a/b rendering consistency, original architecture hierarchy, panel-b molecular explanation, lower-row density and legibility. This is not a claim of user acceptance or a journal-specific standard.",
+    "repaired_final_png_reopened": true,
+    "repaired_final_pdf_rerendered_and_reopened": true
+  },
+  "overall_assessment": "The candidate preserves the original figure's dense two-row composition and architecture detail, instead of repeating the rejected v46 flattening. Its strongest concrete improvement is panel b: a real D-chain structure with matching green and two frame locations is paired with a true molecular close-up, while the large central global axes and three competing residue-name labels are removed. Panel a retains the layered encoder, residual paths, internal MLP stages, structural output and prediction profiles. This is a targeted refinement of the original, not a wholesale stylistic replacement. The comparison supports delivery for the user's review; it does not assert that all aesthetic preferences have been settled.",
+  "checks": [
+    {
+      "name": "original_composition_and_architecture_depth",
+      "status": "passed",
+      "notes": "Original and final local-PDF renders were actually opened at the same effective width. Both retain five stages across the top and three detail columns beneath. The final keeps the four-block layered outline, front IPA node detail, FFN/residual paths, final norm and four internal readout layers. The visual depth and density lost in v46 are restored. Routine labels are lighter in weight, while stage and panel titles still establish hierarchy."
+    },
+    {
+      "name": "a_b_molecular_style_consistency",
+      "status": "passed",
+      "notes": "In the actual final full figure, a and b share thin cartoon traces, narrow beta-strand arrows, restrained shading and crisp white-background edges. The b structure uses the same green identity as D in the a structure and its chain legend. The b molecule no longer appears as an unrelated pale-blue thick tube or a different illustrative style. The larger scale and dark green give the bottom-left panel visual weight appropriate to its molecular subject."
+    },
+    {
+      "name": "panel_b_spatial_detail_and_balance",
+      "status": "passed",
+      "notes": "The real D-chain ribbon remains the primary shape; two local-frame positions i/j are visible. A compact molecular enlargement sits at the right-lower edge and is connected to i, with N/Cα/C and local axes around an actual ball-and-stick segment. This carries more molecular detail and material depth than the rejected planar three-point view. Its title has a distinct top row and does not touch the upper atoms. The global triad is subordinate at lower left, and the transformation formula sits separately beneath the inset. The inset overlays a small area of the locator but leaves the chain silhouette and both frame positions readable."
+    },
+    {
+      "name": "feature_glyph_quality_and_consistent_palette",
+      "status": "passed",
+      "notes": "The top residue glyph uses blue nodes with attached short feature marks; the pair glyph has restrained channel-layer offsets. Panel c carries miniature scalar, pair and point illustrations inside the original three ingredient cards, which gives the cards an identifiable representation rather than only large text. Blue, ochre and violet meanings are stable across the two rows. The refinements add specificity without making decorative 3D tensor blocks dominate the model."
+    },
+    {
+      "name": "lower_row_density_and_connectors",
+      "status": "passed",
+      "notes": "The repaired final PNG was actually re-opened, then the final PDF was freshly rendered and re-opened at manuscript width. Each scalar/blue, pair/ochre and point/violet score path was visually followed from the outside of its ingredient card to the sum circle. All three are visible; the central ochre downward arrow no longer has zero length and no path crosses a card label. Panel c retains its vertical sequence and query-frame return, and its lower operations are compact but distinct. Panel d remains one column with aligned snapshots, two target measures, MD mean/variance and model input to NLL; its lower module uses two distinct readable lines."
+    },
+    {
+      "name": "actual_manuscript_width_and_export",
+      "status": "passed",
+      "notes": "Final PNG and the independently rendered local final PDF were actually viewed, including a roughly 990 px-wide image equivalent to 167.64 mm insertion at 150 dpi. Frame letters, N/Cα/C labels, profile units and bottom-row operations remain readable. The separately recorded 9.056 pt source minimum becomes 8.296 pt at insertion width. No clipped letter or accidental arrow/text collision was observed. The original top output profiles and color bar retain their full visible ranges and labels."
+    }
+  ],
+  "nonblocking_observations": [
+    "The green D-chain remains a stronger visual mass than the pale module fills; this now corresponds to the existing chain palette and gives the molecular panel a useful focal point.",
+    "Panel d's variance line is the smallest and densest text in the lower row. It remains readable at the inspected insertion width; further expansion would compete with the original three-column balance.",
+    "This assessment deliberately distinguishes targeted improvement from claiming a complete new journal-level visual identity. The user's judgment of the candidate remains authoritative."
+  ],
+  "blocking_issues": [],
+  "review_corrections": [
+    "An initial review of previous SHA ac0f0ecc missed a zero-length central pair connector. That pass was withdrawn, the drawing was repaired, and both final image formats were actually re-opened with explicit tracing of all three paths before this final pass."
+  ]
+}

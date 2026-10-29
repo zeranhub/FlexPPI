@@ -1,0 +1,56 @@
+{
+  "status": "dispatched",
+  "created_utc": "2026-10-10T07:36:36.998576+00:00",
+  "wrapper_sha256": "034a7fdfc5b6bc39164bb43f23518d09586863af186ece495275965c3910e602",
+  "launcher_sha256": "a97c171e8ecea42cfef7a65c3bee1e87191cf8fefe105e3e5aaed35ecd79aef1",
+  "entries": [
+    {
+      "variant": "full",
+      "queue_parent_pid": 73982,
+      "launcher_pid": 73974,
+      "command": [
+        "nohup",
+        "env",
+        "CUDA_VISIBLE_DEVICES=",
+        "OMP_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "/root/flexppi_completion_20261010/planet_env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/baselines/run_planet_cpu_queue.py",
+        "--variant",
+        "full"
+      ],
+      "command_shell": "nohup env CUDA_VISIBLE_DEVICES= OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 PYTHONDONTWRITEBYTECODE=1 /root/flexppi_completion_20261010/planet_env/bin/python -u /root/flexppi_completion_20261010/baselines/run_planet_cpu_queue.py --variant full",
+      "log": "/root/flexppi_completion_20261010/baselines/planet_full_cpu_queue.log",
+      "state": "/root/flexppi_completion_20261010/baselines/planet_full_cpu_queue_state.json",
+      "preflight_sha256": "cf5d984a18c4615dbfd889709319b6eed4cf485dda3468ec5b50a1a33fa9ec5e",
+      "preflight_checked_utc": "2026-10-10T07:35:45.668756+00:00"
+    },
+    {
+      "variant": "seq",
+      "queue_parent_pid": 73983,
+      "launcher_pid": 73974,
+      "command": [
+        "nohup",
+        "env",
+        "CUDA_VISIBLE_DEVICES=",
+        "OMP_NUM_THREADS=2",
+        "MKL_NUM_THREADS=2",
+        "OPENBLAS_NUM_THREADS=2",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "/root/flexppi_completion_20261010/planet_env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/baselines/run_planet_cpu_queue.py",
+        "--variant",
+        "seq"
+      ],
+      "command_shell": "nohup env CUDA_VISIBLE_DEVICES= OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 PYTHONDONTWRITEBYTECODE=1 /root/flexppi_completion_20261010/planet_env/bin/python -u /root/flexppi_completion_20261010/baselines/run_planet_cpu_queue.py --variant seq",
+      "log": "/root/flexppi_completion_20261010/baselines/planet_seq_cpu_queue.log",
+      "state": "/root/flexppi_completion_20261010/baselines/planet_seq_cpu_queue_state.json",
+      "preflight_sha256": "90b9cc019d9a4e85c10ea03b94af48501b5fdbee2fd41f1de56c0810427387fc",
+      "preflight_checked_utc": "2026-10-10T07:35:45.721332+00:00"
+    }
+  ]
+}

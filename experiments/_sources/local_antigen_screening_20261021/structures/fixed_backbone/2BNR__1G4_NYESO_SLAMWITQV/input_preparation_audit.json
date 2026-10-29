@@ -1,0 +1,48 @@
+{
+  "input_mode": "fixed-backbone",
+  "backbone_rebuilt": false,
+  "sidechains_rebuilt": false,
+  "old_mutated_sidechain_atoms_removed": true,
+  "all_backbone_coordinates_bit_identical": true,
+  "template_pdb": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\raw\\github\\mutation_effects\\nyeso\\pdbs\\2bnr.pdb",
+  "template_sha256": "69681776857143aecb33cac24c00883f1dd51458504e20bcbcea20159c63203a",
+  "prepared_pdb": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\fixed_backbone\\2BNR__1G4_NYESO_SLAMWITQV\\model_input_fixed_backbone.pdb",
+  "prepared_pdb_sha256": "3154956b9fe37bb3aa1486ef02f246ec979ec661c85ccd7010196410ba7df115",
+  "requested_chain_sequences": {
+    "C": "SLAMWITQV"
+  },
+  "mutations": [
+    {
+      "chain": "C",
+      "author_residue_id": "3",
+      "residue_index": 378,
+      "from": "L",
+      "to": "A"
+    },
+    {
+      "chain": "C",
+      "author_residue_id": "9",
+      "residue_index": 384,
+      "from": "C",
+      "to": "V"
+    }
+  ],
+  "sequence_after": {
+    "A": "GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDGKDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENGKETLQRTDAPKTHMTHHAVSDHEATLRCWALSFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGQEQRYTCHVQHEGLPKPLTLRWEP",
+    "B": "MIQRTPKIQVYSRHPAENGKSNFLNCYVSGFHPSDIEVDLLKNGERIEKVEHSDLSFSKDWSFYLLYYTEFTPTEKDEYACRVNHVTLSQPKIVKWDRDM",
+    "C": "SLAMWITQV",
+    "D": "QEVTQIPAALSVPEGENLVLNCSFTDSAIYNLQWFRQDPGKGLTSLLLIQSSQREQTSGRLNASLDKSSGRSTLYIAASQPGDSATYLCAVRPTSGGSYIPTFGRGTSLIVHPYIQNPDPAVYQLRDSKSSDKSVCLFTDFDSQTNVSQSKDSDVYITDKCVLDMRSMDFKSNSAVAWSNKSDFACANAFNNSIIPEDTFFPS",
+    "E": "GVTQTPKFQVLKTGQSMTLQCAQDMNHEYMSWYRQDPGMGLRLIHYSVGAGITDQGEVPNGYNVSRSTTEDFPLRLLSAAPSQTSVYFCASSYVGNTGELFFGEGSRLTVLEDLKNVFPPEVAVFEPSEAEISHTQKATLVCLATGFYPDHVELSWWVNGKEVHSGVCTDPQPLKEQPALNDSRYALSSRLRVSATFWQDPRNHFRCQVQFYGLSENDEWTQDRAKPVTQIVSAEAWGRAD"
+  },
+  "esm_recomputed": "not applicable: learned sequence embedding, no ESM input",
+  "candidate_id": "2BNR__1G4_NYESO_SLAMWITQV",
+  "biological_candidate_id": "1G4_NYESO_SLAMWITQV",
+  "panel_id": "1G4_NYESO",
+  "template_pdb_id": "2BNR",
+  "primary": false,
+  "sensitivity": true,
+  "is_panel_parent": false,
+  "prepare_only": true,
+  "model_loaded": false,
+  "predictions_generated": false
+}

@@ -1,0 +1,90 @@
+{
+  "native_data_source": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v98_structure_fill",
+  "figure2_style_source": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure2_dense_20261024\\source_internal\\publication_style.py",
+  "figure2_png": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure2_dense_20261024\\fig2_dense.png",
+  "figure2_png_sha256": "3695952ad99dca46f341ab4dc0f80871a4f3f1eaf24b5df9be9b1f182063f9e6",
+  "layout_reference_only": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_paperbanana_20261027_从头生成方案B.png",
+  "all_data_and_structure_files": [
+    {
+      "relative_path": "figure3\\source_data\\all_plotted_values.csv",
+      "sha256": "233dcbf5e9222b248d46db9f5b377bde605c0905877209bfb8b375543b1a6b21"
+    },
+    {
+      "relative_path": "figure3\\source_data\\cam_all25.csv",
+      "sha256": "ebc5700ffcb1708f94d632816e854ea38e5397e7edba35d2d27b59503b36c473"
+    },
+    {
+      "relative_path": "figure3\\source_data\\contact_counts_retained_outside_main.csv",
+      "sha256": "309c3c0bbbd570dd8f8e630902c60d101acd425efc7531689e297cb05d00fa5d"
+    },
+    {
+      "relative_path": "figure3\\source_data\\defined_angles_long.csv",
+      "sha256": "8052306e31edf07f8cc7295ec8059c4e8dad6047354a834ea21fb0020e48ad0c"
+    },
+    {
+      "relative_path": "figure3\\source_data\\per_chi_correlations.csv",
+      "sha256": "d90af24843fc5d5fb08abd0a9d799b38ea7e4fe0afd8fb229d7c370f3c544205"
+    },
+    {
+      "relative_path": "figure3\\source_data\\retained_absolute_correlations_all498.csv",
+      "sha256": "0a503485bafbbf7f5604105936451610e2915949fcb00b17034f18dc43f41eae"
+    },
+    {
+      "relative_path": "figure3\\source_data\\retained_panel_statistics.csv",
+      "sha256": "452208e20db8dc345a85f18cd125e3526838d5b337b2dc092d0eb76b4a269552"
+    },
+    {
+      "relative_path": "figure3\\source_data\\retained_prediction_groups_all498.csv",
+      "sha256": "59f6c6e377bc62f2d129054207415b35680ffcefa4d3601901f0000edf559a7b"
+    },
+    {
+      "relative_path": "figure3\\source_data\\ubiquitin_72_position_profile_with_original_mask.csv",
+      "sha256": "90feb25545703d3e56347a627e2cf3461b08d493f4cf82e62ad89cce1c4a87bc"
+    },
+    {
+      "relative_path": "figure3\\source_data\\ubiquitin_all6_Gln_Hchi_SASA_plot.csv",
+      "sha256": "a9128a417e808da91afa87b3a112816691554e6710693a15ba3aeea04fc7ddc4"
+    },
+    {
+      "relative_path": "pymol\\cam_overview.png",
+      "sha256": "76db812836f30d24117f3eaef58a699fb4f61c8ec95a853c6936e5b592cba7da"
+    },
+    {
+      "relative_path": "pymol\\cam_overview.pse",
+      "sha256": "4248639590a346943dee62764f28fdc81c4919084dc5595ebbfa8f45c203dfc7"
+    },
+    {
+      "relative_path": "pymol\\inputs\\1MXE_CaM_native4_147_CaMKI294_318.pdb",
+      "sha256": "6a9ba977adf518634f96f37ea0c099408008604a63ab0db86197e7daf789b762"
+    },
+    {
+      "relative_path": "pymol\\inputs\\A003R_input_structure.pdb",
+      "sha256": "4b2206ae6e9b71d9b8659e661d6825320eebae563ec4e7c2643a43a5225bf1f5"
+    },
+    {
+      "relative_path": "pymol\\render_manifest.json",
+      "sha256": "cb2d51ebb89333dfb73d1fbbd1329ebd7597b602862afadd026bd3e59b31e578"
+    },
+    {
+      "relative_path": "pymol\\ub_overview.png",
+      "sha256": "cbb967f667e9ce8483d2728dabbb7bafa696450e7e8c6a4e83c41b3d627e54bb"
+    },
+    {
+      "relative_path": "pymol\\ub_overview.pse",
+      "sha256": "e6c3120a2def9f6ada7753a5056bfdea53b65c553cabebe996456c9dbef2fb44"
+    }
+  ],
+  "style": {
+    "family": "Arial",
+    "axis_tick_legend_pt": 9,
+    "title_pt": 10,
+    "panel_letter_pt": 11,
+    "axis_width_pt": 0.6,
+    "Full": "#2166AC",
+    "Intra": "#B87936",
+    "MD": "#62676B",
+    "Full_linewidth_pt": 1.25,
+    "Intra_linewidth_pt": 1.1
+  },
+  "existing_manuscript_not_modified": true
+}

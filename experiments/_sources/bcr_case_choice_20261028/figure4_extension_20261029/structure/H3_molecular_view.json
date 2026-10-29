@@ -1,0 +1,269 @@
+{
+  "status": "rendered_and_visually_reviewed",
+  "source": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A00LZ.pdb",
+  "source_sha256": "746df500c64ae69289592a5ca7588210bc45e8f5eaa3437893feb009f4e61624",
+  "all_atoms_rendered_from_source_coordinates_with_rigid_camera_transform_only": true,
+  "size": [
+    2200,
+    2000
+  ],
+  "PNG": "E:\\Project\\FlexPPI\\experiments\\_sources\\bcr_case_choice_20261028\\figure4_extension_20261029\\structure\\H3_local.png",
+  "coordinates_origin": "upper-left PNG pixel",
+  "candidate_views": [
+    {
+      "angle": 0,
+      "PNG": "H3_local_angle_+00.png",
+      "view": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -90.8888931274414,
+        1.547800064086914,
+        0.9922161102294922,
+        3.0553858280181885,
+        71.65750122070312,
+        110.12028503417969,
+        20.0
+      ],
+      "world_to_camera": [
+        [
+          -0.9442474180426533,
+          0.3250593020805891,
+          -0.052280624046228553
+        ],
+        [
+          0.318306816983243,
+          0.9418933209982886,
+          0.1073207441309051
+        ],
+        [
+          0.08412837679272668,
+          0.08469605651797077,
+          -0.9928489282003208
+        ]
+      ]
+    },
+    {
+      "angle": 30,
+      "PNG": "H3_local_angle_+30.png",
+      "view": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -90.8888931274414,
+        1.547800064086914,
+        2.3869781494140625,
+        2.1499338150024414,
+        71.65750122070312,
+        110.12028503417969,
+        20.0
+      ],
+      "world_to_camera": [
+        [
+          -0.9442474180426533,
+          0.2553693013151157,
+          -0.20780599959003204
+        ],
+        [
+          0.318306816983243,
+          0.8693639157048614,
+          -0.37800416972873074
+        ],
+        [
+          0.08412837679272668,
+          -0.42307552755523503,
+          -0.9021804222006155
+        ]
+      ]
+    },
+    {
+      "angle": -30,
+      "PNG": "H3_local_angle_-30.png",
+      "view": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -90.8888931274414,
+        1.547800064086914,
+        -0.6684093475341797,
+        3.1421496868133545,
+        71.65750122070312,
+        110.12028503417969,
+        20.0
+      ],
+      "world_to_camera": [
+        [
+          -0.9442474180426533,
+          0.3076499253613443,
+          0.11725330249055699
+        ],
+        [
+          0.318306816983243,
+          0.7620431715739562,
+          0.5638891512695577
+        ],
+        [
+          0.08412837679272668,
+          0.5697734006450856,
+          -0.8174843656826446
+        ]
+      ]
+    }
+  ],
+  "selected_angle": 0,
+  "screen_projection": {
+    "xyz1_camera_to_screen": [
+      [
+        62.377602788816226,
+        -0.00035085349334925314
+      ],
+      [
+        -0.007281318170915559,
+        -62.417498203441745
+      ],
+      [
+        -0.010517800930301746,
+        -0.04967803555746286
+      ],
+      [
+        1002.9548693586698,
+        1061.4441805225654
+      ]
+    ],
+    "holdout_error_pixels": 0.06635248425269923
+  },
+  "anchors_screen_pixels": {
+    "R96_CA": [
+      634.1119225806084,
+      1249.2344532236566
+    ],
+    "R96_CZ": [
+      761.77108638544,
+      1098.282946240003
+    ],
+    "R96_NH1": [
+      799.0202701869238,
+      1027.407358814224
+    ],
+    "R101_CA": [
+      1574.8192883082052,
+      869.2344355974808
+    ],
+    "R101_CZ": [
+      1755.323326577574,
+      1098.2773578355323
+    ],
+    "R101_O": [
+      1570.073367196002,
+      724.9191939271595
+    ],
+    "D108_OD2": [
+      857.9365644197685,
+      967.40414444652
+    ],
+    "Light_Y49_OH": [
+      1387.7187819917583,
+      644.5654470648385
+    ],
+    "H3_tip_CA": [
+      1651.0426600339476,
+      850.5936100856665
+    ],
+    "Heavy_near_R96": [
+      916.4141839999846,
+      1520.53540338282
+    ],
+    "Light_context": [
+      1375.541174567657,
+      624.450376536124
+    ],
+    "Antigen_context": [
+      1429.9948010589942,
+      1625.941104995838
+    ]
+  },
+  "center_original": [
+    -14.668999862670898,
+    -1.9794999957084656,
+    11.337000060081483
+  ],
+  "distances_A": {
+    "R101_O_Light_Y49_OH": 3.213737726211548,
+    "R96_NH1_D108_OD2": 2.6541664600372314
+  },
+  "scope": "One static WT Fab-antigen coordinate view, focused on H-CDR3, selected heavy-chain context and light-chain Y49. Antigen background omitted from final local view to avoid projected overlap with the solvent-facing R101 sidechain. Dashes show selected short distances, not independently established hydrogen bonds or affinity contributions.",
+  "colors": {
+    "heavy": "#236AB6",
+    "R96_R101": "#BE7D35",
+    "light": "#999FA6",
+    "antigen": "#C4C9CC",
+    "oxygen": "PyMOL oxygen",
+    "nitrogen": "PyMOL nitrogen"
+  },
+  "render_settings": {
+    "orthographic": true,
+    "ray_shadows": false,
+    "depth_cue": false,
+    "transparent_background": true,
+    "ray_dpi": 600
+  },
+  "final_png_sha256": "1f93c9463658429c38806398b403d7e135a193be566af33dd8ec1e359da18016",
+  "final_png_alpha_range": [
+    0,
+    255
+  ],
+  "suggested_label_positions_top_left_pixels": {
+    "H:R96": [
+      380,
+      1070
+    ],
+    "H:R101": [
+      1950,
+      1255
+    ],
+    "H:D108": [
+      770,
+      750
+    ],
+    "L:Y49": [
+      1250,
+      210
+    ],
+    "H-CDR3": [
+      1310,
+      1425
+    ],
+    "3.21 \u00c5": [
+      1450,
+      590
+    ],
+    "2.65 \u00c5": [
+      900,
+      850
+    ]
+  }
+}

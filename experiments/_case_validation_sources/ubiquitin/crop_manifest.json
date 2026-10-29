@@ -1,0 +1,190 @@
+{
+  "rule": "Keep all 119 residues represented; crop only the complete rendered image",
+  "source_structure": "inputs/A003R_input_structure.pdb",
+  "cases": {
+    "Q41": {
+      "full_selection": "complex",
+      "full_size": [
+        6000,
+        5000
+      ],
+      "crop_box": [
+        3244,
+        1694,
+        4984,
+        3144
+      ],
+      "crop_size": [
+        1740,
+        1450
+      ],
+      "full_view": [
+        0.8073605895042419,
+        -0.10691173374652863,
+        -0.5802919268608093,
+        -0.5269800424575806,
+        0.3117695152759552,
+        -0.7906275391578674,
+        0.26544472575187683,
+        0.9441238045692444,
+        0.19537006318569183,
+        11.379838943481445,
+        0.8315410614013672,
+        -144.88543701171875,
+        62.95111083984375,
+        50.80666732788086,
+        30.42555809020996,
+        127.05580139160156,
+        162.84886169433594,
+        20.0
+      ],
+      "focus_view": [
+        0.8073605895042419,
+        -0.10691173374652863,
+        -0.5802919268608093,
+        -0.5269800424575806,
+        0.3117695152759552,
+        -0.7906275391578674,
+        0.26544472575187683,
+        0.9441238045692444,
+        0.19537006318569183,
+        -0.0039985706098377705,
+        0.0038114036433398724,
+        -144.88543701171875,
+        62.95111083984375,
+        50.80666732788086,
+        30.42555809020996,
+        127.05580139160156,
+        162.84886169433594,
+        5.854519844055176
+      ],
+      "full_atom_projected_bounds_px": [
+        1011.4893349114941,
+        391.4321709890023,
+        4988.510731913224,
+        4608.567833018933
+      ],
+      "all_atoms_inside_full_frame": true,
+      "all_atoms_inside_depth_interval": true,
+      "full_CA_count": 119,
+      "full_CA_cartoon_count": 119,
+      "depth_planes_identical_in_full_and_focus": true,
+      "operation": "PyMOL full-protein ray image, then PIL.Image.crop; no resampling",
+      "full_image": "q41_whole_source.png",
+      "crop_image": "q41_zoom.png",
+      "full_image_sha256": "0f902ad94a74bb338a119b64e3be1337001c15dc2a6a2617a0d993c79468c9c2",
+      "crop_image_sha256": "c4232b3b6f3edb4bf1e46e735c4db3ccfeaf194f15d7776640146738bbd23abc",
+      "exact_pixel_crop_verified": true,
+      "dpi": 600,
+      "cached_identical_full_render_verified": true,
+      "whole_scene": "03_Q41_whole_for_crop",
+      "focus_scene": "02_Q41_MD_observed",
+      "complete_complex_CA_per_chain": {
+        "A": 72,
+        "B": 47
+      }
+    },
+    "Q62": {
+      "full_selection": "complex",
+      "full_size": [
+        6000,
+        5000
+      ],
+      "crop_box": [
+        1703,
+        2222,
+        4037,
+        4167
+      ],
+      "crop_size": [
+        2334,
+        1945
+      ],
+      "full_view": [
+        0.9809051156044006,
+        0.007867664098739624,
+        0.19432762265205383,
+        0.12953118979930878,
+        -0.7717553973197937,
+        -0.6225875616073608,
+        0.14507505297660828,
+        0.6358708739280701,
+        -0.7580379247665405,
+        -0.9914337992668152,
+        -5.287834644317627,
+        -107.88038635253906,
+        58.812217712402344,
+        48.27888488769531,
+        9.844444274902344,
+        99.7418212890625,
+        154.31724548339844,
+        20.0
+      ],
+      "focus_view": [
+        0.9809051156044006,
+        0.007867664098739624,
+        0.19432762265205383,
+        0.12953118979930878,
+        -0.7717553973197937,
+        -0.6225875616073608,
+        0.14507505297660828,
+        0.6358708739280701,
+        -0.7580379247665405,
+        -0.0022782133892178535,
+        -0.0034611495211720467,
+        -107.88038635253906,
+        58.812217712402344,
+        48.27888488769531,
+        9.844444274902344,
+        99.7418212890625,
+        154.31724548339844,
+        7.84768009185791
+      ],
+      "full_atom_projected_bounds_px": [
+        525.7010190258966,
+        705.9531160042802,
+        5474.298987944535,
+        4294.046873308464
+      ],
+      "all_atoms_inside_full_frame": true,
+      "all_atoms_inside_depth_interval": true,
+      "full_CA_count": 119,
+      "full_CA_cartoon_count": 119,
+      "depth_planes_identical_in_full_and_focus": true,
+      "operation": "PyMOL full-protein ray image, then PIL.Image.crop; no resampling",
+      "full_image": "q62_whole_source.png",
+      "crop_image": "q62_zoom.png",
+      "full_image_sha256": "305e6a138019638f6121be3b71cd222521d9b31d806740146e66aed4ff8dc10f",
+      "crop_image_sha256": "97478f14b3821166fbfd104c1d7fae67763f7f169f7bce5ff875af90c4d93d9e",
+      "exact_pixel_crop_verified": true,
+      "dpi": 600,
+      "cached_identical_full_render_verified": true,
+      "whole_scene": "03_Q62_whole_for_crop",
+      "focus_scene": "02_Q62_MD_observed",
+      "complete_complex_CA_per_chain": {
+        "A": 72,
+        "B": 47
+      }
+    }
+  },
+  "input_PDB_sha256_before": {
+    "inputs\\A003R_input_structure.pdb": "4b2206ae6e9b71d9b8659e661d6825320eebae563ec4e7c2643a43a5225bf1f5",
+    "representative_frames\\Q41_rank1_code16_frame2397.pdb": "2057f565a2e977c2b031bd9bac5c68d08df2c19111fecf05f73a264eb9e36f5d",
+    "representative_frames\\Q41_rank2_code09_frame0401.pdb": "c9f9d086f7a3838eaf3e7baa75cc4706878ad755e924029bb4def90621b5dee3",
+    "representative_frames\\Q41_rank3_code15_frame1171.pdb": "2721d1debe0357dca5e47edeff9c032f68e992131208e14996df6abac7fd58f5",
+    "representative_frames\\Q62_rank1_code03_frame0924.pdb": "377e241a8828018774945f35e00139efd4b90f5f178a74cfb0e96056eacdfd12",
+    "representative_frames\\Q62_rank2_code04_frame1143.pdb": "38467ac86d347dada70801e69816008354a74733f4bba5c635524f5a192dc137",
+    "representative_frames\\Q62_rank3_code13_frame1467.pdb": "69c056acff34b8b6b08a4c676b969ea2cf93da8270640dc324f3848848e1cda5"
+  },
+  "input_PDB_sha256_after": {
+    "inputs\\A003R_input_structure.pdb": "4b2206ae6e9b71d9b8659e661d6825320eebae563ec4e7c2643a43a5225bf1f5",
+    "representative_frames\\Q41_rank1_code16_frame2397.pdb": "2057f565a2e977c2b031bd9bac5c68d08df2c19111fecf05f73a264eb9e36f5d",
+    "representative_frames\\Q41_rank2_code09_frame0401.pdb": "c9f9d086f7a3838eaf3e7baa75cc4706878ad755e924029bb4def90621b5dee3",
+    "representative_frames\\Q41_rank3_code15_frame1171.pdb": "2721d1debe0357dca5e47edeff9c032f68e992131208e14996df6abac7fd58f5",
+    "representative_frames\\Q62_rank1_code03_frame0924.pdb": "377e241a8828018774945f35e00139efd4b90f5f178a74cfb0e96056eacdfd12",
+    "representative_frames\\Q62_rank2_code04_frame1143.pdb": "38467ac86d347dada70801e69816008354a74733f4bba5c635524f5a192dc137",
+    "representative_frames\\Q62_rank3_code13_frame1467.pdb": "69c056acff34b8b6b08a4c676b969ea2cf93da8270640dc324f3848848e1cda5"
+  },
+  "all_source_and_representative_PDBs_unchanged": true,
+  "input_heavy_atom_coordinates_unchanged": true
+}

@@ -1,0 +1,118 @@
+method,group,metric,mean,ci_low,ci_high,n_records,n_families,primary_complete_cohort,uncertainty
+Full,single_chain,spearman,0.7912718465740591,0.7825787275313022,0.7992642717677675,2193,1493,True,record_weighted_family_cluster_bootstrap
+Intra,single_chain,spearman,0.778012115498226,0.7687871709691384,0.7869603907339614,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),single_chain,spearman,0.8981149303514676,0.8911385577244002,0.9043123979946222,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),single_chain,spearman,0.8981149303514676,0.8915485456136406,0.9040090626549364,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),single_chain,spearman,0.8086403993313545,0.8039548203502312,0.8131335095367676,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),single_chain,spearman,0.8086403993313545,0.8035616224877123,0.8133812097710047,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),single_chain,spearman,0.8317121088080449,0.8275080175395596,0.8361540940433388,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),single_chain,spearman,0.8317121088080449,0.8274114654277882,0.8359627063769308,2193,1493,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,single_chain,spearman,0.864305133075032,0.8591217110786272,0.8696834747767043,2193,1493,True,record_weighted_family_cluster_bootstrap
+FastProtFlex,single_chain,spearman,0.7957824602111793,0.789454931869698,0.802063474438659,2193,1493,True,record_weighted_family_cluster_bootstrap
+ANM,single_chain,spearman,0.7856129206672283,0.7795660088020547,0.7916872070070319,2193,1493,True,record_weighted_family_cluster_bootstrap
+GNM,single_chain,spearman,0.7398556842880429,0.7328148087980226,0.7463958445325035,2193,1493,True,record_weighted_family_cluster_bootstrap
+Static,single_chain,spearman,0.7594464760690353,0.7526545259503068,0.7662367583759833,2193,1493,True,record_weighted_family_cluster_bootstrap
+AA,single_chain,spearman,0.2519325986086478,0.2461317914913105,0.2571758174101609,2193,1493,True,record_weighted_family_cluster_bootstrap
+Full,other_multichain,spearman,0.7582613871844562,0.7281108160430088,0.7714194605382387,626,268,True,record_weighted_family_cluster_bootstrap
+Intra,other_multichain,spearman,0.7115505490198513,0.674603322040714,0.7309237885491735,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),other_multichain,spearman,0.6669127143471058,0.649930076471526,0.6957930418367526,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),other_multichain,spearman,0.7497711442455718,0.7372896854652339,0.7709938787095594,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),other_multichain,spearman,0.6543396176904137,0.6357800267886049,0.687615605086331,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),other_multichain,spearman,0.7446508197793332,0.7307630141769653,0.7609949293019826,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),other_multichain,spearman,0.7042127140637365,0.6915299202094479,0.7219899492713493,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),other_multichain,spearman,0.759839894363941,0.7466607951377587,0.7764876501910026,626,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,other_multichain,spearman,0.6995802506523989,0.6761575919534927,0.7147883603552567,626,268,True,record_weighted_family_cluster_bootstrap
+FastProtFlex,other_multichain,spearman,0.712376374279228,0.7010820086256673,0.7320476537239431,626,268,True,record_weighted_family_cluster_bootstrap
+ANM,other_multichain,spearman,0.5701946629575436,0.5522469716840996,0.606803958817785,626,268,True,record_weighted_family_cluster_bootstrap
+GNM,other_multichain,spearman,0.5116050442014741,0.4879643411904739,0.5565517747929746,626,268,True,record_weighted_family_cluster_bootstrap
+Static,other_multichain,spearman,0.7045015722203853,0.690114278452439,0.7130124714549778,626,268,True,record_weighted_family_cluster_bootstrap
+AA,other_multichain,spearman,0.2483451229993751,0.2357353367211996,0.2553896582021979,626,268,True,record_weighted_family_cluster_bootstrap
+Full,tcr_pmhc_itrace,spearman,0.937660416282949,,,244,1,True,descriptive_single_family_no_independent_CI
+Intra,tcr_pmhc_itrace,spearman,0.9304792510169586,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (assembly),tcr_pmhc_itrace,spearman,0.6118919978037834,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (chains),tcr_pmhc_itrace,spearman,0.6476765617332946,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (assembly),tcr_pmhc_itrace,spearman,0.5909718252615738,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (chains),tcr_pmhc_itrace,spearman,0.7271436697253033,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0-seq (assembly),tcr_pmhc_itrace,spearman,0.6928967415277172,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0-seq (chains),tcr_pmhc_itrace,spearman,0.774101278534681,,,244,1,True,descriptive_single_family_no_independent_CI
+DynaProt-M,tcr_pmhc_itrace,spearman,0.7048077107943443,,,244,1,True,descriptive_single_family_no_independent_CI
+FastProtFlex,tcr_pmhc_itrace,spearman,0.6805386237249441,,,244,1,True,descriptive_single_family_no_independent_CI
+ANM,tcr_pmhc_itrace,spearman,0.452632697483566,,,244,1,True,descriptive_single_family_no_independent_CI
+GNM,tcr_pmhc_itrace,spearman,0.3582040981973284,,,244,1,True,descriptive_single_family_no_independent_CI
+Static,tcr_pmhc_itrace,spearman,0.8583081755615749,,,244,1,True,descriptive_single_family_no_independent_CI
+AA,tcr_pmhc_itrace,spearman,0.3167636292434125,,,244,1,True,descriptive_single_family_no_independent_CI
+Full,single_chain,top10_ap,0.7382213793519622,0.7283438382029394,0.7489521753454638,2193,1493,True,record_weighted_family_cluster_bootstrap
+Intra,single_chain,top10_ap,0.7130268953573504,0.7023232573338143,0.7233556749511637,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),single_chain,top10_ap,0.8518586899785929,0.8346616110276854,0.8654946438830128,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),single_chain,top10_ap,0.8518586899785929,0.8354108612640996,0.8653273050854874,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),single_chain,top10_ap,0.7470890501469426,0.7363823687668662,0.7575828794003493,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),single_chain,top10_ap,0.7470890501469426,0.7364303538751169,0.7577832394874354,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),single_chain,top10_ap,0.7817790600459383,0.7709673962114029,0.7926708860603873,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),single_chain,top10_ap,0.7817790600459383,0.7710153007050938,0.7926716589936141,2193,1493,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,single_chain,top10_ap,0.7909122295106572,0.7791590784171353,0.8017515595188114,2193,1493,True,record_weighted_family_cluster_bootstrap
+FastProtFlex,single_chain,top10_ap,0.7131422450678565,0.7035878190328135,0.7234023719563701,2193,1493,True,record_weighted_family_cluster_bootstrap
+ANM,single_chain,top10_ap,0.6867035952824343,0.6775712385684021,0.696983356564388,2193,1493,True,record_weighted_family_cluster_bootstrap
+GNM,single_chain,top10_ap,0.6815046615693763,0.6725813774239007,0.6914106945249563,2193,1493,True,record_weighted_family_cluster_bootstrap
+Static,single_chain,top10_ap,0.6738462991097164,0.6645780409794739,0.684349656657591,2193,1493,True,record_weighted_family_cluster_bootstrap
+AA,single_chain,top10_ap,0.1760694469300832,0.1718948985903841,0.1807546134820485,2193,1493,True,record_weighted_family_cluster_bootstrap
+Full,other_multichain,top10_ap,0.6583090149563487,0.6432023453612968,0.6721369479571451,626,268,True,record_weighted_family_cluster_bootstrap
+Intra,other_multichain,top10_ap,0.5849768945880214,0.5508695013090705,0.6020147124846035,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),other_multichain,top10_ap,0.5975320978880061,0.5740952127715417,0.6387559069922178,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),other_multichain,top10_ap,0.5848959728893892,0.5571401412382978,0.6312371423566493,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),other_multichain,top10_ap,0.5522550634713851,0.522728646366405,0.60001548819451,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),other_multichain,top10_ap,0.5747260315679316,0.5547449699337055,0.6116313801762466,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),other_multichain,top10_ap,0.6135585828864952,0.5932363358688866,0.6484213097109126,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),other_multichain,top10_ap,0.6021881635448468,0.5842420154837505,0.6331453348953135,626,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,other_multichain,top10_ap,0.5471538878459266,0.5310569621464941,0.5718248421705505,626,268,True,record_weighted_family_cluster_bootstrap
+FastProtFlex,other_multichain,top10_ap,0.6244181728478976,0.6111077954563312,0.6482259815225714,626,268,True,record_weighted_family_cluster_bootstrap
+ANM,other_multichain,top10_ap,0.509080516113293,0.485846783211526,0.5502476284245303,626,268,True,record_weighted_family_cluster_bootstrap
+GNM,other_multichain,top10_ap,0.5282307385256684,0.5090721351053845,0.564608509163125,626,268,True,record_weighted_family_cluster_bootstrap
+Static,other_multichain,top10_ap,0.5725836803959043,0.561551115333914,0.5947178129897861,626,268,True,record_weighted_family_cluster_bootstrap
+AA,other_multichain,top10_ap,0.1446864539947923,0.1423420212891464,0.1478302298295863,626,268,True,record_weighted_family_cluster_bootstrap
+Full,tcr_pmhc_itrace,top10_ap,0.8404958022801848,,,244,1,True,descriptive_single_family_no_independent_CI
+Intra,tcr_pmhc_itrace,top10_ap,0.8220627341182816,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (assembly),tcr_pmhc_itrace,top10_ap,0.5488851461530954,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (chains),tcr_pmhc_itrace,top10_ap,0.3243241856309258,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (assembly),tcr_pmhc_itrace,top10_ap,0.5293209340599818,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (chains),tcr_pmhc_itrace,top10_ap,0.4302931529990006,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0-seq (assembly),tcr_pmhc_itrace,top10_ap,0.6332901505758147,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0-seq (chains),tcr_pmhc_itrace,top10_ap,0.5493223630647828,,,244,1,True,descriptive_single_family_no_independent_CI
+DynaProt-M,tcr_pmhc_itrace,top10_ap,0.4054067048546624,,,244,1,True,descriptive_single_family_no_independent_CI
+FastProtFlex,tcr_pmhc_itrace,top10_ap,0.6374306702231284,,,244,1,True,descriptive_single_family_no_independent_CI
+ANM,tcr_pmhc_itrace,top10_ap,0.4515248033397863,,,244,1,True,descriptive_single_family_no_independent_CI
+GNM,tcr_pmhc_itrace,top10_ap,0.4877996407266716,,,244,1,True,descriptive_single_family_no_independent_CI
+Static,tcr_pmhc_itrace,top10_ap,0.7238073177328779,,,244,1,True,descriptive_single_family_no_independent_CI
+AA,tcr_pmhc_itrace,top10_ap,0.1559487554346023,,,244,1,True,descriptive_single_family_no_independent_CI
+Full,single_chain,mae,0.6862744093015053,0.6443615538785058,0.7342443383869577,2193,1493,True,record_weighted_family_cluster_bootstrap
+Intra,single_chain,mae,0.7356362777447778,0.682881864496013,0.7967393356947629,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),single_chain,mae,0.4058254257660431,0.3798066925949506,0.4350221332993678,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),single_chain,mae,0.4058254257660431,0.3798769400036694,0.4353401086278942,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),single_chain,mae,0.5125422409027375,0.4849926612841649,0.5428657386872594,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),single_chain,mae,0.5125422409027375,0.4847639926848502,0.5436662640775242,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),single_chain,mae,0.454602049030732,0.432103106811832,0.4803448472527186,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),single_chain,mae,0.454602049030732,0.4317280545115001,0.4800223478342795,2193,1493,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,single_chain,mae,0.5043210712772114,0.470982095999492,0.5403244866434916,2193,1493,True,record_weighted_family_cluster_bootstrap
+Static,single_chain,mae,0.7764600308931221,0.728575042131231,0.8287396959223915,2193,1493,True,record_weighted_family_cluster_bootstrap
+AA,single_chain,mae,1.0188741325634143,0.9588574861989017,1.0911002128215102,2193,1493,True,record_weighted_family_cluster_bootstrap
+Full,other_multichain,mae,0.3522001295841399,0.3304675121295128,0.3976179199260408,626,268,True,record_weighted_family_cluster_bootstrap
+Intra,other_multichain,mae,0.4641161827982816,0.414922230874601,0.5583506493696218,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),other_multichain,mae,0.620744877303178,0.5498910085346205,0.6629827458605402,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),other_multichain,mae,0.6563559098711568,0.6135545920507256,0.7410414610830153,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),other_multichain,mae,0.5776837819675029,0.5229791116024994,0.6074363772674495,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),other_multichain,mae,0.5645774614598624,0.5291442386177045,0.6358664446846157,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),other_multichain,mae,0.5970638291211526,0.5395061440429917,0.6274809525183547,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),other_multichain,mae,0.5863222426667694,0.5476132362981176,0.6673958951979982,626,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,other_multichain,mae,0.6752483865109001,0.6186151626831103,0.7817242486937807,626,268,True,record_weighted_family_cluster_bootstrap
+Static,other_multichain,mae,0.5014880875824107,0.4819238890189861,0.5430355340812749,626,268,True,record_weighted_family_cluster_bootstrap
+AA,other_multichain,mae,0.6835973816280619,0.6693803213275605,0.71022306429247,626,268,True,record_weighted_family_cluster_bootstrap
+Full,tcr_pmhc_itrace,mae,0.1729183239335303,,,244,1,True,descriptive_single_family_no_independent_CI
+Intra,tcr_pmhc_itrace,mae,0.1755364432990823,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (assembly),tcr_pmhc_itrace,mae,0.7063726350736133,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (chains),tcr_pmhc_itrace,mae,1.407119719030397,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (assembly),tcr_pmhc_itrace,mae,0.4315577351475672,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (chains),tcr_pmhc_itrace,mae,0.5070792163979784,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0-seq (assembly),tcr_pmhc_itrace,mae,0.7949864999023756,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0-seq (chains),tcr_pmhc_itrace,mae,0.6379932898241705,,,244,1,True,descriptive_single_family_no_independent_CI
+DynaProt-M,tcr_pmhc_itrace,mae,0.7644071737471116,,,244,1,True,descriptive_single_family_no_independent_CI
+Static,tcr_pmhc_itrace,mae,0.2374926092090666,,,244,1,True,descriptive_single_family_no_independent_CI
+AA,tcr_pmhc_itrace,mae,0.4981576952689836,,,244,1,True,descriptive_single_family_no_independent_CI

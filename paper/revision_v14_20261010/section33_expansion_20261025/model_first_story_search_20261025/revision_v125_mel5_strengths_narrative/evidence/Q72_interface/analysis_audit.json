@@ -1,0 +1,408 @@
+{
+  "status": "passed",
+  "new_MD": false,
+  "new_inference": false,
+  "source_window": "All saved frames from 0 to 200 ns, all 3 independent replicas for both states; no frame removal/subsampling. Window partition [0,20),...,[180,200] ns.",
+  "chain_alignment": "Each entire beta chain CA fitted independently to its first frame in double precision; exact original labels reproduced before any window descriptor. Window RMSF uses each window mean after the same entire-chain fitting.",
+  "Hchi": "Fixed 3 bins per chi, [-180,-60), [-60,60), [60,180]; joint state entropy natural logarithm. Q72 has 3 chis; original per-replica labels exactly reproduced. Finite 20ns windows are descriptive and can underestimate slowly exchanging state diversity.",
+  "contact": "Minimum distance from Q72 sidechain heavy atoms CB/CG/CD/OE1/NE2 to all heavy atoms of each target beta residue; <=4.0 A and <=4.5 A reported, minimum-image convention using trajectory box. This is geometric contact occupancy.",
+  "hydrogen_bond_geometry": "Q72 NE2 (either HE21/HE22) to beta Gly54/Gly55 backbone O; beta Ile53/Phe54 backbone N-HN to Q72 OE1; D-A <=3.5 A and D-H-A >=150 degrees. No energetic or causal assertion.",
+  "replication": "Three trajectories per state; no individual saved frame or window treated as an independent experimental replicate. Correlations are within-replica descriptive quantities only; no p-values/causality.",
+  "model_and_sequence_mapping": "Corrected all-position structural sequence alignment, WT beta50-54 SVGIG to engineered input beta51-55 WGPFG. Common/paper beta54 Gly is engineered model input beta55 Gly. Q72 is unchanged HLA chain A position72.",
+  "MDAnalysis_version": "2.10.0",
+  "identity": [
+    {
+      "pdb": "3hg1",
+      "replica": 1,
+      "Q72_prediction_index": 71,
+      "Q72_raw_resid": 72,
+      "beta_positions": [
+        {
+          "paper_or_common_position": 50,
+          "input_id": "50",
+          "input_position": 50,
+          "raw_topology_resid": 50,
+          "aa": "S",
+          "prediction_index": 629
+        },
+        {
+          "paper_or_common_position": 51,
+          "input_id": "51",
+          "input_position": 51,
+          "raw_topology_resid": 51,
+          "aa": "V",
+          "prediction_index": 630
+        },
+        {
+          "paper_or_common_position": 52,
+          "input_id": "52",
+          "input_position": 52,
+          "raw_topology_resid": 52,
+          "aa": "G",
+          "prediction_index": 631
+        },
+        {
+          "paper_or_common_position": 53,
+          "input_id": "53",
+          "input_position": 53,
+          "raw_topology_resid": 53,
+          "aa": "I",
+          "prediction_index": 632
+        },
+        {
+          "paper_or_common_position": 54,
+          "input_id": "54",
+          "input_position": 54,
+          "raw_topology_resid": 54,
+          "aa": "G",
+          "prediction_index": 633
+        }
+      ]
+    },
+    {
+      "pdb": "3hg1",
+      "replica": 2,
+      "Q72_prediction_index": 71,
+      "Q72_raw_resid": 72,
+      "beta_positions": [
+        {
+          "paper_or_common_position": 50,
+          "input_id": "50",
+          "input_position": 50,
+          "raw_topology_resid": 50,
+          "aa": "S",
+          "prediction_index": 629
+        },
+        {
+          "paper_or_common_position": 51,
+          "input_id": "51",
+          "input_position": 51,
+          "raw_topology_resid": 51,
+          "aa": "V",
+          "prediction_index": 630
+        },
+        {
+          "paper_or_common_position": 52,
+          "input_id": "52",
+          "input_position": 52,
+          "raw_topology_resid": 52,
+          "aa": "G",
+          "prediction_index": 631
+        },
+        {
+          "paper_or_common_position": 53,
+          "input_id": "53",
+          "input_position": 53,
+          "raw_topology_resid": 53,
+          "aa": "I",
+          "prediction_index": 632
+        },
+        {
+          "paper_or_common_position": 54,
+          "input_id": "54",
+          "input_position": 54,
+          "raw_topology_resid": 54,
+          "aa": "G",
+          "prediction_index": 633
+        }
+      ]
+    },
+    {
+      "pdb": "3hg1",
+      "replica": 3,
+      "Q72_prediction_index": 71,
+      "Q72_raw_resid": 72,
+      "beta_positions": [
+        {
+          "paper_or_common_position": 50,
+          "input_id": "50",
+          "input_position": 50,
+          "raw_topology_resid": 50,
+          "aa": "S",
+          "prediction_index": 629
+        },
+        {
+          "paper_or_common_position": 51,
+          "input_id": "51",
+          "input_position": 51,
+          "raw_topology_resid": 51,
+          "aa": "V",
+          "prediction_index": 630
+        },
+        {
+          "paper_or_common_position": 52,
+          "input_id": "52",
+          "input_position": 52,
+          "raw_topology_resid": 52,
+          "aa": "G",
+          "prediction_index": 631
+        },
+        {
+          "paper_or_common_position": 53,
+          "input_id": "53",
+          "input_position": 53,
+          "raw_topology_resid": 53,
+          "aa": "I",
+          "prediction_index": 632
+        },
+        {
+          "paper_or_common_position": 54,
+          "input_id": "54",
+          "input_position": 54,
+          "raw_topology_resid": 54,
+          "aa": "G",
+          "prediction_index": 633
+        }
+      ]
+    },
+    {
+      "pdb": "4jff",
+      "replica": 1,
+      "Q72_prediction_index": 71,
+      "Q72_raw_resid": 72,
+      "beta_positions": [
+        {
+          "paper_or_common_position": 50,
+          "input_id": "51",
+          "input_position": 51,
+          "raw_topology_resid": 51,
+          "aa": "W",
+          "prediction_index": 633
+        },
+        {
+          "paper_or_common_position": 51,
+          "input_id": "52",
+          "input_position": 52,
+          "raw_topology_resid": 52,
+          "aa": "G",
+          "prediction_index": 634
+        },
+        {
+          "paper_or_common_position": 52,
+          "input_id": "53",
+          "input_position": 53,
+          "raw_topology_resid": 53,
+          "aa": "P",
+          "prediction_index": 635
+        },
+        {
+          "paper_or_common_position": 53,
+          "input_id": "54",
+          "input_position": 54,
+          "raw_topology_resid": 54,
+          "aa": "F",
+          "prediction_index": 636
+        },
+        {
+          "paper_or_common_position": 54,
+          "input_id": "55",
+          "input_position": 55,
+          "raw_topology_resid": 55,
+          "aa": "G",
+          "prediction_index": 637
+        }
+      ]
+    },
+    {
+      "pdb": "4jff",
+      "replica": 2,
+      "Q72_prediction_index": 71,
+      "Q72_raw_resid": 72,
+      "beta_positions": [
+        {
+          "paper_or_common_position": 50,
+          "input_id": "51",
+          "input_position": 51,
+          "raw_topology_resid": 51,
+          "aa": "W",
+          "prediction_index": 633
+        },
+        {
+          "paper_or_common_position": 51,
+          "input_id": "52",
+          "input_position": 52,
+          "raw_topology_resid": 52,
+          "aa": "G",
+          "prediction_index": 634
+        },
+        {
+          "paper_or_common_position": 52,
+          "input_id": "53",
+          "input_position": 53,
+          "raw_topology_resid": 53,
+          "aa": "P",
+          "prediction_index": 635
+        },
+        {
+          "paper_or_common_position": 53,
+          "input_id": "54",
+          "input_position": 54,
+          "raw_topology_resid": 54,
+          "aa": "F",
+          "prediction_index": 636
+        },
+        {
+          "paper_or_common_position": 54,
+          "input_id": "55",
+          "input_position": 55,
+          "raw_topology_resid": 55,
+          "aa": "G",
+          "prediction_index": 637
+        }
+      ]
+    },
+    {
+      "pdb": "4jff",
+      "replica": 3,
+      "Q72_prediction_index": 71,
+      "Q72_raw_resid": 72,
+      "beta_positions": [
+        {
+          "paper_or_common_position": 50,
+          "input_id": "51",
+          "input_position": 51,
+          "raw_topology_resid": 51,
+          "aa": "W",
+          "prediction_index": 633
+        },
+        {
+          "paper_or_common_position": 51,
+          "input_id": "52",
+          "input_position": 52,
+          "raw_topology_resid": 52,
+          "aa": "G",
+          "prediction_index": 634
+        },
+        {
+          "paper_or_common_position": 52,
+          "input_id": "53",
+          "input_position": 53,
+          "raw_topology_resid": 53,
+          "aa": "P",
+          "prediction_index": 635
+        },
+        {
+          "paper_or_common_position": 53,
+          "input_id": "54",
+          "input_position": 54,
+          "raw_topology_resid": 54,
+          "aa": "F",
+          "prediction_index": 636
+        },
+        {
+          "paper_or_common_position": 54,
+          "input_id": "55",
+          "input_position": 55,
+          "raw_topology_resid": 55,
+          "aa": "G",
+          "prediction_index": 637
+        }
+      ]
+    }
+  ],
+  "source_files": [
+    {
+      "pdb": "3hg1",
+      "replica": 1,
+      "topology": "E:\\data\\ITrace\\trajectories\\3hg1_run1_topology.pdb",
+      "topology_sha256": "7498db57b5ed1db5438170241380baf21e395bba8498952c6d6d0fb6ebe0aa2d",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\3hg1_run1_md_processed.xtc",
+      "trajectory_sha256": "ce6ec09238a591f3013176e7c4b4132b495b48654da2b9ca22feb671fe8dae13",
+      "canonical_topology_sha256": "4821006d6b94fa5fb210a70b097ffc7155bad492fd9e6f4b433a877b0bc49bc0",
+      "prediction_sha256": "5a938a40d8c4a0804d06a3699a8e29299c69214cb47dd54c13e28d796b50c230",
+      "model_input_sha256": "4821006d6b94fa5fb210a70b097ffc7155bad492fd9e6f4b433a877b0bc49bc0",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "staged_topology": "C:\\Users\\DELL\\AppData\\Local\\Temp\\flexppi_completion_20261010\\tcr_v41_allprotein_staged\\3hg1_1_canonical.pdb",
+      "staged_trajectory": "C:\\Users\\DELL\\AppData\\Local\\Temp\\flexppi_completion_20261010\\tcr_v41_allprotein_staged\\3hg1_1.xtc",
+      "staged_topology_sha256": "4821006d6b94fa5fb210a70b097ffc7155bad492fd9e6f4b433a877b0bc49bc0",
+      "staged_trajectory_sha256": "ce6ec09238a591f3013176e7c4b4132b495b48654da2b9ca22feb671fe8dae13",
+      "raw_files_unchanged": true
+    },
+    {
+      "pdb": "3hg1",
+      "replica": 2,
+      "topology": "E:\\data\\ITrace\\trajectories\\3hg1_run2_topology.pdb",
+      "topology_sha256": "9f2e37a6bec6c4bc5139d427f595bcd5994a6dd5585d6b268d6c0ab26bfc6cd8",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\3hg1_run2_md_processed.xtc",
+      "trajectory_sha256": "20fb9913f0060e3bb8c4e395e8a6003998eaff94e56bd36ec9f94eb92deb5f1f",
+      "canonical_topology_sha256": "6faf41b393f53a0074f3e5c7e72ca524454797a9db10eafaff7d1cb222c53eae",
+      "prediction_sha256": "5a938a40d8c4a0804d06a3699a8e29299c69214cb47dd54c13e28d796b50c230",
+      "model_input_sha256": "4821006d6b94fa5fb210a70b097ffc7155bad492fd9e6f4b433a877b0bc49bc0",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "staged_topology": "C:\\Users\\DELL\\AppData\\Local\\Temp\\flexppi_completion_20261010\\tcr_v41_allprotein_staged\\3hg1_2_canonical.pdb",
+      "staged_trajectory": "C:\\Users\\DELL\\AppData\\Local\\Temp\\flexppi_completion_20261010\\tcr_v41_allprotein_staged\\3hg1_2.xtc",
+      "staged_topology_sha256": "6faf41b393f53a0074f3e5c7e72ca524454797a9db10eafaff7d1cb222c53eae",
+      "staged_trajectory_sha256": "20fb9913f0060e3bb8c4e395e8a6003998eaff94e56bd36ec9f94eb92deb5f1f",
+      "raw_files_unchanged": true
+    },
+    {
+      "pdb": "3hg1",
+      "replica": 3,
+      "topology": "E:\\data\\ITrace\\trajectories\\3hg1_run3_topology.pdb",
+      "topology_sha256": "fa75908b0c3bd01a4260b4491173d9deee596bb8dd7c76fab48487c12b25bd83",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\3hg1_run3_md_processed.xtc",
+      "trajectory_sha256": "5239caaa06562c4d8574886849df2279ad7e9e73e7b8b21d1d5e069e3d5d19f4",
+      "canonical_topology_sha256": "be270a23874fbcf1c7c3f113768debb05bc95351fa4b08914d1135229bd997af",
+      "prediction_sha256": "5a938a40d8c4a0804d06a3699a8e29299c69214cb47dd54c13e28d796b50c230",
+      "model_input_sha256": "4821006d6b94fa5fb210a70b097ffc7155bad492fd9e6f4b433a877b0bc49bc0",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "staged_topology": "C:\\Users\\DELL\\AppData\\Local\\Temp\\flexppi_completion_20261010\\tcr_v41_allprotein_staged\\3hg1_3_canonical.pdb",
+      "staged_trajectory": "C:\\Users\\DELL\\AppData\\Local\\Temp\\flexppi_completion_20261010\\tcr_v41_allprotein_staged\\3hg1_3.xtc",
+      "staged_topology_sha256": "be270a23874fbcf1c7c3f113768debb05bc95351fa4b08914d1135229bd997af",
+      "staged_trajectory_sha256": "5239caaa06562c4d8574886849df2279ad7e9e73e7b8b21d1d5e069e3d5d19f4",
+      "raw_files_unchanged": true
+    },
+    {
+      "pdb": "4jff",
+      "replica": 1,
+      "topology": "E:\\data\\ITrace\\trajectories\\4jff_run1_topology.pdb",
+      "topology_sha256": "51a1f3de5f305faca6ca83cc4c40a5b26912e19d88170ab30baaf9a25b81cf7f",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\4jff_run1_md_processed.xtc",
+      "trajectory_sha256": "9c80456945aa4970ee0ffa1112e729d7bf4eee0ebe001c980047b138fca988dc",
+      "canonical_topology_sha256": "d9d88e83d6381e03905b0cfdd39ee9bffc3d3d64c9b7981a7867b45610601b7e",
+      "prediction_sha256": "9a2727acb36db166d3fde39ae47a59a067cb4cd7f1c07d4724a892131482bf57",
+      "model_input_sha256": "d9d88e83d6381e03905b0cfdd39ee9bffc3d3d64c9b7981a7867b45610601b7e",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "staged_topology": "C:\\Users\\DELL\\AppData\\Local\\Temp\\flexppi_completion_20261010\\tcr_v41_allprotein_staged\\4jff_1_canonical.pdb",
+      "staged_trajectory": "C:\\Users\\DELL\\AppData\\Local\\Temp\\flexppi_completion_20261010\\tcr_v41_allprotein_staged\\4jff_1.xtc",
+      "staged_topology_sha256": "d9d88e83d6381e03905b0cfdd39ee9bffc3d3d64c9b7981a7867b45610601b7e",
+      "staged_trajectory_sha256": "9c80456945aa4970ee0ffa1112e729d7bf4eee0ebe001c980047b138fca988dc",
+      "raw_files_unchanged": true
+    },
+    {
+      "pdb": "4jff",
+      "replica": 2,
+      "topology": "E:\\data\\ITrace\\trajectories\\4jff_run2_topology.pdb",
+      "topology_sha256": "6a6cb4b9b2ff059f1871cc965c72f5647664c92e7fe298036827a8ea3960c7c8",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\4jff_run2_md_processed.xtc",
+      "trajectory_sha256": "7f120eecf4c99ab62eb38f071f713fe685d9c9b88f0e1c46705d8d4fdfccb791",
+      "canonical_topology_sha256": "d67818d0473f97bd789f14f024f8d3d922e92937b8846b3c16fe8552d2f49417",
+      "prediction_sha256": "9a2727acb36db166d3fde39ae47a59a067cb4cd7f1c07d4724a892131482bf57",
+      "model_input_sha256": "d9d88e83d6381e03905b0cfdd39ee9bffc3d3d64c9b7981a7867b45610601b7e",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "staged_topology": "C:\\Users\\DELL\\AppData\\Local\\Temp\\flexppi_completion_20261010\\tcr_v41_allprotein_staged\\4jff_2_canonical.pdb",
+      "staged_trajectory": "C:\\Users\\DELL\\AppData\\Local\\Temp\\flexppi_completion_20261010\\tcr_v41_allprotein_staged\\4jff_2.xtc",
+      "staged_topology_sha256": "d67818d0473f97bd789f14f024f8d3d922e92937b8846b3c16fe8552d2f49417",
+      "staged_trajectory_sha256": "7f120eecf4c99ab62eb38f071f713fe685d9c9b88f0e1c46705d8d4fdfccb791",
+      "raw_files_unchanged": true
+    },
+    {
+      "pdb": "4jff",
+      "replica": 3,
+      "topology": "E:\\data\\ITrace\\trajectories\\4jff_run3_topology.pdb",
+      "topology_sha256": "3e814438b66fee3e347b165f8f7ed6e204bf64ce6a015ad8b40b25dfcb0912e6",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\4jff_run3_md_processed.xtc",
+      "trajectory_sha256": "f27085037c3e9735b18e6084b7f401644506e89417e56249dd907434270d6a59",
+      "canonical_topology_sha256": "27d0e9d177d3b34cb96f1f1b31d9ef35f8a9a0b0a39c8f7ed8eb95799a660d63",
+      "prediction_sha256": "9a2727acb36db166d3fde39ae47a59a067cb4cd7f1c07d4724a892131482bf57",
+      "model_input_sha256": "d9d88e83d6381e03905b0cfdd39ee9bffc3d3d64c9b7981a7867b45610601b7e",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "staged_topology": "C:\\Users\\DELL\\AppData\\Local\\Temp\\flexppi_completion_20261010\\tcr_v41_allprotein_staged\\4jff_3_canonical.pdb",
+      "staged_trajectory": "C:\\Users\\DELL\\AppData\\Local\\Temp\\flexppi_completion_20261010\\tcr_v41_allprotein_staged\\4jff_3.xtc",
+      "staged_topology_sha256": "27d0e9d177d3b34cb96f1f1b31d9ef35f8a9a0b0a39c8f7ed8eb95799a660d63",
+      "staged_trajectory_sha256": "f27085037c3e9735b18e6084b7f401644506e89417e56249dd907434270d6a59",
+      "raw_files_unchanged": true
+    }
+  ],
+  "script_sha256": "5bb9e860b8ee0c0290076257335a7b821fa98c6c76fcb082b47511cbf73e9aeb"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "sample_id": "A00C9",
+  "n_frames": 5001,
+  "n_frames_used": 5000,
+  "first_time_ps": 0.0,
+  "last_time_ps": 500000.0,
+  "dt_ps": 100.0,
+  "duration_ns": 500.0,
+  "n_original_windows": 5,
+  "original_window_duration_ns": 100.0,
+  "n_sidechains": 311,
+  "hchi_max_recomputation_error": 1.1662580412519219e-07,
+  "rmsf_max_recomputation_error": null,
+  "min_chi_bond_A": 1.1330492496490479,
+  "max_chi_bond_A": 1.9898173809051514,
+  "source_files": [
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A00C9.pdb",
+      "sha256": "3625780654755806421e78472f962cba77b72ff325ac64617f1f04416c7cfec4"
+    },
+    {
+      "path": "D:\\data\\dynarepo_non_nucleic_full\\A00C9\\trajectory.xtc",
+      "sha256": "63909afd4e3d0df4adc99abc38a930ef337792d473997010d613060ddbfb2178"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\neural_exports\\evaluation\\full\\A00C9.npz",
+      "sha256": "c3e0497afb578673d498ef1281a50e56a802ee7d0a803fe74ebeedc6dbcd0c95"
+    }
+  ],
+  "interpretation": "All sidechains; original bins revalidated; 5deg angular histograms use four origins. Offset60deg joint bins center on conventional rotamers and are only a sensitivity. Time windows of one trajectory, not independent repeats."
+}

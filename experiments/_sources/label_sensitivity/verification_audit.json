@@ -1,0 +1,185 @@
+{
+  "selected_records": 90,
+  "eligible_records": 83,
+  "computed_records": 83,
+  "exclusions": [
+    {
+      "sample_id": "A00KX",
+      "dataset": "dynarepo",
+      "reasons": [
+        "less than 10 ns available; no useful long-window comparison"
+      ]
+    },
+    {
+      "sample_id": "A00L3",
+      "dataset": "dynarepo",
+      "reasons": [
+        "less than 10 ns available; no useful long-window comparison"
+      ]
+    },
+    {
+      "sample_id": "A00MR",
+      "dataset": "dynarepo",
+      "reasons": [
+        "less than 10 ns available; no useful long-window comparison"
+      ]
+    },
+    {
+      "sample_id": "A00NB",
+      "dataset": "dynarepo",
+      "reasons": [
+        "less than 10 ns available; no useful long-window comparison"
+      ]
+    },
+    {
+      "sample_id": "A00PF",
+      "dataset": "dynarepo",
+      "reasons": [
+        "less than 10 ns available; no useful long-window comparison"
+      ]
+    },
+    {
+      "sample_id": "A00PY",
+      "dataset": "dynarepo",
+      "reasons": [
+        "less than 10 ns available; no useful long-window comparison"
+      ]
+    },
+    {
+      "sample_id": "A00QH",
+      "dataset": "dynarepo",
+      "reasons": [
+        "less than 10 ns available; no useful long-window comparison"
+      ]
+    }
+  ],
+  "common_window_ns": 100.0,
+  "step_ps": 200.0,
+  "frames": 501,
+  "nonzero_long_chi_bond_diagnostics": [],
+  "partial_residue_mapping": [],
+  "masks": [
+    {
+      "variant": "uniform_available_replicas",
+      "dataset": "atlas",
+      "metric": "chi_entropy",
+      "old_valid": 5660,
+      "new_valid": 5660,
+      "common": 5660,
+      "old_only": 0,
+      "new_only": 0
+    },
+    {
+      "variant": "uniform_available_replicas",
+      "dataset": "atlas",
+      "metric": "rmsf",
+      "old_valid": 6682,
+      "new_valid": 6682,
+      "common": 6682,
+      "old_only": 0,
+      "new_only": 0
+    },
+    {
+      "variant": "uniform_available_replicas",
+      "dataset": "dynarepo",
+      "metric": "chi_entropy",
+      "old_valid": 6384,
+      "new_valid": 6384,
+      "common": 6384,
+      "old_only": 0,
+      "new_only": 0
+    },
+    {
+      "variant": "uniform_available_replicas",
+      "dataset": "dynarepo",
+      "metric": "rmsf",
+      "old_valid": 7386,
+      "new_valid": 7386,
+      "common": 7386,
+      "old_only": 0,
+      "new_only": 0
+    },
+    {
+      "variant": "uniform_available_replicas",
+      "dataset": "itrace",
+      "metric": "chi_entropy",
+      "old_valid": 21449,
+      "new_valid": 21449,
+      "common": 21449,
+      "old_only": 0,
+      "new_only": 0
+    },
+    {
+      "variant": "uniform_available_replicas",
+      "dataset": "itrace",
+      "metric": "rmsf",
+      "old_valid": 24531,
+      "new_valid": 24531,
+      "common": 24531,
+      "old_only": 0,
+      "new_only": 0
+    },
+    {
+      "variant": "uniform_rep1",
+      "dataset": "atlas",
+      "metric": "chi_entropy",
+      "old_valid": 5660,
+      "new_valid": 5660,
+      "common": 5660,
+      "old_only": 0,
+      "new_only": 0
+    },
+    {
+      "variant": "uniform_rep1",
+      "dataset": "atlas",
+      "metric": "rmsf",
+      "old_valid": 6682,
+      "new_valid": 6682,
+      "common": 6682,
+      "old_only": 0,
+      "new_only": 0
+    },
+    {
+      "variant": "uniform_rep1",
+      "dataset": "dynarepo",
+      "metric": "chi_entropy",
+      "old_valid": 6384,
+      "new_valid": 6384,
+      "common": 6384,
+      "old_only": 0,
+      "new_only": 0
+    },
+    {
+      "variant": "uniform_rep1",
+      "dataset": "dynarepo",
+      "metric": "rmsf",
+      "old_valid": 7386,
+      "new_valid": 7386,
+      "common": 7386,
+      "old_only": 0,
+      "new_only": 0
+    },
+    {
+      "variant": "uniform_rep1",
+      "dataset": "itrace",
+      "metric": "chi_entropy",
+      "old_valid": 21449,
+      "new_valid": 21449,
+      "common": 21449,
+      "old_only": 0,
+      "new_only": 0
+    },
+    {
+      "variant": "uniform_rep1",
+      "dataset": "itrace",
+      "metric": "rmsf",
+      "old_valid": 24531,
+      "new_valid": 24531,
+      "common": 24531,
+      "old_only": 0,
+      "new_only": 0
+    }
+  ],
+  "source_code_sha256": "bb1b02959a29f866c2ff6b0bb373c02566d76b27b4effa1d5ffa49eb712c15d6",
+  "plan_sha256": "fe7c01b66ae16f4101e28c13fdb93246f054acc7d6f26ac758caf8aec9995ffd"
+}

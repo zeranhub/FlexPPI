@@ -1,0 +1,81 @@
+{
+  "status": "rendered",
+  "case_id": "C28",
+  "reference": "9rup",
+  "primary_pair": [
+    "9rup",
+    "9rxm"
+  ],
+  "all_states": [
+    "9rup",
+    "9rxm"
+  ],
+  "source": "Existing ITrace run1 topology coordinates; not a newly simulated ensemble",
+  "sources": [
+    {
+      "pdb": "9rup",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_9rup.npz",
+      "prediction_sha256": "78046ce4e5e4a9c87edb9d0b01d7f8cbefaeae879817f82932ff7ede9170b026",
+      "structure": "E:\\data\\ITrace\\trajectories\\9rup_run1_topology.pdb",
+      "structure_sha256": "21a2340889ad33a8256d764a9bc6d97131d6bbc00c7b75fdac839973f473d69d",
+      "chain_roles": {
+        "A": "tcr_alpha",
+        "B": "tcr_beta",
+        "C": "mhc",
+        "D": "peptide",
+        "E": "b2m"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    },
+    {
+      "pdb": "9rxm",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_9rxm.npz",
+      "prediction_sha256": "56fe824ed4ec30d313536bada0ca104e68958380f4897c005bc97d6b385f9994",
+      "structure": "E:\\data\\ITrace\\trajectories\\9rxm_run1_topology.pdb",
+      "structure_sha256": "ebcdb2f7de868f87549884edeefc03ac530c627aa5a226faa973fa13e6f3bb7e",
+      "chain_roles": {
+        "A": "tcr_alpha",
+        "B": "tcr_beta",
+        "C": "peptide",
+        "D": "mhc",
+        "E": "b2m"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    }
+  ],
+  "alignment": "MHC first180 C-alpha, PyMOL align cycles=0; common camera for primary pair",
+  "semantic_colors": [
+    "#CF8C27",
+    "#762A83",
+    "#2166AC",
+    "#1B7837",
+    "#B2182B",
+    "#666666",
+    "#4393C3",
+    "#B35806",
+    "#9970AB"
+  ],
+  "shared_view": [
+    0.22905711829662323,
+    0.42730921506881714,
+    0.8789851665496826,
+    0.5719932913780212,
+    -0.7897334098815918,
+    0.23365572094917297,
+    0.7876272201538086,
+    0.4492531418800354,
+    -0.4253120422363281,
+    0.0,
+    0.0,
+    -278.316162109375,
+    70.46463775634766,
+    45.80082321166992,
+    52.23689651489258,
+    219.4265899658203,
+    337.20574951171875,
+    -20.0
+  ],
+  "no_invented_mechanism": true
+}

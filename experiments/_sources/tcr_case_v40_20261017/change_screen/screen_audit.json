@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "pairs": 251,
+  "candidate_counts": {
+    "same_pMHC_different_TCR": 124,
+    "same_TCR_MHC_peptide_change": 93,
+    "same_TCR_peptide_small_MHC_change": 6,
+    "same_pMHC_small_TCR_change": 23,
+    "literature_defined_antigen_contrast": 5
+  },
+  "independent_biology_candidates": [
+    [
+      "7ow5",
+      "7ow6"
+    ],
+    [
+      "8rlt",
+      "8rlu"
+    ],
+    [
+      "8rlt",
+      "8rlv"
+    ],
+    [
+      "8rlu",
+      "8rlv"
+    ],
+    [
+      "1ao7",
+      "1qrn"
+    ],
+    [
+      "1ao7",
+      "1qse"
+    ],
+    [
+      "1ao7",
+      "1qsf"
+    ],
+    [
+      "1ao7",
+      "3h9s"
+    ],
+    [
+      "1ao7",
+      "3pwp"
+    ],
+    [
+      "2bnq",
+      "2bnr"
+    ]
+  ],
+  "model": "Full and Intra family-disjoint fold0 seed7 epoch40; all244 ITrace excluded from training",
+  "source_annotation_scope": "Only chain role, exact identity, CDR and contact annotations; no legacy model values used",
+  "annotation_source_sha256": "156a0cdacf7eaaa6ba121b3a0aa205dfb53bed1f74e0d6d324039f30436dcd6f",
+  "all_alignment_positions_saved": true,
+  "selection_note": "Descriptive screening across all sequence-defined candidates. No inference or training in this screen. Differences on same-amino-acid positions are primary; substituted sites are retained in detailed tables but excluded from same-type summaries."
+}

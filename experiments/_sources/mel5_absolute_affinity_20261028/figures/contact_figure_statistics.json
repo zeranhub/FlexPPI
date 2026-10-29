@@ -1,0 +1,140 @@
+{
+  "panels": [
+    {
+      "panel": "a",
+      "mutation": "G4A",
+      "all_pairs": 880,
+      "no_zero_contact_pairs_removed": true
+    },
+    {
+      "panel": "b",
+      "mutation": "I7A",
+      "all_pairs": 880,
+      "no_zero_contact_pairs_removed": true
+    },
+    {
+      "panel": "c",
+      "selected_exploratory_pair": "I7A: P7–Thrβ96",
+      "values": {
+        "contact4": {
+          "reference": [
+            0.3010967098703888,
+            0.2293120638085742,
+            0.5484515484515484
+          ],
+          "mutant": [
+            0.007976071784646,
+            0.0369630369630369,
+            0.0019980019980019
+          ]
+        },
+        "contact4p5": {
+          "reference": [
+            0.6071784646061814,
+            0.4656031904287138,
+            0.8501498501498501
+          ],
+          "mutant": [
+            0.0667996011964107,
+            0.1828171828171828,
+            0.0119880119880119
+          ]
+        }
+      }
+    },
+    {
+      "panel": "d",
+      "selected_exploratory_pair": "I7A: P8–Glyβ97",
+      "values": {
+        "contact4": {
+          "reference": [
+            0.0249252243270189,
+            0.0129611166500498,
+            0.0119880119880119
+          ],
+          "mutant": [
+            0.5214356929212361,
+            0.5634365634365635,
+            0.2827172827172826
+          ]
+        },
+        "contact4p5": {
+          "reference": [
+            0.3240279162512462,
+            0.2851445663010966,
+            0.1828171828171828
+          ],
+          "mutant": [
+            0.7288135593220338,
+            0.7882117882117881,
+            0.7652347652347651
+          ]
+        }
+      }
+    },
+    {
+      "panel": "e",
+      "selected_exploratory_pair": "I7A: P8–Glyβ99",
+      "values": {
+        "contact4": {
+          "reference": [
+            0.1266201395812562,
+            0.2652043868394815,
+            0.0659340659340659
+          ],
+          "mutant": [
+            0.4167497507477567,
+            0.3696303696303696,
+            0.3886113886113886
+          ]
+        },
+        "contact4p5": {
+          "reference": [
+            0.2881355932203389,
+            0.5084745762711864,
+            0.1538461538461538
+          ],
+          "mutant": [
+            0.7387836490528414,
+            0.6333666333666333,
+            0.6613386613386613
+          ]
+        }
+      }
+    },
+    {
+      "panel": "f",
+      "selected_exploratory_pair": "G4A: P8–HLA Arg97",
+      "values": {
+        "contact4": {
+          "reference": [
+            0.0129611166500498,
+            0.0089730807577268,
+            0.0079920079920079
+          ],
+          "mutant": [
+            0.0199401794616151,
+            0.1177644710578842,
+            0.9950049950049948
+          ]
+        },
+        "contact4p5": {
+          "reference": [
+            0.0787637088733798,
+            0.0977068793619142,
+            0.0379620379620379
+          ],
+          "mutant": [
+            0.098703888334995,
+            0.2445109780439121,
+            0.999000999000999
+          ]
+        }
+      }
+    }
+  ],
+  "source_sha256": "136c54aa4911aaf67157e8f572cd8ba113bba8d967f6339fe3a5b1b492567094",
+  "sample_unit": "3 independent trajectories per state; displayed points, no trajectory pairing.",
+  "selection": "a/b all 880 pairs; c–f exploratory follow-up from complete screen.",
+  "statistics": "Descriptive means and individual points; no p-values, water or free-energy claims."
+}

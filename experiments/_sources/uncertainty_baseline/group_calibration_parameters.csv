@@ -1,0 +1,21 @@
+variant,fold,metric,test_half,variance_multiplier,calibration_records,test_records,calibration_components,test_components,fitted_on
+full,0,chi_entropy,0,2.543251979010674,370,242,178,176,opposite component half of same held-out fold; equal record weight
+full,0,chi_entropy,1,2.1110084543759506,242,370,176,178,opposite component half of same held-out fold; equal record weight
+full,0,rmsf,0,51.14858736981368,370,242,178,176,opposite component half of same held-out fold; equal record weight
+full,0,rmsf,1,46.29016650316068,242,370,176,178,opposite component half of same held-out fold; equal record weight
+full,1,chi_entropy,0,2.7160006958998832,387,225,191,160,opposite component half of same held-out fold; equal record weight
+full,1,chi_entropy,1,2.452057329918021,225,387,160,191,opposite component half of same held-out fold; equal record weight
+full,1,rmsf,0,81.91228673789273,387,225,191,160,opposite component half of same held-out fold; equal record weight
+full,1,rmsf,1,36.5627473483724,225,387,160,191,opposite component half of same held-out fold; equal record weight
+full,2,chi_entropy,0,2.115288786794753,367,244,165,179,opposite component half of same held-out fold; equal record weight
+full,2,chi_entropy,1,1.964757983264905,244,367,179,165,opposite component half of same held-out fold; equal record weight
+full,2,rmsf,0,33.05157163095171,367,244,165,179,opposite component half of same held-out fold; equal record weight
+full,2,rmsf,1,36.18029855815461,244,367,179,165,opposite component half of same held-out fold; equal record weight
+full,3,chi_entropy,0,2.5721391814046948,375,239,183,168,opposite component half of same held-out fold; equal record weight
+full,3,chi_entropy,1,2.6819917421219945,239,375,168,183,opposite component half of same held-out fold; equal record weight
+full,3,rmsf,0,45.63933563496348,375,239,183,168,opposite component half of same held-out fold; equal record weight
+full,3,rmsf,1,140.40355294783473,239,375,168,183,opposite component half of same held-out fold; equal record weight
+full,4,chi_entropy,0,2.637518771856761,384,230,174,176,opposite component half of same held-out fold; equal record weight
+full,4,chi_entropy,1,2.492341928924465,230,384,176,174,opposite component half of same held-out fold; equal record weight
+full,4,rmsf,0,48.62530397416618,384,230,174,176,opposite component half of same held-out fold; equal record weight
+full,4,rmsf,1,56.44289707303181,230,384,176,174,opposite component half of same held-out fold; equal record weight

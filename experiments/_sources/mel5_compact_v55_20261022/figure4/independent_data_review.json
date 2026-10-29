@@ -1,0 +1,143 @@
+{
+  "status": "passed",
+  "PNG_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_compact_v55_20261022\\figure4\\fig4_mel5_compact_joint.png",
+  "PNG_SHA256": "e11940ceb62622aeadc8c27012d5c6dd6abe21deb85e362c4ff40e512ba28a2e",
+  "plot_py_SHA256": "c3171026c99a5e16a9449e5af0f27f72fbdc6ed7a06250cf975b345e6fe6776e",
+  "read_only_review": true,
+  "actual_PNG_viewed": true,
+  "source_baseline_review": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_composite_v54_20261022\\figure4\\independent_data_review.json",
+  "source_preservation": [
+    {
+      "filename": "source_CDR_absolute.csv",
+      "old_SHA256": "d752594fd4bb5d94a000b1c1b70bef9ecdf49d6fa688f226f6f5c34baf652ed9",
+      "new_SHA256": "d752594fd4bb5d94a000b1c1b70bef9ecdf49d6fa688f226f6f5c34baf652ed9",
+      "check": "byte-identical CSV",
+      "status": "passed"
+    },
+    {
+      "filename": "source_peptide_four_states.csv",
+      "old_SHA256": "e07b701f72202a581b3c75cd3fe696febb8caf7d3a57a9cd80df1f3e53a7f7da",
+      "new_SHA256": "e07b701f72202a581b3c75cd3fe696febb8caf7d3a57a9cd80df1f3e53a7f7da",
+      "check": "byte-identical CSV",
+      "status": "passed"
+    },
+    {
+      "filename": "source_CDR_three_contrasts.csv",
+      "old_SHA256": "4af39b50174f831dcf6ae7cab28acd796fac5bada4a460b31d77a0fd619c2307",
+      "new_SHA256": "4af39b50174f831dcf6ae7cab28acd796fac5bada4a460b31d77a0fd619c2307",
+      "check": "byte-identical CSV",
+      "status": "passed"
+    },
+    {
+      "filename": "source_interface_three_contrasts.csv",
+      "old_SHA256": "43a6bba46611751a30a842cdc618d70d3963064c3e129d58c600c8fa78c35eb0",
+      "new_SHA256": "43a6bba46611751a30a842cdc618d70d3963064c3e129d58c600c8fa78c35eb0",
+      "check": "byte-identical CSV",
+      "status": "passed"
+    },
+    {
+      "filename": "source_CDR_heatmap_all135.csv",
+      "old_SHA256": "ab78c996236033826c748cf0b34c1217caca7de5f83583b7367d79958eca88a2",
+      "new_SHA256": "ab78c996236033826c748cf0b34c1217caca7de5f83583b7367d79958eca88a2",
+      "check": "byte-identical CSV",
+      "status": "passed"
+    },
+    {
+      "filename": "source_interface_heatmap_all90.csv",
+      "old_SHA256": "f842957ee3057f08bfe8dfbcf8a79bb2cf66aacde0b89b7f63d602f4dc57a6e2",
+      "new_SHA256": "f842957ee3057f08bfe8dfbcf8a79bb2cf66aacde0b89b7f63d602f4dc57a6e2",
+      "check": "byte-identical CSV",
+      "status": "passed"
+    },
+    {
+      "filename": "source_heatmap_arrays.npz",
+      "old_SHA256": "a1552527cd346eadb8b34dc69c4ea57bdeb0a48c44e0f3996655294846bf72f2",
+      "new_SHA256": "a1552527cd346eadb8b34dc69c4ea57bdeb0a48c44e0f3996655294846bf72f2",
+      "check": "all arrays and NaN masks exactly identical",
+      "status": "passed"
+    }
+  ],
+  "all_remaining_scientific_values_identical_to_reviewed_v54": true,
+  "counts": {
+    "peptide_values": 40,
+    "absolute_CDR_values": 90,
+    "ranked_Hchi": 0,
+    "CDR_heatmap": 135,
+    "pMHC_heatmap": 90,
+    "Hchi_valid_per_contrast": [
+      23,
+      23,
+      22
+    ]
+  },
+  "old_ranked23_bar_removed": {
+    "no_bar_plot_calls": true,
+    "not_visible_in_actual_PNG": true,
+    "old_title_and_delta_label_absent": true
+  },
+  "new_panel_d": {
+    "one_panel_letter": true,
+    "upper_CDR_delta_RMSF_shape": [
+      3,
+      45
+    ],
+    "lower_interface_delta_Hchi_shape": [
+      3,
+      30
+    ],
+    "upper_lower_values_and_NaN_masks_exactly_preserved": true,
+    "valid_Hchi_per_contrast": [
+      23,
+      23,
+      22
+    ],
+    "separate_units_and_colorbars_preserved": true,
+    "common_TCR_numbering_preserved": true,
+    "Q72_highlight_preserved": true
+  },
+  "a_b_c": {
+    "same_structure_images_and_crops": true,
+    "fixed_atomic_pair_labels_2_94_and_3_12_preserved": true,
+    "all40_peptide_values_preserved": true,
+    "all90_absolute_CDR_values_preserved": true
+  },
+  "state_mapping_and_palette_preserved": true,
+  "state_colors": {
+    "MEL5": "#CF8C27",
+    "mature": "#762A83",
+    "G4A": "#4B82A5",
+    "I7A": "#73927D",
+    "HLA_Q72": "#297B82",
+    "signed": [
+      "#427A9F",
+      "#FAFAFA",
+      "#B76778"
+    ],
+    "ineligible": "#D9DDE0"
+  },
+  "contrasts_preserved": [
+    {
+      "name": "TCR maturation",
+      "before": "3hg1",
+      "after": "4jff"
+    },
+    {
+      "name": "Peptide G4A",
+      "before": "4jff",
+      "after": "4jfd"
+    },
+    {
+      "name": "Peptide I7A",
+      "before": "4jff",
+      "after": "4jfe"
+    }
+  ],
+  "heatmap_range": [
+    -0.45,
+    0.45
+  ],
+  "no_axis_color_clipping": true,
+  "new_inference_training_MD": false,
+  "blocking_issues": [],
+  "required_edits": []
+}

@@ -1,0 +1,45 @@
+{
+  "status": "complete",
+  "canvas_mm": [
+    183.0,
+    168.0
+  ],
+  "dpi": 450,
+  "minimum_font_pt": 8.5,
+  "text_outside_canvas": [],
+  "all_source_points_retained": true,
+  "no_smoothing": true,
+  "no_downsampling": true,
+  "plotted_rows": {
+    "a": 6126,
+    "b": 498,
+    "c": 151,
+    "d": 432
+  },
+  "NaN_Fstar_bins": 211,
+  "all_native_vector": true,
+  "baseline_source": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v80_redesign\\figure5\\compose_fig5.py",
+  "style_asset_notes": "Original scientific production inherited; generic LineTrend and PairedBoxScatter assets inspected. Their example time-series and before/after boxplot data do not match frozen ECDF/MD angular histograms, so parameter inheritance preserves scientific native vector data.",
+  "source_sha256": {
+    "all66_residue_summary.csv": "fec153f86b3b8ba808d2ee731937754427902660c5b29a955cacf25f5d8ab4ab",
+    "defined_angles_long.csv": "8052306e31edf07f8cc7295ec8059c4e8dad6047354a834ea21fb0020e48ad0c",
+    "fig4_joint_complementarity_all_ecdf_points.csv": "c5a4a03c1a6407ad94dad06b60552e101ebcad4d180d1000d81b7131afa28249",
+    "histograms_501frames.csv": "e90410df3e05ad5004861601e9f8b7272da0889c589d056ef4a13b4a5e20dbad",
+    "per_chi_correlations.csv": "d90af24843fc5d5fb08abd0a9d799b38ea7e4fe0afd8fb229d7c370f3c544205",
+    "retained_absolute_correlations_all498.csv": "0a503485bafbbf7f5604105936451610e2915949fcb00b17034f18dc43f41eae",
+    "retained_panel_statistics.csv": "452208e20db8dc345a85f18cd125e3526838d5b337b2dc092d0eb76b4a269552"
+  },
+  "output_sha256": {
+    "png": "cd819248080e711cb93c6b5f79ce48db8a9c909abfa19274260878dd05969459",
+    "pdf": "430de0c5da1b84d0f8dd1ac284c66e44e13fd2cbea40e5205d8bdb45b9cb8464",
+    "svg": "91ca4767e7e019f6058728554c5cb45c85e643929a99574f4e201e22f10f4228"
+  },
+  "visual_QA": "Final PNG opened and checked: no clipping, overlap or missing plotted rows.",
+  "preview_pixels": [
+    3242,
+    2976
+  ],
+  "pdf_fonts": "ArialMT and Arial-BoldMT: embedded CID TrueType, subset and Unicode yes",
+  "reviewed_png_sha256": "cd819248080e711cb93c6b5f79ce48db8a9c909abfa19274260878dd05969459",
+  "Pro_zero_entropy": "P19/P37/P38 have two chemically defined chi angles; valid true; all frames in one coarse joint bin. Hchi=0 legitimate, not artificial zero or undefined chi."
+}

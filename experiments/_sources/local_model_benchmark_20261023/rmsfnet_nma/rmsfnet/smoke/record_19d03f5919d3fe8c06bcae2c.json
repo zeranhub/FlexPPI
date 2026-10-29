@@ -1,0 +1,14 @@
+{
+  "sample_id": "A000A",
+  "dataset": "dynarepo",
+  "input_sha256": "6f20b539bb46a76fbfcc2a779527c8c51ce3da91bee926fa6e04fc066046f96c",
+  "status": "complete",
+  "expected_residues": 310,
+  "residues": 310,
+  "output_sha256": "9d1a849e10dba5257012e74e12ce85e228e451caf1e691d9d5e3bf50e3ae896e",
+  "preprocessing_seconds": 0.1502125000115484,
+  "inference_seconds": 34.14113770012045,
+  "selected_box_count": 50,
+  "grid_voxel_count": 191100,
+  "total_seconds": 34.368884499999695
+}

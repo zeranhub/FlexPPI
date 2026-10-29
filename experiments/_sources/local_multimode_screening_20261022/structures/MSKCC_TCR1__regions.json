@@ -1,0 +1,778 @@
+{
+  "panel_id": "MSKCC_TCR1",
+  "template_id": "MSKCC_TCR1__AF3",
+  "peptide_chain": "B",
+  "spectator_regions": [
+    {
+      "chain": "A",
+      "author_residue_id": "5",
+      "amino_acid": "M",
+      "minimum_parent_heavy_atom_distance_A": 3.990545451438938,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "6",
+      "amino_acid": "R",
+      "minimum_parent_heavy_atom_distance_A": 7.623823056708493,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "7",
+      "amino_acid": "Y",
+      "minimum_parent_heavy_atom_distance_A": 2.6909777033635938,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "8",
+      "amino_acid": "F",
+      "minimum_parent_heavy_atom_distance_A": 7.128870667924899,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "9",
+      "amino_acid": "F",
+      "minimum_parent_heavy_atom_distance_A": 3.623004416226952,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "22",
+      "amino_acid": "F",
+      "minimum_parent_heavy_atom_distance_A": 7.480904624442155,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "24",
+      "amino_acid": "A",
+      "minimum_parent_heavy_atom_distance_A": 6.076164086000311,
+      "R_included": true,
+      "H_included": false
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "25",
+      "amino_acid": "V",
+      "minimum_parent_heavy_atom_distance_A": 6.9145613020639285,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "26",
+      "amino_acid": "G",
+      "minimum_parent_heavy_atom_distance_A": 7.004712556557909,
+      "R_included": true,
+      "H_included": false
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "28",
+      "amino_acid": "V",
+      "minimum_parent_heavy_atom_distance_A": 7.572322629154147,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "33",
+      "amino_acid": "F",
+      "minimum_parent_heavy_atom_distance_A": 4.68123263681693,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "34",
+      "amino_acid": "V",
+      "minimum_parent_heavy_atom_distance_A": 6.640821184160886,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "36",
+      "amino_acid": "F",
+      "minimum_parent_heavy_atom_distance_A": 7.311656857375079,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "45",
+      "amino_acid": "M",
+      "minimum_parent_heavy_atom_distance_A": 3.55070781675992,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "52",
+      "amino_acid": "I",
+      "minimum_parent_heavy_atom_distance_A": 7.000037571327741,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "55",
+      "amino_acid": "E",
+      "minimum_parent_heavy_atom_distance_A": 7.5232582037306175,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "58",
+      "amino_acid": "E",
+      "minimum_parent_heavy_atom_distance_A": 7.87145507514335,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "59",
+      "amino_acid": "Y",
+      "minimum_parent_heavy_atom_distance_A": 4.2694965745389695,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "62",
+      "amino_acid": "G",
+      "minimum_parent_heavy_atom_distance_A": 5.830946235389245,
+      "R_included": true,
+      "H_included": false
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "63",
+      "amino_acid": "E",
+      "minimum_parent_heavy_atom_distance_A": 2.8606588401974817,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "64",
+      "amino_acid": "T",
+      "minimum_parent_heavy_atom_distance_A": 5.807334328243898,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "65",
+      "amino_acid": "R",
+      "minimum_parent_heavy_atom_distance_A": 6.428925493424232,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "66",
+      "amino_acid": "K",
+      "minimum_parent_heavy_atom_distance_A": 2.706257009228799,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "67",
+      "amino_acid": "V",
+      "minimum_parent_heavy_atom_distance_A": 3.6216540420089824,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "68",
+      "amino_acid": "K",
+      "minimum_parent_heavy_atom_distance_A": 6.124850202249847,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "69",
+      "amino_acid": "A",
+      "minimum_parent_heavy_atom_distance_A": 5.189626094431081,
+      "R_included": true,
+      "H_included": false
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "70",
+      "amino_acid": "H",
+      "minimum_parent_heavy_atom_distance_A": 3.1127589048944992,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "71",
+      "amino_acid": "S",
+      "minimum_parent_heavy_atom_distance_A": 7.108834222289897,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "72",
+      "amino_acid": "Q",
+      "minimum_parent_heavy_atom_distance_A": 5.788534961456137,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "73",
+      "amino_acid": "T",
+      "minimum_parent_heavy_atom_distance_A": 3.1448600922775563,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "74",
+      "amino_acid": "H",
+      "minimum_parent_heavy_atom_distance_A": 4.770671860440624,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "75",
+      "amino_acid": "R",
+      "minimum_parent_heavy_atom_distance_A": 7.167227218387875,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "76",
+      "amino_acid": "V",
+      "minimum_parent_heavy_atom_distance_A": 4.0277480060202375,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "77",
+      "amino_acid": "D",
+      "minimum_parent_heavy_atom_distance_A": 2.9847301385552436,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "78",
+      "amino_acid": "L",
+      "minimum_parent_heavy_atom_distance_A": 5.989993489145043,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "79",
+      "amino_acid": "G",
+      "minimum_parent_heavy_atom_distance_A": 7.188892543361598,
+      "R_included": true,
+      "H_included": false
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "80",
+      "amino_acid": "T",
+      "minimum_parent_heavy_atom_distance_A": 3.7645722200536946,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "81",
+      "amino_acid": "L",
+      "minimum_parent_heavy_atom_distance_A": 3.862000258933186,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "82",
+      "amino_acid": "R",
+      "minimum_parent_heavy_atom_distance_A": 7.540135940419112,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "84",
+      "amino_acid": "Y",
+      "minimum_parent_heavy_atom_distance_A": 3.046946011992993,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "95",
+      "amino_acid": "V",
+      "minimum_parent_heavy_atom_distance_A": 6.753858008575543,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "97",
+      "amino_acid": "R",
+      "minimum_parent_heavy_atom_distance_A": 2.882673932306601,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "99",
+      "amino_acid": "Y",
+      "minimum_parent_heavy_atom_distance_A": 3.193107264092454,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "114",
+      "amino_acid": "H",
+      "minimum_parent_heavy_atom_distance_A": 5.385090621335912,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "116",
+      "amino_acid": "Y",
+      "minimum_parent_heavy_atom_distance_A": 3.5825820297656827,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "117",
+      "amino_acid": "A",
+      "minimum_parent_heavy_atom_distance_A": 7.744735631382134,
+      "R_included": true,
+      "H_included": false
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "118",
+      "amino_acid": "Y",
+      "minimum_parent_heavy_atom_distance_A": 7.806497293921264,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "123",
+      "amino_acid": "Y",
+      "minimum_parent_heavy_atom_distance_A": 4.275310631989213,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "124",
+      "amino_acid": "I",
+      "minimum_parent_heavy_atom_distance_A": 5.549037123681909,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "133",
+      "amino_acid": "W",
+      "minimum_parent_heavy_atom_distance_A": 7.188726312776137,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "139",
+      "amino_acid": "A",
+      "minimum_parent_heavy_atom_distance_A": 5.9826190752880155,
+      "R_included": true,
+      "H_included": false
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "140",
+      "amino_acid": "A",
+      "minimum_parent_heavy_atom_distance_A": 6.802770391539024,
+      "R_included": true,
+      "H_included": false
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "141",
+      "amino_acid": "Q",
+      "minimum_parent_heavy_atom_distance_A": 7.762242008595198,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "142",
+      "amino_acid": "T",
+      "minimum_parent_heavy_atom_distance_A": 5.1993585181250985,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "143",
+      "amino_acid": "T",
+      "minimum_parent_heavy_atom_distance_A": 2.697271213652791,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "144",
+      "amino_acid": "K",
+      "minimum_parent_heavy_atom_distance_A": 6.107824653671714,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "145",
+      "amino_acid": "H",
+      "minimum_parent_heavy_atom_distance_A": 7.837926383935997,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "146",
+      "amino_acid": "K",
+      "minimum_parent_heavy_atom_distance_A": 2.6635136568074884,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "147",
+      "amino_acid": "W",
+      "minimum_parent_heavy_atom_distance_A": 2.6620745669496184,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "150",
+      "amino_acid": "A",
+      "minimum_parent_heavy_atom_distance_A": 6.410572283345692,
+      "R_included": true,
+      "H_included": false
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "151",
+      "amino_acid": "H",
+      "minimum_parent_heavy_atom_distance_A": 6.0094716905897805,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "152",
+      "amino_acid": "V",
+      "minimum_parent_heavy_atom_distance_A": 3.7936887062593843,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "153",
+      "amino_acid": "A",
+      "minimum_parent_heavy_atom_distance_A": 6.621015103441465,
+      "R_included": true,
+      "H_included": false
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "154",
+      "amino_acid": "E",
+      "minimum_parent_heavy_atom_distance_A": 7.320765055648214,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "155",
+      "amino_acid": "Q",
+      "minimum_parent_heavy_atom_distance_A": 2.5336748015481394,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "156",
+      "amino_acid": "L",
+      "minimum_parent_heavy_atom_distance_A": 4.594111992540016,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "157",
+      "amino_acid": "R",
+      "minimum_parent_heavy_atom_distance_A": 7.498045678708551,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "158",
+      "amino_acid": "A",
+      "minimum_parent_heavy_atom_distance_A": 7.204080857402974,
+      "R_included": true,
+      "H_included": false
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "159",
+      "amino_acid": "Y",
+      "minimum_parent_heavy_atom_distance_A": 2.7086400646819064,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "160",
+      "amino_acid": "L",
+      "minimum_parent_heavy_atom_distance_A": 6.522038791666297,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "163",
+      "amino_acid": "T",
+      "minimum_parent_heavy_atom_distance_A": 4.155706438140212,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "164",
+      "amino_acid": "C",
+      "minimum_parent_heavy_atom_distance_A": 5.5050236148449,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "165",
+      "amino_acid": "V",
+      "minimum_parent_heavy_atom_distance_A": 7.78664947201298,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "166",
+      "amino_acid": "E",
+      "minimum_parent_heavy_atom_distance_A": 7.385549133273708,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "167",
+      "amino_acid": "W",
+      "minimum_parent_heavy_atom_distance_A": 3.142683248435961,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "168",
+      "amino_acid": "L",
+      "minimum_parent_heavy_atom_distance_A": 6.578623032215783,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "170",
+      "amino_acid": "R",
+      "minimum_parent_heavy_atom_distance_A": 7.156610999628246,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "A",
+      "author_residue_id": "171",
+      "amino_acid": "Y",
+      "minimum_parent_heavy_atom_distance_A": 2.9463927097384692,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "C",
+      "author_residue_id": "28",
+      "amino_acid": "S",
+      "minimum_parent_heavy_atom_distance_A": 6.146047591745447,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "C",
+      "author_residue_id": "29",
+      "amino_acid": "G",
+      "minimum_parent_heavy_atom_distance_A": 7.524162013141397,
+      "R_included": true,
+      "H_included": false
+    },
+    {
+      "chain": "C",
+      "author_residue_id": "30",
+      "amino_acid": "T",
+      "minimum_parent_heavy_atom_distance_A": 3.4584448817351423,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "C",
+      "author_residue_id": "31",
+      "amino_acid": "D",
+      "minimum_parent_heavy_atom_distance_A": 5.988139610930928,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "C",
+      "author_residue_id": "32",
+      "amino_acid": "Y",
+      "minimum_parent_heavy_atom_distance_A": 4.71264108542121,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "C",
+      "author_residue_id": "91",
+      "amino_acid": "D",
+      "minimum_parent_heavy_atom_distance_A": 6.965689628457472,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "C",
+      "author_residue_id": "92",
+      "amino_acid": "N",
+      "minimum_parent_heavy_atom_distance_A": 3.3834251875872763,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "C",
+      "author_residue_id": "93",
+      "amino_acid": "N",
+      "minimum_parent_heavy_atom_distance_A": 3.6895503791112545,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "C",
+      "author_residue_id": "94",
+      "amino_acid": "N",
+      "minimum_parent_heavy_atom_distance_A": 5.909067692961386,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "D",
+      "author_residue_id": "30",
+      "amino_acid": "V",
+      "minimum_parent_heavy_atom_distance_A": 6.906479349132957,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "D",
+      "author_residue_id": "51",
+      "amino_acid": "Y",
+      "minimum_parent_heavy_atom_distance_A": 7.818722657825893,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "D",
+      "author_residue_id": "96",
+      "amino_acid": "L",
+      "minimum_parent_heavy_atom_distance_A": 6.932550035881458,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "D",
+      "author_residue_id": "97",
+      "amino_acid": "A",
+      "minimum_parent_heavy_atom_distance_A": 3.675702517886887,
+      "R_included": true,
+      "H_included": false
+    },
+    {
+      "chain": "D",
+      "author_residue_id": "98",
+      "amino_acid": "P",
+      "minimum_parent_heavy_atom_distance_A": 3.5109551406988952,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "D",
+      "author_residue_id": "99",
+      "amino_acid": "G",
+      "minimum_parent_heavy_atom_distance_A": 3.6356069644558664,
+      "R_included": true,
+      "H_included": false
+    },
+    {
+      "chain": "D",
+      "author_residue_id": "100",
+      "amino_acid": "T",
+      "minimum_parent_heavy_atom_distance_A": 2.8979007919526847,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "D",
+      "author_residue_id": "101",
+      "amino_acid": "T",
+      "minimum_parent_heavy_atom_distance_A": 6.2344723112706175,
+      "R_included": true,
+      "H_included": true
+    },
+    {
+      "chain": "D",
+      "author_residue_id": "103",
+      "amino_acid": "E",
+      "minimum_parent_heavy_atom_distance_A": 6.785652216257477,
+      "R_included": true,
+      "H_included": true
+    }
+  ],
+  "all_variable_component_positions_excluded": true,
+  "predictions_seen": false,
+  "endpoint_labels_used_for_regions": false
+}

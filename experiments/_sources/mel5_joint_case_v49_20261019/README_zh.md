@@ -1,0 +1,1 @@
+v49源文件与核查记录。figure4为Word使用的PNG及可编辑SVG、PDF、真实结构渲染与绘图脚本；case_sources为原始预测、完整区域及已有轨迹再分析的轻量备份，原始大轨迹的路径及SHA保留于analysis_audit.json；literature_review核查原文事实，scientific_review核查数字与机制；manuscript_QA核查原生文档包及所有渲染页。build_v49.py对原v48仅局部编辑原生OOXML。CURRENT_FIGURE_MAP.json索引现用全部图源。原v48与旧案例归档保持不变。

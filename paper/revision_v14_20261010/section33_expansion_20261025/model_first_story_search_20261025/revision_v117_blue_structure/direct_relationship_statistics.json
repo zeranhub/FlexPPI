@@ -1,0 +1,61 @@
+{
+  "source": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\neural_exports\\evaluation\\oof_per_residue.csv.gz",
+  "source_sha256": "293cef1437db032d2dde6cb176869e43f8ee4af27a7358cab20242e2da94b96d",
+  "selection": "variant full; both target masks valid; all four MD/prediction columns finite; identical rows in both panels",
+  "full_rows": 961321,
+  "common_valid_positions": 824988,
+  "records": 3063,
+  "masked_or_invalid_full_rows": 136333,
+  "source_counts": {
+    "atlas": {
+      "positions": 367362,
+      "records": 1929
+    },
+    "dynarepo": {
+      "positions": 282949,
+      "records": 890
+    },
+    "itrace": {
+      "positions": 174677,
+      "records": 244
+    }
+  },
+  "Pro_positions_retained": 44822,
+  "no_new_training_inference_or_MD": true,
+  "prediction_protocol": "existing corresponding-heldout-fold OOF predictions, fixed epoch40; not training-fit or new external evaluation",
+  "rho_unit": "pooled residue-level Spearman; descriptive, length-weighted; no independent-residue significance test",
+  "density": "hexagonal cell counts with common log count-to-color mapping for MD/Full; no smoothing/subsampling",
+  "central_view": "0–10 Angstrom as user reference; out-of-view tails retained in full-range companion, included in all statistics",
+  "panels": {
+    "MD": {
+      "rho": 0.20861515505308,
+      "AA_centered_rho": 0.3451963752527882,
+      "record_AA_centered_rho": 0.36136790954483833,
+      "RMSF_minmax": [
+        0.20509373,
+        33.186665
+      ],
+      "Hchi_minmax": [
+        0.0,
+        4.0474887
+      ],
+      "above_10_A": 4234,
+      "above_10_fraction": 0.005132195862242845
+    },
+    "Full": {
+      "rho": 0.2619048885568794,
+      "AA_centered_rho": 0.5051875284672007,
+      "record_AA_centered_rho": 0.4886433120336023,
+      "RMSF_minmax": [
+        0.25664064,
+        13.75891
+      ],
+      "Hchi_minmax": [
+        2.7478527e-06,
+        4.057139
+      ],
+      "above_10_A": 906,
+      "above_10_fraction": 0.0010981977919678832
+    }
+  }
+}

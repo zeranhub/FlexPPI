@@ -1,0 +1,61 @@
+{
+  "decision": "prefer_1MXE_for_primary_complex_context_case_not_proven_binding_induced_transition",
+  "family_fold1_checked": [
+    {
+      "metric": "rmsf",
+      "model": "full",
+      "n": 25,
+      "target_mean": 0.78905528,
+      "prediction_mean": 0.6915220932000001,
+      "mae": 0.1148592012
+    },
+    {
+      "metric": "rmsf",
+      "model": "intra",
+      "n": 25,
+      "target_mean": 0.78905528,
+      "prediction_mean": 3.1427368079999995,
+      "mae": 2.383203344
+    },
+    {
+      "metric": "chi_entropy",
+      "model": "full",
+      "n": 21,
+      "target_mean": 1.8407959006190477,
+      "prediction_mean": 1.9174631000000002,
+      "mae": 0.25441792985714284
+    },
+    {
+      "metric": "chi_entropy",
+      "model": "intra",
+      "n": 21,
+      "target_mean": 1.8407959006190477,
+      "prediction_mean": 2.2383656285714286,
+      "mae": 0.4229937089047619
+    }
+  ],
+  "screenshot_paragraph_matches_different_protocol": [
+    {
+      "protocol": "original_record_split_OOF_fold4_not_family_fold1",
+      "variant": "full",
+      "peptide_RMSF_mean": 0.8564307689666748,
+      "peptide_RMSF_MAE": 0.09857142716646194,
+      "source": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\neural_exports\\evaluation\\full\\A001K.npz"
+    },
+    {
+      "protocol": "original_record_split_OOF_fold4_not_family_fold1",
+      "variant": "intrachain",
+      "peptide_RMSF_mean": 2.0028374195098877,
+      "peptide_RMSF_MAE": 1.2137821912765503,
+      "source": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\neural_exports\\evaluation\\intrachain\\A001K.npz"
+    }
+  ],
+  "no_matching_isolated_1MXE_pair_in_existing_pair_delta_table": true,
+  "numbering": "Native CaMKI 294-318 mapped by exact 25-residue sequence and the original structural paper; local preprocessed PDB numbering is different.",
+  "manuscript_modified": false,
+  "source_hashes": {
+    "E:\\Project\\FlexPPI\\experiments\\non_tcr_case_screen_20261025\\all_616_record_screen.csv": "944ab463f3f2e682fd95c5843f2023296a02e6ef97bb6e4c96e14d67b37b041f",
+    "E:\\Project\\FlexPPI\\experiments\\non_tcr_case_screen_20261025\\all_chain_metrics.csv": "a2bd3bf9984754ba302183b840f0c811e10a97a888c8cf6643472cf185ca71aa",
+    "E:\\Project\\FlexPPI\\experiments\\non_tcr_case_screen_20261025\\all_region_metrics.csv": "6d6e6bc6642f50656970fa09eb5dcfa031445d6ebeb65391bd99e1678b8060d3"
+  }
+}

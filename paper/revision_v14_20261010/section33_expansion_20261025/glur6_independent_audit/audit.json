@@ -1,0 +1,32 @@
+{
+  "samples": [
+    "A00C7",
+    "A00DH"
+  ],
+  "fold": 2,
+  "sequence_length": 383,
+  "all_target_sequences_identical": true,
+  "direction": "dimer minus monomer",
+  "AB_mean": "Arithmetic mean of A/B labels and predictions, then subtract the same monomer.",
+  "AB_interface": "Either A or B has another-chain CA within 8 Angstrom.",
+  "AB_distance": "Arithmetic mean of the A/B minimum partner CA distances.",
+  "family_clean": true,
+  "family_component_members": 2,
+  "full_export_source_check": [
+    {
+      "sample_id": "A00C7",
+      "npz": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\neural_exports\\evaluation\\full\\A00C7.npz",
+      "full_prediction_max_error": 0.0,
+      "target_max_error": 0.0
+    },
+    {
+      "sample_id": "A00DH",
+      "npz": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\neural_exports\\evaluation\\full\\A00DH.npz",
+      "full_prediction_max_error": 0.0,
+      "target_max_error": 0.0
+    }
+  ],
+  "max_block_mean_label_error": 1.2040138244184817e-06,
+  "uncertainty": "Five consecutive 100 ns blocks from one 500 ns trajectory per state, not independent simulation replicas. No inferential P values or block bootstrap confidence intervals.",
+  "selection": "Exploratory selected case; no population-generalization claim from this example alone."
+}

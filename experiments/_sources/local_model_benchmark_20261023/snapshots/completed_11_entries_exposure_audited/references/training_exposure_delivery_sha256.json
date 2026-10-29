@@ -1,0 +1,75 @@
+{
+  "frozen_utc": "2026-10-23T17:04:19.030532+00:00",
+  "membership_schema": [
+    "method",
+    "checkpoint_sha256",
+    "sample_id",
+    "dataset",
+    "group",
+    "documented_split",
+    "binding_strength",
+    "exact_identifier_match",
+    "identifier_resolution",
+    "pdb_id",
+    "original_PDB_chain_IDs",
+    "official_split_family",
+    "same_PDB_split",
+    "original_fold",
+    "family_fold",
+    "own_same_family_in_train",
+    "snapshot_utc"
+  ],
+  "membership_rows": 18378,
+  "membership_categories": {
+    "DynaProt-M": {
+      "train": 1262,
+      "unlisted": 1673,
+      "val": 39,
+      "test": 82,
+      "unresolved": 7
+    },
+    "Full": {
+      "record_biological_group_OOF": 3063
+    },
+    "Intra": {
+      "record_biological_group_OOF": 3063
+    },
+    "backflip-1.0": {
+      "train": 1108,
+      "val": 137,
+      "unlisted": 1673,
+      "test": 138,
+      "unresolved": 7
+    },
+    "backflip-1.0-seq": {
+      "train": 1108,
+      "val": 137,
+      "unlisted": 1673,
+      "test": 138,
+      "unresolved": 7
+    },
+    "backflip-2.1": {
+      "unknown": 3063
+    }
+  },
+  "protocol_sources_count": 40,
+  "performance_files_read": [],
+  "files": {
+    "training_exposure_protocol_sources_sha256.json": {
+      "sha256": "83b0fbbddd486633cf2bb2c3dd34de8da4d896d6fd05378ff2f9498836454575",
+      "bytes": 24142
+    },
+    "training_exposure_membership_frozen.csv": {
+      "sha256": "72521f5abc8609ce7bd4dcf10cf3e1e6c0d16626017f06e9a7be98fdf6942e5b",
+      "bytes": 5519885
+    },
+    "training_exposure_audit_zh.md": {
+      "sha256": "f0203e402b60e0b0dcbe54a987cc0791da6461b1d71535b5d177662551f385ef",
+      "bytes": 8490
+    },
+    "audit_training_exposure.py": {
+      "sha256": "3db8298cb31b0fc1a4756871383ccce9ae72720924bea518aa65abf6bb534b15",
+      "bytes": 23427
+    }
+  }
+}

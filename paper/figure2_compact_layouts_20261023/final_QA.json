@@ -1,0 +1,165 @@
+{
+  "status": "passed",
+  "options": {
+    "merged_distributions": {
+      "width_mm": 183.0,
+      "height_mm": 150.0,
+      "minimum_font_pt": 9.0,
+      "outside_text": []
+    }
+  },
+  "rendered_and_verified_counts": {
+    "merged_distributions": {
+      "AP_values": 36756,
+      "PR_vertices": 1224
+    }
+  },
+  "original_width_mm": 183,
+  "original_height_mm": 203,
+  "full_density_data_preserved": true,
+  "no_metric_annotation_backgrounds": true,
+  "main_panels": [
+    "a",
+    "b",
+    "c"
+  ],
+  "shared_mass_scale": true,
+  "mass_colorbar_axes_count": 1,
+  "output_trends_solid": true,
+  "distribution_width_mm": 71,
+  "previous_distribution_width_mm": 58,
+  "equal_output_linewidth_pt": 1.45,
+  "stroke_intersections": {
+    "method": "equal-color mixture within exact buffered stroke overlap",
+    "output_linewidth_pt": 1.45,
+    "overlap_regions": 2,
+    "overlap_area_mm2": 1.0665550071931964,
+    "mixture_rgb": [
+      0.3686274509803921,
+      0.3803921568627451,
+      0.38823529411764707
+    ],
+    "trend_vertices_unchanged": true,
+    "no_line_gaps": true
+  },
+  "method_legend": {
+    "right_aligned": true,
+    "right_edge_mm": 176.0,
+    "center_y_mm": 69.5
+  },
+  "PR_group_has_three_tasks": true,
+  "c_heading_removed": true,
+  "PR_plot_height_mm": 40,
+  "PR_precision_axis": {
+    "type": "task_specific_continuous_piecewise_linear",
+    "tasks": {
+      "rmsf": {
+        "values": [
+          0,
+          0.5,
+          1
+        ],
+        "heights": [
+          0,
+          0.25,
+          1
+        ],
+        "ticks": [
+          0,
+          0.5,
+          1
+        ]
+      },
+      "chi_entropy": {
+        "values": [
+          0,
+          0.5,
+          0.9,
+          1
+        ],
+        "heights": [
+          0,
+          0.1,
+          0.45,
+          1
+        ],
+        "ticks": [
+          0,
+          0.9,
+          1
+        ]
+      },
+      "within_type_hchi": {
+        "values": [
+          0,
+          0.45,
+          0.75,
+          1
+        ],
+        "heights": [
+          0,
+          0.12,
+          0.9,
+          1
+        ],
+        "ticks": [
+          0,
+          0.6,
+          1
+        ]
+      }
+    },
+    "display_top_padding": 0.025,
+    "shared_y_scale": false,
+    "y_ticks_and_label_on_each_plot": true,
+    "original_PR_vertices_preserved": true
+  },
+  "all_36756_record_AP_values_plotted_in_each_option": true,
+  "all_1224_PR_vertices_plotted_in_each_option": true,
+  "all_frozen_metrics_unchanged": true,
+  "no_new_statistical_tests": true,
+  "manuscript_replaced": true,
+  "source_files_byte_identical": {
+    "all_selected_endpoint.csv": true,
+    "four_method_binned_trend.csv": true,
+    "macro_pr_curve.csv": true,
+    "original_statistics_and_reproducibility.md": true,
+    "per_record_metrics.csv": true,
+    "prediction_reference_chi_entropy.npz": true,
+    "prediction_reference_rmsf.npz": true,
+    "PRESPECIFIED_ADDITIONS.md": true,
+    "PRESPECIFIED_PROTOCOL.md": true,
+    "record_codes.csv": true,
+    "source_ap_matrix.csv": true,
+    "summary.json": true,
+    "within_type_all_selected_endpoint.csv": true,
+    "within_type_macro_pr.csv": true,
+    "within_type_record_macro_metrics.csv": true
+  },
+  "visual_review_passed": true,
+  "independent_visual_review_passed": true,
+  "height_reduction_percent": {
+    "task_panels": 10.83743842364532,
+    "merged_distributions": 26.108374384236452
+  },
+  "prior_selected_C_unchanged": "0e1ae812bcdfaa83992ae525f31dfef46bf31a7f50ef11c87cdba8f2504ad2a1",
+  "v61_unchanged": "666ecc56bb3159e2146d8a2a22cec5db09069697c28a9d89c12d41b80750593c",
+  "output_sha256": {
+    "comparison_overview.png": "65cc7c2e2f9e23a9e7a3575bbaf44216c397fedde9a2834a985b6e7aecb08bbb",
+    "fig2_compact_merged.pdf": "c1976438ab8aaaa1b8c01cf531882c25dadd26f747d2b6bc5790604a4b862d36",
+    "fig2_compact_merged.png": "2f449b964fa36f9a829b5c96b618e219229e75c18f59e0a9cf2f485aee54e6db",
+    "fig2_compact_merged.svg": "01cc6a6a992c0cc981d6a86dbd13a33dbb1623516e2080d424b5b7ed1daddb3f",
+    "fig2_compact_merged_preview.png": "a3c5a9ac144f67dc20b35dfa2d2d0c6ecbdba4b9040db3b19566bbc86cbd7ff8",
+    "fig2_compact_task_panels.pdf": "b9b05299c7b774507154d3acd8681fcfe6be557a8f1a3b2c7d66ac4b48029d74",
+    "fig2_compact_task_panels.png": "94569cc374ca051dcccd2fdf8a80fb6a67707368533845e98a0fbe2b31af6d0a",
+    "fig2_compact_task_panels.svg": "cfb1745725843216a157f10466b96221f0d5242e4e9c62fca5ef961a9e2e0d01",
+    "fig2_compact_task_panels_preview.png": "fb0ed07e98c25e425efa5c3e0f23805410bc1328f3dfdc68298a214d1a67f556",
+    "previous_7panel_layout.pdf": "0e1ae812bcdfaa83992ae525f31dfef46bf31a7f50ef11c87cdba8f2504ad2a1",
+    "previous_layout_preview.png": "8a07467ae130f6472646ca36afef84a20edd2c7161660a2b3ab9693d83f1a0fa"
+  },
+  "manuscript_revision": "v63",
+  "manuscript_path": "E:/Project/FlexPPI/paper/revision_v14_20261010/paper_v63_20261023_中文修订_图2紧凑构图与文字同步.docx",
+  "manuscript_figure_page": 11,
+  "source_AP_companion_supplement": "S2",
+  "source_AP_companion_page": 24
+}

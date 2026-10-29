@@ -1,0 +1,531 @@
+{
+  "status": "passed",
+  "scope": "Full, primary template only; independent CSV-module recomputation, not a new model fit.",
+  "blindness": "Pre-output protocol review completed before viewing prediction/metric files; unblinded at explicit parent instruction.",
+  "independent_TCR_systems": 3,
+  "candidate_rows": 279,
+  "fit_membership_checks": 91,
+  "stored_metric_rows_crosschecked": 100,
+  "LOSO_system_separation": "passed",
+  "within_system_Hamming_component_separation": "passed",
+  "labels_match_original_candidates": "passed",
+  "no_label_or_identifying_fields_in_logged_feature_lists": "passed",
+  "source_code_manual_review": "Pipeline.fit uses only train rows; median imputation/scaling are inside pipeline; explicit BASE/STATIC/DYNAMIC lists contain no labels. Features-and-labels CSV contains labels for evaluation but these are not fed as model features.",
+  "primary_metrics": [
+    {
+      "system": "ebv",
+      "model": "B0_binding",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 1,
+      "average_precision": 0.15497298553306513,
+      "auroc": 0.5461538461538462,
+      "top10_candidates": "ebv_p42|ebv_p73|ebv_p95|ebv_p82|ebv_p25|ebv_p26|ebv_p65|ebv_p14|ebv_p79|ebv_p40"
+    },
+    {
+      "system": "ebv",
+      "model": "B1_binding_static",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 5,
+      "average_precision": 0.5421537612714084,
+      "auroc": 0.873076923076923,
+      "top10_candidates": "ebv_p58|ebv_p21|ebv_p3|ebv_p89|ebv_p17|ebv_p11|ebv_p88|ebv_p51|ebv_p5|ebv_p22"
+    },
+    {
+      "system": "ebv",
+      "model": "B2_binding_static_dynamics",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 4,
+      "average_precision": 0.3884462815636905,
+      "auroc": 0.8528846153846154,
+      "top10_candidates": "ebv_p17|ebv_p88|ebv_p89|ebv_p21|ebv_p58|ebv_p3|ebv_p57|ebv_p5|ebv_p90|ebv_p87"
+    },
+    {
+      "system": "ebv",
+      "model": "B1_AA",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 7,
+      "average_precision": 0.6548875323760908,
+      "auroc": 0.8923076923076924,
+      "top10_candidates": "ebv_p89|ebv_p11|ebv_p3|ebv_p58|ebv_p21|ebv_p88|ebv_p57|ebv_p51|ebv_p44|ebv_p60"
+    },
+    {
+      "system": "ebv",
+      "model": "B2_AA",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 4,
+      "average_precision": 0.45493192704731167,
+      "auroc": 0.8625,
+      "top10_candidates": "ebv_p89|ebv_p17|ebv_p88|ebv_p3|ebv_p21|ebv_p53|ebv_p57|ebv_p58|ebv_p91|ebv_p60"
+    },
+    {
+      "system": "ebv",
+      "model": "B1_position_AA",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 3,
+      "average_precision": 0.2443924974107296,
+      "auroc": 0.6692307692307693,
+      "top10_candidates": "ebv_p17|ebv_p93|ebv_p9|ebv_p6|ebv_p88|ebv_p11|ebv_p22|ebv_p7|ebv_p36|ebv_p50"
+    },
+    {
+      "system": "ebv",
+      "model": "B2_position_AA",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 3,
+      "average_precision": 0.2654170874196019,
+      "auroc": 0.6846153846153846,
+      "top10_candidates": "ebv_p17|ebv_p9|ebv_p93|ebv_p88|ebv_p6|ebv_p22|ebv_p11|ebv_p36|ebv_p7|ebv_p50"
+    },
+    {
+      "system": "ebv",
+      "model": "raw_NetTCR22_selected",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 2,
+      "average_precision": 0.2775672226753147,
+      "auroc": 0.6692307692307693,
+      "top10_candidates": "ebv_p94|ebv_p54|ebv_p8|ebv_p43|ebv_p17|ebv_p47|ebv_p44|ebv_p20|ebv_p72|ebv_p16"
+    },
+    {
+      "system": "ebv",
+      "model": "raw_ERGO-II_mcpas",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 1,
+      "average_precision": 0.19489244050285026,
+      "auroc": 0.6576923076923077,
+      "top10_candidates": "ebv_p30|ebv_p28|ebv_p23|ebv_p19|ebv_p35|ebv_p70|ebv_p36|ebv_p83|ebv_p14|ebv_p29"
+    },
+    {
+      "system": "ebv",
+      "model": "raw_ERGO-II_vdjdb",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 0,
+      "average_precision": 0.16326425098450634,
+      "auroc": 0.5634615384615385,
+      "top10_candidates": "ebv_p73|ebv_p26|ebv_p42|ebv_p77|ebv_p95|ebv_p25|ebv_p5|ebv_p79|ebv_p82|ebv_p31"
+    },
+    {
+      "system": "mage",
+      "model": "B0_binding",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 2,
+      "average_precision": 0.19872944908004028,
+      "auroc": 0.41963015647226176,
+      "top10_candidates": "mage_p50|mage_p71|mage_p40|mage_p12|mage_p19|mage_p34|mage_p83|mage_p74|mage_p92|mage_p36"
+    },
+    {
+      "system": "mage",
+      "model": "B1_binding_static",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 5,
+      "average_precision": 0.5313786018485273,
+      "auroc": 0.8399715504978662,
+      "top10_candidates": "mage_p40|mage_p12|mage_p92|mage_p61|mage_p86|mage_p69|mage_p17|mage_p57|mage_p47|mage_p24"
+    },
+    {
+      "system": "mage",
+      "model": "B2_binding_static_dynamics",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 3,
+      "average_precision": 0.39607780008363014,
+      "auroc": 0.810099573257468,
+      "top10_candidates": "mage_p12|mage_p86|mage_p39|mage_p48|mage_p29|mage_p47|mage_p13|mage_p25|mage_p37|mage_p31"
+    },
+    {
+      "system": "mage",
+      "model": "B1_AA",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 5,
+      "average_precision": 0.43245825639035623,
+      "auroc": 0.7709815078236131,
+      "top10_candidates": "mage_p74|mage_p95|mage_p12|mage_p71|mage_p92|mage_p69|mage_p61|mage_p51|mage_p62|mage_p39"
+    },
+    {
+      "system": "mage",
+      "model": "B2_AA",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 5,
+      "average_precision": 0.4221584139820305,
+      "auroc": 0.7816500711237554,
+      "top10_candidates": "mage_p71|mage_p12|mage_p74|mage_p95|mage_p51|mage_p39|mage_p13|mage_p92|mage_p69|mage_p29"
+    },
+    {
+      "system": "mage",
+      "model": "B1_position_AA",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 1,
+      "average_precision": 0.15093516085054481,
+      "auroc": 0.30938833570412516,
+      "top10_candidates": "mage_p21|mage_p62|mage_p77|mage_p41|mage_p15|mage_p73|mage_p70|mage_p63|mage_p44|mage_p7"
+    },
+    {
+      "system": "mage",
+      "model": "B2_position_AA",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 0,
+      "average_precision": 0.15230301957432663,
+      "auroc": 0.3207681365576102,
+      "top10_candidates": "mage_p77|mage_p21|mage_p73|mage_p62|mage_p70|mage_p63|mage_p15|mage_p41|mage_p7|mage_p79"
+    },
+    {
+      "system": "mage",
+      "model": "raw_NetTCR22_selected",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 4,
+      "average_precision": 0.26534211685366094,
+      "auroc": 0.5519203413940257,
+      "top10_candidates": "mage_p14|mage_p88|mage_p62|mage_p69|mage_p71|mage_p6|mage_p74|mage_p61|mage_p87|mage_p24"
+    },
+    {
+      "system": "mage",
+      "model": "raw_ERGO-II_mcpas",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 2,
+      "average_precision": 0.2315770103478902,
+      "auroc": 0.38193456614509247,
+      "top10_candidates": "mage_p40|mage_p50|mage_p34|mage_p36|mage_p92|mage_p16|mage_p4|mage_p84|mage_p8|mage_p51"
+    },
+    {
+      "system": "mage",
+      "model": "raw_ERGO-II_vdjdb",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 1,
+      "average_precision": 0.19408930602193195,
+      "auroc": 0.46728307254623047,
+      "top10_candidates": "mage_p71|mage_p12|mage_p19|mage_p83|mage_p74|mage_p15|mage_p50|mage_p95|mage_p34|mage_p17"
+    },
+    {
+      "system": "nyeso",
+      "model": "B0_binding",
+      "n": 93,
+      "n_positive": 30,
+      "top10_hits": 1,
+      "average_precision": 0.2859411144479301,
+      "auroc": 0.4560846560846561,
+      "top10_candidates": "NYESO_p52|NYESO_p21|NYESO_p4|NYESO_p83|NYESO_p60|NYESO_p73|NYESO_p80|NYESO_p19|NYESO_p54|NYESO_p38"
+    },
+    {
+      "system": "nyeso",
+      "model": "B1_binding_static",
+      "n": 93,
+      "n_positive": 30,
+      "top10_hits": 8,
+      "average_precision": 0.817821768710859,
+      "auroc": 0.915873015873016,
+      "top10_candidates": "NYESO_p5|NYESO_p24|NYESO_p16|NYESO_p36|NYESO_p45|NYESO_p13|NYESO_p22|NYESO_p31|NYESO_p33|NYESO_p49"
+    },
+    {
+      "system": "nyeso",
+      "model": "B2_binding_static_dynamics",
+      "n": 93,
+      "n_positive": 30,
+      "top10_hits": 9,
+      "average_precision": 0.834307533805125,
+      "auroc": 0.9222222222222223,
+      "top10_candidates": "NYESO_p5|NYESO_p36|NYESO_p24|NYESO_p45|NYESO_p16|NYESO_p13|NYESO_p22|NYESO_p33|NYESO_p31|NYESO_p14"
+    },
+    {
+      "system": "nyeso",
+      "model": "B1_AA",
+      "n": 93,
+      "n_positive": 30,
+      "top10_hits": 8,
+      "average_precision": 0.6743943375766851,
+      "auroc": 0.8523809523809525,
+      "top10_candidates": "NYESO_p5|NYESO_p31|NYESO_p36|NYESO_p16|NYESO_p24|NYESO_p45|NYESO_p12|NYESO_p13|NYESO_p49|NYESO_p3"
+    },
+    {
+      "system": "nyeso",
+      "model": "B2_AA",
+      "n": 93,
+      "n_positive": 30,
+      "top10_hits": 7,
+      "average_precision": 0.6948210375482197,
+      "auroc": 0.8740740740740741,
+      "top10_candidates": "NYESO_p5|NYESO_p31|NYESO_p36|NYESO_p16|NYESO_p18|NYESO_p24|NYESO_p3|NYESO_p13|NYESO_p45|NYESO_p49"
+    },
+    {
+      "system": "nyeso",
+      "model": "B1_position_AA",
+      "n": 93,
+      "n_positive": 30,
+      "top10_hits": 8,
+      "average_precision": 0.676039499479412,
+      "auroc": 0.8322751322751322,
+      "top10_candidates": "NYESO_p5|NYESO_p16|NYESO_p31|NYESO_p57|NYESO_p12|NYESO_p14|NYESO_p3|NYESO_p28|NYESO_p24|NYESO_p8"
+    },
+    {
+      "system": "nyeso",
+      "model": "B2_position_AA",
+      "n": 93,
+      "n_positive": 30,
+      "top10_hits": 7,
+      "average_precision": 0.6699848255306181,
+      "auroc": 0.8259259259259258,
+      "top10_candidates": "NYESO_p5|NYESO_p16|NYESO_p57|NYESO_p31|NYESO_p12|NYESO_p14|NYESO_p3|NYESO_p54|NYESO_p28|NYESO_p18"
+    },
+    {
+      "system": "nyeso",
+      "model": "raw_NetTCR22_selected",
+      "n": 93,
+      "n_positive": 30,
+      "top10_hits": 1,
+      "average_precision": 0.2914933330185904,
+      "auroc": 0.4687830687830688,
+      "top10_candidates": "NYESO_p21|NYESO_p4|NYESO_p41|NYESO_p9|NYESO_p23|NYESO_p27|NYESO_p75|NYESO_p19|NYESO_p1|NYESO_p83"
+    },
+    {
+      "system": "nyeso",
+      "model": "raw_ERGO-II_mcpas",
+      "n": 93,
+      "n_positive": 30,
+      "top10_hits": 3,
+      "average_precision": 0.38878455724020045,
+      "auroc": 0.61005291005291,
+      "top10_candidates": "NYESO_p68|NYESO_p76|NYESO_p48|NYESO_p54|NYESO_p92|NYESO_p91|NYESO_p49|NYESO_p13|NYESO_p3|NYESO_p89"
+    },
+    {
+      "system": "nyeso",
+      "model": "raw_ERGO-II_vdjdb",
+      "n": 93,
+      "n_positive": 30,
+      "top10_hits": 2,
+      "average_precision": 0.36830330282041374,
+      "auroc": 0.5952380952380952,
+      "top10_candidates": "NYESO_p75|NYESO_p41|NYESO_p64|NYESO_p88|NYESO_p45|NYESO_p4|NYESO_p18|NYESO_p40|NYESO_p54|NYESO_p37"
+    }
+  ],
+  "macro_metrics": {
+    "B0_binding": {
+      "mean_top10_hits": 1.3333333333333333,
+      "mean_average_precision": 0.2132145163536785
+    },
+    "B1_AA": {
+      "mean_top10_hits": 6.666666666666667,
+      "mean_average_precision": 0.587246708781044
+    },
+    "B1_binding_static": {
+      "mean_top10_hits": 6,
+      "mean_average_precision": 0.6304513772769316
+    },
+    "B1_position_AA": {
+      "mean_top10_hits": 4,
+      "mean_average_precision": 0.35712238591356216
+    },
+    "B2_AA": {
+      "mean_top10_hits": 5.333333333333333,
+      "mean_average_precision": 0.523970459525854
+    },
+    "B2_binding_static_dynamics": {
+      "mean_top10_hits": 5.333333333333333,
+      "mean_average_precision": 0.5396105384841485
+    },
+    "B2_position_AA": {
+      "mean_top10_hits": 3.3333333333333335,
+      "mean_average_precision": 0.36256831084151553
+    },
+    "raw_ERGO-II_mcpas": {
+      "mean_top10_hits": 2,
+      "mean_average_precision": 0.27175133603031365
+    },
+    "raw_ERGO-II_vdjdb": {
+      "mean_top10_hits": 1,
+      "mean_average_precision": 0.241885619942284
+    },
+    "raw_NetTCR22_selected": {
+      "mean_top10_hits": 2.3333333333333335,
+      "mean_average_precision": 0.278134224182522
+    }
+  },
+  "within_system_aggregates": [
+    {
+      "system": "ebv",
+      "model": "B0_binding",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 0,
+      "average_precision": 0.17840868868726417,
+      "auroc": 0.6269230769230769,
+      "top10_candidates": "ebv_p17|ebv_p77|ebv_p16|ebv_p47|ebv_p67|ebv_p31|ebv_p22|ebv_p54|ebv_p5|ebv_p56"
+    },
+    {
+      "system": "ebv",
+      "model": "B1_binding_static",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 4,
+      "average_precision": 0.43801818748627264,
+      "auroc": 0.864423076923077,
+      "top10_candidates": "ebv_p17|ebv_p88|ebv_p58|ebv_p3|ebv_p89|ebv_p11|ebv_p21|ebv_p7|ebv_p22|ebv_p90"
+    },
+    {
+      "system": "ebv",
+      "model": "B2_binding_static_dynamics",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 5,
+      "average_precision": 0.39547714226387765,
+      "auroc": 0.7951923076923076,
+      "top10_candidates": "ebv_p17|ebv_p89|ebv_p88|ebv_p58|ebv_p90|ebv_p3|ebv_p11|ebv_p7|ebv_p22|ebv_p60"
+    },
+    {
+      "system": "ebv",
+      "model": "B1_AA",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 4,
+      "average_precision": 0.37972474025105607,
+      "auroc": 0.810576923076923,
+      "top10_candidates": "ebv_p88|ebv_p58|ebv_p57|ebv_p17|ebv_p21|ebv_p90|ebv_p11|ebv_p7|ebv_p3|ebv_p51"
+    },
+    {
+      "system": "ebv",
+      "model": "B2_AA",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 4,
+      "average_precision": 0.37706847246320935,
+      "auroc": 0.7769230769230769,
+      "top10_candidates": "ebv_p88|ebv_p58|ebv_p57|ebv_p89|ebv_p17|ebv_p3|ebv_p90|ebv_p7|ebv_p55|ebv_p11"
+    },
+    {
+      "system": "ebv",
+      "model": "B1_position_AA",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 5,
+      "average_precision": 0.46042780611834616,
+      "auroc": 0.8557692307692308,
+      "top10_candidates": "ebv_p88|ebv_p17|ebv_p3|ebv_p50|ebv_p11|ebv_p52|ebv_p87|ebv_p89|ebv_p59|ebv_p21"
+    },
+    {
+      "system": "ebv",
+      "model": "B2_position_AA",
+      "n": 93,
+      "n_positive": 13,
+      "top10_hits": 5,
+      "average_precision": 0.4446336272423229,
+      "auroc": 0.8528846153846154,
+      "top10_candidates": "ebv_p88|ebv_p17|ebv_p3|ebv_p50|ebv_p52|ebv_p11|ebv_p89|ebv_p59|ebv_p58|ebv_p91"
+    },
+    {
+      "system": "mage",
+      "model": "B0_binding",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 3,
+      "average_precision": 0.2789851827703546,
+      "auroc": 0.441678520625889,
+      "top10_candidates": "mage_p69|mage_p88|mage_p24|mage_p6|mage_p62|mage_p22|mage_p87|mage_p8|mage_p41|mage_p49"
+    },
+    {
+      "system": "mage",
+      "model": "B1_binding_static",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 6,
+      "average_precision": 0.5197820697820698,
+      "auroc": 0.7951635846372689,
+      "top10_candidates": "mage_p86|mage_p69|mage_p61|mage_p89|mage_p47|mage_p24|mage_p39|mage_p25|mage_p82|mage_p35"
+    },
+    {
+      "system": "mage",
+      "model": "B2_binding_static_dynamics",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 5,
+      "average_precision": 0.4736147602368883,
+      "auroc": 0.77524893314367,
+      "top10_candidates": "mage_p86|mage_p69|mage_p47|mage_p89|mage_p82|mage_p76|mage_p92|mage_p25|mage_p35|mage_p10"
+    },
+    {
+      "system": "mage",
+      "model": "B1_AA",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 6,
+      "average_precision": 0.5633895235488033,
+      "auroc": 0.7539118065433855,
+      "top10_candidates": "mage_p61|mage_p92|mage_p95|mage_p69|mage_p24|mage_p10|mage_p57|mage_p45|mage_p94|mage_p89"
+    },
+    {
+      "system": "mage",
+      "model": "B2_AA",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 6,
+      "average_precision": 0.5151427895868456,
+      "auroc": 0.72475106685633,
+      "top10_candidates": "mage_p95|mage_p92|mage_p69|mage_p74|mage_p61|mage_p24|mage_p32|mage_p78|mage_p10|mage_p89"
+    },
+    {
+      "system": "mage",
+      "model": "B1_position_AA",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 4,
+      "average_precision": 0.3446717148150224,
+      "auroc": 0.6913229018492176,
+      "top10_candidates": "mage_p78|mage_p7|mage_p38|mage_p35|mage_p4|mage_p57|mage_p31|mage_p24|mage_p69|mage_p56"
+    },
+    {
+      "system": "mage",
+      "model": "B2_position_AA",
+      "n": 93,
+      "n_positive": 19,
+      "top10_hits": 2,
+      "average_precision": 0.2985576503459754,
+      "auroc": 0.6536273115220484,
+      "top10_candidates": "mage_p78|mage_p38|mage_p7|mage_p35|mage_p4|mage_p47|mage_p10|mage_p57|mage_p89|mage_p31"
+    }
+  ],
+  "permutation_control_summary": {
+    "mean_top10_hits": {
+      "median": 6.0,
+      "min": 4.333333333333333,
+      "max": 7.666666666666667,
+      "fraction_greater_or_equal_observed": 0.925
+    },
+    "mean_average_precision": {
+      "median": 0.5927178547781319,
+      "min": 0.4692311384228874,
+      "max": 0.6957089693807104,
+      "fraction_greater_or_equal_observed": 0.935
+    }
+  },
+  "permutation_caveat": "Only stored per-seed metric summaries are available; distribution checked, each shuffled model was not independently refitted. These fractions are descriptive, not confirmatory significance with three systems.",
+  "skipped_analyses": [
+    {
+      "system": "nyeso",
+      "reason": "At least one training group split has a single label."
+    }
+  ],
+  "conclusion": "No stable incremental functional-screening benefit from the eight frozen FlexPPI regional features on the primary structures. B2 macro top10 and AP are worse than B1; AA-control comparison also worsens. No direct binding/affinity or causal flexibility conclusion follows.",
+  "source_sha256": {
+    "evaluation\\full_primary\\all_heldout_predictions.csv": "5bba859c5d34d44fb8927a24619ff6e55c135b89973d177cf10b662f4fa540ca",
+    "evaluation\\full_primary\\metrics_by_system_and_fold.csv": "b4fba28d7e331b770ea2a30b51af5ad0d60c7321adf82a60b45fd16ff5abcfa8",
+    "evaluation\\full_primary\\fit_membership.json": "e8b294311b6243acf32a8521b738e57b9b7104de11ea98da0e9d0db0d6576734",
+    "evaluation\\full_primary\\features_and_labels.csv": "abf4e14079c750ff1454580c828e683875cec8bf2ff2a6e356a29fb9fea1a634",
+    "evaluation\\full_primary\\shuffled_dynamic_controls_all_seeds.csv": "9415f3f4f33b3886aceb3364da8d8191d477dcab44ee0815de9472d041abc33a",
+    "functional_candidates.csv": "dfacb2e64a35c7371165df02f5a51564113e485af1485919061fdf37671a8838",
+    "scripts\\evaluate_incremental_utility.py": "0d4cb235dcbb78810c106c3eab56a3571e9250a84a20c87f9281e590908ad9f4"
+  }
+}

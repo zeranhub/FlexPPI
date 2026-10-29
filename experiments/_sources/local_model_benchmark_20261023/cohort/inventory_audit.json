@@ -1,0 +1,50 @@
+{
+  "status": "complete_local_inventory_and_identity_checks_grouping_pending_optional_preference",
+  "created_utc": "2026-10-23T12:15:45.361822+00:00",
+  "records": 3063,
+  "chains": 4973,
+  "rmsf_support": 961321,
+  "hchi_support": 824988,
+  "primary_group_records": {
+    "single_chain": 2193,
+    "other_multichain": 626,
+    "tcr_pmhc_itrace": 244
+  },
+  "family_components": 1662,
+  "itrace_family_components": 1,
+  "original_source_hashes_unchanged": true,
+  "local_pdb_files_hash_verified": 8036,
+  "full_intrachain_npz_verified": 6126,
+  "all_original_position_identity_and_valid_masks_preserved": true,
+  "reusable_local_per_residue_methods": [
+    "Full",
+    "Intra",
+    "Static",
+    "AA",
+    "BackFlip2_2.1",
+    "ANM",
+    "GNM"
+  ],
+  "official_external_raw_missing": [
+    "PLANET_full",
+    "PLANET_sequence",
+    "RMSF_net_PDB"
+  ],
+  "declared_counts_and_current_hashes_verified_from": "E:\\Project\\FlexPPI\\experiments\\_sources\\baselines\\cohort\\cohort_freeze.json",
+  "parent_freeze_sha256": "90455f67f4767a7f51efb2dc8f57395add4fc7b1678a1c340d5bff3fce2cc075",
+  "reference_table_sha256": "d7fc3a98ea3eba4c1e4c1edb702faf75936d2cb5339938fbebc165ddc7a7ed83",
+  "no_model_inference_started": true,
+  "no_network_access": true,
+  "original_files_modified": false,
+  "manifest_sha256": {
+    "annotation_architecture_candidates.csv": "2df2c06497e1faefbdd301df5c7ebded4f435962fc7fc18e3d1d5de8cdf38c18",
+    "bootstrap_membership.csv": "9df68d41640d54415e04b4b58c1bc7fc222551cfe03b0d775d08a19add72f016",
+    "chains.csv": "51f2ffcbef2a723ed1893605e5da26bf5dfa8fcacb7769203e86362720367519",
+    "existing_prediction_manifest.csv": "1e3a5718da69acbd0f466952ab6e5cf5f16ad78d0d2bae126162ab92701e6442",
+    "external_official_result_inventory.csv": "83b3e467061cf2a86b6b7e8733516000ff5266c100acd9a17d164c5a52a536d6",
+    "group_support.csv": "0bf044e3f9b61e759bae8e5b480a90b9371ef7abcb23b0bd8317273e9558db1e",
+    "records.csv": "5c1153ea9717e4c54a790e39dfda82e6d5e48f482ca0cb6a30e1e35cb903f08e",
+    "source_file_hashes.csv": "e92c68c1ae91c81e8e0dce696e21f5709e54392e30b1013ec803d80fa3864340"
+  },
+  "grouping_protocol_sha256": "2c8d749ba3c7843e14bb2ff7ffe01c7c951b15b5069f9535743295c76d8ad5b6"
+}

@@ -1,0 +1,128 @@
+{
+  "sample_id": "A00B1",
+  "pdb_id": "6H9N",
+  "family_id": "family_ba9be070e437b34b",
+  "dataset": "dynarepo",
+  "fold": 4,
+  "plan_sha256": "a54eef971aa5b3da34dab8838796aa385e9c83e470faf9c5d4416840ceec7b11",
+  "status": "complete",
+  "replicas": 1,
+  "replica_audits": [
+    {
+      "replica_index": 1,
+      "source_frames": 5001,
+      "selected_frames": 2501,
+      "windows": 5,
+      "canonical_name_changes": {
+        "HSE->HIS_atoms": 51,
+        "ILE_CD->CD1_atoms": 10
+      },
+      "mapping": [
+        {
+          "canonical_chain": "A",
+          "replica_chain": "A",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "B",
+          "replica_chain": "B",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "residue_coverage": 1.0,
+      "chi_residues": 198,
+      "chi_bond_instances_gt5A": 0,
+      "chi_max_bond_A": 1.9900275468826294,
+      "max_CA_step_A": 14.699460983276367,
+      "topology_sha256": "a89a71ef58f21e34c4468cc2f251c27eb8f96491ca871a64c66aac621c4f0cf9",
+      "canonical_topology_sha256": "2ccec566ddef3061da8ca59e320758b6e4d091946a60e0cd688ebfb299b533ad",
+      "source_sha256": "759494f4e616147e581ad033cbf5376c650a1510a30d2971dd0c57e53ad4de40",
+      "selected_xtc_sha256": "7d3daef631eacc54c6bb231a8a8bbaca68aab8cf0fc9ce22b824432430c14ab3",
+      "selected_bytes": 35221500,
+      "source_bytes": 70420448,
+      "source_size_mtime_unchanged": true
+    }
+  ],
+  "labels": {
+    "uniform_rep1": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\class_level_feasibility_20261026\\analysis_v1_20261026\\uniform_md\\labels\\uniform_rep1\\A00B1.npz",
+      "sha256": "51ab5ec43a2dae435c952b3fbf4011f464513657dd10c725a929f4ac47d551cc",
+      "valid_counts": [
+        227,
+        198
+      ],
+      "replicas": 1,
+      "variance_interpretation": "zero when one local replica; does not estimate sampling uncertainty"
+    },
+    "uniform_available_replicas": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\class_level_feasibility_20261026\\analysis_v1_20261026\\uniform_md\\labels\\uniform_available_replicas\\A00B1.npz",
+      "sha256": "51ab5ec43a2dae435c952b3fbf4011f464513657dd10c725a929f4ac47d551cc",
+      "valid_counts": [
+        227,
+        198
+      ],
+      "replicas": 1,
+      "variance_interpretation": "zero when one local replica; does not estimate sampling uncertainty"
+    },
+    "block_000_100ns": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\class_level_feasibility_20261026\\analysis_v1_20261026\\uniform_md\\labels\\block_000_100ns\\A00B1.npz",
+      "sha256": "51ab5ec43a2dae435c952b3fbf4011f464513657dd10c725a929f4ac47d551cc",
+      "valid_counts": [
+        227,
+        198
+      ],
+      "replicas": 1,
+      "variance_interpretation": "zero when one local replica; does not estimate sampling uncertainty"
+    },
+    "block_100_200ns": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\class_level_feasibility_20261026\\analysis_v1_20261026\\uniform_md\\labels\\block_100_200ns\\A00B1.npz",
+      "sha256": "66b82b10ff49231af600f27398ea39b8277a60da4a8edaa0783f34c415b442f9",
+      "valid_counts": [
+        227,
+        198
+      ],
+      "replicas": 1,
+      "variance_interpretation": "zero when one local replica; does not estimate sampling uncertainty"
+    },
+    "block_200_300ns": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\class_level_feasibility_20261026\\analysis_v1_20261026\\uniform_md\\labels\\block_200_300ns\\A00B1.npz",
+      "sha256": "43d7fd24d82776c6e27596b824b72107d893033745be2449d95fcc27765289f9",
+      "valid_counts": [
+        227,
+        198
+      ],
+      "replicas": 1,
+      "variance_interpretation": "zero when one local replica; does not estimate sampling uncertainty"
+    },
+    "block_300_400ns": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\class_level_feasibility_20261026\\analysis_v1_20261026\\uniform_md\\labels\\block_300_400ns\\A00B1.npz",
+      "sha256": "b63882497e039ecaae2f119faf7119958e06caf1f78712bb01def5ae5ea73cf9",
+      "valid_counts": [
+        227,
+        198
+      ],
+      "replicas": 1,
+      "variance_interpretation": "zero when one local replica; does not estimate sampling uncertainty"
+    },
+    "block_400_500ns": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\class_level_feasibility_20261026\\analysis_v1_20261026\\uniform_md\\labels\\block_400_500ns\\A00B1.npz",
+      "sha256": "42430de8f5ea272f39b847d51fe35e6cab766bfb63a19b51a5d8186f8738f52b",
+      "valid_counts": [
+        227,
+        198
+      ],
+      "replicas": 1,
+      "variance_interpretation": "zero when one local replica; does not estimate sampling uncertainty"
+    }
+  },
+  "old_mask_counts": [
+    227,
+    198
+  ],
+  "mask_differences": [],
+  "structure_sha256": "2ccec566ddef3061da8ca59e320758b6e4d091946a60e0cd688ebfb299b533ad",
+  "old_label_sha256": "ed88c9ad8a39bae2da32893b22bf7391d5614d414c420b39f039d0cf7c94d5de",
+  "elapsed_seconds": 4.75
+}

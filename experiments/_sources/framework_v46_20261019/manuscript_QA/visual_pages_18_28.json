@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "document_sha256": "f53a6d0b09d22a5cba085dcb7a048ae1fed5aefe322382b90fb2a8b94bdf4da9",
+  "reviewer": "fig1_journal_design",
+  "inspection": "Each of the 11 original 150 dpi page PNGs was individually opened with view_image at original detail; no contact-sheet-only review or inference from scripts.",
+  "pages": [
+    {"page":18,"status":"passed","notes":"实际打开原始页图：讨论、结论和代码与数据三个标题及正文均完整；中英文、χ/ρ符号和数值可读，段落没有溢出，末行与页码分离。"},
+    {"page":19,"status":"passed","notes":"实际打开原始页图：参考文献标题和第1–23条完整排在正文区域内，悬挂缩进、斜体和换行可读；底部文献没有撞页码。"},
+    {"page":20,"status":"passed","notes":"实际打开原始页图：参考文献第24–28条完整续排，长作者列表正常换行；下半页为空白是参考文献收尾，未见被截断的文本或孤立表格。"},
+    {"page":21,"status":"passed","notes":"实际打开原始页图：补充材料及A节标题、正文、表S1图注在同页；S1保持三线表，四个来源名称和各数值列均无溢出或遮挡。"},
+    {"page":22,"status":"passed","notes":"实际打开原始页图：英文补充图S1完整显示六个面板，图例、热图注值和底部条形图说明均可读；中文图注及后续两行说明位于同页，无图文相压。"},
+    {"page":23,"status":"passed","notes":"实际打开原始页图：B节、表S2和表S3均完整，两个表都保持三线结构；表头、ρ与Hχ列及表下段落没有跨页截断或文字遮挡。"},
+    {"page":24,"status":"passed","notes":"实际打开原始页图：C节基线说明、表S4及后续来源结果可读，表内方法名称与三个数值列对齐；三条主线清楚，底部正文在页边距内。"},
+    {"page":25,"status":"passed","notes":"实际打开原始页图：D节说明与表S5完整同页，八行来源/模型组合和各指标清楚；表格三线样式保持，无被分割表行或页码相撞。"},
+    {"page":26,"status":"passed","notes":"实际打开原始页图：E节内容较密但表S6、S7均完整，表头与数值列可辨；表后共同窗口说明完整至页底，最后一行与页码之间仍有清楚间隔，无溢出。"},
+    {"page":27,"status":"passed","notes":"实际打开原始页图：KIX节说明、表S8和表下状态差值说明同页，四种状态、L12列和正负数值清楚；三线表未被修改或截断。"},
+    {"page":28,"status":"passed","notes":"实际打开原始页图：G节双读数组合说明和表S9完整，五个参考组合的数量、比例、误差及召回率列清楚；三线表与下方留白正常。"}
+  ]
+}

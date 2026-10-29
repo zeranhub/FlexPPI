@@ -1,0 +1,34 @@
+{
+  "status": "completed",
+  "sample": "A00LZ",
+  "residues": 519,
+  "input": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\structures\\A00LZ.pdb",
+  "input_sha256": "746df500c64ae69289592a5ca7588210bc45e8f5eaa3437893feb009f4e61624",
+  "label": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\dataset\\labels\\A00LZ.npz",
+  "label_sha256": "2a39334581a10496ff2ad0595abb1bf47640326ec4d8357486ee7ed887ea6b1e",
+  "label_names": [
+    "rmsf",
+    "chi_entropy",
+    "sasa"
+  ],
+  "models": [
+    {
+      "variant": "full",
+      "checkpoint": "E:\\Project\\FlexPPI\\experiments\\_sources\\bcr_model_screen_20261028\\runtime\\family_folds\\runs\\full\\fold_0\\epoch_040.pt",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+      "strict_load": true
+    },
+    {
+      "variant": "intrachain",
+      "checkpoint": "E:\\Project\\FlexPPI\\experiments\\_sources\\bcr_model_screen_20261028\\runtime\\family_folds\\runs\\intrachain\\fold_0\\epoch_040.pt",
+      "checkpoint_sha256": "6b069d9d3521e95f5f2d63a3f19d64fb4071862efa4682473387b0ca45ff73c3",
+      "strict_load": true
+    }
+  ],
+  "chains": {
+    "A": "MGPVIRQGPVNQTVAVDGTFVLSCVATGSPVPTILWRKDGVLVSTQDSRIKQLENGVLQIRYAKLGDTGRYTCIASTPSGEATWSAYIEVQ",
+    "B": "DIQMTQSPASLSASVGETVTITCGASENIYGALTWYQRKQGKSPQLLIYGAINLADDKSSRFSGSGSGRQYSLKISSLHPDDVATYYCQNVLSTPFTFGSGTKLEIKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNR",
+    "C": "EVQLVESGGGVVQPGGSLKLSCAASGFTFSTYDMSWVRQTPDKRLELVATINSNGGSTYYPDSVKGRFTSSRDNAKNILYLQMSSLKSEDTAMYYCAREALLRPPYYALDYWGQGTSVTVSSAKTTPPSVYPLAPGTGSSVTLGCLVKGYFPESVTVTWNSGSLSSSVHTFPALLQSGLYTMSSSVTVPSSTWPSQTVTCSVAHPASSTTVDKKLEP"
+  },
+  "important": "Frozen519-residue version, not the legacy514-residue local cache. No rowwise mixing of different structure versions."
+}

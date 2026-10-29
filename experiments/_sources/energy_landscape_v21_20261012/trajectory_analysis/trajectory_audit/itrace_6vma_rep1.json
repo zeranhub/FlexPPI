@@ -1,0 +1,61 @@
+{
+  "sample_id": "itrace_6vma",
+  "dataset": "itrace",
+  "fold": 2,
+  "replica_index": 1,
+  "status": "complete",
+  "plan_sha256": "09f029e2107e2e77e05271d7c2e65c6f2efdc0fed6f0fcd3d7a3dba9eec2ba83",
+  "cache_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\trajectory_analysis\\cache\\itrace_6vma_rep1.npz",
+  "cache_sha256": "cb297d973c7690566816a9c10eb315d9f2a071f0f4f52459c4bf057c725bdea2",
+  "mapping": [
+    {
+      "canonical_chain": "A",
+      "replica_chain": "A",
+      "identity": 1,
+      "coverage": 1.0
+    },
+    {
+      "canonical_chain": "B",
+      "replica_chain": "B",
+      "identity": 1,
+      "coverage": 1.0
+    },
+    {
+      "canonical_chain": "C",
+      "replica_chain": "C",
+      "identity": 1,
+      "coverage": 1.0
+    },
+    {
+      "canonical_chain": "D",
+      "replica_chain": "D",
+      "identity": 1,
+      "coverage": 1.0
+    },
+    {
+      "canonical_chain": "E",
+      "replica_chain": "E",
+      "identity": 1,
+      "coverage": 1.0
+    }
+  ],
+  "residue_count": 824,
+  "mapped_residues": 824,
+  "ca_valid": 824,
+  "chi_valid": 722,
+  "frames": 501,
+  "first_ps": 0.0,
+  "last_ps": 100000.0,
+  "bad_chi_bonds_gt5A": 0,
+  "chemistry_changes": {
+    "ILE_CD->CD1_atoms": 25
+  },
+  "byte_audit": {
+    "raw_sha256": "8fb56150fdd4a44ee4439212f441cbd6ccc51bec04fe4a2cc47ead2570279d83",
+    "raw_bytes": 49119260,
+    "selected_xtc_sha256": "1bbe6ea9d7a4dd810bfd81e3351cad67272732eae3c13a0360695a436e7b8f12",
+    "selected_bytes": 24586924,
+    "raw_size_and_mtime_unchanged": true
+  },
+  "elapsed_seconds": 2.875
+}

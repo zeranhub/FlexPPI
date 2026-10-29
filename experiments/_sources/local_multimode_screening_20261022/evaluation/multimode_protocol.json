@@ -1,0 +1,246 @@
+{
+  "protocol_id": "local_multimode_exploratory_v1_20261022",
+  "status": "frozen_source_bound_before_new_inference",
+  "study_type": "New exploratory retrospective study after observing the old 20261021 pilot; not an amendment or rescue of its negative primary result.",
+  "known_information": {
+    "old_1G4_A6_outcomes_seen": true,
+    "old_1G4_A6_role": "development_only; no independent validation credit",
+    "new_candidate_predictions_seen": false,
+    "new_DMS_or_cell_outcome_values_seen_by_protocol_reviewer": false,
+    "DMS_biology_metadata_seen": true,
+    "source_caveat": "PMC4938795 mutates TCR CDR/FR in A6-c134 and RD1-MART1HIGH, not antigen peptide. PMC5114409 reuses RD1 scanning and selected variants, not a third independent DMS family."
+  },
+  "base_model": {
+    "checkpoint_sha256": "b3eed060919df15f075329bc892f959d9355232be5feb561417edd49ea82b39f",
+    "training_manifest_sha256": "e0c84c566dea09b436dd7d07e9e6fd8ce1a8cf0c72be20931179e6689c8b44bd",
+    "training_records": 2431,
+    "ATLAS": 1866,
+    "DynaRepo": 565,
+    "ITrace": 0,
+    "name": "historical strict_full fold0 joint model seed7 epoch40",
+    "same_as_manuscript_2430": false,
+    "no_weight_updates": true,
+    "no_MD": true,
+    "fixed_backbone_scope": "Sequence identity and existing N/CA/C/O geometry only. Candidate substitutions at fixed backbone do not generate new backbone conformations.",
+    "overlap_policy": "Audit exact, direct threshold-chain, and available transitive-family membership for every new actual template and candidate. No-ITrace alone is insufficient. Functional-label independence and protein-family independence are separate; disclose in-domain panels rather than calling them unseen proteins."
+  },
+  "data_contract": {
+    "independent_unit": "biological receptor-antigen-assay family, not publication, donor replicate, template, candidate conformer or random seed",
+    "candidate_unit": "unique full candidate sequence in one fixed receptor/pMHC/assay context",
+    "required_label_fields": [
+      "panel_id",
+      "candidate_id",
+      "family_id",
+      "sequence",
+      "parent_candidate_id",
+      "endpoint",
+      "value_oriented_higher_better",
+      "label_qc_pass",
+      "censoring",
+      "source_id"
+    ],
+    "required_panel_fields": [
+      "panel_id",
+      "family_id",
+      "task_object",
+      "endpoint",
+      "units",
+      "complete_candidate_pool",
+      "positive_only_selection",
+      "higher_is_better",
+      "parent_available",
+      "declared_hit_threshold",
+      "hit_definition",
+      "threshold_fixed_without_model_outputs",
+      "mode1_eligible",
+      "mode2_eligible",
+      "mode3_eligible"
+    ],
+    "task_object": "TCR_mutation or antigen_peptide_mutation; never relabel one as the other",
+    "endpoint_separation": "Yeast enrichment, expression/display, pMHC stability, T-cell activity and SPR KD are separate outcomes. DMS yeast enrichment is an assay proxy affected by display and is not KD or cell activity.",
+    "labels": "Aggregate measured replicates using source-prescribed processing; retain raw counts, coverage, replicate variance, WT normalization and construct identities. No candidate exclusion based on model score.",
+    "censoring": "No-boundary-to-exact substitution. Only uncensored quantitative primary outcomes can enter regression; source-defined categorical hits may enter hit summaries without invented continuous values.",
+    "hit_rule": "Use an original-source functional threshold when explicitly reported and fixed. Otherwise enrichment log2(candidate/WT)>=1 is an operational two-fold enrichment-proxy endpoint only if WT normalization is validated. If neither applies, report recovery of the label-top-decile as a relative finite-panel retrieval metric; do not call it above-parent improvement or validated functional hits.",
+    "threshold_uses_hidden_labels": "The evaluator may compute a prespecified full-pool top-decile cutoff only for offline scoring. No selection policy receives cutoff, unseen label values, hit counts or test metrics.",
+    "unusable_sources": "A table containing only eight selected beneficial mutations cannot supply a complete pool, negatives, enrichment hit rate or active-learning evaluation. Record not_evaluable, do not fabricate a missing saturation matrix.",
+    "development_holdout": "Old1G4/A6 are development only. Shared RD1 data across the two DMS papers remain one family; related engineered receptors are disclosed. New antigen panels must be distinct biological families to support independent antigen claims.",
+    "new_antigen_source": "Seven distinct TCR saturation-peptide EC50 panels from pinned HERMES mutation_effects/mskcc and original avidity_curves.xlsx/infer_ec50s source. Verify receptor relationships, assay construct and all candidate coverage before treating as independent families.",
+    "EC50": "Source fitted EC50 values archived only. Primary observed functional response source-bound by functional_endpoint_amendment.",
+    "eligibility_before_evaluation": "Curator supplies immutable per-panel candidate scope/endpoint/censoring/threshold contract and hash before evaluation. Label-derived distribution gates assess task suitability only; they do not select a better-performing model, threshold or subset."
+  },
+  "mode1_site_nomination": {
+    "question": "Does parent-only predicted local mobility identify positions at which an equal-sized substitution experiment recovers more favorable measured effects?",
+    "scope": "Antigen mutation-site prioritization:9 positions with19 nonparent substitutions each, two selected sites=38 assays. Recognition-retaining variant yield, not proven affinity enhancement.",
+    "eligibility": "At least6 measured positions with all19 nonparent amino-acid substitutions passing source coverage/QC; if incomplete, use a single fixed shared substitution set across every eligible position, at least10 substitutions each. Do not let positions with more measured candidates have larger experimental budgets.",
+    "site_score": "For the unchanged parent residue at each experimentally covered position: score_R=empirical percentile of predicted RMSF among actual2431 training labels of the same amino-acid type; score_H=the analogous percentile of joint Hchi where chi exists. score_joint=(score_R+score_H)/2 for nonGly/nonAla; for Gly/Ala score_joint=score_R. Higher score nominates more dynamically permissive parent positions as an explicit unvalidated hypothesis; no claim that low mobility improves binding.",
+    "training_prior": "Use only actual strict2431 training label values/chemical masks, one residue one value; no new DMS labels. Hash the per-AA reference ECDF. If unavailable, use an explicitly labelled parent-within-tested-position rank sensitivity, never silently substitute it as primary.",
+    "strategies": [
+      "random_positions",
+      "static_contact_degree",
+      "static_relative_SASA",
+      "parent_R_percentile",
+      "parent_H_percentile",
+      "parent_joint_percentile",
+      "parent_joint_low",
+      "parent_partner_context_response"
+    ],
+    "static_contact_degree": "Number of unique partner residues with any parent heavy atom<=4.5A to the position; higher first.",
+    "static_relative_SASA": "Parent per-residue sidechain SASA divided by a fixed training/source maximum; higher first. No DMS-trained static coefficients.",
+    "budgets": {
+      "primary_n_positions": 2,
+      "sensitivity_n_positions": 5,
+      "sensitivity_requires_positions_at_least": 10,
+      "same_substitutions_per_selected_position": true
+    },
+    "tie_break": "lexical canonical residue key, shared across strategies; random strategy uses the20 paired fixed seeds",
+    "metrics": [
+      "Number of recognition-retaining variants in equal38-assay budget",
+      "best and mean measured normalized response",
+      "fraction of all pool recognition-retaining variants recovered",
+      "secondary relative-top-decile recovery"
+    ],
+    "success": "Primary joint-high two-site recognition-retaining yield must exceed both static strategies and mean random in every context. A companion win cannot replace it. This tests antigen experimental prioritization, not above-parent affinity improvement.",
+    "primary_strategy": "parent_joint_percentile",
+    "companion_low": "parent_joint_low=1-parent_joint_percentile. It is a predeclared competing hypothesis, never substituted for the primary on the basis of performance.",
+    "companion_partner_context": "If feasible, remove the binding partner chains while keeping the parent target chain identities/backbone/residue order and using the same model. Site score is mean of abs(R_full-R_partner_removed)/training_R_sameAA_RMSscale and abs(H_full-H_partner_removed)/training_H_sameAA_RMSscale over defined metrics; G/A use R only. Higher indicates computational partner-context sensitivity, not real apo dynamics or a binding experiment.",
+    "parent_H_only_Gly_Ala": "JointHchi undefined at Gly/Ala. In H-only ranking assign the predeclared neutral percentile0.5, flag undefined, and retain equal candidate/site scope; do not invent physical Hchi. Joint-high/low use defined R alone for these sites.",
+    "site_companions_role": "Report every companion and both budgets separately; a companion win cannot establish primary joint-high success or be pooled with a different mode."
+  },
+  "candidate_features": {
+    "templates": "One primary template per biological panel chosen before candidate outcomes/predictions; any sensitivity template is applied to every candidate and stays a separate technical analysis.",
+    "sequence": "Same-length residue-aligned candidate sequence for each panel; no mutation-position onehot learned from heldout labels.",
+    "static": [
+      "HERMES_fixed_score_candidate_minus_parent",
+      "ProteinMPNN_score_candidate_minus_parent"
+    ],
+    "R_pattern": "Full signed vector of candidate-minus-same-template-parent RMSF at the fixed U_R positions; no spatial mean, absolute-value reduction, best residue or post-result region selection.",
+    "H_pattern": "Full signed vector of candidate-minus-same-template-parent joint Hchi at fixed U_H positions; chemical identity must remain unchanged at each paired site. Exclude all positions variable anywhere in the candidate library, plus Gly/Ala and undefined chi; no changed-amino-acid entropy comparisons.",
+    "U": "Parent-completed-heavy-atom8A interface neighborhood around the variable molecular component, restricted to chemically unchanged spectator residues across the entire library. Freeze roles, author IDs, masks and distances before inference/label scoring. Antigen-library U uses unchanged HLA/TCR; receptor-library U may use unchanged pMHC and any unchanged spectator receptor residues.",
+    "normalization": "Each R/H dimension is divided by the actual training same-AA metric reference RMS scale; fixed before new outcomes. No FlexPPI predicted variance used as epistemic uncertainty.",
+    "profile_missingness": "A fixed position mask per panel and metric; no candidate-specific feature removal. Failed inputs stay in the accounting, and all strategies use exactly the same primary eligible candidate set.",
+    "static_source_contract": "Select the original published fixed-backbone score column for each method from documented source code, not by correlation with EC50. Preserve raw score, score definition, orientation and parent subtraction; no AF3-relaxed/closest-template or target-outcome-selected column. Both external methods also get standalone zero-shot ranking comparisons using their published direction.",
+    "static_unavailable": "If either predeclared published comparator is absent for candidates, record coverage failure; do not silently replace with a weaker method. Any restricted cohort is defined before new prediction/label evaluation and uses the same candidate IDs for all policies."
+  },
+  "kernel_calibrator": {
+    "type": "fixed block-balanced RBF kernel ridge",
+    "sequence_kernel": "exp(-Hamming_fraction/median_positive_pairwise_Hamming_fraction)",
+    "numeric_block_kernel": "RBF exp(-squared_distance/median_positive_pairwise_squared_distance); static dimensions use zero-preserving full-pool unlabeled RMS scaling, R/H use fixed training AA scales. Constant block yields allones kernel and is disclosed.",
+    "label_free_pool_scaling": "All candidate structures/features are available before experiments. Complete-pool unsupervised bandwidth/scaling is allowed and explicitly transductive; no hidden outcomes used.",
+    "models": {
+      "sequence": [
+        "sequence"
+      ],
+      "static": [
+        "static"
+      ],
+      "baseline": [
+        "sequence",
+        "static"
+      ],
+      "baseline_R": [
+        "sequence",
+        "static",
+        "R"
+      ],
+      "baseline_H": [
+        "sequence",
+        "static",
+        "H"
+      ],
+      "baseline_RH": [
+        "sequence",
+        "static",
+        "R",
+        "H"
+      ]
+    },
+    "block_weights": "equal mean over listed kernels; no performance-based weight tuning",
+    "lambda_mean_squared_loss": 0.1,
+    "intercept": "mean observed training-label value only; center training y, fit alpha=(Ktrain+n_train*0.1I)^-1(y-meantrain); predict meantrain+Ktest,train alpha",
+    "no_hyperparameter_search": true,
+    "no_base_model_training": true,
+    "signs": "Learn phenotype association only from the shared initial observed examples; neither lower Hchi nor lower RMSF is prescribed as favorable."
+  },
+  "mode2_common_pool_rerank": {
+    "eligibility": "Complete strong/weak quantitative pool N>=60; never positive-only selected candidates. Parent/reference excluded as a trivially repeated candidate.",
+    "initial_n": "min(40,max(12,ceil(0.1*N)))",
+    "extra_budget": "min(30,N-initial_n); report k5,10,20,30 where feasible; primary final fixed extra budget",
+    "seeds": "20261022 through20261041 inclusive,20 paired repetitions",
+    "information": "Identical initial candidate IDs and labels for every strategy in each seed; all remaining labels hidden until after one-shot selection.",
+    "strategies": [
+      "random",
+      "sequence_diversity",
+      "sequence",
+      "static",
+      "baseline",
+      "baseline_R",
+      "baseline_H",
+      "baseline_RH"
+    ],
+    "selection": "Kernel models choose highest predicted phenotype; random chooses a fixed seeded permutation; sequence_diversity greedily maximizes minimum sequence-kernel distance to initial/chosen candidates, tie lexical ID.",
+    "metrics": [
+      "new favorable hits in each extra-budget prefix",
+      "best measured outcome in extra selected candidates",
+      "best outcome including identical initial set",
+      "top-decile recovery of the hidden candidate pool",
+      "full hidden-pool Spearman and MAE only as secondary model diagnostics"
+    ],
+    "success": "Joint-profile method must increase mean final-budget new favorable-hit yield over baseline and both random/sequence-diversity in each independent biological family. To claim both readouts help, it must additionally beat both one-readout ablations. Report paired seed differences and wins/ties/losses as seed variability, not20 independent biological replications."
+  },
+  "mode3_feedback_selection": {
+    "eligibility": "Complete quantitative pool N>=100 with enough remaining candidates for20-to40 initial examples plus8 rounds of5. At least5 favorable and5 nonfavorable candidates required for a meaningful above-threshold retrieval assessment; otherwise continuous feasibility only, no favorable-discovery success claim.",
+    "initial_n": "min(40,max(20,ceil(0.1*N)))",
+    "batch_size": 5,
+    "rounds": 8,
+    "seeds": "20261022 through20261041 inclusive,20 paired repetitions",
+    "strategies": [
+      "random",
+      "sequence_diversity",
+      "baseline",
+      "baseline_R",
+      "baseline_H",
+      "baseline_RH"
+    ],
+    "acquisition": "Same policy for every kernel model: fit on currently observed labels; take4 unmeasured candidates by current predicted mean, then1 by maximum minimum kernel-induced distance to the already measured and the4 selected candidates. Reveal the five outcomes together after selection, then repeat. No outcome update within a batch. Random and pure sequence-diversity are explicit distinct reference policies.",
+    "uncertainty": "The exploration slot is feature-coverage novelty, not calibrated uncertainty; neither FlexPPI std nor an unvalidated kernel variance is called epistemic uncertainty.",
+    "metrics": [
+      "cumulative favorable hits versus total assay count",
+      "cumulative best oriented measured outcome versus total count",
+      "first assay count at which the prespecified threshold is found; right-censored at budget if never found",
+      "area under cumulative-hit versus extra-budget curve, descriptive",
+      "final-budget new favorable hits primary"
+    ],
+    "success": "Same per-family final-budget yield criterion as mode2, with improved time-to-first-threshold as a separately reported efficiency outcome. Initial-set hits must be distinguished from newly acquired hits. No lucky seed, round or biological panel replaces the primary budget."
+  },
+  "reporting": {
+    "do_not_pool_endpoints": true,
+    "no_significance_from_residues_templates_or_seeds": true,
+    "report_all_evaluable_and_nonevaluable_panels": true,
+    "report_negative_and_tied_results": true,
+    "no_postresult_feature_template_threshold_or_budget_selection": true,
+    "claims": "A benefit means a concrete reduction of experimental search effort on the stated biological object and endpoint. Yeast-display gains do not prove TCR KD improvement or antigen optimization; T-cell peptide activity does not prove binding affinity or safety. New experimental validation would still be required for prospective design claims."
+  },
+  "frozen_at_utc": "2026-10-21T16:35:21.106903+00:00",
+  "source_based_completion": {
+    "new_predictions_seen": false,
+    "new_functional_label_values_seen_by_evaluator": false,
+    "reason": "Seven HERMES/MSKCC complete peptide saturation panels include published HERMES-fixed and ProteinMPNN scores. These are stronger, feasible static comparators than rebuilding all1200 candidate sidechains for two geometric summaries.",
+    "not_changed_from_old_pilot": "The old20261021 study remains unchanged and negative. This contract defines a separately labelled exploratory study."
+  },
+  "functional_endpoint_amendment": {
+    "timestamp_utc": "2026-10-21T23:28:09.873660+00:00",
+    "new_predictions_seen": false,
+    "raw_functional_labels_seen_for_source_QC": true,
+    "reason": "Original three-dose curves available for all7 saturated peptide panels. Fitted CSV EC50 has log-base/coverage ambiguity; use complete observed highest-dose response for every candidate.",
+    "primary_endpoint": "Source-normalized4-1BB-positive CD8 response at highest tested dose100 in original XLSX. Not affinity; normalization can exceed1.",
+    "primary_hit": "response>=0.3, an operational source-fitting low-response heuristic; not a validated biological/clinical threshold; never above-parent improvement.",
+    "secondary_top_decile": "Repeat all three modes against pool90th-percentile threshold as offline relative retrieval only, keeping identical selected sequences. Does not imply improved potency.",
+    "secondary_three_dose_AUC": "Full three-dose log-concentration normalized trapezoid area, only complete source curves. Missing lower doses never imputed. Label-only cohort frozen before predictions; all three modes repeated, descriptive sensitivity only.",
+    "mode1_scope": "Antigen mutation-site prioritization:9 positions with19 nonparent substitutions each, two selected sites=38 assays. Recognition-retaining variant yield, not proven affinity enhancement.",
+    "replication": "7 receptor contexts and3 antigen groups; receptor1/2 are related and share very similar alpha chains.",
+    "static_primary": "HERMES py000 fixed and ProteinMPNN v48_020 full_pep_masked, AF3_no_template published scores, both oriented higher pnlogp better. Parent mean across9 WT technical rows.",
+    "static_sensitivity": "ProteinMPNN v48_002 full_pep_masked AF3_no_template is a predeclared additional source-only comparator setting; repeat all modes2/3, report both settings without selecting a winning setting.",
+    "curated_labels_sha256": "d658310d37a04b0c22e609343b295c28dd682fa6492a04c37982b21fbcc8db89",
+    "label_QC_sha256": "a3d2213003472fa2baa7b14a958f1d5eb64338bd09cfb021359508db1e657c6f"
+  }
+}

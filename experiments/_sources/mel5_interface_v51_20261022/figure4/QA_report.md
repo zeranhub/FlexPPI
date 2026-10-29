@@ -1,0 +1,5 @@
+# Figure4 v51 QA
+
+READY. AP0–AP7: baseline typography/color/export retained; no default palette, rainbow, four-sided data frames, legend occlusion or raster-only export. Molecular images are real-coordinate PyMOL renders. CL1–CL7:183×140 mm, minimum6pt,450dpi preview, PDF embedded TrueType fonts, SVG editable text,0.6pt axes, outward ticks. VI: two nonredundant panels; same coordinates, camera and crop for both states; all45CDR retained; source23interface positions retained; no synthetic atoms, coordinate editing or causal output arrows. No inferential statistical test or errorbar applies to single deterministic paired model outputs. VV: full preview and local enlarged views independently inspected; critical endpoint labels moved away from N/NE2 atoms; no remaining required fixes. Figures are English. All28 manuscript pages individually inspected, including final Figure4 and caption on page15.
+
+See statistics_and_reproducibility.json for data units, sample definition, split/model and traceability. Independent review is bound to the final PNG SHA256 in independent_geometry_visual_review.json.

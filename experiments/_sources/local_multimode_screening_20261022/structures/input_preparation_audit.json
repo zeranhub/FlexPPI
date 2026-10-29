@@ -1,0 +1,180 @@
+{
+  "status": "passed",
+  "panels": [
+    {
+      "panel_id": "MSKCC_TCR1",
+      "template": "fold_tcr1_no_template_model_0.pdb",
+      "template_sha256": "01db938269c20f8264b8fd517fd5c58587d16bd11f0789605b2ad68f8c976482",
+      "residues": 408,
+      "roles": {
+        "hla_heavy": "A",
+        "peptide": "B",
+        "tcr_alpha": "C",
+        "tcr_beta": "D"
+      },
+      "chain_sequences": {
+        "A": "GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDGKDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENG",
+        "B": "NLVPMVATV",
+        "C": "DAKTTQPNSMESNEEEPVHLPCNHSTISGTDYIHWYRQLPSQGPEYVIHGLTSNVNNRMASLAIAEDRKSSTLILHRATLRDAAVYYCILDNNNDMRFGAGTRLTVKP",
+        "D": "GAGVSQSPRYKVTKRGQDVALRCDPISGHVSLYWYRQALGQGPEFLTYFNYEAQQDKSGLPNDRFSAERPEGSISTLTIQRTEQRDSAMYRCASSLAPGTTNEKLFFGSGTQLSVL"
+      },
+      "complete_NCAO": true,
+      "environment_R": 96,
+      "environment_H": 82,
+      "candidates": 171,
+      "template_scope": "Source AF3 truncated MHC+TCR variable domains; not full-length experimental complexes",
+      "role_evidence": "MHC175aa peptide-binding domain; source9mer exact peptide; alpha variable IG/TRAV motifs inC and TRBV/CASS motifs inD."
+    },
+    {
+      "panel_id": "MSKCC_TCR2",
+      "template": "fold_tcr2_no_template_model_1.pdb",
+      "template_sha256": "284d74d5afadd2b8a2725889d6d20c8e22517c47e66b21bf26cca267ca886012",
+      "residues": 403,
+      "roles": {
+        "hla_heavy": "A",
+        "peptide": "B",
+        "tcr_alpha": "C",
+        "tcr_beta": "D"
+      },
+      "chain_sequences": {
+        "A": "GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDGKDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENG",
+        "B": "NLVPMVATV",
+        "C": "KTTQPNSMESNEEEPVHLPCNHSTISGTDYIHWYRQLPSQGPEYVIHGLTSNVNNRMASLAIAEDRKSSTLILHRATLRDAAVYYCILSNNNDMRFGAGTRLTVKP",
+        "D": "QTIHQWPATLVQPVGSPLSLECTVEGTSNPNLYWYRQAAGRGLQLLFYSVGIGQISSEVPQNLSASRPQDRQFILSSKKLLLSDSGFYLCAWTISDLAKNIQYFGAGTRLSVL"
+      },
+      "complete_NCAO": true,
+      "environment_R": 100,
+      "environment_H": 87,
+      "candidates": 171,
+      "template_scope": "Source AF3 truncated MHC+TCR variable domains; not full-length experimental complexes",
+      "role_evidence": "MHC175aa peptide-binding domain; source9mer exact peptide; alpha variable IG/TRAV motifs inC and TRBV/CASS motifs inD."
+    },
+    {
+      "panel_id": "MSKCC_TCR3",
+      "template": "fold_tcr3_no_templates_model_0.pdb",
+      "template_sha256": "d003f97f48cfa4ea21262641bf4d5a1cb1bf63ef372fee8b47fd746bad1ea5c3",
+      "residues": 414,
+      "roles": {
+        "hla_heavy": "A",
+        "peptide": "B",
+        "tcr_alpha": "C",
+        "tcr_beta": "D"
+      },
+      "chain_sequences": {
+        "A": "GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDGKDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENG",
+        "B": "NLVPMVATV",
+        "C": "QQKNDDQQVKQNSPSLSVQEGRISILNCDYTNSMFDYFLWYKKYPAEGPTFLISISSIKDKNEDGRFTVFLNKSAKHLSLHIVPSQPGDSAVYFCAASGGPSYDKVIFGPGTSLSVIP",
+        "D": "GVIQSPRHEVTEMGQEVTLRCKPISGHDYLFWYRQTMMRGLELLIYFNNNVPIDDSGMPEDRFSAKMPNASFSTLKIQPSEPRDSAVYFCASSPGNILGGYTFGSGTRLTVV"
+      },
+      "complete_NCAO": true,
+      "environment_R": 109,
+      "environment_H": 93,
+      "candidates": 171,
+      "template_scope": "Source AF3 truncated MHC+TCR variable domains; not full-length experimental complexes",
+      "role_evidence": "MHC175aa peptide-binding domain; source9mer exact peptide; alpha variable IG/TRAV motifs inC and TRBV/CASS motifs inD."
+    },
+    {
+      "panel_id": "MSKCC_TCR4",
+      "template": "fold_tcr4_no_template_model_0.pdb",
+      "template_sha256": "37c6f10ed7210f2e084ad1b8eb83d383a1589c938e74359716f108d4325801c6",
+      "residues": 404,
+      "roles": {
+        "hla_heavy": "A",
+        "peptide": "B",
+        "tcr_alpha": "C",
+        "tcr_beta": "D"
+      },
+      "chain_sequences": {
+        "A": "GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDGKDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENG",
+        "B": "IMDQVPFSV",
+        "C": "IQVEQSPPDLILQEGANSTLRCNFSDSVNNLQWFHQNPWGQLINLFYIPSGTKQNGRLSATTVATERYSLLYISSSQTTDSGVYFCAPRRNYGQNFVFGPGTRLSVLP",
+        "D": "GVMQNPRHLVRRRGQEARLRCSPMKGHSHVYWYRQLPEEGLKFMVYLQKENIIDESGMPKERFSAEFPKEGPSILRIQQVVRGDSAAYFCASSPGQGGYEQYFGPGTRLTVT"
+      },
+      "complete_NCAO": true,
+      "environment_R": 106,
+      "environment_H": 89,
+      "candidates": 171,
+      "template_scope": "Source AF3 truncated MHC+TCR variable domains; not full-length experimental complexes",
+      "role_evidence": "MHC175aa peptide-binding domain; source9mer exact peptide; alpha variable IG/TRAV motifs inC and TRBV/CASS motifs inD."
+    },
+    {
+      "panel_id": "MSKCC_TCR5",
+      "template": "fold_tcr5_no_template_model_1.pdb",
+      "template_sha256": "7764210aa61cfce0c4750065a63619ead0dc7f72716b826fac64845c04c7827f",
+      "residues": 406,
+      "roles": {
+        "hla_heavy": "A",
+        "peptide": "B",
+        "tcr_alpha": "C",
+        "tcr_beta": "D"
+      },
+      "chain_sequences": {
+        "A": "GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDGKDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENG",
+        "B": "IMDQVPFSV",
+        "C": "QQKEVEQNSGPLSVPEGAIASLNCTYSDRGSQSFFWYRQYSGKSPELIMFIYSNGDKEDGRFTAQLNKASQYVSLLIRDSQPSDSATYLCAVRIGSQGNLIFGKGTKLSVKP",
+        "D": "QVTQNPRYLITVTGKKLTVTCSQNMNHEYMSWYRQDPGLGLRQIYYSMNVEVTDKGDVPEGYKVSRKEKRNFPLILESPSPNQTSLYFCASSLLQGTEAFFGQGTRLTVV"
+      },
+      "complete_NCAO": true,
+      "environment_R": 107,
+      "environment_H": 92,
+      "candidates": 171,
+      "template_scope": "Source AF3 truncated MHC+TCR variable domains; not full-length experimental complexes",
+      "role_evidence": "MHC175aa peptide-binding domain; source9mer exact peptide; alpha variable IG/TRAV motifs inC and TRBV/CASS motifs inD."
+    },
+    {
+      "panel_id": "MSKCC_TCR6",
+      "template": "fold_tcr6_no_template_model_0.pdb",
+      "template_sha256": "891c87fc05ee449eb1169d8f5073a9475523f108aebb4b085a96c95ef2c125f6",
+      "residues": 413,
+      "roles": {
+        "hla_heavy": "A",
+        "peptide": "B",
+        "tcr_alpha": "C",
+        "tcr_beta": "D"
+      },
+      "chain_sequences": {
+        "A": "GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDGKDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENG",
+        "B": "IMDQVPFSV",
+        "C": "QKITQTQPGMFVQEKEAVTLDCTYDTSDPSYGLFWYKQPSSGEMIFLIYQGSYDQQNATEGRYSLNFQKARKSANLVISASQLGDSAMYFCAMRESSNSNSGYALNFGKGTSLLVTP",
+        "D": "GITQAPTSQILAAGRRMTLRCTQDMRHNAMYWYRQDLGLGLRLIHYSNTAGTTGKGEVPDGYSVSRANTDDFPLTLASAVPSQTSVYFCASSPRGGTADTQYFGPGTRLTVL"
+      },
+      "complete_NCAO": true,
+      "environment_R": 105,
+      "environment_H": 90,
+      "candidates": 171,
+      "template_scope": "Source AF3 truncated MHC+TCR variable domains; not full-length experimental complexes",
+      "role_evidence": "MHC175aa peptide-binding domain; source9mer exact peptide; alpha variable IG/TRAV motifs inC and TRBV/CASS motifs inD."
+    },
+    {
+      "panel_id": "MSKCC_TCR7",
+      "template": "fold_tcr7_no_template_seed_2_model_0.pdb",
+      "template_sha256": "91e0843a4d8d40b68aaf267da3de03ca5b57b376a6ad3494dfe7efbf06c43b08",
+      "residues": 404,
+      "roles": {
+        "hla_heavy": "A",
+        "peptide": "B",
+        "tcr_alpha": "C",
+        "tcr_beta": "D"
+      },
+      "chain_sequences": {
+        "A": "GSHSMRYFHTSVSRPGRGEPRFITVGYVDDTLFVRFDSDAASPREEPRAPWIEQEGPEYWDRETQICKAKAQTDREDLRTLLRYYNQSEAGSHTLQNMYGCDVGPDGRLLRGYHQDAYDGKDYIALNEDLSSWTAADTAAQITQRKWEAARVAEQLRAYLEGECVEWLRRYLENG",
+        "B": "GRLKALCQR",
+        "C": "IQVEQSPPDLILQEGANSTLRCNFSDSVNNLQWFHQNPWGQLINLFYIPSGTKQNGRLSATTVATERYSLLYISSSQTTDSGVYFCAVDVGGSYIPTFGRGTSLIVHP",
+        "D": "GVTQSPTHLIKTRGQQVTLRCSPKSGHDTVSWYQQALGQGPQFIFQYYEEEERQRGNFPDRFSGHQFPNYSSELNVNALLLGDSALYLCASSLARQGSNEQYFGPGTRLTVT"
+      },
+      "complete_NCAO": true,
+      "environment_R": 109,
+      "environment_H": 95,
+      "candidates": 171,
+      "template_scope": "Source AF3 truncated MHC+TCR variable domains; not full-length experimental complexes",
+      "role_evidence": "MHC175aa peptide-binding domain; source9mer exact peptide; alpha variable IG/TRAV motifs inC and TRBV/CASS motifs inD."
+    }
+  ],
+  "total_variants": 1197,
+  "total_main_parents": 7,
+  "computational_context_ablation_parents": 7,
+  "total_forward_entries": 1211,
+  "no_backbone_rebuilding": true,
+  "static_choice": "fixed before inference; HERMES000+ProteinMPNN020 primary,002 sensitivity; all AF3_no_template same input name",
+  "static_parent_processing": "Mean9 stochastic WT scoring rows, not9 biological measurements. This constant subtraction does not affect raw-score ranking."
+}

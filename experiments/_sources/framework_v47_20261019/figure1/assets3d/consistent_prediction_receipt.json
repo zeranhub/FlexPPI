@@ -1,0 +1,111 @@
+{
+  "status": "passed",
+  "source_pdb_sha256": "7a9664dba4f535933d85777b41290650b13a3378a3e0c84217e923fdbd9e544a",
+  "source_prediction_sha256": "b95fe2f74a6db843063e457665331e55f88ca032f004bded642377d4a9345326",
+  "original_active_png_sha256": "139e0ea98597eb9fb16fd11dbe5caebbd6ecc35929734074d691c1270c812193",
+  "original_active_geometry_definition": "Unchanged static protein structure with constant cartoon thickness; color encodes the saved predicted RMSF amplitude.",
+  "original_active_is_amplitude_envelope_or_putty": false,
+  "new_geometry_definition": "Identical unchanged static PDB coordinates with automatic DSS secondary structure and a/b shared constant-thickness cartoon material. Colour alone represents raw predicted RMSF.",
+  "all_840_original_prediction_values_exact": true,
+  "all_840_original_input_RGB_exact": true,
+  "rendered_residues": 840,
+  "valid_RMSF": 840,
+  "supervised_Hchi_valid": 734,
+  "chain_lengths": {
+    "A": 276,
+    "B": 100,
+    "C": 10,
+    "D": 204,
+    "E": 250
+  },
+  "original_colormap_anchors_hex": [
+    "#1D5C93",
+    "#57B9BB",
+    "#F6D77B",
+    "#DD8B50",
+    "#B34342"
+  ],
+  "original_colormap_anchor_positions_A": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "original_range_A": [
+    0,
+    4
+  ],
+  "original_64_cell_legend": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\framework_v47_20261019\\figure1\\assets3d\\source_archive\\rmsf_original_64_cell_legend.json",
+  "original_RGB_CSV_sha256": "62a8c52573d7ac55bb07addfbc1043967c7f04fce11d09f0f9902aea182f60fc",
+  "maximum_PyMOL_float32_storage_RGB_error": 2.9685450542160652e-08,
+  "all_source_coordinates_sha256": "173fc07a6d60a5226cccfd9e709d60b868c19918d09def1f6d8a177b0879837c",
+  "all_after_coordinates_sha256": "173fc07a6d60a5226cccfd9e709d60b868c19918d09def1f6d8a177b0879837c",
+  "input_coordinates_unchanged": true,
+  "style_identical_to_a_b": true,
+  "shared_material_settings": {
+    "cartoon_fancy_helices": 1,
+    "cartoon_flat_sheets": 1,
+    "cartoon_smooth_loops": 1,
+    "cartoon_highlight_color": -1,
+    "cartoon_discrete_colors": 1,
+    "cartoon_sampling": 24,
+    "cartoon_loop_radius": 0.18,
+    "cartoon_tube_radius": 0.18,
+    "cartoon_rect_length": 1.2,
+    "cartoon_rect_width": 0.19,
+    "cartoon_transparency": 0,
+    "ray_opaque_background": 0,
+    "orthoscopic": 1,
+    "antialias": 2,
+    "ray_shadows": 0,
+    "depth_cue": 0,
+    "ambient": 0.55,
+    "direct": 0.4,
+    "specular": 0.1,
+    "shininess": 20,
+    "ray_trace_mode": 0,
+    "ray_trace_gain": 0
+  },
+  "camera_view": [
+    0.5545004606246948,
+    0.7900398969650269,
+    -0.2614693343639374,
+    -0.05330094322562218,
+    0.34726855158805847,
+    0.936249852180481,
+    0.8304747343063354,
+    -0.5052143335342407,
+    0.23467041552066803,
+    0.0,
+    0.0,
+    -365.3005676269531,
+    58.18672561645508,
+    37.56155014038086,
+    68.7523422241211,
+    288.0057373046875,
+    442.59539794921875,
+    20.0
+  ],
+  "crop": [
+    30,
+    608,
+    2274,
+    1604
+  ],
+  "raw_size": [
+    2400,
+    2100
+  ],
+  "image_size": [
+    2244,
+    996
+  ],
+  "png": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\framework_v47_20261019\\figure1\\assets3d\\assembly_prediction_consistent.png",
+  "png_sha256": "83ae65f79d7fc5f53d80fe9e9b16afaca0e78c5b706efbdae53ea41d34f6d4b5",
+  "pse": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\framework_v47_20261019\\figure1\\assets3d\\assembly_prediction_consistent.pse",
+  "pse_sha256": "83f8d95c19913856ffa8dd75a6f43365b414781576dd842f56a4b4a4a2426c3f",
+  "new_inference": 0,
+  "new_training": 0,
+  "new_MD": 0
+}

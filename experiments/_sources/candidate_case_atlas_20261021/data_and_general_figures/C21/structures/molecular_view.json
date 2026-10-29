@@ -1,0 +1,149 @@
+{
+  "status": "rendered",
+  "case_id": "C21",
+  "reference": "1ao7",
+  "primary_pair": [
+    "1ao7",
+    "1qrn"
+  ],
+  "all_states": [
+    "1ao7",
+    "1qrn",
+    "1qse",
+    "1qsf",
+    "3h9s",
+    "3pwp"
+  ],
+  "source": "Existing ITrace run1 topology coordinates; not a newly simulated ensemble",
+  "sources": [
+    {
+      "pdb": "1ao7",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_1ao7.npz",
+      "prediction_sha256": "2844893261327e5a6e7d7774ba903fe4e9021489e1ae6e3452fd35b2f8b91ae6",
+      "structure": "E:\\data\\ITrace\\trajectories\\1ao7_run1_topology.pdb",
+      "structure_sha256": "2dec45e7ce4d1b3682820d149f643f9e6541354a87f41e72a3084378fffad92b",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    },
+    {
+      "pdb": "1qrn",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_1qrn.npz",
+      "prediction_sha256": "851d67d44e82e95192cf4ec7fe8afbfb7c1449cf2db4e54e96e640075b683f56",
+      "structure": "E:\\data\\ITrace\\trajectories\\1qrn_run1_topology.pdb",
+      "structure_sha256": "8338fd12efaee88e512e2455baec428238c409c37b4ba603f59fb35c64c4b6c9",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    },
+    {
+      "pdb": "1qse",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_1qse.npz",
+      "prediction_sha256": "d7fb4291f0edbd31758702f7dbc7836d3a5aa4a90568b5ecc40adb9d44dccc55",
+      "structure": "E:\\data\\ITrace\\trajectories\\1qse_run1_topology.pdb",
+      "structure_sha256": "bd04ac1123f6693973c64efb84fa0ef010c180a8056da0ea2a32de38d3686a16",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    },
+    {
+      "pdb": "1qsf",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_1qsf.npz",
+      "prediction_sha256": "5dd9a499c6f1cba5ba6981bc0d0753b1da4a1ade74fdda2a3fb2eb51ec2fb8eb",
+      "structure": "E:\\data\\ITrace\\trajectories\\1qsf_run1_topology.pdb",
+      "structure_sha256": "5d01566589c43e2cd98c3cba05a3d113d259022be568c2ea5a425e812523f9de",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    },
+    {
+      "pdb": "3h9s",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_3h9s.npz",
+      "prediction_sha256": "ce6230f0d9aeefc211bd27084f3293708f575afd9ecf34c492db1e0228dede90",
+      "structure": "E:\\data\\ITrace\\trajectories\\3h9s_run1_topology.pdb",
+      "structure_sha256": "560e334abfb29e53c48d606329137a94b3fe76fd844c26da96016b9c6bcf8cfd",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    },
+    {
+      "pdb": "3pwp",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_3pwp.npz",
+      "prediction_sha256": "355beeefeb1b0347b4ffaa26d567e3c77768a814fb7c4f17e8cdd9381ae97254",
+      "structure": "E:\\data\\ITrace\\trajectories\\3pwp_run1_topology.pdb",
+      "structure_sha256": "12c51a1938829dacde232491ddb49525689ddd3eeb5f217b240df38266acb0fb",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    }
+  ],
+  "alignment": "MHC first180 C-alpha, PyMOL align cycles=0; common camera for primary pair",
+  "semantic_colors": [
+    "#CF8C27",
+    "#762A83",
+    "#2166AC",
+    "#1B7837",
+    "#B2182B",
+    "#666666",
+    "#4393C3",
+    "#B35806",
+    "#9970AB"
+  ],
+  "shared_view": [
+    -0.41925010085105896,
+    0.1612498164176941,
+    0.8971645832061768,
+    -0.49479439854621887,
+    0.7879618406295776,
+    -0.3747156262397766,
+    -0.7611885070800781,
+    -0.6010115742683411,
+    -0.25056755542755127,
+    -0.0,
+    0.0,
+    -305.8479309082031,
+    64.20025634765625,
+    52.166404724121094,
+    54.789485931396484,
+    241.13284301757812,
+    370.5630187988281,
+    -20.0
+  ],
+  "no_invented_mechanism": true
+}

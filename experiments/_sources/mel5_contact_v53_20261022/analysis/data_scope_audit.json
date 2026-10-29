@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "input_scope": "Archived simulation-prepared starting/model-input structures from 3HG1 and 4JFF; not newly retrieved raw crystals, MD means, or predicted coordinates.",
+  "WT_label": "MEL5; mature label alpha24beta17.",
+  "numbering": "Common MEL5 numbering throughout. Mature TCR chain E input residue is common+1; HLA A numbering unchanged.",
+  "distance_definition": "Minimum Euclidean distance across every nonhydrogen atom in the two residues, including backbone and sidechain. The minimizing atom identities may differ across states. Do not label this as a fixed OE1-N or NE2-O distance.",
+  "contact_definition": "A residue pair is a contact when at least one pair of its heavy atoms is at distance <=4.0 A in that one input structure. Gained/lost/retained refer only to this binary geometrical definition, not dynamics or binding energy.",
+  "atom_pair_count_definition": "Number of distinct inter-residue heavy-atom pairs <=4.0 A in the one input structure. Not independent contacts, bond number, hydrogen-bond occupancy, or trajectory frame fraction. Mutations alter atom counts, so contact-count magnitudes are not comparable as an affinity score.",
+  "curve_definition": "RMSF and Hchi are the existing per-residue Full joint model output of each complete bound complex. Delta = mature minus MEL5. Hchi nats; RMSF A. No new inference was performed.",
+  "all23_scope": "Exactly all23 valid same-amino-acid pMHC interface residues in the archived plotted source:18 HLA +5 peptide; not all HLA residues or all interface atom pairs.",
+  "local_scope": "Explicit local window of six HLA sites65,66,68,72,75,76 and aligned TCR beta48-56; complete54pair grid. Q72/CDR2beta primary table contains all50-54 five sites without a proximity filter. This is a local mechanism view, not a claim of prospective residue selection.",
+  "causal_scope": "Diagram edges show geometric proximity and node values show model response. They do not establish a directional Hchi-to-RMSF influence, energy transfer, or predict the measured affinity ratio.",
+  "source_sha256": {
+    "WT_input_PDB": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_joint_case_v49_20261019\\figure4\\source_archive\\3hg1_model_input.pdb",
+      "sha256": "4821006d6b94fa5fb210a70b097ffc7155bad492fd9e6f4b433a877b0bc49bc0"
+    },
+    "mature_input_PDB": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_joint_case_v49_20261019\\figure4\\source_archive\\4jff_model_input.pdb",
+      "sha256": "d9d88e83d6381e03905b0cfdd39ee9bffc3d3d64c9b7981a7867b45610601b7e"
+    },
+    "aligned_model_outputs": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_joint_case_v49_20261019\\figure4\\source_archive\\corrected_pair_all_aligned_positions.csv",
+      "sha256": "b5fe2438552c6c20f145a7f41f3f0f9c2b9e767e787ada9f4e907ea027a156c1"
+    },
+    "all23_plotted_Hchi": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_joint_case_v49_20261019\\figure4\\source_plotted_interface_Hchi.csv",
+      "sha256": "8f376ec58b8739ab2173bd3eeb0b0622fdad276f46f8486ce0a96ee31d65d9b2"
+    },
+    "all45_plotted_CDR_RMSF": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_joint_case_v49_20261019\\figure4\\source_plotted_CDR_RMSF.csv",
+      "sha256": "d752594fd4bb5d94a000b1c1b70bef9ecdf49d6fa688f226f6f5c34baf652ed9"
+    },
+    "v51_local_network": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_interface_v51_20261022\\analysis\\local_Q72_betaCDR2_neighbor_network.csv",
+      "sha256": "4582fbc9e84e7b96231537994c518c298d15bf5895d16aa27073525d92443a39"
+    }
+  },
+  "v51_pairs_recomputed_exactly": 21,
+  "local_contact_edge_count": 13,
+  "all23_decreases": 17,
+  "selection_rule": {
+    "status": "verified_exactly_six",
+    "region": "All aligned HLA chain A residues65-76 and aligned TCRbeta48-56",
+    "eligibility": "Hchi valid and minimum heavy-atom distance to any beta48-56 residue <=6.0A in either archived structure",
+    "selected_positions": [
+      65,
+      66,
+      68,
+      72,
+      75,
+      76
+    ],
+    "excluded_positions": [
+      {
+        "common_position": 67,
+        "aa": "V",
+        "hchi_valid": true,
+        "WT_closest_beta_residue": 51,
+        "WT_minimum_to_beta48_56_A": 6.979441238380048,
+        "mature_closest_beta_residue": 56,
+        "mature_minimum_to_beta48_56_A": 6.920382937381437,
+        "eligible": false
+      },
+      {
+        "common_position": 69,
+        "aa": "A",
+        "hchi_valid": false,
+        "WT_closest_beta_residue": 51,
+        "WT_minimum_to_beta48_56_A": 4.223801605189336,
+        "mature_closest_beta_residue": 49,
+        "mature_minimum_to_beta48_56_A": 3.524159474257648,
+        "eligible": false
+      },
+      {
+        "common_position": 70,
+        "aa": "H",
+        "hchi_valid": true,
+        "WT_closest_beta_residue": 51,
+        "WT_minimum_to_beta48_56_A": 6.5980982108483435,
+        "mature_closest_beta_residue": 49,
+        "mature_minimum_to_beta48_56_A": 6.709590151417593,
+        "eligible": false
+      },
+      {
+        "common_position": 71,
+        "aa": "S",
+        "hchi_valid": true,
+        "WT_closest_beta_residue": 51,
+        "WT_minimum_to_beta48_56_A": 6.322048718572173,
+        "mature_closest_beta_residue": 53,
+        "mature_minimum_to_beta48_56_A": 6.503768138548599,
+        "eligible": false
+      },
+      {
+        "common_position": 73,
+        "aa": "T",
+        "hchi_valid": true,
+        "WT_closest_beta_residue": 51,
+        "WT_minimum_to_beta48_56_A": 6.58964338944074,
+        "mature_closest_beta_residue": 52,
+        "mature_minimum_to_beta48_56_A": 6.194489486632467,
+        "eligible": false
+      },
+      {
+        "common_position": 74,
+        "aa": "H",
+        "hchi_valid": true,
+        "WT_closest_beta_residue": 51,
+        "WT_minimum_to_beta48_56_A": 9.170005452561087,
+        "mature_closest_beta_residue": 53,
+        "mature_minimum_to_beta48_56_A": 6.596893208170031,
+        "eligible": false
+      }
+    ],
+    "n_HLA_candidates": 12,
+    "n_beta_candidates": 9,
+    "full_rule_table": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_contact_v53_20261022\\analysis\\HLA65_76_selection_rule_audit_all12.csv",
+    "scope": "Rule is a transparent geometric definition of a local display window, not a preregistered/prospective selection criterion."
+  }
+}

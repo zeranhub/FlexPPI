@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "edit_scope": "English labels and font only; original plotted values and transforms preserved",
+  "data_comparisons": [
+    {
+      "file": "fig3_all_12252_scatter_points.csv",
+      "rows": 12252,
+      "columns": 6,
+      "all_numeric_cells_unchanged": true,
+      "translated_text_columns": [],
+      "new_sha256": "3c83043e1290601cfce88566d32e5a8144f8479a076c76583050858c38e25839",
+      "original_sha256": "3c83043e1290601cfce88566d32e5a8144f8479a076c76583050858c38e25839"
+    },
+    {
+      "file": "fig3_all_6126_full_metrics_and_reference.csv",
+      "rows": 6126,
+      "columns": 73,
+      "all_numeric_cells_unchanged": true,
+      "translated_text_columns": [],
+      "new_sha256": "fa7fe388e8755fd33cb5690d4cf016bdb60a6a07143482e878472ef22925db07",
+      "original_sha256": "fa7fe388e8755fd33cb5690d4cf016bdb60a6a07143482e878472ef22925db07"
+    },
+    {
+      "file": "fig3_amino_acid_paired_source.csv",
+      "rows": 80,
+      "columns": 18,
+      "all_numeric_cells_unchanged": true,
+      "translated_text_columns": [],
+      "new_sha256": "2c1068b704521df58520bb33e80577644ad42d286c16b67b327a1fcfd00522a2",
+      "original_sha256": "2c1068b704521df58520bb33e80577644ad42d286c16b67b327a1fcfd00522a2"
+    },
+    {
+      "file": "fig3_amplitude_and_residue_types_statistics.csv",
+      "rows": 132,
+      "columns": 17,
+      "all_numeric_cells_unchanged": true,
+      "translated_text_columns": [],
+      "new_sha256": "8be60f8364441c614e446b963d2ededa8376c545b00bc12e7f2cea60dac970d7",
+      "original_sha256": "8be60f8364441c614e446b963d2ededa8376c545b00bc12e7f2cea60dac970d7"
+    },
+    {
+      "file": "fig3_full_amino_acid_source.csv",
+      "rows": 40,
+      "columns": 12,
+      "all_numeric_cells_unchanged": true,
+      "translated_text_columns": [],
+      "new_sha256": "e2949164dbf0da7f16dc185691fac0ed7cf5df2dc4287c3551d9e115a911bf9f",
+      "original_sha256": "e2949164dbf0da7f16dc185691fac0ed7cf5df2dc4287c3551d9e115a911bf9f"
+    }
+  ],
+  "random_sampling": false,
+  "new_inference": false,
+  "source_script_sha256": "e2a2710ee16499d8f577a8d4c48a7779714f11fc9c3d6471ce5c4d285789cc2d",
+  "all_numeric_cells_unchanged": true,
+  "all_visible_labels_English": true,
+  "visual_QA": "passed: full PNG inspection; English labels readable, no clipping or overlaps; all original plotted data preserved"
+}

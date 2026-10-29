@@ -1,0 +1,87 @@
+{
+  "pdb": "7q99",
+  "status": "passed",
+  "frame_audit": [
+    {
+      "pdb": "7q99",
+      "replica": 1,
+      "frames": 1003,
+      "first_ps": 0.0,
+      "last_ps": 200000.0,
+      "residues": 828,
+      "chi_angles": 1515
+    },
+    {
+      "pdb": "7q99",
+      "replica": 2,
+      "frames": 1001,
+      "first_ps": 0.0,
+      "last_ps": 200000.0,
+      "residues": 828,
+      "chi_angles": 1515
+    },
+    {
+      "pdb": "7q99",
+      "replica": 3,
+      "frames": 1001,
+      "first_ps": 0.0,
+      "last_ps": 200000.0,
+      "residues": 828,
+      "chi_angles": 1515
+    }
+  ],
+  "source_files": [
+    {
+      "pdb": "7q99",
+      "replica": 1,
+      "topology": "E:\\data\\ITrace\\trajectories\\7q99_run1_topology.pdb",
+      "topology_sha256": "a3e2eb24572ebcdaeb409a3cb28245c8746d8b02bb20e79428d5c7fed1263121",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\7q99_run1_md_processed.xtc",
+      "trajectory_sha256": "3a6b5a3bb3a31969430d3254b220729812ecac9fad5f50fe53226550019be0ce",
+      "canonical_topology_sha256": "81abbebc30407d63860be85dd8e35a4f8dbfb66d5383b772745a0ec8cef93bdc",
+      "prediction_sha256": "3c59ea639ff8ce6141a6547687f416239912bd501298e8a3f52987bf108b9970",
+      "model_input_sha256": "81abbebc30407d63860be85dd8e35a4f8dbfb66d5383b772745a0ec8cef93bdc",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "pdb": "7q99",
+      "replica": 2,
+      "topology": "E:\\data\\ITrace\\trajectories\\7q99_run2_topology.pdb",
+      "topology_sha256": "6c54a3103432bbd497d7c978dbd9a96dccf9a5345b7a84610163a10373396930",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\7q99_run2_md_processed.xtc",
+      "trajectory_sha256": "d2200f18d812adc4fe03bca0a953c30291bea4783a8ff3951e0b2925d12fd239",
+      "canonical_topology_sha256": "f8ca3a6118ec67463550be0a2669df834028820641ffeb2ccafa8f8afeeca995",
+      "prediction_sha256": "3c59ea639ff8ce6141a6547687f416239912bd501298e8a3f52987bf108b9970",
+      "model_input_sha256": "81abbebc30407d63860be85dd8e35a4f8dbfb66d5383b772745a0ec8cef93bdc",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "pdb": "7q99",
+      "replica": 3,
+      "topology": "E:\\data\\ITrace\\trajectories\\7q99_run3_topology.pdb",
+      "topology_sha256": "027025856303f867b196e0756ebbe80d17fe04290fc415236a8dd57d45b49454",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\7q99_run3_md_processed.xtc",
+      "trajectory_sha256": "9b246493db3f9f9a674114b7a024878f7e6ecbee9f78d6dbcd907813d94be6cf",
+      "canonical_topology_sha256": "7cd759211ba30bf5ebaf8571586045ffbc0523679db7e587f6bbd7eaccc24281",
+      "prediction_sha256": "3c59ea639ff8ce6141a6547687f416239912bd501298e8a3f52987bf108b9970",
+      "model_input_sha256": "81abbebc30407d63860be85dd8e35a4f8dbfb66d5383b772745a0ec8cef93bdc",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    }
+  ],
+  "mean_variance_checks": [
+    {
+      "pdb": "7q99",
+      "metric": "rmsf",
+      "valid_residues": 828,
+      "maximum_mean_absolute_error": 1.8592719630561305e-07,
+      "maximum_variance_absolute_error": 1.0673386219295367e-07
+    },
+    {
+      "pdb": "7q99",
+      "metric": "hchi",
+      "valid_residues": 722,
+      "maximum_mean_absolute_error": 1.1858936632691552e-07,
+      "maximum_variance_absolute_error": 2.8680252839308196e-08
+    }
+  ]
+}

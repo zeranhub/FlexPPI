@@ -1,0 +1,653 @@
+{
+  "panel_id": "b_rmsf_all25",
+  "style": {
+    "font_family": "Arial",
+    "title_pt": 10.0,
+    "panel_pt": 11.0,
+    "axis_pt": 9.0,
+    "tick_pt": 9.0,
+    "legend_pt": 9.0,
+    "frame_pt": 0.6,
+    "line_pt": 1.0,
+    "full_color": "#2166AC",
+    "intra_color": "#9A633D",
+    "full_line_style": 0,
+    "intra_line_style": 1,
+    "layer_factor": 1.0
+  },
+  "before_save": {
+    "axis_geometry": {
+      "page": {
+        "width_cm": 8.898466666666668,
+        "height_cm": 6.697133333333333,
+        "page_geometry_readback_source": "labtalk_printer_dots",
+        "page_width_dots": 2102.0,
+        "page_height_dots": 1582.0,
+        "page_resx": 600.0,
+        "page_resy": 600.0,
+        "page_bridge_width_cm": 8.89762,
+        "page_bridge_height_cm": 6.69798,
+        "page_bridge_geometry_consistent": true
+      },
+      "layer": {
+        "layer_unit": 1.0,
+        "left_percent": 17.98,
+        "top_percent": 17.0,
+        "width_percent": 76.02,
+        "height_percent": 62.01,
+        "factor": 1.0,
+        "geometry_readback_source": "labtalk_crosscheck",
+        "layer_x_left_percent": 17.98,
+        "layer_x_top_percent": 17.0,
+        "layer_x_width_percent": 76.02,
+        "layer_x_height_percent": 62.01,
+        "bridge_layer_unit": 1.0,
+        "bridge_left_percent": 17.98,
+        "bridge_top_percent": 17.0,
+        "bridge_width_percent": 76.02,
+        "bridge_height_percent": 62.01,
+        "bridge_factor": 1.0,
+        "bridge_geometry_consistent": true
+      },
+      "x": {
+        "from": 293.5,
+        "to": 318.5,
+        "label.pt": 9.0,
+        "label.font": 67.0,
+        "thickness": 0.6,
+        "tickthickness": 0.6,
+        "label.rotate": 0.0
+      },
+      "y": {
+        "from": 0.0,
+        "to": 8.2,
+        "label.pt": 9.0,
+        "label.font": 67.0,
+        "thickness": 0.6,
+        "tickthickness": 0.6,
+        "label.rotate": 0.0
+      },
+      "core_band": {
+        "x": 309.5043804755945,
+        "dx": 14.00187734668333,
+        "fillcolor": 32304364.0,
+        "order": 256.0
+      }
+    },
+    "text_sizes": {
+      "FigureTitle.fsize": 10.0,
+      "PanelLetter.fsize": 11.0,
+      "XAxisTitle.fsize": 9.0,
+      "YAxisTitle.fsize": 9.0,
+      "MAEFull.fsize": 9.0,
+      "MAEIntra.fsize": 9.0,
+      "Core.fsize": 9.0,
+      "Legend0.fsize": 9.0,
+      "Legend1.fsize": 9.0,
+      "Legend2.fsize": 9.0
+    },
+    "text_fonts": {
+      "font_family_expected": "Arial",
+      "font_code_expected": 67,
+      "FigureTitle.font_code": 67,
+      "PanelLetter.font_code": 67,
+      "MAEFull.font_code": 67,
+      "MAEIntra.font_code": 67,
+      "Core.font_code": 67,
+      "Legend0.font_code": 67,
+      "Legend1.font_code": 67,
+      "Legend2.font_code": 67,
+      "XAxisTitle.font_code": 67,
+      "YAxisTitle.font_code": 67
+    },
+    "plots": [
+      {
+        "label": "MD",
+        "kind": "y",
+        "source_values": {
+          "x": [
+            294.0,
+            295.0,
+            296.0,
+            297.0,
+            298.0,
+            299.0,
+            300.0,
+            301.0,
+            302.0,
+            303.0,
+            304.0,
+            305.0,
+            306.0,
+            307.0,
+            308.0,
+            309.0,
+            310.0,
+            311.0,
+            312.0,
+            313.0,
+            314.0,
+            315.0,
+            316.0,
+            317.0,
+            318.0
+          ],
+          "y": [
+            2.1129477,
+            1.4909682,
+            1.2157708,
+            0.8714031,
+            0.8736642,
+            0.82045907,
+            0.65023774,
+            0.6853012,
+            0.71982914,
+            0.6057189,
+            0.5270822,
+            0.6004929,
+            0.6080932,
+            0.51139015,
+            0.5325249,
+            0.5684943,
+            0.53665715,
+            0.53598857,
+            0.52228236,
+            0.45308363,
+            0.50192344,
+            0.61898965,
+            0.6237827,
+            0.7684682,
+            1.7708286
+          ]
+        },
+        "origin_range": "[Figure3]1!1",
+        "color": {
+          "html": "#222222",
+          "origin_color_code": 19014178.0
+        },
+        "width": {
+          "MD": {
+            "set_w_units": 500.0,
+            "line_width_pt": 1.0
+          }
+        },
+        "line_style": 2.0,
+        "symbol": {
+          "symbol_size_pt": 3.2,
+          "symbol_edge_percent_of_radius": 50.0,
+          "symbol_kind": 2.0,
+          "symbol_interior": 1.0
+        }
+      },
+      {
+        "label": "Full",
+        "kind": "l",
+        "source_values": {
+          "x": [
+            294.0,
+            295.0,
+            296.0,
+            297.0,
+            298.0,
+            299.0,
+            300.0,
+            301.0,
+            302.0,
+            303.0,
+            304.0,
+            305.0,
+            306.0,
+            307.0,
+            308.0,
+            309.0,
+            310.0,
+            311.0,
+            312.0,
+            313.0,
+            314.0,
+            315.0,
+            316.0,
+            317.0,
+            318.0
+          ],
+          "y": [
+            2.123881,
+            1.4877319,
+            1.0104722,
+            0.8094244,
+            0.6259723,
+            0.5663401,
+            0.56092674,
+            0.5578309,
+            0.5257198,
+            0.4693439,
+            0.5114085,
+            0.5324224,
+            0.48904765,
+            0.44702804,
+            0.44807371,
+            0.48464197,
+            0.47505045,
+            0.4888358,
+            0.46167266,
+            0.5078398,
+            0.5780117,
+            0.59535956,
+            0.68890125,
+            0.7781471,
+            1.0639685
+          ]
+        },
+        "origin_range": "[Figure3]1!2",
+        "color": {
+          "html": "#2166AC",
+          "origin_color_code": 28075553.0
+        },
+        "width": {
+          "Full": {
+            "set_w_units": 500.0,
+            "line_width_pt": 1.0
+          }
+        },
+        "line_style": 0.0
+      },
+      {
+        "label": "Intra",
+        "kind": "l",
+        "source_values": {
+          "x": [
+            294.0,
+            295.0,
+            296.0,
+            297.0,
+            298.0,
+            299.0,
+            300.0,
+            301.0,
+            302.0,
+            303.0,
+            304.0,
+            305.0,
+            306.0,
+            307.0,
+            308.0,
+            309.0,
+            310.0,
+            311.0,
+            312.0,
+            313.0,
+            314.0,
+            315.0,
+            316.0,
+            317.0,
+            318.0
+          ],
+          "y": [
+            1.743925,
+            5.421841,
+            2.8448915,
+            2.4009993,
+            3.6869686,
+            3.2920947,
+            2.4370844,
+            3.586769,
+            2.7755942,
+            3.0225272,
+            3.332189,
+            2.546497,
+            2.762345,
+            2.2902868,
+            2.390603,
+            2.2706106,
+            1.9241463,
+            1.9709154,
+            1.4439864,
+            2.9098892,
+            2.6075397,
+            3.9642677,
+            3.8831317,
+            5.453443,
+            7.6058745
+          ]
+        },
+        "origin_range": "[Figure3]1!3",
+        "color": {
+          "html": "#9A633D",
+          "origin_color_code": 20800410.0
+        },
+        "width": {
+          "Intra": {
+            "set_w_units": 500.0,
+            "line_width_pt": 1.0
+          }
+        },
+        "line_style": 1.0
+      }
+    ]
+  },
+  "after_independent_reopen": {
+    "axis_geometry": {
+      "page": {
+        "width_cm": 8.898466666666668,
+        "height_cm": 6.697133333333333,
+        "page_geometry_readback_source": "labtalk_printer_dots",
+        "page_width_dots": 2102.0,
+        "page_height_dots": 1582.0,
+        "page_resx": 600.0,
+        "page_resy": 600.0,
+        "page_bridge_width_cm": 8.89762,
+        "page_bridge_height_cm": 6.69798,
+        "page_bridge_geometry_consistent": true
+      },
+      "layer": {
+        "layer_unit": 1.0,
+        "left_percent": 17.98,
+        "top_percent": 17.0,
+        "width_percent": 76.02,
+        "height_percent": 62.01,
+        "factor": 1.0,
+        "geometry_readback_source": "labtalk_crosscheck",
+        "layer_x_left_percent": 17.98,
+        "layer_x_top_percent": 17.0,
+        "layer_x_width_percent": 76.02,
+        "layer_x_height_percent": 62.01,
+        "bridge_layer_unit": 1.0,
+        "bridge_left_percent": 17.98,
+        "bridge_top_percent": 17.0,
+        "bridge_width_percent": 76.02,
+        "bridge_height_percent": 62.01,
+        "bridge_factor": 1.0,
+        "bridge_geometry_consistent": true
+      },
+      "x": {
+        "from": 293.5,
+        "to": 318.5,
+        "label.pt": 9.0,
+        "label.font": 67.0,
+        "thickness": 0.6,
+        "tickthickness": 0.6,
+        "label.rotate": 0.0
+      },
+      "y": {
+        "from": 0.0,
+        "to": 8.2,
+        "label.pt": 9.0,
+        "label.font": 67.0,
+        "thickness": 0.6,
+        "tickthickness": 0.6,
+        "label.rotate": 0.0
+      },
+      "core_band": {
+        "x": 309.5043804755945,
+        "dx": 14.00187734668333,
+        "fillcolor": 32304364.0,
+        "order": 256.0
+      }
+    },
+    "text_sizes": {
+      "FigureTitle.fsize": 10.0,
+      "PanelLetter.fsize": 11.0,
+      "XAxisTitle.fsize": 9.0,
+      "YAxisTitle.fsize": 9.0,
+      "MAEFull.fsize": 9.0,
+      "MAEIntra.fsize": 9.0,
+      "Core.fsize": 9.0,
+      "Legend0.fsize": 9.0,
+      "Legend1.fsize": 9.0,
+      "Legend2.fsize": 9.0
+    },
+    "text_fonts": {
+      "font_family_expected": "Arial",
+      "font_code_expected": 67,
+      "FigureTitle.font_code": 67,
+      "PanelLetter.font_code": 67,
+      "MAEFull.font_code": 67,
+      "MAEIntra.font_code": 67,
+      "Core.font_code": 67,
+      "Legend0.font_code": 67,
+      "Legend1.font_code": 67,
+      "Legend2.font_code": 67,
+      "XAxisTitle.font_code": 67,
+      "YAxisTitle.font_code": 67
+    },
+    "plots": [
+      {
+        "label": "MD",
+        "kind": "y",
+        "source_values": {
+          "x": [
+            294.0,
+            295.0,
+            296.0,
+            297.0,
+            298.0,
+            299.0,
+            300.0,
+            301.0,
+            302.0,
+            303.0,
+            304.0,
+            305.0,
+            306.0,
+            307.0,
+            308.0,
+            309.0,
+            310.0,
+            311.0,
+            312.0,
+            313.0,
+            314.0,
+            315.0,
+            316.0,
+            317.0,
+            318.0
+          ],
+          "y": [
+            2.1129477,
+            1.4909682,
+            1.2157708,
+            0.8714031,
+            0.8736642,
+            0.82045907,
+            0.65023774,
+            0.6853012,
+            0.71982914,
+            0.6057189,
+            0.5270822,
+            0.6004929,
+            0.6080932,
+            0.51139015,
+            0.5325249,
+            0.5684943,
+            0.53665715,
+            0.53598857,
+            0.52228236,
+            0.45308363,
+            0.50192344,
+            0.61898965,
+            0.6237827,
+            0.7684682,
+            1.7708286
+          ]
+        },
+        "origin_range": "[Figure3]1!1",
+        "color": {
+          "html": "#222222",
+          "origin_color_code": 19014178.0
+        },
+        "width": {
+          "MD": {
+            "set_w_units": 500.0,
+            "line_width_pt": 1.0
+          }
+        },
+        "line_style": 2.0,
+        "symbol": {
+          "symbol_size_pt": 3.2,
+          "symbol_edge_percent_of_radius": 50.0,
+          "symbol_kind": 2.0,
+          "symbol_interior": 1.0
+        }
+      },
+      {
+        "label": "Full",
+        "kind": "l",
+        "source_values": {
+          "x": [
+            294.0,
+            295.0,
+            296.0,
+            297.0,
+            298.0,
+            299.0,
+            300.0,
+            301.0,
+            302.0,
+            303.0,
+            304.0,
+            305.0,
+            306.0,
+            307.0,
+            308.0,
+            309.0,
+            310.0,
+            311.0,
+            312.0,
+            313.0,
+            314.0,
+            315.0,
+            316.0,
+            317.0,
+            318.0
+          ],
+          "y": [
+            2.123881,
+            1.4877319,
+            1.0104722,
+            0.8094244,
+            0.6259723,
+            0.5663401,
+            0.56092674,
+            0.5578309,
+            0.5257198,
+            0.4693439,
+            0.5114085,
+            0.5324224,
+            0.48904765,
+            0.44702804,
+            0.44807371,
+            0.48464197,
+            0.47505045,
+            0.4888358,
+            0.46167266,
+            0.5078398,
+            0.5780117,
+            0.59535956,
+            0.68890125,
+            0.7781471,
+            1.0639685
+          ]
+        },
+        "origin_range": "[Figure3]1!2",
+        "color": {
+          "html": "#2166AC",
+          "origin_color_code": 28075553.0
+        },
+        "width": {
+          "Full": {
+            "set_w_units": 500.0,
+            "line_width_pt": 1.0
+          }
+        },
+        "line_style": 0.0
+      },
+      {
+        "label": "Intra",
+        "kind": "l",
+        "source_values": {
+          "x": [
+            294.0,
+            295.0,
+            296.0,
+            297.0,
+            298.0,
+            299.0,
+            300.0,
+            301.0,
+            302.0,
+            303.0,
+            304.0,
+            305.0,
+            306.0,
+            307.0,
+            308.0,
+            309.0,
+            310.0,
+            311.0,
+            312.0,
+            313.0,
+            314.0,
+            315.0,
+            316.0,
+            317.0,
+            318.0
+          ],
+          "y": [
+            1.743925,
+            5.421841,
+            2.8448915,
+            2.4009993,
+            3.6869686,
+            3.2920947,
+            2.4370844,
+            3.586769,
+            2.7755942,
+            3.0225272,
+            3.332189,
+            2.546497,
+            2.762345,
+            2.2902868,
+            2.390603,
+            2.2706106,
+            1.9241463,
+            1.9709154,
+            1.4439864,
+            2.9098892,
+            2.6075397,
+            3.9642677,
+            3.8831317,
+            5.453443,
+            7.6058745
+          ]
+        },
+        "origin_range": "[Figure3]1!3",
+        "color": {
+          "html": "#9A633D",
+          "origin_color_code": 20800410.0
+        },
+        "width": {
+          "Intra": {
+            "set_w_units": 500.0,
+            "line_width_pt": 1.0
+          }
+        },
+        "line_style": 1.0
+      }
+    ]
+  },
+  "exports": {
+    "png": true,
+    "pdf": true,
+    "tif": true
+  },
+  "editable_numeric_data_exact": true,
+  "plot_sheet_columns": [
+    "MD X",
+    "MD",
+    "Full X",
+    "Full",
+    "Intra X",
+    "Intra"
+  ],
+  "visual_qa_status": "pending_image_inspection"
+}

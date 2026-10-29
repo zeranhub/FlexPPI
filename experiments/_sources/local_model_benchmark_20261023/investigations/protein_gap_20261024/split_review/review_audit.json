@@ -1,0 +1,123 @@
+{
+  "generated_utc": "2026-10-24T00:46:25.932815+00:00",
+  "source_hashes": {
+    "membership": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\classification\\membership_frozen.csv",
+      "sha256": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac"
+    },
+    "cohort": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\inputs\\cohort_records.csv",
+      "sha256": "5c1153ea9717e4c54a790e39dfda82e6d5e48f482ca0cb6a30e1e35cb903f08e"
+    },
+    "metrics": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\per_record_metrics.csv",
+      "sha256": "87420afc23a9dce44919eb1e58bb6620da2b04a8c1075099d23df06ea538e6ef"
+    },
+    "exposure": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\references\\training_exposure_membership_frozen.csv",
+      "sha256": "72521f5abc8609ce7bd4dcf10cf3e1e6c0d16626017f06e9a7be98fdf6942e5b"
+    },
+    "exposure_protocol": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\references\\TRAINING_EXPOSURE_SENSITIVITY_PROTOCOL.json",
+      "sha256": "dffd7151668683d344072a2384e6dfac6c587bdaa503b1efd192a81c2f0e9aa7"
+    },
+    "exposure_audit": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\references\\training_exposure_protocol_sources_sha256.json",
+      "sha256": "83b0fbbddd486633cf2bb2c3dd34de8da4d896d6fd05378ff2f9498836454575"
+    },
+    "own_oof": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\references\\training_exposure_own_oof_details.csv",
+      "sha256": "cf73091b56347b64aa4493712885cd6992d5df8a10e97e6e903f6080c82161e5"
+    },
+    "own_family": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\references\\training_exposure_own_family_details.csv",
+      "sha256": "df0ea98dec8cd4f5b0fc96c72b1aeb9620321e3e7f961410ebd0b0292fbaab58"
+    },
+    "prediction_manifest": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\neural_exports\\evaluation\\prediction_manifest.jsonl",
+      "sha256": "aa3bbeaa99cbaa35b278ed0b1abf97649d19f79d480c20b71dceb2cc9922fb97"
+    },
+    "prediction_export_audit": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\neural_exports\\evaluation\\evaluation_audit.json",
+      "sha256": "bc0ca306a18a93b127df22c74e401ebce72c87bf92840b2abf8ddc07b44bef06"
+    },
+    "training_freeze": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\training_freeze.json",
+      "sha256": "5b994bb59684e3a33c97f4a1801ee9a606e5dd856db9cfe23bf18515697707d3"
+    },
+    "training_config": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\configs\\full_fold0.yaml",
+      "sha256": "c3305394b80f5739132801481497dd769e4187268ad1d9d654b0215281f98c75"
+    },
+    "training_sampler": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\src\\flexppi\\trainer.py",
+      "sha256": "66ba5cb19a4cb0b345a424b4517cee544ce120f505c083197efcf9539c898a37"
+    },
+    "original_aggregation": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\type_analysis\\analyze_corrected_main_comparison.py",
+      "sha256": "3b5790dcd6db5064bcc398c0f26bd56710053118946b911bcb38d9fa65a817c5"
+    },
+    "BF2_config": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\weights\\backflip-2.1\\config.yaml",
+      "sha256": "acb6eb8683370fd6f2da3c2899a7025e524309e79b646b3bb94d79c1781e9ba8"
+    },
+    "fold_0_train": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\splits\\fold_0_train.jsonl",
+      "sha256": "fe8fd55cf6a7bc1bf25e06b1682bf30d7113bb2e2644c47111d2869755fd9336"
+    },
+    "fold_0_test": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\splits\\fold_0_test.jsonl",
+      "sha256": "25f7782e2455ac7bf84f077d4fb5f44ebe84cb6c3cb65bd2e5c0e0c3ffc41519"
+    },
+    "fold_1_train": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\splits\\fold_1_train.jsonl",
+      "sha256": "f1d916cf9cac929d955bf27c88e64f7a798be84b712bd7cfd9b07a598d9f11cf"
+    },
+    "fold_1_test": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\splits\\fold_1_test.jsonl",
+      "sha256": "db4a9359acc3532b7b6d7454f5a8e1de2a3db0e6858389eb7b0e0e8718e61745"
+    },
+    "fold_2_train": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\splits\\fold_2_train.jsonl",
+      "sha256": "3e740748e7a078f5ef8f45d84880c9a4ad16b4b1e4fe5cc489c302e1c582baa5"
+    },
+    "fold_2_test": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\splits\\fold_2_test.jsonl",
+      "sha256": "ab0506bee03a42d648e18938d6eb2dd059d93f81e8c9a03175b7a5e4f811fc97"
+    },
+    "fold_3_train": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\splits\\fold_3_train.jsonl",
+      "sha256": "b13c69613925e6504f5a32ba1e05d80f323bac0e67ef0f4009c7993abd258092"
+    },
+    "fold_3_test": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\splits\\fold_3_test.jsonl",
+      "sha256": "7aa0596b40caec33fb703e927c38f931ce15786b114b77f63bc840885c2a9d01"
+    },
+    "fold_4_train": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\splits\\fold_4_train.jsonl",
+      "sha256": "3f64527358d47199ac6e5878cfed4098c02129839660a1ab115af7c9dbf85bb1"
+    },
+    "fold_4_test": {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\splits\\fold_4_test.jsonl",
+      "sha256": "acc9099dc95ad912a1bdc371bd647a678872caea2200f431ae4d4e1a1fb644e1"
+    },
+    "manuscript_v63": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v63_20261023_中文修订_图2紧凑构图与文字同步.docx",
+      "sha256": "db542b12cc255f1732e8d460e4e1a2c0a255af85bb539d82c6dd7bd4ab1a89fa"
+    }
+  },
+  "status": "complete_read_only_review",
+  "source_files_modified": false,
+  "network_used": false,
+  "model_inference_run": false,
+  "model_checkpoint_loaded": false,
+  "records": 3063,
+  "protein_records": 2203,
+  "protein_atlas_records": 1929,
+  "protein_dynarepo_records": 274,
+  "actual_prediction_manifest_rows_verified": 6126,
+  "OOF_record_train_intersection": 0,
+  "BF2_own_training_ID_manifest_status": "unknown_all_3063",
+  "no_BF2_leakage_claim": true,
+  "code_sha256": "0c76274ca400b50dbc5a2703c93508ab2046267132f1613c4b25ed170bfd3dad"
+}

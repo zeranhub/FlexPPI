@@ -1,0 +1,65 @@
+{
+  "status": "ready_for_new_figure",
+  "v54_reviewed_png_SHA256": "514bc36ab0ec79c7348f1c7ccc804212906ab927334527c0e380c4e45cf63d87",
+  "authorized_visual_changes": [
+    "Remove the ranked23 Hchi bar panel.",
+    "Combine the old e/f heatmaps as one new panel d with upper and lower metric blocks.",
+    "Reflow existing a/b/c panels."
+  ],
+  "must_preserve": {
+    "peptide_four_states_values": 40,
+    "absolute_CDR_two_state_values": 90,
+    "CDR_delta_values": 135,
+    "pMHC_interface_delta_slots": 90,
+    "interface_Hchi_valid_per_row": [
+      23,
+      23,
+      22
+    ],
+    "common_CDR_sites": 45,
+    "pMHC_union_sites": 30
+  },
+  "plotting_ranked23_removed_but_source_retention_allowed": true,
+  "sources": [
+    {
+      "filename": "source_CDR_absolute.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_composite_v54_20261022\\figure4\\source_CDR_absolute.csv",
+      "SHA256": "d752594fd4bb5d94a000b1c1b70bef9ecdf49d6fa688f226f6f5c34baf652ed9"
+    },
+    {
+      "filename": "source_peptide_four_states.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_composite_v54_20261022\\figure4\\source_peptide_four_states.csv",
+      "SHA256": "e07b701f72202a581b3c75cd3fe696febb8caf7d3a57a9cd80df1f3e53a7f7da"
+    },
+    {
+      "filename": "source_CDR_three_contrasts.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_composite_v54_20261022\\figure4\\source_CDR_three_contrasts.csv",
+      "SHA256": "4af39b50174f831dcf6ae7cab28acd796fac5bada4a460b31d77a0fd619c2307"
+    },
+    {
+      "filename": "source_interface_three_contrasts.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_composite_v54_20261022\\figure4\\source_interface_three_contrasts.csv",
+      "SHA256": "43a6bba46611751a30a842cdc618d70d3963064c3e129d58c600c8fa78c35eb0"
+    },
+    {
+      "filename": "source_CDR_heatmap_all135.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_composite_v54_20261022\\figure4\\source_CDR_heatmap_all135.csv",
+      "SHA256": "ab78c996236033826c748cf0b34c1217caca7de5f83583b7367d79958eca88a2"
+    },
+    {
+      "filename": "source_interface_heatmap_all90.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_composite_v54_20261022\\figure4\\source_interface_heatmap_all90.csv",
+      "SHA256": "f842957ee3057f08bfe8dfbcf8a79bb2cf66aacde0b89b7f63d602f4dc57a6e2"
+    },
+    {
+      "filename": "source_heatmap_arrays.npz",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_composite_v54_20261022\\figure4\\source_heatmap_arrays.npz",
+      "SHA256": "a1552527cd346eadb8b34dc69c4ea57bdeb0a48c44e0f3996655294846bf72f2"
+    }
+  ],
+  "minimal_prose_edits": {
+    "P91": "Keep all23 Hchi/Q72-largest-decrease numerical statement; point to new Figure4d lower block.",
+    "P93": "Replace Figure4e/f with Figure4d upper/lower block.",
+    "caption": "Remove old rankedbar description and p-prefix explanation. Rename old e/f to d with upper CDR deltaRMSF and lower pMHC deltaHchi; preserve all contrast, unit and eligibility definitions."
+  }
+}

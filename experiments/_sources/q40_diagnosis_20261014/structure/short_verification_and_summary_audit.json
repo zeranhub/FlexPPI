@@ -1,0 +1,534 @@
+{
+  "status": "passed",
+  "timestamp_utc": "2026-10-14T23:39:27.591917+00:00",
+  "original_run_audit_sha256": "372a7b91d8edac40e0a0182bf87c0adbf41e654d22f2b8b24d1ce35e578ccd26",
+  "sources_frozen_sha256": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\run_audit.json": "372a7b91d8edac40e0a0182bf87c0adbf41e654d22f2b8b24d1ce35e578ccd26",
+    "D:\\data\\dynarepo_non_nucleic_full\\A003R\\structure.pdb": "4b2206ae6e9b71d9b8659e661d6825320eebae563ec4e7c2643a43a5225bf1f5",
+    "D:\\data\\dynarepo_non_nucleic_full\\A003R\\trajectory.xtc": "9d5ffa6a837e7400a5ed571fa9ba2cbeb9838606449aa5c2d145477d725510df",
+    "E:\\Project\\FlexPPI\\paper\\figures\\case_validation_v13_20261009\\ubiquitin\\provenance.json": "daef8138c7f719b19bcc0980f04ccae026e511f9c0a083e84c13644b9f59afa6",
+    "E:\\Project\\FlexPPI\\paper\\figures\\case_validation_v13_20261009\\ubiquitin\\reference_environment_contacts.csv": "27057d864d5d05b1513e98cdf386710e206f71637723cbadfa0f144576f4f44a",
+    "E:\\Project\\FlexPPI\\paper\\figures\\case_validation_v13_20261009\\ubiquitin\\reference_solvent_accessibility.csv": "b611b719e275ef85ede99b583cd5d260e256df31ae62c34ef6eda994f49ea3bf",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\analyze_gln_contacts.py": "eaf2c11683ca968f04ddc35a222a056f2217a8854622f8df48d9f22383611689",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\atom_mapping.json": "3cc88fbb65c081c34c0ba1b0bf26ddbd8e7c2b61d455a329b976d0adad917d86",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\contact_summary_all6_by_grid_window.csv": "5e70b6359295a3834f3cb1b693d231dbaab804882e7ac4a59619ba5da76adf50",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\polar_atom_pair_persistence.csv": "90c785f58a90c9928a2b2cf6ace289f34ffb2e131f53892d46d9c1426e75175f",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\residue_contact_persistence.csv": "dcad9608dfde8c7e780b2b8c862f2afeffb0a9a698905811410498097d5a99e2",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\static_backbone_neighborhood.csv": "8d38dd49f9a5069350023dbade8fb809e1c4513f513b8495538e586016def854",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\static_contacts_by_residue.csv": "03c7deb0bebd2d0518dd986bb440e2575fe3c0dc1c51f41b8361a2a4a24c18c0",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\static_polar_atom_contacts_within5A.csv": "a970996cca98dd75c38fadf5a88dfe3f598e7f0a0bc76ceceed8708fdf52057f",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\static_SASA_all6.csv": "d0649a5d666108ff1f4e3df56f03c467b5b7bad464edc7869151ad3a13be9a5c",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\trajectory_contact_timeseries_all5000.csv": "1abafb9084df8019787a857dcae1eb4a70875eb7523c14fe79fbac56c21db46a",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\trajectory_contact_timeseries_primary501.csv": "ef818263828dda1ba9e1d4333e977b714ba0486aa5f9a8ba720749271f707346",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\trajectory_read_audit.json": "4d9385014c141d94466a8cb1433d8516451753024300b90f3bbdb4135df16e66",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\analysis_plan.json": "5fbeb62753ce1871abd76bbd6b66aa89d11c5826be1038d864fd9bde6688d86e",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\free_energy_curves_v27_20261014\\case_curves\\selection_inventory_with_MD_outcomes.csv": "8c7ed6d08dfd31b78c4b1094c73e3b58bf3054ece6cf4d071b751a62160e564d",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\free_energy_curves_v27_20261014\\case_curves\\joint_entropy_original_five_windows.csv": "5e17ddcfb35c2c07ad0cb99678450ec65c5e0db1c7f11ed2833aa5daa62dfe20"
+  },
+  "checks": [
+    {
+      "name": "SourceSHA structure.pdb",
+      "passed": true
+    },
+    {
+      "name": "SourceSHA trajectory.xtc",
+      "passed": true
+    },
+    {
+      "name": "SourceSHA provenance.json",
+      "passed": true
+    },
+    {
+      "name": "SourceSHA reference_environment_contacts.csv",
+      "passed": true
+    },
+    {
+      "name": "SourceSHA reference_solvent_accessibility.csv",
+      "passed": true
+    },
+    {
+      "name": "ExistingcompletedoutputSHA analyze_gln_contacts.py",
+      "passed": true
+    },
+    {
+      "name": "ExistingcompletedoutputSHA atom_mapping.json",
+      "passed": true
+    },
+    {
+      "name": "ExistingcompletedoutputSHA contact_summary_all6_by_grid_window.csv",
+      "passed": true
+    },
+    {
+      "name": "ExistingcompletedoutputSHA polar_atom_pair_persistence.csv",
+      "passed": true
+    },
+    {
+      "name": "ExistingcompletedoutputSHA residue_contact_persistence.csv",
+      "passed": true
+    },
+    {
+      "name": "ExistingcompletedoutputSHA static_backbone_neighborhood.csv",
+      "passed": true
+    },
+    {
+      "name": "ExistingcompletedoutputSHA static_contacts_by_residue.csv",
+      "passed": true
+    },
+    {
+      "name": "ExistingcompletedoutputSHA static_polar_atom_contacts_within5A.csv",
+      "passed": true
+    },
+    {
+      "name": "ExistingcompletedoutputSHA static_SASA_all6.csv",
+      "passed": true
+    },
+    {
+      "name": "ExistingcompletedoutputSHA trajectory_contact_timeseries_all5000.csv",
+      "passed": true
+    },
+    {
+      "name": "ExistingcompletedoutputSHA trajectory_contact_timeseries_primary501.csv",
+      "passed": true
+    },
+    {
+      "name": "ExistingcompletedoutputSHA trajectory_read_audit.json",
+      "passed": true
+    },
+    {
+      "name": "FrozenanalysisplanSHA",
+      "passed": true
+    },
+    {
+      "name": "All6sites5000frames",
+      "passed": true
+    },
+    {
+      "name": "All6sitesprimary501frames",
+      "passed": true
+    },
+    {
+      "name": "Alloriginalindices Q2",
+      "passed": true
+    },
+    {
+      "name": "Actualtimestamps0to499p9 Q2",
+      "passed": true
+    },
+    {
+      "name": "Fivecontiguous1000observations Q2",
+      "passed": true
+    },
+    {
+      "name": "Alloriginalindices Q31",
+      "passed": true
+    },
+    {
+      "name": "Actualtimestamps0to499p9 Q31",
+      "passed": true
+    },
+    {
+      "name": "Fivecontiguous1000observations Q31",
+      "passed": true
+    },
+    {
+      "name": "Alloriginalindices Q40",
+      "passed": true
+    },
+    {
+      "name": "Actualtimestamps0to499p9 Q40",
+      "passed": true
+    },
+    {
+      "name": "Fivecontiguous1000observations Q40",
+      "passed": true
+    },
+    {
+      "name": "Alloriginalindices Q41",
+      "passed": true
+    },
+    {
+      "name": "Actualtimestamps0to499p9 Q41",
+      "passed": true
+    },
+    {
+      "name": "Fivecontiguous1000observations Q41",
+      "passed": true
+    },
+    {
+      "name": "Alloriginalindices Q49",
+      "passed": true
+    },
+    {
+      "name": "Actualtimestamps0to499p9 Q49",
+      "passed": true
+    },
+    {
+      "name": "Fivecontiguous1000observations Q49",
+      "passed": true
+    },
+    {
+      "name": "Alloriginalindices Q62",
+      "passed": true
+    },
+    {
+      "name": "Actualtimestamps0to499p9 Q62",
+      "passed": true
+    },
+    {
+      "name": "Fivecontiguous1000observations Q62",
+      "passed": true
+    },
+    {
+      "name": "Primary501exactsubsetoffull5000",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator original5000/Q2",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator original5000/Q31",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator original5000/Q40",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator original5000/Q41",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator original5000/Q49",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator original5000/Q62",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator primary501/Q2",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator primary501/Q31",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator primary501/Q40",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator primary501/Q41",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator primary501/Q49",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator primary501/Q62",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window1/Q2",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window1/Q31",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window1/Q40",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window1/Q41",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window1/Q49",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window1/Q62",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window2/Q2",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window2/Q31",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window2/Q40",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window2/Q41",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window2/Q49",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window2/Q62",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window3/Q2",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window3/Q31",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window3/Q40",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window3/Q41",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window3/Q49",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window3/Q62",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window4/Q2",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window4/Q31",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window4/Q40",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window4/Q41",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window4/Q49",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window4/Q62",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window5/Q2",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window5/Q31",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window5/Q40",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window5/Q41",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window5/Q49",
+      "passed": true
+    },
+    {
+      "name": "Summaryrecorddenominator window5/Q62",
+      "passed": true
+    },
+    {
+      "name": "Allsummariesrecalculatedfromsavedframes",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "Wholecountsarefivewindows 3",
+      "passed": true
+    },
+    {
+      "name": "Occupancyexactintegercount 3",
+      "passed": true
+    },
+    {
+      "name": "Wholecountsarefivewindows 5",
+      "passed": true
+    },
+    {
+      "name": "Occupancyexactintegercount 5",
+      "passed": true
+    },
+    {
+      "name": "DirectsourcePDBheavy935",
+      "passed": true
+    },
+    {
+      "name": "All1416staticdistancesindependentlydirectPDBrecomputed",
+      "passed": true,
+      "detail": {
+        "rows": 1416,
+        "maximum_difference_A": 7.823249134730759e-06
+      }
+    },
+    {
+      "name": "Joinedall6all5windows",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview run_audit.json",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview structure.pdb",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview trajectory.xtc",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview provenance.json",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview reference_environment_contacts.csv",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview reference_solvent_accessibility.csv",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview analyze_gln_contacts.py",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview atom_mapping.json",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview contact_summary_all6_by_grid_window.csv",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview polar_atom_pair_persistence.csv",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview residue_contact_persistence.csv",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview static_backbone_neighborhood.csv",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview static_contacts_by_residue.csv",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview static_polar_atom_contacts_within5A.csv",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview static_SASA_all6.csv",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview trajectory_contact_timeseries_all5000.csv",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview trajectory_contact_timeseries_primary501.csv",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview trajectory_read_audit.json",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview analysis_plan.json",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview selection_inventory_with_MD_outcomes.csv",
+      "passed": true
+    },
+    {
+      "name": "Unchangedaftershortreview joint_entropy_original_five_windows.csv",
+      "passed": true
+    }
+  ],
+  "check_counts": {
+    "total": 110,
+    "passed": 110
+  },
+  "new_MD": false,
+  "original_trajectory_reread": false,
+  "original_source_files_modified": false,
+  "all6_and_all5windows_retained": true,
+  "conclusion": "Q40 has intermittent local samechain contacts, but no unique persistent polar lock or loss-of-remote-contact explanation for lastwindow Hchi increase. No causal attribution.",
+  "new_outputs": {
+    "all6_structure_contact_comparison.csv": {
+      "sha256": "68545aea68b2eaa29412be3ca7179bb3904e36386b8056ca0619c38332a86989",
+      "bytes": 1125
+    },
+    "all6_window_contacts_entropy.csv": {
+      "sha256": "3e7a948132e8e3c7fb3988f6053a94318f2bc4b18017d99818bddadbc726e56b",
+      "bytes": 5054
+    },
+    "conclusion_zh.md": {
+      "sha256": "b63299772347ff2a8f3d51c0370fad857817ca51c4cce795840f9841ee555d00",
+      "bytes": 3199
+    },
+    "Q40_key_polar_contacts_all_windows.csv": {
+      "sha256": "2b49b85df337e679c97f888e09c778cf67aa4a811b28bda5701cae5d48313f0d",
+      "bytes": 5210
+    },
+    "README_结果与复算.md": {
+      "sha256": "5d13d1308c2b6d2696cbfa9769a83b54f306950c2b75195b68802b51613b09c4",
+      "bytes": 1649
+    },
+    "static_atomwise_nearest_pairs_within5A.csv": {
+      "sha256": "5b10442222524f938321d379212a97e27210e18e8dcee2090f52cdd390089416",
+      "bytes": 3610
+    },
+    "summarize_and_verify_existing.py": {
+      "sha256": "3990e4b5d13c9dea1739abeb153656cef97341a1d70d08efd4837825669062c1",
+      "bytes": 16010
+    },
+    "top_opposite_NO_contacts_original5000.csv": {
+      "sha256": "a3869d4d95cadc50d38bc670ff832a54ea828044265a8d258aa7c6765d25182e",
+      "bytes": 7817
+    },
+    "top_opposite_NO_contacts_primary501.csv": {
+      "sha256": "3a68dee17bfc9129198b13336c19fb1c1ae4549db0bde1b0ce3f09eb8463f632",
+      "bytes": 7318
+    },
+    "top_residue_contacts_original5000.csv": {
+      "sha256": "719747d0835e7cb44845cde2a23d86e93ff671587c1f9b0e402354f180d39309",
+      "bytes": 4140
+    },
+    "top_residue_contacts_primary501.csv": {
+      "sha256": "fa3b4f9d6ee466bb693f53fb7dad5b4a55bb6432ca82bf766aba5d412b1637f5",
+      "bytes": 4152
+    },
+    "window4_to5_all6.csv": {
+      "sha256": "f1e1ff34a7ebd1a82f54cfa5f1e4f858db85a1183b2599d979d7e6fd48eb2249",
+      "bytes": 1417
+    }
+  }
+}

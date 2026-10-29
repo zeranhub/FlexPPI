@@ -1,0 +1,25 @@
+{
+  "article_url": "https://link.springer.com/article/10.1007/s10858-009-9354-7",
+  "supplement_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs10858-009-9354-7/MediaObjects/10858_2009_9354_MOESM1_ESM.pdf",
+  "raw_methyl_rows": 50,
+  "valid_axes": 37,
+  "usable_axes_in_A003R": 35,
+  "zero_sentinels": "I30CG1-CD1 and L69CG-CD1 are missing fits, not measuredS2=0. Verified against main-text rejection list and SI S4/S5 missing orientation fields.",
+  "upper_bound": "S2>1 raw values retained; cap at1 only in separate column following original paper.",
+  "data_specificity": "Methyl-bearing residues only; glutamines Q41/Q62 have no measured methyl axis in this experiment.",
+  "cannot_validate_model_directly": "The model predicts joint3-bin side-chain entropy, not methyl axialS2; available A003R trajectory is bound while NMR is free. No cross-condition correlation is reported as experimental validation.",
+  "files": [
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\paired_and_experimental\\sources\\Fares2009_SI.pdf",
+      "sha256": "734407479d1f09aca4fa7714541b986ba9033b8100b9f67399b41f10ceac481d"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\paired_and_experimental\\sources\\Fares2009_article.html",
+      "sha256": "cbc9bceb109616ab6175efb2031faf5cb80ba9fd7c4ff3d8c9fc9d12ed3e675d"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\paired_and_experimental\\sources\\Fares2009_table1_conditions.html",
+      "sha256": "58c80105b177dadd7987f21977a0ac5a81ea8bc30d36add33f7fe99e9730c5b7"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "deferred_before_completion",
+  "reason": "Root requested pausing extra RMSFnet layout tests while shared 16 GB machine had less than 1 GB free RAM. NMA full queue was left running.",
+  "original_three_source_smoke": "../smoke/summary.json",
+  "original_smoke_complete_records": 3,
+  "full_required_records": 3063,
+  "full_queue_started": false,
+  "completed_layout_equivalence_validation": false,
+  "do_not_use_as_full_benchmark": true
+}

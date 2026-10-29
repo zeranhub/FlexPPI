@@ -1,0 +1,69 @@
+{
+  "size_mm": [
+    183.0,
+    230.0
+  ],
+  "font_pt": 9,
+  "a_d_e_and_f_unchanged_from_v107": true,
+  "b_c_both_metrics_added": true,
+  "e_four_horizontal": true,
+  "f": "single-axis overlay of MD and Full RMSF-Hchi densities and marginals",
+  "common_f_positions": 824988,
+  "f_records": 3063,
+  "density": {
+    "populations": [
+      {
+        "population": "MD",
+        "all_positions": 824988,
+        "visible_positions": 820754,
+        "out_of_view_positions": 4234,
+        "bin_count_sum": 820754
+      },
+      {
+        "population": "Full",
+        "all_positions": 824988,
+        "visible_positions": 824082,
+        "out_of_view_positions": 906,
+        "bin_count_sum": 824082
+      }
+    ],
+    "common_grid": true,
+    "same_residue_cohort": true,
+    "count_scale": "both: nonzero alpha=0.10+0.25*log1p(count)/log1p(shared_max); zero alpha=0",
+    "shared_max_count": 8299.0,
+    "colors": {
+      "MD": "#62676B",
+      "Full": "#2166AC"
+    },
+    "overlay": "complete MD gray density + complete Full light blue density; subtle natural alpha blend",
+    "all_nonzero_cells_visible": {
+      "MD": true,
+      "Full": true
+    },
+    "no_density_threshold_for_filled_cells": true,
+    "contours": false,
+    "no_kernel_smoothing_or_subsampling": true,
+    "marginals": "same bins, denominator824988, MD dashed, Full solid",
+    "rho_all_positions": {
+      "MD": 0.20861515505308,
+      "Full": 0.2619048885568794
+    }
+  },
+  "outside_text": [],
+  "model_and_MD_rerun": false,
+  "word_changed": false,
+  "visual_review": "passed: root and two independent reviewers opened standalone and complete main PNGs; axes, labels, masks and singleton points visible",
+  "sha256": {
+    "png": "b7021e78317ba64be4f62c637af4cb2c9cc34a7b9e483daa5224e5e9f1c361f2",
+    "pdf": "b3eceda5d8872bfd70d7df201b4a9f2306b64af9790a4b2d14a6d2a52dfb276e",
+    "svg": "d4b4476ff21d9f433ec385e5264b050b16205023ba6475d7d0bea3ec86613103"
+  },
+  "embedded_fonts": [
+    "/ELUGPM+ArialMT",
+    "/ELUGPM+Arial-BoldMT"
+  ],
+  "profile_values_exact_from_frozen_sources": true,
+  "f_density_unchanged": true,
+  "word_unchanged": true,
+  "historical_CSV_precision_max_difference": 4.440892098500626e-16
+}

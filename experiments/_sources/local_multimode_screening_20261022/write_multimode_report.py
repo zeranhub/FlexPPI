@@ -1,0 +1,104 @@
+"""Write a reader-facing Chinese result report, preserving all comparisons."""
+from pathlib import Path
+from datetime import datetime,timezone
+import json,csv,hashlib
+import pandas as pd
+import numpy as np
+
+ROOT=Path(__file__).resolve().parent
+sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def dump(p,x):p.write_text(json.dumps(x,ensure_ascii=False,indent=2,allow_nan=False),encoding='utf8')
+
+def main():
+    stronger=pd.read_csv(ROOT/'evaluation/results_stronger_baselines/all_candidate_budget_metrics.csv')
+    primary=pd.read_csv(ROOT/'evaluation/results_primary/all_candidate_budget_metrics.csv')
+    sites=pd.read_csv(ROOT/'evaluation/results_primary/all_site_nomination_metrics.csv')
+    mean=stronger.groupby(['panel_id','mode','extra_assays','strategy']).new_hits.mean()
+    rows=[];comparisons=[]
+    aliases={'random':'随机','sequence_only_control':'纯序列','BLOSUM_only_control':'BLOSUM序列',
+        'static':'结构打分','baseline':'序列与结构打分','baseline_R':'增加RMSF','baseline_H':'增加Hχ','baseline_RH':'增加RMSF与Hχ',
+        'published_HERMES_fixed':'HERMES直接排序','published_ProteinMPNN':'ProteinMPNN直接排序'}
+    for i in range(1,8):
+        pid=f'MSKCC_TCR{i}';family='CMV' if i<4 else 'gp100' if i<7 else '胰腺癌新抗原GRL'
+        ss=sites[sites.panel_id.eq(pid)].groupby('strategy').new_hits.mean()
+        rows.append(dict(体系=pid,抗原组=family,模式='母本位点提名',已测起始候选=0,新增实验数=38,
+            随机=float(ss['random_positions']),接触数规则=float(ss['static_contact_degree']),侧链暴露规则=float(ss['static_relative_SASA']),
+            RMSF高=float(ss['parent_R_percentile']),Hχ高=float(ss['parent_H_percentile']),联合高=float(ss['parent_joint_percentile']),
+            联合低=float(ss['parent_joint_low']),去除TCR的计算响应=float(ss['parent_partner_context_response'])))
+        for mode,budget,initial in [('mode2',30,18),('mode3',40,20)]:
+            rr=dict(体系=pid,抗原组=family,模式='一次性候选优选' if mode=='mode2' else '逐轮反馈优选',已测起始候选=initial,新增实验数=budget)
+            for method,name in aliases.items():
+                k=pid,mode,budget,method
+                if k in mean.index:rr[name]=float(mean[k])
+            rows.append(rr)
+            joint=mean[pid,mode,budget,'baseline_RH'];seq=mean[pid,mode,budget,'sequence_only_control'];blosum=mean[pid,mode,budget,'BLOSUM_only_control']
+            comparisons.append(dict(panel_id=pid,mode=mode,joint=float(joint),sequence_only=float(seq),BLOSUM_only=float(blosum),
+                joint_exceeds_both_sequence_controls=bool(joint>seq and joint>blosum),
+                joint_minus_sequence=float(joint-seq),joint_minus_BLOSUM=float(joint-blosum)))
+    pd.DataFrame(rows).to_csv(ROOT/'三种模式_全部结果摘要.csv',index=False,encoding='utf-8-sig',float_format='%.2f')
+    for mode in ['mode2','mode3']:
+        assert not any(r['joint_exceeds_both_sequence_controls'] for r in comparisons if r['mode']==mode)
+    run=json.loads((ROOT/'predictions/full_pool/progress.json').read_text())
+    audit=json.loads((ROOT/'evaluation/independent_result_audit.json').read_text());assert audit['status']=='passed_independent_recomputation'
+    protocol=json.loads((ROOT/'evaluation/multimode_protocol.json').read_text())
+    report=f'''**本地抗原筛选与定向改造：三种使用模式的完整测试（2026年10月22日）**
+
+这一轮三种模式和配套对照都已完成。结论是：**现有结果尚未证明，把RMSF和Hχ联合加入筛选，能够稳定地比合理的纯序列方法多找到有效候选。** 柔性预测包含与功能响应有关的信息，但“信息有关”与“能节省筛选实验”是两个层次；后一层需要在相同已测信息和相同新增预算下胜过强对照。本轮不支持直接在论文中增加“模型已具备抗原筛选或定向改造能力”的主张。相对有希望的是Hχ辅助少量实验反馈后的排序，不过目前只有个别体系有小幅优势。
+
+数据来自Łuksza等人的抗原单点替换实验，经Visani等人公开的原始表格和结构输入重新整理。七个TCR背景分别识别CMV的NLVPMVATV、gp100的IMDQVPFSV及胰腺癌新抗原GRLKALCQR，属于三个抗原组；每个背景覆盖9个位点、每个位点19种真实替换，共1197种突变。实验测量的是CD8 T细胞的4-1BB功能响应。主分析保留全部候选，以最高测试剂量下的原始归一化响应作为结果，0.3仅作为操作性的“保留响应”界线；没有把功能响应当成结合亲和力。每个背景的9个母肽行是同一数值的重复填入，已合并处理。公开CSV拟合EC50的对数计算和列名存在不一致，且部分曲线缺少低剂量点，因此拟合EC50没有充当主结果。原始实验可见[Łuksza等，Nature 2022](https://doi.org/10.1038/s41586-022-04735-9)，公开数据和计算输入见[Visani等的固定版本仓库](https://github.com/StatPhysBio/tcr_antigen_design/tree/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2)。
+
+三种模式对应三个具体决策。第一种只看母本，提名2个改造位点，各测19种替换，总预算38次。第二种让所有方法先看到相同的18个候选的实验结果，再从其余候选中一次选出30个。第三种从相同的20个结果开始，每轮选5个、得到反馈后重新排序，共8轮、追加40次实验。后两种各使用20组相同的起始抽样，比较的是新选候选的有效数量，起始候选中的有效数量单独记录。这些是对既有实验数据的回放，并非本地完成了新的细胞实验。七个背景及全部候选均保留，20组抽样仅表示起始信息的变化，不能当成20个独立生物学重复。
+
+模型输入使用每个体系同一个AF3母本骨架，在骨架不变时替换抗原序列。候选描述保留了抗原周围8 Å内96–109个未突变残基各自的RMSF变化，以及82–95个可定义侧链熵的未突变残基各自的Hχ变化。没有将它们压缩为两个空间平均数，也没有规定“熵越低或波动越小就越好”；关联方向仅由各策略共同看到的少量已测结果决定。序列、HERMES结构打分和ProteinMPNN结构打分构成参照；RMSF、Hχ及两者联合分别加入比较。还检验了候选与柔性变化被打乱后的对照，以及仅使用BLOSUM62氨基酸替换相似性的序列参照。BLOSUM方法也只使用同样的已测结果。
+
+**母本位点提名没有形成可靠规则。** 预先规定的“联合读数较高的位点更值得尝试”仅在TCR3同时超过接触数、侧链暴露和随机位点参照：38次实验找回32个保留响应的替换，两个几何参照均为26个，随机参照平均26.90个。在其余背景，有的持平，有的明显较差，例如TCR6联合规则仅找回8个，侧链暴露规则为23个；TCR7联合规则为8个，接触数规则为26个。联合较低、RMSF单独、Hχ单独及移去TCR后的计算响应也全部记录；没有用某个背景表现较好的相反规则替代预定主规则。因而目前不能只凭母本“哪里较灵活”，就认为那里更适合定向改造。
+
+**一次性候选优选中，纯序列参照已经很强。** TCR6最初看起来有改善：序列加结构打分平均命中15.40/30，加入RMSF为17.70，加入Hχ为18.60，联合为18.65。但纯序列方法已达到18.30，BLOSUM序列方法达到19.35。联合柔性相对混合参照增加3.25个，相对纯序列仅增加0.35个，且低于BLOSUM。TCR4的联合方法为12.60，纯序列为11.85，BLOSUM为13.60；其他背景也各有至少一种纯序列参照达到或超过联合方法。因此，把相对较弱的混合参照的改善直接解读成筛选价值，会夸大证据。
+
+**逐轮反馈同样没有显示联合读数的稳定额外收益。** 八轮追加40次实验后，BLOSUM序列参照在七个背景中均达到或超过联合柔性方法。例如TCR4为20.35对16.70，TCR6为27.55对27.50，TCR7为33.75对32.65。Hχ单独辅助在TCR6达到28.55，较BLOSUM平均多1.00个，这是当前值得保留的局部信号；其他背景没有一致优势。这里“使用Hχ单独辅助”指下游选择时只加入这一读数，神经网络仍是同一个同时输出RMSF和Hχ的联合模型。
+
+打乱柔性读数与候选的对应关系后，成绩普遍下降，说明真实对应关系确实含有功能信息；但这个结果本身不能证明它比强序列参照更有用。换用ProteinMPNN另一版本、将目标改为响应最高的前10%候选、以及在三剂量完整的曲线上比较综合响应，也没有使联合策略获得普遍优势。三剂量完整候选数依次为103、89、107、171、171、171、171，属于测量完整的次分析队列，缺失点没有补值；TCR2的89个候选不满足预定逐轮反馈门槛。更强的纯序列反馈参照是在检查初步结果后补齐的，这一点单独记录在评价目录中；原有柔性方法、参数、预算和候选没有据此调整。所有对照结果一起交付。
+
+这些测试回答了“怎么帮助”的可操作版本：把模型提供的残基变化作为候选描述，在给定少量测量后帮助安排下一批实验，并用实际多找到多少个有效候选衡量价值。**目前这一使用方式尚没有稳定超过强序列参照，因而还不宜将模型作为主要筛选器。** 这批单点替换数据主要检验识别能否保留，母肽在最高剂量下已接近饱和，且原始表格未提供能判定微小差别的实验误差；它不足以认定某个突变提高了亲和力或完成了成功定向改造。本轮也没有检验跨全新TCR的筛选能力。Hχ的局部优势可以用于提出下一步独立检验的问题，不能提前变成改造成功的结论。
+
+本轮使用本地可用的历史联合模型：2431条训练记录，不含ITrace；它与稿件目前2430条模型并非完全相同。全部1211个输入（1197个突变、7个母本及7个移去TCR的计算对照）均在本地CPU完成，神经网络前向总耗时{run['forward_seconds']/60:.2f}分钟，包含输入核验与保存的推理任务实际耗时{run['elapsed_seconds']/60:.2f}分钟，没有进行MD或重新训练。训练来源检查还发现已知间接家族联系，因此本轮描述的是新功能标签上的应用测试。TCR1公开结构的β链CDR3与原文扩展图文字有一个残基差异，已标记；移除TCR1也不改变上述总体判断。另行寻找的A6/RD1受体深度突变扫描因完整数值矩阵及构建体对应尚未解决，没有被算入这些1197种抗原实验。论文文件没有由本轮脚本写入。
+
+完整的21组主模式结果见[全部结果摘要](三种模式_全部结果摘要.csv)；每个候选的预测变化、每轮实际选择和原始实验数值都保存在本目录。另有[第一预设抽样下的完整候选排序](evaluation/candidate_rankings_seed20261022.csv)，可直接核查某种策略把哪些序列放进了30个名额。这是已知数据上的排序示例，不是未经测量的新抗原推荐。独立核算从归档的候选编号重新计算了{audit['total_metric_rows_recomputed']:,}行指标，起始候选、预算和逐轮信息范围均通过核验。
+
+![三种模式与强参照的完整比较](result_figures/three_modes_yield.png)
+
+图1：a为相对接触数规则的有效候选数差；b、c为相对纯序列参照的差。BLOSUM列保留了更强序列参照。黑框为预定联合读数策略。预算差异分别标在各子图标题中，不能将三种模式合并算作同一个效果。
+
+![七个体系的逐轮反馈曲线](result_figures/feedback_all_contexts.png)
+
+图2：所有体系均绘出。纵轴只累计新增候选中的保留响应数量；浅色范围为20组起始抽样的10–90%区间。图中包含纯序列及BLOSUM参照。
+
+![对应关系与强序列参照的检查](result_figures/profile_specificity_controls.png)
+
+图3：红色为真实联合变化相对打乱对应关系的差，蓝色为将联合变化加入BLOSUM与结构打分混合参照后的差，黑色为联合方法直接相对BLOSUM纯序列参照的差。红色为正而黑色多为负，说明读数包含信息，但尚未稳定带来超过强序列方法的筛选收益。
+'''
+    reportpath=ROOT/'本地多模式筛选实验_完整结果_20261022.md';reportpath.write_text(report,encoding='utf8')
+    dump(ROOT/'evaluation/decision_summary.json',dict(status='completed_no_consistent_added_utility',
+        mode1_primary_beats_both_geometric_and_random_contexts=1,mode1_contexts=7,
+        joint_beats_both_sequence_controls_mode2_contexts=0,joint_beats_both_sequence_controls_mode3_contexts=0,
+        H_only_feedback_TCR6_minus_BLOSUM_hits=1.0,comparisons=comparisons,
+        historical_model_not_manuscript2430=True,all_main_paper_editing_deferred=True,
+        report_sha256=sha(reportpath),source_tables_sha256=sha(ROOT/'三种模式_全部结果摘要.csv')))
+    # Final evidence records include the source limitations, not invented labels.
+    dump(ROOT/'dms_labels/eligibility_status.json',dict(status='not_evaluable_for_full_scan',
+        full_numeric_saturation_matrix_retrieved=False,not_counted_as_primary_antigen_panels=True,
+        reasons=['Structure2016 A6-c134/RD1 constructs require explicit scan-to-crystal numbering/background alignment.',
+          'JBC2016 selected8 beneficial variants reuse RD1 scan and are not an independent complete pool.',
+          'No digitized heatmap values or selected successes substituted for missing full matrix.'],
+        original_dois=['10.1016/j.str.2016.04.011','10.1074/jbc.M116.748681']))
+    dump(ROOT/'antigen_labels/source_metadata.json',dict(original_experiment_doi='10.1038/s41586-022-04735-9',
+        processed_source_doi='10.1073/pnas.2504783122',commit='cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2',
+        endpoint='Source-normalized fraction of4-1BB+ transducedCD8 cells; cell functional response, not KD',
+        dose_headers_in_raw_xlsx=[.01,1,100],dose_unit_not_annotated_in_raw_xlsx=True,
+        note='Original ExtendedData4 indexed PDF text labels peptide concentration as microgram/ml, but matching normalization/dose processing is not independently established from the source XLSX; primary reports highest tested source dose, with no EC50 conversion.',
+        TCR1_beta_CDR3_repository='CASSLAPGTTNEKLFF',TCR1_beta_CDR3_original_ED4_indexed_text='CASSLAPGATNEKLFF',
+        original_ED4_sequence_difference_status='Flagged unresolved source discrepancy; retain all published-input results and qualify conclusions, no post-result structure substitution.',
+        excluding_TCR1_changes_general_conclusion=False))
+    print(json.dumps(dict(status='report_written',path=str(reportpath),summary_rows=len(rows),report_sha256=sha(reportpath))))
+
+if __name__=='__main__':main()

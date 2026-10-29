@@ -1,0 +1,127 @@
+{
+  "preparation": "OpenBabel 3.1.1.23, rigid receptor PDBQT, preserve atom names, add hydrogens, Gasteiger charges; standard CYS SG/MET SD sulfur types assigned SA following AutoDockTools AutoDock4_AtomTyper (non-oxidized sulfur), not OpenBabel S; reorder to contiguous residues and append per-chain TER for the official parser; crystal heavy atoms unchanged.",
+  "sulfur_typing_source": "https://raw.githubusercontent.com/Valdes-Tresanco-MS/AutoDockTools_py3/master/AutoDockTools/atomTypeTools.py, AutoDock4_AtomTyper.setAutoDockElements sulfur branch; non-oxidized standard-protein CYS and MET only.",
+  "deviation_from_author_readme": "Author suggests ADFR prepare_receptor. OpenBabel was used as the available PDBQT writer. This preparation difference and simplified inference model must be disclosed.",
+  "records": [
+    {
+      "pdb": "3hg1",
+      "command": [
+        "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\venv\\Scripts\\obabel.exe",
+        "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\structures\\3hg1_crystal_protein.pdb",
+        "-O",
+        "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\structures\\3hg1_openbabel_raw.pdbqt",
+        "-xr",
+        "-xn",
+        "-h",
+        "--partialcharge",
+        "gasteiger"
+      ],
+      "stdout": "",
+      "stderr": "1 molecule converted\n",
+      "output_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\structures\\3hg1_crystal_protein.pdbqt",
+      "output_sha256": "45e3172f68398e6143b80d308184f79362ce921d34fec622930328df67b86cb3",
+      "residues": 824,
+      "atoms": 7635,
+      "heavy_atom_identity_and_coordinate_check": "identical to crystal protein input",
+      "atom_types": [
+        "A",
+        "C",
+        "HD",
+        "N",
+        "NA",
+        "OA",
+        "SA"
+      ]
+    },
+    {
+      "pdb": "4jff",
+      "command": [
+        "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\venv\\Scripts\\obabel.exe",
+        "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\structures\\4jff_crystal_protein.pdb",
+        "-O",
+        "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\structures\\4jff_openbabel_raw.pdbqt",
+        "-xr",
+        "-xn",
+        "-h",
+        "--partialcharge",
+        "gasteiger"
+      ],
+      "stdout": "",
+      "stderr": "1 molecule converted\n",
+      "output_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\structures\\4jff_crystal_protein.pdbqt",
+      "output_sha256": "64369bafd3291ebc0aebec360759e81f06d5de872e78f55981f7f3c740c82667",
+      "residues": 828,
+      "atoms": 7710,
+      "heavy_atom_identity_and_coordinate_check": "identical to crystal protein input",
+      "atom_types": [
+        "A",
+        "C",
+        "HD",
+        "N",
+        "NA",
+        "OA",
+        "SA"
+      ]
+    },
+    {
+      "pdb": "4jfd",
+      "command": [
+        "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\venv\\Scripts\\obabel.exe",
+        "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\structures\\4jfd_crystal_protein.pdb",
+        "-O",
+        "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\structures\\4jfd_openbabel_raw.pdbqt",
+        "-xr",
+        "-xn",
+        "-h",
+        "--partialcharge",
+        "gasteiger"
+      ],
+      "stdout": "",
+      "stderr": "1 molecule converted\n",
+      "output_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\structures\\4jfd_crystal_protein.pdbqt",
+      "output_sha256": "42ffbac683f96851dae15e44763ddd855f3287ffd29bc2be7a45289dd855c77d",
+      "residues": 827,
+      "atoms": 7696,
+      "heavy_atom_identity_and_coordinate_check": "identical to crystal protein input",
+      "atom_types": [
+        "A",
+        "C",
+        "HD",
+        "N",
+        "NA",
+        "OA",
+        "SA"
+      ]
+    },
+    {
+      "pdb": "4jfe",
+      "command": [
+        "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\venv\\Scripts\\obabel.exe",
+        "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\structures\\4jfe_crystal_protein.pdb",
+        "-O",
+        "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\structures\\4jfe_openbabel_raw.pdbqt",
+        "-xr",
+        "-xn",
+        "-h",
+        "--partialcharge",
+        "gasteiger"
+      ],
+      "stdout": "",
+      "stderr": "1 molecule converted\n",
+      "output_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028\\affinity\\structures\\4jfe_crystal_protein.pdbqt",
+      "output_sha256": "7058149cd77e425f545321537a5664bedc0ed013820df8572b6b5e1b0fb530c7",
+      "residues": 828,
+      "atoms": 7705,
+      "heavy_atom_identity_and_coordinate_check": "identical to crystal protein input",
+      "atom_types": [
+        "A",
+        "C",
+        "HD",
+        "N",
+        "NA",
+        "OA",
+        "SA"
+      ]
+    }
+  ]
+}

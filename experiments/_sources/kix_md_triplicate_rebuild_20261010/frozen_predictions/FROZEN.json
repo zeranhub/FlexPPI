@@ -1,0 +1,147 @@
+{
+  "protocol": "corrected_pipeline_epoch040_fold1_primary_all_folds_sensitivity_v1",
+  "primary_fold": 1,
+  "selection": "Fold1 was already used by the v13 manuscript; frozen before the new MD batch; retain every fold in sensitivity.",
+  "prediction_csv_sha256": "348d4201f842b940570a5fd389ba431726d678b7b643294c59c92f8ba2e3decc",
+  "all_folds_csv_sha256": "65507243b17c9f753649a765a95ef9a8fe8af98c5a5ce628d47a166f8ba5753c",
+  "input_sha256": {
+    "apo": "2aaf89397399dac2a2c15e22ddc02b75bd06f4e5dae9b84e2b2da615755c8d16",
+    "myb": "dc793b6b1b70e83ffaa5d85559280d158a8028ab4f4e7da61a5e761720388c50",
+    "mll": "820797d1f248ff2b3f65010a2846a3864436ed163d5ea9adba01253e82bf27b3",
+    "both": "d2c17e6fbfd1a4eb31ea3afee4f94f3db7dff05fc23ad9934c633dec46721acd"
+  },
+  "models": [
+    {
+      "method": "full",
+      "fold": 0,
+      "checkpoint": "/root/flexppi_revision_20261002/corrected_training_v1/runs/full/fold_0/epoch_040.pt",
+      "sha256": "c89d8bc3ed8bb13327edb01dd182957be241ab5f0440283d62e2792ca50d6d1e"
+    },
+    {
+      "method": "intrachain",
+      "fold": 0,
+      "checkpoint": "/root/flexppi_revision_20261002/corrected_training_v1/runs/intrachain/fold_0/epoch_040.pt",
+      "sha256": "08baa694e583cf59b4267e62821a885487468241136a075d8bc4ca1e2d9a079e"
+    },
+    {
+      "method": "static",
+      "metric": "rmsf",
+      "fold": 0,
+      "path": "/root/flexppi_revision_20261002/deployment_cost_v1/static_corrected/static_fold0_rmsf.joblib",
+      "sha256": "ca8b6de043839bd8bd9ce660dba17bdaf6cddd2824b74561146d4e7cbb1f77a5"
+    },
+    {
+      "method": "static",
+      "metric": "chi_entropy",
+      "fold": 0,
+      "path": "/root/flexppi_revision_20261002/deployment_cost_v1/static_corrected/static_fold0_chi_entropy.joblib",
+      "sha256": "1344712c69135ff2480f447df3ad2dd8deefac5c85277fbe9217a95a21b8f8ec"
+    },
+    {
+      "method": "full",
+      "fold": 1,
+      "checkpoint": "/root/flexppi_revision_20261002/corrected_training_v1/runs/full/fold_1/epoch_040.pt",
+      "sha256": "63b48e271413a91173c5763a1607feb365daf1bc48818c237588718903355ebb"
+    },
+    {
+      "method": "intrachain",
+      "fold": 1,
+      "checkpoint": "/root/flexppi_revision_20261002/corrected_training_v1/runs/intrachain/fold_1/epoch_040.pt",
+      "sha256": "b5006d7b7735714f27b7c1bcd2c6ea0e0c81561e217249eb29273192c0a5ea39"
+    },
+    {
+      "method": "static",
+      "metric": "rmsf",
+      "fold": 1,
+      "path": "/root/flexppi_revision_20261002/deployment_cost_v1/static_corrected/static_fold1_rmsf.joblib",
+      "sha256": "bd3618568357baa33e016fd327d57cc0fa0cc3a47321bb8d687f2f1bd7e6eeb9"
+    },
+    {
+      "method": "static",
+      "metric": "chi_entropy",
+      "fold": 1,
+      "path": "/root/flexppi_revision_20261002/deployment_cost_v1/static_corrected/static_fold1_chi_entropy.joblib",
+      "sha256": "e54b212d56ca017f0788ab39bf827dba2385cbdb085af8d0f5c9043d636196bd"
+    },
+    {
+      "method": "full",
+      "fold": 2,
+      "checkpoint": "/root/flexppi_revision_20261002/corrected_training_v1/runs/full/fold_2/epoch_040.pt",
+      "sha256": "250543c0a8e3631fec749219395a9148f89b233975c352f178432c09ca54606c"
+    },
+    {
+      "method": "intrachain",
+      "fold": 2,
+      "checkpoint": "/root/flexppi_revision_20261002/corrected_training_v1/runs/intrachain/fold_2/epoch_040.pt",
+      "sha256": "ad7e8fcf845411b88735cee7c7fe63a737a6fa2cddb8579e60947c61e01896cb"
+    },
+    {
+      "method": "static",
+      "metric": "rmsf",
+      "fold": 2,
+      "path": "/root/flexppi_revision_20261002/deployment_cost_v1/static_corrected/static_fold2_rmsf.joblib",
+      "sha256": "b4ac761af9ee6c2651ab12f06e6c6a9185eab3ebc4e5d6cfac64f204c4684c20"
+    },
+    {
+      "method": "static",
+      "metric": "chi_entropy",
+      "fold": 2,
+      "path": "/root/flexppi_revision_20261002/deployment_cost_v1/static_corrected/static_fold2_chi_entropy.joblib",
+      "sha256": "a082195ad9deafb4c5b001f908cfde7b7e49b63b5f4d2d1a25b84311f3c5713e"
+    },
+    {
+      "method": "full",
+      "fold": 3,
+      "checkpoint": "/root/flexppi_revision_20261002/corrected_training_v1/runs/full/fold_3/epoch_040.pt",
+      "sha256": "2b2aa0fd450e0f823216a73d37a416c9ec83229ec1befc53caf89a479397c872"
+    },
+    {
+      "method": "intrachain",
+      "fold": 3,
+      "checkpoint": "/root/flexppi_revision_20261002/corrected_training_v1/runs/intrachain/fold_3/epoch_040.pt",
+      "sha256": "75ce2fb5f008e638777d59987359839f6c300dbfafc37c62c3f6c32d1b75fb22"
+    },
+    {
+      "method": "static",
+      "metric": "rmsf",
+      "fold": 3,
+      "path": "/root/flexppi_revision_20261002/deployment_cost_v1/static_corrected/static_fold3_rmsf.joblib",
+      "sha256": "8ace82a94269700b5a65ad82405fca82920bb23e95860be94a2ca6a1b984a000"
+    },
+    {
+      "method": "static",
+      "metric": "chi_entropy",
+      "fold": 3,
+      "path": "/root/flexppi_revision_20261002/deployment_cost_v1/static_corrected/static_fold3_chi_entropy.joblib",
+      "sha256": "cd5a38e7007e628d4a74935629de02734b87899847a4f3039c15326cdab11d8f"
+    },
+    {
+      "method": "full",
+      "fold": 4,
+      "checkpoint": "/root/flexppi_revision_20261002/corrected_training_v1/runs/full/fold_4/epoch_040.pt",
+      "sha256": "1cb429fc847dc436e542fe7926cbc4ac266a74cd705c8228415e25981a8fef74"
+    },
+    {
+      "method": "intrachain",
+      "fold": 4,
+      "checkpoint": "/root/flexppi_revision_20261002/corrected_training_v1/runs/intrachain/fold_4/epoch_040.pt",
+      "sha256": "ee46531c113bf5421684c4b93feda2c7a7104f06b5b6fc628e226555f075d89f"
+    },
+    {
+      "method": "static",
+      "metric": "rmsf",
+      "fold": 4,
+      "path": "/root/flexppi_revision_20261002/deployment_cost_v1/static_corrected/static_fold4_rmsf.joblib",
+      "sha256": "6b1b8197a71c524a8e1ff54df5fef9e66ea9df48879451c1305b2214273ceff9"
+    },
+    {
+      "method": "static",
+      "metric": "chi_entropy",
+      "fold": 4,
+      "path": "/root/flexppi_revision_20261002/deployment_cost_v1/static_corrected/static_fold4_chi_entropy.joblib",
+      "sha256": "383f3fd7166e95315365a06227c77b706c02e3261813fd25c69ea8339d6a62c4"
+    }
+  ],
+  "training_freeze_sha256": "5b994bb59684e3a33c97f4a1801ee9a606e5dd856db9cfe23bf18515697707d3",
+  "code_sha256": "59f4b2a40608efa867ef0d49280cf926f8e5484b6317be9558e9369f976e7ec4"
+}

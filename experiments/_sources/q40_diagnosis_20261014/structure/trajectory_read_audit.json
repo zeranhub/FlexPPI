@@ -1,0 +1,200 @@
+{
+  "source_frames": 5001,
+  "source_atoms": 1921,
+  "protein_heavy_atoms": 935,
+  "protein_N_O_heavy_atoms": 348,
+  "chain_residue_counts": {
+    "A": 72,
+    "B": 47
+  },
+  "frames_read": 5000,
+  "primary_frames": 501,
+  "time_spacing_ps": 100.0,
+  "sourceframe5000_at500ns_excluded_from_labels": true,
+  "minimum_image_boxes_checked": [
+    {
+      "frame": 0,
+      "time_ns": 0.0,
+      "box": [
+        74.3241958618164,
+        74.3241958618164,
+        73.9865951538086,
+        59.84893798828125,
+        59.84893798828125,
+        90.0
+      ],
+      "minimum_image_used": true
+    },
+    {
+      "frame": 1000,
+      "time_ns": 100.0,
+      "box": [
+        74.28056335449219,
+        74.28056335449219,
+        73.94316101074219,
+        59.84893798828125,
+        59.84893798828125,
+        90.0
+      ],
+      "minimum_image_used": true
+    },
+    {
+      "frame": 2000,
+      "time_ns": 200.0,
+      "box": [
+        74.20864868164062,
+        74.20864868164062,
+        73.87156677246094,
+        59.84893798828125,
+        59.84893798828125,
+        90.0
+      ],
+      "minimum_image_used": true
+    },
+    {
+      "frame": 3000,
+      "time_ns": 300.0,
+      "box": [
+        74.319091796875,
+        74.319091796875,
+        73.98150634765625,
+        59.848941802978516,
+        59.848941802978516,
+        90.0
+      ],
+      "minimum_image_used": true
+    },
+    {
+      "frame": 4000,
+      "time_ns": 400.0,
+      "box": [
+        74.32058715820312,
+        74.32058715820312,
+        73.98299407958984,
+        59.84893798828125,
+        59.84893798828125,
+        90.0
+      ],
+      "minimum_image_used": true
+    },
+    {
+      "frame": 4999,
+      "time_ns": 499.9,
+      "box": [
+        74.55692291259766,
+        74.55692291259766,
+        74.21826171875,
+        59.84893798828125,
+        59.84893798828125,
+        90.0
+      ],
+      "minimum_image_used": true
+    }
+  ],
+  "max_sourcePDB_vs_XTCframe0_coordinate_difference_A": 0.0,
+  "all_17_archived_Q41_Q62_static_distance_rows_reproduced": [
+    {
+      "site": "Q41",
+      "partner_chain": "A",
+      "partner_resid": 26,
+      "absolute_rounding_difference_A": 5.05923927009988e-05
+    },
+    {
+      "site": "Q41",
+      "partner_chain": "A",
+      "partner_resid": 27,
+      "absolute_rounding_difference_A": 0.00033129702647149983
+    },
+    {
+      "site": "Q41",
+      "partner_chain": "A",
+      "partner_resid": 28,
+      "absolute_rounding_difference_A": 0.00041250000449721824
+    },
+    {
+      "site": "Q41",
+      "partner_chain": "A",
+      "partner_resid": 30,
+      "absolute_rounding_difference_A": 0.0002512813588064766
+    },
+    {
+      "site": "Q41",
+      "partner_chain": "A",
+      "partner_resid": 31,
+      "absolute_rounding_difference_A": 0.00020461987673270343
+    },
+    {
+      "site": "Q41",
+      "partner_chain": "A",
+      "partner_resid": 36,
+      "absolute_rounding_difference_A": 0.00026166949670303197
+    },
+    {
+      "site": "Q41",
+      "partner_chain": "A",
+      "partner_resid": 37,
+      "absolute_rounding_difference_A": 0.0004973342411491721
+    },
+    {
+      "site": "Q41",
+      "partner_chain": "A",
+      "partner_resid": 38,
+      "absolute_rounding_difference_A": 0.00020027366470287689
+    },
+    {
+      "site": "Q41",
+      "partner_chain": "A",
+      "partner_resid": 40,
+      "absolute_rounding_difference_A": 1.3582182790905506e-05
+    },
+    {
+      "site": "Q41",
+      "partner_chain": "A",
+      "partner_resid": 42,
+      "absolute_rounding_difference_A": 0.0003663645609814914
+    },
+    {
+      "site": "Q41",
+      "partner_chain": "A",
+      "partner_resid": 43,
+      "absolute_rounding_difference_A": 0.0004772520685758508
+    },
+    {
+      "site": "Q41",
+      "partner_chain": "A",
+      "partner_resid": 69,
+      "absolute_rounding_difference_A": 0.00036602286658515837
+    },
+    {
+      "site": "Q41",
+      "partner_chain": "A",
+      "partner_resid": 71,
+      "absolute_rounding_difference_A": 8.793637368409435e-05
+    },
+    {
+      "site": "Q62",
+      "partner_chain": "A",
+      "partner_resid": 60,
+      "absolute_rounding_difference_A": 0.00015806043562216487
+    },
+    {
+      "site": "Q62",
+      "partner_chain": "A",
+      "partner_resid": 61,
+      "absolute_rounding_difference_A": 0.00034695986225052877
+    },
+    {
+      "site": "Q62",
+      "partner_chain": "A",
+      "partner_resid": 63,
+      "absolute_rounding_difference_A": 0.0001637721130327563
+    },
+    {
+      "site": "Q62",
+      "partner_chain": "A",
+      "partner_resid": 65,
+      "absolute_rounding_difference_A": 0.0001859651450963895
+    }
+  ],
+  "MDAnalysis": "2.10.0"
+}

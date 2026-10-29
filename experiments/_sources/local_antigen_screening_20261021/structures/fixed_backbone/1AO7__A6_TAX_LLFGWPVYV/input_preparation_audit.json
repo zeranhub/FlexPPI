@@ -1,0 +1,41 @@
+{
+  "input_mode": "fixed-backbone",
+  "backbone_rebuilt": false,
+  "sidechains_rebuilt": false,
+  "old_mutated_sidechain_atoms_removed": true,
+  "all_backbone_coordinates_bit_identical": true,
+  "template_pdb": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\raw\\github\\mutation_effects\\tax\\pdbs\\1ao7.pdb",
+  "template_sha256": "e5390a6660cdd97424147e12779b9f428276a7519319f19363a68f4a68d5f533",
+  "prepared_pdb": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\fixed_backbone\\1AO7__A6_TAX_LLFGWPVYV\\model_input_fixed_backbone.pdb",
+  "prepared_pdb_sha256": "4dc6b42726304feabc1d24a6705372e47aca3b9e84dcd7c9ab6143905339db9c",
+  "requested_chain_sequences": {
+    "C": "LLFGWPVYV"
+  },
+  "mutations": [
+    {
+      "chain": "C",
+      "author_residue_id": "5",
+      "residue_index": 378,
+      "from": "Y",
+      "to": "W"
+    }
+  ],
+  "sequence_after": {
+    "A": "GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDGKDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENGKETLQRTDAPKTHMTHHAVSDHEATLRCWALSFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGQEQRYTCHVQHEGLPKPLTLRW",
+    "B": "MIQRTPKIQVYSRHPAENGKSNFLNCYVSGFHPSDIEVDLLKNGERIEKVEHSDLSFSKDWSFYLLYCTEFTPTEKDEYACRVNHVTLSQPCIVKWDRDM",
+    "C": "LLFGWPVYV",
+    "D": "KEVEQNSGPLSVPEGAIASLNCTYSDRGSQSFFWYRQYSGKSPELIMSIYSNGDKEDGRFTAQLNKASQYVSLLIRDSQPSDSATYLCAVTTDSWGKLQFGAGTQVVVTPDIQNP",
+    "E": "GVTQTPKFQVLKTGQSMTLQCAQDMNHEYMSWYRQDPGMGLRLIHYSVGAGITDQGEVPNGYNVSRSTTEDFPLRLLSAAPSQTSVYFCASRPGLAGGRPEQYFGPGTRLTVTEDLKNVFPPEVAVFLVCLATGFYPDHVELSWWVNGKEVHSGVSTDPQPLYALSSRLRVSATFWQNPRNHFRCQVQFYGLAKPVTQIVSAEAWGRAD"
+  },
+  "esm_recomputed": "not applicable: learned sequence embedding, no ESM input",
+  "candidate_id": "1AO7__A6_TAX_LLFGWPVYV",
+  "biological_candidate_id": "A6_TAX_LLFGWPVYV",
+  "panel_id": "A6_TAX",
+  "template_pdb_id": "1AO7",
+  "primary": true,
+  "sensitivity": false,
+  "is_panel_parent": false,
+  "prepare_only": true,
+  "model_loaded": false,
+  "predictions_generated": false
+}

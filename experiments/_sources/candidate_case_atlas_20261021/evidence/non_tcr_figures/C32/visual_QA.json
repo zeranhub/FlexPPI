@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "date": "2026-10-21",
+  "reviewer": "case_evidence_20261021",
+  "method": "Individually opened final PNG using view_image after the final export",
+  "reviewed_output_sha256": {
+    "png": "ba3b35683c176dcb711439b1d273d9746f10f6ca03e43556153acd54a7b7350f",
+    "pdf": "48766e2fd25cbf9a0e692df561ca25a6ee7befe224d21b901801acd48a385897",
+    "svg": "dcbfe56b179a4154c961b84edcfc78c919845f6ee0c98a33418fce730205d863"
+  },
+  "canvas_mm": [
+    183,
+    205
+  ],
+  "png_pixels": [
+    3242,
+    3631
+  ],
+  "png_dpi": 450,
+  "minimum_SVG_font_pt": 9.0,
+  "language": "English",
+  "checks": {
+    "VV1_no_text_or_legend_occlusion": "pass",
+    "VV2_panel_alignment_and_canvas": "pass",
+    "VV3_9pt_text_legible": "pass",
+    "VV4_semantic_color_consistency": "pass",
+    "VV5_complete_source_data_visible": "pass"
+  },
+  "fixes": [],
+  "raster_content": "Only one real molecular render; all curves/scatter/text are vector. Molecular text removed and relabeled in vector."
+}

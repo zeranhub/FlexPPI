@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "renders": [
+    {
+      "stem": "kix_context",
+      "pse": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\reader_revision_v39_20261016\\english_figures\\fig6\\kix\\KIX_case_validation.pse",
+      "scene": "KIX_context",
+      "labels": "removed; vector labels in final composition",
+      "render": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\candidate_case_atlas_20261021\\evidence\\non_tcr_figures\\structure_renders\\kix_context.png",
+      "pixel_size": [
+        1800,
+        1500
+      ]
+    },
+    {
+      "stem": "kix_l12_md",
+      "pse": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\reader_revision_v39_20261016\\english_figures\\fig6\\kix\\KIX_case_validation.pse",
+      "scene": "KIX_L12_MD",
+      "labels": "removed; vector labels in final composition",
+      "render": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\candidate_case_atlas_20261021\\evidence\\non_tcr_figures\\structure_renders\\kix_l12_md.png",
+      "pixel_size": [
+        1800,
+        1600
+      ]
+    },
+    {
+      "stem": "kix_l12_model",
+      "pse": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\reader_revision_v39_20261016\\english_figures\\fig6\\kix\\KIX_case_validation.pse",
+      "scene": "KIX_L12_FlexPPI_fold1",
+      "labels": "removed; vector labels in final composition",
+      "render": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\candidate_case_atlas_20261021\\evidence\\non_tcr_figures\\structure_renders\\kix_l12_model.png",
+      "pixel_size": [
+        1800,
+        1600
+      ]
+    },
+    {
+      "stem": "ubiquitin_context",
+      "source": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\reader_revision_v39_20261016\\english_figures\\fig6\\ubiquitin\\inputs\\A003R_input_structure.pdb",
+      "source_sha256": "4b2206ae6e9b71d9b8659e661d6825320eebae563ec4e7c2643a43a5225bf1f5",
+      "chains": {
+        "A": 72,
+        "B": 47
+      },
+      "coordinates_unchanged": true,
+      "highlighted_sites": [
+        2,
+        41
+      ]
+    }
+  ]
+}

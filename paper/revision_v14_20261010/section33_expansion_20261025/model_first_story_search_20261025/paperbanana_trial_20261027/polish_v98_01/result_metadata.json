@@ -1,0 +1,10 @@
+{
+  "path_to_gt_image": "v98.png",
+  "content": "Use the supplied real statistical figure; improve composition while preserving every scientific datum.",
+  "additional_info": {
+    "rounded_ratio": "4:5",
+    "figure_size": "2K",
+    "image_size": "2k"
+  },
+  "suggestions_plot": "1. Align the top and bottom edges of the plot frames for panels b and c so they share a precise horizontal baseline.\n2. Align the left y-axis of panel d with the left y-axis of panel f to establish a uniform left column in the lower section.\n3. Consolidate the scattered legend items beneath panel a (\"Analysed chain\", \"Partner\", \"MD\", \"Full\", \"Intra\") into a single, cohesive, centered row to reduce interstitial clutter.\n4. Equalize the horizontal whitespace between the d/f panel group (left) and the e panel grid (right) to visually balance the bottom half of the figure.\n5. Move the shared y-axis label \"MD entropy deviation (nats)\" in panel e closer to the $\\chi$1 and $\\chi$3 plots to eliminate the awkward vertical gap.\n6. Left-align the descriptive panel titles (e.g., \"CaMKI backbone\", \"Ubiquitin side chains\", \"Six Gln environments\") directly with the y-axis line of their respective plots.\n7. Increase the vertical spacing between panel d and panel f to match the horizontal spacing in panel e's grid, ensuring consistent margins.\n8. Format the subplot titles in panel e to include a space or proper subscript (e.g., \"$\\chi_1$\" or \"$\\chi$ 1\" instead of \"$\\chi$1\") for standard scientific typography.\n9. Vertically align the two structural models in panel a so their visual centers occupy the same horizontal plane.\n10. Widen the left margin of panel f slightly to format the y-axis labels (\"Fine-bin entropy\", \"Low-F* width\") onto single, horizontal lines to prevent vertical cramping."
+}

@@ -1,0 +1,629 @@
+{
+  "created_utc": "2026-10-28T02:59:01.102001+00:00",
+  "source_root": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_absolute_affinity_20261028",
+  "files": [
+    {
+      "path": "affinity/absolute_affinity_results.csv",
+      "bytes": 1537,
+      "sha256": "161efa94949a546245f57bd1f6b5348baedefce6d64042cb2ad7be5af8a62aac"
+    },
+    {
+      "path": "affinity/absolute_prediction_comparison.json",
+      "bytes": 9968,
+      "sha256": "289fb6e513e26581db53039475bc7008c42ce8e81a8ac05651c5dc33b35a796c"
+    },
+    {
+      "path": "affinity/combine_absolute_predictions.py",
+      "bytes": 3524,
+      "sha256": "57af6bd5f72c6f42be0585f97efab75e0bf6057e2cc8a1614238e671c79df99c"
+    },
+    {
+      "path": "affinity/deployment_issues.json",
+      "bytes": 1473,
+      "sha256": "ba8723bb9dc47380e9db5049568e4b54bc3ed64eefdcca925a737154820e5547"
+    },
+    {
+      "path": "affinity/download_esm.py",
+      "bytes": 2772,
+      "sha256": "6484830e4c90116ca7c37b5626729766c976a4d32dd56d1a0486d4c2bab36f6d"
+    },
+    {
+      "path": "affinity/esm_download_audit.json",
+      "bytes": 341,
+      "sha256": "254735eae12d47b7783decdb1376439ef93a927e860c556d71c9fbb3a413b813"
+    },
+    {
+      "path": "affinity/pdbqt_audit.json",
+      "bytes": 5450,
+      "sha256": "fc473033c5224595ecc26b206a0c707d7f90a47cd2e9c669b5acf585458d6263"
+    },
+    {
+      "path": "affinity/prepare_pdbqt.py",
+      "bytes": 4021,
+      "sha256": "05b651e151279110b422d91a003eed0186707340c36bf14b426685b4edc78919"
+    },
+    {
+      "path": "affinity/prepare_structures.py",
+      "bytes": 4165,
+      "sha256": "89568d856758b3c2017602050d3ddadf699af38da7435a11071fc9dfafaf5f67"
+    },
+    {
+      "path": "affinity/prodigy_full_precision.json",
+      "bytes": 4867,
+      "sha256": "fdab59b3314f10e99e9de82ab1c2ed80b52c0c893da9106e7cf1ffb69668de95"
+    },
+    {
+      "path": "affinity/raw_outputs/proaffinity/3hg1/3hg1.pdbqt",
+      "bytes": 618585,
+      "sha256": "45e3172f68398e6143b80d308184f79362ce921d34fec622930328df67b86cb3"
+    },
+    {
+      "path": "affinity/raw_outputs/proaffinity/3hg1/audit.json",
+      "bytes": 4941,
+      "sha256": "07c24e2e757fe87fb216842922ff3feb80542e37dad95defe3501db3ff95a113"
+    },
+    {
+      "path": "affinity/raw_outputs/proaffinity/3hg1/result_3hg1.pdbqt.txt",
+      "bytes": 21,
+      "sha256": "3bab6eeca627777fe498d828996adcf4eebfa28bafbb3768630dca5bcb7a519b"
+    },
+    {
+      "path": "affinity/raw_outputs/proaffinity/4jfd/4jfd.pdbqt",
+      "bytes": 623526,
+      "sha256": "42ffbac683f96851dae15e44763ddd855f3287ffd29bc2be7a45289dd855c77d"
+    },
+    {
+      "path": "affinity/raw_outputs/proaffinity/4jfd/audit.json",
+      "bytes": 4945,
+      "sha256": "a21778cc06a846fddf63fd55a59cb3c379dace0e9e85566e8afdc4488df93140"
+    },
+    {
+      "path": "affinity/raw_outputs/proaffinity/4jfd/result_4jfd.pdbqt.txt",
+      "bytes": 21,
+      "sha256": "f5ef0acdf7996d83f0fffd886e238d5298ae98e154711c8ad59b5591625bbb41"
+    },
+    {
+      "path": "affinity/raw_outputs/proaffinity/4jfd/run.log",
+      "bytes": 4402,
+      "sha256": "18b910028310dd1601043b52e2942a7b849dfdcef1b3782a4737e4cc92dda8fb"
+    },
+    {
+      "path": "affinity/raw_outputs/proaffinity/4jfe/4jfe.pdbqt",
+      "bytes": 624255,
+      "sha256": "7058149cd77e425f545321537a5664bedc0ed013820df8572b6b5e1b0fb530c7"
+    },
+    {
+      "path": "affinity/raw_outputs/proaffinity/4jfe/audit.json",
+      "bytes": 4943,
+      "sha256": "67500fa1d2ba11b6d3c17bc9b894c6043c51363c84f35188ad6158267429e6d3"
+    },
+    {
+      "path": "affinity/raw_outputs/proaffinity/4jfe/result_4jfe.pdbqt.txt",
+      "bytes": 21,
+      "sha256": "0aa16ed10d6f880f60c951fb4cec6cf8d309c7e1a8bc45abcf1c65ee42d35c3e"
+    },
+    {
+      "path": "affinity/raw_outputs/proaffinity/4jfe/run.log",
+      "bytes": 4400,
+      "sha256": "3a74d01d8ad014efb249884efae11512fb7cc2913c4f3dc7159176d621062a43"
+    },
+    {
+      "path": "affinity/raw_outputs/proaffinity/4jff/4jff.pdbqt",
+      "bytes": 624660,
+      "sha256": "64369bafd3291ebc0aebec360759e81f06d5de872e78f55981f7f3c740c82667"
+    },
+    {
+      "path": "affinity/raw_outputs/proaffinity/4jff/audit.json",
+      "bytes": 4943,
+      "sha256": "f44bc0bdc1c33e34e51c2dc73b286d5c76a5dc94fe23f473bda8f1dfdec424f3"
+    },
+    {
+      "path": "affinity/raw_outputs/proaffinity/4jff/result_4jff.pdbqt.txt",
+      "bytes": 21,
+      "sha256": "4225c16b5d5579c39d26eafe770a6956ea28ac294f6b16ec0342ab6fe729c52e"
+    },
+    {
+      "path": "affinity/raw_outputs/proaffinity/4jff/run.log",
+      "bytes": 4400,
+      "sha256": "d9d0bd741180cd69f727697d1d560526242107e7fa95bc1fc3678c1c443fc07c"
+    },
+    {
+      "path": "affinity/raw_outputs/proaffinity/4jff_console.txt",
+      "bytes": 717,
+      "sha256": "26c5e818a1a5cc0e222afeaf14620998411d11b2446072ca6132391c052ceb02"
+    },
+    {
+      "path": "affinity/raw_outputs/prodigy/3hg1.txt",
+      "bytes": 627,
+      "sha256": "3959912284ee713850bd88dbe6b87def557a5b107898d5c274e6b7c6748f5c02"
+    },
+    {
+      "path": "affinity/raw_outputs/prodigy/4jfd.txt",
+      "bytes": 627,
+      "sha256": "5f4603d9a4f53b51a5373ace4005c6b68cb77a4b1e9b33fdeee72bdcfe430ee0"
+    },
+    {
+      "path": "affinity/raw_outputs/prodigy/4jfe.txt",
+      "bytes": 627,
+      "sha256": "e1c08f438dc645faecf085e119c7281c54d076f704defcf3b28b8bbcec870e99"
+    },
+    {
+      "path": "affinity/raw_outputs/prodigy/4jff.txt",
+      "bytes": 627,
+      "sha256": "84037cae96b7df0eac18a4bd7255253190ce3e30a2d238d2216b4f1fca24605b"
+    },
+    {
+      "path": "affinity/requirements_proaffinity_frozen.txt",
+      "bytes": 651,
+      "sha256": "03accecd960b957e88356a2617bcf79b901a31ae2692a24b489e1dc4a0fabadd"
+    },
+    {
+      "path": "affinity/requirements_prodigy_frozen.txt",
+      "bytes": 69,
+      "sha256": "a8e17f70020fdc1e42f55f2c424d2b9d0e104e8bfdc5cf551f3d831735e31b01"
+    },
+    {
+      "path": "affinity/run_proaffinity.py",
+      "bytes": 7218,
+      "sha256": "b34c9a85266a5f78c2666f095399b812120d81ced6325edc7d497a238c20507d"
+    },
+    {
+      "path": "affinity/run_prodigy_api.py",
+      "bytes": 2649,
+      "sha256": "db9d090aa88cf61d6fd1a32919aac3b286a84fa5d01e466386e9bab6ba95d804"
+    },
+    {
+      "path": "affinity/run_remaining_models.py",
+      "bytes": 1202,
+      "sha256": "f3fc63d0db40bdad77f77c860c1477148651a3a7319fa2bb14a605b72e775f46"
+    },
+    {
+      "path": "affinity/structure_audit.json",
+      "bytes": 83232,
+      "sha256": "3608410c8e597bb64e7fc10212056789dac660d0977115daabb2c8b30fd637a7"
+    },
+    {
+      "path": "affinity/structures/3hg1_crystal_protein.pdb",
+      "bytes": 539956,
+      "sha256": "7ed72492a6223fe916a9e7c6b5804c474fe2eefd0e98ef3eaed649fbc5898ef1"
+    },
+    {
+      "path": "affinity/structures/3hg1_crystal_protein.pdbqt",
+      "bytes": 618585,
+      "sha256": "45e3172f68398e6143b80d308184f79362ce921d34fec622930328df67b86cb3"
+    },
+    {
+      "path": "affinity/structures/3hg1_crystal_raw.pdb",
+      "bytes": 595998,
+      "sha256": "deb2e3299e447325cde0863bd8be0aacdcacbbcdc879b814f43fa85a4334dc89"
+    },
+    {
+      "path": "affinity/structures/3hg1_openbabel_raw.pdbqt",
+      "bytes": 611101,
+      "sha256": "6bb46d32a671cfa791f02e59cab3fb2bc48402e2eb6a84178556964498a04b28"
+    },
+    {
+      "path": "affinity/structures/4jfd_crystal_protein.pdb",
+      "bytes": 543728,
+      "sha256": "38930d49ffe6e5b5b0c35016831a98fcbb90b2b5afe2aefb28019867880f45d3"
+    },
+    {
+      "path": "affinity/structures/4jfd_crystal_protein.pdbqt",
+      "bytes": 623526,
+      "sha256": "42ffbac683f96851dae15e44763ddd855f3287ffd29bc2be7a45289dd855c77d"
+    },
+    {
+      "path": "affinity/structures/4jfd_crystal_raw.pdb",
+      "bytes": 1162431,
+      "sha256": "8762bfdd03ce631aec55e539dadafcfeeb4f73394856d1507218bd2debbc6976"
+    },
+    {
+      "path": "affinity/structures/4jfd_openbabel_raw.pdbqt",
+      "bytes": 615981,
+      "sha256": "da8b60a462e939551f8204ab71dca5b757ceb556cfe80711a52c53ed3f64bd0d"
+    },
+    {
+      "path": "affinity/structures/4jfe_crystal_protein.pdb",
+      "bytes": 544302,
+      "sha256": "5d9fc465d23ad011b14eac4080621e66ea29fdbd38be542c81f0e1c3ee49fac0"
+    },
+    {
+      "path": "affinity/structures/4jfe_crystal_protein.pdbqt",
+      "bytes": 624255,
+      "sha256": "7058149cd77e425f545321537a5664bedc0ed013820df8572b6b5e1b0fb530c7"
+    },
+    {
+      "path": "affinity/structures/4jfe_crystal_raw.pdb",
+      "bytes": 1154169,
+      "sha256": "5543ed92a55f61493bdcd499316535e1b955c09fdda54a9ef345c6860381201d"
+    },
+    {
+      "path": "affinity/structures/4jfe_openbabel_raw.pdbqt",
+      "bytes": 616701,
+      "sha256": "20688398b0c713f5e4ae5c532ea63767b2d3a9216de8677f61083832de4b636d"
+    },
+    {
+      "path": "affinity/structures/4jff_crystal_protein.pdb",
+      "bytes": 544630,
+      "sha256": "873aaa21b5bd388636da6d93a902f5430549e249208964345eef792c6d41cc3c"
+    },
+    {
+      "path": "affinity/structures/4jff_crystal_protein.pdbqt",
+      "bytes": 624660,
+      "sha256": "64369bafd3291ebc0aebec360759e81f06d5de872e78f55981f7f3c740c82667"
+    },
+    {
+      "path": "affinity/structures/4jff_crystal_raw.pdb",
+      "bytes": 1165428,
+      "sha256": "1f1409ba1325a3dc7564f80d7fa1f43f36943d47fd95c925aba79cd3d28bce6d"
+    },
+    {
+      "path": "affinity/structures/4jff_openbabel_raw.pdbqt",
+      "bytes": 617101,
+      "sha256": "83292e388b368aab5f7941606370800a7f28838c93807174986c2ccacbc3415b"
+    },
+    {
+      "path": "affinity/vendor/ProAffinity-GNN_inference.py",
+      "bytes": 29814,
+      "sha256": "ae5c76ef9cc16698071a435ef2a5405c6ce5234770aa138506d723f20b4a7f68"
+    },
+    {
+      "path": "affinity/vendor/ProAffinity-GNN_inference_fixed_sequence_output.py",
+      "bytes": 30732,
+      "sha256": "0e8663ffaf1a1153d69542a55a4d642c11745778c5f9ccd60ac70e1ddb8f63b2"
+    },
+    {
+      "path": "affinity/vendor/ProAffinity_PPIdataindex.txt",
+      "bytes": 63688,
+      "sha256": "b33496dff34bfab8503d3b0f248e5e3b23db45b9796d0c3fca0ad97fd72c0dfb"
+    },
+    {
+      "path": "affinity/vendor/ProAffinity_PPIdataindex_kd.txt",
+      "bytes": 58443,
+      "sha256": "107c499b41c6287c5802b7bf452e14cf0c53a6a06242682c225028a5902914c8"
+    },
+    {
+      "path": "affinity/vendor/ProAffinity_crossref_metadata.json",
+      "bytes": 15629,
+      "sha256": "902860846fbdd209762c3c2a3a5ae3f525deb5e6b494112e6ee804c499036a40"
+    },
+    {
+      "path": "affinity/vendor/ProAffinity_training_list.txt",
+      "bytes": 8704,
+      "sha256": "3600cd701e04dc5ce18605d857adb1f31f0b93312575d116398e1bc302699d3b"
+    },
+    {
+      "path": "affinity/vendor/README_upstream.md",
+      "bytes": 2171,
+      "sha256": "928bde8ff0fb9d3939b5223afd7a2db1e98045617129c48ee36ca330946554cb"
+    },
+    {
+      "path": "contacts/README_肽突变接触证据.md",
+      "bytes": 1639,
+      "sha256": "7c9d78789773301abd50ec7b4f3e393315b5a2bdfb11b29603feb970a880f998"
+    },
+    {
+      "path": "contacts/all_peptide_neighbor_contact_contrasts.csv",
+      "bytes": 331916,
+      "sha256": "136c54aa4911aaf67157e8f572cd8ba113bba8d967f6339fe3a5b1b492567094"
+    },
+    {
+      "path": "contacts/all_peptide_neighbor_contacts_per_replica.csv",
+      "bytes": 879073,
+      "sha256": "c9f585201e187122196168343f96a8ce3bbf9d7f74cbac0badb316182687f131"
+    },
+    {
+      "path": "contacts/all_peptide_neighbor_contacts_three_replica_summary.csv",
+      "bytes": 252762,
+      "sha256": "313dbd64ebb4b6379a259a14d531736e3fc5eee50d24a8ec74a34f8f7185c8b0"
+    },
+    {
+      "path": "contacts/all_state_to_4jff_and_paper_mapping.csv",
+      "bytes": 125240,
+      "sha256": "12e4d470e0babb0dfa8a1b0dd02737df85dbecf462d2b12efa5633daef97c76e"
+    },
+    {
+      "path": "contacts/analyze_peptide_contacts.py",
+      "bytes": 21532,
+      "sha256": "1c6de2ac26fdc5645e040512b0ee07fc7eeaeeb81052ede8d1086917151d735f"
+    },
+    {
+      "path": "contacts/complete_7A_neighbor_union.csv",
+      "bytes": 9251,
+      "sha256": "e78f97f03ca38291a54974a33d897cc9f4ca63ce01e908c5e3816e0a4b630205"
+    },
+    {
+      "path": "contacts/contact_analysis_audit.json",
+      "bytes": 24468,
+      "sha256": "5b29b6db025c4f671402f325558a92815f865b396e215cedfc0be87d4f60a3fe"
+    },
+    {
+      "path": "contacts/exploratory_changes_atleast20pp_with_nonoverlapping_replica_ranges.csv",
+      "bytes": 9591,
+      "sha256": "e3f9dd7a044ad5627363662c4a358ef7dc75f66f9abac84cd846a4ee9516a124"
+    },
+    {
+      "path": "contacts/independent_contact_validation.json",
+      "bytes": 12034,
+      "sha256": "61496fc5674e59c77245be9d86d4a6b123c47fc1836fc7efa25ade5f509c52db"
+    },
+    {
+      "path": "contacts/neighbor_union_inclusion_reasons.csv",
+      "bytes": 7610,
+      "sha256": "8aa086986cc1dd5ec76554b179f0ca928c95680aa283d09ce8198279113b68b7"
+    },
+    {
+      "path": "contacts/per_peptide_role_contact_counts_per_replica.csv",
+      "bytes": 12806,
+      "sha256": "55ec776f0fea66c070593a6ebc51d9c7c0815b748e0e6bf8ff08911a2071ea63"
+    },
+    {
+      "path": "contacts/validate_contacts_independent.py",
+      "bytes": 4733,
+      "sha256": "9cc0bc88285fec585e6c510485b0a8dfa49a6bdab5ca5442a8a73b4cf5402e87"
+    },
+    {
+      "path": "contacts/whole_peptide_role_contact_counts_per_replica.csv",
+      "bytes": 1532,
+      "sha256": "5e8bbaa80f0e1f0ebe00c123b9307a4756083ed53a4eef989d94bbb03549d827"
+    },
+    {
+      "path": "contacts/关键结果与可用措辞.md",
+      "bytes": 3883,
+      "sha256": "ec261ca092e59a85df07eaa88fa99982910cc0c3dbc24ddd0808ffe866bb09a9"
+    },
+    {
+      "path": "dynamics/HLA_previously_highlighted_and_R65_validation.csv",
+      "bytes": 7872,
+      "sha256": "2f85324a242e5646f265b6524bf0f59c335a26b2782a17fda4e31b6e53d2a169"
+    },
+    {
+      "path": "dynamics/absolute_state_validation_metrics.csv",
+      "bytes": 14116,
+      "sha256": "99f2f346821e49b4fd2da935df638b64308d2d4a7ad298d36007456876079a8b"
+    },
+    {
+      "path": "dynamics/all_eligible_positions_sorted_by_MD_hchi_change.csv",
+      "bytes": 88910,
+      "sha256": "bd31ece496614a7705b594985ba3bef7d3b57431aa141450789e8a60f1c07557"
+    },
+    {
+      "path": "dynamics/all_eligible_positions_sorted_by_MD_rmsf_change.csv",
+      "bytes": 111072,
+      "sha256": "af3b77422ca1010e0c91e2963aed80c4d037dcc696ee10b0be119183b7ac18e5"
+    },
+    {
+      "path": "dynamics/all_four_states_complete_chain_sequences.csv",
+      "bytes": 15233,
+      "sha256": "ce9cbb5aa0f388b246bb43d30de186d0426b00e7a9fa3ca946987ebbe75c80e8"
+    },
+    {
+      "path": "dynamics/all_four_states_per_residue_per_replica_labels.csv",
+      "bytes": 739641,
+      "sha256": "72ba21562db5f2e00225e2224ef261e4072ec560bae44ee6aa333a2d33de0542"
+    },
+    {
+      "path": "dynamics/analysis_audit.json",
+      "bytes": 16407,
+      "sha256": "65b71a2052f635b8d335680436ca7423d0094f03b8f2967e210a6d8a5a12a752"
+    },
+    {
+      "path": "dynamics/analyze_peptide_dynamics.py",
+      "bytes": 17878,
+      "sha256": "141751a0d6dad1fcf61ddb80cf6a79d1ab2f0bdadeac1db22c3be898e8222d1d"
+    },
+    {
+      "path": "dynamics/complete_CDR2alpha_and_CDR3beta_mutation_validation.csv",
+      "bytes": 23753,
+      "sha256": "d42d45e585e4842297fc77b232ec59c8066b8ab954b50603b634bb714148d4a6"
+    },
+    {
+      "path": "dynamics/complete_predefined_region_change_metrics.csv",
+      "bytes": 18574,
+      "sha256": "5722227b6c46e16a77ae9ead1f0ace2f32dc16ec6c8ae381f8f179ee6a9583bc"
+    },
+    {
+      "path": "dynamics/complete_three_contrasts_per_position.csv",
+      "bytes": 155970,
+      "sha256": "9577bcaf20bb920d284faabc29c2233467bcc29d06860e31c8be05bd57c5d2b3"
+    },
+    {
+      "path": "dynamics/full_chain_alignment_to_4jff.csv",
+      "bytes": 89930,
+      "sha256": "6bef3b9c9df0e965290203945b296e6b64b3ce7e514ba2b9105aa7677e53c3ef"
+    },
+    {
+      "path": "dynamics/full_chain_sequence_audit.json",
+      "bytes": 23028,
+      "sha256": "bc44fba2abfaac3d0b198189451b89573b59a1213c4b2d943d62d82515c95935"
+    },
+    {
+      "path": "dynamics/full_state_numbering_map.csv",
+      "bytes": 95391,
+      "sha256": "56ac03dc3897349179f626244cf96229b9cda847c3276c730dd9f54f1c3cd78d"
+    },
+    {
+      "path": "dynamics/manuscript_relevant_summary_all_prespecified_scopes.csv",
+      "bytes": 5490,
+      "sha256": "58978cf58a034d792204b35c7f00c59e6932fb4da86de0eb588ee88214d4a0c2"
+    },
+    {
+      "path": "dynamics/output_manifest.json",
+      "bytes": 6075,
+      "sha256": "6aaf404835dc29cd41824ef6f10737a1c2cf9e77803b79d8184abb674f993158"
+    },
+    {
+      "path": "dynamics/peptide_mutations_complete_per_position.csv",
+      "bytes": 106538,
+      "sha256": "de962cfba84bb51d9aaa1d344df80023f552f7be5e9505b171840e8bcce2192f"
+    },
+    {
+      "path": "dynamics/peptide_mutations_predefined_region_change_metrics.csv",
+      "bytes": 12638,
+      "sha256": "b492bc5d12edfcc0f9c5d16b1aeb399c6efca36006a65a204ba4773ae4d27e53"
+    },
+    {
+      "path": "dynamics/predefined_region_means_per_independent_replica.csv",
+      "bytes": 26579,
+      "sha256": "6f9c9410105e4648c66d8692a3161ad3b28849ee93ed91e3d0153f2aa2c149e0"
+    },
+    {
+      "path": "dynamics/run.log",
+      "bytes": 11674,
+      "sha256": "52f2cc159f5010b4a99d7c123e18db527e295330200b65156b8e70eca61d2cb6"
+    },
+    {
+      "path": "dynamics/sequence_audit.log",
+      "bytes": 4597,
+      "sha256": "811857e8502aaa488b62a4098dc0d78ef10e6e30a7cad69f55f1b61a9ea58f63"
+    },
+    {
+      "path": "dynamics/summarize_dynamics_evidence.py",
+      "bytes": 9791,
+      "sha256": "d97c70337c3bdad67067ed866be1c2a61a41c0a6b8395a96a7140664063ce234"
+    },
+    {
+      "path": "dynamics/动态证据复核说明.md",
+      "bytes": 3827,
+      "sha256": "deaca33377a470d716eb7fc4755c83c1a8f60fc7ba9c2b0d8a79fe82cd1a7238"
+    },
+    {
+      "path": "figures/affinity_figure_statistics.json",
+      "bytes": 5238,
+      "sha256": "8b8167f0a8bc656cf0a40f7242de9ab43ba9f590e034238aa46bd25358d3357d"
+    },
+    {
+      "path": "figures/contact_figure_statistics.json",
+      "bytes": 3609,
+      "sha256": "483d941a6e4be4dadbdacdc26721d32634879b6360f22645ac741803af745651"
+    },
+    {
+      "path": "figures/dynamic_figure_statistics.json",
+      "bytes": 3923,
+      "sha256": "f8e049435f99dd5e1f36335af9826b61696da5dbeae30843340a9f4757ad38b2"
+    },
+    {
+      "path": "figures/figS5_absolute_affinity.pdf",
+      "bytes": 44193,
+      "sha256": "dbbab226fad188042b810561855d5bc12d1675f20e6e671df96909182423ea7d"
+    },
+    {
+      "path": "figures/figS5_absolute_affinity.png",
+      "bytes": 66810,
+      "sha256": "196620f9fabf82b3731f5409faf1f6a49f04612535d801c9a6f9ed5289da979d"
+    },
+    {
+      "path": "figures/figS5_absolute_affinity.svg",
+      "bytes": 12202,
+      "sha256": "9f835ed00f6d92ed4edaa242222b98d5db728372efb12a8df3174fef6b1e27ae"
+    },
+    {
+      "path": "figures/figS6_peptide_dynamic_validation.pdf",
+      "bytes": 67349,
+      "sha256": "667ef957b28942bc2c4d89de91acfd2092f04b1b29d04709bef747d829031784"
+    },
+    {
+      "path": "figures/figS6_peptide_dynamic_validation.png",
+      "bytes": 367820,
+      "sha256": "db293c6ea10f7d549f980f0ec4d25d82aa0788795552562246195a9e1d2ed2bf"
+    },
+    {
+      "path": "figures/figS6_peptide_dynamic_validation.svg",
+      "bytes": 106523,
+      "sha256": "4b9301aae2328ca34da8e373cbcd28ab6a48bcd9ce6caaf6bd8cc25967b5649b"
+    },
+    {
+      "path": "figures/figS7_peptide_contact_redistribution.pdf",
+      "bytes": 62862,
+      "sha256": "9b1a103ffa44f70f9863876591386573bf981c6a562639ad6b81e0665e52941c"
+    },
+    {
+      "path": "figures/figS7_peptide_contact_redistribution.png",
+      "bytes": 254775,
+      "sha256": "2511648593d76d0bef0f3544efd173bc252a6806a25cc77e6f9fb25badcc401c"
+    },
+    {
+      "path": "figures/figS7_peptide_contact_redistribution.svg",
+      "bytes": 336507,
+      "sha256": "571df55d7454f0befdcc8756188759fc1fee173f5c75f7b4819b2cd1dcac900d"
+    },
+    {
+      "path": "figures/figure_QA.json",
+      "bytes": 3750,
+      "sha256": "0c90e793d2c862e5f080874abd53fb00dc45c026f22bb66f257d02d4160a4350"
+    },
+    {
+      "path": "figures/figure_QA.md",
+      "bytes": 1253,
+      "sha256": "66f482990fc956eb2cdc1aee42f8d7681c39c9bbca540286b5d87cdf65981d2a"
+    },
+    {
+      "path": "figures/figure_protocol.md",
+      "bytes": 2161,
+      "sha256": "3ff56620a183c39540897fa4ebbdc2173fdfb910bae99e0eb008ce90e16c7da8"
+    },
+    {
+      "path": "figures/plot_absolute_affinity.py",
+      "bytes": 4955,
+      "sha256": "d93aa40accb8baa6f6aeb2ee159dbc458faa2819b018fbf01f4d94c208e4596f"
+    },
+    {
+      "path": "figures/plot_contact_redistribution.py",
+      "bytes": 5802,
+      "sha256": "f75e9c0ac010a50dce40912c6a44c187c886c72d14d26e0a6d4116ae52f5bbc0"
+    },
+    {
+      "path": "figures/plot_dynamic_validation.py",
+      "bytes": 10513,
+      "sha256": "30a385237e9a6f77a530dd9f32f399c90962a92db3160dee9eb740b8e0e82ab4"
+    },
+    {
+      "path": "figures/scientific_runtime_versions.json",
+      "bytes": 145,
+      "sha256": "078b0d9715df5da976cc0fc942dbbc5836431c6a378bc4a4fb86cef4fd7684fa"
+    },
+    {
+      "path": "finalize_delivery.py",
+      "bytes": 8989,
+      "sha256": "61c95e0f135bf7958968c7519417cfb31597f375352e0a80d9d40252f58abaf1"
+    },
+    {
+      "path": "manuscript/3.4新增正文.md",
+      "bytes": 2155,
+      "sha256": "6b55cee94f5318d87ee48ccddd49d124576f2acecc17c0cd7b853870ef36c2cf"
+    },
+    {
+      "path": "manuscript/build_revision.py",
+      "bytes": 18633,
+      "sha256": "a271e2220e8033597e5592bebaaaad288f7a439e891adfa2afefa7281f984f05"
+    },
+    {
+      "path": "manuscript/experimental_affinity.csv",
+      "bytes": 545,
+      "sha256": "6a462221596ff120add8279ca7def1f064eebad286797cdc92d5fc07b38145ab"
+    },
+    {
+      "path": "manuscript/render_QA.json",
+      "bytes": 8512,
+      "sha256": "44c653baccb7b1a2102828c798af49eee0c0fa50ba2938579ef713093d3fc055"
+    },
+    {
+      "path": "manuscript/revision_changes.json",
+      "bytes": 10749,
+      "sha256": "a3002be5ddadf9130509aa2c7dcd80879f7d149219cd7273e2cf7adc439d988c"
+    },
+    {
+      "path": "write_result_report.py",
+      "bytes": 7601,
+      "sha256": "a2c15d28e3b81da54635027ff560240555e4ffb9349579cde9b91de7807630d8"
+    },
+    {
+      "path": "结果说明与复现入口.md",
+      "bytes": 6763,
+      "sha256": "576c4124932a3173bd1665d22277fc31e5bed586378e2fb64d232609f1bd28d9"
+    }
+  ],
+  "excluded": "Python environments, package downloads, ESM/GNN weights, feature/recomputed-label/distance caches, raw trajectories, manuscript QA page renders and PDF; no original manuscript or final DOCX included.",
+  "manuscript_delivered_separately": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v126_20261028_中文修订_绝对亲和力对照与肽突变验证.docx",
+  "reproduction_scope": "Figures can be regenerated from included CSVs; model reruns require frozen dependencies and weights; trajectory reanalysis requires original ITrace and project label/prediction sources listed in audits."
+}

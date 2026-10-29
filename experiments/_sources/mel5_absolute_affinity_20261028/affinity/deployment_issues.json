@@ -1,0 +1,17 @@
+{
+  "prediction_status_note": "The errors below are deployment/input failures, not valid affinity predictions and not evidence of model predictive failure.",
+  "attempts": [
+    {
+      "stage": "OpenBabel PDBQT plus unmodified upstream inference",
+      "error": "no match type!type1:NAtype2:S; 'others' is not in list; AttributeError: 'list' object has no attribute 'float'",
+      "resolution": "Input standard CYS SG and MET SD sulfur types mapped to SA according to AutoDockTools AutoDock4_AtomTyper; no coordinates or architecture changed."
+    },
+    {
+      "stage": "SA-typed input plus unmodified upstream inference",
+      "error": "IndexError: all indices in edge_index must point to valid indices in [0, 29], got [0, 385]",
+      "diagnosis": "The upstream seq2 loop assigns ESM output to output1 but reads stale output2 from the last inter-graph peptide sequence. For a three-chain pMHC this repeats the 10-residue peptide output three times, producing 30 nodes instead of 386.",
+      "resolution": "One-variable correction output1=model(**input2) to output2=model(**input2); frozen ESM and GNN weights unchanged. All three graph node counts and edge indices must validate before prediction. Corrected source retained beside original."
+    }
+  ],
+  "unused_ESM_pooler_warning": "The checkpoint does not include the optional pooler weights. Inference uses last_hidden_state only; the pooler is unused, as in the published script. No training is performed."
+}

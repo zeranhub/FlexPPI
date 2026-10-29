@@ -1,0 +1,13 @@
+{
+  "records": 1,
+  "datasets": {
+    "itrace": 1
+  },
+  "chains": 5,
+  "valid_rmsf": 708,
+  "label_definition": "Existing corrected RMSF labels, per-chain Kabsch; no trajectory recomputation.",
+  "input_definition": "All valid N/CA/C frames; chain names remapped A-Z and insertion codes retained by temporary integer renumbering with original identity map.",
+  "sampling": "No selection by prediction errors. Smoke record fixed before inference: itrace_1ao7.",
+  "code_sha256": "74cec89d5197a0cd31adb8f1aa8b873b48e8810ea8361faf62c2357131769753",
+  "manifest_sha256": "685cf80f8bbf57552fd48504407efe0fcb8cd208b2a06f5d1f2989cf73598177"
+}

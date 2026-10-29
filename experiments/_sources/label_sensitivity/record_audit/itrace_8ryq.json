@@ -1,0 +1,149 @@
+{
+  "sample_id": "itrace_8ryq",
+  "dataset": "itrace",
+  "fold": 2,
+  "plan_sha256": "fe7c01b66ae16f4101e28c13fdb93246f054acc7d6f26ac758caf8aec9995ffd",
+  "status": "complete",
+  "replica_audits": [
+    {
+      "mapping": [
+        {
+          "canonical_chain": "A",
+          "replica_chain": "A",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "B",
+          "replica_chain": "B",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "C",
+          "replica_chain": "C",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "D",
+          "replica_chain": "D",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "E",
+          "replica_chain": "E",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "frames": 501,
+      "original_frames": 1001,
+      "chi_residues": 717,
+      "chi_bond_instances_gt5A": 0,
+      "residue_coverage": 1.0,
+      "replica_index": 1
+    },
+    {
+      "mapping": [
+        {
+          "canonical_chain": "A",
+          "replica_chain": "A",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "B",
+          "replica_chain": "B",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "C",
+          "replica_chain": "C",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "D",
+          "replica_chain": "D",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "E",
+          "replica_chain": "E",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "frames": 501,
+      "original_frames": 1001,
+      "chi_residues": 717,
+      "chi_bond_instances_gt5A": 0,
+      "residue_coverage": 1.0,
+      "replica_index": 2
+    },
+    {
+      "mapping": [
+        {
+          "canonical_chain": "A",
+          "replica_chain": "A",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "B",
+          "replica_chain": "B",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "C",
+          "replica_chain": "C",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "D",
+          "replica_chain": "D",
+          "identity": 1,
+          "coverage": 1.0
+        },
+        {
+          "canonical_chain": "E",
+          "replica_chain": "E",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "frames": 501,
+      "original_frames": 1001,
+      "chi_residues": 717,
+      "chi_bond_instances_gt5A": 0,
+      "residue_coverage": 1.0,
+      "replica_index": 3
+    }
+  ],
+  "labels": {
+    "uniform_rep1": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\label_sensitivity\\labels\\uniform_rep1\\itrace_8ryq.npz",
+      "sha256": "40ca7994ac3fa0e598715d3b0e6626f0600458ebf1c0d814ddc202802425840f",
+      "valid_counts": [
+        822,
+        717
+      ]
+    },
+    "uniform_available_replicas": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\label_sensitivity\\labels\\uniform_available_replicas\\itrace_8ryq.npz",
+      "sha256": "fe4e648f7cc1743d7dd7b6bf97defb39d73d686c8a1f8403141a64e99d745273",
+      "valid_counts": [
+        822,
+        717
+      ]
+    }
+  },
+  "replicas": 3,
+  "elapsed_seconds": 11.921999999787658
+}

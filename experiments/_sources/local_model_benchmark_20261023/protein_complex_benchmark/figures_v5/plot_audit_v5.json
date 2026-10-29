@@ -1,0 +1,42 @@
+{
+  "generated_utc": "2026-10-24T02:52:48.791612+00:00",
+  "script_sha256": "7438e68724391dd4ab017e64f67dbb5ef422b27aa3a3fd398073007fb6791a60",
+  "input_sha256": {
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\classification\\membership_frozen.csv": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\per_record_metrics.csv": "87420afc23a9dce44919eb1e58bb6620da2b04a8c1075099d23df06ea538e6ef",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\group_summary.csv": "da655ae6593d97103d638cafeb9d41c5f8515ed9f0993d6ec6db1bfbd118f07b"
+  },
+  "methods": [
+    "FlexPPI",
+    "BackFlip-2.1",
+    "BackFlip-1.0",
+    "DynaProt-M",
+    "FastProtFlex",
+    "ANM",
+    "GNM"
+  ],
+  "rows": {
+    "multichain_protein": "Multichain proteins",
+    "protein_complex": "Protein complexes"
+  },
+  "row_counts": {
+    "multichain_protein": 10,
+    "protein_complex": 860
+  },
+  "row_families": {
+    "multichain_protein": 10,
+    "protein_complex": 261
+  },
+  "cells": 42,
+  "input_protocol": "whole assembly for every structure-consuming method",
+  "protein_row_definition": "benchmark_group=protein with actual_input_n_chains>=2",
+  "complex_row_source": "frozen evaluation/group_summary.csv",
+  "statistics": "record-weighted mean, 95% family-cluster percentile, seed=20261024, draws=2000",
+  "no_rescoring": true,
+  "no_score_based_selection": true,
+  "artifacts": {
+    "benchmark_v5.pdf": "5e4e6e444faa2cdec46bf28199bdf3ff1f0cba8b62cd2213263265280aff3d27",
+    "benchmark_v5.png": "1707247c5290d9c337d4dd9bfa641ee381d4fea333a67fec2088ab4701987cfd",
+    "benchmark_v5.svg": "8e980f40bbed96ad83551ea5e2183c46660cc1626064581d4ac412343cc34e0d"
+  }
+}

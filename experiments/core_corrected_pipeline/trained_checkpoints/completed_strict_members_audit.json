@@ -1,0 +1,66 @@
+{
+  "status": "all_strict_weights_collected",
+  "checked_utc": "2026-10-03T15:16:17.604309+00:00",
+  "strict_freeze_sha256": "16be2a49c6cd2b295a8f150de5e0354d3f6e20028de05f530ae8908c26dbacea",
+  "expected_strict_fits": 2,
+  "completed_strict_members": 2,
+  "checkpoints": [
+    {
+      "member": "strict_full",
+      "fold": 0,
+      "seed": 7,
+      "epoch": 40,
+      "source": "/root/flexppi_revision_20261002/corrected_training_v1/runs/strict_full/fold_0/epoch_040.pt",
+      "local": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\trained_checkpoints\\strict_full\\fold_0\\epoch_040.pt",
+      "checkpoint_sha256": "b3eed060919df15f075329bc892f959d9355232be5feb561417edd49ea82b39f",
+      "bytes": 16526522,
+      "job_state": {
+        "variant": "full",
+        "started": 1791026986.6319485,
+        "status": "complete",
+        "finished": 1791030650.363086
+      },
+      "wall_seconds": 3663.7311375141144
+    },
+    {
+      "member": "strict_intrachain",
+      "fold": 0,
+      "seed": 7,
+      "epoch": 40,
+      "source": "/root/flexppi_revision_20261002/corrected_training_v1/runs/strict_intrachain/fold_0/epoch_040.pt",
+      "local": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\trained_checkpoints\\strict_intrachain\\fold_0\\epoch_040.pt",
+      "checkpoint_sha256": "fa421af6f6a8ceed4735cb2ab61bf222233b6d45b13fb4887dc64fb3b4453616",
+      "bytes": 16526522,
+      "job_state": {
+        "variant": "intrachain",
+        "started": 1791030650.3636408,
+        "status": "complete",
+        "finished": 1791035198.5024898
+      },
+      "wall_seconds": 4548.138849020004
+    }
+  ],
+  "remote_strict_queue_state": {
+    "status": "complete",
+    "jobs": [
+      {
+        "variant": "full",
+        "started": 1791026986.6319485,
+        "status": "complete",
+        "finished": 1791030650.363086
+      },
+      {
+        "variant": "intrachain",
+        "started": 1791030650.3636408,
+        "status": "complete",
+        "finished": 1791035198.5024898
+      }
+    ],
+    "evaluation_exit_code": 0
+  },
+  "new_fits": 0,
+  "predictions_generated": 0,
+  "accuracy_evaluation_complete": false,
+  "collector_sha256": "c17be33034bf0d0f2ce5597ed8a88701387fcaada37efd3db85746e7d2210060",
+  "cost_scope": "Same-host queue training wall clock includes IO/background load; not deployment inference cost"
+}

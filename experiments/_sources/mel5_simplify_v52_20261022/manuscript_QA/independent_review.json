@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "reviewer": "/root/mel5_v52_scope_review",
+  "document": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v52_20261022_中文修订_MEL5图4去除局部结构图_三线表.docx",
+  "document_sha256": "bcf8a06760532e63b330341f315fc075acc8640f4b69e46c968e2538a74b61eb",
+  "figure": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_simplify_v52_20261022\\figure4\\fig4_mel5_compact.png",
+  "figure_sha256": "00d22a19ab6170b90895729567aaab3a00dc4c5afd826ae55448390f47aeaa15",
+  "review_scope": "Independent visual inspection of the formal Figure 4 PNG and every single rendered page 1-15; prose_v52.json and integration_audit.json reviewed. Pages 16-28 remain for the root reviewer.",
+  "figure_review": {
+    "status": "passed",
+    "observations": [
+      "The two local stick-structure renders are absent.",
+      "Panel a presents the complex overview, the published SPR affinity, and two compact model readout rows without creating new miniature plot panels.",
+      "Q72 Hchi 1.792 to 1.375 nats and betaGly54 RMSF 1.118 to 0.747 Angstrom are labelled separately and do not share an axis.",
+      "Panel b retains all 45 aligned CDR positions with the betaCDR2 region and Gly54 identified.",
+      "English labels, units, legend, titles and panel letters are readable with no overlap or clipping in the standalone figure or the page 15 render."
+    ]
+  },
+  "prose_sync": {
+    "status": "passed",
+    "method_paragraph_52": "The same-view and same-scale display wording is removed; the coordinate source and two atom-distance measurements remain explicitly defined.",
+    "results_paragraph_92": "The direct visual comparison claim and its Figure 4a pointer are removed; the contact interpretation is introduced as analysis of the local model responses.",
+    "caption_paragraph_95": "The caption describes the current compact model readout layout and the full CDR curves; old local-structure, dashed-distance and same-view wording is absent."
+  },
+  "page_review": [
+    {
+      "page": 1,
+      "status": "passed",
+      "notes": "Title, abstract and introduction text complete and unclipped."
+    },
+    {
+      "page": 2,
+      "status": "passed",
+      "notes": "Introduction and methods opening complete; intentional figure-page spacing retained."
+    },
+    {
+      "page": 3,
+      "status": "passed",
+      "notes": "Figure 1, caption and following data-source text fit without overlap."
+    },
+    {
+      "page": 4,
+      "status": "passed",
+      "notes": "Equations 1 and 2 and local-frame text render fully."
+    },
+    {
+      "page": 5,
+      "status": "passed",
+      "notes": "Equations 3 and 4, training text and heading fit cleanly."
+    },
+    {
+      "page": 6,
+      "status": "passed",
+      "notes": "Data split, external validation and comparison methods render cleanly."
+    },
+    {
+      "page": 7,
+      "status": "passed",
+      "notes": "Metrics and structural-example methods render without layout defects."
+    },
+    {
+      "page": 8,
+      "status": "passed",
+      "notes": "Updated MEL5 methods, contact analysis and Equation 5 are complete and unclipped."
+    },
+    {
+      "page": 9,
+      "status": "passed",
+      "notes": "Conformational-occupancy methods and results opening render cleanly."
+    },
+    {
+      "page": 10,
+      "status": "passed",
+      "notes": "Table 1 retains native three-line formatting and aligned columns; table caption and following text fit."
+    },
+    {
+      "page": 11,
+      "status": "passed",
+      "notes": "Figure 2 panels, caption and following text are complete and unobstructed."
+    },
+    {
+      "page": 12,
+      "status": "passed",
+      "notes": "Results sections 3.2 and 3.3 render cleanly."
+    },
+    {
+      "page": 13,
+      "status": "passed",
+      "notes": "Figure 3 and its caption fit within the page."
+    },
+    {
+      "page": 14,
+      "status": "passed",
+      "notes": "MEL5 section 3.4 and all four explanatory paragraphs are complete; no local-image viewing claim remains."
+    },
+    {
+      "page": 15,
+      "status": "passed",
+      "notes": "New compact Figure 4, synchronized caption and section 3.5 opening fit without overlap or clipping."
+    }
+  ],
+  "must_fix_items": []
+}

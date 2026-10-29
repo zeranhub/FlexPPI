@@ -1,0 +1,393 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-21T12:53:14.268658+00:00",
+  "repository": "StatPhysBio/tcr_antigen_design",
+  "commit": "cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2",
+  "source_selection": "Complete 1G4 and A6 SPR panels from HERMES Fig2; selected before any FlexPPI inference",
+  "panels": [
+    {
+      "panel_id": "1G4_NYESO",
+      "n_candidates": 14,
+      "n_study_observations": 20,
+      "KD_min_uM": 5.957851961907076,
+      "KD_max_uM": 1309.0000000000005,
+      "hla": "HLA-A*02:01",
+      "tcr": "1G4"
+    },
+    {
+      "panel_id": "A6_TAX",
+      "n_candidates": 16,
+      "n_study_observations": 16,
+      "KD_min_uM": 1.66,
+      "KD_max_uM": 2320.999999999999,
+      "hla": "HLA-A*02:01",
+      "tcr": "A6"
+    }
+  ],
+  "n_unique_candidates": 30,
+  "n_study_observations": 36,
+  "n_censored": 0,
+  "primary_value_checks": 36,
+  "log_mean_and_template_checks": [
+    {
+      "panel_id": "1G4_NYESO",
+      "peptide_sequence": "SLLMWITQV",
+      "source_raw_KD_first": 4.93,
+      "HERMES_closest_raw_KD": 4.93,
+      "recomputed_geometric_KD_uM": 5.957851961907076,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "1G4_NYESO",
+      "peptide_sequence": "SLAMWITQV",
+      "source_raw_KD_first": 6.28,
+      "HERMES_closest_raw_KD": 6.28,
+      "recomputed_geometric_KD_uM": 6.43801211555244,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "1G4_NYESO",
+      "peptide_sequence": "SLLMWVTQV",
+      "source_raw_KD_first": 22.8,
+      "HERMES_closest_raw_KD": 22.8,
+      "recomputed_geometric_KD_uM": 20.258331619360952,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "1G4_NYESO",
+      "peptide_sequence": "SLYMWITQV",
+      "source_raw_KD_first": 47.3,
+      "HERMES_closest_raw_KD": 47.3,
+      "recomputed_geometric_KD_uM": 37.66961640367473,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "1G4_NYESO",
+      "peptide_sequence": "SLLDWITQV",
+      "source_raw_KD_first": 140.0,
+      "HERMES_closest_raw_KD": 140.0,
+      "recomputed_geometric_KD_uM": 187.82971010998247,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "1G4_NYESO",
+      "peptide_sequence": "SLLMWTTQV",
+      "source_raw_KD_first": 162.0,
+      "HERMES_closest_raw_KD": 162.0,
+      "recomputed_geometric_KD_uM": 127.91403363196697,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "1G4_NYESO",
+      "peptide_sequence": "SLLAWITQV",
+      "source_raw_KD_first": 299.0,
+      "HERMES_closest_raw_KD": 299.0,
+      "recomputed_geometric_KD_uM": 298.99999999999994,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "1G4_NYESO",
+      "peptide_sequence": "SLLMYITQV",
+      "source_raw_KD_first": 433.0,
+      "HERMES_closest_raw_KD": 433.0,
+      "recomputed_geometric_KD_uM": 433.0000000000001,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "1G4_NYESO",
+      "peptide_sequence": "SLLMFITQV",
+      "source_raw_KD_first": 1309.0,
+      "HERMES_closest_raw_KD": 1309.0,
+      "recomputed_geometric_KD_uM": 1309.0000000000005,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "1G4_NYESO",
+      "peptide_sequence": "SLLMWITQC",
+      "source_raw_KD_first": 14.0,
+      "HERMES_closest_raw_KD": 14.0,
+      "recomputed_geometric_KD_uM": 13.999999999999998,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "1G4_NYESO",
+      "peptide_sequence": "SLLMWITQL",
+      "source_raw_KD_first": 56.0,
+      "HERMES_closest_raw_KD": 56.0,
+      "recomputed_geometric_KD_uM": 56.00000000000001,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "1G4_NYESO",
+      "peptide_sequence": "SLIMWITQV",
+      "source_raw_KD_first": 17.0,
+      "HERMES_closest_raw_KD": 17.0,
+      "recomputed_geometric_KD_uM": 17.0,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "1G4_NYESO",
+      "peptide_sequence": "SLMMWITQV",
+      "source_raw_KD_first": 9.2,
+      "HERMES_closest_raw_KD": 9.2,
+      "recomputed_geometric_KD_uM": 9.2,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "1G4_NYESO",
+      "peptide_sequence": "SLLMWIHQV",
+      "source_raw_KD_first": 100.0,
+      "HERMES_closest_raw_KD": 100.0,
+      "recomputed_geometric_KD_uM": 100.0,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "A6_TAX",
+      "peptide_sequence": "LLFGYPVYV",
+      "source_raw_KD_first": 1.66,
+      "HERMES_closest_raw_KD": 1.66,
+      "recomputed_geometric_KD_uM": 1.66,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "A6_TAX",
+      "peptide_sequence": "LLFGFPVYV",
+      "source_raw_KD_first": 2.67,
+      "HERMES_closest_raw_KD": 2.67,
+      "recomputed_geometric_KD_uM": 2.67,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "A6_TAX",
+      "peptide_sequence": "LLFGYPTYV",
+      "source_raw_KD_first": 2.8,
+      "HERMES_closest_raw_KD": 2.8,
+      "recomputed_geometric_KD_uM": 2.8,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "A6_TAX",
+      "peptide_sequence": "LLFGWPVYV",
+      "source_raw_KD_first": 5.0,
+      "HERMES_closest_raw_KD": 5.0,
+      "recomputed_geometric_KD_uM": 5.000000000000001,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "A6_TAX",
+      "peptide_sequence": "MLFGYPVYV",
+      "source_raw_KD_first": 6.1,
+      "HERMES_closest_raw_KD": 6.1,
+      "recomputed_geometric_KD_uM": 6.1,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "A6_TAX",
+      "peptide_sequence": "ALFGYPVYV",
+      "source_raw_KD_first": 6.5,
+      "HERMES_closest_raw_KD": 6.5,
+      "recomputed_geometric_KD_uM": 6.5,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "A6_TAX",
+      "peptide_sequence": "VLFGYPVYV",
+      "source_raw_KD_first": 7.97,
+      "HERMES_closest_raw_KD": 7.97,
+      "recomputed_geometric_KD_uM": 7.970000000000001,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "A6_TAX",
+      "peptide_sequence": "LLFGYVVYV",
+      "source_raw_KD_first": 21.1,
+      "HERMES_closest_raw_KD": 21.1,
+      "recomputed_geometric_KD_uM": 21.099999999999998,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "A6_TAX",
+      "peptide_sequence": "LLFGYPRYV",
+      "source_raw_KD_first": 21.4,
+      "HERMES_closest_raw_KD": 21.4,
+      "recomputed_geometric_KD_uM": 21.399999999999995,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "A6_TAX",
+      "peptide_sequence": "LLFGHPVYV",
+      "source_raw_KD_first": 56.1,
+      "HERMES_closest_raw_KD": 56.1,
+      "recomputed_geometric_KD_uM": 56.1,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "A6_TAX",
+      "peptide_sequence": "LLFGYPVFV",
+      "source_raw_KD_first": 60.0,
+      "HERMES_closest_raw_KD": 60.0,
+      "recomputed_geometric_KD_uM": 60.0,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "A6_TAX",
+      "peptide_sequence": "LLFGYPHYV",
+      "source_raw_KD_first": 67.8,
+      "HERMES_closest_raw_KD": 67.8,
+      "recomputed_geometric_KD_uM": 67.8,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "A6_TAX",
+      "peptide_sequence": "LLFAYPVYV",
+      "source_raw_KD_first": 118.0,
+      "HERMES_closest_raw_KD": 118.0,
+      "recomputed_geometric_KD_uM": 118.00000000000003,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "A6_TAX",
+      "peptide_sequence": "LLFGYPVAV",
+      "source_raw_KD_first": 565.0,
+      "HERMES_closest_raw_KD": 565.0,
+      "recomputed_geometric_KD_uM": 565.0000000000002,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "A6_TAX",
+      "peptide_sequence": "LLFAYPVAV",
+      "source_raw_KD_first": 1869.0,
+      "HERMES_closest_raw_KD": 1869.0,
+      "recomputed_geometric_KD_uM": 1868.9999999999993,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    },
+    {
+      "panel_id": "A6_TAX",
+      "peptide_sequence": "LLFGHPVAV",
+      "source_raw_KD_first": 2321.0,
+      "HERMES_closest_raw_KD": 2321.0,
+      "recomputed_geometric_KD_uM": 2320.999999999999,
+      "log_mean_matches_HERMES": true,
+      "closest_template_matches": true
+    }
+  ],
+  "important_notes": [
+    "HERMES closest CSV retains first-study Kd while averaging -log10(Kd); candidate KD_uM here is recomputed geometric mean, not that stale source column.",
+    "pKD_M = -log10(KD/M) = 6 - log10(KD/uM); HERMES uses -log10(KD/uM), which differs by 6.",
+    "Highest 1309 and 2321 uM values are published point estimates from constrained Bmax SPR, not thresholds/censoring. Large SD and some A6 n=1 remain visible at study level.",
+    "2BNR is native 9C and 2BNQ is 9V in actual coordinates and PNAS supplement Table S1; PNAS main Fig2A prose reverses these identifiers.",
+    "The primary Aleksic Table S1 contains 17 pMHCs; six HLA mutations are retained in a separate table and excluded from the fixed-HLA peptide panel.",
+    "All candidates have measured point affinities; they are not an unbiased population of binders and nonbinders. No externally justified binary screening threshold is assigned.",
+    "Two TCR series are only two independent biological groups; 30 peptide candidates do not establish broad generalization.",
+    "Study means are retained separately; aggregate uncertainty is not manufactured by pooling SD and SEM.",
+    "Primary analysis uses observations with within-study parent delta-pKD. HERMES cross-study average is secondary only. Same study/37C/method is verified, but exact same experimental batch IDs were not reported."
+  ],
+  "visual_primary_table_QA": {
+    "Aleksic_TableS1_page16": "Individually rendered and opened; all 11 fixed-HLA peptide KD values and SEM checked against source CSV.",
+    "PNAS_TableS1_page14": "Individually rendered and opened; 2BNR/2BNQ and 1AO7/1QSF peptide sequences and HLA checked."
+  },
+  "files": {
+    "SPR_labels_observations.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_observations.csv",
+      "sha256": "bec742b44a2355275a668a0b5a20ed570096d19a757a40905edd59b4ed09bd3b"
+    },
+    "SPR_candidates.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_candidates.csv",
+      "sha256": "b38eb120200ad34b27c194d374ecb12d24059a58e9741e6075aa3ca62996ebc3"
+    },
+    "SPR_labels_study_level.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_study_level.csv",
+      "sha256": "3be433c8f1a43477837f33ec3f30aa0c6c41dbd71e82e7b2fc1ee8c8d69ee495"
+    },
+    "SPR_labels_candidates.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_candidates.csv",
+      "sha256": "f69aaf81c06eca25734a6b0e785d35d2ba95da3aa32b032d53055cac21e605a8"
+    },
+    "SPR_labels_HERMES_aggregate_secondary.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_HERMES_aggregate_secondary.csv",
+      "sha256": "f69aaf81c06eca25734a6b0e785d35d2ba95da3aa32b032d53055cac21e605a8"
+    },
+    "SPR_labels.json": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels.json",
+      "sha256": "f92375412e27efe67cfad3a40972319e87054892eebf70ce405f0482683a35d9"
+    },
+    "templates.json": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\templates.json",
+      "sha256": "8e8ae15609f5a52ff8c8bc1f1c3b6fb758f04bb567a30e8e46ce1cf5ff1b979b"
+    },
+    "Pettmann2021_Bmax_methods.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\Pettmann2021_Bmax_methods.csv",
+      "sha256": "7fcc92c0ce0d1b3c1253f8bfcd14541ae5997ffc4c14f14896de1e5a54d6dc43"
+    },
+    "Aleksic2010_TableS1_complete_pMHC_panel.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\Aleksic2010_TableS1_complete_pMHC_panel.csv",
+      "sha256": "27c58c41632e6dd6c551952c1b69bb4c5e4494a44311e532d7e9e2e7aa012601"
+    },
+    "SPR_labels_candidates_primary.csv": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_candidates_primary.csv",
+      "sha256": "c834147811244b856f7ce49f4e59b85f4268a7d98e11a272be122773197148ae"
+    },
+    "label_rule_freeze.json": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\label_rule_freeze.json",
+      "sha256": "858804c15beb49e6a60006cb57ad981b5d379437a8cf14814ba5760d550c7707"
+    }
+  },
+  "primary_label_definition": "reported_hybrid",
+  "primary_endpoint": "median within-study parent-normalized delta-pKD; original Pettmann reported hybrid fit rule; no exact batch matching claimed",
+  "fit_variants": {
+    "reported_hybrid": {
+      "observation_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_observations_reported_hybrid.csv",
+      "candidate_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_candidates_reported_hybrid.csv",
+      "primary_file_sha256": "bec742b44a2355275a668a0b5a20ed570096d19a757a40905edd59b4ed09bd3b",
+      "candidate_file_sha256": "c834147811244b856f7ce49f4e59b85f4268a7d98e11a272be122773197148ae",
+      "n_observations": 36,
+      "n_candidates": 30
+    },
+    "all_constrained": {
+      "observation_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_observations_all_constrained.csv",
+      "candidate_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_candidates_all_constrained.csv",
+      "primary_file_sha256": "3be433c8f1a43477837f33ec3f30aa0c6c41dbd71e82e7b2fc1ee8c8d69ee495",
+      "candidate_file_sha256": "2f0ea5ab1e6daf03eb2c48002cd8ec9a146b1dc96cde6f3f623d4b30cdd02425",
+      "n_observations": 36,
+      "n_candidates": 30
+    },
+    "all_fitted": {
+      "observation_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_observations_all_fitted.csv",
+      "candidate_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_candidates_all_fitted.csv",
+      "primary_file_sha256": "c1160abce13093d3951e1a5979f30ce089e72e40a5992f82b94aceeecbadda6a",
+      "candidate_file_sha256": "464e48e0cbffdad0e04080b46161dbf1bde93b0db16fe24fbf6f0140933393dc",
+      "n_observations": 36,
+      "n_candidates": 30
+    }
+  },
+  "label_rule_freeze_sha256": "858804c15beb49e6a60006cb57ad981b5d379437a8cf14814ba5760d550c7707"
+}

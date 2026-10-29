@@ -1,0 +1,25 @@
+{
+  "status": "complete_verified",
+  "records": 83,
+  "trajectories": 203,
+  "completed_beijing": "2026-10-12T16:41:09.111380+08:00",
+  "artifacts": {
+    "analysis_plan.json": "09f029e2107e2e77e05271d7c2e65c6f2efdc0fed6f0fcd3d7a3dba9eec2ba83",
+    "run_angle_distribution_analysis.py": "ad4b9228de23453fc4755faa84710180841308bbd12f2ce3ff79ba8587e9b2f4",
+    "completion_audit.json": "90f24aebfea51367047cd2409c143cc3a46f608dd55762f2391905eecb870b98",
+    "verify_angle_distribution_results.py": "e531fc04cb94abe36dd20e094bc22e744bfff6e37a652e277050038d839114a0",
+    "independent_verification_audit.json": "c09f99bb44072359db4d4c9aeed7fdf4dba6e7fc6f2c5c364b246562af791639",
+    "make_delivery_summaries.py": "9d9daa841e2f8772b2206be209ab79310873b3af98b53036fe01928a31892469",
+    "delivery_summary_audit.json": "075947d01dd8f4df66745142d141f73cb8ad6a45be6d159b29457f1b9ae312e3",
+    "output_schema.json": "7be7fb8fe74368d0c6d2ad900b44608cb9f38c14035451ccb99e66b84430e59f",
+    "manuscript_text_zh.md": "dac6b00ba8503ad63baa6afbe39c3f2aaab40bd989f54e83a9cd22107511b7c9",
+    "launch_state.json": "8bb37714a4026b6b80a566c902aecf1db09ce4f37579a3381613f9dd104e490c"
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "cpu_workers": 4,
+    "CUDA_VISIBLE_DEVICES": "",
+    "numpy": "2.3.5"
+  },
+  "cache_preservation": "All203 final NPZ retained; raw inputs unchanged; preflight_v1 also retained"
+}

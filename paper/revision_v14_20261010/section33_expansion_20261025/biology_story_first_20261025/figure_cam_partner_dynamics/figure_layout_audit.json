@@ -1,0 +1,26 @@
+{
+  "status": "rendered",
+  "width_mm": 183.0,
+  "height_mm": 231.0,
+  "all_common_backbone_probes": 87,
+  "all_common_methyl_probes": 44,
+  "selected_residues": [
+    "L18",
+    "L39",
+    "L105",
+    "M109",
+    "M144"
+  ],
+  "panel_order": "a four structures; b three local structure pairs; c 87 NH; d 44 methyl; e key NH; f key methyl; g all methyl deltas",
+  "out_of_canvas_text": [],
+  "overlapping_axes": [],
+  "numeric_audit": "numeric_audit.json; 524 raw values and associated fit errors independently matched",
+  "templates": "Cross-type visual inheritance; production performance heatmap and publication timeline are not semantically compatible. No template example numbers are used.",
+  "limitations": [
+    "Structures are snapshots, not motion ensembles",
+    "NMR S2 is not RMSF or Hchi",
+    "Key-site display is explanatory; all common probes are shown in c,d,g",
+    "No current model predictions included",
+    "Error bars are deposited fit errors"
+  ]
+}

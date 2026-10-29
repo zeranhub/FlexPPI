@@ -1,0 +1,89 @@
+{
+  "25_positions_native_294_318": true,
+  "sequence": "IKKNFAKSKWKQAFNATAVVRHMRK",
+  "all_base_predictions_identical": true,
+  "d_all3600_unique": true,
+  "d_threshold_matrix_exact": true,
+  "d_class_counts": {
+    "0": 3521,
+    "1": 26,
+    "2": 53
+  },
+  "domain_data_ranges": {
+    "C_lobe": {
+      "min": 82,
+      "max": 147,
+      "count": 66
+    },
+    "N_lobe": {
+      "min": 4,
+      "max": 75,
+      "count": 72
+    },
+    "linker": {
+      "min": 76,
+      "max": 81,
+      "count": 6
+    }
+  },
+  "domain_boundary_matches": true,
+  "e_exact_all21_valid_positions": true,
+  "e_full_values_exact": true,
+  "e_intra_values_exact": true,
+  "e_shielding_exact": true,
+  "e_all_type_counts": {
+    "F": 2,
+    "H": 1,
+    "I": 1,
+    "K": 6,
+    "M": 1,
+    "N": 2,
+    "Q": 1,
+    "R": 2,
+    "S": 1,
+    "T": 1,
+    "V": 2,
+    "W": 1
+  },
+  "c_count": 92,
+  "e_count": 42,
+  "c_per_model_metric": {
+    "('chi_entropy', 'Full')": 21,
+    "('chi_entropy', 'Intra')": 21,
+    "('rmsf', 'Full')": 25,
+    "('rmsf', 'Intra')": 25
+  },
+  "c_all_four_alanine_missing_Hchi": true,
+  "all_plotted_values_exact": true,
+  "c_axes_absolute_from_zero": true,
+  "c_hchi_preserves_gaps": true,
+  "303_contact4_lobes": {
+    "C_lobe": 4
+  },
+  "316_contact4_lobes": {
+    "N_lobe": 4
+  },
+  "visual_findings": [
+    {
+      "priority": "minor",
+      "finding": "d x ticks 70 and 80 are only 3.125 mm apart, look nearly concatenated at 183 mm.",
+      "fix": "Use [4,40,75,110,147] or [4,40,80,110,147], remove one of 70/80."
+    },
+    {
+      "priority": "minor",
+      "finding": "e title All sidechain states can sound like distinct biological states even though Full/Intra are model variants and Hchi is entropy.",
+      "fix": "Rename Sidechain environments or Sidechain Hχ and shielding."
+    },
+    {
+      "priority": "minor",
+      "finding": "d native labels are 6.1 pt, e labels 6.7 pt, compact but legible in export, below common 7 pt publication guidance.",
+      "fix": "If available raise d labels to 6.5–6.8 pt; row height 2.32 mm leaves about 6.6 pt line separation. Keep full 25 rows."
+    },
+    {
+      "priority": "minor",
+      "finding": "e F/V near-equality controls and K nonmonotonic ordering are visible and should be stated in caption/body.",
+      "fix": "Explain no universal monotonic relationship between static shielding and Hχ; avoid all buried sidechains are rigid."
+    }
+  ],
+  "assessment": "PASS numerical fidelity; no major misleading selections or domain errors. Minor readability/wording edits recommended."
+}

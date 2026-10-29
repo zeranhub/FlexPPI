@@ -1,0 +1,15 @@
+# 运行与文件说明
+
+先阅读“实际试跑结果与筛选能力结论.md”。primary_three_flow_results.csv是三个留出体系、三条主流程的核心结果；all_settings_metrics.csv和all_settings_macro_metrics.csv保存全部主/备用模板、完整/链内模型及序列对照。evaluation目录保存逐候选预测、完整训练/测试成员、系数、成组划分与全部打乱种子，不以主结论为负而删掉改善的设置。
+
+模型前向使用D:\Anaconda\envs\pvb_cpu\python.exe及项目冻结代码experiments/core_corrected_pipeline/training_payload/src；模型检查点路径和SHA见audits/inference_full.json与inference_intrachain.json。编号、ERGO与下游逻辑回归使用既有mel5_absolute_affinity_20261028/affinity/venv，ANARCII依赖来自mel5_tcr_binding_20261028/numbering/deps；NetTCR使用mel5_tcr_binding_20261028/imrex/venv。源XLSX只读提取使用桌面捆绑Python；汇总与PNG绘图使用pvb_cpu环境。每项具体版本写在相应审计，不把几个环境误说成同一环境。
+
+主要脚本顺序：fetch_and_extract_public_panel.py下载六个源PDB并提取完整候选；prepare_inputs_and_number.py构建统一固定骨架输入并核验TCR编号；run_ergo_adapter.py和run_nettcr.py运行已冻结的官方结合模型；run_flexppi.py分别运行full、intrachain；audit_training_overlap.py完成与当前训练池的补充序列核查；evaluate_incremental_utility.py对四种组合完成冻结评估；verify_predictions_and_fits.py另外核对所有结构/NPZ并用独立加权逻辑损失复算；repeat_forward_check.py核查重复推断与CPU线程数；summarize_results.py生成报告与图。实际读取了哪些文件、采用什么版本和权重，均有SHA记录。
+
+Full推断途中为提高本机CPU效率，从2线程改为4线程并恢复已完成结果，先按输入SHA、权重SHA、序列、链及编号逐项核验缓存，未更换模型或输入。最后恢复执行保留141份已核验结果，新算423份，合计564份完整输出；链内分支另有564份。前后日志均保存，重复前向另行核查数值差异。下游18次独立加权逻辑拟合与sklearn因优化停止条件有小量分数差，最大约0.003073，全部前10命中数一致；详细差异保留，未说所有概率逐值相等。
+
+24次重复前向在同线程下逐值一致；跨线程最大单值差约2.58e-5，区域相对特征差最大约9.54e-7。初始跨线程阈值1e-5被超过的日志也保留，随后分别核对同线程复算与跨线程浮点差异；这不是更改预测以取得更好筛选成绩。
+
+本目录的脚本包含当前机器绝对路径。模型权重、官方NetTCR/ERGO资源、ANARCII和运行环境保留在既有目录，并未重新下载一份。压缩包收录源PDB、原设计表、输入清单、完整NPZ预测、分析CSV、脚本、审计、图与报告；排除564份可由脚本重建的重复PDB、Python缓存、环境及模型权重。它是结果与核查材料包，不能宣称在没有外部模型资源时一键重跑所有环节。package_manifest_sha256.json记录全部收录文件校验值，ZIP自身不参与自身校验。
+
+原论文DOCX未改动。报告只支持这轮已固定的输入、特征与校准器没有稳定筛选增益，不代表证明任何动态信息在理论上都无用。

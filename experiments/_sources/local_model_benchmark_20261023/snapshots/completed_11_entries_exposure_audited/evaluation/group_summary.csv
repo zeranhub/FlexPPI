@@ -1,0 +1,404 @@
+method,group,metric,mean,ci_low,ci_high,n_records,n_families,primary_complete_cohort,uncertainty
+Full,single_chain,spearman,0.7912718465740591,0.7825787275313022,0.7992642717677675,2193,1493,True,record_weighted_family_cluster_bootstrap
+Full,single_chain,pearson,0.8317934332271584,0.8251874229593757,0.8390139423604572,2193,1493,True,record_weighted_family_cluster_bootstrap
+Full,single_chain,z_mae,0.36586725412288473,0.35827672099975744,0.3727190298552221,2193,1493,True,record_weighted_family_cluster_bootstrap
+Full,single_chain,top10_ap,0.7382213793519622,0.7283438382029394,0.7489521753454638,2193,1493,True,record_weighted_family_cluster_bootstrap
+Full,single_chain,mae,0.6862744093015053,0.6443615538785058,0.7342443383869577,2193,1493,True,record_weighted_family_cluster_bootstrap
+Full,single_chain,rmse,0.9099437240934694,0.8607340065435247,0.9661423838651386,2193,1493,True,record_weighted_family_cluster_bootstrap
+Full,single_chain,bias,-0.30870970222995775,-0.37682486996208053,-0.25036817947669926,2193,1493,True,record_weighted_family_cluster_bootstrap
+Intra,single_chain,spearman,0.778012115498226,0.7687871709691384,0.7869603907339614,2193,1493,True,record_weighted_family_cluster_bootstrap
+Intra,single_chain,pearson,0.8080558655172648,0.8005369831975674,0.8159370512563012,2193,1493,True,record_weighted_family_cluster_bootstrap
+Intra,single_chain,z_mae,0.38779481037996977,0.37970673005682243,0.3956069690515424,2193,1493,True,record_weighted_family_cluster_bootstrap
+Intra,single_chain,top10_ap,0.7130268953573504,0.7023232573338143,0.7233556749511637,2193,1493,True,record_weighted_family_cluster_bootstrap
+Intra,single_chain,mae,0.7356362777447778,0.682881864496013,0.7967393356947629,2193,1493,True,record_weighted_family_cluster_bootstrap
+Intra,single_chain,rmse,0.9928565551790239,0.9341092854171382,1.0623101757539115,2193,1493,True,record_weighted_family_cluster_bootstrap
+Intra,single_chain,bias,-0.44452692395142573,-0.5193238093807981,-0.3786289304234565,2193,1493,True,record_weighted_family_cluster_bootstrap
+Static,single_chain,spearman,0.7594464760690353,0.7526545259503068,0.7662367583759833,2193,1493,True,record_weighted_family_cluster_bootstrap
+Static,single_chain,pearson,0.7818664642569675,0.7749853634679708,0.7894007691677679,2193,1493,True,record_weighted_family_cluster_bootstrap
+Static,single_chain,z_mae,0.4158192949175628,0.4084907778042066,0.4236029846150151,2193,1493,True,record_weighted_family_cluster_bootstrap
+Static,single_chain,top10_ap,0.6738462991097164,0.6645780409794739,0.684349656657591,2193,1493,True,record_weighted_family_cluster_bootstrap
+Static,single_chain,mae,0.7764600308931221,0.728575042131231,0.8287396959223915,2193,1493,True,record_weighted_family_cluster_bootstrap
+Static,single_chain,rmse,1.0300383526668537,0.9737411299353372,1.0913607069961944,2193,1493,True,record_weighted_family_cluster_bootstrap
+Static,single_chain,bias,-0.13674807013619594,-0.20163922976763757,-0.07223310644995518,2193,1493,True,record_weighted_family_cluster_bootstrap
+AA,single_chain,spearman,0.25193259860864786,0.24613179149131056,0.2571758174101609,2193,1493,True,record_weighted_family_cluster_bootstrap
+AA,single_chain,pearson,0.19475584573340984,0.18991055358772205,0.1995250681101842,2193,1493,True,record_weighted_family_cluster_bootstrap
+AA,single_chain,z_mae,0.9957938013265575,0.993077208396991,0.9986093352287857,2193,1493,True,record_weighted_family_cluster_bootstrap
+AA,single_chain,top10_ap,0.17606944693008322,0.17189489859038412,0.18075461348204858,2193,1493,True,record_weighted_family_cluster_bootstrap
+AA,single_chain,mae,1.0188741325634145,0.9588574861989017,1.0911002128215102,2193,1493,True,record_weighted_family_cluster_bootstrap
+AA,single_chain,rmse,1.4523216556954708,1.3698291808141223,1.539664057112932,2193,1493,True,record_weighted_family_cluster_bootstrap
+AA,single_chain,bias,-0.37885997956504824,-0.4754244128048819,-0.2885443497787931,2193,1493,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,single_chain,spearman,0.864305133075032,0.8591217110786272,0.8696834747767043,2193,1493,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,single_chain,pearson,0.8652786347744276,0.8566490842235212,0.8734559958903731,2193,1493,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,single_chain,z_mae,0.3080616853737276,0.297828740844687,0.3186388536727003,2193,1493,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,single_chain,top10_ap,0.7909122295106572,0.7791590784171353,0.8017515595188114,2193,1493,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,single_chain,mae,0.5043210712772114,0.470982095999492,0.5403244866434916,2193,1493,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,single_chain,rmse,0.7430597845385607,0.7046484774505501,0.7869765624917133,2193,1493,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,single_chain,bias,-0.10684184635018987,-0.14380967090066957,-0.07173759218263538,2193,1493,True,record_weighted_family_cluster_bootstrap
+ANM,single_chain,spearman,0.7856129206672283,0.7795660088020547,0.7916872070070319,2193,1493,True,record_weighted_family_cluster_bootstrap
+ANM,single_chain,pearson,0.7562677568947258,0.7479385811974707,0.7648618496594751,2193,1493,True,record_weighted_family_cluster_bootstrap
+ANM,single_chain,z_mae,0.3950012084928749,0.38669451923078757,0.4025915102527001,2193,1493,True,record_weighted_family_cluster_bootstrap
+ANM,single_chain,top10_ap,0.6867035952824343,0.6775712385684021,0.696983356564388,2193,1493,True,record_weighted_family_cluster_bootstrap
+GNM,single_chain,spearman,0.7398556842880429,0.7328148087980226,0.7463958445325035,2193,1493,True,record_weighted_family_cluster_bootstrap
+GNM,single_chain,pearson,0.726540971184871,0.7198477348687294,0.7340257547599154,2193,1493,True,record_weighted_family_cluster_bootstrap
+GNM,single_chain,z_mae,0.4438987145866071,0.4367125244909299,0.45011566660606633,2193,1493,True,record_weighted_family_cluster_bootstrap
+GNM,single_chain,top10_ap,0.6815046615693763,0.6725813774239007,0.6914106945249563,2193,1493,True,record_weighted_family_cluster_bootstrap
+FastProtFlex,single_chain,spearman,0.7985003495093286,0.7917332092872612,0.8044572490383594,2119,1438,False,record_weighted_family_cluster_bootstrap
+FastProtFlex,single_chain,pearson,0.7697365403657731,0.7643594880003862,0.7754317007536867,2119,1438,False,record_weighted_family_cluster_bootstrap
+FastProtFlex,single_chain,z_mae,0.4899401515257205,0.4839187165903216,0.49559453196969855,2119,1438,False,record_weighted_family_cluster_bootstrap
+FastProtFlex,single_chain,top10_ap,0.7188748393357076,0.7086715681273901,0.7295476343184237,2119,1438,False,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),single_chain,spearman,0.8981149303514676,0.8914835730017583,0.9043229999762484,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),single_chain,pearson,0.9165741774444595,0.9041525750981063,0.9258991144511909,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),single_chain,z_mae,0.23605307419945704,0.22430945329284852,0.2505672998985988,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),single_chain,top10_ap,0.8518586899785929,0.8355797321863374,0.8652258292155348,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),single_chain,mae,0.4058254257660431,0.37930449730894145,0.4371423917926245,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),single_chain,rmse,0.5694956980480871,0.5392388457332862,0.6035909413736489,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),single_chain,bias,0.09186937694615109,0.0641870285606529,0.12135044570523305,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),single_chain,spearman,0.8981149303514676,0.8914872728013777,0.90399714212781,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),single_chain,pearson,0.9165741774444595,0.9050210977334802,0.9255706232974547,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),single_chain,z_mae,0.23605307419945704,0.22392955921235042,0.24981450174987238,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),single_chain,top10_ap,0.8518586899785929,0.8363491615358151,0.8651287413071687,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),single_chain,mae,0.4058254257660431,0.3796528841517995,0.43536092589387076,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),single_chain,rmse,0.5694956980480871,0.5394336711315532,0.602650771094196,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),single_chain,bias,0.09186937694615109,0.06418328888547102,0.12122431205168152,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),single_chain,spearman,0.8086403993313545,0.8036047136794673,0.8130852733098208,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),single_chain,pearson,0.842372871873391,0.834091683623821,0.8507243419024879,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),single_chain,z_mae,0.34640483308143705,0.33687219441135746,0.3549439553556789,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),single_chain,top10_ap,0.7470890501469426,0.7372206530792652,0.7577433303086876,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),single_chain,mae,0.5125422409027375,0.4865170234577369,0.5441896906742534,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),single_chain,rmse,0.7337463099124826,0.6992713095413342,0.7708894194043033,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),single_chain,bias,-0.16113867694738257,-0.20730600752810147,-0.11423507633266368,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),single_chain,spearman,0.8086403993313545,0.8037448654836565,0.8135152923333879,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),single_chain,pearson,0.842372871873391,0.834146248824183,0.8508561520243557,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),single_chain,z_mae,0.34640483308143705,0.3369451177568511,0.3555695718152336,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),single_chain,top10_ap,0.7470890501469426,0.7365351921971409,0.7577201532169191,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),single_chain,mae,0.5125422409027375,0.48535052666904316,0.5441229203401375,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),single_chain,rmse,0.7337463099124826,0.7000383326775805,0.772490647322483,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),single_chain,bias,-0.16113867694738257,-0.20756652612740087,-0.1152922144174532,2193,1493,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),single_chain,spearman,0.8246703260582992,0.8110761692447336,0.8370597029165818,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),single_chain,pearson,0.8548066309115618,0.8402880835074586,0.8681229194508807,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),single_chain,z_mae,0.34064235918247876,0.3232435681293004,0.358568114142835,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),single_chain,top10_ap,0.7624136504488084,0.7400862397593734,0.7827741028790952,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),single_chain,mae,0.4692739449659684,0.4069572261096367,0.5442223434632187,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),single_chain,rmse,0.6454126907102713,0.5693748507190342,0.730657116538557,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),single_chain,bias,-0.03415192874352502,-0.12104704179866693,0.0427759512299652,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),single_chain,spearman,0.8246703260582992,0.8115226290842512,0.8372456297665525,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),single_chain,pearson,0.8548066309115618,0.8399947986796178,0.8687516277780722,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),single_chain,z_mae,0.34064235918247876,0.3227588983737448,0.3585949038836337,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),single_chain,top10_ap,0.7624136504488084,0.7397057485122325,0.7832246199735423,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),single_chain,mae,0.4692739449659684,0.4047490788131595,0.5438179602009396,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),single_chain,rmse,0.6454126907102713,0.5713167825761064,0.7355422405280446,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),single_chain,bias,-0.03415192874352502,-0.12039006466691664,0.04271047680719214,270,228,False,record_weighted_family_cluster_bootstrap
+Full,other_multichain,spearman,0.7582613871844562,0.7299463721742661,0.7721485070762335,626,268,True,record_weighted_family_cluster_bootstrap
+Full,other_multichain,pearson,0.7544849626982156,0.736264230401752,0.7638851719933851,626,268,True,record_weighted_family_cluster_bootstrap
+Full,other_multichain,z_mae,0.4336029740646312,0.4239979279486609,0.45217571520496863,626,268,True,record_weighted_family_cluster_bootstrap
+Full,other_multichain,top10_ap,0.6583090149563487,0.644040137704275,0.6717777489267052,626,268,True,record_weighted_family_cluster_bootstrap
+Full,other_multichain,mae,0.3522001295841399,0.32947376480072466,0.3975973563061734,626,268,True,record_weighted_family_cluster_bootstrap
+Full,other_multichain,rmse,0.5543040922319781,0.5243351301289261,0.6127830789481349,626,268,True,record_weighted_family_cluster_bootstrap
+Full,other_multichain,bias,-0.06450776832395151,-0.08930549274208532,-0.019828646993643707,626,268,True,record_weighted_family_cluster_bootstrap
+Intra,other_multichain,spearman,0.7115505490198513,0.6736080273336656,0.7310404259540328,626,268,True,record_weighted_family_cluster_bootstrap
+Intra,other_multichain,pearson,0.6729487364408199,0.6309511921585571,0.693493241644573,626,268,True,record_weighted_family_cluster_bootstrap
+Intra,other_multichain,z_mae,0.48933504624049384,0.47512672830717884,0.5209076854241075,626,268,True,record_weighted_family_cluster_bootstrap
+Intra,other_multichain,top10_ap,0.5849768945880214,0.5520735113300592,0.6013657969471725,626,268,True,record_weighted_family_cluster_bootstrap
+Intra,other_multichain,mae,0.46411618279828165,0.41415693084869876,0.5621397893992086,626,268,True,record_weighted_family_cluster_bootstrap
+Intra,other_multichain,rmse,0.7208181465544382,0.652998815285362,0.8434673261308556,626,268,True,record_weighted_family_cluster_bootstrap
+Intra,other_multichain,bias,0.09392398139143648,0.04070361301812075,0.19606456065255756,626,268,True,record_weighted_family_cluster_bootstrap
+Static,other_multichain,spearman,0.7045015722203853,0.6897747632761105,0.7127596271150826,626,268,True,record_weighted_family_cluster_bootstrap
+Static,other_multichain,pearson,0.691163561136543,0.6818146794048058,0.7071791238673463,626,268,True,record_weighted_family_cluster_bootstrap
+Static,other_multichain,z_mae,0.4967661184344685,0.4837687005359657,0.5058493190033745,626,268,True,record_weighted_family_cluster_bootstrap
+Static,other_multichain,top10_ap,0.5725836803959043,0.5612372143194216,0.5937116781758025,626,268,True,record_weighted_family_cluster_bootstrap
+Static,other_multichain,mae,0.5014880875824107,0.48074790350355695,0.5438576303273628,626,268,True,record_weighted_family_cluster_bootstrap
+Static,other_multichain,rmse,0.6985747528997384,0.6723292560433264,0.7499325409077311,626,268,True,record_weighted_family_cluster_bootstrap
+Static,other_multichain,bias,0.22771387300099377,0.19667005511936667,0.27910851093622896,626,268,True,record_weighted_family_cluster_bootstrap
+AA,other_multichain,spearman,0.2483451229993751,0.23590260603843224,0.25530923244373055,626,268,True,record_weighted_family_cluster_bootstrap
+AA,other_multichain,pearson,0.18898762166566538,0.1791947466306524,0.19461738253837293,626,268,True,record_weighted_family_cluster_bootstrap
+AA,other_multichain,z_mae,0.9911772590623551,0.9866966871934958,0.9992083007067365,626,268,True,record_weighted_family_cluster_bootstrap
+AA,other_multichain,top10_ap,0.1446864539947923,0.14236630202053752,0.14778624146527586,626,268,True,record_weighted_family_cluster_bootstrap
+AA,other_multichain,mae,0.6835973816280619,0.6696210709726828,0.7085006068882669,626,268,True,record_weighted_family_cluster_bootstrap
+AA,other_multichain,rmse,0.872010688903611,0.8480035119030593,0.916448449677616,626,268,True,record_weighted_family_cluster_bootstrap
+AA,other_multichain,bias,0.31281353334988293,0.2616180842137921,0.34106513942300865,626,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,other_multichain,spearman,0.6995802506523989,0.6757947725281059,0.7155513120535667,626,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,other_multichain,pearson,0.6278780396478707,0.5970064264140463,0.6452597624157002,626,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,other_multichain,z_mae,0.5162431837503869,0.501494311396506,0.5373563367951251,626,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,other_multichain,top10_ap,0.5471538878459266,0.531200773062835,0.5732709351495489,626,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,other_multichain,mae,0.6752483865109001,0.62407458877522,0.7838975822055668,626,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,other_multichain,rmse,1.0644985392414181,0.9741198077322526,1.2532945101443673,626,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,other_multichain,bias,0.46979766172586723,0.4174974312439716,0.5682118232860965,626,268,True,record_weighted_family_cluster_bootstrap
+ANM,other_multichain,spearman,0.5701946629575436,0.5525397481755429,0.6060007521801889,626,268,True,record_weighted_family_cluster_bootstrap
+ANM,other_multichain,pearson,0.5778409045418305,0.5603338884313179,0.6096532635804387,626,268,True,record_weighted_family_cluster_bootstrap
+ANM,other_multichain,z_mae,0.5631237353923371,0.5309121576362288,0.5825763257141859,626,268,True,record_weighted_family_cluster_bootstrap
+ANM,other_multichain,top10_ap,0.509080516113293,0.4862261834571458,0.5499883583414545,626,268,True,record_weighted_family_cluster_bootstrap
+GNM,other_multichain,spearman,0.5116050442014741,0.4870926643162919,0.5574090921034163,626,268,True,record_weighted_family_cluster_bootstrap
+GNM,other_multichain,pearson,0.5766924308392682,0.5571148948424369,0.6100965358216646,626,268,True,record_weighted_family_cluster_bootstrap
+GNM,other_multichain,z_mae,0.5670636101696038,0.5365262547506501,0.5862450354354574,626,268,True,record_weighted_family_cluster_bootstrap
+GNM,other_multichain,top10_ap,0.5282307385256684,0.5088078416439129,0.5623872201627301,626,268,True,record_weighted_family_cluster_bootstrap
+FastProtFlex,other_multichain,spearman,0.7156072903204547,0.7028415045828756,0.7367630855209287,513,234,False,record_weighted_family_cluster_bootstrap
+FastProtFlex,other_multichain,pearson,0.6812906430617068,0.6723225899542622,0.6975807014271849,513,234,False,record_weighted_family_cluster_bootstrap
+FastProtFlex,other_multichain,z_mae,0.5768430475560506,0.560820316863442,0.5851305105803498,513,234,False,record_weighted_family_cluster_bootstrap
+FastProtFlex,other_multichain,top10_ap,0.6314900987513209,0.6169550855529429,0.6574075402671508,513,234,False,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),other_multichain,spearman,0.6669127143471058,0.6506934375363893,0.6966601679726075,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),other_multichain,pearson,0.6907107954788873,0.6731041652014805,0.7203134149291945,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),other_multichain,z_mae,0.5122496203980647,0.4777930800973328,0.5333473352791539,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),other_multichain,top10_ap,0.5975320978880061,0.572779463338835,0.640031635233034,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),other_multichain,mae,0.620744877303178,0.5491283282666489,0.6634456041954332,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),other_multichain,rmse,0.8219250207483219,0.7508292340596181,0.8622974547358013,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),other_multichain,bias,0.4545579706043173,0.3430974538956381,0.5206058554941138,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),other_multichain,spearman,0.7497711442455718,0.7362609158638547,0.7696133896940754,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),other_multichain,pearson,0.6903578321634777,0.6736632752609696,0.7169235462344441,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),other_multichain,z_mae,0.4631724030470504,0.4366817669486783,0.47915377170318635,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),other_multichain,top10_ap,0.5848959728893892,0.5575465959655861,0.629678919727125,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),other_multichain,mae,0.6563559098711568,0.614274763078837,0.7385990348165785,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),other_multichain,rmse,1.0334280128141886,0.9651726587448504,1.1788529385141249,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),other_multichain,bias,0.4925909255996629,0.4465652582993845,0.5674676547471528,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),other_multichain,spearman,0.6543396176904137,0.636617335082879,0.687151104689068,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),other_multichain,pearson,0.6527130252885986,0.6312590197014172,0.68949131987837,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),other_multichain,z_mae,0.5419686510426395,0.5069806048962786,0.5622852095498466,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),other_multichain,top10_ap,0.5522550634713851,0.5234873449014783,0.598134050335148,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),other_multichain,mae,0.5776837819675029,0.5213363216871519,0.6081619030368501,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),other_multichain,rmse,0.7407330713207945,0.6834533999424024,0.7717500456651407,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),other_multichain,bias,0.37424451905300243,0.28962343134932983,0.41548034410332213,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),other_multichain,spearman,0.7446508197793332,0.731188688812797,0.7613218416574634,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),other_multichain,pearson,0.681544634986787,0.6640490149410821,0.7039876763068549,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),other_multichain,z_mae,0.4742708351492881,0.4528832209399159,0.4885042062327323,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),other_multichain,top10_ap,0.5747260315679316,0.5543932532125789,0.6108655969906989,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),other_multichain,mae,0.5645774614598624,0.5281156551719438,0.635892681799034,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),other_multichain,rmse,0.8378019166904236,0.7838358996942076,0.9443260181452809,626,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),other_multichain,bias,0.3672928276323611,0.3312152855459804,0.43553579215019084,626,268,True,record_weighted_family_cluster_bootstrap
+Full,tcr_pmhc_itrace,spearman,0.937660416282949,,,244,1,True,descriptive_single_family_no_independent_CI
+Full,tcr_pmhc_itrace,pearson,0.8993936459648346,,,244,1,True,descriptive_single_family_no_independent_CI
+Full,tcr_pmhc_itrace,z_mae,0.25436986749402174,,,244,1,True,descriptive_single_family_no_independent_CI
+Full,tcr_pmhc_itrace,top10_ap,0.8404958022801848,,,244,1,True,descriptive_single_family_no_independent_CI
+Full,tcr_pmhc_itrace,mae,0.1729183239335303,,,244,1,True,descriptive_single_family_no_independent_CI
+Full,tcr_pmhc_itrace,rmse,0.3398115466486838,,,244,1,True,descriptive_single_family_no_independent_CI
+Full,tcr_pmhc_itrace,bias,-0.09215400021561482,,,244,1,True,descriptive_single_family_no_independent_CI
+Intra,tcr_pmhc_itrace,spearman,0.9304792510169586,,,244,1,True,descriptive_single_family_no_independent_CI
+Intra,tcr_pmhc_itrace,pearson,0.871440717360808,,,244,1,True,descriptive_single_family_no_independent_CI
+Intra,tcr_pmhc_itrace,z_mae,0.263050303036237,,,244,1,True,descriptive_single_family_no_independent_CI
+Intra,tcr_pmhc_itrace,top10_ap,0.8220627341182816,,,244,1,True,descriptive_single_family_no_independent_CI
+Intra,tcr_pmhc_itrace,mae,0.1755364432990823,,,244,1,True,descriptive_single_family_no_independent_CI
+Intra,tcr_pmhc_itrace,rmse,0.36239520304599177,,,244,1,True,descriptive_single_family_no_independent_CI
+Intra,tcr_pmhc_itrace,bias,-0.07732767171096112,,,244,1,True,descriptive_single_family_no_independent_CI
+Static,tcr_pmhc_itrace,spearman,0.8583081755615749,,,244,1,True,descriptive_single_family_no_independent_CI
+Static,tcr_pmhc_itrace,pearson,0.8307700829365693,,,244,1,True,descriptive_single_family_no_independent_CI
+Static,tcr_pmhc_itrace,z_mae,0.3573053139634115,,,244,1,True,descriptive_single_family_no_independent_CI
+Static,tcr_pmhc_itrace,top10_ap,0.7238073177328779,,,244,1,True,descriptive_single_family_no_independent_CI
+Static,tcr_pmhc_itrace,mae,0.23749260920906667,,,244,1,True,descriptive_single_family_no_independent_CI
+Static,tcr_pmhc_itrace,rmse,0.4122044524222837,,,244,1,True,descriptive_single_family_no_independent_CI
+Static,tcr_pmhc_itrace,bias,-0.0006525844806187531,,,244,1,True,descriptive_single_family_no_independent_CI
+AA,tcr_pmhc_itrace,spearman,0.31676362924341256,,,244,1,True,descriptive_single_family_no_independent_CI
+AA,tcr_pmhc_itrace,pearson,0.26465381991612585,,,244,1,True,descriptive_single_family_no_independent_CI
+AA,tcr_pmhc_itrace,z_mae,0.9381847245304459,,,244,1,True,descriptive_single_family_no_independent_CI
+AA,tcr_pmhc_itrace,top10_ap,0.15594875543460232,,,244,1,True,descriptive_single_family_no_independent_CI
+AA,tcr_pmhc_itrace,mae,0.4981576952689836,,,244,1,True,descriptive_single_family_no_independent_CI
+AA,tcr_pmhc_itrace,rmse,0.7034200385245506,,,244,1,True,descriptive_single_family_no_independent_CI
+AA,tcr_pmhc_itrace,bias,0.19084547578722003,,,244,1,True,descriptive_single_family_no_independent_CI
+DynaProt-M,tcr_pmhc_itrace,spearman,0.7048077107943443,,,244,1,True,descriptive_single_family_no_independent_CI
+DynaProt-M,tcr_pmhc_itrace,pearson,0.3105283744866676,,,244,1,True,descriptive_single_family_no_independent_CI
+DynaProt-M,tcr_pmhc_itrace,z_mae,0.5475994449205661,,,244,1,True,descriptive_single_family_no_independent_CI
+DynaProt-M,tcr_pmhc_itrace,top10_ap,0.40540670485466246,,,244,1,True,descriptive_single_family_no_independent_CI
+DynaProt-M,tcr_pmhc_itrace,mae,0.7644071737471116,,,244,1,True,descriptive_single_family_no_independent_CI
+DynaProt-M,tcr_pmhc_itrace,rmse,1.6147850062515785,,,244,1,True,descriptive_single_family_no_independent_CI
+DynaProt-M,tcr_pmhc_itrace,bias,0.6699992899168381,,,244,1,True,descriptive_single_family_no_independent_CI
+ANM,tcr_pmhc_itrace,spearman,0.45263269748356605,,,244,1,True,descriptive_single_family_no_independent_CI
+ANM,tcr_pmhc_itrace,pearson,0.5101073943363803,,,244,1,True,descriptive_single_family_no_independent_CI
+ANM,tcr_pmhc_itrace,z_mae,0.6557739661097323,,,244,1,True,descriptive_single_family_no_independent_CI
+ANM,tcr_pmhc_itrace,top10_ap,0.4515248033397863,,,244,1,True,descriptive_single_family_no_independent_CI
+GNM,tcr_pmhc_itrace,spearman,0.35820409819732846,,,244,1,True,descriptive_single_family_no_independent_CI
+GNM,tcr_pmhc_itrace,pearson,0.5081867764888787,,,244,1,True,descriptive_single_family_no_independent_CI
+GNM,tcr_pmhc_itrace,z_mae,0.6700467435434801,,,244,1,True,descriptive_single_family_no_independent_CI
+GNM,tcr_pmhc_itrace,top10_ap,0.48779964072667165,,,244,1,True,descriptive_single_family_no_independent_CI
+FastProtFlex,tcr_pmhc_itrace,spearman,0.6894444247777717,,,1,1,False,descriptive_single_family_no_independent_CI
+FastProtFlex,tcr_pmhc_itrace,pearson,0.6851837908404875,,,1,1,False,descriptive_single_family_no_independent_CI
+FastProtFlex,tcr_pmhc_itrace,z_mae,0.5723431802126068,,,1,1,False,descriptive_single_family_no_independent_CI
+FastProtFlex,tcr_pmhc_itrace,top10_ap,0.5744867617008315,,,1,1,False,descriptive_single_family_no_independent_CI
+backflip-2.1 (assembly),tcr_pmhc_itrace,spearman,0.6118919978037834,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (assembly),tcr_pmhc_itrace,pearson,0.6393077513321348,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (assembly),tcr_pmhc_itrace,z_mae,0.5681313294455422,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (assembly),tcr_pmhc_itrace,top10_ap,0.5488851461530954,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (assembly),tcr_pmhc_itrace,mae,0.7063726350736133,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (assembly),tcr_pmhc_itrace,rmse,0.9509890185327207,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (assembly),tcr_pmhc_itrace,bias,0.6203033733087724,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (chains),tcr_pmhc_itrace,spearman,0.6476765617332946,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (chains),tcr_pmhc_itrace,pearson,0.4443139302079572,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (chains),tcr_pmhc_itrace,z_mae,0.6021882480748963,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (chains),tcr_pmhc_itrace,top10_ap,0.32432418563092585,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (chains),tcr_pmhc_itrace,mae,1.407119719030397,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (chains),tcr_pmhc_itrace,rmse,2.105735266728864,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-2.1 (chains),tcr_pmhc_itrace,bias,1.3460096126426566,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (assembly),tcr_pmhc_itrace,spearman,0.5909718252615738,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (assembly),tcr_pmhc_itrace,pearson,0.6112360526057264,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (assembly),tcr_pmhc_itrace,z_mae,0.6082568005541982,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (assembly),tcr_pmhc_itrace,top10_ap,0.5293209340599818,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (assembly),tcr_pmhc_itrace,mae,0.43155773514756723,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (assembly),tcr_pmhc_itrace,rmse,0.6134730397260555,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (assembly),tcr_pmhc_itrace,bias,0.23427065344446663,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (chains),tcr_pmhc_itrace,spearman,0.7271436697253033,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (chains),tcr_pmhc_itrace,pearson,0.4035205975756087,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (chains),tcr_pmhc_itrace,z_mae,0.5059237669193506,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (chains),tcr_pmhc_itrace,top10_ap,0.43029315299900067,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (chains),tcr_pmhc_itrace,mae,0.5070792163979784,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (chains),tcr_pmhc_itrace,rmse,1.0221747930369847,,,244,1,True,descriptive_single_family_no_independent_CI
+backflip-1.0 (chains),tcr_pmhc_itrace,bias,0.3782328664097647,,,244,1,True,descriptive_single_family_no_independent_CI
+Full,all_multichain,spearman,0.8085755976442633,0.7299750755477215,0.838233954300934,870,268,True,record_weighted_family_cluster_bootstrap
+Full,all_multichain,pearson,0.7951260186948305,0.735201829350193,0.8190110789273111,870,268,True,record_weighted_family_cluster_bootstrap
+Full,all_multichain,z_mae,0.3833352981988511,0.35403124453806895,0.4516606985429317,870,268,True,record_weighted_family_cluster_bootstrap
+Full,all_multichain,top10_ap,0.7094050794471716,0.6437160102759144,0.735769372224233,870,268,True,record_weighted_family_cluster_bootstrap
+Full,all_multichain,mae,0.3019187955855781,0.26498301223234955,0.399235737913973,870,268,True,record_weighted_family_cluster_bootstrap
+Full,all_multichain,rmse,0.4941475622063185,0.4506481699304383,0.6133201347078056,870,268,True,record_weighted_family_cluster_bootstrap
+Full,all_multichain,bias,-0.07226142416483179,-0.09029034141373907,-0.019936843373092077,870,268,True,record_weighted_family_cluster_bootstrap
+Intra,all_multichain,spearman,0.7729512424535226,0.6726714691564757,0.8102275365179189,870,268,True,record_weighted_family_cluster_bootstrap
+Intra,all_multichain,pearson,0.7286177517792992,0.6313387445588732,0.766675263550031,870,268,True,record_weighted_family_cluster_bootstrap
+Intra,all_multichain,z_mae,0.4258712791809092,0.3890802757104801,0.5208639555145818,870,268,True,record_weighted_family_cluster_bootstrap
+Intra,all_multichain,top10_ap,0.6514699346401862,0.5491300787170361,0.6892824351661945,870,268,True,record_weighted_family_cluster_bootstrap
+Intra,all_multichain,mae,0.38318117539850627,0.31794264743479494,0.5555642261089666,870,268,True,record_weighted_family_cluster_bootstrap
+Intra,all_multichain,rmse,0.6202949302141383,0.5342244412311966,0.8443618111490919,870,268,True,record_weighted_family_cluster_bootstrap
+Intra,all_multichain,bias,0.04589478213053417,-0.007689667379491354,0.1938585785532142,870,268,True,record_weighted_family_cluster_bootstrap
+Static,all_multichain,spearman,0.7476381368356154,0.6894605794849593,0.7707612653696362,870,268,True,record_weighted_family_cluster_bootstrap
+Static,all_multichain,pearson,0.7303175741471251,0.6855838423311112,0.7478096032927797,870,268,True,record_weighted_family_cluster_bootstrap
+Static,all_multichain,z_mae,0.45765297327247084,0.43931240859576515,0.5027258910019547,870,268,True,record_weighted_family_cluster_bootstrap
+Static,all_multichain,top10_ap,0.6149958269593773,0.5678588014823073,0.6330631125364587,870,268,True,record_weighted_family_cluster_bootstrap
+Static,all_multichain,mae,0.42744797640643845,0.3812369619815189,0.542121223181525,870,268,True,record_weighted_family_cluster_bootstrap
+Static,all_multichain,rmse,0.6182594042600844,0.5645148239222585,0.748624863293278,870,268,True,record_weighted_family_cluster_bootstrap
+Static,all_multichain,bias,0.16366626883373694,0.12006341301039106,0.2761123915862676,870,268,True,record_weighted_family_cluster_bootstrap
+AA,all_multichain,spearman,0.2675337615321856,0.23537688252248515,0.28088592932081075,870,268,True,record_weighted_family_cluster_bootstrap
+AA,all_multichain,pearson,0.2102089462324612,0.17876904516405748,0.22348845087392577,870,268,True,record_weighted_family_cluster_bootstrap
+AA,all_multichain,z_mae,0.9763149850097278,0.9661552948403047,0.9991375177198178,870,268,True,record_weighted_family_cluster_bootstrap
+AA,all_multichain,top10_ap,0.1478450764675666,0.14261129145262025,0.14970026265369518,870,268,True,record_weighted_family_cluster_bootstrap
+AA,all_multichain,mae,0.6315890098216078,0.6014297422014662,0.7087757080295195,870,268,True,record_weighted_family_cluster_bootstrap
+AA,all_multichain,rmse,0.824727793854771,0.7909563937411533,0.916092131367673,870,268,True,record_weighted_family_cluster_bootstrap
+AA,all_multichain,bias,0.27860639996449243,0.25530215069215256,0.3310880432897156,870,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,all_multichain,spearman,0.7010463429220941,0.6753716149697344,0.7149761357234815,870,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,all_multichain,pearson,0.5388742255107057,0.49790383576377134,0.6386903462618055,870,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,all_multichain,z_mae,0.5250373535498394,0.5040091031465049,0.5381267907034557,870,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,all_multichain,top10_ap,0.5073995054897559,0.481459218153392,0.57128244207122,870,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,all_multichain,mae,0.7002538394828952,0.6588302403966144,0.7824533419748687,870,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,all_multichain,rmse,1.2188317552764516,1.0731200506205,1.2764160827179436,870,268,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,all_multichain,bias,0.5259461643449441,0.43994799090977776,0.5702220873115058,870,268,True,record_weighted_family_cluster_bootstrap
+ANM,all_multichain,spearman,0.537223261146451,0.5109097717904523,0.6059169432130419,870,268,True,record_weighted_family_cluster_bootstrap
+ANM,all_multichain,pearson,0.5588443798405318,0.5387906527851155,0.6101843729638871,870,268,True,record_weighted_family_cluster_bootstrap
+ANM,all_multichain,z_mae,0.5891083978004341,0.5303061373679319,0.6135314435108068,870,268,True,record_weighted_family_cluster_bootstrap
+ANM,all_multichain,top10_ap,0.49293845414003357,0.4721079184214528,0.5503259305300369,870,268,True,record_weighted_family_cluster_bootstrap
+GNM,all_multichain,spearman,0.4685822501497367,0.43300216528379615,0.5549632220374341,870,268,True,record_weighted_family_cluster_bootstrap
+GNM,all_multichain,pearson,0.5574793507685842,0.5365340620204766,0.6092180297217795,870,268,True,record_weighted_family_cluster_bootstrap
+GNM,all_multichain,z_mae,0.5959462360813577,0.5358883334145031,0.6216802788332646,870,268,True,record_weighted_family_cluster_bootstrap
+GNM,all_multichain,top10_ap,0.5168914421314669,0.5004564826728642,0.5633425131359779,870,268,True,record_weighted_family_cluster_bootstrap
+FastProtFlex,all_multichain,spearman,0.7155563898038347,0.7020951108414328,0.7369391036148226,514,234,False,record_weighted_family_cluster_bootstrap
+FastProtFlex,all_multichain,pearson,0.6812982172791753,0.6724696848106103,0.6977604301629703,514,234,False,record_weighted_family_cluster_bootstrap
+FastProtFlex,all_multichain,z_mae,0.5768342929503241,0.5612110022192496,0.585213021791418,514,234,False,record_weighted_family_cluster_bootstrap
+FastProtFlex,all_multichain,top10_ap,0.6313791973173706,0.616080968807538,0.6580301780428973,514,234,False,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),all_multichain,spearman,0.6514816168338062,0.634442327387113,0.6965450956116805,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),all_multichain,pearson,0.6762943095342808,0.6587403994832765,0.7210325265801357,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),all_multichain,z_mae,0.5279221916711503,0.47718781038137914,0.5475778606317477,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),all_multichain,top10_ap,0.5838885849876404,0.563221467157874,0.6397006876401203,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),all_multichain,mae,0.6447600185629322,0.548786511861494,0.6806612786356676,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),all_multichain,rmse,0.8581222798970498,0.7498448753524823,0.8970153322079889,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),all_multichain,bias,0.5010428881444173,0.3437015951668668,0.5595653813725794,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),all_multichain,spearman,0.7211377211041975,0.7012744462417444,0.769712254407942,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),all_multichain,pearson,0.621352415982849,0.5802622043084004,0.7166780656575826,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),all_multichain,z_mae,0.5021607549858945,0.43722040393079964,0.5291655839590347,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),all_multichain,top10_ap,0.5118160693364409,0.458585203483475,0.6300087389799655,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),all_multichain,mae,0.8669149551985759,0.6279325358643265,0.9640495701448799,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),all_multichain,rmse,1.3341670587396839,1.0073042996437263,1.4629769329086246,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),all_multichain,bias,0.7319405343795371,0.45837970145070417,0.8507019271820591,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),all_multichain,spearman,0.6365675011931298,0.6180620775716286,0.686790302276479,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),all_multichain,pearson,0.6410804030648964,0.6226310252326137,0.6898159150713123,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),all_multichain,z_mae,0.5605598102159961,0.5078567083316213,0.5822927360929709,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),all_multichain,top10_ap,0.5458229628088765,0.5256711560696069,0.6002215408834076,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),all_multichain,mae,0.5367013044685784,0.5190034935490133,0.5720776976108563,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),all_multichain,rmse,0.7050417521149136,0.6827595572934123,0.7410133663514086,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),all_multichain,bias,0.33498748088233266,0.29204825950087493,0.36447514781174944,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),all_multichain,spearman,0.7397407684998122,0.7300544598843195,0.759808337572848,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),all_multichain,pearson,0.6035700773680198,0.5619879480661965,0.7054880455467686,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),all_multichain,z_mae,0.4831482091169839,0.45071653352198127,0.49403020485000065,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),all_multichain,top10_ap,0.5342184196474496,0.5030782230417082,0.6117870017529762,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),all_multichain,mae,0.5484515168677938,0.5214808474965736,0.6391243135888648,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),all_multichain,rmse,0.8895110912060109,0.8176005624345448,0.9484506562193866,870,268,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),all_multichain,bias,0.3703610683929202,0.33898636479901073,0.43573133550568877,870,268,True,record_weighted_family_cluster_bootstrap
+Full,all,spearman,0.7961867220004638,0.7758961593375518,0.8149700609421091,3063,1662,True,record_weighted_family_cluster_bootstrap
+Full,all,pearson,0.821378594623461,0.814146495373924,0.8264227096824247,3063,1662,True,record_weighted_family_cluster_bootstrap
+Full,all,z_mae,0.3708287945558233,0.3619373736131355,0.3823628122763412,3063,1662,True,record_weighted_family_cluster_bootstrap
+Full,all,top10_ap,0.7300365341292498,0.720999968990607,0.7368214477745194,3063,1662,True,record_weighted_family_cluster_bootstrap
+Full,all,mae,0.5771038628004095,0.493206309181639,0.675624299321469,3063,1662,True,record_weighted_family_cluster_bootstrap
+Full,all,rmse,0.7918429533321826,0.694932800558677,0.898355398838146,3063,1662,True,record_weighted_family_cluster_bootstrap
+Full,all,bias,-0.24155005419970652,-0.32054704906375114,-0.18153500390685304,3063,1662,True,record_weighted_family_cluster_bootstrap
+Intra,all,spearman,0.7765746491094271,0.7559834107320296,0.7965855835283638,3063,1662,True,record_weighted_family_cluster_bootstrap
+Intra,all,pearson,0.7854926402635821,0.7775569195352644,0.7915022107358446,3063,1662,True,record_weighted_family_cluster_bootstrap
+Intra,all,z_mae,0.39860987007857157,0.38854748207722045,0.4116017383979514,3063,1662,True,record_weighted_family_cluster_bootstrap
+Intra,all,top10_ap,0.6955425480429748,0.6859251327778985,0.7028316827849562,3063,1662,True,record_weighted_family_cluster_bootstrap
+Intra,all,mae,0.6355266012703227,0.5355544594785646,0.7501146490063021,3063,1662,True,record_weighted_family_cluster_bootstrap
+Intra,all,rmse,0.8870359173339536,0.768584843297294,1.017238337950147,3063,1662,True,record_weighted_family_cluster_bootstrap
+Intra,all,bias,-0.30522986737574664,-0.4088839982218077,-0.22299559164332694,3063,1662,True,record_weighted_family_cluster_bootstrap
+Static,all,spearman,0.7560924913700227,0.7433123161058507,0.7672567350611464,3063,1662,True,record_weighted_family_cluster_bootstrap
+Static,all,pearson,0.7672247618751318,0.7617292454737107,0.774482087264489,3063,1662,True,record_weighted_family_cluster_bootstrap
+Static,all,z_mae,0.4277015346070078,0.4209043754739649,0.4335592721422744,3063,1662,True,record_weighted_family_cluster_bootstrap
+Static,all,top10_ap,0.6571306899778864,0.6498630786188294,0.6675170605254341,3063,1662,True,record_weighted_family_cluster_bootstrap
+Static,all,mae,0.6773283014111061,0.5899666193477974,0.7796744602231129,3063,1662,True,record_weighted_family_cluster_bootstrap
+Static,all,rmse,0.9130786121791327,0.8043158011523373,1.032547941428283,3063,1662,True,record_weighted_family_cluster_bootstrap
+Static,all,bias,-0.0514198053944912,-0.1286507549039549,0.007710913863626656,3063,1662,True,record_weighted_family_cluster_bootstrap
+AA,all,spearman,0.25636387896890833,0.24546634944862356,0.2657850036042967,3063,1662,True,record_weighted_family_cluster_bootstrap
+AA,all,pearson,0.1991450711445018,0.18870564521916677,0.2080428114401926,3063,1662,True,record_weighted_family_cluster_bootstrap
+AA,all,z_mae,0.9902611306782904,0.9826542419286425,0.99810244874476,3063,1662,True,record_weighted_family_cluster_bootstrap
+AA,all,top10_ap,0.1680527305401422,0.16328006517473562,0.17457216311326476,3063,1662,True,record_weighted_family_cluster_bootstrap
+AA,all,mae,0.9088715022058005,0.8125378536850939,1.0257818845408089,3063,1662,True,record_weighted_family_cluster_bootstrap
+AA,all,rmse,1.2740628702558987,1.1251100397351819,1.4384103132823436,3063,1662,True,record_weighted_family_cluster_bootstrap
+AA,all,bias,-0.19211634581033052,-0.35046241121100924,-0.047824352512761306,3063,1662,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,all,spearman,0.8179338802402113,0.7927098613137745,0.8429613111079389,3063,1662,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,all,pearson,0.7725682736711178,0.7087468073139958,0.8344531295718272,3063,1662,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,all,z_mae,0.36969042560004733,0.3325286788193133,0.40696168977803127,3063,1662,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,all,top10_ap,0.7103846193578057,0.6563280102056674,0.763129799891653,3063,1662,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,all,mae,0.5599728859487573,0.5249495425052662,0.5872463798874239,3063,1662,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,all,rmse,0.8781957997334563,0.7944243230020787,0.9518348871652746,3063,1662,True,record_weighted_family_cluster_bootstrap
+DynaProt-M,all,bias,0.0728922605073898,-0.039718694693909026,0.17854903147351314,3063,1662,True,record_weighted_family_cluster_bootstrap
+ANM,all,spearman,0.715061499255842,0.6713998189923192,0.7601894940412178,3063,1662,True,record_weighted_family_cluster_bootstrap
+ANM,all,pearson,0.7001925567520068,0.6624325811914178,0.7383166732994669,3063,1662,True,record_weighted_family_cluster_bootstrap
+ANM,all,z_mae,0.450134494388264,0.41141661490746456,0.4898036856437753,3063,1662,True,record_weighted_family_cluster_bootstrap
+ANM,all,top10_ap,0.6316674631264144,0.5924987114215264,0.6706849089585233,3063,1662,True,record_weighted_family_cluster_bootstrap
+GNM,all,spearman,0.6628044640136954,0.6142981048228568,0.712131106500012,3063,1662,True,record_weighted_family_cluster_bootstrap
+GNM,all,pearson,0.6785215099500784,0.6423865695083866,0.712608166914035,3063,1662,True,record_weighted_family_cluster_bootstrap
+GNM,all,z_mae,0.48708557181822093,0.45481785311837153,0.5192978195707375,3063,1662,True,record_weighted_family_cluster_bootstrap
+GNM,all,top10_ap,0.6347487030610574,0.6008595307253285,0.6688197075823141,3063,1662,True,record_weighted_family_cluster_bootstrap
+FastProtFlex,all,spearman,0.7823084789097753,0.7754699645948999,0.7900712760997509,2633,1584,False,record_weighted_family_cluster_bootstrap
+FastProtFlex,all,pearson,0.7524720899037484,0.7415817930106214,0.7626848600749404,2633,1584,False,record_weighted_family_cluster_bootstrap
+FastProtFlex,all,z_mae,0.5069031552067863,0.4964673525313798,0.5168571365477143,2633,1584,False,record_weighted_family_cluster_bootstrap
+FastProtFlex,all,top10_ap,0.7017944139663854,0.6859802554951984,0.717845959905161,2633,1584,False,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),all,spearman,0.828062373132935,0.7843747408777166,0.8713948028670885,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),all,pearson,0.8483262227980815,0.8028927538539509,0.8931339697688339,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),all,z_mae,0.31895419473500164,0.2646347377397718,0.376513716264038,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),all,top10_ap,0.7757457316559914,0.721576987612905,0.8279982188686483,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),all,mae,0.4736912748464523,0.42113905763472714,0.5215561489624746,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),all,rmse,0.651475824136431,0.5883409346878699,0.7055891872606515,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (assembly),all,bias,0.20808908140011506,0.12320776094655267,0.29231358291970116,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),all,spearman,0.8478471627885799,0.8135774624469604,0.8812415020405032,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),all,pearson,0.8327207878030617,0.7720172980094049,0.8908848247960263,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),all,z_mae,0.31163703837973805,0.2600495391149291,0.36791383819188445,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),all,top10_ap,0.7552745959666204,0.6789256240019367,0.8256982375747466,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),all,mae,0.5367911099339515,0.43630418050859887,0.6352532827676253,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),all,rmse,0.7866893264521645,0.6359178581907158,0.9377059355592732,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-2.1 (chains),all,bias,0.27367215427786695,0.14082388848539987,0.4117974355408504,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),all,spearman,0.7597656290472359,0.7298166440536351,0.7907388905257138,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),all,pearson,0.7851987132500186,0.7466198634319008,0.8239496383120409,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),all,z_mae,0.40723239759566043,0.364989094296226,0.44919332489352753,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),all,top10_ap,0.6899223847913704,0.6493173161325889,0.7309810493537124,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),all,mae,0.519404266793133,0.49955801250973636,0.5435698811849905,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),all,rmse,0.7255932033881977,0.7002748863086639,0.7623762493930513,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (assembly),all,bias,-0.02022135493894242,-0.12589500063038955,0.07659507201933621,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),all,spearman,0.7890704748052553,0.7774485517171885,0.8021570708044319,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),all,pearson,0.7745444581549211,0.7217833132806221,0.8251689653487209,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),all,z_mae,0.38524477338536317,0.3581489188021716,0.41125915237817545,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),all,top10_ap,0.6866262853625615,0.6400013047388785,0.7316828559613268,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),all,mae,0.5227417414217055,0.5022973823809419,0.5525323647032037,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),all,rmse,0.7779889999958549,0.741681363650938,0.80570455878973,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-1.0 (chains),all,bias,-0.010174008829177104,-0.11302020132218406,0.08579488840975234,3063,1662,True,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),all,spearman,0.8246703260582992,0.811515108185638,0.8366297153395152,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),all,pearson,0.8548066309115618,0.8405562955818595,0.8690434445713607,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),all,z_mae,0.34064235918247876,0.3236057533890925,0.3583271289395742,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),all,top10_ap,0.7624136504488084,0.7402690298365586,0.7836235759846026,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),all,mae,0.4692739449659684,0.4029334621914165,0.5458159968741845,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),all,rmse,0.6454126907102713,0.5716626119104383,0.7349019422956103,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (assembly),all,bias,-0.03415192874352502,-0.11964032952291061,0.050144461288022316,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),all,spearman,0.8246703260582992,0.8113818970063282,0.8364552383227788,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),all,pearson,0.8548066309115618,0.8411551357841796,0.8678803511981472,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),all,z_mae,0.34064235918247876,0.3223857718952597,0.35796793273669214,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),all,top10_ap,0.7624136504488084,0.7401591281540342,0.7835613484236779,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),all,mae,0.4692739449659684,0.40408301913982747,0.5417335651077988,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),all,rmse,0.6454126907102713,0.5724035215381731,0.7302740135331751,270,228,False,record_weighted_family_cluster_bootstrap
+backflip-1.0-seq (chains),all,bias,-0.03415192874352502,-0.11916620816535092,0.045718181059339294,270,228,False,record_weighted_family_cluster_bootstrap

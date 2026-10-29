@@ -1,0 +1,29 @@
+{
+  "core_claim": "Frozen model predictions preselect sameAA extrema, MD angular curves verify the selected actual angle ranges",
+  "panels": {
+    "a": "chi1 MD",
+    "b": "chi2 MD",
+    "c": "chi3 MD"
+  },
+  "dimensions_mm": [
+    183,
+    86
+  ],
+  "all_points": 432,
+  "all_histogram_rows": 432,
+  "all_six_prediction_candidates_retained": true,
+  "source_sha256": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\free_energy_curves_v27_20261014\\case_curves\\histograms_501frames.csv": "e90410df3e05ad5004861601e9f8b7272da0889c589d056ef4a13b4a5e20dbad",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\free_energy_curves_v27_20261014\\case_curves\\selection_inventory_with_MD_outcomes.csv": "8c7ed6d08dfd31b78c4b1094c73e3b58bf3054ece6cf4d071b751a62160e564d"
+  },
+  "minimum_font_pt": 7.5,
+  "text_outside_canvas": [],
+  "case_selection": "Original frozen model argminQ41/argmaxQ2 unchanged; noMDoutcome selection",
+  "removed_panel": "dremoved byuser; originalpopulationdataandstatisticalresultsretained",
+  "output_sha256": {
+    "png": "98ce7bad426807f8e05a885f6ae3a62e31ce73cbeb827115a483d80d48f3dc2e",
+    "pdf": "9bb4e0be6da5bb751173e37b59c1693eda1fb466f8269c67df2e3638b395fcfd",
+    "svg": "cdbc81d0d0fe2c623f4ae69aee7805251b094e16eb6e74947399d00d71e3f1ed"
+  },
+  "visual_review": "passed_originalPNGandWordpage17; a-csingle row; nolegend/titleoverlap; alloriginal432MDpointsandlowFstarbarsunchanged"
+}

@@ -1,0 +1,844 @@
+[
+  {
+    "stem": "benchmark_current",
+    "png": {
+      "sha256": "01a4936a15611e3af38e603cc95cc1cf6ac46143638a663c03d71667b4edd39f",
+      "pixels": [
+        2161,
+        1665
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "physical_mm": [
+        182.96503259673187,
+        140.9702819405639
+      ]
+    },
+    "pdf": {
+      "sha256": "fff682c6f2ec9457af307f7d09e58bc74f0bd03838c159062853b6d01c894639",
+      "pages": [
+        {
+          "page": 1,
+          "width_pt": 518.7401574803,
+          "height_pt": 399.6850393701,
+          "width_mm": 182.9999999999947,
+          "height_mm": 141.0000000000075,
+          "text_characters": 984,
+          "minimum_text_size_pt": 6.3,
+          "maximum_text_size_pt": 8.5,
+          "font_size_basis": "pypdf actual PDF Tf text operator with combined graphics/text matrix scale",
+          "font_size_text_run_counts": {
+            "6.3": 29,
+            "6.5": 30,
+            "6.7": 6,
+            "7.0": 2,
+            "8.5": 6
+          },
+          "minimum_pdfplumber_bbox_size_raw": 6.299999999999997,
+          "rotated_text_characters": 0,
+          "font_runs": [
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Spearman ρ ↑",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FlexPPI",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FlexPPI · intra",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-2.1 · assembly",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-2.1 · chains",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-1 · assembly",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-1 · chains",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-1 + seq · assembly",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-1 + seq · chains",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "DynaProt-M",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FastProtFlex",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "ANM",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "GNM",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Static features",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Residue-type mean",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "a",
+              "declared_Tf_pt": 8.5,
+              "effective_size_pt": 8.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "High-RMSF average precision ↑",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "b",
+              "declared_Tf_pt": 8.5,
+              "effective_size_pt": 8.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "RMSF MAE (Å) ↓",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "relative score",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "relative score",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "relative score",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "c",
+              "declared_Tf_pt": 8.5,
+              "effective_size_pt": 8.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Spearman ρ ↑",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FlexPPI",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FlexPPI · intra",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-2.1 · assembly",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-2.1 · chains",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-1 · assembly",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-1 · chains",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-1 + seq · assembly",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-1 + seq · chains",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "DynaProt-M",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FastProtFlex",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "ANM",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "GNM",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Static features",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Residue-type mean",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "d",
+              "declared_Tf_pt": 8.5,
+              "effective_size_pt": 8.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "High-RMSF average precision ↑",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "e",
+              "declared_Tf_pt": 8.5,
+              "effective_size_pt": 8.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "RMSF MAE (Å) ↓",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "relative score",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "relative score",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "relative score",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "f",
+              "declared_Tf_pt": 8.5,
+              "effective_size_pt": 8.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "Proteins",
+              "declared_Tf_pt": 7.0,
+              "effective_size_pt": 7.0,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "n = 2,203 records · 1,500 families",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Protein complexes",
+              "declared_Tf_pt": 7.0,
+              "effective_size_pt": 7.0,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "n = 860 records · 261 families",
+              "declared_Tf_pt": 6.5,
+              "effective_size_pt": 6.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "14 completed entries · same 3,063 records · mixed training exposure",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Points: mean across records; intervals: 95% family-cluster bootstrap.",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FlexPPI configurations",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Published learned models",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Graph / simple controls",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            }
+          ],
+          "characters_outside_page": 0
+        }
+      ],
+      "fonts": [
+        {
+          "page": 1,
+          "resource": "/F1",
+          "basefont": "/ELUGPM+ArialMT",
+          "subtype": "/Type0",
+          "descendant_subtype": "/CIDFontType2",
+          "embedded": true,
+          "embedded_stream_keys": [
+            "/FontFile2"
+          ],
+          "embedded_bytes": 50368
+        },
+        {
+          "page": 1,
+          "resource": "/F2",
+          "basefont": "/ELUGPM+Arial-BoldMT",
+          "subtype": "/Type0",
+          "descendant_subtype": "/CIDFontType2",
+          "embedded": true,
+          "embedded_stream_keys": [
+            "/FontFile2"
+          ],
+          "embedded_bytes": 20748
+        }
+      ]
+    },
+    "svg": {
+      "sha256": "e874f9f43d1cdc86827b0b50a7bd000ed301fcf90d5d2f39c78e790bbb052083"
+    }
+  },
+  {
+    "stem": "benchmark_distributions_current",
+    "png": {
+      "sha256": "36709cab40a2eb34b13c1be7cb973937e94599167c0869542f55920458d2000f",
+      "pixels": [
+        2161,
+        921
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "physical_mm": [
+        182.96503259673187,
+        77.97815595631191
+      ]
+    },
+    "pdf": {
+      "sha256": "e6cd78b10775bba5544dc459eb0e220e4ccbcd39b04c55eff30d472adc45ec77",
+      "pages": [
+        {
+          "page": 1,
+          "width_pt": 518.7401574803,
+          "height_pt": 221.1023622047,
+          "width_mm": 182.9999999999947,
+          "height_mm": 77.99999999999139,
+          "text_characters": 285,
+          "minimum_text_size_pt": 6.3,
+          "maximum_text_size_pt": 8.5,
+          "font_size_basis": "pypdf actual PDF Tf text operator with combined graphics/text matrix scale",
+          "font_size_text_run_counts": {
+            "6.3": 19,
+            "6.7": 3,
+            "7.0": 2,
+            "8.5": 2
+          },
+          "minimum_pdfplumber_bbox_size_raw": 1.4873999999999938,
+          "rotated_text_characters": 19,
+          "font_runs": [
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Per-record Spearman ρ",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Fraction of records",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "a",
+              "declared_Tf_pt": 8.5,
+              "effective_size_pt": 8.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "Proteins (n = 2,203)",
+              "declared_Tf_pt": 7.0,
+              "effective_size_pt": 7.0,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "Per-record Spearman ρ",
+              "declared_Tf_pt": 6.7,
+              "effective_size_pt": 6.7,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "0.5",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "1.0",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "b",
+              "declared_Tf_pt": 8.5,
+              "effective_size_pt": 8.5,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+Arial-BoldMT"
+            },
+            {
+              "text": "Protein complexes (n = 860)",
+              "declared_Tf_pt": 7.0,
+              "effective_size_pt": 7.0,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "All records · six predeclared methods · mixed training exposure",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FlexPPI",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-2.1 · assembly",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "BackFlip-2.1 · chains",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "DynaProt-M",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "FastProtFlex",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            },
+            {
+              "text": "ANM",
+              "declared_Tf_pt": 6.3,
+              "effective_size_pt": 6.3,
+              "graphics_text_scale": 1.0,
+              "font": "/ELUGPM+ArialMT"
+            }
+          ],
+          "characters_outside_page": 0
+        }
+      ],
+      "fonts": [
+        {
+          "page": 1,
+          "resource": "/F1",
+          "basefont": "/ELUGPM+ArialMT",
+          "subtype": "/Type0",
+          "descendant_subtype": "/CIDFontType2",
+          "embedded": true,
+          "embedded_stream_keys": [
+            "/FontFile2"
+          ],
+          "embedded_bytes": 42964
+        },
+        {
+          "page": 1,
+          "resource": "/F2",
+          "basefont": "/ELUGPM+Arial-BoldMT",
+          "subtype": "/Type0",
+          "descendant_subtype": "/CIDFontType2",
+          "embedded": true,
+          "embedded_stream_keys": [
+            "/FontFile2"
+          ],
+          "embedded_bytes": 15220
+        }
+      ]
+    },
+    "svg": {
+      "sha256": "289bd3891e7dfdb8317772a5ab002c2d3c690635b11873ea0176548e45e52ae5"
+    }
+  }
+]

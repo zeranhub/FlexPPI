@@ -1,0 +1,117 @@
+{
+  "sources": [
+    {
+      "original": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v107_soft_alpha_overlay\\figure3\\source_data\\cam_all25.csv",
+      "frozen": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v108_dual_axis_case_profiles\\source_inputs\\cam_all25.csv",
+      "sha256": "ebc5700ffcb1708f94d632816e854ea38e5397e7edba35d2d27b59503b36c473"
+    },
+    {
+      "original": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v93_dual_case_entropy\\ubiquitin_audit\\original_frozen_Full_A003R.npz",
+      "frozen": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v108_dual_axis_case_profiles\\source_inputs\\original_frozen_Full_A003R.npz",
+      "sha256": "b8a764739993e3bce18dedb3cff493c50a1a52613a08baac16f1803c4edabb5a"
+    },
+    {
+      "original": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v93_dual_case_entropy\\ubiquitin_audit\\original_frozen_labels_A003R.npz",
+      "frozen": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v108_dual_axis_case_profiles\\source_inputs\\original_frozen_labels_A003R.npz",
+      "sha256": "a528abc00e9df39370da04bf76957acb471b9b900ca66e53ccdde955e7d409c2"
+    },
+    {
+      "original": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v107_soft_alpha_overlay\\figure3\\source_data\\ubiquitin_72_position_profile_with_original_mask.csv",
+      "frozen": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v108_dual_axis_case_profiles\\source_inputs\\ubiquitin_72_position_profile_with_original_mask.csv",
+      "sha256": "90feb25545703d3e56347a627e2cf3461b08d493f4cf82e62ad89cce1c4a87bc"
+    }
+  ],
+  "statistics": {
+    "CaMKI": {
+      "positions": 25,
+      "metrics": {
+        "RMSF": {
+          "valid_positions": 25,
+          "masked_residues": [],
+          "MAE": 0.1148592012,
+          "MD_range": [
+            0.45308363,
+            2.1129477
+          ],
+          "Full_range": [
+            0.44702804,
+            2.123881
+          ]
+        },
+        "Hchi": {
+          "valid_positions": 21,
+          "masked_residues": [
+            299,
+            306,
+            309,
+            311
+          ],
+          "MAE": 0.25441792985714284,
+          "MD_range": [
+            0.020929623,
+            3.751642
+          ],
+          "Full_range": [
+            0.47041768,
+            3.8425083
+          ]
+        }
+      }
+    },
+    "Ubiquitin": {
+      "positions": 72,
+      "metrics": {
+        "RMSF": {
+          "valid_positions": 72,
+          "masked_residues": [],
+          "MAE": 0.03981401936875449,
+          "MD_range": [
+            0.36548861861228943,
+            1.210862159729004
+          ],
+          "Full_range": [
+            0.3808080554008484,
+            1.0788393020629883
+          ]
+        },
+        "Hchi": {
+          "valid_positions": 66,
+          "masked_residues": [
+            10,
+            28,
+            35,
+            46,
+            47,
+            53
+          ],
+          "MAE": 0.07953050649754886,
+          "MD_range": [
+            0.0,
+            3.888474464416504
+          ],
+          "Full_range": [
+            0.00013501424109563231,
+            3.924276351928711
+          ]
+        }
+      }
+    }
+  },
+  "protocol": {
+    "CaMKI": "existing family-heldout fold1, seed7, epoch40, corresponding single Full checkpoint",
+    "Ubiquitin": "existing chemical_identity_corrected_v1 heldout fold0, seed7, epoch40, corresponding single Full checkpoint"
+  },
+  "new_model_or_MD_run": false,
+  "color_semantics": "blue RMSF / ochre Hchi; solid Full / dashed MD",
+  "shared_limits": {
+    "RMSF_A": [
+      0,
+      2.4
+    ],
+    "Hchi_nats": [
+      0,
+      4.5
+    ]
+  },
+  "invalid_Hchi": "raw values retained; both MD and Full curves have NaN gaps under original mask"
+}

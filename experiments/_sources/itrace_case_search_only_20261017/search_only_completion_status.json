@@ -1,0 +1,35 @@
+{
+  "status": "candidate_search_and_existing_model_measurements_complete",
+  "manuscript_modified": false,
+  "SB27_existing_content_preserved": true,
+  "manuscript_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v40_20261017_中文修订_TCR识别环境变化实例_三线表.docx",
+  "manuscript_SHA256": "bd9851a0f6dabdeb6f4a7c2fbbe9fe0dd20ec0820a156578db7f624cd990f5ca",
+  "all_ITrace_in_test": true,
+  "primary_ITrace_training_records": 0,
+  "old_strict_ITrace_training_records": 0,
+  "biological_series": 12,
+  "direct_biological_contrasts": 17,
+  "structures_fresh_inferred": 42,
+  "existing_models_fresh_inferred": 2,
+  "new_forward_passes": 84,
+  "all_unique_PDB_pair_comparisons": 67,
+  "region_metric_model_rows": 8160,
+  "existing_MD_trajectories_rechecked": 57,
+  "new_training": 0,
+  "new_MD_production": 0,
+  "max_primary_fresh_prediction_error_vs_previous_cache": 0.0,
+  "prioritized_backbone_case": [
+    "7OW5",
+    "7OW6"
+  ],
+  "prioritized_sidechain_case": [
+    "3QDM",
+    "3QEQ"
+  ],
+  "secondary_backbone_case": [
+    "7Q99",
+    "7Q9A"
+  ],
+  "report": "ITrace内部候选_双模型复测结论_不改论文.md",
+  "conclusion": "ITrace contains informative biological contrasts. KRAS G12D backbone and DMF4 pMHC-interface side-chain responses reproduce positive change-MAE improvements in both models; neither is a uniformly strong two-output result across every region."
+}

@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "training_records": 2430,
+  "removed_records": 633,
+  "external_records": 32,
+  "configuration": {
+    "loss": "squared_error",
+    "learning_rate": 0.07,
+    "max_iter": 120,
+    "max_leaf_nodes": 31,
+    "max_depth": null,
+    "min_samples_leaf": 50,
+    "l2_regularization": 1.0,
+    "max_bins": 63,
+    "early_stopping": false,
+    "random_state": 7
+  },
+  "family_freeze_sha256": "1a816ad07446dad9775bddf7de6c99f62cdf7199a785216ad3d48a80d25d9e27",
+  "training_manifest_sha256": "fb3c8c56468ce3bfffb9808c9b35be547d5797c7b867f8b0d150344325812a22",
+  "reference_hashes": {
+    "training_features.npz": "a5b1c00bba40e4633b3c9f9b5e6d7f69f06c7c953bda9322ff16f19f32e7b55f",
+    "training_schema.json": "0c7c7c6906336234c2e1bcc3474e7d5fba25c753361b1a0c3142a0a0cbfa4c63",
+    "external_features.npz": "383b5a59d1fc1885c3178aecee094a18f69b58f49ae5d16ed3d557a600f7d704",
+    "external_schema.json": "8305438ce58ef8b7090b6a5bee1be95899e895f06d79cae7b622c7ca8616fcda"
+  },
+  "code_sha256": "236468d1ddae59d5c49adc6edb10ccd3c485465c67d41c5ea0bbf6e24716f138",
+  "feature_code_sha256": "84d62715f55627dae3a24dd3f60632062295abf1c44f3da505bfcc2aeb5d30aa",
+  "no_external_tuning": true,
+  "independent_external_family_components": 1,
+  "confidence_intervals": "No independent-family CI or p-value",
+  "jobs": [
+    {
+      "metric": "rmsf",
+      "train_residues": 625577,
+      "seconds": 10.784608840942383
+    },
+    {
+      "metric": "chi_entropy",
+      "train_residues": 533074,
+      "seconds": 11.908355236053467
+    }
+  ],
+  "seconds": 22.998611211776733,
+  "valid_external": [
+    18748,
+    16265
+  ]
+}

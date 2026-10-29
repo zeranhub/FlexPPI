@@ -1,0 +1,293 @@
+{
+  "schema_version": "1.0",
+  "session_type": "beginner_start",
+  "ok": true,
+  "state": "awaiting_scientific_confirmation",
+  "source": {
+    "file_name": "b_camki_rmsf.csv",
+    "sha256": "63448cee6a43f802a6dfe41c53d7329ad6cdc58151bc445fe0b57365d0703261",
+    "size_bytes": 944,
+    "format": "csv",
+    "row_count": 25,
+    "column_count": 4,
+    "bytes_unchanged": true
+  },
+  "column_roles": [
+    {
+      "name": "CaMKI residue",
+      "kind": "numeric",
+      "semantic_roles": [
+        "residual"
+      ],
+      "missing_count": 0
+    },
+    {
+      "name": "MD RMSF (A)",
+      "kind": "numeric",
+      "semantic_roles": [
+        "未识别，需结合科研语境确认"
+      ],
+      "missing_count": 0
+    },
+    {
+      "name": "Full RMSF (A)",
+      "kind": "numeric",
+      "semantic_roles": [
+        "未识别，需结合科研语境确认"
+      ],
+      "missing_count": 0
+    },
+    {
+      "name": "Intra RMSF (A)",
+      "kind": "numeric",
+      "semantic_roles": [
+        "未识别，需结合科研语境确认"
+      ],
+      "missing_count": 0
+    }
+  ],
+  "detected_layouts": [
+    "numeric_xy",
+    "numeric_wide"
+  ],
+  "intent": "Compare MD Full and Intra RMSF across the native CaMKI residue sequence",
+  "recommendation": {
+    "top_candidate": {
+      "template_id": "raw_summary",
+      "template_name": "原始点汇总图",
+      "score": 0.7928,
+      "requires_column_confirmation": false,
+      "reasons": [
+        "模板内部数据校验通过，列识别置信度 0.98。",
+        "纯数值宽表可保留每个原始观测和组中位数。"
+      ],
+      "warnings": []
+    },
+    "alternatives": [
+      {
+        "template_id": "violin",
+        "template_name": "小提琴分布图",
+        "score": 0.7928,
+        "requires_column_confirmation": false,
+        "reasons": [
+          "模板内部数据校验通过，列识别置信度 0.98。",
+          "每组观测数量足以展示分布形状与箱线摘要。"
+        ],
+        "warnings": []
+      },
+      {
+        "template_id": "raincloud",
+        "template_name": "Raincloud 原始分布图",
+        "score": 0.7328,
+        "requires_column_confirmation": false,
+        "reasons": [
+          "模板内部数据校验通过，列识别置信度 0.98。",
+          "纯数值宽表可用半小提琴、全部原始点与均值 ± 1 SD 展示分布。"
+        ],
+        "warnings": []
+      }
+    ],
+    "auto_selection_gate": {
+      "allowed": false,
+      "selected_template_id": null,
+      "top_score": 0.7928,
+      "margin": 0.0,
+      "required_score": 0.84,
+      "required_margin": 0.13,
+      "gate_reasons": [
+        "top_score_below_threshold",
+        "candidate_margin_too_small"
+      ],
+      "meaning_zh": "不能自动选定模板，需要用户确认图表类型或列含义。"
+    }
+  },
+  "requires_scientific_confirmation": true,
+  "confirmation_questions": [
+    {
+      "id": "scientific_purpose",
+      "required": true,
+      "question_zh": "请用一句话说明这张图要传达的科学结论、比较目的或读图重点。"
+    },
+    {
+      "id": "template_choice",
+      "required": true,
+      "question_zh": "当前识别置信度不足，请从候选中确认图表类型：原始点汇总图（raw_summary）、小提琴分布图（violin）、Raincloud 原始分布图（raincloud）。"
+    },
+    {
+      "id": "column_meanings",
+      "required": true,
+      "question_zh": "请确认这些列在实验中的含义及 X/Y/分组角色：MD RMSF (A)、Full RMSF (A)、Intra RMSF (A)。"
+    },
+    {
+      "id": "semantic_element_checklist",
+      "required": true,
+      "question_zh": "请核对元素清单：每列的用途、哪些元素需要绘制、哪些列只用于计算或验证、哪些列保留但不显示；确认正确后才能冻结绘图方案。"
+    }
+  ],
+  "semantic_understanding": {
+    "schema_version": "1.0",
+    "ok": true,
+    "state": "awaiting_semantic_confirmation",
+    "source": {
+      "file_name": "b_camki_rmsf.csv",
+      "sha256": "63448cee6a43f802a6dfe41c53d7329ad6cdc58151bc445fe0b57365d0703261",
+      "columns": [
+        "CaMKI residue",
+        "MD RMSF (A)",
+        "Full RMSF (A)",
+        "Intra RMSF (A)"
+      ],
+      "bytes_unchanged": true
+    },
+    "template": {
+      "id": "raw_summary",
+      "name": "原始点汇总图"
+    },
+    "understanding": {
+      "domain": {
+        "family": "raw_summary",
+        "mode": "wide_raw",
+        "confidence": 0.98,
+        "source_adapter_hint": "editaplot_raw_summary"
+      },
+      "proposal_hash": "93783a84630512b2004ee5537057742a8d625cfb9d3cc6f0fcdaa302575ab052",
+      "column_decisions": [
+        {
+          "item_id": "source_000",
+          "item_type": "source_column",
+          "source_column": "CaMKI residue",
+          "semantic_role": "series",
+          "disposition": "render_primary",
+          "confidence": 0.98,
+          "evidence_codes": [
+            "template_role_inference"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        },
+        {
+          "item_id": "source_001",
+          "item_type": "source_column",
+          "source_column": "MD RMSF (A)",
+          "semantic_role": "series",
+          "disposition": "render_primary",
+          "confidence": 0.98,
+          "evidence_codes": [
+            "template_role_inference"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        },
+        {
+          "item_id": "source_002",
+          "item_type": "source_column",
+          "source_column": "Full RMSF (A)",
+          "semantic_role": "series",
+          "disposition": "render_primary",
+          "confidence": 0.98,
+          "evidence_codes": [
+            "template_role_inference"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        },
+        {
+          "item_id": "source_003",
+          "item_type": "source_column",
+          "source_column": "Intra RMSF (A)",
+          "semantic_role": "series",
+          "disposition": "render_primary",
+          "confidence": 0.98,
+          "evidence_codes": [
+            "template_role_inference"
+          ],
+          "alternatives": [],
+          "decision_zh": "主要图形元素：默认绘制"
+        }
+      ],
+      "derived_items": [],
+      "figure_elements": [
+        {
+          "element_id": "series_000",
+          "element_kind": "line",
+          "data_item_ids": [
+            "source_000"
+          ],
+          "required": true,
+          "visible_by_default": true,
+          "axis": "left",
+          "legend_label": "CaMKI residue"
+        },
+        {
+          "element_id": "series_001",
+          "element_kind": "line",
+          "data_item_ids": [
+            "source_001"
+          ],
+          "required": true,
+          "visible_by_default": true,
+          "axis": "left",
+          "legend_label": "MD RMSF (A)"
+        },
+        {
+          "element_id": "series_002",
+          "element_kind": "line",
+          "data_item_ids": [
+            "source_002"
+          ],
+          "required": true,
+          "visible_by_default": true,
+          "axis": "left",
+          "legend_label": "Full RMSF (A)"
+        },
+        {
+          "element_id": "series_003",
+          "element_kind": "line",
+          "data_item_ids": [
+            "source_003"
+          ],
+          "required": true,
+          "visible_by_default": true,
+          "axis": "left",
+          "legend_label": "Intra RMSF (A)"
+        }
+      ],
+      "ambiguities": []
+    },
+    "confirmation_gate": {
+      "required": true,
+      "can_confirm_now": true,
+      "uncertain_item_ids": [],
+      "blocking_ambiguity_ids": [],
+      "message_zh": "请核对：数据类型、每列用途、需要画出的元素、只用于计算/验证的列，以及明确不画的列。确认无误后，再把下面的确认对象交给 plan。",
+      "confirmation_payload_template": {
+        "proposal_hash": "93783a84630512b2004ee5537057742a8d625cfb9d3cc6f0fcdaa302575ab052",
+        "confirmed": true,
+        "approved_derived_item_ids": [],
+        "resolved_ambiguities": {}
+      }
+    },
+    "execution": {
+      "plan_created": false,
+      "render_started": false,
+      "origin_called": false
+    }
+  },
+  "professional_precomputed_notice": null,
+  "safe_defaults": {
+    "source_data": "只读检查；不修改、不补列、不覆盖原始文件。",
+    "helper_columns": "如绘图确有需要，只能在 Origin 工作簿内部创建 helper columns。",
+    "palette": "配色暂不锁定；模板和科学目的确认后再选择或接受色盲友好默认值。",
+    "origin": "数据识别阶段不调用 Origin；render 时直接测试本机 Automation 连接，失败只报告技术错误。",
+    "analysis_boundary": "不推断统计检验、误差语义、拟合参数或模型输出。"
+  },
+  "execution": {
+    "plan_created": false,
+    "render_started": false,
+    "origin_called": false
+  },
+  "next_step": {
+    "action": "collect_scientific_confirmations",
+    "message_zh": "请先回答上述确认问题；确认后 Skill 才能冻结绘图方案，随后再单独请求 Origin 渲染。"
+  }
+}

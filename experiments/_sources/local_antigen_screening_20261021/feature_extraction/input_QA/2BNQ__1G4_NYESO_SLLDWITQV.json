@@ -1,0 +1,31 @@
+{
+  "input_id": "2BNQ__1G4_NYESO_SLLDWITQV",
+  "candidate_id": "1G4_NYESO_SLLDWITQV",
+  "template_pdb": "2BNQ",
+  "static": {
+    "static_complete_pdb": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\static_complete\\2BNQ__1G4_NYESO_SLLDWITQV\\complete_heavy_atoms.pdb",
+    "static_sha256": "d79e5ceb7e26f379971db926a40a7cf055e26451c706a4df7e3b94996f2130c0",
+    "fixed_input_sha256": "4e07695d637cbecb7d422ee22f3dd9a8f9abe106f555cff9c93286ceb6cf331e",
+    "NPZ": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\predictions\\fixed_backbone\\2BNQ__1G4_NYESO_SLLDWITQV\\prediction.npz",
+    "NPZ_sha256": "390885a68eaece0bd10e7ebd3f7f8ca794ab645539f4b1bc818a800df6fc4179",
+    "static_structure_QC": {
+      "peptide_sequence_matches": true,
+      "chain_roles_present": true,
+      "canonical_missing": [],
+      "all_canonical_heavy_atoms_complete": true,
+      "unsupported_atom_elements": []
+    },
+    "backbone_comparison": {
+      "passed": true,
+      "max_NCAO_coordinate_difference_A": 0.0,
+      "errors": []
+    },
+    "fixed_input_nonprotein_atoms_excluded_like_model_parser_count": 0,
+    "fixed_input_nonprotein_atoms_first3": [],
+    "unexpected_nonprotein_heavy_atoms": [],
+    "static_eligible": true
+  },
+  "preparation_errors": [],
+  "dynamic_errors": [],
+  "region_id": "2BNQ_U8A_b84cd37e5b9e"
+}

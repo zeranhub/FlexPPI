@@ -1,0 +1,54 @@
+{
+  "status": "passed_independent_recomputation",
+  "timestamp_utc": "2026-10-21T23:52:31.805101+00:00",
+  "checks": [
+    {
+      "setting": "primary",
+      "folder": "results_primary",
+      "candidate_rows": 13160,
+      "site_rows": 189,
+      "all_yields_independently_recomputed": true
+    },
+    {
+      "setting": "top_decile",
+      "folder": "results_top_decile",
+      "candidate_rows": 13160,
+      "site_rows": 189,
+      "all_yields_independently_recomputed": true
+    },
+    {
+      "setting": "proteinmpnn002",
+      "folder": "results_proteinmpnn002",
+      "candidate_rows": 13160,
+      "site_rows": 189,
+      "all_yields_independently_recomputed": true
+    },
+    {
+      "setting": "three_dose_AUC",
+      "folder": "results_three_dose_AUC",
+      "candidate_rows": 12080,
+      "site_rows": 108,
+      "all_yields_independently_recomputed": true
+    },
+    {
+      "setting": "primary",
+      "folder": "results_controls",
+      "candidate_rows": 35000,
+      "site_rows": 189,
+      "all_yields_independently_recomputed": true
+    },
+    {
+      "setting": "primary",
+      "folder": "results_stronger_baselines",
+      "candidate_rows": 16800,
+      "site_rows": 189,
+      "all_yields_independently_recomputed": true
+    }
+  ],
+  "total_metric_rows_recomputed": 104413,
+  "threshold_sensitivity_selection_identical": true,
+  "all_initial_candidate_ids_and_labels_matched": true,
+  "all_feedback_traces_no_within_batch_updates": true,
+  "auditor_sha256": "c6a1472f2fe101edbce07914f3233f5fcc76921cb2380947308a6f602c11f037",
+  "not_a_test_of_prospective_wet_lab_efficacy": true
+}

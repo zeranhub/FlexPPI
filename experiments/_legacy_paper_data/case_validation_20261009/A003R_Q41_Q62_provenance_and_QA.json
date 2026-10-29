@@ -1,0 +1,223 @@
+{
+  "status": "exact_label_reproduction_passed",
+  "system": "2QHO ubiquitin-EDD1 UBA, DynaRepo A003R",
+  "model": "performance_first_v2_atlas_hchi_v1 fold 0 epoch 40, existing OOF prediction",
+  "mapping": [
+    {
+      "name": "Q41",
+      "chain": "A",
+      "author_residue_number": 41,
+      "zero_based_cache_index": 40,
+      "mda_resindex": 40,
+      "mda_segid": "A",
+      "mda_resid": 41,
+      "residue_type": "GLN",
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "OE1"
+        ]
+      ],
+      "chi_atom_zero_based_indices": [
+        [
+          638,
+          640,
+          642,
+          645
+        ],
+        [
+          640,
+          642,
+          645,
+          648
+        ],
+        [
+          642,
+          645,
+          648,
+          649
+        ]
+      ]
+    },
+    {
+      "name": "Q62",
+      "chain": "A",
+      "author_residue_number": 62,
+      "zero_based_cache_index": 61,
+      "mda_resindex": 61,
+      "mda_segid": "A",
+      "mda_resid": 62,
+      "residue_type": "GLN",
+      "chi_atom_names": [
+        [
+          "N",
+          "CA",
+          "CB",
+          "CG"
+        ],
+        [
+          "CA",
+          "CB",
+          "CG",
+          "CD"
+        ],
+        [
+          "CB",
+          "CG",
+          "CD",
+          "OE1"
+        ]
+      ],
+      "chi_atom_zero_based_indices": [
+        [
+          980,
+          982,
+          984,
+          987
+        ],
+        [
+          982,
+          984,
+          987,
+          990
+        ],
+        [
+          984,
+          987,
+          990,
+          991
+        ]
+      ]
+    }
+  ],
+  "source_paths": {
+    "structure": "D:\\data\\dynarepo_non_nucleic_full\\A003R\\structure.pdb",
+    "trajectory": "D:\\data\\dynarepo_non_nucleic_full\\A003R\\trajectory.xtc",
+    "labels": "E:\\Project\\FlexPPI\\artifacts\\data\\dynarepo_labels\\A003R.npz",
+    "oof": "E:\\Project\\FlexPPI\\artifacts\\evaluation_atlas_hchi_v1\\oof\\fold_0\\A003R_f21d49c5140a.npz",
+    "label_implementation": "E:\\Project\\FlexPPI\\src\\flexppi\\data\\labels.py",
+    "chi_definitions": "E:\\Project\\FlexPPI\\src\\flexppi\\constants.py"
+  },
+  "source_sha256": {
+    "structure": "4b2206ae6e9b71d9b8659e661d6825320eebae563ec4e7c2643a43a5225bf1f5",
+    "trajectory": "9d5ffa6a837e7400a5ed571fa9ba2cbeb9838606449aa5c2d145477d725510df",
+    "labels": "662baac980c8df395d05480a0ca84b05f57e0f1457ed32301a5eff0be4f65043",
+    "oof": "7e33a246c18db86cd4931f68c0114c62a7740ab8d2ece8a9d7006b357fe14c4b",
+    "label_implementation": "b4bd55066faffeebe76f3fcf8c3ad1f6541ab592445a98b58b18277cfbcd7f10",
+    "chi_definitions": "c7b9113bc2b2e43995a31c841df6a24ccda6a2f88faf9311085081fa96796e30"
+  },
+  "source_files_unchanged": true,
+  "runtime": {
+    "MDAnalysis": "2.7.0",
+    "numpy": "1.26.4"
+  },
+  "protocol": {
+    "source_trajectory_count": 1,
+    "file_frames": 5001,
+    "time_unit": "ps",
+    "dt_ps": 100.0,
+    "windows": [
+      [
+        0,
+        1000
+      ],
+      [
+        1000,
+        2000
+      ],
+      [
+        2000,
+        3000
+      ],
+      [
+        3000,
+        4000
+      ],
+      [
+        4000,
+        5000
+      ]
+    ],
+    "window_frames": 1000,
+    "stride": 1,
+    "label_frames": 5000,
+    "discarded_terminal_frame": "Frame 5000 at 500 ns retained in all-frame CSV, excluded from label windows by original function",
+    "binning": "clip(floor((angle+180)/120),0,2)",
+    "joint_code": "chi1_bin+3*chi2_bin+9*chi3_bin",
+    "entropy": "-sum(p*ln(p)); computed within each window, then float32 arithmetic mean",
+    "uncertainty": "Variance across five windows in the same trajectory; not independent MD replicas",
+    "pbc": "Original label function uses unwrapped local dihedral calculation without an explicit box; exact same implementation reused",
+    "max_local_bond_length_angstrom": 1.6888765096664429,
+    "max_dihedral_difference_with_box_degrees": 2.7266721559726648e-05,
+    "no_new_MD": true,
+    "no_new_inference": true,
+    "no_test_fitted_calibration": true
+  },
+  "summary": [
+    {
+      "residue": "Q41",
+      "zero_based_index": 40,
+      "n_label_windows": 5,
+      "n_frames_in_labels": 5000,
+      "n_frames_in_file": 5001,
+      "archived_md_rmsf": 0.4703448414802551,
+      "model_rmsf": 0.5030343532562256,
+      "recomputed_md_rmsf": 0.4703448712825775,
+      "rmsf_recompute_error": 2.9802322387695312e-08,
+      "archived_md_hchi": 1.8904883861541748,
+      "model_hchi": 1.8778992891311646,
+      "recomputed_md_hchi": 1.8904883861541748,
+      "hchi_recompute_error": 0.0,
+      "archived_hchi_window_variance": 0.003857341827824712,
+      "recomputed_hchi_window_variance": 0.003857341827824712,
+      "effective_joint_states_from_label": 6.622602278614145,
+      "pooled_5000_frame_entropy": 1.9298184241155365,
+      "full_5001_frame_entropy": 1.9300335940533146,
+      "observed_pooled_joint_states": 15,
+      "dominant_joint_code": 16,
+      "dominant_joint_state_probability": 0.265,
+      "states_covering_90_percent": 7
+    },
+    {
+      "residue": "Q62",
+      "zero_based_index": 61,
+      "n_label_windows": 5,
+      "n_frames_in_labels": 5000,
+      "n_frames_in_file": 5001,
+      "archived_md_rmsf": 0.6144267320632935,
+      "model_rmsf": 0.5917052030563354,
+      "recomputed_md_rmsf": 0.6144266128540039,
+      "rmsf_recompute_error": -1.1920928955078125e-07,
+      "archived_md_hchi": 2.63106632232666,
+      "model_hchi": 2.666229486465454,
+      "recomputed_md_hchi": 2.63106632232666,
+      "hchi_recompute_error": 0.0,
+      "archived_hchi_window_variance": 0.014025140553712845,
+      "recomputed_hchi_window_variance": 0.014025140553712845,
+      "effective_joint_states_from_label": 13.88857170307438,
+      "pooled_5000_frame_entropy": 2.64840749892697,
+      "full_5001_frame_entropy": 2.6493312232035846,
+      "observed_pooled_joint_states": 27,
+      "dominant_joint_code": 3,
+      "dominant_joint_state_probability": 0.1912,
+      "states_covering_90_percent": 12
+    }
+  ],
+  "estimands": "Occupancy maps pool the five equal-size label windows (5000 frames). Their pooled entropy differs from mean window entropy; only mean window entropy is the archived target.",
+  "interpretation": "Two unchanged GLN residues have the same three chi definitions. Their different observed joint-direction populations verify different local side-chain freedom, and existing model outputs reproduce their Hchi difference.",
+  "figure": "Exploratory audit preview, not a final manuscript layout; all 27 possible bins shown with common color scale, no inferential tests or error bars"
+}

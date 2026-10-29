@@ -1,0 +1,54 @@
+{
+  "workflow": "author demo_full, auto retrieval, independent concepts, no old complete figure",
+  "source_images_supplied": false,
+  "plot_numbers_in_inventory": 853,
+  "reference_examples": 298,
+  "runner_adaptations": [
+    "experiment work_dir and journal style",
+    "absolute paths to unchanged reference images",
+    "two concurrent independent composition intents",
+    "no author agents/prompts modified"
+  ],
+  "files": [
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v98_structure_fill\\figure3\\source_data\\all_plotted_values.csv",
+      "sha256": "233dcbf5e9222b248d46db9f5b377bde605c0905877209bfb8b375543b1a6b21",
+      "bytes": 55836
+    },
+    {
+      "path": "C:\\Users\\DELL\\.cache\\flexppi-figure-tools\\run_paperbanana.py",
+      "sha256": "05b19f0c3738bf35e95421ecb655ad7c5ec246d4a9fbea3fd890e91da344a52e",
+      "bytes": 19269
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\paperbanana_from_scratch_20261027\\scientific_content.txt",
+      "sha256": "9e84de6a05767086d56d9a44ad88c2eb249be9cb4b04673e432a99a4d9e124e7",
+      "bytes": 32128
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\paperbanana_from_scratch_20261027\\visual_intent.txt",
+      "sha256": "24601d3156482183f7e4d68e9d5179c28c0a65239a7736801758ef3f04a6df40",
+      "bytes": 877
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\paperbanana_from_scratch_20261027\\numeric_inventory.json",
+      "sha256": "40b56eaf26bf1d6a5b9abbb581649823a3a84f8e5c7807f2dd59e22503d61a16",
+      "bytes": 48840
+    },
+    {
+      "path": "C:\\Users\\DELL\\.cache\\flexppi-figure-tools\\PaperBanana\\data\\PaperBananaBench\\diagram\\ref.json",
+      "sha256": "03ac58d3d0f24df7c88ab9581cf330a05dec4982c4f96c91dc03dc3cc0f65906",
+      "bytes": 4525081
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\paperbanana_from_scratch_20261027\\style_guides\\neurips2025_diagram_style_guide.md",
+      "sha256": "f6dd4fa5483fd02119fa2d7bf7d9f433097e4a389a691d3e1b4c8bb884cbd9df",
+      "bytes": 1426
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\paperbanana_from_scratch_20261027\\run_from_scratch.py",
+      "sha256": "d32547216bef88eff35e510c53200aa89c29e7fa0ee97fc3cc1e874bd2da50cb",
+      "bytes": 20210
+    }
+  ]
+}

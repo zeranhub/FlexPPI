@@ -1,0 +1,56 @@
+{
+  "source": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v75_20261024_中文修订_3.3背景与机制推断.docx",
+  "target": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v76_20261024_中文修订_方法去除实例概述.docx",
+  "target_sha256": "394f667b47cad4478eb062a25157bab59d6a2eef4a1b810df9accf425b4ba3ab",
+  "only_section_2_7_changed": true,
+  "changed_paragraphs": [
+    {
+      "body_index": 49,
+      "before": "2.7 结构实例与分子动力学验证",
+      "after": "2.7 结构体系构建与轨迹分析"
+    },
+    {
+      "body_index": 50,
+      "before": "结构实例考察主链活动区域定位、受体亲和成熟后的跨界面动态响应，以及同类型残基侧链朝向多样性的区分。为检验静态结构预测是否能够定位明确的主链活动区域，我们对CBP的KIX结构域开展专门分子动力学模拟。初始结构取2AGH的第一个NMR构象[22]，保留KIX B586–672、cMyb A291–315与MLL C839–857，通过保留或移除伙伴链构建apo、cMyb、MLL和双伙伴四种输入。四种状态共享同一初始KIX主链构象，分别计算各自状态内的逐残基RMSF。预测由第1折模型生成，该折训练不包含KIX相关记录A00AQ。L12连接环按作者编号614–621定义。MD与模型的RMSF百分位分别在完整KIX链的87个位置内计算；高波动集合取最高20%的18个位点，命中率为模型集合与MD集合的交集数除以模型优先筛选数。",
+      "after": "初始结构取2AGH的第一个NMR构象[22]，保留KIX B586–672、cMyb A291–315与MLL C839–857，通过保留或移除伙伴链构建apo、cMyb、MLL和双伙伴四种输入。四种状态共享同一初始KIX主链构象，分别计算各自状态内的逐残基RMSF。预测由第1折模型生成，该折训练不包含KIX相关记录A00AQ。L12连接环按作者编号614–621定义。MD与模型的RMSF百分位分别在完整KIX链的87个位置内计算；高波动集合取最高20%的18个位点，命中率为模型集合与MD集合的交集数除以模型优先筛选数。"
+    },
+    {
+      "body_index": 52,
+      "before": "TCR实例采用ITrace中的MEL5、亲和成熟变体α24β17及两种肽替换复合物。3HG1与4JFF分别为MEL5和α24β17结合HLA-A*02:01呈递的改良MART-1十肽ELAGIGILTV（ELA）；4JFD与4JFE分别为α24β17识别ELA第4位Gly→Ala（G4A）及第7位Ile→Ala（I7A）的复合物[28]。预测采用2.5节全组成链家族划分的第0折完整模型，训练集合为ATLAS和DynaRepo的2,430条记录，未使用ITrace。四态分别输入各自已有复合物的氨基酸类型及N、Cα、C坐标。通过全链序列对齐，将MEL5六个互补决定区（CDR）的边界投影到其他状态，保留全部45个对应位点及四态全部10个肽位置。三种差值依次为4JFF−3HG1、4JFD−4JFF和4JFE−4JFF。pMHC界面取四态中与TCR最近Cα距离≤8 Å的位置并集，共30位；Hχ仅在前后氨基酸相同且侧链χ角有定义时作差，三种对照有效位点数分别为23、23和22。图文TCR编号统一到MEL5，故成熟TCR的βPhe53和βGly54分别对应其输入E54与E55。局部结构原子间距由3HG1与4JFF的MD准备起始坐标计算，测量Q72 OE1–β53主链N及Q72 NE2–βGly54主链O。",
+      "after": "TCR–pMHC分析采用ITrace中的MEL5、亲和成熟变体α24β17及两种肽替换复合物。3HG1与4JFF分别为MEL5和α24β17结合HLA-A*02:01呈递的改良MART-1十肽ELAGIGILTV（ELA）；4JFD与4JFE分别为α24β17识别ELA第4位Gly→Ala（G4A）及第7位Ile→Ala（I7A）的复合物[28]。预测采用2.5节全组成链家族划分的第0折完整模型，训练集合为ATLAS和DynaRepo的2,430条记录，未使用ITrace。四态分别输入各自已有复合物的氨基酸类型及N、Cα、C坐标。通过全链序列对齐，将MEL5六个互补决定区（CDR）的边界投影到其他状态，保留全部45个对应位点及四态全部10个肽位置。三种差值依次为4JFF−3HG1、4JFD−4JFF和4JFE−4JFF。pMHC界面取四态中与TCR最近Cα距离≤8 Å的位置并集，共30位；Hχ仅在前后氨基酸相同且侧链χ角有定义时作差，三种对照有效位点数分别为23、23和22。图文TCR编号统一到MEL5，故成熟TCR的βPhe53和βGly54分别对应其输入E54与E55。局部结构原子间距由3HG1与4JFF的MD准备起始坐标计算，测量Q72 OE1–β53主链N及Q72 NE2–βGly54主链O。"
+    },
+    {
+      "body_index": 54,
+      "before": "侧链实例使用泛素与EDD的泛素相关结构域（UBA）形成的复合物2QHO对应的DynaRepo记录A003R[23]，输入完整两链结构，采用第0折留出预测及主评价标签。前5,000帧分为五个连续1,000帧窗口，联合状态熵按窗口计算后取均值；状态占据率与累积覆盖合并全部帧。谷氨酰胺三个χ角各分为三个等宽区间，共27类联合状态。图3f显示各位点占据率最高三类的实际MD代表帧，以该位点9 Å内的局部主链对齐。图5d展开泛素链全部66个Hχ有效位置的预测与主评价参考，仅标出Q2与Q41。图5e展示χ1–χ4全部有效位点的联合Hχ预测与MD单角细箱熵配对散点。在每个χ角层内，分别减去同一种氨基酸在预测值与MD指标中的平均值，再用于散点和Spearman相关计算。各χ层分别包含66、52、23和10个位点。泛素六个谷氨酰胺中联合Hχ预测最低Q41与最高Q2的逐角MD曲线见图5f。逐角指标与曲线统一取0–100 ns、200 ps间隔501帧，指标按2.8节对四个箱格原点取平均。",
+      "after": "泛素–UBA分析使用DynaRepo记录A003R，其起始复合物对应PDB 2QHO[23]；输入完整两链结构，采用第0折留出预测及主评价标签。前5,000帧分为五个连续1,000帧窗口，联合状态熵按窗口计算后取均值；状态占据率与累积覆盖合并全部帧。谷氨酰胺三个χ角各分为三个等宽区间，共27类联合状态。按各位点联合状态占据率选取最高三类的实际MD代表帧，以该位点9 Å内的局部主链对齐。联合Hχ预测与MD单角细箱熵按χ1–χ4分别配对；在每个χ角层内，分别减去同一种氨基酸在预测值与MD指标中的平均值，再计算Spearman相关。逐角比较在泛素六个谷氨酰胺中按留出模型Hχ预测选取最低和最高两个位置；全部逐角指标统一取0–100 ns、200 ps间隔的501帧，并按2.8节对四个箱格原点取平均。"
+    }
+  ],
+  "all_results_supplement_tables_figures_and_native_math_preserved_exactly": true,
+  "removed_content_role": [
+    "duplicated biological-purpose overview",
+    "figure walk-through text already described in captions/results"
+  ],
+  "retained_content_role": [
+    "PDB and record identifiers",
+    "input chain selection and conditions",
+    "simulation parameters",
+    "held-out model assignments",
+    "trajectory windows",
+    "mapping and scoring rules",
+    "representative-frame and site selection",
+    "SASA and contact algorithms"
+  ],
+  "visual_qa": {
+    "status": "PASS",
+    "page_count": 27,
+    "changed_pages_reviewed_full_size": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "unchanged_pages_verified_by_exact_pixel_match": 23,
+    "checks": "No clipped text, formula overlap, isolated headings, or abnormal page breaks. Pages 7 and 8 independently reviewed by second agent; pages 9 and 10 reviewed by primary agent.",
+    "render_directory": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\methods_section27_20261024\\render_v76_final"
+  }
+}

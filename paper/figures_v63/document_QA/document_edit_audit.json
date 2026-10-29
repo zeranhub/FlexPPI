@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "baseline": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v61_20261023_中文修订_图1输入输出标注修正.docx",
+  "baseline_sha256": "666ecc56bb3159e2146d8a2a22cec5db09069697c28a9d89c12d41b80750593c",
+  "output": "C:\\Users\\DELL\\.codex\\worktrees\\2788\\FlexPPI\\paper\\paper_v63_20261023_中文修订_图2紧凑构图与文字同步.docx",
+  "document_sha256": "db542b12cc255f1732e8d460e4e1a2c0a255af85bb539d82c6dd7bd4ab1a89fa",
+  "modified_members": [
+    "word/document.xml",
+    "word/_rels/document.xml.rels",
+    "word/media/image2.png"
+  ],
+  "added_members": [
+    "word/media/figureS2_source_AP.png"
+  ],
+  "edited_original_paragraph_indices": [
+    67,
+    68,
+    74,
+    75,
+    77,
+    82
+  ],
+  "native_math_objects_preserved_byte_identically": 36,
+  "all_other_existing_members_byte_identical": true,
+  "figure2_width_mm": 167.64,
+  "figure2_height_mm": 137.40983333333332,
+  "figure2_sha256": "2f449b964fa36f9a829b5c96b618e219229e75c18f59e0a9cf2f485aee54e6db",
+  "figureS2_sha256": "06ea2f08f88c33ab2ad5c4cec8cb879f3047b41e73e56c6159bca36d3f08d1a9",
+  "main_figure_panels": [
+    "a",
+    "b",
+    "c"
+  ],
+  "supplementary_figure": "S2",
+  "new_figure_caption": "图2：FlexPPI的数值预测与高动态位点识别。Full、Intra、Static和AA分别为完整模型、链内模型、静态特征回归和训练折氨基酸类型均值对照。（a）Full预测与MD参考的逐位置对应关系。蓝色RMSF使用下、左轴（Å），深赭色Hχ使用上、右轴（nats），分别按各自坐标读取。二维颜色包含3,063条记录全部961,321个RMSF及824,988个Hχ有效位置的网格概率质量，各记录等权、记录内位置等权；双色标尺共用对数质量标度。实线为参考分箱内的预测均值，同色带为1,000次来源分层重抽记录所得的95%区间，灰点线为理想一致关系。RMSF两轴在1 Å以内线性、以外对数，Hχ两轴为线性。MAE和Spearman相关ρ为逐记录结果的等权平均。（b）RMSF、总体Hχ及同类型Hχ三个任务的记录级AP分布。每组从左到右为Full、Intra、Static、AA，每种方法均保留3,063条记录；点为记录，小提琴表示分布，内粗条为第25–75百分位，白短划为中位数。（c）与b中三个任务依次对应的平均PR曲线。RMSF和总体Hχ以记录内MD第90百分位及以上为阳性，保留并列值；同类型Hχ在记录内各氨基酸类型中采用同一规则，42,108个有效记录–类型组先在记录内对类型等权，再对记录等权。灰横线为实际阳性率，依次为10.26%、10.29%和14.63%，末端保留全部入选状态。三个纵轴采用各自的连续分段线性刻度，均完整覆盖0–1，具体映射见补充材料C。AP按Full、Intra、Static、AA顺序列出，由各记录的原始完整阈值曲线计算后平均，不从显示曲线的视觉面积计算。",
+  "new_display_methods": "图2b给出各任务全部记录的AP分布，四分位范围描述记录间差异。图2c完整保留0–1的Precision范围，采用连续分段线性纵轴以展开曲线集中的区间：以0–1对应的显示高度为100%，RMSF的0–0.5和0.5–1分别占25%和75%；总体Hχ的0–0.5、0.5–0.9和0.9–1分别占10%、35%和55%；同类型Hχ的0–0.45、0.45–0.75和0.75–1分别占12%、78%和10%。各轴独立标注真实数值，未省略任何数值区间；坐标变换仅用于显示，AP仍按原始阈值曲线逐记录计算，再等权平均。",
+  "new_source_caption": "图S2：同一五折体系留出评价的来源分层平均AP。三组列分别为RMSF、总体Hχ及同类型Hχ，每组按ATLAS、DynaRepo、ITrace排列，n为记录数。各来源内先逐记录计分，再对记录等权平均；阳性定义及同类型汇总方式与图2相同。Full、Intra、Static、AA的含义同图2。热图统一使用0–1色标，深色表示较高AP。",
+  "pages": 28,
+  "visual_review_passed": true,
+  "independent_visual_reviews": [
+    {
+      "pages": "1-14",
+      "reviewer": "v63_pages_1_14",
+      "latest_changed_pages_reviewed": [
+        9,
+        10
+      ]
+    },
+    {
+      "pages": "15-28",
+      "reviewer": "v63_pages_15_28",
+      "latest_changed_pages_reviewed": [
+        24
+      ]
+    }
+  ],
+  "figure_caption_same_page": {
+    "2": 11,
+    "S2": 24
+  },
+  "record_AP_medians_verified": true
+}

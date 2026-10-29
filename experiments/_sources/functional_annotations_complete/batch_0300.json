@@ -1,0 +1,1894 @@
+{
+  "retrieved_utc": "2026-10-10T05:17:48Z",
+  "requested_ids": [
+    "1OGA",
+    "1OH9",
+    "1OIS",
+    "1OJH",
+    "1OJQ",
+    "1OK0",
+    "1OP9",
+    "1OPH",
+    "1OUW",
+    "1OYV",
+    "1P27",
+    "1P5G",
+    "1PBY",
+    "1PCF",
+    "1PCH",
+    "1PDO",
+    "1PK1",
+    "1PP0",
+    "1PPE",
+    "1PTQ",
+    "1PUC",
+    "1PV5",
+    "1PVH",
+    "1PXV",
+    "1Q0Q",
+    "1Q2H",
+    "1Q74",
+    "1Q7E",
+    "1Q8F",
+    "1QA9",
+    "1QAU",
+    "1QB7",
+    "1QCS",
+    "1QDD",
+    "1QFU",
+    "1QGI",
+    "1QHV",
+    "1QL0",
+    "1QLM",
+    "1QNX",
+    "1QRN",
+    "1QSE",
+    "1QSF",
+    "1QW2",
+    "1QWZ",
+    "1QXO",
+    "1QXY",
+    "1QZ4",
+    "1R0K",
+    "1R5L"
+  ],
+  "response": {
+    "data": {
+      "entries": [
+        {
+          "rcsb_id": "1OGA",
+          "struct": {
+            "title": "A structural basis for immunodominant human T-cell receptor recognition."
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM/RECEPTOR",
+            "text": "IMMUNE SYSTEM/RECEPTOR, IMMUNE SYSTEM-RECEPTOR-COMPLEX, TCR, MHC, IMMUNODOMINANCE, FLU, COMPLEX, TRANSMEMBRANE, GLYCOPROTEIN, POLYMORPHISM, T-CELL, RECEPTOR, IMMUNE SYSTEM-RECEPTOR complex"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1OGA_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "HLA CLASS I HISTOCOMPATIBILITY ANTIGEN",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P04439"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1OGA_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "BETA-2-MICROGLOBULIN",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1OGA_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "GILGFVFTL",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "1OGA_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "T-CELL RECEPTOR ALPHA CHAIN V REGION",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "P01848"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1OGA_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "T-CELL RECEPTOR BETA CHAIN C REGION",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E"
+                ],
+                "uniprot_ids": [
+                  "P01850"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1OH9",
+          "struct": {
+            "title": "Acetylglutamate kinase from Escherichia coli complexed with MgADP, N-acetyl-L-glutamate and the transition-state mimic AlF4-"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "KINASE",
+            "text": "KINASE, N-ACETYL-L-GLUTAMATE KINASE, AMINO ACID KINASE, PHOSPHORYL N-ACETYL-L-GLUTAMATE 5-PHOSPHOTRANSFERASE, NAG KINASE, GROUP TRANSFER, ARGININE METABOLISM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1OH9_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "ACETYLGLUTAMATE KINASE",
+                "pdbx_ec": "2.7.2.8"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P0A6C8"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1OIS",
+          "struct": {
+            "title": "YEAST DNA TOPOISOMERASE I, N-TERMINAL FRAGMENT"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "DNA BINDING PROTEIN",
+            "text": "ISOMERASE, TOPOISOMERASE, DNA-BINDING PROTEIN, DNA BINDING PROTEIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1OIS_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "DNA TOPOISOMERASE I",
+                "pdbx_ec": "5.99.1.2"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P04786"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1OJH",
+          "struct": {
+            "title": "Crystal structure of NblA from PCC 7120"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "PROTEIN BINDING",
+            "text": "DEGRADATION PROTEIN, PHYCOBILISOME DEGRADATION, PROTEIN BINDING"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1OJH_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "NBLA",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H",
+                  "I",
+                  "J",
+                  "K",
+                  "L"
+                ],
+                "uniprot_ids": [
+                  "A0ACD6B993"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1OJQ",
+          "struct": {
+            "title": "The crystal structure of C3stau2 from S. aureus"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "TRANSFERASE",
+            "text": "ADP-RIBOSYLTRANSFERASE, TRANSFERASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1OJQ_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "ADP-RIBOSYLTRANSFERASE",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "Q9ADS9"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1OK0",
+          "struct": {
+            "title": "Crystal Structure of Tendamistat"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "INHIBITOR",
+            "text": "INHIBITOR, ALPHA AMYLASE INHIBITOR"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1OK0_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "ALPHA-AMYLASE INHIBITOR HOE-467A",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P01092"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1OUW",
+          "struct": {
+            "title": "Crystal structure of Calystegia sepium agglutinin"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "SUGAR BINDING PROTEIN",
+            "text": "beta-prism fold, agglutinin, lectin, mannose-binding, jacalin-related, sugar binding protein"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1OUW_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "lectin",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "P93114"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1OYV",
+          "struct": {
+            "title": "Crystal structure of tomato inhibitor-II in a ternary complex with subtilisin Carlsberg"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "HYDROLASE",
+            "text": "serine proteinase inhibitor, ternary complex, multidomain inhibitor, potato II family, HYDROLASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1OYV_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Wound-induced proteinase inhibitor-II",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "I"
+                ],
+                "uniprot_ids": [
+                  "P05119"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1OYV_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Subtilisin Carlsberg",
+                "pdbx_ec": "3.4.21.62"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P00780"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1P27",
+          "struct": {
+            "title": "Crystal Structure of the Human Y14/Magoh complex"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "RNA BINDING PROTEIN",
+            "text": "RNA-binding, Nuclear protein, mRNA splicing, RNA binding protein"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1P27_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Mago nashi protein homolog",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P61326"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1P27_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "RNA-binding protein 8A",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "Q9Y5S9"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1P5G",
+          "struct": {
+            "title": "Enzyme-ligand complex of P. aeruginosa PMM/PGM"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "ISOMERASE",
+            "text": "alpha/beta protein, phosphohexomutase, phosphoserine, enzyme-ligand complex, enzyme-metal complex, ISOMERASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1P5G_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Phosphomannomutase",
+                "pdbx_ec": "5.4.2.8"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "X"
+                ],
+                "uniprot_ids": [
+                  "P26276"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1PBY",
+          "struct": {
+            "title": "Structure of the Phenylhydrazine Adduct of the Quinohemoprotein Amine Dehydrogenase from Paracoccus denitrificans at 1.7 A Resolution"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "OXIDOREDUCTASE",
+            "text": "QUINOHEMOPROTEIN, AMINE DEHYDROGENASE, OXIDOREDUCTASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1PBY_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "quinohemoprotein amine dehydrogenase 9 kDa subunit",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "Q8VUS8"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1PBY_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "quinohemoprotein amine dehydrogenase 40 kDa subunit",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "Q8VUS7"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1PBY_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "quinohemoprotein amine dehydrogenase 60 kDa subunit",
+                "pdbx_ec": "1.4.99.3"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "Q8VUT0"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1PCH",
+          "struct": {
+            "title": "STRUCTURAL EVIDENCE FOR THE EVOLUTIONARY DIVERGENCE OF MYCOPLASMA FROM GRAM-POSITIVE BACTERIA: THE HISTIDINE-CONTAINING PHOSPHOCARRIER PROTEIN"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "PHOSPHOTRANSFERASE",
+            "text": "PHOSPHOTRANSFERASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1PCH_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PHOSPHOCARRIER PROTEIN",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P45611"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1PDO",
+          "struct": {
+            "title": "PHOSPHOENOLPYRUVATE-DEPENDENT PHOSPHOTRANSFERASE SYSTEM"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "PHOSPHOTRANSFERASE",
+            "text": "PHOSPHOENOLPYRUVATE DEPENDENT PHOSPHOTRANSFERASE SYSTEM, PHOSPHOTRANSFERASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1PDO_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "MANNOSE PERMEASE",
+                "pdbx_ec": "2.7.1.69"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P69797"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1PK1",
+          "struct": {
+            "title": "Hetero SAM domain structure of Ph and Scm."
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "transcription repression",
+            "text": "Hetero SAM domain, polymers, transcriptional repression, transcription repression"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1PK1_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Sex comb on midleg CG9495-PA",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "Q9VHA0"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1PK1_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Polyhomeotic-proximal chromatin protein",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P39769"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1PPE",
+          "struct": {
+            "title": "THE REFINED 2.0 ANGSTROMS X-RAY CRYSTAL STRUCTURE OF THE COMPLEX FORMED BETWEEN BOVINE BETA-TRYPSIN AND CMTI-I, A TRYPSIN INHIBITOR FROM SQUASH SEEDS (CUCURBITA MAXIMA): TOPOLOGICAL SIMILARITY OF THE SQUASH SEED INHIBITORS WITH THE CARBOXYPEPTIDASE A INHIBITOR FROM POTATOES"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "HYDROLASE/HYDROLASE INHIBITOR",
+            "text": "SERINE PROTEINASE, HYDROLASE-HYDROLASE INHIBITOR COMPLEX"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1PPE_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "TRYPSIN INHIBITOR CMTI-I",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "I"
+                ],
+                "uniprot_ids": [
+                  "P01074"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1PPE_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "TRYPSIN",
+                "pdbx_ec": "3.4.21.4"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E"
+                ],
+                "uniprot_ids": [
+                  "P00760"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1PTQ",
+          "struct": {
+            "title": "PROTEIN KINASE C DELTA CYS2 DOMAIN"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "PHOSPHOTRANSFERASE",
+            "text": "PHOSPHOTRANSFERASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1PTQ_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN KINASE C DELTA TYPE",
+                "pdbx_ec": "2.7.1"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P28867"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1PVH",
+          "struct": {
+            "title": "Crystal structure of leukemia inhibitory factor in complex with gp130"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "signaling protein/cytokine",
+            "text": "cytokine, receptor, signaling, beta sheet, four helix bundle, signaling protein-cytokine COMPLEX"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1PVH_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Leukemia inhibitory factor",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "P15018"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1PVH_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Interleukin-6 receptor beta chain",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P40189"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1PXV",
+          "struct": {
+            "title": "The staphostatin-staphopain complex: a forward binding inhibitor in complex with its target cysteine protease"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "HYDROLASE",
+            "text": "cysteine protease inhibitor, HYDROLASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1PXV_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "cysteine protease",
+                "pdbx_ec": "3.4.22"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P0C1S6"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1PXV_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "cysteine protease Inhibitor",
+                "pdbx_ec": "3.4.22"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "Q9EYW6"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1Q0Q",
+          "struct": {
+            "title": "Crystal structure of DXR in complex with the substrate 1-deoxy-D-xylulose-5-phosphate"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "OXIDOREDUCTASE",
+            "text": "OXIDOREDUCTASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1Q0Q_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "1-deoxy-D-xylulose 5-phosphate reductoisomerase",
+                "pdbx_ec": "1.1.1.267"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P45568"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1Q2H",
+          "struct": {
+            "title": "Phenylalanine Zipper Mediates APS Dimerization"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "SIGNALING PROTEIN",
+            "text": "signal transduction, SIGNALING PROTEIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1Q2H_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "adaptor protein with pleckstrin homology and src homology 2 domains",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "O14492"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1Q74",
+          "struct": {
+            "title": "The Crystal Structure of 1D-myo-inositol 2-acetamido-2-deoxy-alpha-D-glucopyranoside Deacetylase (MshB)"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "HYDROLASE",
+            "text": "rossmann fold, zinc aminohydrolase, Structural Genomics, PSI, Protein Structure Initiative, TB Structural Genomics Consortium, TBSGC, HYDROLASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1Q74_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "1D-myo-inositol 2-acetamido-2-deoxy-alpha-D-glucopyranoside Deacetylase (MshB)",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "P9WJN3"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1Q7E",
+          "struct": {
+            "title": "Crystal Structure of YfdW protein from E. coli"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "TRANSFERASE",
+            "text": "structural genomics, intertwined dimer, PSI, Protein Structure Initiative, New York SGX Research Center for Structural Genomics, NYSGXRC, TRANSFERASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1Q7E_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Hypothetical protein yfdW",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P69902"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1Q8F",
+          "struct": {
+            "title": "Crystal Structure of the E.coli pyrimidine nucleoside hydrolase yeiK"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "HYDROLASE",
+            "text": "open alpha-beta structure, NH-fold, HYDROLASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1Q8F_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Pyrimidine nucleoside hydrolase",
+                "pdbx_ec": "3.2.2.8"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "P33022"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QA9",
+          "struct": {
+            "title": "Structure of a Heterophilic Adhesion Complex Between the Human CD2 and CD58(LFA-3) Counter-Receptors"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "CELL ADHESION, IG-LIKE DOMAIN, CD2, CD58, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QA9_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "HUMAN CD58 PROTEIN",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "P19256"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1QA9_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "HUMAN CD2 PROTEIN",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "C"
+                ],
+                "uniprot_ids": [
+                  "P06729"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QB7",
+          "struct": {
+            "title": "CRYSTAL STRUCTURES OF ADENINE PHOSPHORIBOSYLTRANSFERASE FROM LEISHMANIA DONOVANI."
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "TRANSFERASE",
+            "text": "DINUCLEOTIDE BINDING FOLD, TRANSFERASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QB7_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "ADENINE PHOSPHORIBOSYLTRANSFERASE",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "Q27679"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QCS",
+          "struct": {
+            "title": "N-TERMINAL DOMAIN OF N-ETHYLMALEIMIDE SENSITIVE FACTOR (NSF)"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "FUSION PROTEIN",
+            "text": "DOUBLE-PSI BETA BARREL ALPHA BETA ROLL, FUSION PROTEIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QCS_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "N-ETHYLMALEIMIDE SENSITIVE FACTOR (NSF-N)",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P18708"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QFU",
+          "struct": {
+            "title": "INFLUENZA VIRUS HEMAGGLUTININ COMPLEXED WITH A NEUTRALIZING ANTIBODY"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "Viral protein/Immune system",
+            "text": "COMPLEX (HEMAGGLUTININ-IMMMUNOGLOBULIN), HEMAGGLUTININ, IMMUNOGLOBULIN, Viral protein-Immune system COMPLEX"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QFU_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (IMMUNOGLOBULIN IGG1-KAPPA ANTIBODY (HEAVY CHAIN))",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "H"
+                ],
+                "uniprot_ids": [
+                  "P01869"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1QFU_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (IMMUNOGLOBULIN IGG1-KAPPA ANTIBODY (LIGHT CHAIN))",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "L"
+                ],
+                "uniprot_ids": [
+                  "A2NHM3"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1QFU_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (HEMAGGLUTININ (HA2 CHAIN))",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P03437"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1QFU_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (HEMAGGLUTININ (HA1 CHAIN))",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P03438"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QGI",
+          "struct": {
+            "title": "CHITOSANASE FROM BACILLUS CIRCULANS"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "HYDROLASE",
+            "text": "HYDROLASE, CHITOSAN DEGRADATION"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QGI_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (CHITOSANASE)",
+                "pdbx_ec": "3.2.1.132"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P33673"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QHV",
+          "struct": {
+            "title": "HUMAN ADENOVIRUS SEROTYPE 2 FIBRE HEAD"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "VIRAL PROTEIN",
+            "text": "RECEPTOR BINDING, EXTRA-ORDINARY STABILITY, Viral protein"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QHV_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (ADENOVIRUS FIBRE)",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P03275"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QL0",
+          "struct": {
+            "title": "Sm Endonuclease from Seratia marcenscens at atomic resolution"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "HYDROLASE",
+            "text": "ENDONUCLEASE, HYDROLASE, NUCLEASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QL0_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "NUCLEASE",
+                "pdbx_ec": "3.1.30.2"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P13717"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QNX",
+          "struct": {
+            "title": "Ves v 5, an allergen from Vespula vulgaris venom"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "ALLERGEN",
+            "text": "ANTIGEN 5, ALLERGEN, VESPID VENOM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QNX_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "VES V 5",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "Q05110"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QRN",
+          "struct": {
+            "title": "CRYSTAL STRUCTURE OF HUMAN A6 TCR COMPLEXED WITH HLA-A2 BOUND TO ALTERED HTLV-1 TAX PEPTIDE P6A"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "HUMAN TCR-PEPTIDE-MHC COMPLEX, HLA-A2, HTLV-1, TAX, TCR, T CELL RECEPTOR, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QRN_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "T-CELL RECEPTOR, BETA CHAIN",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "1QRN_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "T-CELL RECEPTOR, ALPHA CHAIN",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "P01848"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1QRN_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "TAX PEPTIDE P6A",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "1QRN_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "BETA-2 MICROGLOBULIN",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1QRN_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "HLA CLASS I HISTOCOMPATIBILITY ANTIGEN, A-2 ALPHA CHAIN",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P04439"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QSF",
+          "struct": {
+            "title": "STRUCTURE OF A6-TCR BOUND TO HLA-A2 COMPLEXED WITH ALTERED HTLV-1 TAX PEPTIDE Y8A"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "HUMAN T CELL RECEPTOR, TCR-PEPTIDE-MHC COMPLEX, HLA-A2, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QSF_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "HUMAN T-CELL RECEPTOR",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "1QSF_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "HUMAN T-CELL RECEPTOR",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "P01848"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1QSF_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "TAX PEPTIDE Y8A",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "1QSF_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "BETA-2 MICROGLOBULIN",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1QSF_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "MHC CLASS I HLA-A",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P04439"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QW2",
+          "struct": {
+            "title": "Crystal Structure of a Protein of Unknown Function TA1206 from Thermoplasma acidophilum"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "STRUCTURAL GENOMICS, UNKNOWN FUNCTION",
+            "text": "structural genomics, Beta/Alpha, Antiparallel beta sandwich, PSI, Protein Structure Initiative, Midwest Center for Structural Genomics, MCSG, UNKNOWN FUNCTION"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QW2_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "conserved hypothetical protein TA1206",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "Q9HIX0"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QWZ",
+          "struct": {
+            "title": "Crystal structure of Sortase B from S. aureus complexed with MTSET"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "HYDROLASE",
+            "text": "Beta barrel, transpeptidase, HYDROLASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QWZ_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "NPQTN specific sortase B",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "Q2FZE3"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QXO",
+          "struct": {
+            "title": "Crystal structure of Chorismate synthase complexed with oxidized FMN and EPSP"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "LYASE",
+            "text": "Beta-alpha-beta, flavoprotein, shikimate, anti-infective, LYASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QXO_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Chorismate synthase",
+                "pdbx_ec": "4.2.3.5"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "P0A2Y6"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QZ4",
+          "struct": {
+            "title": "Structure of YcfC Protein of Unknown Function Escherichia coli"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "Structural genomics, unknown function",
+            "text": "Structural genomics, helix-turn-helix motif, PSI, Protein Structure Initiative, Midwest Center for Structural Genomics, MCSG, unknown function"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QZ4_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Hypothetical protein ycfC",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P25746"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1R0K",
+          "struct": {
+            "title": "Crystal structure of 1-deoxy-D-xylulose 5-phosphate reductoisomerase from Zymomonas mobilis"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "OXIDOREDUCTASE",
+            "text": "reductoisomerase, NADPH dependent, Fosmidomycin, non-mevalonate pathway, zymomonas mobilis, OXIDOREDUCTASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1R0K_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "1-deoxy-D-xylulose 5-phosphate reductoisomerase",
+                "pdbx_ec": "1.1.1.267"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "Q9X5F2"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1R5L",
+          "struct": {
+            "title": "Crystal Structure of Human Alpha-Tocopherol Transfer Protein Bound to its Ligand"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "TRANSPORT PROTEIN",
+            "text": "ATTP, TOCOPHEROL, ATAXIA WITH VITAMIN E DEFICIENCY, TRANSPORT PROTEIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1R5L_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (Alpha-tocopherol transfer protein)",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P49638"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QXY",
+          "struct": {
+            "title": "Crystal structure of S. aureus methionine aminopeptidase in complex with a ketoheterocycle 618"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "HYDROLASE",
+            "text": "pita bread fold, hydrolase"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QXY_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "methionyl aminopeptidase",
+                "pdbx_ec": "3.4.11.18"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P0A078"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QSE",
+          "struct": {
+            "title": "STRUCTURE OF HUMAN A6-TCR BOUND TO HLA-A2 COMPLEXED WITH ALTERED HTLV-1 TAX PEPTIDE V7R"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "IMMUNE SYSTEM",
+            "text": "HUMAN T CELL RECEPTOR, TCR-PEPTIDE-MHC COMPLEX, HLA-A2, IMMUNE SYSTEM"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QSE_5",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (human T-Cell receptor)",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "E"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "1QSE_4",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (human T-Cell receptor)",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "D"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "1QSE_3",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Tax Peptide V7R",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "C"
+                ],
+                "uniprot_ids": null
+              }
+            },
+            {
+              "rcsb_id": "1QSE_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (beta-2 microglobulin)",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61769"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1QSE_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "PROTEIN (MHC class I HLA-A)",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P04439"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QLM",
+          "struct": {
+            "title": "The crystal structure of methenyltetrahydromethanopterin cyclohydrolase from the hyperthermophilic archaeon Methanopyrus kandleri"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "HYDROLASE",
+            "text": "METHANOGENESIS, BIOLOGICAL METHANOGENESIS, HYDROLASE, TETRAHYDROMETHANOPTERIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QLM_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "METHENYLTETRAHYDROMETHANOPTERIN CYCLOHYDROLASE",
+                "pdbx_ec": "3.5.4.27"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P94954"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QDD",
+          "struct": {
+            "title": "CRYSTAL STRUCTURE OF HUMAN LITHOSTATHINE TO 1.3 A RESOLUTION"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "METAL BINDING PROTEIN",
+            "text": "Pancreatic Stone Inhibitor, Lithostathine, METAL BINDING PROTEIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QDD_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "LITHOSTATHINE",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P05451"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1QAU",
+          "struct": {
+            "title": "UNEXPECTED MODES OF PDZ DOMAIN SCAFFOLDING REVEALED BY STRUCTURE OF NNOS-SYNTROPHIN COMPLEX"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "OXIDOREDUCTASE",
+            "text": "BETA-FINGER, OXIDOREDUCTASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1QAU_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "NEURONAL NITRIC OXIDE SYNTHASE (RESIDUES 1-130)",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P29476"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1PV5",
+          "struct": {
+            "title": "Structure of Protein of Unknown Function YwqG from Bacillus subtilis"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "Structural Genomics, Unknown function",
+            "text": "Hypothetical protein, Structural Genomics, Ywqg, PSI, Protein Structure Initiative, Midwest Center for Structural Genomics, MCSG, Unknown function"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1PV5_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Hypothetical protein ywqG",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P96719"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1PUC",
+          "struct": {
+            "title": "P13SUC1 IN A STRAND-EXCHANGED DIMER"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "BINDING PROTEIN",
+            "text": "CELL CYCLE, DOMAIN SWAPPING, STRAND-EXCHANGED DIMER, BINDING PROTEIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1PUC_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "P13SUC1",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P08463"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1PP0",
+          "struct": {
+            "title": "volvatoxin A2 in monoclinic crystal"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "TOXIN",
+            "text": "volvatoxin A2, ingot crystal form, TOXIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1PP0_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "volvatoxin A2",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ],
+                "uniprot_ids": [
+                  "Q6USC4"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1PCF",
+          "struct": {
+            "title": "HUMAN TRANSCRIPTIONAL COACTIVATOR PC4 C-TERMINAL DOMAIN"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "TRANSCRIPTION",
+            "text": "TRANSCRIPTION, TRANSCRIPTIONAL COFACTOR, TRANSCRIPTIONAL CO-ACTIVATOR, SSDNA BINDING, NUCLEAR PROTEIN"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1PCF_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "TRANSCRIPTIONAL COACTIVATOR PC4",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A",
+                  "B",
+                  "C",
+                  "D",
+                  "E",
+                  "F",
+                  "G",
+                  "H"
+                ],
+                "uniprot_ids": [
+                  "P53999"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1OPH",
+          "struct": {
+            "title": "NON-COVALENT COMPLEX BETWEEN ALPHA-1-PI-PITTSBURGH AND S195A TRYPSIN"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "HYDROLASE/HYDROLASE INHIBITOR",
+            "text": "SERINE PROTEINASE INHIBITOR, MICHAELIS-LIKE COMPLEX, SERPIN, ALPHA-1 ANTITRYPSIN, TRYPSIN, HYDROLASE-HYDROLASE INHIBITOR COMPLEX"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1OPH_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Trypsinogen, cationic precursor",
+                "pdbx_ec": "3.4.21.4"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P00760"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1OPH_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Alpha-1-antitrypsin precursor",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": [
+                  "P01009"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "rcsb_id": "1OP9",
+          "struct": {
+            "title": "Complex of human lysozyme with camelid VHH HL6 antibody fragment"
+          },
+          "struct_keywords": {
+            "pdbx_keywords": "HYDROLASE",
+            "text": "antigen-antibody complex, immunoglobulin, amyloid fibril formation inhibition, HYDROLASE"
+          },
+          "polymer_entities": [
+            {
+              "rcsb_id": "1OP9_2",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "Lysozyme C",
+                "pdbx_ec": "3.2.1.17"
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "B"
+                ],
+                "uniprot_ids": [
+                  "P61626"
+                ]
+              }
+            },
+            {
+              "rcsb_id": "1OP9_1",
+              "rcsb_polymer_entity": {
+                "pdbx_description": "HL6 camel VHH fragment",
+                "pdbx_ec": null
+              },
+              "rcsb_polymer_entity_container_identifiers": {
+                "auth_asym_ids": [
+                  "A"
+                ],
+                "uniprot_ids": null
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

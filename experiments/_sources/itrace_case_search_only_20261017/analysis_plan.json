@@ -1,0 +1,32 @@
+{
+  "purpose": "Search only for biologically informative ITrace TCR-pMHC examples; no manuscript changes.",
+  "candidate_rule": "Choose published biological comparisons before reading the new numeric rescreen. Include functional substitutions, engineered parent/variant relations, and same-receptor antigen changes; retain all listed series even if predictions are poor.",
+  "series": {
+    "single_MHC_change_and_binding_thermodynamics": ["1lp9", "2j8u", "2jcc", "2uwe"],
+    "MAGE_A10_engineering": ["7pbc", "7pdw", "7qpj"],
+    "alloselectivity_engineering": ["8rym", "8ryn", "8ryo", "8ryp", "8ryq"],
+    "multiple_tumor_antigens": ["7q99", "7q9a", "7q9b"],
+    "MART1_anchor_change": ["6eqa", "6eqb"],
+    "NYESO_1G4_engineering_and_peptide_change": ["2bnq", "2bnr", "2f53", "2f54", "2p5e", "2p5w", "2pye"],
+    "MART1_DMF4_DMF5": ["3qdg", "3qdj", "3qdm", "3qeq"],
+    "KRAS_G12V_engineering": ["8wte", "8wul"],
+    "NRAS_Q61K_Q61R": ["8yiv", "8yj2"],
+    "KRAS_G12D_specificity": ["7ow5", "7ow6", "7pb2"]
+  },
+  "additional_biology_verified_comparisons": {
+    "MEL5_multiple_antigens": ["4qok", "6eqa", "7q99", "7q9a"],
+    "MEL5_engineering_and_engineered_TCR_peptide_changes": ["3hg1", "4jff", "4jfd", "4jfe"],
+    "preserved_SB27_comparison": ["2ak4", "4jry"]
+  },
+  "relationship_corrections_before_interpretation": "7QPJ is from a different parent, not a second engineering step from7PDW. 7Q9B is MEL8, not MEL5. 6EQA/6EQB both contain AAG peptide and differ in TCR; 4QOK supplies native-decamer MEL5 comparison. Additional comparisons were nominated from primary biology, not from new model scores.",
+  "primary_model": "Existing joint RMSF/chi-entropy Full family fold0, trained without any ITrace records; audit actual training manifests and checkpoint before relying on results.",
+  "primary_checkpoint_SHA256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+  "secondary_control": "Intrachain model from the same family fold0, not a replacement model selected for candidate success.",
+  "additional_existing_no_ITrace_model": "Old strict full fold0, checkpoint SHA b3eed060919df15f075329bc892f959d9355232be5feb561417edd49ea82b39f. Include a parallel result on the same biologically nominated series; do not replace the primary model based on scores. Old strict train2431 differs from family train2430 by A00IL/4WV1, confirmed by actual per-record manifest set comparison. Earlier A009Z inference from an old review was incorrect and is superseded.",
+  "alignment": "Full-chain global affine-gap alignment, inspect same receptor / engineered series correspondence and amino acid replacements. Never SequenceMatcher.",
+  "regions": ["all six CDR loops", "complete CDR3", "whole peptide", "same-amino-acid MHC groove", "same-amino-acid pMHC side of C-alpha8A interface"],
+  "metrics": ["Spearman of changes", "MAE of changes", "MAE of zero-change prediction", "fractional MAE improvement", "change magnitude", "replicate uncertainty descriptor"],
+  "statistics": "Use fixed complete regions; retain substitutions in backbone comparisons and report same-AA entropy separately. Do not treat residues or frames as independent MD replicates. No significance claims from abs(change)>2SEM.",
+  "comparison_cases_preserved": ["SB27/SB47", "MEL5/alpha24beta17"],
+  "publication_status": "Exploratory example search only. No manuscript edits or delivery pointer updates."
+}

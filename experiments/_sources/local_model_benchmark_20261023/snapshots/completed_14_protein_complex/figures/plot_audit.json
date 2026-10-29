@@ -1,0 +1,252 @@
+{
+  "generated_utc": "2026-10-24T00:00:12.163153+00:00",
+  "plot_script_sha256": "44970402d3361ced92458e62a969573b4f1cc393a56c979a46bd81f4c1073e85",
+  "summary_sha256": "da655ae6593d97103d638cafeb9d41c5f8515ed9f0993d6ec6db1bfbd118f07b",
+  "per_record_metrics_sha256": "87420afc23a9dce44919eb1e58bb6620da2b04a8c1075099d23df06ea538e6ef",
+  "coverage_summary_sha256": "71cd4f2215f9a340467947088c339d4becc633badae1ab657a52fba4c892f5c4",
+  "scoring_audit_sha256": "f50b821b0982ad6d3602c9b0d5f1fe3e60af6b7d2000877f30677479064eb90a",
+  "membership_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\classification\\membership_frozen.csv",
+  "membership_sha256": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac",
+  "membership_group_column": "benchmark_group",
+  "training_exposure_audit_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\references\\training_exposure_protocol_sources_sha256.json",
+  "training_exposure_audit_sha256": "83b0fbbddd486633cf2bb2c3dd34de8da4d896d6fd05378ff2f9498836454575",
+  "input_sha256": {
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\group_summary.csv": "da655ae6593d97103d638cafeb9d41c5f8515ed9f0993d6ec6db1bfbd118f07b",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\per_record_metrics.csv": "87420afc23a9dce44919eb1e58bb6620da2b04a8c1075099d23df06ea538e6ef",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\coverage_summary.csv": "71cd4f2215f9a340467947088c339d4becc633badae1ab657a52fba4c892f5c4",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\scoring_audit.json": "f50b821b0982ad6d3602c9b0d5f1fe3e60af6b7d2000877f30677479064eb90a",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\references\\training_exposure_protocol_sources_sha256.json": "83b0fbbddd486633cf2bb2c3dd34de8da4d896d6fd05378ff2f9498836454575",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\classification\\membership_frozen.csv": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\plot_benchmark.py": "44970402d3361ced92458e62a969573b4f1cc393a56c979a46bd81f4c1073e85"
+  },
+  "methods": [
+    "Full",
+    "Intra",
+    "backflip-2.1 (assembly)",
+    "backflip-2.1 (chains)",
+    "backflip-1.0 (assembly)",
+    "backflip-1.0 (chains)",
+    "backflip-1.0-seq (assembly)",
+    "backflip-1.0-seq (chains)",
+    "DynaProt-M",
+    "FastProtFlex",
+    "ANM",
+    "GNM",
+    "Static",
+    "AA"
+  ],
+  "records": 3063,
+  "valid_rmsf_positions": 961321,
+  "primary_groups": {
+    "protein": 2203,
+    "protein_complex": 860
+  },
+  "group_residues": {
+    "protein": 500964,
+    "protein_complex": 460357
+  },
+  "group_families": {
+    "protein": 1500,
+    "protein_complex": 261
+  },
+  "group_definition": "Proteins include homomers; protein complexes contain distinct biological protein partners. Membership is the separately frozen audited input.",
+  "style_reference": "Science AlphaMissense Fig2A-C: fixed named method rows with aligned benchmark metrics; adapted to a two-row dot/interval quantitative grid.",
+  "layout": {
+    "main_rows": 2,
+    "main_columns": 3,
+    "main_row_groups": [
+      "protein",
+      "protein_complex"
+    ],
+    "main_column_metrics": [
+      "spearman",
+      "top10_ap",
+      "mae"
+    ],
+    "method_rows_per_axes": 14,
+    "main_canvas_mm": [
+      183,
+      141
+    ],
+    "ecdf_panels": 2,
+    "ecdf_canvas_mm": [
+      183,
+      78
+    ],
+    "exact_canvas_export": true,
+    "export_png_dpi": 300,
+    "pdf_fonttype": 42,
+    "svg_fonttype": "none",
+    "font_size_floor_pt": 6.3
+  },
+  "main_panel_mapping": {
+    "a": {
+      "group": "protein",
+      "metric": "spearman"
+    },
+    "b": {
+      "group": "protein",
+      "metric": "top10_ap"
+    },
+    "c": {
+      "group": "protein",
+      "metric": "mae"
+    },
+    "d": {
+      "group": "protein_complex",
+      "metric": "spearman"
+    },
+    "e": {
+      "group": "protein_complex",
+      "metric": "top10_ap"
+    },
+    "f": {
+      "group": "protein_complex",
+      "metric": "mae"
+    }
+  },
+  "semantic_colors": {
+    "FlexPPI": "#31688E",
+    "learned_external": "#B78038",
+    "graph_simple": "#348980"
+  },
+  "relative_output_methods": [
+    "ANM",
+    "FastProtFlex",
+    "GNM"
+  ],
+  "relative_output_annotations": [
+    {
+      "method": "FastProtFlex",
+      "group": "protein",
+      "metric": "mae",
+      "label": "relative score"
+    },
+    {
+      "method": "ANM",
+      "group": "protein",
+      "metric": "mae",
+      "label": "relative score"
+    },
+    {
+      "method": "GNM",
+      "group": "protein",
+      "metric": "mae",
+      "label": "relative score"
+    },
+    {
+      "method": "FastProtFlex",
+      "group": "protein_complex",
+      "metric": "mae",
+      "label": "relative score"
+    },
+    {
+      "method": "ANM",
+      "group": "protein_complex",
+      "metric": "mae",
+      "label": "relative score"
+    },
+    {
+      "method": "GNM",
+      "group": "protein_complex",
+      "metric": "mae",
+      "label": "relative score"
+    }
+  ],
+  "numeric_points_in_main": 78,
+  "all_observations_in_ecdf": true,
+  "ecdf_methods": [
+    "Full",
+    "backflip-2.1 (assembly)",
+    "backflip-2.1 (chains)",
+    "DynaProt-M",
+    "FastProtFlex",
+    "ANM"
+  ],
+  "ecdf_line_styles": {
+    "Full": "-",
+    "backflip-2.1 (assembly)": "-",
+    "backflip-2.1 (chains)": "--",
+    "DynaProt-M": ":",
+    "FastProtFlex": "-.",
+    "ANM": [
+      0,
+      [
+        5,
+        2,
+        1,
+        2,
+        1,
+        2
+      ]
+    ]
+  },
+  "ecdf_ANM_style_name": "dash-dot-dot",
+  "ecdf_observation_counts": {
+    "Full": {
+      "protein": 2203,
+      "protein_complex": 860
+    },
+    "backflip-2.1 (assembly)": {
+      "protein": 2203,
+      "protein_complex": 860
+    },
+    "backflip-2.1 (chains)": {
+      "protein": 2203,
+      "protein_complex": 860
+    },
+    "DynaProt-M": {
+      "protein": 2203,
+      "protein_complex": 860
+    },
+    "FastProtFlex": {
+      "protein": 2203,
+      "protein_complex": 860
+    },
+    "ANM": {
+      "protein": 2203,
+      "protein_complex": 860
+    }
+  },
+  "confidence_intervals": "Record-weighted means and 95% family-cluster bootstrap intervals, read from the real aggregate; no statistical recomputation by this script.",
+  "training_exposure": "Mixed training conditions; own OOF does not imply sequence-family heldout. Family bootstrap is not training isolation.",
+  "absolute_mae_missing": "FastProtFlex/ANM/GNM relative outputs have no Angstrom MAE; no fitted rescaling.",
+  "no_score_based_selection": true,
+  "unfinished_methods_in_primary_figure": false,
+  "excluded_noncomplete_methods": [],
+  "progress_snapshot": true,
+  "progress_scope": "All14 completed entries on the full frozen cohort; deferred heavy methods remain outside this snapshot.",
+  "visual_review_status": "pending_actual_review_of_current_output_hashes",
+  "source_data": "benchmark_current_source.csv contains78 real summary cells;6 unit-inapplicable annotations are explicit in this audit.",
+  "artifact_sha256": {
+    "benchmark_current.pdf": "fff682c6f2ec9457af307f7d09e58bc74f0bd03838c159062853b6d01c894639",
+    "benchmark_current.png": "01a4936a15611e3af38e603cc95cc1cf6ac46143638a663c03d71667b4edd39f",
+    "benchmark_current.svg": "e874f9f43d1cdc86827b0b50a7bd000ed301fcf90d5d2f39c78e790bbb052083",
+    "benchmark_distributions_current.pdf": "e6cd78b10775bba5544dc459eb0e220e4ccbcd39b04c55eff30d472adc45ec77",
+    "benchmark_distributions_current.png": "36709cab40a2eb34b13c1be7cb973937e94599167c0869542f55920458d2000f",
+    "benchmark_distributions_current.svg": "289bd3891e7dfdb8317772a5ab002c2d3c690635b11873ea0176548e45e52ae5",
+    "benchmark_current_source.csv": "0bfb332c89653e99dbdce2898a7ac28b5a49c21d2227f14a69f366f1e63d6845"
+  },
+  "png_pixel_dimensions": {
+    "benchmark_current.png": [
+      2161,
+      1665
+    ],
+    "benchmark_distributions_current.png": [
+      2161,
+      921
+    ]
+  },
+  "spearman_mean_x_limits": [
+    -0.1,
+    1
+  ],
+  "absolute_mae_x_limits": [
+    0,
+    1.25
+  ],
+  "ecdf_x_limits": [
+    -0.4,
+    1
+  ]
+}

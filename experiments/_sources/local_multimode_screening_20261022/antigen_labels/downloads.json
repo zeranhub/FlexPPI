@@ -1,0 +1,817 @@
+{
+  "commit": "cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2",
+  "files": [
+    {
+      "repository_path": "mutation_effects/mskcc/constants.py",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\constants.py",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/constants.py",
+      "bytes": 1564,
+      "sha256": "d8233705f3ad48377cc89bc1466850b7f69d6dd37798135fc95f82b865aa0dc9"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/data_preprocessing/avidity_curves.xlsx",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\data_preprocessing\\avidity_curves.xlsx",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/data_preprocessing/avidity_curves.xlsx",
+      "bytes": 51953,
+      "sha256": "7acc5f6e8dd319562d19032c90c0381393b35d03d6c683a4121693bf910f4ea7"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/data_preprocessing/infer_ec50s.py",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\data_preprocessing\\infer_ec50s.py",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/data_preprocessing/infer_ec50s.py",
+      "bytes": 9633,
+      "sha256": "859ac342a9fe95b1a9d989f8be489e595c0badc89e2b46d73c2de95094d2f0cd"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/mskcc_tcr1_ec50_sat_mut_af3.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\mskcc_tcr1_ec50_sat_mut_af3.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/mskcc_tcr1_ec50_sat_mut_af3.csv",
+      "bytes": 12870,
+      "sha256": "c2113fb936b7d361e48caf272074e9e17f6ef698d994ab451091e102ce00e280"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/mskcc_tcr1_ec50_sat_mut_af3_no_template.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\mskcc_tcr1_ec50_sat_mut_af3_no_template.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/mskcc_tcr1_ec50_sat_mut_af3_no_template.csv",
+      "bytes": 15750,
+      "sha256": "b9f12d40546fe7c1ba0637b13d804940f1a6edafff33e9973efcecd3b4639a50"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/mskcc_tcr1_ec50_sat_mut_af3_yes_template.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\mskcc_tcr1_ec50_sat_mut_af3_yes_template.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/mskcc_tcr1_ec50_sat_mut_af3_yes_template.csv",
+      "bytes": 15930,
+      "sha256": "54d23c6dcb805541375e0a6e34ef8e4b4c6ce72ceb94c0705ff4c53c9be5f6c3"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/mskcc_tcr2_ec50_sat_mut_af3.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\mskcc_tcr2_ec50_sat_mut_af3.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/mskcc_tcr2_ec50_sat_mut_af3.csv",
+      "bytes": 11971,
+      "sha256": "70b90f78337b6832b4d88a838e0bbe8001569ddbb2039028dec97343b861d222"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/mskcc_tcr2_ec50_sat_mut_af3_no_template.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\mskcc_tcr2_ec50_sat_mut_af3_no_template.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/mskcc_tcr2_ec50_sat_mut_af3_no_template.csv",
+      "bytes": 15751,
+      "sha256": "604b5e6c59c5083c64aa257b2a726cdb7335645c381f9c5c6d0a2777e6e05485"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/mskcc_tcr3_ec50_sat_mut_af3.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\mskcc_tcr3_ec50_sat_mut_af3.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/mskcc_tcr3_ec50_sat_mut_af3.csv",
+      "bytes": 11996,
+      "sha256": "2b485daded8f3bce123c3c48f1bb5e099eab21966a46b9baae55cf490d00712f"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/mskcc_tcr3_ec50_sat_mut_af3_no_template.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\mskcc_tcr3_ec50_sat_mut_af3_no_template.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/mskcc_tcr3_ec50_sat_mut_af3_no_template.csv",
+      "bytes": 15956,
+      "sha256": "11db85315d47cbfbc4622787d1f657158c7efb5e88115eeb2e4281ac9fea868c"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/mskcc_tcr4_ec50_sat_mut_af3.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\mskcc_tcr4_ec50_sat_mut_af3.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/mskcc_tcr4_ec50_sat_mut_af3.csv",
+      "bytes": 12039,
+      "sha256": "8a20bc54b977efc3831be0bd4b69249c4d68813af4bed19ab0639a04ca8e1d46"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/mskcc_tcr4_ec50_sat_mut_af3_no_template.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\mskcc_tcr4_ec50_sat_mut_af3_no_template.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/mskcc_tcr4_ec50_sat_mut_af3_no_template.csv",
+      "bytes": 15819,
+      "sha256": "2098db0e99320f86b259abf14871baced7cf3d78ee270e6425d877a66d33233a"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/mskcc_tcr5_ec50_sat_mut_af3.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\mskcc_tcr5_ec50_sat_mut_af3.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/mskcc_tcr5_ec50_sat_mut_af3.csv",
+      "bytes": 11921,
+      "sha256": "9bf6841faf822c5f56f588d4bf222c7ed0c011b7fb43fec2fa63d45d34f319ef"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/mskcc_tcr5_ec50_sat_mut_af3_no_template.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\mskcc_tcr5_ec50_sat_mut_af3_no_template.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/mskcc_tcr5_ec50_sat_mut_af3_no_template.csv",
+      "bytes": 15701,
+      "sha256": "32d0585a78bb57eba7e72d8a0b5a95410772a6e5fc733fa0660072bcecb87517"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/mskcc_tcr6_ec50_sat_mut_af3.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\mskcc_tcr6_ec50_sat_mut_af3.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/mskcc_tcr6_ec50_sat_mut_af3.csv",
+      "bytes": 11991,
+      "sha256": "aac10f4a97d5dae661377c6ac776a45fd5a348b94ffbc4bd895bda0361e9bc43"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/mskcc_tcr6_ec50_sat_mut_af3_no_template.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\mskcc_tcr6_ec50_sat_mut_af3_no_template.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/mskcc_tcr6_ec50_sat_mut_af3_no_template.csv",
+      "bytes": 15771,
+      "sha256": "df184f8e8e152936db1872f7e426648a75583a62e0f53bd6b1d3a062e5f395b0"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/mskcc_tcr7_ec50_sat_mut_af3.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\mskcc_tcr7_ec50_sat_mut_af3.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/mskcc_tcr7_ec50_sat_mut_af3.csv",
+      "bytes": 12012,
+      "sha256": "1f978acb1f942e8ef118c2f42a2452b8db3323f35ec989d0fbf9ac7913989701"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/mskcc_tcr7_ec50_sat_mut_af3_no_template.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\mskcc_tcr7_ec50_sat_mut_af3_no_template.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/mskcc_tcr7_ec50_sat_mut_af3_no_template.csv",
+      "bytes": 17052,
+      "sha256": "e596643adab7056c801fc446ab55b77f39fe20be41438ad44ef5bde176da4d4d"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/pdbs/fold_tcr1_no_template_model_0.pdb",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\pdbs\\fold_tcr1_no_template_model_0.pdb",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/pdbs/fold_tcr1_no_template_model_0.pdb",
+      "bytes": 264233,
+      "sha256": "01db938269c20f8264b8fd517fd5c58587d16bd11f0789605b2ad68f8c976482"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/pdbs/fold_tcr2_no_template_model_1.pdb",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\pdbs\\fold_tcr2_no_template_model_1.pdb",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/pdbs/fold_tcr2_no_template_model_1.pdb",
+      "bytes": 261074,
+      "sha256": "284d74d5afadd2b8a2725889d6d20c8e22517c47e66b21bf26cca267ca886012"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/pdbs/fold_tcr3_no_templates_model_0.pdb",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\pdbs\\fold_tcr3_no_templates_model_0.pdb",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/pdbs/fold_tcr3_no_templates_model_0.pdb",
+      "bytes": 267959,
+      "sha256": "d003f97f48cfa4ea21262641bf4d5a1cb1bf63ef372fee8b47fd746bad1ea5c3"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/pdbs/fold_tcr4_no_template_model_0.pdb",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\pdbs\\fold_tcr4_no_template_model_0.pdb",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/pdbs/fold_tcr4_no_template_model_0.pdb",
+      "bytes": 264881,
+      "sha256": "37c6f10ed7210f2e084ad1b8eb83d383a1589c938e74359716f108d4325801c6"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/pdbs/fold_tcr5_no_template_model_1.pdb",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\pdbs\\fold_tcr5_no_template_model_1.pdb",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/pdbs/fold_tcr5_no_template_model_1.pdb",
+      "bytes": 264476,
+      "sha256": "7764210aa61cfce0c4750065a63619ead0dc7f72716b826fac64845c04c7827f"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/pdbs/fold_tcr6_no_template_model_0.pdb",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\pdbs\\fold_tcr6_no_template_model_0.pdb",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/pdbs/fold_tcr6_no_template_model_0.pdb",
+      "bytes": 265367,
+      "sha256": "891c87fc05ee449eb1169d8f5073a9475523f108aebb4b085a96c95ef2c125f6"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/pdbs/fold_tcr7_no_template_seed_2_model_0.pdb",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\pdbs\\fold_tcr7_no_template_seed_2_model_0.pdb",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/pdbs/fold_tcr7_no_template_seed_2_model_0.pdb",
+      "bytes": 261803,
+      "sha256": "91e0843a4d8d40b68aaf267da3de03ca5b57b376a6ad3494dfe7efbf06c43b08"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr1_ec50_sat_mut_af3-hermes_py_000-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\5c028220a9c8cbb65ce0.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr1_ec50_sat_mut_af3-hermes_py_000-use_mt_structure=0.csv",
+      "bytes": 15859,
+      "sha256": "c2cb99e84ff85648c3ef3537e767365481aa23eac91d0b178219f0792b1fab30"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr1_ec50_sat_mut_af3_no_template-hermes_py_000-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\85efc377ae054483c575.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr1_ec50_sat_mut_af3_no_template-hermes_py_000-use_mt_structure=0.csv",
+      "bytes": 19413,
+      "sha256": "242b17ffce32a4ef7f371437d99bb21dc27881ced15e5b1d9fcc611fc490b38a"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr1_ec50_sat_mut_af3_yes_template-hermes_py_000-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\d8a85c218023acf145b3.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr1_ec50_sat_mut_af3_yes_template-hermes_py_000-use_mt_structure=0.csv",
+      "bytes": 19598,
+      "sha256": "b3874f13d31c4f056431066bcce5db31160fd887d66ed59efb88c47c7f4538d7"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr2_ec50_sat_mut_af3-hermes_py_000-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\39371b9db265a9318c64.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr2_ec50_sat_mut_af3-hermes_py_000-use_mt_structure=0.csv",
+      "bytes": 14962,
+      "sha256": "ffecb2699480111d48d8273103b82102536e33183ec251a84ccc2a8733794497"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr2_ec50_sat_mut_af3_no_template-hermes_py_000-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\75ac3fc528028994a1d0.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr2_ec50_sat_mut_af3_no_template-hermes_py_000-use_mt_structure=0.csv",
+      "bytes": 19424,
+      "sha256": "f94ee081fdd5440589a005b364af57652d8f868823b1781be59290ac1b553422"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr3_ec50_sat_mut_af3-hermes_py_000-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\2a95f017391b2a774a82.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr3_ec50_sat_mut_af3-hermes_py_000-use_mt_structure=0.csv",
+      "bytes": 14975,
+      "sha256": "c4d5646b07e27bf7b63cf973d8419a8ac775a624520d3542311126738bb7b38f"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr3_ec50_sat_mut_af3_no_template-hermes_py_000-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\de1e1f3b25556d444074.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr3_ec50_sat_mut_af3_no_template-hermes_py_000-use_mt_structure=0.csv",
+      "bytes": 19620,
+      "sha256": "104ab29d59a5fe6eaee9fb451cf8e1ec368786f14b6326b650833f138023ade6"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr4_ec50_sat_mut_af3-hermes_py_000-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\0a38fea3040d1368d868.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr4_ec50_sat_mut_af3-hermes_py_000-use_mt_structure=0.csv",
+      "bytes": 15027,
+      "sha256": "b2dc4937e594378c07dfabb47df437d8c1207e79ac96039deb6bfabb29f6e706"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr4_ec50_sat_mut_af3_no_template-hermes_py_000-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\0eab0d4704cb1d3b5360.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr4_ec50_sat_mut_af3_no_template-hermes_py_000-use_mt_structure=0.csv",
+      "bytes": 19499,
+      "sha256": "a2aea6467838d8169899cfa4246393d181444e83740a0cf37137c7e2f8528ebc"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr5_ec50_sat_mut_af3-hermes_py_000-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\f24f5b32fbc398d9ddfe.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr5_ec50_sat_mut_af3-hermes_py_000-use_mt_structure=0.csv",
+      "bytes": 14904,
+      "sha256": "ae66f99ccfe6ca1a6c7e08c7c582fbb0d29164d7e79997661f5f5c841d8b5b16"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr5_ec50_sat_mut_af3_no_template-hermes_py_000-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\dddc905138af94e887ec.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr5_ec50_sat_mut_af3_no_template-hermes_py_000-use_mt_structure=0.csv",
+      "bytes": 19379,
+      "sha256": "7f894bebc0640d6ef2f2bd23e140628b14fea123903444bf4cd7cdeb8bb53732"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr6_ec50_sat_mut_af3-hermes_py_000-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\6038d26b6a20177f2a7d.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr6_ec50_sat_mut_af3-hermes_py_000-use_mt_structure=0.csv",
+      "bytes": 14970,
+      "sha256": "541f1d671a12268a34fd7f5bafaa75bee2ecabbc5f59103aa835bdd60a8c8c49"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr6_ec50_sat_mut_af3_no_template-hermes_py_000-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\306bec790fa4cf0efad0.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr6_ec50_sat_mut_af3_no_template-hermes_py_000-use_mt_structure=0.csv",
+      "bytes": 19417,
+      "sha256": "e15b5c9be22976003985fea3aa9f63f3b2b3d552074eb068c6ee6d87fcc23384"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr7_ec50_sat_mut_af3-hermes_py_000-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\69c90384e25b864db6be.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr7_ec50_sat_mut_af3-hermes_py_000-use_mt_structure=0.csv",
+      "bytes": 15027,
+      "sha256": "c43c1345224ddde29fd5fd1885a371fbd3d082219a0409c87c98d514777dbb7f"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr7_ec50_sat_mut_af3_no_template-hermes_py_000-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\8db6527063e3b837d757.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/hermes_py_000/mskcc_tcr7_ec50_sat_mut_af3_no_template-hermes_py_000-use_mt_structure=0.csv",
+      "bytes": 20721,
+      "sha256": "81434490f84c8e552e4bb56b4565d9888376c429b6ffc2bdba11986ae23e8255"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\776b73c6265d9d77b93d.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 16399,
+      "sha256": "1ad5a3bf50aaf78279d5609a3ba4a5547fd2d9471c0540adfe644a729d2d9f1c"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\ff4880105acbc9766860.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15526,
+      "sha256": "eaaf41acffa2f536d052f129bc722f07b84615784c654b751a9950cb4c3e1a23"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\96a237395c03d864654e.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15541,
+      "sha256": "7082c6c064cf6eea86a5c9b72d2c77c362ff7425d4534ed9e90f7346bd2d8df4"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\d7e26e83f30eb58f0a2a.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15566,
+      "sha256": "5f04a92056545acde89d93230cd265888b429e07346626594b0401f2d49e54f9"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\57511691a586b9ccd173.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15449,
+      "sha256": "06da952b0a05ce68d92773dcd6b1f125c6d651d903ec3c7f9ed9f31bf648bd34"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\5f8faf33dfc6057bf1b7.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15511,
+      "sha256": "feac225aa946757043d231e13d16ec31672bdd612a5033a42436b7c2f991f0c2"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\514e869f933b102efff7.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15533,
+      "sha256": "721021c1e4c7872a5ed8396edbb46d8d22f3c0773cea916b4bdea5d3329fff34"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\e1a96cc86d81ab97d167.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 16324,
+      "sha256": "248e5597727e5cd2751bc8cc85936c447d8d6d4a3cc9e92ceb6925353308415a"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\6541c88b119925df9cb2.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15432,
+      "sha256": "f9ad5d20a22060ada8fdad0742750816e94ce9d1b7a7fb5a73eb5c885ad5502f"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\5e9036bc0d7d33180759.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15443,
+      "sha256": "94455a5d5848e1f98fe6b9b45f916a09dad912f808d99f6ffc8c519a36417bd1"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\ab87f3fa26b81d9888ae.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15468,
+      "sha256": "074b5dad3736e8b7db62406f650c7e679fd975170a589c49f261e5e413fe4244"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\686a617c3bca896027c9.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15358,
+      "sha256": "daaa0e34fee4356913191793df8162b637bb9bd82d4908db066524808f6b8504"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\c0c2031e4470efc963c5.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15436,
+      "sha256": "9a08e07d9069c979fc733de37535de73206e9334704950953962406c2795d212"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\8fbbe7d3e638c33eb0f6.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15458,
+      "sha256": "c66d4ab23d4ff344253b616ea487edc0632a0da183a8e332e7bf5eed8c505536"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\9b01dcccd542c843d1de.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 16406,
+      "sha256": "9bd2d996ea743cd4409d6343b6e47543e4865f28ea474da993b3fb611676d78d"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\66bb922d81796a22fffc.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 19294,
+      "sha256": "5669c9b2098cc1fa629db517099ba9a5c798d931d3737de8639d62dbda3d2061"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3_yes_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\acce25beccbb7afddd33.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3_yes_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 19474,
+      "sha256": "332c7c2dcbec98bc76bd1574101aa47c94fbc8ccc960909616f6301d80cf12f9"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\c906d12f5a6356a15831.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15522,
+      "sha256": "007b4de473e965cf1b08a34dda5ee01cd6f37bd5505a410523571ae162e7094c"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\fef1e2b8c8eeb0a2052c.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 19302,
+      "sha256": "bb5cd771aa4320060f178088fa723130bbcd59345a97f32aecff16df78f9529d"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\982a0be9b01f34876a51.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15546,
+      "sha256": "ca14e2d95854eea6062c2f4b6ebc4ebcda3927ab6e36898d9e058dd4fecbc450"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\76a0391015cd10d18cbf.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 19506,
+      "sha256": "22c858ede84eedb5ab515196b37b39781baca992f3354e272998e5dc099b0f76"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\3e02849402bce8392db1.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15588,
+      "sha256": "2153e74c72fd244786e347c28abde25a60dc1952bddee5bc795186d99f8d8f84"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\330774ee873964022185.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 19351,
+      "sha256": "9ad991d767940f2dd30614322bb24952ea85e9f832e6d996266d507d2318143f"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\e6ec048e2b95bb7551b2.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15458,
+      "sha256": "773a6b37976efe928320c507d780b7f4ceea3a8b9dee58b2180dad53f318cdd8"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\832644e6c694ec1c2fc7.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 19227,
+      "sha256": "0373bd88cffeaef93dcf21da07adf3eb2b427c3790e93230e4803f7b8fa80149"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\2d9c7ba0428bcf3f6192.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15510,
+      "sha256": "9b9a126d3032d196e913ffac690c54e246ea3ab9364db62e36d88121ea6c3bcd"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\1505a6585c2cc0288c5b.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 19298,
+      "sha256": "6ea474a61a6e34adb66de7aef0815f24dcdc095771e23fbad2c2c8616dadb93f"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\c1d53c1cd4fd541eaff9.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15519,
+      "sha256": "dd330e0c1c5970c319db66d4dcef31954d747c657f76c8d178d4b251a9e20f6f"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\9430745fa4183fd0a00f.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 20566,
+      "sha256": "74395be33b08533158df121590a6068396fd775ad55538f7f26b285f96d005db"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked_to_test/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\aa4df049c323b620e255.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_pep_masked_to_test/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 16405,
+      "sha256": "c6aed0313a39d8876472f4aae6f3d2f15a3db9d937c0d2bd9b9d41d6c97d79c4"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_tcr_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\1edac1e012c5aec21c3d.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_tcr_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 16391,
+      "sha256": "6c9ee7c5bf30fc133a8741a60ec12f40e9f87186fe4dc2102dc8ecd037609dc1"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_tcr_masked/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\6e578b9a5456cdfdd355.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_tcr_masked/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15503,
+      "sha256": "db1c458d155b48f2f7268cb8169c8bc7ea7ded844efbd212df947edb100b0ad2"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_tcr_masked/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\6216e27830024dc5f5e7.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_tcr_masked/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15509,
+      "sha256": "0832ba7631b89c6f0200e73bd2265b45bac3a7d7850d066a8f1d462cfc0a2b53"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_tcr_masked/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\cd562b87e70fa74595e8.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_tcr_masked/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15505,
+      "sha256": "fa26eeae738835d3f2b6b564ca1558e7f74cc388d7d3a4d86642d50dfc5b2cc1"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_tcr_masked/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\034e3629260a5ee65cd2.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_tcr_masked/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15368,
+      "sha256": "78ea60d84eb397bb3344b93911dce82975f6205708e0631ea8e77f48c6bf1526"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_tcr_masked/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\fddddf0c22c327b05e7c.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_tcr_masked/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15514,
+      "sha256": "412ced399d857f117206b5bd4837d6e7f82aad993b9b9da2cf46bb393c080a8f"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_tcr_masked/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\50d9f4a7ac01e742971a.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_tcr_masked/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15468,
+      "sha256": "b4f6c8f2c1dde81cbf4f0e932072bc49d3861a9a98997d047132260e9a602d91"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_tcr_masked_fixed_wt_peptide_shuld_be_constant/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\def5b655806568d24fe7.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_002_full_tcr_masked_fixed_wt_peptide_shuld_be_constant/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 16399,
+      "sha256": "110991eefd514ffcdbc73edd3ae9c115a3afc77e1e0d78ae0bff72c465a0f28e"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\c0a7fbdf9f9a3ed2c8d4.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 16397,
+      "sha256": "3fe1dab6641a631e4a563bf2ac52c85d49995e6dedd0dcddbb51a408b10a5861"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\0d7228e89e511d5c58f8.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15515,
+      "sha256": "e25df2bf89d8f5332f2a93814d82f70df77ccb273966c0c7755cc96ea15850d9"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\729df441b332851832d1.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15511,
+      "sha256": "45a2aacd76d3e8bcde5ee0060d4b73b98b5f646f108f88a9ee6892a6769d9f2c"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\08082ae56e4930977872.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15570,
+      "sha256": "4d28d6e8fc2bc458649f9f985e0b58ea5da80bdcfb801126e077bcd1b94f32ad"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\e7fcd8232e000b7ecbc1.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15453,
+      "sha256": "a91cf24b9b39e90a7e26b9316e08c82e0b25e3d5953b38b4051fbd0eaba25105"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\af653a850e733c531893.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15509,
+      "sha256": "480ae45bacc0443ba94403ff86878ba1af4354ee7ba3b3809cf07137a1a1c0b2"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\ded8200b6d7dd320b381.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15534,
+      "sha256": "c7f53147009da888bd980406f6ad264887943d1e6d9b8a63b0040783ee7bb8ed"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\fe70a8cd66c056d3a97d.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 16322,
+      "sha256": "c05035092f5978ba1c28c9bf33c57ea6bdb39cddf034389d3a1b520bfddbbc62"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\cdd7f7551bb70fd0580f.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15434,
+      "sha256": "36c8da3fd50bcd6a7e86e3170c8d3a00cec20d0c2ca56e26027355acbe4afd7b"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\6895642c7ac65fc1fcbc.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15441,
+      "sha256": "137ff01062c1162995863ac20f9bc0c8dc114d141ba996da65004dc97d7a399c"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\15d824689c876f9c1850.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15454,
+      "sha256": "83716ce69b9b2919e20160391158fda1f1cd4a9cc356af2f36b3e4948905cda5"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\cd3e3ae1f0e14ffa33e5.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15310,
+      "sha256": "850af2d7d97825a4b8b9d2305929e8d5b99872930bf71ff01253b391b1f30a23"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\d3b5c15eb619d8438e31.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15456,
+      "sha256": "b8809f82a9f048dc6723a02c1943efd933559e80f9bd9b2e81c17fcde94a5521"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\531b3fd0c09ed7536108.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_and_tcr_masked/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15442,
+      "sha256": "f06e3a611e238761ae5dc53be28074677f4159070e70b805523926729dfadfad"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\fe8b993805e336f21312.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 16380,
+      "sha256": "3becfb714e91e7f77c1359958d3872215875ab4dd82da169e51cf64106680905"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\1d2088405dca4e8d83b1.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 19269,
+      "sha256": "194b7c56dc158384c16a2685924f5879baa60b634182f031c6ec80302c12c7e8"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3_yes_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\2210cb3f79422192a7ff.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3_yes_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 19459,
+      "sha256": "e472443d7feadb9a89e665094cc3a800c2f633bff31908c980561fcbea6a766d"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\9e0cc328fa6b757d0c08.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15508,
+      "sha256": "a0c01ffd31074ff189450516cd3e436c8c69f386002cc596a4d4e9311c9cf95b"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\64cc133627e1b9e94f99.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 19280,
+      "sha256": "46003799cce657a564dae0cb168e07ed29213b9f2ea4b308512e6999d52da610"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\b1c766a7c2e705a49ef5.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15533,
+      "sha256": "e6c9c065f80ba10761fbf6bad63bb8e7f66f3f1f4fbfedab8526e0e34855b5d2"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\d72e9d3f45dadc532c3c.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 19475,
+      "sha256": "f6400ed7af121c4e47fc4ccf0554c0687efad26f1595e0add1a53f174ea06366"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\6413ebf2445d981e5784.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15590,
+      "sha256": "9224efb3fcaf1051c81b92bc4e282ae33fead2c4981dce690bc2572dd6fc9850"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\6964aa054e1c9618750f.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 19365,
+      "sha256": "09b184a170659258767420b8f93b025a0f2afec9bfff22fd13a0a671fc8d840f"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\1c6b94de00a77da5ec02.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15436,
+      "sha256": "1ee991fb1bc440f8a30ef420101544442ce3f037f8d806f9050905f7456cb51d"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\8037cea4f38c1a6f9b50.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 19221,
+      "sha256": "bb400277dd2b2ac3b88bb71235f688cac8319dba6079ebcac2ca7b66663cbef8"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\c1f01fdd9a7e6e67922a.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15516,
+      "sha256": "eda77b2c8ae31ef22b8142b2540e22be6f4bd8d86bb4527dcbad49a8636e79be"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\0ec1f52f7650660bbc56.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 19302,
+      "sha256": "a364af0092358c87d8444eae343757d7b16d05c2e420a4a4e87aacb1e3973b17"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\9c56da5513561165bf0c.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15533,
+      "sha256": "9b5b7d2c657a34b0c4b6b9409a61c79a249fbae9c258813d17731fa7858db43d"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\81ed1377e9e08af07efe.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3_no_template-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 20564,
+      "sha256": "67c266d3fa5a15bc2f79a41a27343fff7b8336c1f1a65bb2564b93120fbcfb2b"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked_to_test/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\d25ce806a40e0830ba6a.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_pep_masked_to_test/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 16393,
+      "sha256": "fa09ed6d0808e7a9c6227bd084ac644b7a6517527115eca0b303a511c4f6c519"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_tcr_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\e5c0bea5948e9332220a.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_tcr_masked/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 16388,
+      "sha256": "22d8595ea8679d7b10589173759059da173283d2e78197c9496a96074dea69a9"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_tcr_masked/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\b552795ee1c2bb16d8e4.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_tcr_masked/zero_shot_predictions/mskcc_tcr2_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15505,
+      "sha256": "4af0ac66a865647eaf727e32970538860e9951923543155f9287a0eca40b1082"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_tcr_masked/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\c014476b9ba68ac059b4.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_tcr_masked/zero_shot_predictions/mskcc_tcr3_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15456,
+      "sha256": "c7275a44736a10697ccda05c73eae12b51f078be6ff0432cb1749f14166ce017"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_tcr_masked/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\e8a76cb34acc1b144168.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_tcr_masked/zero_shot_predictions/mskcc_tcr4_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15505,
+      "sha256": "a39381d811044871585d4784110229c5aba4c23171cdbcd75fd6a2b17332b93f"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_tcr_masked/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\2ac40c7f469bd9792216.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_tcr_masked/zero_shot_predictions/mskcc_tcr5_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15380,
+      "sha256": "f65da86f853f8fafdede61e27d14b05e3a4780d50179bbf01e182b4ee4349d5c"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_tcr_masked/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\b9a649b32d9b004818c5.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_tcr_masked/zero_shot_predictions/mskcc_tcr6_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15435,
+      "sha256": "4c42195cafaa9f7ee7c7c8936bc67a4abfb784acdab3caecfec0c5e5b0ce9af9"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_tcr_masked/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\0d55af9bf07142167940.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_tcr_masked/zero_shot_predictions/mskcc_tcr7_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 15448,
+      "sha256": "eae43b551d3f95703e01e26fcaaefda348f5cbea7ed0f3a97abb4e6f4395771c"
+    },
+    {
+      "repository_path": "mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_tcr_masked_fixed_wt_peptide_shuld_be_constant/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_multimode_screening_20261022\\antigen_labels\\raw\\static_scores\\741d4afca13d662b1d01.csv",
+      "url": "https://raw.githubusercontent.com/StatPhysBio/tcr_antigen_design/cfd85f3fefa652f0f00d3fd1e58cb2b4256f5ce2/mutation_effects/mskcc/results/proteinmpnn_v_48_020_full_tcr_masked_fixed_wt_peptide_shuld_be_constant/zero_shot_predictions/mskcc_tcr1_ec50_sat_mut_af3-num_seq_per_target=10-use_mt_structure=0.csv",
+      "bytes": 16397,
+      "sha256": "09c40694601d850059416ddfef71f3bafb74f58f2559de199e71ecfdf2664e6f"
+    }
+  ]
+}

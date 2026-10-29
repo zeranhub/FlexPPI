@@ -1,0 +1,181 @@
+{
+  "status": "passed",
+  "width_mm": 183.0,
+  "height_mm": 190.0,
+  "dpi": 450,
+  "minimum_font_pt": 9.0,
+  "minimum_font_at_manuscript_width_pt": 8.244590163934426,
+  "panel_info": {
+    "a": {
+      "positions": 961321,
+      "records": 3063,
+      "density_sum": 0.9999999999999989,
+      "nonzero_density_cells": 3739,
+      "reference_range": [
+        0.20509372651576996,
+        33.18666458129883
+      ],
+      "prediction_range": [
+        0.23427285254001617,
+        14.297941207885742
+      ],
+      "xy_limits": [
+        -5e-324,
+        33.186664581298835
+      ],
+      "trend_methods": [
+        "Full",
+        "Intra",
+        "Static",
+        "AA"
+      ],
+      "trend_vertices": 80
+    },
+    "b": {
+      "positions": 824988,
+      "records": 3063,
+      "density_sum": 1.0000000000000036,
+      "nonzero_density_cells": 4263,
+      "reference_range": [
+        0.0,
+        4.047488689422607
+      ],
+      "prediction_range": [
+        2.747852704487741e-06,
+        4.057138919830322
+      ],
+      "xy_limits": [
+        -5e-324,
+        4.057138919830323
+      ],
+      "trend_methods": [
+        "Full",
+        "Intra",
+        "Static",
+        "AA"
+      ],
+      "trend_vertices": 80
+    },
+    "c": {
+      "task": "rmsf",
+      "methods": [
+        "Full",
+        "Intra",
+        "Static",
+        "AA"
+      ],
+      "n_records": 3063,
+      "vertices_per_method": 102,
+      "original_endpoint_appended": true,
+      "all_selected_precision": 0.10257909653812106,
+      "n_eligible_record_types": null,
+      "mean_AP": {
+        "Full": 0.7300365341292498,
+        "Intra": 0.6955425480429748,
+        "Static": 0.6571306899778864,
+        "AA": 0.1680527305401422
+      }
+    },
+    "d": {
+      "task": "chi_entropy",
+      "methods": [
+        "Full",
+        "Intra",
+        "Static",
+        "AA"
+      ],
+      "n_records": 3063,
+      "vertices_per_method": 102,
+      "original_endpoint_appended": true,
+      "all_selected_precision": 0.10291394329994574,
+      "n_eligible_record_types": null,
+      "mean_AP": {
+        "Full": 0.9262696667415228,
+        "Intra": 0.9203779513546311,
+        "Static": 0.906589473047831,
+        "AA": 0.7789229917088459
+      }
+    },
+    "e": {
+      "task": "within_type_hchi",
+      "methods": [
+        "Full",
+        "Intra",
+        "Static",
+        "AA"
+      ],
+      "n_records": 3063,
+      "vertices_per_method": 102,
+      "original_endpoint_appended": true,
+      "all_selected_precision": 0.14633027306649204,
+      "n_eligible_record_types": 42108,
+      "mean_AP": {
+        "Full": 0.622603905736452,
+        "Intra": 0.6089206939928457,
+        "Static": 0.5545242004032818,
+        "AA": 0.14633027306649204
+      }
+    },
+    "f": {
+      "cells": 36,
+      "methods": [
+        "Full",
+        "Intra",
+        "Static",
+        "AA"
+      ],
+      "tasks": [
+        "rmsf",
+        "chi_entropy",
+        "within_type_hchi"
+      ],
+      "sources": [
+        "atlas",
+        "dynarepo",
+        "itrace"
+      ],
+      "n_records_by_source": {
+        "atlas": 1929,
+        "dynarepo": 890,
+        "itrace": 244
+      },
+      "metric": "mean exact per-record AP",
+      "color_limits": [
+        0,
+        1
+      ],
+      "not_source_held_out": true
+    }
+  },
+  "svg_raster_image_count": 0,
+  "canvas_text_outside": [],
+  "english_only_visible_text": true,
+  "no_downsampling": true,
+  "no_axis_tail_clipping": true,
+  "removed_original_type_dot_panels": true,
+  "source_hashes": {
+    "all_selected_endpoint.csv": "1bcf9d85618bb54aff8a73f800eeaaf57e60ed3cd9fee69f402f85aaa53a8494",
+    "four_method_binned_trend.csv": "2de5cf904b664eba884249c54d4ecb98edcc918106411203b2c20cad1ba6a285",
+    "macro_pr_curve.csv": "60b4f5c8169fa6e0cfd485de74d23390f566063f76501d56b297c7326ded23da",
+    "original_statistics_and_reproducibility.md": "e60db0a969aab2bc4435b60e26c1a744217c66897e22adc5a07c8200da8b6151",
+    "prediction_reference_chi_entropy.npz": "c040ce0403a458160a62c1d6771c06ac3b40d328419a6e905bdb7ade479382fc",
+    "prediction_reference_rmsf.npz": "963c5c79b7fd1059acff6966b6719862c1102116784f72949068ded890d975a3",
+    "source_ap_matrix.csv": "a3a86af099b04202106d4cd13f5414682199ffbb17f5c55d0dcc630137b04a4a",
+    "summary.json": "be29114e3eca5ba8654276e3024f78d4666f705feb8a062061719aeef9dab14a",
+    "within_type_all_selected_endpoint.csv": "cddd135cf7d6c4dafccce1cce499d575676d22e47f572a1523910f41891418c7",
+    "within_type_macro_pr.csv": "7e91b12113d84d8959d3f29b45d2e3ce2f5cdf25d04a37a72c5439b1b22c28e3"
+  },
+  "output_hashes": {
+    "png": "8da2ae327edfecb78e6165c12bd815d4b2b5c43fcaf27a551661af04870aed5f",
+    "pdf": "77f34d0e79c80e512d74c3fa1579bf772ff8fca3cf92a141d90962171de4523f",
+    "svg": "c9ac11b90786ab0bba8a40ecd5f9413a84de07504db374148aba32fe5a6b2d92"
+  },
+  "visual_QA": "Final PNG and Word page 11 inspected; no clipped labels or legend overlap",
+  "shared_unit_heatmap_ticks": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ]
+}

@@ -1,0 +1,3754 @@
+{
+  "entity_poly": {
+    "nstd_linkage": "no",
+    "nstd_monomer": "no",
+    "pdbx_seq_one_letter_code": "GSHSMRYFYTAMSRPGRGEPRFIAVGYVDDTQFVRFDSDAASPRTEPRAPWIEQEGPEYWDRNTQIFKTNTQTYRESLRNLRGYYNQSEAGSHIIQRMYGCDLGPDGRLLRGHDQSAYDGKDYIALNEDLSSWTAADTAAQITQRKWEAARVAEQRRAYLEGLCVEWLRRYLENGKETLQRADPPKTHVTHHPVSDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDRTFQKWAAVVVPSGEEQRYTCHVQHEGLPKPLTLRWEP",
+    "pdbx_seq_one_letter_code_can": "GSHSMRYFYTAMSRPGRGEPRFIAVGYVDDTQFVRFDSDAASPRTEPRAPWIEQEGPEYWDRNTQIFKTNTQTYRESLRNLRGYYNQSEAGSHIIQRMYGCDLGPDGRLLRGHDQSAYDGKDYIALNEDLSSWTAADTAAQITQRKWEAARVAEQRRAYLEGLCVEWLRRYLENGKETLQRADPPKTHVTHHPVSDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDRTFQKWAAVVVPSGEEQRYTCHVQHEGLPKPLTLRWEP",
+    "pdbx_strand_id": "A",
+    "rcsb_artifact_monomer_count": 0,
+    "rcsb_conflict_count": 0,
+    "rcsb_deletion_count": 0,
+    "rcsb_entity_polymer_type": "Protein",
+    "rcsb_insertion_count": 0,
+    "rcsb_mutation_count": 0,
+    "rcsb_non_std_monomer_count": 0,
+    "rcsb_sample_sequence_length": 276,
+    "type": "polypeptide(L)"
+  },
+  "entity_src_gen": [
+    {
+      "gene_src_common_name": "human",
+      "pdbx_alt_source_flag": "sample",
+      "pdbx_gene_src_gene": "HLA-B",
+      "pdbx_gene_src_ncbi_taxonomy_id": "9606",
+      "pdbx_gene_src_scientific_name": "Homo sapiens",
+      "pdbx_host_org_ncbi_taxonomy_id": "562",
+      "pdbx_host_org_scientific_name": "Escherichia coli",
+      "pdbx_host_org_strain": "BL21(DE3)",
+      "pdbx_host_org_vector_type": "plasmid",
+      "pdbx_src_id": 1,
+      "plasmid_name": "pET"
+    }
+  ],
+  "rcsb_entity_host_organism": [
+    {
+      "ncbi_common_names": [
+        "Bacillus coli",
+        "Bacterium coli",
+        "Bacterium coli commune",
+        "E. coli",
+        "Enterococcus coli",
+        "Escherichia/Shigella coli"
+      ],
+      "ncbi_parent_scientific_name": "Bacteria",
+      "ncbi_scientific_name": "Escherichia coli",
+      "ncbi_taxonomy_id": 562,
+      "pdbx_src_id": 1,
+      "provenance_source": "Primary Data",
+      "scientific_name": "Escherichia coli",
+      "taxonomy_lineage": [
+        {
+          "depth": 1,
+          "id": "131567",
+          "name": "cellular organisms"
+        },
+        {
+          "depth": 1,
+          "id": "131567",
+          "name": "biota"
+        },
+        {
+          "depth": 2,
+          "id": "2",
+          "name": "Bacteria"
+        },
+        {
+          "depth": 2,
+          "id": "2",
+          "name": "Bacteria (ex Cavalier-Smith 1987)"
+        },
+        {
+          "depth": 2,
+          "id": "2",
+          "name": "Bacteria Woese et al. 2024"
+        },
+        {
+          "depth": 2,
+          "id": "2",
+          "name": "Bacteriobiota"
+        },
+        {
+          "depth": 2,
+          "id": "2",
+          "name": "bacteria"
+        },
+        {
+          "depth": 2,
+          "id": "2",
+          "name": "eubacteria"
+        },
+        {
+          "depth": 3,
+          "id": "3379134",
+          "name": "Pseudomonadati"
+        },
+        {
+          "depth": 4,
+          "id": "1224",
+          "name": "Pseudomonadota"
+        },
+        {
+          "depth": 4,
+          "id": "1224",
+          "name": "\"Alphaproteobacteriota\" Whitman et al. 2018"
+        },
+        {
+          "depth": 4,
+          "id": "1224",
+          "name": "Alphaproteobacteriota"
+        },
+        {
+          "depth": 4,
+          "id": "1224",
+          "name": "Proteobacteria"
+        },
+        {
+          "depth": 4,
+          "id": "1224",
+          "name": "Proteobacteriota"
+        },
+        {
+          "depth": 4,
+          "id": "1224",
+          "name": "proteobacteria"
+        },
+        {
+          "depth": 4,
+          "id": "1224",
+          "name": "purple photosynthetic bacteria and relatives"
+        },
+        {
+          "depth": 5,
+          "id": "1236",
+          "name": "Gammaproteobacteria"
+        },
+        {
+          "depth": 5,
+          "id": "1236",
+          "name": "Proteobacteria gamma subdivision"
+        },
+        {
+          "depth": 5,
+          "id": "1236",
+          "name": "Pseudomonadia"
+        },
+        {
+          "depth": 5,
+          "id": "1236",
+          "name": "Purple bacteria, gamma subdivision"
+        },
+        {
+          "depth": 5,
+          "id": "1236",
+          "name": "g-proteobacteria"
+        },
+        {
+          "depth": 5,
+          "id": "1236",
+          "name": "gamma proteobacteria"
+        },
+        {
+          "depth": 5,
+          "id": "1236",
+          "name": "gamma subdivision"
+        },
+        {
+          "depth": 5,
+          "id": "1236",
+          "name": "gamma subgroup"
+        },
+        {
+          "depth": 6,
+          "id": "91347",
+          "name": "Enterobacterales"
+        },
+        {
+          "depth": 6,
+          "id": "91347",
+          "name": "Enterobacteriaceae and related endosymbionts"
+        },
+        {
+          "depth": 6,
+          "id": "91347",
+          "name": "Enterobacteriaceae group"
+        },
+        {
+          "depth": 6,
+          "id": "91347",
+          "name": "Enterobacteriales"
+        },
+        {
+          "depth": 7,
+          "id": "543",
+          "name": "Enterobacteriaceae"
+        },
+        {
+          "depth": 7,
+          "id": "543",
+          "name": "Enterobacteraceae"
+        },
+        {
+          "depth": 7,
+          "id": "543",
+          "name": "enterobacteria"
+        },
+        {
+          "depth": 8,
+          "id": "561",
+          "name": "Escherichia"
+        },
+        {
+          "depth": 9,
+          "id": "562",
+          "name": "Escherichia coli"
+        },
+        {
+          "depth": 9,
+          "id": "562",
+          "name": "Bacillus coli"
+        },
+        {
+          "depth": 9,
+          "id": "562",
+          "name": "Bacterium coli"
+        },
+        {
+          "depth": 9,
+          "id": "562",
+          "name": "Bacterium coli commune"
+        },
+        {
+          "depth": 9,
+          "id": "562",
+          "name": "E. coli"
+        },
+        {
+          "depth": 9,
+          "id": "562",
+          "name": "Enterococcus coli"
+        },
+        {
+          "depth": 9,
+          "id": "562",
+          "name": "Escherichia/Shigella coli"
+        }
+      ]
+    }
+  ],
+  "rcsb_entity_source_organism": [
+    {
+      "common_name": "human",
+      "ncbi_common_names": [
+        "human"
+      ],
+      "ncbi_parent_scientific_name": "Eukaryota",
+      "ncbi_scientific_name": "Homo sapiens",
+      "ncbi_taxonomy_id": 9606,
+      "pdbx_src_id": 1,
+      "provenance_source": "Primary Data",
+      "scientific_name": "Homo sapiens",
+      "source_type": "genetically engineered",
+      "taxonomy_lineage": [
+        {
+          "depth": 1,
+          "id": "131567",
+          "name": "cellular organisms"
+        },
+        {
+          "depth": 1,
+          "id": "131567",
+          "name": "biota"
+        },
+        {
+          "depth": 2,
+          "id": "2759",
+          "name": "Eukaryota"
+        },
+        {
+          "depth": 2,
+          "id": "2759",
+          "name": "Eucarya"
+        },
+        {
+          "depth": 2,
+          "id": "2759",
+          "name": "Eucaryotae"
+        },
+        {
+          "depth": 2,
+          "id": "2759",
+          "name": "Eukarya"
+        },
+        {
+          "depth": 2,
+          "id": "2759",
+          "name": "Eukaryotae"
+        },
+        {
+          "depth": 2,
+          "id": "2759",
+          "name": "eukaryotes"
+        },
+        {
+          "depth": 3,
+          "id": "33154",
+          "name": "Opisthokonta"
+        },
+        {
+          "depth": 3,
+          "id": "33154",
+          "name": "Fungi/Metazoa group"
+        },
+        {
+          "depth": 3,
+          "id": "33154",
+          "name": "opisthokonts"
+        },
+        {
+          "depth": 4,
+          "id": "33208",
+          "name": "Metazoa"
+        },
+        {
+          "depth": 4,
+          "id": "33208",
+          "name": "Animalia"
+        },
+        {
+          "depth": 4,
+          "id": "33208",
+          "name": "animals"
+        },
+        {
+          "depth": 4,
+          "id": "33208",
+          "name": "metazoans"
+        },
+        {
+          "depth": 4,
+          "id": "33208",
+          "name": "multicellular animals"
+        },
+        {
+          "depth": 5,
+          "id": "6072",
+          "name": "Eumetazoa"
+        },
+        {
+          "depth": 6,
+          "id": "33213",
+          "name": "Bilateria"
+        },
+        {
+          "depth": 7,
+          "id": "33511",
+          "name": "Deuterostomia"
+        },
+        {
+          "depth": 7,
+          "id": "33511",
+          "name": "deuterostomes"
+        },
+        {
+          "depth": 8,
+          "id": "7711",
+          "name": "Chordata"
+        },
+        {
+          "depth": 8,
+          "id": "7711",
+          "name": "chordates"
+        },
+        {
+          "depth": 9,
+          "id": "89593",
+          "name": "Craniata"
+        },
+        {
+          "depth": 10,
+          "id": "7742",
+          "name": "Vertebrata"
+        },
+        {
+          "depth": 10,
+          "id": "7742",
+          "name": "vertebrates"
+        },
+        {
+          "depth": 11,
+          "id": "7776",
+          "name": "Gnathostomata"
+        },
+        {
+          "depth": 11,
+          "id": "7776",
+          "name": "jawed vertebrates"
+        },
+        {
+          "depth": 12,
+          "id": "117570",
+          "name": "Teleostomi"
+        },
+        {
+          "depth": 13,
+          "id": "117571",
+          "name": "Euteleostomi"
+        },
+        {
+          "depth": 13,
+          "id": "117571",
+          "name": "bony vertebrates"
+        },
+        {
+          "depth": 14,
+          "id": "8287",
+          "name": "Sarcopterygii"
+        },
+        {
+          "depth": 15,
+          "id": "1338369",
+          "name": "Dipnotetrapodomorpha"
+        },
+        {
+          "depth": 16,
+          "id": "32523",
+          "name": "Tetrapoda"
+        },
+        {
+          "depth": 16,
+          "id": "32523",
+          "name": "tetrapods"
+        },
+        {
+          "depth": 17,
+          "id": "32524",
+          "name": "Amniota"
+        },
+        {
+          "depth": 17,
+          "id": "32524",
+          "name": "amniotes"
+        },
+        {
+          "depth": 18,
+          "id": "40674",
+          "name": "Mammalia"
+        },
+        {
+          "depth": 18,
+          "id": "40674",
+          "name": "mammals"
+        },
+        {
+          "depth": 19,
+          "id": "32525",
+          "name": "Theria"
+        },
+        {
+          "depth": 20,
+          "id": "9347",
+          "name": "Eutheria"
+        },
+        {
+          "depth": 20,
+          "id": "9347",
+          "name": "Placentalia"
+        },
+        {
+          "depth": 20,
+          "id": "9347",
+          "name": "eutherian mammals"
+        },
+        {
+          "depth": 20,
+          "id": "9347",
+          "name": "placental mammals"
+        },
+        {
+          "depth": 20,
+          "id": "9347",
+          "name": "placentals"
+        },
+        {
+          "depth": 21,
+          "id": "1437010",
+          "name": "Boreoeutheria"
+        },
+        {
+          "depth": 21,
+          "id": "1437010",
+          "name": "Boreotheria"
+        },
+        {
+          "depth": 22,
+          "id": "314146",
+          "name": "Euarchontoglires"
+        },
+        {
+          "depth": 23,
+          "id": "9443",
+          "name": "Primates"
+        },
+        {
+          "depth": 23,
+          "id": "9443",
+          "name": "Primata"
+        },
+        {
+          "depth": 23,
+          "id": "9443",
+          "name": "primate"
+        },
+        {
+          "depth": 23,
+          "id": "9443",
+          "name": "primates"
+        },
+        {
+          "depth": 24,
+          "id": "376913",
+          "name": "Haplorrhini"
+        },
+        {
+          "depth": 25,
+          "id": "314293",
+          "name": "Simiiformes"
+        },
+        {
+          "depth": 25,
+          "id": "314293",
+          "name": "Anthropoidea"
+        },
+        {
+          "depth": 26,
+          "id": "9526",
+          "name": "Catarrhini"
+        },
+        {
+          "depth": 27,
+          "id": "314295",
+          "name": "Hominoidea"
+        },
+        {
+          "depth": 27,
+          "id": "314295",
+          "name": "ape"
+        },
+        {
+          "depth": 27,
+          "id": "314295",
+          "name": "apes"
+        },
+        {
+          "depth": 28,
+          "id": "9604",
+          "name": "Hominidae"
+        },
+        {
+          "depth": 28,
+          "id": "9604",
+          "name": "Pongidae"
+        },
+        {
+          "depth": 28,
+          "id": "9604",
+          "name": "great apes"
+        },
+        {
+          "depth": 29,
+          "id": "207598",
+          "name": "Homininae"
+        },
+        {
+          "depth": 29,
+          "id": "207598",
+          "name": "Homo/Pan/Gorilla group"
+        },
+        {
+          "depth": 30,
+          "id": "9605",
+          "name": "Homo"
+        },
+        {
+          "depth": 30,
+          "id": "9605",
+          "name": "humans"
+        },
+        {
+          "depth": 31,
+          "id": "9606",
+          "name": "Homo sapiens"
+        },
+        {
+          "depth": 31,
+          "id": "9606",
+          "name": "human"
+        }
+      ],
+      "rcsb_gene_name": [
+        {
+          "provenance_source": "Primary Data",
+          "value": "HLA-B"
+        }
+      ]
+    }
+  ],
+  "rcsb_polymer_entity": {
+    "formula_weight": 31.984,
+    "pdbx_description": "MHC class I antigen",
+    "pdbx_fragment": "UNP RESIDUES 25-300",
+    "pdbx_number_of_molecules": 1,
+    "rcsb_multiple_source_flag": "N",
+    "rcsb_source_part_count": 1,
+    "rcsb_source_taxonomy_count": 1,
+    "src_method": "man",
+    "rcsb_macromolecular_names_combined": [
+      {
+        "name": "MHC class I antigen",
+        "provenance_code": "ECO:0000304",
+        "provenance_source": "PDB Preferred Name"
+      },
+      {
+        "name": "heavy chain HLA B*3508",
+        "provenance_code": "ECO:0000303",
+        "provenance_source": "PDB Synonym"
+      }
+    ],
+    "rcsb_polymer_name_combined": {
+      "names": [
+        "HLA-B*3507"
+      ],
+      "provenance_source": "UniProt Name"
+    }
+  },
+  "rcsb_polymer_entity_align": [
+    {
+      "provenance_source": "SIFTS",
+      "reference_database_accession": "C5MK56",
+      "reference_database_name": "UniProt",
+      "aligned_regions": [
+        {
+          "entity_beg_seq_id": 1,
+          "length": 276,
+          "ref_beg_seq_id": 25
+        }
+      ]
+    }
+  ],
+  "rcsb_polymer_entity_annotation": [
+    {
+      "annotation_id": "GO:0098553",
+      "name": "lumenal side of endoplasmic reticulum membrane",
+      "provenance_source": "UNIPROT",
+      "type": "GO",
+      "annotation_lineage": [
+        {
+          "id": "GO:0043227",
+          "name": "membrane-bounded organelle"
+        },
+        {
+          "id": "GO:0005575",
+          "name": "cellular_component"
+        },
+        {
+          "id": "GO:0005622",
+          "name": "intracellular anatomical structure"
+        },
+        {
+          "id": "GO:0031984",
+          "name": "organelle subcompartment"
+        },
+        {
+          "id": "GO:0016020",
+          "name": "membrane"
+        },
+        {
+          "id": "GO:0098553",
+          "name": "lumenal side of endoplasmic reticulum membrane"
+        },
+        {
+          "id": "GO:0043231",
+          "name": "intracellular membrane-bounded organelle"
+        },
+        {
+          "id": "GO:0012505",
+          "name": "endomembrane system"
+        },
+        {
+          "id": "GO:0098552",
+          "name": "side of membrane"
+        },
+        {
+          "id": "GO:0098576",
+          "name": "lumenal side of membrane"
+        },
+        {
+          "id": "GO:0098827",
+          "name": "endoplasmic reticulum subcompartment"
+        },
+        {
+          "id": "GO:0043229",
+          "name": "intracellular organelle"
+        },
+        {
+          "id": "GO:0110165",
+          "name": "cellular anatomical structure"
+        },
+        {
+          "id": "GO:0043226",
+          "name": "organelle"
+        },
+        {
+          "id": "GO:0042175",
+          "name": "nuclear outer membrane-endoplasmic reticulum membrane network"
+        },
+        {
+          "id": "GO:0005783",
+          "name": "endoplasmic reticulum"
+        },
+        {
+          "id": "GO:0005737",
+          "name": "cytoplasm"
+        },
+        {
+          "id": "GO:0031090",
+          "name": "organelle membrane"
+        },
+        {
+          "id": "GO:0005789",
+          "name": "endoplasmic reticulum membrane"
+        }
+      ]
+    },
+    {
+      "annotation_id": "GO:0030670",
+      "name": "phagocytic vesicle membrane",
+      "provenance_source": "UNIPROT",
+      "type": "GO",
+      "annotation_lineage": [
+        {
+          "id": "GO:0043227",
+          "name": "membrane-bounded organelle"
+        },
+        {
+          "id": "GO:0005575",
+          "name": "cellular_component"
+        },
+        {
+          "id": "GO:0005622",
+          "name": "intracellular anatomical structure"
+        },
+        {
+          "id": "GO:0016020",
+          "name": "membrane"
+        },
+        {
+          "id": "GO:0097708",
+          "name": "intracellular vesicle"
+        },
+        {
+          "id": "GO:0045335",
+          "name": "phagocytic vesicle"
+        },
+        {
+          "id": "GO:0043231",
+          "name": "intracellular membrane-bounded organelle"
+        },
+        {
+          "id": "GO:0043229",
+          "name": "intracellular organelle"
+        },
+        {
+          "id": "GO:0030670",
+          "name": "phagocytic vesicle membrane"
+        },
+        {
+          "id": "GO:0110165",
+          "name": "cellular anatomical structure"
+        },
+        {
+          "id": "GO:0030659",
+          "name": "cytoplasmic vesicle membrane"
+        },
+        {
+          "id": "GO:0098588",
+          "name": "bounding membrane of organelle"
+        },
+        {
+          "id": "GO:0031410",
+          "name": "cytoplasmic vesicle"
+        },
+        {
+          "id": "GO:0012506",
+          "name": "vesicle membrane"
+        },
+        {
+          "id": "GO:0043226",
+          "name": "organelle"
+        },
+        {
+          "id": "GO:0030666",
+          "name": "endocytic vesicle membrane"
+        },
+        {
+          "id": "GO:0005737",
+          "name": "cytoplasm"
+        },
+        {
+          "id": "GO:0031982",
+          "name": "vesicle"
+        },
+        {
+          "id": "GO:0031090",
+          "name": "organelle membrane"
+        },
+        {
+          "id": "GO:0030139",
+          "name": "endocytic vesicle"
+        }
+      ]
+    },
+    {
+      "annotation_id": "GO:0055038",
+      "name": "recycling endosome membrane",
+      "provenance_source": "UNIPROT",
+      "type": "GO",
+      "annotation_lineage": [
+        {
+          "id": "GO:0010008",
+          "name": "endosome membrane"
+        },
+        {
+          "id": "GO:0043227",
+          "name": "membrane-bounded organelle"
+        },
+        {
+          "id": "GO:0005575",
+          "name": "cellular_component"
+        },
+        {
+          "id": "GO:0005622",
+          "name": "intracellular anatomical structure"
+        },
+        {
+          "id": "GO:0016020",
+          "name": "membrane"
+        },
+        {
+          "id": "GO:0005768",
+          "name": "endosome"
+        },
+        {
+          "id": "GO:0097708",
+          "name": "intracellular vesicle"
+        },
+        {
+          "id": "GO:0043231",
+          "name": "intracellular membrane-bounded organelle"
+        },
+        {
+          "id": "GO:0055037",
+          "name": "recycling endosome"
+        },
+        {
+          "id": "GO:0012505",
+          "name": "endomembrane system"
+        },
+        {
+          "id": "GO:0043229",
+          "name": "intracellular organelle"
+        },
+        {
+          "id": "GO:0030659",
+          "name": "cytoplasmic vesicle membrane"
+        },
+        {
+          "id": "GO:0110165",
+          "name": "cellular anatomical structure"
+        },
+        {
+          "id": "GO:0098588",
+          "name": "bounding membrane of organelle"
+        },
+        {
+          "id": "GO:0055038",
+          "name": "recycling endosome membrane"
+        },
+        {
+          "id": "GO:0012506",
+          "name": "vesicle membrane"
+        },
+        {
+          "id": "GO:0031410",
+          "name": "cytoplasmic vesicle"
+        },
+        {
+          "id": "GO:0043226",
+          "name": "organelle"
+        },
+        {
+          "id": "GO:0005737",
+          "name": "cytoplasm"
+        },
+        {
+          "id": "GO:0031982",
+          "name": "vesicle"
+        },
+        {
+          "id": "GO:0031090",
+          "name": "organelle membrane"
+        }
+      ]
+    },
+    {
+      "annotation_id": "IPR036179",
+      "name": "Immunoglobulin-like domain superfamily",
+      "provenance_source": "UNIPROT",
+      "type": "InterPro",
+      "annotation_lineage": [
+        {
+          "id": "IPR036179",
+          "name": "Immunoglobulin-like domain superfamily"
+        }
+      ]
+    },
+    {
+      "annotation_id": "GO:0000139",
+      "name": "Golgi membrane",
+      "provenance_source": "UNIPROT",
+      "type": "GO",
+      "annotation_lineage": [
+        {
+          "id": "GO:0043227",
+          "name": "membrane-bounded organelle"
+        },
+        {
+          "id": "GO:0000139",
+          "name": "Golgi membrane"
+        },
+        {
+          "id": "GO:0005575",
+          "name": "cellular_component"
+        },
+        {
+          "id": "GO:0005622",
+          "name": "intracellular anatomical structure"
+        },
+        {
+          "id": "GO:0005794",
+          "name": "Golgi apparatus"
+        },
+        {
+          "id": "GO:0016020",
+          "name": "membrane"
+        },
+        {
+          "id": "GO:0043231",
+          "name": "intracellular membrane-bounded organelle"
+        },
+        {
+          "id": "GO:0012505",
+          "name": "endomembrane system"
+        },
+        {
+          "id": "GO:0043229",
+          "name": "intracellular organelle"
+        },
+        {
+          "id": "GO:0098588",
+          "name": "bounding membrane of organelle"
+        },
+        {
+          "id": "GO:0110165",
+          "name": "cellular anatomical structure"
+        },
+        {
+          "id": "GO:0043226",
+          "name": "organelle"
+        },
+        {
+          "id": "GO:0005737",
+          "name": "cytoplasm"
+        },
+        {
+          "id": "GO:0031090",
+          "name": "organelle membrane"
+        }
+      ]
+    },
+    {
+      "annotation_id": "GO:0006955",
+      "name": "immune response",
+      "provenance_source": "UNIPROT",
+      "type": "GO",
+      "annotation_lineage": [
+        {
+          "id": "GO:0050896",
+          "name": "response to stimulus"
+        },
+        {
+          "id": "GO:0006955",
+          "name": "immune response"
+        },
+        {
+          "id": "GO:0002376",
+          "name": "immune system process"
+        },
+        {
+          "id": "GO:0008150",
+          "name": "biological_process"
+        }
+      ]
+    },
+    {
+      "annotation_id": "IPR050208",
+      "name": "Antigen-presenting and immune regulatory MHC class I-related",
+      "provenance_source": "UNIPROT",
+      "type": "InterPro",
+      "annotation_lineage": [
+        {
+          "id": "IPR050208",
+          "name": "Antigen-presenting and immune regulatory MHC class I-related"
+        }
+      ]
+    },
+    {
+      "annotation_id": "GO:0031901",
+      "name": "early endosome membrane",
+      "provenance_source": "UNIPROT",
+      "type": "GO",
+      "annotation_lineage": [
+        {
+          "id": "GO:0043227",
+          "name": "membrane-bounded organelle"
+        },
+        {
+          "id": "GO:0010008",
+          "name": "endosome membrane"
+        },
+        {
+          "id": "GO:0005575",
+          "name": "cellular_component"
+        },
+        {
+          "id": "GO:0005622",
+          "name": "intracellular anatomical structure"
+        },
+        {
+          "id": "GO:0005769",
+          "name": "early endosome"
+        },
+        {
+          "id": "GO:0005768",
+          "name": "endosome"
+        },
+        {
+          "id": "GO:0016020",
+          "name": "membrane"
+        },
+        {
+          "id": "GO:0097708",
+          "name": "intracellular vesicle"
+        },
+        {
+          "id": "GO:0031901",
+          "name": "early endosome membrane"
+        },
+        {
+          "id": "GO:0043231",
+          "name": "intracellular membrane-bounded organelle"
+        },
+        {
+          "id": "GO:0012505",
+          "name": "endomembrane system"
+        },
+        {
+          "id": "GO:0043229",
+          "name": "intracellular organelle"
+        },
+        {
+          "id": "GO:0110165",
+          "name": "cellular anatomical structure"
+        },
+        {
+          "id": "GO:0030659",
+          "name": "cytoplasmic vesicle membrane"
+        },
+        {
+          "id": "GO:0098588",
+          "name": "bounding membrane of organelle"
+        },
+        {
+          "id": "GO:0031410",
+          "name": "cytoplasmic vesicle"
+        },
+        {
+          "id": "GO:0012506",
+          "name": "vesicle membrane"
+        },
+        {
+          "id": "GO:0043226",
+          "name": "organelle"
+        },
+        {
+          "id": "GO:0005737",
+          "name": "cytoplasm"
+        },
+        {
+          "id": "GO:0031982",
+          "name": "vesicle"
+        },
+        {
+          "id": "GO:0031090",
+          "name": "organelle membrane"
+        }
+      ]
+    },
+    {
+      "annotation_id": "IPR037055",
+      "name": "MHC class I-like antigen recognition-like superfamily",
+      "provenance_source": "UNIPROT",
+      "type": "InterPro",
+      "annotation_lineage": [
+        {
+          "id": "IPR037055",
+          "name": "MHC class I-like antigen recognition-like superfamily"
+        }
+      ]
+    },
+    {
+      "annotation_id": "GO:0009986",
+      "name": "cell surface",
+      "provenance_source": "UNIPROT",
+      "type": "GO",
+      "annotation_lineage": [
+        {
+          "id": "GO:0009986",
+          "name": "cell surface"
+        },
+        {
+          "id": "GO:0110165",
+          "name": "cellular anatomical structure"
+        },
+        {
+          "id": "GO:0005575",
+          "name": "cellular_component"
+        }
+      ]
+    },
+    {
+      "annotation_id": "IPR003597",
+      "name": "Immunoglobulin C1-set",
+      "provenance_source": "UNIPROT",
+      "type": "InterPro",
+      "annotation_lineage": [
+        {
+          "depth": 1,
+          "id": "IPR007110",
+          "name": "Immunoglobulin-like domain"
+        },
+        {
+          "depth": 2,
+          "id": "IPR003597",
+          "name": "Immunoglobulin C1-set"
+        }
+      ]
+    },
+    {
+      "annotation_id": "GO:0005886",
+      "name": "plasma membrane",
+      "provenance_source": "UNIPROT",
+      "type": "GO",
+      "annotation_lineage": [
+        {
+          "id": "GO:0071944",
+          "name": "cell periphery"
+        },
+        {
+          "id": "GO:0110165",
+          "name": "cellular anatomical structure"
+        },
+        {
+          "id": "GO:0005575",
+          "name": "cellular_component"
+        },
+        {
+          "id": "GO:0005886",
+          "name": "plasma membrane"
+        },
+        {
+          "id": "GO:0016020",
+          "name": "membrane"
+        }
+      ]
+    },
+    {
+      "annotation_id": "IPR010579",
+      "name": "MHC class I, alpha chain, C-terminal",
+      "provenance_source": "UNIPROT",
+      "type": "InterPro",
+      "annotation_lineage": [
+        {
+          "id": "IPR010579",
+          "name": "MHC class I, alpha chain, C-terminal"
+        }
+      ]
+    },
+    {
+      "annotation_id": "GO:0019882",
+      "name": "antigen processing and presentation",
+      "provenance_source": "UNIPROT",
+      "type": "GO",
+      "annotation_lineage": [
+        {
+          "id": "GO:0019882",
+          "name": "antigen processing and presentation"
+        },
+        {
+          "id": "GO:0002376",
+          "name": "immune system process"
+        },
+        {
+          "id": "GO:0008150",
+          "name": "biological_process"
+        }
+      ]
+    },
+    {
+      "annotation_id": "IPR013783",
+      "name": "Immunoglobulin-like fold",
+      "provenance_source": "UNIPROT",
+      "type": "InterPro",
+      "annotation_lineage": [
+        {
+          "id": "IPR013783",
+          "name": "Immunoglobulin-like fold"
+        }
+      ]
+    },
+    {
+      "annotation_id": "IPR011161",
+      "name": "MHC class I-like antigen recognition-like",
+      "provenance_source": "UNIPROT",
+      "type": "InterPro",
+      "annotation_lineage": [
+        {
+          "depth": 1,
+          "id": "IPR011161",
+          "name": "MHC class I-like antigen recognition-like"
+        }
+      ]
+    },
+    {
+      "annotation_id": "IPR011162",
+      "name": "MHC classes I/II-like antigen recognition protein",
+      "provenance_source": "UNIPROT",
+      "type": "InterPro",
+      "annotation_lineage": [
+        {
+          "id": "IPR011162",
+          "name": "MHC classes I/II-like antigen recognition protein"
+        }
+      ]
+    },
+    {
+      "annotation_id": "IPR007110",
+      "name": "Immunoglobulin-like domain",
+      "provenance_source": "UNIPROT",
+      "type": "InterPro",
+      "annotation_lineage": [
+        {
+          "depth": 1,
+          "id": "IPR007110",
+          "name": "Immunoglobulin-like domain"
+        }
+      ]
+    },
+    {
+      "annotation_id": "GO:0012507",
+      "name": "ER to Golgi transport vesicle membrane",
+      "provenance_source": "UNIPROT",
+      "type": "GO",
+      "annotation_lineage": [
+        {
+          "id": "GO:0043227",
+          "name": "membrane-bounded organelle"
+        },
+        {
+          "id": "GO:0005575",
+          "name": "cellular_component"
+        },
+        {
+          "id": "GO:0005622",
+          "name": "intracellular anatomical structure"
+        },
+        {
+          "id": "GO:0030133",
+          "name": "transport vesicle"
+        },
+        {
+          "id": "GO:0016020",
+          "name": "membrane"
+        },
+        {
+          "id": "GO:0097708",
+          "name": "intracellular vesicle"
+        },
+        {
+          "id": "GO:0030658",
+          "name": "transport vesicle membrane"
+        },
+        {
+          "id": "GO:0043231",
+          "name": "intracellular membrane-bounded organelle"
+        },
+        {
+          "id": "GO:0012505",
+          "name": "endomembrane system"
+        },
+        {
+          "id": "GO:0043229",
+          "name": "intracellular organelle"
+        },
+        {
+          "id": "GO:0030659",
+          "name": "cytoplasmic vesicle membrane"
+        },
+        {
+          "id": "GO:0110165",
+          "name": "cellular anatomical structure"
+        },
+        {
+          "id": "GO:0098588",
+          "name": "bounding membrane of organelle"
+        },
+        {
+          "id": "GO:0030662",
+          "name": "coated vesicle membrane"
+        },
+        {
+          "id": "GO:0030134",
+          "name": "COPII-coated ER to Golgi transport vesicle"
+        },
+        {
+          "id": "GO:0012506",
+          "name": "vesicle membrane"
+        },
+        {
+          "id": "GO:0031410",
+          "name": "cytoplasmic vesicle"
+        },
+        {
+          "id": "GO:0012507",
+          "name": "ER to Golgi transport vesicle membrane"
+        },
+        {
+          "id": "GO:0043226",
+          "name": "organelle"
+        },
+        {
+          "id": "GO:0030135",
+          "name": "coated vesicle"
+        },
+        {
+          "id": "GO:0005737",
+          "name": "cytoplasm"
+        },
+        {
+          "id": "GO:0031982",
+          "name": "vesicle"
+        },
+        {
+          "id": "GO:0031090",
+          "name": "organelle membrane"
+        }
+      ]
+    },
+    {
+      "annotation_id": "IPR001039",
+      "name": "MHC class I alpha chain, alpha1 alpha2 domains",
+      "provenance_source": "UNIPROT",
+      "type": "InterPro",
+      "annotation_lineage": [
+        {
+          "depth": 2,
+          "id": "IPR001039",
+          "name": "MHC class I alpha chain, alpha1 alpha2 domains"
+        },
+        {
+          "depth": 1,
+          "id": "IPR011161",
+          "name": "MHC class I-like antigen recognition-like"
+        }
+      ]
+    },
+    {
+      "annotation_id": "IPR003006",
+      "name": "Immunoglobulin/major histocompatibility complex, conserved site",
+      "provenance_source": "UNIPROT",
+      "type": "InterPro",
+      "annotation_lineage": [
+        {
+          "id": "IPR003006",
+          "name": "Immunoglobulin/major histocompatibility complex, conserved site"
+        }
+      ]
+    }
+  ],
+  "rcsb_polymer_entity_container_identifiers": {
+    "asym_ids": [
+      "A"
+    ],
+    "auth_asym_ids": [
+      "A"
+    ],
+    "chem_comp_monomers": [
+      "ALA",
+      "ARG",
+      "ASN",
+      "ASP",
+      "CYS",
+      "GLN",
+      "GLU",
+      "GLY",
+      "HIS",
+      "ILE",
+      "LEU",
+      "LYS",
+      "MET",
+      "PHE",
+      "PRO",
+      "SER",
+      "THR",
+      "TRP",
+      "TYR",
+      "VAL"
+    ],
+    "entity_id": "1",
+    "entry_id": "4JRX",
+    "rcsb_id": "4JRX_1",
+    "uniprot_ids": [
+      "C5MK56"
+    ],
+    "reference_sequence_identifiers": [
+      {
+        "database_accession": "C5MK56",
+        "database_name": "UniProt",
+        "entity_sequence_coverage": 1.0,
+        "provenance_source": "SIFTS",
+        "reference_sequence_coverage": 0.7624309392265194
+      }
+    ]
+  },
+  "rcsb_polymer_entity_feature": [
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295807",
+      "name": "I-ALPHA",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_DESCRIPTION",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 276
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295808",
+      "name": "MH1 HLA-B*3505",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_PROTEIN_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 276
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295809",
+      "name": "MH",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_RECEPTOR_TYPE",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 276
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295810",
+      "name": "MH1-ALPHA_B2M",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_RECEPTOR_DESCRIPTION",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 276
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295811",
+      "name": "Homo sapiens (human)",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_ORGANISM_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 276
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295812",
+      "name": "G-DOMAIN G-ALPHA1",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_DOMAIN_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295813",
+      "name": "HLA-B*3501",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295814",
+      "name": "HLA-B*3502",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295815",
+      "name": "HLA-B*3503",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295816",
+      "name": "HLA-B*3504",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295817",
+      "name": "HLA-B*3505",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295818",
+      "name": "HLA-B*3506",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295819",
+      "name": "HLA-B*3508",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295820",
+      "name": "HLA-B*3509",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295821",
+      "name": "HLA-B*3512",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295822",
+      "name": "HLA-B*3514",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295823",
+      "name": "HLA-B*3515",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295824",
+      "name": "HLA-B*3517",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295825",
+      "name": "HLA-B*3518",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295826",
+      "name": "HLA-B*3521",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295827",
+      "name": "HLA-B*3522",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295828",
+      "name": "HLA-B*3523",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295829",
+      "name": "HLA-B*3524",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295830",
+      "name": "HLA-B*3530",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295831",
+      "name": "HLA-B*3531",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295832",
+      "name": "HLA-B*3532",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295833",
+      "name": "HLA-B*3533",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295834",
+      "name": "HLA-B*3534",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295835",
+      "name": "HLA-B*3535",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295836",
+      "name": "HLA-B*3537",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295837",
+      "name": "HLA-B*3538",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295838",
+      "name": "HLA-B*3539",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295839",
+      "name": "HLA-B*3541",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295840",
+      "name": "HLA-B*7802",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295841",
+      "name": "HLA-B*7804",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295842",
+      "name": "HLA-B*3542",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295843",
+      "name": "HLA-B*3565",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295844",
+      "name": "HLA-B*3555",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295845",
+      "name": "HLA-B*3560",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295846",
+      "name": "HLA-B*3548",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295847",
+      "name": "HLA-B*3559",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295848",
+      "name": "HLA-B*3544",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295849",
+      "name": "HLA-B*3558",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295850",
+      "name": "HLA-B*3561",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295851",
+      "name": "HLA-B*3551",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295852",
+      "name": "HLA-B*3557",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295853",
+      "name": "HLA-B*3545",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295854",
+      "name": "HLA-B*3564",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295855",
+      "name": "HLA-B*3567",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295856",
+      "name": "HLA-B*3566",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295857",
+      "name": "HLA-B*3562",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295858",
+      "name": "HLA-B*3579",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295859",
+      "name": "HLA-B*3575",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295860",
+      "name": "HLA-B*3571",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295861",
+      "name": "HLA-B*3570",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295862",
+      "name": "HLA-B*3568",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295863",
+      "name": "HLA-B*3583",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295864",
+      "name": "HLA-B*3593",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295865",
+      "name": "HLA-B*3587",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295866",
+      "name": "HLA-B*3586",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295867",
+      "name": "HLA-B*3581",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295868",
+      "name": "HLA-B*3589",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295869",
+      "name": "HLA-B*3591",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295870",
+      "name": "HLA-B*3594",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295871",
+      "name": "HLA-B*3588",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295872",
+      "name": "HLA-B*3599",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295873",
+      "name": "HLA-B*3596",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295874",
+      "name": "HLA-B*3598",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 90
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295875",
+      "name": "G-DOMAIN G-ALPHA2",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_DOMAIN_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 91,
+          "end_seq_id": 182
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295876",
+      "name": "HLA-B*3508",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 91,
+          "end_seq_id": 182
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295877",
+      "name": "C-LIKE-DOMAIN C-LIKE",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_DOMAIN_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295878",
+      "name": "HLA-B*3501",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295879",
+      "name": "HLA-B*3502",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295880",
+      "name": "HLA-B*3503",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295881",
+      "name": "HLA-B*3504",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295882",
+      "name": "HLA-B*3505",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295883",
+      "name": "HLA-B*3506",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295884",
+      "name": "HLA-B*3508",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295885",
+      "name": "HLA-B*3509",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295886",
+      "name": "HLA-B*3512",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295887",
+      "name": "HLA-B*3515",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295888",
+      "name": "HLA-B*3541",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295889",
+      "name": "HLA-B*7802",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295890",
+      "name": "HLA-B*7804",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295891",
+      "name": "HLA-B*3542",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295892",
+      "name": "HLA-B*3514",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295893",
+      "name": "HLA-B*3551",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295894",
+      "name": "HLA-B*3567",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295895",
+      "name": "HLA-B*3517",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295896",
+      "name": "HLA-B*3583",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295897",
+      "name": "HLA-B*3537",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295898",
+      "name": "HLA-B*3593",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295899",
+      "name": "HLA-B*3534",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295900",
+      "name": "HLA-B*3521",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "assignment_version": "202639-0",
+      "feature_id": "IMGT_295901",
+      "name": "HLA-B*3564",
+      "provenance_source": "IMGT",
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME",
+      "feature_positions": [
+        {
+          "beg_seq_id": 183,
+          "end_seq_id": 274
+        }
+      ]
+    },
+    {
+      "name": "Hydropathy values",
+      "provenance_source": "biojava-7.3.0",
+      "type": "hydropathy",
+      "feature_positions": [
+        {
+          "beg_seq_id": 5,
+          "values": [
+            -0.84,
+            -0.88,
+            -0.59,
+            -0.02,
+            -0.02,
+            -0.73,
+            -0.41,
+            -0.31,
+            -1.12,
+            -1.02,
+            -1.33,
+            -1.71,
+            -2.42,
+            -2.02,
+            -1.02,
+            -0.64,
+            -0.13,
+            0.32,
+            0.22,
+            1.08,
+            0.87,
+            0.98,
+            0.59,
+            -0.3,
+            -0.19,
+            -0.19,
+            -0.64,
+            -0.19,
+            -1.04,
+            -0.74,
+            -0.74,
+            -0.47,
+            0.12,
+            -0.28,
+            -0.92,
+            -0.92,
+            -1.31,
+            -1.31,
+            -1.4,
+            -1.51,
+            -1.51,
+            -1.89,
+            -1.9,
+            -1.22,
+            -1.11,
+            -1.42,
+            -1.42,
+            -1.29,
+            -0.97,
+            -1.56,
+            -1.52,
+            -1.52,
+            -2.41,
+            -2.52,
+            -2.52,
+            -2.21,
+            -2.56,
+            -1.88,
+            -1.18,
+            -1.47,
+            -1.44,
+            -1.44,
+            -1.02,
+            -1.02,
+            -1.02,
+            -0.78,
+            -1.78,
+            -2.48,
+            -2.13,
+            -1.63,
+            -1.74,
+            -2.06,
+            -1.24,
+            -1.67,
+            -1.57,
+            -1.21,
+            -0.97,
+            -1.27,
+            -2.08,
+            -1.67,
+            -1.67,
+            -1.89,
+            -1.43,
+            -1.48,
+            -1.69,
+            -1.04,
+            -0.16,
+            -0.16,
+            -0.57,
+            0.03,
+            -0.31,
+            -0.31,
+            0.06,
+            0.02,
+            -0.06,
+            -0.6,
+            -0.39,
+            -0.28,
+            -0.53,
+            -0.89,
+            -0.42,
+            -0.28,
+            -0.39,
+            -0.86,
+            -1.17,
+            -1.38,
+            -1.38,
+            -1.42,
+            -0.72,
+            -1.29,
+            -2.1,
+            -1.64,
+            -2.03,
+            -2.07,
+            -1.82,
+            -0.93,
+            -0.64,
+            -0.42,
+            -0.67,
+            -0.67,
+            -1.01,
+            -0.16,
+            0.14,
+            0.2,
+            -0.4,
+            -0.68,
+            -0.9,
+            -0.31,
+            -0.31,
+            0.0,
+            -0.22,
+            0.07,
+            -0.23,
+            0.37,
+            0.37,
+            -0.22,
+            -0.92,
+            -0.97,
+            -0.99,
+            -1.58,
+            -1.58,
+            -0.99,
+            -1.99,
+            -1.44,
+            -0.86,
+            -0.74,
+            -0.7,
+            -1.1,
+            -1.21,
+            -1.21,
+            -1.56,
+            -0.63,
+            -1.49,
+            -1.73,
+            -0.92,
+            -0.26,
+            0.71,
+            0.82,
+            0.52,
+            1.09,
+            0.17,
+            0.06,
+            -0.04,
+            -0.04,
+            -0.71,
+            -1.57,
+            -1.22,
+            -1.56,
+            -2.37,
+            -1.94,
+            -1.02,
+            -1.27,
+            -2.19,
+            -1.6,
+            -1.6,
+            -1.73,
+            -1.48,
+            -1.52,
+            -1.52,
+            -2.3,
+            -1.44,
+            -1.02,
+            -1.58,
+            -1.54,
+            -1.54,
+            -0.9,
+            -0.56,
+            -0.87,
+            -0.87,
+            -1.72,
+            -1.44,
+            -1.17,
+            -0.39,
+            -0.71,
+            -0.9,
+            -0.91,
+            -0.32,
+            0.46,
+            0.8,
+            0.91,
+            0.84,
+            0.24,
+            0.94,
+            0.28,
+            0.88,
+            0.6,
+            0.6,
+            0.57,
+            0.16,
+            -0.09,
+            -0.41,
+            -1.0,
+            -0.66,
+            -1.54,
+            -1.86,
+            -2.67,
+            -2.67,
+            -2.96,
+            -2.96,
+            -2.53,
+            -2.53,
+            -2.07,
+            -1.21,
+            -1.21,
+            -0.9,
+            -1.32,
+            -1.11,
+            -0.52,
+            -0.49,
+            -0.49,
+            -1.41,
+            -1.96,
+            -1.26,
+            -1.57,
+            -1.5,
+            -1.42,
+            -1.42,
+            -1.18,
+            -0.32,
+            0.64,
+            1.19,
+            0.7,
+            1.0,
+            1.39,
+            1.1,
+            0.51,
+            -0.08,
+            -1.04,
+            -1.66,
+            -2.2,
+            -1.74,
+            -2.01,
+            -1.5,
+            -1.5,
+            -1.47,
+            -1.47,
+            -1.01,
+            -0.44,
+            -0.54,
+            -1.26,
+            -1.08,
+            -1.12,
+            -0.81,
+            -0.03,
+            -0.14,
+            -0.2,
+            -1.01,
+            -1.01
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Disordered regions",
+      "provenance_source": "IUPred2(short)",
+      "type": "disorder",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "values": [
+            0.77,
+            0.69,
+            0.65,
+            0.61,
+            0.6,
+            0.55,
+            0.51,
+            0.47,
+            0.44,
+            0.42,
+            0.38,
+            0.31,
+            0.27,
+            0.25,
+            0.2,
+            0.26,
+            0.18,
+            0.2,
+            0.28,
+            0.38,
+            0.38,
+            0.44,
+            0.43,
+            0.38,
+            0.38,
+            0.29,
+            0.31,
+            0.31,
+            0.32,
+            0.3,
+            0.26,
+            0.26,
+            0.36,
+            0.38,
+            0.41,
+            0.47,
+            0.5,
+            0.55,
+            0.59,
+            0.61,
+            0.52,
+            0.47,
+            0.46,
+            0.53,
+            0.59,
+            0.61,
+            0.69,
+            0.68,
+            0.63,
+            0.53,
+            0.56,
+            0.56,
+            0.57,
+            0.55,
+            0.58,
+            0.53,
+            0.48,
+            0.45,
+            0.47,
+            0.49,
+            0.46,
+            0.55,
+            0.59,
+            0.51,
+            0.49,
+            0.49,
+            0.48,
+            0.39,
+            0.38,
+            0.44,
+            0.47,
+            0.46,
+            0.46,
+            0.39,
+            0.32,
+            0.3,
+            0.36,
+            0.41,
+            0.41,
+            0.38,
+            0.38,
+            0.38,
+            0.37,
+            0.3,
+            0.31,
+            0.33,
+            0.33,
+            0.29,
+            0.29,
+            0.29,
+            0.22,
+            0.29,
+            0.22,
+            0.21,
+            0.31,
+            0.39,
+            0.38,
+            0.37,
+            0.3,
+            0.23,
+            0.26,
+            0.25,
+            0.24,
+            0.25,
+            0.33,
+            0.39,
+            0.35,
+            0.27,
+            0.31,
+            0.37,
+            0.36,
+            0.44,
+            0.36,
+            0.37,
+            0.35,
+            0.25,
+            0.24,
+            0.26,
+            0.27,
+            0.27,
+            0.34,
+            0.35,
+            0.27,
+            0.28,
+            0.24,
+            0.21,
+            0.21,
+            0.24,
+            0.29,
+            0.25,
+            0.26,
+            0.18,
+            0.18,
+            0.25,
+            0.29,
+            0.31,
+            0.28,
+            0.28,
+            0.24,
+            0.21,
+            0.26,
+            0.2,
+            0.18,
+            0.26,
+            0.26,
+            0.27,
+            0.27,
+            0.24,
+            0.18,
+            0.15,
+            0.17,
+            0.18,
+            0.19,
+            0.14,
+            0.1,
+            0.11,
+            0.07,
+            0.09,
+            0.08,
+            0.09,
+            0.07,
+            0.05,
+            0.07,
+            0.09,
+            0.09,
+            0.1,
+            0.11,
+            0.12,
+            0.09,
+            0.15,
+            0.18,
+            0.17,
+            0.17,
+            0.24,
+            0.33,
+            0.38,
+            0.39,
+            0.47,
+            0.47,
+            0.47,
+            0.47,
+            0.52,
+            0.61,
+            0.55,
+            0.55,
+            0.55,
+            0.54,
+            0.55,
+            0.53,
+            0.59,
+            0.53,
+            0.53,
+            0.48,
+            0.39,
+            0.36,
+            0.28,
+            0.3,
+            0.23,
+            0.18,
+            0.27,
+            0.25,
+            0.28,
+            0.24,
+            0.21,
+            0.21,
+            0.21,
+            0.14,
+            0.16,
+            0.13,
+            0.15,
+            0.15,
+            0.21,
+            0.22,
+            0.3,
+            0.38,
+            0.39,
+            0.46,
+            0.45,
+            0.52,
+            0.53,
+            0.45,
+            0.48,
+            0.46,
+            0.5,
+            0.53,
+            0.57,
+            0.58,
+            0.66,
+            0.64,
+            0.66,
+            0.6,
+            0.6,
+            0.58,
+            0.5,
+            0.49,
+            0.48,
+            0.43,
+            0.38,
+            0.33,
+            0.34,
+            0.4,
+            0.46,
+            0.46,
+            0.46,
+            0.49,
+            0.44,
+            0.39,
+            0.38,
+            0.31,
+            0.32,
+            0.27,
+            0.34,
+            0.32,
+            0.34,
+            0.41,
+            0.36,
+            0.38,
+            0.42,
+            0.49,
+            0.47,
+            0.45,
+            0.39,
+            0.38,
+            0.29,
+            0.29,
+            0.3,
+            0.35,
+            0.47,
+            0.5,
+            0.6,
+            0.64,
+            0.73,
+            0.75,
+            0.8,
+            0.84,
+            0.87
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Disordered binding sites",
+      "provenance_source": "Anchor2",
+      "type": "disorder_binding",
+      "feature_positions": [
+        {
+          "beg_seq_id": 1,
+          "values": [
+            0.41,
+            0.41,
+            0.4,
+            0.4,
+            0.4,
+            0.4,
+            0.39,
+            0.39,
+            0.4,
+            0.41,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.44,
+            0.45,
+            0.45,
+            0.45,
+            0.45,
+            0.45,
+            0.45,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.45,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.45,
+            0.45,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.41,
+            0.41,
+            0.41,
+            0.41,
+            0.4,
+            0.4,
+            0.4,
+            0.41,
+            0.41,
+            0.41,
+            0.41,
+            0.41,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.42,
+            0.42,
+            0.42,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.42,
+            0.42,
+            0.41,
+            0.41,
+            0.4,
+            0.4,
+            0.4,
+            0.4,
+            0.39,
+            0.39,
+            0.39,
+            0.39,
+            0.39,
+            0.4,
+            0.4,
+            0.41,
+            0.42,
+            0.42,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.42,
+            0.42,
+            0.42,
+            0.41,
+            0.41,
+            0.42,
+            0.42,
+            0.42,
+            0.42,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.42,
+            0.42,
+            0.41,
+            0.41,
+            0.4,
+            0.4,
+            0.39,
+            0.39,
+            0.39,
+            0.39,
+            0.39,
+            0.4,
+            0.4,
+            0.41,
+            0.41,
+            0.42,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.44,
+            0.44,
+            0.45,
+            0.46,
+            0.48,
+            0.49,
+            0.51,
+            0.53,
+            0.55,
+            0.56,
+            0.57,
+            0.57,
+            0.56,
+            0.55,
+            0.54,
+            0.53,
+            0.52,
+            0.5,
+            0.49,
+            0.47,
+            0.46,
+            0.45,
+            0.44,
+            0.44,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.43,
+            0.44,
+            0.44,
+            0.44,
+            0.45,
+            0.46,
+            0.47,
+            0.48,
+            0.49,
+            0.51,
+            0.52,
+            0.52,
+            0.52,
+            0.52,
+            0.51,
+            0.5,
+            0.49,
+            0.48,
+            0.47,
+            0.46,
+            0.45,
+            0.45,
+            0.45,
+            0.45,
+            0.45,
+            0.45,
+            0.45,
+            0.45,
+            0.45,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.44,
+            0.45,
+            0.45,
+            0.45,
+            0.45,
+            0.44,
+            0.44
+          ]
+        }
+      ]
+    }
+  ],
+  "rcsb_polymer_entity_feature_summary": [
+    {
+      "count": 1,
+      "coverage": 1.0,
+      "type": "IMGT_ANTIBODY_DESCRIPTION"
+    },
+    {
+      "count": 3,
+      "coverage": 0.99275,
+      "type": "IMGT_ANTIBODY_DOMAIN_NAME"
+    },
+    {
+      "count": 87,
+      "coverage": 28.55072,
+      "type": "IMGT_ANTIBODY_GENE_ALLELE_NAME"
+    },
+    {
+      "count": 1,
+      "coverage": 1.0,
+      "type": "IMGT_ANTIBODY_ORGANISM_NAME"
+    },
+    {
+      "count": 1,
+      "coverage": 1.0,
+      "type": "IMGT_ANTIBODY_RECEPTOR_DESCRIPTION"
+    },
+    {
+      "count": 1,
+      "coverage": 1.0,
+      "type": "IMGT_ANTIBODY_RECEPTOR_TYPE"
+    },
+    {
+      "count": 1,
+      "coverage": 1.0,
+      "type": "IMGT_ANTIBODY_PROTEIN_NAME"
+    }
+  ],
+  "rcsb_polymer_entity_group_membership": [
+    {
+      "aggregation_method": "sequence_identity",
+      "group_id": "106_50",
+      "similarity_cutoff": 50.0,
+      "aligned_regions": [
+        {
+          "entity_beg_seq_id": 1,
+          "length": 20,
+          "ref_beg_seq_id": 102
+        },
+        {
+          "entity_beg_seq_id": 21,
+          "length": 32,
+          "ref_beg_seq_id": 124
+        },
+        {
+          "entity_beg_seq_id": 53,
+          "length": 37,
+          "ref_beg_seq_id": 159
+        },
+        {
+          "entity_beg_seq_id": 90,
+          "length": 63,
+          "ref_beg_seq_id": 208
+        },
+        {
+          "entity_beg_seq_id": 153,
+          "length": 2,
+          "ref_beg_seq_id": 272
+        },
+        {
+          "entity_beg_seq_id": 155,
+          "length": 119,
+          "ref_beg_seq_id": 275
+        },
+        {
+          "entity_beg_seq_id": 274,
+          "length": 3,
+          "ref_beg_seq_id": 397
+        }
+      ]
+    },
+    {
+      "aggregation_method": "sequence_identity",
+      "group_id": "291_90",
+      "similarity_cutoff": 90.0,
+      "aligned_regions": [
+        {
+          "entity_beg_seq_id": 1,
+          "length": 276,
+          "ref_beg_seq_id": 25
+        }
+      ]
+    },
+    {
+      "aggregation_method": "sequence_identity",
+      "group_id": "909_100",
+      "similarity_cutoff": 100.0,
+      "aligned_regions": [
+        {
+          "entity_beg_seq_id": 1,
+          "length": 276,
+          "ref_beg_seq_id": 1
+        }
+      ]
+    },
+    {
+      "aggregation_method": "sequence_identity",
+      "group_id": "54_70",
+      "similarity_cutoff": 70.0,
+      "aligned_regions": [
+        {
+          "entity_beg_seq_id": 1,
+          "length": 21,
+          "ref_beg_seq_id": 28
+        },
+        {
+          "entity_beg_seq_id": 22,
+          "length": 31,
+          "ref_beg_seq_id": 51
+        },
+        {
+          "entity_beg_seq_id": 53,
+          "length": 102,
+          "ref_beg_seq_id": 85
+        },
+        {
+          "entity_beg_seq_id": 155,
+          "length": 122,
+          "ref_beg_seq_id": 188
+        }
+      ]
+    },
+    {
+      "aggregation_method": "sequence_identity",
+      "group_id": "664_95",
+      "similarity_cutoff": 95.0,
+      "aligned_regions": [
+        {
+          "entity_beg_seq_id": 1,
+          "length": 276,
+          "ref_beg_seq_id": 25
+        }
+      ]
+    },
+    {
+      "aggregation_method": "sequence_identity",
+      "group_id": "114_30",
+      "similarity_cutoff": 30.0,
+      "aligned_regions": [
+        {
+          "entity_beg_seq_id": 1,
+          "length": 21,
+          "ref_beg_seq_id": 98
+        },
+        {
+          "entity_beg_seq_id": 22,
+          "length": 31,
+          "ref_beg_seq_id": 121
+        },
+        {
+          "entity_beg_seq_id": 53,
+          "length": 37,
+          "ref_beg_seq_id": 157
+        },
+        {
+          "entity_beg_seq_id": 90,
+          "length": 61,
+          "ref_beg_seq_id": 206
+        },
+        {
+          "entity_beg_seq_id": 151,
+          "length": 4,
+          "ref_beg_seq_id": 269
+        },
+        {
+          "entity_beg_seq_id": 155,
+          "length": 69,
+          "ref_beg_seq_id": 274
+        },
+        {
+          "entity_beg_seq_id": 224,
+          "length": 50,
+          "ref_beg_seq_id": 344
+        },
+        {
+          "entity_beg_seq_id": 274,
+          "length": 3,
+          "ref_beg_seq_id": 397
+        }
+      ]
+    },
+    {
+      "aggregation_method": "matching_uniprot_accession",
+      "group_id": "C5MK56",
+      "aligned_regions": [
+        {
+          "entity_beg_seq_id": 1,
+          "length": 276,
+          "ref_beg_seq_id": 25
+        }
+      ]
+    }
+  ],
+  "rcsb_polymer_entity_name_com": [
+    {
+      "name": "heavy chain HLA B*3508"
+    }
+  ],
+  "rcsb_id": "4JRX_1"
+}

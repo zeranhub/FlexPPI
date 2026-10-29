@@ -1,0 +1,281 @@
+{
+  "per_panel_primary": [
+    {
+      "panel_id": "MSKCC_TCR1",
+      "family_id": "CMV_NLV",
+      "mode": "mode1",
+      "primary_budget": 38,
+      "primary_joint_high_better_than_both_static_and_mean_random": false,
+      "joint_high_hits": 4,
+      "random_mean_hits": 3.2,
+      "static_hits": [
+        12,
+        15
+      ],
+      "task_object": "antigen_peptide_mutation",
+      "endpoint": "normalized_CD8_4_1BB_response_at_highest_tested_dose",
+      "no_companion_substitution_for_primary": true
+    },
+    {
+      "panel_id": "MSKCC_TCR1",
+      "family_id": "CMV_NLV",
+      "mode": "mode2",
+      "primary_budget": 30,
+      "favorable_discovery_assessment_eligible": true,
+      "joint_better_than_baseline_random_and_sequence_diversity": false,
+      "both_readouts_add_complementary_yield": false,
+      "no_posthoc_budget_or_winning_method_selection": true
+    },
+    {
+      "panel_id": "MSKCC_TCR1",
+      "family_id": "CMV_NLV",
+      "mode": "mode3",
+      "primary_budget": 40,
+      "favorable_discovery_assessment_eligible": true,
+      "joint_better_than_baseline_random_and_sequence_diversity": true,
+      "both_readouts_add_complementary_yield": false,
+      "no_posthoc_budget_or_winning_method_selection": true
+    },
+    {
+      "panel_id": "MSKCC_TCR2",
+      "family_id": "CMV_NLV",
+      "mode": "mode1",
+      "primary_budget": 38,
+      "primary_joint_high_better_than_both_static_and_mean_random": false,
+      "joint_high_hits": 1,
+      "random_mean_hits": 2.95,
+      "static_hits": [
+        14,
+        13
+      ],
+      "task_object": "antigen_peptide_mutation",
+      "endpoint": "normalized_CD8_4_1BB_response_at_highest_tested_dose",
+      "no_companion_substitution_for_primary": true
+    },
+    {
+      "panel_id": "MSKCC_TCR2",
+      "family_id": "CMV_NLV",
+      "mode": "mode2",
+      "primary_budget": 30,
+      "favorable_discovery_assessment_eligible": true,
+      "joint_better_than_baseline_random_and_sequence_diversity": false,
+      "both_readouts_add_complementary_yield": false,
+      "no_posthoc_budget_or_winning_method_selection": true
+    },
+    {
+      "panel_id": "MSKCC_TCR2",
+      "family_id": "CMV_NLV",
+      "mode": "mode3",
+      "primary_budget": 40,
+      "favorable_discovery_assessment_eligible": true,
+      "joint_better_than_baseline_random_and_sequence_diversity": false,
+      "both_readouts_add_complementary_yield": false,
+      "no_posthoc_budget_or_winning_method_selection": true
+    },
+    {
+      "panel_id": "MSKCC_TCR3",
+      "family_id": "CMV_NLV",
+      "mode": "mode1",
+      "primary_budget": 38,
+      "primary_joint_high_better_than_both_static_and_mean_random": false,
+      "joint_high_hits": 2,
+      "random_mean_hits": 4.1,
+      "static_hits": [
+        1,
+        11
+      ],
+      "task_object": "antigen_peptide_mutation",
+      "endpoint": "normalized_CD8_4_1BB_response_at_highest_tested_dose",
+      "no_companion_substitution_for_primary": true
+    },
+    {
+      "panel_id": "MSKCC_TCR3",
+      "family_id": "CMV_NLV",
+      "mode": "mode2",
+      "primary_budget": 30,
+      "favorable_discovery_assessment_eligible": true,
+      "joint_better_than_baseline_random_and_sequence_diversity": false,
+      "both_readouts_add_complementary_yield": false,
+      "no_posthoc_budget_or_winning_method_selection": true
+    },
+    {
+      "panel_id": "MSKCC_TCR3",
+      "family_id": "CMV_NLV",
+      "mode": "mode3",
+      "primary_budget": 40,
+      "favorable_discovery_assessment_eligible": true,
+      "joint_better_than_baseline_random_and_sequence_diversity": false,
+      "both_readouts_add_complementary_yield": false,
+      "no_posthoc_budget_or_winning_method_selection": true
+    },
+    {
+      "panel_id": "MSKCC_TCR4",
+      "family_id": "gp100_IMD",
+      "mode": "mode1",
+      "primary_budget": 38,
+      "primary_joint_high_better_than_both_static_and_mean_random": false,
+      "joint_high_hits": 1,
+      "random_mean_hits": 5.1,
+      "static_hits": [
+        2,
+        0
+      ],
+      "task_object": "antigen_peptide_mutation",
+      "endpoint": "normalized_CD8_4_1BB_response_at_highest_tested_dose",
+      "no_companion_substitution_for_primary": true
+    },
+    {
+      "panel_id": "MSKCC_TCR4",
+      "family_id": "gp100_IMD",
+      "mode": "mode2",
+      "primary_budget": 30,
+      "favorable_discovery_assessment_eligible": true,
+      "joint_better_than_baseline_random_and_sequence_diversity": true,
+      "both_readouts_add_complementary_yield": false,
+      "no_posthoc_budget_or_winning_method_selection": true
+    },
+    {
+      "panel_id": "MSKCC_TCR4",
+      "family_id": "gp100_IMD",
+      "mode": "mode3",
+      "primary_budget": 40,
+      "favorable_discovery_assessment_eligible": true,
+      "joint_better_than_baseline_random_and_sequence_diversity": true,
+      "both_readouts_add_complementary_yield": false,
+      "no_posthoc_budget_or_winning_method_selection": true
+    },
+    {
+      "panel_id": "MSKCC_TCR5",
+      "family_id": "gp100_IMD",
+      "mode": "mode1",
+      "primary_budget": 38,
+      "primary_joint_high_better_than_both_static_and_mean_random": false,
+      "joint_high_hits": 5,
+      "random_mean_hits": 4.95,
+      "static_hits": [
+        5,
+        3
+      ],
+      "task_object": "antigen_peptide_mutation",
+      "endpoint": "normalized_CD8_4_1BB_response_at_highest_tested_dose",
+      "no_companion_substitution_for_primary": true
+    },
+    {
+      "panel_id": "MSKCC_TCR5",
+      "family_id": "gp100_IMD",
+      "mode": "mode2",
+      "primary_budget": 30,
+      "favorable_discovery_assessment_eligible": true,
+      "joint_better_than_baseline_random_and_sequence_diversity": false,
+      "both_readouts_add_complementary_yield": false,
+      "no_posthoc_budget_or_winning_method_selection": true
+    },
+    {
+      "panel_id": "MSKCC_TCR5",
+      "family_id": "gp100_IMD",
+      "mode": "mode3",
+      "primary_budget": 40,
+      "favorable_discovery_assessment_eligible": true,
+      "joint_better_than_baseline_random_and_sequence_diversity": false,
+      "both_readouts_add_complementary_yield": false,
+      "no_posthoc_budget_or_winning_method_selection": true
+    },
+    {
+      "panel_id": "MSKCC_TCR6",
+      "family_id": "gp100_IMD",
+      "mode": "mode1",
+      "primary_budget": 38,
+      "primary_joint_high_better_than_both_static_and_mean_random": false,
+      "joint_high_hits": 1,
+      "random_mean_hits": 4.85,
+      "static_hits": [
+        1,
+        14
+      ],
+      "task_object": "antigen_peptide_mutation",
+      "endpoint": "normalized_CD8_4_1BB_response_at_highest_tested_dose",
+      "no_companion_substitution_for_primary": true
+    },
+    {
+      "panel_id": "MSKCC_TCR6",
+      "family_id": "gp100_IMD",
+      "mode": "mode2",
+      "primary_budget": 30,
+      "favorable_discovery_assessment_eligible": true,
+      "joint_better_than_baseline_random_and_sequence_diversity": true,
+      "both_readouts_add_complementary_yield": true,
+      "no_posthoc_budget_or_winning_method_selection": true
+    },
+    {
+      "panel_id": "MSKCC_TCR6",
+      "family_id": "gp100_IMD",
+      "mode": "mode3",
+      "primary_budget": 40,
+      "favorable_discovery_assessment_eligible": true,
+      "joint_better_than_baseline_random_and_sequence_diversity": true,
+      "both_readouts_add_complementary_yield": true,
+      "no_posthoc_budget_or_winning_method_selection": true
+    },
+    {
+      "panel_id": "MSKCC_TCR7",
+      "family_id": "PDAC_GRL",
+      "mode": "mode1",
+      "primary_budget": 38,
+      "primary_joint_high_better_than_both_static_and_mean_random": false,
+      "joint_high_hits": 2,
+      "random_mean_hits": 4.95,
+      "static_hits": [
+        8,
+        2
+      ],
+      "task_object": "antigen_peptide_mutation",
+      "endpoint": "normalized_CD8_4_1BB_response_at_highest_tested_dose",
+      "no_companion_substitution_for_primary": true
+    },
+    {
+      "panel_id": "MSKCC_TCR7",
+      "family_id": "PDAC_GRL",
+      "mode": "mode2",
+      "primary_budget": 30,
+      "favorable_discovery_assessment_eligible": true,
+      "joint_better_than_baseline_random_and_sequence_diversity": false,
+      "both_readouts_add_complementary_yield": false,
+      "no_posthoc_budget_or_winning_method_selection": true
+    },
+    {
+      "panel_id": "MSKCC_TCR7",
+      "family_id": "PDAC_GRL",
+      "mode": "mode3",
+      "primary_budget": 40,
+      "favorable_discovery_assessment_eligible": true,
+      "joint_better_than_baseline_random_and_sequence_diversity": true,
+      "both_readouts_add_complementary_yield": false,
+      "no_posthoc_budget_or_winning_method_selection": true
+    }
+  ],
+  "mode_consistency": [
+    {
+      "mode": "mode1",
+      "evaluable_panels": 7,
+      "evaluable_biological_families": 3,
+      "predefined_consistency_criterion_met_in_every_panel": false,
+      "no_generalization_claim_from_seed_repetitions": true
+    },
+    {
+      "mode": "mode2",
+      "evaluable_panels": 7,
+      "evaluable_biological_families": 3,
+      "predefined_consistency_criterion_met_in_every_panel": false,
+      "no_generalization_claim_from_seed_repetitions": true
+    },
+    {
+      "mode": "mode3",
+      "evaluable_panels": 7,
+      "evaluable_biological_families": 3,
+      "predefined_consistency_criterion_met_in_every_panel": false,
+      "no_generalization_claim_from_seed_repetitions": true
+    }
+  ],
+  "three_modes_are_separate_hypotheses": true,
+  "no_validated_design_claim_without_new_experiments": true
+}

@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "frame_rows": 6012,
+  "independent_trajectories": 6,
+  "per_replica_per_residue_rows": 30,
+  "window_rows": 300,
+  "all_possible_Q72_joint_state_rows": 162,
+  "all_saved_frames_included": true,
+  "all_3_replicas_included_both_conditions": true,
+  "original_labels_reproduced_atol": 1e-12,
+  "no_new_MD_or_inference": true,
+  "files": [
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\analysis_audit.json",
+      "sha256": "02675dbbb1eb581a8f5e1412ffd33b037f5837a1006bc6e3fe27c47eed59e388",
+      "bytes": 17375
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\analyze_Q72_beta_link.py",
+      "sha256": "5bb9e860b8ee0c0290076257335a7b821fa98c6c76fcb082b47511cbf73e9aeb",
+      "bytes": 13662
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\key_findings.json",
+      "sha256": "8bd89263875071d88512797321146fa0e36dfacdc106dc4f1d78e6a060473045",
+      "bytes": 14768
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\nonoverlapping_20ns_window_descriptors.csv",
+      "sha256": "b72d0b2964e3a161a423e840ce47fb62c79e2aa0eaafdc65bfab0c71647a1e69",
+      "bytes": 26138
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\per_frame_Q72_beta_contacts_and_states.csv",
+      "sha256": "be675237009e33b99b0e8110065abfe33c4d28e8fb2b3f18d41262690bb1ac5e",
+      "bytes": 1298891
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\per_replica_Q72_beta_contact_and_RMSF.csv",
+      "sha256": "fee8cc1fd48323b73211ba3d7dbb0176f66cf23caefd663b43d5e49a73371bbe",
+      "bytes": 6705
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\Q72_joint_chi_state_occupancies.csv",
+      "sha256": "74243863f35d2c8a12ddd357905b3c05707c99a6d7a2c7cabefeafcdaea55d7c",
+      "bytes": 6864
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\Q72_two_end_backbone_Hbond_by_joint_state.csv",
+      "sha256": "100d64483249ab6b242926529f96054834951ee92a8507882f9cdb0c228731da",
+      "bytes": 5190
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\Q72_two_end_backbone_Hbond_same_frame_per_replica.csv",
+      "sha256": "34bc5a14f5a0155bfd00d74468106dfb8697da09b6d8b0057ec2d95208e785c5",
+      "bytes": 419
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\summarize_Q72_beta_link.py",
+      "sha256": "e582018984a5c7805695d1f51f75db700a6b1b3eba89f9409848c7bdea6af58a",
+      "bytes": 4551
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\three_replica_summary.csv",
+      "sha256": "66096333f4efda318e74bf13ce6b0c785fae9010cbdd6e64b5ef588c699ac933",
+      "bytes": 2229
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\validate_outputs.py",
+      "sha256": "8e998bca9397105d5f87245c3714a2d4a3d6cf31d7fe89a56e497542a259d015",
+      "bytes": 1979
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\within_replica_20ns_descriptive_correlations.csv",
+      "sha256": "b12d082275a907e684f524a2651f2506bd986e50a5c273cbc3971391a4f42912",
+      "bytes": 8064
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_joint_case_search_20261019\\residue_story\\trajectory_link\\残基接触与双输出联动_轨迹复核.md",
+      "sha256": "830a3aa63c8362c210f943e96646a70de77f8f12d0c39a4c7c3c5a3e9a147592",
+      "bytes": 6600
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "method": "Exploratory: MDTraj Shrake-Rupley, all 935 complex heavy atoms; 1.4A probe; 960 points/atom; initial structure; sidechain excludes N,CA,C,O,OXT; ubiquitin chain A only",
+  "n_all": 72,
+  "n_valid": 66,
+  "rho_sc_sasa_md_hchi": 0.5190824061154665,
+  "rho_within_type_centered_sc_sasa_md_hchi": 0.4013741976967265,
+  "rho_within_type_centered_pred_md_hchi": 0.83841668361492,
+  "rho_original_train_type_centered_pred_md_hchi": 0.8681919720319796,
+  "groups": [
+    {
+      "group": "buried_SASA_le_1",
+      "n": 11,
+      "mean_Hchi": 1.243337109090909,
+      "mean_Hchi_within_type_centered": -0.0714409809740261,
+      "mean_pred": 1.2232227636363637
+    },
+    {
+      "group": "SASA_gt_1",
+      "n": 55,
+      "mean_Hchi": 1.7416106379999996,
+      "mean_Hchi_within_type_centered": 0.014288196194805182,
+      "mean_pred": 1.7994498658772726
+    },
+    {
+      "group": "exposed_SASA_ge_50",
+      "n": 33,
+      "mean_Hchi": 2.066396102727273,
+      "mean_Hchi_within_type_centered": 0.06680037411976912,
+      "mean_pred": 2.1310013720912124
+    }
+  ],
+  "temporary_output_dir": "C:\\Users\\DELL\\AppData\\Local\\Temp\\flexppi_ubiquitin_sasa_eov2j1uo"
+}

@@ -1,0 +1,16 @@
+{
+  "pdb": "1ao7",
+  "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_1ao7.npz",
+  "prediction_sha256": "2844893261327e5a6e7d7774ba903fe4e9021489e1ae6e3452fd35b2f8b91ae6",
+  "structure": "E:\\data\\ITrace\\trajectories\\1ao7_run1_topology.pdb",
+  "structure_sha256": "2dec45e7ce4d1b3682820d149f643f9e6541354a87f41e72a3084378fffad92b",
+  "chain_roles": {
+    "A": "mhc",
+    "B": "b2m",
+    "C": "peptide",
+    "D": "tcr_alpha",
+    "E": "tcr_beta"
+  },
+  "label_mean_source": "NPZ target first two columns",
+  "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+}

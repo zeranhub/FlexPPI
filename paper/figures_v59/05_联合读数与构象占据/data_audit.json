@@ -1,0 +1,284 @@
+{
+  "status": "numerical_and_layout_passed",
+  "style_version": "v59",
+  "canvas_mm": [
+    183.0,
+    202.0
+  ],
+  "source_min_font_pt": 9.0,
+  "semantic_palette": {
+    "model": "#2166AC",
+    "MD": "#62676B",
+    "focal_Q41": "#B87936",
+    "focal_Q2": "#3A8D8C",
+    "intrachain": "#3A8D8C",
+    "RMSF": "#62676B",
+    "background_records": "#92999F"
+  },
+  "word_insertion_width_mm": 167.64,
+  "expected_min_word_font_pt": 8.244590163934426,
+  "visible_language": "English",
+  "data_rows": {
+    "a": 6126,
+    "b": 166,
+    "c": 249,
+    "d": 132,
+    "e": 151,
+    "f": 432
+  },
+  "all_source_points_retained": true,
+  "subsampling": false,
+  "panel_a_records_per_curve": 3063,
+  "panel_b_record_pairs_per_metric": 83,
+  "panel_c_records_per_predictor": 83,
+  "common_positions": 33142,
+  "panel_b_statistics": [
+    {
+      "metric": "Fine-bin entropy",
+      "n": 83,
+      "mean_difference": 0.18932412493225415,
+      "CI_low": 0.17200149642456572,
+      "CI_high": 0.2063917530475577,
+      "positive_records": 79,
+      "negative_records": 4,
+      "mean_full_Hchi": 0.5098929841305457,
+      "mean_full_RMSF": 0.32056885919829164,
+      "mean_intra_Hchi": 0.49323872281369685
+    },
+    {
+      "metric": "Low-F* width",
+      "n": 83,
+      "mean_difference": 0.16101672114553212,
+      "CI_low": 0.14378637061587363,
+      "CI_high": 0.17856362864338737,
+      "positive_records": 78,
+      "negative_records": 5,
+      "mean_full_Hchi": 0.3995555843189729,
+      "mean_full_RMSF": 0.23853886317344078,
+      "mean_intra_Hchi": 0.3910358149446506
+    }
+  ],
+  "panel_c_statistics": [
+    {
+      "predictor": "full_hchi",
+      "replica_mode": "replica1",
+      "threshold": 1.0,
+      "scope": "all",
+      "dataset": "all",
+      "n_records": 83,
+      "mean": 7.757741521669362,
+      "bootstrap_95_low": 7.26112475437627,
+      "bootstrap_95_high": 8.26265812752495,
+      "record_sample_sd": 2.4038449691285373,
+      "median": 8.141826923076923,
+      "min": 1.0108024691357993,
+      "max": 15.201719576719576,
+      "positive_records": 83,
+      "negative_records": 0,
+      "zero_records": 0
+    },
+    {
+      "predictor": "intrachain_hchi",
+      "replica_mode": "replica1",
+      "threshold": 1.0,
+      "scope": "all",
+      "dataset": "all",
+      "n_records": 83,
+      "mean": 7.542611216669376,
+      "bootstrap_95_low": 7.021902523084183,
+      "bootstrap_95_high": 8.060262207662321,
+      "record_sample_sd": 2.4748885802348677,
+      "median": 7.790589316714237,
+      "min": -0.5555555555555564,
+      "max": 14.059107631373257,
+      "positive_records": 82,
+      "negative_records": 1,
+      "zero_records": 0
+    },
+    {
+      "predictor": "full_rmsf",
+      "replica_mode": "replica1",
+      "threshold": 1.0,
+      "scope": "all",
+      "dataset": "all",
+      "n_records": 83,
+      "mean": 5.086684859369025,
+      "bootstrap_95_low": 4.60551099591785,
+      "bootstrap_95_high": 5.566281408146792,
+      "record_sample_sd": 2.3338646461029775,
+      "median": 5.007891414141414,
+      "min": -0.25378787878787823,
+      "max": 12.661458333333332,
+      "positive_records": 81,
+      "negative_records": 2,
+      "zero_records": 0
+    }
+  ],
+  "panel_d_valid_positions": 66,
+  "panel_d_NaN_gaps": [
+    10,
+    28,
+    35,
+    46,
+    47,
+    53
+  ],
+  "panel_e_n": {
+    "1": 66,
+    "2": 52,
+    "3": 23,
+    "4": 10
+  },
+  "panel_f_bins": 432,
+  "panel_f_original_float_parser": "pd.read_csv default matches previous production",
+  "panel_f_zero_bins": 211,
+  "panel_f_widths": [
+    {
+      "residue": "Q41",
+      "chi": 1,
+      "origin0_lowF_width_degrees": 20
+    },
+    {
+      "residue": "Q2",
+      "chi": 1,
+      "origin0_lowF_width_degrees": 30
+    },
+    {
+      "residue": "Q41",
+      "chi": 2,
+      "origin0_lowF_width_degrees": 25
+    },
+    {
+      "residue": "Q2",
+      "chi": 2,
+      "origin0_lowF_width_degrees": 55
+    },
+    {
+      "residue": "Q41",
+      "chi": 3,
+      "origin0_lowF_width_degrees": 35
+    },
+    {
+      "residue": "Q2",
+      "chi": 3,
+      "origin0_lowF_width_degrees": 100
+    }
+  ],
+  "panel_f_xlim": [
+    -180,
+    180
+  ],
+  "panel_f_ylim": [
+    -0.8,
+    6.628313737302301
+  ],
+  "panel_f_threshold": 1,
+  "text_outside_canvas": [],
+  "panel_axes": {
+    "a": [
+      0.08196721311475409,
+      0.7524752475247525,
+      0.20218579234972678,
+      0.13861386138613863
+    ],
+    "b": [
+      0.453551912568306,
+      0.7524752475247525,
+      0.1967213114754099,
+      0.13861386138613863
+    ],
+    "c": [
+      0.7704918032786885,
+      0.7524752475247525,
+      0.1912568306010929,
+      0.13861386138613863
+    ],
+    "d": [
+      0.08196721311475409,
+      0.4207920792079208,
+      0.43715846994535523,
+      0.1683168316831683
+    ],
+    "e_chi1": [
+      0.6229508196721312,
+      0.5198019801980198,
+      0.14207650273224037,
+      0.08910891089108908
+    ],
+    "e_chi2": [
+      0.825136612021858,
+      0.5198019801980198,
+      0.14207650273224037,
+      0.08910891089108908
+    ],
+    "e_chi3": [
+      0.6229508196721312,
+      0.3910891089108911,
+      0.14207650273224037,
+      0.08910891089108908
+    ],
+    "e_chi4": [
+      0.825136612021858,
+      0.3910891089108911,
+      0.14207650273224037,
+      0.08910891089108908
+    ],
+    "f_chi1": [
+      0.1092896174863388,
+      0.06435643564356436,
+      0.2349726775956284,
+      0.15346534653465346
+    ],
+    "f_chi2": [
+      0.4098360655737705,
+      0.06435643564356436,
+      0.23497267759562845,
+      0.15346534653465346
+    ],
+    "f_chi3": [
+      0.7103825136612022,
+      0.06435643564356436,
+      0.23497267759562845,
+      0.15346534653465346
+    ]
+  },
+  "source_sha256": {
+    "source\\entropy\\replica1_high_low_per_record.csv": "eea17510ef006beb7479a35ba61b33a6a3b97282c5ea4cfc012596fc6946af85",
+    "source\\entropy\\replica1_high_low_summary.csv": "ea0ed32cccd854fc97af796329c82a2782ac6a30a4e60a2131c9d0f256bd5306",
+    "source\\entropy\\replica1_paired_correlation_difference_summary.csv": "bc6acc875e62b465e4c00e249f50b80f907d75e477879dc14307d9b6096922a7",
+    "source\\entropy\\replica1_per_record_correlations.csv": "eb405e3a1cb04ddb17ae0a11c1159e6bcbee1714e327205a33e613f76c54b455",
+    "source\\original_fig4\\fig4_joint_complementarity_all_ecdf_points.csv": "c5a4a03c1a6407ad94dad06b60552e101ebcad4d180d1000d81b7131afa28249",
+    "source\\original_fig4\\fig4_joint_complementarity_statistics.json": "8d0191a19974aa052d9e54f87d64b907744ffd18b1e9ce6b713c8fad36598e20",
+    "source\\original_fig7\\experiment\\all66_joint_predictions.csv": "a0ffd1247617be4acbd9f1a6df7980f00fc64922151fe630c64bd5b59358226b",
+    "source\\original_fig7\\experiment\\all_angle_slots_long.csv": "0ead8b695378914c03a158d6bdc0e865926a2241ec2f87fbbcfde840d614ae47",
+    "source\\original_fig7\\experiment\\analyze_all_chi_associations.py": "39446eb2b93fd03ac897ff50f472b4be9551406babef0bc9f67fa3adff495d0d",
+    "source\\original_fig7\\experiment\\audit.json": "432d8984476d98614f54cb1aee554cc75e552472a4a5cc5c991c1e323ad11123",
+    "source\\original_fig7\\experiment\\defined_angles_long.csv": "8052306e31edf07f8cc7295ec8059c4e8dad6047354a834ea21fb0020e48ad0c",
+    "source\\original_fig7\\experiment\\definitions_and_handling.json": "318e9522b0fd2ed0781720fce7adfee77a11791737a24705b6ebfe7c4ee298a0",
+    "source\\original_fig7\\experiment\\figure_statistics.csv": "7b2a22fd54a9afe535bb18a6eb7fdeabc6901cdbcaa1cf9f6bc3553da63baaa4",
+    "source\\original_fig7\\experiment\\joint_prediction_accuracy_by_angle_count.csv": "6bafd46bf72c3f6e1f3b78f23718228a8099d73bcf8be01d37ea8248bc5ce7d8",
+    "source\\original_fig7\\experiment\\per_chi_AA_counts_and_constant_groups.csv": "7ca644298449c5250288b885183be74b5e55238555fbdfff3662f974dd7542f5",
+    "source\\original_fig7\\experiment\\per_chi_correlations.csv": "d90af24843fc5d5fb08abd0a9d799b38ea7e4fe0afd8fb229d7c370f3c544205",
+    "source\\original_fig7\\experiment\\README_逐角关联与角数精度.md": "22893da48469bf1093c8e2fc036e5e826c58c93c5625662493178a8ef3712a9f",
+    "source\\original_fig7\\experiment\\singleton_sensitivity_correlations.csv": "52ea6741293c6b48b6298fa39f5face715e3b335ecc417e7067505341d5f6425",
+    "source\\original_fig7\\source\\all66_per_angle_metrics.csv": "f21d2c2dd47caa2ce510f85b64bda6fa6ecd12ffc278025044e1fe7c55582c58",
+    "source\\original_fig7\\source\\all66_residue_summary.csv": "fec153f86b3b8ba808d2ee731937754427902660c5b29a955cacf25f5d8ab4ab",
+    "source\\original_fig7\\source\\analysis_source_manifest.json": "ff8bf00b59beeb41e0c5fd4d36ef62921de4aa42a9d68710044aa0d71a6119ae",
+    "source\\original_fig7\\source\\fig7_all_residues_Gln_and_MD_free_energy.statistics.json": "5e164096e1f959087bffb328b6b9840a99f8e7f1bc023dcd91ec8e017983f418",
+    "source\\original_fig7\\source\\histograms_501frames.csv": "e90410df3e05ad5004861601e9f8b7272da0889c589d056ef4a13b4a5e20dbad",
+    "source\\original_fig7\\source\\README_数据定义与复算.md": "69775bc854b794a068b8f1ac7adecf5fc090a1b1ac79734b7a1f400f1444e678",
+    "source\\original_fig7\\source\\ubiquitin_all66_chi_501frames.npz": "562e14a3909718f99fa2471dc6503b3c244b39a04bc883073b50ba02a171c182",
+    "source\\width\\replica1_high_low_per_record.csv": "2786294b82a465df6b568452abcc12324901aba12fe182e03122fde3f3b4af58",
+    "source\\width\\replica1_high_low_summary.csv": "c028c71716b4f957a8b9c10ec5cf0e175c1b8f3da499034f67e84a19f2709445",
+    "source\\width\\replica1_paired_correlation_difference_summary.csv": "0ac9065689abbdcce549128170fe16212cef44d0bf95b6e2f5bb54186adc461f",
+    "source\\width\\replica1_per_record_correlations.csv": "021485e7009f88acb34047a21160db8e79d0e6736fb99d45bdbd8bbfc6f9af64"
+  },
+  "output_sha256": {
+    "png": "bc509ee94b4e65489dc5aa8c5fb4a8d8fb2f72490fbac4e4726d1ae7903a4a84",
+    "pdf": "3fdbfe725f45b4d8b4dac93a2124066938049de021020410c9e7027acb926ac9",
+    "svg": "96e21af0f285ffac60d516914d725960fba9a9fbbd51bf01fb988fe9deac2485"
+  },
+  "caption_characters": 556,
+  "interpretation": "Paired correlation difference is descriptive, not conditional independent contribution; panel e uses one joint output, not per-angle predictions; panel f is MD reference selected by original joint predictions.",
+  "visual_QA": "See QA_report.md for the inspected export; reruns require visual reinspection."
+}

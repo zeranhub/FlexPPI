@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-10-21T23:36:15.566319+00:00",
+  "stage": "Inference running, zero outcome-based policy evaluations performed",
+  "scientific_predicted_values_inspected": false,
+  "labels_seen_for_source_QC": true,
+  "primary_protocol_unchanged": true,
+  "purpose": "Distinguish useful candidate-specific profiles from a weaker sequence representation or adding arbitrarily reweighted feature blocks.",
+  "chemistry": "BLOSUM62 per-residue20-amino-acid score vector; RBF with fixed full-pool unlabeled median squared distance; replace Hamming kernel. Compare BLOSUM+static and BLOSUM+static+R+H.",
+  "placebo": "10 joint candidate-row permutations of R/H profiles, seeds2026102200..2026102209. Keep sequence/static and block weights fixed. All20 shared initial experimental-feedback seeds retained. Report mean across10 placebos, not best/worst.",
+  "controls_do_not_replace_primary_result": true,
+  "source_construct_issue": "TCR1 AF3 beta CDR3 CASSLAPGTTNEKLFF agrees with HERMES repository sequence inputs but Nature2022 ExtendedData4 PDF text reports CASSLAPGATNEKLFF. Flag unresolved original-source construct difference and show all results plus conclusions excludingTCR1. No after-result template selection or mutation repair.",
+  "site_SASA_implementation": "Sidechain ASA in parent complex divided by fixed Tien2013 maximal whole-residue ASA. This is a normalized sidechain exposure score, not conventional total-residue RSA.",
+  "context_ablation": "Remove TCR alpha/beta chains only, retain peptide/HLA exact coordinates; computational context sensitivity, not apo measurement."
+}

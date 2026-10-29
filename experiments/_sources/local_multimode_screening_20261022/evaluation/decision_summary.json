@@ -1,0 +1,154 @@
+{
+  "status": "completed_no_consistent_added_utility",
+  "mode1_primary_beats_both_geometric_and_random_contexts": 1,
+  "mode1_contexts": 7,
+  "joint_beats_both_sequence_controls_mode2_contexts": 0,
+  "joint_beats_both_sequence_controls_mode3_contexts": 0,
+  "H_only_feedback_TCR6_minus_BLOSUM_hits": 1.0,
+  "comparisons": [
+    {
+      "panel_id": "MSKCC_TCR1",
+      "mode": "mode2",
+      "joint": 25.7,
+      "sequence_only": 28.45,
+      "BLOSUM_only": 28.1,
+      "joint_exceeds_both_sequence_controls": false,
+      "joint_minus_sequence": -2.75,
+      "joint_minus_BLOSUM": -2.400000000000002
+    },
+    {
+      "panel_id": "MSKCC_TCR1",
+      "mode": "mode3",
+      "joint": 34.65,
+      "sequence_only": 34.25,
+      "BLOSUM_only": 35.9,
+      "joint_exceeds_both_sequence_controls": false,
+      "joint_minus_sequence": 0.3999999999999986,
+      "joint_minus_BLOSUM": -1.25
+    },
+    {
+      "panel_id": "MSKCC_TCR2",
+      "mode": "mode2",
+      "joint": 25.9,
+      "sequence_only": 26.9,
+      "BLOSUM_only": 24.45,
+      "joint_exceeds_both_sequence_controls": false,
+      "joint_minus_sequence": -1.0,
+      "joint_minus_BLOSUM": 1.4499999999999993
+    },
+    {
+      "panel_id": "MSKCC_TCR2",
+      "mode": "mode3",
+      "joint": 33.5,
+      "sequence_only": 32.45,
+      "BLOSUM_only": 34.35,
+      "joint_exceeds_both_sequence_controls": false,
+      "joint_minus_sequence": 1.0499999999999972,
+      "joint_minus_BLOSUM": -0.8500000000000014
+    },
+    {
+      "panel_id": "MSKCC_TCR3",
+      "mode": "mode2",
+      "joint": 22.95,
+      "sequence_only": 26.1,
+      "BLOSUM_only": 25.35,
+      "joint_exceeds_both_sequence_controls": false,
+      "joint_minus_sequence": -3.150000000000002,
+      "joint_minus_BLOSUM": -2.400000000000002
+    },
+    {
+      "panel_id": "MSKCC_TCR3",
+      "mode": "mode3",
+      "joint": 32.6,
+      "sequence_only": 33.1,
+      "BLOSUM_only": 34.6,
+      "joint_exceeds_both_sequence_controls": false,
+      "joint_minus_sequence": -0.5,
+      "joint_minus_BLOSUM": -2.0
+    },
+    {
+      "panel_id": "MSKCC_TCR4",
+      "mode": "mode2",
+      "joint": 12.6,
+      "sequence_only": 11.85,
+      "BLOSUM_only": 13.6,
+      "joint_exceeds_both_sequence_controls": false,
+      "joint_minus_sequence": 0.75,
+      "joint_minus_BLOSUM": -1.0
+    },
+    {
+      "panel_id": "MSKCC_TCR4",
+      "mode": "mode3",
+      "joint": 16.7,
+      "sequence_only": 13.35,
+      "BLOSUM_only": 20.35,
+      "joint_exceeds_both_sequence_controls": false,
+      "joint_minus_sequence": 3.3499999999999996,
+      "joint_minus_BLOSUM": -3.650000000000002
+    },
+    {
+      "panel_id": "MSKCC_TCR5",
+      "mode": "mode2",
+      "joint": 25.6,
+      "sequence_only": 28.5,
+      "BLOSUM_only": 27.35,
+      "joint_exceeds_both_sequence_controls": false,
+      "joint_minus_sequence": -2.8999999999999986,
+      "joint_minus_BLOSUM": -1.75
+    },
+    {
+      "panel_id": "MSKCC_TCR5",
+      "mode": "mode3",
+      "joint": 32.85,
+      "sequence_only": 35.95,
+      "BLOSUM_only": 34.25,
+      "joint_exceeds_both_sequence_controls": false,
+      "joint_minus_sequence": -3.1000000000000014,
+      "joint_minus_BLOSUM": -1.3999999999999986
+    },
+    {
+      "panel_id": "MSKCC_TCR6",
+      "mode": "mode2",
+      "joint": 18.65,
+      "sequence_only": 18.3,
+      "BLOSUM_only": 19.35,
+      "joint_exceeds_both_sequence_controls": false,
+      "joint_minus_sequence": 0.34999999999999787,
+      "joint_minus_BLOSUM": -0.7000000000000028
+    },
+    {
+      "panel_id": "MSKCC_TCR6",
+      "mode": "mode3",
+      "joint": 27.5,
+      "sequence_only": 21.15,
+      "BLOSUM_only": 27.55,
+      "joint_exceeds_both_sequence_controls": false,
+      "joint_minus_sequence": 6.350000000000001,
+      "joint_minus_BLOSUM": -0.05000000000000071
+    },
+    {
+      "panel_id": "MSKCC_TCR7",
+      "mode": "mode2",
+      "joint": 27.05,
+      "sequence_only": 28.15,
+      "BLOSUM_only": 26.65,
+      "joint_exceeds_both_sequence_controls": false,
+      "joint_minus_sequence": -1.0999999999999979,
+      "joint_minus_BLOSUM": 0.40000000000000213
+    },
+    {
+      "panel_id": "MSKCC_TCR7",
+      "mode": "mode3",
+      "joint": 32.65,
+      "sequence_only": 30.85,
+      "BLOSUM_only": 33.75,
+      "joint_exceeds_both_sequence_controls": false,
+      "joint_minus_sequence": 1.7999999999999972,
+      "joint_minus_BLOSUM": -1.1000000000000014
+    }
+  ],
+  "historical_model_not_manuscript2430": true,
+  "all_main_paper_editing_deferred": true,
+  "report_sha256": "16bb765ad5ce6a452739bbaf55482ff968ed1c023defc4e4e04e2b90979fbc0b",
+  "source_tables_sha256": "6f86c135ad79e4f3edcb09fb72ba63ef28bdf1648907c7b2cf53ee0578462ff3"
+}

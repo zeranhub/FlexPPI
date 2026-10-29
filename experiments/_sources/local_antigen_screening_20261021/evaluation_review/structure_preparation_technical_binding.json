@@ -1,0 +1,24 @@
+{
+  "status": "reviewed_technical_details_without_rule_changes",
+  "reviewed_at_utc": "2026-10-21T13:49:10.375054+00:00",
+  "inputs": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structure_preparation_protocol.json": "962b514e897bce79616195156d36f079027e0db77271cbceee9c95b0cd9d750b",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\prepare_complete_structures.py": "b5c96786a6e7762bd49ac6797e16f0e799d9bfeb54aeb4eea12cd882f017a313",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\tool_runtime\\pdbfixer\\pdbfixer.py": "a52e39125e3e0e2d1b58b83841fb05b8669e0bcdd73461e1b0ed1d5a8e8261b9"
+  },
+  "algorithm": "PDBFixer1.12.0 addMissingAtoms seed17 and OpenMM8.6.1 CPU. Missing-residue list empty; no added loops, no added hydrogen step, no global relaxation.",
+  "original_atom_preservation": "PDBFixer assigns existing protein atoms mass0 in its optimization system and writes back only the newly added atom coordinates. Actual source protein heavy coordinates are independently compared at the stored PDB0.001Angstrom precision.",
+  "internal_clash_repair": "PDBFixer may use at most10x200 Langevin steps at5fs for newly added atoms when contacts are below0.13nm, followed by local minimization. Original atoms remain fixed. This is an atom-completion procedure, not production protein MD or an additional trajectory experiment.",
+  "U_reference_clarification": "For each of5 templates, the panel parent sequence goes through the same preparation as all candidates; its completed heavy-atom structure defines the unchanged8Angstrom HLA/TCR environment. Under2BNR, the panel parent remains9V, not the template-native9C peptide. No candidate-specific U is selected.",
+  "static_source_requirement": "Use the explicit static_pdb/output path tied to preparation_audit.output_sha256. The inherited prepared_input_pdb points to the earlier deleted-sidechain neural-input file and must not be used for SASA or U when a complete static file is present.",
+  "input_water_policy": "PDBFixer removes heterogens/water before atom completion. The invariant and static calculations concern canonical protein heavy atoms; source crystallographic waters are not counted as model or SASA protein atoms.",
+  "dynamic_model_input_invariant": "Residue identities, author IDs, chain ordering, N/CA/C/O coordinates and masks must equal the sequence-synchronized fixed-backbone input. Sidechain optimization does not add model input channels.",
+  "feature_or_statistical_rule_changed": false,
+  "analysis_protocol_sha256": "79e2bb8d848c5843619fdb58452d008e8637bb30ae1b26284969c11a2e2406dc",
+  "candidate_split_sha256": "114daac2dff465b259a6b274920eb9147774cb7409d324a1dc4935669e2eab61",
+  "candidate_SPR_values_read": false,
+  "model_predictions_read": false,
+  "neural_inference_or_training_performed": false,
+  "all76_final_static_QC_pending": true,
+  "frozen_U_independent_review_pending": true
+}

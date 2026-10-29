@@ -1,0 +1,15 @@
+{
+  "pdb": "9nmx",
+  "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\catchbond_validation\\catchbond_S32M_experimental_matched_prediction.npz",
+  "prediction_sha256": "81f7484c20e9f2730b500ab7084d3c548f7ef5b518a04c791c8a5bd38338514b",
+  "structure": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\catchbond_validation\\catchbond_S32M_experimental_matched.pdb",
+  "structure_sha256": "0ddcd9f9b31b20ca92d1d1e0037b30d6d167b637ef2cd66f1787e08ed2491a78",
+  "chain_roles": {
+    "A": "mhc",
+    "C": "peptide",
+    "D": "tcr_alpha",
+    "E": "tcr_beta"
+  },
+  "label_mean_source": "ten-replica mean CSV",
+  "label_variance_source": "SD squared across 10 independent MD runs"
+}

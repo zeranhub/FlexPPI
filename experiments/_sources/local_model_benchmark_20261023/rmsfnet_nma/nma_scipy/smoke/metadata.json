@@ -1,0 +1,28 @@
+{
+  "methods": [
+    "ANM",
+    "GNM"
+  ],
+  "implementation": "NumPy/SciPy reproduction of original ProDy dense equations",
+  "upstream_code": {
+    "anm.py": "ad7b33f844296e700bc6c29d53d01b0f9127ffbb8e8e1cfb0db3d80da98371c2",
+    "eigtools.py": "c400c8064049082062a1159ef322815a2c09e8cddcaa51706cefeb899f7f6c9c",
+    "gnm.py": "1cbec55f45dfc2822debd6b6a80adffb2bfa22ae5c7c16ede12c80565d4db46c"
+  },
+  "script_sha256": "2b84abf43350c072f76be3f6ceb4518dbf789d8e5456d42243f9e299ef6fa9fa",
+  "common_sha256": "f9f08947f2147f31b6e3166fa443c101216f326d2dffec31dbc09e2d557b5cc1",
+  "manifest_sha256": "075dc8a1a6d60f3a00ca9fc0ee2c5b811170f333bdcf693ec7b285b6238fd016",
+  "freeze_sha256": "90455f67f4767a7f51efb2dc8f57395add4fc7b1678a1c340d5bff3fce2cc075",
+  "output_units": "Relative sqrt(calcSqFlucts), no Angstrom calibration",
+  "cutoff_angstrom": 15.0,
+  "gamma": 1.0,
+  "requested_modes": 20,
+  "zero_threshold": 1e-06,
+  "numpy_version": "1.26.4",
+  "scipy_version": "1.14.1",
+  "device": "cpu",
+  "threads": 2,
+  "input_protocol": "Complete original assembly, frozen bytes and original CA identity/order",
+  "new_local_calculation": true,
+  "posthoc_fit": false
+}

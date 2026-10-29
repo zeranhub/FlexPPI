@@ -1,0 +1,40 @@
+{
+  "phase": "finished_selected_cohort",
+  "updated_utc": "2026-10-23T20:02:23.794901+00:00",
+  "pid": 23588,
+  "complete_entries": [
+    "Full",
+    "Intra",
+    "Static",
+    "AA",
+    "DynaProt-M",
+    "ANM",
+    "GNM",
+    "FastProtFlex",
+    "backflip-2.1 (assembly)",
+    "backflip-2.1 (chains)",
+    "backflip-1.0 (assembly)",
+    "backflip-1.0 (chains)",
+    "backflip-1.0-seq (assembly)",
+    "backflip-1.0-seq (chains)"
+  ],
+  "missing_selected_entries": [],
+  "failed_phases": [],
+  "visual_review_status": "AUTOMATED_CHECKS_PASS_VISUAL_REVIEW_PENDING",
+  "report": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\RESULTS_zh.md",
+  "figure": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\figures\\benchmark_current.pdf",
+  "deferred_heavy_models": {
+    "run_planet": false,
+    "run_rmsfnet": false,
+    "runtime_preference": "Confirmed by user: \u5148\u5b8c\u6210\u8f83\u5feb\u6a21\u578b\uff0c\u91cd\u6a21\u578b\u540e\u8865. PLANET and RMSF-net full inference are deferred and will not start in this queue.",
+    "device": "local_cpu_only",
+    "phase_order": [
+      "wait_existing_backflip_fastprotflex_nma",
+      "publish_completed_light_models"
+    ],
+    "deferred_phases": [
+      "planet_smoke_then_full",
+      "rmsfnet_full"
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "status": "complete",
+  "completed_utc": "2026-10-25T01:25:01.095487+00:00",
+  "protocol_sha256": "ff36eee322a93cfca3156a9e65c1194f8e47b0b5ac10d584ae466696a0c0822a",
+  "source_manifest_sha256": "e78095c37608ba5478bb4a13e3972ede9e5da8975080caae76152ab8082f1e80",
+  "executed_code_sha256": "67bf6ba932fe9b91746b8e9f8df1502544a56a012005b9c72955f02d1f2cf700",
+  "python": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+  "numpy": "2.0.2",
+  "pandas": "2.3.1",
+  "records": 83,
+  "common_positions": 33493,
+  "sameAA4_positions": 33142,
+  "family_clusters": 42,
+  "largest_family_records": 38,
+  "matching_per_record_rows": 3984,
+  "matching_summary_rows": 2688,
+  "classification": {
+    "full_cohort_records": 3063,
+    "full_cohort_positions": 824988,
+    "class_label_mismatches": 0,
+    "previous_per_record_counts_reproduced": true,
+    "previous_per_record_recalls_reproduced": true
+  },
+  "original_sources_modified": false,
+  "word_modified": false,
+  "new_training": false,
+  "new_inference": false,
+  "new_MD": false,
+  "outputs": {
+    "analyze_matched_complementarity.py": {
+      "bytes": 34681,
+      "sha256": "67bf6ba932fe9b91746b8e9f8df1502544a56a012005b9c72955f02d1f2cf700"
+    },
+    "cohort83_record_family_inventory.csv": {
+      "bytes": 4256,
+      "sha256": "54b1b0ac1c26a115192254070a955c6ce5718775f977ffd2cacb863f99d53a89"
+    },
+    "common_positions_with_uniform_truth_and_predictions.csv.gz": {
+      "bytes": 4642470,
+      "sha256": "3af9147fcdd9677089b731aee410194cf2f119743b2f35abea78cbee97463138"
+    },
+    "four_combinations_83_original_label_confusion.csv": {
+      "bytes": 217165,
+      "sha256": "c339038826c13c90a5a37a6a70cb0330fe5df4e2e56bfcf2f09a658b635f10d5"
+    },
+    "four_combinations_83_original_label_per_record.csv": {
+      "bytes": 59891,
+      "sha256": "b5a4b14486a796d592e5a772738437a22fe9d99e4da45ec05d973f682c0ddced"
+    },
+    "four_combinations_83_uniform_available_replicas_confusion.csv": {
+      "bytes": 242066,
+      "sha256": "cdba9e35cd71fd7f15589d18abd76e7d7cfeab25d522e291810ec1ffd54e75b2"
+    },
+    "four_combinations_83_uniform_available_replicas_per_record.csv": {
+      "bytes": 64941,
+      "sha256": "92e2cfb362348c7de7fe1322a055ae4f62e6c318933418b8f526f2020b3aa786"
+    },
+    "four_combinations_83_uniform_rep1_confusion.csv": {
+      "bytes": 213022,
+      "sha256": "4ea26849a51fb3ef3bf6271061542465771709eddab9f63a705945a5cec57906"
+    },
+    "four_combinations_83_uniform_rep1_per_record.csv": {
+      "bytes": 59351,
+      "sha256": "203eb2c516b66230f41754f9478b1d69709874a4bc4659ae371c652dee98c43a"
+    },
+    "four_combinations_full3063_confusion.csv.gz": {
+      "bytes": 347993,
+      "sha256": "b1a3b0270d235f9a94b72f4a4d0211e04fead7105676f8cb57654caa432caefb"
+    },
+    "four_combinations_full3063_per_record.csv": {
+      "bytes": 2049129,
+      "sha256": "703fd10547f5098d77eb32ee5bfbb8c354a5929f89f44d86794054e7efa87a7b"
+    },
+    "four_combinations_summary_family_cluster_bootstrap.csv": {
+      "bytes": 58388,
+      "sha256": "4bd0cb0e65a7366fde5fecdf04316b0d8b40cc07696e68d07978efa4179db4a6"
+    },
+    "matched_per_record.csv": {
+      "bytes": 1419890,
+      "sha256": "096d742f45941cce2a9325f4c5f45ca4bc2c33591425cd6caac4b95462a67107"
+    },
+    "matched_per_record_AA.csv.gz": {
+      "bytes": 4633493,
+      "sha256": "976df627771358bb402ae0ad5056709d73022ade77aaaf14a083aa7b07ec59c5"
+    },
+    "matched_summary_family_cluster_bootstrap.csv": {
+      "bytes": 621278,
+      "sha256": "fae6a450be67caea9114ba37a0b3f0a347af75f5ae620f7db09a9e37c2c7c501"
+    },
+    "no_matched_pair_records.csv": {
+      "bytes": 233,
+      "sha256": "ae33ce067eb8165606d2616dc18a4c6f6b7116eb3a09b2c5461afa762d00757f"
+    },
+    "primary_matched_summary.csv": {
+      "bytes": 13481,
+      "sha256": "3561c7622cd87d6d3dd2e695bbdda5e90703b7f7154a6e9b00bf66a7edb94bcb"
+    },
+    "protocol.json": {
+      "bytes": 3579,
+      "sha256": "ff36eee322a93cfca3156a9e65c1194f8e47b0b5ac10d584ae466696a0c0822a"
+    },
+    "reviewer_interpretation_zh.md": {
+      "bytes": 4776,
+      "sha256": "48b0dcd1bfef14fd86b0f2e716b1cbe0603060d942380d76d39c58a793a00bf1"
+    },
+    "source_manifest.json": {
+      "bytes": 83387,
+      "sha256": "e78095c37608ba5478bb4a13e3972ede9e5da8975080caae76152ab8082f1e80"
+    },
+    "uniform_rep1_matched_pairs.csv.gz": {
+      "bytes": 20525251,
+      "sha256": "621db9e5743f3ca8bf007c5a22a843f016bd5b270f63431e423af9eca645ac02"
+    },
+    "weak_or_negative_records_all_rules.csv": {
+      "bytes": 63139,
+      "sha256": "5bbacf5cf00bdff39c7c10abe3b508486ad1414673f70f9be191853ab97f1d6a"
+    }
+  }
+}

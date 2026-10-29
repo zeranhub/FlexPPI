@@ -1,0 +1,48 @@
+{
+  "input_mode": "fixed-backbone",
+  "backbone_rebuilt": false,
+  "sidechains_rebuilt": false,
+  "old_mutated_sidechain_atoms_removed": true,
+  "all_backbone_coordinates_bit_identical": true,
+  "template_pdb": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\raw\\github\\mutation_effects\\tax\\pdbs\\1qsf.pdb",
+  "template_sha256": "d7fad48cbd6b8da70a6b3e1c76340814405f4d3804d0f7b32b8ff5bf1315c29d",
+  "prepared_pdb": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\fixed_backbone\\1QSF__A6_TAX_LLFGYVVYV\\model_input_fixed_backbone.pdb",
+  "prepared_pdb_sha256": "8596ed422ecd1a1c4dee2dfbee19feccca6f7e8d12d8f4e4d1e8ce1e10b558c6",
+  "requested_chain_sequences": {
+    "C": "LLFGYVVYV"
+  },
+  "mutations": [
+    {
+      "chain": "C",
+      "author_residue_id": "6",
+      "residue_index": 379,
+      "from": "P",
+      "to": "V"
+    },
+    {
+      "chain": "C",
+      "author_residue_id": "8",
+      "residue_index": 381,
+      "from": "A",
+      "to": "Y"
+    }
+  ],
+  "sequence_after": {
+    "A": "GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDGKDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENGKETLQRTDAPKTHMTHHAVSDHEATLRCWALSFYPAEITLTWQADGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGQEQRYTCHVQHEGLPKPLTLRW",
+    "B": "MIQRTPKIQVYSRHPAENGKSNFLNCYVSGFHPSDIEVDLLKNGERIEKVEHSDLSFSKDWSFYLLYYTEFTPTEKDEYACRVNHVTLSQPKIVKWDRDM",
+    "C": "LLFGYVVYV",
+    "D": "KEVEQNSGPLSVPEGAIASLNCTYSDRGSQSFFWYRQYSGKSPELIMSIYSNGDKEDGRFTAQLNKASQYVSLLIRDSQPSDSATYLCAVTTDSWGKLQFGAGTQVVVTPDIQNPDPAVYQLRDSKSSDKSVCLFTDFDSQTNVSQSKDSDVYITDKTVLDMRSMDFKSNSAVAWSNKSDFACANAFNNSIIPEDTFFPS",
+    "E": "GVTQTPKFQVLKTGQSMTLQCAQDMNHEYMSWYRQDPGMGLRLIHYSVGAGITDQGEVPNGYNVSRSTTEDFPLRLLSAAPSQTSVYFCASRPGLAGGRPEQYFGPGTRLTVTEDLKNVFPPEVAVFEPSEAEISHTQKATLVCLATGFYPDHVELSWWVNGKEVHSGVSTDPQPLKEQPALNDSRYALSSRLRVSATFWQNPRNHFRCQVQFYGLSENDEWAQDRAKPVTQIVSAEAWGRAD"
+  },
+  "esm_recomputed": "not applicable: learned sequence embedding, no ESM input",
+  "candidate_id": "1QSF__A6_TAX_LLFGYVVYV",
+  "biological_candidate_id": "A6_TAX_LLFGYVVYV",
+  "panel_id": "A6_TAX",
+  "template_pdb_id": "1QSF",
+  "primary": false,
+  "sensitivity": true,
+  "is_panel_parent": false,
+  "prepare_only": true,
+  "model_loaded": false,
+  "predictions_generated": false
+}

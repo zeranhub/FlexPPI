@@ -1,0 +1,382 @@
+{
+  "status": "all_computation_outputs_certified_pending_manuscript",
+  "checked_local_beijing": "2026-10-12T11:58:54.425960+08:00",
+  "checked_server_utc": "2026-10-12T03:47:15.654861+00:00",
+  "server_clock_behind_local_seconds": 698.771099,
+  "server_logged_finished_utc": "2026-10-12T00:32:46Z",
+  "server_logged_finished_beijing": "2026-10-12T08:32:46+08:00",
+  "local_clock_corrected_finished_beijing_estimate": "2026-10-12T08:44:24.771099+08:00",
+  "clock_note": "The exact finish timestamp comes from the server log. Local-time correction uses the current clock difference and is approximate; measured earlier drift was also about11min38s.",
+  "pipeline_state_sha256": "2aae2498caee5e3284c4dea5673c1f439254193c5c7105bc0d67e83201c93d80",
+  "all_complete_step_hashes_match": true,
+  "steps": [
+    {
+      "name": "freeze_kix_predictions",
+      "status": "complete",
+      "exit_code": 0,
+      "finished_utc": "2026-10-10T05:43:12Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/frozen_predictions/FROZEN.json": "787930017a3587c83623b79e62695106d721bd46927ad72770e833dad9f76eba",
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/frozen_predictions/residue_predictions.csv": "348d4201f842b940570a5fd389ba431726d678b7b643294c59c92f8ba2e3decc"
+      }
+    },
+    {
+      "name": "verify_prior_kix_predictions",
+      "status": "complete",
+      "exit_code": 0,
+      "finished_utc": "2026-10-10T05:43:12Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/frozen_predictions/prior_comparison_audit.json": "25b335da82cfd345a365a8dd9ddd338c2a25dd9047c789cd9d53f59b20b05f6e"
+      }
+    },
+    {
+      "name": "prepare_md",
+      "status": "complete",
+      "exit_code": 0,
+      "finished_utc": "2026-10-10T05:43:13Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/prepared/READY.json": "58807fb464bd7e2d8eed856c923d5ac65e7ef754b9e90639514b259c7f9f4fc8"
+      }
+    },
+    {
+      "name": "audit_md_inputs",
+      "status": "complete",
+      "exit_code": 0,
+      "finished_utc": "2026-10-10T05:43:13Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/prepared/input_audit.json": "78e0739658411e18158fdf05f90788ccd5bf04f444184523826744ddd8568b9c"
+      }
+    },
+    {
+      "name": "smoke_md_cuda",
+      "status": "complete",
+      "exit_code": 0,
+      "finished_utc": "2026-10-10T07:02:11Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/PASSED.json": "a098338dbccff7ef85b51b5e71796a101d42ec362d4cdc2501f9aa008acb6bc7"
+      }
+    },
+    {
+      "name": "verify_md_queue",
+      "status": "complete",
+      "exit_code": 0,
+      "finished_utc": "2026-10-10T07:02:42Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {}
+    },
+    {
+      "name": "smoke_single_targets",
+      "status": "complete",
+      "exit_code": 0,
+      "finished_utc": "2026-10-10T07:02:45Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/single_target/smoke_audit.json": "3f2efa6972d5f3975a8deb29d1e816665c8823cf707c5267d850deee4ae11e52"
+      }
+    },
+    {
+      "name": "train_single_targets",
+      "status": "complete",
+      "exit_code": null,
+      "finished_utc": "2026-10-10T23:23:25Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_0/epoch_040.pt": "b23e9c7892d1b0ccb9a8e30253621369e7644d3b0e556aaa65fe68903cae8674",
+        "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_0/epoch_040.pt": "24736dc2361e147add8d7ab338d78f6c9568cbc357ed4e6d69ca64df07c3c43a",
+        "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_1/epoch_040.pt": "57d17cb0eeaf88803297aaaa867da0c14274d5e487bac56715ea2812a4cdef9e",
+        "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_1/epoch_040.pt": "a597da0463e3dac3d94e5ff597d59289843a55ce2dba8a1b6a6f20159246b393",
+        "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_2/epoch_040.pt": "21708e8a80d7cd637001f89fb59e6568408076d234573d1d49329b1bedb7f8fd",
+        "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_2/epoch_040.pt": "7e07a29ddff20d45117dc056a279009c3669e369bde2e1bffd722aa7e3a9610e",
+        "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_3/epoch_040.pt": "8234417c3ca64021ee3f7d1fd5f8cdc3963a94c08df80c5715212373cad4f265",
+        "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_3/epoch_040.pt": "47457bbe7e78dc8ec445ecc792e38dc90aa104680f48b783d57b0eb5e46c63ce",
+        "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_4/epoch_040.pt": "6b568a0a4a8513c84531b8dc202a4549a1504925710eef7bcf8ff0fec989a8fb",
+        "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_4/epoch_040.pt": "68ab61f9ee59432b080865b5d75a5bff6978cd0689e4c5528b292b902b02fd0b"
+      }
+    },
+    {
+      "name": "export_single_targets",
+      "status": "complete",
+      "exit_code": 0,
+      "finished_utc": "2026-10-10T23:27:35Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/single_target/evaluation/evaluation_audit.json": "d6d5e6b0ee904ec7cb0160381fd7cfa238bfbfe6cef2569d41fb89bad31bbaef"
+      }
+    },
+    {
+      "name": "analyze_single_targets",
+      "status": "complete",
+      "exit_code": 0,
+      "finished_utc": "2026-10-10T23:28:26Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/single_target/analysis/analysis_audit.json": "e8c5cd3993c792f7c37be02332b1a5d1b12965229c4726cbb8173aad83fbc8aa",
+        "/root/flexppi_completion_20261010/single_target/analysis/single_vs_dual_per_record.csv": "69e57e41a8cb949c0182ff845463aa392d13ec5bbeabc658bfe7eb0bf095975f"
+      }
+    },
+    {
+      "name": "train_evaluate_family_folds",
+      "status": "complete",
+      "exit_code": 0,
+      "finished_utc": "2026-10-11T15:35:48Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/family_folds/evaluation/evaluation_audit.json": "b0e9ce03db4aa65c4372797f1727637f2fed5e07d4f1ebe6fbe88fabdeb2d06f"
+      }
+    },
+    {
+      "name": "evaluate_external_2430",
+      "status": "complete",
+      "exit_code": 0,
+      "finished_utc": "2026-10-12T00:28:58Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/family_folds/external_2430_evaluation/evaluation_audit.json": "f05ed1966056804b8837597ef9173d0a563373d4487a845d8be4deade0e48d78"
+      }
+    },
+    {
+      "name": "wait_resume_verify_rmsf_net",
+      "status": "complete",
+      "exit_code": 0,
+      "finished_utc": "2026-10-12T00:29:34Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/baselines/rmsf_net/run_audit.json": "e38486b1e146d9002df7c3f7fd71b56ef052ed42d06237ea4a95e4d69a201602",
+        "/root/flexppi_completion_20261010/baselines/rmsf_net_resume_state.json": "c5ecf57017b1e8f320cbfb75e93a5fa8b0fb636cb15efa6f861a31062a9f4ada",
+        "/root/flexppi_completion_20261010/baselines/dispatch_wait_resume_verify_rmsf_net_audit.json": "538a30ac76cddef8fbf8be5cf2ff53c59193d166dceec7ca1f5f69ff30865580"
+      }
+    },
+    {
+      "name": "wait_verify_planet_full_cpu",
+      "status": "complete",
+      "exit_code": 0,
+      "finished_utc": "2026-10-12T00:29:40Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/baselines/planet_full/run_audit.json": "8fdebab3f857f5c1c597977276e2f40f7dd0f54995ad50cc79baa2cd6f27dad6",
+        "/root/flexppi_completion_20261010/baselines/planet_full_cpu_wait_audit.json": "b16522041a89cd3bb3b803a09e44d788624600b713a9223671dd16490a141aef",
+        "/root/flexppi_completion_20261010/baselines/dispatch_wait_verify_planet_full_cpu_audit.json": "69d12574a03f83bacfacf7798bfad970f803013233e0a225157b92ce2907c0ee"
+      }
+    },
+    {
+      "name": "wait_verify_planet_seq_cpu",
+      "status": "complete",
+      "exit_code": 0,
+      "finished_utc": "2026-10-12T00:29:47Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/baselines/planet_seq/run_audit.json": "c6fdf512cda6eaf224b5a4146019b93220ffb2ef765de3b26e36837bdcb03475",
+        "/root/flexppi_completion_20261010/baselines/planet_seq_cpu_wait_audit.json": "7a9af7f8523a26891e01070ff23d44ad235a30afa4940f07ab2729f165975ed1",
+        "/root/flexppi_completion_20261010/baselines/dispatch_wait_verify_planet_seq_cpu_audit.json": "c02761cdabd5009ae292a2ce9d8ecf84098146b9fe8f4833e417ed36e9086bd9"
+      }
+    },
+    {
+      "name": "score_additional_original_oof",
+      "status": "complete",
+      "exit_code": 0,
+      "finished_utc": "2026-10-12T00:31:20Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/baselines/additional_original_oof/scoring_audit.json": "92df7446e4f155643d7c9456a16f91803614cf41e2439b77147d6030b54cc012",
+        "/root/flexppi_completion_20261010/baselines/additional_original_oof/record_macro_metrics.csv": "db8f50b1b3e530dff3f98088ed24d54afa98e976483768dfb58650f6f7555902",
+        "/root/flexppi_completion_20261010/baselines/dispatch_score_additional_original_oof_audit.json": "c38895113934394ea844f50f2a83559bf503664bbcad7e004ee322fa0078e5ee"
+      }
+    },
+    {
+      "name": "score_additional_family_oof",
+      "status": "complete",
+      "exit_code": 0,
+      "finished_utc": "2026-10-12T00:32:46Z",
+      "completion_files_hashes_match": true,
+      "completion_sha256": {
+        "/root/flexppi_completion_20261010/baselines/additional_family_oof/scoring_audit.json": "3bf9b2cf972042266599603bc39793c85cab5ecb5cd03294f54d141c929fb404",
+        "/root/flexppi_completion_20261010/baselines/additional_family_oof/record_macro_metrics.csv": "e7c16c04d2d4fc9d9ef243d2ad9b99b86b50494c1e0657dc5e5fb005a38bafee",
+        "/root/flexppi_completion_20261010/baselines/dispatch_score_additional_family_oof_audit.json": "c6d97296a20646fdae4f46648699b02c1205a92112256f971b685edfc854528f"
+      }
+    },
+    {
+      "name": "md_triplicate_production",
+      "status": "cancelled_per_user",
+      "exit_code": null,
+      "finished_utc": null,
+      "completion_files_hashes_match": null,
+      "completion_sha256": {}
+    },
+    {
+      "name": "analyze_md_triplicates",
+      "status": "cancelled_per_user",
+      "exit_code": null,
+      "finished_utc": null,
+      "completion_files_hashes_match": null,
+      "completion_sha256": {}
+    },
+    {
+      "name": "quality_md_rep01",
+      "status": "cancelled_per_user",
+      "exit_code": null,
+      "finished_utc": null,
+      "completion_files_hashes_match": null,
+      "completion_sha256": {}
+    },
+    {
+      "name": "quality_md_rep02",
+      "status": "cancelled_per_user",
+      "exit_code": null,
+      "finished_utc": null,
+      "completion_files_hashes_match": null,
+      "completion_sha256": {}
+    },
+    {
+      "name": "quality_md_rep03",
+      "status": "cancelled_per_user",
+      "exit_code": null,
+      "finished_utc": null,
+      "completion_files_hashes_match": null,
+      "completion_sha256": {}
+    }
+  ],
+  "single_fits_complete": 10,
+  "family_fits_complete": 10,
+  "completed_checkpoint_hashes_checked": 20,
+  "single_evaluation": {
+    "status": "complete",
+    "arms": [
+      "rmsf_only",
+      "chi_entropy_only"
+    ],
+    "counts": {
+      "rmsf_only": {
+        "records": 3063,
+        "rmsf_valid": 961321,
+        "chi_entropy_valid": 0,
+        "completed_folds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "chi_entropy_only": {
+        "records": 3063,
+        "rmsf_valid": 0,
+        "chi_entropy_valid": 824988,
+        "completed_folds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    "missing_fits": [],
+    "seed": 7,
+    "epoch": 40,
+    "plan_sha256": "a02f7ff6df4728e0dd784b01c68f19113e7c94fd2ad03d692b17bf6bee2b2645",
+    "export_code_sha256": "db687be4c414ae3af6564df88c7b839b37fd0db274ca3e04f14234d1f7dcb1d4",
+    "label_mapping": "Explicit metric name -> original METRIC_NAMES index",
+    "completed_utc": "2026-10-10T23:27:34Z"
+  },
+  "family_evaluation": {
+    "status": "complete",
+    "variants": [
+      "full",
+      "intrachain"
+    ],
+    "oof_trained_fits": 10,
+    "additional_seed_fits": 0,
+    "epoch": 40,
+    "seed": 7,
+    "records_per_variant": 3063.0,
+    "effective_residues_per_variant": {
+      "valid_rmsf": {
+        "full": 961321,
+        "intrachain": 961321
+      },
+      "valid_chi_entropy": {
+        "full": 824988,
+        "intrachain": 824988
+      }
+    },
+    "protocol": "Corresponding heldout all-chain-family fold only; corrected3063 corpus; fixed epoch40 seed7. ITrace is one family component and appears in one test fold only; no five-fold ITrace SD is identifiable.",
+    "input_freeze_sha256": "1a816ad07446dad9775bddf7de6c99f62cdf7199a785216ad3d48a80d25d9e27",
+    "export_code_sha256": "b5197d6e8e9fd63922aeb13133417f11cac6a4d44f512e1f766d2b67d64913f1"
+  },
+  "external_evaluation": {
+    "status": "complete",
+    "records": 32,
+    "valid_rmsf": 18748,
+    "valid_chi_entropy": 16265,
+    "audit_sha256": "f05ed1966056804b8837597ef9173d0a563373d4487a845d8be4deade0e48d78"
+  },
+  "current_baseline_certificates": {
+    "rmsf_net": {
+      "status": "complete",
+      "verified_items": 3063,
+      "verified_records": 3063,
+      "verified_residues": 961321,
+      "failure_count": 0,
+      "completed_utc": "2026-10-12T00:29:33Z",
+      "current_sha256": "e38486b1e146d9002df7c3f7fd71b56ef052ed42d06237ea4a95e4d69a201602"
+    },
+    "planet_full": {
+      "status": "complete",
+      "verified_items": 4973,
+      "verified_records": 3063,
+      "verified_residues": 961321,
+      "failure_count": 0,
+      "completed_utc": "2026-10-10T13:12:04Z",
+      "current_sha256": "8fdebab3f857f5c1c597977276e2f40f7dd0f54995ad50cc79baa2cd6f27dad6"
+    },
+    "planet_seq": {
+      "status": "complete",
+      "verified_items": 4973,
+      "verified_records": 3063,
+      "verified_residues": 961321,
+      "failure_count": 0,
+      "completed_utc": "2026-10-10T12:10:48Z",
+      "current_sha256": "c6fdf512cda6eaf224b5a4146019b93220ffb2ef765de3b26e36837bdcb03475"
+    }
+  },
+  "current_scoring": {
+    "additional_original_oof": {
+      "all_methods_complete": true,
+      "methods": 7,
+      "records": 3063,
+      "rmsf_positions": 961321,
+      "scoring_audit_sha256": "92df7446e4f155643d7c9456a16f91803614cf41e2439b77147d6030b54cc012"
+    },
+    "additional_family_oof": {
+      "all_methods_complete": true,
+      "methods": 7,
+      "records": 3063,
+      "rmsf_positions": 961321,
+      "scoring_audit_sha256": "3bf9b2cf972042266599603bc39793c85cab5ecb5cd03294f54d141c929fb404"
+    }
+  },
+  "md_cancelled_steps": [
+    "md_triplicate_production",
+    "analyze_md_triplicates",
+    "quality_md_rep01",
+    "quality_md_rep02",
+    "quality_md_rep03"
+  ],
+  "md_cancelled_new_runs": 12,
+  "control_sha256": "837494a7ecbdc8cb87d464b34d1e8bdfdd5bb77cbe8dd525dbc8896f8d2661a5",
+  "new_md_done_files": 0,
+  "remaining_server_compute_work": false,
+  "remaining_manuscript_work": [
+    "Retrieve the certified result tables and preserve provenance",
+    "Reconcile new empirical findings with manuscript claims",
+    "Update text, scientific figures and three-line tables",
+    "Render the complete Word document and visually check every page"
+  ],
+  "manuscript_work_time_note": "Earlier estimate was2–4 active work hours; this computation-only audit cannot infer how much manuscript integration root has already completed.",
+  "read_only_no_training_no_checker_rerun_no_certificate_rewrite": true
+}

@@ -1,161 +1,44 @@
 # FlexPPI
 
-> 当前重训版本只学习逐残基绝对 `RMSF` 与侧链 `Hχ`（配置名为
-> `chi_entropy`）。SASA、apo/holo 配对和结合响应均不参与本轮训练；旧的
-> 成对实验和配置只作为历史分析保留。
+## 最终论文与实验入口（2026-10-23整理）
 
-FlexPPI 是一个面向蛋白–蛋白结合动态响应的研究代码库。模型把每个输入状态表示成“目标受体 + 可选伙伴环境 + 一份静态三维结构”，由同一个状态编码器预测逐残基绝对 RMSF、侧链构象熵和 SASA，再在同一受体的 apo/holo 对之间预测带正负号的变化量。这里的 RMSF（root mean square fluctuation，均方根涨落）表示一个残基在轨迹中围绕平均位置晃动的幅度；侧链构象熵表示侧链在多少种不同朝向之间切换；SASA（solvent-accessible surface area，溶剂可接触表面积）表示残基暴露给溶剂的面积。
+当前论文以 [v58中文最终稿](paper/revision_v14_20261010/paper_v58_20261022_中文修订_图2至5配色统一_三线表.docx) 为唯一版本依据。文档保持原始字节与原路径。六张实际使用的图及可编辑源已整理到 [paper/figures_v58](paper/figures_v58/README.md)，实验按照论文第3章和补充材料小标题建立 [experiments入口](experiments/README.md)。目录说明见 [docs/PROJECT_LAYOUT.md](docs/PROJECT_LAYOUT.md)。
 
-项目参考了 [AlphaFold](https://github.com/google-deepmind/alphafold) 的 Invariant Point Attention（IPA，不变点注意力）和 [Ibex](https://github.com/prescient-design/ibex) 的 PyTorch/OpenFold 结构模块、分链 ESM 编码与批次补齐方式，但没有复制完整结构生成模型。FlexPPI 使用输入 PDB 中的 N–CA–C 原子建立固定的逐残基局部坐标架，IPA 只更新残基表示，不更新坐标；这样既保留整体旋转和平移不变性，又避免为动态标签任务引入不必要的坐标生成与扭转角重建。外部设计来源与许可证说明见 [NOTICE](NOTICE)。
+原 `experiment_completion` 中的科学实现和结果已迁至 `experiments/_sources/`；其他工作树中的最终训练、折外预测和检查点快照收拢到 `experiments/core_corrected_pipeline/`。`src/`、根 `scripts/`、`configs/`、`data/` 保留原项目功能。下面的历史技术说明包含旧论文和训练流程，不能据其判断最终论文版本。
 
-## 当前实现
+旧稿及缓存按用户要求集中移入根目录 [待删除](待删除/说明.md)，保留原层级和移动清单。原整理清单见 [cleanup_plan_20261023.json](docs/cleanup_plan_20261023.json)。清单不是永久删除指令，实际移动状态以 [cleanup_status_20261023.json](docs/cleanup_status_20261023.json) 为准。
 
-数据层能够直接扫描本机的 `E:\data\protein_md_datasets\ATLAS_extracted` 和 `D:\data\dynarepo_non_nucleic_full`。ATLAS 预处理器读取每个条目的三列 RMSF，保存三次重复的均值和样本方差；DynaRepo 索引器会区分 PDBbind 复合物、DynaBench、抗原、test53 复合物和 test53 单链，并先按 PDB ID 找候选，再通过 Needleman–Wunsch 全局序列比对把单链残基映射到复合物中的正确受体链。不能仅凭链名配对，因为 partner-stripped 单链和复合物中的链标识并不一定相同。
+FlexPPI 当前主任务是从蛋白质静态结构预测每个残基的绝对 RMSF 与侧链构象熵 Hχ（代码中称为 `chi_entropy`）。RMSF 描述残基围绕平均位置的运动幅度，Hχ 描述侧链在不同朝向之间切换的多样程度。本轮采用 structure-only（只使用结构及其序列信息）设定，温度、轨迹时长和数据来源仅用于记录标签来源，不作为模型输入；SASA、apo/holo 配对、结合响应和变化量预测不属于本轮训练目标。
 
-DynaRepo 轨迹标签处理是可选模块，需要 MDAnalysis。RMSF 会对复合物中的每条链单独进行刚体拟合，再计算该链内部的涨落，从而避免“两个伙伴相对转动”被误当成“残基本身更柔性”。如果本地只有一条 500 ns 轨迹，处理器会把它切成多个固定窗口，用窗口间方差近似标签不确定性；如果以后补齐多条重复轨迹，同一接口也能接受多条 `trajectory_paths`。侧链熵把每个可用的 χ 二面角分到三个旋转异构区间，然后统计联合旋转状态的 Shannon entropy；Gly 和 Ala 等没有 χ 角的残基自动保留为空标签。SASA 使用项目内的 Shrake–Rupley 实现：对每个重原子的范德华球加上 1.4 Å 水探针，再统计没有被邻近原子遮挡的球面采样点，因此不依赖 Windows 下需要额外 C++ 编译器的 MDTraj。
+## 当前工作入口
 
-网络包含可切换的序列编码器、几何成对特征、固定坐标架 IPA、绝对状态头和成对响应头。默认 `sequence_backend: learned` 使用小型可学习氨基酸嵌入，方便在当前 CPU 环境运行测试；改成 `sequence_backend: huggingface_esm` 后，会按链分别调用配置中的 ESM2，再把各链表示放回复合物残基位置。状态头同时预测标签均值和模型方差，损失把模型方差与重复轨迹产生的标签方差相加，噪声很大的残基不会像高置信度残基一样主导训练。响应头读取 apo 表示、holo 表示、两者之差、逐元素乘积和绝对状态直接差值，并通过一致性项约束
+训练定义以 [performance-first v2 协议](docs/performance_first_v2_training_protocol.md) 为准，数据情况见 [v2 数据划分说明](data/splits/state_rmsf_hchi_v2_performance_first/README.md)。五份当前配置是 `configs/performance_first_v2_fold0.yaml` 至 `fold4.yaml`；每次用四折训练、另一折测试，外层测试折不用于挑选训练轮次或调整参数。严格的“未见过任何同源家族”评价是独立要求，不能把现有五折结果直接当作这一结论。
 
-\[
-\widehat{\Delta y}\approx\hat y_{\mathrm{holo}}-\hat y_{\mathrm{apo}}.
-\]
+目前准备流程使用 ATLAS、DynaRepo 和 ITrace 已生成的标签；ThermoPCD 仍需统一重算标签，不能把候选清单当作已完成训练数据。目录整理不代表正式训练或训练前所有验收已经完成，具体以数据审计和实际运行结果为准。
 
-推理结果会同时保存响应头的 `delta_*` 和简单状态相减的 `state_subtraction_*`，因此可以直接检验响应头是否比“分别预测再相减”更好，而不是默认复杂模块一定有效。
+当前数据准备脚本集中在 `scripts/`：`integrate_itrace_hchi_labels.py` 整合 ITrace 标签，`prepare_thermopcd_candidates.py` 筛选 ThermoPCD 候选，`prepare_performance_first_v2.py` 构建 v2 清单与划分，`audit_pdbbind_ppi.py` 核查数据类别，`audit_performance_first_v2.py` 检查标签、划分及配置。它们不是每次训练前都要重新执行的流水线；已有冻结划分应先审计，修改划分需要单独记录版本。
 
-## 安装
+## 目录与历史边界
 
-当前机器是 Python 3.9，并已有 CPU 版 PyTorch。核心功能可直接以可编辑方式安装：
+`src/flexppi/` 是模型、数据加载和命令入口，`configs/` 存放当前五折配置与历史实验配置，`data/splits/` 存放可版本管理的数据清单，`tests/` 是回归测试，`baselines/` 是对比方法。更具体的保留范围和旧文件去向见 [项目目录与清理记录](docs/PROJECT_LAYOUT.md)。
 
-```powershell
-cd E:\Project\FlexPPI
-python -m pip install -e .
-```
+`artifacts/` 保存本机标签、权重及审计结果，`output/` 保存基准评价和分析产物。这两处大量文件不在 Git 中，不能因为名称像“生成结果”就删除。`paper/` 保存论文、图稿及绘图素材；`docs/` 同时保留当前协议和历史研究记录。`tmp/` 还包含本机绘图辅助工具，并非可以整体删除的垃圾目录。
 
-处理 DynaRepo XTC 轨迹时安装 MD 依赖；使用 ESM2 时安装 ESM 依赖。MDAnalysis 2.7 的 Windows 二进制包需要 NumPy 1.x，而当前全局环境使用 NumPy 2.x，所以建议让轨迹处理使用隔离环境，不要直接降级全局 NumPy：
+旧版基线的代码快照标记为 Git 标签 `benchmark-first-v1`。旧的 `pretrain.yaml`、`finetune.yaml` 和 `evaluate_*.yaml` 用于历史实验，不是当前重训的默认配置。部分旧能力仍被分析脚本和测试调用，因此保留兼容实现，但不属于当前训练目标。旧 README 与 `allinone.md` 已移入项目外清理归档，入口见 [备份说明](BACKUP_MANIFEST.md)。
+
+## 安装与检查
+
+在项目根目录安装开发依赖并运行测试：
 
 ```powershell
-python -m venv --system-site-packages .venv-md
-.\.venv-md\Scripts\python -m pip install -e ".[md]"
-python -m pip install -e ".[esm]"
+python -m pip install -e ".[dev]"
+python -m pytest -p no:cacheprovider
 ```
 
-ESM 权重会由 Hugging Face 首次下载。正式训练建议使用带 CUDA 的 PyTorch；当前环境的 `torch 2.8.0+cpu` 只适合数据检查、单元测试和小规模冒烟训练。
-
-## 数据准备
-
-先把 ATLAS 的现成 RMSF 转成紧凑标签和状态清单：
+不改写已冻结审计文件的复核命令：
 
 ```powershell
-flexppi index-atlas `
-  --root "E:\data\protein_md_datasets\ATLAS_extracted" `
-  --output "artifacts\data"
+python scripts/audit_performance_first_v2.py --output artifacts/maintenance/v2_readiness_after_cleanup.json
 ```
 
-索引 DynaRepo 并建立 test53 配对清单：
-
-```powershell
-flexppi index-dynarepo `
-  --root "D:\data\dynarepo_non_nucleic_full" `
-  --output "artifacts\data"
-```
-
-第一次只建议处理一个体系和一个 100 ns 窗口，确认内存、残基数和轨迹拓扑一致。`--groups` 后面的两个英语名称分别表示 test53 单链和 test53 复合物；`--sasa` 会额外执行较耗时的 Shrake–Rupley SASA 计算，`--sasa-points` 控制每个原子球面上的采样点数，默认 96，数值越大越精确也越慢：
-
-```powershell
-flexppi compute-dynarepo-labels `
-  --manifest "artifacts\data\dynarepo_states.jsonl" `
-  --output-dir "artifacts\data\dynarepo_labels" `
-  --groups test53_single test53_complex `
-  --limit 1 `
-  --window-frames 1000 `
-  --max-windows 1
-```
-
-标签生成后重新执行 `index-dynarepo`，并通过 `--label-dir artifacts\data\dynarepo_labels` 把标签路径写入状态和配对清单。可以用下面的命令检查清单中有多少记录真正具备标签：
-
-```powershell
-flexppi inspect-manifest --manifest "artifacts\data\dynarepo_pairs.jsonl"
-```
-
-## 训练、评估与推理
-
-本轮训练只运行绝对状态模型，不再执行 apo/holo 配对微调。训练数据已经用
-MMseqs2 按完整生物体系划成固定的 train/validation/test：任意两条链达到
-30%序列一致性且双向覆盖率达到70%时视为同源，只要复合物中的一条链同源，
-整个体系就进入同一个不可拆分组。ITrace 的244个状态只参与同源排除，不进入
-训练、验证或内部测试。数据划分的清单、阈值、源文件哈希和审计结果见
-[`data/splits/state_rmsf_hchi_v1`](data/splits/state_rmsf_hchi_v1)。重新生成划分：
-
-```powershell
-python scripts\prepare_state_splits.py `
-  --manifest artifacts\data\atlas_states.jsonl `
-  --manifest artifacts\data\dynarepo_states.jsonl `
-  --external-manifest artifacts\data\itrace_context_diagnostic\itrace_states.jsonl `
-  --output-dir data\splits\state_rmsf_hchi_v1 `
-  --mmseqs artifacts\tools\mmseqs\bin\mmseqs
-```
-
-`configs/pretrain.yaml` 只输出 `rmsf` 和 `chi_entropy` 两个通道，明确关闭
-response head，并直接读取冻结的训练集和验证集；`test.jsonl` 不参与
-checkpoint 选择。开始训练：
-
-```powershell
-flexppi train --config configs\pretrain.yaml
-```
-
-训练器会检查训练和验证 manifest 的 `cluster_id`；若两侧出现同一生物组，
-训练会在开始前终止。旧版 [`configs/finetune.yaml`](configs/finetune.yaml)
-仍留在仓库中以复现历史 apo/holo 实验，但不是当前训练流程的一部分。
-
-评估会分别报告每个标签的有效残基数、MAE、Pearson 相关和符号准确率：
-
-```powershell
-flexppi evaluate `
-  --config configs\finetune.yaml `
-  --checkpoint artifacts\finetune\best.pt
-```
-
-现在的评测器还会报告蛋白等权宏平均、Spearman、RMSE、R²、CCC、高柔性残基检出、不确定性覆盖率，并在结合响应任务中并列比较响应头、两个状态直接相减和零变化基线。训练器当前只有 train/validation，没有未接触 test；因此应显式使用 `--split val`，并保留报告中的模型选择偏乐观警告。本地清单来自远程服务器时可使用带 `/ranze/...` 到 Windows 路径映射的 `configs/evaluate_state_local.yaml` 与 `configs/evaluate_pair_local.yaml`：
-
-```powershell
-flexppi evaluate --config configs\evaluate_state_local.yaml --checkpoint artifacts\pretrain_rmsf_hchi_v1\best.pt --split val --output artifacts\evaluation\state_validation_rmsf_hchi_v1.json
-flexppi evaluate --config configs\evaluate_state_local.yaml --checkpoint artifacts\pretrain_rmsf_hchi_v1\best.pt --split test --output artifacts\evaluation\state_test_rmsf_hchi_v1.json
-```
-
-TCR3D 可作为独立的晶体 B 因子排序和 CDR 柔性富集代理测试；它没有 MD 轨迹，因此命令和输出都会明确标记“不是 MD-RMSF/结合响应真值”。完整评测设计、实测结果、数据泄漏边界和论文式 benchmark 骨架见 [docs/evaluation_protocol.md](docs/evaluation_protocol.md)。
-
-只输入一个 PDB 时输出绝对状态；同时输入 apo 受体和 holo 复合物时，程序会自动做序列映射并输出成对变化：
-
-```powershell
-flexppi predict `
-  --checkpoint artifacts\finetune\best.pt `
-  --apo-pdb path\to\apo.pdb `
-  --holo-pdb path\to\complex.pdb `
-  --target-chains A `
-  --output artifacts\prediction.json
-```
-
-## Zenodo 6638504 严格 apo/holo PPI 实验
-
-本地 `E:\data\protein_md_datasets\zenodo_6638504_ppi_md` 的 8 个经典 PPI 复合物现已支持 GRO+XTC 原子顺序安全转换、100 ns 窗口标签、16 个链侧严格配对、冻结 checkpoint 评估、伙伴删除消融、GNM/接触数/距离基线以及 leave-one-complex-out 校准。完整设计、实测结果、泄漏边界、生物学解释和复现命令见 [docs/zenodo_6638504_experiments.md](docs/zenodo_6638504_experiments.md)。
-
-```powershell
-flexppi index-zenodo-ppi --output artifacts\zenodo_6638504\data
-flexppi compute-md-labels `
-  --manifest artifacts\zenodo_6638504\data\zenodo_6638504_states.jsonl `
-  --output-dir artifacts\zenodo_6638504\data\labels `
-  --window-frames 2500
-```
-
-## 代码布局与验证
-
-`src/flexppi/data` 负责 PDB、清单、配对和 MD 标签；`src/flexppi/model` 负责序列编码、几何特征、IPA 和预测头；`losses.py` 实现噪声感知状态损失、响应损失与一致性损失；`trainer.py`、`evaluation.py` 和 `inference.py` 分别处理训练、指标和推理。运行全部测试：
-
-```powershell
-$env:PYTHONPATH="src"
-pytest
-```
-
-测试覆盖 PDB/链解析、带缺口的残基对应、ATLAS 三重复均值与方差、整个状态网络在全局旋转和平移下的不变性，以及 apo/holo 前向传播、损失和反向传播。ATLAS 本地 README 标明数据采用 CC BY-NC 4.0，因此当前数据不能在未获得额外许可的情况下直接用于商业训练或商业模型发布。
-
-本机验收结果为：ATLAS 的 1,938 个目录全部成功建立状态清单；DynaRepo 的 922 个目录全部成功索引，其中包括 406 个 PDBbind 复合物、210 个 DynaBench 复合物、215 个抗原单体、52 个 test53 单链和 39 个 test53 复合物。test53 最终得到 37 条通过“序列一致度至少 0.90、覆盖度至少 0.80”的 apo/holo 配对，另有 2 条因覆盖度只有 0.768 和 0.789 被明确拒绝。真实轨迹 A00CW/A00BR（PDB 1F6M）的闭环测试成功读取 310 残基 apo 与 834 残基 holo，映射 310 个受体残基，完成绝对状态和响应前向计算、联合损失与反向传播；A00CV 的 SASA 冒烟测试也为 295 个残基全部生成了有限标签。
+该审计检查数据和配置，不代替训练前的前向计算、反向计算和显存验证。轨迹处理需要可选的 `md` 依赖，ESM 编码需要可选的 `esm` 依赖；现有 `.venv-md/` 保留，不在本次整理中重建。迁移电脑时需重新配置外部数据路径，详见 [备份与恢复说明](BACKUP_MANIFEST.md)。外部实现与许可证来源见 [NOTICE](NOTICE)。

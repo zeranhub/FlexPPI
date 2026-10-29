@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "all13_peptide_original_reference_means_and_variances_recomputed": true,
+  "absolute_tolerance": 3e-06,
+  "raw_topology_and_trajectory_files_unchanged": true,
+  "frame_window": "all available1001–1003frames 0–200ns, nominal200ps; all source saved frames retained",
+  "alignment": "peptide C-alpha independently Kabsch-fitted to first frame for RMSF; contacts and chi are alignment invariant",
+  "contact_definition": "At least one heavy atom <=cutoff; Q7 sidechain excludes N,CA,C,O,OXT; terminal contact uses OE1 or NE2",
+  "source_files": [
+    {
+      "pdb": "2ak4",
+      "replica": 1,
+      "topology": "E:\\data\\ITrace\\trajectories\\2ak4_run1_topology.pdb",
+      "topology_sha256": "1170442beaf21d158112857d64fa8cc35983789a177f7efb6b02f438d19b262f",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\2ak4_run1_md_processed.xtc",
+      "trajectory_sha256": "afd797fdb366ed28ff9b155463e61befa608ee2a74ee74a19381319378a88235",
+      "canonical_topology_sha256": "facec625061571c991b63e309cc78cb9dbf80ecc41e4e1c3cc801c73b3c5992b",
+      "prediction_sha256": "a6858a9abd39d9a0048873ce3640734c6975d9e0742673af22ca3dc0c2751b0a",
+      "model_input_sha256": "facec625061571c991b63e309cc78cb9dbf80ecc41e4e1c3cc801c73b3c5992b",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "pdb": "2ak4",
+      "replica": 2,
+      "topology": "E:\\data\\ITrace\\trajectories\\2ak4_run2_topology.pdb",
+      "topology_sha256": "ae97b3c6123482ca3ed57225dde61c016f874df032adc92cbaf96b6ce6f84d51",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\2ak4_run2_md_processed.xtc",
+      "trajectory_sha256": "d77d5e7d4a617025fa5f1a8ad2a384e3e6f4c95313a71512eaa698a8a60c9fe1",
+      "canonical_topology_sha256": "79c342bd96b657e827756dbad3c1c896621fb2cd6dc2eb09c2ddeeac1f7996e5",
+      "prediction_sha256": "a6858a9abd39d9a0048873ce3640734c6975d9e0742673af22ca3dc0c2751b0a",
+      "model_input_sha256": "facec625061571c991b63e309cc78cb9dbf80ecc41e4e1c3cc801c73b3c5992b",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "pdb": "2ak4",
+      "replica": 3,
+      "topology": "E:\\data\\ITrace\\trajectories\\2ak4_run3_topology.pdb",
+      "topology_sha256": "e61142dcca85d9ff1f140a409e7c59dcf46097e9c2b2e5b4151890dc23595da0",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\2ak4_run3_md_processed.xtc",
+      "trajectory_sha256": "99ecf2d422f6c17df3a1cb702c4e9715051f9e9be063f9caa19a2eecb1fba8bf",
+      "canonical_topology_sha256": "b3368dd95e753f0d7ce81d17ea049280a4f87abf8d0f94139d2639c0677d74bb",
+      "prediction_sha256": "a6858a9abd39d9a0048873ce3640734c6975d9e0742673af22ca3dc0c2751b0a",
+      "model_input_sha256": "facec625061571c991b63e309cc78cb9dbf80ecc41e4e1c3cc801c73b3c5992b",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "pdb": "4jry",
+      "replica": 1,
+      "topology": "E:\\data\\ITrace\\trajectories\\4jry_run1_topology.pdb",
+      "topology_sha256": "45a59dfce3b190186e5a73b96e0d40401a48e8f0638609318bcb51458906ac58",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\4jry_run1_md_processed.xtc",
+      "trajectory_sha256": "d68673f24739154b6882200637fec26780082a9ffe2290a65fa47dad25a941f2",
+      "canonical_topology_sha256": "545f48ea0f4e65b519e25b1214df1a3aa9899415ceadcb96be1c96555ec29230",
+      "prediction_sha256": "13dfbdb65a009e66812028301fed2e3e659ac99a8e805efb78f8d638713bdb0d",
+      "model_input_sha256": "545f48ea0f4e65b519e25b1214df1a3aa9899415ceadcb96be1c96555ec29230",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "pdb": "4jry",
+      "replica": 2,
+      "topology": "E:\\data\\ITrace\\trajectories\\4jry_run2_topology.pdb",
+      "topology_sha256": "a72aa4c158df17c7b0cbcd8002d3bddb4cbd49e712a8c51373978414f171be3e",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\4jry_run2_md_processed.xtc",
+      "trajectory_sha256": "1ba3556aae8f46eb51061ce9695c6fd89adc94cfd73d7a68b8887e1355ceec2c",
+      "canonical_topology_sha256": "5f88c59ad5995337c73a259349758cc8430c955ad2a95bf7e1b37cce4857287a",
+      "prediction_sha256": "13dfbdb65a009e66812028301fed2e3e659ac99a8e805efb78f8d638713bdb0d",
+      "model_input_sha256": "545f48ea0f4e65b519e25b1214df1a3aa9899415ceadcb96be1c96555ec29230",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "pdb": "4jry",
+      "replica": 3,
+      "topology": "E:\\data\\ITrace\\trajectories\\4jry_run3_topology.pdb",
+      "topology_sha256": "10538f66be5be0ebdedc2e5fd1b6115ce6129009310ea48babb5602bd4824ab0",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\4jry_run3_md_processed.xtc",
+      "trajectory_sha256": "d220c7616774d96d9b95658e8f1f2b79078bedbb0f8bffc845253f4203b55b91",
+      "canonical_topology_sha256": "a2c146fe41fa71723336045f9e55d6733aa2f650178abadf8f002ebc18870baf",
+      "prediction_sha256": "13dfbdb65a009e66812028301fed2e3e659ac99a8e805efb78f8d638713bdb0d",
+      "model_input_sha256": "545f48ea0f4e65b519e25b1214df1a3aa9899415ceadcb96be1c96555ec29230",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    }
+  ],
+  "new_MD": false,
+  "new_training": false
+}

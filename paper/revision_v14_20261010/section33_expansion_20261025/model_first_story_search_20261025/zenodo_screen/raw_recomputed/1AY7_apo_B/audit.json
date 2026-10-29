@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "sample_id": "1AY7_apo_B",
+  "chemical_changes": {
+    "ILE_CD->CD1_atoms": 6
+  },
+  "n_residues": 89,
+  "frames": 7501,
+  "dt_ps": 40.0,
+  "duration_ns": 300.0,
+  "windows": 3,
+  "window_frames": 2500,
+  "frames_used": 7500,
+  "chi_bond_min_A": 1.1082899570465088,
+  "chi_bond_max_A": 1.9692901372909546,
+  "legacy_label_max_difference": {
+    "rmsf": 3.9761487591327693e-07,
+    "hchi": NaN
+  },
+  "source": [
+    {
+      "path": "E:\\Project\\FlexPPI\\artifacts\\zenodo_6638504\\data\\structures\\1AY7\\apo_B.pdb",
+      "sha256": "84f947c20902081c7b83d90ea8dc164a5a266c2df30d03d95556b35e6cb67167"
+    },
+    {
+      "path": "E:\\data\\protein_md_datasets\\zenodo_6638504_ppi_md\\extracted\\1AY7\\B\\md.xtc",
+      "sha256": "43efb1ea07342e398f1c4ab2252c6340247a48d75e64a9026f83817ad9838722"
+    }
+  ],
+  "script_sha256": "9a557e6759f4144fc51f552c44dc85e6c2bd6dcb28e6e098a801c1a8ce2875db",
+  "interpretation": "100ns contiguous blocks within one trajectory, not independent repeats; per-chain all-CA fitting; no silent PBC repair."
+}

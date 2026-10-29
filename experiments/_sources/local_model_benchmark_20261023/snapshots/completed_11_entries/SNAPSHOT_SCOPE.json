@@ -1,0 +1,169 @@
+{
+  "created_utc": "2026-10-23T16:37:44.112553+00:00",
+  "completed_entries": 11,
+  "all_records": 3063,
+  "original_project_root": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023",
+  "scope": "Immutable review snapshot. Partial methods retained in audit tables and aligned arrays, excluded from primary plots. Input structures, weights, frozen cache and per-model output files remain at original audited paths. Heavy full inference deferred by user.",
+  "files": [
+    {
+      "path": "figures/benchmark_current.pdf",
+      "sha256": "6547b37f2404bc9d81883677de5a3c284e1f2f673271ca4799ea865feec0acdd",
+      "bytes": 54575
+    },
+    {
+      "path": "figures/benchmark_current.png",
+      "sha256": "501fde5cf189547e565acbaa98bde08382d065f95fa9170888f56437df814572",
+      "bytes": 212273
+    },
+    {
+      "path": "figures/benchmark_current.svg",
+      "sha256": "289cdffa41a3436d33cdf0c8b433a71df76f353eeb3ba92f640bdbac26e52ed5",
+      "bytes": 79945
+    },
+    {
+      "path": "figures/benchmark_current_source.csv",
+      "sha256": "e63b879a93e1c24cd27afc178813b8ed0af7be338336f185be5efdc85f2f1052",
+      "bytes": 12756
+    },
+    {
+      "path": "figures/benchmark_distributions_current.pdf",
+      "sha256": "6fbddbbbd94e4bff454e8e84539a76815c2761da1695f6ddc3a69486b4e7955b",
+      "bytes": 72732
+    },
+    {
+      "path": "figures/benchmark_distributions_current.png",
+      "sha256": "c0e4de60093aee48d75e2155b0c068fdb119ae75d5877f559c364e3f4fbf26b3",
+      "bytes": 129123
+    },
+    {
+      "path": "figures/benchmark_distributions_current.svg",
+      "sha256": "6a7925f6dc1ce4237f1c70366b64a31964cb1026191900591817ec9d3b2ef07e",
+      "bytes": 176018
+    },
+    {
+      "path": "figures/CAPTION_en.txt",
+      "sha256": "1dfc744b6dea1a173be6d1ce7681dc029cccbd3904248a7f68d7679dbe0eeba2",
+      "bytes": 1648
+    },
+    {
+      "path": "figures/plot_audit.json",
+      "sha256": "8add547a08359022d63f56fa613f008b8e09b5950f6ff1a7f10648befb5b25a5",
+      "bytes": 1316
+    },
+    {
+      "path": "figures/qa_export_metrics.json",
+      "sha256": "35d432dc6977daa35f11aad1738b58fc1f3248640b1dcf85e5a7a17a60f1e8ec",
+      "bytes": 31247
+    },
+    {
+      "path": "figures/qa_raw_skill_findings.json",
+      "sha256": "1f2324aca9e24b5177bae499aaded042a139403d11b3bde39989971318c25527",
+      "bytes": 2607
+    },
+    {
+      "path": "figures/RESULTS_en_draft.txt",
+      "sha256": "bd4c4251e4ef4561232b451b1cb34385879cb82c1d60b7b3c5071d7ead11539c",
+      "bytes": 2224
+    },
+    {
+      "path": "evaluation/per_record_metrics.csv",
+      "sha256": "e350f918350a3ea5bf93b18cb37e4c94e852565afcbf5b8490967eb92733b02f",
+      "bytes": 7015927
+    },
+    {
+      "path": "evaluation/group_summary.csv",
+      "sha256": "d50bbcc4210fd97a904119dbd882739a5eaa9ecdb5e94e1cfb02e553756a491e",
+      "bytes": 56462
+    },
+    {
+      "path": "evaluation/paired_differences.csv",
+      "sha256": "c453b0bed90a13f42d4c6a2b263f9a5eb815da10f9404d9ec24959cfff4c0bfb",
+      "bytes": 22350
+    },
+    {
+      "path": "evaluation/coverage_per_record.csv",
+      "sha256": "8d8b45269bf747c86f819e2a32c1e82b8e1004dae4615863bab7973eca8d7c84",
+      "bytes": 2100307
+    },
+    {
+      "path": "evaluation/coverage_summary.csv",
+      "sha256": "0754c6975eeefe3214e0a61b32da727295bf0d274529973c3b0f9e47faf5199f",
+      "bytes": 2272
+    },
+    {
+      "path": "evaluation/scoring_audit.json",
+      "sha256": "b16133f4f8a12f7ca760eef00b8b684b02e0da6681537a8b350171e2c6c7a86c",
+      "bytes": 5746
+    },
+    {
+      "path": "evaluation/aligned_predictions.npz",
+      "sha256": "1117f64789623f0c91aa8b27b39a4639605c341b9587ce2c2b8159355655d47f",
+      "bytes": 55314386
+    },
+    {
+      "path": "evaluation/frozen_predictions_audit.json",
+      "sha256": "f78a8bea9df9a063323e102f847c2730bd256f088731fb0c5640ceb18132910a",
+      "bytes": 1272
+    },
+    {
+      "path": "RESULTS_zh.md",
+      "sha256": "f1372fad949c20b30c1b4e25b3e199772a3ee21ad7a76fd10a23a33567ed97a1",
+      "bytes": 6029
+    },
+    {
+      "path": "QA_REPORT.json",
+      "sha256": "3715fb3eb03449b82b1417dbd5203fb5e60ee85f4ea13cd0114cff8bdd1108c9",
+      "bytes": 89240
+    },
+    {
+      "path": "QA_REPORT.md",
+      "sha256": "7ebac3b501d6cc8ab2d6ddfc236b21b00d23f957d8863a156c9919997970f128",
+      "bytes": 4397
+    },
+    {
+      "path": "BENCHMARK_PROTOCOL.md",
+      "sha256": "6d5c2369aca7d4c9ca5ad8666ddd400bb9506cd60ef92b512fd024e1be6493cd",
+      "bytes": 4809
+    },
+    {
+      "path": "evaluate_benchmark.py",
+      "sha256": "02923332cbaf1b0c79ab5728d0c2f7c193aa2a573d87d4133a9017cb3c810e22",
+      "bytes": 18471
+    },
+    {
+      "path": "plot_benchmark.py",
+      "sha256": "6183f1f648a5516d0a87608675f1088aa65780a9a0ba71849c07ba87cdc30c89",
+      "bytes": 10884
+    },
+    {
+      "path": "build_benchmark_report.py",
+      "sha256": "cd2efd0f2f9414a4c4c5c5621f45629b67987233e5b3eb7076636f125b9771bc",
+      "bytes": 11467
+    },
+    {
+      "path": "qa_current.py",
+      "sha256": "3e352fb62d87af201378b483d319a7233ea86d869d0885729828bfc282d8baf8",
+      "bytes": 32345
+    },
+    {
+      "path": "continue_local_queue.py",
+      "sha256": "f1e9ef192d0f73d9ea391b319e1b9ec5b8fec1a41fb24e13c243c8f36a30d505",
+      "bytes": 5407
+    },
+    {
+      "path": "long_queue_config.json",
+      "sha256": "4243aaa1fc4d34f1cb980c135c6ffa154844277ab6b01a008045b255ecc463d0",
+      "bytes": 410
+    },
+    {
+      "path": "cohort/user_group_confirmation.json",
+      "sha256": "dc5321dbf94eaae4fd8af4fe5668fb3d4619a87bca8a50bf1941c33257d005fd",
+      "bytes": 495
+    },
+    {
+      "path": "fastprotflex/copied_target_parse_audit.json",
+      "sha256": "6afe3df29ce510173c9ae616db3340de0a2f90438da8e92251c71f75aed9b503",
+      "bytes": 8183
+    }
+  ]
+}

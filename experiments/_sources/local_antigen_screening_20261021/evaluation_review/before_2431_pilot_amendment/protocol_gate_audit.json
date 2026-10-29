@@ -1,0 +1,415 @@
+{
+  "status": "passed_protocol_and_existing_assets",
+  "created_at_utc": "2026-10-21T13:02:18.485098+00:00",
+  "protocol_id": "local_antigen_retrospective_v1_20261021",
+  "source_code_contract_hashes": [
+    {
+      "path": "E:\\Project\\FlexPPI\\src\\flexppi\\inference.py",
+      "sha256": "514363978c2592cc6374e433be0c84c2f4047a4cb310e6e6936d672091c971c0"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\src\\flexppi\\data\\structures.py",
+      "sha256": "595a69d3339e8d1c6675c28f347a7ac3adcba9fb8a41b79f52a6476b097d4b83"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\src\\flexppi\\model\\network.py",
+      "sha256": "9be9046ba25b5fd4574d250ca28d62f4a4c2291f2d6edb96911d20290696fd1b"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\src\\flexppi\\model\\information_ablation.py",
+      "sha256": "2cf16a46206057522fbe0419501d533fbf8fe6ac87a379c592761b0c4e4d1a72"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\src\\flexppi\\config.py",
+      "sha256": "63f2467b39aabea312aa3b29601c8ce6e1cb186f0b005b60a3578c8c3fac466a"
+    }
+  ],
+  "fixed_rule_binding_sha256": "a10a238ed44c41c2f6963aea9fa9a0fc927225d9b14ec8a24c27c68306774cd2",
+  "protocol_sha256": "8e66cc0ae2029fce8841ebea9fb95f63f8ce5f8ee36933304d72f9013eea5f24",
+  "split_sha256": "114daac2dff465b259a6b274920eb9147774cb7409d324a1dc4935669e2eab61",
+  "original_primary_label_rule_sha256": "858804c15beb49e6a60006cb57ad981b5d379437a8cf14814ba5760d550c7707",
+  "label_files": [
+    {
+      "variant": "reported_hybrid",
+      "role": "observations",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_observations_reported_hybrid.csv",
+      "sha256": "bec742b44a2355275a668a0b5a20ed570096d19a757a40905edd59b4ed09bd3b"
+    },
+    {
+      "variant": "reported_hybrid",
+      "role": "candidates",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_candidates_reported_hybrid.csv",
+      "sha256": "c834147811244b856f7ce49f4e59b85f4268a7d98e11a272be122773197148ae"
+    },
+    {
+      "variant": "all_constrained",
+      "role": "observations",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_observations_all_constrained.csv",
+      "sha256": "3be433c8f1a43477837f33ec3f30aa0c6c41dbd71e82e7b2fc1ee8c8d69ee495"
+    },
+    {
+      "variant": "all_constrained",
+      "role": "candidates",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_candidates_all_constrained.csv",
+      "sha256": "2f0ea5ab1e6daf03eb2c48002cd8ec9a146b1dc96cde6f3f623d4b30cdd02425"
+    },
+    {
+      "variant": "all_fitted",
+      "role": "observations",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_observations_all_fitted.csv",
+      "sha256": "c1160abce13093d3951e1a5979f30ce089e72e40a5992f82b94aceeecbadda6a"
+    },
+    {
+      "variant": "all_fitted",
+      "role": "candidates",
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\experimental_labels\\SPR_labels_candidates_all_fitted.csv",
+      "sha256": "464e48e0cbffdad0e04080b46161dbf1bde93b0db16fe24fbf6f0140933393dc"
+    }
+  ],
+  "numeric_affinity_values_not_inspected": true,
+  "new_model_panel_outputs_not_inspected": true,
+  "candidate_identity_crosswalk": [
+    {
+      "protocol_candidate_id": "nyeso_SLLMWITQV",
+      "label_candidate_id": "1G4_NYESO_SLLMWITQV",
+      "panel_id": "1G4_NYESO",
+      "sequence": "SLLMWITQV",
+      "system": "nyeso",
+      "analysis_set": "reference_only",
+      "mutation_positions": []
+    },
+    {
+      "protocol_candidate_id": "nyeso_SLAMWITQV",
+      "label_candidate_id": "1G4_NYESO_SLAMWITQV",
+      "panel_id": "1G4_NYESO",
+      "sequence": "SLAMWITQV",
+      "system": "nyeso",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        3
+      ]
+    },
+    {
+      "protocol_candidate_id": "nyeso_SLLMWVTQV",
+      "label_candidate_id": "1G4_NYESO_SLLMWVTQV",
+      "panel_id": "1G4_NYESO",
+      "sequence": "SLLMWVTQV",
+      "system": "nyeso",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        6
+      ]
+    },
+    {
+      "protocol_candidate_id": "nyeso_SLYMWITQV",
+      "label_candidate_id": "1G4_NYESO_SLYMWITQV",
+      "panel_id": "1G4_NYESO",
+      "sequence": "SLYMWITQV",
+      "system": "nyeso",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        3
+      ]
+    },
+    {
+      "protocol_candidate_id": "nyeso_SLLDWITQV",
+      "label_candidate_id": "1G4_NYESO_SLLDWITQV",
+      "panel_id": "1G4_NYESO",
+      "sequence": "SLLDWITQV",
+      "system": "nyeso",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        4
+      ]
+    },
+    {
+      "protocol_candidate_id": "nyeso_SLLMWTTQV",
+      "label_candidate_id": "1G4_NYESO_SLLMWTTQV",
+      "panel_id": "1G4_NYESO",
+      "sequence": "SLLMWTTQV",
+      "system": "nyeso",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        6
+      ]
+    },
+    {
+      "protocol_candidate_id": "nyeso_SLLAWITQV",
+      "label_candidate_id": "1G4_NYESO_SLLAWITQV",
+      "panel_id": "1G4_NYESO",
+      "sequence": "SLLAWITQV",
+      "system": "nyeso",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        4
+      ]
+    },
+    {
+      "protocol_candidate_id": "nyeso_SLLMYITQV",
+      "label_candidate_id": "1G4_NYESO_SLLMYITQV",
+      "panel_id": "1G4_NYESO",
+      "sequence": "SLLMYITQV",
+      "system": "nyeso",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        5
+      ]
+    },
+    {
+      "protocol_candidate_id": "nyeso_SLLMFITQV",
+      "label_candidate_id": "1G4_NYESO_SLLMFITQV",
+      "panel_id": "1G4_NYESO",
+      "sequence": "SLLMFITQV",
+      "system": "nyeso",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        5
+      ]
+    },
+    {
+      "protocol_candidate_id": "nyeso_SLLMWITQC",
+      "label_candidate_id": "1G4_NYESO_SLLMWITQC",
+      "panel_id": "1G4_NYESO",
+      "sequence": "SLLMWITQC",
+      "system": "nyeso",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        9
+      ]
+    },
+    {
+      "protocol_candidate_id": "nyeso_SLLMWITQL",
+      "label_candidate_id": "1G4_NYESO_SLLMWITQL",
+      "panel_id": "1G4_NYESO",
+      "sequence": "SLLMWITQL",
+      "system": "nyeso",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        9
+      ]
+    },
+    {
+      "protocol_candidate_id": "nyeso_SLIMWITQV",
+      "label_candidate_id": "1G4_NYESO_SLIMWITQV",
+      "panel_id": "1G4_NYESO",
+      "sequence": "SLIMWITQV",
+      "system": "nyeso",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        3
+      ]
+    },
+    {
+      "protocol_candidate_id": "nyeso_SLMMWITQV",
+      "label_candidate_id": "1G4_NYESO_SLMMWITQV",
+      "panel_id": "1G4_NYESO",
+      "sequence": "SLMMWITQV",
+      "system": "nyeso",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        3
+      ]
+    },
+    {
+      "protocol_candidate_id": "nyeso_SLLMWIHQV",
+      "label_candidate_id": "1G4_NYESO_SLLMWIHQV",
+      "panel_id": "1G4_NYESO",
+      "sequence": "SLLMWIHQV",
+      "system": "nyeso",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        7
+      ]
+    },
+    {
+      "protocol_candidate_id": "tax_LLFGYPVYV",
+      "label_candidate_id": "A6_TAX_LLFGYPVYV",
+      "panel_id": "A6_TAX",
+      "sequence": "LLFGYPVYV",
+      "system": "tax",
+      "analysis_set": "reference_only",
+      "mutation_positions": []
+    },
+    {
+      "protocol_candidate_id": "tax_LLFGFPVYV",
+      "label_candidate_id": "A6_TAX_LLFGFPVYV",
+      "panel_id": "A6_TAX",
+      "sequence": "LLFGFPVYV",
+      "system": "tax",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        5
+      ]
+    },
+    {
+      "protocol_candidate_id": "tax_LLFGYPTYV",
+      "label_candidate_id": "A6_TAX_LLFGYPTYV",
+      "panel_id": "A6_TAX",
+      "sequence": "LLFGYPTYV",
+      "system": "tax",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        7
+      ]
+    },
+    {
+      "protocol_candidate_id": "tax_LLFGWPVYV",
+      "label_candidate_id": "A6_TAX_LLFGWPVYV",
+      "panel_id": "A6_TAX",
+      "sequence": "LLFGWPVYV",
+      "system": "tax",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        5
+      ]
+    },
+    {
+      "protocol_candidate_id": "tax_MLFGYPVYV",
+      "label_candidate_id": "A6_TAX_MLFGYPVYV",
+      "panel_id": "A6_TAX",
+      "sequence": "MLFGYPVYV",
+      "system": "tax",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        1
+      ]
+    },
+    {
+      "protocol_candidate_id": "tax_ALFGYPVYV",
+      "label_candidate_id": "A6_TAX_ALFGYPVYV",
+      "panel_id": "A6_TAX",
+      "sequence": "ALFGYPVYV",
+      "system": "tax",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        1
+      ]
+    },
+    {
+      "protocol_candidate_id": "tax_VLFGYPVYV",
+      "label_candidate_id": "A6_TAX_VLFGYPVYV",
+      "panel_id": "A6_TAX",
+      "sequence": "VLFGYPVYV",
+      "system": "tax",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        1
+      ]
+    },
+    {
+      "protocol_candidate_id": "tax_LLFGYVVYV",
+      "label_candidate_id": "A6_TAX_LLFGYVVYV",
+      "panel_id": "A6_TAX",
+      "sequence": "LLFGYVVYV",
+      "system": "tax",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        6
+      ]
+    },
+    {
+      "protocol_candidate_id": "tax_LLFGYPRYV",
+      "label_candidate_id": "A6_TAX_LLFGYPRYV",
+      "panel_id": "A6_TAX",
+      "sequence": "LLFGYPRYV",
+      "system": "tax",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        7
+      ]
+    },
+    {
+      "protocol_candidate_id": "tax_LLFGHPVYV",
+      "label_candidate_id": "A6_TAX_LLFGHPVYV",
+      "panel_id": "A6_TAX",
+      "sequence": "LLFGHPVYV",
+      "system": "tax",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        5
+      ]
+    },
+    {
+      "protocol_candidate_id": "tax_LLFGYPVFV",
+      "label_candidate_id": "A6_TAX_LLFGYPVFV",
+      "panel_id": "A6_TAX",
+      "sequence": "LLFGYPVFV",
+      "system": "tax",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        8
+      ]
+    },
+    {
+      "protocol_candidate_id": "tax_LLFGYPHYV",
+      "label_candidate_id": "A6_TAX_LLFGYPHYV",
+      "panel_id": "A6_TAX",
+      "sequence": "LLFGYPHYV",
+      "system": "tax",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        7
+      ]
+    },
+    {
+      "protocol_candidate_id": "tax_LLFAYPVYV",
+      "label_candidate_id": "A6_TAX_LLFAYPVYV",
+      "panel_id": "A6_TAX",
+      "sequence": "LLFAYPVYV",
+      "system": "tax",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        4
+      ]
+    },
+    {
+      "protocol_candidate_id": "tax_LLFGYPVAV",
+      "label_candidate_id": "A6_TAX_LLFGYPVAV",
+      "panel_id": "A6_TAX",
+      "sequence": "LLFGYPVAV",
+      "system": "tax",
+      "analysis_set": "primary_single_substitution",
+      "mutation_positions": [
+        8
+      ]
+    },
+    {
+      "protocol_candidate_id": "tax_LLFAYPVAV",
+      "label_candidate_id": "A6_TAX_LLFAYPVAV",
+      "panel_id": "A6_TAX",
+      "sequence": "LLFAYPVAV",
+      "system": "tax",
+      "analysis_set": "secondary_multiple_substitution",
+      "mutation_positions": [
+        4,
+        8
+      ]
+    },
+    {
+      "protocol_candidate_id": "tax_LLFGHPVAV",
+      "label_candidate_id": "A6_TAX_LLFGHPVAV",
+      "panel_id": "A6_TAX",
+      "sequence": "LLFGHPVAV",
+      "system": "tax",
+      "analysis_set": "secondary_multiple_substitution",
+      "mutation_positions": [
+        5,
+        8
+      ]
+    }
+  ],
+  "n_unique_total_candidates": 30,
+  "n_primary_single_substitutions": 26,
+  "n_systems": 2,
+  "n_position_folds": 12,
+  "each_primary_candidate_has_one_heldout_prediction": true,
+  "mutation_positions_do_not_cross_their_test_fold": true,
+  "training_overlap_audit_status": "complete_local_audit",
+  "raw_template_audit_status": "passed",
+  "pending_execution_gates": [
+    "Actual downloaded checkpoint file byte SHA must equal ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5.",
+    "Root/structures not generated at this review; verify actual prepared inputs, chain roles, features U and template/candidate source hashes before inference.",
+    "No calibration fitting, inference, MD or new model training was run by this reviewer."
+  ],
+  "required_protocol_changes": []
+}

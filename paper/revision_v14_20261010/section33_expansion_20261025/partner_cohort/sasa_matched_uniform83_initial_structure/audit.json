@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "source": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\feature_baseline\\features_priority83.parquet",
+  "label_scope": "original frozen labels even for 83 subset",
+  "grouping": "same record, chain, AA, intra-CA8 count bin width4, SASA bin width5/10/20 A2",
+  "definition": "abs error(Intra)-abs error(Full), and interface minus outside gain",
+  "prospective": false,
+  "reason": "Absolute-SASA bins are exploratory robustness after SASA rank analysis",
+  "interpretation": "Conditional observational error comparison of separately trained models, not causal binding response"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "isolated_single_case_prepared",
+  "created_utc": "2026-10-23T19:26:13.559369+00:00",
+  "sample_id": "itrace_1qrn",
+  "n_atoms": 6620,
+  "only_change": "Insert gc() immediately before first adj<-as.matrix(DD)",
+  "control_v2_source_sha256": "5f7327911f1bcbf2b3c3c737c703a7970faeecda072c5b9d591b4642965f8c34",
+  "trial_source_sha256": "5195800d4117f0219b61555751fb6c613b0af1589041ec7bcdfaea2e01988685",
+  "run_script_sha256": "2f01835a17358c841b5816e5222aa3401455e9f6f71d77ef6ad73c159d94d638",
+  "original_reference_RDS_sha256": "b34f900a386c323bece81f13035693d542736ee9ec3d71df1998d59d73a3f7ce",
+  "numeric_program_text_identical": true,
+  "protected_files_sha256": {
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\fastprotflex\\memory_lifetime_v2\\candidate\\FUNCTION_GDV.r": "5f7327911f1bcbf2b3c3c737c703a7970faeecda072c5b9d591b4642965f8c34",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\fastprotflex\\memory_lifetime_v2\\lifecycle_provenance.json": "5d58e0fd70c1190ff6a6fdaed4d9107fee0e72d087115ce5ec254abdf8a68652",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\fastprotflex\\run_local_lifetime_v2.py": "e610bd4459743d3eb69cf96e001e4c1a59c1a90281f751958369c389127c7a33",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\fastprotflex\\memory_lifetime_v2\\probe_extreme_resources.py": "65c6439c76c2279ec76bc27d72bae3230e7dd38ddf433a55b657bcf6ffa9af18",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\fastprotflex\\run_local.py": "f99173e0b17e47046a9c81460d55d0f9d0736ce2f8b2944d26fed99af2f08509",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\fastprotflex\\capture_full_precision.R": "cb82e0def2861686d421cb9261d3726db903812f812973b3f0ea8fa056e1bc97",
+    "E:\\Project\\protein_flexibility_models\\FastProtFlex\\FUNCTION_GDV.r": "c3efdd8b31b65d33ea13ff70b6f777ca394f5566a19aa947d05c865a259a9b60",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\fastprotflex\\memory_lifetime_v2\\runs\\smoke_01\\validation_audit.json": "a283aceaaf2eb4f5e1027c77418e61903de5c85136a157bb3c48849ebee1df81"
+  },
+  "resource_gate": "Unchanged original6620 smoke gate:1.15*2944.76171875+512MiB=3898.4759759902954MiB",
+  "R_runs_requested": 1
+}

@@ -1,0 +1,165 @@
+{
+  "created_utc": "2026-10-24T00:52:21.459325+00:00",
+  "status": "PASS",
+  "scope": "Read-only all3063 frozen PDB/source-hash/coordinate/Bfactor audit. No model or feature forward was executed.",
+  "records": 3063,
+  "passed_records": 3063,
+  "failures": [],
+  "counts": {
+    "canonical_context_files": 8036,
+    "canonical_atoms": 7680628,
+    "canonical_nonzero_bfactor_atoms": 0,
+    "canonical_nonunit_occupancy_atoms": 0,
+    "source_backbone_atoms": 3840854,
+    "source_nonzero_backbone_bfactor_atoms": 0,
+    "complete_geometry_positions": 961321,
+    "canonical_coordinate_positions": 1922642
+  },
+  "BackFlip_2_1": {
+    "checkpoint_sha256": "1af6e13a0e0161b2b92fa6fb9cddd2dee8f3e71c284f5059c77d7a30b9c527b9",
+    "config_sha256": "acb6eb8683370fd6f2da3c2899a7025e524309e79b646b3bb94d79c1781e9ba8",
+    "source_commit": "887c6a73b216e3fe2ff9f551ae6e2c983c21b292",
+    "source_archive_checks": [
+      {
+        "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\upstream_archive\\backflip-887c6a73b216e3fe2ff9f551ae6e2c983c21b292\\backflip\\deployment\\utils.py",
+        "sha256": "173203558705291ecf0b2f5ea8e520ac28bb11d2a9254566c4189c9aa7a74b0b",
+        "downloaded_official_archive_bytes_equal": true
+      },
+      {
+        "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\upstream_archive\\backflip-887c6a73b216e3fe2ff9f551ae6e2c983c21b292\\backflip\\deployment\\inference_class.py",
+        "sha256": "6213b27156a5b394659f8583e6816204db2a5ea93fe415f744d800948ea86451",
+        "downloaded_official_archive_bytes_equal": true
+      },
+      {
+        "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\upstream_archive\\backflip-887c6a73b216e3fe2ff9f551ae6e2c983c21b292\\backflip\\models\\protein_embedder.py",
+        "sha256": "7b88f539428222bdeb7fb058f8aaeb945e365432a204dc446fe63ce308ed87e6",
+        "downloaded_official_archive_bytes_equal": true
+      },
+      {
+        "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\upstream_archive\\backflip-887c6a73b216e3fe2ff9f551ae6e2c983c21b292\\backflip\\models\\node_embedder.py",
+        "sha256": "69a209f700a80d712351b62cd125717884d114f9cb6cb4eb1a5fded2b8814835",
+        "downloaded_official_archive_bytes_equal": true
+      },
+      {
+        "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\upstream_archive\\backflip-887c6a73b216e3fe2ff9f551ae6e2c983c21b292\\backflip\\models\\edge_embedder.py",
+        "sha256": "3ee11a974926055be2eb1a850b56fa6032bece9e6db67174867f49cf60227da3",
+        "downloaded_official_archive_bytes_equal": true
+      },
+      {
+        "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\upstream_archive\\backflip-887c6a73b216e3fe2ff9f551ae6e2c983c21b292\\backflip\\models\\flexibility_model.py",
+        "sha256": "9295da50d8802b239a7858ded04c584f8d4e6fcfb2727d6f70053a28544adc99",
+        "downloaded_official_archive_bytes_equal": true
+      }
+    ],
+    "expected_input_features": [
+      "N/CA/C-derived translations",
+      "N/CA/C-derived rotations",
+      "amino-acid identity",
+      "all-ones inference residue mask",
+      "default concatenated residue ordinal index"
+    ],
+    "excluded_from_model_input": [
+      "PDB Bfactor",
+      "occupancy",
+      "MD label values",
+      "reference NPZ arrays",
+      "source dataset label",
+      "chain identity"
+    ]
+  },
+  "no_network": true,
+  "no_torch_import": true,
+  "no_inference": true,
+  "no_original_files_modified": true,
+  "source_sha256": [
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\dependency_patch_audit.json",
+      "sha256": "04f97635840dc4d07d42752af64f943f6a8950a6b65f1507b01dd707f675e7bb"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\input_audit.json",
+      "sha256": "40abf93a8ca295fd2c53438ab6b86bfd49708eb4a1de4675974d6ea1bf9b1c9a"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\manifest.json",
+      "sha256": "5f0bf1efd5838cff9ef41eade5a5f23374a4616d32f6454f8e2073f6442c9d26"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\prepare_inputs.py",
+      "sha256": "74cec89d5197a0cd31adb8f1aa8b873b48e8810ea8361faf62c2357131769753"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\results\\backflip-2.1\\run_metadata.json",
+      "sha256": "031f4e02a4b98e4cdc2ca23000158b0fe737098f7f862e5ad8922863456f9fee"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\run_benchmark.py",
+      "sha256": "46c5f52e9e81a70a4d85fccb6d412953d5126f9b04bf75ec705de08fb1792ad7"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\upstream_archive\\backflip-887c6a73b216e3fe2ff9f551ae6e2c983c21b292\\backflip\\deployment\\inference_class.py",
+      "sha256": "6213b27156a5b394659f8583e6816204db2a5ea93fe415f744d800948ea86451"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\upstream_archive\\backflip-887c6a73b216e3fe2ff9f551ae6e2c983c21b292\\backflip\\deployment\\utils.py",
+      "sha256": "173203558705291ecf0b2f5ea8e520ac28bb11d2a9254566c4189c9aa7a74b0b"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\upstream_archive\\backflip-887c6a73b216e3fe2ff9f551ae6e2c983c21b292\\backflip\\models\\edge_embedder.py",
+      "sha256": "3ee11a974926055be2eb1a850b56fa6032bece9e6db67174867f49cf60227da3"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\upstream_archive\\backflip-887c6a73b216e3fe2ff9f551ae6e2c983c21b292\\backflip\\models\\flexibility_model.py",
+      "sha256": "9295da50d8802b239a7858ded04c584f8d4e6fcfb2727d6f70053a28544adc99"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\upstream_archive\\backflip-887c6a73b216e3fe2ff9f551ae6e2c983c21b292\\backflip\\models\\node_embedder.py",
+      "sha256": "69a209f700a80d712351b62cd125717884d114f9cb6cb4eb1a5fded2b8814835"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\upstream_archive\\backflip-887c6a73b216e3fe2ff9f551ae6e2c983c21b292\\backflip\\models\\protein_embedder.py",
+      "sha256": "7b88f539428222bdeb7fb058f8aaeb945e365432a204dc446fe63ce308ed87e6"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\upstream_bf2_887c6a7.zip",
+      "sha256": "2fdd45691bfcf6b237cf2899dcb30e396f65e0ee5a504e349d8c34aa458deeec"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\weights\\backflip-2.1\\backflip-2.1.ckpt",
+      "sha256": "1af6e13a0e0161b2b92fa6fb9cddd2dee8f3e71c284f5059c77d7a30b9c527b9"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\backflip\\weights\\backflip-2.1\\config.yaml",
+      "sha256": "acb6eb8683370fd6f2da3c2899a7025e524309e79b646b3bb94d79c1781e9ba8"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\cohort\\records.csv",
+      "sha256": "5c1153ea9717e4c54a790e39dfda82e6d5e48f482ca0cb6a30e1e35cb903f08e"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\neural_exports\\evaluation\\prediction_manifest.jsonl",
+      "sha256": "aa3bbeaa99cbaa35b278ed0b1abf97649d19f79d480c20b71dceb2cc9922fb97"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\src\\flexppi\\constants.py",
+      "sha256": "c7b9113bc2b2e43995a31c841df6a24ccda6a2f88faf9311085081fa96796e30"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\src\\flexppi\\data\\dataset.py",
+      "sha256": "fc5665dab209b8285bf2e326646be02a19bfd4353701a9ecb58b79f05fd57221"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\src\\flexppi\\data\\structures.py",
+      "sha256": "595a69d3339e8d1c6675c28f347a7ac3adcba9fb8a41b79f52a6476b097d4b83"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\src\\flexppi\\model\\network.py",
+      "sha256": "9be9046ba25b5fd4574d250ca28d62f4a4c2291f2d6edb96911d20290696fd1b"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\core_corrected_pipeline\\training_payload\\training_freeze.json",
+      "sha256": "5b994bb59684e3a33c97f4a1801ee9a606e5dd856db9cfe23bf18515697707d3"
+    }
+  ],
+  "output_per_record_sha256": "6a5cbdf6bab39df5a7335d4d07fa6a9e8772127cbeab1ac670d9917110e43375"
+}

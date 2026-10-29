@@ -1,0 +1,95 @@
+{
+  "status": "passed_with_wording_constraints",
+  "reviewer": "independent residue pair evidence review",
+  "analysis": "Independent arithmetic from per-replica data; checks summary values and same-frame joint hydrogen-bond geometry directly against all saved-frame records. No scripts, source data, manuscript, model, or trajectories modified.",
+  "summary_max_abs_recalculation_error": 2.220446049250313e-16,
+  "same_frame_joint_recalculation": "all 6 replica fractions reproduced within 1e-12",
+  "state_summary": {
+    "3hg1": {
+      "Q72_Hchi_nats": 1.6835638613759358,
+      "beta_CA_RMSF_A": 1.892864418102945,
+      "min_heavy_contact_le4_A_fraction": 0.24442224442224442,
+      "Q72_NE2_beta_GlyO_hbond_fraction": 0.009324009324009324,
+      "Q72_OE1_beta_Ile_or_PheN_hbond_fraction": 0.000666000666000666,
+      "same_frame_dual_geometry_fraction": 0.0,
+      "Gly_RMSF_replica_values_A": [
+        1.5704137079364806,
+        1.5821510954736735,
+        2.526028450898681
+      ],
+      "Q72_Hchi_replica_values_nats": [
+        2.159248474667678,
+        1.0802630813441998,
+        1.8111800281159296
+      ],
+      "Gly20ns_Hchi_RMSF_Spearman": [
+        -0.5272727272727272,
+        0.23636363636363633,
+        0.38181818181818183
+      ]
+    },
+    "4jff": {
+      "Q72_Hchi_nats": 1.2186422462639088,
+      "beta_CA_RMSF_A": 1.0776404691860657,
+      "min_heavy_contact_le4_A_fraction": 0.9737447663669,
+      "Q72_NE2_beta_GlyO_hbond_fraction": 0.4276799969721206,
+      "Q72_OE1_beta_Ile_or_PheN_hbond_fraction": 0.820111759294212,
+      "same_frame_dual_geometry_fraction": 0.37147730966275333,
+      "Gly_RMSF_replica_values_A": [
+        1.0294275317785577,
+        0.9999793433494741,
+        1.2035145324301653
+      ],
+      "Q72_Hchi_replica_values_nats": [
+        1.5153777011198473,
+        1.0352622760982046,
+        1.1052867615736748
+      ],
+      "Gly20ns_Hchi_RMSF_Spearman": [
+        -0.05454545454545454,
+        -0.16363636363636364,
+        0.09090909090909088
+      ]
+    }
+  },
+  "supports": [
+    "The engineered complex has greater Q72 side-chain contact occupancy with the beta Phe53/Gly54 backbone patch in each of its three independent trajectories.",
+    "Unchanged beta Gly54 RMSF is lower in every engineered trajectory than in every WT trajectory.",
+    "Q72 Hchi is lower in the engineered three-replica mean, while replica ranges overlap.",
+    "Q72 Hchi and Gly54 RMSF provide complementary site-specific readings of the same remodeled contact patch.",
+    "This local contact and dynamic interpretation is consistent with the primary article structural increase in MHC contacts and experimentally slower dissociation, without quantifying the kinetic contribution of Q72."
+  ],
+  "must_modify": [
+    {
+      "phrase": "接触在工程体更持久",
+      "replacement": "工程体中相应接触的占据率更高；若要使用持续时间更长，需要独立分析连续驻留时间。占据率本身不等同于寿命。"
+    },
+    {
+      "phrase": "Q72 Hchi 降低使 Gly54 RMSF 降低 / 直接证明耦合方向",
+      "replacement": "亲和成熟重排该接触片区，Q72 侧链取向集中与 Gly54 主链波动降低共同出现。20 ns 窗口相关正负混合，不能宣称单向因果。"
+    },
+    {
+      "phrase": "Q72 在工程体每条轨迹中 Hchi 都低于 WT",
+      "replacement": "Q72 的三重复平均 Hchi 较低。两状态重复范围存在重叠，不能写成所有重复分离。"
+    },
+    {
+      "phrase": "Q72 是亲和力提高或解离减慢的决定原因",
+      "replacement": "该片区的动态变化与原研究新增 MHC 接触、解离减慢的结果相呼应；其单独贡献未被测定。"
+    },
+    {
+      "phrase": "桥连在全部或几乎全部工程帧中同时形成两条氢键",
+      "replacement": "满足双端氢键几何的同帧占据为三重复平均 37.15%，各重复 33.20%–39.48%；几何接触约 97% 不能替代双端氢键同帧比例。"
+    }
+  ],
+  "recommended_zh": "亲和成熟后，HLA Q72 与 TCR beta Phe53/Gly54 骨架的局部接触网络得到加强。已有三重复轨迹中，Q72 与未替换 Gly54 的几何接触占据由 24.4% 提高至 97.4%，满足 Q72 NE2 到 Gly54 主链 O 氢键几何的占据由 0.9% 提高至 42.8%；与 Phe53 主链 N 的对应占据也提高至 82.0%。模型同时将 Q72 的侧链取向集中和 Gly54 的骨架波动减小定位到这一片区，分别预测 Hchi 由 1.792 降至 1.375 nats、RMSF 由 1.118 降至 0.747 A。这为原研究报道的新增 TCR–MHC 接触与解离减慢提供了具体的局部动态解释。",
+  "source_SHA256": {
+    "analysis_audit.json": "02675dbbb1eb581a8f5e1412ffd33b037f5837a1006bc6e3fe27c47eed59e388",
+    "per_replica_Q72_beta_contact_and_RMSF.csv": "fee8cc1fd48323b73211ba3d7dbb0176f66cf23caefd663b43d5e49a73371bbe",
+    "three_replica_summary.csv": "66096333f4efda318e74bf13ce6b0c785fae9010cbdd6e64b5ef588c699ac933",
+    "within_replica_20ns_descriptive_correlations.csv": "b12d082275a907e684f524a2651f2506bd986e50a5c273cbc3971391a4f42912",
+    "per_frame_Q72_beta_contacts_and_states.csv": "be675237009e33b99b0e8110065abfe33c4d28e8fb2b3f18d41262690bb1ac5e",
+    "Q72_two_end_backbone_Hbond_same_frame_per_replica.csv": "34bc5a14f5a0155bfd00d74468106dfb8697da09b6d8b0057ec2d95208e785c5",
+    "analyze_Q72_beta_link.py": "5bb9e860b8ee0c0290076257335a7b821fa98c6c76fcb082b47511cbf73e9aeb",
+    "summarize_Q72_beta_link.py": "5f6dfa0936fb154cb80d485a018b95d657261c78d1159657fda0800f5fef4a7e"
+  }
+}

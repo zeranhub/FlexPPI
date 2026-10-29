@@ -1,0 +1,205 @@
+{
+  "core_Full_RMSF": 0.512688385,
+  "core_Intra_RMSF": 2.665638214285714,
+  "core_MD_RMSF": 0.5533217178571428,
+  "outside_Full_RMSF": 0.9191286309090908,
+  "outside_Intra_RMSF": 3.7499531999999998,
+  "outside_MD_RMSF": 1.0890798136363637,
+  "N297_pred_rmsf": 0.8094244,
+  "N297_pred_chi_entropy": 1.5874705,
+  "N297_target_chi_entropy": 1.6556336,
+  "N297_sidechain_shielding_fraction": 0.0,
+  "N308_pred_rmsf": 0.44807371,
+  "N308_pred_chi_entropy": 0.6006687,
+  "N308_target_chi_entropy": 0.9119833,
+  "N308_sidechain_shielding_fraction": 0.8432091729594017,
+  "all169_rmsf_Full_n": 169,
+  "all169_rmsf_Full_MAE": 0.18913154591715978,
+  "all169_rmsf_Full_rho": 0.7755233454328477,
+  "all169_rmsf_Intra_n": 169,
+  "all169_rmsf_Intra_MAE": 0.7936109875739645,
+  "all169_rmsf_Intra_rho": 0.2988041370394312,
+  "all169_chi_entropy_Full_n": 145,
+  "all169_chi_entropy_Full_MAE": 0.19311911561664138,
+  "all169_chi_entropy_Full_rho": 0.9282081561958746,
+  "all169_chi_entropy_Intra_n": 145,
+  "all169_chi_entropy_Intra_MAE": 0.22844643669441378,
+  "all169_chi_entropy_Intra_rho": 0.9320815619587465,
+  "peptide25_rmsf_Full_n": 25,
+  "peptide25_rmsf_Full_MAE": 0.1148592012,
+  "peptide25_rmsf_Full_rho": 0.803076923076923,
+  "peptide25_rmsf_Intra_n": 25,
+  "peptide25_rmsf_Intra_MAE": 2.383203344,
+  "peptide25_rmsf_Intra_rho": 0.41923076923076924,
+  "peptide25_chi_entropy_Full_n": 21,
+  "peptide25_chi_entropy_Full_MAE": 0.25441792985714284,
+  "peptide25_chi_entropy_Full_rho": 0.974025974025974,
+  "peptide25_chi_entropy_Intra_n": 21,
+  "peptide25_chi_entropy_Intra_MAE": 0.4229937089047619,
+  "peptide25_chi_entropy_Intra_rho": 0.9506493506493506,
+  "contacts_1A06_296_sidechain": [
+    {
+      "residue": 292,
+      "resname": "GLU",
+      "min_distance_A": 3.08023262108562
+    },
+    {
+      "residue": 293,
+      "resname": "GLN",
+      "min_distance_A": 3.7840302588642154
+    }
+  ],
+  "contacts_1A06_298_sidechain": [
+    {
+      "residue": 214,
+      "resname": "GLY",
+      "min_distance_A": 2.9751549539477757
+    },
+    {
+      "residue": 210,
+      "resname": "ILE",
+      "min_distance_A": 3.521587284166045
+    },
+    {
+      "residue": 104,
+      "resname": "PHE",
+      "min_distance_A": 3.800952249108106
+    },
+    {
+      "residue": 184,
+      "resname": "TYR",
+      "min_distance_A": 3.9217103411649377
+    },
+    {
+      "residue": 216,
+      "resname": "PRO",
+      "min_distance_A": 3.9282685753395215
+    },
+    {
+      "residue": 215,
+      "resname": "TYR",
+      "min_distance_A": 4.478496511107273
+    }
+  ],
+  "contacts_1A06_303_sidechain": [],
+  "contacts_1A06_316_sidechain": [
+    {
+      "residue": 99,
+      "resname": "SER",
+      "min_distance_A": 3.161067699369948
+    },
+    {
+      "residue": 45,
+      "resname": "LEU",
+      "min_distance_A": 4.142685481665242
+    }
+  ],
+  "contacts_1MXE_296_sidechain": [
+    {
+      "residue": 127,
+      "resname": "GLU",
+      "min_distance_A": 2.743902330623304
+    }
+  ],
+  "contacts_1MXE_298_sidechain": [
+    {
+      "residue": 116,
+      "resname": "LEU",
+      "min_distance_A": 4.07050365434058
+    },
+    {
+      "residue": 120,
+      "resname": "GLU",
+      "min_distance_A": 4.071670418882157
+    },
+    {
+      "residue": 124,
+      "resname": "MET",
+      "min_distance_A": 4.4644596537543055
+    }
+  ],
+  "contacts_1MXE_303_sidechain": [
+    {
+      "residue": 124,
+      "resname": "MET",
+      "min_distance_A": 3.070683962898166
+    },
+    {
+      "residue": 92,
+      "resname": "PHE",
+      "min_distance_A": 3.6096260194097662
+    },
+    {
+      "residue": 128,
+      "resname": "ALA",
+      "min_distance_A": 3.760691425788621
+    },
+    {
+      "residue": 145,
+      "resname": "MET",
+      "min_distance_A": 3.865371909661479
+    },
+    {
+      "residue": 105,
+      "resname": "LEU",
+      "min_distance_A": 4.004222771025607
+    },
+    {
+      "residue": 144,
+      "resname": "MET",
+      "min_distance_A": 4.0672472263190524
+    },
+    {
+      "residue": 100,
+      "resname": "ILE",
+      "min_distance_A": 4.350275853322409
+    },
+    {
+      "residue": 136,
+      "resname": "VAL",
+      "min_distance_A": 4.46042598862485
+    },
+    {
+      "residue": 141,
+      "resname": "PHE",
+      "min_distance_A": 4.46113214330174
+    }
+  ],
+  "contacts_1MXE_316_sidechain": [
+    {
+      "residue": 51,
+      "resname": "MET",
+      "min_distance_A": 3.576995946321432
+    },
+    {
+      "residue": 63,
+      "resname": "ILE",
+      "min_distance_A": 3.854490887263839
+    },
+    {
+      "residue": 32,
+      "resname": "LEU",
+      "min_distance_A": 3.8647768370243583
+    },
+    {
+      "residue": 55,
+      "resname": "VAL",
+      "min_distance_A": 3.941991882284888
+    },
+    {
+      "residue": 71,
+      "resname": "MET",
+      "min_distance_A": 4.08722399679783
+    },
+    {
+      "residue": 52,
+      "resname": "ILE",
+      "min_distance_A": 4.222961046469641
+    }
+  ],
+  "contact_scopes": [
+    "all_heavy",
+    "sidechain"
+  ],
+  "figure_png_SHA256": "f4617338809f8647a5f9bf88f83b8b10f42a41aad239b01a8cdecd4cac4f1a19"
+}

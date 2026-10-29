@@ -1,0 +1,106 @@
+{
+  "case_id": "C11",
+  "status": "passed",
+  "model": "Existing joint Full fold0; trained on ATLAS1866 + DynaRepo564; ITrace0",
+  "model_n": 1,
+  "model_error_bars": null,
+  "MD_independent_replicas_per_state": 3,
+  "MD_center": "Existing equal-weight replica mean",
+  "spread_displayed": null,
+  "n_definition": "Aligned residue comparisons; not independent experimental samples or MD frames",
+  "tests": null,
+  "multiple_comparison_correction": null,
+  "regression_fits": null,
+  "descriptive_metrics_by_complete_contrast": {
+    "rmsf": [
+      {
+        "a": "8wte",
+        "b": "8wul",
+        "n_positions": 48,
+        "Spearman_rho": -0.5065132435953105,
+        "MAE": 0.11018386048575242,
+        "zero_change_MAE": 0.06857745597759883,
+        "direction_agreement": 0.3541666666666667
+      }
+    ],
+    "hchi": [
+      {
+        "a": "8wte",
+        "b": "8wul",
+        "n_positions": 13,
+        "Spearman_rho": -0.09890109890109891,
+        "MAE": 0.16560870294387525,
+        "zero_change_MAE": 0.1319871854323607,
+        "direction_agreement": 0.6153846153846154
+      }
+    ]
+  },
+  "scope_counts": [
+    {
+      "a": "8wte",
+      "b": "8wul",
+      "backbone_scope_rows": 48,
+      "paired_valid_RMSF": 48,
+      "Hchi_same_AA_valid": 13,
+      "all_aligned_rows": 807,
+      "all_paired_rows": 788,
+      "all_gap_rows": 19,
+      "all_altered_AA_rows": 2
+    }
+  ],
+  "all_contrasts": [
+    [
+      "8wte",
+      "8wul"
+    ]
+  ],
+  "source_traceability": "Source CSVs and exact SHA256 in data_audit.json; panel_b/c plotted CSV and all panel_d observations exported",
+  "limitations": "主模型全六环ρ=−0.507、误差增加60.7%；构建体/恒定区缺失也需关注。 The current sequence inventory also has constant-domain truncation/missing-residue differences. Align variable domains carefully and do not interpret missing residues as engineered changes.",
+  "PNG_SHA256": "2efb4e6e9d254d0a03d7f6b99b9b751dda81c9065c4f3f4da278ff4dfdf86823",
+  "original_NPZ_checks": [
+    {
+      "a": "8wte",
+      "b": "8wul",
+      "state": "a",
+      "PDB": "8wte",
+      "metric": "rmsf",
+      "valid_state_values_checked": 801,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_8wte.npz",
+      "NPZ_SHA256": "8e8810cb73d17637745c8886900cc776ca2211b14bde5235a1cee9ad8bf7d12b"
+    },
+    {
+      "a": "8wte",
+      "b": "8wul",
+      "state": "a",
+      "PDB": "8wte",
+      "metric": "hchi",
+      "valid_state_values_checked": 704,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_8wte.npz",
+      "NPZ_SHA256": "8e8810cb73d17637745c8886900cc776ca2211b14bde5235a1cee9ad8bf7d12b"
+    },
+    {
+      "a": "8wte",
+      "b": "8wul",
+      "state": "b",
+      "PDB": "8wul",
+      "metric": "rmsf",
+      "valid_state_values_checked": 794,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_8wul.npz",
+      "NPZ_SHA256": "cd8ab7c68cae842af3b8bb6f75821e88b7891fd68fc8da8b17aec54ba8017e68"
+    },
+    {
+      "a": "8wte",
+      "b": "8wul",
+      "state": "b",
+      "PDB": "8wul",
+      "metric": "hchi",
+      "valid_state_values_checked": 696,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_8wul.npz",
+      "NPZ_SHA256": "cd8ab7c68cae842af3b8bb6f75821e88b7891fd68fc8da8b17aec54ba8017e68"
+    }
+  ]
+}

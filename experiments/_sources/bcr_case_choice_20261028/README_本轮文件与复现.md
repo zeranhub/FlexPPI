@@ -1,0 +1,15 @@
+# 本轮文件与复现
+
+当前结论见B5209B具体案例实测结论.md；两个BCR候选的案例选择结论.md为配对测试前阶段记录，现已加注被当前报告更新。论文DOCX未修改。
+
+本轮包括三个部分：6A77当前冻结输入的519位WT Fab参考核查；15种晶体/人工对照输入的Full和Intrachain各一次实际前向；7XQ8旧试跑及相关公开MD资料的证据范围核查。两个模型权重沿用bcr_model_screen_20261028/runtime/family_folds/runs/{full,intrachain}/fold_0/epoch_040.pt，SHA见audits；代码来自core_corrected_pipeline/training_payload/src。没有重新训练模型或开展新MD。
+
+scripts/screen_6a77.py执行519位参考输入推断，number_6a77.py及6A77_complete_region_metrics.csv给出全部识别环结果。参考重算脚本、原始和规范化标签对应在reference/audit_6a77_reference.py、audits/6a77_reference_audit.json。角色说明中一次手误“Robo1 Ig1”已按官方结构标题更正为Ig5，数据、序列、标签和统计未改变。
+
+scripts/prepare_pair_screen.py从官方PDB选择预先规定的生物组装、构造固定骨架及共享覆盖输入，并写pair_screen_contract.json；run_pair_screen.py实际执行模型；number_pair_states.py独立编号；analyze_pair_screen.py保留所有共享位置和预定义区域；独立代理的independent_pair_result_audit.py用csv模块复算差值及统计。主比较6A78/6A79的两个组装均保留，不根据成绩换主拷贝；文献R477编号与实际结构R67/当前UniProt R513不一致的问题在推断前修正留档，未默默错位取值。
+
+paired_all_residue_predictions.csv保留全部10424行，paired_complete_position_deltas.csv保留8104行差值，paired_predefined_region_deltas.csv保留664项区域统计；NPZ内含均值、预测方差、化学有效mask与输入/检查点SHA。P103A处变为Ala，比较Hχ时排除该位置，不能把化学类型差异当成环境动态变化。独立检查未发现位置拼接或数值不一致。
+
+模型前向与PNG探索图使用D:\Anaconda\envs\pvb_cpu\python.exe；统计使用用户Python3.12；ANARCII编号与同源核查使用现有mel5_absolute_affinity_20261028/affinity/venv，编号依赖来自mel5_tcr_binding_20261028/numbering/deps。脚本保留机器绝对路径；压缩包不包含模型权重、Python环境和原始XTC，因此不是独立一键运行环境。模型源目录、原始数据位置与SHA在审计中记录，未把物理数据复制成“新实验”。
+
+6A77_HCDR3_reference_comparison.png是完整H-CDR3的探索性对照，MD参考仅当前单个结合态；六个CDR的其他结果在完整区域表中。图可帮助判断局部预测是否值得展示，不表示亲和机制已经验证。

@@ -1,0 +1,82 @@
+{
+  "batch": "KIX_rebuilt_triplicate_20261010",
+  "prepared": false,
+  "production_started": false,
+  "reconstruction_source": "E:\\Project\\FlexPPI\\artifacts\\kix_md_20260914\\inputs",
+  "source_script": "E:\\Project\\FlexPPI\\scripts\\kix_md\\run_md.py",
+  "source_script_sha256": "652675f70ff8512ffea217c7cc7098a83406a6951a2c1c99b48c5e48a35fd227",
+  "runner_changes": [
+    "Repeat count only:5->3; queue range1..5->1..3; totals20/2000/2200->12/1200/1320"
+  ],
+  "physical_parameters_changed": false,
+  "seed_rule_changed": false,
+  "old_rep01_included": false,
+  "input_sha256": {
+    "apo": "2aaf89397399dac2a2c15e22ddc02b75bd06f4e5dae9b84e2b2da615755c8d16",
+    "myb": "dc793b6b1b70e83ffaa5d85559280d158a8028ab4f4e7da61a5e761720388c50",
+    "mll": "820797d1f248ff2b3f65010a2846a3864436ed163d5ea9adba01253e82bf27b3",
+    "both": "d2c17e6fbfd1a4eb31ea3afee4f94f3db7dff05fc23ad9934c633dec46721acd"
+  },
+  "code_sha256": {
+    "analyze_job.py": "65c417b73be0211bfac45bc04b69e0a3183fe56dedee32ef92441326705e4c69",
+    "analyze_triplicate_delta.py": "8689d6dc0c7d66d5de24f42a2ef5fa48fdcdcbfa2e686a9e199d1652281bb30f",
+    "audit_prepared.py": "12b47565de73cc6da97cb1b482e5348b367287e05c6fdf710d7ccd226d3eddcb",
+    "audit_rebuilt_prepared.py": "b56aa645d5778cbff687f318e5a26287684a68832e32694a08bdbbee5045883a",
+    "quality_one_repeat.py": "9c2a60ff413d85fbc353176129d28e4bf682236e10d571dc77d0bae933999612",
+    "queue_triplicate.py": "b99ddbbf408896b51bbf87cec390f6795b1138cd2b565c564233ec06b3c88545",
+    "run_md.py": "4d475dd33466e2af30d69835c1c073b5f4811395a4af4f24aaf9ea7d114f0eee"
+  },
+  "schedule": {
+    "batch": "KIX_rebuilt_triplicate_20261010",
+    "states": [
+      "apo",
+      "myb",
+      "mll",
+      "both"
+    ],
+    "allowed_repeats": [
+      1,
+      2,
+      3
+    ],
+    "rebuild_required": true,
+    "old_rep01_included": false,
+    "production_ns_each": 100,
+    "equilibration_ns_each": 10,
+    "jobs": 12,
+    "production_ns_total": 1200,
+    "total_including_equilibration_ns": 1320,
+    "seed_rule": "20260914 + repeat*100 + state_index",
+    "seeds": {
+      "apo": {
+        "rep01": 20261014,
+        "rep02": 20261114,
+        "rep03": 20261214
+      },
+      "myb": {
+        "rep01": 20261015,
+        "rep02": 20261115,
+        "rep03": 20261215
+      },
+      "mll": {
+        "rep01": 20261016,
+        "rep02": 20261116,
+        "rep03": 20261216
+      },
+      "both": {
+        "rep01": 20261017,
+        "rep02": 20261117,
+        "rep03": 20261217
+      }
+    },
+    "historical_rep01_role": "Separate historical sensitivity only; never pooled as a new-batch replicate",
+    "new_predictions_frozen_before_production": true,
+    "model_fit_on_new_md_forbidden": true,
+    "replicate_uncertainty": "Across three MD starts per state; frames/residues/model folds are not independent MD replicates"
+  },
+  "analysis_contract_sha256": "816813bfeeedeaba59a4ec110af6beff2a69869424dc1f9318e4d98e9a7a4f71",
+  "dependency_script_sha256": "be2dd2c388d5d477587451fa8a3694d07c8285deea60e11b6a4111b51bbe4f2a",
+  "analysis_QA": "ANALYSIS_QA.json; passed synthetic-only algebra and validation fixtures",
+  "quality_code_provenance": "QUALITY_CODE_PROVENANCE.json; original mathematical analysis unchanged, actual repeat identity parameterized",
+  "audit_report": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\audit_md.md"
+}

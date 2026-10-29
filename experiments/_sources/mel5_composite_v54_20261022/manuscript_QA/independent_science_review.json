@@ -1,0 +1,225 @@
+{
+  "status": "passed",
+  "DOCX_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v54_20261022_中文修订_MEL5六面板组合图4_三线表.docx",
+  "DOCX_SHA256": "90b66a4029e22b0f67e52d3176839e547a8265690e5ff21d385ab7b5fecd1027",
+  "expected_SHA256_matched": true,
+  "prose_JSON_SHA256": "e58ee86ff2069c1c6a5c9683783e43e084e05452d94ac4238c1855db124af2cd",
+  "read_only_review": true,
+  "all8_changed_paragraphs_exactly_present_in_DOCX": true,
+  "geometry_metric": "Fixed Q72 OE1–beta53 backboneN and Q72 NE2–betaG54 backboneO atom pairs, in starting structures; not minimum all-heavy distance.",
+  "recomputed_fixed_atom_distances": [
+    {
+      "pdb": "3hg1",
+      "OE1_to_beta53_N_A": 5.848767440453818,
+      "NE2_to_beta54_O_A": 10.58442598785775,
+      "display": [
+        "5.85",
+        "10.58"
+      ],
+      "source_SHA256": "4821006d6b94fa5fb210a70b097ffc7155bad492fd9e6f4b433a877b0bc49bc0"
+    },
+    {
+      "pdb": "4jff",
+      "OE1_to_beta53_N_A": 2.942891542742477,
+      "NE2_to_beta54_O_A": 3.1195538050166,
+      "display": [
+        "2.94",
+        "3.12"
+      ],
+      "source_SHA256": "d9d88e83d6381e03905b0cfdd39ee9bffc3d3d64c9b7981a7867b45610601b7e"
+    }
+  ],
+  "model_values": {
+    "CDR2β": {
+      "n": 5,
+      "all_decrease": true,
+      "mean_before": 0.8961336731910705,
+      "mean_after": 0.6356326818466187
+    },
+    "CDR3β": {
+      "n": 13,
+      "all_decrease": true,
+      "mean_before": 0.801299301477579,
+      "mean_after": 0.6475533751341013
+    },
+    "Q72_Hchi": {
+      "before_nats": 1.792447805404663,
+      "after_nats": 1.3750499486923218,
+      "largest_decrease_of23": true
+    },
+    "betaGly54_RMSF": {
+      "before_A": 1.1178646087646484,
+      "after_A": 0.7468647956848145,
+      "unchanged_AA": true
+    }
+  },
+  "MD_summary_values": [
+    {
+      "pdb": "3hg1",
+      "contact_percent": 24.442224442224443,
+      "simultaneous_two_end_Hbond_percent": 0.0,
+      "Q72_MD_Hchi": 1.6835638613759356,
+      "G54_MD_RMSF": 1.8928644181029453
+    },
+    {
+      "pdb": "4jff",
+      "contact_percent": 97.37447663669,
+      "simultaneous_two_end_Hbond_percent": 37.14773096627533,
+      "Q72_MD_Hchi": 1.2186422462639088,
+      "G54_MD_RMSF": 1.0776404691860657
+    }
+  ],
+  "MD_criteria_and_equal_weight_replicate_definition_retained_in_method_P53": true,
+  "peptide_contrast_CDR_response_claims": [
+    {
+      "pdb": "4jfd",
+      "all_regions": [
+        {
+          "region": "CDR1α",
+          "n": 6,
+          "mean_delta_RMSF_A": -0.013436704874038696,
+          "increased_n": 3
+        },
+        {
+          "region": "CDR2α",
+          "n": 6,
+          "mean_delta_RMSF_A": 0.03568562865257263,
+          "increased_n": 5
+        },
+        {
+          "region": "CDR3α",
+          "n": 9,
+          "mean_delta_RMSF_A": 0.043126702308654785,
+          "increased_n": 8
+        },
+        {
+          "region": "CDR1β",
+          "n": 6,
+          "mean_delta_RMSF_A": 0.000866075356801351,
+          "increased_n": 4
+        },
+        {
+          "region": "CDR2β",
+          "n": 5,
+          "mean_delta_RMSF_A": 0.021497416496276855,
+          "increased_n": 4
+        },
+        {
+          "region": "CDR3β",
+          "n": 13,
+          "mean_delta_RMSF_A": -0.003057085550748385,
+          "increased_n": 7
+        }
+      ],
+      "two_largest_mean_increases": [
+        "CDR2α",
+        "CDR3α"
+      ]
+    },
+    {
+      "pdb": "4jfe",
+      "all_regions": [
+        {
+          "region": "CDR1α",
+          "n": 6,
+          "mean_delta_RMSF_A": 0.005723635355631511,
+          "increased_n": 4
+        },
+        {
+          "region": "CDR2α",
+          "n": 6,
+          "mean_delta_RMSF_A": 0.11039382219314575,
+          "increased_n": 6
+        },
+        {
+          "region": "CDR3α",
+          "n": 9,
+          "mean_delta_RMSF_A": 0.047647429837120905,
+          "increased_n": 8
+        },
+        {
+          "region": "CDR1β",
+          "n": 6,
+          "mean_delta_RMSF_A": 0.022650758425394695,
+          "increased_n": 5
+        },
+        {
+          "region": "CDR2β",
+          "n": 5,
+          "mean_delta_RMSF_A": 0.011575788259506226,
+          "increased_n": 5
+        },
+        {
+          "region": "CDR3β",
+          "n": 13,
+          "mean_delta_RMSF_A": 0.023289162379044753,
+          "increased_n": 11
+        }
+      ],
+      "two_largest_mean_increases": [
+        "CDR2α",
+        "CDR3α"
+      ]
+    }
+  ],
+  "peptide_contrast_HLA_Hchi_responses": [
+    {
+      "pdb": "4jfd",
+      "HLA_deltas_nats": {
+        "K68": 0.2741851806640625,
+        "R75": -0.23589468002319336,
+        "Q72": -0.08865904808044434
+      }
+    },
+    {
+      "pdb": "4jfe",
+      "HLA_deltas_nats": {
+        "K68": 0.1355586051940918,
+        "R75": -0.18778204917907715,
+        "Q72": -0.038658857345581055
+      }
+    }
+  ],
+  "interface_scope_and_mask": [
+    {
+      "before": "3hg1",
+      "after": "4jff",
+      "interface_n": 30,
+      "Hchi_comparable_n": 23
+    },
+    {
+      "before": "4jff",
+      "after": "4jfd",
+      "interface_n": 30,
+      "Hchi_comparable_n": 23
+    },
+    {
+      "before": "4jff",
+      "after": "4jfe",
+      "interface_n": 30,
+      "Hchi_comparable_n": 22
+    }
+  ],
+  "caption": {
+    "all6_panels_match": true,
+    "all_units_correct": true,
+    "three_reference_contrasts_correct": true,
+    "p_prefix_defined": true,
+    "grey_mask_meaning_correct": true,
+    "common_TCR_numbering_correct": true,
+    "observed_structure_prediction_scope_correct": true
+  },
+  "primary_literature": {
+    "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_joint_case_v49_20261019\\case_sources\\primary_literature\\mel5_thermodynamics_2013.md",
+    "SHA256": "26cfbe8ac523d60f88058d761a817338d18d8e2b998331d29a516c6c6d142e41",
+    "SPR_18uM_to_0_6nM_and_30000fold_verified": true,
+    "slower_offrate_verified": true,
+    "MHC56_to97_and_betaCDR2_6_to38_verified": true,
+    "I53F_new_MHC_contacts_verified": true,
+    "original_experiments_not_mislabeled_as_MD": true
+  },
+  "mechanistic_claim_scope": "Associates model-predicted Q72 sidechain and unmutated G54 backbone responses with same local contact network, supported by existing MD and original SPR/crystallography; does not assert directional Hchi→RMSF causation or affinity prediction. Added peptide comparisons describe distinct regional responses, not a Q72-based affinity classifier.",
+  "blocking_issues": [],
+  "required_scientific_edits": [],
+  "visual_render_review": "not part of this report; pending separate page review"
+}

@@ -1,0 +1,190 @@
+{
+  "status": "passed_root_and_independent_data_and_method_review",
+  "date": "2026-10-28",
+  "new_MD": false,
+  "new_inference": false,
+  "models_are_same_as_v124_figure4": true,
+  "CDR3b_complete_loop": {
+    "n": 13,
+    "same_AA_n": 9,
+    "predicted_decrease_n": 13,
+    "MD_mean_decrease_n": 13,
+    "prediction_before_A": 0.801299301477579,
+    "prediction_after_A": 0.6475533751341013,
+    "MD_before_A": 1.2886252225146646,
+    "MD_after_A": 0.9260628249164552,
+    "delta_rank_rho_all13": 0.7857142857142857,
+    "delta_rank_rho_unchanged9": 0.8499999999999999,
+    "delta_MAE_A": 0.20881647125473177
+  },
+  "G99": {
+    "predicted_before_A": 1.2984987497329712,
+    "predicted_after_A": 0.8850277662277222,
+    "MD_before_A": 1.6219697045192643,
+    "MD_after_A": 1.0614147362942703,
+    "unchanged_residue": true,
+    "largest_model_decrease_in_all45_CDR_positions": true
+  },
+  "W103_indoleNH_to_G99_O": {
+    "3hg1": {
+      "not_defined": "WT Leu103 lacks indole N-H donor."
+    },
+    "4jff": {
+      "per_replica": [
+        0.7298105682951147,
+        0.7417746759720838,
+        0.7292707292707292
+      ],
+      "equal_replica_mean": 0.7336186578459759
+    }
+  },
+  "E95_backboneNH_to_G101_O": {
+    "3hg1": {
+      "per_replica": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "equal_replica_mean": 0.0
+    },
+    "4jff": {
+      "per_replica": [
+        0.6450648055832503,
+        0.6909272183449651,
+        0.6153846153846154
+      ],
+      "equal_replica_mean": 0.6504588797709436
+    }
+  },
+  "both_intraloop_Hbond_same_frame": {
+    "per_replica": [
+      0.4865403788634098,
+      0.5124626121635095,
+      0.4725274725274725
+    ],
+    "equal_replica_mean": 0.49051015451813057
+  },
+  "all_heavy_contact4A": {
+    "G99_to_Leu_or_Trp103": {
+      "3hg1": {
+        "per_replica": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "equal_replica_mean": 0.0
+      },
+      "4jff": {
+        "per_replica": [
+          0.9501495513459621,
+          0.9900299102691924,
+          0.965034965034965
+        ],
+        "equal_replica_mean": 0.9684048088833732
+      }
+    },
+    "G99_to_HLA_Q155": {
+      "3hg1": {
+        "per_replica": [
+          0.09970089730807577,
+          0.4325674325674326,
+          0.6493506493506493
+        ],
+        "equal_replica_mean": 0.3938729930753859
+      },
+      "4jff": {
+        "per_replica": [
+          0.8524426719840479,
+          0.9511465603190429,
+          0.8791208791208791
+        ],
+        "equal_replica_mean": 0.8942367038079899
+      }
+    },
+    "G97_to_peptide_I7": {
+      "3hg1": {
+        "per_replica": [
+          0.2951146560319043,
+          0.33266733266733267,
+          0.7502497502497503
+        ],
+        "equal_replica_mean": 0.45934391298299576
+      },
+      "4jff": {
+        "per_replica": [
+          0.9800598205383848,
+          0.9780658025922233,
+          0.9410589410589411
+        ],
+        "equal_replica_mean": 0.9663948547298498
+      }
+    },
+    "G99_to_peptide_I7": {
+      "3hg1": {
+        "per_replica": [
+          0.4267198404785643,
+          0.5784215784215784,
+          0.33466533466533466
+        ],
+        "equal_replica_mean": 0.44660225118849245
+      },
+      "4jff": {
+        "per_replica": [
+          0.07178464606181456,
+          0.06081754735792622,
+          0.15784215784215785
+        ],
+        "equal_replica_mean": 0.0968147837539662
+      }
+    }
+  },
+  "local_loop_fitted_RMSF_A": {
+    "3hg1": {
+      "per_replica_region_means": [
+        0.5518838294110611,
+        0.41489060087111607,
+        0.47168214682035503
+      ],
+      "all_replica_region_mean": 0.4794855257008442
+    },
+    "4jff": {
+      "per_replica_region_means": [
+        0.3113405270156757,
+        0.28397805392996484,
+        0.29665324318710673
+      ],
+      "all_replica_region_mean": 0.29732394137758245
+    }
+  },
+  "numbering": "Common MEL5 numbering. Engineered input G99=E100,W103=E104,E95=E96,G101=E102. PeptideP9=Thr/P10=Val verified from both raw topology sequences.",
+  "interpretation": "A candidate structural explanation for bound CDR3beta stabilization is an intraloop hydrogen-bond network including the newly introduced Trp103 indole NH contacting the unchanged Gly99 backbone O and an additional backbone E95 NH--G101 O interaction. Increased Q155 contact accompanies this, but causal contributions of L103W and other mutations are unresolved.",
+  "limitations": [
+    "Exploratory post-hoc analysis of same six trajectories; no independent intervention.",
+    "Contact fraction is not a residence lifetime or energy.",
+    "Both multimutant sequence and bound structure differ; no single-mutant causal attribution.",
+    "Protein local fluctuations do not establish binding entropy, free energy or preorganization.",
+    "Model underestimates absolute and differential RMSF magnitudes.",
+    "Static7A union restricts candidate contact screen; all13 loop residues and all savedframes retained."
+  ],
+  "inputs": {
+    "mapping": "E:\\Project\\FlexPPI\\experiments\\_sources\\tcr_expanded_screen_v41_20261017\\mel5_validation\\corrected_pair_all_aligned_positions.csv",
+    "mapping_sha256": "b5fe2438552c6c20f145a7f41f3f0f9c2b9e767e787ada9f4e907ea027a156c1",
+    "models_and_MD": "E:\\Project\\FlexPPI\\experiments\\_sources\\tcr_expanded_screen_v41_20261017\\mel5_validation\\plot_sources\\mel5_all6_CDR_per_position_source.csv"
+  },
+  "analysis_files": [
+    "analysis_audit.json",
+    "all_CDR3b_nonlocal_contacts_per_replica.csv",
+    "all_CDR3b_nonlocal_contacts_three_replica_summary.csv",
+    "intraloop_Hbond_analysis_audit.json",
+    "intraloop_Hbond_geometry_per_replica.csv",
+    "intraloop_Hbond_geometry_all_frames.csv"
+  ],
+  "independent_QA": {
+    "all6_distance_NPZ_vs_contact_CSV": "passed",
+    "all78_original_RMSF_values_max_error_A": 1.78e-15,
+    "all_frame_Hbond_geometry_vs_per_replica_tables": "exact",
+    "all_frame_joint_Hbond_occupancy": "exact",
+    "donor_acceptor_direction": "verified",
+    "causality_not_established": true
+  }
+}

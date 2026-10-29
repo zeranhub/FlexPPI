@@ -1,0 +1,31 @@
+{
+  "status": "built_pending_render_QA",
+  "source": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v45_20261018_中文修订_紧凑多层模型评价图_三线表.docx",
+  "source_sha256": "0e069a66c99e2196d50452cf52080eb703fc45a832dfef4e17f1d325b0cdfb63",
+  "document": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v48_20261019_中文修订_模型框架图重绘_三线表.docx",
+  "document_sha256": "f797e03520b78272a9d946d284715186e266955fb269242496500500deb25ce9",
+  "figure1": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\framework_v48_20261019\\figure1\\fig1_framework.png",
+  "figure1_sha256": "22d3ccddc26a47894d7ddbb917280cec3e59eb7d4ec79b26139902bcb34c614f",
+  "caption_before": "图1：从静态蛋白结构到逐残基动态预测。（a）氨基酸类型、残基对特征与局部主链坐标经共享编码器生成RMSF及Hχ的均值与方差。4g9f结构按全部840个残基的RMSF折外预测着色，色条为0至4 Å；淡线为逐位预测，实线为同链11残基均值。（b）4g9f的D链及Gln67、Asp153和Met166局部坐标框架。整体原点O为全部Cα坐标的均值；大写XYZ表示整体坐标，小写xyz表示残基局部坐标。局部原点位于Cα，x轴沿Cα→C，y轴由Cα→N正交化得到，z轴由两轴叉积确定。记录局部三轴在整体坐标中的朝向，记录局部原点的位置；局部点q经过所表示的旋转与所表示的平移后，得到整体点p。（c）残基特征相似度、残基对偏置和三维点距离共同形成注意力权重，用于聚合残基、残基对与空间点信息；空间点结果返回查询残基的局部坐标后更新表示。（d）MD轨迹提供RMSF与联合侧链状态熵的监督均值及观测方差。",
+  "caption_after": "图1：FlexPPI从静态结构联合预测残基主链波动与侧链构象熵。（a）氨基酸类型、N–Cα–C坐标、成对几何与局部坐标系表示经4个共享几何注意力编码块后，由共享读出MLP为RMSF与Hχ分别输出均值和对数方差。示例为4g9f的全部840个残基；结构按逐残基RMSF预测着色，色条为0至4 Å；细线为逐位预测，粗线为各链内中心±5个位置的均值，上下两条分别为RMSF与Hχ，Hχ无定义的位置保留间断。（b）4g9f的D链与两处局部坐标系（i为D166，j为D153）；放大图为D166附近的真实主链球棍模型。局部原点位于Cα，x轴沿Cα→C，y轴由Cα→N正交化得到，z轴由两轴叉积确定；局部三轴在整体结构中的朝向记为Rᵢ，局部原点的位置记为tᵢ。局部点qᵢ经Rᵢ旋转和tᵢ平移后得到整体坐标下的位置pᵢ。（c）标量相似性、残基对偏置与三维点距离共同确定注意力权重wᵢⱼ，用于聚合标量、成对与点三路信息；点结果旋转回查询残基的局部坐标系后与前两路合并并线性映射，更新残基表示。（d）MD重复轨迹提供逐残基RMSF与联合侧链状态熵Hχ的观测均值及方差；模型均值与MD均值比较，模型方差σ²与MD观测方差相加，共同构成高斯负对数似然。",
+  "caption_body_index": 14,
+  "figure_body_index": 13,
+  "changed_zip_parts": [
+    "word/document.xml",
+    "word/media/image1.png"
+  ],
+  "untouched_parts": 57,
+  "width_EMU": 6120000,
+  "height_EMU": 5472179,
+  "width_mm": 170.0,
+  "height_mm": 152.0,
+  "native_tables": 10,
+  "native_equations": 36,
+  "references": 28,
+  "main_figures": 5,
+  "supplementary_figures": 1,
+  "prose_changed": false,
+  "new_MD": 0,
+  "new_training": 0,
+  "new_inference": 0
+}

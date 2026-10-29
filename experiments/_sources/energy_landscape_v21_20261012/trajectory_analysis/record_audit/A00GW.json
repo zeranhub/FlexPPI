@@ -1,0 +1,62 @@
+{
+  "sample_id": "A00GW",
+  "dataset": "dynarepo",
+  "fold": 2,
+  "plan_sha256": "09f029e2107e2e77e05271d7c2e65c6f2efdc0fed6f0fcd3d7a3dba9eec2ba83",
+  "status": "complete",
+  "trajectories": [
+    {
+      "sample_id": "A00GW",
+      "dataset": "dynarepo",
+      "fold": 2,
+      "replica_index": 1,
+      "status": "complete",
+      "plan_sha256": "09f029e2107e2e77e05271d7c2e65c6f2efdc0fed6f0fcd3d7a3dba9eec2ba83",
+      "cache_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\trajectory_analysis\\cache\\A00GW_rep1.npz",
+      "cache_sha256": "6170cc634b9f009ccfade6cc4422af6aee0331c0ec225f58d96cf9e75c4af9b4",
+      "mapping": [
+        {
+          "canonical_chain": "B",
+          "replica_chain": "B",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "residue_count": 192,
+      "mapped_residues": 192,
+      "ca_valid": 192,
+      "chi_valid": 166,
+      "frames": 501,
+      "first_ps": 0.0,
+      "last_ps": 100000.0,
+      "bad_chi_bonds_gt5A": 0,
+      "chemistry_changes": {
+        "ILE_CD->CD1_atoms": 7,
+        "HSE->HIS_atoms": 17
+      },
+      "byte_audit": {
+        "raw_sha256": "11e89dce0efe062a913f2406894e51762ff7ca98440dad6a271b3827b6f03d6b",
+        "raw_bytes": 56600732,
+        "selected_xtc_sha256": "6bba9af3e74e8e761e68653bcd0aed53b17629859ca045d5ba69532feefb4bb6",
+        "selected_bytes": 5673832,
+        "raw_size_and_mtime_unchanged": true
+      },
+      "elapsed_seconds": 2.8280000002123415
+    }
+  ],
+  "reproduction": [
+    {
+      "variant": "uniform_rep1",
+      "max_absolute_label_difference": 0.0,
+      "mask_exact": true,
+      "prior_label_sha256": "6f1ba0da6ac8579698b3a50636dac4ed8b2f37fc6305416f9d72c5dca2fde0a9"
+    },
+    {
+      "variant": "uniform_available_replicas",
+      "max_absolute_label_difference": 0.0,
+      "mask_exact": true,
+      "prior_label_sha256": "6f1ba0da6ac8579698b3a50636dac4ed8b2f37fc6305416f9d72c5dca2fde0a9"
+    }
+  ],
+  "elapsed_seconds": 3.547000000020489
+}

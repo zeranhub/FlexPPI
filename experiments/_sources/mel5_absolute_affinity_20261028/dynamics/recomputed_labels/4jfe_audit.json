@@ -1,0 +1,86 @@
+{
+  "provenance": [
+    {
+      "pdb": "4jfe",
+      "replica": 1,
+      "topology": "E:\\data\\ITrace\\trajectories\\4jfe_run1_topology.pdb",
+      "topology_sha256": "630c1da476ad581283310a051f4ece941901c60853f1c6a00d288696eec3e741",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\4jfe_run1_md_processed.xtc",
+      "trajectory_sha256": "adec049afad7756382f9cf061b71afef8573bc6947eef8467b8526a3e3744d28",
+      "canonical_topology_sha256": "f339645446121f1790d8b97963522c6db7d3e5a9e6612050064346a2fa57c4ae",
+      "prediction_sha256": "c7039c04e2eef2d7400aab122387f59de64004b074c43cf7f4e40c910e1f4364",
+      "model_input_sha256": "f339645446121f1790d8b97963522c6db7d3e5a9e6612050064346a2fa57c4ae",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "pdb": "4jfe",
+      "replica": 2,
+      "topology": "E:\\data\\ITrace\\trajectories\\4jfe_run2_topology.pdb",
+      "topology_sha256": "9b3f3d06ea3573076a1c64d0a0bf61c4a54264d7517612fa19d3960d8b7a495f",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\4jfe_run2_md_processed.xtc",
+      "trajectory_sha256": "6c4b39f75248663b1ebcd151297120ac68bba7c7996220d30b03777622a39c4e",
+      "canonical_topology_sha256": "1cdf09e2cab89187a3fa5c3dd24990e3d8ccbf598227b7ce28753805eb577c36",
+      "prediction_sha256": "c7039c04e2eef2d7400aab122387f59de64004b074c43cf7f4e40c910e1f4364",
+      "model_input_sha256": "f339645446121f1790d8b97963522c6db7d3e5a9e6612050064346a2fa57c4ae",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "pdb": "4jfe",
+      "replica": 3,
+      "topology": "E:\\data\\ITrace\\trajectories\\4jfe_run3_topology.pdb",
+      "topology_sha256": "3fcc9ddbfdbf681aadd26ea0c057da31770ddcaa2d4f25a35456946cfa28ac6a",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\4jfe_run3_md_processed.xtc",
+      "trajectory_sha256": "c6a779748f541e9d747c6cee526fede4972019eba4aadbdc8e983cfb667af533",
+      "canonical_topology_sha256": "153e07f56a470bbcdb161a31662100d4da4f5e76d2511a4a0977387bf4603c73",
+      "prediction_sha256": "c7039c04e2eef2d7400aab122387f59de64004b074c43cf7f4e40c910e1f4364",
+      "model_input_sha256": "f339645446121f1790d8b97963522c6db7d3e5a9e6612050064346a2fa57c4ae",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    }
+  ],
+  "frames": [
+    {
+      "pdb": "4jfe",
+      "replica": 1,
+      "frames": 1003,
+      "first_ps": 0.0,
+      "last_ps": 200000.0,
+      "residues": 828,
+      "chi_angles": 1523
+    },
+    {
+      "pdb": "4jfe",
+      "replica": 2,
+      "frames": 1001,
+      "first_ps": 0.0,
+      "last_ps": 200000.0,
+      "residues": 828,
+      "chi_angles": 1523
+    },
+    {
+      "pdb": "4jfe",
+      "replica": 3,
+      "frames": 1001,
+      "first_ps": 0.0,
+      "last_ps": 200000.0,
+      "residues": 828,
+      "chi_angles": 1523
+    }
+  ],
+  "cache_checks": [
+    {
+      "pdb": "4jfe",
+      "metric": "rmsf",
+      "valid_residues": 828,
+      "maximum_mean_absolute_error": 9.32356773120091e-07,
+      "maximum_variance_absolute_error": 9.263218885280367e-07
+    },
+    {
+      "pdb": "4jfe",
+      "metric": "hchi",
+      "valid_residues": 719,
+      "maximum_mean_absolute_error": 1.1751702411189058e-07,
+      "maximum_variance_absolute_error": 2.1738257527381677e-08
+    }
+  ],
+  "prediction_sha256": "c7039c04e2eef2d7400aab122387f59de64004b074c43cf7f4e40c910e1f4364"
+}

@@ -1,0 +1,221 @@
+{
+  "case_id": "C28",
+  "name": "公共/私人TCR及寡聚状态",
+  "tier": "D_已点名的发现性/文献候选_未完机制复核",
+  "case_directory": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\candidate_case_atlas_20261021\\data_and_general_figures\\C28",
+  "data_directory": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\candidate_case_atlas_20261021\\data_and_general_figures\\C28\\data",
+  "pair_stems": [
+    "9rup_9rxm"
+  ],
+  "all_states": [
+    "9rup",
+    "9rxm"
+  ],
+  "pairs": [
+    {
+      "case_id": "C28",
+      "a": "9rup",
+      "b": "9rxm",
+      "alignment_method": "Complete-chain global PairwiseAligner, affine gap; all gaps and residues retained",
+      "scores": {
+        "match": 2,
+        "mismatch": -1,
+        "gap_open": -6,
+        "gap_extend": -0.5,
+        "protein_terminal_gap": 0,
+        "peptide_terminal_gap": "penalized"
+      },
+      "source_a": {
+        "pdb": "9rup",
+        "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_9rup.npz",
+        "prediction_sha256": "78046ce4e5e4a9c87edb9d0b01d7f8cbefaeae879817f82932ff7ede9170b026",
+        "structure": "E:\\data\\ITrace\\trajectories\\9rup_run1_topology.pdb",
+        "structure_sha256": "21a2340889ad33a8256d764a9bc6d97131d6bbc00c7b75fdac839973f473d69d",
+        "chain_roles": {
+          "A": "tcr_alpha",
+          "B": "tcr_beta",
+          "C": "mhc",
+          "D": "peptide",
+          "E": "b2m"
+        },
+        "label_mean_source": "NPZ target first two columns",
+        "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+      },
+      "source_b": {
+        "pdb": "9rxm",
+        "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_9rxm.npz",
+        "prediction_sha256": "56fe824ed4ec30d313536bada0ca104e68958380f4897c005bc97d6b385f9994",
+        "structure": "E:\\data\\ITrace\\trajectories\\9rxm_run1_topology.pdb",
+        "structure_sha256": "ebcdb2f7de868f87549884edeefc03ac530c627aa5a226faa973fa13e6f3bb7e",
+        "chain_roles": {
+          "A": "tcr_alpha",
+          "B": "tcr_beta",
+          "C": "peptide",
+          "D": "mhc",
+          "E": "b2m"
+        },
+        "label_mean_source": "NPZ target first two columns",
+        "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+      },
+      "chain_alignments": [
+        {
+          "role": "mhc",
+          "length_a": 265,
+          "length_b": 269,
+          "aligned_columns": 272,
+          "paired_positions": 262,
+          "identity": 1.0,
+          "variable_identity_first125": 1.0,
+          "near_related_for_CDR_comparison": true,
+          "substitution_n": 0,
+          "gap_a": 7,
+          "gap_b": 3,
+          "score": 517.0,
+          "sequence_a": "HSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQKMEPRAPWIEQEGPEYWDQETRNMKAHSQTDRANLGTLRGYYNQSEDGSHTIQIMYGCDVGPDGRFLRGYRQDAYDGKDYIALNEDLRSWTAADMAAQITKRKWEAVHAAEQRRVYLEGRCVDGLRRYLENGKETLQRTDPPKTHMTHHPISDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGEEQRYTCHVQHEGLP",
+          "sequence_b": "HSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQKMEPRAPWIEQEGPEYWDQETRNMKAHSQTDRANLGTLRGYYNQSEDGSHTIQIMYGCDVGPDGRFLRGYRQDAYDGKDYIALNEDLRSWTAADMAAQITKRKWEAVHAAEQRRVYLEGRCVDGLRRYLENGKETLQPPKTHMTHHPISDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGEEQRYTCHVQHEGLPKPLTLRW",
+          "alignment": "target            0 HSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQKMEPRAPWIEQEGPEYWDQ\n                  0 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\nquery             0 HSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQKMEPRAPWIEQEGPEYWDQ\n\ntarget           60 ETRNMKAHSQTDRANLGTLRGYYNQSEDGSHTIQIMYGCDVGPDGRFLRGYRQDAYDGKD\n                 60 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\nquery            60 ETRNMKAHSQTDRANLGTLRGYYNQSEDGSHTIQIMYGCDVGPDGRFLRGYRQDAYDGKD\n\ntarget          120 YIALNEDLRSWTAADMAAQITKRKWEAVHAAEQRRVYLEGRCVDGLRRYLENGKETLQRT\n                120 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||--\nquery           120 YIALNEDLRSWTAADMAAQITKRKWEAVHAAEQRRVYLEGRCVDGLRRYLENGKETLQ--\n\ntarget          180 DPPKTHMTHHPISDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQ\n                180 -|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\nquery           178 -PPKTHMTHHPISDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQ\n\ntarget          240 KWAAVVVPSGEEQRYTCHVQHEGLP------- 265\n                240 |||||||||||||||||||||||||------- 272\nquery           237 KWAAVVVPSGEEQRYTCHVQHEGLPKPLTLRW 269\n"
+        },
+        {
+          "role": "peptide",
+          "length_a": 9,
+          "length_b": 9,
+          "aligned_columns": 9,
+          "paired_positions": 9,
+          "identity": 1.0,
+          "variable_identity_first125": 1.0,
+          "near_related_for_CDR_comparison": true,
+          "substitution_n": 0,
+          "gap_a": 0,
+          "gap_b": 0,
+          "score": 18.0,
+          "sequence_a": "FTSDYYQLY",
+          "sequence_b": "FTSDYYQLY",
+          "alignment": "target            0 FTSDYYQLY 9\n                  0 ||||||||| 9\nquery             0 FTSDYYQLY 9\n"
+        },
+        {
+          "role": "tcr_alpha",
+          "length_a": 192,
+          "length_b": 165,
+          "aligned_columns": 202,
+          "paired_positions": 155,
+          "identity": 0.6,
+          "variable_identity_first125": 0.43119266055045874,
+          "near_related_for_CDR_comparison": false,
+          "substitution_n": 62,
+          "gap_a": 10,
+          "gap_b": 37,
+          "score": 30.0,
+          "sequence_a": "QSVAQPEDQVNVAEGNPLTVKCTYSVSGNPYLFWYVQYPNRGLQFLLKYITGDNLVKGSYGFEAEFNKSQTSFHLKKPSALVSDSALYFCAVRVVTSGGSYPTFGRGTSLIVHPYIQNPDPAVYQLRDSKSSDKSVCLFTDFDSQTNDSDVYITDKCVLDMRSMDFKSNSAVAWSANAFNNSIIPEDTFFPS",
+          "sequence_b": "QVMQIPQYQHVQEGEDFTTYCNSSTTLSNIQWYKQRPGGHPVFLIQLVKSGEVKKQKRLTFQFGEAKKNSSLHITATQTTDVGTYFCASDREGGSEKLVFGKGTKLTVNPYIPDPAVYKSVCLFTDFDSQTNDVYITDKCVLDMFKSNSAVAWSNANAFNNTFFP",
+          "alignment": "target            0 QSVAQPEDQVNVAEGNPLTVKCTYSVSGNPYLFWYVQYPNRGLQFLLKYITGDNLVKGSY\n                  0 -.|.|......|.||...|..|-.|........||.|.|.....||------..|||---\nquery             0 -QVMQIPQYQHVQEGEDFTTYC-NSSTTLSNIQWYKQRPGGHPVFL------IQLVK---\n\ntarget           60 GFEAEFNKSQT--SFHLKKPSAL------VSDSALYFCAVRVVTSGGS-YPTFGRGTSLI\n                 60 ..|....|..|--....||.|.|------..|...||||--....|||-...||.||.|.\nquery            49 SGEVKKQKRLTFQFGEAKKNSSLHITATQTTDVGTYFCA--SDREGGSEKLVFGKGTKLT\n\ntarget          111 VHPYIQNPDPAVYQLRDSKSSDKSVCLFTDFDSQTNDSDVYITDKCVLDMRSMDFKSNSA\n                120 |.|||--||||||---------||||||||||||||--||||||||||||----||||||\nquery           107 VNPYI--PDPAVY---------KSVCLFTDFDSQTN--DVYITDKCVLDM----FKSNSA\n\ntarget          171 VAWS-ANAFNNSIIPEDTFFPS 192\n                180 ||||-||||||------||||- 202\nquery           150 VAWSNANAFNN------TFFP- 165\n"
+        },
+        {
+          "role": "tcr_beta",
+          "length_a": 223,
+          "length_b": 210,
+          "aligned_columns": 237,
+          "paired_positions": 196,
+          "identity": 0.9744897959183674,
+          "variable_identity_first125": 0.963963963963964,
+          "near_related_for_CDR_comparison": true,
+          "substitution_n": 5,
+          "gap_a": 14,
+          "gap_b": 27,
+          "score": 324.0,
+          "sequence_a": "GVTQTPRYLIKTRGQQVTLSCSPISGHRSVSWYQQTPGQGLQFLFEYFSETQFSNSRSEMNVSTLELGDSALYLCASSLAGDLGTEAFFGQGTRLTVVEDLKNVFPPEVAVFEPSEAESHTQKATLVCLATGFYPDHVELSWWVNGKEVHSGVCTDPQPLKEQPALNDSRYALSSRLRVSATFWQNPRNHFRCQVQFYGLSENDEWTQDRAKPVTQIVSAEAW",
+          "sequence_b": "GVTQTPRYLIKTRGQQVTLSCSPISGHRSVSWYQQTPGQGLQFLFEYFSETQRNKGNFPGRFSGRQFSNSRSEMNVSTLELGDSALYLCASSLWTGVGTEAFFGQGTRLTVVEDLKNVFPPEVAVFEPAEATLVCLATGFYPDHVELSWWVNGKEVHSGVCTDPPLKEQPSRYALSSRLRVSRCQVQFYGLSENDEWTQKPVTQIVSAEA",
+          "alignment": "target            0 GVTQTPRYLIKTRGQQVTLSCSPISGHRSVSWYQQTPGQGLQFLFEYFSET---------\n                  0 |||||||||||||||||||||||||||||||||||||||||||||||||||---------\nquery             0 GVTQTPRYLIKTRGQQVTLSCSPISGHRSVSWYQQTPGQGLQFLFEYFSETQRNKGNFPG\n\ntarget           51 -----QFSNSRSEMNVSTLELGDSALYLCASSLAGDLGTEAFFGQGTRLTVVEDLKNVFP\n                 60 -----||||||||||||||||||||||||||||....|||||||||||||||||||||||\nquery            60 RFSGRQFSNSRSEMNVSTLELGDSALYLCASSLWTGVGTEAFFGQGTRLTVVEDLKNVFP\n\ntarget          106 PEVAVFEPSEAESHTQKATLVCLATGFYPDHVELSWWVNGKEVHSGVCTDPQPLKEQPAL\n                120 ||||||||.|-------||||||||||||||||||||||||||||||||||-||||||--\nquery           120 PEVAVFEPAE-------ATLVCLATGFYPDHVELSWWVNGKEVHSGVCTDP-PLKEQP--\n\ntarget          166 NDSRYALSSRLRVSATFWQNPRNHFRCQVQFYGLSENDEWTQDRAKPVTQIVSAEAW 223\n                180 --||||||||||||-----------|||||||||||||||||---|||||||||||- 237\nquery           170 --SRYALSSRLRVS-----------RCQVQFYGLSENDEWTQ---KPVTQIVSAEA- 210\n"
+        },
+        {
+          "role": "b2m",
+          "length_a": 99,
+          "length_b": 99,
+          "aligned_columns": 99,
+          "paired_positions": 99,
+          "identity": 1.0,
+          "variable_identity_first125": 1.0,
+          "near_related_for_CDR_comparison": true,
+          "substitution_n": 0,
+          "gap_a": 0,
+          "gap_b": 0,
+          "score": 198.0,
+          "sequence_a": "IQRTPKIQVYSRHPAENGKSNFLNCYVSGFHPSDIEVDLLKNGERIEKVEHSDLSFSKDWSFYLLYYTEFTPTEKDEYACRVNHVTLSQPKIVKWDRDM",
+          "sequence_b": "IQRTPKIQVYSRHPAENGKSNFLNCYVSGFHPSDIEVDLLKNGERIEKVEHSDLSFSKDWSFYLLYYTEFTPTEKDEYACRVNHVTLSQPKIVKWDRDM",
+          "alignment": "target            0 IQRTPKIQVYSRHPAENGKSNFLNCYVSGFHPSDIEVDLLKNGERIEKVEHSDLSFSKDW\n                  0 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\nquery             0 IQRTPKIQVYSRHPAENGKSNFLNCYVSGFHPSDIEVDLLKNGERIEKVEHSDLSFSKDW\n\ntarget           60 SFYLLYYTEFTPTEKDEYACRVNHVTLSQPKIVKWDRDM 99\n                 60 ||||||||||||||||||||||||||||||||||||||| 99\nquery            60 SFYLLYYTEFTPTEKDEYACRVNHVTLSQPKIVKWDRDM 99\n"
+        }
+      ],
+      "total_rows": 819,
+      "paired_rows": 721,
+      "all_residues_accounted_once": true,
+      "CDR_rule": "a-state WT boundaries projected through complete-chain alignment; canonical 3HG1 for MEL5 family",
+      "metrics": [
+        {
+          "scope": "whole_peptide",
+          "metric": "rmsf",
+          "n": 9,
+          "rho": -0.26666666666666666,
+          "MAE": 0.2778989010386997,
+          "zero_change_MAE": 0.3278859787517124,
+          "relative_MAE_gain": 0.15245262363251222,
+          "near_related_for_CDR_comparison": true,
+          "caution": "MD comparison is corroboration, not experimental truth"
+        },
+        {
+          "scope": "whole_peptide",
+          "metric": "hchi",
+          "n": 9,
+          "rho": 0.5833333333333334,
+          "MAE": 0.4802696175045437,
+          "zero_change_MAE": 0.5122101439370049,
+          "relative_MAE_gain": 0.06235824653326172,
+          "near_related_for_CDR_comparison": true,
+          "caution": "MD comparison is corroboration, not experimental truth"
+        },
+        {
+          "scope": "natural_pMHC_interface",
+          "metric": "rmsf",
+          "n": 25,
+          "rho": -0.12846153846153846,
+          "MAE": 0.4440422010421753,
+          "zero_change_MAE": 0.5486144661903382,
+          "relative_MAE_gain": 0.19061157077087032,
+          "near_related_for_CDR_comparison": true,
+          "caution": "MD comparison is corroboration, not experimental truth"
+        },
+        {
+          "scope": "natural_pMHC_interface",
+          "metric": "hchi",
+          "n": 22,
+          "rho": 0.2941840767927725,
+          "MAE": 0.36158456856554205,
+          "zero_change_MAE": 0.3088009709661657,
+          "relative_MAE_gain": -0.17093080191499688,
+          "near_related_for_CDR_comparison": true,
+          "caution": "MD comparison is corroboration, not experimental truth"
+        },
+        {
+          "scope": "all_CDR",
+          "metric": "rmsf",
+          "n": 42,
+          "rho": 0.3676363341706507,
+          "MAE": 0.31149867744672866,
+          "zero_change_MAE": 0.5325306015355247,
+          "relative_MAE_gain": 0.41505957301131957,
+          "near_related_for_CDR_comparison": false,
+          "caution": "Cross-unrelated CDR mapping is exploratory"
+        },
+        {
+          "scope": "all_CDR",
+          "metric": "hchi",
+          "n": 16,
+          "rho": 0.36764705882352944,
+          "MAE": 0.23769447579979897,
+          "zero_change_MAE": 0.27252908423542976,
+          "relative_MAE_gain": 0.12781978310079456,
+          "near_related_for_CDR_comparison": false,
+          "caution": "Cross-unrelated CDR mapping is exploratory"
+        }
+      ]
+    }
+  ]
+}

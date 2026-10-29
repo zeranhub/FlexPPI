@@ -1,0 +1,72 @@
+{
+  "revision": "2026-09-18",
+  "files": [
+    {
+      "source": "output/flexppi_atlas_hchi_v1_five_fold_reference/five_fold_mean_sd.csv",
+      "snapshot": "data/revision_20260918/five_fold_mean_sd.csv",
+      "sha256": "f17c77cc08b3efcbc21c17d12d13e4fe449f6db8016519cd2c974056f1f9ba41"
+    },
+    {
+      "source": "output/flexppi_atlas_hchi_v1_amino_acid_integrated/source_data_mean_sd.csv",
+      "snapshot": "data/revision_20260918/source_data_mean_sd.csv",
+      "sha256": "1d26fd751796e9deaeafd38ccc2dfa9194e9d77a89f8412a3ffc8c0e57a7d637"
+    },
+    {
+      "source": "output/tcr_cdr_reassessment_20260917/cdr_delta_metrics_with_bootstrap.csv",
+      "snapshot": "data/revision_20260918/cdr_delta_metrics_with_bootstrap.csv",
+      "sha256": "893f9824a9cf437d44b4b37ae7d7ed2c0f3c06dc48de377c6eb010a2497559b3"
+    },
+    {
+      "source": "artifacts/evaluation_v2/analysis/bridge_macro_metrics.csv",
+      "snapshot": "data/revision_20260918/bridge_macro_metrics.csv",
+      "sha256": "441308b4a96812c2cf6ce60e1080998ce50d7e4833bc167e7114c80e8f1c1ab7"
+    },
+    {
+      "source": "artifacts/evaluation_v2/itrace_context/paired_context_differences.csv",
+      "snapshot": "data/revision_20260918/paired_context_differences.csv",
+      "sha256": "ab2f9721eb2d97ea5df0319e3734062e637afe0037644fc33ec23e3f66e5d7d7"
+    },
+    {
+      "source": "artifacts/evaluation_atlas_hchi_v1/analysis/uncertainty_coverage.csv",
+      "snapshot": "data/revision_20260918/uncertainty_coverage.csv",
+      "sha256": "2f1f3ca8709124db483ebb0695587eb88265fc7a9f4550ced441a026cd413444"
+    },
+    {
+      "source": "artifacts/evaluation_atlas_hchi_v1/analysis/uncertainty_risk.csv",
+      "snapshot": "data/revision_20260918/uncertainty_risk.csv",
+      "sha256": "97f1e013a2199bfd58da9d21ab37fb81e6b8a6b8fbddf7b72b1c2e0b6026783f"
+    },
+    {
+      "source": "artifacts/evaluation_atlas_hchi_v1/analysis/analysis_summary.json",
+      "snapshot": "data/revision_20260918/analysis_summary.json",
+      "sha256": "7a8727e1e623e155c1e019c34b567b782e3f93f2128389d203d53e43a2c28a68"
+    },
+    {
+      "source": "output/itrace_performance_diagnosis/split_sampling_audit.json",
+      "snapshot": "data/revision_20260918/split_sampling_audit.json",
+      "sha256": "5f5dee0729e94d0a0d16df3bf317a4013bded731910da1169f0e6a794fe2c40e"
+    },
+    {
+      "source": "output/flexppi_atlas_hchi_v1_amino_acid_integrated/fig04_amino_acid_integrated.pdf",
+      "snapshot": "figures/revision_20260918/current_amino_acid_controls.pdf",
+      "sha256": "eae13a67582633fccfd4a6165e7d5860248543942bd2ebf9e1730a4e330215f6"
+    },
+    {
+      "source": "output/flexppi_atlas_hchi_v1_extended_figures/fig01_prediction_density.pdf",
+      "snapshot": "figures/revision_20260918/current_prediction_density.pdf",
+      "sha256": "5f86139102da41e303a7d68458730495c6b59e8887e6241840f7154e95625256"
+    },
+    {
+      "source": "output/flexppi_atlas_hchi_v1_extended_figures/fig02_system_distributions.pdf",
+      "snapshot": "figures/revision_20260918/current_system_distributions.pdf",
+      "sha256": "68bf9b728230ffd402faefb5f074ee320680f124e58960c5dc7f94d3d65fdb79"
+    },
+    {
+      "source": "output/flexppi_atlas_hchi_v1_extended_figures/fig05_uncertainty_diagnostics.pdf",
+      "snapshot": "figures/revision_20260918/current_uncertainty_diagnostics.pdf",
+      "sha256": "e6a2142dcfb6864b4f44c9d0bf85266b2b017199980d03ee2ec89ad74f1646e5"
+    }
+  ],
+  "model_run": "performance_first_v2_atlas_hchi_v1",
+  "epoch": 40
+}

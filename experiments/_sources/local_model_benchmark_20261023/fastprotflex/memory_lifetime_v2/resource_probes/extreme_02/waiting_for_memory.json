@@ -1,0 +1,22 @@
+{
+  "status": "waiting_for_RAM_commit_or_existing_R",
+  "n_atoms": 8058,
+  "estimated_R_process_tree_RSS_MiB": 3857.310738390038,
+  "required_available_RAM_MiB": 4691.907349148543,
+  "previous_required_available_RAM_MiB": 4947.907349148543,
+  "required_available_commit_MiB": 4881.310738390038,
+  "safety_multiplier": 1.15,
+  "additional_available_RAM_reserve_MiB": 256.0,
+  "additional_available_commit_reserve_MiB": 1024.0,
+  "resource_policy_version": "lifetime_v2_rss115_reserve256_commit1024_v2",
+  "policy_change_reason": "Explicit root authorization after actual three-source bitwise equality and measured upper envelope: replace discretionary512MiB physical reserve with256MiB while retaining15percent, and add independent system-commit headroom of predicted peak plus1024MiB. No further automatic reserve reduction. Historical512MiB audits remain unchanged.",
+  "available_system_commit_MiB": 8388.65625,
+  "system_commit_limit_MiB": 33480.7265625,
+  "system_commit_counter": "Windows_GetPerformanceInfo",
+  "system_commit_counter_error": null,
+  "available_RAM_before_launch_MiB": 4623.7734375,
+  "elapsed_wait_seconds": 150.51307210000232,
+  "source_calibration_sha256": "b98e80a5a7fce4ae2d4ef02019d357e8832b5c5b3fe0c75b8c25643150d8677a",
+  "launch_gate_kind": "resource_N_squared_extrapolation_from_three_actual_peaks_only",
+  "blocking_jobs": []
+}

@@ -1,0 +1,4698 @@
+
+window.onload = function() {
+  // Build a system
+  var url = window.location.search.match(/url=([^&]+)/);
+  if (url && url.length > 1) {
+    url = decodeURIComponent(url[1]);
+  } else {
+    url = window.location.origin;
+  }
+  var options = {
+  "swaggerDoc": {
+    "openapi": "3.0.2",
+    "info": {
+      "title": "MDposit API",
+      "description": "This is the MDposit REST API documentation. This API grants programmatic access to the MDposit database. It may retrieve trajectory data, analyses, files and metadata. It also exposes PDBe knowledge annotations through the /knowledge endpoints. Below, API endpoints are listed and documented. Click on any endpoint to drop more information such as the description and accepted parameters. Use the 'try it out' button to test any endpoint at the moment.  <br /> <br /> This API is used by the <a href=\"//mdposit.mddbr.eu\" target=\"_blank\" rel=\"noreferrer noopener\">MDposit web client</a>.\n",
+      "version": "1.0.0"
+    },
+    "paths": {
+      "/projects": {
+        "get": {
+          "summary": "Get a list of projects.",
+          "description": "Get a list of MDposit projects (simulations and related data and analyses).\n",
+          "tags": [
+            "projects"
+          ],
+          "parameters": [
+            {
+              "name": "search",
+              "in": "query",
+              "description": "Text search inside project names, descriptions, authors and group names.",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "query",
+              "in": "query",
+              "description": "A query stringified JSON object for the MongoDB [find](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/) command. Note that this is an alternative to the 'search' parameter which is more flexible but also more difficult to use if you have not experiencie with Mongo.\n",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "projection",
+              "in": "query",
+              "description": "A projection stringified JSON object for the MongoDB [find](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/) command. It is useful to reduce the amount of data in the response and thus the internet traffic. Note that this parameter is difficult to use if you have not experiencie with Mongo. Note that when the projection parameter is passed the response becomes raw (i.e. data as it is stored in the database, not formatted).\n",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "raw",
+              "in": "query",
+              "description": "Set if the response is not to be formatted, but sent as it is stored in the database.\n",
+              "schema": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            {
+              "name": "limit",
+              "in": "query",
+              "description": "pagination, maximum number of projects per query",
+              "schema": {
+                "type": "integer",
+                "default": 10,
+                "maximum": 100
+              }
+            },
+            {
+              "name": "page",
+              "in": "query",
+              "description": "pagination, page number",
+              "schema": {
+                "type": "integer",
+                "default": 1
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "an array of projects, paginated",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "projects": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/ProjectMD"
+                        }
+                      },
+                      "filteredCount": {
+                        "type": "integer",
+                        "example": 10
+                      },
+                      "totalCount": {
+                        "type": "integer",
+                        "example": 250
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/projects/options": {
+        "get": {
+          "summary": "Get a list of projects field with the counts of each possible value for each field.",
+          "description": "Get a list of projects field with the counts of each possible value for each field.\n",
+          "tags": [
+            "projects"
+          ],
+          "parameters": [
+            {
+              "name": "query",
+              "in": "query",
+              "description": "A query stringified JSON object for the MongoDB [find](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/) command. Not passing a query parameter will return the value of the whole database. This parameter is difficult to use if you have not experiencie with Mongo.\n",
+              "schema": {
+                "type": "string"
+              },
+              "examples": {
+                "All projects": {
+                  "summary": "No filters",
+                  "value": ""
+                },
+                "IRB Barcelona groups": {
+                  "summary": "Projects from IRB Barcelona groups",
+                  "value": "{\"metadata.GROUPS\":{\"$regex\":\"IRB Barcelona\"}}"
+                },
+                "Ensembles only": {
+                  "summary": "Projects with ensembles instead of time-related trajectories",
+                  "value": "{\"metadata.TYPE\":\"ensemble\"}"
+                }
+              }
+            },
+            {
+              "name": "projection",
+              "in": "query",
+              "description": "name of the field to be checked for options",
+              "examples": {
+                "authors": {
+                  "summary": "simulation authors",
+                  "value": "metadata.AUTHORS"
+                },
+                "method": {
+                  "summary": "simulation methods",
+                  "value": "metadata.METHOD"
+                }
+              },
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "countMds",
+              "in": "query",
+              "description": "get also the number of MDs in every result",
+              "schema": {
+                "type": "boolean"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "an object with options per field",
+              "content": {
+                "application/json": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/projects/summary": {
+        "get": {
+          "summary": "Get summary from projects.",
+          "description": "Get summary from the MDposit projects collection.\n",
+          "tags": [
+            "projects"
+          ],
+          "parameters": [
+            {
+              "name": "query",
+              "in": "query",
+              "description": "A query stringified JSON object for the MongoDB [find](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/) command. Not passing a query parameter will return the value of the whole database. This parameter is difficult to use if you have not experiencie with Mongo.\n",
+              "schema": {
+                "type": "string"
+              },
+              "examples": {
+                "All projects": {
+                  "summary": "No filters",
+                  "value": ""
+                },
+                "IRB Barcelona groups": {
+                  "summary": "Projects from IRB Barcelona groups",
+                  "value": "{\"metadata.GROUPS\":{\"$regex\":\"IRB Barcelona\"}}"
+                },
+                "Ensembles only": {
+                  "summary": "Projects with ensembles instead of time-related trajectories",
+                  "value": "{\"metadata.TYPE\":\"ensemble\"}"
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "an object with summary values",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProjectSummary"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/projects/{projectAccessionOrID}": {
+        "get": {
+          "summary": "Get a project by its accession or identifier.",
+          "description": "Get a MDposit project (simulations and related data and analyses) by its accession or identifier.\n",
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/projectAccessionOrID"
+            },
+            {
+              "name": "raw",
+              "in": "query",
+              "description": "Set if the response is not to be formatted, but sent as it is stored in the database.\n",
+              "schema": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          ],
+          "tags": [
+            "projects"
+          ],
+          "responses": {
+            "200": {
+              "description": "a project",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProjectMD"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/projects/{projectAccessionOrID}/topology": {
+        "get": {
+          "summary": "Get the simulation topology.",
+          "description": "Get a json object containing data related to atom, residue and chains (e.g. atom names, residue numbers).",
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/projectAccessionOrID"
+            },
+            {
+              "name": "include",
+              "in": "query",
+              "description": "Set which topology fields are to be included in the response. All fields are included by defautl.\n",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "examples": {
+                    "Atom names": {
+                      "summary": "Atom names",
+                      "value": "atom_names"
+                    },
+                    "Atom elements": {
+                      "summary": "Atom elements",
+                      "value": "atom_elements"
+                    },
+                    "Atom charges": {
+                      "summary": "Atomic charges",
+                      "value": "atom_charges"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "name": "exclude",
+              "in": "query",
+              "description": "Set which topology fields are to be excluded from the response. All fields are included by defautl.\n",
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "examples": {
+                    "Atom names": {
+                      "summary": "Atom names",
+                      "value": "atom_names"
+                    },
+                    "Atom elements": {
+                      "summary": "Atom elements",
+                      "value": "atom_elements"
+                    },
+                    "Atom charges": {
+                      "summary": "Atomic charges",
+                      "value": "atom_charges"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "name": "raw",
+              "in": "query",
+              "description": "Set if the response is not to be formatted, but sent as it is stored in the database.\n",
+              "schema": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          ],
+          "tags": [
+            "topology"
+          ],
+          "responses": {
+            "200": {
+              "description": "JSON formatted topology",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Topology"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/projects/{projectAccessionOrID}/structure": {
+        "get": {
+          "summary": "Get the main structure of the project in pdb format.",
+          "description": "Get the main structure of the project in pdb format. Structure may be filtered by specific atoms.\n",
+          "produces": [
+            "chemical/x-pdb"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/projectAccessionOrID"
+            },
+            {
+              "name": "selection",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              },
+              "description": "Specify a NGL-formatted selection for the returned structure.<br> The user can request specific atoms instead of the whole file.<br> [See here for the kind of selection that can be used](http://nglviewer.org/ngl/api/manual/usage/selection-language.html).\n",
+              "examples": {
+                "allCAtoms": {
+                  "summary": "All carbon atoms",
+                  "value": "_C"
+                },
+                "backbone": {
+                  "summary": "Backbone atoms",
+                  "value": "backbone"
+                },
+                "allCInBackbone": {
+                  "summary": "All carbon atoms in the backbone",
+                  "value": "backbone and _C"
+                }
+              }
+            }
+          ],
+          "tags": [
+            "structure"
+          ],
+          "responses": {
+            "200": {
+              "description": "a structure",
+              "content": {
+                "chemical/x-pdb": {
+                  "schema": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            },
+            "206": {
+              "description": "an atom filtered structure",
+              "content": {
+                "chemical/x-pdb": {
+                  "schema": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "summary": "Get the main structure of the project in pdb format (long atom selections allowed).",
+          "description": "Get the main structure of the project in pdb format. Structure may be filtered by specific atoms.\n",
+          "produces": [
+            "chemical/x-pdb"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/projectAccessionOrID"
+            },
+            {
+              "name": "selection",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              },
+              "description": "Specify a NGL-formatted selection for the returned structure.<br> The user can request specific atoms instead of the whole file.<br> [See here for the kind of selection that can be used](http://nglviewer.org/ngl/api/manual/usage/selection-language.html).\n",
+              "examples": {
+                "allCAtoms": {
+                  "summary": "All carbon atoms",
+                  "value": "_C"
+                },
+                "backbone": {
+                  "summary": "Backbone atoms",
+                  "value": "backbone"
+                },
+                "allCInBackbone": {
+                  "summary": "All carbon atoms in the backbone",
+                  "value": "backbone and _C"
+                }
+              }
+            }
+          ],
+          "tags": [
+            "structure"
+          ],
+          "responses": {
+            "200": {
+              "description": "a structure",
+              "content": {
+                "chemical/x-pdb": {
+                  "schema": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            },
+            "206": {
+              "description": "an atom filtered structure",
+              "content": {
+                "chemical/x-pdb": {
+                  "schema": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/projects/{projectAccessionOrID}/trajectory": {
+        "get": {
+          "summary": "Get a complete or partial trajectory of the project.",
+          "description": "Get a complete or partial trajectory of the project. This process may take some time since trajectories are heavy files.\n",
+          "produces": [
+            "application/octet-stream",
+            "text/mdcrd",
+            "application/xtc",
+            "application/trr"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/projectAccessionOrID"
+            },
+            {
+              "name": "format",
+              "in": "query",
+              "schema": {
+                "type": "string",
+                "enum": [
+                  "bin",
+                  "mdcrd",
+                  "xtc",
+                  "trr"
+                ]
+              },
+              "description": "Specify a request format for the trajectory file. When no format is specified, the default format is an internal binary format (bin) used by the web client.\n"
+            },
+            {
+              "name": "frames",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              },
+              "description": "Specify a frame range for the returned trajectory.<br> The user can request only specific frames instead of the whole file.<br> Ranges are defined by dashes, and multiple ranges can be defined separated by commas. It can also be defined as the -start:end:step format, with '-1' to select the last frame.<br> 1-based numbering.\n",
+              "examples": {
+                "firstFrame": {
+                  "summary": "content of the first frame",
+                  "value": 1
+                },
+                "tenFrames": {
+                  "summary": "ten frames, from two different ranges",
+                  "value": "1-5,11-15"
+                },
+                "everyTwoFrames": {
+                  "summary": "every two frames from frame 10 to frame 20",
+                  "value": "10:20:2"
+                }
+              }
+            },
+            {
+              "name": "selection",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              },
+              "description": "Specify a NGL-formatted selection for the returned trajectory.<br> The user can request specific atoms instead of the whole file.<br> [See here for the kind of selection that can be used](http://nglviewer.org/ngl/api/manual/usage/selection-language.html).\n",
+              "examples": {
+                "allCAtoms": {
+                  "summary": "All carbon atoms",
+                  "value": "_C"
+                },
+                "backbone": {
+                  "summary": "Backbone atoms",
+                  "value": "backbone"
+                },
+                "allCInBackbone": {
+                  "summary": "All carbon atoms in the backbone",
+                  "value": "backbone and _C"
+                }
+              }
+            }
+          ],
+          "tags": [
+            "trajectory"
+          ],
+          "responses": {
+            "200": {
+              "description": "the main trajectory",
+              "content": {
+                "application/octet-stream": {
+                  "schema": {
+                    "$ref": "#/definitions/bin format"
+                  }
+                },
+                "application/xtc": {
+                  "schema": {
+                    "$ref": "#/definitions/xtc format"
+                  }
+                },
+                "application/trr": {
+                  "schema": {
+                    "$ref": "#/definitions/trr format"
+                  }
+                },
+                "text/mdcrd": {
+                  "schema": {
+                    "$ref": "#/definitions/mdcrd format"
+                  }
+                }
+              }
+            },
+            "206": {
+              "description": "a partial trajectory",
+              "content": {
+                "application/octet-stream": {
+                  "schema": {
+                    "$ref": "#/definitions/bin format"
+                  }
+                },
+                "application/xtc": {
+                  "schema": {
+                    "$ref": "#/definitions/xtc format"
+                  }
+                },
+                "application/trr": {
+                  "schema": {
+                    "$ref": "#/definitions/trr format"
+                  }
+                },
+                "text/mdcrd": {
+                  "schema": {
+                    "$ref": "#/definitions/mdcrd format"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "summary": "Get a complete or partial trajectory of the project (long atom and frame selections allowed).",
+          "description": "Get a complete or partial trajectory of the project. This process may take some time since trajectories are heavy files.\n",
+          "produces": [
+            "application/octet-stream",
+            "text/mdcrd",
+            "application/xtc",
+            "application/trr"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/projectAccessionOrID"
+            },
+            {
+              "name": "format",
+              "in": "query",
+              "schema": {
+                "type": "string",
+                "enum": [
+                  "bin",
+                  "mdcrd",
+                  "xtc",
+                  "trr"
+                ]
+              },
+              "description": "Specify a request format for the trajectory file. When no format is specified, the default format is an internal binary format (bin) used by the web client.\n"
+            },
+            {
+              "name": "frames",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              },
+              "description": "Specify a frame range for the returned trajectory.<br> The user can request only specific frames instead of the whole file.<br> Ranges are defined by dashes, and multiple ranges can be defined separated by commas. It can also be defined as the -start:end:step format, with '-1' to select the last frame.<br> 1-based numbering.\n",
+              "examples": {
+                "firstFrame": {
+                  "summary": "content of the first frame",
+                  "value": 1
+                },
+                "tenFrames": {
+                  "summary": "ten frames, from two different ranges",
+                  "value": "1-5,11-15"
+                },
+                "everyTwoFrames": {
+                  "summary": "every two frames from frame 10 to frame 20",
+                  "value": "10:20:2"
+                }
+              }
+            },
+            {
+              "name": "selection",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              },
+              "description": "Specify a NGL-formatted selection for the returned trajectory.<br> The user can request specific atoms instead of the whole file.<br> [See here for the kind of selection that can be used](http://nglviewer.org/ngl/api/manual/usage/selection-language.html).\n",
+              "examples": {
+                "allCAtoms": {
+                  "summary": "All carbon atoms",
+                  "value": "_C"
+                },
+                "backbone": {
+                  "summary": "Backbone atoms",
+                  "value": "backbone"
+                },
+                "allCInBackbone": {
+                  "summary": "All carbon atoms in the backbone",
+                  "value": "backbone and _C"
+                }
+              }
+            }
+          ],
+          "tags": [
+            "trajectory"
+          ],
+          "responses": {
+            "200": {
+              "description": "the main trajectory",
+              "content": {
+                "application/octet-stream": {
+                  "schema": {
+                    "$ref": "#/definitions/bin format"
+                  }
+                },
+                "application/xtc": {
+                  "schema": {
+                    "$ref": "#/definitions/xtc format"
+                  }
+                },
+                "application/trr": {
+                  "schema": {
+                    "$ref": "#/definitions/trr format"
+                  }
+                },
+                "text/mdcrd": {
+                  "schema": {
+                    "$ref": "#/definitions/mdcrd format"
+                  }
+                }
+              }
+            },
+            "206": {
+              "description": "a partial trajectory",
+              "content": {
+                "application/octet-stream": {
+                  "schema": {
+                    "$ref": "#/definitions/bin format"
+                  }
+                },
+                "application/xtc": {
+                  "schema": {
+                    "$ref": "#/definitions/xtc format"
+                  }
+                },
+                "application/trr": {
+                  "schema": {
+                    "$ref": "#/definitions/trr format"
+                  }
+                },
+                "text/mdcrd": {
+                  "schema": {
+                    "$ref": "#/definitions/mdcrd format"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/projects/{projectAccessionOrID}/references": {
+        "get": {
+          "summary": "Get the simulation references.",
+          "description": "Get a data related to the project references including uniprots, inchikeys, etc.\n",
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/projectAccessionOrID"
+            }
+          ],
+          "tags": [
+            "references"
+          ],
+          "responses": {
+            "200": {
+              "description": "JSON formatted topology",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "anyOf": [
+                        {
+                          "$ref": "#/components/schemas/ProteinReference"
+                        },
+                        {
+                          "$ref": "#/components/schemas/LigandReference"
+                        },
+                        {
+                          "$ref": "#/components/schemas/PdbReference"
+                        },
+                        {
+                          "$ref": "#/components/schemas/InChIKeyReference"
+                        },
+                        {
+                          "$ref": "#/components/schemas/ChainReference"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/references/proteins": {
+        "get": {
+          "summary": "Get all available protein reference UniProt IDs.",
+          "description": "Get a list of UniProt IDs with an ID for each protein reference in the database.\n",
+          "tags": [
+            "references"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/proteinReferenceQuery"
+            },
+            {
+              "name": "limit",
+              "in": "query",
+              "description": "pagination, maximum number of projects per query",
+              "schema": {
+                "type": "integer",
+                "default": 10,
+                "maximum": 100
+              }
+            },
+            {
+              "name": "page",
+              "in": "query",
+              "description": "pagination, page number",
+              "schema": {
+                "type": "integer",
+                "default": 1
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of protein references",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "referencesCount": {
+                        "type": "integer",
+                        "example": 42
+                      },
+                      "references": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/ProteinReference"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/references/proteins/{UniProtID}": {
+        "get": {
+          "summary": "Get a specific protein reference.",
+          "description": "Get protein reference data for the specified UniProt ID.\n",
+          "tags": [
+            "references"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/UniProtID"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Protein reference data",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ProteinReference"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/references/pdbs": {
+        "get": {
+          "summary": "Get all available PDB reference ids.",
+          "description": "Get a list of PDB IDs with for each ligand reference in the database.\n",
+          "tags": [
+            "references"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/pdbReferenceQuery"
+            },
+            {
+              "name": "limit",
+              "in": "query",
+              "description": "pagination, maximum number of projects per query",
+              "schema": {
+                "type": "integer",
+                "default": 10,
+                "maximum": 100
+              }
+            },
+            {
+              "name": "page",
+              "in": "query",
+              "description": "pagination, page number",
+              "schema": {
+                "type": "integer",
+                "default": 1
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of PDB IDs",
+              "content": {
+                "application/json": {
+                  "type": "object",
+                  "properties": {
+                    "referencesCount": {
+                      "type": "integer",
+                      "example": 42
+                    },
+                    "references": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/PdbReference"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/references/pdbs/{PDBID}": {
+        "get": {
+          "summary": "Get a specific PDB reference.",
+          "description": "Get ligand reference data for the specified PubChem ID.\n",
+          "tags": [
+            "references"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/PDBID"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "PDB reference data",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/PdbReference"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/references/inchikeys": {
+        "get": {
+          "summary": "Get all available InChIKey reference IDs.",
+          "description": "Get a list of InChIKey references including their InChI string, PubChem, SwissLipids and LipidMaps data.\n",
+          "tags": [
+            "references"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/inchikeyReferenceQuery"
+            },
+            {
+              "name": "limit",
+              "in": "query",
+              "description": "pagination, maximum number of projects per query",
+              "schema": {
+                "type": "integer",
+                "default": 10,
+                "maximum": 100
+              }
+            },
+            {
+              "name": "page",
+              "in": "query",
+              "description": "pagination, page number",
+              "schema": {
+                "type": "integer",
+                "default": 1
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Object with a count and an array of InChIKey references",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "referencesCount": {
+                        "type": "integer",
+                        "example": 850
+                      },
+                      "references": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/InChIKeyReference"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/references/inchikeys/{InChIKey}": {
+        "get": {
+          "summary": "Get a specific InChIKey reference.",
+          "description": "Get reference data for the specified InChIKey.\n",
+          "tags": [
+            "references"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/InChIKey"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "InChIKey reference data",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/InChIKeyReference"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/references/chains": {
+        "get": {
+          "summary": "Get all available chain sequence references.",
+          "description": "Get a list of chain sequence references including their InterProScan analysis results.\n",
+          "tags": [
+            "references"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/chainReferenceQuery"
+            },
+            {
+              "name": "limit",
+              "in": "query",
+              "description": "pagination, maximum number of projects per query",
+              "schema": {
+                "type": "integer",
+                "default": 10,
+                "maximum": 100
+              }
+            },
+            {
+              "name": "page",
+              "in": "query",
+              "description": "pagination, page number",
+              "schema": {
+                "type": "integer",
+                "default": 1
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Object with a count and an array of chain sequence references",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "referencesCount": {
+                        "type": "integer",
+                        "example": 2378
+                      },
+                      "references": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/ChainReference"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/references/chains/{ChainSequence}": {
+        "get": {
+          "summary": "Get a specific chain sequence reference.",
+          "description": "Get reference data for the specified chain amino acid sequence.\n",
+          "tags": [
+            "references"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/ChainSequence"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Chain sequence reference data",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ChainReference"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/references/collections": {
+        "get": {
+          "summary": "Get all available collection references.",
+          "description": "Get a list of dataset collections available in the database, including metadata such as name, type, description, image, citation and summary.\n",
+          "tags": [
+            "references"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/collectionReferenceQuery"
+            },
+            {
+              "name": "limit",
+              "in": "query",
+              "description": "pagination, maximum number of projects per query",
+              "schema": {
+                "type": "integer",
+                "default": 10,
+                "maximum": 100
+              }
+            },
+            {
+              "name": "page",
+              "in": "query",
+              "description": "pagination, page number",
+              "schema": {
+                "type": "integer",
+                "default": 1
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Object with a count and an array of collection references",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "referencesCount": {
+                        "type": "integer",
+                        "example": 9
+                      },
+                      "references": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/CollectionReference"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/references/collections/{CollectionID}": {
+        "get": {
+          "summary": "Get a specific collection reference.",
+          "description": "Get reference data for the specified collection ID.\n",
+          "tags": [
+            "references"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/CollectionID"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Collection reference data",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/CollectionReference"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/pointers/proteins": {
+        "get": {
+          "summary": "Get all available UniProt IDs and their pointers with projects including these UniProt ID.",
+          "description": "Get a list of available UniProt IDs and all projects including each UniProt ID. Include also system residues presence and reference residues coverage.\n",
+          "tags": [
+            "pointers"
+          ],
+          "parameters": [
+            {
+              "name": "format",
+              "in": "query",
+              "description": "Set the response format.",
+              "schema": {
+                "type": "string",
+                "enum": [
+                  "json",
+                  "csv"
+                ]
+              }
+            },
+            {
+              "name": "projection",
+              "in": "query",
+              "description": "name of the field to be checked for options",
+              "examples": {
+                "authors": {
+                  "summary": "simulation authors",
+                  "value": "metadata.AUTHORS"
+                },
+                "method": {
+                  "summary": "simulation methods",
+                  "value": "metadata.METHOD"
+                }
+              },
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of UniProt IDs and its associated projects. Keys are UniProt IDs while values are the associated pointers.\n",
+              "content": {
+                "application/json": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/Pointer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/pointers/proteins/{UniProtID}": {
+        "get": {
+          "summary": "Get a pointer with projects including a specific UniProt ID.",
+          "description": "Get a list of available UniProt IDs and all projects including each UniProt ID. Include also system residues presence and reference residues coverage.\n",
+          "tags": [
+            "pointers"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/UniProtID"
+            },
+            {
+              "name": "format",
+              "in": "query",
+              "description": "Set the response format.",
+              "schema": {
+                "type": "string",
+                "enum": [
+                  "json",
+                  "csv"
+                ]
+              }
+            },
+            {
+              "name": "projection",
+              "in": "query",
+              "description": "name of the field to be checked for options",
+              "examples": {
+                "authors": {
+                  "summary": "simulation authors",
+                  "value": "metadata.AUTHORS"
+                },
+                "method": {
+                  "summary": "simulation methods",
+                  "value": "metadata.METHOD"
+                }
+              },
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of UniProt IDs and its associated projects",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Pointer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/pointers/pdbs": {
+        "get": {
+          "summary": "Get all available PDB IDs and their pointers with projects including these PDB ID.",
+          "description": "Get a list of available PDB IDs and all projects including each PDB ID.\n",
+          "tags": [
+            "pointers"
+          ],
+          "parameters": [
+            {
+              "name": "format",
+              "in": "query",
+              "description": "Set the response format.",
+              "schema": {
+                "type": "string",
+                "enum": [
+                  "json",
+                  "csv"
+                ]
+              }
+            },
+            {
+              "name": "projection",
+              "in": "query",
+              "description": "name of the field to be checked for options",
+              "examples": {
+                "authors": {
+                  "summary": "simulation authors",
+                  "value": "metadata.AUTHORS"
+                },
+                "method": {
+                  "summary": "simulation methods",
+                  "value": "metadata.METHOD"
+                }
+              },
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of PDB IDs and its associated projects. Keys are PDB IDs while values are the associated pointers.\n",
+              "content": {
+                "application/json": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/Pointer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/pointers/pdbs/{PDBID}": {
+        "get": {
+          "summary": "Get a pointer with projects including a specific PDB ID.",
+          "description": "Get a list of available PDB IDs and all projects including each PDB ID.\n",
+          "tags": [
+            "pointers"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/PDBID"
+            },
+            {
+              "name": "format",
+              "in": "query",
+              "description": "Set the response format.",
+              "schema": {
+                "type": "string",
+                "enum": [
+                  "json",
+                  "csv"
+                ]
+              }
+            },
+            {
+              "name": "projection",
+              "in": "query",
+              "description": "name of the field to be checked for options",
+              "examples": {
+                "authors": {
+                  "summary": "simulation authors",
+                  "value": "metadata.AUTHORS"
+                },
+                "method": {
+                  "summary": "simulation methods",
+                  "value": "metadata.METHOD"
+                }
+              },
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of PDB IDs and its associated projects",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Pointer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/pointers/inchikeys": {
+        "get": {
+          "summary": "Get all available InChIKeys and their pointers with projects including these InChIKey.",
+          "description": "Get a list of available InChIKeys and all projects including each InChIKey.\n",
+          "tags": [
+            "pointers"
+          ],
+          "parameters": [
+            {
+              "name": "format",
+              "in": "query",
+              "description": "Set the response format.",
+              "schema": {
+                "type": "string",
+                "enum": [
+                  "json",
+                  "csv"
+                ]
+              }
+            },
+            {
+              "name": "projection",
+              "in": "query",
+              "description": "name of the field to be checked for options",
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of InChIKeys and its associated projects. Keys are InChIKeys while values are the associated pointers.\n",
+              "content": {
+                "application/json": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/Pointer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/pointers/inchikeys/{InChIKey}": {
+        "get": {
+          "summary": "Get a pointer with projects including a specific InChIKey.",
+          "description": "Get a list of all projects including the specified InChIKey.\n",
+          "tags": [
+            "pointers"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/InChIKey"
+            },
+            {
+              "name": "format",
+              "in": "query",
+              "description": "Set the response format.",
+              "schema": {
+                "type": "string",
+                "enum": [
+                  "json",
+                  "csv"
+                ]
+              }
+            },
+            {
+              "name": "projection",
+              "in": "query",
+              "description": "name of the field to be checked for options",
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of projects associated to the specified InChIKey",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Pointer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/pointers/chains": {
+        "get": {
+          "summary": "Get all available chain sequences and their pointers with projects including these chain sequences.",
+          "description": "Get a list of available chain sequences and all projects including each chain sequence.\n",
+          "tags": [
+            "pointers"
+          ],
+          "parameters": [
+            {
+              "name": "format",
+              "in": "query",
+              "description": "Set the response format.",
+              "schema": {
+                "type": "string",
+                "enum": [
+                  "json",
+                  "csv"
+                ]
+              }
+            },
+            {
+              "name": "projection",
+              "in": "query",
+              "description": "name of the field to be checked for options",
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of chain sequences and their associated projects. Keys are chain sequences while values are the associated pointers.\n",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Pointer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/pointers/chains/{ChainSequence}": {
+        "get": {
+          "summary": "Get a pointer with projects including a specific chain sequence.",
+          "description": "Get a list of all projects including the specified chain sequence.\n",
+          "tags": [
+            "pointers"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/ChainSequence"
+            },
+            {
+              "name": "format",
+              "in": "query",
+              "description": "Set the response format.",
+              "schema": {
+                "type": "string",
+                "enum": [
+                  "json",
+                  "csv"
+                ]
+              }
+            },
+            {
+              "name": "projection",
+              "in": "query",
+              "description": "name of the field to be checked for options",
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of projects associated to the specified chain sequence",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Pointer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/pointers/collections": {
+        "get": {
+          "summary": "Get all available collection IDs and their pointers with projects belonging to each collection.",
+          "description": "Get a list of available collection IDs and all projects belonging to each collection.\n",
+          "tags": [
+            "pointers"
+          ],
+          "parameters": [
+            {
+              "name": "format",
+              "in": "query",
+              "description": "Set the response format.",
+              "schema": {
+                "type": "string",
+                "enum": [
+                  "json",
+                  "csv"
+                ]
+              }
+            },
+            {
+              "name": "projection",
+              "in": "query",
+              "description": "name of the field to be checked for options",
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of collection IDs and their associated projects. Keys are collection IDs while values are the associated pointers.\n",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Pointer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/pointers/collections/{CollectionID}": {
+        "get": {
+          "summary": "Get a pointer with projects belonging to a specific collection.",
+          "description": "Get a list of all projects belonging to the specified collection.\n",
+          "tags": [
+            "pointers"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/CollectionID"
+            },
+            {
+              "name": "format",
+              "in": "query",
+              "description": "Set the response format.",
+              "schema": {
+                "type": "string",
+                "enum": [
+                  "json",
+                  "csv"
+                ]
+              }
+            },
+            {
+              "name": "projection",
+              "in": "query",
+              "description": "name of the field to be checked for options",
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "List of projects associated to the specified collection",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Pointer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/projects/{projectAccessionOrID}/files": {
+        "get": {
+          "summary": "Get the list of available files associated to the current project MD.",
+          "description": "Get the list of files for a specific MDposit project MD.",
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/projectAccessionOrID"
+            }
+          ],
+          "tags": [
+            "files"
+          ],
+          "responses": {
+            "200": {
+              "description": "the list of available files",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/FilesList"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/projects/{projectAccessionOrID}/files/{filename}": {
+        "get": {
+          "summary": "Download a specific file.",
+          "description": "Download a specific file for a specific MDposit project MD by its file name.\n",
+          "produces": [
+            "application/octet-stream",
+            "chemical/x-pdb"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/projectAccessionOrID"
+            },
+            {
+              "name": "filename",
+              "in": "path",
+              "description": "filename, as defined in the list of files included in a project\n",
+              "required": true,
+              "schema": {
+                "type": "string"
+              },
+              "example": "structure.pdb"
+            },
+            {
+              "name": "x",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              },
+              "description": "This query parameter is only available in binary files (.bin).<br> Here we define 'x' as an example but it is possible to query as many dimensions as exist (x, y, z, w, ...).<br> Instead of the dimension letter you may query the dimension name with same results (e.g. instead of 'x' you can use 'bases' if the x dimensions belongs to bases). Dimension names can be obtained at the filenotes metadata.<br> Specify a range of values for the returned file.<br> The user can request only specific values instead of the whole file.<br> Ranges are defined by dashes, and multiple ranges can be defined separated by commas. It can also be defined as the -start:end:step format, with '-1' to select the last frame.<br> 1-based numbering.\n",
+              "examples": {
+                "firstFrame": {
+                  "summary": "content of the first value",
+                  "value": 1
+                },
+                "tenFrames": {
+                  "summary": "ten values, from two different ranges",
+                  "value": "1-5,11-15"
+                },
+                "everyTwoFrames": {
+                  "summary": "every two values from value 10 to value 20",
+                  "value": "10:20:2"
+                }
+              }
+            },
+            {
+              "name": "parse",
+              "in": "query",
+              "description": "This query parameter is only available in binary files (.bin).<br> Set if the file content is to be parsed.\n",
+              "schema": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          ],
+          "tags": [
+            "files"
+          ],
+          "responses": {
+            "200": {
+              "description": "a file",
+              "content": {
+                "chemical/x-pdb": {
+                  "schema": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/projects/{projectAccessionOrID}/filenotes": {
+        "get": {
+          "summary": "Get file descriptors for every available file associated to the current project MD.",
+          "description": "Get the list of file descriptors for a specific MDposit project MD.",
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/projectAccessionOrID"
+            }
+          ],
+          "tags": [
+            "filenotes"
+          ],
+          "responses": {
+            "200": {
+              "description": "a list of file descriptors",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/FileDescription"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/projects/{projectAccessionOrID}/filenotes/{filename}": {
+        "get": {
+          "summary": "Get a specific file descriptor.",
+          "description": "Get a specific file descriptor for a specific MDposit project MD by its name.\n",
+          "produces": [
+            "application/octet-stream",
+            "chemical/x-pdb"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/projectAccessionOrID"
+            },
+            {
+              "name": "filename",
+              "in": "path",
+              "description": "filename, as defined in the list of files included in a project\n",
+              "required": true,
+              "schema": {
+                "type": "string"
+              },
+              "example": "structure.pdb"
+            }
+          ],
+          "tags": [
+            "filenotes"
+          ],
+          "responses": {
+            "200": {
+              "description": "a file descriptor",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/FileDescription"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/projects/{projectAccessionOrID}/analyses": {
+        "get": {
+          "summary": "Get the list of available analyses in a specific project.",
+          "description": "Get a list with available analyses in a specific MDposit project.",
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/projectAccessionOrID"
+            }
+          ],
+          "tags": [
+            "analyses"
+          ],
+          "responses": {
+            "200": {
+              "description": "a list of analyses",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/AnalysisList"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/projects/{projectAccessionOrID}/analyses/{analysisName}": {
+        "get": {
+          "summary": "Get an analysis for a project.",
+          "description": "Get a specific analysis for a specific MDposit project by its name.\n",
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/projectAccessionOrID"
+            },
+            {
+              "name": "analysisName",
+              "in": "path",
+              "description": "analysis name",
+              "required": true,
+              "schema": {
+                "type": "string",
+                "enum": [
+                  "pca",
+                  "dist-perres",
+                  "energies",
+                  "fluctuation",
+                  "hbonds",
+                  "pockets",
+                  "rgyr",
+                  "rmsd-pairwise",
+                  "rmsd-perres",
+                  "rmsds",
+                  "sasa",
+                  "tmscores"
+                ]
+              }
+            }
+          ],
+          "tags": [
+            "analyses"
+          ],
+          "responses": {
+            "200": {
+              "description": "an object containing analysis data",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "oneOf": [
+                      {
+                        "$ref": "#/components/schemas/Distance per residue analysis"
+                      },
+                      {
+                        "$ref": "#/components/schemas/Energies analysis"
+                      },
+                      {
+                        "$ref": "#/components/schemas/Fluctuation analysis"
+                      },
+                      {
+                        "$ref": "#/components/schemas/Hydrogen bonds analysis"
+                      },
+                      {
+                        "$ref": "#/components/schemas/PCA analysis"
+                      },
+                      {
+                        "$ref": "#/components/schemas/Pockets analysis"
+                      },
+                      {
+                        "$ref": "#/components/schemas/Radius of gyration analysis"
+                      },
+                      {
+                        "$ref": "#/components/schemas/RMSD pairwise analysis"
+                      },
+                      {
+                        "$ref": "#/components/schemas/RMSD per residue analysis"
+                      },
+                      {
+                        "$ref": "#/components/schemas/RMSDs"
+                      },
+                      {
+                        "$ref": "#/components/schemas/Solvent accessible surface analysis"
+                      },
+                      {
+                        "$ref": "#/components/schemas/TM scores"
+                      }
+                    ],
+                    "example": "No example is provided since each analysis is different. Look at the schemas\n"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/nodes": {
+        "get": {
+          "summary": "Get a list of available nodes.",
+          "description": "Get a list of MDposit federated nodes and some info about them including the name, API URL or physicial location. This endpoint is only avialable in the global API\n",
+          "tags": [
+            "nodes"
+          ],
+          "responses": {
+            "200": {
+              "description": "an array of nodes",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/knowledge": {
+        "get": {
+          "summary": "Get the PDB ids with available knowledge annotations.",
+          "description": "Get a list of PDB ids that can be queried through the knowledge endpoints.\n",
+          "tags": [
+            "knowledge"
+          ],
+          "responses": {
+            "200": {
+              "description": "a list of PDB ids",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/KnowledgePdbList"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/knowledge/{pdbid}": {
+        "get": {
+          "summary": "Get the projects associated with a PDB id in the knowledge endpoints.",
+          "description": "Get a list of project accessions that include the requested PDB id.\n",
+          "tags": [
+            "knowledge"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/knowledgePdbID"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "a list of project accessions",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/KnowledgeProjectList"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/knowledge/{pdbid}/{project}": {
+        "get": {
+          "summary": "Get the knowledge analyses available for a PDB/project pair.",
+          "description": "Get the supported knowledge analyses available for the requested project and PDB id.\n",
+          "tags": [
+            "knowledge"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/knowledgePdbID"
+            },
+            {
+              "$ref": "#/definitions/arguments/knowledgeProject"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "a list of supported knowledge analyses",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/KnowledgeAnalysisList"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/knowledge/{pdbid}/{project}/sasa": {
+        "get": {
+          "summary": "Get the PDBe knowledge SASA annotation for a project.",
+          "description": "Get a PDBe FunPDBe-style SASA annotation for the requested project and PDB id.\n",
+          "tags": [
+            "knowledge"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/knowledgePdbID"
+            },
+            {
+              "$ref": "#/definitions/arguments/knowledgeProject"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "PDBe knowledge SASA annotation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/KnowledgeResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/knowledge/{pdbid}/{project}/membrane": {
+        "get": {
+          "summary": "Get the PDBe knowledge membrane annotation for a project.",
+          "description": "Get a PDBe FunPDBe-style membrane annotation for the requested project and PDB id.\n",
+          "tags": [
+            "knowledge"
+          ],
+          "parameters": [
+            {
+              "$ref": "#/definitions/arguments/knowledgePdbID"
+            },
+            {
+              "$ref": "#/definitions/arguments/knowledgeProject"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "PDBe knowledge membrane annotation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/KnowledgeResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "ProjectMD": {
+          "type": "object",
+          "description": "Main entry, metadata and available analyses or files for a specific MD inside the project The selected MD metadata, available analysis and files are merged over the project ones.\n",
+          "required": [
+            "accession",
+            "published",
+            "metadata",
+            "mds",
+            "mdref",
+            "mdNumber"
+          ],
+          "properties": {
+            "identifier": {
+              "type": "string",
+              "pattern": {
+                "$ref": "#/definitions/constants/IDPattern"
+              },
+              "example": "5d08b56e174bf85a17e00438"
+            },
+            "accession": {
+              "type": "string",
+              "pattern": {
+                "$ref": "#/definitions/constants/AccessionPattern"
+              },
+              "example": "MD-A00001"
+            },
+            "published": {
+              "type": "boolean"
+            },
+            "metadata": {
+              "$ref": "#/components/schemas/ProjectMetadata"
+            },
+            "mds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "replica 1",
+                "replica 2"
+              ]
+            },
+            "mdref": {
+              "type": "integer"
+            },
+            "mdNumber": {
+              "type": "integer"
+            },
+            "mdIndex": {
+              "type": "integer"
+            },
+            "analyses": {
+              "$ref": "#/components/schemas/AnalysisList"
+            },
+            "files": {
+              "$ref": "#/components/schemas/FilesList"
+            }
+          }
+        },
+        "ProjectMetadata": {
+          "type": "object",
+          "description": "Project metadata including structural feautures, MD parameters and external references.\n",
+          "required": [
+            "name"
+          ],
+          "properties": {
+            "NAME": {
+              "type": "string",
+              "example": "My simulation"
+            },
+            "DESCRIPTION": {
+              "type": "string",
+              "example": "My simulation was done like this..."
+            },
+            "AUTHORS": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "My name",
+                "My colleague's name"
+              ]
+            },
+            "GROUPS": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "My group",
+                "My colleague's group"
+              ]
+            },
+            "CONTACT": {
+              "type": "string",
+              "example": "For any doubt please contact me at me@mymail.com"
+            },
+            "LICENSE": {
+              "type": "string",
+              "example": "This trajectory dataset is released under a Creative Commons Attribution 4.0 International Public License"
+            },
+            "LINKCENSE": {
+              "type": "string",
+              "example": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "CITATION": {
+              "type": "string",
+              "example": "My related paper"
+            },
+            "THANKS": {
+              "type": "string",
+              "example": "My acknowledgements"
+            },
+            "LINKS": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "WARNINGS": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "COLLECTIONS": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "My custom flag",
+                "My other custom flag"
+              ]
+            },
+            "PROGRAM": {
+              "type": "string",
+              "example": "GROMACS"
+            },
+            "VERSION": {
+              "type": "string",
+              "example": 2024.1
+            },
+            "TYPE": {
+              "type": "string",
+              "enum": [
+                "Trajectory",
+                "Ensemble"
+              ],
+              "example": "Trajectory"
+            },
+            "METHOD": {
+              "type": "string",
+              "example": "Classical MD"
+            },
+            "FF": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "Amber ff14SB",
+                "GLYCAM-06h"
+              ]
+            },
+            "WAT": {
+              "type": "string",
+              "example": "TIP3P"
+            },
+            "FRAMESTEP": {
+              "type": "number",
+              "description": "Time between frames in nanoseconds (ns)",
+              "example": 0.01
+            },
+            "TIMESTEP": {
+              "type": "number",
+              "description": "Time between steps during the simulation in femtoseconds (fs)",
+              "example": 2
+            },
+            "TEMP": {
+              "type": "number",
+              "description": "Temperature in Kelvin (K)",
+              "example": 300
+            },
+            "ENSEMBLE": {
+              "type": "string",
+              "example": "NPT"
+            },
+            "BOXTYPE": {
+              "type": "string",
+              "example": "Octahedral"
+            },
+            "BOXSIZEX": {
+              "type": "number",
+              "example": 6.56936
+            },
+            "BOXSIZEY": {
+              "type": "number",
+              "example": 6.19365
+            },
+            "BOXSIZEZ": {
+              "type": "number",
+              "example": 5.36386
+            },
+            "SYSATS": {
+              "type": "number",
+              "example": 10000
+            },
+            "PROTATS": {
+              "type": "number",
+              "example": 8000
+            },
+            "PROT": {
+              "type": "number",
+              "example": 100
+            },
+            "DPPC": {
+              "type": "number",
+              "example": 0
+            },
+            "SOL": {
+              "type": "number",
+              "example": 0
+            },
+            "NA": {
+              "type": "number",
+              "example": 0
+            },
+            "CL": {
+              "type": "number",
+              "example": 0
+            },
+            "PDBIDS": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "6vw1",
+                "6vxx"
+              ]
+            },
+            "REFERENCES": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "P0DTC2",
+                "Q9BYF1"
+              ]
+            },
+            "FORCED_REFERENCES": {
+              "type": "array"
+            },
+            "LIGANDNAMES": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "My drug",
+                "My other drug"
+              ]
+            },
+            "INPUT_LIGANDS": {
+              "type": "array"
+            },
+            "SEQUENCES": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "DWGYDDKNGPEQWSKLYPIANGNNQSPVDIKTS",
+                "XXXXXXX"
+              ]
+            },
+            "INTERACTIONS": {
+              "description": "Interactions to be analyzed by the workflow",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "name",
+                  "agent_1",
+                  "selection_1",
+                  "agent_2",
+                  "selection_2"
+                ],
+                "parameters": [
+                  {
+                    "name": "name",
+                    "description": "Custom interaction title",
+                    "schema": {
+                      "type": "string",
+                      "example": "My interaction"
+                    }
+                  },
+                  {
+                    "name": "agent_1",
+                    "description": "Custom title for the first interacting agent",
+                    "schema": {
+                      "type": "string",
+                      "example": "My protein"
+                    }
+                  },
+                  {
+                    "name": "selection_1",
+                    "description": "Atom selection for the first interacting agent in VMD syntax",
+                    "schema": {
+                      "type": "string",
+                      "example": "chain A"
+                    }
+                  },
+                  {
+                    "name": "agent_2",
+                    "description": "Custom title for the second interacting agent",
+                    "schema": {
+                      "type": "string",
+                      "example": "My ligand"
+                    }
+                  },
+                  {
+                    "name": "selection_2",
+                    "description": "Atom selection for the second interacting agent in VMD syntax",
+                    "schema": {
+                      "type": "string",
+                      "example": "chain B"
+                    }
+                  }
+                ]
+              }
+            },
+            "PBC_SELECTION": {
+              "description": "Periodic Boundary Conditions atom selection",
+              "type": "string",
+              "example": "chain M"
+            },
+            "CUSTOMS": {
+              "description": "Additional representations setup for the NGL viewer",
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "ORIENTATION": {
+              "description": "10 numbers whcih are used by the NGL viewer to set the default camera orientation",
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "DOMAINS": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "Carbonic anhydrase 1",
+                "Disordered"
+              ]
+            },
+            "PTM": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "Acetylation",
+                "Glycosilation"
+              ]
+            },
+            "MULTIMERIC": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "Monomer",
+                "Dimer"
+              ]
+            },
+            "MEMBRANES": {
+              "description": "Obsolete",
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "CV19_UNIT": {
+              "type": "string",
+              "example": "Spike"
+            },
+            "CV19_STARTCONF": {
+              "type": "string",
+              "example": "Closed"
+            },
+            "CV19_ABS": {
+              "description": "Antibody presence",
+              "type": "boolean"
+            },
+            "CV19_NANOBS": {
+              "description": "Nanobody presence",
+              "type": "boolean"
+            },
+            "CV19_VARIANT": {
+              "type": "string",
+              "example": "Omicron"
+            }
+          }
+        },
+        "InternalProject": {
+          "type": "object",
+          "description": "Main entry, metadata and available analyses or files for a specific project including all MDs\n",
+          "required": [
+            "accession",
+            "published",
+            "metadata",
+            "mds",
+            "mdNumber"
+          ],
+          "properties": {
+            "internalId": {
+              "type": "string",
+              "pattern": {
+                "$ref": "#/definitions/constants/IDPattern"
+              },
+              "example": "5d08b56e174bf85a17e00438"
+            },
+            "accession": {
+              "type": "string",
+              "description": "Unique and persistend id used to find the simulation.\n",
+              "pattern": {
+                "$ref": "#/definitions/constants/AccessionPattern"
+              },
+              "example": "MD-A00001"
+            },
+            "identifier": {
+              "type": "string",
+              "description": "Deprecated identifier"
+            },
+            "published": {
+              "type": "boolean",
+              "description": "Set if the simulation is published This parameters is used by some nodes to show/hide their simulations This is mandatory for the project to be posited in the global node\n"
+            },
+            "metadata": {
+              "$ref": "#/components/schemas/ProjectMetadata"
+            },
+            "mds": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "description": "Every MD is an independent set of trajectory coordinates within the same Project. MDs in a same project share most metadata (e.g. replicas).\n",
+                "required": [
+                  "name",
+                  "frames"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "metadata": {
+                    "type": "object"
+                  },
+                  "analyses": {
+                    "type": "array",
+                    "description": "List of available analyses in the current MD including both the name and the interal id of the document.\n",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "name"
+                      ],
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "description": "name of the analysis",
+                          "example": "pca"
+                        },
+                        "id": {
+                          "type": "string",
+                          "description": "internal id of the analysis",
+                          "example": "65afd5223837f199fe7671c1"
+                        }
+                      }
+                    },
+                    "example": [
+                      {
+                        "name": "pca",
+                        "id": "65afd5223837f199fe7671c1"
+                      },
+                      {
+                        "name": "rgyr",
+                        "id": "65afd5233837f199fe7671c3"
+                      }
+                    ]
+                  },
+                  "files": {
+                    "type": "array",
+                    "description": "List of available files in the current MD including both the name and the interal id of the document.\n",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "name"
+                      ],
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "description": "name of the file",
+                          "example": "screenshot.jpg"
+                        },
+                        "id": {
+                          "type": "string",
+                          "description": "internal id of the file",
+                          "example": "65afd5223837f199fe7671c1"
+                        }
+                      }
+                    },
+                    "example": [
+                      {
+                        "name": "screenshot.jpg",
+                        "id": "65afd5223837f199fe7671c1"
+                      },
+                      {
+                        "name": "trajectory.bin",
+                        "id": "65afd5233837f199fe7671c3"
+                      }
+                    ]
+                  },
+                  "frames": {
+                    "type": "integer"
+                  },
+                  "atoms": {
+                    "type": "integer"
+                  },
+                  "warnings": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            },
+            "mdref": {
+              "type": "integer"
+            },
+            "mdNumber": {
+              "type": "integer"
+            },
+            "mdIndex": {
+              "type": "integer"
+            },
+            "analyses": {
+              "type": "array",
+              "description": "List of available analyses in the current project both the name and the interal id of the document. (early implementation)\n",
+              "items": {
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "name of the analysis",
+                    "example": "pca"
+                  },
+                  "id": {
+                    "type": "string",
+                    "description": "internal id of the analysis",
+                    "example": "65afd5223837f199fe7671c1"
+                  }
+                }
+              },
+              "example": [
+                {
+                  "name": "pca",
+                  "id": "65afd5223837f199fe7671c1"
+                },
+                {
+                  "name": "rgyr",
+                  "id": "65afd5233837f199fe7671c3"
+                }
+              ]
+            },
+            "files": {
+              "type": "array",
+              "description": "List of available files in the project including both the name and the interal id of the document. The preview picture displayed in the MDposit browser is the file called 'screenshot.jpg'\n",
+              "items": {
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "name of the file",
+                    "example": "screenshot.jpg"
+                  },
+                  "id": {
+                    "type": "string",
+                    "description": "internal id of the file",
+                    "example": "65afd5223837f199fe7671c1"
+                  }
+                }
+              },
+              "example": [
+                {
+                  "name": "screenshot.jpg",
+                  "id": "65afd5223837f199fe7671c1"
+                },
+                {
+                  "name": "trajectory.bin",
+                  "id": "65afd5233837f199fe7671c3"
+                }
+              ]
+            },
+            "chains": {
+              "description": "Project chain (about to be removed)"
+            }
+          }
+        },
+        "ProjectSummary": {
+          "type": "object",
+          "required": [
+            "projectsCount",
+            "mdCount",
+            "totalTime",
+            "totalFrames",
+            "totalFiles",
+            "totalAnalyses"
+          ],
+          "properties": {
+            "projectsCount": {
+              "type": "int"
+            },
+            "mdCount": {
+              "type": "int"
+            },
+            "totalTime": {
+              "type": "float"
+            },
+            "totalFrames": {
+              "type": "int"
+            },
+            "totalFiles": {
+              "type": "int"
+            },
+            "totalAnalyses": {
+              "type": "int"
+            }
+          }
+        },
+        "Topology": {
+          "description": "Standard topology object",
+          "type": "object",
+          "required": [
+            "atom_names",
+            "atom_elements",
+            "atom_charges",
+            "atom_residue_indices",
+            "residue_names",
+            "residue_numbers",
+            "residue_icodes",
+            "residue_chain_indices",
+            "chain_names",
+            "references",
+            "reference_types",
+            "residue_reference_indices",
+            "residue_reference_numbers"
+          ],
+          "properties": {
+            "atom_names": {
+              "type": "array",
+              "description": "A list containing the name of every atom in the topology",
+              "items": {
+                "type": "string",
+                "example": [
+                  "N",
+                  "HN",
+                  "CA"
+                ]
+              }
+            },
+            "atom_elements": {
+              "type": "array",
+              "description": "A list containing the element of every atom in the topology",
+              "items": {
+                "type": "string",
+                "example": [
+                  "N",
+                  "H",
+                  "C"
+                ]
+              }
+            },
+            "atom_charges": {
+              "type": "array",
+              "description": "A list containing the charge of every atom in the topology",
+              "items": {
+                "type": "float",
+                "example": [
+                  0.09,
+                  0.51,
+                  -0.51
+                ]
+              }
+            },
+            "atom_residue_indices": {
+              "type": "array",
+              "description": "A list containing the residue index of every atom in the topology",
+              "items": {
+                "type": "int",
+                "example": [
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            "atom_bonds": {
+              "type": "array",
+              "description": "A list containing atom indices of other atoms bonded to the current one",
+              "items": {
+                "type": "array",
+                "example": [
+                  [
+                    1,
+                    2,
+                    3
+                  ],
+                  [
+                    3,
+                    4
+                  ]
+                ]
+              }
+            },
+            "residue_names": {
+              "type": "array",
+              "description": "A list containing the name of every residue in the topology",
+              "items": {
+                "type": "string",
+                "example": [
+                  "SER",
+                  "THR",
+                  "ARG"
+                ]
+              }
+            },
+            "residue_numbers": {
+              "type": "array",
+              "description": "A list containing the number of every residue in the topology",
+              "items": {
+                "type": "int",
+                "example": [
+                  17,
+                  18,
+                  345
+                ]
+              }
+            },
+            "residue_icodes": {
+              "type": "object",
+              "description": "An object containing the residue icodes in the topology. Keys are residue indices and values are icodes. It is null when there are no icodes at all.\n",
+              "example": {
+                "0": "A",
+                "17": "B"
+              }
+            },
+            "residue_chain_indices": {
+              "type": "array",
+              "description": "A list containing the chain index of every residue in the topology",
+              "items": {
+                "type": "int",
+                "example": [
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            "chain_names": {
+              "type": "array",
+              "description": "A list containing the name of every chain in the topology",
+              "items": {
+                "type": "string",
+                "example": [
+                  "A",
+                  "B",
+                  "X"
+                ]
+              }
+            },
+            "references": {
+              "type": "array",
+              "description": "A list containing the reference ids of every reference used. They may be UniProt ids for proteins or inchikeys for ligands. Protein references are used to numerate residues in the topology according to the standards. Both protein and ligand references are used to label residues in the web client.\n",
+              "items": {
+                "type": "string",
+                "example": [
+                  "P00915",
+                  "1986"
+                ]
+              }
+            },
+            "reference_types": {
+              "type": "array",
+              "description": "Set the type of reference for every reference in the 'references' array\n",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "protein",
+                  "ligand"
+                ],
+                "example": [
+                  "protein",
+                  "ligand"
+                ]
+              }
+            },
+            "residue_reference_indices": {
+              "type": "array",
+              "description": "A list containing the reference index of every residue in the topology",
+              "items": {
+                "type": "int",
+                "example": [
+                  0,
+                  0,
+                  1
+                ]
+              }
+            },
+            "residue_reference_numbers": {
+              "type": "array",
+              "description": "A list containing the reference number of every residue in the topology",
+              "items": {
+                "type": "int",
+                "example": [
+                  17,
+                  18,
+                  345
+                ]
+              }
+            }
+          }
+        },
+        "ProteinReference": {
+          "type": "object",
+          "required": [
+            "uniprot",
+            "sequence",
+            "name",
+            "gene",
+            "organism"
+          ],
+          "properties": {
+            "uniprot": {
+              "description": "UniProt id",
+              "type": "string",
+              "example": "P0DTC2"
+            },
+            "sequence": {
+              "description": "Amino acids sequence",
+              "type": "string",
+              "example": "MFVFLVLLPLVSSQCVNLTTRTQL…GSCCKFDEDDSEPVLKGVKLHYT"
+            },
+            "name": {
+              "description": "UniProt name",
+              "type": "string",
+              "example": "Spike glycoprotein"
+            },
+            "gene": {
+              "description": "UniProt gene name",
+              "type": "string",
+              "example": "S"
+            },
+            "organism": {
+              "description": "UniProt organism",
+              "type": "string",
+              "example": "Severe acute respiratory syndrome coronavirus 2"
+            },
+            "domains": {
+              "description": "UniProt domains",
+              "type": "array",
+              "items": {
+                "type": "object"
+              },
+              "example": [
+                {
+                  "name": "Some specific domain",
+                  "selection": "14-685",
+                  "description": "This domain is important because..."
+                }
+              ]
+            },
+            "functions": {
+              "description": "UniProt functions",
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "host cell surface receptor binding",
+                "identical protein binding"
+              ]
+            },
+            "entropies": {
+              "description": "Residue mutation rate according to GISAID data (covid-19 spike systems only)",
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "epitopes": {
+              "description": "Known epitopes according to the PDB (covid-19 spike systems only)",
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "LigandReference": {
+          "type": "object",
+          "required": [
+            "name",
+            "pubchem",
+            "smiles",
+            "formula",
+            "mordred",
+            "morgan"
+          ],
+          "properties": {
+            "pubchem": {
+              "description": "PubChem id",
+              "type": "string",
+              "example": "1986"
+            },
+            "drugbank": {
+              "description": "DrugBank id",
+              "type": "string",
+              "example": "DB00819"
+            },
+            "chembl": {
+              "description": "ChEMBL id",
+              "type": "string",
+              "example": "CHEMBL20"
+            },
+            "name": {
+              "description": "One of the accepted ligand names according to PubChem",
+              "type": "string",
+              "example": "acetazolamide"
+            },
+            "smiles": {
+              "description": "Simplified Molecular Input Line Entry System (SMILES)",
+              "type": "string",
+              "example": "CC(=O)NC1=NN=C(S1)S(=O)(=O)N"
+            },
+            "formula": {
+              "description": "Information about the proportions of atoms",
+              "type": "string",
+              "example": "C4H6N4O3S2"
+            },
+            "mordred": {
+              "description": "Results from the molecular descriptor calculator (https://github.com/mordred-descriptor/mordred)",
+              "type": "object"
+            },
+            "morgan": {
+              "description": "Morgan fingerprint",
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "InChIKeyReference": {
+          "type": "object",
+          "required": [
+            "inchikey",
+            "inchi"
+          ],
+          "properties": {
+            "inchikey": {
+              "description": "InChIKey identifier",
+              "type": "string",
+              "example": "AAKJLRGGTJKAMG-UHFFFAOYSA-N"
+            },
+            "inchi": {
+              "description": "IUPAC International Chemical Identifier (InChI) string",
+              "type": "string",
+              "example": "InChI=1S/C22H23N3O4/..."
+            },
+            "swisslipids": {
+              "description": "SwissLipids cross-reference data",
+              "type": "object"
+            },
+            "lipidmaps": {
+              "description": "LIPID MAPS cross-reference data",
+              "type": "object"
+            },
+            "pubchem": {
+              "description": "PubChem cross-reference data including molecular formula, InChI, mol block, and fingerprints",
+              "type": "object",
+              "properties": {
+                "chembl": {
+                  "description": "ChEMBL id",
+                  "type": "string",
+                  "nullable": true
+                },
+                "drugbank": {
+                  "description": "DrugBank id",
+                  "type": "string",
+                  "nullable": true
+                },
+                "formula": {
+                  "description": "Molecular formula",
+                  "type": "string",
+                  "example": "C22H23N3O4"
+                },
+                "inchi": {
+                  "description": "InChI string from PubChem",
+                  "type": "string"
+                },
+                "mol_block": {
+                  "description": "MDL Molfile block",
+                  "type": "string"
+                },
+                "mordred": {
+                  "description": "Mordred molecular descriptors",
+                  "type": "object",
+                  "nullable": true
+                },
+                "morgan": {
+                  "description": "Morgan fingerprint",
+                  "type": "array",
+                  "nullable": true,
+                  "items": {
+                    "type": "integer"
+                  }
+                },
+                "morgan_fp_bit_array": {
+                  "description": "Morgan fingerprint as a bit array",
+                  "type": "array",
+                  "items": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ChainReference": {
+          "type": "object",
+          "required": [
+            "sequence",
+            "interproscan"
+          ],
+          "properties": {
+            "sequence": {
+              "description": "Amino acid sequence (also serves as the unique identifier)",
+              "type": "string",
+              "example": "STIEEQAKTFLDKFNHEAEDLFYQS..."
+            },
+            "interproscan": {
+              "description": "InterProScan analysis results for the chain sequence",
+              "type": "object",
+              "properties": {
+                "results": {
+                  "description": "List of InterProScan result objects per sequence",
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            },
+            "version": {
+              "description": "Data version",
+              "type": "string",
+              "example": "0.1"
+            }
+          }
+        },
+        "CollectionReference": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "type",
+            "description",
+            "summary"
+          ],
+          "properties": {
+            "id": {
+              "description": "Unique collection identifier",
+              "type": "string",
+              "example": "cv19"
+            },
+            "name": {
+              "description": "Human-readable collection name",
+              "type": "string",
+              "example": "BioExcel COVID-19"
+            },
+            "type": {
+              "description": "Collection type",
+              "type": "string",
+              "example": "dataset"
+            },
+            "description": {
+              "description": "Full description of the collection",
+              "type": "string"
+            },
+            "summary": {
+              "description": "Short summary of the collection",
+              "type": "string"
+            },
+            "image": {
+              "description": "URL to a representative image for the collection",
+              "type": "string"
+            },
+            "citation": {
+              "description": "DOI or citation string for the collection",
+              "type": "string",
+              "example": "doi: 10.1093/nar/gkad991"
+            },
+            "links": {
+              "description": "Additional related links",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "PdbReference": {
+          "type": "object",
+          "required": [
+            "id",
+            "title",
+            "class",
+            "authors",
+            "date",
+            "organism",
+            "method",
+            "resolution",
+            "chain_uniprots"
+          ],
+          "properties": {
+            "id": {
+              "description": "PDB id",
+              "type": "string",
+              "example": "12CA"
+            },
+            "title": {
+              "description": "Name of the PDB entry",
+              "type": "string",
+              "example": "Altering the mouth of a hydrophobic pocket..."
+            },
+            "class": {
+              "description": "PDB classification",
+              "type": "string",
+              "example": "Lyase(oxo-acid)"
+            },
+            "authors": {
+              "description": "List of authors",
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "CHRISTIANSON, D.W.",
+                "NAIR, S.K."
+              ]
+            },
+            "date": {
+              "description": "Publication date",
+              "type": "string",
+              "example": "10/01/91"
+            },
+            "organism": {
+              "description": "Source organism",
+              "type": "string",
+              "example": "Homo sapiens"
+            },
+            "method": {
+              "description": "Experimental method",
+              "type": "string",
+              "example": "X-RAY DIFFRACTION"
+            },
+            "resolution": {
+              "description": "Experimental resolution",
+              "type": "float",
+              "example": 2.4
+            },
+            "chain_uniprots": {
+              "description": "Uniprot Id of every chain",
+              "type": "object",
+              "example": {
+                "A": "P00918"
+              }
+            }
+          }
+        },
+        "Pointer": {
+          "type": "array",
+          "description": "A pointer is always bound to a reference id. This array has an object for each project which includes the pointer reference id. This object includes the project accession, and URLs besides presence and coverage data.\n",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "api",
+              "web"
+            ],
+            "properties": {
+              "id": {
+                "description": "Project id/accession",
+                "type": "string",
+                "example": "MD-A00001"
+              },
+              "api": {
+                "description": "URL to reach the specific project in the API",
+                "type": "string"
+              },
+              "web": {
+                "description": "URL to reach the specific project in the web page",
+                "type": "string"
+              },
+              "present_residues": {
+                "description": "[Protein and ligand references only] Ranged notation selection of residues in the system which belong to the reference. Numbers stand for residue indices (0-based).\n",
+                "type": "string",
+                "example": "1-9,17"
+              },
+              "presence": {
+                "description": "[Protein and ligand references only] Proportion (from 0 to 1) of residues in the system which belong to the reference\n",
+                "type": "float"
+              },
+              "covered_residues": {
+                "description": "[Protein references only] Ranged notation selection of residues in the reference which are present in the system. Numbers stand for residue numbers according to the UniProt numeration.\n",
+                "type": "string",
+                "example": "1-9,17"
+              },
+              "coverage": {
+                "description": "[Protein references only] Proportion (from 0 to 1) of residues in the reference which are present in the system\n",
+                "type": "float"
+              }
+            }
+          }
+        },
+        "Interactions": {
+          "type": "array",
+          "description": "This array has an object for each defined interaction containing residue indices for the interacting residues. Note that interactions are defined at the project metadata. Each interaction is defined by a name and two different agents: agent 1 and agent 2. Each agent is defined by its name, residue indices and interface residue indices. In addition, the interaction includes a list of atom indices for atoms covalently bonded between both agents.\n",
+          "items": {
+            "type": "object",
+            "description": "The interaction object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "The interaction name",
+                "exemple": "Protein-ligand interaction"
+              },
+              "agent_1": {
+                "type": "string",
+                "description": "The agent 1 name",
+                "exemple": "Protein"
+              },
+              "agent_2": {
+                "type": "string",
+                "description": "The agent 2 name",
+                "exemple": "Ligand"
+              },
+              "strong_bonds": {
+                "type": "array",
+                "description": "Pairs of atom indices for pairs of atoms covalently bonded between both agents",
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "int",
+                    "minItems": 2,
+                    "maxItems": 2
+                  }
+                }
+              },
+              "residue_indices_1": {
+                "type": "array",
+                "description": "Residue indices for all residues in agent 1",
+                "items": {
+                  "type": "int"
+                }
+              },
+              "residue_indices_2": {
+                "type": "array",
+                "description": "Residue indices for all residues in agent 2",
+                "items": {
+                  "type": "int"
+                }
+              },
+              "interface_indices_1": {
+                "type": "array",
+                "description": "Residue indices for interface residues in agent 1",
+                "items": {
+                  "type": "int"
+                }
+              },
+              "interface_indices_2": {
+                "type": "array",
+                "description": "Residue indices for interface residues in agent 1",
+                "items": {
+                  "type": "int"
+                }
+              }
+            }
+          }
+        },
+        "Distance per residue analysis": {
+          "type": "object",
+          "description": "The 'data' array has an object for each defined interaction containing distances per residue data. Note that interactions are defined at the project metadata. Distances are stored in the form of two matrices: one for the mean and one for the standard deviation in the distance between each pair of residues for each residue in each interacting agent. Matrix values are sorted according to interaction agent residues order. Matrix values are organized as an array of arrays with numeric values. Each array with numeric values contains the mean distance/distance standard deviation values between each residue from the interaction agent 1 and one residue from the agent 2. Each array with numeric values is represented as a row in the client matrix representation. Note that the count of numeric values on each array must match the number of resiudes in agent 1 and the count of arrays must match the number of residues in agent 2.\n",
+          "required": [
+            "data"
+          ],
+          "properties": {
+            "data": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "description": "Each interaction includes the interaction name, the mean distance matrix and the distance standard deviation matrix.\n",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "The interaction name"
+                  },
+                  "means": {
+                    "type": "array",
+                    "description": "Array of arrays which is actually a matrix with mean distance values",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "float"
+                      }
+                    }
+                  },
+                  "stdvs": {
+                    "type": "array",
+                    "description": "Array of arrays which is actually a matrix with distance standard deviation values",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "float"
+                      }
+                    }
+                  }
+                },
+                "required": [
+                  "name",
+                  "means",
+                  "stdvs"
+                ]
+              }
+            }
+          }
+        },
+        "Energies analysis": {
+          "type": "object",
+          "description": "The 'data' array contains an object with data for each defined interaction. Note that interactions are defined at the project metadata. Each interaction contains the interaction name and two more objects containing data for the interaction agents 1 and 2. Each agent includes the labels its residues (redundant*) and energies data for each residue. Energies data includes electrostatic, Van der Waals and the sum of both energies. In addition, there are three datasets for each of the previous three energies: overall energy, initial energy and final energy. e.g. Electrostatic: es (overall), ies (initial) and fes (final). * Labels are redundant since they are also in project metadata. This field may be removed in the future.\n",
+          "required": [
+            "data"
+          ],
+          "properties": {
+            "data": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "description": "Each interaction contains the interaction name and both interacting agents data.\n",
+                "required": [
+                  "name",
+                  "agent1",
+                  "agent2"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "The interaction name"
+                  },
+                  "agent1": {
+                    "type": "object",
+                    "description": "Energies data for interacting agent 1",
+                    "required": [
+                      "labels",
+                      "es",
+                      "ies",
+                      "fes",
+                      "vdw",
+                      "ivdw",
+                      "fvdw",
+                      "both",
+                      "iboth",
+                      "fboth"
+                    ],
+                    "properties": {
+                      "labels": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "es": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      },
+                      "ies": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      },
+                      "fes": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      },
+                      "vdw": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      },
+                      "ivdw": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      },
+                      "fvdw": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      },
+                      "both": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      },
+                      "iboth": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      },
+                      "fboth": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      }
+                    }
+                  },
+                  "agent2": {
+                    "type": "object",
+                    "description": "Energies data for interacting agent 2",
+                    "required": [
+                      "labels",
+                      "es",
+                      "ies",
+                      "fes",
+                      "vdw",
+                      "ivdw",
+                      "fvdw",
+                      "both",
+                      "iboth",
+                      "fboth"
+                    ],
+                    "properties": {
+                      "labels": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "es": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      },
+                      "ies": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      },
+                      "fes": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      },
+                      "vdw": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      },
+                      "ivdw": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      },
+                      "fvdw": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      },
+                      "both": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      },
+                      "iboth": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      },
+                      "fboth": {
+                        "type": "array",
+                        "items": {
+                          "type": "float"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Fluctuation analysis": {
+          "type": "object",
+          "description": "The start (deprecated*) and step values stand for trajectory frames. Fluctuation values are found inside y.rmsf where the mean, standard deviation, maximum, minimum and a list with each atom fluctuation value. * The starting frame is deprecated since it is not used by the client anymore. The start frame in all \"framed\" analyses is always the trajectory first frame.\n",
+          "required": [
+            "start",
+            "step",
+            "y"
+          ],
+          "properties": {
+            "start": {
+              "type": "int",
+              "description": "The starting frame"
+            },
+            "step": {
+              "type": "int",
+              "description": "The frame step"
+            },
+            "y": {
+              "type": "object",
+              "required": "-rmsf",
+              "properties": {
+                "rmsf": {
+                  "type": "object",
+                  "description": "Fluctuation data",
+                  "required": [
+                    "average",
+                    "stddev",
+                    "min",
+                    "max",
+                    "data"
+                  ],
+                  "properties": {
+                    "average": {
+                      "type": "float",
+                      "description": "Average for all atom fluctuations"
+                    },
+                    "stddev": {
+                      "type": "float",
+                      "description": "Standard deviation for all atom fluctuations"
+                    },
+                    "min": {
+                      "type": "float",
+                      "description": "Minimum value in all atom fluctuations"
+                    },
+                    "max": {
+                      "type": "float",
+                      "description": "Maximum value in all atom fluctuations"
+                    },
+                    "data": {
+                      "type": "array",
+                      "description": "Atom fluctuation values",
+                      "items": {
+                        "type": "float"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Hydrogen bonds analysis": {
+          "type": "object",
+          "description": "The 'data' array contains an object with all hydrogen bonds for each defined interaction. Note that interactions are defined at the project metadata. Each hydrogen bond is defined by one acceptor, one donor and one hydrogen atoms. In addition, an array of true/false stores whenever the hydrogen bond is formed or not along different frames. Note that array fields in this object are coordinated, since each index stands for the same hydrogen bond in all arrays.\n",
+          "required": [
+            "data"
+          ],
+          "properties": {
+            "data": {
+              "type": "array",
+              "description": "Each object includes all hydrogen bonds found for an especific interaction interface",
+              "items": {
+                "type": "object",
+                "description": "Each interaction includes the interaction name, the list of acceptor, donor and hydrogen atom indices for atoms participating on each hydrogen bond and an array with the bond status along different frames for each hydrogen bond.\n",
+                "required": [
+                  "name",
+                  "acceptors",
+                  "donors",
+                  "hydrogens",
+                  "hbonds"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "The interaction name"
+                  },
+                  "acceptors": {
+                    "type": "array",
+                    "description": "Indexes (from 0 to n-1) of acceptor atoms for each hydrogen bond",
+                    "items": {
+                      "type": "int"
+                    }
+                  },
+                  "donors": {
+                    "type": "array",
+                    "description": "Indexes (from 0 to n-1) of donor atoms for each hydrogen bond",
+                    "items": {
+                      "type": "int"
+                    }
+                  },
+                  "hydrogens": {
+                    "type": "array",
+                    "description": "Indexes (from 0 to n-1) of hydrogen atoms for each hydrogen bond",
+                    "items": {
+                      "type": "int"
+                    }
+                  },
+                  "hbonds": {
+                    "type": "array",
+                    "description": "Arrays of true/false storing whenever the bond is formed or not along different frames for each hydrogen bond\n",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "boolean"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "PCA analysis": {
+          "type": "object",
+          "description": "The 'data' array contains all eigenvalues found during the analysis, projection data for principal components with an explained variance greater than 1% and the atom indices of atoms which where used for the analysis. Note that both eigenvalues and projections are sorted. It also includes the framestep of the reduced trajectory which was used for the analysis.\n",
+          "required": [
+            "framestep",
+            "atoms",
+            "eigenvalues",
+            "projections"
+          ],
+          "properties": {
+            "framestep": {
+              "type": "int",
+              "description": "The frame step"
+            },
+            "atoms": {
+              "type": "array",
+              "description": "Atom indices for atoms used for the analysis",
+              "items": {
+                "type": "int"
+              }
+            },
+            "eigenvalues": {
+              "type": "array",
+              "description": "Eigenvalues for each principal component in the analysis",
+              "items": {
+                "type": "float"
+              }
+            },
+            "projections": {
+              "type": "array",
+              "description": "Projection data for principal components with an explained variance greater than 1%",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "float"
+                }
+              }
+            }
+          }
+        },
+        "Pockets analysis": {
+          "type": "object",
+          "description": "The 'data' array contains an object with data for each pocket. This data includes pocket name, volume along different frames and atoms which conform the pocket itself.\n",
+          "required": [
+            "data"
+          ],
+          "properties": {
+            "data": {
+              "type": "array",
+              "description": "Each object includes data for a specific pocket.",
+              "items": {
+                "type": "object",
+                "description": "Each pocket includes name, volume along different frames and atoms which conform the pocket itself.\n",
+                "required": [
+                  "name",
+                  "volumes",
+                  "atoms"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "The interaction name"
+                  },
+                  "volumes": {
+                    "type": "array",
+                    "description": "Pocket volumes for different frames",
+                    "items": {
+                      "type": "float"
+                    }
+                  },
+                  "atoms": {
+                    "type": "array",
+                    "description": "Indexes (from 0 to n-1) of atoms conforming the pocket",
+                    "items": {
+                      "type": "int"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Radius of gyration analysis": {
+          "type": "object",
+          "description": "The start (deprecated*) and step values stand for trajectory frames. Radius of gyration data is found inside 'y'. Radius of gyration is calculated for the three spatial dimensions (x,y,z) independently and all together. Each set of values contains the mean, standard deviation, maximum, minimum and a list with each different frame value. * The starting frame is deprecated since it is not used by the client anymore. The start frame in all \"framed\" analyses is always the trajectory first frame.\n",
+          "required": [
+            "start",
+            "step",
+            "y"
+          ],
+          "properties": {
+            "start": {
+              "type": "int",
+              "description": "The starting frame"
+            },
+            "step": {
+              "type": "int",
+              "description": "The frame step"
+            },
+            "y": {
+              "type": "object",
+              "required": [
+                "rgyr",
+                "rgyrx",
+                "rgyry",
+                "rgyrz"
+              ],
+              "properties": {
+                "rgyr": {
+                  "type": "object",
+                  "description": "Overall radius of gyration data",
+                  "required": [
+                    "average",
+                    "stddev",
+                    "min",
+                    "max",
+                    "data"
+                  ],
+                  "properties": {
+                    "average": {
+                      "type": "float",
+                      "description": "Average for all frame values"
+                    },
+                    "stddev": {
+                      "type": "float",
+                      "description": "Standard deviation for all frame values"
+                    },
+                    "min": {
+                      "type": "float",
+                      "description": "Minimum value in all frame values"
+                    },
+                    "max": {
+                      "type": "float",
+                      "description": "Maximum value in all frame values"
+                    },
+                    "data": {
+                      "type": "array",
+                      "description": "Radius of gyration values for different frames",
+                      "items": {
+                        "type": "float"
+                      }
+                    }
+                  }
+                },
+                "rgyrx": {
+                  "type": "object",
+                  "description": "X dimensional radius of gyration data",
+                  "required": [
+                    "average",
+                    "stddev",
+                    "min",
+                    "max",
+                    "data"
+                  ],
+                  "properties": {
+                    "average": {
+                      "type": "float",
+                      "description": "Average for all frame values"
+                    },
+                    "stddev": {
+                      "type": "float",
+                      "description": "Standard deviation for all frame values"
+                    },
+                    "min": {
+                      "type": "float",
+                      "description": "Minimum value in all frame values"
+                    },
+                    "max": {
+                      "type": "float",
+                      "description": "Maximum value in all frame values"
+                    },
+                    "data": {
+                      "type": "array",
+                      "description": "Radius of gyration values for different frames",
+                      "items": {
+                        "type": "float"
+                      }
+                    }
+                  }
+                },
+                "rgyry": {
+                  "type": "object",
+                  "description": "Y dimensional radius of gyration data",
+                  "required": [
+                    "average",
+                    "stddev",
+                    "min",
+                    "max",
+                    "data"
+                  ],
+                  "properties": {
+                    "average": {
+                      "type": "float",
+                      "description": "Average for all frame values"
+                    },
+                    "stddev": {
+                      "type": "float",
+                      "description": "Standard deviation for all frame values"
+                    },
+                    "min": {
+                      "type": "float",
+                      "description": "Minimum value in all frame values"
+                    },
+                    "max": {
+                      "type": "float",
+                      "description": "Maximum value in all frame values"
+                    },
+                    "data": {
+                      "type": "array",
+                      "description": "Radius of gyration values for different frames",
+                      "items": {
+                        "type": "float"
+                      }
+                    }
+                  }
+                },
+                "rgyrz": {
+                  "type": "object",
+                  "description": "Z dimensional radius of gyration data",
+                  "required": [
+                    "average",
+                    "stddev",
+                    "min",
+                    "max",
+                    "data"
+                  ],
+                  "properties": {
+                    "average": {
+                      "type": "float",
+                      "description": "Average for all frame values"
+                    },
+                    "stddev": {
+                      "type": "float",
+                      "description": "Standard deviation for all frame values"
+                    },
+                    "min": {
+                      "type": "float",
+                      "description": "Minimum value in all frame values"
+                    },
+                    "max": {
+                      "type": "float",
+                      "description": "Maximum value in all frame values"
+                    },
+                    "data": {
+                      "type": "array",
+                      "description": "Radius of gyration values for different frames",
+                      "items": {
+                        "type": "float"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "RMSD pairwise analysis": {
+          "type": "object",
+          "description": "The start (deprecated*) and step values stand for trajectory frames. The 'data' array has an object for the overall structure and an additional object for each defined interaction. Each object contains a name which is the interaction name or 'Overall' for the overall structure. Note that interactions are defined at the project metadata. RMSD values are stored in the form of a matrix where both rows and columns stand for different frames. Matrix values are organized as an array of arrays with numeric values. Each array with numeric values contains the RMSD values between each different frame and one specific frame. * The starting frame is deprecated since it is not used by the client anymore. The start frame in all \"framed\" analyses is always the trajectory first frame.\n",
+          "required": [
+            "start",
+            "step",
+            "data"
+          ],
+          "properties": {
+            "start": {
+              "type": "int",
+              "description": "The starting frame"
+            },
+            "step": {
+              "type": "int",
+              "description": "The frame step"
+            },
+            "data": {
+              "type": "array",
+              "description": "Each object includes distances per residue data for an especific interaction.",
+              "items": {
+                "type": "object",
+                "description": "Each interaction includes the interaction name, the mean distance matrix and the distance standard deviation matrix.\n",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "The overall structure or interaction name"
+                  },
+                  "rmsds": {
+                    "type": "array",
+                    "description": "Array of arrays which is actually a matrix with rmsd values",
+                    "items": {
+                      "type": "array",
+                      "items": {
+                        "type": "float"
+                      }
+                    }
+                  }
+                },
+                "required": [
+                  "name",
+                  "rmsds"
+                ]
+              }
+            }
+          }
+        },
+        "RMSD per residue analysis": {
+          "type": "object",
+          "description": "The 'data' array has an object for each analyzed residue. Each residue has its name and its RMSD values for each different frame.\n",
+          "required": [
+            "data"
+          ],
+          "properties": {
+            "data": {
+              "type": "array",
+              "description": "Each object is a different residue.",
+              "items": {
+                "type": "object",
+                "description": "Each residue includes its name and its RMSD values for each different frame",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "The residue name (tag) including chain, number and possibly an icode"
+                  },
+                  "rmsds": {
+                    "type": "array",
+                    "items": {
+                      "type": "float"
+                    }
+                  }
+                },
+                "required": [
+                  "name",
+                  "rmsds"
+                ]
+              }
+            }
+          }
+        },
+        "RMSDs": {
+          "type": "object",
+          "description": "The start (deprecated*) and step values stand for trajectory frames. The 'data' array has eight objects: each possible combination of the two possible references (first frame and average) with the four possible atom selections (all protein atoms, heavy atoms, backbone and alpha carbons). * The starting frame is deprecated since it is not used by the client anymore. The start frame in all \"framed\" analyses is always the trajectory first frame.\n",
+          "required": [
+            "start",
+            "step",
+            "data"
+          ],
+          "properties": {
+            "start": {
+              "type": "int",
+              "description": "The starting frame"
+            },
+            "step": {
+              "type": "int",
+              "description": "The frame step"
+            },
+            "data": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "description": "Each object includes the reference and the group it belongs to and the RMSD values for each different frame\n",
+                "properties": {
+                  "reference": {
+                    "type": "string",
+                    "description": "The reference structure for this values (first frame or average)"
+                  },
+                  "group": {
+                    "type": "string",
+                    "description": "The atom selection group for this values (all protein atoms, heavy atoms, backbone or alpha carbons)\n"
+                  },
+                  "values": {
+                    "type": "array",
+                    "items": {
+                      "type": "float"
+                    }
+                  }
+                },
+                "required": [
+                  "reference",
+                  "group",
+                  "values"
+                ]
+              }
+            }
+          }
+        },
+        "Solvent accessible surface analysis": {
+          "type": "object",
+          "description": "The 'data' array has an object for each analyzed residue. Each residue has its name and its SAS values for each different frame.\n",
+          "required": [
+            "data"
+          ],
+          "properties": {
+            "data": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "description": "Each residue includes its name and its SAS values for each different frame",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "The residue name (tag) including chain, number and possibly an icode"
+                  },
+                  "saspf": {
+                    "type": "array",
+                    "items": {
+                      "type": "float"
+                    }
+                  }
+                },
+                "required": [
+                  "name",
+                  "saspf"
+                ]
+              }
+            }
+          }
+        },
+        "TM scores": {
+          "type": "object",
+          "description": "The start (deprecated*) and step values stand for trajectory frames. The 'data' array has two objects: each of the two possible references (first frame and average). Note that TM scores are calculated using only alpha carbon atoms. * The starting frame is deprecated since it is not used by the client anymore. The start frame in all \"framed\" analyses is always the trajectory first frame.\n",
+          "required": [
+            "start",
+            "step",
+            "data"
+          ],
+          "properties": {
+            "start": {
+              "type": "int",
+              "description": "The starting frame"
+            },
+            "step": {
+              "type": "int",
+              "description": "The frame step"
+            },
+            "data": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "description": "Each object includes the reference and the group it belongs to and the TM score values for each different frame\n",
+                "properties": {
+                  "reference": {
+                    "type": "string",
+                    "description": "The reference structure for this values (first frame or average)"
+                  },
+                  "group": {
+                    "type": "string",
+                    "description": "The atom selection group for this values (always alpha carbons)\n"
+                  },
+                  "values": {
+                    "type": "array",
+                    "items": {
+                      "type": "float"
+                    }
+                  }
+                },
+                "required": [
+                  "reference",
+                  "group",
+                  "values"
+                ]
+              }
+            }
+          }
+        },
+        "AnalysisList": {
+          "type": "array",
+          "description": "list of available analyses",
+          "items": {
+            "type": "string"
+          },
+          "example": [
+            "pca",
+            "rgyr"
+          ]
+        },
+        "FileDescription": {
+          "type": "object",
+          "properties": {
+            "length": {
+              "type": "integer",
+              "description": "file size in bytes",
+              "example": 368194
+            },
+            "filename": {
+              "type": "string",
+              "example": "structure.pdb"
+            },
+            "md5": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{32}$",
+              "example": "79ac468d3cc434ad777048b51e65afc3"
+            },
+            "contentType": {
+              "type": "string",
+              "example": "chemical/x-pdb"
+            },
+            "metadata": {
+              "type": "object"
+            }
+          }
+        },
+        "FilesList": {
+          "type": "array",
+          "description": "List of available files The preview pictured shown in the browser is the file called 'screenshot.jpg'\n",
+          "items": {
+            "type": "string"
+          },
+          "example": [
+            "screenshot.jpg",
+            "trajectory.bin"
+          ]
+        },
+        "InternalList": {
+          "type": "array",
+          "description": "List of available documents including both the name and the interal id of the document. These are used to list available files and analyses in project data, for internal managment of the API. These are not shown to the users by default. However, if the 'raw' flag is passed to the projects endpoint then they become visible.\n",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "name of the document",
+                "example": "pca"
+              },
+              "id": {
+                "type": "string",
+                "description": "internal id of the document",
+                "example": "65afd5223837f199fe7671c1"
+              }
+            }
+          },
+          "example": [
+            {
+              "name": "pca",
+              "id": "65afd5223837f199fe7671c1"
+            },
+            {
+              "name": "rgyr",
+              "id": "65afd5233837f199fe7671c3"
+            }
+          ]
+        },
+        "KnowledgePdbList": {
+          "type": "array",
+          "description": "list of PDB ids with knowledge annotations",
+          "items": {
+            "type": "string"
+          },
+          "example": [
+            "6vw1",
+            "6vxx"
+          ]
+        },
+        "KnowledgeProjectList": {
+          "type": "array",
+          "description": "list of project accessions associated with a PDB id",
+          "items": {
+            "type": "string"
+          },
+          "example": [
+            "MD-A00001",
+            "5d08b56e174bf85a17e00438"
+          ]
+        },
+        "KnowledgeAnalysisList": {
+          "type": "array",
+          "description": "list of supported knowledge analyses for a project",
+          "items": {
+            "type": "string",
+            "enum": [
+              "sasa",
+              "membrane"
+            ]
+          },
+          "example": [
+            "sasa",
+            "membrane"
+          ]
+        },
+        "KnowledgeSite": {
+          "type": "object",
+          "properties": {
+            "site_id": {
+              "type": "integer"
+            },
+            "label": {
+              "type": "string"
+            }
+          }
+        },
+        "KnowledgeResponse": {
+          "type": "object",
+          "description": "PDBe FunPDBe-style knowledge annotation response.\n",
+          "required": [
+            "data_resource",
+            "resource_version",
+            "resource_entry_url",
+            "model_coordinates_url",
+            "release_date",
+            "pdb_id",
+            "chains",
+            "evidence_code_ontology",
+            "sites"
+          ],
+          "properties": {
+            "data_resource": {
+              "type": "string",
+              "example": "MDDB"
+            },
+            "resource_version": {
+              "type": "string",
+              "example": "0.0"
+            },
+            "resource_entry_url": {
+              "type": "string",
+              "example": "https://example.org/#/id/5d08b56e174bf85a17e00438/"
+            },
+            "model_coordinates_url": {
+              "type": "string",
+              "example": "https://www.ebi.ac.uk/pdbe/entry/pdb/6vw1"
+            },
+            "release_date": {
+              "type": "string",
+              "example": "10/01/91"
+            },
+            "pdb_id": {
+              "type": "string",
+              "example": "6vw1"
+            },
+            "chains": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "chain_label": {
+                    "type": "string"
+                  },
+                  "residues": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "pdb_res_label": {
+                          "type": "string"
+                        },
+                        "aa_type": {
+                          "type": "string"
+                        },
+                        "additional_residue_annotations": {
+                          "type": "object"
+                        },
+                        "site_data": {
+                          "type": "array",
+                          "items": {
+                            "type": "object"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "evidence_code_ontology": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "sites": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/KnowledgeSite"
+              }
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "constants": {
+        "IDPattern": "^[a-fA-F\\d]{24}$",
+        "AccessionPattern": "Free"
+      },
+      "arguments": {
+        "projectAccessionOrID": {
+          "name": "projectAccessionOrID",
+          "in": "path",
+          "description": "Project accession or identifier.<br> A project will always have a unique identifier (even if unpublished and in the development version of the API).<br> When published, it will be assigned a never-changing unique user-friendly accession such as MD-A00001.<br> You can use either to access the corresponding data, even if the **accession is recommended**\n",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "example": "MD-A00001"
+        },
+        "UniProtID": {
+          "name": "UniProtID",
+          "in": "path",
+          "description": "UniProt accession ID\n",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "example": "Q9BYF1"
+        },
+        "proteinReferenceQuery": {
+          "name": "query",
+          "in": "query",
+          "description": "A query stringified JSON object for the MongoDB [find](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/) command. It can be used to filter protein references by any field.\n",
+          "schema": {
+            "type": "string"
+          },
+          "example": "{\"organism\":\"Homo sapiens\"}"
+        },
+        "PubChemID": {
+          "name": "PubChemID",
+          "in": "path",
+          "description": "PubChem accession ID\n",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "example": "1986"
+        },
+        "PDBID": {
+          "name": "PDBID",
+          "in": "path",
+          "description": "PDB accession ID\n",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "example": "12CA"
+        },
+        "pdbReferenceQuery": {
+          "name": "query",
+          "in": "query",
+          "description": "A query stringified JSON object for the MongoDB [find](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/) command. It can be used to filter PDB references by any field.\n",
+          "schema": {
+            "type": "string"
+          },
+          "example": "{\"method\":\"X-RAY DIFFRACTION\"}"
+        },
+        "InChIKey": {
+          "name": "InChIKey",
+          "in": "path",
+          "description": "InChIKey identifier (IUPAC International Chemical Identifier hash key)\n",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "example": "AAKJLRGGTJKAMG-UHFFFAOYSA-N"
+        },
+        "inchikeyReferenceQuery": {
+          "name": "query",
+          "in": "query",
+          "description": "A query stringified JSON object for the MongoDB [find](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/) command. It can be used to filter InChIKey references by top-level or nested fields.\n",
+          "schema": {
+            "type": "string"
+          },
+          "example": "{\"ligand.formula\":{\"$regex\":\"P\"}}"
+        },
+        "ChainSequence": {
+          "name": "ChainSequence",
+          "in": "path",
+          "description": "Amino acid sequence of the chain (used as the unique chain reference identifier)\n",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "example": "STIEEQAKTFLDKFNHEAEDLFYQS"
+        },
+        "chainReferenceQuery": {
+          "name": "query",
+          "in": "query",
+          "description": "A query stringified JSON object for the MongoDB [find](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/) command. It can be used to filter chain references by any field.\n",
+          "schema": {
+            "type": "string"
+          },
+          "example": "{\"sequence\":{\"$regex\":\"^STIEE\"}}"
+        },
+        "CollectionID": {
+          "name": "CollectionID",
+          "in": "path",
+          "description": "Collection identifier (e.g. cv19, model, abc)\n",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "example": "cv19"
+        },
+        "collectionReferenceQuery": {
+          "name": "query",
+          "in": "query",
+          "description": "A query stringified JSON object for the MongoDB [find](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/) command. It can be used to filter collection references by any field.\n",
+          "schema": {
+            "type": "string"
+          },
+          "example": "{\"type\":\"dataset\"}"
+        },
+        "knowledgePdbID": {
+          "name": "pdbid",
+          "in": "path",
+          "description": "PDB accession id used by the knowledge endpoints.\n",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "example": "12CA"
+        },
+        "knowledgeProject": {
+          "name": "project",
+          "in": "path",
+          "description": "Project accession or identifier used by the knowledge endpoints.\n",
+          "required": true,
+          "schema": {
+            "type": "string"
+          },
+          "example": "MD-A00001"
+        }
+      },
+      "bin format": {
+        "type": "string",
+        "format": "binary",
+        "description": "Binary float32 coordinates in a row and nothing else. There is no separator between frames or atoms or x, y and z coordinates.\n",
+        "example": "<binary>"
+      },
+      "mdcrd format": {
+        "type": "string",
+        "format": "text",
+        "description": "ASCII format including coordinates separated by white spaces.<br> Every row includes 10 coordinates.\n",
+        "example": "Node name - Accession id\n  42.750  43.800  52.570  43.330  44.600  52.780  42.390  43.540  53.480  42.050\n  43.930  51.850  43.650  42.720  52.080  44.490  42.640  52.780  42.940  41.360\n  52.070  43.620  40.580  51.720  42.650  41.110  53.090  41.720  41.240  51.140\n  40.490  41.780  51.370  40.110  42.220  52.280  39.760  41.800  50.170  38.840\n  42.200  50.050  40.450  41.270  49.130  40.130  41.140  47.810  39.140  41.330\n"
+      },
+      "xtc format": {
+        "type": "string",
+        "format": "binary",
+        "description": "Gromacs format (compressed). Specification at https://manual.gromacs.org/archive/5.0.4/online/xtc.html",
+        "example": "<binary>"
+      },
+      "trr format": {
+        "type": "string",
+        "format": "binary",
+        "description": "Gromacs format. Specification at https://manual.gromacs.org/archive/5.0.4/online/trr.html",
+        "example": "<binary>"
+      }
+    },
+    "servers": [
+      {
+        "url": "{protocol}://mdposit.mddbr.eu/api/rest/{version}",
+        "description": "The main server including all simulations",
+        "variables": {
+          "protocol": {
+            "enum": [
+              "https",
+              "http"
+            ],
+            "default": "https"
+          },
+          "version": {
+            "enum": [
+              "current",
+              "v1"
+            ],
+            "default": "v1"
+          }
+        }
+      }
+    ]
+  },
+  "customOptions": {}
+};
+  url = options.swaggerUrl || url
+  var urls = options.swaggerUrls
+  var customOptions = options.customOptions
+  var spec1 = options.swaggerDoc
+  var swaggerOptions = {
+    spec: spec1,
+    url: url,
+    urls: urls,
+    dom_id: '#swagger-ui',
+    deepLinking: true,
+    presets: [
+      SwaggerUIBundle.presets.apis,
+      SwaggerUIStandalonePreset
+    ],
+    plugins: [
+      SwaggerUIBundle.plugins.DownloadUrl
+    ],
+    layout: "StandaloneLayout"
+  }
+  for (var attrname in customOptions) {
+    swaggerOptions[attrname] = customOptions[attrname];
+  }
+  var ui = SwaggerUIBundle(swaggerOptions)
+
+  if (customOptions.oauth) {
+    ui.initOAuth(customOptions.oauth)
+  }
+
+  if (customOptions.preauthorizeApiKey) {
+    const key = customOptions.preauthorizeApiKey.authDefinitionKey;
+    const value = customOptions.preauthorizeApiKey.apiKeyValue;
+    if (!!key && !!value) {
+      const pid = setInterval(() => {
+        const authorized = ui.preauthorizeApiKey(key, value);
+        if(!!authorized) clearInterval(pid);
+      }, 500)
+
+    }
+  }
+
+  if (customOptions.authAction) {
+    ui.authActions.authorize(customOptions.authAction)
+  }
+
+  window.ui = ui
+}

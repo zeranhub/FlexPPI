@@ -1,0 +1,64 @@
+{
+  "status": "PASS_small_sample_default_parser_column_projection_exact",
+  "created_utc": "2026-10-23T19:00:11.626335+00:00",
+  "reference_table_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\baselines\\cohort\\truth_residues.csv.gz",
+  "reference_table_sha256": "d7fc3a98ea3eba4c1e4c1edb702faf75936d2cb5339938fbebc165ddc7a7ed83",
+  "rows_read_per_parse": 2048,
+  "full_table_was_not_loaded": true,
+  "source_columns_count": 14,
+  "projected_columns": [
+    "sample_id",
+    "residue_index",
+    "amino_acid",
+    "chain",
+    "author_residue_id",
+    "target_rmsf",
+    "valid_rmsf"
+  ],
+  "sample_ids_in_small_sample": [
+    "16pk_A",
+    "1a62_A",
+    "1ab1_A",
+    "1af7_A",
+    "1ah7_A",
+    "1ail_A",
+    "1aol_A",
+    "1b0n_A",
+    "1b25_D"
+  ],
+  "comparisons": {
+    "sample_id": {
+      "same_dtype": true,
+      "strict_values_and_index_equal": true
+    },
+    "residue_index": {
+      "same_dtype": true,
+      "strict_values_and_index_equal": true
+    },
+    "amino_acid": {
+      "same_dtype": true,
+      "strict_values_and_index_equal": true
+    },
+    "chain": {
+      "same_dtype": true,
+      "strict_values_and_index_equal": true
+    },
+    "author_residue_id": {
+      "same_dtype": true,
+      "strict_values_and_index_equal": true
+    },
+    "target_rmsf": {
+      "same_dtype": true,
+      "strict_values_and_index_equal": true
+    },
+    "valid_rmsf": {
+      "same_dtype": true,
+      "strict_values_and_index_equal": true
+    }
+  },
+  "full_default_vs_projected_default_DataFrame_equals": true,
+  "float_precision_argument": "not set in either reader; original pandas default preserved",
+  "entrypoint_sha256": "757f79cd702ad4b3f54935ebd985b5ebe84aba559f803f937088fded81eb6572",
+  "no_R_executed": true,
+  "limitation": "Only first2048 rows were compared, not full-table double loading or scientific model equality."
+}

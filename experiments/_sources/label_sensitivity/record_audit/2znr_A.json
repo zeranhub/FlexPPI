@@ -1,0 +1,77 @@
+{
+  "sample_id": "2znr_A",
+  "dataset": "atlas",
+  "fold": 2,
+  "plan_sha256": "fe7c01b66ae16f4101e28c13fdb93246f054acc7d6f26ac758caf8aec9995ffd",
+  "status": "complete",
+  "replica_audits": [
+    {
+      "mapping": [
+        {
+          "canonical_chain": "_",
+          "replica_chain": "_",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "frames": 501,
+      "original_frames": 1001,
+      "chi_residues": 160,
+      "chi_bond_instances_gt5A": 0,
+      "residue_coverage": 1.0,
+      "replica_index": 1
+    },
+    {
+      "mapping": [
+        {
+          "canonical_chain": "_",
+          "replica_chain": "_",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "frames": 501,
+      "original_frames": 1001,
+      "chi_residues": 160,
+      "chi_bond_instances_gt5A": 0,
+      "residue_coverage": 1.0,
+      "replica_index": 2
+    },
+    {
+      "mapping": [
+        {
+          "canonical_chain": "_",
+          "replica_chain": "_",
+          "identity": 1,
+          "coverage": 1.0
+        }
+      ],
+      "frames": 501,
+      "original_frames": 1001,
+      "chi_residues": 160,
+      "chi_bond_instances_gt5A": 0,
+      "residue_coverage": 1.0,
+      "replica_index": 3
+    }
+  ],
+  "labels": {
+    "uniform_rep1": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\label_sensitivity\\labels\\uniform_rep1\\2znr_A.npz",
+      "sha256": "b5bb753756ed1adcf591e13ebc0190d80690255457510a480d883c7ed2f77296",
+      "valid_counts": [
+        178,
+        160
+      ]
+    },
+    "uniform_available_replicas": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\label_sensitivity\\labels\\uniform_available_replicas\\2znr_A.npz",
+      "sha256": "d76bf3d23f96d1e45e49011f910fa4998433dcd641a6f11b115bfdc5a398801e",
+      "valid_counts": [
+        178,
+        160
+      ]
+    }
+  },
+  "replicas": 3,
+  "elapsed_seconds": 2.8120000001508743
+}

@@ -1,0 +1,11 @@
+benchmark_group,dataset,source_group,records,valid_RMSF_positions,within_group_fraction
+protein,atlas,atlas_absolute,1929,433207,0.8756241488878802
+protein,dynarepo,antigen_single,212,47097,0.09623241034952337
+protein,dynarepo,dynabench_complex,1,444,0.00045392646391284613
+protein,dynarepo,pdbbind_complex,7,1946,0.0031774852473899226
+protein,dynarepo,test53_complex,2,1152,0.0009078529278256923
+protein,dynarepo,test53_single,52,17118,0.023604176123467997
+protein_complex,dynarepo,dynabench_complex,203,101907,0.23604651162790696
+protein_complex,dynarepo,pdbbind_complex,377,139780,0.4383720930232558
+protein_complex,dynarepo,test53_complex,36,19002,0.04186046511627907
+protein_complex,itrace,itrace_complex,244,199668,0.2837209302325581

@@ -1,0 +1,33 @@
+{
+  "definitions": {
+    "model_output": "One frozen per-residue joint Hchi estimate. There are no model-predicted chi1/2/3/4 angle entropies, widths, or free-energy curves.",
+    "primary_MD_metric": "Per-angle 5-degree-bin Shannon entropy, natural logarithm, averaged over four origins 0,1.25,2.5,3.75 degrees.",
+    "secondary_MD_metric": "Per-angle total length of all 5-degree boxes with Fstar=-ln(p/pmax)<=1, averaged over the same four origins; may be disconnected.",
+    "time_window": "Existing 0-100ns trajectory, 501 frames at 200ps intervals.",
+    "joint_reference": "Original joint 120-degree-state Hchi, mean of five 1000-frame windows. A separate observation definition from the per-angle 501-frame fine-bin metrics.",
+    "MD_reference_association": "A descriptive comparison using observed joint Hchi, not a predictor and not a ceiling for single-angle prediction accuracy.",
+    "angle_count_accuracy": "Ordinary accuracy of the original joint Hchi output, stratified by the residue number of defined chi angles k. It is not the accuracy of predicting the kth angle."
+  },
+  "handling": {
+    "positions": 66,
+    "defined_angles": 151,
+    "undefined_angle_slots": 113,
+    "defined_per_chi": {
+      "chi1": 66,
+      "chi2": 52,
+      "chi3": 23,
+      "chi4": 10
+    },
+    "Pro_residues": [
+      "P19",
+      "P37",
+      "P38"
+    ],
+    "Pro_joint_reference": "Original zero reference values retained; Pro angle observations remain valid and are included.",
+    "undefined_angles": "Not present in any per-chi correlation; retained as 113 missing slots in the 264-row source table. No zero imputation.",
+    "AA_centering": "Within each chi layer, subtract the arithmetic mean for the same amino-acid type separately from frozen joint Hchi and the MD single-angle metric, then compute Spearman over all defined positions in the layer.",
+    "singletons": "Retained in primary analysis. Both centered values are zero for a one-position amino-acid type. A separate repeated-AA-only sensitivity is provided; no selection by observed result.",
+    "constant_type_groups": "Retained as zero residuals/ties. A whole-layer correlation would be NaN if either centered variable were constant. Average ranks handle all ties.",
+    "no_inference_intervals": "No confidence intervals or p-values: one protein and small chi-layer samples, especially n=10 for chi4."
+  }
+}

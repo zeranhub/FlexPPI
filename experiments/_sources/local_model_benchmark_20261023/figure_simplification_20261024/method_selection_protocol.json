@@ -1,0 +1,55 @@
+{
+  "status": "prepared_awaiting_user_cohort_scope_no_render",
+  "selection_basis": "User-requested omission of Intra; two major released BackFlip versions, both under independent-chain inference; no score-based selection",
+  "raw_complete_entries": 14,
+  "display_methods": [
+    "Full",
+    "backflip-2.1 (chains)",
+    "backflip-1.0 (chains)",
+    "DynaProt-M",
+    "FastProtFlex",
+    "ANM",
+    "GNM",
+    "Static",
+    "AA"
+  ],
+  "display_omissions_only": [
+    "Intra",
+    "backflip-2.1 (assembly)",
+    "backflip-1.0 (assembly)",
+    "backflip-1.0-seq (assembly)",
+    "backflip-1.0-seq (chains)"
+  ],
+  "backflip_input_context": "independent_chain_predictions_reassembled_per_record",
+  "backflip_comparison_limitation": "Same chain context does not isolate architecture, training data or feature-set differences between released versions",
+  "ecdf_methods": [
+    "Full",
+    "backflip-2.1 (chains)",
+    "backflip-1.0 (chains)",
+    "DynaProt-M",
+    "FastProtFlex",
+    "ANM"
+  ],
+  "ecdf_named_line_styles": {
+    "Full": "solid",
+    "backflip-2.1 (chains)": "dashed",
+    "backflip-1.0 (chains)": "solid",
+    "DynaProt-M": "dotted",
+    "FastProtFlex": "dash-dot",
+    "ANM": "dash-dot-dot"
+  },
+  "relative_outputs_without_angstrom_mae": ["FastProtFlex", "ANM", "GNM"],
+  "two_group_expected_display_coverage_cells": 18,
+  "two_group_expected_display_numeric_cells": 48,
+  "two_group_expected_display_relative_annotations": 6,
+  "main_layout": {"rows": 2, "columns": 3, "methods_per_axis": 9, "candidate_canvas_mm": [183, 116]},
+  "group_scope": "pending_user_clarification",
+  "scope_options": {
+    "rename_only": {"protein_records": 2203, "protein_complex_records": 860, "total_records": 3063, "reaggregation_required": false},
+    "exclude_single_chain_proteins": {"protein_records": 10, "protein_complex_records": 860, "total_records": 870, "reaggregation_required": true, "residue_and_family_counts": "derive from an independently frozen selected membership; do not reuse full-cohort group statistics"}
+  },
+  "source_integrity_policy": "Validate all14 original full-cohort entries before applying the explicit display/record view. Preserve original frozen membership, raw scores and complete supplements.",
+  "performance_values_consulted_for_selection": false,
+  "rendered": false,
+  "models_executed": false
+}

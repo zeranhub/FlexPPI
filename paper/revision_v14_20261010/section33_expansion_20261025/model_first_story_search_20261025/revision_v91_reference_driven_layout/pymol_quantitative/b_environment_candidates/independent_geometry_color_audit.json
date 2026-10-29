@@ -1,0 +1,42 @@
+{
+  "same_source_quantitative_asset": true,
+  "same_crop_box": [
+    519,
+    357,
+    2157,
+    1198
+  ],
+  "candidates": {
+    "local_surface": {
+      "all_object_coordinates_exactly_equal_to_source": {
+        "observed": true,
+        "cam": true,
+        "peptide": true
+      },
+      "maximum_coordinate_change_A": 0.0,
+      "maximum_sidechain_atom_RGB_change": 0.0,
+      "all_25_native_CA_present": true,
+      "same_exact_camera": true,
+      "same_full_image_2600x1600_and_focus_1638x841": true,
+      "no_model_or_MD": true,
+      "PSE_sha256": "fb91487ea20cd04a8e3bcac1848b966bfdc51cc14e262d255f054ab2a6e9cfc5",
+      "PNG_sha256": "31e71c7c8d44f4713121d324c1084adb0a977412174ece68c3deed3d6f6168c7"
+    },
+    "contact_sticks": {
+      "all_object_coordinates_exactly_equal_to_source": {
+        "observed": true,
+        "cam": true,
+        "peptide": true
+      },
+      "maximum_coordinate_change_A": 0.0,
+      "maximum_sidechain_atom_RGB_change": 0.0,
+      "all_25_native_CA_present": true,
+      "same_exact_camera": true,
+      "same_full_image_2600x1600_and_focus_1638x841": true,
+      "no_model_or_MD": true,
+      "PSE_sha256": "e78d4b8e6b9ca0d8c19c90dbc00618842b7590cc7e45eba8d55602b20c58a9bc",
+      "PNG_sha256": "1c5775fa6b66342bf5b7f3bfe2d8d91a881a98cb57b95ebbcef393074a74e047"
+    }
+  },
+  "contact_scope": "Distances use N297/N308 sidechain heavy atoms only, not all atoms of each residue. The full-residue CSV 5A list is a separate definition and includes F19 for N308."
+}

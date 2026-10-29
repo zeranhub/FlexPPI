@@ -1,0 +1,41 @@
+{
+  "created": "2026-10-25",
+  "case": "CaM–CaMKI peptide (1MXE / A001K)",
+  "main_model": "core_corrected_pipeline full fold_4 epoch_040.pt",
+  "main_checkpoint": "E:/Project/FlexPPI/experiments/core_corrected_pipeline/trained_checkpoints/full/fold_4/epoch_040.pt",
+  "main_checkpoint_sha256": "1cb429fc847dc436e542fe7926cbc4ac266a74cd705c8228415e25981a8fef74",
+  "family_model": "family_folds OOF fold_1 (no local checkpoint retained)",
+  "oof_full": "E:/Project/FlexPPI/experiments/core_corrected_pipeline/neural_exports/evaluation/full/A001K.npz",
+  "oof_intrachain": "E:/Project/FlexPPI/experiments/core_corrected_pipeline/neural_exports/evaluation/intrachain/A001K.npz",
+  "family_oof": "E:/Project/FlexPPI/experiments/_sources/family_folds/evaluation/oof_per_residue.csv.gz",
+  "structure": "E:/Project/FlexPPI/experiments/_sources/baselines/cohort/structures/record_aba5e1f3db118b0aba8895de.pdb",
+  "md": "DynaRepo, 310 K, 100 ns window, 5001 frames, target chains A+B",
+  "input_numbering": "chain A 1-144; chain B 145-169 (CaMKI 294-318 in the original PDB/literature)",
+  "ablation": "same Full checkpoint; partner chain removed or translated 100 A; input-occlusion, not retraining",
+  "scripts": [
+    "reproduce_case.py",
+    "render_structure_pymol.py",
+    "crop_structure.py",
+    "make_case_figure_v4.py",
+    "make_case_figure_v3.py",
+    "qa_checks.py"
+  ],
+  "structure_render": "PyMOL 3.0.0 (conda-forge env) with ray_trace_mode=1; see render_structure_pymol.py; 3Dmol fallback kept in render_structure.py",
+  "figure": "fig_cam_camki_case_v4.png/pdf/svg (a free coil -> CaM -> bound PyMOL; b free prediction vs bound MD/Full/Intra; c interface MAE; d free vs bound mean bars; e partner-removal controls)",
+  "free_state_caveat": "free-state curve/bar is a same-checkpoint input-occlusion prediction (CaM removed); no free-state MD reference; 1MXE paper provides qualitative disorder only",
+  "data_tables": [
+    "cam_camki_per_residue.csv",
+    "case_metrics.csv",
+    "peptide_ablation_summary.csv",
+    "partner_removal_controls.csv"
+  ],
+  "reproduction": "reproduction_check.json: 169 rows, max abs diff 2.5e-6 (float32)",
+  "caveats": [
+    "25-residue peptide; partner-removal collapse also occurs for other short chains",
+    "partner removal is an input-occlusion test, not a retrained causal ablation",
+    "Full and Intra are separately trained models",
+    "chi entropy is better only at the interface, not overall or outside",
+    "MD labels are DynaRepo 100 ns windows (3 declared replicates, 1 local trajectory); no experimental free-state measurement",
+    "case selected from existing OOF predictions; exploratory, not an unbiased performance estimate"
+  ]
+}

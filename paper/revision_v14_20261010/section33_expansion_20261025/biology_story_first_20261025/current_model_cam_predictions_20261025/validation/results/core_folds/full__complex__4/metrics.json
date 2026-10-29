@@ -1,0 +1,59 @@
+{
+  "variant": "full",
+  "input_mode": "complex",
+  "fold": "4",
+  "groups_are_not_independent_replicates": true,
+  "nNOS_to_smMLCK_methyl_mean_all_chi_residues": {
+    "n_residues": 28,
+    "spearman_inverse_order": -0.0656904344457417,
+    "pearson_inverse_order": -0.30863357256952895,
+    "n_nonzero_directions": 28,
+    "n_concordant_directions": 16,
+    "direction_fraction": 0.5714285714285714,
+    "n_predicted_ties": 0,
+    "n_experimental_ties": 0,
+    "spearman_residue_bootstrap_95_percentile_interval": null,
+    "direction_residue_bootstrap_95_percentile_interval": null
+  },
+  "nNOS_to_smMLCK_methyl_mean_probe_direction_unambiguous": {
+    "n_residues": 27,
+    "spearman_inverse_order": -0.08304075810380424,
+    "pearson_inverse_order": -0.30850469383935475,
+    "n_nonzero_directions": 27,
+    "n_concordant_directions": 16,
+    "direction_fraction": 0.5925925925925926,
+    "n_predicted_ties": 0,
+    "n_experimental_ties": 0,
+    "spearman_residue_bootstrap_95_percentile_interval": null,
+    "direction_residue_bootstrap_95_percentile_interval": null
+  },
+  "nNOS_to_smMLCK_opposite_probe_direction_residues": [
+    142
+  ],
+  "nNOS_to_smMLCK_NH_against_RMSF_exploratory": {
+    "n_residues": 85,
+    "spearman_inverse_order": 0.2670153875613399,
+    "pearson_inverse_order": 0.3861747587521594,
+    "n_nonzero_directions": 77,
+    "n_concordant_directions": 55,
+    "direction_fraction": 0.7142857142857143,
+    "n_predicted_ties": 0,
+    "n_experimental_ties": 8,
+    "spearman_residue_bootstrap_95_percentile_interval": null,
+    "direction_residue_bootstrap_95_percentile_interval": null
+  },
+  "four_state_methyl_residue_centered": {
+    "n_residues": 28,
+    "n_state_values": 112,
+    "pooled_residue_centered_spearman_descriptive": -0.03522334384795596,
+    "pooled_residue_centered_pearson_descriptive": -0.09895495727796692,
+    "inference_limit": "Four partner values of one residue are dependent; no state-level p value is calculated. Residue centering removes constant per-residue and amino-acid baselines."
+  },
+  "four_state_NH_residue_centered_exploratory": {
+    "n_residues": 85,
+    "n_state_values": 340,
+    "pooled_residue_centered_spearman_descriptive": 0.0563613253606378,
+    "pooled_residue_centered_pearson_descriptive": 0.07055790708242958,
+    "inference_limit": "Four partner values of one residue are dependent; no state-level p value is calculated. Residue centering removes constant per-residue and amino-acid baselines."
+  }
+}

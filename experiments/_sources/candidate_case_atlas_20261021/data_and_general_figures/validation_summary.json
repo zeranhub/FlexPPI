@@ -1,0 +1,320 @@
+{
+  "status": "passed",
+  "case_series": 26,
+  "complete_chain_contrasts": 43,
+  "unique_structures": 85,
+  "full_alignment_rows": 35291,
+  "original_numeric_values_rechecked": 554696,
+  "all_state_residues_accounted_once": true,
+  "no_SequenceMatcher": true,
+  "gap_rows_retained": true,
+  "CDR_reference_projection_checked": true,
+  "figures_created_and_visually_reviewed": 13,
+  "all_fonts_at_least_9pt": true,
+  "new_training": 0,
+  "new_inference": 0,
+  "new_MD": 0,
+  "pair_checks": [
+    {
+      "case_id": "C05",
+      "a": "7l1d",
+      "b": "7rrg",
+      "rows": 891,
+      "status": "passed"
+    },
+    {
+      "case_id": "C06",
+      "a": "7pdw",
+      "b": "7pbc",
+      "rows": 826,
+      "status": "passed"
+    },
+    {
+      "case_id": "C07",
+      "a": "1lp9",
+      "b": "2j8u",
+      "rows": 815,
+      "status": "passed"
+    },
+    {
+      "case_id": "C07",
+      "a": "1lp9",
+      "b": "2jcc",
+      "rows": 815,
+      "status": "passed"
+    },
+    {
+      "case_id": "C07",
+      "a": "1lp9",
+      "b": "2uwe",
+      "rows": 815,
+      "status": "passed"
+    },
+    {
+      "case_id": "C08",
+      "a": "2bnr",
+      "b": "2bnq",
+      "rows": 829,
+      "status": "passed"
+    },
+    {
+      "case_id": "C09",
+      "a": "8yiv",
+      "b": "8yj2",
+      "rows": 840,
+      "status": "passed"
+    },
+    {
+      "case_id": "C10",
+      "a": "8rym",
+      "b": "8ryn",
+      "rows": 828,
+      "status": "passed"
+    },
+    {
+      "case_id": "C11",
+      "a": "8wte",
+      "b": "8wul",
+      "rows": 807,
+      "status": "passed"
+    },
+    {
+      "case_id": "C12",
+      "a": "8rym",
+      "b": "8ryo",
+      "rows": 828,
+      "status": "passed"
+    },
+    {
+      "case_id": "C13",
+      "a": "4qok",
+      "b": "6eqa",
+      "rows": 824,
+      "status": "passed"
+    },
+    {
+      "case_id": "C14",
+      "a": "3qdg",
+      "b": "3qdj",
+      "rows": 826,
+      "status": "passed"
+    },
+    {
+      "case_id": "C14",
+      "a": "3qdm",
+      "b": "3qeq",
+      "rows": 823,
+      "status": "passed"
+    },
+    {
+      "case_id": "C15",
+      "a": "4qok",
+      "b": "7q99",
+      "rows": 829,
+      "status": "passed"
+    },
+    {
+      "case_id": "C15",
+      "a": "4qok",
+      "b": "7q9a",
+      "rows": 829,
+      "status": "passed"
+    },
+    {
+      "case_id": "C15",
+      "a": "7q99",
+      "b": "7q9a",
+      "rows": 829,
+      "status": "passed"
+    },
+    {
+      "case_id": "C16",
+      "a": "2f54",
+      "b": "2f53",
+      "rows": 834,
+      "status": "passed"
+    },
+    {
+      "case_id": "C17",
+      "a": "9nmu",
+      "b": "9nmx",
+      "rows": 408,
+      "status": "passed"
+    },
+    {
+      "case_id": "C18",
+      "a": "2vlk",
+      "b": "5isz",
+      "rows": 831,
+      "status": "passed"
+    },
+    {
+      "case_id": "C18",
+      "a": "2vlr",
+      "b": "5isz",
+      "rows": 831,
+      "status": "passed"
+    },
+    {
+      "case_id": "C19",
+      "a": "6vqo",
+      "b": "7rm4",
+      "rows": 846,
+      "status": "passed"
+    },
+    {
+      "case_id": "C19",
+      "a": "6vrm",
+      "b": "6vrn",
+      "rows": 847,
+      "status": "passed"
+    },
+    {
+      "case_id": "C20",
+      "a": "5d2l",
+      "b": "5d2n",
+      "rows": 889,
+      "status": "passed"
+    },
+    {
+      "case_id": "C21",
+      "a": "1ao7",
+      "b": "1qrn",
+      "rows": 827,
+      "status": "passed"
+    },
+    {
+      "case_id": "C21",
+      "a": "1ao7",
+      "b": "1qse",
+      "rows": 827,
+      "status": "passed"
+    },
+    {
+      "case_id": "C21",
+      "a": "1ao7",
+      "b": "1qsf",
+      "rows": 827,
+      "status": "passed"
+    },
+    {
+      "case_id": "C21",
+      "a": "1ao7",
+      "b": "3h9s",
+      "rows": 829,
+      "status": "passed"
+    },
+    {
+      "case_id": "C21",
+      "a": "1ao7",
+      "b": "3pwp",
+      "rows": 829,
+      "status": "passed"
+    },
+    {
+      "case_id": "C22",
+      "a": "8rlt",
+      "b": "8rlu",
+      "rows": 827,
+      "status": "passed"
+    },
+    {
+      "case_id": "C22",
+      "a": "8rlt",
+      "b": "8rlv",
+      "rows": 827,
+      "status": "passed"
+    },
+    {
+      "case_id": "C22",
+      "a": "8rlu",
+      "b": "8rlv",
+      "rows": 827,
+      "status": "passed"
+    },
+    {
+      "case_id": "C23",
+      "a": "6vma",
+      "b": "6vm9",
+      "rows": 827,
+      "status": "passed"
+    },
+    {
+      "case_id": "C23",
+      "a": "6vma",
+      "b": "6vmc",
+      "rows": 831,
+      "status": "passed"
+    },
+    {
+      "case_id": "C24",
+      "a": "6bj3",
+      "b": "6bj8",
+      "rows": 830,
+      "status": "passed"
+    },
+    {
+      "case_id": "C24",
+      "a": "6bj2",
+      "b": "6bj3",
+      "rows": 837,
+      "status": "passed"
+    },
+    {
+      "case_id": "C25",
+      "a": "5brz",
+      "b": "5bs0",
+      "rows": 822,
+      "status": "passed"
+    },
+    {
+      "case_id": "C26",
+      "a": "5nme",
+      "b": "5nmf",
+      "rows": 828,
+      "status": "passed"
+    },
+    {
+      "case_id": "C26",
+      "a": "5nme",
+      "b": "5nmg",
+      "rows": 828,
+      "status": "passed"
+    },
+    {
+      "case_id": "C27",
+      "a": "3uts",
+      "b": "5c0a",
+      "rows": 833,
+      "status": "passed"
+    },
+    {
+      "case_id": "C27",
+      "a": "3uts",
+      "b": "5hyj",
+      "rows": 833,
+      "status": "passed"
+    },
+    {
+      "case_id": "C28",
+      "a": "9rup",
+      "b": "9rxm",
+      "rows": 819,
+      "status": "passed"
+    },
+    {
+      "case_id": "C29",
+      "a": "5til",
+      "b": "6g9q",
+      "rows": 810,
+      "status": "passed"
+    },
+    {
+      "case_id": "C30",
+      "a": "3qdg",
+      "b": "4jff",
+      "rows": 833,
+      "status": "passed"
+    }
+  ]
+}

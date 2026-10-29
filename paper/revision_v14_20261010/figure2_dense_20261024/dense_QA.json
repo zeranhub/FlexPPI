@@ -1,0 +1,156 @@
+{
+  "status": "QA_FINAL_READY",
+  "width_mm": 183.0,
+  "height_mm": 167.0,
+  "all_36756_AP_points_preserved": true,
+  "min_record_AP": 0.06625080239562134,
+  "b_legend_bbox_data_coordinates": [
+    [
+      3.7922169014084517,
+      0.09287095238095233
+    ],
+    [
+      9.207783098591548,
+      0.28312904761904756
+    ]
+  ],
+  "b_y_axis_limits": [
+    -0.02,
+    1.02
+  ],
+  "b_y_ticks": [
+    0,
+    0.5,
+    1
+  ],
+  "b_legend_no_scatter_or_violin_overlap": true,
+  "density_all_data": {
+    "rmsf": {
+      "limits": [
+        -5e-324,
+        33.186664581298835
+      ],
+      "scale": "symlog, linthresh=1",
+      "n_positions": 961321,
+      "mass_sum": 0.9999999999999989,
+      "color": "#2166AC",
+      "x_axis": "bottom",
+      "y_axis": "left"
+    },
+    "chi_entropy": {
+      "limits": [
+        -5e-324,
+        4.057138919830323
+      ],
+      "scale": "linear",
+      "n_positions": 824988,
+      "mass_sum": 1.0000000000000036,
+      "color": "#9B5C1A",
+      "x_axis": "top",
+      "y_axis": "right"
+    },
+    "stroke_intersections": {
+      "method": "equal-color mixture within exact buffered stroke overlap",
+      "output_linewidth_pt": 1.45,
+      "overlap_regions": 2,
+      "overlap_area_mm2": 1.0633727982870775,
+      "mixture_rgb": [
+        0.3686274509803921,
+        0.3803921568627451,
+        0.38823529411764707
+      ],
+      "trend_vertices_unchanged": true,
+      "no_line_gaps": true
+    }
+  },
+  "external_mean_points_preserved": 14014,
+  "internal_within_type_vertices_preserved": 408,
+  "axes_sizes_mm": {
+    "a": [
+      42,
+      42
+    ],
+    "b": [
+      71,
+      42
+    ],
+    "c": [
+      42,
+      34
+    ],
+    "d_PR": [
+      42,
+      34
+    ],
+    "d_ROC": [
+      42,
+      34
+    ],
+    "e_native_bar_height": 29.5
+  },
+  "data_recomputed": false,
+  "statistics_changed": false,
+  "font_sizes_scaled": false,
+  "raster_images_pdf": 0,
+  "raster_images_svg": 0,
+  "all_text_inside_canvas": true,
+  "labels": {
+    "a": {
+      "x_mm": 4.000000111262003,
+      "baseline_mm": 5.000007035997179,
+      "font": "Arial-BoldMT",
+      "size": 11.0
+    },
+    "b": {
+      "x_mm": 94.00000093248154,
+      "baseline_mm": 5.000007035997179,
+      "font": "Arial-BoldMT",
+      "size": 11.0
+    },
+    "c": {
+      "x_mm": 4.000000111262003,
+      "baseline_mm": 67.50000347561306,
+      "font": "Arial-BoldMT",
+      "size": 11.0
+    },
+    "d": {
+      "x_mm": 64.99999995761446,
+      "baseline_mm": 67.50000347561306,
+      "font": "Arial-BoldMT",
+      "size": 11.0
+    },
+    "e": {
+      "x_mm": 4.000000111262003,
+      "baseline_mm": 120.69999694824217,
+      "font": "Arial-BoldMT",
+      "size": 11.0
+    }
+  },
+  "actual_row_content_bounds_mm": [
+    [
+      1.4842235061857434,
+      60.92479650709363
+    ],
+    [
+      63.984218936496305,
+      114.66571841769748
+    ],
+    [
+      117.18421240912542,
+      164.40833248562282
+    ]
+  ],
+  "actual_row_gaps_mm": [
+    3.059422429402673,
+    2.5184939914279454
+  ],
+  "bottom_margin_mm": 2.5916675143771783,
+  "minimum_native_font_pt": 6.300000190734863,
+  "all_label_font_pt": 11,
+  "native_bottom_bar_pixels_identical": true,
+  "all_reproduction_inputs_hash_verified": true,
+  "independent_visual_review": "PASS: independent reviewer inspected whole final dense figure; b legend is in genuine Hchi blank area, ROC legend below data, all axis ticks and method labels intact.",
+  "final_png_sha256": "3695952ad99dca46f341ab4dc0f80871a4f3f1eaf24b5df9be9b1f182063f9e6",
+  "final_image_last_write_time_Asia_Shanghai": "2026-10-24 17:32:21 +08:00",
+  "image_frozen": true
+}

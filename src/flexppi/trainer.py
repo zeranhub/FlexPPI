@@ -13,7 +13,9 @@ from torch.utils.data import DataLoader, Dataset, Subset, WeightedRandomSampler
 
 from flexppi.config import ExperimentConfig
 from flexppi.data.dataset import PairDataset, StateDataset, collate_pairs, collate_states
+from flexppi.data.records import load_state_records
 from flexppi.losses import paired_loss, state_loss
+from flexppi.model.information_ablation import build_information_ablation
 from flexppi.model.network import FlexPPI
 
 
@@ -200,6 +202,25 @@ def _training_sampler(
     )
 
 
+def _rng_state() -> Dict[str, Any]:
+    state: Dict[str, Any] = {
+        "random": random.getstate(),
+        "numpy": np.random.get_state(),
+        "torch": torch.get_rng_state(),
+    }
+    if torch.cuda.is_available():
+        state["cuda"] = torch.cuda.get_rng_state_all()
+    return state
+
+
+def _restore_rng_state(state: Dict[str, Any]) -> None:
+    random.setstate(state["random"])
+    np.random.set_state(state["numpy"])
+    torch.set_rng_state(state["torch"])
+    if "cuda" in state and torch.cuda.is_available():
+        torch.cuda.set_rng_state_all(state["cuda"])
+
+
 @torch.no_grad()
 def _validate(
     config: ExperimentConfig,
@@ -217,6 +238,54 @@ def _validate(
     return float(np.mean(losses))
 
 
+def _check_no_silent_drops(config: ExperimentConfig, dataset: Dataset) -> None:
+    """Fail loudly instead of quietly discarding manifest records."""
+
+    if config.stage != "pretrain":
+        return
+    expected = 0
+    if isinstance(config.data.state_manifest, str):
+        expected = len(load_state_records(config.data.state_manifest))
+    else:
+        for path in config.data.state_manifest or []:
+            expected += len(load_state_records(path))
+    if len(dataset) != expected:
+        kept = {record.sample_id for record in dataset.records}
+        wanted = set()
+        if isinstance(config.data.state_manifest, str):
+            wanted = {record.sample_id for record in load_state_records(config.data.state_manifest)}
+        else:
+            for path in config.data.state_manifest or []:
+                wanted.update(record.sample_id for record in load_state_records(path))
+        dropped = sorted(wanted - kept)
+        raise RuntimeError(
+            "StateDataset kept {} of {} manifest records; dropped: {}".format(
+                len(dataset), expected, ", ".join(dropped[:20])
+            )
+        )
+    missing_files = []
+    for record in dataset.records:
+        if not Path(record.structure_path).exists():
+            missing_files.append("structure:{}".format(record.sample_id))
+        if record.label_path and not Path(record.label_path).exists():
+            missing_files.append("label:{}".format(record.sample_id))
+    if missing_files:
+        raise RuntimeError(
+            "Manifest records reference missing files: {}".format(
+                ", ".join(missing_files[:20])
+            )
+        )
+
+
+def _latest_epoch_checkpoint(output_dir: Path) -> Optional[Tuple[int, Path]]:
+    checkpoints = sorted(
+        (int(name.name.split("_")[1].split(".")[0]), name)
+        for name in output_dir.glob("epoch_*.pt")
+        if name.name.split("_")[1].split(".")[0].isdigit()
+    )
+    return checkpoints[-1] if checkpoints else None
+
+
 def train(config: ExperimentConfig) -> Dict[str, Any]:
     seed_everything(config.seed)
     device = resolve_device(config.device)
@@ -226,32 +295,14 @@ def train(config: ExperimentConfig) -> Dict[str, Any]:
             "No labelled samples survived filtering. For DynaRepo, compute labels "
             "and rerun index-dynarepo first."
         )
+    _check_no_silent_drops(config, dataset)
     if config.stage == "pretrain":
         train_set, val_set = _fixed_state_validation_sets(config, dataset)
     else:
         train_set, val_set = group_split(dataset, config.train.val_fraction, config.seed)
-    train_sampler = _training_sampler(
-        train_set,
-        config.train.sampling_strategy,
-        config.train.samples_per_epoch,
-        config.seed,
-    )
-    train_loader = DataLoader(
-        train_set,
-        batch_size=config.data.batch_size,
-        shuffle=train_sampler is None,
-        sampler=train_sampler,
-        num_workers=config.data.num_workers,
-        collate_fn=collate,
-    )
-    val_loader = DataLoader(
-        val_set,
-        batch_size=config.data.batch_size,
-        shuffle=False,
-        num_workers=config.data.num_workers,
-        collate_fn=collate,
-    )
-    model = FlexPPI(config.model).to(device)
+    model = build_information_ablation(
+        config.model, config.model.information_ablation
+    ).to(device)
     if config.init_checkpoint:
         checkpoint = torch.load(config.init_checkpoint, map_location="cpu", weights_only=False)
         missing, unexpected = model.load_state_dict(checkpoint["model"], strict=False)
@@ -267,13 +318,55 @@ def train(config: ExperimentConfig) -> Dict[str, Any]:
     )
     output_dir = Path(config.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
+
+    start_epoch = 1
+    global_step = 0
+    best_value = float("inf")
+    history: List[Dict[str, Any]] = []
+    if config.train.resume:
+        latest = _latest_epoch_checkpoint(output_dir)
+        if latest is not None:
+            epoch, checkpoint_path = latest
+            checkpoint = torch.load(
+                str(checkpoint_path), map_location="cpu", weights_only=False
+            )
+            if checkpoint.get("epoch", 0) >= config.train.epochs:
+                raise RuntimeError(
+                    "Training already reached {} epochs in {}; refusing to resume a "
+                    "finished run. Set train.resume: false or choose another output_dir."
+                    .format(config.train.epochs, output_dir)
+                )
+            model.load_state_dict(checkpoint["model"])
+            if "optimizer" in checkpoint:
+                optimizer.load_state_dict(checkpoint["optimizer"])
+            start_epoch = int(checkpoint.get("epoch", epoch)) + 1
+            global_step = int(checkpoint.get("global_step", 0))
+            best_value = float(checkpoint.get("best_value", float("inf")))
+            history = list(checkpoint.get("history", []))
+            if "rng" in checkpoint:
+                _restore_rng_state(checkpoint["rng"])
+            print(
+                "Resumed {} from epoch={} step={} best_loss={} (history entries: {})".format(
+                    output_dir, start_epoch - 1, global_step, best_value, len(history)
+                ))
     with (output_dir / "resolved_config.json").open("w", encoding="utf-8") as handle:
         json.dump(config.to_dict(), handle, indent=2, ensure_ascii=False)
 
-    best_value = float("inf")
-    history = []
-    global_step = 0
-    for epoch in range(1, config.train.epochs + 1):
+    for epoch in range(start_epoch, config.train.epochs + 1):
+        train_sampler = _training_sampler(
+            train_set,
+            config.train.sampling_strategy,
+            config.train.samples_per_epoch,
+            config.seed + epoch,
+        )
+        train_loader = DataLoader(
+            train_set,
+            batch_size=config.data.batch_size,
+            shuffle=train_sampler is None,
+            sampler=train_sampler,
+            num_workers=config.data.num_workers,
+            collate_fn=collate,
+        )
         model.train()
         epoch_losses = []
         for batch in train_loader:
@@ -292,6 +385,13 @@ def train(config: ExperimentConfig) -> Dict[str, Any]:
                 }
                 print("epoch={} step={} {}".format(epoch, global_step, printable))
         train_value = float(np.mean(epoch_losses))
+        val_loader = DataLoader(
+            val_set,
+            batch_size=config.data.batch_size,
+            shuffle=False,
+            num_workers=config.data.num_workers,
+            collate_fn=collate,
+        )
         val_value = _validate(config, model, val_loader, device)
         selection_value = val_value if np.isfinite(val_value) else train_value
         row = {"epoch": epoch, "train_loss": train_value, "val_loss": val_value}
@@ -299,19 +399,24 @@ def train(config: ExperimentConfig) -> Dict[str, Any]:
         print(row)
         checkpoint = {
             "epoch": epoch,
+            "global_step": global_step,
             "model": model.state_dict(),
             "optimizer": optimizer.state_dict(),
             "config": config.to_dict(),
             "train_loss": train_value,
             "val_loss": val_value,
+            "best_value": best_value,
+            "history": history,
+            "rng": _rng_state(),
         }
         if epoch % config.train.checkpoint_every == 0:
             torch.save(checkpoint, output_dir / "epoch_{:03d}.pt".format(epoch))
         if selection_value < best_value:
             best_value = selection_value
+            checkpoint["best_value"] = best_value
             torch.save(checkpoint, output_dir / "best.pt")
-    with (output_dir / "history.json").open("w", encoding="utf-8") as handle:
-        json.dump(history, handle, indent=2)
+        with (output_dir / "history.json").open("w", encoding="utf-8") as handle:
+            json.dump(history, handle, indent=2)
     return {
         "device": str(device),
         "train_samples": len(train_set),

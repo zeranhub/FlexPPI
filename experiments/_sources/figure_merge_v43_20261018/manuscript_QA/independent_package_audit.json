@@ -1,0 +1,94 @@
+{
+  "status": "pass",
+  "document_sha256": "5d32c2af90a6aa8268ac0ef50ba46480370fc798bcc890d91fa71123dfb51c5a",
+  "document": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v43_20261018_中文修订_能力与构象合并图_三线表.docx",
+  "source_document": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v42_20261017_中文修订_蛋白背景与实例动机_三线表.docx",
+  "checks": {
+    "source_v42_SHA_matches": true,
+    "10_native_tables_identical": true,
+    "36_native_OMML_equations_identical": true,
+    "28_references_identical": true,
+    "all_original_comment_parts_identical": true,
+    "all_comment_and_bookmark_anchors_identical": true,
+    "four_retained_media_files_byte_identical": true,
+    "exactly_six_active_images_in_correct_order": true,
+    "old_2_3_4_7_images_not_active": true,
+    "outside_Results_protected_content_identical": true,
+    "five_main_captions_numbered_in_order": true,
+    "new_results_heading_sequence_correct": true,
+    "no_legacy_Fig6_or_Fig7_text_reference": true,
+    "no_legacy_section36_heading": true,
+    "Fig2_no_removed_ranking_distribution_caption": true,
+    "Fig5_caption_has_83_records_and33142_positions": true,
+    "only_expected_package_part_types_changed": true
+  },
+  "active_images": [
+    {
+      "body_index": 13,
+      "rid": "rId9",
+      "media": "word/media/image1.png",
+      "sha256": "976bdb77088f0425e630acf7b531a34e20ecf5fa9214ee6411c3eefc179e1d32"
+    },
+    {
+      "body_index": 73,
+      "rid": "rId10",
+      "media": "word/media/image2.png",
+      "sha256": "1e4d638101850ed1933dd60bc65244542a08e440aa03bece1c82fc2f54f8bdda"
+    },
+    {
+      "body_index": 84,
+      "rid": "rId13",
+      "media": "word/media/image5.png",
+      "sha256": "83bcb6404c62c7b541ff1c61d412448f4d6a5d7cffd6d2f43d8170d6ed04e842"
+    },
+    {
+      "body_index": 88,
+      "rid": "rId52",
+      "media": "word/media/image41.png",
+      "sha256": "7aeb3df40999b5aab3748a055eb9b2545f224ab4a13cd941e9898d203784f107"
+    },
+    {
+      "body_index": 102,
+      "rid": "rId51",
+      "media": "word/media/image40.png",
+      "sha256": "7862c4e86455eb0a45c0a96e6b5dd357a912f76ad828e2e6b26992ad8ac8b6b3"
+    },
+    {
+      "body_index": 147,
+      "rid": "rId15",
+      "media": "word/media/image7.png",
+      "sha256": "5c50b94c828278e61e7d5fd6e7f0a01d0b5fd7235f332416d315f35215618e98"
+    }
+  ],
+  "expected_merged_image_paths": [
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\figure_merge_v43_20261018\\figure2\\fig2_model_capability.png",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\figure_merge_v43_20261018\\figure5\\fig5_joint_readouts_conformations.png"
+  ],
+  "changed_parts": [
+    "word/document.xml",
+    "word/media/image2.png",
+    "word/media/image40.png"
+  ],
+  "unexpected_changed_parts": [],
+  "added_parts": [],
+  "removed_parts": [],
+  "missing_protected_content": [],
+  "legacy_figure_reference_hits": [],
+  "legacy_section_heading_hits": [],
+  "observed_results_headings": [
+    "3.1 两类动态预测与完整结构环境的贡献",
+    "3.2 同类型残基的局部动态差异",
+    "3.3 KIX结构域中主链活动区域的定位",
+    "3.4 KRAS G12D单点抗原变化的主链动态响应",
+    "3.5 联合读数的构象对应与群体验证",
+    "3.5.1 侧链预测对低自由能取向范围与角度占据的验证",
+    "3.5.2 泛素同类型侧链多样性的预测与轨迹对照"
+  ],
+  "manual_scientific_review_required": [
+    "新图5b为配对相关差，不是条件独立贡献",
+    "新图5e不是逐χ角预测",
+    "新图5f及角宽来自MD，不是模型自由能预测",
+    "四类召回完整保留于主文一句和S9",
+    "83/33142与3063/824988分母分清"
+  ]
+}

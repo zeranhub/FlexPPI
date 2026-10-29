@@ -1,0 +1,132 @@
+{
+  "figure": "figS6_peptide_dynamic_validation",
+  "width_mm": 183,
+  "height_mm": 222,
+  "data_selection": "All 10 peptide, 45 CDR, 30 pMHC interface positions per contrast.",
+  "missing_Hchi": "Chemically undefined or changed amino-acid type are excluded only from Hchi numeric comparison.",
+  "independence": "3 independent MD trajectories per state, not residues/frames/9 pair differences.",
+  "p_values": "None; descriptive within-case verification, no biological population inference.",
+  "panels": [
+    {
+      "panel": "a",
+      "contrast": "4jfd-4jff",
+      "positions": 10,
+      "MD_replicas_per_state": 3,
+      "error_bar": "SE of independent means: sqrt((SD_before²+SD_after²)/3)"
+    },
+    {
+      "panel": "b",
+      "contrast": "4jfe-4jff",
+      "positions": 10,
+      "MD_replicas_per_state": 3,
+      "error_bar": "SE of independent means: sqrt((SD_before²+SD_after²)/3)"
+    },
+    {
+      "panel": "c",
+      "contrast": "4jfd-4jff",
+      "eligible_positions": 45,
+      "excluded_undefined_or_changed_type": 0,
+      "Spearman": -0.09472990777338601,
+      "direction_agree": 29,
+      "all_predefined_positions_retained_in_CSV": true
+    },
+    {
+      "panel": "d",
+      "contrast": "4jfe-4jff",
+      "eligible_positions": 45,
+      "excluded_undefined_or_changed_type": 0,
+      "Spearman": 0.497760210803689,
+      "direction_agree": 37,
+      "all_predefined_positions_retained_in_CSV": true
+    },
+    {
+      "panel": "e",
+      "contrast": "4jfd-4jff",
+      "eligible_positions": 23,
+      "excluded_undefined_or_changed_type": 7,
+      "Spearman": 0.015810276679841896,
+      "direction_agree": 14,
+      "all_predefined_positions_retained_in_CSV": true
+    },
+    {
+      "panel": "f",
+      "contrast": "4jfe-4jff",
+      "eligible_positions": 22,
+      "excluded_undefined_or_changed_type": 8,
+      "Spearman": 0.3077357425183513,
+      "direction_agree": 16,
+      "all_predefined_positions_retained_in_CSV": true
+    },
+    {
+      "panel": "g",
+      "pdb": "4jff",
+      "metric": "rmsf",
+      "independent_MD_values": [
+        0.8455802510037229,
+        0.8827086796900795,
+        1.049899544055563
+      ],
+      "model": 0.6475533751341013
+    },
+    {
+      "panel": "g",
+      "pdb": "4jfd",
+      "metric": "rmsf",
+      "independent_MD_values": [
+        0.9495257853944108,
+        1.265073156868212,
+        0.993471474138383
+      ],
+      "model": 0.6444962895833529
+    },
+    {
+      "panel": "g",
+      "pdb": "4jfe",
+      "metric": "rmsf",
+      "independent_MD_values": [
+        1.238673689464476,
+        1.2362084480362543,
+        1.1057387908824852
+      ],
+      "model": 0.670842537513146
+    },
+    {
+      "panel": "h",
+      "pdb": "4jff",
+      "metric": "hchi",
+      "independent_MD_values": [
+        1.3724622160725888,
+        1.3255699080831511,
+        1.3537097330927008
+      ],
+      "model": 1.2891066819429398
+    },
+    {
+      "panel": "h",
+      "pdb": "4jfd",
+      "metric": "hchi",
+      "independent_MD_values": [
+        1.3307643083682636,
+        1.351029652670945,
+        1.3732613612863078
+      ],
+      "model": 1.2350213341414928
+    },
+    {
+      "panel": "h",
+      "pdb": "4jfe",
+      "metric": "hchi",
+      "independent_MD_values": [
+        1.4887674641609945,
+        1.4807544134520203,
+        1.4217982368258544
+      ],
+      "model": 1.3246611542999744
+    }
+  ],
+  "source_sha256": {
+    "peptide_mutations_complete_per_position.csv": "de962cfba84bb51d9aaa1d344df80023f552f7be5e9505b171840e8bcce2192f",
+    "peptide_mutations_predefined_region_change_metrics.csv": "b492bc5d12edfcc0f9c5d16b1aeb399c6efca36006a65a204ba4773ae4d27e53",
+    "predefined_region_means_per_independent_replica.csv": "6f9c9410105e4648c66d8692a3161ad3b28849ee93ed91e3d0153f2aa2c149e0"
+  }
+}

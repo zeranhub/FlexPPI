@@ -1,0 +1,107 @@
+{
+  "kernel_settings": {
+    "sequence": {
+      "median_positive_distance": 0.2222222222222222,
+      "constant_block": false,
+      "label_values_used": false
+    },
+    "static": {
+      "median_positive_distance": 0.7625466845706907,
+      "constant_block": false,
+      "label_values_used": false,
+      "unlabeled_full_pool_RMS_scales": [
+        10.269574346364825,
+        3.0709650859927233
+      ]
+    },
+    "R": {
+      "median_positive_distance": 0.025708310384903725,
+      "constant_block": false,
+      "label_values_used": false,
+      "profile_dimensions": 100
+    },
+    "H": {
+      "median_positive_distance": 0.02891130222349971,
+      "constant_block": false,
+      "label_values_used": false,
+      "profile_dimensions": 87
+    },
+    "BLOSUM62_chemistry": {
+      "median_positive_distance": 335.0,
+      "constant_block": false,
+      "label_values_used": false
+    },
+    "baseline_RH_shuffled00": {
+      "permutation_seed": 2026102200,
+      "R_H_shuffled_together": true,
+      "destroys_candidate_correspondence": true,
+      "hidden_labels_used": false
+    },
+    "baseline_RH_shuffled01": {
+      "permutation_seed": 2026102201,
+      "R_H_shuffled_together": true,
+      "destroys_candidate_correspondence": true,
+      "hidden_labels_used": false
+    },
+    "baseline_RH_shuffled02": {
+      "permutation_seed": 2026102202,
+      "R_H_shuffled_together": true,
+      "destroys_candidate_correspondence": true,
+      "hidden_labels_used": false
+    },
+    "baseline_RH_shuffled03": {
+      "permutation_seed": 2026102203,
+      "R_H_shuffled_together": true,
+      "destroys_candidate_correspondence": true,
+      "hidden_labels_used": false
+    },
+    "baseline_RH_shuffled04": {
+      "permutation_seed": 2026102204,
+      "R_H_shuffled_together": true,
+      "destroys_candidate_correspondence": true,
+      "hidden_labels_used": false
+    },
+    "baseline_RH_shuffled05": {
+      "permutation_seed": 2026102205,
+      "R_H_shuffled_together": true,
+      "destroys_candidate_correspondence": true,
+      "hidden_labels_used": false
+    },
+    "baseline_RH_shuffled06": {
+      "permutation_seed": 2026102206,
+      "R_H_shuffled_together": true,
+      "destroys_candidate_correspondence": true,
+      "hidden_labels_used": false
+    },
+    "baseline_RH_shuffled07": {
+      "permutation_seed": 2026102207,
+      "R_H_shuffled_together": true,
+      "destroys_candidate_correspondence": true,
+      "hidden_labels_used": false
+    },
+    "baseline_RH_shuffled08": {
+      "permutation_seed": 2026102208,
+      "R_H_shuffled_together": true,
+      "destroys_candidate_correspondence": true,
+      "hidden_labels_used": false
+    },
+    "baseline_RH_shuffled09": {
+      "permutation_seed": 2026102209,
+      "R_H_shuffled_together": true,
+      "destroys_candidate_correspondence": true,
+      "hidden_labels_used": false
+    }
+  },
+  "source_bindings": {
+    "template_sha256": "284d74d5afadd2b8a2725889d6d20c8e22517c47e66b21bf26cca267ca886012",
+    "regions_sha256": "08ac3ae5fcda3a747764515f0066badbf490c5dfdc8b9ca55aa31b53948914de",
+    "training_reference_sha256": "820d2e844ee6b6d93502df8bcfc879d0169f2b60592591f487920cb995c3537f"
+  },
+  "hit_rule": {
+    "kind": "fixed_threshold",
+    "cutoff": 0.3
+  },
+  "labels_sha256": "d0f7739581bd8cc99587adb8069331adc7933c52bb4f80f7ed59289021594f30",
+  "features_sha256": "f7176255309131d4a7752a3a7e738771b027fb79de4640a8298e582a16c688e4",
+  "all_pool_scaling_label_free": true
+}

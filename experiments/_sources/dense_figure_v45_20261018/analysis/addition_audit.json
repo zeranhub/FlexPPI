@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "code_sha256": "6467ab322263e7a9195deb4b7ce115cb4f8b839efaab661ed356bbf5a9ae0e85",
+  "protocol_sha256": "cbe2aa7c54e18c37a992a99df725e825715f0568590a7cb58c3b8c8e4c781b70",
+  "input_manifest_sha256": "25c865a3e57b68afab2fb0c9be6ec116ef3a1cd030dabdfe8b1635e26f6ca0f5",
+  "n_records": 3063,
+  "n_positions": {
+    "rmsf": 961321,
+    "chi_entropy": 824988
+  },
+  "n_eligible_record_types": 42108,
+  "all_four_methods_original_positions_masks_identity_verified": true,
+  "no_downsampling_no_clipping_no_calibration": true,
+  "full_20bin_trend_and_ci_reproduced": true,
+  "full_ci_max_tolerance": 2e-12,
+  "same_v44_stratified_bootstrap_first_1000_of_10000": true,
+  "all_type_AP_AUROC_and_record_macro_values_reproduced": true,
+  "source_36cells_weighted_means_reproduce_v44": true,
+  "within_type_summary": {
+    "Full": {
+      "mean_ap": 0.622603905736452,
+      "mean_auroc": 0.8043844147345386,
+      "mean_record_type_prevalence": 0.14633027306649204,
+      "n_records": 3063,
+      "n_eligible_record_types": 42108,
+      "macro_curve_recall1_first_threshold_precision": 0.5406714748601351,
+      "all_selected_precision": 0.14633027306649204
+    },
+    "Intra": {
+      "mean_ap": 0.6089206939928457,
+      "mean_auroc": 0.7954855187753664,
+      "mean_record_type_prevalence": 0.14633027306649204,
+      "n_records": 3063,
+      "n_eligible_record_types": 42108,
+      "macro_curve_recall1_first_threshold_precision": 0.5282033180341603,
+      "all_selected_precision": 0.14633027306649204
+    },
+    "Static": {
+      "mean_ap": 0.5545242004032818,
+      "mean_auroc": 0.7548890043602955,
+      "mean_record_type_prevalence": 0.14633027306649204,
+      "n_records": 3063,
+      "n_eligible_record_types": 42108,
+      "macro_curve_recall1_first_threshold_precision": 0.47957164906948285,
+      "all_selected_precision": 0.14633027306649204
+    },
+    "AA": {
+      "mean_ap": 0.14633027306649204,
+      "mean_auroc": 0.5,
+      "mean_record_type_prevalence": 0.14633027306649204,
+      "n_records": 3063,
+      "n_eligible_record_types": 42108,
+      "macro_curve_recall1_first_threshold_precision": 0.14633027306649182,
+      "all_selected_precision": 0.14633027306649204
+    }
+  },
+  "outputs_sha256": {
+    "compute_dense_additions.py": "6467ab322263e7a9195deb4b7ce115cb4f8b839efaab661ed356bbf5a9ae0e85",
+    "four_method_binned_trend.csv": "2de5cf904b664eba884249c54d4ecb98edcc918106411203b2c20cad1ba6a285",
+    "PRESPECIFIED_ADDITIONS.md": "cbe2aa7c54e18c37a992a99df725e825715f0568590a7cb58c3b8c8e4c781b70",
+    "raw_within_type_curves_AA.npz": "8301bb1a427ba34db33ec016c10f682986e32095384a0e847167073532a55ea8",
+    "raw_within_type_curves_Full.npz": "1ad5f4b1fe72576674bdb3f69a4abf3091685523bd68699b1bfb47659a0fb667",
+    "raw_within_type_curves_Intra.npz": "e0177983194d6c3afb87bea056504dbea39459ab5b8d1bf776752f366bb53859",
+    "raw_within_type_curves_Static.npz": "5302b4d9035c09fbd2366179a4322b9152a1bb67d5a8b4c6bd28be241d727273",
+    "source_ap_matrix.csv": "a3a86af099b04202106d4cd13f5414682199ffbb17f5c55d0dcc630137b04a4a",
+    "v44_all_selected_endpoint.csv": "1bcf9d85618bb54aff8a73f800eeaaf57e60ed3cd9fee69f402f85aaa53a8494",
+    "v44_macro_pr_curve.csv": "60b4f5c8169fa6e0cfd485de74d23390f566063f76501d56b297c7326ded23da",
+    "v44_summary.json": "be29114e3eca5ba8654276e3024f78d4666f705feb8a062061719aeef9dab14a",
+    "within_type_all_selected_endpoint.csv": "cddd135cf7d6c4dafccce1cce499d575676d22e47f572a1523910f41891418c7",
+    "within_type_codes.csv": "d850c64bbbafdd5daefc8a0cdeaad8ece6388f0deecc0925ee49e2082c0e5e4d",
+    "within_type_complete_curve_metrics.csv": "d0836a7b1f6012511eaa686686ff15119c74d926fd5152d06f1600d7365adc32",
+    "within_type_macro_pr.csv": "7e91b12113d84d8959d3f29b45d2e3ce2f5cdf25d04a37a72c5439b1b22c28e3",
+    "within_type_record_macro_metrics.csv": "0452b5afce551aab885e1444f36051a5c684b90fab535ff733aa72e329d85877",
+    "within_type_record_precision_grid_AA.npz": "e7ff855065b4f0544b8bfadf8e87e57664c206f93b93571323b3356378ccca52",
+    "within_type_record_precision_grid_Full.npz": "1812811a78a3fb8d2bc60955e7c4d3577278bf4114e2b5b5f849e2d4ff76871c",
+    "within_type_record_precision_grid_Intra.npz": "93521e7ff3fdadba4f51c3edc29c11d7714fe8938f669b9f7ec8598b406c8ec5",
+    "within_type_record_precision_grid_Static.npz": "f424d3ce02a4d9025f0286894e25c269dfca9117834e0e0757e1eb7a0e1848dc"
+  },
+  "runtime_seconds": 84.82670378684998
+}

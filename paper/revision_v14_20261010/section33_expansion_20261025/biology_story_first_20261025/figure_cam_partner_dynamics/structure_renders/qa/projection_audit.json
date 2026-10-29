@@ -1,0 +1,203 @@
+{
+  "asset": "overview_nNOS",
+  "width": 1400,
+  "height": 1300,
+  "field_of_view": 20.0,
+  "method": "Restore final PSE, keep nNOS only, replace molecular representations with five unique-color CA spheres, ray-render at the manifest dimensions, compare independent RGB marker centroids.",
+  "actual_view": [
+    0.3611973226070404,
+    -0.769393265247345,
+    0.5268495678901672,
+    0.06678071618080139,
+    -0.5421989560127258,
+    -0.8375922441482544,
+    0.9300950169563293,
+    0.33771952986717224,
+    -0.14446018636226654,
+    0.0,
+    0.0,
+    -190.8523406982422,
+    27.066932678222656,
+    23.322769165039062,
+    16.01228141784668,
+    150.4694366455078,
+    231.23524475097656,
+    20.0
+  ],
+  "view_max_delta": 0.0,
+  "pixel_convention": "Detected centroids are pixel centers, +0.5 on integer PIL indices.",
+  "root_formula": "view[:9].reshape(3,3).T @ (xyz-view[12:15])+view[9:12]; orthographic scale from -view[11]*tan(fov/2)",
+  "rows": [
+    {
+      "label": "L18",
+      "xyz": [
+        30.87700080871582,
+        17.099000930786133,
+        13.713000297546387
+      ],
+      "manifest_xy": [
+        677.2469750605027,
+        656.440279424434
+      ],
+      "formula_transpose_xy": [
+        677.2469750605027,
+        656.440279424434
+      ],
+      "formula_no_transpose_xy": [
+        795.6742194718835,
+        542.7080679365386
+      ],
+      "rendered_marker_centroid_xy": [
+        677.2551546391752,
+        656.3943298969073
+      ],
+      "n_marker_pixels": 388,
+      "marker_bbox": [
+        666,
+        645,
+        687,
+        667
+      ],
+      "manifest_error_px": 0.04667188219039032,
+      "transpose_error_px": 0.04667188219039032,
+      "no_transpose_error_px": 164.15736679897964
+    },
+    {
+      "label": "L39",
+      "xyz": [
+        22.354999542236328,
+        19.649999618530273,
+        20.385000228881836
+      ],
+      "manifest_xy": [
+        740.9448600999019,
+        512.9891848511932
+      ],
+      "formula_transpose_xy": [
+        740.9448600999019,
+        512.9891848511932
+      ],
+      "formula_no_transpose_xy": [
+        766.205066318491,
+        688.356899641666
+      ],
+      "rendered_marker_centroid_xy": [
+        740.8507692307692,
+        512.9738461538461
+      ],
+      "n_marker_pixels": 325,
+      "marker_bbox": [
+        731,
+        503,
+        750,
+        522
+      ],
+      "manifest_error_px": 0.0953329286787032,
+      "transpose_error_px": 0.0953329286787032,
+      "no_transpose_error_px": 177.20625223598617
+    },
+    {
+      "label": "L105",
+      "xyz": [
+        30.099000930786133,
+        22.72800064086914,
+        27.988000869750977
+      ],
+      "manifest_xy": [
+        935.5286503071986,
+        610.7118320834493
+      ],
+      "formula_transpose_xy": [
+        935.5286503071986,
+        610.7118320834493
+      ],
+      "formula_no_transpose_xy": [
+        851.8590029680649,
+        833.605595411403
+      ],
+      "rendered_marker_centroid_xy": [
+        935.5493827160494,
+        610.7376543209876
+      ],
+      "n_marker_pixels": 324,
+      "marker_bbox": [
+        925,
+        601,
+        945,
+        620
+      ],
+      "manifest_error_px": 0.03311526427863768,
+      "transpose_error_px": 0.03311526427863768,
+      "no_transpose_error_px": 238.06343446283955
+    },
+    {
+      "label": "M109",
+      "xyz": [
+        30.836000442504883,
+        17.5310001373291,
+        24.322999954223633
+      ],
+      "manifest_xy": [
+        868.1255700092746,
+        591.1451777666085
+      ],
+      "formula_transpose_xy": [
+        868.1255700092746,
+        591.1451777666085
+      ],
+      "formula_no_transpose_xy": [
+        896.9372788546897,
+        718.9356368112486
+      ],
+      "rendered_marker_centroid_xy": [
+        868.087786259542,
+        591.1030534351145
+      ],
+      "n_marker_pixels": 393,
+      "marker_bbox": [
+        857,
+        580,
+        878,
+        601
+      ],
+      "manifest_error_px": 0.05658684518223632,
+      "transpose_error_px": 0.05658684518223632,
+      "no_transpose_error_px": 131.04755852595565
+    },
+    {
+      "label": "M144",
+      "xyz": [
+        30.510000228881836,
+        35.77899932861328,
+        19.927000045776367
+      ],
+      "manifest_xy": [
+        810.4152482377108,
+        806.0805625744197
+      ],
+      "formula_transpose_xy": [
+        810.4152482377108,
+        806.0805625744197
+      ],
+      "formula_no_transpose_xy": [
+        578.7466216669785,
+        839.3413950935
+      ],
+      "rendered_marker_centroid_xy": [
+        810.4418960244649,
+        806.071865443425
+      ],
+      "n_marker_pixels": 327,
+      "marker_bbox": [
+        800,
+        796,
+        820,
+        815
+      ],
+      "manifest_error_px": 0.028031136730953303,
+      "transpose_error_px": 0.028031136730953303,
+      "no_transpose_error_px": 234.0717021827459
+    }
+  ],
+  "passed": true
+}

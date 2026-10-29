@@ -1,0 +1,98 @@
+{
+  "status": "rendered",
+  "case_id": "C22",
+  "reference": "8rlt",
+  "primary_pair": [
+    "8rlt",
+    "8rlu"
+  ],
+  "all_states": [
+    "8rlt",
+    "8rlu",
+    "8rlv"
+  ],
+  "source": "Existing ITrace run1 topology coordinates; not a newly simulated ensemble",
+  "sources": [
+    {
+      "pdb": "8rlt",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_8rlt.npz",
+      "prediction_sha256": "120a7f2d1c3b0fe657980ddaaad13a967a48b7ad731b769249711f7f2fd2bea0",
+      "structure": "E:\\data\\ITrace\\trajectories\\8rlt_run1_topology.pdb",
+      "structure_sha256": "4f5e362466d708521d41cb935e9af54a02cb48f61fe8239f0ca231ddb975622a",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    },
+    {
+      "pdb": "8rlu",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_8rlu.npz",
+      "prediction_sha256": "64ecb9a16f9bfb49b892c86c360aef03526b1e47973e22cae4a9454b03fdeb4e",
+      "structure": "E:\\data\\ITrace\\trajectories\\8rlu_run1_topology.pdb",
+      "structure_sha256": "cffa1d59a66ba5a6daa9fd1ca4e027a6f168ce47e4183f64c327e59f3798a14e",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    },
+    {
+      "pdb": "8rlv",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_8rlv.npz",
+      "prediction_sha256": "b9edbc71d5e7c7c7fe606025a2c604d57502d1bd4bcc75d66f93779bf5e3ccd8",
+      "structure": "E:\\data\\ITrace\\trajectories\\8rlv_run1_topology.pdb",
+      "structure_sha256": "dad3f5015e848cd0395567aa83bfb09ecc711b21bd325ef4ec3e788083e19834",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    }
+  ],
+  "alignment": "MHC first180 C-alpha, PyMOL align cycles=0; common camera for primary pair",
+  "semantic_colors": [
+    "#CF8C27",
+    "#762A83",
+    "#2166AC",
+    "#1B7837",
+    "#B2182B",
+    "#666666",
+    "#4393C3",
+    "#B35806",
+    "#9970AB"
+  ],
+  "shared_view": [
+    -0.5886955261230469,
+    -0.31862685084342957,
+    -0.7464632987976074,
+    0.3256324231624603,
+    -0.938670814037323,
+    0.14178135991096497,
+    -0.7398656606674194,
+    -0.15960660576820374,
+    0.6563464999198914,
+    0.0,
+    -0.0,
+    -334.27496337890625,
+    70.83132934570312,
+    56.6986083984375,
+    52.14421844482422,
+    263.544921875,
+    405.0050048828125,
+    -20.0
+  ],
+  "no_invented_mechanism": true
+}

@@ -1,0 +1,110 @@
+{
+  "analysis": "Experimental NMR descriptive reanalysis; current FlexPPI predictions not tested here",
+  "inputs": [
+    {
+      "label": "CaMKK",
+      "bmrb": 15183,
+      "path": "E:\\Project\\FlexPPI\\artifacts\\apo_holo_exploration_20260913\\raw\\bmr15183_3.str",
+      "sha256": "1056cf9fb4bb7f8065e55b462617118a4e37f1ece9858779dc3ca14bdc67dbc7",
+      "cam_entity_id": "2",
+      "cam_entity_length": 148,
+      "cam_sequence": "ADQLTEEQIAEFKEAFSLFDKDGDGTITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLTMMARKMKDTDSEEEIREAFRVFDKDGNGYISAAELRHVMTNLGEKLTDEEVDEMIREADIDGDGQVNYEEFVQMMTAK",
+      "parsed_rows": 205,
+      "unrecognised_atom_names": [],
+      "duplicate_probe_rows": []
+    },
+    {
+      "label": "eNOS",
+      "bmrb": 15185,
+      "path": "E:\\Project\\FlexPPI\\artifacts\\apo_holo_exploration_20260913\\raw\\bmr15185_3.str",
+      "sha256": "cd18d5c6cc4b58ebb8e30a438bc6a0c9e0765bf017fec6331591e28aff53cfbe",
+      "cam_entity_id": "1",
+      "cam_entity_length": 148,
+      "cam_sequence": "ADQLTEEQIAEFKEAFSLFDKDGDGTITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLTMMARKMKDTDSEEEIREAFRVFDKDGNGYISAAELRHVMTNLGEKLTDEEVDEMIREADIDGDGQVNYEEFVQMMTAK",
+      "parsed_rows": 195,
+      "unrecognised_atom_names": [
+        {
+          "bmrb": 15185,
+          "label": "eNOS",
+          "source_row_id": "11",
+          "seq_id": 29,
+          "amino_acid": "T",
+          "atom": "CG5",
+          "observable": "methyl_axis",
+          "s2": 0.348,
+          "fit_error": 0.004,
+          "expected_atom_name": false
+        }
+      ],
+      "duplicate_probe_rows": []
+    },
+    {
+      "label": "nNOS",
+      "bmrb": 15191,
+      "path": "E:\\Project\\FlexPPI\\artifacts\\apo_holo_exploration_20260913\\raw\\bmr15191_3.str",
+      "sha256": "2b4e129befe5c9044c8618b292bd2b1b286ec6ba27cb792ed4677d14944168a9",
+      "cam_entity_id": "1",
+      "cam_entity_length": 148,
+      "cam_sequence": "ADQLTEEQIAEFKEAFSLFDKDGDGTITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLTMMARKMKDTDSEEEIREAFRVFDKDGNGYISAAELRHVMTNLGEKLTDEEVDEMIREADIDGDGQVNYEEFVQMMTAK",
+      "parsed_rows": 194,
+      "unrecognised_atom_names": [],
+      "duplicate_probe_rows": [
+        {
+          "bmrb": 15191,
+          "label": "nNOS",
+          "source_row_id": "39",
+          "seq_id": 100,
+          "amino_acid": "I",
+          "atom": "CG2",
+          "observable": "methyl_axis",
+          "s2": 0.708,
+          "fit_error": 0.024,
+          "expected_atom_name": true
+        },
+        {
+          "bmrb": 15191,
+          "label": "nNOS",
+          "source_row_id": "40",
+          "seq_id": 100,
+          "amino_acid": "I",
+          "atom": "CG2",
+          "observable": "methyl_axis",
+          "s2": 0.793,
+          "fit_error": 0.027,
+          "expected_atom_name": true
+        }
+      ]
+    },
+    {
+      "label": "smMLCK",
+      "bmrb": 15186,
+      "path": "E:\\Project\\FlexPPI\\artifacts\\apo_holo_exploration_20260913\\raw\\bmr15186_3.str",
+      "sha256": "03ae788456c63eff898592839e3d1a3b8c84793e5639714939122abeb8bd7716",
+      "cam_entity_id": "1",
+      "cam_entity_length": 148,
+      "cam_sequence": "ADQLTEEQIAEFKEAFSLFDKDGDGTITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLTMMARKMKDTDSEEEIREAFRVFDKDGNGYISAAELRHVMTNLGEKLTDEEVDEMIREADIDGDGQVNYEEFVQMMTAK",
+      "parsed_rows": 175,
+      "unrecognised_atom_names": [],
+      "duplicate_probe_rows": []
+    }
+  ],
+  "peptide_match_source": "E:\\Project\\FlexPPI\\artifacts\\apo_holo_exploration_20260913\\analysis\\calmodulin_structure_experiment_match.csv",
+  "peptide_match_source_sha256": "3ea01a30f7ffcc5aef43935d29bbdafbf0da10986dd53255eb7efed8c8dfb280",
+  "peptide_gate": "identity >= 0.95 and bidirectional exact-residue coverage >= 0.85; all four pass",
+  "key": "observable + CaM entity sequence position + amino acid + atom name; exact intersection of all four partners; exclude any probe duplicated within a partner",
+  "model_prediction_files_read": [],
+  "figures_created": [],
+  "significance_tests": [],
+  "warnings": [
+    "nNOS BMRB15191 Ile100 CG2 is deposited twice, with S2 0.708 and 0.793. The probe is absent for smMLCK, so it never enters the four-way intersection. The primary 44-probe methyl analysis contains no ambiguous duplicates and does not average duplicate entries.",
+    "eNOS BMRB15185 Thr29 CG5 is a nonstandard deposited atom name. It is retained unchanged in the raw table and does not enter the exact-site intersection.",
+    "Fit errors are deposited model-fit errors, not full experimental uncertainties.",
+    "Reported zero fit error is retained and does not mean uncertainty is absent.",
+    "The maximum-minus-minimum range selects two extrema among four partners; error ratios are descriptive diagnostics, not statistical significance.",
+    "Methyl probes are not independent residues; one residue may contribute more than one methyl group.",
+    "NH and methyl probes measure different local observables; numerical range comparison is descriptive, not a calibrated motion-amplitude comparison.",
+    "S2 is not Hchi or RMSF, and is not converted to entropy, binding energy, or affinity.",
+    "Four peptide-bound states are compared here; no apo-minus-holo values are calculated.",
+    "Terminal peptide differences remain despite the matching gate; conditions must be checked before confirmatory model validation."
+  ]
+}

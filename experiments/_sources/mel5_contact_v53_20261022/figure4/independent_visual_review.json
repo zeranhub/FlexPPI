@@ -1,0 +1,19 @@
+{
+  "review_type": "independent_visual_review",
+  "reviewer": "mel5_v53_contact_design",
+  "status": "passed",
+  "png_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\mel5_contact_v53_20261022\\figure4\\fig4_mel5_contact_map.png",
+  "png_sha256": "e1b3036e017da4efda8e30fcb35ffa6964daed14f13a31f537d9c1ecd356e283",
+  "inspected_with": "view_image, full rendered preview",
+  "must_fix": [],
+  "findings": [
+    "Panel a now contains an actual residue-contact data display rather than text cards.",
+    "All 6 HLA rows and 9 TCR beta columns remain aligned with the model Hchi and RMSF tracks.",
+    "Q72 is clearly highlighted, the beta53 and beta54 cells are outlined, and the per-state Q72 distances make the contact change directly readable.",
+    "The state colors, state marker shapes, contact-distance bins, and common numbering are legible and consistent.",
+    "The plot contains both retained and weakened contacts, so the local network is not reduced to selected contact gains.",
+    "No clipping, label overlap, orphaned panel reference, or visual indication of Hchi-to-RMSF causality was observed.",
+    "Panel b supplies global six-CDR context without competing with the main contact matrix."
+  ],
+  "scope": "Visual and explanatory logic review only; source-value verification remains the numerical audit."
+}

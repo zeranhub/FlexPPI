@@ -1,0 +1,23 @@
+{
+  "status": "search_and_validation_complete",
+  "manuscript_modified": false,
+  "existing_SB27_case_preserved": true,
+  "manuscript_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v40_20261017_中文修订_TCR识别环境变化实例_三线表.docx",
+  "manuscript_SHA256": "bd9851a0f6dabdeb6f4a7c2fbbe9fe0dd20ec0820a156578db7f624cd990f5ca",
+  "recommended_additional_case": "MEL5 / α24β17",
+  "conclusion": "Stronger complementary same-pMHC side-chain and engineering-context evidence; not uniformly better at both outputs across all regions.",
+  "report": "TCR更多实例_搜索复核结论.md",
+  "comparison": "verified_candidate_comparison.csv",
+  "counts": {
+    "old_distinct_pairs": 251,
+    "expanded_distinct_pairs": 313,
+    "new_pairs_relative_to_all_old_candidates": 92,
+    "union_distinct_pairs": 343,
+    "held_out_ITrace_complexes": 244,
+    "newly_reprocessed_existing_MD_trajectories": 38,
+    "new_model_forward_passes_this_search": 8,
+    "new_training_runs": 0,
+    "new_MD_production_runs": 0
+  },
+  "MEL5_context_test": "23 same-AA interface Hchi positions: rho 0.75494 full vs 0.05731 TCR removed; MAE 0.20241 vs 0.27067 nats."
+}

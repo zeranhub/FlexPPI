@@ -1,0 +1,34 @@
+{
+  "status": "proposal_ready_primary_source_checked",
+  "manuscript_edited": false,
+  "current_document": "E:/Project/FlexPPI/paper/revision_v14_20261010/paper_v41_20261017_中文修订_KRAS新抗原动态响应_三线表.docx",
+  "target_section": "3.4 KIX结构域中主链活动区域的定位",
+  "existing_text": "KIX转录共激活结构域在不同表面结合cMyb和MLL，为检验模型在不同伙伴组成下定位共同活动区域提供结构实例[22]。我们将留出模型的逐残基RMSF与四种组成的MD结果对应到相同的87个KIX位置，重点考察连接相邻螺旋的L12环区（图5a–d）。",
+  "proposed_text": "KIX是转录共激活因子CBP（CREB结合蛋白）用于招募转录调控蛋白的结合结构域。转录因子c-Myb与转录调控蛋白MLL（混合谱系白血病蛋白）的激活片段可同时占据KIX相对两侧的结合槽；原始NMR研究还观察到，MLL结合伴随邻近柔性环及末端螺旋的结构变化[22]。这种以同一结构域连接不同调控蛋白的体系，为检验静态结构预测能否定位伙伴结合环境中的主链活动区域提供了具体场景。我们在无伙伴、仅c-Myb、仅MLL及双伙伴四种组成中，将留出模型的逐残基RMSF与同一KIX链87个位点的MD结果对应，重点考察连接相邻螺旋的L12环区（图5a–d）。",
+  "shorter_option": "KIX是转录共激活因子CBP（CREB结合蛋白）用于招募转录调控蛋白的结合结构域。转录因子c-Myb与转录调控蛋白MLL（混合谱系白血病蛋白）的激活片段可同时占据KIX相对两侧的结合槽，原始NMR研究显示，MLL结合还伴随邻近柔性环及末端螺旋的结构变化[22]。我们因此在无伙伴、仅c-Myb、仅MLL及双伙伴四种组成中，将留出模型的逐残基RMSF与同一KIX链87个位点的MD结果对应，检验其能否定位连接相邻螺旋的L12活动环区（图5a–d）。",
+  "recommended_option": "shorter_option；三句足以同时交代蛋白身份、多伙伴结合的具体性和模型验证目标，不增加冗余概括。",
+  "suggested_replacement_location": "替换第3.4节标题后的首段（当前DOCX paragraph index 164，索引从0起）；保留下一个结果段及图5不动。原有[22]可直接复用，不需新增参考编号。",
+  "sourceURLs": [
+    "https://www.rcsb.org/structure/2AGH",
+    "https://doi.org/10.1016/j.jmb.2005.09.059",
+    "https://pubmed.ncbi.nlm.nih.gov/16253272/"
+  ],
+  "reference_reused": {
+    "number": 22,
+    "authors": "De Guzman RN, Goto NK, Dyson HJ, Wright PE",
+    "title": "Structural basis for cooperative transcription factor binding to the CBP coactivator",
+    "journal": "Journal of Molecular Biology",
+    "year": 2006,
+    "volume": 355,
+    "pages": "1005–1013",
+    "DOI": "10.1016/j.jmb.2005.09.059"
+  },
+  "supported_claims": [
+    {"claim": "当前2AGH结构中的KIX来自CBP（CREB-binding protein/CREBBP），不是把p300和CBP混为同一具体蛋白。", "support": "RCSB 2AGH entity 2: Crebbp protein, chain B, mouse, length 87; primary abstract explicitly identifies the KIX domain of CBP.", "sourceURL": "https://www.rcsb.org/structure/2AGH"},
+    {"claim": "c-Myb和MLL的转录激活结构域形成与KIX的三元复合物，结合KIX相对两侧不同的疏水槽。", "support": "原始研究摘要记载三元复合物及two distinct hydrophobic grooves on opposite faces of KIX；RCSB chain A is Myb, chain C is MLL/HRX.", "sourceURL": "https://doi.org/10.1016/j.jmb.2005.09.059"},
+    {"claim": "与KIX:c-Myb二元复合物相比，MLL结合的三元复合物中，柔性环与C端螺旋发生有序化/稳定相关结构变化。", "support": "原始研究摘要明确列出flexible loop forming contacts with MLL and C-terminal helix extension/stabilization。提案概括为结构变化，不把这些已知变化写成本模型的结果。", "sourceURL": "https://www.rcsb.org/structure/2AGH"},
+    {"claim": "当前实例验证的是四种组成中模型对共同高波动L12环区的定位，不能写成模型再现了协同结合机制。", "support": "当前3.4结果段：四种组成残基排序ρ 0.729–0.896；最高20%集合重合61%–89%；L12六对状态差值预测方向均与单轨迹参考相反。因此背景只引出活动区域定位，不引出模型能够预测协同性或伙伴诱导变化的结论。", "sourceURL": null}
+  ],
+  "scope_guard_for_editor": "[22]可以说明KIX多伙伴结合与局部柔性在原始生物学中的联系；当前模型论证落在共同活动区域定位。此条为编辑注释，不放入正文。不得将原文的协同机制、MLL诱导有序化或结合增强改写为本模型发现。",
+  "access_audit": "已读取agent-reach技能及web/search路由说明；按Jina Reader读取PubMed的尝试超时，无内容返回，RCSB页面通过web工具成功读取其完整原始研究摘要和实体注释。PubMed网页web结果正文不可用；事实依据为RCSB保存的primary citation abstract与正式DOI，而非博客或二次综述。"
+}

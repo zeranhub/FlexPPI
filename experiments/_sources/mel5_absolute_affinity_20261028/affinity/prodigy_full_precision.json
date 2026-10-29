@@ -1,0 +1,187 @@
+{
+  "calculated_at_UTC": "2026-10-28T02:21:50.568566+00:00",
+  "python": "3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]",
+  "versions": {
+    "prodigy-prot": "2.4.0",
+    "freesasa": "2.2.1",
+    "biopython": "1.85",
+    "numpy": "2.0.2"
+  },
+  "raw_predictions": [
+    {
+      "pdb": "3hg1",
+      "parsed_chain_residue_counts": {
+        "A": 276,
+        "B": 100,
+        "C": 10,
+        "D": 194,
+        "E": 244
+      },
+      "model": 0,
+      "selection": [
+        "D,E",
+        "A,B,C"
+      ],
+      "temp": 25.0,
+      "ICs": 90,
+      "nis_a": 34.15435139573071,
+      "nis_c": 28.89983579638752,
+      "ba_val": -12.70676829228243,
+      "kd_val": 4.78246134139122e-10,
+      "AA": 24.0,
+      "PP": 8.0,
+      "CC": 4.0,
+      "AP": 27.0,
+      "CP": 5.0,
+      "AC": 22.0
+    },
+    {
+      "pdb": "4jff",
+      "parsed_chain_residue_counts": {
+        "A": 276,
+        "B": 100,
+        "C": 10,
+        "D": 197,
+        "E": 245
+      },
+      "model": 0,
+      "selection": [
+        "D,E",
+        "A,B,C"
+      ],
+      "temp": 25.0,
+      "ICs": 96,
+      "nis_a": 34.0567612687813,
+      "nis_c": 29.382303839732888,
+      "ba_val": -13.213630267111855,
+      "kd_val": 2.0317526866064315e-10,
+      "AA": 29.0,
+      "PP": 5.0,
+      "CC": 5.0,
+      "AP": 26.0,
+      "CP": 8.0,
+      "AC": 23.0
+    },
+    {
+      "pdb": "4jfd",
+      "parsed_chain_residue_counts": {
+        "A": 276,
+        "B": 100,
+        "C": 10,
+        "D": 196,
+        "E": 245
+      },
+      "model": 0,
+      "selection": [
+        "D,E",
+        "A,B,C"
+      ],
+      "temp": 25.0,
+      "ICs": 98,
+      "nis_a": 34.43163097199341,
+      "nis_c": 28.99505766062603,
+      "ba_val": -13.223649555189457,
+      "kd_val": 1.9976607971710628e-10,
+      "AA": 32.0,
+      "PP": 5.0,
+      "CC": 5.0,
+      "AP": 27.0,
+      "CP": 8.0,
+      "AC": 21.0
+    },
+    {
+      "pdb": "4jfe",
+      "parsed_chain_residue_counts": {
+        "A": 276,
+        "B": 100,
+        "C": 10,
+        "D": 197,
+        "E": 245
+      },
+      "model": 0,
+      "selection": [
+        "D,E",
+        "A,B,C"
+      ],
+      "temp": 25.0,
+      "ICs": 97,
+      "nis_a": 34.36988543371522,
+      "nis_c": 28.968903436988544,
+      "ba_val": -13.559646137479543,
+      "kd_val": 1.132582897503896e-10,
+      "AA": 28.0,
+      "PP": 4.0,
+      "CC": 9.0,
+      "AP": 25.0,
+      "CP": 8.0,
+      "AC": 23.0
+    }
+  ],
+  "results": [
+    {
+      "pdb": "3hg1",
+      "state": "MEL5 / ELA",
+      "model": "PRODIGY 2.4.0",
+      "input_kind": "crystal",
+      "temperature_C": 25.0,
+      "TCR_chains": "DE",
+      "pMHC_chains": "ABC",
+      "experimental_KD_M": 1.8e-05,
+      "experimental_pKD": 4.7447274948966935,
+      "predicted_DG_kcal_mol": -12.70676829228243,
+      "predicted_KD_M": 4.78246134139122e-10,
+      "predicted_pKD": 9.320348531868012,
+      "pKD_error_pred_minus_exp": 4.575621036971318,
+      "intermolecular_contacts": 90
+    },
+    {
+      "pdb": "4jff",
+      "state": "alpha24beta17 / ELA",
+      "model": "PRODIGY 2.4.0",
+      "input_kind": "crystal",
+      "temperature_C": 25.0,
+      "TCR_chains": "DE",
+      "pMHC_chains": "ABC",
+      "experimental_KD_M": 6e-10,
+      "experimental_pKD": 9.221848749616356,
+      "predicted_DG_kcal_mol": -13.213630267111855,
+      "predicted_KD_M": 2.0317526866064315e-10,
+      "predicted_pKD": 9.692129157302915,
+      "pKD_error_pred_minus_exp": 0.470280407686559,
+      "intermolecular_contacts": 96
+    },
+    {
+      "pdb": "4jfd",
+      "state": "alpha24beta17 / G4A",
+      "model": "PRODIGY 2.4.0",
+      "input_kind": "crystal",
+      "temperature_C": 25.0,
+      "TCR_chains": "DE",
+      "pMHC_chains": "ABC",
+      "experimental_KD_M": 3.6e-05,
+      "experimental_pKD": 4.443697499232712,
+      "predicted_DG_kcal_mol": -13.223649555189457,
+      "predicted_KD_M": 1.9976607971710628e-10,
+      "predicted_pKD": 9.699478253058533,
+      "pKD_error_pred_minus_exp": 5.255780753825821,
+      "intermolecular_contacts": 98
+    },
+    {
+      "pdb": "4jfe",
+      "state": "alpha24beta17 / I7A",
+      "model": "PRODIGY 2.4.0",
+      "input_kind": "crystal",
+      "temperature_C": 25.0,
+      "TCR_chains": "DE",
+      "pMHC_chains": "ABC",
+      "experimental_KD_M": 3.1e-05,
+      "experimental_pKD": 4.508638306165727,
+      "predicted_DG_kcal_mol": -13.559646137479543,
+      "predicted_KD_M": 1.132582897503896e-10,
+      "predicted_pKD": 9.945930000696213,
+      "pKD_error_pred_minus_exp": 5.4372916945304866,
+      "intermolecular_contacts": 97
+    }
+  ],
+  "experimental_source": "Madura et al. JBC 2013 Table 2, https://doi.org/10.1074/jbc.M113.464560; SPR at 25 C"
+}

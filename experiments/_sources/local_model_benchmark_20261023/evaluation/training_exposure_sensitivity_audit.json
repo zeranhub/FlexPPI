@@ -1,0 +1,33 @@
+{
+  "generated_utc": "2026-10-23T20:00:57.338575+00:00",
+  "protocol_sha256": "dffd7151668683d344072a2384e6dfac6c587bdaa503b1efd192a81c2f0e9aa7",
+  "membership_sha256": "72521f5abc8609ce7bd4dcf10cf3e1e6c0d16626017f06e9a7be98fdf6942e5b",
+  "source_scoring_audit_sha256": "c5a12719fdf96d4971b505922f98d483b9354e80e0bcca23b3e3efbdb7ff0031",
+  "source_per_record_metrics_sha256": "173324b5c0dea09911ac75fca4a20691b6c1bcee31500a88f0dbe3fd9b419ce0",
+  "script_sha256": "7fa7f997358c2cf9dd8cfce7bd3adb0fd31dc2eadf4397d589a5b64154694c05",
+  "eligibility": [
+    {
+      "identifier_method": "DynaProt-M",
+      "score_method": "DynaProt-M",
+      "eligible": true,
+      "reason": "full_common_cohort_complete"
+    },
+    {
+      "identifier_method": "backflip-1.0",
+      "score_method": "backflip-1.0 (assembly)",
+      "eligible": true,
+      "reason": "full_common_cohort_complete"
+    },
+    {
+      "identifier_method": "backflip-1.0-seq",
+      "score_method": "backflip-1.0-seq (assembly)",
+      "eligible": true,
+      "reason": "full_common_cohort_complete"
+    }
+  ],
+  "output_rows": 60,
+  "all_published_id_categories_reported": true,
+  "main_cohort_or_ranking_changed": false,
+  "no_refit_no_new_inference": true,
+  "result_sha256": "812dc828ae557a102e58ce27caa1575cb7f2358430336081d7d5f19545a900e2"
+}

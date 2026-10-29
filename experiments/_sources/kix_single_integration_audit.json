@@ -1,0 +1,68 @@
+{
+  "source": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v17_20261010_中文修订_基线与标签敏感性_三线表.docx",
+  "output": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v18_20261010_中文修订_复用KIX单轨迹_三线表.docx",
+  "output_sha256": "1ee8fed276ee8f86e854f79e242790af86def9d1352c9bc2881b2052e66485b1",
+  "new_md_results_used": false,
+  "repeats_per_state": 1,
+  "production_ns_per_state": 100,
+  "model_fold": 1,
+  "tables": 10,
+  "l12_deltas": [
+    {
+      "first": "myb",
+      "second": "apo",
+      "md_delta": 0.26028066308474695,
+      "model_delta": -0.2737301875,
+      "absolute_error": 0.534010850584747
+    },
+    {
+      "first": "mll",
+      "second": "apo",
+      "md_delta": 0.2745396784273386,
+      "model_delta": -1.5367817,
+      "absolute_error": 1.8113213784273385
+    },
+    {
+      "first": "both",
+      "second": "apo",
+      "md_delta": 1.0165336028984466,
+      "model_delta": -1.5887084125,
+      "absolute_error": 2.6052420153984466
+    },
+    {
+      "first": "mll",
+      "second": "myb",
+      "md_delta": 0.014259015342591663,
+      "model_delta": -1.2630515125,
+      "absolute_error": 1.2773105278425916
+    },
+    {
+      "first": "both",
+      "second": "myb",
+      "md_delta": 0.7562529398136997,
+      "model_delta": -1.314978225,
+      "absolute_error": 2.0712311648136996
+    },
+    {
+      "first": "both",
+      "second": "mll",
+      "md_delta": 0.741993924471108,
+      "model_delta": -0.05192671250000003,
+      "absolute_error": 0.793920636971108
+    }
+  ],
+  "source_sha256": {
+    "E:\\Project\\FlexPPI\\paper\\figures\\case_validation_v13_20261009\\data\\kix_fold1_case_metrics.csv": "6f9c5ccc312f470ba4c576c58fd35a345e19b596519946e3f89976652e91cf9d",
+    "E:\\Project\\FlexPPI\\paper\\figures\\case_validation_v13_20261009\\data\\kix_fold1_all_residues.csv": "427cefe8d50d8b7226f1430e72e35dda9ca455d1edd2b619ee6fd395344971a5",
+    "E:\\Project\\FlexPPI\\artifacts\\kix_md_20260914\\pilot_results_20260916\\quality\\summary.json": "9bc5b7edc4368c74aaa7685fbc8acaf9e68a319b1486d76487ece7c86a0a2042",
+    "E:\\Project\\FlexPPI\\artifacts\\kix_md_20260914\\pilot_results_20260916\\quality\\trajectory_trace_binned.csv": "0cd696d55e858adbcca7fe6f1512dfb70a28fc141a55f04c823dfba4a34e2df1",
+    "E:\\Project\\FlexPPI\\artifacts\\kix_md_20260914\\pilot_results_20260916\\quality\\residue_window_metrics.csv": "c9a4a1604178cf05bc0c018749c937d3f49cd1a8cd28996564813e29bd162dad",
+    "E:\\Project\\FlexPPI\\artifacts\\kix_md_20260914\\pilot_results_20260916\\quality\\thermodynamics_all_samples.csv": "de6317fd584d42bb72dd56bbb64c2e54a86da77c6c16123afd30c4dc9bda8953"
+  },
+  "comments_preserved": true,
+  "original_images_preserved": true,
+  "render_and_independent_source_audit_pending": false,
+  "layout_audit": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\v18_layout_audit.json",
+  "content_review": "passed",
+  "reuse_audit": "passed"
+}

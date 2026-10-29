@@ -1,0 +1,5 @@
+from pathlib import Path
+import json
+out=Path(r'E:\Project\FlexPPI\paper\revision_v14_20261010\section33_expansion_20261025\model_first_story_search_20261025\revision_v85_1MXE\pymol')
+p=out/'pse_and_assets_QA.json';j=json.loads(p.read_text(encoding='utf-8'));j['visual_review']='passed';j['visual_review_notes']=['All three final assets inspected together at target-like scale in QA_structure_contact_sheet.png.','Both anchors and both Asn sidechains are visible in the complete overview.','Local images preserve common rotation and common optical scale; all cartoons remain continuous in depth.','The pocket surfaces are shown by real surrounding sidechain sticks and faded full-chain cartoons, without isolated floating anchor residues.','M316 is partly crossed by a real CaM loop; local CaM cartoon transparency is 50% to retain context while revealing the anchor.'];p.write_text(json.dumps(j,indent=2),encoding='utf-8')
+p=out/'README_真实结构渲染.md';s=p.read_text(encoding='utf-8').replace('W303/M316的碳骨架','W303/M316与N297/N308的碳骨架');p.write_text(s,encoding='utf-8')

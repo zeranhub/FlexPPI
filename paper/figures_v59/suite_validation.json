@@ -1,0 +1,43 @@
+{
+  "status": "pass",
+  "byte_identical_scientific_files": 78,
+  "unit_heatmap_scale": [
+    0,
+    1
+  ],
+  "unit_ticks": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "unit_colormap_anchors": [
+    "#F7FBFF",
+    "#6BAED6",
+    "#08306B"
+  ],
+  "signed_heatmap_limits": [
+    -0.45,
+    0.45
+  ],
+  "signed_observed_ranges": {
+    "CDR_delta_RMSF": [
+      -0.413470983505249,
+      0.17958414554595947
+    ],
+    "interface_delta_Hchi": [
+      -0.4173978567123413,
+      0.2741851806640625
+    ]
+  },
+  "signed_clipped_cells": 0,
+  "interface_Hchi_valid_counts": [
+    23,
+    23,
+    22
+  ],
+  "figure5_plotted_records": 7256,
+  "AP_and_percentile_are_distinct_metrics": true,
+  "no_new_statistical_tests": true
+}

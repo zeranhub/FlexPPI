@@ -1,0 +1,627 @@
+{
+  "status": "passed",
+  "reviewer": "case_evidence_20261021",
+  "date": "2026-10-21",
+  "document": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\FlexPPI_32个潜在案例图册_背景证据与局限_20261021.docx",
+  "document_sha256": "e479ea9c92e80161216cf418935883245f86f1bfa780044bca0abacce3cc9744",
+  "case_count": 32,
+  "original_narrative_paragraph_count": 99,
+  "figure_count": 32,
+  "references": 37,
+  "main_manuscript_unchanged": true,
+  "exact_narratives_used": true,
+  "case_checks": [
+    {
+      "case_id": "C01",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 4,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C01 MEL5亲和成熟。a，α24β17复合物4JFF的真实结构及Q72与βPhe53/βGly54主链接触，亲和力来自原研究SPR。b，六个完整CDR的45个位置的模型绝对RMSF，共同编号中工程构建体输入整体加1。c，全部23个有效且氨基酸类型相同的pMHC界面位置的模型Hχ。d，已有ITrace三重复轨迹中Q72–Gly54近接触及Q72两端同时符合氢键几何的帧占比，点为独立重复，短竖线为等权均值。近接触阈值4 Å；氢键几何为供体–受体距离≤3.5 Å及供体–氢–受体角≥150°。两个模型输出与轨迹接触分别承担动态定位和机制佐证。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C02",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 4,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C02 SB27/SB47对照。a，两种TCR识别同一HLA-B*35:08呈递的13肽LPEPLPQGQLTAY；真实模型输入结构按MHC对齐，肽独立放大，蓝绿色球标记Q7的Cα。b，全部13个位点模型RMSF。c，全部11个有效χ位点模型Hχ，Q7以底色标明，G8/A12没有侧链χ角。d，左图保持各自pMHC坐标而移除TCR输入，展示Q7读数对结合伙伴信息的依赖；这不是解离实验。右图保留全部11个有效位点的模型变化与已有三次200 ns轨迹均值变化比较；Q9同时保留。模型主链变化的全13位点相关为0.945，而侧链全11位点相关约0.321，表明Q7局部解释不能推广为整个肽侧链变化均被准确捕获。MD只提供独立佐证，不作为主曲线。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C03",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 4,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C03 KRAS G12D抗原替换案例。a，WT与G12D复合物的真实结构以及文献SPR结合常数；两种肽在同一MHC参考系中叠合。b，全部10个肽位置的模型RMSF绝对预测。c，两种状态均具有χ角定义的全部5个位点的模型侧链联合熵；G6→D6等缺乏配对χ定义的位置不构造熵差。d，完整预设区域中模型变化与已有三次独立轨迹均值变化的描述性比较。每点为残基而非独立实验重复，虚线表示数值一致；ρ为Spearman相关，无显著性检验。该例以主链局部变化的解释为主，不能由此建立G6侧链熵变化与邻位RMSF之间的因果机制。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C04",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C04 JM22识别流感M1表位及F5L天然变体。a，WT与F5L的真实模型输入结构，经MHC对齐后比较肽构象；蓝绿色球标记第5位Cα。b，完整9肽的模型RMSF绝对读数。c，全部7个χ角定义位点的模型Hχ，倒三角单列发生Phe→Leu替换的位置；G1和G4无侧链χ角。d，保留全部9个RMSF位点及7个Hχ位点的模型变化与已有三次独立200 ns轨迹均值变化比较；侧链图中倒三角表示第5位，虚线表示数值一致。全部位点的RMSF与Hχ变化相关分别为0.750和0.786，去除替换位点后分别为0.714（8位点）和0.657（6个有效侧链）。该例提示侧链读数能够提供主链之外的变化线索，但第5位熵差不能脱离氨基酸化学身份变化解释，不能单独证明跨残基因果路径。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C05",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C05 PIK3CA H1047L的两受体识别。a，真实既有起始结构按MHC配准；左、中为7L1D和7RRG，右侧肽叠合的颜色依次对应7L1D（金橙）、7RRG（紫）。定量状态为21LT2-2（7L1D）、0606T1-2（7RRG）。b，完整预设自然pMHC界面的绝对模型RMSF。c，同氨基酸且χ角均有定义的全部自然pMHC界面侧链模型Hχ。各对照完整位数为21LT2-2→0606T1-2：RMSF 33位、Hχ 26位。H/P分别表示MHC/肽。d，在相同预设范围内比较模型变化与既有MD变化，统一为后态减前态；每个点为一个残基配对，虚线为数值一致。MD数值取各状态3次独立轨迹的等权均值；图中n指残基配对数，不能视作独立实验重复数。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C06",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C06 MAGE-A10 c728→c796。a，真实既有起始结构按MHC配准；左、中为7PDW和7PBC，右侧肽叠合的颜色依次对应7PDW（金橙）、7PBC（紫）、7QPJ（蓝）。定量状态为c728（7PDW）、c796（7PBC）；7QPJ仅出现在结构叠合中，不属于本图列明的定量对照。b，完整预设六个CDR的绝对模型RMSF。c，同氨基酸且χ角均有定义的全部自然pMHC界面侧链模型Hχ。各对照完整位数为c728→c796：RMSF 43位、Hχ 12位。H/P分别表示MHC/肽；CDR曲线间断处为不同环区段。d，在相同预设范围内比较模型变化与既有MD变化，统一为后态减前态；每个点为一个残基配对，虚线为数值一致。MD数值取各状态3次独立轨迹的等权均值；图中n指残基配对数，不能视作独立实验重复数。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C07",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C07 AHIII12.2识别三种MHC单点替换。a，真实既有起始结构按MHC配准；左、中为1LP9和2J8U，右侧肽叠合的颜色依次对应1LP9（金橙）、2J8U（紫）、2JCC（蓝）、2UWE（绿）。定量状态为WT（1LP9）、K66A（2J8U）、W167A（2JCC）、T163A（2UWE）。b，完整预设六个CDR的绝对模型RMSF。c，同氨基酸且χ角均有定义的全部自然pMHC界面侧链模型Hχ。各对照完整位数为WT→K66A：RMSF 48位、Hχ 15位；WT→W167A：RMSF 48位、Hχ 15位；WT→T163A：RMSF 48位、Hχ 14位。H/P分别表示MHC/肽；CDR曲线间断处为不同环区段。d，在相同预设范围内比较模型变化与既有MD变化，统一为后态减前态；每个点为一个残基配对，虚线为数值一致。MD数值取各状态3次独立轨迹的等权均值；图中n指残基配对数，不能视作独立实验重复数。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C08",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C08 1G4识别NY-ESO-1 C9V锚定变体。a，真实既有起始结构按MHC配准；左、中为2BNR和2BNQ，右侧肽叠合的颜色依次对应2BNR（金橙）、2BNQ（紫）。定量状态为C9（2BNR）、C9V（2BNQ）。b，完整预设肽段的绝对模型RMSF。c，同氨基酸且χ角均有定义的全部肽段侧链模型Hχ。各对照完整位数为C9→C9V：RMSF 9位、Hχ 8位。H/P分别表示MHC/肽。d，在相同预设范围内比较模型变化与既有MD变化，统一为后态减前态；每个点为一个残基配对，虚线为数值一致。MD数值取各状态3次独立轨迹的等权均值；图中n指残基配对数，不能视作独立实验重复数。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C09",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C09 N17.1.2识别NRAS Q61K/Q61R。a，真实既有起始结构按MHC配准；左、中为8YIV和8YJ2，右侧肽叠合的颜色依次对应8YIV（金橙）、8YJ2（紫）。定量状态为Q61K（8YIV）、Q61R（8YJ2）。b，完整预设六个CDR的绝对模型RMSF。c，同氨基酸且χ角均有定义的全部自然pMHC界面侧链模型Hχ。各对照完整位数为Q61K→Q61R：RMSF 50位、Hχ 17位。H/P分别表示MHC/肽；CDR曲线间断处为不同环区段。d，在相同预设范围内比较模型变化与既有MD变化，统一为后态减前态；每个点为一个残基配对，虚线为数值一致。MD数值取各状态3次独立轨迹的等权均值；图中n指残基配对数，不能视作独立实验重复数。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C10",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C10 PRAME S2跨HLA-A3/A11。a，真实既有起始结构按MHC配准；左、中为8RYM和8RYN，右侧肽叠合的颜色依次对应8RYM（金橙）、8RYN（紫）。定量状态为HLA-A3（8RYM）、HLA-A11（8RYN）。b，完整预设自然pMHC界面的绝对模型RMSF。c，同氨基酸且χ角均有定义的全部自然pMHC界面侧链模型Hχ。各对照完整位数为HLA-A3→HLA-A11：RMSF 16位、Hχ 15位。H/P分别表示MHC/肽。d，在相同预设范围内比较模型变化与既有MD变化，统一为后态减前态；每个点为一个残基配对，虚线为数值一致。MD数值取各状态3次独立轨迹的等权均值；图中n指残基配对数，不能视作独立实验重复数。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C11",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C11 KRAS G12V 4TCR2→MH。a，真实既有起始结构按MHC配准；左、中为8WTE和8WUL，右侧肽叠合的颜色依次对应8WTE（金橙）、8WUL（紫）。定量状态为4TCR2（8WTE）、MH（8WUL）。b，完整预设六个CDR的绝对模型RMSF。c，同氨基酸且χ角均有定义的全部自然pMHC界面侧链模型Hχ。各对照完整位数为4TCR2→MH：RMSF 48位、Hχ 13位。H/P分别表示MHC/肽；CDR曲线间断处为不同环区段。d，在相同预设范围内比较模型变化与既有MD变化，统一为后态减前态；每个点为一个残基配对，虚线为数值一致。MD数值取各状态3次独立轨迹的等权均值；图中n指残基配对数，不能视作独立实验重复数。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C12",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C12 PRAME S2→S2-198亲和工程。a，真实既有起始结构按MHC配准；左、中为8RYM和8RYO，右侧肽叠合的颜色依次对应8RYM（金橙）、8RYO（紫）、8RYP（蓝）、8RYQ（绿）。定量状态为S2（8RYM）、S2-198（8RYO）；8RYP、8RYQ仅出现在结构叠合中，不属于本图列明的定量对照。b，完整预设六个CDR的绝对模型RMSF。c，同氨基酸且χ角均有定义的全部自然pMHC界面侧链模型Hχ。各对照完整位数为S2→S2-198：RMSF 47位、Hχ 14位。H/P分别表示MHC/肽；CDR曲线间断处为不同环区段。d，在相同预设范围内比较模型变化与既有MD变化，统一为后态减前态；每个点为一个残基配对，虚线为数值一致。MD数值取各状态3次独立轨迹的等权均值；图中n指残基配对数，不能视作独立实验重复数。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C13",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C13 MEL5识别MART-1十肽/九肽。a，真实既有起始结构按MHC配准；左、中为4QOK和6EQA，右侧肽叠合的颜色依次对应4QOK（金橙）、6EQA（紫）、6EQB（蓝）。定量状态为Decamer（4QOK）、Nonamer（6EQA）；6EQB仅出现在结构叠合中，不属于本图列明的定量对照。b，完整预设六个CDR的绝对模型RMSF。c，同氨基酸且χ角均有定义的全部自然pMHC界面侧链模型Hχ。各对照完整位数为Decamer→Nonamer：RMSF 45位、Hχ 19位。H/P分别表示MHC/肽；CDR曲线间断处为不同环区段。d，在相同预设范围内比较模型变化与既有MD变化，统一为后态减前态；每个点为一个残基配对，虚线为数值一致。MD数值取各状态3次独立轨迹的等权均值；图中n指残基配对数，不能视作独立实验重复数。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C14",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C14 DMF4/DMF5识别MART-1十肽/九肽。a，真实既有起始结构按MHC配准；左、中为3QDG和3QDJ，右侧肽叠合的颜色依次对应3QDG（金橙）、3QDJ（紫）、3QDM（蓝）、3QEQ（绿）。定量状态为DMF5 10mer（3QDG）、DMF5 9mer（3QDJ）、DMF4 10mer（3QDM）、DMF4 9mer（3QEQ）。b，完整预设自然pMHC界面的绝对模型RMSF。c，同氨基酸且χ角均有定义的全部自然pMHC界面侧链模型Hχ。各对照完整位数为DMF5 10mer→DMF5 9mer：RMSF 24位、Hχ 16位；DMF4 10mer→DMF4 9mer：RMSF 24位、Hχ 19位。H/P分别表示MHC/肽。d，在相同预设范围内比较模型变化与既有MD变化，统一为后态减前态；每个点为一个残基配对，虚线为数值一致。MD数值取各状态3次独立轨迹的等权均值；图中n指残基配对数，不能视作独立实验重复数。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C15",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C15 MEL5识别三种肿瘤抗原。a，真实既有起始结构按MHC配准；左、中为4QOK和7Q99，右侧肽叠合的颜色依次对应4QOK（金橙）、7Q99（紫）、7Q9A（蓝）、7Q9B（绿）。定量状态为Melan-A（4QOK）、IMP2（7Q99）、BST2（7Q9A）；7Q9B仅出现在结构叠合中，不属于本图列明的定量对照。b，完整预设六个CDR的绝对模型RMSF。c，同氨基酸且χ角均有定义的全部自然pMHC界面侧链模型Hχ。各对照完整位数为Melan-A→IMP2：RMSF 45位、Hχ 16位；Melan-A→BST2：RMSF 45位、Hχ 19位；IMP2→BST2：RMSF 45位、Hχ 17位。H/P分别表示MHC/肽；CDR曲线间断处为不同环区段。d，在相同预设范围内比较模型变化与既有MD变化，统一为后态减前态；每个点为一个残基配对，虚线为数值一致。MD数值取各状态3次独立轨迹的等权均值；图中n指残基配对数，不能视作独立实验重复数。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C16",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C16 1G4 CDR2亲和成熟。a，真实既有起始结构按MHC配准；左、中为2F54和2F53，右侧肽叠合的颜色依次对应2F54（金橙）、2F53（紫）、2P5E（蓝）、2P5W（绿）、2PYE（红）。定量状态为WT 1G4（2F54）、c49c50（2F53）；2P5E、2P5W、2PYE仅出现在结构叠合中，不属于本图列明的定量对照。b，完整预设六个CDR的绝对模型RMSF。c，同氨基酸且χ角均有定义的全部自然pMHC界面侧链模型Hχ。各对照完整位数为WT 1G4→c49c50：RMSF 49位、Hχ 21位。H/P分别表示MHC/肽；CDR曲线间断处为不同环区段。d，在相同预设范围内比较模型变化与既有MD变化，统一为后态减前态；每个点为一个残基配对，虚线为数值一致。MD数值取各状态3次独立轨迹的等权均值；图中n指残基配对数，不能视作独立实验重复数。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C17",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C17 TCR156 WT/S32M CatchBond。a，真实既有起始结构按MHC配准；左、中为9NMU和9NMX，右侧肽叠合的颜色依次对应9NMU（金橙）、9NMX（紫）。定量状态为WT（9NMU）、S32M（9NMX）。b，完整预设共同未变全复合物的绝对模型RMSF。c，同氨基酸且χ角均有定义的全部全复合物侧链模型Hχ。各对照完整位数为WT→S32M：RMSF 407位、Hχ 343位。本例完整输入包括MHC、肽、TCRα和TCRβ，各角色按输入残基编号排列；343个侧链覆盖整个复合物，并非仅pMHC界面。d，在相同预设范围内比较模型变化与既有MD变化，统一为后态减前态；每个点为一个残基配对，虚线为数值一致。MD数值取各状态10次独立轨迹的等权均值；图中n指残基配对数，不能视作独立实验重复数。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C18",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C18 2VLK / 2VLR / 5ISZ。a，真实既有MD起始结构的MHC配准视图，左、中为2VLK和5ISZ，右为本系列全部可用肽结构叠合；叠合配色：2VLK为橙、5ISZ为紫、2VLR为蓝。b，主对照完整肽段的两状态模型RMSF，斜杠标注氨基酸改变，缺失对应保留为断点。c，主对照两状态8 Å界面并集中全部可自然对应、氨基酸相同且χ有定义的pMHC侧链模型Hχ；H/P分别表示MHC/肽，完整无χ或替换位置记录于源表。d，本系列所有列明生物对照在完整肽主链及同AA pMHC界面侧链上的模型变化与既有MD变化；两者变化均为后态减前态。点为残基位置，并非独立实验重复；ITrace各状态3次MD，未对残基或帧作显著性检验。具体支持与局限见正文。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C19",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C19 6VQO / 7RM4 / 6VRM / 6VRN。a，真实既有MD起始结构的MHC配准视图，左、中为6VQO和7RM4，右为本系列全部可用肽结构叠合；叠合配色：6VQO为橙、7RM4为紫、6VRM为蓝、6VRN为绿。b，主对照完整肽段的两状态模型RMSF，斜杠标注氨基酸改变，缺失对应保留为断点。c，主对照两状态8 Å界面并集中全部可自然对应、氨基酸相同且χ有定义的pMHC侧链模型Hχ；H/P分别表示MHC/肽，完整无χ或替换位置记录于源表。d，本系列所有列明生物对照在完整肽主链及同AA pMHC界面侧链上的模型变化与既有MD变化；两者变化均为后态减前态。点为残基位置，并非独立实验重复；ITrace各状态3次MD，未对残基或帧作显著性检验。具体支持与局限见正文。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C20",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C20 5D2L / 5D2N。a，真实既有MD起始结构的MHC配准视图，左、中为5D2L和5D2N，右为本系列全部可用肽结构叠合；叠合配色：5D2L为橙、5D2N为紫。b，主对照完整肽段的两状态模型RMSF，斜杠标注氨基酸改变，缺失对应保留为断点。c，主对照两状态8 Å界面并集中全部可自然对应、氨基酸相同且χ有定义的pMHC侧链模型Hχ；H/P分别表示MHC/肽，完整无χ或替换位置记录于源表。d，本系列所有列明生物对照在完整肽主链及同AA pMHC界面侧链上的模型变化与既有MD变化；两者变化均为后态减前态。点为残基位置，并非独立实验重复；ITrace各状态3次MD，未对残基或帧作显著性检验。具体支持与局限见正文。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C21",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C21 1AO7 / 1QRN / 1QSE / 1QSF / 3H9S / 3PWP。a，真实既有MD起始结构的MHC配准视图，左、中为1AO7和1QRN，右为本系列全部可用肽结构叠合；叠合配色：1AO7为橙、1QRN为紫、1QSE为蓝、1QSF为绿、3H9S为红、3PWP为灰。b，主对照完整肽段的两状态模型RMSF，斜杠标注氨基酸改变，缺失对应保留为断点。c，主对照两状态8 Å界面并集中全部可自然对应、氨基酸相同且χ有定义的pMHC侧链模型Hχ；H/P分别表示MHC/肽，完整无χ或替换位置记录于源表。d，本系列所有列明生物对照在完整肽主链及同AA pMHC界面侧链上的模型变化与既有MD变化；两者变化均为后态减前态。点为残基位置，并非独立实验重复；ITrace各状态3次MD，未对残基或帧作显著性检验。具体支持与局限见正文。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C22",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C22 8RLT / 8RLU / 8RLV。a，真实既有MD起始结构的MHC配准视图，左、中为8RLT和8RLU，右为本系列全部可用肽结构叠合；叠合配色：8RLT为橙、8RLU为紫、8RLV为蓝。b，主对照完整肽段的两状态模型RMSF，斜杠标注氨基酸改变，缺失对应保留为断点。c，主对照两状态8 Å界面并集中全部可自然对应、氨基酸相同且χ有定义的pMHC侧链模型Hχ；H/P分别表示MHC/肽，完整无χ或替换位置记录于源表。d，本系列所有列明生物对照在完整肽主链及同AA pMHC界面侧链上的模型变化与既有MD变化；两者变化均为后态减前态。点为残基位置，并非独立实验重复；ITrace各状态3次MD，未对残基或帧作显著性检验。具体支持与局限见正文。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C23",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C23 6VMA / 6VM9 / 6VMC / 6VM7。a，真实既有MD起始结构的MHC配准视图，左、中为6VMA和6VM9，右为本系列全部可用肽结构叠合；叠合配色：6VMA为橙、6VM9为紫、6VMC为蓝、6VM7为绿。b，主对照完整肽段的两状态模型RMSF，斜杠标注氨基酸改变，缺失对应保留为断点。c，主对照两状态8 Å界面并集中全部可自然对应、氨基酸相同且χ有定义的pMHC侧链模型Hχ；H/P分别表示MHC/肽，完整无χ或替换位置记录于源表。d，本系列所有列明生物对照在完整肽主链及同AA pMHC界面侧链上的模型变化与既有MD变化；两者变化均为后态减前态。点为残基位置，并非独立实验重复；ITrace各状态3次MD，未对残基或帧作显著性检验。具体支持与局限见正文。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C24",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C24 6BJ2 / 6BJ3 / 6BJ8。a，真实既有MD起始结构的MHC配准视图，左、中为6BJ3和6BJ8，右为本系列全部可用肽结构叠合；叠合配色：6BJ3为橙、6BJ8为紫、6BJ2为蓝。b，主对照完整肽段的两状态模型RMSF，斜杠标注氨基酸改变，缺失对应保留为断点。c，主对照两状态8 Å界面并集中全部可自然对应、氨基酸相同且χ有定义的pMHC侧链模型Hχ；H/P分别表示MHC/肽，完整无χ或替换位置记录于源表。d，本系列所有列明生物对照在完整肽主链及同AA pMHC界面侧链上的模型变化与既有MD变化；两者变化均为后态减前态。点为残基位置，并非独立实验重复；ITrace各状态3次MD，未对残基或帧作显著性检验。具体支持与局限见正文。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C25",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C25 5BRZ / 5BS0。a，真实既有MD起始结构的MHC配准视图，左、中为5BRZ和5BS0，右为本系列全部可用肽结构叠合；叠合配色：5BRZ为橙、5BS0为紫。b，主对照完整肽段的两状态模型RMSF，斜杠标注氨基酸改变，缺失对应保留为断点。c，主对照两状态8 Å界面并集中全部可自然对应、氨基酸相同且χ有定义的pMHC侧链模型Hχ；H/P分别表示MHC/肽，完整无χ或替换位置记录于源表。d，本系列所有列明生物对照在完整肽主链及同AA pMHC界面侧链上的模型变化与既有MD变化；两者变化均为后态减前态。点为残基位置，并非独立实验重复；ITrace各状态3次MD，未对残基或帧作显著性检验。具体支持与局限见正文。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C26",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C26 5NME / 5NMF / 5NMG。a，真实既有MD起始结构的MHC配准视图，左、中为5NME和5NMF，右为本系列全部可用肽结构叠合；叠合配色：5NME为橙、5NMF为紫、5NMG为蓝。b，主对照完整肽段的两状态模型RMSF，斜杠标注氨基酸改变，缺失对应保留为断点。c，主对照两状态8 Å界面并集中全部可自然对应、氨基酸相同且χ有定义的pMHC侧链模型Hχ；H/P分别表示MHC/肽，完整无χ或替换位置记录于源表。d，本系列所有列明生物对照在完整肽主链及同AA pMHC界面侧链上的模型变化与既有MD变化；两者变化均为后态减前态。点为残基位置，并非独立实验重复；ITrace各状态3次MD，未对残基或帧作显著性检验。具体支持与局限见正文。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C27",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C27 3UTS / 3UTT / 5C07 / 5C08 / 5C09 / 5C0A / 5C0B / 5C0C / 5HYJ。a，真实既有MD起始结构的MHC配准视图，左、中为3UTS和5C0A，右为本系列全部可用肽结构叠合；叠合配色：3UTS为橙、5C0A为紫、3UTT为蓝、5C07为绿、5C08为红、5C09为灰、5C0B为浅蓝、5C0C为棕、5HYJ为浅紫。b，主对照完整肽段的两状态模型RMSF，斜杠标注氨基酸改变，缺失对应保留为断点。c，主对照两状态8 Å界面并集中全部可自然对应、氨基酸相同且χ有定义的pMHC侧链模型Hχ；H/P分别表示MHC/肽，完整无χ或替换位置记录于源表。d，本系列所有列明生物对照在完整肽主链及同AA pMHC界面侧链上的模型变化与既有MD变化；两者变化均为后态减前态。点为残基位置，并非独立实验重复；ITrace各状态3次MD，未对残基或帧作显著性检验。具体支持与局限见正文。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C28",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C28 9RUP / 9RXM。a，真实既有MD起始结构的MHC配准视图，左、中为9RUP和9RXM，右为本系列全部可用肽结构叠合；叠合配色：9RUP为橙、9RXM为紫。b，主对照完整肽段的两状态模型RMSF，斜杠标注氨基酸改变，缺失对应保留为断点。c，主对照两状态8 Å界面并集中全部可自然对应、氨基酸相同且χ有定义的pMHC侧链模型Hχ；H/P分别表示MHC/肽，完整无χ或替换位置记录于源表。d，本系列所有列明生物对照在完整肽主链及同AA pMHC界面侧链上的模型变化与既有MD变化；两者变化均为后态减前态。点为残基位置，并非独立实验重复；ITrace各状态3次MD，未对残基或帧作显著性检验。具体支持与局限见正文。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C29",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C29 5TIL / 6G9Q / 5TJE / 5M00 / 5M01 / 5M02。a，真实既有MD起始结构的MHC配准视图，左、中为5TIL和6G9Q，右为本系列全部可用肽结构叠合；叠合配色：5TIL为橙、6G9Q为紫、5TJE为蓝、5M00为绿、5M01为红、5M02为灰。b，主对照完整肽段的两状态模型RMSF，斜杠标注氨基酸改变，缺失对应保留为断点。c，主对照两状态8 Å界面并集中全部可自然对应、氨基酸相同且χ有定义的pMHC侧链模型Hχ；H/P分别表示MHC/肽，完整无χ或替换位置记录于源表。d，本系列所有列明生物对照在完整肽主链及同AA pMHC界面侧链上的模型变化与既有MD变化；两者变化均为后态减前态。点为残基位置，并非独立实验重复；ITrace各状态3次MD，未对残基或帧作显著性检验。具体支持与局限见正文。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C30",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C30 3QDG / 4JFF。a，真实既有MD起始结构的MHC配准视图，左、中为3QDG和4JFF，右为本系列全部可用肽结构叠合；叠合配色：3QDG为橙、4JFF为紫。b，主对照完整肽段的两状态模型RMSF，斜杠标注氨基酸改变，缺失对应保留为断点。c，主对照两状态8 Å界面并集中全部可自然对应、氨基酸相同且χ有定义的pMHC侧链模型Hχ；H/P分别表示MHC/肽，完整无χ或替换位置记录于源表。d，本系列所有列明生物对照在完整肽主链及同AA pMHC界面侧链上的模型变化与既有MD变化；两者变化均为后态减前态。点为残基位置，并非独立实验重复；ITrace各状态3次MD，未对残基或帧作显著性检验。具体支持与局限见正文。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C31",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C31 KIX共同活动区域的预测。（a）真实2AGH来源结构，cMyb和MLL结合KIX的不同表面；（b）双伙伴状态的L12（614–621），分别按MD与模型RMSF百分位着色，使用与c相同的0–100蓝色色标；（c）四种伙伴组成中KIX全部87位的MD/模型百分位，橙框为L12；（d）L12八位平均百分位及全部最高20%集合的交集数，四种状态依次为Apo、cMyb、MLL与Both；（e）全部87位绝对RMSF曲线。MD每状态一条100 ns轨迹，模型为排除KIX相关记录的第1折预测。该图检验活动区定位；四状态L12差值方向没有被模型恢复，不解释结合协同。",
+      "source_figure_hash_matches": true
+    },
+    {
+      "case_id": "C32",
+      "background_present": true,
+      "model_evidence_present": true,
+      "concrete_limitations_present": true,
+      "original_narrative_paragraphs": 3,
+      "exact_original_paragraphs_retained": true,
+      "actual_caption": "图C32 泛素同类型侧链取向多样性的预测。（a）真实2QHO来源泛素–EDD UBA模型输入，显示Q2与Q41的位置；（b）泛素全部66个Hχ有效位置的MD五窗口均值参考与留出预测，线连接有效观测，轴下短灰刻度标示没有可定义Hχ的六位；（c）全部151个残基–角度观测，χ1–χ4分别66、52、23和10点，横轴仍是同一个联合Hχ模型读数，纵轴是MD单角细箱熵；两轴在各角层内按氨基酸类型去均值。Q2/41为紫/橙色；（d）由六个谷氨酰胺中模型最低Q41与最高Q2选定的MD经验投影自由能F*=−ln(p̂/p̂max)，每角72个5°箱、共432箱，采用0–100 ns的501帧；零计数箱断开，F*≤1的角区以底部色条和宽度数字表示。模型没有直接预测逐角曲线、具体构象或结合自由能。",
+      "source_figure_hash_matches": true
+    }
+  ],
+  "new_complete_scope_numeric_checks": [
+    {
+      "case_id": "C18",
+      "metric": "rmsf",
+      "n": 18,
+      "MAE": 0.06563375062412685,
+      "zero_change_MAE": 0.040571428007549676,
+      "gain_fraction": -0.6177333125152382,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C18",
+      "metric": "hchi",
+      "n": 27,
+      "MAE": 0.3309920054894906,
+      "zero_change_MAE": 0.32701780398686725,
+      "gain_fraction": -0.01215285973476532,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C19",
+      "metric": "rmsf",
+      "n": 18,
+      "MAE": 0.07342897355556484,
+      "zero_change_MAE": 0.04011920260058503,
+      "gain_fraction": -0.8302700152493576,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C19",
+      "metric": "hchi",
+      "n": 31,
+      "MAE": 0.18831797472892267,
+      "zero_change_MAE": 0.2254606591116997,
+      "gain_fraction": 0.16474131020958072,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C20",
+      "metric": "rmsf",
+      "n": 9,
+      "MAE": 0.11949646804067816,
+      "zero_change_MAE": 0.052269475327597674,
+      "gain_fraction": -1.2861616132883857,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C20",
+      "metric": "hchi",
+      "n": 24,
+      "MAE": 0.19671598999180637,
+      "zero_change_MAE": 0.19641513253251708,
+      "gain_fraction": -0.0015317427705805464,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C21",
+      "metric": "rmsf",
+      "n": 45,
+      "MAE": 0.20779846774207222,
+      "zero_change_MAE": 0.20936393340428666,
+      "gain_fraction": 0.007477246136713966,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C21",
+      "metric": "hchi",
+      "n": 76,
+      "MAE": 0.24339918544903508,
+      "zero_change_MAE": 0.24877305348452763,
+      "gain_fraction": 0.02160148762183678,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C22",
+      "metric": "rmsf",
+      "n": 27,
+      "MAE": 0.17994138708821042,
+      "zero_change_MAE": 0.08035177433932264,
+      "gain_fraction": -1.2394202065572868,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C22",
+      "metric": "hchi",
+      "n": 35,
+      "MAE": 0.12403418955067791,
+      "zero_change_MAE": 0.10130609103611533,
+      "gain_fraction": -0.22435075998006937,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C23",
+      "metric": "rmsf",
+      "n": 18,
+      "MAE": 0.23350973592864138,
+      "zero_change_MAE": 0.17510008480813766,
+      "gain_fraction": -0.3335786569407142,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C23",
+      "metric": "hchi",
+      "n": 32,
+      "MAE": 0.19106248347088692,
+      "zero_change_MAE": 0.1836586645804345,
+      "gain_fraction": -0.04031293000723024,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C24",
+      "metric": "rmsf",
+      "n": 18,
+      "MAE": 0.10922850668430327,
+      "zero_change_MAE": 0.10948750873406725,
+      "gain_fraction": 0.002365585378265034,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C24",
+      "metric": "hchi",
+      "n": 37,
+      "MAE": 0.1762882503303321,
+      "zero_change_MAE": 0.15095721628214856,
+      "gain_fraction": -0.16780273690817293,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C25",
+      "metric": "rmsf",
+      "n": 9,
+      "MAE": 0.10853391885757441,
+      "zero_change_MAE": 0.06253091494242345,
+      "gain_fraction": -0.735684164505015,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C25",
+      "metric": "hchi",
+      "n": 13,
+      "MAE": 0.21493046029550333,
+      "zero_change_MAE": 0.1975867891540894,
+      "gain_fraction": -0.08777748358412962,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C26",
+      "metric": "rmsf",
+      "n": 18,
+      "MAE": 0.07977310319741562,
+      "zero_change_MAE": 0.09983741078111856,
+      "gain_fraction": 0.2009698311156276,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C26",
+      "metric": "hchi",
+      "n": 34,
+      "MAE": 0.18387583862332732,
+      "zero_change_MAE": 0.1618871110327103,
+      "gain_fraction": -0.1358275371667732,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C27",
+      "metric": "rmsf",
+      "n": 20,
+      "MAE": 0.07051274478435512,
+      "zero_change_MAE": 0.04447070956230159,
+      "gain_fraction": -0.5855997234667403,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C27",
+      "metric": "hchi",
+      "n": 22,
+      "MAE": 0.2126961632654498,
+      "zero_change_MAE": 0.1904953921383077,
+      "gain_fraction": -0.11654229993670073,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C28",
+      "metric": "rmsf",
+      "n": 9,
+      "MAE": 0.2778989010386997,
+      "zero_change_MAE": 0.3278859787517124,
+      "gain_fraction": 0.15245262363251222,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C28",
+      "metric": "hchi",
+      "n": 22,
+      "MAE": 0.361584568565542,
+      "zero_change_MAE": 0.30880097096616566,
+      "gain_fraction": -0.17093080191499688,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C29",
+      "metric": "rmsf",
+      "n": 9,
+      "MAE": 0.4916788736979167,
+      "zero_change_MAE": 0.5278908279207017,
+      "gain_fraction": 0.06859743020241438,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C29",
+      "metric": "hchi",
+      "n": 8,
+      "MAE": 0.2504510247786697,
+      "zero_change_MAE": 0.21793476119637484,
+      "gain_fraction": -0.14920182261789527,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C30",
+      "metric": "rmsf",
+      "n": 10,
+      "MAE": 0.14243603646755215,
+      "zero_change_MAE": 0.10669184625148768,
+      "gain_fraction": -0.33502269828390063,
+      "actual_text_verified": true
+    },
+    {
+      "case_id": "C30",
+      "metric": "hchi",
+      "n": 21,
+      "MAE": 0.2621822399752481,
+      "zero_change_MAE": 0.27972372231029324,
+      "gain_fraction": 0.06271002755921662,
+      "actual_text_verified": true
+    }
+  ],
+  "subset_to_full_scope_bridges": [
+    {
+      "case_id": "C06",
+      "scope": "正文7个肽Hchi位点与新图43个CDR主链/12个pMHC侧链不同",
+      "explicit_bridge_present": true
+    },
+    {
+      "case_id": "C12",
+      "scope": "正文23个CDR3及16个CDR3侧链与新图47个全CDR/14个pMHC侧链不同",
+      "explicit_bridge_present": true
+    },
+    {
+      "case_id": "C15",
+      "scope": "正文22个CDR3与新图45个全CDR不同",
+      "explicit_bridge_present": true
+    }
+  ],
+  "scientific_checks": {
+    "MEL5": "Q72/Gly54共同接触约束，保留19处改造及邻位Pro影响；未把Hchi当力或结合熵。",
+    "SB27_SB47": "不同天然TCR，Q7局部双读数与完整11位侧链较弱都保留。",
+    "KRAS": "固定JDIa41b1和HLA的单点抗原对照，主链主张与Hchi不足及不同治疗构建体分开。",
+    "JM22": "F5L本位另列，未替换位置小幅度限制明示。",
+    "PIK3CA": "自然同序列pMHC与跨TCR对应分开，不把全界面较好统计归给同pMHC整体。",
+    "weak_and_negative_cases": "所有弱响应、模型间不一、构建问题与完整失败均具体陈述。",
+    "discovery_cases": "早期小n与新完整范围分开，完整新误差26条从实际csv重新计算并与actual DOCX核对。",
+    "biological_scope_pending": "C18–C30未将未核生物背景写成已证明模型机制；C28/C29缺已核主源仍明示。",
+    "non_tcr": "KIX共同活动定位与状态差值失败分开；泛素联合标量与逐角轨迹曲线分开。",
+    "training_provenance": "2430来源/不含ITrace，2431历史对照非随机重复；KIX/泛素对应留出来源单列。"
+  },
+  "required_changes": [],
+  "document_modified": false,
+  "single_scope_table_correction_audit": {
+    "status": "passed",
+    "previous_document_sha256": "3285733b085526f8b2942cec1a4043b8a656ffbfc33967b570dba207eaaae2b8",
+    "current_document_sha256": "e479ea9c92e80161216cf418935883245f86f1bfa780044bca0abacce3cc9744",
+    "comparison_basis": "Previous independently extracted actual-DOCX case sections compared field-for-field against current independently extracted actual-DOCX case sections.",
+    "changed_fields": [
+      {
+        "case_id": "C08",
+        "field": "tables",
+        "before": [
+          "读数或数据图内分析范围规模RMSF完整肽段9位Hχ同类型完整界面8位已有MD独立轨迹均值每态3条"
+        ],
+        "after": [
+          "读数或数据图内分析范围规模RMSF完整肽段9位Hχ同类型完整肽段8位已有MD独立轨迹均值每态3条"
+        ]
+      }
+    ],
+    "all_32_case_paragraphs_unchanged": true,
+    "all_32_case_titles_unchanged": true,
+    "all_32_captions_unchanged": true,
+    "all_32_embedded_figure_hashes_unchanged": true,
+    "all_other_case_tables_unchanged": true,
+    "original_99_narrative_paragraphs_exact": true,
+    "three_scope_bridge_sentences_retained": true
+  }
+}

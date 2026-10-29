@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "input": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\fixed_backbone\\2BNR__1G4_NYESO_SLLMWITQC\\model_input_fixed_backbone.pdb",
+  "input_sha256": "73210fa6a9eac5fd1530877ad0d9aac6d53adc1e9c5c1290cb0478bb69b4744a",
+  "output": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\local_antigen_screening_20261021\\structures\\static_complete\\2BNR__1G4_NYESO_SLLMWITQC\\complete_heavy_atoms.pdb",
+  "output_sha256": "7d82cceb1ec0a0b5036419aa0a096fc8956b17a3141cfe721b8191e0059b8c04",
+  "residues": 829,
+  "new_sidechain_atoms": [],
+  "new_terminal_atoms": [],
+  "all_observed_backbone_values_bit_identical": true,
+  "sidechain_rebuilt": true,
+  "backbone_rebuilt": false,
+  "OpenMM": "8.6.1",
+  "platform": "CPU",
+  "seed": 17,
+  "MD": false,
+  "elapsed_seconds": 0.7189375000016298
+}

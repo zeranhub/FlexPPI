@@ -1,0 +1,5 @@
+# 已成功恢复并完成PaperBanana新版面生成
+
+首次generation_01在Retriever返回402，失败诊断保留。用户恢复服务后，本次generation_retry_20261027_155023成功完成两方案4K、最多两轮Critic的完整demo_full流程。run_status.json已更新为completed=true。A稳定candidate_id0对应candidate_2_final.png，B稳定candidate_id1对应candidate_1_final.png，文件号由完成顺序决定。
+
+已按A的三排骨架制作真实数据版，路径见run_status.json。PB原图仅为布局草案，不能将生成的分子/曲线当真实科学内容。正式图使用原PyMOL图像与767标量、824988共同位点的原生绘图；Word未修改。旧输入/失败包保留作为历史记录，当前成功结果与原生实现见figure3_v111_20261027_PaperBanana布局对照.html及成功结果ZIP。

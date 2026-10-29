@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "unchanged_source_files_verified": 337,
+  "base_output_hashes_verified": 22,
+  "scalar_pair_metric_checks": 31104,
+  "all_eligible_unordered_pairs": 624602,
+  "sameAA4_positions": 33142,
+  "scalar_primary_physical_pairs_match_vectorized": true,
+  "type_to_record_and_record_to_overall_means_verified": true,
+  "previous_full3063_classes_and_recalls_exact": true,
+  "truth_conditioned_analysis_not_deployable_input": true,
+  "family_clusters": 42,
+  "largest_family_records": 38,
+  "sasa_extension": {
+    "quality_positions": 33493,
+    "no_incomplete_sidechains": true,
+    "pair_rows": 127585,
+    "all_pairs_same_AA_and_record": true,
+    "all_exported_pairs_SASA_percentile_caliper_satisfied": true
+  },
+  "absolute_sasa_post_exploration": {
+    "scalar_central_10A2_metric_checks": 15552,
+    "same_chain_and_all_record_scopes_verified": true,
+    "exploratory_status_explicit": true,
+    "original_primary_protocol_unchanged": true
+  }
+}

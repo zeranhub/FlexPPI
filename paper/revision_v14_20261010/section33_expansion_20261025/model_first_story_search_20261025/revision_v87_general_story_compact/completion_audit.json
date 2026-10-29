@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "source_docx": "paper_v86_20261026_中文修订_图3完整接触与侧链环境.docx",
+  "final_docx": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v87_20261026_中文修订_互补柔性背景与图3凝练.docx",
+  "docx_sha256": "8b84b1148b054284393df2e680d75e82c8d76b011d53bc28541fbc87e65ea7b0",
+  "pages": 29,
+  "section_title": "3.3 主链与侧链柔性的互补解析",
+  "inserted_background_before_original_paragraph": 69,
+  "main_figure_mm": [
+    182.9999999999947,
+    190.0000000000161
+  ],
+  "previous_height_mm": 225,
+  "height_reduction_percent": 15.555555555548406,
+  "same_fontsize_floor_as_v86": 6.2,
+  "contact_summary_uses_all3600_pairs": true,
+  "all25_contact_rows_retained": true,
+  "all21_sidechains_retained": true,
+  "all92_profile_values_retained": true,
+  "full_contact_matrix_preserved": "figure3/source_contact_map/all25x144_contacts.pdf + source_data/all3600_CaMKI_CaM_distances.csv",
+  "new_model_or_MD_runs": false,
+  "new_structural_asset": "True same-view M316-L45/S99 local magnification from 1A06",
+  "changed_zip_parts": [
+    "word/document.xml",
+    "word/media/image5.png"
+  ],
+  "all_other_images_and_six_tables_unchanged": true,
+  "visual_QA": "First9 pages exact pixels of audited v86; independent pages10–19 and19–29 reviewed; final two caption precision edits affect page11 only, reviewed primary, remaining28 pages exact pixels of reviewed release01.",
+  "main_figure_sha256": {
+    "png": "b4a20ef3baf14618bfb340d01d096201ce96ed8ef6353c2a09ea902ac57934f8",
+    "pdf": "3bfe2b6e0081aecc57ac04f8e1a6926a077ae6ee0c48beba66c04a9ef49c4f11",
+    "svg": "43475f22d3a665a04b022a2d0ac61bece684c52e2735d193123c7079f5e69374"
+  },
+  "caption_precision_edits": [
+    "25 backbone positions and21 sidechain positions",
+    "1A06 residues317–318 unresolved, not biologically deleted"
+  ]
+}

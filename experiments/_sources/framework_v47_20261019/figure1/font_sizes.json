@@ -1,0 +1,477 @@
+[
+  {
+    "text": "a FlexPPI overview",
+    "source_size_pt": 12.290508890232829,
+    "word_size_pt": 11.258912078462467
+  },
+  {
+    "text": "Static structure",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Geometric encoding",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Shared encoder",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Joint readout",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Residue dynamics",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "4g9f · 840 residues",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "A",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "B",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "C",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "D",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "E",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Residue identity",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "G",
+    "source_size_pt": 10.025349666536808,
+    "word_size_pt": 9.18387769452585
+  },
+  {
+    "text": "S",
+    "source_size_pt": 10.025349666536808,
+    "word_size_pt": 9.18387769452585
+  },
+  {
+    "text": "H",
+    "source_size_pt": 10.025349666536808,
+    "word_size_pt": 9.18387769452585
+  },
+  {
+    "text": "S",
+    "source_size_pt": 10.025349666536808,
+    "word_size_pt": 9.18387769452585
+  },
+  {
+    "text": "M",
+    "source_size_pt": 10.025349666536808,
+    "word_size_pt": 9.18387769452585
+  },
+  {
+    "text": "R",
+    "source_size_pt": 10.025349666536808,
+    "word_size_pt": 9.18387769452585
+  },
+  {
+    "text": "Y",
+    "source_size_pt": 10.025349666536808,
+    "word_size_pt": 9.18387769452585
+  },
+  {
+    "text": "…",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "N / Cα / C",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Residue features",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Pair features",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Fixed local frames",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "4 blocks",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "LayerNorm",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "IPA · 8 heads",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "+",
+    "source_size_pt": 10.025349666536808,
+    "word_size_pt": 9.18387769452585
+  },
+  {
+    "text": "Norm + FFN",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "+",
+    "source_size_pt": 10.025349666536808,
+    "word_size_pt": 9.18387769452585
+  },
+  {
+    "text": "LayerNorm",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Shared MLP",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "μ, log σ²",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Predicted RMSF",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "RMSF (Å)",
+    "source_size_pt": 10.349902223353961,
+    "word_size_pt": 9.481189118705235
+  },
+  {
+    "text": "Hχ (nats)",
+    "source_size_pt": 10.349902223353961,
+    "word_size_pt": 9.481189118705235
+  },
+  {
+    "text": "4",
+    "source_size_pt": 10.349902223353961,
+    "word_size_pt": 9.481189118705235
+  },
+  {
+    "text": "0",
+    "source_size_pt": 10.349902223353961,
+    "word_size_pt": 9.481189118705235
+  },
+  {
+    "text": "4.1",
+    "source_size_pt": 10.349902223353961,
+    "word_size_pt": 9.481189118705235
+  },
+  {
+    "text": "0",
+    "source_size_pt": 10.349902223353961,
+    "word_size_pt": 9.481189118705235
+  },
+  {
+    "text": "1",
+    "source_size_pt": 10.349902223353961,
+    "word_size_pt": 9.481189118705235
+  },
+  {
+    "text": "420",
+    "source_size_pt": 10.349902223353961,
+    "word_size_pt": 9.481189118705235
+  },
+  {
+    "text": "840",
+    "source_size_pt": 10.349902223353961,
+    "word_size_pt": 9.481189118705235
+  },
+  {
+    "text": "11-residue mean",
+    "source_size_pt": 10.349902223353961,
+    "word_size_pt": 9.481189118705235
+  },
+  {
+    "text": "LayerNorm",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Linear",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "SiLU",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Linear",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "b Global and local frames",
+    "source_size_pt": 11.643640001273207,
+    "word_size_pt": 10.666337758543389
+  },
+  {
+    "text": "c Fixed-frame IPA",
+    "source_size_pt": 11.643640001273207,
+    "word_size_pt": 10.666337758543389
+  },
+  {
+    "text": "d MD supervision",
+    "source_size_pt": 11.643640001273207,
+    "word_size_pt": 10.666337758543389
+  },
+  {
+    "text": "MD trajectories",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "RMSF",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Cα motion",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Hχ",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Joint χ states",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "MD mean + variance",
+    "source_size_pt": 9.70303333439434,
+    "word_size_pt": 8.888614798786158
+  },
+  {
+    "text": "Gaussian NLL",
+    "source_size_pt": 9.70303333439434,
+    "word_size_pt": 8.888614798786158
+  },
+  {
+    "text": "μ, σ²",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "0",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "2",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "4 Å",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Scalar",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "similarity",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "Pair bias",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "Point",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "proximity",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "+",
+    "source_size_pt": 10.025349666536808,
+    "word_size_pt": 9.18387769452585
+  },
+  {
+    "text": "Softmax",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Shared weights",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Weighted sums",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Scalar",
+    "source_size_pt": 9.70303333439434,
+    "word_size_pt": 8.888614798786158
+  },
+  {
+    "text": "Pair",
+    "source_size_pt": 9.70303333439434,
+    "word_size_pt": 8.888614798786158
+  },
+  {
+    "text": "Points",
+    "source_size_pt": 9.70303333439434,
+    "word_size_pt": 8.888614798786158
+  },
+  {
+    "text": "To local frame",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Merge + Linear",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Chain D · 204 residues",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "j",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "i",
+    "source_size_pt": 10.02646777887415,
+    "word_size_pt": 9.184901958745696
+  },
+  {
+    "text": "Residue i",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "x",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "y",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "z",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "Cα",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "N",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "C",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "X",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "Y",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "Z",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "Global axes",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "pᵢ = Rᵢqᵢ + tᵢ",
+    "source_size_pt": 9.70303333439434,
+    "word_size_pt": 8.888614798786158
+  },
+  {
+    "text": "Dynamic observables",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "v = σ² + v(MD)",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  },
+  {
+    "text": "Model",
+    "source_size_pt": 9.056164445434716,
+    "word_size_pt": 8.29604047886708
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "status": "scope_frozen_before_new_predictions",
+  "client_date": "2026-10-24",
+  "human_instruction": "找更多的多链蛋白来测试，不要放单链蛋白",
+  "primary_groups": {
+    "protein": "Actual simulated inputs with at least two polypeptide chains representing one mature biological protein identity; includes verified homomultimers or split-chain mature proteins.",
+    "protein_complex": "Actual simulated inputs containing different biological proteins/independent heterologous peptide partners, using the previously frozen identity policy."
+  },
+  "single_chain_primary_exclusion": "No one-chain record may appear in the new primary protein group; original complete benchmark and all predictions remain preserved as historical/full-cohort evidence.",
+  "expansion_goal": "Find and evaluate as many suitable real multichain protein systems as practical locally; current ten records alone are insufficient as the intended expansion.",
+  "model_selection": {
+    "FlexPPI": "Full only; do not show Intra in the new comparison.",
+    "BackFlip": ["backflip-1.0 (chains)", "backflip-2.1 (chains)"],
+    "BackFlip_selection_reason": "Two main released versions under the same independent-chain inference context; selection does not depend on the new test performance.",
+    "other_existing_fast_entries_candidate": ["DynaProt-M", "FastProtFlex", "ANM", "GNM", "Static", "AA"],
+    "deferred_heavy_full_runs": ["PLANET", "RMSF-net"]
+  },
+  "source_eligibility": [
+    "Real molecular-dynamics trajectories or traceable precomputed MD reference with residue identities and units; an AI-generated ensemble is not a substitute for MD ground truth.",
+    "Actual simulation topology/trajectory must retain two or more protein chains; PDB entry-level oligomer status alone is insufficient.",
+    "Do not duplicate, translate, or concatenate independent single-chain trajectories to manufacture multichain examples.",
+    "Classify biological protein identities from actual chain sequences and authoritative annotations; do not relabel heteromer complexes as proteins.",
+    "Keep source collection, accession, sequence identity, replicas, duration/temperature/forcefield and input/reference hashes. Replicas are not counted as independent proteins.",
+    "Use declared structural support and the original 1024-residue deployment envelope unless a separately documented generalization experiment is prepared. Do not truncate favorable positions.",
+    "Do not count restricted/unavailable trajectory listings as acquired usable test data."
+  ],
+  "evaluation_policy": [
+    "Freeze inclusion, molecular identity and model protocol before reading new performance.",
+    "Identify exact-record/source/sequence-family overlap with actual Full checkpoint training; use genuinely held-out predictions or explicitly separate historical OOF from new external tests.",
+    "Do not evaluate a newly named test input with a checkpoint that trained on the same underlying record; a renamed accession is not independence.",
+    "Recompute chain-wise rigid-body-removed C-alpha RMSF on real trajectories with explicit replica/time-window policy, or verify compatible source-provided references.",
+    "All compared methods use the same static molecular input, matched author residues and frozen valid reference positions. Physical MAE only for absolute-amplitude methods.",
+    "No test-dependent calibration, model selection, sample removal or selection of a checkpoint by new test scores."
+  ],
+  "current_state": "Local and public source inventories in progress; no expansion sample count, predictions, scores or new figure claimed complete."
+}

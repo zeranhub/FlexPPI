@@ -1,0 +1,29 @@
+{
+  "cache": {
+    "pattern": "cache/{sample_id}_rep{replica_index}.npz",
+    "chi_degrees": "float32 [501,N,4]; degrees, undefined/missing chis NaN",
+    "aligned_ca_angstrom": "float64 [501,N,3]; angstrom; source-chain Kabsch to first selected frame; each chain centered at origin",
+    "chi_count": "int8 [N]; number of chemically defined chi angles",
+    "chi_atom_available": "bool [N,4]; individual quadruplet availability",
+    "chi_valid/ca_valid": "bool [N]; inherited target/frame validity and mapped geometry",
+    "times_ps": "float64 [501]; 0..100000 ps at200 ps",
+    "selected_original_indices": "int [501]; actual original frame indices",
+    "source_residue_indices": "int [N]; source-to-canonical mapping, -1 if missing",
+    "chain/author_residue_id/amino_acid/residue_name": "Unicode [N]; canonical identities; read CSV author IDs as string",
+    "uniform_rmsf/uniform_hchi": "float64 [N]; exact source of reproduced uniform labels, Å/nats",
+    "analysis_plan_sha256/raw_trajectory_sha256/topology_sha256": "Unicode scalar provenance"
+  },
+  "CSV": {
+    "per_residue_trajectory.csv.gz": "350844 rows =87711 residue-replica observations x4 shifts; all joint/chi1 descriptors, paired frozen OOF errors, state-conditioned alignedCA variance; Pro explicitly flagged for conventional chi1",
+    "repeat_jsd_per_residue.csv.gz": "325308 rows; all within-record replica pairs for ATLAS/ITrace, all4 shifts; DynaRepo does not have replica JSD",
+    "per_record_trajectory.csv": "812 rows =203 trajectories x4 shifts; arithmetic residue mean within each trajectory",
+    "distribution_record_macro.csv": "664 rows =83records x4shifts x2replica modes; replica1 primary and available-replica descriptor mean supplementary",
+    "distribution_source_summary.csv": "record mean/sampleSD/count by source/all, shift and replica mode",
+    "prediction_effect_per_record.csv": "1328rows =83records x4shifts x2replica modes x2targets; target rmsf0/chi1 indices explicit; unchanged frozen OOF mean re-scored",
+    "valid_mask_audit.csv": "paired residue-count intersections and old/new-only counts for each scoring row",
+    "nonpro_chi1_record_macro.csv": "Pro excluded from conventional chi1 interpretation; all4shifts still equal-width descriptions; physically named g-/g+/trans probabilities only populated atshift60",
+    "conventional_chi1_exclusions.csv": "One row per Pro residue-replica; explicit exclusion reason",
+    "repeat_jsd_source_summary_flat.csv": "flat single-row-header version of repeated JSD summaries",
+    "manuscript_summary_table.csv": "Primary replica1 record macro by source/all and shift; nats and apparent counts explicitly named"
+  }
+}

@@ -1,0 +1,43 @@
+method,group,records,complete_records,expected_residues,covered_residues
+Full,single_chain,2193,2193,497407,497407
+Full,other_multichain,626,626,264246,264246
+Full,tcr_pmhc_itrace,244,244,199668,199668
+Intra,single_chain,2193,2193,497407,497407
+Intra,other_multichain,626,626,264246,264246
+Intra,tcr_pmhc_itrace,244,244,199668,199668
+Static,single_chain,2193,2193,497407,497407
+Static,other_multichain,626,626,264246,264246
+Static,tcr_pmhc_itrace,244,244,199668,199668
+AA,single_chain,2193,2193,497407,497407
+AA,other_multichain,626,626,264246,264246
+AA,tcr_pmhc_itrace,244,244,199668,199668
+DynaProt-M,single_chain,2193,2193,497407,497407
+DynaProt-M,other_multichain,626,626,264246,264246
+DynaProt-M,tcr_pmhc_itrace,244,244,199668,199668
+ANM,single_chain,2193,2193,497407,497407
+ANM,other_multichain,626,626,264246,264246
+ANM,tcr_pmhc_itrace,244,244,199668,199668
+GNM,single_chain,2193,2193,497407,497407
+GNM,other_multichain,626,626,264246,264246
+GNM,tcr_pmhc_itrace,244,244,199668,199668
+FastProtFlex,single_chain,2193,2119,497407,443895
+FastProtFlex,other_multichain,626,513,264246,180014
+FastProtFlex,tcr_pmhc_itrace,244,1,199668,826
+backflip-2.1 (assembly),single_chain,2193,2193,497407,497407
+backflip-2.1 (assembly),other_multichain,626,626,264246,264246
+backflip-2.1 (assembly),tcr_pmhc_itrace,244,244,199668,199668
+backflip-2.1 (chains),single_chain,2193,2193,497407,497407
+backflip-2.1 (chains),other_multichain,626,626,264246,264246
+backflip-2.1 (chains),tcr_pmhc_itrace,244,244,199668,199668
+backflip-1.0 (assembly),single_chain,2193,2193,497407,497407
+backflip-1.0 (assembly),other_multichain,626,626,264246,264246
+backflip-1.0 (assembly),tcr_pmhc_itrace,244,244,199668,199668
+backflip-1.0 (chains),single_chain,2193,2193,497407,497407
+backflip-1.0 (chains),other_multichain,626,626,264246,264246
+backflip-1.0 (chains),tcr_pmhc_itrace,244,244,199668,199668
+backflip-1.0-seq (assembly),single_chain,2193,270,497407,62109
+backflip-1.0-seq (assembly),other_multichain,626,0,264246,0
+backflip-1.0-seq (assembly),tcr_pmhc_itrace,244,0,199668,0
+backflip-1.0-seq (chains),single_chain,2193,270,497407,62109
+backflip-1.0-seq (chains),other_multichain,626,0,264246,0
+backflip-1.0-seq (chains),tcr_pmhc_itrace,244,0,199668,0

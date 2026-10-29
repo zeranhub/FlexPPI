@@ -1,0 +1,260 @@
+{
+  "case_id": "C07",
+  "status": "passed",
+  "model": "Existing joint Full fold0; trained on ATLAS1866 + DynaRepo564; ITrace0",
+  "model_n": 1,
+  "model_error_bars": null,
+  "MD_independent_replicas_per_state": 3,
+  "MD_center": "Existing equal-weight replica mean",
+  "spread_displayed": null,
+  "n_definition": "Aligned residue comparisons; not independent experimental samples or MD frames",
+  "tests": null,
+  "multiple_comparison_correction": null,
+  "regression_fits": null,
+  "descriptive_metrics_by_complete_contrast": {
+    "rmsf": [
+      {
+        "a": "1lp9",
+        "b": "2j8u",
+        "n_positions": 48,
+        "Spearman_rho": 0.4058836300477638,
+        "MAE": 0.2561377553890149,
+        "zero_change_MAE": 0.28679769362012547,
+        "direction_agreement": 0.625
+      },
+      {
+        "a": "1lp9",
+        "b": "2jcc",
+        "n_positions": 48,
+        "Spearman_rho": 0.2232957012592271,
+        "MAE": 0.23727253514031568,
+        "zero_change_MAE": 0.24487384781241417,
+        "direction_agreement": 0.625
+      },
+      {
+        "a": "1lp9",
+        "b": "2uwe",
+        "n_positions": 48,
+        "Spearman_rho": 0.033217542336083365,
+        "MAE": 0.22446420850853124,
+        "zero_change_MAE": 0.20523802687724432,
+        "direction_agreement": 0.4583333333333333
+      }
+    ],
+    "hchi": [
+      {
+        "a": "1lp9",
+        "b": "2j8u",
+        "n_positions": 15,
+        "Spearman_rho": -0.04285714285714285,
+        "MAE": 0.15924842568444245,
+        "zero_change_MAE": 0.13061540126800536,
+        "direction_agreement": 0.4
+      },
+      {
+        "a": "1lp9",
+        "b": "2jcc",
+        "n_positions": 15,
+        "Spearman_rho": -0.15714285714285714,
+        "MAE": 0.3190015154376548,
+        "zero_change_MAE": 0.2921885967254639,
+        "direction_agreement": 0.6
+      },
+      {
+        "a": "1lp9",
+        "b": "2uwe",
+        "n_positions": 14,
+        "Spearman_rho": -0.38461538461538464,
+        "MAE": 0.30031104170588413,
+        "zero_change_MAE": 0.2647750122206552,
+        "direction_agreement": 0.2857142857142857
+      }
+    ]
+  },
+  "scope_counts": [
+    {
+      "a": "1lp9",
+      "b": "2j8u",
+      "backbone_scope_rows": 48,
+      "paired_valid_RMSF": 48,
+      "Hchi_same_AA_valid": 15,
+      "all_aligned_rows": 815,
+      "all_paired_rows": 815,
+      "all_gap_rows": 0,
+      "all_altered_AA_rows": 1
+    },
+    {
+      "a": "1lp9",
+      "b": "2jcc",
+      "backbone_scope_rows": 48,
+      "paired_valid_RMSF": 48,
+      "Hchi_same_AA_valid": 15,
+      "all_aligned_rows": 815,
+      "all_paired_rows": 815,
+      "all_gap_rows": 0,
+      "all_altered_AA_rows": 1
+    },
+    {
+      "a": "1lp9",
+      "b": "2uwe",
+      "backbone_scope_rows": 48,
+      "paired_valid_RMSF": 48,
+      "Hchi_same_AA_valid": 14,
+      "all_aligned_rows": 815,
+      "all_paired_rows": 815,
+      "all_gap_rows": 0,
+      "all_altered_AA_rows": 1
+    }
+  ],
+  "all_contrasts": [
+    [
+      "1lp9",
+      "2j8u"
+    ],
+    [
+      "1lp9",
+      "2jcc"
+    ],
+    [
+      "1lp9",
+      "2uwe"
+    ]
+  ],
+  "source_traceability": "Source CSVs and exact SHA256 in data_audit.json; panel_b/c plotted CSV and all panel_d observations exported",
+  "limitations": "K66A旧模型未复现，W167A/T163A弱或失败。三种对照不能删去不利者；没有apo动态，Hχ不能替代ITC结合熵。 2J8U=K66A; 2JCC=W167A; 2UWE=T163A. T163A and W167A provide essential controls. No apo trajectory identified in ITrace inventory. Bound Hchi does not equal binding entropy.",
+  "PNG_SHA256": "5285bc5b0825821bfef393f3616441d0091656f6ad0edaa7fc61c3555014193f",
+  "original_NPZ_checks": [
+    {
+      "a": "1lp9",
+      "b": "2j8u",
+      "state": "a",
+      "PDB": "1lp9",
+      "metric": "rmsf",
+      "valid_state_values_checked": 815,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_1lp9.npz",
+      "NPZ_SHA256": "2e8bb3599df798e60e9a33f56091137df5b78447734a2dbec455dba9b96d167f"
+    },
+    {
+      "a": "1lp9",
+      "b": "2j8u",
+      "state": "a",
+      "PDB": "1lp9",
+      "metric": "hchi",
+      "valid_state_values_checked": 715,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_1lp9.npz",
+      "NPZ_SHA256": "2e8bb3599df798e60e9a33f56091137df5b78447734a2dbec455dba9b96d167f"
+    },
+    {
+      "a": "1lp9",
+      "b": "2j8u",
+      "state": "b",
+      "PDB": "2j8u",
+      "metric": "rmsf",
+      "valid_state_values_checked": 815,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_2j8u.npz",
+      "NPZ_SHA256": "4e82eb4873715e27facef0871506a0203dabaac47b314192949491e5c143e3b3"
+    },
+    {
+      "a": "1lp9",
+      "b": "2j8u",
+      "state": "b",
+      "PDB": "2j8u",
+      "metric": "hchi",
+      "valid_state_values_checked": 714,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_2j8u.npz",
+      "NPZ_SHA256": "4e82eb4873715e27facef0871506a0203dabaac47b314192949491e5c143e3b3"
+    },
+    {
+      "a": "1lp9",
+      "b": "2jcc",
+      "state": "a",
+      "PDB": "1lp9",
+      "metric": "rmsf",
+      "valid_state_values_checked": 815,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_1lp9.npz",
+      "NPZ_SHA256": "2e8bb3599df798e60e9a33f56091137df5b78447734a2dbec455dba9b96d167f"
+    },
+    {
+      "a": "1lp9",
+      "b": "2jcc",
+      "state": "a",
+      "PDB": "1lp9",
+      "metric": "hchi",
+      "valid_state_values_checked": 715,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_1lp9.npz",
+      "NPZ_SHA256": "2e8bb3599df798e60e9a33f56091137df5b78447734a2dbec455dba9b96d167f"
+    },
+    {
+      "a": "1lp9",
+      "b": "2jcc",
+      "state": "b",
+      "PDB": "2jcc",
+      "metric": "rmsf",
+      "valid_state_values_checked": 815,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_2jcc.npz",
+      "NPZ_SHA256": "a57030c2edf51964763d8c979866aecab7eaad2f82945d5bde002906aa9d544a"
+    },
+    {
+      "a": "1lp9",
+      "b": "2jcc",
+      "state": "b",
+      "PDB": "2jcc",
+      "metric": "hchi",
+      "valid_state_values_checked": 714,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_2jcc.npz",
+      "NPZ_SHA256": "a57030c2edf51964763d8c979866aecab7eaad2f82945d5bde002906aa9d544a"
+    },
+    {
+      "a": "1lp9",
+      "b": "2uwe",
+      "state": "a",
+      "PDB": "1lp9",
+      "metric": "rmsf",
+      "valid_state_values_checked": 815,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_1lp9.npz",
+      "NPZ_SHA256": "2e8bb3599df798e60e9a33f56091137df5b78447734a2dbec455dba9b96d167f"
+    },
+    {
+      "a": "1lp9",
+      "b": "2uwe",
+      "state": "a",
+      "PDB": "1lp9",
+      "metric": "hchi",
+      "valid_state_values_checked": 715,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_1lp9.npz",
+      "NPZ_SHA256": "2e8bb3599df798e60e9a33f56091137df5b78447734a2dbec455dba9b96d167f"
+    },
+    {
+      "a": "1lp9",
+      "b": "2uwe",
+      "state": "b",
+      "PDB": "2uwe",
+      "metric": "rmsf",
+      "valid_state_values_checked": 815,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_2uwe.npz",
+      "NPZ_SHA256": "1e89b585f7ae4340024bd3e58b3bbf6fe858d12e52ec9462c3a456e9624c54e6"
+    },
+    {
+      "a": "1lp9",
+      "b": "2uwe",
+      "state": "b",
+      "PDB": "2uwe",
+      "metric": "hchi",
+      "valid_state_values_checked": 714,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_2uwe.npz",
+      "NPZ_SHA256": "1e89b585f7ae4340024bd3e58b3bbf6fe858d12e52ec9462c3a456e9624c54e6"
+    }
+  ]
+}

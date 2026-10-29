@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "document_sha256": "7b37df1a8726609844681969befeb15e8f77a8ac342ef2a59d7345d05320dd7f",
+  "reviewer": "root",
+  "method": "Individually opened every final v47 150 dpi page PNG at original resolution, including the complete inserted Figure 1 page.",
+  "pages": [
+    {"page": 1, "status": "passed", "notes": "Title, abstract, keywords and Introduction are legible with intact page margins and footer."},
+    {"page": 2, "status": "passed", "notes": "Shared-readout clarification appears correctly in Introduction and Methods 2.1; retained page break keeps the framework together on the following page."},
+    {"page": 3, "status": "passed", "notes": "Final native layered framework, three lower columns and complete Chinese caption fit together. The a/b green chain and cartoon material are consistent, 3D atomic inset/frame labels legible, three c score connectors visible, and d loss/variance text readable. Four native caption math objects render correctly; dataset paragraph and supplement reference remain above footer."},
+    {"page": 4, "status": "passed", "notes": "Methods 2.2/2.3, equations 1/2 and inline frame notation remain complete, correctly aligned and readable."},
+    {"page": 5, "status": "passed", "notes": "Shared-readout clarification, training objective and equations 3/4 render correctly without clipping; training paragraph fits above footer."},
+    {"page": 6, "status": "passed", "notes": "Dataset split, external validation and baseline methods are legible; headings and paragraph spacing preserved."},
+    {"page": 7, "status": "passed", "notes": "Evaluation metrics and KIX simulation methods are complete with no overlap or missing notation."},
+    {"page": 8, "status": "passed", "notes": "KRAS and ubiquitin methods, occupancy heading and equation 5 are intact; normal paragraph continuation to page 9."},
+    {"page": 9, "status": "passed", "notes": "Occupancy definitions and Results 3.1 retain all numeric annotations and confidence intervals without overflow."},
+    {"page": 10, "status": "passed", "notes": "Native three-line Table 1, method grouping, target columns, caption and notes are intact; following comparisons render cleanly."}
+  ],
+  "required_fixes": []
+}

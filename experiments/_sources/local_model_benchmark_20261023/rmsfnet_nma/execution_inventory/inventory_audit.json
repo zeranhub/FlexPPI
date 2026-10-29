@@ -1,0 +1,25 @@
+{
+  "snapshot_utc": "2026-10-23T20:01:53.919040+00:00",
+  "script_sha256": "82a32f039ed462f0e14667c4655ccbcf43afed4acb36f544e48ab9389e6aaba8",
+  "user_runtime_config": {
+    "run_planet": false,
+    "run_rmsfnet": false,
+    "runtime_preference": "Confirmed by user: \u5148\u5b8c\u6210\u8f83\u5feb\u6a21\u578b\uff0c\u91cd\u6a21\u578b\u540e\u8865. PLANET and RMSF-net full inference are deferred and will not start in this queue.",
+    "device": "local_cpu_only",
+    "phase_order": [
+      "wait_existing_backflip_fastprotflex_nma",
+      "publish_completed_light_models"
+    ],
+    "deferred_phases": [
+      "planet_smoke_then_full",
+      "rmsfnet_full"
+    ]
+  },
+  "records": 3063,
+  "chains": 4973,
+  "residues": 961321,
+  "purpose": "Operational completion/timing snapshot, not performance scoring or output-identity verification",
+  "no_unrun_models_as_complete": true,
+  "no_partial_smoke_as_full_cohort": true,
+  "timing_caution": "Different thread counts, input contexts, and timing scopes prevent interpreting these sums as a speed ranking. Running queues create partial snapshots."
+}

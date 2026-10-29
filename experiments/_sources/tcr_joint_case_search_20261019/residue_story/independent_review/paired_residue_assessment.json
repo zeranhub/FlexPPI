@@ -1,0 +1,566 @@
+{
+  "status": "complete",
+  "method": "Read-only reanalysis of corrected residue-pair tables and existing model-input snapshots; no new prediction, training, or MD.",
+  "source": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_expanded_screen_v41_20261017\\mel5_validation\\corrected_pair_all_aligned_positions.csv",
+  "source_sha256": "b5fe2438552c6c20f145a7f41f3f0f9c2b9e767e787ada9f4e907ea027a156c1",
+  "geometry_scope": "Simulation initial snapshots used as model input. A 4 Å heavy-atom cutoff defines proximity, not occupancy, binding energy, nor a chemically assigned hydrogen bond.",
+  "state_a": "3HG1 / MEL5",
+  "state_b": "4JFF / alpha24beta17",
+  "all_five_beta_CDR2_positions": [
+    {
+      "role": "tcr_beta",
+      "region": "CDR2β",
+      "id_a": "50",
+      "id_b": "51",
+      "aa_a": "S",
+      "aa_b": "W",
+      "same_aa": "False",
+      "rmsf_valid": true,
+      "rmsf_full_a": 0.6083192825317383,
+      "rmsf_full_b": 0.4807589650154114,
+      "rmsf_md_a": 0.9315308756061466,
+      "rmsf_md_b": 0.7698362040688823,
+      "hchi_valid": true,
+      "hchi_full_a": 0.6053067445755005,
+      "hchi_full_b": 0.5392910838127136,
+      "hchi_md_a": 0.6790562735910498,
+      "hchi_md_b": 0.9190610499396584,
+      "publication_beta_position": 50,
+      "publication_numbering_basis": "53 is explicit in the primary article; contiguous 50–54 labels are projected from the five-position sequence alignment, not relabelled input IDs.",
+      "Q72_contacts_a": {
+        "minimum_distance_A": 7.335782166885816,
+        "MHC_atom": "CG",
+        "TCR_atom": "O",
+        "atom_pairs_within_4A": 0,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "Q72_sidechain_contacts_a": {
+        "minimum_distance_A": 7.335782166885816,
+        "MHC_atom": "CG",
+        "TCR_atom": "O",
+        "atom_pairs_within_4A": 0,
+        "MHC_atom_scope": "side chain only"
+      },
+      "Q72_contacts_b": {
+        "minimum_distance_A": 5.5303706928197816,
+        "MHC_atom": "OE1",
+        "TCR_atom": "C",
+        "atom_pairs_within_4A": 0,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "Q72_sidechain_contacts_b": {
+        "minimum_distance_A": 5.5303706928197816,
+        "MHC_atom": "OE1",
+        "TCR_atom": "C",
+        "atom_pairs_within_4A": 0,
+        "MHC_atom_scope": "side chain only"
+      }
+    },
+    {
+      "role": "tcr_beta",
+      "region": "CDR2β",
+      "id_a": "51",
+      "id_b": "52",
+      "aa_a": "V",
+      "aa_b": "G",
+      "same_aa": "False",
+      "rmsf_valid": true,
+      "rmsf_full_a": 0.7741145491600037,
+      "rmsf_full_b": 0.5518215894699097,
+      "rmsf_md_a": 1.1156662860241964,
+      "rmsf_md_b": 0.9314477901609169,
+      "hchi_valid": false,
+      "hchi_full_a": 0.8389056921005249,
+      "hchi_full_b": 0.4086492657661438,
+      "hchi_md_a": 0.9949054081000277,
+      "hchi_md_b": null,
+      "publication_beta_position": 51,
+      "publication_numbering_basis": "53 is explicit in the primary article; contiguous 50–54 labels are projected from the five-position sequence alignment, not relabelled input IDs.",
+      "Q72_contacts_a": {
+        "minimum_distance_A": 3.527775503061379,
+        "MHC_atom": "CG",
+        "TCR_atom": "O",
+        "atom_pairs_within_4A": 4,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "Q72_sidechain_contacts_a": {
+        "minimum_distance_A": 3.527775503061379,
+        "MHC_atom": "CG",
+        "TCR_atom": "O",
+        "atom_pairs_within_4A": 4,
+        "MHC_atom_scope": "side chain only"
+      },
+      "Q72_contacts_b": {
+        "minimum_distance_A": 3.2515996063476234,
+        "MHC_atom": "OE1",
+        "TCR_atom": "C",
+        "atom_pairs_within_4A": 3,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "Q72_sidechain_contacts_b": {
+        "minimum_distance_A": 3.2515996063476234,
+        "MHC_atom": "OE1",
+        "TCR_atom": "C",
+        "atom_pairs_within_4A": 3,
+        "MHC_atom_scope": "side chain only"
+      }
+    },
+    {
+      "role": "tcr_beta",
+      "region": "CDR2β",
+      "id_a": "52",
+      "id_b": "53",
+      "aa_a": "G",
+      "aa_b": "P",
+      "same_aa": "False",
+      "rmsf_valid": true,
+      "rmsf_full_a": 1.0115699768066406,
+      "rmsf_full_b": 0.6438723206520081,
+      "rmsf_md_a": 1.6506835634329542,
+      "rmsf_md_b": 1.2039660645538468,
+      "hchi_valid": false,
+      "hchi_full_a": 1.182159662246704,
+      "hchi_full_b": 3.32083145622164e-05,
+      "hchi_md_a": null,
+      "hchi_md_b": 0.0,
+      "publication_beta_position": 52,
+      "publication_numbering_basis": "53 is explicit in the primary article; contiguous 50–54 labels are projected from the five-position sequence alignment, not relabelled input IDs.",
+      "Q72_contacts_a": {
+        "minimum_distance_A": 4.4699664428270545,
+        "MHC_atom": "CD",
+        "TCR_atom": "CA",
+        "atom_pairs_within_4A": 0,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "Q72_sidechain_contacts_a": {
+        "minimum_distance_A": 4.4699664428270545,
+        "MHC_atom": "CD",
+        "TCR_atom": "CA",
+        "atom_pairs_within_4A": 0,
+        "MHC_atom_scope": "side chain only"
+      },
+      "Q72_contacts_b": {
+        "minimum_distance_A": 3.3252669065805773,
+        "MHC_atom": "OE1",
+        "TCR_atom": "N",
+        "atom_pairs_within_4A": 5,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "Q72_sidechain_contacts_b": {
+        "minimum_distance_A": 3.3252669065805773,
+        "MHC_atom": "OE1",
+        "TCR_atom": "N",
+        "atom_pairs_within_4A": 5,
+        "MHC_atom_scope": "side chain only"
+      }
+    },
+    {
+      "role": "tcr_beta",
+      "region": "CDR2β",
+      "id_a": "53",
+      "id_b": "54",
+      "aa_a": "I",
+      "aa_b": "F",
+      "same_aa": "False",
+      "rmsf_valid": true,
+      "rmsf_full_a": 0.9687999486923218,
+      "rmsf_full_b": 0.7548457384109497,
+      "rmsf_md_a": 1.7375673080377165,
+      "rmsf_md_b": 1.2214937235257828,
+      "hchi_valid": true,
+      "hchi_full_a": 1.68753981590271,
+      "hchi_full_b": 1.0804420709609985,
+      "hchi_md_a": 1.6686988859810554,
+      "hchi_md_b": 1.5144380125687433,
+      "publication_beta_position": 53,
+      "publication_numbering_basis": "53 is explicit in the primary article; contiguous 50–54 labels are projected from the five-position sequence alignment, not relabelled input IDs.",
+      "Q72_contacts_a": {
+        "minimum_distance_A": 5.455098532565656,
+        "MHC_atom": "NE2",
+        "TCR_atom": "CG2",
+        "atom_pairs_within_4A": 0,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "Q72_sidechain_contacts_a": {
+        "minimum_distance_A": 5.455098532565656,
+        "MHC_atom": "NE2",
+        "TCR_atom": "CG2",
+        "atom_pairs_within_4A": 0,
+        "MHC_atom_scope": "side chain only"
+      },
+      "Q72_contacts_b": {
+        "minimum_distance_A": 2.9428897362966224,
+        "MHC_atom": "OE1",
+        "TCR_atom": "N",
+        "atom_pairs_within_4A": 4,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "Q72_sidechain_contacts_b": {
+        "minimum_distance_A": 2.9428897362966224,
+        "MHC_atom": "OE1",
+        "TCR_atom": "N",
+        "atom_pairs_within_4A": 4,
+        "MHC_atom_scope": "side chain only"
+      }
+    },
+    {
+      "role": "tcr_beta",
+      "region": "CDR2β",
+      "id_a": "54",
+      "id_b": "55",
+      "aa_a": "G",
+      "aa_b": "G",
+      "same_aa": "True",
+      "rmsf_valid": true,
+      "rmsf_full_a": 1.1178646087646484,
+      "rmsf_full_b": 0.7468647956848145,
+      "rmsf_md_a": 1.8928644181029455,
+      "rmsf_md_b": 1.077640469186066,
+      "hchi_valid": false,
+      "hchi_full_a": 1.253705382347107,
+      "hchi_full_b": 0.7799502611160278,
+      "hchi_md_a": null,
+      "hchi_md_b": null,
+      "publication_beta_position": 54,
+      "publication_numbering_basis": "53 is explicit in the primary article; contiguous 50–54 labels are projected from the five-position sequence alignment, not relabelled input IDs.",
+      "Q72_contacts_a": {
+        "minimum_distance_A": 8.265040834744864,
+        "MHC_atom": "OE1",
+        "TCR_atom": "N",
+        "atom_pairs_within_4A": 0,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "Q72_sidechain_contacts_a": {
+        "minimum_distance_A": 8.265040834744864,
+        "MHC_atom": "OE1",
+        "TCR_atom": "N",
+        "atom_pairs_within_4A": 0,
+        "MHC_atom_scope": "side chain only"
+      },
+      "Q72_contacts_b": {
+        "minimum_distance_A": 3.119551249779373,
+        "MHC_atom": "NE2",
+        "TCR_atom": "O",
+        "atom_pairs_within_4A": 3,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "Q72_sidechain_contacts_b": {
+        "minimum_distance_A": 3.119551249779373,
+        "MHC_atom": "NE2",
+        "TCR_atom": "O",
+        "atom_pairs_within_4A": 3,
+        "MHC_atom_scope": "side chain only"
+      }
+    }
+  ],
+  "R65_all_TCR_contact_partners_union_4A": [
+    {
+      "role": "tcr_alpha",
+      "region": "CDR3α",
+      "id_a": "92",
+      "id_b": "93",
+      "aa_a": "V",
+      "aa_b": "D",
+      "same_aa": "False",
+      "rmsf_valid": true,
+      "rmsf_full_a": 0.6158162951469421,
+      "rmsf_full_b": 0.5938558578491211,
+      "rmsf_md_a": 1.2662867003645224,
+      "rmsf_md_b": 1.2562107386015353,
+      "hchi_valid": true,
+      "hchi_full_a": 0.7163832187652588,
+      "hchi_full_b": 1.2160630226135254,
+      "hchi_md_a": 0.8989544751592117,
+      "hchi_md_b": 1.5984513043017134,
+      "R65_contacts_a": {
+        "minimum_distance_A": 5.0205179015715125,
+        "MHC_atom": "NH2",
+        "TCR_atom": "O",
+        "atom_pairs_within_4A": 0,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "R65_contacts_b": {
+        "minimum_distance_A": 2.9076794871512224,
+        "MHC_atom": "NH2",
+        "TCR_atom": "OD2",
+        "atom_pairs_within_4A": 5,
+        "MHC_atom_scope": "all heavy atoms"
+      }
+    },
+    {
+      "role": "tcr_alpha",
+      "region": "CDR3α",
+      "id_a": "93",
+      "id_b": "94",
+      "aa_a": "A",
+      "aa_b": "G",
+      "same_aa": "False",
+      "rmsf_valid": true,
+      "rmsf_full_a": 0.8714638352394104,
+      "rmsf_full_b": 0.7936709523200989,
+      "rmsf_md_a": 1.902402337434281,
+      "rmsf_md_b": 1.4638135923169944,
+      "hchi_valid": false,
+      "hchi_full_a": 1.1964210271835327,
+      "hchi_full_b": 1.1056690216064453,
+      "hchi_md_a": null,
+      "hchi_md_b": null,
+      "R65_contacts_a": {
+        "minimum_distance_A": 2.804959892761388,
+        "MHC_atom": "NE",
+        "TCR_atom": "O",
+        "atom_pairs_within_4A": 8,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "R65_contacts_b": {
+        "minimum_distance_A": 2.8519992987376437,
+        "MHC_atom": "NE",
+        "TCR_atom": "O",
+        "atom_pairs_within_4A": 8,
+        "MHC_atom_scope": "all heavy atoms"
+      }
+    },
+    {
+      "role": "tcr_alpha",
+      "region": "CDR3α",
+      "id_a": "94",
+      "id_b": "95",
+      "aa_a": "G",
+      "aa_b": "G",
+      "same_aa": "True",
+      "rmsf_valid": true,
+      "rmsf_full_a": 0.8561781644821167,
+      "rmsf_full_b": 0.8506385087966919,
+      "rmsf_md_a": 1.6922140502400618,
+      "rmsf_md_b": 1.2459660010987073,
+      "hchi_valid": false,
+      "hchi_full_a": 0.7962980270385742,
+      "hchi_full_b": 0.9759491086006165,
+      "hchi_md_a": null,
+      "hchi_md_b": null,
+      "R65_contacts_a": {
+        "minimum_distance_A": 3.566805293256138,
+        "MHC_atom": "CD",
+        "TCR_atom": "O",
+        "atom_pairs_within_4A": 5,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "R65_contacts_b": {
+        "minimum_distance_A": 4.957075750883781,
+        "MHC_atom": "NE",
+        "TCR_atom": "N",
+        "atom_pairs_within_4A": 0,
+        "MHC_atom_scope": "all heavy atoms"
+      }
+    },
+    {
+      "role": "tcr_alpha",
+      "region": "CDR3α",
+      "id_a": "95",
+      "id_b": "96",
+      "aa_a": "K",
+      "aa_b": "R",
+      "same_aa": "False",
+      "rmsf_valid": true,
+      "rmsf_full_a": 0.7916406989097595,
+      "rmsf_full_b": 0.6641428470611572,
+      "rmsf_md_a": 1.2445780141225644,
+      "rmsf_md_b": 1.0279620964784704,
+      "hchi_valid": true,
+      "hchi_full_a": 3.341259479522705,
+      "hchi_full_b": 2.4058938026428223,
+      "hchi_md_a": 3.594779699211903,
+      "hchi_md_b": 2.6373650398400215,
+      "R65_contacts_a": {
+        "minimum_distance_A": 3.6499863013441582,
+        "MHC_atom": "NH2",
+        "TCR_atom": "CE",
+        "atom_pairs_within_4A": 6,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "R65_contacts_b": {
+        "minimum_distance_A": 3.433292880020579,
+        "MHC_atom": "NH2",
+        "TCR_atom": "NE",
+        "atom_pairs_within_4A": 12,
+        "MHC_atom_scope": "all heavy atoms"
+      }
+    },
+    {
+      "role": "tcr_beta",
+      "region": "TCR-FRβ",
+      "id_a": "49",
+      "id_b": "50",
+      "aa_a": "Y",
+      "aa_b": "Y",
+      "same_aa": "True",
+      "rmsf_valid": true,
+      "rmsf_full_a": 0.5001312494277954,
+      "rmsf_full_b": 0.44394099712371826,
+      "rmsf_md_a": 0.8759588807850832,
+      "rmsf_md_b": 0.6728919952952569,
+      "hchi_valid": true,
+      "hchi_full_a": 0.6242377161979675,
+      "hchi_full_b": 0.609481692314148,
+      "hchi_md_a": 1.3013542836972753,
+      "hchi_md_b": 0.18067939275043932,
+      "R65_contacts_a": {
+        "minimum_distance_A": 3.946758163353815,
+        "MHC_atom": "CD",
+        "TCR_atom": "CD2",
+        "atom_pairs_within_4A": 1,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "R65_contacts_b": {
+        "minimum_distance_A": 4.422069651192754,
+        "MHC_atom": "CD",
+        "TCR_atom": "CD2",
+        "atom_pairs_within_4A": 0,
+        "MHC_atom_scope": "all heavy atoms"
+      }
+    },
+    {
+      "role": "tcr_beta",
+      "region": "TCR-FRβ",
+      "id_a": "56",
+      "id_b": "57",
+      "aa_a": "I",
+      "aa_b": "I",
+      "same_aa": "True",
+      "rmsf_valid": true,
+      "rmsf_full_a": 0.6774308085441589,
+      "rmsf_full_b": 0.6494943499565125,
+      "rmsf_md_a": 1.1021284675254863,
+      "rmsf_md_b": 0.9728262843019344,
+      "hchi_valid": true,
+      "hchi_full_a": 1.3782109022140503,
+      "hchi_full_b": 0.9849224090576172,
+      "hchi_md_a": 1.6800124185496195,
+      "hchi_md_b": 1.6093313798221,
+      "R65_contacts_a": {
+        "minimum_distance_A": 9.511519331841784,
+        "MHC_atom": "CG",
+        "TCR_atom": "C",
+        "atom_pairs_within_4A": 0,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "R65_contacts_b": {
+        "minimum_distance_A": 3.7251308701843002,
+        "MHC_atom": "O",
+        "TCR_atom": "CG2",
+        "atom_pairs_within_4A": 2,
+        "MHC_atom_scope": "all heavy atoms"
+      }
+    },
+    {
+      "role": "tcr_beta",
+      "region": "TCR-FRβ",
+      "id_a": "59",
+      "id_b": "60",
+      "aa_a": "E",
+      "aa_b": "E",
+      "same_aa": "True",
+      "rmsf_valid": true,
+      "rmsf_full_a": 0.7707893252372742,
+      "rmsf_full_b": 0.9298388361930847,
+      "rmsf_md_a": 1.578313746326548,
+      "rmsf_md_b": 1.7021965146907905,
+      "hchi_valid": true,
+      "hchi_full_a": 1.8863375186920166,
+      "hchi_full_b": 2.519333600997925,
+      "hchi_md_a": 2.5653685803731148,
+      "hchi_md_b": 2.7885812099452925,
+      "R65_contacts_a": {
+        "minimum_distance_A": 2.818119940669665,
+        "MHC_atom": "NH1",
+        "TCR_atom": "OE2",
+        "atom_pairs_within_4A": 5,
+        "MHC_atom_scope": "all heavy atoms"
+      },
+      "R65_contacts_b": {
+        "minimum_distance_A": 7.361093668742441,
+        "MHC_atom": "CD",
+        "TCR_atom": "N",
+        "atom_pairs_within_4A": 0,
+        "MHC_atom_scope": "all heavy atoms"
+      }
+    }
+  ],
+  "all_MHC_CDR2beta_contact_positions_plus_R65": [
+    {
+      "id_a": "65",
+      "aa_a": "R",
+      "hchi_full_a": 1.7943575382232666,
+      "hchi_full_b": 1.4118196964263916,
+      "hchi_full_delta": -0.382537841796875,
+      "hchi_pMHC_only_delta": -0.01095724105834961,
+      "hchi_md_a": 2.627213687630038,
+      "hchi_md_b": 1.1456633542285983
+    },
+    {
+      "id_a": "68",
+      "aa_a": "K",
+      "hchi_full_a": 3.0165817737579346,
+      "hchi_full_b": 2.7691805362701416,
+      "hchi_full_delta": -0.24740123748779297,
+      "hchi_pMHC_only_delta": 0.03601336479187012,
+      "hchi_md_a": 3.28157680901765,
+      "hchi_md_b": 3.046540223547726
+    },
+    {
+      "id_a": "72",
+      "aa_a": "Q",
+      "hchi_full_a": 1.792449712753296,
+      "hchi_full_b": 1.3750494718551636,
+      "hchi_full_delta": -0.4174002408981323,
+      "hchi_pMHC_only_delta": 0.10356616973876953,
+      "hchi_md_a": 1.6835638613759356,
+      "hchi_md_b": 1.2186422462639088
+    },
+    {
+      "id_a": "75",
+      "aa_a": "R",
+      "hchi_full_a": 2.4892656803131104,
+      "hchi_full_b": 2.443741798400879,
+      "hchi_full_delta": -0.045523881912231445,
+      "hchi_pMHC_only_delta": 0.46682000160217285,
+      "hchi_md_a": 2.5961211458440014,
+      "hchi_md_b": 2.9459176282241013
+    },
+    {
+      "id_a": "76",
+      "aa_a": "V",
+      "hchi_full_a": 0.5576931834220886,
+      "hchi_full_b": 0.6333765983581543,
+      "hchi_full_delta": 0.07568341493606567,
+      "hchi_pMHC_only_delta": 0.07141882181167603,
+      "hchi_md_a": 0.6542573803454189,
+      "hchi_md_b": 0.6756041538011965
+    }
+  ],
+  "preferred_pair": {
+    "Hchi_site": "HLA Q72",
+    "RMSF_site": "TCR beta Gly54 in publication-compatible numbering; input E54 in 3HG1 and E55 in 4JFF",
+    "Hchi_prediction_nats": [
+      1.792449712753296,
+      1.3750494718551636
+    ],
+    "RMSF_prediction_A": [
+      1.1178646087646484,
+      0.7468647956848145
+    ],
+    "mechanistic_bridge": "Q72 side-chain proximity expands from beta Val51 in MEL5 to the beta Gly51–Pro52–Phe53–Gly54 patch in alpha24beta17. Q72 sidechain state restriction and lower motion of an unchanged adjacent Gly54 are consistent consequences of the redesigned local interface.",
+    "causal_status": "Compatible local coupling hypothesis, not demonstrated Q72 Hchi -> Gly54 RMSF causation.",
+    "sequence_confounder": "Gly52 -> Pro52 changes intrinsic loop-backbone preferences; Ile53 -> Phe53 and the other CDR2 substitutions also contribute."
+  },
+  "R65_alternative": "R65 Hchi decreases, but its unchanged alpha Gly aligned WT94/engineered95 exits the 4 Å contact set in the engineered input (3.567 to 4.957 Å), and model RMSF is almost unchanged (0.856 to 0.851 Å). Its direct engineered CDR3alpha partners are mutated residues, so this is weaker than Q72–Gly54 as a two-output residue story.",
+  "complete_patch_check": "All five CDR2beta positions show lower model RMSF. All four contacting MHC sidechains are retained: K68 and Q72 Hchi decrease; R75 is almost unchanged in prediction and increases in MD; V76 slightly increases. Do not turn extra contacts into a universal entropy-decrease claim.",
+  "recommended_existing_trajectory_analysis": [
+    "For all three replicas in each state, report Q72 chi1–chi3 joint-state occupancy and lifetimes.",
+    "Within each replica, measure Q72-sidechain contact occupancy to beta Phe53 and unchanged Gly54, rather than relying on a single snapshot.",
+    "Compare Gly54 backbone fluctuations in fixed-duration trajectory windows classified by Q72 state and by contact formation. Align against a consistent rigid reference; windows require sufficient state counts and repeated support across replicas.",
+    "Measure time-lagged relationships and residence times as descriptive coupling support, accounting for autocorrelation; no directional causality claim follows merely from a correlation."
+  ],
+  "primary_article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3696650/",
+  "article_fact": "SPR measures affinity 18 microM to 0.6 nM and slower dissociation; crystallography assigns new MHC contacts, including Ile53 to Phe53. The article does not perform MD. Its total binding entropy and solvent contribution are not bound-state Hchi."
+}

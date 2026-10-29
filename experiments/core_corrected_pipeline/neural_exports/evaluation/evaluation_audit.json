@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "variants": [
+    "full",
+    "intrachain"
+  ],
+  "oof_trained_fits": 10,
+  "additional_seed_fits": 4,
+  "epoch": 40,
+  "seed": 7,
+  "records_per_variant": 3063.0,
+  "effective_residues_per_variant": {
+    "valid_rmsf": {
+      "full": 961321,
+      "intrachain": 961321
+    },
+    "valid_chi_entropy": {
+      "full": 824988,
+      "intrachain": 824988
+    }
+  },
+  "protocol": "Corresponding heldout fold only, no five-model OOF ensemble; corrected input corpus; fixed epoch40.",
+  "input_freeze_sha256": "5b994bb59684e3a33c97f4a1801ee9a606e5dd856db9cfe23bf18515697707d3",
+  "export_code_sha256": "59be9322393daae296610d5e684cc6d62ea9d815b2c88a3f59db260cd4698fa7"
+}

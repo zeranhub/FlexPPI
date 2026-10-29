@@ -1,0 +1,72 @@
+{
+  "scope": "Path/import relocation only; original scientific formulas and training_payload frozen sources unchanged",
+  "changes": [
+    {
+      "path": "prepare_corrected_labels.py",
+      "source_sha256": "c23c3288f0800ae6b5f6854d6d306f54b6167e4e91e80f08aeb7b62f9635df64",
+      "relocated_sha256": "a0b6f508dc250ab6b12e9f481e59137f1413a94eaf4e8717d568e16124354213",
+      "changes": [
+        {
+          "before": "REV = HERE.parents[1]",
+          "after": "REV = HERE"
+        },
+        {
+          "before": "ORIG = Path(r\"E:\\Project\\FlexPPI\")",
+          "after": "ORIG = HERE.parents[1]"
+        }
+      ]
+    },
+    {
+      "path": "freeze_training_payload.py",
+      "source_sha256": "63bda12a778256bb2c705afec2a9c3ce6ce0f4ae9463ab2b69bc341c93cdf6b5",
+      "relocated_sha256": "e57e439fd53b289cb38c33c4b7f3fc9d9329abccc7b9d36ab01c3940ed2f521d",
+      "changes": [
+        {
+          "before": "REV = HERE.parents[1]",
+          "after": "REV = HERE"
+        }
+      ]
+    },
+    {
+      "path": "run_corrected_static.py",
+      "source_sha256": "49fafef318eebfd450b7488b874deb3cb44e0a81f23300214d856d575ce53f25",
+      "relocated_sha256": "afb2039728c894bbb7365cf0a54e55b47288693c6ddf388f6b2a328041398148",
+      "changes": [
+        {
+          "before": "str(HERE.parents[1]/\"reproducibility/src\")",
+          "after": "str(HERE/\"training_payload/src\")"
+        }
+      ]
+    },
+    {
+      "path": "prepare_external_thermopcd.py",
+      "source_sha256": "e6bf5022218183ab758c866e0bcb0ee71c2a30bf7489b93c9322e40a768ff7d7",
+      "relocated_sha256": "ce84fc5ed84629571ed3aa4687afe780802cf4de485556c2f1b82240eda8fda3",
+      "changes": [
+        {
+          "before": "Path(r\"E:\\Project\\FlexPPI\\artifacts\\data\\thermopcd_performance_first_candidates.jsonl\")",
+          "after": "HERE.parents[1] / \"artifacts/data/thermopcd_performance_first_candidates.jsonl\""
+        },
+        {
+          "before": "Path(r\"E:\\Project\\FlexPPI\\artifacts\\thermopcd_audit\\local_entries.csv\")",
+          "after": "HERE.parents[1] / \"artifacts/thermopcd_audit/local_entries.csv\""
+        }
+      ]
+    },
+    {
+      "path": "launch_static_when_ready.py",
+      "source_sha256": "af9f401fdc2035d3ad79b34fdc9d5f31d90c7bbe08a5725940da8a2552ed0f3e",
+      "relocated_sha256": "120ec3f5f8ead5c868086d779fde26f2e7d0de49ba19135a59c28571f08b1f1d",
+      "changes": [
+        {
+          "before": "python=r\"C:\\Users\\DELL\\AppData\\Local\\Programs\\Python\\Python39\\python.exe\"",
+          "after": "python=sys.executable"
+        },
+        {
+          "before": "no sys import",
+          "after": "import sys for current interpreter selection"
+        }
+      ]
+    }
+  ]
+}

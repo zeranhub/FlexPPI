@@ -1,0 +1,510 @@
+{
+  "source": "C:\\Users\\DELL\\.codex\\worktrees\\2a52\\FlexPPI\\output\\non_tcr_case_screen_20261025\\archive_extract\\family_folds\\evaluation\\oof_per_residue.csv.gz",
+  "exact_target_chain_pairs_including_virus": 61,
+  "metric_rows": 244,
+  "profile_rows_all_positions": 17406,
+  "primary_nonvirus_pair_count": 27,
+  "primary_nonvirus_pdb_system_count": 25,
+  "assertions_passed": [
+    "input sequence matches OOF residue order",
+    "all four paired tables share the identical target sequence",
+    "family folds/components match",
+    "Full/Intra labels and validity masks agree in each state",
+    "no duplicated OOF residue rows",
+    "all exact target positions retained"
+  ],
+  "notes": [
+    "All score improvements are descriptive comparisons on existing OOF outputs, not evidence of statistical significance.",
+    "Response thresholds are used only for descriptive direction agreement, never to choose positions for MAE/Spearman.",
+    "Virus-related pairs are exported and flagged but excluded from primary_analysis.",
+    "Temperature/source metadata do not prove identical force fields, equilibration, alignment, or independent replicate availability."
+  ],
+  "primary_full_summary": [
+    {
+      "pair_id": "A00BR:A__minus__A00CW:A",
+      "pdb": "1F6M",
+      "description": "THIOREDOXIN REDUCTASE",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 1.12503355775,
+        "zero_change_delta_mae": 1.3111803869375,
+        "relative_mae_improvement_over_zero": 0.14196889386233108,
+        "delta_spearman": 0.4992250900887704
+      },
+      "chi_entropy": {
+        "delta_mae": 0.1626912914015652,
+        "zero_change_delta_mae": 0.15646797460474304,
+        "relative_mae_improvement_over_zero": -0.039773741639738215,
+        "delta_spearman": 0.06260448532528005
+      }
+    },
+    {
+      "pair_id": "A00BR:B__minus__A00CW:A",
+      "pdb": "1F6M",
+      "description": "THIOREDOXIN REDUCTASE",
+      "full_beats_zero_both_metrics": true,
+      "rmsf": {
+        "delta_mae": 1.2416244101875,
+        "zero_change_delta_mae": 1.45955625640625,
+        "relative_mae_improvement_over_zero": 0.14931376934750457,
+        "delta_spearman": 0.42733608238361703
+      },
+      "chi_entropy": {
+        "delta_mae": 0.15494538132198696,
+        "zero_change_delta_mae": 0.17031483168379444,
+        "relative_mae_improvement_over_zero": 0.09024140886533191,
+        "delta_spearman": 0.24752273487893034
+      }
+    },
+    {
+      "pair_id": "A00BS:B__minus__A00CX:B",
+      "pdb": "1I2M",
+      "description": "REGULATOR OF CHROMOSOME CONDENSATION 1",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.09225696954314722,
+        "zero_change_delta_mae": 0.07596873187817259,
+        "relative_mae_improvement_over_zero": -0.2144071285946341,
+        "delta_spearman": 0.1883570005782947
+      },
+      "chi_entropy": {
+        "delta_mae": 0.14269962893647478,
+        "zero_change_delta_mae": 0.1336007140473186,
+        "relative_mae_improvement_over_zero": -0.06810528636795707,
+        "delta_spearman": 0.058494730165293926
+      }
+    },
+    {
+      "pair_id": "A00BW:A__minus__A00D4:A",
+      "pdb": "1ZHH",
+      "description": "Autoinducer 2-binding periplasmic protein luxP",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.13840373171511627,
+        "zero_change_delta_mae": 0.13417458377906977,
+        "relative_mae_improvement_over_zero": -0.031519739558202545,
+        "delta_spearman": 0.1410657170567201
+      },
+      "chi_entropy": {
+        "delta_mae": 0.12599285372080268,
+        "zero_change_delta_mae": 0.1154847849130435,
+        "relative_mae_improvement_over_zero": -0.09099093716693019,
+        "delta_spearman": 0.06445773708999115
+      }
+    },
+    {
+      "pair_id": "A00BZ:A__minus__A00D8:A",
+      "pdb": "2I3T",
+      "description": "Cell cycle arrest protein",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.38170908147058824,
+        "zero_change_delta_mae": 0.41530577023529414,
+        "relative_mae_improvement_over_zero": 0.08089627251186873,
+        "delta_spearman": 0.3366144526998249
+      },
+      "chi_entropy": {
+        "delta_mae": 0.19229883399524014,
+        "zero_change_delta_mae": 0.18839906184210528,
+        "relative_mae_improvement_over_zero": -0.020699530639930724,
+        "delta_spearman": 0.07351344425352081
+      }
+    },
+    {
+      "pair_id": "A00C0:A__minus__A00D9:A",
+      "pdb": "2PMS",
+      "description": "Lactotransferrin",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.4462427454682779,
+        "zero_change_delta_mae": 0.4299444800604231,
+        "relative_mae_improvement_over_zero": -0.03790783732254065,
+        "delta_spearman": 0.1514071667058236
+      },
+      "chi_entropy": {
+        "delta_mae": 0.14613620817263737,
+        "zero_change_delta_mae": 0.13391069254578752,
+        "relative_mae_improvement_over_zero": -0.09129603763844044,
+        "delta_spearman": 0.09206910297246
+      }
+    },
+    {
+      "pair_id": "A00C2:A__minus__A00DA:A",
+      "pdb": "2V3B",
+      "description": "RUBREDOXIN REDUCTASE",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.17389995102362205,
+        "zero_change_delta_mae": 0.14013515404199475,
+        "relative_mae_improvement_over_zero": -0.24094451683057977,
+        "delta_spearman": 0.2829494687371849
+      },
+      "chi_entropy": {
+        "delta_mae": 0.13217507991776295,
+        "zero_change_delta_mae": 0.11964156471972319,
+        "relative_mae_improvement_over_zero": -0.10475887060990252,
+        "delta_spearman": -0.018366723529387535
+      }
+    },
+    {
+      "pair_id": "A00C3:B__minus__A00DB:B",
+      "pdb": "2V9T",
+      "description": "SLIT HOMOLOG 2 PROTEIN N-PRODUCT",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.18094138271428573,
+        "zero_change_delta_mae": 0.09023101266666667,
+        "relative_mae_improvement_over_zero": -1.005312556811517,
+        "delta_spearman": 0.21675321435860226
+      },
+      "chi_entropy": {
+        "delta_mae": 0.12194534031732086,
+        "zero_change_delta_mae": 0.11084446716577541,
+        "relative_mae_improvement_over_zero": -0.10014819354892425,
+        "delta_spearman": 0.014029639661481682
+      }
+    },
+    {
+      "pair_id": "A00C4:C__minus__A00DD:C",
+      "pdb": "2XWT",
+      "description": "THYROTROPIN RECEPTOR",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.18361226572649575,
+        "zero_change_delta_mae": 0.24990018316239315,
+        "relative_mae_improvement_over_zero": 0.2652575784341118,
+        "delta_spearman": 0.45611617250736974
+      },
+      "chi_entropy": {
+        "delta_mae": 0.15070310250531713,
+        "zero_change_delta_mae": 0.1480661495833333,
+        "relative_mae_improvement_over_zero": -0.01780928949259745,
+        "delta_spearman": 0.009818665319700038
+      }
+    },
+    {
+      "pair_id": "A00C6:A__minus__A00DG:A",
+      "pdb": "3FHC",
+      "description": "Nuclear pore complex protein Nup214",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.27383285274559194,
+        "zero_change_delta_mae": 0.2678032694206549,
+        "relative_mae_improvement_over_zero": -0.02251497279320363,
+        "delta_spearman": 0.20371109804422466
+      },
+      "chi_entropy": {
+        "delta_mae": 0.14904670811086895,
+        "zero_change_delta_mae": 0.14371639323646723,
+        "relative_mae_improvement_over_zero": -0.03708912222443099,
+        "delta_spearman": 0.13825126003210259
+      }
+    },
+    {
+      "pair_id": "A00C9:A__minus__A00DK:A",
+      "pdb": "3O5T",
+      "description": "Dinitrogenase reductase activacting glicohydrolase",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.18372218169491528,
+        "zero_change_delta_mae": 0.14784287674576274,
+        "relative_mae_improvement_over_zero": -0.24268538152739141,
+        "delta_spearman": 0.22102751315826383
+      },
+      "chi_entropy": {
+        "delta_mae": 0.1163833149022895,
+        "zero_change_delta_mae": 0.10681915839473685,
+        "relative_mae_improvement_over_zero": -0.08953596575072702,
+        "delta_spearman": 0.0185337809967618
+      }
+    },
+    {
+      "pair_id": "A00CB:A__minus__A00DM:A",
+      "pdb": "3RT0",
+      "description": "Protein phosphatase 2C 16",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.207305133021148,
+        "zero_change_delta_mae": 0.1562691167371601,
+        "relative_mae_improvement_over_zero": -0.3265905468054122,
+        "delta_spearman": -0.029902747490924975
+      },
+      "chi_entropy": {
+        "delta_mae": 0.15162294591611372,
+        "zero_change_delta_mae": 0.1493072519638989,
+        "relative_mae_improvement_over_zero": -0.015509587925271892,
+        "delta_spearman": 0.10388826510130932
+      }
+    },
+    {
+      "pair_id": "A00CC:A__minus__A00DO:A",
+      "pdb": "3VV2",
+      "description": "Tk-subtilisin",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.38436212753125,
+        "zero_change_delta_mae": 0.3294370725625,
+        "relative_mae_improvement_over_zero": -0.166723965039878,
+        "delta_spearman": 0.07373033428060821
+      },
+      "chi_entropy": {
+        "delta_mae": 0.2070795321272066,
+        "zero_change_delta_mae": 0.2168555222418033,
+        "relative_mae_improvement_over_zero": 0.04508066021807853,
+        "delta_spearman": 0.19618975893132246
+      }
+    },
+    {
+      "pair_id": "A00CD:B__minus__A00DP:B",
+      "pdb": "3VYR",
+      "description": "Hydrogenase expression/formation protein HypD",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.19315235094339625,
+        "zero_change_delta_mae": 0.15219646603773587,
+        "relative_mae_improvement_over_zero": -0.26909879034580014,
+        "delta_spearman": 0.13885960562771277
+      },
+      "chi_entropy": {
+        "delta_mae": 0.11985878568147798,
+        "zero_change_delta_mae": 0.1162007039308176,
+        "relative_mae_improvement_over_zero": -0.03148071936671129,
+        "delta_spearman": 0.12489617200003343
+      }
+    },
+    {
+      "pair_id": "A00CE:A__minus__A00DQ:A",
+      "pdb": "3WN7",
+      "description": "Kelch-like ECH-associated protein 1",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.11501078174825173,
+        "zero_change_delta_mae": 0.06892902825174826,
+        "relative_mae_improvement_over_zero": -0.6685391433083882,
+        "delta_spearman": 0.33253703934063367
+      },
+      "chi_entropy": {
+        "delta_mae": 0.1289128491081974,
+        "zero_change_delta_mae": 0.11151773830042919,
+        "relative_mae_improvement_over_zero": -0.15598514705262148,
+        "delta_spearman": 0.06376915833671905
+      }
+    },
+    {
+      "pair_id": "A00CG:B__minus__A00DS:B",
+      "pdb": "4BKX",
+      "description": "HISTONE DEACETYLASE 1",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.22370473382113823,
+        "zero_change_delta_mae": 0.18165106428184283,
+        "relative_mae_improvement_over_zero": -0.2315079721968848,
+        "delta_spearman": 0.210765192552043
+      },
+      "chi_entropy": {
+        "delta_mae": 0.18923238479965937,
+        "zero_change_delta_mae": 0.16419979653125,
+        "relative_mae_improvement_over_zero": -0.15245200540577555,
+        "delta_spearman": 0.011485808475086453
+      }
+    },
+    {
+      "pair_id": "A00CH:B__minus__A00DT:B",
+      "pdb": "4C9B",
+      "description": "PRE-MRNA-SPLICING FACTOR CWC22 HOMOLOG",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.24372012088028167,
+        "zero_change_delta_mae": 0.19911439197183095,
+        "relative_mae_improvement_over_zero": -0.22402061682593574,
+        "delta_spearman": 0.3187362972703246
+      },
+      "chi_entropy": {
+        "delta_mae": 0.13268218104095977,
+        "zero_change_delta_mae": 0.120986703734375,
+        "relative_mae_improvement_over_zero": -0.09666745969261267,
+        "delta_spearman": 0.13876862012491295
+      }
+    },
+    {
+      "pair_id": "A00CI:A__minus__A00DV:A",
+      "pdb": "4ETP",
+      "description": "Kinesin-like protein KAR3",
+      "full_beats_zero_both_metrics": true,
+      "rmsf": {
+        "delta_mae": 0.42904880117048344,
+        "zero_change_delta_mae": 0.5336693328498727,
+        "relative_mae_improvement_over_zero": 0.19603999188167748,
+        "delta_spearman": 0.24743029695312854
+      },
+      "chi_entropy": {
+        "delta_mae": 0.15271699937563737,
+        "zero_change_delta_mae": 0.15538742922096319,
+        "relative_mae_improvement_over_zero": 0.017185623436297547,
+        "delta_spearman": 0.13827459272276876
+      }
+    },
+    {
+      "pair_id": "A00CI:B__minus__A00EA:B",
+      "pdb": "4ETP",
+      "description": "Spindle pole body-associated protein VIK1",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.49988131062695923,
+        "zero_change_delta_mae": 0.5042212253605016,
+        "relative_mae_improvement_over_zero": 0.008607163909927626,
+        "delta_spearman": 0.3175984799195599
+      },
+      "chi_entropy": {
+        "delta_mae": 0.18149697821403346,
+        "zero_change_delta_mae": 0.1760241608361204,
+        "relative_mae_improvement_over_zero": -0.03109128515038501,
+        "delta_spearman": 0.16484851072435192
+      }
+    },
+    {
+      "pair_id": "A00CK:A__minus__A00DW:A",
+      "pdb": "4FZV",
+      "description": "Putative methyltransferase NSUN4",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.13181801527377524,
+        "zero_change_delta_mae": 0.12441770377521613,
+        "relative_mae_improvement_over_zero": -0.0594795698201371,
+        "delta_spearman": 0.16103059396323394
+      },
+      "chi_entropy": {
+        "delta_mae": 0.15059592046942763,
+        "zero_change_delta_mae": 0.14018358293265995,
+        "relative_mae_improvement_over_zero": -0.07427644035728105,
+        "delta_spearman": 0.01783966980831812
+      }
+    },
+    {
+      "pair_id": "A00CL:A__minus__A00DY:A",
+      "pdb": "4LVN",
+      "description": "Subtilisin-like serine protease",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.1349091300595238,
+        "zero_change_delta_mae": 0.1145277494047619,
+        "relative_mae_improvement_over_zero": -0.1779601953298705,
+        "delta_spearman": 0.16494119061327528
+      },
+      "chi_entropy": {
+        "delta_mae": 0.1566436226354088,
+        "zero_change_delta_mae": 0.14589167274324324,
+        "relative_mae_improvement_over_zero": -0.07369817406294361,
+        "delta_spearman": 0.12487951825210572
+      }
+    },
+    {
+      "pair_id": "A00CO:B__minus__A00E1:B",
+      "pdb": "4X33",
+      "description": "Protein ATS1",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.20447364295180726,
+        "zero_change_delta_mae": 0.15689945972891567,
+        "relative_mae_improvement_over_zero": -0.3032144489540517,
+        "delta_spearman": -0.3067103065647091
+      },
+      "chi_entropy": {
+        "delta_mae": 0.17494755914985716,
+        "zero_change_delta_mae": 0.1592582959120879,
+        "relative_mae_improvement_over_zero": -0.09851457437689702,
+        "delta_spearman": -0.022368490757470546
+      }
+    },
+    {
+      "pair_id": "A00CP:A__minus__A00E5:A",
+      "pdb": "4YEB",
+      "description": "Latrophilin-3",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.2673974437546468,
+        "zero_change_delta_mae": 0.22512708182156133,
+        "relative_mae_improvement_over_zero": -0.18776222563302944,
+        "delta_spearman": 0.061724216587446895
+      },
+      "chi_entropy": {
+        "delta_mae": 0.15745421062384388,
+        "zero_change_delta_mae": 0.13820155183544305,
+        "relative_mae_improvement_over_zero": -0.1393085571956892,
+        "delta_spearman": 0.011380898628037714
+      }
+    },
+    {
+      "pair_id": "A00CQ:A__minus__A00E6:A",
+      "pdb": "4ZGY",
+      "description": "Ornithine decarboxylase",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.47133991607940445,
+        "zero_change_delta_mae": 0.5179990997518611,
+        "relative_mae_improvement_over_zero": 0.09007580070082738,
+        "delta_spearman": 0.45207419893872647
+      },
+      "chi_entropy": {
+        "delta_mae": 0.14491875496313011,
+        "zero_change_delta_mae": 0.1433934316842105,
+        "relative_mae_improvement_over_zero": -0.01063733018314787,
+        "delta_spearman": 0.17080266602511965
+      }
+    },
+    {
+      "pair_id": "A00CR:A__minus__A00DX:A",
+      "pdb": "4HDO",
+      "description": "Krev interaction trapped protein 1",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.32928191398089174,
+        "zero_change_delta_mae": 0.3040710792038216,
+        "relative_mae_improvement_over_zero": -0.08291099187427521,
+        "delta_spearman": 0.038697392634023955
+      },
+      "chi_entropy": {
+        "delta_mae": 0.147271043517777,
+        "zero_change_delta_mae": 0.14356653822299653,
+        "relative_mae_improvement_over_zero": -0.02580340336009499,
+        "delta_spearman": 0.1701696968488319
+      }
+    },
+    {
+      "pair_id": "A00CT:A__minus__A00E8:A",
+      "pdb": "5J57",
+      "description": "Ricin",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.19725269321969696,
+        "zero_change_delta_mae": 0.24049646518939394,
+        "relative_mae_improvement_over_zero": 0.17981042646777354,
+        "delta_spearman": 0.2429990412772534
+      },
+      "chi_entropy": {
+        "delta_mae": 0.13195227177173136,
+        "zero_change_delta_mae": 0.13023121312107624,
+        "relative_mae_improvement_over_zero": -0.013215408268177912,
+        "delta_spearman": 0.2074100264283148
+      }
+    },
+    {
+      "pair_id": "A00CU:A__minus__A00E9:A",
+      "pdb": "5TIH",
+      "description": "Cysteine-rich protective antigen",
+      "full_beats_zero_both_metrics": false,
+      "rmsf": {
+        "delta_mae": 0.2005562484337349,
+        "zero_change_delta_mae": 0.11516405072289157,
+        "relative_mae_improvement_over_zero": -0.7414831032325752,
+        "delta_spearman": 0.12077640192516616
+      },
+      "chi_entropy": {
+        "delta_mae": 0.13248776389888547,
+        "zero_change_delta_mae": 0.11839689411612904,
+        "relative_mae_improvement_over_zero": -0.11901384650289451,
+        "delta_spearman": 0.06231780946938543
+      }
+    }
+  ]
+}

@@ -1,0 +1,1589 @@
+{
+  "artifact_status": "draft_preview_not_Origin_completion",
+  "font_path": "C:\\Windows\\Fonts\\arial.ttf",
+  "width_mm": 183,
+  "height_mm": 210,
+  "raster_dpi": 300,
+  "raster_expected_px": [
+    2161,
+    2480
+  ],
+  "panels": {
+    "b_positions": 25,
+    "b_rendered_points": 75,
+    "c_valid_positions": 66,
+    "c_original_inventory": 72,
+    "c_no_chi_positions_unplotted": 6,
+    "d_Gln_positions": 6,
+    "d_rendered_pairs": 6,
+    "e_points_per_chi": [
+      66,
+      52,
+      23,
+      10
+    ],
+    "e_total_points": 151,
+    "f_records_per_metric": 83,
+    "f_delta_points": 166
+  },
+  "MAE_CaMKI_Full_A": 0.1148592012,
+  "MAE_CaMKI_Intra_A": 2.383203344,
+  "MAE_ubiquitin_Full_nats": 0.07953050649754886,
+  "rho_ubiquitin": 0.9793749878063989,
+  "paired_delta_statistics": [
+    {
+      "metric_key": "fine_entropy",
+      "n_records": 83,
+      "mean": 0.1893241249322542,
+      "bootstrap_95_low": 0.1712002891077109,
+      "bootstrap_95_high": 0.20649702502727776,
+      "Full_Hchi_mean": 0.5098929841305456,
+      "Full_RMSF_mean": 0.32056885919829153,
+      "positive_records": 79,
+      "bootstrap_replicates": 10000,
+      "bootstrap_seed": 20261026
+    },
+    {
+      "metric_key": "lowF_width",
+      "n_records": 83,
+      "mean": 0.1610167211455321,
+      "bootstrap_95_low": 0.14300183264303862,
+      "bootstrap_95_high": 0.17887273596344244,
+      "Full_Hchi_mean": 0.3995555843189728,
+      "Full_RMSF_mean": 0.23853886317344075,
+      "positive_records": 78,
+      "bootstrap_replicates": 10000,
+      "bootstrap_seed": 20261026
+    }
+  ],
+  "source_sha256": {
+    "all_plotted_values.csv": "233dcbf5e9222b248d46db9f5b377bde605c0905877209bfb8b375543b1a6b21",
+    "cam_all25.csv": "ebc5700ffcb1708f94d632816e854ea38e5397e7edba35d2d27b59503b36c473",
+    "contact_counts_retained_outside_main.csv": "309c3c0bbbd570dd8f8e630902c60d101acd425efc7531689e297cb05d00fa5d",
+    "defined_angles_long.csv": "8052306e31edf07f8cc7295ec8059c4e8dad6047354a834ea21fb0020e48ad0c",
+    "per_chi_correlations.csv": "d90af24843fc5d5fb08abd0a9d799b38ea7e4fe0afd8fb229d7c370f3c544205",
+    "retained_absolute_correlations_all498.csv": "0a503485bafbbf7f5604105936451610e2915949fcb00b17034f18dc43f41eae",
+    "retained_panel_statistics.csv": "452208e20db8dc345a85f18cd125e3526838d5b337b2dc092d0eb76b4a269552",
+    "retained_prediction_groups_all498.csv": "59f6c6e377bc62f2d129054207415b35680ffcefa4d3601901f0000edf559a7b",
+    "ubiquitin_72_position_profile_with_original_mask.csv": "90feb25545703d3e56347a627e2cf3461b08d493f4cf82e62ad89cce1c4a87bc",
+    "ubiquitin_all6_Gln_Hchi_SASA_plot.csv": "a9128a417e808da91afa87b3a112816691554e6710693a15ba3aeea04fc7ddc4"
+  },
+  "text": [
+    {
+      "text": "MAE (Å)\nFull 0.115\nIntra 2.383",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        174.6785433070866,
+        720.3099901574803,
+        234.4285433070866,
+        762.8787401574804
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "W303–M316",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        211.2978346456693,
+        701.6905511811025,
+        282.2978346456693,
+        713.6905511811025
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "CaMKI residue",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        169.48818897637796,
+        560.6937882764655,
+        251.98818897637796,
+        572.6937882764655
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "294",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        67.21988188976366,
+        578.249343832021,
+        87.96988188976366,
+        590.249343832021
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "300",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        133.66653543307075,
+        578.249343832021,
+        154.66653543307075,
+        590.249343832021
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "306",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        200.23818897637784,
+        578.249343832021,
+        221.23818897637784,
+        590.249343832021
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "312",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        266.93484251968493,
+        578.249343832021,
+        287.68484251968493,
+        590.249343832021
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "318",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        333.506496062992,
+        578.249343832021,
+        354.256496062992,
+        590.249343832021
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "RMSF (Å)",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        36.18960520559931,
+        656.5285433070867,
+        51.15835520559931,
+        711.7785433070867
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        56.713910761154864,
+        591.0826771653544,
+        63.713910761154864,
+        603.0826771653544
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "2",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        56.838910761154864,
+        633.0806482778611,
+        63.713910761154864,
+        645.0806482778611
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "4",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        56.713910761154864,
+        675.0786193903677,
+        63.713910761154864,
+        687.0786193903677
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "6",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        56.713910761154864,
+        717.0765905028743,
+        63.713910761154864,
+        729.0765905028743
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "8",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        56.838910761154864,
+        759.074561615381,
+        63.713910761154864,
+        771.074561615381
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "MD",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        107.67224409448819,
+        749.599409448819,
+        127.04724409448819,
+        761.599409448819
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Full",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        107.67224409448819,
+        733.849409448819,
+        127.54724409448819,
+        745.849409448819
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Intra",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        107.67224409448819,
+        718.099409448819,
+        132.67224409448818,
+        730.099409448819
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "n = 66\nMAE = 0.080\nρ = 0.979",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        483.74291338582674,
+        731.4803149606299,
+        556.4929133858268,
+        771.08031496063
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Q40",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        570.8086982510426,
+        699.0300382586278,
+        609.904868229426,
+        711.0300382586278
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Q41",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        514.6559912494754,
+        656.1539679601752,
+        551.2507553602661,
+        675.2615426350214
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Q62",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        588.1541022918125,
+        684.7489949199344,
+        624.6909915837674,
+        702.6138079232427
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "MD Hχ (nats)",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        529.6515748031496,
+        556.169305008749,
+        603.6515748031496,
+        568.559930008749
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        476.21644417792146,
+        574.1154855643045,
+        483.21644417792146,
+        586.1154855643045
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "1",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        516.0661893153257,
+        574.1154855643045,
+        522.9411893153257,
+        586.1154855643045
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "2",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        555.8534344527299,
+        574.1154855643045,
+        562.7284344527299,
+        586.1154855643045
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "3",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        595.578179590134,
+        574.1154855643045,
+        602.578179590134,
+        586.1154855643045
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "4",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        635.3654247275382,
+        574.1154855643045,
+        642.3654247275382,
+        586.1154855643045
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Full Hχ (nats)",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        443.25395067804027,
+        647.3169291338584,
+        455.64457567804027,
+        721.8169291338584
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        461.2001312335958,
+        590.1317985086303,
+        468.2001312335958,
+        602.1317985086303
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "1",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        461.3251312335958,
+        629.9190436460344,
+        468.2001312335958,
+        641.9190436460344
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "2",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        461.3251312335958,
+        669.7062887834386,
+        468.2001312335958,
+        681.7062887834386
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "3",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        461.2001312335958,
+        709.4935339208428,
+        468.2001312335958,
+        721.4935339208428
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "4",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        461.2001312335958,
+        749.2807790582469,
+        468.2001312335958,
+        761.2807790582469
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0.0",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        311.60807086614176,
+        504.694139666968,
+        329.10807086614176,
+        516.694139666968
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "70.6",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        308.10807086614176,
+        477.1802633277399,
+        332.60807086614176,
+        489.1802633277399
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "80.6",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        308.17057086614176,
+        449.6663869885118,
+        332.54557086614176,
+        461.6663869885118
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "100.7",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        304.67057086614176,
+        422.15251064928367,
+        336.04557086614176,
+        434.15251064928367
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "69.2",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        308.23307086614176,
+        394.6386343100556,
+        332.48307086614176,
+        406.6386343100556
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "71.2",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        308.23307086614176,
+        367.1247579708275,
+        332.48307086614176,
+        379.1247579708275
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "SASA\n(Å²)",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        303.73307086614176,
+        532.5401574803151,
+        336.98307086614176,
+        561.902657480315
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Joint Hχ (nats)",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        141.2942913385827,
+        319.71261209536317,
+        222.5442913385827,
+        332.10323709536317
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "1.8",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        71.21458787066513,
+        337.6587926509187,
+        88.46458787066513,
+        349.6587926509187
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "2.2",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        133.55333808008044,
+        337.6587926509187,
+        150.80333808008044,
+        349.6587926509187
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "2.6",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        195.82958828949575,
+        337.6587926509187,
+        213.20458828949575,
+        349.6587926509187
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "3.0",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        258.10583849891106,
+        337.6587926509187,
+        275.60583849891106,
+        349.6587926509187
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Q41",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        40.338910761154864,
+        503.194139666968,
+        63.713910761154864,
+        515.194139666968
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Q40",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        39.963910761154864,
+        475.6802633277399,
+        63.713910761154864,
+        487.6802633277399
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Q31",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        40.088910761154864,
+        448.1663869885118,
+        63.713910761154864,
+        460.1663869885118
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Q62",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        40.088910761154864,
+        420.65251064928367,
+        63.713910761154864,
+        432.65251064928367
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Q49",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        40.088910761154864,
+        393.1386343100556,
+        63.713910761154864,
+        405.1386343100556
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Q2",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        47.088910761154864,
+        365.6247579708275,
+        63.713910761154864,
+        377.6247579708275
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "MD",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        88.88248031496063,
+        527.0417322834647,
+        108.25748031496063,
+        539.0417322834647
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Full",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        137.63248031496062,
+        527.0417322834647,
+        157.50748031496062,
+        539.0417322834647
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0.510 vs 0.321",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        466.93307086614175,
+        508.9737216582869,
+        548.9330708661417,
+        520.9737216582869
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0.400 vs 0.239",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        582.0836614173229,
+        508.9737216582869,
+        664.3336614173229,
+        520.9737216582869
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Fine-bin\nentropy",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        485.24557086614175,
+        323.3900426509187,
+        530.6205708661417,
+        349.6587926509187
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Low-F* angular\nwidth",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        580.8961614173229,
+        323.8587926509187,
+        665.5211614173229,
+        349.6587926509187
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Δρ: Full Hχ − Full RMSF",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        399.7813867016623,
+        374.8469488188978,
+        411.7813867016623,
+        508.9719488188978
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "−0.2",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        417.33694225721786,
+        360.6026468077033,
+        441.96194225721786,
+        372.6026468077033
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0.0",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        424.46194225721786,
+        401.0447301015085,
+        441.96194225721786,
+        413.0447301015085
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0.2",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        424.58694225721786,
+        441.4868133953137,
+        441.96194225721786,
+        453.4868133953137
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0.4",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        424.46194225721786,
+        481.9288966891188,
+        441.96194225721786,
+        493.9288966891188
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "ρ = 0.50\nn = 66",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        77.09055118110237,
+        200.66929133858264,
+        122.96555118110237,
+        226.46929133858265
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "−0.5",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        83.98141278013327,
+        65.65091863517063,
+        108.60641278013327,
+        77.65091863517063
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0.0",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        136.0372501514234,
+        65.65091863517063,
+        153.5372501514234,
+        77.65091863517063
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0.5",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        184.59308752271352,
+        65.65091863517063,
+        201.96808752271352,
+        77.65091863517063
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "−1.0",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        39.088910761154864,
+        82.43934879761652,
+        63.713910761154864,
+        94.43934879761652
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "−0.5",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        39.088910761154864,
+        121.99031708874227,
+        63.713910761154864,
+        133.99031708874227
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0.0",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        46.213910761154864,
+        161.54128537986804,
+        63.713910761154864,
+        173.54128537986804
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0.5",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        46.338910761154864,
+        201.0922536709938,
+        63.713910761154864,
+        213.0922536709938
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "χ1",
+      "fontsize_pt": 10.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        127.58858267716536,
+        234.87839020122485,
+        142.58858267716536,
+        248.87839020122485
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "ρ = 0.45\nn = 52",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        235.59448818897638,
+        200.66929133858264,
+        281.46948818897636,
+        226.46929133858265
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "−0.5",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        242.48534978800728,
+        65.65091863517063,
+        267.1103497880073,
+        77.65091863517063
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0.0",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        294.5411871592974,
+        65.65091863517063,
+        312.0411871592974,
+        77.65091863517063
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0.5",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        343.09702453058753,
+        65.65091863517063,
+        360.47202453058753,
+        77.65091863517063
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "χ2",
+      "fontsize_pt": 10.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        286.0925196850394,
+        234.87839020122485,
+        301.0925196850394,
+        248.87839020122485
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "ρ = 0.52\nn = 23",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        394.0984251968504,
+        200.66929133858264,
+        439.8484251968504,
+        226.46929133858265
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "−0.5",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        400.98928679588136,
+        65.65091863517063,
+        425.61428679588136,
+        77.65091863517063
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0.0",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        453.0451241671715,
+        65.65091863517063,
+        470.5451241671715,
+        77.65091863517063
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0.5",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        501.6009615384616,
+        65.65091863517063,
+        518.9759615384617,
+        77.65091863517063
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "χ3",
+      "fontsize_pt": 10.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        444.5964566929134,
+        234.87839020122485,
+        459.5964566929134,
+        248.87839020122485
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "ρ = 0.13\nn = 10",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        552.6023622047244,
+        200.66929133858264,
+        598.4773622047244,
+        226.46929133858265
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "−0.5",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        559.4932238037553,
+        65.65091863517063,
+        584.1182238037553,
+        77.65091863517063
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0.0",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        611.5490611750455,
+        65.65091863517063,
+        629.0490611750455,
+        77.65091863517063
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "0.5",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        660.1048985463357,
+        65.65091863517063,
+        677.4798985463357,
+        77.65091863517063
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "χ4",
+      "fontsize_pt": 10.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        603.1628937007874,
+        234.87839020122485,
+        618.0378937007874,
+        248.87839020122485
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "DRAFT DESIGN PREVIEW",
+      "fontsize_pt": 10.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        25.21653543307087,
+        801.196850393701,
+        197.21653543307087,
+        815.196850393701
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Figure 3 · quantitative panels",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        533.255905511811,
+        802.806225393701,
+        695.255905511811,
+        815.196850393701
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "b",
+      "fontsize_pt": 11.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        32.42125984251968,
+        781.2992125984254,
+        41.79625984251968,
+        795.2992125984254
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "CaMKI backbone constraint",
+      "fontsize_pt": 10.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        57.637795275590555,
+        781.2992125984254,
+        228.13779527559055,
+        795.2992125984254
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "c",
+      "fontsize_pt": 11.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        399.8622047244095,
+        781.2992125984254,
+        408.3622047244095,
+        795.2992125984254
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Ubiquitin agreement",
+      "fontsize_pt": 10.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        425.07874015748035,
+        781.2992125984254,
+        549.7037401574803,
+        795.2992125984254
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "d",
+      "fontsize_pt": 11.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        32.42125984251968,
+        541.5354330708662,
+        41.79625984251968,
+        555.5354330708662
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Same-type side-chain environments",
+      "fontsize_pt": 10.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        57.637795275590555,
+        541.5354330708662,
+        279.3877952755906,
+        555.5354330708662
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "f",
+      "fontsize_pt": 11.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        399.8622047244095,
+        541.5354330708662,
+        404.9872047244095,
+        555.5354330708662
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Side-chain occupancy specificity",
+      "fontsize_pt": 10.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        425.07874015748035,
+        541.5354330708662,
+        625.0787401574803,
+        555.5354330708662
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "e",
+      "fontsize_pt": 11.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        32.42125984251968,
+        262.91338582677173,
+        40.92125984251968,
+        276.91338582677173
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Joint prediction and single-angle occupancy",
+      "fontsize_pt": 10.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        57.637795275590555,
+        262.91338582677173,
+        327.5127952755906,
+        276.91338582677173
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "MD single-χ entropy\nrelative to AA mean (nats/χ)",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        6.843540846456689,
+        81.80265748031499,
+        33.502915846456695,
+        235.677657480315
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Joint Hχ prediction relative to AA mean (nats)",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        241.94094488188978,
+        44.12598425196852,
+        492.9409448818898,
+        56.51660925196852
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Matplotlib draft preview · Origin project and formal readback pending",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        25.21653543307087,
+        2.4803149606299217,
+        406.4665354330709,
+        14.870939960629922
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "ATLAS 30",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        449.59694881889766,
+        308.02165354330714,
+        505.72194881889766,
+        320.02165354330714
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "DynaRepo 23",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        540.7219488188977,
+        308.02165354330714,
+        617.3469488188977,
+        320.02165354330714
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "ITrace 30",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        652.3469488188977,
+        308.02165354330714,
+        704.7219488188977,
+        320.02165354330714
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Q41: lowest predicted Gln",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        236.61761811023626,
+        21.13188976377953,
+        380.61761811023626,
+        33.522514763779526
+      ],
+      "outside_canvas": false
+    },
+    {
+      "text": "Q2: highest predicted Gln",
+      "fontsize_pt": 9.0,
+      "fontfamily": [
+        "Arial"
+      ],
+      "bbox_px": [
+        429.99261811023626,
+        21.13188976377953,
+        572.1176181102362,
+        33.522514763779526
+      ],
+      "outside_canvas": false
+    }
+  ],
+  "caveats": [
+    "Not a verified Origin route or editable OPJU.",
+    "No structure images or original panel designs were opened.",
+    "Six no-chi ubiquitin inventory rows retained in source; not assigned entropy zero.",
+    "No regression, smoothing, outlier removal, MD resimulation, or model refitting.",
+    "All supplied plotted analysis units are retained; highlighting replaces rather than duplicates angle points."
+  ],
+  "independent_export_readback": {
+    "main_pdf_mm": [
+      183,
+      210
+    ],
+    "b_detail_pdf_mm": [
+      89,
+      140
+    ],
+    "main_png_px": [
+      2161,
+      2480
+    ],
+    "b_detail_png_px": [
+      1051,
+      1653
+    ],
+    "png_dpi": 300,
+    "pdf_fonts": [
+      "ArialMT",
+      "Arial-BoldMT"
+    ],
+    "all_pdf_fonts_have_FontFile2": true,
+    "visual_QA": "Both exported PNGs opened and inspected after the final layout repair. f title overlap removed; d legend separated; no crop, axis truncation, or font inconsistency observed."
+  }
+}

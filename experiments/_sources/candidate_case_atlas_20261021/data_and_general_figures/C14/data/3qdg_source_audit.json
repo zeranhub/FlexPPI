@@ -1,0 +1,16 @@
+{
+  "pdb": "3qdg",
+  "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_3qdg.npz",
+  "prediction_sha256": "6729e922c6b830530fa1b37963abf0c6093b161d42be45497cf9ae7f4476ba10",
+  "structure": "E:\\data\\ITrace\\trajectories\\3qdg_run1_topology.pdb",
+  "structure_sha256": "00f8e9480aeb369fbeb0b4150afa05731614618499aa11888e6e852d64dc1e89",
+  "chain_roles": {
+    "A": "mhc",
+    "B": "b2m",
+    "C": "peptide",
+    "D": "tcr_alpha",
+    "E": "tcr_beta"
+  },
+  "label_mean_source": "NPZ target first two columns",
+  "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+}

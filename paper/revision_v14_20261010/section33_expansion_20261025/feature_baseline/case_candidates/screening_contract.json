@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "screened_records": 616,
+  "screened_chains": 1529,
+  "source_scope": "616 previously protein-identity-audited non-TCR heteromer records; all retained",
+  "environment_match": "Same record, same chain, same AA group n>=4, nonPro; absolute sidechain SASA difference <=10A2, within-AA SASA rank difference <=0.25, true C-alpha RMSF difference <=0.10A; at least one partner CA8 contact; >3 residues from either chain end",
+  "dynamic_pair": "True Hchi gap >=0.40 nats",
+  "restored": "Full predicted gap >=0.25, gap error<=0.20 and two-site MAE<=0.20 nats",
+  "superior": "Gap error improves by >=0.10 and two-site MAE by >=0.05 against each AA+SASA+contacts and Static47+SASA",
+  "chain_gains": "Full MAE gain>0.02 and type-centered rho gain>0.10 over both strong baselines",
+  "strict_case": "Chain gains, interface Full vs Intra MAE gain>0.02 with n>=15, >=3 mutually disjoint successful pairs, >=30 within-AA eligible chain positions",
+  "all_prespecified_pairs": 16462,
+  "dynamic_pairs": 4132,
+  "superior_pairs": 279,
+  "strict_candidates": 2,
+  "limitations": "Exploratory post-training case discovery; thresholds are descriptive screening criteria, not heldout significance tests; no p-values. Similar SASA/RMSF are label/structure matching, not mechanistic causality."
+}

@@ -1,0 +1,40 @@
+{
+  "size_mm": [
+    179.0,
+    200.0
+  ],
+  "min_font": 8.75,
+  "print_font_at_164mm": 8.016759776536313,
+  "main_plot_counts": {
+    "b": 75,
+    "c": 132,
+    "d": 12,
+    "e": 302,
+    "f": 332
+  },
+  "all_original_mask_positions": true,
+  "all_six_Gln": true,
+  "all83_records_in_both_main_diagnostics": true,
+  "no_SASA_regression": true,
+  "no_tables_or_gray_notes": true,
+  "axes_with_absolute_amplitudes_start_at_zero": true,
+  "no_binding_free_energy_claim": true,
+  "not_apo_holo": true,
+  "structure_panels_grouped": true,
+  "local_zoom_panels_removed": true,
+  "paired_structure_profile_columns": true,
+  "black_labels_and_colored_keylines": true,
+  "annotation_metrics": {
+    "CaMKI_Full_RMSF_MAE_A": 0.1148592012,
+    "CaMKI_Intra_RMSF_MAE_A": 2.383203344,
+    "Ubiquitin_Full_Hchi_MAE_nats": 0.07953050649754886
+  },
+  "all_body_text_editable_in_PDF_and_SVG": true,
+  "outside_text": [],
+  "visual_review": "passed: final native figure and actual Word page 11 opened; no clipping/overlap; 2x2 and all83 records legible at 164 mm",
+  "sha256": {
+    "png": "bfc7c2a99577fcd066b6e5b576f04d8855d38d26b86b9fb6c3864878f90ad15d",
+    "pdf": "5fa4b2b10e18e21d8964275aff106c54d34dd8f8e306e759c691fc145c0f4c7e",
+    "svg": "e6a9899e36761d4750e093af40e1518eedb486124d9327bf646b812dc7ed1be3"
+  }
+}

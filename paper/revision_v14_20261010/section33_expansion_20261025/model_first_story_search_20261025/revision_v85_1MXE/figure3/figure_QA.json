@@ -1,0 +1,62 @@
+{
+  "canvas_mm": [
+    183.0,
+    190.0
+  ],
+  "source": "family OOF fold1",
+  "panel_layout": "a,b top; d,e,f middle; c bottom",
+  "no_MD_drawn_in_main": true,
+  "no_numeric_tables": true,
+  "no_gray_notes": true,
+  "all_25_RMSF_and_21_Hchi_positions": true,
+  "core_defined_by_structural_anchors": [
+    303,
+    316
+  ],
+  "plotted_counts": {
+    "c": 92,
+    "d": 4,
+    "e": 4
+  },
+  "all_quantitative_axes_start_at_zero": true,
+  "axes": [
+    {
+      "metric": "rmsf",
+      "ylim": [
+        0,
+        8.2
+      ],
+      "range": [
+        0.44702804,
+        7.6058745
+      ]
+    },
+    {
+      "metric": "chi_entropy",
+      "ylim": [
+        0,
+        4.3
+      ],
+      "range": [
+        0.47041768,
+        3.8425083
+      ]
+    }
+  ],
+  "full_intra_are_model_variants_not_biological_states": true,
+  "model_palette": {
+    "Full": "#2166AC",
+    "Intra": "#B87936"
+  },
+  "outside_text": [],
+  "min_font": 6.8,
+  "visual_review": "passed: root and independent data-audit agent inspected the final rendered PNG; no clipping or overlap",
+  "sha256": {
+    "png": "b5152ad3e47222800a80e53df2090ca3b4c7d61e99830bf7750949cbe2964800",
+    "pdf": "a0d8a03aff36d78eade9b7f610f96059a4ef481d9bbc4836602a9645d432ac1f",
+    "svg": "6fcf82408ea69fa8ed3a32315699d8f02c2b0334de206c824d31c1f23eefe024"
+  },
+  "data_audit": "passed: all plotted values independently compared to frozen family-fold1 data",
+  "pdf_fonts": "Arial and Arial Bold embedded as TrueType subsets",
+  "style_palette": "coordinated with the existing manuscript palette; protein components use grey/purple/teal; Full/Intra use blue/warm"
+}

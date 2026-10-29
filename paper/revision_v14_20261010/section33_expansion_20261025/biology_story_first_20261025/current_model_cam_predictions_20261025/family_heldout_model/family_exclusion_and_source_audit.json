@@ -1,0 +1,225 @@
+{
+  "status": "passed_known_CaM_family_exclusion",
+  "family_component": "family_1ad15d0d4afa1419",
+  "heldout_family_fold": 1,
+  "training_record_count": 2455,
+  "test_record_count": 608,
+  "known_CaM_family_members": [
+    {
+      "sample_id": "A001K",
+      "dataset": "dynarepo",
+      "biological_system": "pdb:1MXE",
+      "original_fold": "4",
+      "fold": "1",
+      "component_id": "family_1ad15d0d4afa1419",
+      "chains": "2",
+      "short_chains": "0"
+    },
+    {
+      "sample_id": "A004C",
+      "dataset": "dynarepo",
+      "biological_system": "pdb:2YGG",
+      "original_fold": "3",
+      "fold": "1",
+      "component_id": "family_1ad15d0d4afa1419",
+      "chains": "2",
+      "short_chains": "0"
+    },
+    {
+      "sample_id": "A007U",
+      "dataset": "dynarepo",
+      "biological_system": "pdb:4LZX",
+      "original_fold": "4",
+      "fold": "1",
+      "component_id": "family_1ad15d0d4afa1419",
+      "chains": "2",
+      "short_chains": "0"
+    }
+  ],
+  "all_known_members_absent_from_train": true,
+  "all_known_members_in_test": true,
+  "frozen_manifest_and_config_hashes_all_match": {
+    "splits/all_ready.jsonl": true,
+    "splits/fold_0_test.jsonl": true,
+    "splits/fold_0_train.jsonl": true,
+    "splits/fold_1_test.jsonl": true,
+    "splits/fold_1_train.jsonl": true,
+    "splits/fold_2_test.jsonl": true,
+    "splits/fold_2_train.jsonl": true,
+    "splits/fold_3_test.jsonl": true,
+    "splits/fold_3_train.jsonl": true,
+    "splits/fold_4_test.jsonl": true,
+    "splits/fold_4_train.jsonl": true,
+    "configs/full_fold0.yaml": true,
+    "configs/full_fold1.yaml": true,
+    "configs/full_fold2.yaml": true,
+    "configs/full_fold3.yaml": true,
+    "configs/full_fold4.yaml": true,
+    "configs/intrachain_fold0.yaml": true,
+    "configs/intrachain_fold1.yaml": true,
+    "configs/intrachain_fold2.yaml": true,
+    "configs/intrachain_fold3.yaml": true,
+    "configs/intrachain_fold4.yaml": true
+  },
+  "training_freeze_sha256": "1a816ad07446dad9775bddf7de6c99f62cdf7199a785216ad3d48a80d25d9e27",
+  "source_copy": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\biology_story_first_20261025\\current_model_cam_predictions_20261025\\family_heldout_model\\src",
+  "source_files": [
+    {
+      "relative": "flexppi\\cli.py",
+      "sha256": "078ad276b5837922124a085c8fe9a9e3e48b3b445185f2f4374b5c5e5aaeb89b",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\comparison.py",
+      "sha256": "dd255df2661661a1dc67d8267d90e48e154126e7867fc6a87554215b1b682005",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\config.py",
+      "sha256": "63f2467b39aabea312aa3b29601c8ce6e1cb186f0b005b60a3578c8c3fac466a",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\constants.py",
+      "sha256": "c7b9113bc2b2e43995a31c841df6a24ccda6a2f88faf9311085081fa96796e30",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\context_comparison.py",
+      "sha256": "8b0cb380bd58f2f87c4000ff640100ad78fa4af15fb75edb96b24a1c07fc979e",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\evaluation.py",
+      "sha256": "068a83d9bf4ae30accbccb8f3be27b750581e2ef687e7c439e33ed9bda4db5b0",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\inference.py",
+      "sha256": "514363978c2592cc6374e433be0c84c2f4047a4cb310e6e6936d672091c971c0",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\losses.py",
+      "sha256": "30e5b22eca52ebdf8960b5a835b8156d76c8e2fdf4485157c60e658538c2faa9",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\pymol_visualization.py",
+      "sha256": "cbaf546e5811a3ab0db48cb92069846979caa5c61f234e22a1eac443d5bda306",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\tcr3d.py",
+      "sha256": "dc3899544e70cf4106b8b7e026c1b4aa17090ed10e590d1e72ac529877dbe1a3",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\trainer.py",
+      "sha256": "66ba5cb19a4cb0b345a424b4517cee544ce120f505c083197efcf9539c898a37",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\__init__.py",
+      "sha256": "db63b6f549008a9051de8c3f60c294e7f67cc522a9ff36c119683bf093cb9257",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\__main__.py",
+      "sha256": "ced0b57bd81a3bda5e4c4bb57148e43508c421d03b644e79f57e951a3d9a981e",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\baselines\\fastprotflex.py",
+      "sha256": "d3b71aa0909c422cc5cdb31640e704f3dac8faefab55a0ef5533b16bd452a4c5",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\baselines\\__init__.py",
+      "sha256": "2a16a0b67c183baba26e19fae599c4c307d3ea1dfaff6b2bcfe4c9859ee1b070",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\data\\atlas.py",
+      "sha256": "86c3b61b3a2514577fb26ba72049a105f0bd4bcb95984dd2627e196ffaab9094",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\data\\dataset.py",
+      "sha256": "fc5665dab209b8285bf2e326646be02a19bfd4353701a9ecb58b79f05fd57221",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\data\\dynarepo.py",
+      "sha256": "7dd0e57c36d6636c78ab506fe1c35aea69e65151ad5d2ac60583a250c22e0372",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\data\\labels.py",
+      "sha256": "b4bd55066faffeebe76f3fcf8c3ad1f6541ab592445a98b58b18277cfbcd7f10",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\data\\pairing.py",
+      "sha256": "bdd72480b2018a6b175af653dbbf1e13bfc7af306678f9a1c46da928789e2c70",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\data\\records.py",
+      "sha256": "d289bfbf5207e699e02c6fe5f8b14c1a14a0301c08eb82703eb26e6392890a04",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\data\\structures.py",
+      "sha256": "595a69d3339e8d1c6675c28f347a7ac3adcba9fb8a41b79f52a6476b097d4b83",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\data\\zenodo_ppi.py",
+      "sha256": "0ed75040a494d4a8302f3a2e6e2cd286dbd0e0ad39340f8e8ee47035cace2bb4",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\data\\__init__.py",
+      "sha256": "f945a5d129cacefaac1ca7d015056a807eef7f8994b4dd029ab9bbb2445fd9ca",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\model\\geometry.py",
+      "sha256": "cb80344fd9c1847db464f1eddbc05397c62a3ce4fccb9f0fd23824e0abebbfab",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\model\\heads.py",
+      "sha256": "a2594d74fe313fa872499dc38d755f5f1620a9c379b3a9425fe61a93ef964f91",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\model\\information_ablation.py",
+      "sha256": "2cf16a46206057522fbe0419501d533fbf8fe6ac87a379c592761b0c4e4d1a72",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\model\\ipa.py",
+      "sha256": "8463834a4f052cb30580c1a03eec067326c0c29f1fb5fe8508bc8dc8f3e262ca",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\model\\network.py",
+      "sha256": "9be9046ba25b5fd4574d250ca28d62f4a4c2291f2d6edb96911d20290696fd1b",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\model\\sequence.py",
+      "sha256": "53b1b060a0cb74d7aa786cde677df0c047ab73a72bf44a6c8257a5f249476ed4",
+      "same_as_reproducibility": true
+    },
+    {
+      "relative": "flexppi\\model\\__init__.py",
+      "sha256": "81d812fbb18dfe518264625c7afeecc28cb14497ba07fbb36b99e24fab70985a",
+      "same_as_reproducibility": true
+    }
+  ],
+  "source_limit": "Archive contains no model source and training_freeze has no immutable source hash. Copied exact current corrected training_payload source for reproducibility; all inference model/data/config/constants files match core reproducibility src. New target complexes were not members of historical frozen family graph.",
+  "scope": "No training and no labels used to choose fold. Family fold1 selected solely by known CaM sequence-family membership, before target prediction outcomes."
+}

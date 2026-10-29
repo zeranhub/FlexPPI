@@ -1,0 +1,87 @@
+{
+  "pdb": "2j8u",
+  "status": "passed",
+  "frame_audit": [
+    {
+      "pdb": "2j8u",
+      "replica": 1,
+      "frames": 1001,
+      "first_ps": 0.0,
+      "last_ps": 200000.0,
+      "residues": 815,
+      "chi_angles": 1502
+    },
+    {
+      "pdb": "2j8u",
+      "replica": 2,
+      "frames": 1003,
+      "first_ps": 0.0,
+      "last_ps": 200000.0,
+      "residues": 815,
+      "chi_angles": 1502
+    },
+    {
+      "pdb": "2j8u",
+      "replica": 3,
+      "frames": 1001,
+      "first_ps": 0.0,
+      "last_ps": 200000.0,
+      "residues": 815,
+      "chi_angles": 1502
+    }
+  ],
+  "source_files": [
+    {
+      "pdb": "2j8u",
+      "replica": 1,
+      "topology": "E:\\data\\ITrace\\trajectories\\2j8u_run1_topology.pdb",
+      "topology_sha256": "9dd376c8c9299bca6408a60c7c6f2a050911e834cb72a57d7c7d313b3847a76b",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\2j8u_run1_md_processed.xtc",
+      "trajectory_sha256": "81a09331ac0e5428a1ff0f1da59fc89e446fb73d82e354f9a4b67de9335001e9",
+      "canonical_topology_sha256": "3ea58d49fdea3a888e9f26d48ab21aed95de7c528f78d8c4a1fa5beca23b0887",
+      "prediction_sha256": "4e82eb4873715e27facef0871506a0203dabaac47b314192949491e5c143e3b3",
+      "model_input_sha256": "3ea58d49fdea3a888e9f26d48ab21aed95de7c528f78d8c4a1fa5beca23b0887",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "pdb": "2j8u",
+      "replica": 2,
+      "topology": "E:\\data\\ITrace\\trajectories\\2j8u_run2_topology.pdb",
+      "topology_sha256": "41419b81e66336d83a805765e669d3e53706f883009cbb19a493673e6bedb481",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\2j8u_run2_md_processed.xtc",
+      "trajectory_sha256": "7b45ba08271da284d3159587e4e288c3f7ecf022915829bf4dd288d2318d0cc1",
+      "canonical_topology_sha256": "034a0d4c0333425c3803fcc36df3e5aeed99aee9a4ccd942935ad5910ecc40df",
+      "prediction_sha256": "4e82eb4873715e27facef0871506a0203dabaac47b314192949491e5c143e3b3",
+      "model_input_sha256": "3ea58d49fdea3a888e9f26d48ab21aed95de7c528f78d8c4a1fa5beca23b0887",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "pdb": "2j8u",
+      "replica": 3,
+      "topology": "E:\\data\\ITrace\\trajectories\\2j8u_run3_topology.pdb",
+      "topology_sha256": "5cd2ec3df7571d3d74018e16710e95f887320a98203ede4c0ff5e58bc22f4463",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\2j8u_run3_md_processed.xtc",
+      "trajectory_sha256": "eba569f27dc7f1076cb56c9e98b99a4baecc256d46f76368b35490b8ab8b908b",
+      "canonical_topology_sha256": "7ad7200d3edc368e450cb54d10fbf9d50312d02d0374d8e40031fa2c4c168875",
+      "prediction_sha256": "4e82eb4873715e27facef0871506a0203dabaac47b314192949491e5c143e3b3",
+      "model_input_sha256": "3ea58d49fdea3a888e9f26d48ab21aed95de7c528f78d8c4a1fa5beca23b0887",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    }
+  ],
+  "mean_variance_checks": [
+    {
+      "pdb": "2j8u",
+      "metric": "rmsf",
+      "valid_residues": 815,
+      "maximum_mean_absolute_error": 1.72714654134154e-07,
+      "maximum_variance_absolute_error": 1.0751560175492614e-07
+    },
+    {
+      "pdb": "2j8u",
+      "metric": "hchi",
+      "valid_residues": 714,
+      "maximum_mean_absolute_error": 1.1888097573020673e-07,
+      "maximum_variance_absolute_error": 1.2845616015333405e-08
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "populations": [
+    {
+      "population": "MD",
+      "all_positions": 824988,
+      "visible_positions": 824988,
+      "out_of_view_positions": 0,
+      "bin_count_sum": 824988
+    },
+    {
+      "population": "Full",
+      "all_positions": 824988,
+      "visible_positions": 824988,
+      "out_of_view_positions": 0,
+      "bin_count_sum": 824988
+    }
+  ],
+  "common_grid": true,
+  "same_residue_cohort": true,
+  "count_scale": "alpha = 0.82 * log1p(count) / log1p(shared_max)",
+  "shared_max_count": 15963.0,
+  "colors": {
+    "MD": "#9A8374",
+    "Full": "#2166AC"
+  },
+  "overlay": "symmetric average of both alpha-over orders; order invariant",
+  "no_smoothing_or_subsampling": true,
+  "marginals": "same bins, denominator824988, MD dashed, Full solid",
+  "rho_all_positions": {
+    "MD": 0.20861515505308,
+    "Full": 0.2619048885568794
+  },
+  "outside_text": [],
+  "visual_review": "passed: root opened standalone central, full-range and complete main PNGs; no clipped labels or collisions",
+  "embedded_fonts": [
+    "/ELUGPM+ArialMT"
+  ],
+  "source_arrays_unchanged": true,
+  "word_unchanged": true
+}

@@ -1,0 +1,68 @@
+{
+  "query": {
+    "query": {
+      "type": "terminal",
+      "service": "sequence",
+      "parameters": {
+        "evalue_cutoff": 0.1,
+        "identity_cutoff": 0.9,
+        "sequence_type": "protein",
+        "value": "KPIWEQIGSSFIQHYYQLFDNDRTQLGAIYIDASCLTWEGQQFQGKAAIVEKLSSLPFQKIQHSITAQDHQPTPDSCIISMVVGQLKADEDPIMGFHQMFLLKNINDAWVCTNDMFRLALHNFG"
+      }
+    },
+    "return_type": "polymer_entity",
+    "request_options": {
+      "paginate": {
+        "start": 0,
+        "rows": 10
+      }
+    }
+  },
+  "response": {
+    "query_id": "6a599c03-bdc5-4c8d-83bf-be5408a885f5",
+    "result_type": "polymer_entity",
+    "total_count": 11,
+    "result_set": [
+      {
+        "identifier": "1GY6_1",
+        "score": 1.0
+      },
+      {
+        "identifier": "1OUN_1",
+        "score": 1.0
+      },
+      {
+        "identifier": "5BXQ_1",
+        "score": 1.0
+      },
+      {
+        "identifier": "1AR0_1",
+        "score": 0.8
+      },
+      {
+        "identifier": "1U5O_1",
+        "score": 0.4
+      },
+      {
+        "identifier": "1ASK_1",
+        "score": 0.2
+      },
+      {
+        "identifier": "1GY5_1",
+        "score": 0.2
+      },
+      {
+        "identifier": "1JB2_1",
+        "score": 0.2
+      },
+      {
+        "identifier": "1JB4_1",
+        "score": 0.2
+      },
+      {
+        "identifier": "1JB5_1",
+        "score": 0.2
+      }
+    ]
+  }
+}

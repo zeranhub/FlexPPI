@@ -1,0 +1,36 @@
+{
+  "reference_path": "E:\\Project\\FlexPPI\\experiments\\_sources\\baselines\\prody_common_evaluation\\common_residue_predictions.csv.gz",
+  "reference_sha256": "bb2d3eaea8e4c106d5bba7db2a16c156e971c676c69aa9dd3a2cefe4cdb9f30b",
+  "tolerance_maxabs": 1e-06,
+  "comparison": "Frozen original ProDy CA-level ANM/GNM values, no scaling or fitting",
+  "records": [
+    {
+      "sample_id": "16pk_A",
+      "dataset": "atlas",
+      "residues": 415,
+      "anm_maxabs": 3.497202527569243e-15,
+      "anm_meanabs": 1.2394369332743013e-15,
+      "gnm_maxabs": 1.3322676295501878e-15,
+      "gnm_meanabs": 8.530659445237272e-17
+    },
+    {
+      "sample_id": "A000A",
+      "dataset": "dynarepo",
+      "residues": 310,
+      "anm_maxabs": 4.1300296516055823e-14,
+      "anm_meanabs": 8.346280655849392e-15,
+      "gnm_maxabs": 7.494005416219807e-16,
+      "gnm_meanabs": 3.4043108833717754e-16
+    },
+    {
+      "sample_id": "itrace_1ao7",
+      "dataset": "itrace",
+      "residues": 708,
+      "anm_maxabs": 8.544276397515205e-13,
+      "anm_meanabs": 1.0787431839198598e-14,
+      "gnm_maxabs": 4.718447854656915e-16,
+      "gnm_meanabs": 1.8190584788625723e-16
+    }
+  ],
+  "pass": true
+}

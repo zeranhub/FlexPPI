@@ -1,0 +1,115 @@
+{
+  "status": "rendered",
+  "case_id": "C15",
+  "reference": "4qok",
+  "primary_pair": [
+    "4qok",
+    "7q99"
+  ],
+  "all_states": [
+    "4qok",
+    "7q99",
+    "7q9a",
+    "7q9b"
+  ],
+  "source": "Existing ITrace run1 topology coordinates; not a newly simulated ensemble",
+  "sources": [
+    {
+      "pdb": "4qok",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_4qok.npz",
+      "prediction_sha256": "af544abe1e48c4727f48edb9e1ac47918ba4dab73a535038595c2b5b6fab8d08",
+      "structure": "E:\\data\\ITrace\\trajectories\\4qok_run1_topology.pdb",
+      "structure_sha256": "8365a334185fb95bf08149f6762e03435ac9225ae9be7b294977cf852e01d8ce",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    },
+    {
+      "pdb": "7q99",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_7q99.npz",
+      "prediction_sha256": "3c59ea639ff8ce6141a6547687f416239912bd501298e8a3f52987bf108b9970",
+      "structure": "E:\\data\\ITrace\\trajectories\\7q99_run1_topology.pdb",
+      "structure_sha256": "a3e2eb24572ebcdaeb409a3cb28245c8746d8b02bb20e79428d5c7fed1263121",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    },
+    {
+      "pdb": "7q9a",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_7q9a.npz",
+      "prediction_sha256": "db6ae1fd10aa7b9c70a2779aa7bd5c45e7a74e4c65253165c967a45543c40fd3",
+      "structure": "E:\\data\\ITrace\\trajectories\\7q9a_run1_topology.pdb",
+      "structure_sha256": "9a1ecdbf3d87e28186800ba7b3e225555b7456b0be495d1b94da4e7b7ef4add7",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    },
+    {
+      "pdb": "7q9b",
+      "prediction": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_7q9b.npz",
+      "prediction_sha256": "22681abcafdacf949aa8e1143b822bb630ae342026c5010c245c745be0c894bd",
+      "structure": "E:\\data\\ITrace\\trajectories\\7q9b_run1_topology.pdb",
+      "structure_sha256": "e18758812f2f191fcd05b04578f3ed7da474bafe3fd47adb5a336498c2bf10f4",
+      "chain_roles": {
+        "A": "mhc",
+        "B": "b2m",
+        "C": "peptide",
+        "D": "tcr_alpha",
+        "E": "tcr_beta"
+      },
+      "label_mean_source": "NPZ target first two columns",
+      "label_variance_source": "NPZ sample variance across 3 independent MD runs"
+    }
+  ],
+  "alignment": "MHC first180 C-alpha, PyMOL align cycles=0; common camera for primary pair",
+  "semantic_colors": [
+    "#CF8C27",
+    "#762A83",
+    "#2166AC",
+    "#1B7837",
+    "#B2182B",
+    "#666666",
+    "#4393C3",
+    "#B35806",
+    "#9970AB"
+  ],
+  "shared_view": [
+    0.8620046377182007,
+    0.31074994802474976,
+    0.4030678868293762,
+    -0.38673022389411926,
+    0.9172214865684509,
+    0.12662115693092346,
+    -0.327700674533844,
+    -0.2650265693664551,
+    0.9108255505561829,
+    0.0,
+    0.0,
+    -347.9810485839844,
+    61.36606216430664,
+    66.13289642333984,
+    53.76210021972656,
+    274.3509216308594,
+    421.6111755371094,
+    -20.0
+  ],
+  "no_invented_mechanism": true
+}

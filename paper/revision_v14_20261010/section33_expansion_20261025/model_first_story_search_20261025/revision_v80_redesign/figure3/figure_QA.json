@@ -1,0 +1,49 @@
+{
+  "canvas_mm": [
+    183.0,
+    245.0
+  ],
+  "dpi": 450,
+  "data_positions": {
+    "backbone": 145,
+    "sidechain": 122,
+    "Met": 9,
+    "contact_groups": [
+      8,
+      21,
+      3,
+      90
+    ]
+  },
+  "outside_text": [],
+  "min_font_pt": 6.7,
+  "MD_window_definition": "five consecutive100ns blocks of one500ns trajectory/state, not independent replicates",
+  "palette": {
+    "Full": "#2166AC",
+    "Intra": "#B87936",
+    "additional": "#3A8D8C"
+  },
+  "visual_review": "passed: standalone and final Word render checked at actual display width",
+  "prediction_scope": "same frozen fold0 model, both structures present in its training data; interpretive illustration",
+  "source_sha256": {
+    "all_plotted_quantities.csv": "fd1713a6127274941dcca3381e554640b578104eead9ee39b4b006b3b02da155",
+    "cam_md_mature_number_mapping.csv": "c559a4522dc91565974b2ab94276f47450bc4777bc19fbc4228f3cbf19d78ebf",
+    "cam_md_per_lobe_fitted_rmsf_control_summary.csv": "f92fda485cb427d7776eac440904b929f6df6d142ac6706c594079c8869153a9",
+    "cam_md_state_contrast_all_common_residues.csv": "22c791ab3ba468d11d11cda38f6c2b96417bd8dbaa48698c02cbf440da63e34d",
+    "cam_md_state_contrast_all_residues_five_blocks.csv": "ad1d2b91374192111eb09c527bd9f73d03a7575cff8266064cf566dd3d1a3776",
+    "final_cam_all_nine_methionines_with_stability.csv": "3a66fc258e854565fa3fe18bc79e555ca64e9e29aa9aee0f8b55d7fec6af2253",
+    "final_cam_checks.json": "cb51bc81c2dbccad786fad1baab7c5b58d9ecaf361ad62a96dc0a39d26fbee72",
+    "final_cam_fixed_structural_group_metrics.csv": "d998be8ee897d3622e2210f88f90726bff1651a4fe3f7e0a6a618ced2c71c7f2",
+    "final_cam_topology_calcium_audit.json": "82b09e3d096d122a6d25e34e0947f4f77f48aaa6d17d75cc31bd00e535329166",
+    "training_member_completion.json": "23d3541983a0a6625e160dea7064e442fdf5c3b7a7426abf6a6940c0d0352c12"
+  },
+  "output_sha256": {
+    "png": "8ca011757a9285e5ad646b8c8bd208caa8ca08c5120a726e1cfa032143f94303",
+    "pdf": "7c95d64ab9b50b8a27e72d8cc88cbc08824ab48d9b25288b55f6c9885b55fd03",
+    "svg": "a3489757534459750d8874b5b9ba8be98f410f2d074bd3bb0dc3f79391c4995b"
+  },
+  "render_visual_QA_pending": false,
+  "final_render_pages": 28,
+  "final_word_image_width_mm": 164,
+  "final_visual_QA": "render/final_visual_QA.json"
+}

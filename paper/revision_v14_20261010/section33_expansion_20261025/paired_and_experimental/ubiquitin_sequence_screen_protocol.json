@@ -1,0 +1,14 @@
+{
+  "canonical_sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+  "corpus_records": 3063,
+  "chains_scanned": 4973,
+  "length_eligible_chains": 1325,
+  "candidate_ubiquitin_chains": 27,
+  "candidate_records": 23,
+  "solitary_chain_candidates": 0,
+  "atlas_candidates": 0,
+  "algorithm": "50-120aa; difflib exact alignment blocks match>=85% of shortersequence and longest exact block>=30aa; additionally flag exact76aa and exact prefixes; no labels or prediction performance used.",
+  "conclusion": "All27 candidate ubiquitin chains are in multichain DynaRepo complexes. No pre-existing free-ubiquitin trajectory was identified in corrected3063 corpus.",
+  "input_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\feature_baseline\\base_residues.parquet",
+  "input_sha256": "9d01e20e3eab747291b762b1fecb717987d282b0316c241ed8db776a8f6c875c"
+}

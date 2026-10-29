@@ -1,0 +1,57 @@
+{
+  "status": "completed",
+  "timestamp_utc": "2026-10-21T23:57:32.556983+00:00",
+  "requested_modes_tested": [
+    "parent-only site nomination",
+    "common-pool one-shot prioritization",
+    "batch feedback prioritization"
+  ],
+  "complete_antigen_variants": 1197,
+  "receptor_contexts": 7,
+  "antigen_groups": 3,
+  "all_forward_inputs": 1211,
+  "cpu_only": true,
+  "neural_training": false,
+  "MD": false,
+  "all14_template_cache_checks_bit_identical": true,
+  "all1211_output_commits_SHA_verified": true,
+  "all6_result_sets_completed": [
+    {
+      "setting": "primary",
+      "audit_sha256": "742378b3dfac84ed5056b644eec75f7924ccc5c986c42177fb6c3b352e8048bc"
+    },
+    {
+      "setting": "top_decile",
+      "audit_sha256": "f0d227a2d6694840127173a9a251df2c51128f499550d43cb7db4f365de000d8"
+    },
+    {
+      "setting": "proteinmpnn002",
+      "audit_sha256": "fee12750b9bdd9413d571219d239307e3c59066854663c3a5f9c8529b456afce"
+    },
+    {
+      "setting": "three_dose_AUC",
+      "audit_sha256": "e8550ce08f15c250d21a537719f603d1e9e8c53f55b1ce17c4b83a149627ba4d"
+    },
+    {
+      "setting": "controls",
+      "audit_sha256": "758733603b3c05bdf18a38b97a75236e12d51169e16deb7d01a9f911e0b05b42"
+    },
+    {
+      "setting": "stronger_baselines",
+      "audit_sha256": "a8feccbd555aeae75137614e927e01a69f23c22caf4b8f3e15f6c16d679c055c"
+    }
+  ],
+  "metric_rows_independently_recomputed": 104413,
+  "manuscript_unchanged_sha256": "5f79ddf7d657dc9b782c9fb432e373a1e7c170c1c88d019e528fbf73c366c222",
+  "historical_2431_model_not_manuscript2430": true,
+  "result": "No consistent extra selection yield over strong sequence baselines; limited H-only feedback signal in TCR6, not validated directed engineering.",
+  "deliverables": {
+    "本地多模式筛选实验_完整结果_20261022.md": "16bb765ad5ce6a452739bbaf55482ff968ed1c023defc4e4e04e2b90979fbc0b",
+    "三种模式_全部结果摘要.csv": "6f86c135ad79e4f3edcb09fb72ba63ef28bdf1648907c7b2cf53ee0578462ff3",
+    "evaluation/candidate_rankings_seed20261022.csv": "2da970d5e73053024beadbdb9aee8655693c7ebe435b75fa94ed4cfcdef201a9",
+    "evaluation/independent_result_audit.json": "d1049723ab44a849977bfc9374ea6bf7a42b88300b88a05b679831340fd28c68",
+    "evaluation/decision_summary.json": "195cabbd1132c64cebe6d4407d55b7cf867149c0f22bd49b6fa6c4b08163c800",
+    "result_figures/figure_QA.json": "efad4e44dbe09cc8e37f8a47659ada5d8df30212f840d724c2710c16a818a30e"
+  },
+  "DMS_receptor_branch": "Not used: full matrix/construct mapping unavailable; antigen-site mode1 covered by full9x19 peptide saturation data."
+}

@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "required_fixes": [],
+  "timestamp_utc": "2026-10-15T15:37:35.916721+00:00",
+  "document": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v37_20261015_中文修订_图7删去汇总表与布局精简_三线表.docx",
+  "document_sha256": "f283b7b504a08d2d42cd9acb619af5d2ddbc80fc919948ef2f27b7913dd2c7a1",
+  "comparison_v36_sha256": "84961145b46d467f4ba262cc3c6a5ce88c4d5f4e99282c2e349b496ceca07706",
+  "changed_paragraph_indices": [
+    51,
+    100,
+    106
+  ],
+  "scope": "Quick independent actualDOCX scientific check of3modifiedparagraphs andunchangedP109/83recordcontext; no newstatistics, experiment, fullreview, Word orLibreOffice.",
+  "checks": [
+    {
+      "name": "Current_hash_matches_final",
+      "passed": true
+    },
+    {
+      "name": "Only_requested_three_paragraphs_changed",
+      "passed": true,
+      "detail": [
+        51,
+        100,
+        106
+      ]
+    },
+    {
+      "name": "All_other_context_and_P109_unchanged",
+      "passed": true
+    },
+    {
+      "name": "P51_b_allfour_chi_fineentropy_only",
+      "passed": true
+    },
+    {
+      "name": "P51_layerwise_AA_centering_and_501frame_fourorigins_preserved",
+      "passed": true
+    },
+    {
+      "name": "P100_allfour_entropy_associations_retained_including_weakchi4",
+      "passed": true
+    },
+    {
+      "name": "P100_endpoint_and_actual_MDwidths_unchanged",
+      "passed": true
+    },
+    {
+      "name": "P106_b_only_fineentropy151scatter_no_width_matrix",
+      "passed": true
+    },
+    {
+      "name": "No_old_matrix_or_panelcrossreference_in_full_text",
+      "passed": true
+    },
+    {
+      "name": "Frozen_endpoints_within_sixGLN_in_method_result_caption",
+      "passed": true
+    },
+    {
+      "name": "Jointfivewindow_reference_vs501frames_and_origin0curve_still_distinct",
+      "passed": true
+    },
+    {
+      "name": "83record_width_and_entropy_main_validation_unchanged",
+      "passed": true
+    },
+    {
+      "name": "No_singleangle_direct_prediction_or_newmechanism_claim",
+      "passed": true
+    },
+    {
+      "name": "Actual_figurecaption_matches_P106",
+      "passed": true
+    }
+  ],
+  "check_count": 14,
+  "passed_count": 14,
+  "scientific_conclusion_zh": "通过。b统一改为全部四χ层的单角细箱熵关联散点，151角度观测分母、AA中心化及弱χ4正相关保留；逐χ宽度相关随整个矩阵一并撤下，没有只隐藏负值。全66残基预测、c的实际MD宽度与六GLN内冻结端点、83记录宽度和熵验证保持原文。旧矩阵及旧分面引用无残留，未引入模型直接预测单角或新机制声称。",
+  "caption_sha256": "7b5476cbd2d5423d285ac264a10d5afd96d87d6613a68c3a65ae2d5bc17af528",
+  "edits_made": "Onlythisindependent_scientific_review.json; manuscript, figures, source data andexistingcertificates unchanged."
+}

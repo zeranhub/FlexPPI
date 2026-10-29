@@ -1,0 +1,44 @@
+{
+  "generated_utc": "2026-10-24T03:23:34.449054+00:00",
+  "script_sha256": "c2627e8733a2029c671779cec5885ae1947c706f91729ab24814f3ca1192f36f",
+  "input_sha256": {
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\classification\\membership_frozen.csv": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\per_record_metrics.csv": "87420afc23a9dce44919eb1e58bb6620da2b04a8c1075099d23df06ea538e6ef"
+  },
+  "rows": {
+    "single_chain": {
+      "records": 2193,
+      "families": 1493
+    },
+    "multi_chain": {
+      "records": 870,
+      "families": 268
+    }
+  },
+  "multichain_split": {
+    "protein": 10,
+    "protein_complex": 860
+  },
+  "methods": [
+    "FlexPPI",
+    "BackFlip-2.1",
+    "BackFlip-1.0",
+    "DynaProt-M",
+    "FastProtFlex",
+    "ANM",
+    "GNM"
+  ],
+  "metrics": [
+    "spearman",
+    "top10_ap",
+    "z_mae"
+  ],
+  "cells": 42,
+  "input_protocol": "whole assembly for every structure-consuming method",
+  "statistics": "record-weighted mean, 95% family-cluster percentile, seed=20261024, draws=2000",
+  "artifacts": {
+    "benchmark_v7.pdf": "f9bb534a3d4a98621c27d441e610be76292f16deb60c5d5e2e6c9e97dfb6c357",
+    "benchmark_v7.png": "83bb55c898da71c52759e0f005c61db81407d0828eea524f8dba099eff9ccbc1",
+    "benchmark_v7.svg": "16a96e67896415be08156030aed1c17e933b8f70be13cfbaf73f3625d9543f88"
+  }
+}

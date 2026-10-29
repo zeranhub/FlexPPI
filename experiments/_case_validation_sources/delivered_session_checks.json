@@ -1,0 +1,583 @@
+{
+  "status": "pass",
+  "delivered_bundle": "E:\\Project\\FlexPPI\\paper\\figures\\case_validation_v13_20261009",
+  "cases": [
+    {
+      "case": "kix",
+      "scene_names": [
+        "KIX_context",
+        "KIX_L12_MD_whole",
+        "KIX_L12_MD",
+        "KIX_L12_FlexPPI_fold1_whole",
+        "KIX_L12_FlexPPI_fold1"
+      ],
+      "session_sha256": "a7654bc0585fa2563aeb9851b5c593966159c2e9e5e164fb59ef91b564b04cf9",
+      "reference_sha256": "9222116e3870d2196168917586c06094bd31ed11122ef18fea155ea4628aae8c",
+      "scene_representation_checks": {
+        "KIX_context": {
+          "complete_object": "ternary",
+          "complete_CA_cartoon_per_chain": {
+            "A": 25,
+            "B": 87,
+            "C": 19
+          },
+          "complete_CA_cartoon_total": 131,
+          "enabled_objects": [
+            "ternary",
+            "context_labels",
+            "context_leaders"
+          ],
+          "max_camera_parameter_difference": 0.0
+        },
+        "KIX_L12_MD_whole": {
+          "complete_object": "L12_md",
+          "complete_CA_cartoon_per_chain": {
+            "A": 25,
+            "B": 87,
+            "C": 19
+          },
+          "complete_CA_cartoon_total": 131,
+          "enabled_objects": [
+            "L12_md"
+          ],
+          "max_camera_parameter_difference": 0.0
+        },
+        "KIX_L12_MD": {
+          "complete_object": "L12_md",
+          "complete_CA_cartoon_per_chain": {
+            "A": 25,
+            "B": 87,
+            "C": 19
+          },
+          "complete_CA_cartoon_total": 131,
+          "enabled_objects": [
+            "L12_md"
+          ],
+          "max_camera_parameter_difference": 0.0
+        },
+        "KIX_L12_FlexPPI_fold1_whole": {
+          "complete_object": "L12_model",
+          "complete_CA_cartoon_per_chain": {
+            "A": 25,
+            "B": 87,
+            "C": 19
+          },
+          "complete_CA_cartoon_total": 131,
+          "enabled_objects": [
+            "L12_model"
+          ],
+          "max_camera_parameter_difference": 0.0
+        },
+        "KIX_L12_FlexPPI_fold1": {
+          "complete_object": "L12_model",
+          "complete_CA_cartoon_per_chain": {
+            "A": 25,
+            "B": 87,
+            "C": 19
+          },
+          "complete_CA_cartoon_total": 131,
+          "enabled_objects": [
+            "L12_model"
+          ],
+          "max_camera_parameter_difference": 0.0
+        }
+      },
+      "source_coordinate_checks": {
+        "L12_md": {
+          "heavy_atoms": 1080,
+          "max_source_coordinate_difference_A": 0.0,
+          "complete_source_atom_identities_match": true,
+          "all_input_atoms": 2181,
+          "all_input_atoms_preserved": true,
+          "max_all_atom_source_coordinate_difference_A": 0.0
+        },
+        "L12_model": {
+          "heavy_atoms": 1080,
+          "max_source_coordinate_difference_A": 0.0,
+          "complete_source_atom_identities_match": true,
+          "all_input_atoms": 2181,
+          "all_input_atoms_preserved": true,
+          "max_all_atom_source_coordinate_difference_A": 0.0
+        },
+        "ternary": {
+          "heavy_atoms": 1080,
+          "max_source_coordinate_difference_A": 0.0,
+          "complete_source_atom_identities_match": true,
+          "all_input_atoms": 2181,
+          "all_input_atoms_preserved": true,
+          "max_all_atom_source_coordinate_difference_A": 0.0
+        }
+      },
+      "crop_checks": [
+        {
+          "plan": "md",
+          "full_scene": "KIX_L12_MD_whole",
+          "focus_scene": "KIX_L12_MD",
+          "full_image": "kix_l12_md_whole_source.png",
+          "crop_image": "kix_l12_md.png",
+          "full_image_sha256": "2085adfdc86030a36f51ff7d9e09ba20d2faa4f7b8c0bfcb2257f90867836b39",
+          "crop_image_sha256": "6cab5b26bf910524aceaf6f2cd317ef67854d94d7d8749398ee66d7786ec75f1",
+          "full_size": [
+            6000,
+            4800
+          ],
+          "crop_box": [
+            1111,
+            1638,
+            4006,
+            3954
+          ],
+          "crop_size": [
+            2895,
+            2316
+          ],
+          "exact_pixel_crop": true,
+          "recomputed_full_atom_projected_bounds_px": [
+            1742.4934070164709,
+            322.70019520202095,
+            4889.918942449541,
+            4477.299841847932
+          ],
+          "max_manifest_projection_difference_px": 0.0,
+          "full_depth_interval_A": [
+            151.42164611816406,
+            211.81961059570312
+          ],
+          "complete_atom_depth_bounds_A": [
+            155.4216523548389,
+            207.8196107752956
+          ],
+          "full_canvas_and_depth_unclipped": true,
+          "complete_cartoon": {
+            "complete_object": "L12_md",
+            "complete_CA_cartoon_per_chain": {
+              "A": 25,
+              "B": 87,
+              "C": 19
+            },
+            "complete_CA_cartoon_total": 131,
+            "enabled_objects": [
+              "L12_md"
+            ]
+          }
+        },
+        {
+          "plan": "model",
+          "full_scene": "KIX_L12_FlexPPI_fold1_whole",
+          "focus_scene": "KIX_L12_FlexPPI_fold1",
+          "full_image": "kix_l12_fold1_whole_source.png",
+          "crop_image": "kix_l12_fold1.png",
+          "full_image_sha256": "b1c67f6f639fcc8d50277c19d4795c23e69ba4013715fec6b404420b5a138640",
+          "crop_image_sha256": "40f5acb4afb5ddd4a1c053fc10ab3aea858eb238323e83b5f28960c74e9c3a42",
+          "full_size": [
+            6000,
+            4800
+          ],
+          "crop_box": [
+            1111,
+            1638,
+            4006,
+            3954
+          ],
+          "crop_size": [
+            2895,
+            2316
+          ],
+          "exact_pixel_crop": true,
+          "recomputed_full_atom_projected_bounds_px": [
+            1742.4934070164709,
+            322.70019520202095,
+            4889.918942449541,
+            4477.299841847932
+          ],
+          "max_manifest_projection_difference_px": 0.0,
+          "full_depth_interval_A": [
+            151.42164611816406,
+            211.81961059570312
+          ],
+          "complete_atom_depth_bounds_A": [
+            155.4216523548389,
+            207.8196107752956
+          ],
+          "full_canvas_and_depth_unclipped": true,
+          "complete_cartoon": {
+            "complete_object": "L12_model",
+            "complete_CA_cartoon_per_chain": {
+              "A": 25,
+              "B": 87,
+              "C": 19
+            },
+            "complete_CA_cartoon_total": 131,
+            "enabled_objects": [
+              "L12_model"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case": "ubiquitin",
+      "scene_names": [
+        "01_complex",
+        "03_Q41_whole_for_crop",
+        "02_Q41_MD_observed",
+        "03_Q62_whole_for_crop",
+        "02_Q62_MD_observed"
+      ],
+      "session_sha256": "d96f6a707698416c50567b17ca98ed7ca70eee1be80189b633bea2f72a898498",
+      "reference_sha256": "4b2206ae6e9b71d9b8659e661d6825320eebae563ec4e7c2643a43a5225bf1f5",
+      "scene_representation_checks": {
+        "01_complex": {
+          "complete_object": "complex",
+          "complete_CA_cartoon_per_chain": {
+            "A": 72,
+            "B": 47
+          },
+          "complete_CA_cartoon_total": 119,
+          "enabled_objects": [
+            "complex",
+            "ubiquitin_label",
+            "uba_label"
+          ],
+          "max_camera_parameter_difference": 8.683863654823654e-07
+        },
+        "03_Q41_whole_for_crop": {
+          "complete_object": "complex",
+          "complete_CA_cartoon_per_chain": {
+            "A": 72,
+            "B": 47
+          },
+          "complete_CA_cartoon_total": 119,
+          "enabled_objects": [
+            "complex",
+            "Q41_observed_rank1",
+            "Q41_observed_rank2",
+            "Q41_observed_rank3"
+          ],
+          "max_camera_parameter_difference": 0.0
+        },
+        "02_Q41_MD_observed": {
+          "complete_object": "complex",
+          "complete_CA_cartoon_per_chain": {
+            "A": 72,
+            "B": 47
+          },
+          "complete_CA_cartoon_total": 119,
+          "enabled_objects": [
+            "complex",
+            "Q41_observed_rank1",
+            "Q41_observed_rank2",
+            "Q41_observed_rank3"
+          ],
+          "max_camera_parameter_difference": 0.0
+        },
+        "03_Q62_whole_for_crop": {
+          "complete_object": "complex",
+          "complete_CA_cartoon_per_chain": {
+            "A": 72,
+            "B": 47
+          },
+          "complete_CA_cartoon_total": 119,
+          "enabled_objects": [
+            "complex",
+            "Q62_observed_rank1",
+            "Q62_observed_rank2",
+            "Q62_observed_rank3"
+          ],
+          "max_camera_parameter_difference": 0.0
+        },
+        "02_Q62_MD_observed": {
+          "complete_object": "complex",
+          "complete_CA_cartoon_per_chain": {
+            "A": 72,
+            "B": 47
+          },
+          "complete_CA_cartoon_total": 119,
+          "enabled_objects": [
+            "complex",
+            "Q62_observed_rank1",
+            "Q62_observed_rank2",
+            "Q62_observed_rank3"
+          ],
+          "max_camera_parameter_difference": 0.0
+        }
+      },
+      "source_coordinate_checks": {
+        "complex": {
+          "heavy_atoms": 935,
+          "max_source_coordinate_difference_A": 0.0,
+          "complete_source_atom_identities_match": true,
+          "all_input_atoms": 1921,
+          "hydrogen_atoms_not_displayed_in_object": 986,
+          "all_input_heavy_atoms_preserved": true
+        }
+      },
+      "crop_checks": [
+        {
+          "plan": "Q41",
+          "full_scene": "03_Q41_whole_for_crop",
+          "focus_scene": "02_Q41_MD_observed",
+          "full_image": "q41_whole_source.png",
+          "crop_image": "q41_zoom.png",
+          "full_image_sha256": "0f902ad94a74bb338a119b64e3be1337001c15dc2a6a2617a0d993c79468c9c2",
+          "crop_image_sha256": "c4232b3b6f3edb4bf1e46e735c4db3ccfeaf194f15d7776640146738bbd23abc",
+          "full_size": [
+            6000,
+            5000
+          ],
+          "crop_box": [
+            3244,
+            1694,
+            4984,
+            3144
+          ],
+          "crop_size": [
+            1740,
+            1450
+          ],
+          "exact_pixel_crop": true,
+          "recomputed_full_atom_projected_bounds_px": [
+            1011.4893349114941,
+            391.4321709890023,
+            4988.510731913224,
+            4608.567833018933
+          ],
+          "max_manifest_projection_difference_px": 0.0,
+          "full_depth_interval_A": [
+            127.05580139160156,
+            162.84886169433594
+          ],
+          "complete_atom_depth_bounds_A": [
+            131.0557994023316,
+            158.84886213606185
+          ],
+          "full_canvas_and_depth_unclipped": true,
+          "complete_cartoon": {
+            "complete_object": "complex",
+            "complete_CA_cartoon_per_chain": {
+              "A": 72,
+              "B": 47
+            },
+            "complete_CA_cartoon_total": 119,
+            "enabled_objects": [
+              "complex",
+              "Q41_observed_rank1",
+              "Q41_observed_rank2",
+              "Q41_observed_rank3"
+            ]
+          }
+        },
+        {
+          "plan": "Q62",
+          "full_scene": "03_Q62_whole_for_crop",
+          "focus_scene": "02_Q62_MD_observed",
+          "full_image": "q62_whole_source.png",
+          "crop_image": "q62_zoom.png",
+          "full_image_sha256": "305e6a138019638f6121be3b71cd222521d9b31d806740146e66aed4ff8dc10f",
+          "crop_image_sha256": "97478f14b3821166fbfd104c1d7fae67763f7f169f7bce5ff875af90c4d93d9e",
+          "full_size": [
+            6000,
+            5000
+          ],
+          "crop_box": [
+            1703,
+            2222,
+            4037,
+            4167
+          ],
+          "crop_size": [
+            2334,
+            1945
+          ],
+          "exact_pixel_crop": true,
+          "recomputed_full_atom_projected_bounds_px": [
+            525.7010190258966,
+            705.9531160042802,
+            5474.298987944535,
+            4294.046873308464
+          ],
+          "max_manifest_projection_difference_px": 0.0,
+          "full_depth_interval_A": [
+            99.7418212890625,
+            154.31724548339844
+          ],
+          "complete_atom_depth_bounds_A": [
+            103.741827722641,
+            150.31724985944481
+          ],
+          "full_canvas_and_depth_unclipped": true,
+          "complete_cartoon": {
+            "complete_object": "complex",
+            "complete_CA_cartoon_per_chain": {
+              "A": 72,
+              "B": 47
+            },
+            "complete_CA_cartoon_total": 119,
+            "enabled_objects": [
+              "complex",
+              "Q62_observed_rank1",
+              "Q62_observed_rank2",
+              "Q62_observed_rank3"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "direct_panel_f_sessions": [
+    {
+      "session": "f_Q41_local.pse",
+      "default_scene": "02_Q41_MD_observed",
+      "default_representation": {
+        "complete_object": "complex",
+        "complete_CA_cartoon_per_chain": {
+          "A": 72,
+          "B": 47
+        },
+        "complete_CA_cartoon_total": 119,
+        "enabled_objects": [
+          "complex",
+          "Q41_observed_rank1",
+          "Q41_observed_rank2",
+          "Q41_observed_rank3"
+        ]
+      },
+      "default_camera_difference": 0.0,
+      "coordinates": {
+        "heavy_atoms": 935,
+        "max_source_coordinate_difference_A": 0.0,
+        "complete_source_atom_identities_match": true,
+        "all_input_atoms": 1921,
+        "hydrogen_atoms_not_displayed_in_object": 986,
+        "all_input_heavy_atoms_preserved": true
+      },
+      "recalled_whole_and_local_scenes": {
+        "03_Q41_whole_for_crop": {
+          "complete_object": "complex",
+          "complete_CA_cartoon_per_chain": {
+            "A": 72,
+            "B": 47
+          },
+          "complete_CA_cartoon_total": 119,
+          "enabled_objects": [
+            "complex",
+            "Q41_observed_rank1",
+            "Q41_observed_rank2",
+            "Q41_observed_rank3"
+          ],
+          "max_camera_parameter_difference": 0.0
+        },
+        "01_complex": {
+          "complete_object": "complex",
+          "complete_CA_cartoon_per_chain": {
+            "A": 72,
+            "B": 47
+          },
+          "complete_CA_cartoon_total": 119,
+          "enabled_objects": [
+            "complex",
+            "ubiquitin_label",
+            "uba_label"
+          ],
+          "max_camera_parameter_difference": 8.683863654823654e-07
+        },
+        "02_Q41_MD_observed": {
+          "complete_object": "complex",
+          "complete_CA_cartoon_per_chain": {
+            "A": 72,
+            "B": 47
+          },
+          "complete_CA_cartoon_total": 119,
+          "enabled_objects": [
+            "complex",
+            "Q41_observed_rank1",
+            "Q41_observed_rank2",
+            "Q41_observed_rank3"
+          ],
+          "max_camera_parameter_difference": 0.0
+        }
+      }
+    },
+    {
+      "session": "f_Q62_local.pse",
+      "default_scene": "02_Q62_MD_observed",
+      "default_representation": {
+        "complete_object": "complex",
+        "complete_CA_cartoon_per_chain": {
+          "A": 72,
+          "B": 47
+        },
+        "complete_CA_cartoon_total": 119,
+        "enabled_objects": [
+          "complex",
+          "Q62_observed_rank1",
+          "Q62_observed_rank2",
+          "Q62_observed_rank3"
+        ]
+      },
+      "default_camera_difference": 0.0,
+      "coordinates": {
+        "heavy_atoms": 935,
+        "max_source_coordinate_difference_A": 0.0,
+        "complete_source_atom_identities_match": true,
+        "all_input_atoms": 1921,
+        "hydrogen_atoms_not_displayed_in_object": 986,
+        "all_input_heavy_atoms_preserved": true
+      },
+      "recalled_whole_and_local_scenes": {
+        "03_Q62_whole_for_crop": {
+          "complete_object": "complex",
+          "complete_CA_cartoon_per_chain": {
+            "A": 72,
+            "B": 47
+          },
+          "complete_CA_cartoon_total": 119,
+          "enabled_objects": [
+            "complex",
+            "Q62_observed_rank1",
+            "Q62_observed_rank2",
+            "Q62_observed_rank3"
+          ],
+          "max_camera_parameter_difference": 0.0
+        },
+        "01_complex": {
+          "complete_object": "complex",
+          "complete_CA_cartoon_per_chain": {
+            "A": 72,
+            "B": 47
+          },
+          "complete_CA_cartoon_total": 119,
+          "enabled_objects": [
+            "complex",
+            "ubiquitin_label",
+            "uba_label"
+          ],
+          "max_camera_parameter_difference": 8.683863654823654e-07
+        },
+        "02_Q62_MD_observed": {
+          "complete_object": "complex",
+          "complete_CA_cartoon_per_chain": {
+            "A": 72,
+            "B": 47
+          },
+          "complete_CA_cartoon_total": 119,
+          "enabled_objects": [
+            "complex",
+            "Q62_observed_rank1",
+            "Q62_observed_rank2",
+            "Q62_observed_rank3"
+          ],
+          "max_camera_parameter_difference": 0.0
+        }
+      }
+    }
+  ],
+  "pymol_version": [
+    "3.0.0",
+    3.0,
+    3000000,
+    1716842479,
+    "",
+    0
+  ]
+}

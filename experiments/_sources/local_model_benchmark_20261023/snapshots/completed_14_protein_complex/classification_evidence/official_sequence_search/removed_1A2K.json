@@ -1,0 +1,45 @@
+{
+  "url": "https://data.rcsb.org/rest/v1/holdings/removed/1A2K",
+  "http_status": 200,
+  "response": {
+    "rcsb_repository_holdings_removed": {
+      "audit_authors": [
+        "Stewart, M.",
+        "Kent, H.M.",
+        "Mccoy, A.J."
+      ],
+      "deposit_date": "1998-01-06T00:00:00.000+00:00",
+      "id_codes_replaced_by": [
+        "5BXQ"
+      ],
+      "release_date": "1998-04-29T00:00:00.000+00:00",
+      "remove_date": "2023-03-01T00:00:00.000+00:00",
+      "repository_content_types": [
+        "entry PDB",
+        "entry PDBML",
+        "entry mmCIF"
+      ],
+      "title": "GDPRAN-NTF2 COMPLEX"
+    },
+    "rcsb_repository_holdings_removed_audit_author": [
+      {
+        "audit_author": "Stewart, M.",
+        "ordinal_id": 1
+      },
+      {
+        "audit_author": "Kent, H.M.",
+        "ordinal_id": 2
+      },
+      {
+        "audit_author": "Mccoy, A.J.",
+        "ordinal_id": 3
+      }
+    ],
+    "rcsb_repository_holdings_removed_entry_container_identifiers": {
+      "entry_id": "1A2K",
+      "rcsb_id": "1A2K",
+      "update_id": "2026_42"
+    },
+    "rcsb_id": "1A2K"
+  }
+}

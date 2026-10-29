@@ -1,0 +1,152 @@
+{
+  "source_docx": "paper_v71_20261024_中文修订_表1对齐图2并移补充.docx",
+  "source_body_index_note": "索引来自word/document.xml的w:body直接子元素，包含图与表；编号由0起。",
+  "paragraph_checks": {
+    "3.3.p1": {
+      "source_blocks": [
+        87,
+        88,
+        106
+      ],
+      "refs": [
+        22
+      ],
+      "verified_values": [
+        "KIX四种组成",
+        "87个位点"
+      ],
+      "claim_scope": "KIX与泛素–UBA为实例；615复合物群体性能不改写为机制分析。"
+    },
+    "3.3.p2": {
+      "source_blocks": [
+        89,
+        192,
+        193,
+        194,
+        195
+      ],
+      "refs": [],
+      "verified_values": [
+        "ρ=0.729–0.896",
+        "高20%集合重合61%–89%",
+        "双伙伴14/18命中",
+        "L12 6/8进入高20%",
+        "四条100 ns"
+      ],
+      "claim_scope": "共同高波动区域定位；不声称预测状态间变化方向。原S8与六对状态差值完整保留。"
+    },
+    "3.3.p3": {
+      "source_blocks": [
+        106
+      ],
+      "refs": [
+        23
+      ],
+      "verified_values": [
+        "主链14/15命中",
+        "66个Hχ位置",
+        "MAE=0.080 nats",
+        "ρ=0.979",
+        "按训练集AA均值校正ρ=0.868"
+      ],
+      "figure_refs": [
+        "图3e、g"
+      ],
+      "move_from": "原3.5.2首段；图3g本已含全链Hχ剖面。"
+    },
+    "3.3.p4": {
+      "source_blocks": [
+        54,
+        107
+      ],
+      "refs": [],
+      "verified_values": [
+        "Q41预测2.000/MD1.890",
+        "Q62预测2.684/MD2.631",
+        "三个χ角/27类状态",
+        "90%帧覆盖7类/12类"
+      ],
+      "figure_refs": [
+        "图3f、g、h"
+      ],
+      "move_from": "原3.5.2第二段；图5逐角占据和自由能物理证据留3.5。"
+    },
+    "3.4.p1": {
+      "source_blocks": [
+        52,
+        93
+      ],
+      "refs": [
+        28
+      ],
+      "verified_values": [
+        "SPR 18 μM→0.6 nM",
+        "约30,000倍",
+        "TCR–MHC接触56→97",
+        "βCDR2–pMHC接触6→38",
+        "全组成链家族划分第0折模型，训练未使用ITrace"
+      ],
+      "claim_scope": "SPR与晶体结构均明确归文献；模型不直接预测亲和力。"
+    },
+    "3.4.p2": {
+      "source_blocks": [
+        94
+      ],
+      "refs": [],
+      "verified_values": [
+        "CDR45个位点",
+        "βCDR2 5位0.896→0.636 Å",
+        "βCDR3 13位0.801→0.648 Å",
+        "同类型pMHC23位",
+        "Q72 Hχ1.792→1.375 nats",
+        "未替换βG54 RMSF1.118→0.747 Å"
+      ],
+      "claim_scope": "模型预测明确标识；不把预测数值当MD。"
+    },
+    "3.4.p3": {
+      "source_blocks": [
+        53,
+        95,
+        96
+      ],
+      "refs": [
+        28
+      ],
+      "verified_values": [
+        "G52P/I53F",
+        "Q72 OE1–β53N 5.85→2.94 Å",
+        "Q72 NE2–G54O 10.58→3.12 Å",
+        "三条独立重复",
+        "近接触24.4%→97.4%",
+        "双氢键几何0%→37.1%",
+        "三重复Q72Hχ与G54RMSF均下降"
+      ],
+      "claim_scope": "局部稳定化与接触持续性解释；未声称该网络证明全部亲和增益来源。"
+    },
+    "3.4.p4": {
+      "source_blocks": [
+        52,
+        93,
+        96
+      ],
+      "refs": [],
+      "verified_values": [
+        "ELA第4G→A G4A",
+        "第7I→A I7A",
+        "新增主链响应CDR2α/CDR3α",
+        "HLA K68/R75/Q72侧链响应"
+      ],
+      "claim_scope": "四态同体系比较；未外推TCR–pMHC全类别定量亲和力预测。"
+    }
+  },
+  "editing_constraints": {
+    "docx_modified": false,
+    "figures_or_captions_modified": false,
+    "new_experiments_or_references_added": false,
+    "section_paragraph_counts": {
+      "3.3": 4,
+      "3.4": 4
+    }
+  },
+  "source_sha256": "4bf956d86b66ba898f62ad48ff4aee0f41c9269d52e7585f4825672601bca132"
+}

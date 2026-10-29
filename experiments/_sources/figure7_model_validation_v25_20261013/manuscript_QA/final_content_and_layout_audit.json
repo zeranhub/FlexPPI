@@ -1,0 +1,601 @@
+{
+  "status": "passed",
+  "document_sha256": "523290c8297ba2034cf249bd07c57256cdc1920cb0f9530b4acd21d0e6a9335b",
+  "reviewed_beijing": "2026-10-13T22:14:52.176456+08:00",
+  "checks_passed": 111,
+  "checks": [
+    {
+      "name": "Final Word matches frozen builder certificate",
+      "passed": true
+    },
+    {
+      "name": "Previous v24 unchanged",
+      "passed": true
+    },
+    {
+      "name": "Only three text paragraphs modified",
+      "passed": true
+    },
+    {
+      "name": "All405native table cells preserved",
+      "passed": true
+    },
+    {
+      "name": "Native three-line table 1",
+      "passed": true
+    },
+    {
+      "name": "Native three-line table 2",
+      "passed": true
+    },
+    {
+      "name": "Native three-line table 3",
+      "passed": true
+    },
+    {
+      "name": "Native three-line table 4",
+      "passed": true
+    },
+    {
+      "name": "Native three-line table 5",
+      "passed": true
+    },
+    {
+      "name": "Native three-line table 6",
+      "passed": true
+    },
+    {
+      "name": "Native three-line table 7",
+      "passed": true
+    },
+    {
+      "name": "Native three-line table 8",
+      "passed": true
+    },
+    {
+      "name": "Native three-line table 9",
+      "passed": true
+    },
+    {
+      "name": "Native three-line table 10",
+      "passed": true
+    },
+    {
+      "name": "Native three-line table 11",
+      "passed": true
+    },
+    {
+      "name": "Figure captions 1 to8 andS1",
+      "passed": true
+    },
+    {
+      "name": "Table captions 1 to2 andS1 toS9",
+      "passed": true
+    },
+    {
+      "name": "Crossreferences 图 resolve",
+      "passed": true
+    },
+    {
+      "name": "Crossreferences 表 resolve",
+      "passed": true
+    },
+    {
+      "name": "All27numbered references cited",
+      "passed": true
+    },
+    {
+      "name": "New figure7roles are explicit",
+      "passed": true
+    },
+    {
+      "name": "Old nine-panel figure7references removed",
+      "passed": true
+    },
+    {
+      "name": "Prediction values/errors and differences inmaintext",
+      "passed": true
+    },
+    {
+      "name": "Exactly four actual prediction/reference points",
+      "passed": true
+    },
+    {
+      "name": "Q41 MD label is five-window mean",
+      "passed": true
+    },
+    {
+      "name": "Q41 points exact",
+      "passed": true
+    },
+    {
+      "name": "Q41 absolute error exact",
+      "passed": true
+    },
+    {
+      "name": "Q41 five windows1000frames",
+      "passed": true
+    },
+    {
+      "name": "Q62 MD label is five-window mean",
+      "passed": true
+    },
+    {
+      "name": "Q62 points exact",
+      "passed": true
+    },
+    {
+      "name": "Q62 absolute error exact",
+      "passed": true
+    },
+    {
+      "name": "Q62 five windows1000frames",
+      "passed": true
+    },
+    {
+      "name": "Exact roundedMDdelta",
+      "passed": true
+    },
+    {
+      "name": "Exact roundedmodeldelta",
+      "passed": true
+    },
+    {
+      "name": "All2592histogram rows saved unchanged",
+      "passed": true
+    },
+    {
+      "name": "Curve column exact residue",
+      "passed": true
+    },
+    {
+      "name": "Curve column exact window",
+      "passed": true
+    },
+    {
+      "name": "Curve column exact chi",
+      "passed": true
+    },
+    {
+      "name": "Curve column exact angle_lower",
+      "passed": true
+    },
+    {
+      "name": "Curve column exact angle_upper",
+      "passed": true
+    },
+    {
+      "name": "Curve column exact angle_center",
+      "passed": true
+    },
+    {
+      "name": "Curve column exact frames",
+      "passed": true
+    },
+    {
+      "name": "Curve column exact count",
+      "passed": true
+    },
+    {
+      "name": "Curve column exact probability",
+      "passed": true
+    },
+    {
+      "name": "Curve column exact density_per_degree",
+      "passed": true
+    },
+    {
+      "name": "Curve column exact F_star",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 0, 1)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 0, 2)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 0, 3)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 1, 1)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 1, 2)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 1, 3)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 2, 1)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 2, 2)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 2, 3)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 3, 1)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 3, 2)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 3, 3)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 4, 1)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 4, 2)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 4, 3)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 5, 1)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 5, 2)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q41', 5, 3)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 0, 1)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 0, 2)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 0, 3)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 1, 1)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 1, 2)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 1, 3)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 2, 1)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 2, 2)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 2, 3)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 3, 1)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 3, 2)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 3, 3)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 4, 1)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 4, 2)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 4, 3)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 5, 1)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 5, 2)",
+      "passed": true
+    },
+    {
+      "name": "Fstar reconstruction ('Q62', 5, 3)",
+      "passed": true
+    },
+    {
+      "name": "29rendered pages with no blank/replacement text",
+      "passed": true
+    },
+    {
+      "name": "Page1identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page2identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page3identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page4identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page5identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page6identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page7identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page8identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page9identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page10identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page11identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page12identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page13identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page14identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page15identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page20identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page21identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page22identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page23identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page24identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page25identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page26identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page27identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page28identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Page29identicaltoalreadyreviewedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalfigure output hash png",
+      "passed": true
+    },
+    {
+      "name": "Finalfigure output hash pdf",
+      "passed": true
+    },
+    {
+      "name": "Finalfigure output hash svg",
+      "passed": true
+    }
+  ],
+  "pages": 29,
+  "page_review": [
+    {
+      "page": 1,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "572b36f9cb319345485527e2b49860cf4bc66c4ae3aa51a13e1a0547c3ed9e5d"
+    },
+    {
+      "page": 2,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "5ddf089129ac350c4c4edef7a0143efc342bb1cf972f03b3d38a64d5d8746b69"
+    },
+    {
+      "page": 3,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "5abb2b3ef6c1674b178b2f153ebc7b701354c1fcab36e76275e2765fc441b75a"
+    },
+    {
+      "page": 4,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "9520ef6dfcf29debc7987746659b45c9b687cff9e4667b178008305ef3ecd6ce"
+    },
+    {
+      "page": 5,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "5839886457c0e61ddb9dbe281e5259cc7631d0e8e669b1020e4dba797e7c6a67"
+    },
+    {
+      "page": 6,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "7513acce40dc990813ce5a6d939fd7a8f2db7bee4ef7f675fea85e2d99e416c1"
+    },
+    {
+      "page": 7,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "4ac51b5b2ecf22fad655054db8d1b54a11faa9f4b797ece381c92c805d460bc5"
+    },
+    {
+      "page": 8,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "cdbd4bd72e4db6ae824b4b88a9854b15fe2c328f7590cdf56ebafe89d4018614"
+    },
+    {
+      "page": 9,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "5da91fe944fca36f53cd74be5af906ce4adadc340ac60d932e00f13da074d54e"
+    },
+    {
+      "page": 10,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "06fa66d05b039f5ff009b130ccf43d3d350e5f352c50b6a1fdd9e707aa2206aa"
+    },
+    {
+      "page": 11,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "f0b9b9515d8bd84b13f355a86b73d7b937492a9131e929e0597e2da93da7d0b4"
+    },
+    {
+      "page": 12,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "05b9a7540cb30b875b125f7be169d5cc500acd0136c27bc71161aaa2dea0cc7b"
+    },
+    {
+      "page": 13,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "f5e3ac7f43506ee6c28812f815205890d4b85fa7bf4b7dfab022a0d5ea219e54"
+    },
+    {
+      "page": 14,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "d5c74f8cce17f20e2c9be66997afd992fa047521c231aaa04c1b55921a4b0cca"
+    },
+    {
+      "page": 15,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "61f326b765f1b71c9bd50e9ade4de96dab8bdee5ebb9cf09f96be6fc4ec7bbeb"
+    },
+    {
+      "page": 16,
+      "review": "final_PNG_directly_visually_inspected",
+      "PNG_sha256": "5a1ffa3ea6b82523b13eb89bb86f698edba8540986fff4606ff445738f2a98ef"
+    },
+    {
+      "page": 17,
+      "review": "final_PNG_directly_visually_inspected",
+      "PNG_sha256": "bbeb79ac7706c7c8632980e2710e02f2bf273e4aed0712cc20304a9f19c7f609"
+    },
+    {
+      "page": 18,
+      "review": "final_PNG_directly_visually_inspected",
+      "PNG_sha256": "34d23724b154ba3479ea969dad7ee03017801504c84b305cca2522360eb032f8"
+    },
+    {
+      "page": 19,
+      "review": "final_PNG_directly_visually_inspected",
+      "PNG_sha256": "c94e468b9a95297aae184a11d27f88ef76f19dc20b0df4f7baf03ca633c39277"
+    },
+    {
+      "page": 20,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "5b5b140f0e3f49fcc5ffb519bb644da367b51846362622c324df9974715b145e"
+    },
+    {
+      "page": 21,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "f33570c9b49c98f64842a5effd195f97cdd780c8998dcfe584ee287b25d83802"
+    },
+    {
+      "page": 22,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "3e7027f74dc283e097c232b902ffd654db97028fa1d7cc6b60392a434abb0948"
+    },
+    {
+      "page": 23,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "740f2089d800d21abf187bede5c006feaa7c7a028e2aed5cddaeb8ca6ead8566"
+    },
+    {
+      "page": 24,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "a8c9cb0376426f3c784eefa1caa636187e369c779e382f14132241ff04e176de"
+    },
+    {
+      "page": 25,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "fbcc58d156e3773f0b6418542bdd4af4b93f9987e2e40084733636e048e51733"
+    },
+    {
+      "page": 26,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "09d1681d315283b217579e71b10a37b1fffccd2c0bf2e4d7608f7fb9b7a6ad6d"
+    },
+    {
+      "page": 27,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "6bb347b6f0f3c5a8d5ca87a4c30a76b2ae8e9e2e47bc202099c91dbe90979b38"
+    },
+    {
+      "page": 28,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "582cdf936c44e7dd3ab2cca5410d6171e82a7ea9c8ccf213f5b77fe8d18fd697"
+    },
+    {
+      "page": 29,
+      "review": "pixel_identical_to_reviewed_v24_final_page",
+      "PNG_sha256": "bcd4788030aef99fc112ab751a0c06e7bd8ec575df00fdd562a59ee22e84dd02"
+    }
+  ],
+  "scope": "Two predefinedsameAAcasepositions verify scalarprediction/reference; MDprojections explainactualangleoccupancy. Generalcohortargument staysinfigure8. No additionaltraining or MD production."
+}

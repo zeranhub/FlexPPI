@@ -1,0 +1,409 @@
+{
+  "status": "all_primary_weights_collected",
+  "checked_utc": "2026-10-03T11:54:23.146219+00:00",
+  "training_freeze_sha256": "5b994bb59684e3a33c97f4a1801ee9a606e5dd856db9cfe23bf18515697707d3",
+  "expected_primary_fits": 14,
+  "completed_primary_members": 14,
+  "checkpoints": [
+    {
+      "member": "full",
+      "fold": 0,
+      "epoch": 40,
+      "seed": 7,
+      "source": "/root/flexppi_revision_20261002/corrected_training_v1/runs/full/fold_0/epoch_040.pt",
+      "local": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\trained_checkpoints\\full\\fold_0\\epoch_040.pt",
+      "checkpoint_sha256": "c89d8bc3ed8bb13327edb01dd182957be241ab5f0440283d62e2792ca50d6d1e",
+      "bytes": 16526522,
+      "job_state": {
+        "variant": "full",
+        "fold": 0,
+        "status": "complete",
+        "started": 1790939104.0749898,
+        "exit_code": 0,
+        "finished": 1790944806.0586987
+      },
+      "wall_seconds": 5701.98370885849
+    },
+    {
+      "member": "full",
+      "fold": 1,
+      "epoch": 40,
+      "seed": 7,
+      "source": "/root/flexppi_revision_20261002/corrected_training_v1/runs/full/fold_1/epoch_040.pt",
+      "local": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\trained_checkpoints\\full\\fold_1\\epoch_040.pt",
+      "checkpoint_sha256": "63b48e271413a91173c5763a1607feb365daf1bc48818c237588718903355ebb",
+      "bytes": 16526522,
+      "job_state": {
+        "variant": "full",
+        "fold": 1,
+        "status": "complete",
+        "started": 1790944806.0593324,
+        "exit_code": 0,
+        "finished": 1790950329.1259913
+      },
+      "wall_seconds": 5523.066658973694
+    },
+    {
+      "member": "full",
+      "fold": 2,
+      "epoch": 40,
+      "seed": 7,
+      "source": "/root/flexppi_revision_20261002/corrected_training_v1/runs/full/fold_2/epoch_040.pt",
+      "local": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\trained_checkpoints\\full\\fold_2\\epoch_040.pt",
+      "checkpoint_sha256": "250543c0a8e3631fec749219395a9148f89b233975c352f178432c09ca54606c",
+      "bytes": 16526522,
+      "job_state": {
+        "variant": "full",
+        "fold": 2,
+        "status": "complete",
+        "started": 1790950329.1267323,
+        "exit_code": 0,
+        "finished": 1790956263.4825335
+      },
+      "wall_seconds": 5934.355801105499
+    },
+    {
+      "member": "full",
+      "fold": 3,
+      "epoch": 40,
+      "seed": 7,
+      "source": "/root/flexppi_revision_20261002/corrected_training_v1/runs/full/fold_3/epoch_040.pt",
+      "local": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\trained_checkpoints\\full\\fold_3\\epoch_040.pt",
+      "checkpoint_sha256": "2b2aa0fd450e0f823216a73d37a416c9ec83229ec1befc53caf89a479397c872",
+      "bytes": 16526522,
+      "job_state": {
+        "variant": "full",
+        "fold": 3,
+        "status": "complete",
+        "started": 1790956263.4831028,
+        "exit_code": 0,
+        "finished": 1790961704.1453595
+      },
+      "wall_seconds": 5440.662256717682
+    },
+    {
+      "member": "full",
+      "fold": 4,
+      "epoch": 40,
+      "seed": 7,
+      "source": "/root/flexppi_revision_20261002/corrected_training_v1/runs/full/fold_4/epoch_040.pt",
+      "local": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\trained_checkpoints\\full\\fold_4\\epoch_040.pt",
+      "checkpoint_sha256": "1cb429fc847dc436e542fe7926cbc4ac266a74cd705c8228415e25981a8fef74",
+      "bytes": 16526522,
+      "job_state": {
+        "variant": "full",
+        "fold": 4,
+        "status": "complete",
+        "started": 1790961704.1465085,
+        "exit_code": 0,
+        "finished": 1790967093.503379
+      },
+      "wall_seconds": 5389.356870651245
+    },
+    {
+      "member": "intrachain",
+      "fold": 0,
+      "epoch": 40,
+      "seed": 7,
+      "source": "/root/flexppi_revision_20261002/corrected_training_v1/runs/intrachain/fold_0/epoch_040.pt",
+      "local": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\trained_checkpoints\\intrachain\\fold_0\\epoch_040.pt",
+      "checkpoint_sha256": "08baa694e583cf59b4267e62821a885487468241136a075d8bc4ca1e2d9a079e",
+      "bytes": 16526522,
+      "job_state": {
+        "variant": "intrachain",
+        "fold": 0,
+        "status": "complete",
+        "started": 1790967093.5041704,
+        "exit_code": 0,
+        "finished": 1790974089.742744
+      },
+      "wall_seconds": 6996.238573551178
+    },
+    {
+      "member": "intrachain",
+      "fold": 1,
+      "epoch": 40,
+      "seed": 7,
+      "source": "/root/flexppi_revision_20261002/corrected_training_v1/runs/intrachain/fold_1/epoch_040.pt",
+      "local": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\trained_checkpoints\\intrachain\\fold_1\\epoch_040.pt",
+      "checkpoint_sha256": "b5006d7b7735714f27b7c1bcd2c6ea0e0c81561e217249eb29273192c0a5ea39",
+      "bytes": 16526522,
+      "job_state": {
+        "variant": "intrachain",
+        "fold": 1,
+        "status": "complete",
+        "started": 1790974089.7433474,
+        "exit_code": 0,
+        "finished": 1790980967.2094152
+      },
+      "wall_seconds": 6877.466067790985
+    },
+    {
+      "member": "intrachain",
+      "fold": 2,
+      "epoch": 40,
+      "seed": 7,
+      "source": "/root/flexppi_revision_20261002/corrected_training_v1/runs/intrachain/fold_2/epoch_040.pt",
+      "local": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\trained_checkpoints\\intrachain\\fold_2\\epoch_040.pt",
+      "checkpoint_sha256": "ad7e8fcf845411b88735cee7c7fe63a737a6fa2cddb8579e60947c61e01896cb",
+      "bytes": 16526522,
+      "job_state": {
+        "variant": "intrachain",
+        "fold": 2,
+        "status": "complete",
+        "started": 1790980967.2102926,
+        "exit_code": 0,
+        "finished": 1790987836.548972
+      },
+      "wall_seconds": 6869.33867931366
+    },
+    {
+      "member": "intrachain",
+      "fold": 3,
+      "epoch": 40,
+      "seed": 7,
+      "source": "/root/flexppi_revision_20261002/corrected_training_v1/runs/intrachain/fold_3/epoch_040.pt",
+      "local": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\trained_checkpoints\\intrachain\\fold_3\\epoch_040.pt",
+      "checkpoint_sha256": "75ce2fb5f008e638777d59987359839f6c300dbfafc37c62c3f6c32d1b75fb22",
+      "bytes": 16526522,
+      "job_state": {
+        "variant": "intrachain",
+        "fold": 3,
+        "status": "complete",
+        "started": 1790987836.549601,
+        "exit_code": 0,
+        "finished": 1790994836.793973
+      },
+      "wall_seconds": 7000.244371891022
+    },
+    {
+      "member": "intrachain",
+      "fold": 4,
+      "epoch": 40,
+      "seed": 7,
+      "source": "/root/flexppi_revision_20261002/corrected_training_v1/runs/intrachain/fold_4/epoch_040.pt",
+      "local": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\trained_checkpoints\\intrachain\\fold_4\\epoch_040.pt",
+      "checkpoint_sha256": "ee46531c113bf5421684c4b93feda2c7a7104f06b5b6fc628e226555f075d89f",
+      "bytes": 16526522,
+      "job_state": {
+        "variant": "intrachain",
+        "fold": 4,
+        "status": "complete",
+        "started": 1790994836.7946277,
+        "exit_code": 0,
+        "finished": 1791001944.3109083
+      },
+      "wall_seconds": 7107.5162806510925
+    },
+    {
+      "member": "full_seed11",
+      "fold": 0,
+      "epoch": 40,
+      "seed": 11,
+      "source": "/root/flexppi_revision_20261002/corrected_training_v1/runs/full_seed11/fold_0/epoch_040.pt",
+      "local": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\trained_checkpoints\\full_seed11\\fold_0\\epoch_040.pt",
+      "checkpoint_sha256": "e64cad8fa40c71cc0a80f10ec31b683a86be19077ad7dc5ff56abb9417a4d101",
+      "bytes": 16526522,
+      "job_state": {
+        "variant": "full_seed11",
+        "fold": 0,
+        "status": "complete",
+        "started": 1791001944.3112745,
+        "exit_code": 0,
+        "finished": 1791007340.3959925
+      },
+      "wall_seconds": 5396.084717988968
+    },
+    {
+      "member": "full_seed23",
+      "fold": 0,
+      "epoch": 40,
+      "seed": 23,
+      "source": "/root/flexppi_revision_20261002/corrected_training_v1/runs/full_seed23/fold_0/epoch_040.pt",
+      "local": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\trained_checkpoints\\full_seed23\\fold_0\\epoch_040.pt",
+      "checkpoint_sha256": "674d4b2c23132afb7cc014162d7360f168b7b38bbd87146a8bbbb63c9afe8143",
+      "bytes": 16526522,
+      "job_state": {
+        "variant": "full_seed23",
+        "fold": 0,
+        "status": "complete",
+        "started": 1791007340.3969522,
+        "exit_code": 0,
+        "finished": 1791012734.930672
+      },
+      "wall_seconds": 5394.533719778061
+    },
+    {
+      "member": "intrachain_seed11",
+      "fold": 0,
+      "epoch": 40,
+      "seed": 11,
+      "source": "/root/flexppi_revision_20261002/corrected_training_v1/runs/intrachain_seed11/fold_0/epoch_040.pt",
+      "local": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\trained_checkpoints\\intrachain_seed11\\fold_0\\epoch_040.pt",
+      "checkpoint_sha256": "5a9865500e0e7f1bf0a7828c77a1f1b7c058ab9138b4f2e4a6e294ec45bf6671",
+      "bytes": 16526522,
+      "job_state": {
+        "variant": "intrachain_seed11",
+        "fold": 0,
+        "status": "complete",
+        "started": 1791012734.9316454,
+        "exit_code": 0,
+        "finished": 1791019835.121992
+      },
+      "wall_seconds": 7100.1903467178345
+    },
+    {
+      "member": "intrachain_seed23",
+      "fold": 0,
+      "epoch": 40,
+      "seed": 23,
+      "source": "/root/flexppi_revision_20261002/corrected_training_v1/runs/intrachain_seed23/fold_0/epoch_040.pt",
+      "local": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\trained_checkpoints\\intrachain_seed23\\fold_0\\epoch_040.pt",
+      "checkpoint_sha256": "79ec5db26bf34a34e19d946229c4e5b64d024d88000474c19ceadec7b79d1a76",
+      "bytes": 16526522,
+      "job_state": {
+        "variant": "intrachain_seed23",
+        "fold": 0,
+        "status": "complete",
+        "started": 1791019835.122372,
+        "exit_code": 0,
+        "finished": 1791026624.1979723
+      },
+      "wall_seconds": 6789.075600385666
+    }
+  ],
+  "remote_queue_state": {
+    "started_utc": "2026-10-02T11:05:04Z",
+    "jobs": [
+      {
+        "variant": "full",
+        "fold": 0,
+        "status": "complete",
+        "started": 1790939104.0749898,
+        "exit_code": 0,
+        "finished": 1790944806.0586987
+      },
+      {
+        "variant": "full",
+        "fold": 1,
+        "status": "complete",
+        "started": 1790944806.0593324,
+        "exit_code": 0,
+        "finished": 1790950329.1259913
+      },
+      {
+        "variant": "full",
+        "fold": 2,
+        "status": "complete",
+        "started": 1790950329.1267323,
+        "exit_code": 0,
+        "finished": 1790956263.4825335
+      },
+      {
+        "variant": "full",
+        "fold": 3,
+        "status": "complete",
+        "started": 1790956263.4831028,
+        "exit_code": 0,
+        "finished": 1790961704.1453595
+      },
+      {
+        "variant": "full",
+        "fold": 4,
+        "status": "complete",
+        "started": 1790961704.1465085,
+        "exit_code": 0,
+        "finished": 1790967093.503379
+      },
+      {
+        "variant": "intrachain",
+        "fold": 0,
+        "status": "complete",
+        "started": 1790967093.5041704,
+        "exit_code": 0,
+        "finished": 1790974089.742744
+      },
+      {
+        "variant": "intrachain",
+        "fold": 1,
+        "status": "complete",
+        "started": 1790974089.7433474,
+        "exit_code": 0,
+        "finished": 1790980967.2094152
+      },
+      {
+        "variant": "intrachain",
+        "fold": 2,
+        "status": "complete",
+        "started": 1790980967.2102926,
+        "exit_code": 0,
+        "finished": 1790987836.548972
+      },
+      {
+        "variant": "intrachain",
+        "fold": 3,
+        "status": "complete",
+        "started": 1790987836.549601,
+        "exit_code": 0,
+        "finished": 1790994836.793973
+      },
+      {
+        "variant": "intrachain",
+        "fold": 4,
+        "status": "complete",
+        "started": 1790994836.7946277,
+        "exit_code": 0,
+        "finished": 1791001944.3109083
+      },
+      {
+        "variant": "full_seed11",
+        "fold": 0,
+        "status": "complete",
+        "started": 1791001944.3112745,
+        "exit_code": 0,
+        "finished": 1791007340.3959925
+      },
+      {
+        "variant": "full_seed23",
+        "fold": 0,
+        "status": "complete",
+        "started": 1791007340.3969522,
+        "exit_code": 0,
+        "finished": 1791012734.930672
+      },
+      {
+        "variant": "intrachain_seed11",
+        "fold": 0,
+        "status": "complete",
+        "started": 1791012734.9316454,
+        "exit_code": 0,
+        "finished": 1791019835.121992
+      },
+      {
+        "variant": "intrachain_seed23",
+        "fold": 0,
+        "status": "complete",
+        "started": 1791019835.122372,
+        "exit_code": 0,
+        "finished": 1791026624.1979723
+      }
+    ],
+    "status": "complete",
+    "evaluation_exit_code": 0,
+    "external_exit_code": 0
+  },
+  "remote_strict_queue_state": {
+    "status": "running",
+    "jobs": [
+      {
+        "variant": "full",
+        "started": 1791026986.6319485,
+        "status": "running"
+      }
+    ]
+  },
+  "new_fits": 0,
+  "accuracy_evaluation_complete": false,
+  "collector_sha256": "0f297516fa28b3be9fd6fb1d25921b4c411d0077ead3f2f38f84a0dac97fe7fc",
+  "cost_scope": "Queue start/finish wall clock only; includes training and IO, shared-host load. Not deployment inference time."
+}

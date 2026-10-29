@@ -1,0 +1,25 @@
+{
+  "phase": "attention_final_publication_failed",
+  "updated_utc": "2026-10-23T13:34:29.390289+00:00",
+  "pid": 19792,
+  "phase_results": [
+    {
+      "label": "score_light_models",
+      "ok": false,
+      "updated_utc": "2026-10-23T13:34:29.387559+00:00",
+      "return_code": 1
+    },
+    {
+      "label": "inventory_light_models",
+      "ok": false,
+      "updated_utc": "2026-10-23T13:34:29.389281+00:00",
+      "return_code": 1
+    },
+    {
+      "label": "publish_light_models",
+      "ok": false,
+      "updated_utc": "2026-10-23T13:34:29.389281+00:00"
+    }
+  ],
+  "old_outputs_are_not_current_success": true
+}

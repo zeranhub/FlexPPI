@@ -1,0 +1,131 @@
+{
+  "status": "passed",
+  "all9_peptide_original_reference_means_and_variances_recomputed": true,
+  "absolute_tolerance": 3e-06,
+  "raw_topology_and_trajectory_files_unchanged": true,
+  "frame_window": "all available frames 0–200ns; no subsampling",
+  "frames": [
+    {
+      "pdb": "1oga",
+      "replica": 1,
+      "frames": 1001,
+      "first_ps": 0.0,
+      "last_ps": 200000.0
+    },
+    {
+      "pdb": "1oga",
+      "replica": 2,
+      "frames": 1001,
+      "first_ps": 0.0,
+      "last_ps": 200000.0
+    },
+    {
+      "pdb": "1oga",
+      "replica": 3,
+      "frames": 1001,
+      "first_ps": 0.0,
+      "last_ps": 200000.0
+    },
+    {
+      "pdb": "5hhm",
+      "replica": 1,
+      "frames": 1001,
+      "first_ps": 0.0,
+      "last_ps": 200000.0
+    },
+    {
+      "pdb": "5hhm",
+      "replica": 2,
+      "frames": 1003,
+      "first_ps": 0.0,
+      "last_ps": 200000.0
+    },
+    {
+      "pdb": "5hhm",
+      "replica": 3,
+      "frames": 1001,
+      "first_ps": 0.0,
+      "last_ps": 200000.0
+    }
+  ],
+  "alignment": "peptide C-alpha independently Kabsch-fitted to first frame for RMSF; contacts and chi are alignment invariant",
+  "contact_definition": "Any peptide heavy atom, or sidechain heavy atom excluding N/CA/C/O/OXT, within stated cutoff of any TCR heavy atom; glycine sidechain contact undefined",
+  "fine_angle_definition": "Each chi 5 degree periodic bins, entropy and F*<=1 occupancy width averaged over four origins 0/1.25/2.5/3.75 degrees",
+  "comparison": "5HHM F5L minus1OGA WT. Substitution site5 analyzed separately. Common8 means identical amino acid on8 positions (only6 valid Hchi).",
+  "source_files": [
+    {
+      "pdb": "1oga",
+      "replica": 1,
+      "topology": "E:\\data\\ITrace\\trajectories\\1oga_run1_topology.pdb",
+      "topology_sha256": "1b99c6574a75d81929b2ed09910b4446cdd634c1e77c87dcd7318d9e0f8976e8",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\1oga_run1_md_processed.xtc",
+      "trajectory_sha256": "255002123863dc2065785c6dd89c1c91e13aa7d48e7174fb9d81c5eb3754d9c0",
+      "canonical_topology_sha256": "e3458f62f716974a9043cb5f3407d0aa6b1b19d2f4c0e258c6906aed20275099",
+      "prediction_sha256": "861234f422060bac9e4874477cce48ac66e424b5e8be9d207aed329a53b6c762",
+      "model_input_sha256": "e3458f62f716974a9043cb5f3407d0aa6b1b19d2f4c0e258c6906aed20275099",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "pdb": "1oga",
+      "replica": 2,
+      "topology": "E:\\data\\ITrace\\trajectories\\1oga_run2_topology.pdb",
+      "topology_sha256": "0abd49aebe02640ecd03d15d1025f4d90e0c00bb026f1857168c8c2a8aa414b9",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\1oga_run2_md_processed.xtc",
+      "trajectory_sha256": "41dc0765cb8f53394bea9bd85b630b9cdcf27b7a32fffdc95ebdc2d96ff9352a",
+      "canonical_topology_sha256": "973ed8e02d03f013cd5ffa0daf9ecff339d5ac28c547cf9ba3aba5d5afed6a54",
+      "prediction_sha256": "861234f422060bac9e4874477cce48ac66e424b5e8be9d207aed329a53b6c762",
+      "model_input_sha256": "e3458f62f716974a9043cb5f3407d0aa6b1b19d2f4c0e258c6906aed20275099",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "pdb": "1oga",
+      "replica": 3,
+      "topology": "E:\\data\\ITrace\\trajectories\\1oga_run3_topology.pdb",
+      "topology_sha256": "7838a786f74df6b73c0e86fe6390ff223b3041cfd2a042191700cf49b3ae51b9",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\1oga_run3_md_processed.xtc",
+      "trajectory_sha256": "04c3b88fdda07f0ca62777f24078ef950446e2861dec4a1f98fe75092a7f40ac",
+      "canonical_topology_sha256": "6cf9940e64aa883464c5b8b52ad07948f401d1d9be5dd0669c25fc9f428475d8",
+      "prediction_sha256": "861234f422060bac9e4874477cce48ac66e424b5e8be9d207aed329a53b6c762",
+      "model_input_sha256": "e3458f62f716974a9043cb5f3407d0aa6b1b19d2f4c0e258c6906aed20275099",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "pdb": "5hhm",
+      "replica": 1,
+      "topology": "E:\\data\\ITrace\\trajectories\\5hhm_run1_topology.pdb",
+      "topology_sha256": "cb6bcbaa19d2311b2e1316ef14ab1de9784aaf1e966e8a422aa77394382e918c",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\5hhm_run1_md_processed.xtc",
+      "trajectory_sha256": "4a0cf70048918bf1d04d95ca04158aa81ca4597d8fe6494446e120be72446a42",
+      "canonical_topology_sha256": "addeccdad3587716e9fd39c474ca80d134bdb50f3c75cbf2d8d074a15cc4ddf7",
+      "prediction_sha256": "f8093f8ae05d304359cda75a5990228ae5c37eccafdb6050066a5d309208924c",
+      "model_input_sha256": "addeccdad3587716e9fd39c474ca80d134bdb50f3c75cbf2d8d074a15cc4ddf7",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "pdb": "5hhm",
+      "replica": 2,
+      "topology": "E:\\data\\ITrace\\trajectories\\5hhm_run2_topology.pdb",
+      "topology_sha256": "c7a3ddb6e62e346818016c1bc592979ae54e0200c33898a7f31aeeedf0e2f59a",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\5hhm_run2_md_processed.xtc",
+      "trajectory_sha256": "d791c60d5d0cdb2ddb3cfcbaea939576c6187d6cab2ed33dd9265c1e6f217bdb",
+      "canonical_topology_sha256": "de26dd83011f5ba0c8c21a3f6dbe766218c5a2dde58f552253957aa47cd5d808",
+      "prediction_sha256": "f8093f8ae05d304359cda75a5990228ae5c37eccafdb6050066a5d309208924c",
+      "model_input_sha256": "addeccdad3587716e9fd39c474ca80d134bdb50f3c75cbf2d8d074a15cc4ddf7",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    },
+    {
+      "pdb": "5hhm",
+      "replica": 3,
+      "topology": "E:\\data\\ITrace\\trajectories\\5hhm_run3_topology.pdb",
+      "topology_sha256": "e8ddc8a9f1a7f01e41f117dd1f5db21a9e2f99e362dcb3be75524b9d736dff84",
+      "trajectory": "E:\\data\\ITrace\\trajectories\\5hhm_run3_md_processed.xtc",
+      "trajectory_sha256": "b3a873002fd5ae406bdfd43f714b2deab7cf5c55eeb4d9a8a6e6241c9ac69594",
+      "canonical_topology_sha256": "f6e75c7611902acaf2783f60dcfdbae5fd4fb86fc79f445f1d2d20996cf9e9db",
+      "prediction_sha256": "f8093f8ae05d304359cda75a5990228ae5c37eccafdb6050066a5d309208924c",
+      "model_input_sha256": "addeccdad3587716e9fd39c474ca80d134bdb50f3c75cbf2d8d074a15cc4ddf7",
+      "checkpoint_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5"
+    }
+  ],
+  "new_MD": false,
+  "new_training": false
+}

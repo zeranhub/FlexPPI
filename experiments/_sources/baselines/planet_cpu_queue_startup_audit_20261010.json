@@ -1,0 +1,142 @@
+{
+  "status": "both_cpu_queues_startup_passed",
+  "checked_utc": "2026-10-10T07:38:32.493239+00:00",
+  "wrapper_sha256": "034a7fdfc5b6bc39164bb43f23518d09586863af186ece495275965c3910e602",
+  "auditor_sha256": "de27fc1fab262b064e2ae8530d76cf6623779638d84ec2ed3e28fdd6bde6dbfe",
+  "variants": {
+    "full": {
+      "status": "startup_passed_full_cohort_still_running",
+      "parent": {
+        "pid": 73982,
+        "command": "/root/flexppi_completion_20261010/planet_env/bin/python -u /root/flexppi_completion_20261010/baselines/run_planet_cpu_queue.py --variant full",
+        "environment": {
+          "CUDA_VISIBLE_DEVICES": "",
+          "OMP_NUM_THREADS": "2",
+          "MKL_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "2"
+        },
+        "nvidia_device_fds": [],
+        "namespace_pid_status": [
+          "PPid:\t1"
+        ]
+      },
+      "child": {
+        "pid": 73988,
+        "command": "/root/flexppi_completion_20261010/planet_env/bin/python -u /root/flexppi_completion_20261010/baselines/run_planet_cpu_queue.py --variant full --worker",
+        "environment": {
+          "CUDA_VISIBLE_DEVICES": "",
+          "OMP_NUM_THREADS": "2",
+          "MKL_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "2"
+        },
+        "nvidia_device_fds": [],
+        "namespace_pid_status": [
+          "PPid:\t73982"
+        ]
+      },
+      "complete_items_observed": 22,
+      "failed_items_observed": 0,
+      "actual_first_two_predictions": [
+        {
+          "input_id": "chain_c963eebb432fe882db450510",
+          "sample_id": "16pk_A",
+          "residues": 415,
+          "output_sha256": "785fbd1e8691667f1f2df53519e6a56c1ce3ec50949df1049192b338cfb463d5",
+          "prediction_seconds": 9.658341167960316,
+          "actual_prediction": true,
+          "float32": true,
+          "finite": true,
+          "exact_unit_conversion": true
+        },
+        {
+          "input_id": "chain_83b6b94f7c0b6211c546aad8",
+          "sample_id": "1a62_A",
+          "residues": 130,
+          "output_sha256": "e741f798fdbaab772d53b2341335e167672db2712d2110b63323ac1adfd7208f",
+          "prediction_seconds": 2.2372923181392252,
+          "actual_prediction": true,
+          "float32": true,
+          "finite": true,
+          "exact_unit_conversion": true
+        }
+      ],
+      "metadata_sha256": "b1efc3079edb0ae387319714c7da37608cc826b958e2508ac09a98ce5455c1cd",
+      "worker_audit_sha256": "dd08625598121fd0ba125b97db69d559895adc1849fbc1648478ee895be67eca",
+      "preflight_sha256": "8cb9351ca9d97f7c52b3715487524818c08be5979e3ea0a803c9305d41d03608",
+      "queue_log_snapshot_sha256": "ac1a19377e97567e7ef1f8b8f1f3441531094d371be4373b247d5c72a5894392",
+      "full_run_independently_verified": false,
+      "run_audit_exists": false
+    },
+    "seq": {
+      "status": "startup_passed_full_cohort_still_running",
+      "parent": {
+        "pid": 73983,
+        "command": "/root/flexppi_completion_20261010/planet_env/bin/python -u /root/flexppi_completion_20261010/baselines/run_planet_cpu_queue.py --variant seq",
+        "environment": {
+          "CUDA_VISIBLE_DEVICES": "",
+          "OMP_NUM_THREADS": "2",
+          "MKL_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "2"
+        },
+        "nvidia_device_fds": [],
+        "namespace_pid_status": [
+          "PPid:\t1"
+        ]
+      },
+      "child": {
+        "pid": 73989,
+        "command": "/root/flexppi_completion_20261010/planet_env/bin/python -u /root/flexppi_completion_20261010/baselines/run_planet_cpu_queue.py --variant seq --worker",
+        "environment": {
+          "CUDA_VISIBLE_DEVICES": "",
+          "OMP_NUM_THREADS": "2",
+          "MKL_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "2"
+        },
+        "nvidia_device_fds": [],
+        "namespace_pid_status": [
+          "PPid:\t73983"
+        ]
+      },
+      "complete_items_observed": 24,
+      "failed_items_observed": 0,
+      "actual_first_two_predictions": [
+        {
+          "input_id": "chain_c963eebb432fe882db450510",
+          "sample_id": "16pk_A",
+          "residues": 415,
+          "output_sha256": "57ed4048e45070e947bb4926ce2f9debafd61d02a4d7866be34b66937d73be54",
+          "prediction_seconds": 8.884571446105838,
+          "actual_prediction": true,
+          "float32": true,
+          "finite": true,
+          "exact_unit_conversion": true
+        },
+        {
+          "input_id": "chain_83b6b94f7c0b6211c546aad8",
+          "sample_id": "1a62_A",
+          "residues": 130,
+          "output_sha256": "2229c54bdd1121e722c4049683d5f26e07a17e057aa641624a172a96f75392e9",
+          "prediction_seconds": 2.048374712932855,
+          "actual_prediction": true,
+          "float32": true,
+          "finite": true,
+          "exact_unit_conversion": true
+        }
+      ],
+      "metadata_sha256": "1bdb23fe2d65726208009fca87fcffcbfc8a65dc1a0275b38bcd6c3540ecdf9e",
+      "worker_audit_sha256": "b04e7a2a6506d38134e8f6dd275db6c36179f0a598d7b5fb9401ce8065eaf265",
+      "preflight_sha256": "c523f1d485612e73684e503c0123853d9513f6641ce20d842610f69223eb5183",
+      "queue_log_snapshot_sha256": "6c08107df7e84b4552512435079d57e8942d7c3a265bf69cc6dc2fed97a31307",
+      "full_run_independently_verified": false,
+      "run_audit_exists": false
+    }
+  },
+  "nvidia_smi_compute_snapshot": "41701, [Not Found], 7974",
+  "gpu_process_pids": [
+    41701
+  ],
+  "no_planet_gpu_context_observed": true,
+  "gpu_context_evidence": "CUDA_VISIBLE_DEVICES empty in both parent/child environments; no NVIDIA device file descriptor in any of those processes; none appears in nvidia-smi compute-app snapshot.",
+  "no_model_source_or_running_process_changed": true,
+  "completion_pending": true
+}

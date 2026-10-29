@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "verification_code_sha256": "f39a3fc849839db41eefa574a438c53595a4e0ed613566590251d27867ba22d9",
+  "source_files_sha256_match": true,
+  "extraction_audit_sha256": "8796389731a13be3e1f160188c87c7cb91999ae72760ef05978e957c89dcbb94",
+  "valid_Hchi_sites": 66,
+  "defined_angle_positions": 151,
+  "per_chi_positions": [
+    66,
+    52,
+    23,
+    10
+  ],
+  "absent_angle_slots": 113,
+  "missing_never_zero_filled": true,
+  "angle_values_including_missing_checked": 132264,
+  "valid_histogram_bins_checked": 10872,
+  "width_entropy_origin_combinations_checked": 604,
+  "maximum_Fstar_numeric_error": 8.881784197001252e-16,
+  "maximum_metric_numeric_error": 1.3322676295501878e-15,
+  "old_six_GLN_angle_values_checked": 9018,
+  "old_six_GLN_maximum_circular_error_degrees": 0.0,
+  "old_two_site_histogram_rows_checked": 432,
+  "all_three_zero_original_reference_Pro_preserved": true,
+  "files": {
+    "all66_angles_long_501frames.csv": {
+      "sha256": "b848349b488497783160783c39a8196bd4e0bff60c58ec2ef51b91357a7ddd35",
+      "bytes": 14386265
+    },
+    "all66_histograms_origin0.csv": {
+      "sha256": "5e0b22fb92f31a2f595964fec2952875977ec5cc27a39498c57630e364793b5e",
+      "bytes": 2299614
+    },
+    "all66_per_angle_metrics.csv": {
+      "sha256": "f21d2c2dd47caa2ce510f85b64bda6fa6ecd12ffc278025044e1fe7c55582c58",
+      "bytes": 44643
+    },
+    "all66_residue_summary.csv": {
+      "sha256": "fec153f86b3b8ba808d2ee731937754427902660c5b29a955cacf25f5d8ab4ab",
+      "bytes": 8283
+    },
+    "analysis_plan.json": {
+      "sha256": "9712242b5adbe142eb0b1068e32e08bd4d8c384ab088a151016b62904a606956",
+      "bytes": 30254
+    },
+    "extraction_audit.json": {
+      "sha256": "8796389731a13be3e1f160188c87c7cb91999ae72760ef05978e957c89dcbb94",
+      "bytes": 60081
+    },
+    "prepare_all_ubiquitin_chi.py": {
+      "sha256": "508230b2e243887a5f2a0f99b8ea5d3438c79c6ccb2f9c9eedd84f5e99c2131a",
+      "bytes": 18886
+    },
+    "README_数据定义与复算.md": {
+      "sha256": "69775bc854b794a068b8f1ac7adecf5fc090a1b1ac79734b7a1f400f1444e678",
+      "bytes": 4429
+    },
+    "ubiquitin_all66_chi_501frames.npz": {
+      "sha256": "562e14a3909718f99fa2471dc6503b3c244b39a04bc883073b50ba02a171c182",
+      "bytes": 362180
+    },
+    "verify_all66_from_saved_sources.py": {
+      "sha256": "f39a3fc849839db41eefa574a438c53595a4e0ed613566590251d27867ba22d9",
+      "bytes": 8889
+    }
+  }
+}

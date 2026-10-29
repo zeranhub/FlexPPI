@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "case_id": "C03",
+  "reviewed_PNG_SHA256": "1a47f522fef58f2ac70346e79ff07fd9d497d47e68d17071e586c86905b746ed",
+  "reviewer": "case_figure_design_20261021",
+  "image_actually_opened": true,
+  "passes": {
+    "AP": "Semantic two-state colors, redundant markers, no default/rainbow palette, no four-sided plot frame",
+    "CL": "183 mm canvas width, 9 pt minimum visible text, vector PDF/SVG with editable text, 450 dpi PNG, visible text within canvas",
+    "VI": "All complete-region RMSF sites and all paired chi-defined Hchi sites retained; no lines across nonconsecutive Hchi residues; chemistry changes explicitly marked",
+    "VV": "Actual final PNG opened. Matched-camera structural views, no data clipping, no label/legend collision, main curves contain model output only; limitations visible in complete-scope diagnostics"
+  },
+  "scientific_caution": "Paired Hchi is unavailable at G6→D6 and most other paired changes are near zero; high five-point rank correlation does not establish accurate amplitudes or a joint mechanism.",
+  "new_training_inference_MD": false
+}

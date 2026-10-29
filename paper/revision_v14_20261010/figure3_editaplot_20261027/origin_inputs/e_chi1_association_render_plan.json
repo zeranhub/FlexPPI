@@ -1,0 +1,185 @@
+{
+  "plan_version": "1.3",
+  "product": "EditaPlot",
+  "support_level": "verified",
+  "source": {
+    "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure3_editaplot_20261027\\origin_inputs\\e_chi1_association.csv",
+    "sha256": "a484fdfc1f4b4f6d82f76987be495709418cdf68e812d5796384eaef074b235b",
+    "size_bytes": 2603,
+    "format": "csv",
+    "sheet": null,
+    "columns": [
+      "AA-centered joint Full Hchi (nats)",
+      "AA-centered MD chi entropy (nats)"
+    ],
+    "row_count": 66
+  },
+  "figure_contract": {
+    "core_conclusion": "Assess prediction agreement or occupancy association using every valid supplied observation.",
+    "evidence_role": "validation",
+    "user_intent": "",
+    "target_output": "editable Origin figure and publication exports",
+    "axis_title_overrides": {},
+    "palette": {},
+    "visual_style": {
+      "tokens": {},
+      "report": null
+    }
+  },
+  "data_understanding": {
+    "proposal_version": "1.0",
+    "source_sha256": "a484fdfc1f4b4f6d82f76987be495709418cdf68e812d5796384eaef074b235b",
+    "source_columns": [
+      "AA-centered joint Full Hchi (nats)",
+      "AA-centered MD chi entropy (nats)"
+    ],
+    "domain": {
+      "family": "scatter",
+      "mode": "default",
+      "confidence": 1.0,
+      "source_adapter_hint": "editaplot_scatter"
+    },
+    "data_items": [
+      {
+        "item_id": "source_000",
+        "item_type": "source_column",
+        "source_column": "AA-centered joint Full Hchi (nats)",
+        "semantic_role": "x",
+        "disposition": "render_primary",
+        "confidence": 1.0,
+        "evidence_codes": [
+          "user_confirmed_column_mapping"
+        ],
+        "alternatives": []
+      },
+      {
+        "item_id": "source_001",
+        "item_type": "source_column",
+        "source_column": "AA-centered MD chi entropy (nats)",
+        "semantic_role": "series",
+        "disposition": "render_primary",
+        "confidence": 1.0,
+        "evidence_codes": [
+          "user_confirmed_column_mapping"
+        ],
+        "alternatives": []
+      }
+    ],
+    "derived_items": [],
+    "figure_elements": [
+      {
+        "element_id": "series_000",
+        "element_kind": "symbol",
+        "data_item_ids": [
+          "source_000",
+          "source_001"
+        ],
+        "required": true,
+        "visible_by_default": true,
+        "axis": "left",
+        "legend_label": "AA-centered MD chi entropy (nats)"
+      }
+    ],
+    "ambiguities": [],
+    "contract_version": "1.0",
+    "proposal_hash": "d2ee93a5e5e0140c3fa58407ddf2ea63d8e059bd26708bab07fe918e3751f4c2",
+    "status": "confirmed",
+    "confirmation": {
+      "approved_derived_item_ids": [],
+      "resolved_ambiguities": {}
+    },
+    "contract_hash": "2fbee30e38faaa20d772552c601b273f9c0bda6fa14ab447b84ba56f97c6adde"
+  },
+  "reference_adaptation": null,
+  "reference_style": null,
+  "template": {
+    "id": "scatter",
+    "name": "通用散点图",
+    "renderer_template_id": "scatter",
+    "plan_digest": "24672843496c9a134551bbfc2a869763587cd1db0fed4af32b2d5ab3d5641267",
+    "confidence": 1.0,
+    "requires_confirmation": false,
+    "summary": {
+      "heading": "通用散点图 · default",
+      "facts": [
+        [
+          "绘图模式",
+          "default"
+        ],
+        [
+          "图形类型",
+          "scatter"
+        ],
+        [
+          "X 轴",
+          "AA-centered joint Full Hchi (nats)"
+        ],
+        [
+          "Y 轴",
+          "AA-centered MD chi entropy (nats)"
+        ]
+      ],
+      "roles": [
+        [
+          "X",
+          "AA-centered joint Full Hchi (nats)"
+        ],
+        [
+          "Series",
+          "AA-centered MD chi entropy (nats)"
+        ],
+        [
+          "Error",
+          "—"
+        ]
+      ],
+      "components": [
+        "AA-centered MD chi entropy (nats)"
+      ],
+      "warnings": []
+    },
+    "display_transform_or_profile": "identity",
+    "worker_mapping": {
+      "assignments": {
+        "AA-centered joint Full Hchi (nats)": "x",
+        "AA-centered MD chi entropy (nats)": "series"
+      },
+      "plot_mode": "default"
+    },
+    "origin_capability_profile": {
+      "template_id": "scatter",
+      "required": [
+        "axis_readback",
+        "core_2d",
+        "editable_opju",
+        "pdf_export",
+        "png_export",
+        "text_readback",
+        "tif_export"
+      ],
+      "optional": [],
+      "verified_versions": [
+        10.15
+      ]
+    },
+    "activated_optional_capabilities": []
+  },
+  "execution": {
+    "engine_home": "C:\\Users\\DELL\\.agent-reach\\editaplot\\runtime",
+    "keep_origin_open": true,
+    "origin_callability_check": "performed_by_render_worker",
+    "output_directory_policy": "source_sibling_unique_folder",
+    "output_folder_pattern": "<source_stem>_EditaPlot_YYYYMMDD_HHMMSS",
+    "render_plan_copy": "render-plan.json",
+    "required_outputs": [
+      "opju",
+      "png",
+      "pdf",
+      "tif",
+      "origin_verify_report"
+    ]
+  },
+  "can_render": true,
+  "blocked_reasons": [],
+  "plan_hash": "02474cffaea1fa43ba198903b97e45ca950f52fe75324e39924529bf831215b5"
+}

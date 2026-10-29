@@ -1,0 +1,29 @@
+{
+  "width_mm": 183.0,
+  "height_mm": 130.0,
+  "points": 480,
+  "all_PDBs_per_panel": 40,
+  "split_groups": 36,
+  "methods": [
+    "full",
+    "intra",
+    "static47_sasa"
+  ],
+  "reference": "0-100 ns, 501 frames, same frozen predictions",
+  "axes_start_at_zero": true,
+  "all_individual_points": true,
+  "duplicate_PDBs_averaged_before_plotting": true,
+  "means": "PDB equal; family connected-component cluster percentile interval 10000 draws",
+  "no_tables": true,
+  "no_gray_notes": true,
+  "no_experimental_claim": true,
+  "min_font": 8.3,
+  "outside_text": [],
+  "visual_QA": "passed: actually opened final PNG; reviewed hash and four-pass notes in QA_人工审核.md",
+  "sha256": {
+    "png": "f9059c39562cc17bd8c3f60c29a243dcfbcad56dd5b508feabd901049aecd4d1",
+    "pdf": "eafabbd26e550a47236a0d30fa54d0219c367daae162362ec8e196fd782fe966",
+    "svg": "11ac5fc80a9e9fe34a9853e33d63e220f5d7655d1763967f43d6447bf79201e4"
+  },
+  "raw_style_findings": "retained; 2 literal-scanner FAIL and 2 WARN adjudicated in QA_人工审核.md"
+}

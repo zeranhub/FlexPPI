@@ -1,0 +1,231 @@
+{
+  "scope": "Protein interface/geometry model example figure research; originals for internal visual study only",
+  "paper_count": 6,
+  "visually_inspected_figure_groups": 10,
+  "actual_view_only": true,
+  "catalog": [
+    {
+      "paper_id": "dmasif",
+      "title": "Fast End-to-End Learning on Protein Surfaces",
+      "venue": "CVPR",
+      "year": 2021,
+      "articleURL": "https://openaccess.thecvf.com/content/CVPR2021/html/Sverrisson_Fast_End-to-End_Learning_on_Protein_Surfaces_CVPR_2021_paper.html",
+      "doi": "10.1109/CVPR46437.2021.01502",
+      "version_viewed": "Published CVPR paper",
+      "figure_number": "4",
+      "figureURL": "https://openaccess.thecvf.com/content/CVPR2021/papers/Sverrisson_Fast_End-to-End_Learning_on_Protein_Surfaces_CVPR_2021_paper.pdf",
+      "local_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\originals\\dmasif_page-03.png",
+      "reference_crop": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\reference_crops\\dmasif_F4.jpg",
+      "actual_view": {
+        "status": "visually_inspected",
+        "method": "view_image on downloaded original or PDF page rendered with Poppler",
+        "date": "2026-10-26",
+        "agent": "reference_interface_figures"
+      },
+      "visual_observations": "同一方向依次展示原子/相互作用界面/预测，模型输出直接附着在结构上；下排 4 个同视角表面展示特征，结构不是独立装饰。",
+      "transfer_limits": "主要是方法输入/特征的验证，彩色点云和小图过多；不宜复制成本文功能机制图，也不能把真实界面/预测标签迁移成游离/结合。",
+      "design_relevance": "medium"
+    },
+    {
+      "paper_id": "graphbind",
+      "title": "GraphBind: protein structural context embedded rules learned by hierarchical graph neural networks for recognizing nucleic-acid-binding residues",
+      "venue": "Nucleic Acids Research",
+      "year": 2021,
+      "articleURL": "https://doi.org/10.1093/nar/gkab044",
+      "doi": "10.1093/nar/gkab044",
+      "version_viewed": "Published paper via PMC",
+      "figure_number": "7",
+      "figureURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8136796.1/gkab044fig7.jpg",
+      "local_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\originals\\graphbind_F7.jpg",
+      "reference_crop": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\reference_crops\\graphbind_F7.jpg",
+      "actual_view": {
+        "status": "visually_inspected",
+        "method": "view_image on downloaded original or PDF page rendered with Poppler",
+        "date": "2026-10-26",
+        "agent": "reference_interface_figures"
+      },
+      "visual_observations": "2×2 同视角模型比较，每一行一个复合物；蛋白大部退灰，DNA/RNA 统一橙色，局部预测对错染色。",
+      "transfer_limits": "分类色仅适合有真值的 TP/FP/FN，不能直接借给连续柔性；并排三维彩色斑点本身不能替代定量曲线。",
+      "design_relevance": "medium"
+    },
+    {
+      "paper_id": "geobind",
+      "title": "GeoBind: segmentation of nucleic acid binding interface on protein surface with geometric deep learning",
+      "venue": "Nucleic Acids Research",
+      "year": 2023,
+      "articleURL": "https://doi.org/10.1093/nar/gkad288",
+      "doi": "10.1093/nar/gkad288",
+      "version_viewed": "Published paper via PMC",
+      "figure_number": "5",
+      "figureURL": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10250245.1/gkad288fig5.jpg",
+      "local_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\originals\\geobind_F5.jpg",
+      "reference_crop": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\reference_crops\\geobind_F5.jpg",
+      "actual_view": {
+        "status": "visually_inspected",
+        "method": "view_image on downloaded original or PDF page rendered with Poppler",
+        "date": "2026-10-26",
+        "agent": "reference_interface_figures"
+      },
+      "visual_observations": "上/下两个案例均先给复合物背景再给模型输出；同结构同色标比较单体与多体输入；N47/D45 的姓名从全局放大延续到输出，局部位点由结构和数据共同定位。",
+      "transfer_limits": "模型计算输入单体/多体与生物实验自由态/结合态并非一回事；图中的 AUROC 对比不能复制为我们没有测的活性差异；不推荐圆角大框。",
+      "design_relevance": "high"
+    },
+    {
+      "paper_id": "graphsite",
+      "title": "AlphaFold2-aware protein-DNA binding site prediction using graph transformer",
+      "venue": "Briefings in Bioinformatics",
+      "year": 2022,
+      "articleURL": "https://doi.org/10.1093/bib/bbab564",
+      "doi": "10.1093/bib/bbab564",
+      "version_viewed": "Author preprint posted 29 Dec 2021; formal publisher PDF could not be fetched",
+      "viewedArticleURL": "https://www.biorxiv.org/content/biorxiv/early/2021/12/29/2021.08.25.457661.full.pdf",
+      "figure_number": "6",
+      "figureURL": "https://www.biorxiv.org/content/biorxiv/early/2021/12/29/2021.08.25.457661.full.pdf",
+      "local_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\originals\\graphsite_page-14.png",
+      "reference_crop": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\reference_crops\\graphsite_F6.jpg",
+      "actual_view": {
+        "status": "visually_inspected",
+        "method": "view_image on downloaded original or PDF page rendered with Poppler",
+        "date": "2026-10-26",
+        "agent": "reference_interface_figures"
+      },
+      "visual_observations": "同视角表面用三色标 TP/FP/FN，对比有/无空间信息模型；DNA 始终可见，局部模型差别直接成为主视觉。",
+      "transfer_limits": "实际查看的是作者预印本 Fig.6，不冒充正式版；分类染色不适合连续柔性，无实验标签不应标对错。",
+      "design_relevance": "medium"
+    },
+    {
+      "paper_id": "graphsite",
+      "title": "AlphaFold2-aware protein-DNA binding site prediction using graph transformer",
+      "venue": "Briefings in Bioinformatics",
+      "year": 2022,
+      "articleURL": "https://doi.org/10.1093/bib/bbab564",
+      "doi": "10.1093/bib/bbab564",
+      "version_viewed": "Author preprint posted 29 Dec 2021; formal publisher PDF could not be fetched",
+      "viewedArticleURL": "https://www.biorxiv.org/content/biorxiv/early/2021/12/29/2021.08.25.457661.full.pdf",
+      "figure_number": "S3",
+      "figureURL": "https://www.biorxiv.org/content/biorxiv/early/2021/12/29/2021.08.25.457661.full.pdf",
+      "local_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\originals\\graphsite_page-19.png",
+      "reference_crop": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\reference_crops\\graphsite_FS3.jpg",
+      "actual_view": {
+        "status": "visually_inspected",
+        "method": "view_image on downloaded original or PDF page rendered with Poppler",
+        "date": "2026-10-26",
+        "agent": "reference_interface_figures"
+      },
+      "visual_observations": "把同一 6SA0 结构固定视角用于 GraphSite/GraphBind 对照，颜色只落在预测位点，背景白色统一。",
+      "transfer_limits": "预印本补充图；局部高亮太散会变成无结论的彩斑。",
+      "design_relevance": "low"
+    },
+    {
+      "paper_id": "graphsite",
+      "title": "AlphaFold2-aware protein-DNA binding site prediction using graph transformer",
+      "venue": "Briefings in Bioinformatics",
+      "year": 2022,
+      "articleURL": "https://doi.org/10.1093/bib/bbab564",
+      "doi": "10.1093/bib/bbab564",
+      "version_viewed": "Author preprint posted 29 Dec 2021; formal publisher PDF could not be fetched",
+      "viewedArticleURL": "https://www.biorxiv.org/content/biorxiv/early/2021/12/29/2021.08.25.457661.full.pdf",
+      "figure_number": "S4",
+      "figureURL": "https://www.biorxiv.org/content/biorxiv/early/2021/12/29/2021.08.25.457661.full.pdf",
+      "local_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\originals\\graphsite_page-19.png",
+      "reference_crop": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\reference_crops\\graphsite_FS4.jpg",
+      "actual_view": {
+        "status": "visually_inspected",
+        "method": "view_image on downloaded original or PDF page rendered with Poppler",
+        "date": "2026-10-26",
+        "agent": "reference_interface_figures"
+      },
+      "visual_observations": "6YMW 三模型同一视角横排，可一眼识别相同核酸周围哪一片区域漏检或误检。",
+      "transfer_limits": "预印本补充图；三幅小结构不如一幅主结构配数据，不能为了对称而继续加比较对象。",
+      "design_relevance": "low"
+    },
+    {
+      "paper_id": "deeppbs",
+      "title": "Geometric deep learning of protein-DNA binding specificity",
+      "venue": "Nature Methods",
+      "year": 2024,
+      "articleURL": "https://www.nature.com/articles/s41592-024-02372-w",
+      "doi": "10.1038/s41592-024-02372-w",
+      "version_viewed": "Published Nature Methods figure",
+      "figure_number": "3",
+      "figureURL": "https://www.nature.com/articles/s41592-024-02372-w/figures/3",
+      "local_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\originals\\deeppbs_F3.png",
+      "reference_crop": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\reference_crops\\deeppbs_F3.jpg",
+      "actual_view": {
+        "status": "visually_inspected",
+        "method": "view_image on downloaded original or PDF page rendered with Poppler",
+        "date": "2026-10-26",
+        "agent": "reference_interface_figures"
+      },
+      "visual_observations": "每个结构正下方共享位置坐标的模型输出与 JASPAR logo 成对排列；e 直接把某个局部氢键变化接到同一 DNA 位置的输出变化。",
+      "transfer_limits": "不能借实验 logo、氢键改变或迭代优化来包装我们的静态输入；可借同一残基坐标贯穿结构与输出的读图顺序。",
+      "design_relevance": "high"
+    },
+    {
+      "paper_id": "deeppbs",
+      "title": "Geometric deep learning of protein-DNA binding specificity",
+      "venue": "Nature Methods",
+      "year": 2024,
+      "articleURL": "https://www.nature.com/articles/s41592-024-02372-w",
+      "doi": "10.1038/s41592-024-02372-w",
+      "version_viewed": "Published Nature Methods figure",
+      "figure_number": "4",
+      "figureURL": "https://www.nature.com/articles/s41592-024-02372-w/figures/4",
+      "local_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\originals\\deeppbs_F4.png",
+      "reference_crop": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\reference_crops\\deeppbs_F4.jpg",
+      "actual_view": {
+        "status": "visually_inspected",
+        "method": "view_image on downloaded original or PDF page rendered with Poppler",
+        "date": "2026-10-26",
+        "agent": "reference_interface_figures"
+      },
+      "visual_observations": "灰色全复合物作为坐标架，球大小是模型原子重要性，紧邻放大框聚焦界面；b–e 是精确局部接触；f 用同一残基名给总体排序，h 用真实突变数据外部验证。",
+      "transfer_limits": "本文没有原子重要性或突变实验，不能伪造球大小为重要性；可以让主链颜色只表示真实 RMSF、侧链颜色只表示真实 Hχ，并配绝对值色标。",
+      "design_relevance": "highest"
+    },
+    {
+      "paper_id": "deeppbs",
+      "title": "Geometric deep learning of protein-DNA binding specificity",
+      "venue": "Nature Methods",
+      "year": 2024,
+      "articleURL": "https://www.nature.com/articles/s41592-024-02372-w",
+      "doi": "10.1038/s41592-024-02372-w",
+      "version_viewed": "Published Nature Methods figure",
+      "figure_number": "5",
+      "figureURL": "https://www.nature.com/articles/s41592-024-02372-w/figures/5",
+      "local_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\originals\\deeppbs_F5.png",
+      "reference_crop": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\reference_crops\\deeppbs_F5.jpg",
+      "actual_view": {
+        "status": "visually_inspected",
+        "method": "view_image on downloaded original or PDF page rendered with Poppler",
+        "date": "2026-10-26",
+        "agent": "reference_interface_figures"
+      },
+      "visual_observations": "四个案例重复 2×2 语法：全结构、模型位置输出、局部数据结构、全位点突变热图；结构与定量图互为索引；只需一次图例即可密集呈现。",
+      "transfer_limits": "我们只有一个案例及两种预测，不能编造突变热图；可借同一 25 位点轴下叠不同读数的轨道，但不要把 4 行模型值伪装为大量新实验。",
+      "design_relevance": "high"
+    },
+    {
+      "paper_id": "colabdock",
+      "title": "Integrated structure prediction of protein-protein docking with experimental restraints using ColabDock",
+      "venue": "Nature Machine Intelligence",
+      "year": 2024,
+      "articleURL": "https://www.nature.com/articles/s42256-024-00873-z",
+      "doi": "10.1038/s42256-024-00873-z",
+      "version_viewed": "Published Nature Machine Intelligence figure",
+      "figure_number": "4",
+      "figureURL": "https://www.nature.com/articles/s42256-024-00873-z/figures/4",
+      "local_file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\originals\\colabdock_F4.png",
+      "reference_crop": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\figure_reference_research_20261026\\interfaces\\reference_crops\\colabdock_F4.jpg",
+      "actual_view": {
+        "status": "visually_inspected",
+        "method": "view_image on downloaded original or PDF page rendered with Poppler",
+        "date": "2026-10-26",
+        "agent": "reference_interface_figures"
+      },
+      "visual_observations": "一侧所有约束距离分布，另一侧两个具名蛋白的实际模型得分；清楚把约束特征和结果连起来。",
+      "transfer_limits": "无实例结构、不解决本文结构与残基数据脱节；分布与箱图需要足够实际观测，本文 25 位点不能画成独立生物重复。",
+      "design_relevance": "low"
+    }
+  ]
+}

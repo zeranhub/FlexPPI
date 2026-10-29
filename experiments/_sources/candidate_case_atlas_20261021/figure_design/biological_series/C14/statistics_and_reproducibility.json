@@ -1,0 +1,183 @@
+{
+  "case_id": "C14",
+  "status": "passed",
+  "model": "Existing joint Full fold0; trained on ATLAS1866 + DynaRepo564; ITrace0",
+  "model_n": 1,
+  "model_error_bars": null,
+  "MD_independent_replicas_per_state": 3,
+  "MD_center": "Existing equal-weight replica mean",
+  "spread_displayed": null,
+  "n_definition": "Aligned residue comparisons; not independent experimental samples or MD frames",
+  "tests": null,
+  "multiple_comparison_correction": null,
+  "regression_fits": null,
+  "descriptive_metrics_by_complete_contrast": {
+    "rmsf": [
+      {
+        "a": "3qdg",
+        "b": "3qdj",
+        "n_positions": 24,
+        "Spearman_rho": -0.10521739130434782,
+        "MAE": 0.19558720290660858,
+        "zero_change_MAE": 0.1883023406068484,
+        "direction_agreement": 0.5833333333333334
+      },
+      {
+        "a": "3qdm",
+        "b": "3qeq",
+        "n_positions": 24,
+        "Spearman_rho": 0.3678260869565217,
+        "MAE": 0.12116526067256927,
+        "zero_change_MAE": 0.12302600592374802,
+        "direction_agreement": 0.625
+      }
+    ],
+    "hchi": [
+      {
+        "a": "3qdg",
+        "b": "3qdj",
+        "n_positions": 16,
+        "Spearman_rho": -0.14411764705882352,
+        "MAE": 0.15241828747093678,
+        "zero_change_MAE": 0.12259608507156372,
+        "direction_agreement": 0.4375
+      },
+      {
+        "a": "3qdm",
+        "b": "3qeq",
+        "n_positions": 19,
+        "Spearman_rho": 0.7789473684210525,
+        "MAE": 0.19728429537070424,
+        "zero_change_MAE": 0.26391059317086873,
+        "direction_agreement": 0.8421052631578947
+      }
+    ]
+  },
+  "scope_counts": [
+    {
+      "a": "3qdg",
+      "b": "3qdj",
+      "backbone_scope_rows": 25,
+      "paired_valid_RMSF": 24,
+      "Hchi_same_AA_valid": 16,
+      "all_aligned_rows": 826,
+      "all_paired_rows": 825,
+      "all_gap_rows": 1,
+      "all_altered_AA_rows": 1
+    },
+    {
+      "a": "3qdm",
+      "b": "3qeq",
+      "backbone_scope_rows": 24,
+      "paired_valid_RMSF": 24,
+      "Hchi_same_AA_valid": 19,
+      "all_aligned_rows": 823,
+      "all_paired_rows": 820,
+      "all_gap_rows": 3,
+      "all_altered_AA_rows": 1
+    }
+  ],
+  "all_contrasts": [
+    [
+      "3qdg",
+      "3qdj"
+    ],
+    [
+      "3qdm",
+      "3qeq"
+    ]
+  ],
+  "source_traceability": "Source CSVs and exact SHA256 in data_audit.json; panel_b/c plotted CSV and all panel_d observations exported",
+  "limitations": "并行DMF5对照失败，必须一起保留；肽长度和锚身份同时改变，禁止按原编号生硬相减或泛化到所有受体。 Length and anchor identity differ together. Avoid comparing only DMF4 versus DMF5 and calling the difference caused by one molecular change.",
+  "PNG_SHA256": "7bb5913a335009cdaff67a0aa1592af177cbe8dceb520c07837dc1f0b26b0240",
+  "original_NPZ_checks": [
+    {
+      "a": "3qdg",
+      "b": "3qdj",
+      "state": "a",
+      "PDB": "3qdg",
+      "metric": "rmsf",
+      "valid_state_values_checked": 826,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_3qdg.npz",
+      "NPZ_SHA256": "6729e922c6b830530fa1b37963abf0c6093b161d42be45497cf9ae7f4476ba10"
+    },
+    {
+      "a": "3qdg",
+      "b": "3qdj",
+      "state": "a",
+      "PDB": "3qdg",
+      "metric": "hchi",
+      "valid_state_values_checked": 713,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_3qdg.npz",
+      "NPZ_SHA256": "6729e922c6b830530fa1b37963abf0c6093b161d42be45497cf9ae7f4476ba10"
+    },
+    {
+      "a": "3qdg",
+      "b": "3qdj",
+      "state": "b",
+      "PDB": "3qdj",
+      "metric": "rmsf",
+      "valid_state_values_checked": 825,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_3qdj.npz",
+      "NPZ_SHA256": "eb75cd355cc9a64099e14f36fa78e0ad60e89b464c888491c64b70f1ab3c2803"
+    },
+    {
+      "a": "3qdg",
+      "b": "3qdj",
+      "state": "b",
+      "PDB": "3qdj",
+      "metric": "hchi",
+      "valid_state_values_checked": 711,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_3qdj.npz",
+      "NPZ_SHA256": "eb75cd355cc9a64099e14f36fa78e0ad60e89b464c888491c64b70f1ab3c2803"
+    },
+    {
+      "a": "3qdm",
+      "b": "3qeq",
+      "state": "a",
+      "PDB": "3qdm",
+      "metric": "rmsf",
+      "valid_state_values_checked": 822,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_3qdm.npz",
+      "NPZ_SHA256": "721cd17828e57347df62516dbb635baf6c2d5b1b3040e7209ce70d7562240de8"
+    },
+    {
+      "a": "3qdm",
+      "b": "3qeq",
+      "state": "a",
+      "PDB": "3qdm",
+      "metric": "hchi",
+      "valid_state_values_checked": 717,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_3qdm.npz",
+      "NPZ_SHA256": "721cd17828e57347df62516dbb635baf6c2d5b1b3040e7209ce70d7562240de8"
+    },
+    {
+      "a": "3qdm",
+      "b": "3qeq",
+      "state": "b",
+      "PDB": "3qeq",
+      "metric": "rmsf",
+      "valid_state_values_checked": 821,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_3qeq.npz",
+      "NPZ_SHA256": "23ae74a8d4261370d5f82dd95513ec76af6a9ca32e497113bc6d2dcfc28a6aa4"
+    },
+    {
+      "a": "3qdm",
+      "b": "3qeq",
+      "state": "b",
+      "PDB": "3qeq",
+      "metric": "hchi",
+      "valid_state_values_checked": 715,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_3qeq.npz",
+      "NPZ_SHA256": "23ae74a8d4261370d5f82dd95513ec76af6a9ca32e497113bc6d2dcfc28a6aa4"
+    }
+  ]
+}

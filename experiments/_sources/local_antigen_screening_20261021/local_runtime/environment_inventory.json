@@ -1,0 +1,125 @@
+{
+  "python_executable": "D:\\Anaconda\\envs\\pvb_cpu\\python.exe",
+  "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:36:49) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cpu": "Intel64 Family 6 Model 151 Stepping 5, GenuineIntel",
+  "logical_cores": 12,
+  "torch": "2.4.1",
+  "torch_cuda_available": false,
+  "default_torch_threads": 6,
+  "numpy": "2.2.6",
+  "module_specs_in_current_environment": {
+    "transformers": false,
+    "esm": false,
+    "openmm": false,
+    "simtk": false,
+    "pdbfixer": false,
+    "pyrosetta": false,
+    "modeller": false,
+    "Bio": true,
+    "pymol": true
+  },
+  "commands_on_PATH": {
+    "foldx": null,
+    "foldx.exe": null,
+    "rosetta_scripts": null,
+    "modeller": null,
+    "obabel": null,
+    "nvidia-smi": null
+  },
+  "other_environment_package_directories": {
+    "D:\\Anaconda\\envs\\MixTCRpred": {
+      "torch": [
+        "torch",
+        "torch-2.8.0.dist-info"
+      ],
+      "transformers": [],
+      "esm": [],
+      "openmm": [],
+      "simtk": [],
+      "pdbfixer": [],
+      "pyrosetta": [],
+      "modeller": [],
+      "Bio": [
+        "Bio",
+        "bio-1.6.2.dist-info"
+      ],
+      "pymol": []
+    },
+    "D:\\Anaconda\\envs\\pvb_cpu": {
+      "torch": [
+        "torch",
+        "torch-2.4.1-py3.10.egg-info"
+      ],
+      "transformers": [],
+      "esm": [],
+      "openmm": [],
+      "simtk": [],
+      "pdbfixer": [],
+      "pyrosetta": [],
+      "modeller": [],
+      "Bio": [
+        "Bio"
+      ],
+      "pymol": [
+        "pymol",
+        "pymol-3.0.0-py3.10.egg-info"
+      ]
+    },
+    "D:\\Anaconda\\envs\\PVB_env": {
+      "torch": [
+        "torch",
+        "torch-2.4.1-py3.10.egg-info"
+      ],
+      "transformers": [],
+      "esm": [],
+      "openmm": [],
+      "simtk": [],
+      "pdbfixer": [],
+      "pyrosetta": [],
+      "modeller": [],
+      "Bio": [
+        "Bio"
+      ],
+      "pymol": []
+    },
+    "D:\\Anaconda\\envs\\pytorch": {
+      "torch": [
+        "torch",
+        "torch-2.8.0.dist-info"
+      ],
+      "transformers": [],
+      "esm": [],
+      "openmm": [],
+      "simtk": [],
+      "pdbfixer": [],
+      "pyrosetta": [],
+      "modeller": [],
+      "Bio": [],
+      "pymol": []
+    },
+    "E:\\Project\\FlexPPI\\.venv-md": {
+      "torch": [],
+      "transformers": [],
+      "esm": [],
+      "openmm": [],
+      "simtk": [],
+      "pdbfixer": [],
+      "pyrosetta": [],
+      "modeller": [],
+      "Bio": [
+        "Bio"
+      ],
+      "pymol": []
+    }
+  },
+  "known_esm_cache": {
+    "path": "E:/Project/protein_flexibility_models/torch_cache/hub/checkpoints/esm2_t33_650M_UR50D.pt",
+    "exists": true,
+    "needed_by_target_model": false
+  },
+  "target_sequence_backend": "learned",
+  "ESM_embeddings_are_not_inputs": true,
+  "installs_performed": [],
+  "remote_computation_performed": false
+}

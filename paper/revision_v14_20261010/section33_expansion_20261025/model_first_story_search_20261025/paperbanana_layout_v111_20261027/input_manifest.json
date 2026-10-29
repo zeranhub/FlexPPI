@@ -1,0 +1,44 @@
+{
+  "workflow": "PaperBanana author demo_full from scratch with auto retrieval, Planner style-only Figure2 injection,2 independent layout intents",
+  "old_Figure3_supplied": false,
+  "Figure2_style_supplied": true,
+  "native_input_values": 767,
+  "source": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v110_compact_five_panels",
+  "files": [
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\paperbanana_layout_v111_20261027\\scientific_content.txt",
+      "sha256": "45e80f77aea776e1016e980c24ac54e5bd631637c18907c5ddf2c754b8e9f344",
+      "bytes": 81537
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\paperbanana_layout_v111_20261027\\visual_intent.txt",
+      "sha256": "7fc232120697e8753cf051dce81744f9776ae7d122d488f2abb8b8939e673b72",
+      "bytes": 963
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\paperbanana_layout_v111_20261027\\run_from_scratch.py",
+      "sha256": "6abcf19acb8023031c314dbe258e991590ca5280ed4124f367c7b878619ede80",
+      "bytes": 21641
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\paperbanana_layout_v111_20261027\\manuscript_figure2_style_reference.png",
+      "sha256": "3695952ad99dca46f341ab4dc0f80871a4f3f1eaf24b5df9be9b1f182063f9e6",
+      "bytes": 898134
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\paperbanana_layout_v111_20261027\\style_guides\\neurips2025_diagram_style_guide.md",
+      "sha256": "b2d026743bbe3acc60eeadc0924f264fc784aee249852d421c33109ea0a490a0",
+      "bytes": 1247
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\paperbanana_layout_v111_20261027\\data\\PaperBananaBench\\diagram\\ref.json",
+      "sha256": "bf7cdc1feba0ad27bf11ea08fd7c74f56883f1ed5197872e883e39f54b4cec99",
+      "bytes": 4497364
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\paperbanana_layout_v111_20261027\\frozen_numeric_inventory_all767.csv",
+      "sha256": "7dd3064d99cc54740ea7558938ab1c5762f91798bcde96436671f84e76d23a78",
+      "bytes": 40944
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+panel,role,n_records,common_residues,center,mean_spearman,median_spearman,minimum,maximum,reference_class,label,mean_fraction_percent,visual_role,reference_positions,undefined_records,undefined_reason,mean_recall_percent,median_recall_percent,minimum_recall_percent,maximum_recall_percent,all_points_drawn
+a,reference,3063,824988,record-macro mean,0.3906099398873642,0.393678876331994,-0.13510854635762251,0.67535578217909631,,,,,,,,,,,,
+a,prediction,3063,824988,record-macro mean,0.51688304040572053,0.53002252166278585,-0.16,0.78791124713083383,,,,,,,,,,,,
+b,reference,3063,,mean fraction over all records,,,,,low_RMSF_low_Hchi,LL,11.643338929113654,dynamic category bar,,,,,,,,
+b,reference,3063,,mean fraction over all records,,,,,low_RMSF_high_Hchi,LH,3.1830021355583473,dynamic category bar,,,,,,,,
+b,reference,3063,,mean fraction over all records,,,,,high_RMSF_low_Hchi,HL,2.9218561649158694,dynamic category bar,,,,,,,,
+b,reference,3063,,mean fraction over all records,,,,,high_RMSF_high_Hchi,HH,12.202253966685216,dynamic category bar,,,,,,,,
+b,prediction,3063,,mean fraction over all records,,,,,low_RMSF_low_Hchi,LL,13.637397925303018,dynamic category bar,,,,,,,,
+b,prediction,3063,,mean fraction over all records,,,,,low_RMSF_high_Hchi,LH,2.4459443841725581,dynamic category bar,,,,,,,,
+b,prediction,3063,,mean fraction over all records,,,,,high_RMSF_low_Hchi,HL,2.2217885266541813,dynamic category bar,,,,,,,,
+b,prediction,3063,,mean fraction over all records,,,,,high_RMSF_high_Hchi,HH,14.800431959018617,dynamic category bar,,,,,,,,
+b,reference,3063,,mean fraction over all records,,,,,unclassified,未分类,70.049548803727021,"retained annotation, not a dynamic category",,,,,,,,
+b,prediction,3063,,mean fraction over all records,,,,,unclassified,未分类,66.89443720485194,"retained annotation, not a dynamic category",,,,,,,,
+c,,3062,,record-macro recall,,,,,low_RMSF_low_Hchi,LL,,,92578,1,"No reference positions of this class, recall denominator zero",54.619526129181409,54.54545454545454,0,100,3062
+c,,3009,,record-macro recall,,,,,low_RMSF_high_Hchi,LH,,,24842,54,"No reference positions of this class, recall denominator zero",15.788749768470216,7.6923076923076898,0,100,3009
+c,,2997,,record-macro recall,,,,,high_RMSF_low_Hchi,HL,,,22512,66,"No reference positions of this class, recall denominator zero",16.483992459651528,11.111111111111111,0,100,2997
+c,,3062,,record-macro recall,,,,,high_RMSF_high_Hchi,HH,,,98256,1,"No reference positions of this class, recall denominator zero",61.370452927752318,62.068965517241381,0,100,3062

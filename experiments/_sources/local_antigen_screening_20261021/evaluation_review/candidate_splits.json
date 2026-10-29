@@ -1,0 +1,611 @@
+{
+  "protocol_id": "local_antigen_retrospective_v1_20261021",
+  "candidates": [
+    {
+      "candidate_id": "nyeso_SLAMWITQV",
+      "system": "nyeso",
+      "sequence": "SLAMWITQV",
+      "parent_sequence": "SLLMWITQV",
+      "mutation_positions": [
+        3
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "nyeso_SLIMWITQV",
+      "system": "nyeso",
+      "sequence": "SLIMWITQV",
+      "parent_sequence": "SLLMWITQV",
+      "mutation_positions": [
+        3
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "nyeso_SLLAWITQV",
+      "system": "nyeso",
+      "sequence": "SLLAWITQV",
+      "parent_sequence": "SLLMWITQV",
+      "mutation_positions": [
+        4
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "nyeso_SLLDWITQV",
+      "system": "nyeso",
+      "sequence": "SLLDWITQV",
+      "parent_sequence": "SLLMWITQV",
+      "mutation_positions": [
+        4
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "nyeso_SLLMFITQV",
+      "system": "nyeso",
+      "sequence": "SLLMFITQV",
+      "parent_sequence": "SLLMWITQV",
+      "mutation_positions": [
+        5
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "nyeso_SLLMWIHQV",
+      "system": "nyeso",
+      "sequence": "SLLMWIHQV",
+      "parent_sequence": "SLLMWITQV",
+      "mutation_positions": [
+        7
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "nyeso_SLLMWITQC",
+      "system": "nyeso",
+      "sequence": "SLLMWITQC",
+      "parent_sequence": "SLLMWITQV",
+      "mutation_positions": [
+        9
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "nyeso_SLLMWITQL",
+      "system": "nyeso",
+      "sequence": "SLLMWITQL",
+      "parent_sequence": "SLLMWITQV",
+      "mutation_positions": [
+        9
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "nyeso_SLLMWITQV",
+      "system": "nyeso",
+      "sequence": "SLLMWITQV",
+      "parent_sequence": "SLLMWITQV",
+      "mutation_positions": [],
+      "mutation_count": 0,
+      "analysis_set": "reference_only"
+    },
+    {
+      "candidate_id": "nyeso_SLLMWTTQV",
+      "system": "nyeso",
+      "sequence": "SLLMWTTQV",
+      "parent_sequence": "SLLMWITQV",
+      "mutation_positions": [
+        6
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "nyeso_SLLMWVTQV",
+      "system": "nyeso",
+      "sequence": "SLLMWVTQV",
+      "parent_sequence": "SLLMWITQV",
+      "mutation_positions": [
+        6
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "nyeso_SLLMYITQV",
+      "system": "nyeso",
+      "sequence": "SLLMYITQV",
+      "parent_sequence": "SLLMWITQV",
+      "mutation_positions": [
+        5
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "nyeso_SLMMWITQV",
+      "system": "nyeso",
+      "sequence": "SLMMWITQV",
+      "parent_sequence": "SLLMWITQV",
+      "mutation_positions": [
+        3
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "nyeso_SLYMWITQV",
+      "system": "nyeso",
+      "sequence": "SLYMWITQV",
+      "parent_sequence": "SLLMWITQV",
+      "mutation_positions": [
+        3
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "tax_ALFGYPVYV",
+      "system": "tax",
+      "sequence": "ALFGYPVYV",
+      "parent_sequence": "LLFGYPVYV",
+      "mutation_positions": [
+        1
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "tax_LLFAYPVAV",
+      "system": "tax",
+      "sequence": "LLFAYPVAV",
+      "parent_sequence": "LLFGYPVYV",
+      "mutation_positions": [
+        4,
+        8
+      ],
+      "mutation_count": 2,
+      "analysis_set": "secondary_multiple_substitution"
+    },
+    {
+      "candidate_id": "tax_LLFAYPVYV",
+      "system": "tax",
+      "sequence": "LLFAYPVYV",
+      "parent_sequence": "LLFGYPVYV",
+      "mutation_positions": [
+        4
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "tax_LLFGFPVYV",
+      "system": "tax",
+      "sequence": "LLFGFPVYV",
+      "parent_sequence": "LLFGYPVYV",
+      "mutation_positions": [
+        5
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "tax_LLFGHPVAV",
+      "system": "tax",
+      "sequence": "LLFGHPVAV",
+      "parent_sequence": "LLFGYPVYV",
+      "mutation_positions": [
+        5,
+        8
+      ],
+      "mutation_count": 2,
+      "analysis_set": "secondary_multiple_substitution"
+    },
+    {
+      "candidate_id": "tax_LLFGHPVYV",
+      "system": "tax",
+      "sequence": "LLFGHPVYV",
+      "parent_sequence": "LLFGYPVYV",
+      "mutation_positions": [
+        5
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "tax_LLFGWPVYV",
+      "system": "tax",
+      "sequence": "LLFGWPVYV",
+      "parent_sequence": "LLFGYPVYV",
+      "mutation_positions": [
+        5
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "tax_LLFGYPHYV",
+      "system": "tax",
+      "sequence": "LLFGYPHYV",
+      "parent_sequence": "LLFGYPVYV",
+      "mutation_positions": [
+        7
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "tax_LLFGYPRYV",
+      "system": "tax",
+      "sequence": "LLFGYPRYV",
+      "parent_sequence": "LLFGYPVYV",
+      "mutation_positions": [
+        7
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "tax_LLFGYPTYV",
+      "system": "tax",
+      "sequence": "LLFGYPTYV",
+      "parent_sequence": "LLFGYPVYV",
+      "mutation_positions": [
+        7
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "tax_LLFGYPVAV",
+      "system": "tax",
+      "sequence": "LLFGYPVAV",
+      "parent_sequence": "LLFGYPVYV",
+      "mutation_positions": [
+        8
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "tax_LLFGYPVFV",
+      "system": "tax",
+      "sequence": "LLFGYPVFV",
+      "parent_sequence": "LLFGYPVYV",
+      "mutation_positions": [
+        8
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "tax_LLFGYPVYV",
+      "system": "tax",
+      "sequence": "LLFGYPVYV",
+      "parent_sequence": "LLFGYPVYV",
+      "mutation_positions": [],
+      "mutation_count": 0,
+      "analysis_set": "reference_only"
+    },
+    {
+      "candidate_id": "tax_LLFGYVVYV",
+      "system": "tax",
+      "sequence": "LLFGYVVYV",
+      "parent_sequence": "LLFGYPVYV",
+      "mutation_positions": [
+        6
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "tax_MLFGYPVYV",
+      "system": "tax",
+      "sequence": "MLFGYPVYV",
+      "parent_sequence": "LLFGYPVYV",
+      "mutation_positions": [
+        1
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    },
+    {
+      "candidate_id": "tax_VLFGYPVYV",
+      "system": "tax",
+      "sequence": "VLFGYPVYV",
+      "parent_sequence": "LLFGYPVYV",
+      "mutation_positions": [
+        1
+      ],
+      "mutation_count": 1,
+      "analysis_set": "primary_single_substitution"
+    }
+  ],
+  "folds": [
+    {
+      "fold_id": "nyeso_leave_position_3",
+      "system": "nyeso",
+      "heldout_position": 3,
+      "train_candidates": [
+        "nyeso_SLLAWITQV",
+        "nyeso_SLLDWITQV",
+        "nyeso_SLLMFITQV",
+        "nyeso_SLLMWIHQV",
+        "nyeso_SLLMWITQC",
+        "nyeso_SLLMWITQL",
+        "nyeso_SLLMWTTQV",
+        "nyeso_SLLMWVTQV",
+        "nyeso_SLLMYITQV"
+      ],
+      "test_candidates": [
+        "nyeso_SLAMWITQV",
+        "nyeso_SLIMWITQV",
+        "nyeso_SLMMWITQV",
+        "nyeso_SLYMWITQV"
+      ],
+      "rule": "All substitutions at the held-out peptide position stay together; parent is never a calibration observation."
+    },
+    {
+      "fold_id": "nyeso_leave_position_4",
+      "system": "nyeso",
+      "heldout_position": 4,
+      "train_candidates": [
+        "nyeso_SLAMWITQV",
+        "nyeso_SLIMWITQV",
+        "nyeso_SLLMFITQV",
+        "nyeso_SLLMWIHQV",
+        "nyeso_SLLMWITQC",
+        "nyeso_SLLMWITQL",
+        "nyeso_SLLMWTTQV",
+        "nyeso_SLLMWVTQV",
+        "nyeso_SLLMYITQV",
+        "nyeso_SLMMWITQV",
+        "nyeso_SLYMWITQV"
+      ],
+      "test_candidates": [
+        "nyeso_SLLAWITQV",
+        "nyeso_SLLDWITQV"
+      ],
+      "rule": "All substitutions at the held-out peptide position stay together; parent is never a calibration observation."
+    },
+    {
+      "fold_id": "nyeso_leave_position_5",
+      "system": "nyeso",
+      "heldout_position": 5,
+      "train_candidates": [
+        "nyeso_SLAMWITQV",
+        "nyeso_SLIMWITQV",
+        "nyeso_SLLAWITQV",
+        "nyeso_SLLDWITQV",
+        "nyeso_SLLMWIHQV",
+        "nyeso_SLLMWITQC",
+        "nyeso_SLLMWITQL",
+        "nyeso_SLLMWTTQV",
+        "nyeso_SLLMWVTQV",
+        "nyeso_SLMMWITQV",
+        "nyeso_SLYMWITQV"
+      ],
+      "test_candidates": [
+        "nyeso_SLLMFITQV",
+        "nyeso_SLLMYITQV"
+      ],
+      "rule": "All substitutions at the held-out peptide position stay together; parent is never a calibration observation."
+    },
+    {
+      "fold_id": "nyeso_leave_position_6",
+      "system": "nyeso",
+      "heldout_position": 6,
+      "train_candidates": [
+        "nyeso_SLAMWITQV",
+        "nyeso_SLIMWITQV",
+        "nyeso_SLLAWITQV",
+        "nyeso_SLLDWITQV",
+        "nyeso_SLLMFITQV",
+        "nyeso_SLLMWIHQV",
+        "nyeso_SLLMWITQC",
+        "nyeso_SLLMWITQL",
+        "nyeso_SLLMYITQV",
+        "nyeso_SLMMWITQV",
+        "nyeso_SLYMWITQV"
+      ],
+      "test_candidates": [
+        "nyeso_SLLMWTTQV",
+        "nyeso_SLLMWVTQV"
+      ],
+      "rule": "All substitutions at the held-out peptide position stay together; parent is never a calibration observation."
+    },
+    {
+      "fold_id": "nyeso_leave_position_7",
+      "system": "nyeso",
+      "heldout_position": 7,
+      "train_candidates": [
+        "nyeso_SLAMWITQV",
+        "nyeso_SLIMWITQV",
+        "nyeso_SLLAWITQV",
+        "nyeso_SLLDWITQV",
+        "nyeso_SLLMFITQV",
+        "nyeso_SLLMWITQC",
+        "nyeso_SLLMWITQL",
+        "nyeso_SLLMWTTQV",
+        "nyeso_SLLMWVTQV",
+        "nyeso_SLLMYITQV",
+        "nyeso_SLMMWITQV",
+        "nyeso_SLYMWITQV"
+      ],
+      "test_candidates": [
+        "nyeso_SLLMWIHQV"
+      ],
+      "rule": "All substitutions at the held-out peptide position stay together; parent is never a calibration observation."
+    },
+    {
+      "fold_id": "nyeso_leave_position_9",
+      "system": "nyeso",
+      "heldout_position": 9,
+      "train_candidates": [
+        "nyeso_SLAMWITQV",
+        "nyeso_SLIMWITQV",
+        "nyeso_SLLAWITQV",
+        "nyeso_SLLDWITQV",
+        "nyeso_SLLMFITQV",
+        "nyeso_SLLMWIHQV",
+        "nyeso_SLLMWTTQV",
+        "nyeso_SLLMWVTQV",
+        "nyeso_SLLMYITQV",
+        "nyeso_SLMMWITQV",
+        "nyeso_SLYMWITQV"
+      ],
+      "test_candidates": [
+        "nyeso_SLLMWITQC",
+        "nyeso_SLLMWITQL"
+      ],
+      "rule": "All substitutions at the held-out peptide position stay together; parent is never a calibration observation."
+    },
+    {
+      "fold_id": "tax_leave_position_1",
+      "system": "tax",
+      "heldout_position": 1,
+      "train_candidates": [
+        "tax_LLFAYPVYV",
+        "tax_LLFGFPVYV",
+        "tax_LLFGHPVYV",
+        "tax_LLFGWPVYV",
+        "tax_LLFGYPHYV",
+        "tax_LLFGYPRYV",
+        "tax_LLFGYPTYV",
+        "tax_LLFGYPVAV",
+        "tax_LLFGYPVFV",
+        "tax_LLFGYVVYV"
+      ],
+      "test_candidates": [
+        "tax_ALFGYPVYV",
+        "tax_MLFGYPVYV",
+        "tax_VLFGYPVYV"
+      ],
+      "rule": "All substitutions at the held-out peptide position stay together; parent is never a calibration observation."
+    },
+    {
+      "fold_id": "tax_leave_position_4",
+      "system": "tax",
+      "heldout_position": 4,
+      "train_candidates": [
+        "tax_ALFGYPVYV",
+        "tax_LLFGFPVYV",
+        "tax_LLFGHPVYV",
+        "tax_LLFGWPVYV",
+        "tax_LLFGYPHYV",
+        "tax_LLFGYPRYV",
+        "tax_LLFGYPTYV",
+        "tax_LLFGYPVAV",
+        "tax_LLFGYPVFV",
+        "tax_LLFGYVVYV",
+        "tax_MLFGYPVYV",
+        "tax_VLFGYPVYV"
+      ],
+      "test_candidates": [
+        "tax_LLFAYPVYV"
+      ],
+      "rule": "All substitutions at the held-out peptide position stay together; parent is never a calibration observation."
+    },
+    {
+      "fold_id": "tax_leave_position_5",
+      "system": "tax",
+      "heldout_position": 5,
+      "train_candidates": [
+        "tax_ALFGYPVYV",
+        "tax_LLFAYPVYV",
+        "tax_LLFGYPHYV",
+        "tax_LLFGYPRYV",
+        "tax_LLFGYPTYV",
+        "tax_LLFGYPVAV",
+        "tax_LLFGYPVFV",
+        "tax_LLFGYVVYV",
+        "tax_MLFGYPVYV",
+        "tax_VLFGYPVYV"
+      ],
+      "test_candidates": [
+        "tax_LLFGFPVYV",
+        "tax_LLFGHPVYV",
+        "tax_LLFGWPVYV"
+      ],
+      "rule": "All substitutions at the held-out peptide position stay together; parent is never a calibration observation."
+    },
+    {
+      "fold_id": "tax_leave_position_6",
+      "system": "tax",
+      "heldout_position": 6,
+      "train_candidates": [
+        "tax_ALFGYPVYV",
+        "tax_LLFAYPVYV",
+        "tax_LLFGFPVYV",
+        "tax_LLFGHPVYV",
+        "tax_LLFGWPVYV",
+        "tax_LLFGYPHYV",
+        "tax_LLFGYPRYV",
+        "tax_LLFGYPTYV",
+        "tax_LLFGYPVAV",
+        "tax_LLFGYPVFV",
+        "tax_MLFGYPVYV",
+        "tax_VLFGYPVYV"
+      ],
+      "test_candidates": [
+        "tax_LLFGYVVYV"
+      ],
+      "rule": "All substitutions at the held-out peptide position stay together; parent is never a calibration observation."
+    },
+    {
+      "fold_id": "tax_leave_position_7",
+      "system": "tax",
+      "heldout_position": 7,
+      "train_candidates": [
+        "tax_ALFGYPVYV",
+        "tax_LLFAYPVYV",
+        "tax_LLFGFPVYV",
+        "tax_LLFGHPVYV",
+        "tax_LLFGWPVYV",
+        "tax_LLFGYPVAV",
+        "tax_LLFGYPVFV",
+        "tax_LLFGYVVYV",
+        "tax_MLFGYPVYV",
+        "tax_VLFGYPVYV"
+      ],
+      "test_candidates": [
+        "tax_LLFGYPHYV",
+        "tax_LLFGYPRYV",
+        "tax_LLFGYPTYV"
+      ],
+      "rule": "All substitutions at the held-out peptide position stay together; parent is never a calibration observation."
+    },
+    {
+      "fold_id": "tax_leave_position_8",
+      "system": "tax",
+      "heldout_position": 8,
+      "train_candidates": [
+        "tax_ALFGYPVYV",
+        "tax_LLFAYPVYV",
+        "tax_LLFGFPVYV",
+        "tax_LLFGHPVYV",
+        "tax_LLFGWPVYV",
+        "tax_LLFGYPHYV",
+        "tax_LLFGYPRYV",
+        "tax_LLFGYPTYV",
+        "tax_LLFGYVVYV",
+        "tax_MLFGYPVYV",
+        "tax_VLFGYPVYV"
+      ],
+      "test_candidates": [
+        "tax_LLFGYPVAV",
+        "tax_LLFGYPVFV"
+      ],
+      "rule": "All substitutions at the held-out peptide position stay together; parent is never a calibration observation."
+    }
+  ]
+}

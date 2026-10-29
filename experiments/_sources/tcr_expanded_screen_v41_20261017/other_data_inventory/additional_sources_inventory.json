@@ -1,0 +1,161 @@
+{
+  "scope": "Local inventory, not new online availability verification.",
+  "annotation_counts": {
+    "atlas": 1929,
+    "dynarepo": 890,
+    "itrace": 244
+  },
+  "atlas_dynarepo_immune_annotation_hits": [
+    {
+      "sample_id": "1k5n_A",
+      "dataset": "atlas",
+      "pdb_ids": "1K5N",
+      "annotation_status": "official_metadata",
+      "pdb_classification": "IMMUNE SYSTEM",
+      "protein_descriptions": "beta-2-microglobulin, light chain;major histocompatibility complex molecule HLA-B*2709;nonameric model peptide m9",
+      "enzyme_codes": "",
+      "uniprot_ids": "P01889;P61769"
+    },
+    {
+      "sample_id": "A000B",
+      "dataset": "dynarepo",
+      "pdb_ids": "1AKJ",
+      "annotation_status": "official_metadata",
+      "pdb_classification": "COMPLEX (MHC I/PEPTIDE/CD8)",
+      "protein_descriptions": "BETA 2-MICROGLOBULIN;HIV REVERSE TRANSCRIPTASE EPITOPE;MHC CLASS I HISTOCOMPATIBILITY ANTIGEN (HLA-A*0201) (ALPHA CHAIN);T-CELL CORECEPTOR CD8",
+      "enzyme_codes": "",
+      "uniprot_ids": "P01732;P04439;P61769"
+    },
+    {
+      "sample_id": "A002W",
+      "dataset": "dynarepo",
+      "pdb_ids": "2G9H",
+      "annotation_status": "official_metadata",
+      "pdb_classification": "IMMUNE SYSTEM",
+      "protein_descriptions": "HLA class II histocompatibility antigen, DR alpha chain;HLA class II histocompatibility antigen, DRB1-1 beta chain;Hemagglutinin;extracellular enterotoxin type I",
+      "enzyme_codes": "",
+      "uniprot_ids": "P01903;P01911;P04664;Q52T95"
+    },
+    {
+      "sample_id": "A003I",
+      "dataset": "dynarepo",
+      "pdb_ids": "2OJE",
+      "annotation_status": "official_metadata",
+      "pdb_classification": "IMMUNE SYSTEM",
+      "protein_descriptions": "HLA class II histocompatibility antigen, DR alpha chain precursor;HLA class II histocompatibility antigen, DRB1-1 beta chain precursor;Superantigen;haemagglutinin peptide 306-318",
+      "enzyme_codes": "",
+      "uniprot_ids": "P01903;P01911;Q48898;Q91LS8"
+    },
+    {
+      "sample_id": "A0053",
+      "dataset": "dynarepo",
+      "pdb_ids": "3H7B",
+      "annotation_status": "official_metadata",
+      "pdb_classification": "IMMUNE SYSTEM",
+      "protein_descriptions": "Beta-2-microglobulin;HLA class I histocompatibility antigen, A-2 alpha chain;Tel1p peptide",
+      "enzyme_codes": "",
+      "uniprot_ids": "P04439;P38110;P61769"
+    },
+    {
+      "sample_id": "A0055",
+      "dataset": "dynarepo",
+      "pdb_ids": "3HAE",
+      "annotation_status": "official_metadata",
+      "pdb_classification": "IMMUNE SYSTEM",
+      "protein_descriptions": "Antibody heavy chain;Antibody light chain;Beta-2-microglobulin;HLA class I histocompatibility antigen, A-2 alpha chain;NYESO-1 peptide",
+      "enzyme_codes": "",
+      "uniprot_ids": "P04439;P61769;P78358"
+    },
+    {
+      "sample_id": "A005I",
+      "dataset": "dynarepo",
+      "pdb_ids": "3KXF",
+      "annotation_status": "official_metadata",
+      "pdb_classification": "IMMUNE SYSTEM",
+      "protein_descriptions": "Beta-2-microglobulin;HLA class I histocompatibility antigen, B-35 alpha chain;SB27 T cell receptor alpha chain;SB27 T cell receptor beta chain;peptide from Trans-activator protein BZLF1",
+      "enzyme_codes": "",
+      "uniprot_ids": "A0A5B9;P01848;P01889;P03206;P61769"
+    },
+    {
+      "sample_id": "A0061",
+      "dataset": "dynarepo",
+      "pdb_ids": "3S5L",
+      "annotation_status": "official_metadata",
+      "pdb_classification": "IMMUNE SYSTEM",
+      "protein_descriptions": "HA peptide;HLA class II histocompatibility antigen DR beta chain;HLA class II histocompatibility antigen, DR alpha chain;T-cell surface glycoprotein CD4",
+      "enzyme_codes": "",
+      "uniprot_ids": "P01730;P01903;P01911;P03437"
+    },
+    {
+      "sample_id": "A00JA",
+      "dataset": "dynarepo",
+      "pdb_ids": "6DDR",
+      "annotation_status": "official_metadata",
+      "pdb_classification": "IMMUNE SYSTEM",
+      "protein_descriptions": "Anti-MICA Fab fragment heavy chain clone 13A9;Anti-MICA Fab fragment light chain clone 13A9;MHC class I polypeptide-related sequence A",
+      "enzyme_codes": "",
+      "uniprot_ids": "Q96QC4"
+    },
+    {
+      "sample_id": "A00PD",
+      "dataset": "dynarepo",
+      "pdb_ids": "1AKJ",
+      "annotation_status": "official_metadata",
+      "pdb_classification": "COMPLEX (MHC I/PEPTIDE/CD8)",
+      "protein_descriptions": "BETA 2-MICROGLOBULIN;HIV REVERSE TRANSCRIPTASE EPITOPE;MHC CLASS I HISTOCOMPATIBILITY ANTIGEN (HLA-A*0201) (ALPHA CHAIN);T-CELL CORECEPTOR CD8",
+      "enzyme_codes": "",
+      "uniprot_ids": "P01732;P04439;P61769"
+    },
+    {
+      "sample_id": "A00PP",
+      "dataset": "dynarepo",
+      "pdb_ids": "1KLU",
+      "annotation_status": "official_metadata",
+      "pdb_classification": "IMMUNE SYSTEM/TOXIN",
+      "protein_descriptions": "ENTEROTOXIN TYPE C-3;HLA CLASS II HISTOCOMPATIBILITY ANTIGEN, DR ALPHA CHAIN;HLA CLASS II HISTOCOMPATIBILITY ANTIGEN, DR-1 BETA CHAIN;Triosephosphate isomerase peptide",
+      "enzyme_codes": "",
+      "uniprot_ids": "P01903;P01911;P0A0L5;P60174"
+    }
+  ],
+  "dynarepo_local_manifest_keyword_hits": 0,
+  "thermopcd_titles_scanned": 1051,
+  "thermopcd_keyword_hits": [],
+  "DynaTPH": {
+    "catalogue_date": "2026-09-17",
+    "total_pdb": 256,
+    "outside_ITrace": 59,
+    "full_trajectories_local": false,
+    "available_local": "descriptor.csv and peptide-only mean RMSF table (3 replicas), no individual-repeat arrays or chi entropy",
+    "units_caution": "rmsf.csv header declares nm but values around0.3–0.8; verify fit protocol and units against authors before comparing absolute predictions.",
+    "old_README_access": "Full trajectories restricted for peer review at Zenodo21971877. Re-check if needed; not presumed currently inaccessible."
+  },
+  "3KXF": {
+    "old_exclusion_reason": "Exact PDB overlap with DynaRepo A005I in previous general training pool, not a trajectory integrity exclusion.",
+    "in_current_family_fold0_train": false,
+    "in_current_family_fold0_test": true,
+    "ITrace_md_paths": [
+      "E:\\data\\ITrace\\trajectories\\3kxf_run1_md_processed.xtc",
+      "E:\\data\\ITrace\\trajectories\\3kxf_run1_topology.pdb",
+      "E:\\data\\ITrace\\trajectories\\3kxf_run2_md_processed.xtc",
+      "E:\\data\\ITrace\\trajectories\\3kxf_run2_topology.pdb",
+      "E:\\data\\ITrace\\trajectories\\3kxf_run3_md_processed.xtc",
+      "E:\\data\\ITrace\\trajectories\\3kxf_run3_topology.pdb"
+    ],
+    "dynarepo_structure": "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\dataset\\structures\\A005I.pdb",
+    "use": "Can evaluate with same family-fold0 checkpoint; must independently generate ITrace targets and preserve source-specific chain mapping. Repeated structure/second MD protocol does not add independent PDB."
+  },
+  "knapp2019": {
+    "root": "E:\\Project\\FlexPPI\\artifacts\\tcr_pmhc_reassessment_20260915\\knapp2019",
+    "local_A6_partial_size": 381681664,
+    "expected_A6_bytes": 399223244,
+    "full_archive_checksum_verified": false,
+    "other_sources": "1G4, JM22 and LC13 public Figshare URLs and exact archive sizes in local literature/knapp2019_*_figshare.json; not present as complete local trajectories.",
+    "A6_construct_caution": "Three internal beta-chain regions removed in prepared simulation construct; do not treat as intact natural A6."
+  },
+  "verified_current_train0_size": 2430,
+  "source_hashes": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\functional_annotations_complete\\record_annotations.csv": "b48077641fbb9717e9f5369a16ffa8627ff2d1135edeacaf2ba570fefc5ef4d5",
+    "D:\\data\\dynarepo_non_nucleic_manifest.json": "d3211a6fda94fe8ced68d058f8e1e92068cac6cf25a5e0bfef565b3c52dd3da6",
+    "E:\\Project\\FlexPPI\\output\\tcr_external_validation_search_20260917\\catalogues\\DynaTPH_pdb_overlap.csv": "939ded0ce1c020e5455899b52c81fe84658a0c5933a4210901208d757fd7f6e8"
+  }
+}

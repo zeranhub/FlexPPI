@@ -1,0 +1,42 @@
+{
+  "document_sha256": "58a15ba884180814dc562d276a3fb1c0e321b95a73cc302e0b0e68a4dafc0a68",
+  "source_csv": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\kras_case_v41_20261017\\figure6\\source_all10_peptide_model_and_MD_changes.csv",
+  "metrics_all10": {
+    "n": 10,
+    "Spearman": 0.806060606060606,
+    "MAE_A": 0.22888186163487184,
+    "zero_change_MAE_A": 0.37477014281569804,
+    "relative_MAE_reduction_percent": 38.927402296444455,
+    "direction_correct": 9,
+    "all_three_G12D_below_all_three_WT": 8
+  },
+  "metrics_unchanged9": {
+    "n": 9,
+    "Spearman": 0.7333333333333333,
+    "MAE_A": 0.18150934934249716,
+    "zero_change_MAE_A": 0.30333285260095433,
+    "relative_MAE_reduction_percent": 40.16165813029179,
+    "direction_correct": 8,
+    "all_three_G12D_below_all_three_WT": 7
+  },
+  "replica_mean_delta_max_error_A": 1.1102230246251565e-16,
+  "replica_SEM_max_error_A": 6.938893903907228e-18,
+  "checks": {
+    "whole10_rho_0_806": true,
+    "whole10_MAE_0_229": true,
+    "unchanged9_rho_0_733": true,
+    "unchanged9_MAE_0_182": true,
+    "unchanged9_baseline_0_303": true,
+    "unchanged9_reduction_40_2_percent": true,
+    "direction8of9": true,
+    "replica_range7of9": true,
+    "reference28_replaced": true,
+    "Figure6_only_panels_a_b_references": true,
+    "Intra_inference_removed": true,
+    "no_Hchi_success_claim_for_KRAS": true,
+    "same_no_ITrace_family0_main_model": true
+  },
+  "all_scientific_checks_pass": true,
+  "scope": "核验KRAS替换段落、图6、摘要引言讨论结论和参考28；对其它章节仅核验原样保留。",
+  "control_decision": "原有链内对照绝对RMSF失准，因其原因不明，不用于本例环境贡献推论；正式稿已去除相关段落及方法末句。"
+}

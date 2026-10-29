@@ -1,0 +1,176 @@
+{
+  "status": "complete",
+  "local_output_hashes_rechecked": [
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\model\\all66_frozen_model_comparison.csv",
+      "sha256": "a27b9295998f1cda3031a29cc0aad90fa8f042e28c588fa7f97e86ae91f744d6"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\model\\all6_Gln_five_window_summary.csv",
+      "sha256": "38c8f8c6e11f3f1a63f2219173e45d457a9ef79dc2f7bf0d2ed116723e718829"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\model\\all6_Gln_frozen_model_comparison.csv",
+      "sha256": "009788d1698147b2ef11cbd8c1c6316f6564495edbc7073d32f88aee82db34f5"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\model\\all6_Gln_static_input_features.csv",
+      "sha256": "bdd0c5f79b916469489673f919238e49da3af88cd2fe5d044e731f5913e4e0d6"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\model\\diagnose_q40_models.py",
+      "sha256": "9202341e4e476d1923836d159486a9c34ee84fad6e4619750f9d4af339052d78"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\model\\diagnosis_summary.json",
+      "sha256": "f99f30a6b19196d0be3b904f49a76f37fe73b44f20d55442692858c6290857e7"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\model\\Q40_same_type_pairwise_contrasts.csv",
+      "sha256": "c43813e108bafa71027ddb0c53d026dd0a3fe2c8605d51f72d45c1bcd9312f9d"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\model\\sequence_neighborhood_35_45.csv",
+      "sha256": "dea18170b51007532c5ecfdbb37aa2ed5db1bfff34eaac41442919edb0ca83a0"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\model\\verify_q40_model_outputs.py",
+      "sha256": "ec58ba81be49e6e779086b4c425076b3288e32ddd44f740355bad27c658be55b"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\trajectory\\original120_entropy_by_window_and_scope.csv",
+      "sha256": "ded4d81057d6540304c510b6947685e4b923c153ddf7cd53343d9f03f0ea9ecf"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\trajectory\\original120_per_chi_state_probabilities.csv",
+      "sha256": "2f66c34274f2b61e88aba5bd589f619def1fe39c9db52b0655f180528d6e03de"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\trajectory\\original120_all_joint_state_probabilities.csv",
+      "sha256": "587c47eb442e00c3289fd415c8ea70a17102d99afdbf55c33250035c519cb095"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\trajectory\\original120_pairwise_mutual_information.csv",
+      "sha256": "b591ebac3def41b084a9186ce2825f1ce61edadc6bfe4c812bb1d31f0349727b"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\trajectory\\six_GLN_prediction_window_summary.csv",
+      "sha256": "f6a2945195eb38d4916b5b9aed0f33f61b84b685beda87691d0b7d684b0c2402"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\trajectory\\fine5degree_per_angle_by_window_and_scope.csv",
+      "sha256": "38304de473987ccc9d73aa6edd242c32c2324c2014cb608aceef644e90ea0463"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\trajectory\\fine5degree_501_vs5000_summary.csv",
+      "sha256": "2b41b47ebf652088d3ed3f1f0ced9cc27250b763ff39e5ef048da1f90d5df5d1"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\analyze_gln_contacts.py",
+      "sha256": "eaf2c11683ca968f04ddc35a222a056f2217a8854622f8df48d9f22383611689"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\atom_mapping.json",
+      "sha256": "3cc88fbb65c081c34c0ba1b0bf26ddbd8e7c2b61d455a329b976d0adad917d86"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\contact_summary_all6_by_grid_window.csv",
+      "sha256": "5e70b6359295a3834f3cb1b693d231dbaab804882e7ac4a59619ba5da76adf50"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\polar_atom_pair_persistence.csv",
+      "sha256": "90c785f58a90c9928a2b2cf6ace289f34ffb2e131f53892d46d9c1426e75175f"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\residue_contact_persistence.csv",
+      "sha256": "dcad9608dfde8c7e780b2b8c862f2afeffb0a9a698905811410498097d5a99e2"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\static_backbone_neighborhood.csv",
+      "sha256": "8d38dd49f9a5069350023dbade8fb809e1c4513f513b8495538e586016def854"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\static_contacts_by_residue.csv",
+      "sha256": "03c7deb0bebd2d0518dd986bb440e2575fe3c0dc1c51f41b8361a2a4a24c18c0"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\static_polar_atom_contacts_within5A.csv",
+      "sha256": "a970996cca98dd75c38fadf5a88dfe3f598e7f0a0bc76ceceed8708fdf52057f"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\static_SASA_all6.csv",
+      "sha256": "d0649a5d666108ff1f4e3df56f03c467b5b7bad464edc7869151ad3a13be9a5c"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\trajectory_contact_timeseries_all5000.csv",
+      "sha256": "1abafb9084df8019787a857dcae1eb4a70875eb7523c14fe79fbac56c21db46a"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\trajectory_contact_timeseries_primary501.csv",
+      "sha256": "ef818263828dda1ba9e1d4333e977b714ba0486aa5f9a8ba720749271f707346"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\trajectory_read_audit.json",
+      "sha256": "4d9385014c141d94466a8cb1433d8516451753024300b90f3bbdb4135df16e66"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\run_audit.json",
+      "sha256": "372a7b91d8edac40e0a0182bf87c0adbf41e654d22f2b8b24d1ce35e578ccd26"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\all6_structure_contact_comparison.csv",
+      "sha256": "68545aea68b2eaa29412be3ca7179bb3904e36386b8056ca0619c38332a86989"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\all6_window_contacts_entropy.csv",
+      "sha256": "3e7a948132e8e3c7fb3988f6053a94318f2bc4b18017d99818bddadbc726e56b"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\conclusion_zh.md",
+      "sha256": "b63299772347ff2a8f3d51c0370fad857817ca51c4cce795840f9841ee555d00"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\Q40_key_polar_contacts_all_windows.csv",
+      "sha256": "2b49b85df337e679c97f888e09c778cf67aa4a811b28bda5701cae5d48313f0d"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\README_结果与复算.md",
+      "sha256": "5d13d1308c2b6d2696cbfa9769a83b54f306950c2b75195b68802b51613b09c4"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\static_atomwise_nearest_pairs_within5A.csv",
+      "sha256": "5b10442222524f938321d379212a97e27210e18e8dcee2090f52cdd390089416"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\summarize_and_verify_existing.py",
+      "sha256": "3990e4b5d13c9dea1739abeb153656cef97341a1d70d08efd4837825669062c1"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\top_opposite_NO_contacts_original5000.csv",
+      "sha256": "a3869d4d95cadc50d38bc670ff832a54ea828044265a8d258aa7c6765d25182e"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\top_opposite_NO_contacts_primary501.csv",
+      "sha256": "3a68dee17bfc9129198b13336c19fb1c1ae4549db0bde1b0ce3f09eb8463f632"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\top_residue_contacts_original5000.csv",
+      "sha256": "719747d0835e7cb44845cde2a23d86e93ff671587c1f9b0e402354f180d39309"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\top_residue_contacts_primary501.csv",
+      "sha256": "fa3b4f9d6ee466bb693f53fb7dad5b4a55bb6432ca82bf766aba5d412b1637f5"
+    },
+    {
+      "file": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\q40_diagnosis_20261014\\structure\\window4_to5_all6.csv",
+      "sha256": "f1e1ff34a7ebd1a82f54cfa5f1e4f858db85a1183b2599d979d7e6fd48eb2249"
+    }
+  ],
+  "all6_sites_retained": true,
+  "five_windows_verified": true,
+  "model_independent_checks": 73,
+  "structure_independent_checks": 110,
+  "model_and_structure_unresolved_causation_clearly_stated": true,
+  "report_sha256": "5c33c28ae7bb72e30b490c4bcdaf7fbd1cb74b5207e853f077d21e47c1d25fd3",
+  "manuscript_modified": false
+}

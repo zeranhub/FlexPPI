@@ -1,0 +1,45 @@
+{
+  "sample_id": "4eo1_A",
+  "dataset": "atlas",
+  "fold": 2,
+  "status": "complete",
+  "replica_mode": "available_replicas",
+  "replicas": 3,
+  "common_positions": 58,
+  "original_joint_H_reproduction_max_abs": 0.0,
+  "targets_masks_identities_exact": true,
+  "plan_sha256": "b9b4eb2fed6c9e4421c09c19ffc512e7567d9d9f5e460e1477365b119c6c92d4",
+  "tables": {
+    "per_residue": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\table_parts\\available_replicas\\4eo1_A\\per_residue.csv",
+      "sha256": "edcd7b1a2131fbc8d2d73909c4daf1251c19cea1608dce216ce65ba93fd02f2a",
+      "rows": 58
+    },
+    "per_record_correlations": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\table_parts\\available_replicas\\4eo1_A\\per_record_correlations.csv",
+      "sha256": "e1e8291b4f4be6a1922188b2982ae4af0be632810897485bd2bd13a7a1a1fc90",
+      "rows": 24
+    },
+    "per_AA_correlations": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\table_parts\\available_replicas\\4eo1_A\\per_AA_correlations.csv",
+      "sha256": "d96121ada3fc1d4929f0a16fd5ac201068e69fec8cddec1ad1e0790181b745fd",
+      "rows": 48
+    },
+    "high_low_per_AA": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\table_parts\\available_replicas\\4eo1_A\\high_low_per_AA.csv",
+      "sha256": "6c7ef46ce5f11df03e4ef30f38092b211eb6bb51d165d8655a312a4445536816",
+      "rows": 96
+    },
+    "sameAA_pair_contrasts": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\table_parts\\available_replicas\\4eo1_A\\sameAA_pair_contrasts.csv",
+      "sha256": "05269cb4acb82c08ba98086295ee5e42978035ecfc382ad159bd3a893c9c0a62",
+      "rows": 12
+    },
+    "eligibility_masks": {
+      "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\model_argument_v24_20261013\\experiment_predictive_occupancy\\table_parts\\available_replicas\\4eo1_A\\eligibility_masks.csv",
+      "sha256": "c410670520235827c0510046dd4ee0638dcaa3bf6f1865d16bd9d12fc3aa297b",
+      "rows": 5
+    }
+  },
+  "elapsed_seconds": 0.28100000019185245
+}

@@ -1,0 +1,1303 @@
+{
+  "status": "passed_independent_saved_score_numeric_audit",
+  "created_utc": "2026-10-12T04:10:41.466524+00:00",
+  "scope": "Aggregate and coverage recomputation from all saved per-record metrics plus raw-residue re-scoring of two fixed records in both protocols; no new inference or official completion checker run.",
+  "remote_files_copied_and_hash_verified": 21,
+  "source_sha256": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\additional_original_oof\\coverage_audit.csv": "cbec2b38e5dffc1bde01f4d865c9a7015b5e79688210eb998e71740765a4ac39",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\additional_original_oof\\coverage_summary.csv": "821063de5d1fe7be94a0272853940abd8b97b6c71a35e7c1e204de339c7b0956",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\additional_original_oof\\per_record_metrics.csv": "5181b00d72993ee9301e5e9be9134e63349463475d31247b022d1e7ba9d74516",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\additional_original_oof\\record_macro_metrics.csv": "db8f50b1b3e530dff3f98088ed24d54afa98e976483768dfb58650f6f7555902",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\additional_original_oof\\source_fold_macro_metrics.csv": "f7e18c8dbb0ce79843d1cfcf22d070d2742f1cb765eb4112fe2ea0eff8407659",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\additional_original_oof\\scoring_audit.json": "92df7446e4f155643d7c9456a16f91803614cf41e2439b77147d6030b54cc012",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\additional_family_oof\\coverage_audit.csv": "cbec2b38e5dffc1bde01f4d865c9a7015b5e79688210eb998e71740765a4ac39",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\additional_family_oof\\coverage_summary.csv": "821063de5d1fe7be94a0272853940abd8b97b6c71a35e7c1e204de339c7b0956",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\additional_family_oof\\per_record_metrics.csv": "bfd11a5ff326bd9d1c7c675ab61a80f53c19d23c9e7629960e7e4ac26d916495",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\additional_family_oof\\record_macro_metrics.csv": "e7c16c04d2d4fc9d9ef243d2ad9b99b86b50494c1e0657dc5e5fb005a38bafee",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\additional_family_oof\\source_fold_macro_metrics.csv": "4e18fdededfe04338190ac82a8a578a97a732d2eb36c56a1d1ea85c30a478c65",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\additional_family_oof\\scoring_audit.json": "3bf9b2cf972042266599603bc39793c85cab5ecb5cd03294f54d141c929fb404",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\planet_full\\metadata.json": "b1efc3079edb0ae387319714c7da37608cc826b958e2508ac09a98ce5455c1cd",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\planet_full\\run_audit.json": "8fdebab3f857f5c1c597977276e2f40f7dd0f54995ad50cc79baa2cd6f27dad6",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\planet_full\\verification_audit.json": "8fdebab3f857f5c1c597977276e2f40f7dd0f54995ad50cc79baa2cd6f27dad6",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\planet_seq\\metadata.json": "1bdb23fe2d65726208009fca87fcffcbfc8a65dc1a0275b38bcd6c3540ecdf9e",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\planet_seq\\run_audit.json": "c6fdf512cda6eaf224b5a4146019b93220ffb2ef765de3b26e36837bdcb03475",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\planet_seq\\verification_audit.json": "c6fdf512cda6eaf224b5a4146019b93220ffb2ef765de3b26e36837bdcb03475",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\rmsf_net\\metadata.json": "d8f341a34686077d91ed61bd256e1eed99408f6b414215ca6494ceefa1c2b14d",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\rmsf_net\\run_audit.json": "e38486b1e146d9002df7c3f7fd71b56ef052ed42d06237ea4a95e4d69a201602",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\baselines\\rmsf_net\\verification_audit.json": "e38486b1e146d9002df7c3f7fd71b56ef052ed42d06237ea4a95e4d69a201602",
+    "C:\\Users\\DELL\\.codex\\worktrees\\4666\\FlexPPI\\paper\\revision_20261002\\experiments\\corrected_pipeline\\backflip2_corrected_scoring\\per_record_metrics.csv": "9c322cc8a9101464818cbbbd8f437a920becc2e4001e0aa918f843a04ebb333a",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\family_folds\\record_family_folds.csv": "04e57e7a773a7c81cf3b97257ed11a705765f2b3cac5872bfd0750f2a85fec55"
+  },
+  "protocols": {
+    "original": {
+      "records": 3063,
+      "common_rmsf_residues": 961321,
+      "methods": 7,
+      "per_record_rows": 21441,
+      "common_fraction": 1.0,
+      "source_support": [
+        {
+          "dataset": "atlas",
+          "records": 1929,
+          "residues": 433207,
+          "biological_systems": 1728
+        },
+        {
+          "dataset": "dynarepo",
+          "records": 890,
+          "residues": 328446,
+          "biological_systems": 790
+        },
+        {
+          "dataset": "itrace",
+          "records": 244,
+          "residues": 199668,
+          "biological_systems": 244
+        }
+      ],
+      "source_fold_support": [
+        {
+          "dataset": "atlas",
+          "fold": 0,
+          "records": 385,
+          "residues": 87005
+        },
+        {
+          "dataset": "atlas",
+          "fold": 1,
+          "records": 386,
+          "residues": 86404
+        },
+        {
+          "dataset": "atlas",
+          "fold": 2,
+          "records": 386,
+          "residues": 89361
+        },
+        {
+          "dataset": "atlas",
+          "fold": 3,
+          "records": 386,
+          "residues": 83176
+        },
+        {
+          "dataset": "atlas",
+          "fold": 4,
+          "records": 386,
+          "residues": 87261
+        },
+        {
+          "dataset": "dynarepo",
+          "fold": 0,
+          "records": 178,
+          "residues": 66170
+        },
+        {
+          "dataset": "dynarepo",
+          "fold": 1,
+          "records": 178,
+          "residues": 64951
+        },
+        {
+          "dataset": "dynarepo",
+          "fold": 2,
+          "records": 176,
+          "residues": 64243
+        },
+        {
+          "dataset": "dynarepo",
+          "fold": 3,
+          "records": 179,
+          "residues": 66050
+        },
+        {
+          "dataset": "dynarepo",
+          "fold": 4,
+          "records": 179,
+          "residues": 67032
+        },
+        {
+          "dataset": "itrace",
+          "fold": 0,
+          "records": 49,
+          "residues": 40030
+        },
+        {
+          "dataset": "itrace",
+          "fold": 1,
+          "records": 48,
+          "residues": 39350
+        },
+        {
+          "dataset": "itrace",
+          "fold": 2,
+          "records": 49,
+          "residues": 39895
+        },
+        {
+          "dataset": "itrace",
+          "fold": 3,
+          "records": 49,
+          "residues": 40049
+        },
+        {
+          "dataset": "itrace",
+          "fold": 4,
+          "records": 49,
+          "residues": 40344
+        }
+      ],
+      "overall": [
+        {
+          "method": "anm",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.715061499255842,
+          "pearson": 0.7001925567521152,
+          "z_mae": 0.45013449438819214,
+          "z_rmse": 0.7354300470836793,
+          "top10_precision": 0.566881135151139
+        },
+        {
+          "method": "flexppi",
+          "mae": 0.5771038628004094,
+          "rmse": 0.7918429533321826,
+          "bias": -0.24155005419970654,
+          "spearman": 0.7961867220004638,
+          "pearson": 0.8213785946234611,
+          "z_mae": 0.3708287945558233,
+          "z_rmse": 0.5608836649781869,
+          "top10_precision": 0.6511466588269841
+        },
+        {
+          "method": "gnm",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.6628077064693031,
+          "pearson": 0.6785233802354521,
+          "z_mae": 0.48708434672714174,
+          "z_rmse": 0.7737724420252641,
+          "top10_precision": 0.5768255045623678
+        },
+        {
+          "method": "intrachain",
+          "mae": 0.6355266012703226,
+          "rmse": 0.8870359173339536,
+          "bias": -0.30522986737574664,
+          "spearman": 0.7765746491094269,
+          "pearson": 0.7854926402635822,
+          "z_mae": 0.39860987007857157,
+          "z_rmse": 0.6130776668319813,
+          "top10_precision": 0.6240901521697256
+        },
+        {
+          "method": "planet_full",
+          "mae": 0.567806467004035,
+          "rmse": 1.1855594262876032,
+          "bias": 0.27360072220140497,
+          "spearman": 0.8283786780926681,
+          "pearson": 0.7161783636190646,
+          "z_mae": 0.36425854827469206,
+          "z_rmse": 0.7125295904006845,
+          "top10_precision": 0.7054466864051651
+        },
+        {
+          "method": "planet_seq",
+          "mae": 0.7140498966313715,
+          "rmse": 1.2991613524116996,
+          "bias": 0.3284614528112892,
+          "spearman": 0.7712654433629202,
+          "pearson": 0.6932924507763,
+          "z_mae": 0.39953288782275787,
+          "z_rmse": 0.7444030615126385,
+          "top10_precision": 0.6418101324228599
+        },
+        {
+          "method": "rmsf_net_pdb",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.6582456477795785,
+          "pearson": 0.6741486418267407,
+          "z_mae": 0.550654961655502,
+          "z_rmse": 0.7855839149407298,
+          "top10_precision": 0.5384877153980607
+        }
+      ],
+      "source": [
+        {
+          "method": "anm",
+          "dataset": "atlas",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.7849698108461283,
+          "pearson": 0.7601322718213751,
+          "z_mae": 0.3908517790432225,
+          "z_rmse": 0.6547241291383862,
+          "top10_precision": 0.6172562380900607
+        },
+        {
+          "method": "anm",
+          "dataset": "dynarepo",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.6354878976544637,
+          "pearson": 0.622391510977799,
+          "z_mae": 0.5222472211301861,
+          "z_rmse": 0.8418596276485206,
+          "top10_precision": 0.5057652717800359
+        },
+        {
+          "method": "anm",
+          "dataset": "itrace",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.45263269748356605,
+          "pearson": 0.5101073943362932,
+          "z_mae": 0.6557739661097975,
+          "z_rmse": 0.9852636086154887,
+          "top10_precision": 0.3915514008523752
+        },
+        {
+          "method": "flexppi",
+          "dataset": "atlas",
+          "mae": 0.6926184114846454,
+          "rmse": 0.9199934515535013,
+          "bias": -0.3324330906814407,
+          "spearman": 0.7883668551622858,
+          "pearson": 0.8378599044485618,
+          "z_mae": 0.3596973336815481,
+          "z_rmse": 0.5306056081136753,
+          "top10_precision": 0.6625484924749215
+        },
+        {
+          "method": "flexppi",
+          "dataset": "dynarepo",
+          "mae": 0.43754623029661976,
+          "rmse": 0.6380152591320138,
+          "bias": -0.0855267506029123,
+          "spearman": 0.7743495778722831,
+          "pearson": 0.7642683483538941,
+          "z_mae": 0.42688336335307775,
+          "z_rmse": 0.6613225005548926,
+          "top10_precision": 0.5967589502141986
+        },
+        {
+          "method": "flexppi",
+          "dataset": "itrace",
+          "mae": 0.17291832393353032,
+          "rmse": 0.3398115466486838,
+          "bias": -0.09215400021561482,
+          "spearman": 0.937660416282949,
+          "pearson": 0.8993936459648346,
+          "z_mae": 0.25436986749402174,
+          "z_rmse": 0.43389927165185355,
+          "top10_precision": 0.7593881488208689
+        },
+        {
+          "method": "gnm",
+          "dataset": "atlas",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.7377197983828848,
+          "pearson": 0.7287813949843747,
+          "z_mae": 0.4423629923728229,
+          "z_rmse": 0.7093043135095792,
+          "top10_precision": 0.6164598570874631
+        },
+        {
+          "method": "gnm",
+          "dataset": "dynarepo",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.5839513663371003,
+          "pearson": 0.6162923924416231,
+          "z_mae": 0.533853636307248,
+          "z_rmse": 0.8557732695542609,
+          "top10_precision": 0.5229359361754403
+        },
+        {
+          "method": "gnm",
+          "dataset": "itrace",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.3582040893232434,
+          "pearson": 0.508186776488879,
+          "z_mae": 0.6700467435434799,
+          "z_rmse": 0.9843391772955467,
+          "top10_precision": 0.460051118674895
+        },
+        {
+          "method": "intrachain",
+          "dataset": "atlas",
+          "mae": 0.7487526858532267,
+          "rmse": 1.0112671385766951,
+          "bias": -0.4712121038061135,
+          "spearman": 0.7753448286761344,
+          "pearson": 0.8139533050176627,
+          "z_mae": 0.3820287434896299,
+          "z_rmse": 0.5697836636554451,
+          "top10_precision": 0.6409038572095206
+        },
+        {
+          "method": "intrachain",
+          "dataset": "dynarepo",
+          "mae": 0.5162282657473567,
+          "rmse": 0.7616092976811606,
+          "bias": -0.007958408575780295,
+          "spearman": 0.7370461106267119,
+          "pearson": 0.7002432547328581,
+          "z_mae": 0.4717127100205919,
+          "z_rmse": 0.7426783022001608,
+          "top10_precision": 0.5519115611763896
+        },
+        {
+          "method": "intrachain",
+          "dataset": "itrace",
+          "mae": 0.1755364432990823,
+          "rmse": 0.36239520304599177,
+          "bias": -0.07732767171096114,
+          "spearman": 0.9304792510169586,
+          "pearson": 0.8714407173608079,
+          "z_mae": 0.2630503030362371,
+          "z_rmse": 0.4826250711346795,
+          "top10_precision": 0.754439779064416
+        },
+        {
+          "method": "planet_full",
+          "dataset": "atlas",
+          "mae": 0.3983287800101136,
+          "rmse": 0.9873001607911539,
+          "bias": 0.04039019787337106,
+          "spearman": 0.8759771451520717,
+          "pearson": 0.78632520196729,
+          "z_mae": 0.3088324908047039,
+          "z_rmse": 0.6140470069449717,
+          "top10_precision": 0.7878393903801881
+        },
+        {
+          "method": "planet_full",
+          "dataset": "dynarepo",
+          "mae": 0.7037409215229891,
+          "rmse": 1.3595952059798504,
+          "bias": 0.4755269979979889,
+          "spearman": 0.751570687278149,
+          "pearson": 0.6213445737178666,
+          "z_mae": 0.45236542632217064,
+          "z_rmse": 0.8498923106391855,
+          "top10_precision": 0.5667902128905714
+        },
+        {
+          "method": "planet_full",
+          "dataset": "itrace",
+          "mae": 1.41182611327209,
+          "rmse": 2.118142537830844,
+          "bias": 1.3807675909301667,
+          "spearman": 0.7322379767292749,
+          "pearson": 0.5075259941040615,
+          "z_mae": 0.48106897203432797,
+          "z_rmse": 0.9900709120146347,
+          "top10_precision": 0.5598267497665131
+        },
+        {
+          "method": "planet_seq",
+          "dataset": "atlas",
+          "mae": 0.49859811788581027,
+          "rmse": 1.0836818918971212,
+          "bias": 0.044054842646128176,
+          "spearman": 0.8255363815644698,
+          "pearson": 0.7587222222444703,
+          "z_mae": 0.3394585903439702,
+          "z_rmse": 0.6558377933631007,
+          "top10_precision": 0.7284417461966924
+        },
+        {
+          "method": "planet_seq",
+          "dataset": "dynarepo",
+          "mae": 0.7816331037503238,
+          "rmse": 1.4216326928043488,
+          "bias": 0.44558242853649244,
+          "spearman": 0.6680796391881872,
+          "pearson": 0.5646201248452412,
+          "z_mae": 0.5002284542584705,
+          "z_rmse": 0.9114009501941689,
+          "top10_precision": 0.4895944172268399
+        },
+        {
+          "method": "planet_seq",
+          "dataset": "itrace",
+          "mae": 2.170842629681864,
+          "rmse": 2.5559662146377833,
+          "bias": 2.149701955324259,
+          "spearman": 0.7185880905953923,
+          "pearson": 0.6453594217457347,
+          "z_mae": 0.5071733210555329,
+          "z_rmse": 0.8354451981269677,
+          "top10_precision": 0.5121363764996419
+        },
+        {
+          "method": "rmsf_net_pdb",
+          "dataset": "atlas",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.6847937854612005,
+          "pearson": 0.7061286286506792,
+          "z_mae": 0.5265210041177326,
+          "z_rmse": 0.7435199452157558,
+          "top10_precision": 0.5635684848329621
+        },
+        {
+          "method": "rmsf_net_pdb",
+          "dataset": "dynarepo",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.6201233243845006,
+          "pearson": 0.6183415056414523,
+          "z_mae": 0.5905441755262727,
+          "z_rmse": 0.8561743473187535,
+          "top10_precision": 0.48927938176337316
+        },
+        {
+          "method": "rmsf_net_pdb",
+          "dataset": "itrace",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.5874157716884738,
+          "pearson": 0.6248820706035021,
+          "z_mae": 0.5959541573332532,
+          "z_rmse": 0.8606491312646396,
+          "top10_precision": 0.5196951444757141
+        }
+      ],
+      "numeric_aggregate_max_tolerance": 1e-11,
+      "common_residues_complete_no_failed_record_exclusion": true,
+      "family_fold_sha256": null
+    },
+    "family": {
+      "records": 3063,
+      "common_rmsf_residues": 961321,
+      "methods": 7,
+      "per_record_rows": 21441,
+      "common_fraction": 1.0,
+      "source_support": [
+        {
+          "dataset": "atlas",
+          "records": 1929,
+          "residues": 433207,
+          "biological_systems": 1728
+        },
+        {
+          "dataset": "dynarepo",
+          "records": 890,
+          "residues": 328446,
+          "biological_systems": 790
+        },
+        {
+          "dataset": "itrace",
+          "records": 244,
+          "residues": 199668,
+          "biological_systems": 244
+        }
+      ],
+      "source_fold_support": [
+        {
+          "dataset": "atlas",
+          "fold": 0,
+          "records": 63,
+          "residues": 12694
+        },
+        {
+          "dataset": "atlas",
+          "fold": 1,
+          "records": 467,
+          "residues": 103330
+        },
+        {
+          "dataset": "atlas",
+          "fold": 2,
+          "records": 467,
+          "residues": 103004
+        },
+        {
+          "dataset": "atlas",
+          "fold": 3,
+          "records": 466,
+          "residues": 105702
+        },
+        {
+          "dataset": "atlas",
+          "fold": 4,
+          "records": 466,
+          "residues": 108477
+        },
+        {
+          "dataset": "dynarepo",
+          "fold": 0,
+          "records": 326,
+          "residues": 123382
+        },
+        {
+          "dataset": "dynarepo",
+          "fold": 1,
+          "records": 141,
+          "residues": 54019
+        },
+        {
+          "dataset": "dynarepo",
+          "fold": 2,
+          "records": 141,
+          "residues": 46824
+        },
+        {
+          "dataset": "dynarepo",
+          "fold": 3,
+          "records": 141,
+          "residues": 50409
+        },
+        {
+          "dataset": "dynarepo",
+          "fold": 4,
+          "records": 141,
+          "residues": 53812
+        },
+        {
+          "dataset": "itrace",
+          "fold": 0,
+          "records": 244,
+          "residues": 199668
+        }
+      ],
+      "overall": [
+        {
+          "method": "anm",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.715061499255842,
+          "pearson": 0.7001925567521152,
+          "z_mae": 0.45013449438819214,
+          "z_rmse": 0.7354300470836793,
+          "top10_precision": 0.566881135151139
+        },
+        {
+          "method": "flexppi",
+          "mae": 0.6158294179764995,
+          "rmse": 0.8337492559510119,
+          "bias": -0.237456253007289,
+          "spearman": 0.7596298494017947,
+          "pearson": 0.7981808838214445,
+          "z_mae": 0.4006290829744477,
+          "z_rmse": 0.5982656405546981,
+          "top10_precision": 0.6297156476596285
+        },
+        {
+          "method": "gnm",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.6628077064693031,
+          "pearson": 0.6785233802354521,
+          "z_mae": 0.48708434672714174,
+          "z_rmse": 0.7737724420252641,
+          "top10_precision": 0.5768255045623678
+        },
+        {
+          "method": "intrachain",
+          "mae": 0.6660571311451702,
+          "rmse": 0.9388537341841343,
+          "bias": -0.3050520361213999,
+          "spearman": 0.7296009198279445,
+          "pearson": 0.7377004535730433,
+          "z_mae": 0.43397360387186606,
+          "z_rmse": 0.6758634653445829,
+          "top10_precision": 0.5938893479271935
+        },
+        {
+          "method": "planet_full",
+          "mae": 0.567806467004035,
+          "rmse": 1.1855594262876032,
+          "bias": 0.27360072220140497,
+          "spearman": 0.8283786780926681,
+          "pearson": 0.7161783636190646,
+          "z_mae": 0.36425854827469206,
+          "z_rmse": 0.7125295904006845,
+          "top10_precision": 0.7054466864051651
+        },
+        {
+          "method": "planet_seq",
+          "mae": 0.7140498966313715,
+          "rmse": 1.2991613524116996,
+          "bias": 0.3284614528112892,
+          "spearman": 0.7712654433629202,
+          "pearson": 0.6932924507763,
+          "z_mae": 0.39953288782275787,
+          "z_rmse": 0.7444030615126385,
+          "top10_precision": 0.6418101324228599
+        },
+        {
+          "method": "rmsf_net_pdb",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.6582456477795785,
+          "pearson": 0.6741486418267407,
+          "z_mae": 0.550654961655502,
+          "z_rmse": 0.7855839149407298,
+          "top10_precision": 0.5384877153980607
+        }
+      ],
+      "source": [
+        {
+          "method": "anm",
+          "dataset": "atlas",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.7849698108461283,
+          "pearson": 0.7601322718213751,
+          "z_mae": 0.3908517790432225,
+          "z_rmse": 0.6547241291383862,
+          "top10_precision": 0.6172562380900607
+        },
+        {
+          "method": "anm",
+          "dataset": "dynarepo",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.6354878976544637,
+          "pearson": 0.622391510977799,
+          "z_mae": 0.5222472211301861,
+          "z_rmse": 0.8418596276485206,
+          "top10_precision": 0.5057652717800359
+        },
+        {
+          "method": "anm",
+          "dataset": "itrace",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.45263269748356605,
+          "pearson": 0.5101073943362932,
+          "z_mae": 0.6557739661097975,
+          "z_rmse": 0.9852636086154887,
+          "top10_precision": 0.3915514008523752
+        },
+        {
+          "method": "flexppi",
+          "dataset": "atlas",
+          "mae": 0.7083744154940577,
+          "rmse": 0.9421095712650511,
+          "bias": -0.3276752059748376,
+          "spearman": 0.7816677018526651,
+          "pearson": 0.8319748288551875,
+          "z_mae": 0.36507082982346784,
+          "z_rmse": 0.5398799290031069,
+          "top10_precision": 0.6577171564519236
+        },
+        {
+          "method": "flexppi",
+          "dataset": "dynarepo",
+          "mae": 0.4803241663246019,
+          "rmse": 0.6740617903940608,
+          "bias": -0.027946911002338825,
+          "spearman": 0.7337927799025172,
+          "pearson": 0.74493131145692,
+          "z_mae": 0.45250960883958663,
+          "z_rmse": 0.6879765890927637,
+          "top10_precision": 0.5831447322411932
+        },
+        {
+          "method": "flexppi",
+          "dataset": "itrace",
+          "mae": 0.3784539005946099,
+          "rmse": 0.5595476006432452,
+          "bias": -0.28840278624501153,
+          "spearman": 0.6796461382404337,
+          "pearson": 0.7252448159293797,
+          "z_mae": 0.4925069612870152,
+          "z_rmse": 0.7326234003257692,
+          "top10_precision": 0.5782123864386051
+        },
+        {
+          "method": "gnm",
+          "dataset": "atlas",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.7377197983828848,
+          "pearson": 0.7287813949843747,
+          "z_mae": 0.4423629923728229,
+          "z_rmse": 0.7093043135095792,
+          "top10_precision": 0.6164598570874631
+        },
+        {
+          "method": "gnm",
+          "dataset": "dynarepo",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.5839513663371003,
+          "pearson": 0.6162923924416231,
+          "z_mae": 0.533853636307248,
+          "z_rmse": 0.8557732695542609,
+          "top10_precision": 0.5229359361754403
+        },
+        {
+          "method": "gnm",
+          "dataset": "itrace",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.3582040893232434,
+          "pearson": 0.508186776488879,
+          "z_mae": 0.6700467435434799,
+          "z_rmse": 0.9843391772955467,
+          "top10_precision": 0.460051118674895
+        },
+        {
+          "method": "intrachain",
+          "dataset": "atlas",
+          "mae": 0.7510380722756022,
+          "rmse": 1.0203613509836513,
+          "bias": -0.48372899354596066,
+          "spearman": 0.765945514563383,
+          "pearson": 0.8110251885219448,
+          "z_mae": 0.3847595920077923,
+          "z_rmse": 0.5759936470639925,
+          "top10_precision": 0.6427435217968925
+        },
+        {
+          "method": "intrachain",
+          "dataset": "dynarepo",
+          "mae": 0.5508563177283833,
+          "rmse": 0.7969817408153473,
+          "bias": 0.01769669297264664,
+          "spearman": 0.6934509990024521,
+          "pearson": 0.6721009482138122,
+          "z_mae": 0.502300734829162,
+          "z_rmse": 0.7785432740114566,
+          "top10_precision": 0.524130557393162
+        },
+        {
+          "method": "intrachain",
+          "dataset": "itrace",
+          "mae": 0.4144197889334361,
+          "rmse": 0.811959805052791,
+          "bias": -0.06971809358748114,
+          "spearman": 0.5741284046231382,
+          "pearson": 0.39729121608650536,
+          "z_mae": 0.5738206626169684,
+          "z_rmse": 1.0908792430074568,
+          "top10_precision": 0.4621091109625973
+        },
+        {
+          "method": "planet_full",
+          "dataset": "atlas",
+          "mae": 0.3983287800101136,
+          "rmse": 0.9873001607911539,
+          "bias": 0.04039019787337106,
+          "spearman": 0.8759771451520717,
+          "pearson": 0.78632520196729,
+          "z_mae": 0.3088324908047039,
+          "z_rmse": 0.6140470069449717,
+          "top10_precision": 0.7878393903801881
+        },
+        {
+          "method": "planet_full",
+          "dataset": "dynarepo",
+          "mae": 0.7037409215229891,
+          "rmse": 1.3595952059798504,
+          "bias": 0.4755269979979889,
+          "spearman": 0.751570687278149,
+          "pearson": 0.6213445737178666,
+          "z_mae": 0.45236542632217064,
+          "z_rmse": 0.8498923106391855,
+          "top10_precision": 0.5667902128905714
+        },
+        {
+          "method": "planet_full",
+          "dataset": "itrace",
+          "mae": 1.41182611327209,
+          "rmse": 2.118142537830844,
+          "bias": 1.3807675909301667,
+          "spearman": 0.7322379767292749,
+          "pearson": 0.5075259941040615,
+          "z_mae": 0.48106897203432797,
+          "z_rmse": 0.9900709120146347,
+          "top10_precision": 0.5598267497665131
+        },
+        {
+          "method": "planet_seq",
+          "dataset": "atlas",
+          "mae": 0.49859811788581027,
+          "rmse": 1.0836818918971212,
+          "bias": 0.044054842646128176,
+          "spearman": 0.8255363815644698,
+          "pearson": 0.7587222222444703,
+          "z_mae": 0.3394585903439702,
+          "z_rmse": 0.6558377933631007,
+          "top10_precision": 0.7284417461966924
+        },
+        {
+          "method": "planet_seq",
+          "dataset": "dynarepo",
+          "mae": 0.7816331037503238,
+          "rmse": 1.4216326928043488,
+          "bias": 0.44558242853649244,
+          "spearman": 0.6680796391881872,
+          "pearson": 0.5646201248452412,
+          "z_mae": 0.5002284542584705,
+          "z_rmse": 0.9114009501941689,
+          "top10_precision": 0.4895944172268399
+        },
+        {
+          "method": "planet_seq",
+          "dataset": "itrace",
+          "mae": 2.170842629681864,
+          "rmse": 2.5559662146377833,
+          "bias": 2.149701955324259,
+          "spearman": 0.7185880905953923,
+          "pearson": 0.6453594217457347,
+          "z_mae": 0.5071733210555329,
+          "z_rmse": 0.8354451981269677,
+          "top10_precision": 0.5121363764996419
+        },
+        {
+          "method": "rmsf_net_pdb",
+          "dataset": "atlas",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.6847937854612005,
+          "pearson": 0.7061286286506792,
+          "z_mae": 0.5265210041177326,
+          "z_rmse": 0.7435199452157558,
+          "top10_precision": 0.5635684848329621
+        },
+        {
+          "method": "rmsf_net_pdb",
+          "dataset": "dynarepo",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.6201233243845006,
+          "pearson": 0.6183415056414523,
+          "z_mae": 0.5905441755262727,
+          "z_rmse": 0.8561743473187535,
+          "top10_precision": 0.48927938176337316
+        },
+        {
+          "method": "rmsf_net_pdb",
+          "dataset": "itrace",
+          "mae": null,
+          "rmse": null,
+          "bias": null,
+          "spearman": 0.5874157716884738,
+          "pearson": 0.6248820706035021,
+          "z_mae": 0.5959541573332532,
+          "z_rmse": 0.8606491312646396,
+          "top10_precision": 0.5196951444757141
+        }
+      ],
+      "numeric_aggregate_max_tolerance": 1e-11,
+      "common_residues_complete_no_failed_record_exclusion": true,
+      "family_fold_sha256": "04e57e7a773a7c81cf3b97257ed11a705765f2b3cac5872bfd0750f2a85fec55"
+    }
+  },
+  "certificates": {
+    "rmsf_net": {
+      "status": "complete",
+      "verified_records": 3063,
+      "verified_items": 3063,
+      "verified_residues": 961321,
+      "failure_count": 0,
+      "completed_utc": "2026-10-12T00:29:33Z",
+      "existing_certificate_sha256": "e38486b1e146d9002df7c3f7fd71b56ef052ed42d06237ea4a95e4d69a201602",
+      "existing_verification_sha256": "e38486b1e146d9002df7c3f7fd71b56ef052ed42d06237ea4a95e4d69a201602",
+      "metadata": {
+        "manifest_sha256": "c2b7c7b28fb0bff98b3609380eedb5fab8464432e42660a2186cb21bcfdbac30",
+        "cohort_freeze_sha256": "b58795275fa2843a502fdbb68f417f9a2b0b80f76e28d226ad5d58c9bf430a91",
+        "weights_sha256": "cd12dce9489ed57c5b0b8d5400161e1b4e165963622dc78323fdeb07651d8c9b",
+        "adapter_sha256": "d4e3606d5d7678251e7615e87987dadfb65a2162b9dd0ab5427368fe13e5c6e1",
+        "code_sha256": "e7fc76342048cb2827142f8e1a22e0a069bbcfc7b1db5c1d1c7a71113bc5ebf2",
+        "source_commit": "eb353b0d9d909a6c46d2808467a9d0f16e2bbda7",
+        "density": "Chimera molmap reproduction: resolution4A, spacing1.5A, atomic-number Gaussian, edge12A",
+        "device": "cpu",
+        "threads": 2,
+        "batch_size": 2,
+        "output": "Relative pre-normalization score expm1(log(10)*network_output), mean over protein heavy atoms; no fitted Angstrom calibration"
+      },
+      "completion_checker_rerun": false
+    },
+    "planet_full": {
+      "status": "complete",
+      "verified_records": 3063,
+      "verified_items": 4973,
+      "verified_residues": 961321,
+      "failure_count": 0,
+      "completed_utc": "2026-10-10T13:12:04Z",
+      "existing_certificate_sha256": "8fdebab3f857f5c1c597977276e2f40f7dd0f54995ad50cc79baa2cd6f27dad6",
+      "existing_verification_sha256": "8fdebab3f857f5c1c597977276e2f40f7dd0f54995ad50cc79baa2cd6f27dad6",
+      "metadata": {
+        "manifest_sha256": "5d77d385daff97fb259c875432b976eb1416ba9a5034b6007fc0ba9fd8864074",
+        "weights_sha256": "b31a5eb353e773c346a413fbca7e63735a6ab53249a628073a7c01ceee393bf9",
+        "code_sha256": "fae56fc2df6dfa50f8aa1301020d3a07b7bb70ccffc5408d615e3e99c93dc910",
+        "variant": "full",
+        "structure_feature_stage": "encoded",
+        "device": "cpu",
+        "input": "Independent chain from corrected frozen first static structure; exact original residue mapping",
+        "temperature_policy": "Released default300K for every input, preserving the static sequence/structure-only baseline protocol",
+        "esm_loading_policy": "Load the exact released float32 weights on CPU before transfer to inference device, avoiding simultaneous duplicate GPU state dictionaries; no dtype or weight changes",
+        "rmsf_native_unit": "nm from unscaled MDTraj md.rmsf labels in released preprocessing",
+        "rmsf_conversion": "10*native_nm to Angstrom, no fitted calibration",
+        "limitations": "Released weights may overlap ATLAS/mdCATH; independent-chain input does not encode partners; SHP is not the chi-state entropy target."
+      },
+      "completion_checker_rerun": false
+    },
+    "planet_seq": {
+      "status": "complete",
+      "verified_records": 3063,
+      "verified_items": 4973,
+      "verified_residues": 961321,
+      "failure_count": 0,
+      "completed_utc": "2026-10-10T12:10:48Z",
+      "existing_certificate_sha256": "c6fdf512cda6eaf224b5a4146019b93220ffb2ef765de3b26e36837bdcb03475",
+      "existing_verification_sha256": "c6fdf512cda6eaf224b5a4146019b93220ffb2ef765de3b26e36837bdcb03475",
+      "metadata": {
+        "manifest_sha256": "5d77d385daff97fb259c875432b976eb1416ba9a5034b6007fc0ba9fd8864074",
+        "weights_sha256": "54f8ee6df8ed0c45e33995431b720cb7676b38d7521a5101602fae58f574e243",
+        "code_sha256": "fae56fc2df6dfa50f8aa1301020d3a07b7bb70ccffc5408d615e3e99c93dc910",
+        "variant": "seq",
+        "structure_feature_stage": "encoded",
+        "device": "cpu",
+        "input": "Independent chain from corrected frozen first static structure; exact original residue mapping",
+        "temperature_policy": "Released default300K for every input, preserving the static sequence/structure-only baseline protocol",
+        "esm_loading_policy": "Load the exact released float32 weights on CPU before transfer to inference device, avoiding simultaneous duplicate GPU state dictionaries; no dtype or weight changes",
+        "rmsf_native_unit": "nm from unscaled MDTraj md.rmsf labels in released preprocessing",
+        "rmsf_conversion": "10*native_nm to Angstrom, no fitted calibration",
+        "limitations": "Released weights may overlap ATLAS/mdCATH; independent-chain input does not encode partners; SHP is not the chi-state entropy target."
+      },
+      "completion_checker_rerun": false
+    }
+  },
+  "raw_residue_spotchecks": [
+    {
+      "protocol": "original",
+      "sample_id": "16pk_A",
+      "method": "flexppi",
+      "residues": 415,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "original",
+      "sample_id": "16pk_A",
+      "method": "intrachain",
+      "residues": 415,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "original",
+      "sample_id": "16pk_A",
+      "method": "planet_full",
+      "residues": 415,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "original",
+      "sample_id": "16pk_A",
+      "method": "planet_seq",
+      "residues": 415,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "original",
+      "sample_id": "16pk_A",
+      "method": "rmsf_net_pdb",
+      "residues": 415,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "original",
+      "sample_id": "16pk_A",
+      "method": "anm",
+      "residues": 415,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "original",
+      "sample_id": "16pk_A",
+      "method": "gnm",
+      "residues": 415,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "original",
+      "sample_id": "1a62_A",
+      "method": "flexppi",
+      "residues": 130,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "original",
+      "sample_id": "1a62_A",
+      "method": "intrachain",
+      "residues": 130,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "original",
+      "sample_id": "1a62_A",
+      "method": "planet_full",
+      "residues": 130,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "original",
+      "sample_id": "1a62_A",
+      "method": "planet_seq",
+      "residues": 130,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "original",
+      "sample_id": "1a62_A",
+      "method": "rmsf_net_pdb",
+      "residues": 130,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "original",
+      "sample_id": "1a62_A",
+      "method": "anm",
+      "residues": 130,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "original",
+      "sample_id": "1a62_A",
+      "method": "gnm",
+      "residues": 130,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "family",
+      "sample_id": "16pk_A",
+      "method": "flexppi",
+      "residues": 415,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "family",
+      "sample_id": "16pk_A",
+      "method": "intrachain",
+      "residues": 415,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "family",
+      "sample_id": "16pk_A",
+      "method": "planet_full",
+      "residues": 415,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "family",
+      "sample_id": "16pk_A",
+      "method": "planet_seq",
+      "residues": 415,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "family",
+      "sample_id": "16pk_A",
+      "method": "rmsf_net_pdb",
+      "residues": 415,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "family",
+      "sample_id": "16pk_A",
+      "method": "anm",
+      "residues": 415,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "family",
+      "sample_id": "16pk_A",
+      "method": "gnm",
+      "residues": 415,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "family",
+      "sample_id": "1a62_A",
+      "method": "flexppi",
+      "residues": 130,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "family",
+      "sample_id": "1a62_A",
+      "method": "intrachain",
+      "residues": 130,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "family",
+      "sample_id": "1a62_A",
+      "method": "planet_full",
+      "residues": 130,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "family",
+      "sample_id": "1a62_A",
+      "method": "planet_seq",
+      "residues": 130,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "family",
+      "sample_id": "1a62_A",
+      "method": "rmsf_net_pdb",
+      "residues": 130,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "family",
+      "sample_id": "1a62_A",
+      "method": "anm",
+      "residues": 130,
+      "all_reported_metrics_recomputed_and_match": true
+    },
+    {
+      "protocol": "family",
+      "sample_id": "1a62_A",
+      "method": "gnm",
+      "residues": 130,
+      "all_reported_metrics_recomputed_and_match": true
+    }
+  ],
+  "PLANET_formal_unit_spotchecks": [
+    {
+      "method": "planet_full",
+      "input_id": "chain_c963eebb432fe882db450510",
+      "dtype": "float32",
+      "n": 415,
+      "conversion_exact": true,
+      "min_angstrom": 0.57304447889328
+    },
+    {
+      "method": "planet_full",
+      "input_id": "chain_83b6b94f7c0b6211c546aad8",
+      "dtype": "float32",
+      "n": 130,
+      "conversion_exact": true,
+      "min_angstrom": 0.5440212488174438
+    },
+    {
+      "method": "planet_seq",
+      "input_id": "chain_c963eebb432fe882db450510",
+      "dtype": "float32",
+      "n": 415,
+      "conversion_exact": true,
+      "min_angstrom": 0.5041052103042603
+    },
+    {
+      "method": "planet_seq",
+      "input_id": "chain_83b6b94f7c0b6211c546aad8",
+      "dtype": "float32",
+      "n": 130,
+      "conversion_exact": true,
+      "min_angstrom": 0.4869866371154785
+    }
+  ],
+  "public_weight_predictions_identical_between_original_and_family_scores": true,
+  "backflip2_prior_scoring": {
+    "records": 3063,
+    "common_residues": 961321,
+    "overall": {
+      "mae": 0.5367914910893704,
+      "rmse": 0.7866903019813936,
+      "bias": 0.27367246154898395,
+      "spearman": 0.847847345401637,
+      "pearson": 0.8327206578879516
+    },
+    "caveat": "Existing prior corrected scoring supports the same records and residue counts; BackFlip2 is not a method inside the newly generated seven-way intersection CSV."
+  },
+  "comparisons": {
+    "planet_full_vs_original_Full_mae_percent_reduction": 1.6110437645068811,
+    "Full_vs_Intra_original_mae_percent_reduction": 9.192807720893962,
+    "Full_vs_Intra_family_mae_percent_reduction": 7.541051783698018,
+    "planet_full_original_Full_MAE_difference": -0.009297395796374341,
+    "planet_full_original_Full_RMSE_difference": 0.39371647295542067
+  },
+  "table1_additions": [
+    {
+      "method": "planet_full",
+      "RMSF_MAE_angstrom": 0.567806467004035,
+      "RMSF_Spearman": 0.8283786780926681,
+      "Hchi_MAE_nats": null,
+      "Hchi_Spearman": null,
+      "zMAE_unitless": 0.364258548274692,
+      "scope_records": 3063,
+      "scope_residues": 961321,
+      "released_weights": true,
+      "same_training_labels_as_FlexPPI": false
+    },
+    {
+      "method": "planet_seq",
+      "RMSF_MAE_angstrom": 0.7140498966313715,
+      "RMSF_Spearman": 0.7712654433629202,
+      "Hchi_MAE_nats": null,
+      "Hchi_Spearman": null,
+      "zMAE_unitless": 0.3995328878227578,
+      "scope_records": 3063,
+      "scope_residues": 961321,
+      "released_weights": true,
+      "same_training_labels_as_FlexPPI": false
+    },
+    {
+      "method": "rmsf_net_pdb",
+      "RMSF_MAE_angstrom": null,
+      "RMSF_Spearman": 0.6582456477795785,
+      "Hchi_MAE_nats": null,
+      "Hchi_Spearman": null,
+      "zMAE_unitless": 0.550654961655502,
+      "scope_records": 3063,
+      "scope_residues": 961321,
+      "released_weights": true,
+      "same_training_labels_as_FlexPPI": false
+    }
+  ],
+  "family_ITrace_single_fold": {
+    "records": 244,
+    "fold": 0,
+    "caveat": "All ITrace records are assigned to one family fold, so source-level across-five-fold uncertainty for ITrace is not estimable from this table."
+  },
+  "scientific_limits": [
+    "RMSF-net PDB uses a reproduced simulated 4A density grid, not measured cryo-EM density; numerical identity to the original Chimera molmap executable has not been established.",
+    "RMSF-net, ANM and GNM scores have no fitted Angstrom scale, so their MAE/RMSE/bias fields are not absolute RMSF errors.",
+    "PLANET full uses released encoded features; seq ignores structure features; defaults use 300K and float32 weights without calibration.",
+    "Public pretraining data and possible ATLAS/mdCATH overlap have not been audited per item, so this is a released-weight comparison, not same-training-corpus retraining.",
+    "Released baseline predictions remain unchanged when FlexPPI is retrained under family folds; do not call their full-cohort results new family-held-out training results.",
+    "SHP is not the paper joint discrete chi-state entropy; no Hchi scores are supplied by these methods.",
+    "Overall means weight records equally; ATLAS has 1929/3063 records and can dominate the pooled rank and MAE. Source strata are required."
+  ],
+  "completion_checker_rerun": false,
+  "certificates_modified": false,
+  "DOCX_modified": false,
+  "pipeline_modified": false
+}

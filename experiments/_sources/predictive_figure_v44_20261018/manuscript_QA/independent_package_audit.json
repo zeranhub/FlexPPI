@@ -1,0 +1,108 @@
+{
+  "status": "passed",
+  "document": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v44_20261018_中文修订_预测一致性与高动态识别_三线表.docx",
+  "document_sha256": "4156791ba646d8137754386ea387b920aaaf1bdac041614414a17028915ffcab",
+  "source_document_sha256": "5d32c2af90a6aa8268ac0ef50ba46480370fc798bcc890d91fa71123dfb51c5a",
+  "checks": {
+    "source_v43_SHA_matches": true,
+    "10_native_three_line_tables_identical": true,
+    "36_OMML_equations_identical": true,
+    "28_references_identical": true,
+    "comments_parts_identical": true,
+    "all_comment_bookmark_anchors_identical": true,
+    "only_document_and_Fig2_media_part_changed": true,
+    "no_package_parts_added_or_removed": true,
+    "all_other_body_nodes_exactly_preserved": true,
+    "all_replacement_paragraphs_present_once": true,
+    "all_insertion_paragraphs_present_once": true,
+    "Fig2_caption_matches_reviewed_asset": true,
+    "six_images_same_order_and_Fig5_unchanged": true,
+    "five_numbered_main_captions": true,
+    "removed_Fig2_panels_not_described_as_active": true
+  },
+  "changed_parts": [
+    "word/document.xml",
+    "word/media/image2.png"
+  ],
+  "missing_protected_body_nodes": [],
+  "replacement_matches": [
+    {
+      "prefix": "在3,063条记录的五折体系留出评价中，FlexPPI",
+      "count": 1,
+      "old_removed": true
+    },
+    {
+      "prefix": "完整结构编码相对仅链内编码",
+      "count": 1,
+      "old_removed": true
+    },
+    {
+      "prefix": "同类型残基比较检验模型",
+      "count": 1,
+      "old_removed": true
+    },
+    {
+      "prefix": "氨基酸类型均值对照的整体Hχ相关已达",
+      "count": 1,
+      "old_removed": true
+    },
+    {
+      "prefix": "RMSF方面，完整模型在20种氨基酸类型",
+      "count": 1,
+      "old_removed": true
+    }
+  ],
+  "insertions": [
+    {
+      "prefix": "高动态位点筛选以每条记录MD参考的第90百分位及以上为阳性，",
+      "count": 1
+    },
+    {
+      "prefix": "进一步将连续预测用于高动态位点筛选，以每条记录MD参考第90",
+      "count": 1
+    },
+    {
+      "prefix": "在同一记录、同一种氨基酸内重新定义高熵位置后，完整模型的平均",
+      "count": 1
+    }
+  ],
+  "active_images": [
+    {
+      "body_index": 13,
+      "rid": "rId9",
+      "part": "word/media/image1.png",
+      "sha256": "976bdb77088f0425e630acf7b531a34e20ecf5fa9214ee6411c3eefc179e1d32"
+    },
+    {
+      "body_index": 75,
+      "rid": "rId10",
+      "part": "word/media/image2.png",
+      "sha256": "ac1466e072178be049d29671693060c9c6eba7118f500f259312a2732872ebf0"
+    },
+    {
+      "body_index": 87,
+      "rid": "rId13",
+      "part": "word/media/image5.png",
+      "sha256": "83bcb6404c62c7b541ff1c61d412448f4d6a5d7cffd6d2f43d8170d6ed04e842"
+    },
+    {
+      "body_index": 91,
+      "rid": "rId52",
+      "part": "word/media/image41.png",
+      "sha256": "7aeb3df40999b5aab3748a055eb9b2545f224ab4a13cd941e9898d203784f107"
+    },
+    {
+      "body_index": 105,
+      "rid": "rId51",
+      "part": "word/media/image40.png",
+      "sha256": "7862c4e86455eb0a45c0a96e6b5dd357a912f76ad828e2e6b26992ad8ac8b6b3"
+    },
+    {
+      "body_index": 150,
+      "rid": "rId15",
+      "part": "word/media/image7.png",
+      "sha256": "5c50b94c828278e61e7d5fd6e7f0a01d0b5fd7235f332416d315f35215618e98"
+    }
+  ],
+  "figure2_sha256": "ac1466e072178be049d29671693060c9c6eba7118f500f259312a2732872ebf0"
+}

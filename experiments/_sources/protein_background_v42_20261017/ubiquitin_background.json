@@ -1,0 +1,65 @@
+{
+  "task": "为v41泛素–EDD UBA实例补充具体蛋白背景；只提供提案，未改DOCX或图",
+  "recommended_result_location": "3.6.1第一段开头，以四句替换原首句，随后直接接原有完整模型在泛素链的预测结果",
+  "original_result_sentence": "泛素–EDD UBA复合物提供同类型侧链的留出验证[23]。",
+  "recommended_paragraph": "泛素是一种由76个氨基酸组成的小蛋白，通过共价连接到其它蛋白，为蛋白质降解等过程提供分子标记[23]。EDD（又称UBR5）属于HECT家族的E3泛素连接酶，其N端含有结合泛素的泛素关联结构域（ubiquitin-associated domain，UBA）。2QHO结构显示，EDD UBA通过α1螺旋末端及α3螺旋识别泛素含I44的β折叠表面，以疏水接触和氢键形成结合界面[23]。该复合物中的Q2、Q41和Q62同属具有三个χ角的谷氨酰胺，但处于不同位置和局部环境，适合检验模型能否区分同一种侧链的取向多样性。",
+  "optional_method_location": "2.7泛素实例方法段第一句；只展开蛋白名称和缩写，其余取样、标签与图示方法保持原样",
+  "original_method_sentence": "侧链实例使用泛素–EDD UBA复合物2QHO对应的DynaRepo记录A003R[23]，输入完整两链结构，采用第0折留出预测及主评价标签。",
+  "recommended_method_sentence": "侧链实例使用泛素与EDD（UBR5）的泛素关联结构域（ubiquitin-associated domain，UBA）复合物2QHO所对应的DynaRepo记录A003R[23]，输入完整两链结构，采用第0折留出预测及主评价标签。",
+  "reference_strategy": "复用现有[23]；原始论文足以支持泛素76残基、泛素化与降解、EDD的HECT E3类别、UBA缩写及2QHO结合结构。UBR5是EDD的现行名称，由NCBI Gene同义名核对，不必仅为同义名增添正文参考文献。建议为[23]补上已验证DOI。",
+  "reference23_verified": {
+    "authors": ["Guennadi Kozlov", "Long Nguyen", "Tong Lin", "Gregory De Crescenzo", "Morag Park", "Kalle Gehring"],
+    "title": "Structural basis of ubiquitin recognition by the ubiquitin-associated (UBA) domain of the ubiquitin ligase EDD",
+    "journal": "Journal of Biological Chemistry",
+    "year": 2007,
+    "volume": "282",
+    "issue": "49",
+    "pages": "35787–35795",
+    "doi": "10.1074/jbc.M705655200",
+    "pmid": "17897937"
+  },
+  "sources": [
+    {
+      "id": "paper23_pubmed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17897937/",
+      "type": "原始研究PubMed摘要和元数据",
+      "supports": ["EDD是HECT家族E3泛素连接酶", "N端UBA结合泛素", "UBA缩写为ubiquitin-associated", "1.85 Å复合物晶体结构及α1/α3识别", "结合界面的氢键与位点突变验证"]
+    },
+    {
+      "id": "paper23_fulltext_author_repository",
+      "url": "https://publications.polymtl.ca/21780/1/2007_Kozlov_Structural_Basis_Ubiquitin_Recognitioin_Ubiquitin-based.pdf",
+      "type": "作者机构保存的期刊正式开放全文，已实际下载到内存并用pypdf读取",
+      "supports": ["35787页引言：泛素含76残基，通过异肽键连接底物，泛素/蛋白酶体途径调控蛋白降解", "35788页方法：人EDD UBA构建为180–230位；晶体采用野生型构建；泛素样品来源为牛", "35791页EDD UBA-Ubiquitin Recognition Elements：界面由泛素β折叠表面与EDD UBA α1末端/α3构成；Leu224接触泛素Val70、Ile44、Gln49、Arg42围成的凹槽；疏水相互作用及多种氢键"]
+    },
+    {
+      "id": "pdb_2qho",
+      "url": "https://www.rcsb.org/structure/2QHO",
+      "api_url": "https://data.rcsb.org/rest/v1/core/entry/2QHO",
+      "type": "原始结构数据库",
+      "supports": ["2QHO为EDD UBA与泛素复合物", "X射线分辨率1.85 Å", "两个蛋白实体，泛素76残基、EDD UBA实验构建53残基", "原始论文DOI和作者对应正确"]
+    },
+    {
+      "id": "ncbi_gene_ubr5",
+      "url": "https://www.ncbi.nlm.nih.gov/datasets/gene/51366/",
+      "alternate_url": "https://www.ncbi.nlm.nih.gov/gene/51366/",
+      "type": "NCBI官方基因注释",
+      "supports": ["人UBR5的同义名包括EDD、HYD、EDD1", "UBR5属于HECT家族E3泛素连接酶"]
+    }
+  ],
+  "claim_audit": [
+    {"claim": "泛素76残基及其共价标记/降解作用", "basis": "paper23引言", "status": "直接支持"},
+    {"claim": "EDD=UBR5及HECT E3类别", "basis": "NCBI官方同义名+paper23", "status": "直接支持"},
+    {"claim": "UBA是泛素关联结构域，结合泛素", "basis": "paper23缩写表、摘要与结构结果", "status": "直接支持"},
+    {"claim": "α1末端及α3通过疏水接触/氢键结合泛素β折叠表面", "basis": "paper23全文35791页Recognition Elements", "status": "直接支持"},
+    {"claim": "Q2、Q41、Q62同类型三χ角、适合检验局部环境差异", "basis": "本研究既有序列映射/侧链定义和原稿全66位及Q位点预测/MD对照", "status": "本研究分析动机；不归为原文功能机制"}
+  ],
+  "do_not_claim": [
+    "Q2或Q41是EDD识别的功能热点、调控开关或特异性决定残基",
+    "Q2/Q41/Q62的侧链熵差异导致UBA结合强弱变化",
+    "该MD案例模拟了泛素转移或蛋白降解反应",
+    "2QHO包含完整EDD/UBR5蛋白",
+    "UBA结构域等同E1泛素激活酶UBA1",
+    "所有泛素标记都导致蛋白降解"
+  ],
+  "editing_scope": "仅为泛素实例加背景及展开方法缩写；不改变任何数字、选点、图7、自由能方法/结果，不添加弱侧链功能推断。"
+}

@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "no_gpu_used": true,
+  "no_inference_performed": true,
+  "checked_utc": "2026-10-10T07:40:27Z",
+  "cohort_freeze_sha256": "b58795275fa2843a502fdbb68f417f9a2b0b80f76e28d226ad5d58c9bf430a91",
+  "records": 3063,
+  "chains": 4973,
+  "valid_rmsf": 961321,
+  "verified_execution_files": {
+    "cohort/cohort_freeze.json": "b58795275fa2843a502fdbb68f417f9a2b0b80f76e28d226ad5d58c9bf430a91",
+    "planet_payload_freeze.json": "8f06e3b0adf617b6d3f846421996e6ff44ce070da1b6f831ddb59c51b5bf1d39",
+    "run_rmsf_net_3063.py": "e7fc76342048cb2827142f8e1a22e0a069bbcfc7b1db5c1d1c7a71113bc5ebf2",
+    "rmsf_net_pdb_adapter.py": "d4e3606d5d7678251e7615e87987dadfb65a2162b9dd0ab5427368fe13e5c6e1",
+    "RMSF-net/model.py": "5a59cfde470c3b1ec18397517dfbf1f6d9bb1e1284beb69c2dffc308e1ea22e8",
+    "RMSF-net/model_cpu/sim_model.pth": "cd12dce9489ed57c5b0b8d5400161e1b4e165963622dc78323fdeb07651d8c9b",
+    "run_planet_md_3063.py": "fae56fc2df6dfa50f8aa1301020d3a07b7bb70ccffc5408d615e3e99c93dc910",
+    "verify_additional_baselines.py": "7353a155f4be8a79656cf81309cb2a60fe05329c1bd77abeda17d82fcdd49d18",
+    "score_common_residues.py": "2823f0a6cb72da47b48144a175d5eb4011811160d7a1c6a744a074c0d71bb619",
+    "planet_cpu_smoke_audit_20261010/smoke_audit.json": "b92b7b88afd64f74c8c22d9d77a6594d8c5cc3be6515ee7de27d84d3d07c4e56",
+    "planet_cpu_smoke_audit_20261010/SMOKE_PASSED": "c42616cf3f7224622b6eb5428bbb7bc44b8f9169a6e757748dc91f90dfe06345",
+    "run_planet_cpu_queue.py": "034a7fdfc5b6bc39164bb43f23518d09586863af186ece495275965c3910e602"
+  },
+  "frozen_payload_files": 53,
+  "frozen_payload_bytes": 3666680986,
+  "cpu_smoke_passed": [
+    {
+      "variant": "full",
+      "input_id": "chain_c963eebb432fe882db450510",
+      "output_sha256": "785fbd1e8691667f1f2df53519e6a56c1ce3ec50949df1049192b338cfb463d5"
+    },
+    {
+      "variant": "full",
+      "input_id": "chain_83b6b94f7c0b6211c546aad8",
+      "output_sha256": "e741f798fdbaab772d53b2341335e167672db2712d2110b63323ac1adfd7208f"
+    },
+    {
+      "variant": "seq",
+      "input_id": "chain_c963eebb432fe882db450510",
+      "output_sha256": "57ed4048e45070e947bb4926ce2f9debafd61d02a4d7866be34b66937d73be54"
+    },
+    {
+      "variant": "seq",
+      "input_id": "chain_83b6b94f7c0b6211c546aad8",
+      "output_sha256": "2229c54bdd1121e722c4049683d5f26e07a17e057aa641624a172a96f75392e9"
+    }
+  ],
+  "environment_ready_sha256": "4473d1827123965bfcd3f8129c705bfc108449f2160f18214acae887bcc1796b",
+  "checker_sha256": "913e5e516308c69006de6f253583ce2f9f8d30b0081626523d005be8f8355f34"
+}

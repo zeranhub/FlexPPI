@@ -1,0 +1,13 @@
+{
+  "manifest_sha256": "c2b7c7b28fb0bff98b3609380eedb5fab8464432e42660a2186cb21bcfdbac30",
+  "cohort_freeze_sha256": "b58795275fa2843a502fdbb68f417f9a2b0b80f76e28d226ad5d58c9bf430a91",
+  "weights_sha256": "cd12dce9489ed57c5b0b8d5400161e1b4e165963622dc78323fdeb07651d8c9b",
+  "adapter_sha256": "d4e3606d5d7678251e7615e87987dadfb65a2162b9dd0ab5427368fe13e5c6e1",
+  "code_sha256": "e7fc76342048cb2827142f8e1a22e0a069bbcfc7b1db5c1d1c7a71113bc5ebf2",
+  "source_commit": "eb353b0d9d909a6c46d2808467a9d0f16e2bbda7",
+  "density": "Chimera molmap reproduction: resolution4A, spacing1.5A, atomic-number Gaussian, edge12A",
+  "device": "cpu",
+  "threads": 2,
+  "batch_size": 2,
+  "output": "Relative pre-normalization score expm1(log(10)*network_output), mean over protein heavy atoms; no fitted Angstrom calibration"
+}

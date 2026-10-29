@@ -1,0 +1,9 @@
+v41 KRAS G12D实例复现材料
+
+主文档位于本目录上两级，文件名paper_v41_20261017_中文修订_KRAS新抗原动态响应_三线表.docx。该版本替换v40中的旧TCR实例，正文3.5、图6；泛素与自由能仍为3.6和图7。交付文稿为中文，图中可见文字为英文，所有10表仍为原生三线表。
+
+figure6包含最终PNG/PDF/SVG、逐点预测与三重复MD源数据、统计定义、原始结构渲染、PyMOL会话和脚本。主图只用当前Full模型。case_sources保留所用结构输入、模型划分核验、全残基参考表、静态结构检查及原始文献摘录，source_manifest逐文件记录来源和SHA256。原始XTC轨迹仍在ITrace数据目录，未重复打包。
+
+build_v41.py仅修改原稿包内document.xml和原图6的PNG，其余部件保持字节相同。text_review包含科学叙述与私有控制有效性核验；integration_audit含原包/新包逐部件比较；manuscript_QA记录29页逐张视觉检查和文稿SHA256。export_v41_word.ps1和render_v41.py为实际渲染路径。
+
+CURRENT_FIGURE_MAP.json指向本稿全部图源。图1–5、图7及S1沿用v39图源，本目录只重建图6。所有分析、图源和文稿均可追溯到模型及既有MD参考；本次替换不新增MD、训练或推理。

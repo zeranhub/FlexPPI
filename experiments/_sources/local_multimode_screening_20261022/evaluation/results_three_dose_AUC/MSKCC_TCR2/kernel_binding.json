@@ -1,0 +1,44 @@
+{
+  "kernel_settings": {
+    "sequence": {
+      "median_positive_distance": 0.2222222222222222,
+      "constant_block": false,
+      "label_values_used": false
+    },
+    "static": {
+      "median_positive_distance": 1.1507849870632105,
+      "constant_block": false,
+      "label_values_used": false,
+      "unlabeled_full_pool_RMS_scales": [
+        8.949337614973693,
+        2.507343302994203
+      ]
+    },
+    "R": {
+      "median_positive_distance": 0.02480180871841209,
+      "constant_block": false,
+      "label_values_used": false,
+      "profile_dimensions": 100
+    },
+    "H": {
+      "median_positive_distance": 0.0254874311219039,
+      "constant_block": false,
+      "label_values_used": false,
+      "profile_dimensions": 87
+    }
+  },
+  "source_bindings": {
+    "template_sha256": "284d74d5afadd2b8a2725889d6d20c8e22517c47e66b21bf26cca267ca886012",
+    "regions_sha256": "08ac3ae5fcda3a747764515f0066badbf490c5dfdc8b9ca55aa31b53948914de",
+    "training_reference_sha256": "820d2e844ee6b6d93502df8bcfc879d0169f2b60592591f487920cb995c3537f"
+  },
+  "hit_rule": {
+    "kind": "relative_top_decile",
+    "cutoff": 0.9844442519625679,
+    "not_absolute_improvement": true,
+    "only_offline_scoring_knows_cutoff": true
+  },
+  "labels_sha256": "c468e168214ccea48c1fdc34c5f61e5955bbacc656e6497d14e889c5ddfdb99e",
+  "features_sha256": "932dbb618c8e6cb0e084002fc1dd86b52994d4f0b92ee3dd6920606e20bdbd5b",
+  "all_pool_scaling_label_free": true
+}

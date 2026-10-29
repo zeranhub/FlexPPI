@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "reviewed_DOCX_SHA256": "58a15ba884180814dc562d276a3fb1c0e321b95a73cc302e0b0e68a4dafc0a68",
+  "render_directory": "C:/Users/DELL/AppData/Local/Temp/flexppi_completion_20261010/render_v41",
+  "review_method": "Each original page-<n>.png opened individually with view_image, in two batches of five; no contact sheet used.",
+  "reviewed_pages": [
+    {"page": 1, "status": "passed", "checked": "Title, abstract, keywords and introduction text. Updated KRAS G12D sentence and 0.806 / 40.2% figures are legible. No text clipping, glyph loss or overlap; footer remains separate.", "required_fixes": []},
+    {"page": 2, "status": "passed", "checked": "Introduction continuation, methods heading, section 2.1 and figure callout. All text remains within margins. Lower whitespace results from keeping Figure 1 with its caption on next page; no orphaned title or clipped content.", "required_fixes": []},
+    {"page": 3, "status": "passed", "checked": "Figure 1 full panel grid a-d, English labels, complete Chinese caption and following data-description paragraphs. Panel borders do not cut labels; caption and figure do not overlap; small figure text is readable at original image resolution.", "required_fixes": []},
+    {"page": 4, "status": "passed", "checked": "Sections 2.2 and 2.3, displayed equations (1) and (2), inline Greek and residue notation. Equation radicals, sums, limits, subscripts and numbers are complete, with no collisions with adjacent paragraphs.", "required_fixes": []},
+    {"page": 5, "status": "passed", "checked": "Geometric encoding continuation, section 2.4, displayed equations (3) and (4), optimizer and training paragraphs. Equations fit width and are separated from explanatory text; superscripts and hats are visible. No clipping.", "required_fixes": []},
+    {"page": 6, "status": "passed", "checked": "Sections 2.5 and 2.6. Family split and all-244-ITrace-held-out descriptions, external evaluation and baseline details. Inline mathematical units and scientific notation remain legible; no overflow or crop.", "required_fixes": []},
+    {"page": 7, "status": "passed", "checked": "Section 2.6 continuation and 2.7 methods. KIX protocol and replacement KRAS paragraph are readable, including 7OW5 / 7OW6, JDIa41b1, HLA-A*11:01, VVVGAGGVGK / VVVGADGVGK, G6D mapping, training without ITrace and replicate specification. Last paragraph continues normally onto page 8, without an orphaned heading or clipped line.", "required_fixes": []},
+    {"page": 8, "status": "passed", "checked": "KRAS mean-difference SEM continuation, ubiquitin methods, section 2.8 and equation (5). No line is truncated at top or bottom; equation sum limits, logs and F-star notation are visible and correctly separated. No figure/caption placement issue.", "required_fixes": []},
+    {"page": 9, "status": "passed", "checked": "Free-energy-width and entropy analysis methods, section 3 and 3.1. Equations are inline and within margins. Lower whitespace keeps complete Table 1 together on page 10. No content overlap or clipping.", "required_fixes": []},
+    {"page": 10, "status": "passed", "checked": "Full Table 1 with three horizontal rules, grouped header and method column, sections A/B, table note and following results paragraphs. Table remains on one page, numerical columns align, note is fully visible, and lower paragraphs do not collide with table. No clipped row or caption.", "required_fixes": []}
+  ],
+  "required_fixes": [],
+  "notes": ["No document edits performed.", "Pages 2 and 9 retain intentional whitespace to keep subsequent figure/table blocks intact; these are not cropping or overflow failures.", "This report covers visual layout only for pages 1-10; it does not claim to audit all scientific content or later pages."]
+}

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "document_sha256": "5d32c2af90a6aa8268ac0ef50ba46480370fc798bcc890d91fa71123dfb51c5a",
+  "render_directory": "C:/Users/DELL/AppData/Local/Temp/flexppi_completion_20261010/render_v43",
+  "review_method": "Every original PNG page 1–10 was individually opened through view_image. No contact sheet, no alternative renderer, no reuse of previous-document approval.",
+  "pages": [
+    {"page": 1, "status": "passed", "observations": "Title, abstract, keywords and introduction readable. No missing glyphs, line clipping, overlap or collision with page number.", "required_fixes": []},
+    {"page": 2, "status": "passed", "observations": "Introduction continuation, methods heading and 2.1 paragraph are complete. Lower whitespace keeps full Figure 1 on page 3. No cropped line or heading orphan.", "required_fixes": []},
+    {"page": 3, "status": "passed", "observations": "Full Figure 1 panels a–d and complete caption fit on the page. Small English labels are readable and do not collide with panel edges. Caption and following paragraphs are separate; page number clear.", "required_fixes": []},
+    {"page": 4, "status": "passed", "observations": "Sections 2.2/2.3 and displayed equations (1)/(2) render fully. Radical bar, sum limits, subscripts, Greek symbols and equation numbers are legible. No overlap with explanatory paragraphs.", "required_fixes": []},
+    {"page": 5, "status": "passed", "observations": "Encoding/training text and equations (3)/(4) fit width and height. Inline superscripts and training parameters visible. No clipped formula or body/footer collision.", "required_fixes": []},
+    {"page": 6, "status": "passed", "observations": "Sections 2.5/2.6 with all-chain split and comparator methods remain complete and readable. No missing unit glyphs or clipped lower paragraph.", "required_fixes": []},
+    {"page": 7, "status": "passed", "observations": "Section 2.7, KIX/CBP protocol and KRAS sequences/replicates remain readable. Paragraph continuation at page break is normal. No equation or text overflow.", "required_fixes": []},
+    {"page": 8, "status": "passed", "observations": "KRAS SEM continuation, ubiquitin methods and new figure callouts 3f and 5d/e/f are legible. Section 2.8 and equation (5) render fully with sums and log terms. Last line remains above footer.", "required_fixes": []},
+    {"page": 9, "status": "passed", "observations": "Free-energy/entropy methods continuation, results heading and 3.1 opening fit. No glyph loss or clipping. Lower whitespace is intentional to keep Table 1 intact on page 10.", "required_fixes": []},
+    {"page": 10, "status": "passed", "observations": "Table 1 grouped header, all rows in A/B sections, native three horizontal rules and full table note are visible. Numeric columns align. Following results paragraphs, updated Figure 2e/f callout and page number do not overlap; no split or cropped table row.", "required_fixes": []}
+  ],
+  "required_fixes": [],
+  "document_edited": false,
+  "scope": "Visual layout and legibility of pages 1–10 only for the specified v43 DOCX hash."
+}

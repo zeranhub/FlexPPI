@@ -1,0 +1,431 @@
+{
+  "status": "passed",
+  "document_sha256": "de8e19c4b941dbf0217c2b539e731e5932858c64f1fb81f7c07153e1b45a242e",
+  "reviewed_beijing": "2026-10-13T11:27:34.943313+08:00",
+  "checks_passed": 68,
+  "checks": [
+    {
+      "name": "Final document matches builder certificate",
+      "passed": true
+    },
+    {
+      "name": "Frozen v23 source unchanged",
+      "passed": true
+    },
+    {
+      "name": "Independent algorithm reconstructs all203 trajectories and both analyses",
+      "passed": true
+    },
+    {
+      "name": "Ten existing model-evidence tables unchanged",
+      "passed": true
+    },
+    {
+      "name": "363 existing native cells plus42 newly computed cells",
+      "passed": true
+    },
+    {
+      "name": "Every new tableS7cell agrees with fullprecision certified CSV",
+      "passed": true
+    },
+    {
+      "name": "Table1 three-line native formatting",
+      "passed": true
+    },
+    {
+      "name": "Table2 three-line native formatting",
+      "passed": true
+    },
+    {
+      "name": "Table3 three-line native formatting",
+      "passed": true
+    },
+    {
+      "name": "Table4 three-line native formatting",
+      "passed": true
+    },
+    {
+      "name": "Table5 three-line native formatting",
+      "passed": true
+    },
+    {
+      "name": "Table6 three-line native formatting",
+      "passed": true
+    },
+    {
+      "name": "Table7 three-line native formatting",
+      "passed": true
+    },
+    {
+      "name": "Table8 three-line native formatting",
+      "passed": true
+    },
+    {
+      "name": "Table9 three-line native formatting",
+      "passed": true
+    },
+    {
+      "name": "Table10 three-line native formatting",
+      "passed": true
+    },
+    {
+      "name": "Table11 three-line native formatting",
+      "passed": true
+    },
+    {
+      "name": "Original user comments byte-identical",
+      "passed": true
+    },
+    {
+      "name": "All user comment anchors and36native math elements preserved",
+      "passed": true
+    },
+    {
+      "name": "8retained images exact and1newfigure8exact",
+      "passed": true
+    },
+    {
+      "name": "Figure captions1to8andS1consecutive",
+      "passed": true
+    },
+    {
+      "name": "Table captions1to2andS1toS9consecutive",
+      "passed": true
+    },
+    {
+      "name": "Crossreferences图allresolve",
+      "passed": true
+    },
+    {
+      "name": "Crossreferences表allresolve",
+      "passed": true
+    },
+    {
+      "name": "27referencesconsecutive",
+      "passed": true
+    },
+    {
+      "name": "All27referencescitedwithnoorphans",
+      "passed": true
+    },
+    {
+      "name": "Seven supplement modules",
+      "passed": true
+    },
+    {
+      "name": "Models evaluated in eachresultssection",
+      "passed": true
+    },
+    {
+      "name": "No removedpureMDsectionsorcrossrefs",
+      "passed": true
+    },
+    {
+      "name": "Predictive values alongsideMD interpretation",
+      "passed": true
+    },
+    {
+      "name": "Actual material weaker results retained",
+      "passed": true
+    },
+    {
+      "name": "Certifiedmainvaluecorrelationfull_hchi",
+      "passed": true
+    },
+    {
+      "name": "Certifiedmainvaluecorrelationintrachain_hchi",
+      "passed": true
+    },
+    {
+      "name": "Certifiedmainvaluecorrelationfull_rmsf",
+      "passed": true
+    },
+    {
+      "name": "Certifiedmainvaluehigh_lowfull_hchi",
+      "passed": true
+    },
+    {
+      "name": "Certifiedmainvaluehigh_lowintrachain_hchi",
+      "passed": true
+    },
+    {
+      "name": "Certifiedmainvaluehigh_lowfull_rmsf",
+      "passed": true
+    },
+    {
+      "name": "83positive recordhighlowcontrasts; exactroundedinterval",
+      "passed": true
+    },
+    {
+      "name": "Figure8all498pointsand83recordspermethod",
+      "passed": true
+    },
+    {
+      "name": "Figure8panelapointsnumericallyexact",
+      "passed": true
+    },
+    {
+      "name": "Figure8panelbpointsnumericallyexact",
+      "passed": true
+    },
+    {
+      "name": "29renderedWordpages",
+      "passed": true
+    },
+    {
+      "name": "No blankpages orreplacementglyph",
+      "passed": true
+    },
+    {
+      "name": "Finalpage1identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage2identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage3identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage4identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage5identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage6identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage7identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage8identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage9identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage12identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage13identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage14identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage15identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage17identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage18identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage19identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage20identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage21identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage22identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage23identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage24identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage25identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage26identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage28identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    },
+    {
+      "name": "Finalpage29identicaltopreviouslyvisuallyinspectedv24",
+      "passed": true
+    }
+  ],
+  "pages": 29,
+  "page_review": [
+    {
+      "page": 1,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "572b36f9cb319345485527e2b49860cf4bc66c4ae3aa51a13e1a0547c3ed9e5d"
+    },
+    {
+      "page": 2,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "5ddf089129ac350c4c4edef7a0143efc342bb1cf972f03b3d38a64d5d8746b69"
+    },
+    {
+      "page": 3,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "5abb2b3ef6c1674b178b2f153ebc7b701354c1fcab36e76275e2765fc441b75a"
+    },
+    {
+      "page": 4,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "9520ef6dfcf29debc7987746659b45c9b687cff9e4667b178008305ef3ecd6ce"
+    },
+    {
+      "page": 5,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "5839886457c0e61ddb9dbe281e5259cc7631d0e8e669b1020e4dba797e7c6a67"
+    },
+    {
+      "page": 6,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "7513acce40dc990813ce5a6d939fd7a8f2db7bee4ef7f675fea85e2d99e416c1"
+    },
+    {
+      "page": 7,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "4ac51b5b2ecf22fad655054db8d1b54a11faa9f4b797ece381c92c805d460bc5"
+    },
+    {
+      "page": 8,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "cdbd4bd72e4db6ae824b4b88a9854b15fe2c328f7590cdf56ebafe89d4018614"
+    },
+    {
+      "page": 9,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "5da91fe944fca36f53cd74be5af906ce4adadc340ac60d932e00f13da074d54e"
+    },
+    {
+      "page": 10,
+      "review": "final_PNG_directly_visually_inspected",
+      "PNG_sha256": "06fa66d05b039f5ff009b130ccf43d3d350e5f352c50b6a1fdd9e707aa2206aa"
+    },
+    {
+      "page": 11,
+      "review": "final_PNG_directly_visually_inspected",
+      "PNG_sha256": "f0b9b9515d8bd84b13f355a86b73d7b937492a9131e929e0597e2da93da7d0b4"
+    },
+    {
+      "page": 12,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "05b9a7540cb30b875b125f7be169d5cc500acd0136c27bc71161aaa2dea0cc7b"
+    },
+    {
+      "page": 13,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "f5e3ac7f43506ee6c28812f815205890d4b85fa7bf4b7dfab022a0d5ea219e54"
+    },
+    {
+      "page": 14,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "d5c74f8cce17f20e2c9be66997afd992fa047521c231aaa04c1b55921a4b0cca"
+    },
+    {
+      "page": 15,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "61f326b765f1b71c9bd50e9ade4de96dab8bdee5ebb9cf09f96be6fc4ec7bbeb"
+    },
+    {
+      "page": 16,
+      "review": "final_PNG_directly_visually_inspected",
+      "PNG_sha256": "4f93b26cc9208e4268088bb929fb820fb07be13c8478f6a8b7aead7acdc78ce3"
+    },
+    {
+      "page": 17,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "17317afa4a534f3b89d27f536b8a42f64e570f8bc5f0f91e7025de8bd137bd4d"
+    },
+    {
+      "page": 18,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "d9f2f150d97f823c2579f68a5b6407e13ce4fc8ac2fb1ae74232fbdc6eb2f632"
+    },
+    {
+      "page": 19,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "d2f8732fa4f409c2928dd3ba49a0ea793951145c29b5aa7318fe25ff7415e494"
+    },
+    {
+      "page": 20,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "5b5b140f0e3f49fcc5ffb519bb644da367b51846362622c324df9974715b145e"
+    },
+    {
+      "page": 21,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "f33570c9b49c98f64842a5effd195f97cdd780c8998dcfe584ee287b25d83802"
+    },
+    {
+      "page": 22,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "3e7027f74dc283e097c232b902ffd654db97028fa1d7cc6b60392a434abb0948"
+    },
+    {
+      "page": 23,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "740f2089d800d21abf187bede5c006feaa7c7a028e2aed5cddaeb8ca6ead8566"
+    },
+    {
+      "page": 24,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "a8c9cb0376426f3c784eefa1caa636187e369c779e382f14132241ff04e176de"
+    },
+    {
+      "page": 25,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "fbcc58d156e3773f0b6418542bdd4af4b93f9987e2e40084733636e048e51733"
+    },
+    {
+      "page": 26,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "09d1681d315283b217579e71b10a37b1fffccd2c0bf2e4d7608f7fb9b7a6ad6d"
+    },
+    {
+      "page": 27,
+      "review": "final_PNG_directly_visually_inspected",
+      "PNG_sha256": "6bb347b6f0f3c5a8d5ca87a4c30a76b2ae8e9e2e47bc202099c91dbe90979b38"
+    },
+    {
+      "page": 28,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "582cdf936c44e7dd3ab2cca5410d6171e82a7ea9c8ccf213f5b77fe8d18fd697"
+    },
+    {
+      "page": 29,
+      "review": "pixel_identical_to_directly_inspected_first_v24_render",
+      "PNG_sha256": "bcd4788030aef99fc112ab751a0c06e7bd8ec575df00fdd562a59ee22e84dd02"
+    }
+  ],
+  "numerical_verification_sha256": "f829f4f488f94ea674bd6a2b39859e0e39991ed3bf53d284fe63e3a13629cd67",
+  "actual_review": "All29pagePNG bodies manually viewed; final4changedpages viewedagain; other25pixel-identical. Maintext read in full; original36math elements preserved; newexperimentalclaims checkedagainstcertifiedCSV",
+  "material_limit": "The model estimates scalarRMSF/Hchi; MDcurves explain predicted site differences; fineentropy cohort tests ranking/groupselection,not full density orkinetic prediction."
+}

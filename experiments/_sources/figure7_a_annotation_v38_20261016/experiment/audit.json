@@ -1,0 +1,4686 @@
+{
+  "status": "passed",
+  "checks_passed": 1149,
+  "checks": [
+    {
+      "name": "packaged source equals original all66_per_angle_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "packaged source equals original all66_residue_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "packaged source equals original ubiquitin_all66_chi_501frames.npz",
+      "passed": true
+    },
+    {
+      "name": "packaged source equals original README_数据定义与复算.md",
+      "passed": true
+    },
+    {
+      "name": "66 distinct valid residue identities",
+      "passed": true
+    },
+    {
+      "name": "264 distinct residue-angle slots",
+      "passed": true
+    },
+    {
+      "name": "151 defined plus 113 undefined slots",
+      "passed": true
+    },
+    {
+      "name": "all 151 NPZ defined angles retained",
+      "passed": true
+    },
+    {
+      "name": "501-frame 0-100ns common observations",
+      "passed": true
+    },
+    {
+      "name": "residue NPZ field predicted_Hchi_nats",
+      "passed": true
+    },
+    {
+      "name": "residue NPZ field frozen_MD_joint_Hchi_nats",
+      "passed": true
+    },
+    {
+      "name": "residue NPZ field author_residue_id",
+      "passed": true
+    },
+    {
+      "name": "residue NPZ field chi_count",
+      "passed": true
+    },
+    {
+      "name": "slot identity M1 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition M1 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite M1 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy M1 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width M1 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity M1 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition M1 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite M1 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy M1 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width M1 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity M1 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition M1 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite M1 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy M1 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width M1 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity M1 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition M1 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing M1 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q2 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q2 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q2 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q2 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q2 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q2 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q2 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q2 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q2 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q2 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q2 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q2 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q2 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q2 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q2 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q2 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q2 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing Q2 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity I3 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition I3 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite I3 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy I3 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width I3 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity I3 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition I3 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite I3 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy I3 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width I3 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity I3 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition I3 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing I3 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity I3 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition I3 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing I3 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity F4 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition F4 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite F4 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy F4 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width F4 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity F4 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition F4 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite F4 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy F4 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width F4 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity F4 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition F4 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing F4 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity F4 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition F4 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing F4 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity V5 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition V5 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite V5 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy V5 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width V5 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity V5 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition V5 chi2",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing V5 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity V5 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition V5 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing V5 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity V5 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition V5 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing V5 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity K6 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition K6 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K6 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K6 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K6 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity K6 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition K6 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K6 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K6 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K6 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity K6 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition K6 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K6 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K6 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K6 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity K6 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition K6 chi4",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K6 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K6 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K6 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity T7 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition T7 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite T7 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy T7 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width T7 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity T7 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition T7 chi2",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T7 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity T7 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition T7 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T7 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity T7 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition T7 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T7 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity L8 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition L8 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite L8 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy L8 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width L8 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity L8 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition L8 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite L8 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy L8 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width L8 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity L8 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition L8 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing L8 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity L8 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition L8 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing L8 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity T9 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition T9 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite T9 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy T9 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width T9 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity T9 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition T9 chi2",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T9 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity T9 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition T9 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T9 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity T9 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition T9 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T9 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity K11 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition K11 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K11 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K11 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K11 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity K11 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition K11 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K11 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K11 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K11 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity K11 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition K11 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K11 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K11 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K11 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity K11 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition K11 chi4",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K11 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K11 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K11 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity T12 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition T12 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite T12 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy T12 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width T12 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity T12 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition T12 chi2",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T12 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity T12 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition T12 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T12 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity T12 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition T12 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T12 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity I13 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition I13 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite I13 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy I13 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width I13 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity I13 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition I13 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite I13 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy I13 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width I13 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity I13 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition I13 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing I13 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity I13 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition I13 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing I13 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity T14 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition T14 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite T14 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy T14 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width T14 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity T14 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition T14 chi2",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T14 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity T14 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition T14 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T14 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity T14 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition T14 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T14 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity L15 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition L15 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite L15 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy L15 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width L15 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity L15 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition L15 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite L15 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy L15 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width L15 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity L15 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition L15 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing L15 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity L15 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition L15 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing L15 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity E16 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition E16 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E16 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E16 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E16 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity E16 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition E16 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E16 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E16 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E16 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity E16 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition E16 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E16 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E16 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E16 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity E16 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition E16 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing E16 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity V17 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition V17 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite V17 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy V17 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width V17 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity V17 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition V17 chi2",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing V17 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity V17 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition V17 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing V17 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity V17 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition V17 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing V17 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity E18 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition E18 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E18 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E18 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E18 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity E18 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition E18 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E18 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E18 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E18 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity E18 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition E18 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E18 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E18 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E18 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity E18 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition E18 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing E18 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity P19 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition P19 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite P19 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy P19 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width P19 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity P19 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition P19 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite P19 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy P19 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width P19 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity P19 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition P19 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing P19 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity P19 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition P19 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing P19 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity S20 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition S20 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite S20 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy S20 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width S20 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity S20 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition S20 chi2",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing S20 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity S20 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition S20 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing S20 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity S20 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition S20 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing S20 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity D21 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition D21 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite D21 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy D21 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width D21 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity D21 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition D21 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite D21 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy D21 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width D21 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity D21 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition D21 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing D21 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity D21 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition D21 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing D21 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity T22 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition T22 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite T22 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy T22 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width T22 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity T22 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition T22 chi2",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T22 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity T22 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition T22 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T22 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity T22 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition T22 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T22 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity I23 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition I23 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite I23 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy I23 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width I23 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity I23 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition I23 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite I23 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy I23 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width I23 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity I23 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition I23 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing I23 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity I23 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition I23 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing I23 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity E24 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition E24 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E24 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E24 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E24 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity E24 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition E24 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E24 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E24 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E24 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity E24 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition E24 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E24 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E24 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E24 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity E24 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition E24 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing E24 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity N25 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition N25 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite N25 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy N25 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width N25 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity N25 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition N25 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite N25 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy N25 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width N25 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity N25 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition N25 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing N25 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity N25 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition N25 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing N25 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity V26 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition V26 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite V26 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy V26 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width V26 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity V26 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition V26 chi2",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing V26 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity V26 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition V26 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing V26 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity V26 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition V26 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing V26 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity K27 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition K27 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K27 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K27 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K27 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity K27 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition K27 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K27 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K27 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K27 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity K27 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition K27 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K27 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K27 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K27 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity K27 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition K27 chi4",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K27 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K27 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K27 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity K29 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition K29 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K29 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K29 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K29 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity K29 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition K29 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K29 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K29 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K29 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity K29 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition K29 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K29 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K29 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K29 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity K29 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition K29 chi4",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K29 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K29 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K29 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity I30 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition I30 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite I30 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy I30 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width I30 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity I30 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition I30 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite I30 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy I30 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width I30 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity I30 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition I30 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing I30 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity I30 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition I30 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing I30 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q31 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q31 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q31 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q31 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q31 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q31 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q31 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q31 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q31 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q31 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q31 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q31 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q31 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q31 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q31 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q31 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q31 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing Q31 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity D32 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition D32 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite D32 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy D32 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width D32 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity D32 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition D32 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite D32 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy D32 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width D32 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity D32 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition D32 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing D32 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity D32 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition D32 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing D32 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity K33 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition K33 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K33 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K33 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K33 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity K33 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition K33 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K33 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K33 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K33 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity K33 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition K33 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K33 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K33 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K33 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity K33 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition K33 chi4",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K33 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K33 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K33 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity E34 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition E34 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E34 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E34 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E34 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity E34 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition E34 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E34 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E34 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E34 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity E34 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition E34 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E34 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E34 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E34 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity E34 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition E34 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing E34 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity I36 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition I36 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite I36 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy I36 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width I36 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity I36 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition I36 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite I36 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy I36 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width I36 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity I36 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition I36 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing I36 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity I36 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition I36 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing I36 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity P37 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition P37 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite P37 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy P37 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width P37 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity P37 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition P37 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite P37 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy P37 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width P37 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity P37 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition P37 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing P37 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity P37 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition P37 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing P37 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity P38 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition P38 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite P38 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy P38 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width P38 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity P38 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition P38 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite P38 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy P38 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width P38 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity P38 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition P38 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing P38 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity P38 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition P38 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing P38 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity D39 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition D39 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite D39 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy D39 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width D39 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity D39 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition D39 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite D39 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy D39 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width D39 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity D39 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition D39 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing D39 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity D39 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition D39 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing D39 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q40 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q40 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q40 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q40 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q40 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q40 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q40 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q40 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q40 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q40 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q40 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q40 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q40 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q40 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q40 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q40 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q40 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing Q40 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q41 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q41 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q41 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q41 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q41 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q41 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q41 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q41 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q41 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q41 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q41 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q41 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q41 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q41 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q41 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q41 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q41 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing Q41 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity R42 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition R42 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite R42 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy R42 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width R42 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity R42 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition R42 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite R42 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy R42 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width R42 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity R42 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition R42 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite R42 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy R42 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width R42 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity R42 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition R42 chi4",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite R42 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy R42 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width R42 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity L43 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition L43 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite L43 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy L43 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width L43 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity L43 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition L43 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite L43 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy L43 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width L43 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity L43 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition L43 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing L43 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity L43 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition L43 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing L43 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity I44 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition I44 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite I44 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy I44 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width I44 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity I44 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition I44 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite I44 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy I44 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width I44 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity I44 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition I44 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing I44 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity I44 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition I44 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing I44 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity F45 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition F45 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite F45 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy F45 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width F45 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity F45 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition F45 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite F45 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy F45 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width F45 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity F45 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition F45 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing F45 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity F45 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition F45 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing F45 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity K48 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition K48 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K48 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K48 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K48 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity K48 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition K48 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K48 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K48 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K48 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity K48 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition K48 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K48 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K48 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K48 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity K48 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition K48 chi4",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K48 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K48 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K48 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q49 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q49 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q49 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q49 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q49 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q49 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q49 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q49 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q49 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q49 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q49 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q49 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q49 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q49 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q49 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q49 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q49 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing Q49 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity L50 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition L50 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite L50 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy L50 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width L50 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity L50 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition L50 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite L50 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy L50 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width L50 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity L50 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition L50 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing L50 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity L50 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition L50 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing L50 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity E51 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition E51 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E51 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E51 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E51 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity E51 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition E51 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E51 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E51 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E51 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity E51 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition E51 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E51 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E51 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E51 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity E51 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition E51 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing E51 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity D52 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition D52 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite D52 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy D52 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width D52 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity D52 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition D52 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite D52 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy D52 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width D52 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity D52 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition D52 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing D52 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity D52 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition D52 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing D52 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity R54 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition R54 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite R54 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy R54 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width R54 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity R54 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition R54 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite R54 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy R54 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width R54 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity R54 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition R54 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite R54 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy R54 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width R54 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity R54 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition R54 chi4",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite R54 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy R54 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width R54 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity T55 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition T55 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite T55 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy T55 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width T55 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity T55 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition T55 chi2",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T55 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity T55 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition T55 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T55 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity T55 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition T55 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T55 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity L56 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition L56 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite L56 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy L56 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width L56 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity L56 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition L56 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite L56 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy L56 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width L56 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity L56 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition L56 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing L56 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity L56 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition L56 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing L56 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity S57 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition S57 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite S57 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy S57 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width S57 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity S57 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition S57 chi2",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing S57 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity S57 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition S57 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing S57 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity S57 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition S57 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing S57 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity D58 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition D58 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite D58 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy D58 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width D58 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity D58 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition D58 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite D58 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy D58 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width D58 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity D58 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition D58 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing D58 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity D58 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition D58 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing D58 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity Y59 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition Y59 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Y59 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Y59 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Y59 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity Y59 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition Y59 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Y59 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Y59 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Y59 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity Y59 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition Y59 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing Y59 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity Y59 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition Y59 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing Y59 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity N60 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition N60 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite N60 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy N60 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width N60 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity N60 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition N60 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite N60 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy N60 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width N60 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity N60 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition N60 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing N60 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity N60 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition N60 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing N60 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity I61 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition I61 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite I61 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy I61 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width I61 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity I61 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition I61 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite I61 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy I61 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width I61 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity I61 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition I61 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing I61 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity I61 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition I61 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing I61 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q62 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q62 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q62 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q62 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q62 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q62 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q62 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q62 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q62 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q62 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q62 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q62 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite Q62 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy Q62 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width Q62 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity Q62 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition Q62 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing Q62 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity K63 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition K63 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K63 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K63 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K63 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity K63 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition K63 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K63 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K63 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K63 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity K63 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition K63 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K63 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K63 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K63 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity K63 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition K63 chi4",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite K63 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy K63 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width K63 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity E64 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition E64 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E64 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E64 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E64 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity E64 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition E64 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E64 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E64 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E64 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity E64 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition E64 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite E64 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy E64 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width E64 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity E64 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition E64 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing E64 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity S65 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition S65 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite S65 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy S65 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width S65 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity S65 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition S65 chi2",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing S65 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity S65 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition S65 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing S65 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity S65 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition S65 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing S65 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity T66 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition T66 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite T66 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy T66 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width T66 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity T66 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition T66 chi2",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T66 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity T66 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition T66 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T66 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity T66 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition T66 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing T66 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity L67 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition L67 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite L67 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy L67 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width L67 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity L67 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition L67 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite L67 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy L67 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width L67 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity L67 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition L67 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing L67 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity L67 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition L67 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing L67 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity H68 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition H68 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite H68 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy H68 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width H68 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity H68 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition H68 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite H68 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy H68 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width H68 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity H68 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition H68 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing H68 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity H68 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition H68 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing H68 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity L69 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition L69 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite L69 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy L69 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width L69 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity L69 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition L69 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite L69 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy L69 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width L69 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity L69 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition L69 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing L69 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity L69 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition L69 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing L69 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity V70 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition V70 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite V70 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy V70 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width V70 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity V70 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition V70 chi2",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing V70 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity V70 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition V70 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing V70 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity V70 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition V70 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing V70 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity L71 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition L71 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite L71 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy L71 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width L71 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity L71 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition L71 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite L71 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy L71 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width L71 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity L71 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition L71 chi3",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing L71 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity L71 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition L71 chi4",
+      "passed": true
+    },
+    {
+      "name": "undefined metric missing L71 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot identity R72 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot definition R72 chi1",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite R72 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy R72 chi1",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width R72 chi1",
+      "passed": true
+    },
+    {
+      "name": "slot identity R72 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot definition R72 chi2",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite R72 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy R72 chi2",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width R72 chi2",
+      "passed": true
+    },
+    {
+      "name": "slot identity R72 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot definition R72 chi3",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite R72 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy R72 chi3",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width R72 chi3",
+      "passed": true
+    },
+    {
+      "name": "slot identity R72 chi4",
+      "passed": true
+    },
+    {
+      "name": "slot definition R72 chi4",
+      "passed": true
+    },
+    {
+      "name": "all 501 angle observations finite R72 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin fine entropy R72 chi4",
+      "passed": true
+    },
+    {
+      "name": "four-origin low-Fstar width R72 chi4",
+      "passed": true
+    },
+    {
+      "name": "independently reconstructed all604 entropy/width summaries",
+      "passed": true
+    },
+    {
+      "name": "layer sample sizes 66/52/23/10",
+      "passed": true
+    },
+    {
+      "name": "3 Pro retained twice each",
+      "passed": true
+    },
+    {
+      "name": "Pro reference joint entropy zeros retained",
+      "passed": true
+    },
+    {
+      "name": "AA-centering exact convention chi1 predicted_joint_Hchi fine_entropy",
+      "passed": true
+    },
+    {
+      "name": "independent Spearman ranks chi1 predicted_joint_Hchi fine_entropy",
+      "passed": true
+    },
+    {
+      "name": "AA-centering exact convention chi1 predicted_joint_Hchi low_Fstar_width",
+      "passed": true
+    },
+    {
+      "name": "independent Spearman ranks chi1 predicted_joint_Hchi low_Fstar_width",
+      "passed": true
+    },
+    {
+      "name": "AA-centering exact convention chi1 MD_reference_joint_Hchi fine_entropy",
+      "passed": true
+    },
+    {
+      "name": "independent Spearman ranks chi1 MD_reference_joint_Hchi fine_entropy",
+      "passed": true
+    },
+    {
+      "name": "AA-centering exact convention chi1 MD_reference_joint_Hchi low_Fstar_width",
+      "passed": true
+    },
+    {
+      "name": "independent Spearman ranks chi1 MD_reference_joint_Hchi low_Fstar_width",
+      "passed": true
+    },
+    {
+      "name": "AA-centering exact convention chi2 predicted_joint_Hchi fine_entropy",
+      "passed": true
+    },
+    {
+      "name": "independent Spearman ranks chi2 predicted_joint_Hchi fine_entropy",
+      "passed": true
+    },
+    {
+      "name": "AA-centering exact convention chi2 predicted_joint_Hchi low_Fstar_width",
+      "passed": true
+    },
+    {
+      "name": "independent Spearman ranks chi2 predicted_joint_Hchi low_Fstar_width",
+      "passed": true
+    },
+    {
+      "name": "AA-centering exact convention chi2 MD_reference_joint_Hchi fine_entropy",
+      "passed": true
+    },
+    {
+      "name": "independent Spearman ranks chi2 MD_reference_joint_Hchi fine_entropy",
+      "passed": true
+    },
+    {
+      "name": "AA-centering exact convention chi2 MD_reference_joint_Hchi low_Fstar_width",
+      "passed": true
+    },
+    {
+      "name": "independent Spearman ranks chi2 MD_reference_joint_Hchi low_Fstar_width",
+      "passed": true
+    },
+    {
+      "name": "AA-centering exact convention chi3 predicted_joint_Hchi fine_entropy",
+      "passed": true
+    },
+    {
+      "name": "independent Spearman ranks chi3 predicted_joint_Hchi fine_entropy",
+      "passed": true
+    },
+    {
+      "name": "AA-centering exact convention chi3 predicted_joint_Hchi low_Fstar_width",
+      "passed": true
+    },
+    {
+      "name": "independent Spearman ranks chi3 predicted_joint_Hchi low_Fstar_width",
+      "passed": true
+    },
+    {
+      "name": "AA-centering exact convention chi3 MD_reference_joint_Hchi fine_entropy",
+      "passed": true
+    },
+    {
+      "name": "independent Spearman ranks chi3 MD_reference_joint_Hchi fine_entropy",
+      "passed": true
+    },
+    {
+      "name": "AA-centering exact convention chi3 MD_reference_joint_Hchi low_Fstar_width",
+      "passed": true
+    },
+    {
+      "name": "independent Spearman ranks chi3 MD_reference_joint_Hchi low_Fstar_width",
+      "passed": true
+    },
+    {
+      "name": "AA-centering exact convention chi4 predicted_joint_Hchi fine_entropy",
+      "passed": true
+    },
+    {
+      "name": "independent Spearman ranks chi4 predicted_joint_Hchi fine_entropy",
+      "passed": true
+    },
+    {
+      "name": "AA-centering exact convention chi4 predicted_joint_Hchi low_Fstar_width",
+      "passed": true
+    },
+    {
+      "name": "independent Spearman ranks chi4 predicted_joint_Hchi low_Fstar_width",
+      "passed": true
+    },
+    {
+      "name": "AA-centering exact convention chi4 MD_reference_joint_Hchi fine_entropy",
+      "passed": true
+    },
+    {
+      "name": "independent Spearman ranks chi4 MD_reference_joint_Hchi fine_entropy",
+      "passed": true
+    },
+    {
+      "name": "AA-centering exact convention chi4 MD_reference_joint_Hchi low_Fstar_width",
+      "passed": true
+    },
+    {
+      "name": "independent Spearman ranks chi4 MD_reference_joint_Hchi low_Fstar_width",
+      "passed": true
+    },
+    {
+      "name": "angle-count strata partition all66 once",
+      "passed": true
+    },
+    {
+      "name": "weighted stratum MAE matches overall MAE",
+      "passed": true
+    },
+    {
+      "name": "source unchanged all66_per_angle_metrics.csv",
+      "passed": true
+    },
+    {
+      "name": "source unchanged all66_residue_summary.csv",
+      "passed": true
+    },
+    {
+      "name": "source unchanged ubiquitin_all66_chi_501frames.npz",
+      "passed": true
+    },
+    {
+      "name": "source unchanged README_数据定义与复算.md",
+      "passed": true
+    }
+  ],
+  "max_reconstructed_entropy_difference": 1.3322676295501878e-15,
+  "max_reconstructed_width_difference_degrees": 0.0,
+  "source_sha256": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\figure7_all_chi_v35_20261015\\source\\all66_per_angle_metrics.csv": "f21d2c2dd47caa2ce510f85b64bda6fa6ecd12ffc278025044e1fe7c55582c58",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\figure7_all_chi_v35_20261015\\source\\all66_residue_summary.csv": "fec153f86b3b8ba808d2ee731937754427902660c5b29a955cacf25f5d8ab4ab",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\figure7_all_chi_v35_20261015\\source\\ubiquitin_all66_chi_501frames.npz": "562e14a3909718f99fa2471dc6503b3c244b39a04bc883073b50ba02a171c182",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\figure7_all_chi_v35_20261015\\source\\README_数据定义与复算.md": "69775bc854b794a068b8f1ac7adecf5fc090a1b1ac79734b7a1f400f1444e678"
+  },
+  "original_source_provenance": {
+    "all66_per_angle_metrics.csv": {
+      "original_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\rich_angle_figure_v30_20261014\\experiment\\all66_per_angle_metrics.csv",
+      "original_sha256": "f21d2c2dd47caa2ce510f85b64bda6fa6ecd12ffc278025044e1fe7c55582c58",
+      "read_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\figure7_all_chi_v35_20261015\\source\\all66_per_angle_metrics.csv"
+    },
+    "all66_residue_summary.csv": {
+      "original_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\rich_angle_figure_v30_20261014\\experiment\\all66_residue_summary.csv",
+      "original_sha256": "fec153f86b3b8ba808d2ee731937754427902660c5b29a955cacf25f5d8ab4ab",
+      "read_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\figure7_all_chi_v35_20261015\\source\\all66_residue_summary.csv"
+    },
+    "ubiquitin_all66_chi_501frames.npz": {
+      "original_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\rich_angle_figure_v30_20261014\\experiment\\ubiquitin_all66_chi_501frames.npz",
+      "original_sha256": "562e14a3909718f99fa2471dc6503b3c244b39a04bc883073b50ba02a171c182",
+      "read_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\figure7_all_chi_v35_20261015\\source\\ubiquitin_all66_chi_501frames.npz"
+    },
+    "README_数据定义与复算.md": {
+      "original_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\rich_angle_figure_v30_20261014\\experiment\\README_数据定义与复算.md",
+      "original_sha256": "69775bc854b794a068b8f1ac7adecf5fc090a1b1ac79734b7a1f400f1444e678",
+      "read_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\figure7_all_chi_v35_20261015\\source\\README_数据定义与复算.md"
+    }
+  },
+  "all_negative_and_small_associations_retained": true,
+  "all_four_chi_layers_retained": true,
+  "no_new_MD_training_or_inference": true,
+  "primary_figure_statistics": [
+    {
+      "chi": "chi1",
+      "chi_index": 1,
+      "n": 66,
+      "rho_entropy_typecentered": 0.4975052712886996,
+      "rho_width_typecentered": 0.195149997363993,
+      "rho_entropy_raw": 0.25293810666945,
+      "rho_width_raw": 0.13015576538774662
+    },
+    {
+      "chi": "chi2",
+      "chi_index": 2,
+      "n": 52,
+      "rho_entropy_typecentered": 0.44718640594313047,
+      "rho_width_typecentered": 0.3955495102816735,
+      "rho_entropy_raw": 0.40519081362588577,
+      "rho_width_raw": 0.2695094067439541
+    },
+    {
+      "chi": "chi3",
+      "chi_index": 3,
+      "n": 23,
+      "rho_entropy_typecentered": 0.5247035573122529,
+      "rho_width_typecentered": 0.6399802518083711,
+      "rho_entropy_raw": -0.18577075098814227,
+      "rho_width_raw": -0.16019781908964723
+    },
+    {
+      "chi": "chi4",
+      "chi_index": 4,
+      "n": 10,
+      "rho_entropy_typecentered": 0.12727272727272726,
+      "rho_width_typecentered": -0.18293022999573122,
+      "rho_entropy_raw": 0.04242424242424241,
+      "rho_width_raw": -0.4024465059906087
+    }
+  ],
+  "scientific_boundary": "Associations of a joint readout with individual-angle MD occupancy; not direct per-angle predictions or MAE. Chi4 is weak for entropy and negative for width in this case.",
+  "output_sha256": {
+    "all66_joint_predictions.csv": "a0ffd1247617be4acbd9f1a6df7980f00fc64922151fe630c64bd5b59358226b",
+    "all_angle_slots_long.csv": "0ead8b695378914c03a158d6bdc0e865926a2241ec2f87fbbcfde840d614ae47",
+    "analyze_all_chi_associations.py": "fca0281bc244d7b3623d518990c0517e51291e16ad8475f548ce0a55f154068b",
+    "defined_angles_long.csv": "8052306e31edf07f8cc7295ec8059c4e8dad6047354a834ea21fb0020e48ad0c",
+    "definitions_and_handling.json": "318e9522b0fd2ed0781720fce7adfee77a11791737a24705b6ebfe7c4ee298a0",
+    "figure_statistics.csv": "7b2a22fd54a9afe535bb18a6eb7fdeabc6901cdbcaa1cf9f6bc3553da63baaa4",
+    "joint_prediction_accuracy_by_angle_count.csv": "6bafd46bf72c3f6e1f3b78f23718228a8099d73bcf8be01d37ea8248bc5ce7d8",
+    "per_chi_AA_counts_and_constant_groups.csv": "7ca644298449c5250288b885183be74b5e55238555fbdfff3662f974dd7542f5",
+    "per_chi_correlations.csv": "d90af24843fc5d5fb08abd0a9d799b38ea7e4fe0afd8fb229d7c370f3c544205",
+    "singleton_sensitivity_correlations.csv": "52ea6741293c6b48b6298fa39f5face715e3b335ecc417e7067505341d5f6425"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "changed_at_utc": "2026-10-21T13:11:08.311929+00:00",
+  "authorized_by": "Parent task /root before any candidate inference",
+  "previous_expected_sha256": "ff2974406d5d1ee07e6dc7118e43e57c0acc9849cc8feba7f5290476fca15ec5",
+  "new_unique_expected_sha256": "b3eed060919df15f075329bc892f959d9355232be5feb561417edd49ea82b39f",
+  "previous_checkpoint_used_for_any_local_prediction": false,
+  "candidate_predictions_before_change": 0,
+  "reason": "Family-fold 2430 checkpoint unavailable locally and remote scp unreachable; parent explicitly selected existing historical strict_full 2431 no-ITrace checkpoint before results. No weights were chosen based on candidate predictions.",
+  "previous_script_sha256": "cfccd8646f1a771ba959cdcaca7cbac9b33475077745b88b9a453dde7e349253",
+  "new_checkpoint_source": "C:/Users/DELL/.codex/worktrees/4666/FlexPPI/paper/revision_20261002/experiments/corrected_pipeline/trained_checkpoints/strict_full/fold_0/epoch_040.pt",
+  "model_identity": "historical strict_full 2431 no-ITrace, not family-fold Full 2430",
+  "training_difference_review": "Assigned separately to evidence agent; this script does not imply the two models are identical.",
+  "config_read_compatible": true,
+  "config_observed": {
+    "sequence_backend": "learned",
+    "use_condition_features": false,
+    "enable_response_head": false,
+    "information_ablation": "full",
+    "ipa_blocks": 4,
+    "metrics": [
+      "rmsf",
+      "chi_entropy"
+    ],
+    "epoch": 40
+  },
+  "planned_smoke": "One original 3HG1 template finite-output/mask/scope audit. No claim of reproducing family ff297440 predictions."
+}

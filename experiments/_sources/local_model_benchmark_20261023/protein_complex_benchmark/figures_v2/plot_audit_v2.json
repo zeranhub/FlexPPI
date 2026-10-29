@@ -1,0 +1,49 @@
+{
+  "generated_utc": "2026-10-24T01:43:44.215547+00:00",
+  "script_sha256": "98cab58ae5ee5194fc8882dfea4cef007060ad4df4d5fd7a10d633ed762cfef5",
+  "input_sha256": {
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\classification\\membership_frozen.csv": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\per_record_metrics.csv": "87420afc23a9dce44919eb1e58bb6620da2b04a8c1075099d23df06ea538e6ef",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\group_summary.csv": "da655ae6593d97103d638cafeb9d41c5f8515ed9f0993d6ec6db1bfbd118f07b"
+  },
+  "methods": [
+    "Full",
+    "backflip-2.1 (chains)",
+    "backflip-1.0 (chains)",
+    "DynaProt-M",
+    "FastProtFlex",
+    "ANM",
+    "GNM",
+    "Static",
+    "AA"
+  ],
+  "rows": {
+    "multichain_protein": "Multichain proteins",
+    "protein_complex": "Protein complexes"
+  },
+  "row_counts": {
+    "multichain_protein": 10,
+    "protein_complex": 860
+  },
+  "row_families": {
+    "multichain_protein": 10,
+    "protein_complex": 261
+  },
+  "cells": 54,
+  "relative_output_methods": [
+    "ANM",
+    "FastProtFlex",
+    "GNM"
+  ],
+  "protein_row_definition": "records in benchmark_group=protein with actual_input_n_chains>=2; single-chain inputs excluded",
+  "complex_row_source": "frozen evaluation/group_summary.csv, unchanged",
+  "protein_row_statistics": "record-weighted mean, 95% family-cluster percentile, seed=20261024, draws=2000",
+  "no_rescoring": true,
+  "no_score_based_selection": true,
+  "artifact_sha256": {
+    "benchmark_multichain_v2.pdf": "bc47043cc184363f665c4e0c74e5d8d5f94079fdba8441ec3f70d131a734fd32",
+    "benchmark_multichain_v2.png": "87147ec1bcdf159b3425b691b696122ab9ebe3473f80ea44becb8e7ebb3343df",
+    "benchmark_multichain_v2.svg": "dc997b944631e27473aa041a14c49b9d90d06632de2e91089255fe22267d9f90",
+    "benchmark_multichain_v2_source.csv": "de540daa14f720704878dcf90dabac4294a95823e9ef0b2c4ba526c8b392fd6e"
+  }
+}

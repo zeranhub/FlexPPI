@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "width_mm": 183.0,
+  "height_mm": 185.0,
+  "dpi": 450,
+  "min_font_pt": 9.0,
+  "all_3063_records_paired": true,
+  "plotted_paired_gain_points": 18378,
+  "data_subsampling": false,
+  "smoothing": false,
+  "AP_CI": "frozen 10000 source-stratified record bootstrap, seed 20261018",
+  "new_significance_tests": false,
+  "new_MAE_or_gain_CI": false,
+  "common_AP_axis": [
+    0,
+    1
+  ],
+  "common_gain_axis_percentage_points": [
+    -80,
+    80
+  ],
+  "all_gain_values_shown": true,
+  "jitter": "vertical only; deterministic, does not change any AP value",
+  "source_sha256": {
+    "per_record_metrics.csv": "40936d0de92a6ede8a7bc92445f3ad1ed7ab0cfff358a32bbed40cdd4feb513e",
+    "PRESPECIFIED_ADDITIONS.md": "cbe2aa7c54e18c37a992a99df725e825715f0568590a7cb58c3b8c8e4c781b70",
+    "PRESPECIFIED_PROTOCOL.md": "532bdc9c0cac43dfc0c834fc3a32a27e11244bb41ace196d7a747bede2289ea8",
+    "record_codes.csv": "06d2a550dcfd133e7d56236da16ce82955971899de839c96c74014affccd51a6",
+    "source_ap_matrix.csv": "a3a86af099b04202106d4cd13f5414682199ffbb17f5c55d0dcc630137b04a4a",
+    "summary.json": "be29114e3eca5ba8654276e3024f78d4666f705feb8a062061719aeef9dab14a",
+    "within_type_record_macro_metrics.csv": "0452b5afce551aab885e1444f36051a5c684b90fab535ff733aa72e329d85877"
+  },
+  "output_sha256": {
+    "pdf": "d126e139c5514036ef51e0830a33caabfe880bbee0f2f80754b52e0fbdd40f45",
+    "svg": "4f3ae244b520ed247c10a8b7b44f57a5bb23f0b2f077e1bf208231e4a199ac92",
+    "png": "4137407b9db5d1e49220f27b3adc3832980154e1c02892acd880de8a774d1cec"
+  },
+  "outside_canvas_text": [],
+  "main_manuscript": "v61 preserved",
+  "source_files_byte_identical": {
+    "per_record_metrics.csv": true,
+    "PRESPECIFIED_ADDITIONS.md": true,
+    "PRESPECIFIED_PROTOCOL.md": true,
+    "record_codes.csv": true,
+    "source_ap_matrix.csv": true,
+    "summary.json": true,
+    "within_type_record_macro_metrics.csv": true
+  },
+  "original_validation_figure_byte_identical": true,
+  "print_preview_width_mm": 167.64,
+  "print_preview_dpi": 200,
+  "min_font_at_manuscript_width_pt": 8.244590163934426,
+  "fonts": [
+    "ELUGPM+ArialMT",
+    "ELUGPM+Arial-BoldMT"
+  ],
+  "all_AP_intervals_frozen": true,
+  "visual_QA": "Final 200 dpi print preview inspected. AP markers hollow, CIs drawn above them. No overlap or clipping.",
+  "independent_review": "Final print-preview review passed after hollow AP markers, CI visibility, explicit distribution caption and lower-MAE direction were implemented.",
+  "manuscript_replaced": false,
+  "v62_deleted": true,
+  "v61_document_sha256_unchanged": "666ecc56bb3159e2146d8a2a22cec5db09069697c28a9d89c12d41b80750593c",
+  "adoption_status": "rejected_by_user_not_for_manuscript"
+}

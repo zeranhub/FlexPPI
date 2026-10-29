@@ -1,0 +1,45 @@
+{
+  "generated_utc": "2026-10-24T02:06:51.169580+00:00",
+  "script_sha256": "20ea89df845fc32a87c6dd250b4195173bdaa77834ea18bc4b1fc03d4d3811a5",
+  "input_sha256": {
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\classification\\membership_frozen.csv": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\per_record_metrics.csv": "87420afc23a9dce44919eb1e58bb6620da2b04a8c1075099d23df06ea538e6ef",
+    "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\group_summary.csv": "da655ae6593d97103d638cafeb9d41c5f8515ed9f0993d6ec6db1bfbd118f07b"
+  },
+  "methods": [
+    "Full",
+    "backflip-2.1 (assembly)",
+    "backflip-1.0 (assembly)",
+    "DynaProt-M",
+    "FastProtFlex",
+    "ANM",
+    "GNM",
+    "Static",
+    "AA"
+  ],
+  "rows": {
+    "multichain_protein": "Multichain proteins",
+    "protein_complex": "Protein complexes"
+  },
+  "row_counts": {
+    "multichain_protein": 10,
+    "protein_complex": 860
+  },
+  "row_families": {
+    "multichain_protein": 10,
+    "protein_complex": 261
+  },
+  "cells": 51,
+  "input_protocol": "whole assembly for every structure-consuming method",
+  "ablation": "BackFlip chain-split per-record values in chain_split_ablation_n10.csv and figures_v2/",
+  "protein_row_definition": "benchmark_group=protein with actual_input_n_chains>=2",
+  "complex_row_source": "frozen evaluation/group_summary.csv, unchanged",
+  "statistics": "record-weighted mean, 95% family-cluster percentile, seed=20261024, draws=2000",
+  "no_rescoring": true,
+  "no_score_based_selection": true,
+  "artifact_sha256": {
+    "benchmark_multichain_v3.pdf": "7faeed278184495f91e975b4c2744052052f8c66c01b56eb2de0c65f76c841f6",
+    "benchmark_multichain_v3.png": "80d41e9f46e81d3e3b738910dd11a59054dbe665aeaf6f8d34261790cb50a4c2",
+    "benchmark_multichain_v3.svg": "f1ece56ce2cd54948379a2967037e78e60622993ad2e81ed513fceb47fc1ba06"
+  }
+}

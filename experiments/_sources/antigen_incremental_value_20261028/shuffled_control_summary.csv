@@ -1,0 +1,5 @@
+variant,template_version,n_seeds,actual_top10_mean,shuffled_top10_mean_median,fraction_shuffled_top10_ge_actual,actual_average_precision,shuffled_AP_median,fraction_shuffled_AP_ge_actual,interpretation
+full,primary,200,5.333333333333333,6.0,0.925,0.5396105384841485,0.592717854778132,0.935,"Descriptive feature-permutation control, not an IID biological p-value."
+full,secondary,200,6.0,6.333333333333333,0.74,0.5739321443180443,0.5945114049151017,0.71,"Descriptive feature-permutation control, not an IID biological p-value."
+intrachain,primary,200,6.0,6.0,1.0,0.6304513772769316,0.6304513772769316,1.0,"Descriptive feature-permutation control, not an IID biological p-value."
+intrachain,secondary,200,6.0,6.0,1.0,0.6304513772769316,0.6304513772769316,1.0,"Descriptive feature-permutation control, not an IID biological p-value."

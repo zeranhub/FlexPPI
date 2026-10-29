@@ -1,0 +1,208 @@
+{
+  "status": "passed",
+  "records": 3063,
+  "rows": 961321,
+  "rmsf_valid": 961321,
+  "hchi_valid": 824988,
+  "singlechain_records": 2193,
+  "singlechain_rows": 497407,
+  "singlechain_delta_exactly_zero": true,
+  "incomplete_sidechains": 0,
+  "incomplete_valid_hchi": 0,
+  "zero_sasa_complete_hchi": 39419,
+  "negative_delta_before_clipping": 0,
+  "min_delta_before_clipping": 0.0,
+  "nonstandard_residues": 0,
+  "discarded_altloc_atoms": 0,
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "3.0.3",
+    "mdtraj": "1.11.0",
+    "sklearn": "1.9.0",
+    "scipy": "1.14.1"
+  },
+  "no_test_model_selection": true,
+  "no_modification_to_original_inputs": true,
+  "trained_models": [
+    {
+      "model": "aa_sasa_fold0_rmsf.joblib",
+      "n_iter": 120,
+      "n_features": 7,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_fold0_hchi.joblib",
+      "n_iter": 120,
+      "n_features": 7,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_fold1_rmsf.joblib",
+      "n_iter": 120,
+      "n_features": 7,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_fold1_hchi.joblib",
+      "n_iter": 120,
+      "n_features": 7,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_fold2_rmsf.joblib",
+      "n_iter": 120,
+      "n_features": 7,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_fold2_hchi.joblib",
+      "n_iter": 120,
+      "n_features": 7,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_fold3_rmsf.joblib",
+      "n_iter": 120,
+      "n_features": 7,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_fold3_hchi.joblib",
+      "n_iter": 120,
+      "n_features": 7,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_fold4_rmsf.joblib",
+      "n_iter": 120,
+      "n_features": 7,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_fold4_hchi.joblib",
+      "n_iter": 120,
+      "n_features": 7,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_contacts_fold0_rmsf.joblib",
+      "n_iter": 120,
+      "n_features": 17,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_contacts_fold0_hchi.joblib",
+      "n_iter": 120,
+      "n_features": 17,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_contacts_fold1_rmsf.joblib",
+      "n_iter": 120,
+      "n_features": 17,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_contacts_fold1_hchi.joblib",
+      "n_iter": 120,
+      "n_features": 17,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_contacts_fold2_rmsf.joblib",
+      "n_iter": 120,
+      "n_features": 17,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_contacts_fold2_hchi.joblib",
+      "n_iter": 120,
+      "n_features": 17,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_contacts_fold3_rmsf.joblib",
+      "n_iter": 120,
+      "n_features": 17,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_contacts_fold3_hchi.joblib",
+      "n_iter": 120,
+      "n_features": 17,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_contacts_fold4_rmsf.joblib",
+      "n_iter": 120,
+      "n_features": 17,
+      "random_state": 7
+    },
+    {
+      "model": "aa_sasa_contacts_fold4_hchi.joblib",
+      "n_iter": 120,
+      "n_features": 17,
+      "random_state": 7
+    },
+    {
+      "model": "static47_sasa_fold0_rmsf.joblib",
+      "n_iter": 120,
+      "n_features": 53,
+      "random_state": 7
+    },
+    {
+      "model": "static47_sasa_fold0_hchi.joblib",
+      "n_iter": 120,
+      "n_features": 53,
+      "random_state": 7
+    },
+    {
+      "model": "static47_sasa_fold1_rmsf.joblib",
+      "n_iter": 120,
+      "n_features": 53,
+      "random_state": 7
+    },
+    {
+      "model": "static47_sasa_fold1_hchi.joblib",
+      "n_iter": 120,
+      "n_features": 53,
+      "random_state": 7
+    },
+    {
+      "model": "static47_sasa_fold2_rmsf.joblib",
+      "n_iter": 120,
+      "n_features": 53,
+      "random_state": 7
+    },
+    {
+      "model": "static47_sasa_fold2_hchi.joblib",
+      "n_iter": 120,
+      "n_features": 53,
+      "random_state": 7
+    },
+    {
+      "model": "static47_sasa_fold3_rmsf.joblib",
+      "n_iter": 120,
+      "n_features": 53,
+      "random_state": 7
+    },
+    {
+      "model": "static47_sasa_fold3_hchi.joblib",
+      "n_iter": 120,
+      "n_features": 53,
+      "random_state": 7
+    },
+    {
+      "model": "static47_sasa_fold4_rmsf.joblib",
+      "n_iter": 120,
+      "n_features": 53,
+      "random_state": 7
+    },
+    {
+      "model": "static47_sasa_fold4_hchi.joblib",
+      "n_iter": 120,
+      "n_features": 53,
+      "random_state": 7
+    }
+  ]
+}

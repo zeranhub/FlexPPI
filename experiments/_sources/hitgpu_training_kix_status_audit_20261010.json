@@ -1,0 +1,416 @@
+{
+  "status": "current_training_no_numerical_failure_observed",
+  "checked_utc": "2026-10-10T09:57:07.009505+00:00",
+  "audit_code_sha256": "00fb7e06d5fff87835e93e4e7f715d7f1a5e8558765459ab2cf8c703aa4d37bb",
+  "training": {
+    "single_target_completed_jobs": 1,
+    "single_target_planned_jobs": 10,
+    "family_completed_jobs": 0,
+    "family_planned_jobs": 10,
+    "current_job": {
+      "arm": "rmsf_only",
+      "fold": 0,
+      "config": "/root/flexppi_completion_20261010/single_target/configs/rmsf_only_fold0.yaml",
+      "config_sha256": "64312181a9cbc7e3ddf5c46028e0a8e96d2350bb767a44850a23867464d67b53",
+      "output_dir": "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_0",
+      "final_checkpoint": "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_0/epoch_040.pt",
+      "status": "running",
+      "started_utc": "2026-10-10T08:40:42Z"
+    },
+    "current_log_path": "/root/flexppi_completion_20261010/single_target/logs/rmsf_only_fold0.log",
+    "current_epoch_observed": 31,
+    "current_log_tail": [
+      "epoch=31 step=74900 {'loss': -0.74241, 'state_loss': -0.74241}",
+      "epoch=31 step=75000 {'loss': -1.73682, 'state_loss': -1.73682}",
+      "epoch=31 step=75100 {'loss': -0.99778, 'state_loss': -0.99778}",
+      "epoch=31 step=75200 {'loss': -0.99304, 'state_loss': -0.99304}"
+    ],
+    "nonfinite_batch_loss_lines": [],
+    "traceback_or_cuda_oom_lines": [],
+    "checkpoint_audits": [
+      {
+        "path": "/root/flexppi_completion_20261010/single_target/runs/chi_entropy_only/fold_0/epoch_040.pt",
+        "sha256": "24736dc2361e147add8d7ab338d78f6c9568cbc357ed4e6d69ca64df07c3c43a",
+        "epoch": 40,
+        "global_step": 98040,
+        "train_loss": -1.6895839772306867,
+        "train_loss_finite": true,
+        "val_loss_is_nan": true,
+        "val_fraction": 0.0,
+        "validation_state_manifest": null,
+        "seed": 7,
+        "metrics": [
+          "chi_entropy"
+        ],
+        "from_scratch": true,
+        "model_tensor_count": 102,
+        "nonfinite_model_tensor_names": [],
+        "optimizer_float_tensors": 300,
+        "optimizer_all_finite": true,
+        "all_history_train_losses_finite": true
+      },
+      {
+        "path": "/root/flexppi_completion_20261010/single_target/runs/rmsf_only/fold_0/epoch_030.pt",
+        "sha256": "216d2ff64e23f265eb44edfe191dce76c5a878b00c6ba2a89554558dbc41a13b",
+        "epoch": 30,
+        "global_step": 73530,
+        "train_loss": -0.7767211228727424,
+        "train_loss_finite": true,
+        "val_loss_is_nan": true,
+        "val_fraction": 0.0,
+        "validation_state_manifest": null,
+        "seed": 7,
+        "metrics": [
+          "rmsf"
+        ],
+        "from_scratch": true,
+        "model_tensor_count": 102,
+        "nonfinite_model_tensor_names": [],
+        "optimizer_float_tensors": 300,
+        "optimizer_all_finite": true,
+        "all_history_train_losses_finite": true
+      }
+    ],
+    "source_files_checked": 31,
+    "source_mismatches": [],
+    "frozen_manifest_mismatches": [],
+    "val_nan_explanation": "val_fraction=0 and no validation manifest produce an empty validation set; val_loss NaN is the expected placeholder. Fixed epoch040 defines all evaluations.",
+    "no_inference_no_optimizer_step_no_gpu": true
+  },
+  "cancellation": {
+    "status": "runtime_effective_pending_kix_md_cancelled",
+    "completed_utc": "2026-10-10T09:54:00.477094+00:00",
+    "cancellation_scope": [
+      "md_triplicate_production",
+      "analyze_md_triplicates",
+      "quality_md_rep01",
+      "quality_md_rep02",
+      "quality_md_rep03"
+    ],
+    "cancelled_unstarted_production_runs": 12,
+    "production_runs_were_started": false,
+    "old_parent": {
+      "pid": 71135,
+      "start_ticks": 388347564,
+      "state": "S",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/run_completion_pipeline.py"
+      ]
+    },
+    "new_parent": {
+      "pid": 76963,
+      "start_ticks": 389375384,
+      "state": "S",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/run_completion_pipeline.py"
+      ]
+    },
+    "new_parent_command": [
+      "nohup",
+      "/root/flexppi_completion_20261010/env/bin/python",
+      "-u",
+      "/root/flexppi_completion_20261010/run_completion_pipeline.py"
+    ],
+    "original_single_queue": {
+      "pid": 71188,
+      "start_ticks": 388347918,
+      "state": "S",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "/root/flexppi_completion_20261010/single_target/run_single_target_queue.py",
+        "--plan",
+        "/root/flexppi_completion_20261010/single_target/single_target_plan.json"
+      ]
+    },
+    "current_training_process": {
+      "pid": 75948,
+      "start_ticks": 388935558,
+      "state": "R",
+      "command": [
+        "/root/flexppi_completion_20261010/env/bin/python",
+        "-u",
+        "-m",
+        "flexppi",
+        "train",
+        "--config",
+        "/root/flexppi_completion_20261010/single_target/configs/rmsf_only_fold0.yaml"
+      ]
+    },
+    "protected_processes_before_and_after": [
+      {
+        "pid": 70967,
+        "start_ticks": 388337387,
+        "state": "R",
+        "command": [
+          "/root/flexppi_completion_20261010/env/bin/python",
+          "-u",
+          "/root/flexppi_completion_20261010/baselines/run_rmsf_net_3063.py",
+          "--cohort",
+          "/root/flexppi_completion_20261010/baselines/cohort",
+          "--output",
+          "/root/flexppi_completion_20261010/baselines/rmsf_net",
+          "--source-root",
+          "/root/flexppi_completion_20261010/baselines/RMSF-net",
+          "--weights",
+          "/root/flexppi_completion_20261010/baselines/RMSF-net/model_cpu/sim_model.pth",
+          "--threads",
+          "2",
+          "--batch-size",
+          "2"
+        ]
+      },
+      {
+        "pid": 71188,
+        "start_ticks": 388347918,
+        "state": "S",
+        "command": [
+          "/root/flexppi_completion_20261010/env/bin/python",
+          "-u",
+          "/root/flexppi_completion_20261010/single_target/run_single_target_queue.py",
+          "--plan",
+          "/root/flexppi_completion_20261010/single_target/single_target_plan.json"
+        ]
+      },
+      {
+        "pid": 73982,
+        "start_ticks": 388551056,
+        "state": "S",
+        "command": [
+          "/root/flexppi_completion_20261010/planet_env/bin/python",
+          "-u",
+          "/root/flexppi_completion_20261010/baselines/run_planet_cpu_queue.py",
+          "--variant",
+          "full"
+        ]
+      },
+      {
+        "pid": 73983,
+        "start_ticks": 388551056,
+        "state": "S",
+        "command": [
+          "/root/flexppi_completion_20261010/planet_env/bin/python",
+          "-u",
+          "/root/flexppi_completion_20261010/baselines/run_planet_cpu_queue.py",
+          "--variant",
+          "seq"
+        ]
+      },
+      {
+        "pid": 73988,
+        "start_ticks": 388551858,
+        "state": "R",
+        "command": [
+          "/root/flexppi_completion_20261010/planet_env/bin/python",
+          "-u",
+          "/root/flexppi_completion_20261010/baselines/run_planet_cpu_queue.py",
+          "--variant",
+          "full",
+          "--worker"
+        ]
+      },
+      {
+        "pid": 73989,
+        "start_ticks": 388551874,
+        "state": "R",
+        "command": [
+          "/root/flexppi_completion_20261010/planet_env/bin/python",
+          "-u",
+          "/root/flexppi_completion_20261010/baselines/run_planet_cpu_queue.py",
+          "--variant",
+          "seq",
+          "--worker"
+        ]
+      },
+      {
+        "pid": 75948,
+        "start_ticks": 388935558,
+        "state": "R",
+        "command": [
+          "/root/flexppi_completion_20261010/env/bin/python",
+          "-u",
+          "-m",
+          "flexppi",
+          "train",
+          "--config",
+          "/root/flexppi_completion_20261010/single_target/configs/rmsf_only_fold0.yaml"
+        ]
+      }
+    ],
+    "all_protected_pid_starttime_argv_unchanged": true,
+    "only_signal_sent": {
+      "pid": 71135,
+      "signal": "SIGTERM"
+    },
+    "same_gpu_queue_lock_path": "/root/flexppi_completion_20261010/gpu_queue.lock",
+    "new_parent_exclusive_lock_verified": true,
+    "completed_step_audits_preserved": true,
+    "control_sha256": "837494a7ecbdc8cb87d464b34d1e8bdfdd5bb77cbe8dd525dbc8896f8d2661a5",
+    "pipeline_before_sha256": "6e3c82f5354cb4d0022fbe3ed312c2f6d6ce8e10fcdfdeb4838eef3fa44e07a4",
+    "pipeline_after_sha256": "009ee9c32e73ea65c52a7364c83f3fe26c70bbba1b731cbbbf7fe9bfec481a69",
+    "restart_log": "/root/flexppi_completion_20261010/pipeline_md_cancel_resumed_20261010.log",
+    "effective_runtime_state_sha256": "b813cc72f5db8ec2116c93c803987ca1e397401d72d24b30e9983ef5e349169b",
+    "md_reuse_policy": {
+      "strategy": "reuse_existing_audited_single_trajectory",
+      "priority": "manuscript",
+      "allow_new_kix_production": false,
+      "additional_kix_production_runs": 0,
+      "cancelled_planned_new_runs": 12,
+      "independent_replicates_required": 1,
+      "never_claim_triplicate_uncertainty_from_single_trajectory": true,
+      "existing_md_search_hosts": [
+        "local",
+        "hmu-gpu",
+        "hit-gpu"
+      ],
+      "provenance_requirement": "Only actual audited production trajectories; short CPU/CUDA technical smoke does not count as biological MD validation"
+    },
+    "no_training_restarted": true,
+    "no_cpu_baseline_process_touched": true,
+    "boundary": "The monitoring parent was replaced; existing training/CPU children continue. The persistent lock file was retained, and its exclusive ownership was reacquired by the new monitor after the original monitor released it."
+  },
+  "historical_kix": {
+    "search_roots": [
+      "/root",
+      "/workspace"
+    ],
+    "search_command": [
+      "find",
+      "/root",
+      "/workspace",
+      "-path",
+      "*/site-packages",
+      "-prune",
+      "-o",
+      "-path",
+      "/root/.cache",
+      "-prune",
+      "-o",
+      "-path",
+      "*/hf_cache",
+      "-prune",
+      "-o",
+      "-type",
+      "f",
+      "(",
+      "-iname",
+      "*kix*",
+      "-o",
+      "-iname",
+      "*.xtc",
+      "-o",
+      "-iname",
+      "*.dcd",
+      "-o",
+      "-iname",
+      "*.trr",
+      ")",
+      "-print"
+    ],
+    "all_matching_files": [
+      "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/apo_protein.dcd",
+      "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/myb_protein.dcd",
+      "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/mll_protein.dcd",
+      "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/both_protein.dcd",
+      "/root/flexppi_completion_20261010/freeze_kix_predictions.py",
+      "/root/flexppi_completion_20261010/verify_kix_predictions.py",
+      "/root/flexppi_completion_20261010/kix_fold1_all_residues.csv",
+      "/root/flexppi_completion_20261010/pipeline_logs/freeze_kix_predictions.log",
+      "/root/flexppi_completion_20261010/pipeline_logs/verify_prior_kix_predictions.log",
+      "/root/flexppi_completion_20261010/audit_hitgpu_training_and_kix_history.py"
+    ],
+    "actual_trajectory_files": [
+      "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/apo_protein.dcd",
+      "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/myb_protein.dcd",
+      "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/mll_protein.dcd",
+      "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/both_protein.dcd"
+    ],
+    "actual_rebuilt_smoke": [
+      {
+        "state": "apo",
+        "path": "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/apo_protein.dcd",
+        "frames": 40,
+        "atoms": 1464,
+        "dt_ps": 1.0000000029814058,
+        "first_saved_time_ps": 1.0000000029814058,
+        "last_saved_time_ps": 40.00000011925623,
+        "saved_span_ps": 39.00000011627482,
+        "trajectory_sha256": "ec08b87aa218d5624802f2e9da967a5ef3100267986726554511727acfd29776",
+        "metadata_path": "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/apo.json",
+        "metadata_sha256": "8743af7972f33d1b6aaf278b15bca3198e0ff9e1f6ebec072f3299b1f5f92d94",
+        "simulated_endpoint_ps": 40.00000000000292,
+        "classification": "40ps_technical_smoke_only",
+        "energy_temperature_samples_finite": true
+      },
+      {
+        "state": "myb",
+        "path": "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/myb_protein.dcd",
+        "frames": 40,
+        "atoms": 1894,
+        "dt_ps": 1.0000000029814058,
+        "first_saved_time_ps": 1.0000000029814058,
+        "last_saved_time_ps": 40.00000011925623,
+        "saved_span_ps": 39.00000011627482,
+        "trajectory_sha256": "b31d6d98eeefe6d4e1c9b2bb74253a5807329454449d4302d7eb0d0cadb242de",
+        "metadata_path": "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/myb.json",
+        "metadata_sha256": "c5072361da039b41ef7397fd726e209d73cac29ab8486eca286a56e574e0a5c7",
+        "simulated_endpoint_ps": 40.00000000000292,
+        "classification": "40ps_technical_smoke_only",
+        "energy_temperature_samples_finite": true
+      },
+      {
+        "state": "mll",
+        "path": "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/mll_protein.dcd",
+        "frames": 40,
+        "atoms": 1751,
+        "dt_ps": 1.0000000029814058,
+        "first_saved_time_ps": 1.0000000029814058,
+        "last_saved_time_ps": 40.00000011925623,
+        "saved_span_ps": 39.00000011627482,
+        "trajectory_sha256": "bac46739e222047b12e9d46b07ee78040ea4303fcd2e60ef4dc906a56ef76ffe",
+        "metadata_path": "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/mll.json",
+        "metadata_sha256": "e217ad96b10e5fa0b0a052e035379b86ad825a4be9ef1554699deeac2b6583b0",
+        "simulated_endpoint_ps": 40.00000000000292,
+        "classification": "40ps_technical_smoke_only",
+        "energy_temperature_samples_finite": true
+      },
+      {
+        "state": "both",
+        "path": "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/both_protein.dcd",
+        "frames": 40,
+        "atoms": 2181,
+        "dt_ps": 1.0000000029814058,
+        "first_saved_time_ps": 1.0000000029814058,
+        "last_saved_time_ps": 40.00000011925623,
+        "saved_span_ps": 39.00000011627482,
+        "trajectory_sha256": "e826839da474fdec0bbf178e5a16c46802ba6492135527377c5b7a178055f2df",
+        "metadata_path": "/root/flexppi_completion_20261010/kix_md_triplicate_rebuild_20261010/smoke/both.json",
+        "metadata_sha256": "39073809672e5ba065e7ff40137d9ff098ba80eb1c55b2f5ac86290567284b48",
+        "simulated_endpoint_ps": 40.00000000000292,
+        "classification": "40ps_technical_smoke_only",
+        "energy_temperature_samples_finite": true
+      }
+    ],
+    "new_production_done_files": [],
+    "new_production_summary_files": [],
+    "long_historical_kix_production_trajectories_found_on_searched_hit_gpu_roots": false,
+    "conclusion_zh": "已搜索hit-gpu的/root和/workspace；仅发现当前重建批次四个40ps技术烟雾DCD，每个40帧、1ps间隔，没有发现可复用的旧100ns KIX生产轨迹。原始本地及hmu-gpu历史单轨迹由另行审计负责；本服务器烟雾不能替代生产MD或用于宣称收敛。",
+    "primary_prediction_fold": 1,
+    "primary_full_checkpoint": {
+      "method": "full",
+      "fold": 1,
+      "checkpoint": "/root/flexppi_revision_20261002/corrected_training_v1/runs/full/fold_1/epoch_040.pt",
+      "sha256": "63b48e271413a91173c5763a1607feb365daf1bc48818c237588718903355ebb"
+    },
+    "primary_full_checkpoint_content_hash_verified": true,
+    "primary_prediction_csv_sha256": "348d4201f842b940570a5fd389ba431726d678b7b643294c59c92f8ba2e3decc",
+    "primary_prediction_csv_content_hash_verified": true
+  },
+  "pipeline_source_sha256": "009ee9c32e73ea65c52a7364c83f3fe26c70bbba1b731cbbbf7fe9bfec481a69",
+  "collector_source_sha256": "ae8e76e059e2d2c824d2e73792aeb167e2b25d49c88d8761af3791b232127e66",
+  "no_docx_modified": true
+}

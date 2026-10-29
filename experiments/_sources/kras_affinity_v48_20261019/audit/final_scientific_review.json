@@ -1,0 +1,270 @@
+{
+  "status": "passed",
+  "document": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v48_20261019_中文修订_KRAS亲和力机制与绝对RMSF_三线表.docx",
+  "document_sha256": "952c789ef6271f88f7ac619ac78291f71536c53f3a7bdeddb00eaebdcf003726",
+  "figure4": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\kras_affinity_v48_20261019\\figure4\\fig4_kras_affinity.png",
+  "figure4_sha256": "012d80f6bf0ed5f35a3736835e24dca137c9e53036cc2502586286229d865c47",
+  "reviewer": "independent kras_model_mechanism_audit agent",
+  "review_scope": "All v48 manuscript changes; Figure 4 raster visual inspection and actual SVG curve geometry; original Full NPZ values; literature-evidence chain; package preservation.",
+  "checks": [
+    {
+      "check": "all_twenty_absolute_values_match_independent_original_NPZ_review",
+      "passed": true,
+      "detail": {
+        "plotted_positions": 10,
+        "raw_prediction_sha256": [
+          {
+            "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_7ow5.npz",
+            "sha256": "37c2a097119a345bbba8802dc44d667ed56ca32198a56106b99f9999079332bc"
+          },
+          {
+            "path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_7ow6.npz",
+            "sha256": "06ebbc6025422ba1369e9bd5d670efe498635113c08e791afd5db9d05c5d7aed"
+          }
+        ]
+      }
+    },
+    {
+      "check": "actual_vector_line_vertices_match_absolute_RMSF_values",
+      "passed": true,
+      "detail": {
+        "curve_count": 2,
+        "vertices_per_curve": [
+          10,
+          10
+        ],
+        "max_SVG_coordinate_error_pt": {
+          "WT": 4.807700406672666e-07,
+          "G12D": 4.918607601211988e-07
+        }
+      }
+    },
+    {
+      "check": "figure_has_absolute_RMSF_and_two_conditions_without_MD_or_delta_scores",
+      "passed": true,
+      "detail": {
+        "visible_curve_names": [
+          "WT",
+          "G12D"
+        ],
+        "y_axis": "RMSF (Å)",
+        "MD_or_delta_metric_text": false
+      }
+    },
+    {
+      "check": "key_RMSF_values_and_N_terminal_pattern_correct",
+      "passed": true,
+      "detail": {
+        "raw_independent_values": [
+          {
+            "position": 1,
+            "WT_AA": "V",
+            "G12D_AA": "V",
+            "WT_RMSF_A": 0.6062613129615784,
+            "G12D_RMSF_A": 0.6055277585983276,
+            "G12D_minus_WT_A": -0.0007335543632507324,
+            "fraction_decrease": 0.001209963999957921
+          },
+          {
+            "position": 2,
+            "WT_AA": "V",
+            "G12D_AA": "V",
+            "WT_RMSF_A": 0.5743178725242615,
+            "G12D_RMSF_A": 0.5768380165100098,
+            "G12D_minus_WT_A": 0.002520143985748291,
+            "fraction_decrease": -0.004388064704780418
+          },
+          {
+            "position": 3,
+            "WT_AA": "V",
+            "G12D_AA": "V",
+            "WT_RMSF_A": 0.6594159007072449,
+            "G12D_RMSF_A": 0.6483897566795349,
+            "G12D_minus_WT_A": -0.011026144027709961,
+            "fraction_decrease": 0.01672107696505963
+          },
+          {
+            "position": 4,
+            "WT_AA": "G",
+            "G12D_AA": "G",
+            "WT_RMSF_A": 0.7660970091819763,
+            "G12D_RMSF_A": 0.654137134552002,
+            "G12D_minus_WT_A": -0.11195987462997437,
+            "fraction_decrease": 0.14614320808995582
+          },
+          {
+            "position": 5,
+            "WT_AA": "A",
+            "G12D_AA": "A",
+            "WT_RMSF_A": 0.8852733969688416,
+            "G12D_RMSF_A": 0.6797102093696594,
+            "G12D_minus_WT_A": -0.20556318759918213,
+            "fraction_decrease": 0.23220305535332517
+          },
+          {
+            "position": 6,
+            "WT_AA": "G",
+            "G12D_AA": "D",
+            "WT_RMSF_A": 1.0802944898605347,
+            "G12D_RMSF_A": 0.7178232073783875,
+            "G12D_minus_WT_A": -0.3624712824821472,
+            "fraction_decrease": 0.33553006692549364
+          },
+          {
+            "position": 7,
+            "WT_AA": "G",
+            "G12D_AA": "G",
+            "WT_RMSF_A": 1.2462451457977295,
+            "G12D_RMSF_A": 0.9043732285499573,
+            "G12D_minus_WT_A": -0.3418719172477722,
+            "fraction_decrease": 0.2743215637794423
+          },
+          {
+            "position": 8,
+            "WT_AA": "V",
+            "G12D_AA": "V",
+            "WT_RMSF_A": 1.0523061752319336,
+            "G12D_RMSF_A": 0.885739803314209,
+            "G12D_minus_WT_A": -0.1665663719177246,
+            "fraction_decrease": 0.15828698513625328
+          },
+          {
+            "position": 9,
+            "WT_AA": "G",
+            "G12D_AA": "G",
+            "WT_RMSF_A": 1.0190951824188232,
+            "G12D_RMSF_A": 0.8807145953178406,
+            "G12D_minus_WT_A": -0.13838058710098267,
+            "fraction_decrease": 0.13578769627046636
+          },
+          {
+            "position": 10,
+            "WT_AA": "K",
+            "G12D_AA": "K",
+            "WT_RMSF_A": 1.142025113105774,
+            "G12D_RMSF_A": 0.9001185297966003,
+            "G12D_minus_WT_A": -0.24190658330917358,
+            "fraction_decrease": 0.21182247266988802
+          }
+        ],
+        "description": "Rounded 3-decimal absolute values, all correct; N-terminal means 0.613 and 0.610 Å."
+      }
+    },
+    {
+      "check": "SPR_affinity_and_structure_attribution_match_primary_literature_audit",
+      "passed": true,
+      "detail": {
+        "primary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9464187/",
+        "facts": {
+          "id": "affinity",
+          "kind": "SPR measurement",
+          "construct": "JDIa41b1, same engineered TCR in both complexes",
+          "WT_KD_M": 3e-06,
+          "G12D_KD_M": 7.43e-10,
+          "G12D_KD_SD_M": 1.8e-11,
+          "replicates": 2,
+          "ratio": 4037.6851,
+          "G12D_half_life_h": 1.2,
+          "locator": "Table 2; Results: virtually identical binding mode; Methods: Binding affinity and thermodynamic parameter measurement",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9464187/#Tab2"
+        },
+        "scope": "The same JDIa41b1 construct; no later-cell-assay construct is attributed here."
+      }
+    },
+    {
+      "check": "HLA_network_and_TCR_contact_mechanism_with_correct_attribution",
+      "passed": true,
+      "detail": {
+        "primary_network_facts": {
+          "id": "local_HLA_network",
+          "kind": "X-ray structural observation",
+          "contacts": [
+            "peptide D6–HLA R114 salt bridge",
+            "HLA R114 stabilized by HLA D116",
+            "peptide D6–HLA Q70 hydrogen bond"
+          ],
+          "WT_contrast": "G6 cannot form the D6 side-chain interaction network.",
+          "locator": "Results: KRASG12D peptide D6 side chain was buried in the HLA groove; Fig. 2d",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9464187/#Fig2"
+        },
+        "TCR_contact_fact": {
+          "id": "TCR_contact_positions",
+          "kind": "X-ray structural observation",
+          "contacts": [
+            "TCR Y33alpha–peptide A5",
+            "TCR N101beta/H100beta–peptide G7",
+            "TCR G98beta–peptide G9"
+          ],
+          "numbering": "Publication numbering; map to PDB author numbering before drawing atom labels.",
+          "locator": "Results preceding Table 3; Fig. 2c",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9464187/#Fig2"
+        },
+        "model_input_geometry_corroboration": {
+          "D6_OD2_to_HLA_R114_NH1_A": 2.8750826075088725,
+          "D6_carboxyl_nearest_TCR_A": 7.537028592223853
+        },
+        "interpretation": "Text attributes chemical contacts, enthalpy and electrostatics to the original study; model only supplies localized bound-backbone dynamics."
+      }
+    },
+    {
+      "check": "original_and_ITrace_MD_are_explicitly_separate",
+      "passed": true,
+      "detail": {
+        "original_MD": {
+          "id": "original_MD",
+          "kind": "Original study computational analysis",
+          "production": "25 independent 4 ns simulations per complex; first 1 ns omitted; MM/PBSA uses 25 × 3 ns and 7500 snapshots",
+          "finding": "Energy decomposition and electrostatics support an indirect electrostatic contribution around D6 and the TCR contact zone.",
+          "key_TCR_residues_publication_numbering": [
+            "R50alpha",
+            "K70alpha",
+            "K94beta",
+            "H100beta",
+            "N101beta",
+            "Q99beta"
+          ],
+          "locator": "Fig. 3b-f; Results following Fig. 3; Methods: Molecular dynamic simulations-MMPBSA Calculations",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9464187/#Fig3"
+        },
+        "current_MD": "ITrace 3 independent 200 ns trajectories per state, used only as supplementary corroboration; no MD line in the figure."
+      }
+    },
+    {
+      "check": "obsolete_MD_score_narrative_and_invalid_affinity_entropy_inference_absent",
+      "passed": true,
+      "detail": {
+        "forbidden_expressions_checked": [
+          "低估了这些位置的变化幅度",
+          "较MD降幅较小",
+          "变化排序相关仍为0.733",
+          "变化量的平均绝对误差为0.229",
+          "零变化基线低40.2%",
+          "降低结合熵损失",
+          "结合熵降低",
+          "RMSF证明",
+          "RMSF直接决定",
+          "预测了4,000倍",
+          "预测亲和力提高"
+        ],
+        "finding": "The new conclusion is local dynamical support for an independently established mechanism, not causal affinity/free-energy prediction."
+      }
+    },
+    {
+      "check": "all_revised_model_claims_have_bounded_scope",
+      "passed": true,
+      "detail": {
+        "finding": "Abstract, introduction, methods, section title, Results, figure caption, Discussion and conclusion consistently discuss local complex-bound backbone response."
+      }
+    },
+    {
+      "check": "independent_package_preservation_passed",
+      "passed": true,
+      "detail": {
+        "report": "manuscript_QA/package_preservation_audit.json"
+      }
+    }
+  ],
+  "required_fixes": [],
+  "editorial_assessment": "The revised case makes a scientifically bounded argument: the model localizes constrained motion at D6 and unchanged neighboring contact-backbone positions; the primary article supplies SPR affinity, crystallographic HLA network, enthalpy, and MD/MM-PBSA electrostatics. It does not elevate MD into truth or turn bound-state RMSF into binding free energy/entropy or a causal quantitative affinity predictor.",
+  "source_notes": "Primary literature facts are cross-checked against the separate literature agent’s primary-article evidence audit. Numerical model and structural-distance evidence were independently recomputed here. Figure 4 was viewed directly and its two 10-vertex curves checked against the SVG coordinates."
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Many of the studies supporting the affinity and kinetic models of pMHC potency include examples of discrepancies in the correlations they report (al-Ramadi et al., 1995; Baker et al., 2001; Hudrisier et al., 1998; Krogsgaard et al., 2003). Several factors may account for these discrepancies. First, the majority of studies were performed with small numbers of pMHC agonists, limiting the reliability of observed correlations. Second, assays of T cell activation were performed by stimulating cells with various pMHC without always fully controlling for differences in peptide processing, loading, and stability. Third, solution binding parameters were mainly measured at 25°C rather than 37°C, the relevant temperature at which functional assays are performed. Fourth, TCR-pMHC solution binding or three-dimensional (3D) binding properties might be different compared to functionally relevant membrane or two-dimensional (2D) binding properties, where both pMHC and TCR are immobilized to surfaces. In such a constrained environment, the likelihood of protein rebinding after chemical dissociation is greatly enhanced, which would probably have a large impact on its 2D koff. Finally, variations in measured TCR-pMHC bond affinity in the majority of studies result mostly from differences in koff rather than kon, potentially masking the importance that kon may have in T cell activation."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "We first designed various NY-ESO157-165 APLs and HLA-A2 mutants that bind to 1G4 TCR with a wide range of binding characteristics. It has been demonstrated that a substitution of the highly unstable cysteine amino acid to valine (ESO-9V) or leucine (ESO-9L) at the anchor position 165 of NY-ESO157-165 improves loading efficacy of peptide onto HLA-A2 and its subsequent immunogenicity (Chen et al., 2000). We produced a set of ESO-9V APLs by substituting amino acids at the positions 3, 4, 5, 6, 7, and 8 in the peptide. In addition, we have generated a set of HLA-A2 variants with various mutations within the 1G4 TCR binding “footprint” (Chen et al., 2005) (R65, H70, H74, R75, V76, K146). The affinity, kinetics, and thermodynamics of 1G4 TCR binding to 17 pMHC variants (APLs and HLA-A2 mutants) were analyzed by SPR at 37°C (Figure 1; Figure S1 and Table S1 available online)."
+  },
+  {
+    "tag": "fig",
+    "id": "fig1",
+    "text": "Figure 1Binding Properties of 1G4 TCR Interaction with pMHC VariantsBinding affinity and kinetics of 1G4 TCR interaction with a range of ESO-9V-HLA-A2 variants was measured at 37°C by SPR (see Figure S1). Effect of peptide or HLA-A2 amino acid substitution on 1G4 TCR binding affinity and kinetics is presented as a fold difference compared to ESO-9V-HLA-A2. Substitutions that negatively affected 1G4 TCR binding have relative affinities and kinetics lower than 1. Values shown are the mean ± SEM of at least three independently performed experiments."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Binding affinity and kinetics of 1G4 TCR interaction with a range of ESO-9V-HLA-A2 variants was measured at 37°C by SPR (see Figure S1). Effect of peptide or HLA-A2 amino acid substitution on 1G4 TCR binding affinity and kinetics is presented as a fold difference compared to ESO-9V-HLA-A2. Substitutions that negatively affected 1G4 TCR binding have relative affinities and kinetics lower than 1. Values shown are the mean ± SEM of at least three independently performed experiments."
+  },
+  {
+    "tag": "fig",
+    "id": "fig2",
+    "text": "Figure 2Functional Response of 1G4 T Cells to pMHC Variants(A–C) IFN-γ release from 1G4 CTLs stimulated by plate-bound pMHC variants. 1G4 CTLs were cultured for 4 hr in 96-well plates coated with indicated concentrations of pMHC variants. Supernatants were collected and secreted IFN-γ was measured by ELISA. One of at least three independently performed experiments is shown.(D–E) Cytotoxic response of 1G4 CTLs to NY-ESO157-165 peptide variants. A 1:1 ratio of 1G4 CTLs and 51Cr-labeled T2 cells were pulsed with the indicated peptide dilutions starting from the concentration shown in previous experiments (Figure S2D) to give a 40% increase in surface HLA-A2 expression (C40%) on T2 cells. After 4 hr incubation at 37°C, specific lysis of T2 cells was analyzed by measuring released 51Cr. One of at least three independent experiments is shown."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "(D–E) Cytotoxic response of 1G4 CTLs to NY-ESO157-165 peptide variants. A 1:1 ratio of 1G4 CTLs and 51Cr-labeled T2 cells were pulsed with the indicated peptide dilutions starting from the concentration shown in previous experiments (Figure S2D) to give a 40% increase in surface HLA-A2 expression (C40%) on T2 cells. After 4 hr incubation at 37°C, specific lysis of T2 cells was analyzed by measuring released 51Cr. One of at least three independent experiments is shown."
+  },
+  {
+    "tag": "table-wrap",
+    "id": "tbl1",
+    "text": "Table 1Correlation between pMHC Potency and TCR-pMHC Binding ParametersTCR/pMHC Bond ParameteraIFN-γ Release (EC50)bCytotoxicity (1/log(EC50))bR2p ValueR2p ValueKD0.7191.70E-050.8821.70E-04koff0.7763.04E-060.9603.73E-06t1/20.3580.01110.6520.0085kon0.3200.01790.6330.01031/kon0.0120.67350.7090.0044ΔG0.6240.00020.7460.0027ΔH0.0770.28120.0060.8424-TΔS0.0010.90640.0440.5901ΔC0.2210.05690.1100.3826ΔG‡diss0.4620.00270.6030.0138ΔH‡diss0.0600.34430.1080.3884-TΔS‡diss0.0360.46660.0700.4921ΔC‡diss0.0470.40550.0580.5327ΔG‡ass0.2020.07000.1270.3469ΔH‡ass0.0980.22190.0300.6539-TΔS‡ass0.0120.67930.0820.4544ΔC‡ass0.0750.28910.0340.6360aMeasured EC50 values are correlated to various TCR-pMHC bond parameters via data fitting in Matlab. Standard methods are used to calculate the R2 statistic, which is the square of the correlation coefficient for these simple models, and p values are obtained with an F-test. Details can be found in the Supplemental Information. The quality of the fit for several bond parameters is shown in Figure 3.bWe use the reciprocal of EC50 for the cytotoxicity assay because it is obtained from a dilution curve. We take the log to account for effects of nonlinear loading of peptide to APCs. The use of EC50 in both assays is discussed in the Supplemental Information."
+  },
+  {
+    "tag": "p",
+    "id": null,
+    "text": "Protein subunits of 1G4 TCR and HLA-A2 were expressed in E. coli, purified, and refolded in vitro, as described in Supplemental Experimental Procedures. Binding properties of 1G4 TCR interaction with ESO-9V pMHC variants were analyzed by SPR on a BIAcore 3000 (GE Healthcare Life Sciences, Little Chalfont Bucks, UK). Binding affinity was analyzed by measuring equilibrium binding of graded concentrations of 1G4 TCR to immobilized pMHC. Kinetic data were obtained by injecting 1G4 TCR over the immobilized pMHC and analysis of the dissociation phase curve fitting in BIAevaluation software. Binding thermodynamics was analyzed by measuring affinity and kinetics at the range of temperatures, calculating binding energy (ΔG and Δ‡Gdiss), and fitting data to the van't Hoff equation. Details of binding analysis by SPR can be found in Supplemental Experimental Procedures."
+  },
+  {
+    "tag": "ref",
+    "id": "bib17",
+    "text": "Davis S.J., van der Merwe P.A. The structure and ligand interactions of CD2: Implications for T-cell function. Immunol. Today. 1996;17:177–187. doi: 10.1016/0167-5699(96)80617-7."
+  },
+  {
+    "tag": "ref",
+    "id": "bib18",
+    "text": "Dushek O., Coombs D. Analysis of serial engagement and peptide-MHC transport in T cell receptor microclusters. Biophys. J. 2008;94:3447–3460. doi: 10.1529/biophysj.107.116897."
+  },
+  {
+    "tag": "ref",
+    "id": "bib32",
+    "text": "Luxembourg A.T., Brunmark A., Kong Y., Jackson M.R., Peterson P.A., Sprent J., Cai Z. Requirements for stimulating naive CD8+ T cells via signal 1 alone. J. Immunol. 1998;161:5226–5235."
+  }
+]

@@ -1,0 +1,10 @@
+split,fold,model,n,n_positive,top10_hits,top10_tested,top10_precision,average_precision,auroc,response_spearman,top10_candidates,variant,template_version
+leave_system_out,ebv,B0_binding,93,13,1,10,0.1,0.1549729855330651,0.5461538461538462,0.0004326937423532,ebv_p42|ebv_p73|ebv_p95|ebv_p82|ebv_p25|ebv_p26|ebv_p65|ebv_p14|ebv_p79|ebv_p40,full,primary
+leave_system_out,ebv,B1_binding_static,93,13,5,10,0.5,0.5421537612714084,0.8730769230769231,0.3213870072513503,ebv_p58|ebv_p21|ebv_p3|ebv_p89|ebv_p17|ebv_p11|ebv_p88|ebv_p51|ebv_p5|ebv_p22,full,primary
+leave_system_out,ebv,B2_binding_static_dynamics,93,13,4,10,0.4,0.3884462815636905,0.8528846153846154,0.3441108889618333,ebv_p17|ebv_p88|ebv_p89|ebv_p21|ebv_p58|ebv_p3|ebv_p57|ebv_p5|ebv_p90|ebv_p87,full,primary
+leave_system_out,mage,B0_binding,93,19,2,10,0.2,0.1987294490800402,0.4196301564722617,-0.0321536211990092,mage_p50|mage_p71|mage_p40|mage_p12|mage_p19|mage_p34|mage_p83|mage_p74|mage_p92|mage_p36,full,primary
+leave_system_out,mage,B1_binding_static,93,19,5,10,0.5,0.5313786018485274,0.8399715504978664,0.4733818746083374,mage_p40|mage_p12|mage_p92|mage_p61|mage_p86|mage_p69|mage_p17|mage_p57|mage_p47|mage_p24,full,primary
+leave_system_out,mage,B2_binding_static_dynamics,93,19,3,10,0.3,0.3960778000836301,0.8100995732574681,0.4087314613112111,mage_p12|mage_p86|mage_p39|mage_p48|mage_p29|mage_p47|mage_p13|mage_p25|mage_p37|mage_p31,full,primary
+leave_system_out,nyeso,B0_binding,93,30,1,10,0.1,0.28594111444793,0.456084656084656,-0.003700277520814,NYESO_p52|NYESO_p21|NYESO_p4|NYESO_p83|NYESO_p60|NYESO_p73|NYESO_p80|NYESO_p19|NYESO_p54|NYESO_p38,full,primary
+leave_system_out,nyeso,B1_binding_static,93,30,8,10,0.8,0.817821768710859,0.9158730158730158,0.6218555101310016,NYESO_p5|NYESO_p24|NYESO_p16|NYESO_p36|NYESO_p45|NYESO_p13|NYESO_p22|NYESO_p31|NYESO_p33|NYESO_p49,full,primary
+leave_system_out,nyeso,B2_binding_static_dynamics,93,30,9,10,0.9,0.834307533805125,0.9222222222222224,0.6174987317597206,NYESO_p5|NYESO_p36|NYESO_p24|NYESO_p45|NYESO_p16|NYESO_p13|NYESO_p22|NYESO_p33|NYESO_p31|NYESO_p14,full,primary

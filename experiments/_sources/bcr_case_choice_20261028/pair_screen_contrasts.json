@@ -1,0 +1,86 @@
+[
+  {
+    "id": "P103A_minus_WT_copy1",
+    "before": "scfv_WT_copy1",
+    "after": "scfv_P103A_copy1",
+    "type": "matched construct, independent crystals",
+    "counterfactual": false
+  },
+  {
+    "id": "scfv_WT_P103A_cf_copy1_minus_parent",
+    "before": "scfv_WT_copy1",
+    "after": "scfv_WT_P103A_cf_copy1",
+    "type": "fixed-backbone identity sensitivity",
+    "counterfactual": true
+  },
+  {
+    "id": "scfv_P103A_A103P_cf_copy1_minus_parent",
+    "before": "scfv_P103A_copy1",
+    "after": "scfv_P103A_A103P_cf_copy1",
+    "type": "fixed-backbone identity sensitivity",
+    "counterfactual": true
+  },
+  {
+    "id": "P103A_minus_WT_copy2",
+    "before": "scfv_WT_copy2",
+    "after": "scfv_P103A_copy2",
+    "type": "matched construct, independent crystals",
+    "counterfactual": false
+  },
+  {
+    "id": "scfv_WT_P103A_cf_copy2_minus_parent",
+    "before": "scfv_WT_copy2",
+    "after": "scfv_WT_P103A_cf_copy2",
+    "type": "fixed-backbone identity sensitivity",
+    "counterfactual": true
+  },
+  {
+    "id": "scfv_P103A_A103P_cf_copy2_minus_parent",
+    "before": "scfv_P103A_copy2",
+    "after": "scfv_P103A_A103P_cf_copy2",
+    "type": "fixed-backbone identity sensitivity",
+    "counterfactual": true
+  },
+  {
+    "id": "P103A_minus_WT_copy1_shared",
+    "before": "scfv_WT_copy1_shared",
+    "after": "scfv_P103A_copy1_shared",
+    "type": "matched construct common-coverage sensitivity",
+    "counterfactual": false
+  },
+  {
+    "id": "P103A_minus_WT_copy2_shared",
+    "before": "scfv_WT_copy2_shared",
+    "after": "scfv_P103A_copy2_shared",
+    "type": "matched construct common-coverage sensitivity",
+    "counterfactual": false
+  },
+  {
+    "id": "WT_copy2_minus_copy1",
+    "before": "scfv_WT_copy1",
+    "after": "scfv_WT_copy2",
+    "type": "within-crystal copy sensitivity",
+    "counterfactual": false
+  },
+  {
+    "id": "P103A_copy2_minus_copy1",
+    "before": "scfv_P103A_copy1",
+    "after": "scfv_P103A_copy2",
+    "type": "within-crystal copy sensitivity",
+    "counterfactual": false
+  },
+  {
+    "id": "Fab_bound_minus_apo",
+    "before": "fab_apo",
+    "after": "fab_bound",
+    "type": "same WT Fab separate apo/holo crystals",
+    "counterfactual": false
+  },
+  {
+    "id": "Fab_same_backbone_antigen_addition",
+    "before": "fab_bound_antigen_stripped",
+    "after": "fab_bound",
+    "type": "synthetic context perturbation",
+    "counterfactual": true
+  }
+]

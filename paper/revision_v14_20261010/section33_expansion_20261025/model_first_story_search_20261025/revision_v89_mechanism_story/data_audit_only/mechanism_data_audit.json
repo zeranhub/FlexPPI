@@ -1,0 +1,1808 @@
+{
+  "source": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v88_two_panel_story\\figure3\\source_data\\all25_dynamics_and_static_lobe_contacts.csv",
+  "source_sha256": "ebc5700ffcb1708f94d632816e854ea38e5397e7edba35d2d27b59503b36c473",
+  "sequence": "IKKNFAKSKWKQAFNATAVVRHMRK",
+  "numbering": "CaMKI native 294–318; cohort peptide 145–169; first residue I294, not K294",
+  "model_scope": "CaM family-held-out fold 1; Full and Intra independently trained; same bound input structure and same bound MD target. No new model inference was run.",
+  "valid_counts": {
+    "RMSF": 25,
+    "Hchi": 21,
+    "Hchi_excluded_Ala": [
+      299,
+      306,
+      309,
+      311
+    ]
+  },
+  "regions": {
+    "all25": {
+      "native_start": 294,
+      "native_end": 318,
+      "native_labels": [
+        "I294",
+        "K295",
+        "K296",
+        "N297",
+        "F298",
+        "A299",
+        "K300",
+        "S301",
+        "K302",
+        "W303",
+        "K304",
+        "Q305",
+        "A306",
+        "F307",
+        "N308",
+        "A309",
+        "T310",
+        "A311",
+        "V312",
+        "V313",
+        "R314",
+        "H315",
+        "M316",
+        "R317",
+        "K318"
+      ],
+      "n_RMSF": 25,
+      "n_effective_Hchi": 21,
+      "Ala_Hchi_excluded": [
+        "A299",
+        "A306",
+        "A309",
+        "A311"
+      ],
+      "selection_basis": "complete peptide"
+    },
+    "native_N_flank_294_302": {
+      "native_start": 294,
+      "native_end": 302,
+      "native_labels": [
+        "I294",
+        "K295",
+        "K296",
+        "N297",
+        "F298",
+        "A299",
+        "K300",
+        "S301",
+        "K302"
+      ],
+      "n_RMSF": 9,
+      "n_effective_Hchi": 8,
+      "Ala_Hchi_excluded": [
+        "A299"
+      ],
+      "selection_basis": "flanks defined relative to the W303/M316 static anchor span"
+    },
+    "structural_anchor_span_303_316": {
+      "native_start": 303,
+      "native_end": 316,
+      "native_labels": [
+        "W303",
+        "K304",
+        "Q305",
+        "A306",
+        "F307",
+        "N308",
+        "A309",
+        "T310",
+        "A311",
+        "V312",
+        "V313",
+        "R314",
+        "H315",
+        "M316"
+      ],
+      "n_RMSF": 14,
+      "n_effective_Hchi": 11,
+      "Ala_Hchi_excluded": [
+        "A306",
+        "A309",
+        "A311"
+      ],
+      "selection_basis": "static W303/M316 anchor positions, independent of prediction"
+    },
+    "native_tail_317_318": {
+      "native_start": 317,
+      "native_end": 318,
+      "native_labels": [
+        "R317",
+        "K318"
+      ],
+      "n_RMSF": 2,
+      "n_effective_Hchi": 2,
+      "Ala_Hchi_excluded": [],
+      "selection_basis": "flanks defined relative to the W303/M316 static anchor span"
+    },
+    "screenshot_N145_147_native294_296": {
+      "native_start": 294,
+      "native_end": 296,
+      "native_labels": [
+        "I294",
+        "K295",
+        "K296"
+      ],
+      "n_RMSF": 3,
+      "n_effective_Hchi": 3,
+      "Ala_Hchi_excluded": [],
+      "selection_basis": "screenshot definition only; not a structural core boundary"
+    },
+    "screenshot_mid150_166_native299_315": {
+      "native_start": 299,
+      "native_end": 315,
+      "native_labels": [
+        "A299",
+        "K300",
+        "S301",
+        "K302",
+        "W303",
+        "K304",
+        "Q305",
+        "A306",
+        "F307",
+        "N308",
+        "A309",
+        "T310",
+        "A311",
+        "V312",
+        "V313",
+        "R314",
+        "H315"
+      ],
+      "n_RMSF": 17,
+      "n_effective_Hchi": 13,
+      "Ala_Hchi_excluded": [
+        "A299",
+        "A306",
+        "A309",
+        "A311"
+      ],
+      "selection_basis": "screenshot definition only; not a structural core boundary"
+    },
+    "screenshot_C167_169_native316_318": {
+      "native_start": 316,
+      "native_end": 318,
+      "native_labels": [
+        "M316",
+        "R317",
+        "K318"
+      ],
+      "n_RMSF": 3,
+      "n_effective_Hchi": 3,
+      "Ala_Hchi_excluded": [],
+      "selection_basis": "screenshot definition only; not a structural core boundary"
+    }
+  },
+  "region_statistics": [
+    {
+      "region": "all25",
+      "metric": "RMSF_A",
+      "source": "MD",
+      "n": 25,
+      "mean": 0.78905528,
+      "median": 0.61898965,
+      "minimum": 0.45308363,
+      "maximum": 2.1129477
+    },
+    {
+      "region": "all25",
+      "metric": "RMSF_A",
+      "source": "Full",
+      "n": 25,
+      "mean": 0.6915220932000001,
+      "median": 0.5578309,
+      "minimum": 0.44702804,
+      "maximum": 2.123881
+    },
+    {
+      "region": "all25",
+      "metric": "RMSF_A",
+      "source": "Intra",
+      "n": 25,
+      "mean": 3.1427368079999995,
+      "median": 2.7755942,
+      "minimum": 1.4439864,
+      "maximum": 7.6058745
+    },
+    {
+      "region": "all25",
+      "metric": "Hchi_nats",
+      "source": "MD",
+      "n": 21,
+      "mean": 1.8407959006190477,
+      "median": 1.5843722,
+      "minimum": 0.020929623,
+      "maximum": 3.751642
+    },
+    {
+      "region": "all25",
+      "metric": "Hchi_nats",
+      "source": "Full",
+      "n": 21,
+      "mean": 1.9174631000000002,
+      "median": 1.8482789,
+      "minimum": 0.47041768,
+      "maximum": 3.8425083
+    },
+    {
+      "region": "all25",
+      "metric": "Hchi_nats",
+      "source": "Intra",
+      "n": 21,
+      "mean": 2.2383656285714286,
+      "median": 1.7746199,
+      "minimum": 0.5541106,
+      "maximum": 3.8260095
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "metric": "RMSF_A",
+      "source": "MD",
+      "n": 9,
+      "mean": 1.048953461111111,
+      "median": 0.8714031,
+      "minimum": 0.65023774,
+      "maximum": 2.1129477
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "metric": "RMSF_A",
+      "source": "Full",
+      "n": 9,
+      "mean": 0.9186999266666666,
+      "median": 0.6259723,
+      "minimum": 0.5257198,
+      "maximum": 2.123881
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "metric": "RMSF_A",
+      "source": "Intra",
+      "n": 9,
+      "mean": 3.1322408555555556,
+      "median": 2.8448915,
+      "minimum": 1.743925,
+      "maximum": 5.421841
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "metric": "Hchi_nats",
+      "source": "MD",
+      "n": 8,
+      "mean": 2.3190628,
+      "median": 1.9608216,
+      "minimum": 0.7551244,
+      "maximum": 3.751642
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "metric": "Hchi_nats",
+      "source": "Full",
+      "n": 8,
+      "mean": 2.3761083962500003,
+      "median": 2.3605776499999997,
+      "minimum": 0.81374717,
+      "maximum": 3.8425083
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "metric": "Hchi_nats",
+      "source": "Intra",
+      "n": 8,
+      "mean": 2.5949333125000003,
+      "median": 2.6950796,
+      "minimum": 0.9379571,
+      "maximum": 3.8260095
+    },
+    {
+      "region": "structural_anchor_span_303_316",
+      "metric": "RMSF_A",
+      "source": "MD",
+      "n": 14,
+      "mean": 0.5533217178571428,
+      "median": 0.5363228600000001,
+      "minimum": 0.45308363,
+      "maximum": 0.6237827
+    },
+    {
+      "region": "structural_anchor_span_303_316",
+      "metric": "RMSF_A",
+      "source": "Full",
+      "n": 14,
+      "mean": 0.512688385,
+      "median": 0.488941725,
+      "minimum": 0.44702804,
+      "maximum": 0.68890125
+    },
+    {
+      "region": "structural_anchor_span_303_316",
+      "metric": "RMSF_A",
+      "source": "Intra",
+      "n": 14,
+      "mean": 2.665638214285714,
+      "median": 2.57701835,
+      "minimum": 1.4439864,
+      "maximum": 3.9642677
+    },
+    {
+      "region": "structural_anchor_span_303_316",
+      "metric": "Hchi_nats",
+      "source": "MD",
+      "n": 11,
+      "mean": 1.2360826193636365,
+      "median": 1.4070662,
+      "minimum": 0.020929623,
+      "maximum": 3.296607
+    },
+    {
+      "region": "structural_anchor_span_303_316",
+      "metric": "Hchi_nats",
+      "source": "Full",
+      "n": 11,
+      "mean": 1.3358031754545456,
+      "median": 0.99574697,
+      "minimum": 0.47041768,
+      "maximum": 3.3859699
+    },
+    {
+      "region": "structural_anchor_span_303_316",
+      "metric": "Hchi_nats",
+      "source": "Intra",
+      "n": 11,
+      "mean": 1.7349414,
+      "median": 1.567642,
+      "minimum": 0.5541106,
+      "maximum": 3.550339
+    },
+    {
+      "region": "native_tail_317_318",
+      "metric": "RMSF_A",
+      "source": "MD",
+      "n": 2,
+      "mean": 1.2696484,
+      "median": 1.2696484,
+      "minimum": 0.7684682,
+      "maximum": 1.7708286
+    },
+    {
+      "region": "native_tail_317_318",
+      "metric": "RMSF_A",
+      "source": "Full",
+      "n": 2,
+      "mean": 0.9210578,
+      "median": 0.9210578,
+      "minimum": 0.7781471,
+      "maximum": 1.0639685
+    },
+    {
+      "region": "native_tail_317_318",
+      "metric": "RMSF_A",
+      "source": "Intra",
+      "n": 2,
+      "mean": 6.529658749999999,
+      "median": 6.529658749999999,
+      "minimum": 5.453443,
+      "maximum": 7.6058745
+    },
+    {
+      "region": "native_tail_317_318",
+      "metric": "Hchi_nats",
+      "source": "MD",
+      "n": 2,
+      "mean": 3.25365135,
+      "median": 3.25365135,
+      "minimum": 2.924354,
+      "maximum": 3.5829487
+    },
+    {
+      "region": "native_tail_317_318",
+      "metric": "Hchi_nats",
+      "source": "Full",
+      "n": 2,
+      "mean": 3.2820115,
+      "median": 3.2820115,
+      "minimum": 2.8591974,
+      "maximum": 3.7048256
+    },
+    {
+      "region": "native_tail_317_318",
+      "metric": "Hchi_nats",
+      "source": "Intra",
+      "n": 2,
+      "mean": 3.58092815,
+      "median": 3.58092815,
+      "minimum": 3.395552,
+      "maximum": 3.7663043
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "metric": "RMSF_A",
+      "source": "MD",
+      "n": 3,
+      "mean": 1.6065622333333334,
+      "median": 1.4909682,
+      "minimum": 1.2157708,
+      "maximum": 2.1129477
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "metric": "RMSF_A",
+      "source": "Full",
+      "n": 3,
+      "mean": 1.5406950333333331,
+      "median": 1.4877319,
+      "minimum": 1.0104722,
+      "maximum": 2.123881
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "metric": "RMSF_A",
+      "source": "Intra",
+      "n": 3,
+      "mean": 3.3368858333333336,
+      "median": 2.8448915,
+      "minimum": 1.743925,
+      "maximum": 5.421841
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "metric": "Hchi_nats",
+      "source": "MD",
+      "n": 3,
+      "mean": 3.0071113,
+      "median": 3.6853197,
+      "minimum": 1.5843722,
+      "maximum": 3.751642
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "metric": "Hchi_nats",
+      "source": "Full",
+      "n": 3,
+      "mean": 3.156840733333333,
+      "median": 3.779735,
+      "minimum": 1.8482789,
+      "maximum": 3.8425083
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "metric": "Hchi_nats",
+      "source": "Intra",
+      "n": 3,
+      "mean": 3.1233179,
+      "median": 3.7693243,
+      "minimum": 1.7746199,
+      "maximum": 3.8260095
+    },
+    {
+      "region": "screenshot_mid150_166_native299_315",
+      "metric": "RMSF_A",
+      "source": "MD",
+      "n": 17,
+      "mean": 0.5881499117647058,
+      "median": 0.5684943,
+      "minimum": 0.45308363,
+      "maximum": 0.82045907
+    },
+    {
+      "region": "screenshot_mid150_166_native299_315",
+      "metric": "RMSF_A",
+      "source": "Full",
+      "n": 17,
+      "mean": 0.5117384517647059,
+      "median": 0.5078398,
+      "minimum": 0.44702804,
+      "maximum": 0.59535956
+    },
+    {
+      "region": "screenshot_mid150_166_native299_315",
+      "metric": "RMSF_A",
+      "source": "Intra",
+      "n": 17,
+      "mean": 2.6780791529411765,
+      "median": 2.6075397,
+      "minimum": 1.4439864,
+      "maximum": 3.9642677
+    },
+    {
+      "region": "screenshot_mid150_166_native299_315",
+      "metric": "Hchi_nats",
+      "source": "MD",
+      "n": 13,
+      "mean": 1.4022428086923076,
+      "median": 1.4070662,
+      "minimum": 0.020929623,
+      "maximum": 3.4488957
+    },
+    {
+      "region": "screenshot_mid150_166_native299_315",
+      "metric": "Hchi_nats",
+      "source": "Full",
+      "n": 13,
+      "mean": 1.5087138692307691,
+      "median": 0.99574697,
+      "minimum": 0.47041768,
+      "maximum": 3.3859699
+    },
+    {
+      "region": "screenshot_mid150_166_native299_315",
+      "metric": "Hchi_nats",
+      "source": "Intra",
+      "n": 13,
+      "mean": 1.8933934153846153,
+      "median": 1.567642,
+      "minimum": 0.5541106,
+      "maximum": 3.6636348
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "metric": "RMSF_A",
+      "source": "MD",
+      "n": 3,
+      "mean": 1.0543598333333335,
+      "median": 0.7684682,
+      "minimum": 0.6237827,
+      "maximum": 1.7708286
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "metric": "RMSF_A",
+      "source": "Full",
+      "n": 3,
+      "mean": 0.8436722833333334,
+      "median": 0.7781471,
+      "minimum": 0.68890125,
+      "maximum": 1.0639685
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "metric": "RMSF_A",
+      "source": "Intra",
+      "n": 3,
+      "mean": 5.647483066666666,
+      "median": 5.453443,
+      "minimum": 3.8831317,
+      "maximum": 7.6058745
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "metric": "Hchi_nats",
+      "source": "MD",
+      "n": 3,
+      "mean": 2.7816949,
+      "median": 2.924354,
+      "minimum": 1.837782,
+      "maximum": 3.5829487
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "metric": "Hchi_nats",
+      "source": "Full",
+      "n": 3,
+      "mean": 2.8542248666666663,
+      "median": 2.8591974,
+      "minimum": 1.9986516,
+      "maximum": 3.7048256
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "metric": "Hchi_nats",
+      "source": "Intra",
+      "n": 3,
+      "mean": 3.283076166666666,
+      "median": 3.395552,
+      "minimum": 2.6873722,
+      "maximum": 3.7663043
+    }
+  ],
+  "MD_window_region_statistics": [
+    {
+      "region": "all25",
+      "metric": "RMSF_A",
+      "block": 1,
+      "start_ns": 0,
+      "end_ns": 100,
+      "n": 25,
+      "mean": 1.5025612115859985,
+      "median": 1.0830118656158447
+    },
+    {
+      "region": "all25",
+      "metric": "RMSF_A",
+      "block": 2,
+      "start_ns": 100,
+      "end_ns": 200,
+      "n": 25,
+      "mean": 0.7538095247745514,
+      "median": 0.5883432030677795
+    },
+    {
+      "region": "all25",
+      "metric": "RMSF_A",
+      "block": 3,
+      "start_ns": 200,
+      "end_ns": 300,
+      "n": 25,
+      "mean": 0.6770049548149109,
+      "median": 0.5435234904289246
+    },
+    {
+      "region": "all25",
+      "metric": "RMSF_A",
+      "block": 4,
+      "start_ns": 300,
+      "end_ns": 400,
+      "n": 25,
+      "mean": 0.4656134223937988,
+      "median": 0.4136346876621246
+    },
+    {
+      "region": "all25",
+      "metric": "RMSF_A",
+      "block": 5,
+      "start_ns": 400,
+      "end_ns": 500,
+      "n": 25,
+      "mean": 0.5462872874736786,
+      "median": 0.457279622554779
+    },
+    {
+      "region": "all25",
+      "metric": "Hchi_nats",
+      "block": 1,
+      "start_ns": 0,
+      "end_ns": 100,
+      "n": 21,
+      "mean": 1.9915706450601458,
+      "median": 2.018856219941434
+    },
+    {
+      "region": "all25",
+      "metric": "Hchi_nats",
+      "block": 2,
+      "start_ns": 100,
+      "end_ns": 200,
+      "n": 21,
+      "mean": 1.8362232159532124,
+      "median": 1.4920601567837055
+    },
+    {
+      "region": "all25",
+      "metric": "Hchi_nats",
+      "block": 3,
+      "start_ns": 200,
+      "end_ns": 300,
+      "n": 21,
+      "mean": 1.8319732779150593,
+      "median": 1.6042257509893134
+    },
+    {
+      "region": "all25",
+      "metric": "Hchi_nats",
+      "block": 4,
+      "start_ns": 300,
+      "end_ns": 400,
+      "n": 21,
+      "mean": 1.7683323352856024,
+      "median": 1.574432347460753
+    },
+    {
+      "region": "all25",
+      "metric": "Hchi_nats",
+      "block": 5,
+      "start_ns": 400,
+      "end_ns": 500,
+      "n": 21,
+      "mean": 1.7758799780483074,
+      "median": 1.5899554418675623
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "metric": "RMSF_A",
+      "block": 1,
+      "start_ns": 0,
+      "end_ns": 100,
+      "n": 9,
+      "mean": 2.434927503267924,
+      "median": 1.8559389114379885
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "metric": "RMSF_A",
+      "block": 2,
+      "start_ns": 100,
+      "end_ns": 200,
+      "n": 9,
+      "mean": 0.9382986823717753,
+      "median": 0.8313918113708496
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "metric": "RMSF_A",
+      "block": 3,
+      "start_ns": 200,
+      "end_ns": 300,
+      "n": 9,
+      "mean": 0.9096289740668403,
+      "median": 0.7751529812812805
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "metric": "RMSF_A",
+      "block": 4,
+      "start_ns": 300,
+      "end_ns": 400,
+      "n": 9,
+      "mean": 0.46722345219718087,
+      "median": 0.3934555351734161
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "metric": "RMSF_A",
+      "block": 5,
+      "start_ns": 400,
+      "end_ns": 500,
+      "n": 9,
+      "mean": 0.49468875262472367,
+      "median": 0.3832318484783172
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "metric": "Hchi_nats",
+      "block": 1,
+      "start_ns": 0,
+      "end_ns": 100,
+      "n": 8,
+      "mean": 2.5456608518845965,
+      "median": 2.2052289202302173
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "metric": "Hchi_nats",
+      "block": 2,
+      "start_ns": 100,
+      "end_ns": 200,
+      "n": 8,
+      "mean": 2.322086209741497,
+      "median": 2.0194618068030596
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "metric": "Hchi_nats",
+      "block": 3,
+      "start_ns": 200,
+      "end_ns": 300,
+      "n": 8,
+      "mean": 2.2553638635931623,
+      "median": 2.064418709903868
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "metric": "Hchi_nats",
+      "block": 4,
+      "start_ns": 300,
+      "end_ns": 400,
+      "n": 8,
+      "mean": 2.2037593719985065,
+      "median": 1.842901022926779
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "metric": "Hchi_nats",
+      "block": 5,
+      "start_ns": 400,
+      "end_ns": 500,
+      "n": 8,
+      "mean": 2.2684435728334735,
+      "median": 1.8109173818004183
+    },
+    {
+      "region": "structural_anchor_span_303_316",
+      "metric": "RMSF_A",
+      "block": 1,
+      "start_ns": 0,
+      "end_ns": 100,
+      "n": 14,
+      "mean": 0.8797192318098885,
+      "median": 0.865199863910675
+    },
+    {
+      "region": "structural_anchor_span_303_316",
+      "metric": "RMSF_A",
+      "block": 2,
+      "start_ns": 100,
+      "end_ns": 200,
+      "n": 14,
+      "mean": 0.5426345829452787,
+      "median": 0.5326060652732849
+    },
+    {
+      "region": "structural_anchor_span_303_316",
+      "metric": "RMSF_A",
+      "block": 3,
+      "start_ns": 200,
+      "end_ns": 300,
+      "n": 14,
+      "mean": 0.4830944836139679,
+      "median": 0.49188055098056793
+    },
+    {
+      "region": "structural_anchor_span_303_316",
+      "metric": "RMSF_A",
+      "block": 4,
+      "start_ns": 300,
+      "end_ns": 400,
+      "n": 14,
+      "mean": 0.4062068462371826,
+      "median": 0.405969500541687
+    },
+    {
+      "region": "structural_anchor_span_303_316",
+      "metric": "RMSF_A",
+      "block": 5,
+      "start_ns": 400,
+      "end_ns": 500,
+      "n": 14,
+      "mean": 0.45495330010141644,
+      "median": 0.4593876004219055
+    },
+    {
+      "region": "structural_anchor_span_303_316",
+      "metric": "Hchi_nats",
+      "block": 1,
+      "start_ns": 0,
+      "end_ns": 100,
+      "n": 11,
+      "mean": 1.32824729957208,
+      "median": 1.059097988878681
+    },
+    {
+      "region": "structural_anchor_span_303_316",
+      "metric": "Hchi_nats",
+      "block": 2,
+      "start_ns": 100,
+      "end_ns": 200,
+      "n": 11,
+      "mean": 1.2181133798168822,
+      "median": 1.0520628155357017
+    },
+    {
+      "region": "structural_anchor_span_303_316",
+      "metric": "Hchi_nats",
+      "block": 3,
+      "start_ns": 200,
+      "end_ns": 300,
+      "n": 11,
+      "mean": 1.2767369795462142,
+      "median": 1.09925793566332
+    },
+    {
+      "region": "structural_anchor_span_303_316",
+      "metric": "Hchi_nats",
+      "block": 4,
+      "start_ns": 300,
+      "end_ns": 400,
+      "n": 11,
+      "mean": 1.196254458168432,
+      "median": 1.1857409935087269
+    },
+    {
+      "region": "structural_anchor_span_303_316",
+      "metric": "Hchi_nats",
+      "block": 5,
+      "start_ns": 400,
+      "end_ns": 500,
+      "n": 11,
+      "mean": 1.1610610340136496,
+      "median": 1.100748544958002
+    },
+    {
+      "region": "native_tail_317_318",
+      "metric": "RMSF_A",
+      "block": 1,
+      "start_ns": 0,
+      "end_ns": 100,
+      "n": 2,
+      "mean": 1.6668067574501035,
+      "median": 1.6668067574501035
+    },
+    {
+      "region": "native_tail_317_318",
+      "metric": "RMSF_A",
+      "block": 2,
+      "start_ns": 100,
+      "end_ns": 200,
+      "n": 2,
+      "mean": 1.4018329083919525,
+      "median": 1.4018329083919525
+    },
+    {
+      "region": "native_tail_317_318",
+      "metric": "RMSF_A",
+      "block": 3,
+      "start_ns": 200,
+      "end_ns": 300,
+      "n": 2,
+      "mean": 0.9875701665878296,
+      "median": 0.9875701665878296
+    },
+    {
+      "region": "native_tail_317_318",
+      "metric": "RMSF_A",
+      "block": 4,
+      "start_ns": 300,
+      "end_ns": 400,
+      "n": 2,
+      "mean": 0.8742143213748932,
+      "median": 0.8742143213748932
+    },
+    {
+      "region": "native_tail_317_318",
+      "metric": "RMSF_A",
+      "block": 5,
+      "start_ns": 400,
+      "end_ns": 500,
+      "n": 2,
+      "mean": 1.417818605899811,
+      "median": 1.417818605899811
+    },
+    {
+      "region": "native_tail_317_318",
+      "metric": "Hchi_nats",
+      "block": 1,
+      "start_ns": 0,
+      "end_ns": 100,
+      "n": 2,
+      "mean": 3.4234882179467028,
+      "median": 3.4234882179467028
+    },
+    {
+      "region": "native_tail_317_318",
+      "metric": "Hchi_nats",
+      "block": 2,
+      "start_ns": 100,
+      "end_ns": 200,
+      "n": 2,
+      "mean": 3.2923753395498863,
+      "median": 3.2923753395498863
+    },
+    {
+      "region": "native_tail_317_318",
+      "metric": "Hchi_nats",
+      "block": 3,
+      "start_ns": 200,
+      "end_ns": 300,
+      "n": 2,
+      "mean": 3.1922105762312936,
+      "median": 3.1922105762312936
+    },
+    {
+      "region": "native_tail_317_318",
+      "metric": "Hchi_nats",
+      "block": 4,
+      "start_ns": 300,
+      "end_ns": 400,
+      "n": 2,
+      "mean": 3.1730525125784217,
+      "median": 3.1730525125784217
+    },
+    {
+      "region": "native_tail_317_318",
+      "metric": "Hchi_nats",
+      "block": 5,
+      "start_ns": 400,
+      "end_ns": 500,
+      "n": 2,
+      "mean": 3.187129791098263,
+      "median": 3.187129791098263
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "metric": "RMSF_A",
+      "block": 1,
+      "start_ns": 0,
+      "end_ns": 100,
+      "n": 3,
+      "mean": 3.948946952819824,
+      "median": 3.802706241607666
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "metric": "RMSF_A",
+      "block": 2,
+      "start_ns": 100,
+      "end_ns": 200,
+      "n": 3,
+      "mean": 1.2973655462265015,
+      "median": 1.203224778175354
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "metric": "RMSF_A",
+      "block": 3,
+      "start_ns": 200,
+      "end_ns": 300,
+      "n": 3,
+      "mean": 1.4198665618896484,
+      "median": 1.3669683933258057
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "metric": "RMSF_A",
+      "block": 4,
+      "start_ns": 300,
+      "end_ns": 400,
+      "n": 3,
+      "mean": 0.6429845293362936,
+      "median": 0.5818197131156921
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "metric": "RMSF_A",
+      "block": 5,
+      "start_ns": 400,
+      "end_ns": 500,
+      "n": 3,
+      "mean": 0.7236469984054565,
+      "median": 0.6530376672744751
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "metric": "Hchi_nats",
+      "block": 1,
+      "start_ns": 0,
+      "end_ns": 100,
+      "n": 3,
+      "mean": 3.2480482957097494,
+      "median": 3.823877375943237
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "metric": "Hchi_nats",
+      "block": 2,
+      "start_ns": 100,
+      "end_ns": 200,
+      "n": 3,
+      "mean": 3.001553535763513,
+      "median": 3.759559806010459
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "metric": "Hchi_nats",
+      "block": 3,
+      "start_ns": 200,
+      "end_ns": 300,
+      "n": 3,
+      "mean": 2.8899091100771908,
+      "median": 3.5845426654973425
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "metric": "Hchi_nats",
+      "block": 4,
+      "start_ns": 300,
+      "end_ns": 400,
+      "n": 3,
+      "mean": 2.993155339136816,
+      "median": 3.5371549344841218
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "metric": "Hchi_nats",
+      "block": 5,
+      "start_ns": 400,
+      "end_ns": 500,
+      "n": 3,
+      "mean": 2.902890308609004,
+      "median": 3.516391790728399
+    },
+    {
+      "region": "screenshot_mid150_166_native299_315",
+      "metric": "RMSF_A",
+      "block": 1,
+      "start_ns": 0,
+      "end_ns": 100,
+      "n": 17,
+      "mean": 1.0291427303762997,
+      "median": 0.9182533025741576
+    },
+    {
+      "region": "screenshot_mid150_166_native299_315",
+      "metric": "RMSF_A",
+      "block": 2,
+      "start_ns": 100,
+      "end_ns": 200,
+      "n": 17,
+      "mean": 0.5752128169817083,
+      "median": 0.5518838167190552
+    },
+    {
+      "region": "screenshot_mid150_166_native299_315",
+      "metric": "RMSF_A",
+      "block": 3,
+      "start_ns": 200,
+      "end_ns": 300,
+      "n": 17,
+      "mean": 0.5103961334509008,
+      "median": 0.5081971883773804
+    },
+    {
+      "region": "screenshot_mid150_166_native299_315",
+      "metric": "RMSF_A",
+      "block": 4,
+      "start_ns": 300,
+      "end_ns": 400,
+      "n": 17,
+      "mean": 0.3941870366825777,
+      "median": 0.3897044956684112
+    },
+    {
+      "region": "screenshot_mid150_166_native299_315",
+      "metric": "RMSF_A",
+      "block": 5,
+      "start_ns": 400,
+      "end_ns": 500,
+      "n": 17,
+      "mean": 0.4318108874208787,
+      "median": 0.4359265863895416
+    },
+    {
+      "region": "screenshot_mid150_166_native299_315",
+      "metric": "Hchi_nats",
+      "block": 1,
+      "start_ns": 0,
+      "end_ns": 100,
+      "n": 13,
+      "mean": 1.4775878028847385,
+      "median": 1.059097988878681
+    },
+    {
+      "region": "screenshot_mid150_166_native299_315",
+      "metric": "Hchi_nats",
+      "block": 2,
+      "start_ns": 100,
+      "end_ns": 200,
+      "n": 13,
+      "mean": 1.3664596408900596,
+      "median": 1.0520628155357017
+    },
+    {
+      "region": "screenshot_mid150_166_native299_315",
+      "metric": "Hchi_nats",
+      "block": 3,
+      "start_ns": 200,
+      "end_ns": 300,
+      "n": 13,
+      "mean": 1.4552367389812078,
+      "median": 1.09925793566332
+    },
+    {
+      "region": "screenshot_mid150_166_native299_315",
+      "metric": "Hchi_nats",
+      "block": 4,
+      "start_ns": 300,
+      "end_ns": 400,
+      "n": 13,
+      "mean": 1.3675028866216519,
+      "median": 1.1857409935087269
+    },
+    {
+      "region": "screenshot_mid150_166_native299_315",
+      "metric": "Hchi_nats",
+      "block": 5,
+      "start_ns": 400,
+      "end_ns": 500,
+      "n": 13,
+      "mean": 1.3444269322477564,
+      "median": 1.100748544958002
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "metric": "RMSF_A",
+      "block": 1,
+      "start_ns": 0,
+      "end_ns": 100,
+      "n": 3,
+      "mean": 1.4247442483901978,
+      "median": 1.112160325050354
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "metric": "RMSF_A",
+      "block": 2,
+      "start_ns": 100,
+      "end_ns": 200,
+      "n": 3,
+      "mean": 1.1588752667109172,
+      "median": 0.8147897124290466
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "metric": "RMSF_A",
+      "block": 3,
+      "start_ns": 200,
+      "end_ns": 300,
+      "n": 3,
+      "mean": 0.8395546078681946,
+      "median": 0.7134428024291992
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "metric": "RMSF_A",
+      "block": 4,
+      "start_ns": 300,
+      "end_ns": 400,
+      "n": 3,
+      "mean": 0.7334968348344167,
+      "median": 0.619523823261261
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "metric": "RMSF_A",
+      "block": 5,
+      "start_ns": 400,
+      "end_ns": 500,
+      "n": 3,
+      "mean": 1.1151285568873088,
+      "median": 0.5824240446090698
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "metric": "Hchi_nats",
+      "block": 1,
+      "start_ns": 0,
+      "end_ns": 100,
+      "n": 3,
+      "mean": 2.9276932135993605,
+      "median": 3.115089060558387
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "metric": "Hchi_nats",
+      "block": 2,
+      "start_ns": 100,
+      "end_ns": 200,
+      "n": 3,
+      "mean": 2.9308096014889506,
+      "median": 2.9997004871254007
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "metric": "Hchi_nats",
+      "block": 3,
+      "start_ns": 200,
+      "end_ns": 300,
+      "n": 3,
+      "mean": 2.778042102260762,
+      "median": 2.839104388163712
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "metric": "Hchi_nats",
+      "block": 4,
+      "start_ns": 300,
+      "end_ns": 400,
+      "n": 3,
+      "mean": 2.6140795961106265,
+      "median": 2.7808808614659504
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "metric": "Hchi_nats",
+      "block": 5,
+      "start_ns": 400,
+      "end_ns": 500,
+      "n": 3,
+      "mean": 2.6578498666040944,
+      "median": 2.8869950449933808
+    }
+  ],
+  "MD_window_region_direction_checks": [
+    {
+      "region": "native_N_flank_294_302",
+      "versus": "structural_anchor_span_303_316",
+      "statistic": "mean",
+      "window_differences": {
+        "1": 1.5552082714580353,
+        "2": 0.3956640994264966,
+        "3": 0.4265344904528724,
+        "4": 0.06101660595999825,
+        "5": 0.039735452523307235
+      },
+      "positive_windows": 5,
+      "negative_windows": 0
+    },
+    {
+      "region": "native_N_flank_294_302",
+      "versus": "structural_anchor_span_303_316",
+      "statistic": "median",
+      "window_differences": {
+        "1": 0.9907390475273135,
+        "2": 0.2987857460975647,
+        "3": 0.2832724303007126,
+        "4": -0.01251396536827093,
+        "5": -0.07615575194358831
+      },
+      "positive_windows": 3,
+      "negative_windows": 2
+    },
+    {
+      "region": "native_tail_317_318",
+      "versus": "structural_anchor_span_303_316",
+      "statistic": "mean",
+      "window_differences": {
+        "1": 0.787087525640215,
+        "2": 0.8591983254466738,
+        "3": 0.5044756829738617,
+        "4": 0.46800747513771057,
+        "5": 0.9628653057983946
+      },
+      "positive_windows": 5,
+      "negative_windows": 0
+    },
+    {
+      "region": "native_tail_317_318",
+      "versus": "structural_anchor_span_303_316",
+      "statistic": "median",
+      "window_differences": {
+        "1": 0.8016068935394285,
+        "2": 0.8692268431186676,
+        "3": 0.49568961560726166,
+        "4": 0.4682448208332062,
+        "5": 0.9584310054779055
+      },
+      "positive_windows": 5,
+      "negative_windows": 0
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "versus": "structural_anchor_span_303_316",
+      "statistic": "mean",
+      "window_differences": {
+        "1": 3.069227721009936,
+        "2": 0.7547309632812228,
+        "3": 0.9367720782756805,
+        "4": 0.23677768309911096,
+        "5": 0.2686936983040401
+      },
+      "positive_windows": 5,
+      "negative_windows": 0
+    },
+    {
+      "region": "screenshot_N145_147_native294_296",
+      "versus": "structural_anchor_span_303_316",
+      "statistic": "median",
+      "window_differences": {
+        "1": 2.937506377696991,
+        "2": 0.6706187129020691,
+        "3": 0.8750878423452377,
+        "4": 0.17585021257400513,
+        "5": 0.19365006685256958
+      },
+      "positive_windows": 5,
+      "negative_windows": 0
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "versus": "structural_anchor_span_303_316",
+      "statistic": "mean",
+      "window_differences": {
+        "1": 0.5450250165803092,
+        "2": 0.6162406837656386,
+        "3": 0.3564601242542267,
+        "4": 0.3272899885972341,
+        "5": 0.6601752567858924
+      },
+      "positive_windows": 5,
+      "negative_windows": 0
+    },
+    {
+      "region": "screenshot_C167_169_native316_318",
+      "versus": "structural_anchor_span_303_316",
+      "statistic": "median",
+      "window_differences": {
+        "1": 0.24696046113967896,
+        "2": 0.2821836471557617,
+        "3": 0.2215622514486313,
+        "4": 0.21355432271957397,
+        "5": 0.1230364441871643
+      },
+      "positive_windows": 5,
+      "negative_windows": 0
+    }
+  ],
+  "same_type_MD_window_contrasts": [
+    {
+      "left": "F298",
+      "right": "F307",
+      "metric": "RMSF_A",
+      "window_differences": {
+        "1": 1.3876050114631653,
+        "2": 0.21089136600494385,
+        "3": 0.36609318852424627,
+        "4": -0.0558696985244751,
+        "5": -0.09734946489334106
+      },
+      "n_positive_windows": 3,
+      "n_negative_windows": 2,
+      "minimum": -0.09734946489334106,
+      "maximum": 1.3876050114631653
+    },
+    {
+      "left": "F298",
+      "right": "F307",
+      "metric": "Hchi_nats",
+      "window_differences": {
+        "1": 0.8374765806884636,
+        "2": -0.10337451914847362,
+        "3": -0.7635120395896952,
+        "4": -0.47483475971400413,
+        "5": 0.44300490732876696
+      },
+      "n_positive_windows": 2,
+      "n_negative_windows": 3,
+      "minimum": -0.7635120395896952,
+      "maximum": 0.8374765806884636
+    },
+    {
+      "left": "K296",
+      "right": "K304",
+      "metric": "RMSF_A",
+      "window_differences": {
+        "1": 1.1738072633743286,
+        "2": 0.6881141662597656,
+        "3": 1.2516452074050903,
+        "4": 0.18855363130569458,
+        "5": 0.14132264256477362
+      },
+      "n_positive_windows": 5,
+      "n_negative_windows": 0,
+      "minimum": 0.14132264256477362,
+      "maximum": 1.2516452074050903
+    },
+    {
+      "left": "K296",
+      "right": "K304",
+      "metric": "Hchi_nats",
+      "window_differences": {
+        "1": 0.5154640698432291,
+        "2": 0.6472945505118144,
+        "3": 0.33641865158901885,
+        "4": 0.5303914448362508,
+        "5": 0.245606119120934
+      },
+      "n_positive_windows": 5,
+      "n_negative_windows": 0,
+      "minimum": 0.245606119120934,
+      "maximum": 0.6472945505118144
+    },
+    {
+      "left": "N297",
+      "right": "N308",
+      "metric": "RMSF_A",
+      "window_differences": {
+        "1": 0.9771212935447695,
+        "2": 0.46415391564369207,
+        "3": 0.21384096145629888,
+        "4": 0.062242358922958374,
+        "5": -0.022968143224716187
+      },
+      "n_positive_windows": 4,
+      "n_negative_windows": 1,
+      "minimum": -0.022968143224716187,
+      "maximum": 0.9771212935447695
+    },
+    {
+      "left": "N297",
+      "right": "N308",
+      "metric": "Hchi_nats",
+      "window_differences": {
+        "1": 1.2653764138545898,
+        "2": 0.5588743385183605,
+        "3": 0.7208823649101239,
+        "4": 0.21904718970003523,
+        "5": 0.9540709388734527
+      },
+      "n_positive_windows": 5,
+      "n_negative_windows": 0,
+      "minimum": 0.21904718970003523,
+      "maximum": 1.2653764138545898
+    },
+    {
+      "left": "R317",
+      "right": "R314",
+      "metric": "RMSF_A",
+      "window_differences": {
+        "1": 0.2605782151222229,
+        "2": 0.31057947874069214,
+        "3": 0.2861372530460358,
+        "4": 0.2786464989185334,
+        "5": 0.19678297638893133
+      },
+      "n_positive_windows": 5,
+      "n_negative_windows": 0,
+      "minimum": 0.19678297638893133,
+      "maximum": 0.31057947874069214
+    },
+    {
+      "left": "R317",
+      "right": "R314",
+      "metric": "Hchi_nats",
+      "window_differences": {
+        "1": 0.7194202028664014,
+        "2": 1.3266901789970493,
+        "3": 1.739846452500392,
+        "4": 1.2064485140051975,
+        "5": 1.4703179994443356
+      },
+      "n_positive_windows": 5,
+      "n_negative_windows": 0,
+      "minimum": 0.7194202028664014,
+      "maximum": 1.739846452500392
+    },
+    {
+      "left": "K318",
+      "right": "K304",
+      "metric": "RMSF_A",
+      "window_differences": {
+        "1": 1.3031998872756954,
+        "2": 1.47376549243927,
+        "3": 0.8496003150939941,
+        "4": 0.7415717840194702,
+        "5": 1.8505958616733555
+      },
+      "n_positive_windows": 5,
+      "n_negative_windows": 0,
+      "minimum": 0.7415717840194702,
+      "maximum": 1.8505958616733555
+    },
+    {
+      "left": "K318",
+      "right": "K304",
+      "metric": "Hchi_nats",
+      "window_differences": {
+        "1": 0.42347406923501074,
+        "2": 0.47278493647572706,
+        "3": 0.06916836919692981,
+        "4": 0.33205311842860796,
+        "5": 0.13422707403192424
+      },
+      "n_positive_windows": 5,
+      "n_negative_windows": 0,
+      "minimum": 0.06916836919692981,
+      "maximum": 0.47278493647572706
+    }
+  ],
+  "selected_sites": [
+    {
+      "label": "I294",
+      "rmsf_Full": 2.123881,
+      "rmsf_Intra": 1.743925,
+      "rmsf_MD": 2.1129477,
+      "Hchi_Full": 1.8482789,
+      "Hchi_Intra": 1.7746199,
+      "Hchi_MD": 1.5843722,
+      "MD_window_RMSF_min": 0.7712472081184387,
+      "MD_window_RMSF_max": 5.95207405090332,
+      "MD_window_Hchi_min": 1.2726176180432658,
+      "MD_window_Hchi_max": 1.9829392824739285,
+      "shielding_fraction": 0.5559139671680725,
+      "closest_CaM_distance_A": 3.8941100954791774,
+      "CaM_contacts_4p5A": "E120;E123"
+    },
+    {
+      "label": "K295",
+      "rmsf_Full": 1.4877319,
+      "rmsf_Intra": 5.421841,
+      "rmsf_MD": 1.4909682,
+      "Hchi_Full": 3.779735,
+      "Hchi_Intra": 3.7693243,
+      "Hchi_MD": 3.6853197,
+      "MD_window_RMSF_min": 0.5818197131156921,
+      "MD_window_RMSF_max": 3.802706241607666,
+      "MD_window_Hchi_min": 3.516391790728399,
+      "MD_window_Hchi_max": 3.937328228712083,
+      "shielding_fraction": 0.0,
+      "closest_CaM_distance_A": 6.358246642930392,
+      "CaM_contacts_4p5A": ""
+    },
+    {
+      "label": "K296",
+      "rmsf_Full": 1.0104722,
+      "rmsf_Intra": 2.8448915,
+      "rmsf_MD": 1.2157708,
+      "Hchi_Full": 3.8425083,
+      "Hchi_Intra": 3.8260095,
+      "Hchi_MD": 3.751642,
+      "MD_window_RMSF_min": 0.5439399480819702,
+      "MD_window_RMSF_max": 2.0920605659484863,
+      "MD_window_Hchi_min": 3.5986435822921554,
+      "MD_window_Hchi_max": 3.823877375943237,
+      "shielding_fraction": 0.2103512465274249,
+      "closest_CaM_distance_A": 2.743903976677635,
+      "CaM_contacts_4p5A": "E127"
+    },
+    {
+      "label": "F298",
+      "rmsf_Full": 0.6259723,
+      "rmsf_Intra": 3.6869686,
+      "rmsf_MD": 0.8736642,
+      "Hchi_Full": 1.0327775,
+      "Hchi_Intra": 1.7717868,
+      "Hchi_MD": 1.4055052,
+      "MD_window_RMSF_min": 0.3577649891376495,
+      "MD_window_RMSF_max": 2.0915913581848145,
+      "MD_window_Hchi_min": 0.9452818414573664,
+      "MD_window_Hchi_max": 2.018856219941434,
+      "shielding_fraction": 0.4724770605290572,
+      "closest_CaM_distance_A": 4.070503198883471,
+      "CaM_contacts_4p5A": "L116;E120;M124"
+    },
+    {
+      "label": "W303",
+      "rmsf_Full": 0.4693439,
+      "rmsf_Intra": 3.0225272,
+      "rmsf_MD": 0.6057189,
+      "Hchi_Full": 0.47041768,
+      "Hchi_Intra": 0.76239276,
+      "Hchi_MD": 0.020929623,
+      "MD_window_RMSF_min": 0.4264129400253296,
+      "MD_window_RMSF_max": 1.0830118656158447,
+      "MD_window_Hchi_min": 0.007907255112232,
+      "MD_window_Hchi_max": 0.0366779387501341,
+      "shielding_fraction": 0.9871662321688058,
+      "closest_CaM_distance_A": 3.0706841487481897,
+      "CaM_contacts_4p5A": "F92;I100;L105;M124;A128;V136;F141;M144;M145"
+    },
+    {
+      "label": "K304",
+      "rmsf_Full": 0.5114085,
+      "rmsf_Intra": 3.332189,
+      "rmsf_MD": 0.5270822,
+      "Hchi_Full": 3.3859699,
+      "Hchi_Intra": 3.550339,
+      "Hchi_MD": 3.296607,
+      "MD_window_RMSF_min": 0.3873330354690552,
+      "MD_window_RMSF_max": 0.9182533025741576,
+      "MD_window_Hchi_min": 3.1122652554986447,
+      "MD_window_Hchi_max": 3.476148395101945,
+      "shielding_fraction": 0.7787492233814479,
+      "closest_CaM_distance_A": 2.806651055785676,
+      "CaM_contacts_4p5A": "E11;M144;M145"
+    },
+    {
+      "label": "F307",
+      "rmsf_Full": 0.44702804,
+      "rmsf_Intra": 2.2902868,
+      "rmsf_MD": 0.51139015,
+      "Hchi_Full": 0.99574697,
+      "Hchi_Intra": 1.567642,
+      "Hchi_MD": 1.4177531,
+      "MD_window_RMSF_min": 0.4136346876621246,
+      "MD_window_RMSF_max": 0.7039863467216492,
+      "MD_window_Hchi_min": 1.100748544958002,
+      "MD_window_Hchi_max": 1.7087938810470615,
+      "shielding_fraction": 0.8692307732571748,
+      "closest_CaM_distance_A": 3.533539108284608,
+      "CaM_contacts_4p5A": "E84;I85;A88;F92;F141;M145"
+    },
+    {
+      "label": "N308",
+      "rmsf_Full": 0.44807371,
+      "rmsf_Intra": 2.390603,
+      "rmsf_MD": 0.5325249,
+      "Hchi_Full": 0.6006687,
+      "Hchi_Intra": 1.134571,
+      "Hchi_MD": 0.9119833,
+      "MD_window_RMSF_min": 0.3897044956684112,
+      "MD_window_RMSF_max": 0.878817617893219,
+      "MD_window_Hchi_min": 0.6358845029941096,
+      "MD_window_Hchi_max": 1.1857409935087269,
+      "shielding_fraction": 0.8432091729594017,
+      "closest_CaM_distance_A": 3.7494155090566847,
+      "CaM_contacts_4p5A": "E11;A15;M72"
+    },
+    {
+      "label": "M316",
+      "rmsf_Full": 0.68890125,
+      "rmsf_Intra": 3.8831317,
+      "rmsf_MD": 0.6237827,
+      "Hchi_Full": 1.9986516,
+      "Hchi_Intra": 2.6873722,
+      "Hchi_MD": 1.837782,
+      "MD_window_RMSF_min": 0.4520618617534637,
+      "MD_window_RMSF_max": 0.9406192302703856,
+      "MD_window_Hchi_min": 1.496133763175037,
+      "MD_window_Hchi_max": 2.207678125367079,
+      "shielding_fraction": 0.9749656656706436,
+      "closest_CaM_distance_A": 3.318875260171844,
+      "CaM_contacts_4p5A": "L32;M51;I52;V55;I63;M71"
+    },
+    {
+      "label": "R317",
+      "rmsf_Full": 0.7781471,
+      "rmsf_Intra": 5.453443,
+      "rmsf_MD": 0.7684682,
+      "Hchi_Full": 2.8591974,
+      "Hchi_Intra": 3.395552,
+      "Hchi_MD": 2.924354,
+      "MD_window_RMSF_min": 0.5824240446090698,
+      "MD_window_RMSF_max": 1.112160325050354,
+      "MD_window_Hchi_min": 2.7808808614659504,
+      "MD_window_Hchi_max": 3.115089060558387,
+      "shielding_fraction": 0.6177572616432946,
+      "closest_CaM_distance_A": 2.8449634572544715,
+      "CaM_contacts_4p5A": "M36;Q41;N42;P43;E47;M51"
+    },
+    {
+      "label": "K318",
+      "rmsf_Full": 1.0639685,
+      "rmsf_Intra": 7.6058745,
+      "rmsf_MD": 1.7708286,
+      "Hchi_Full": 3.7048256,
+      "Hchi_Intra": 3.7663043,
+      "Hchi_MD": 3.5829487,
+      "MD_window_RMSF_min": 1.1289048194885254,
+      "MD_window_RMSF_max": 2.253213167190552,
+      "MD_window_Hchi_min": 3.4872645372031457,
+      "MD_window_Hchi_max": 3.7318873753350186,
+      "shielding_fraction": 0.0,
+      "closest_CaM_distance_A": 5.887349311990132,
+      "CaM_contacts_4p5A": ""
+    }
+  ],
+  "claim_audit": [
+    {
+      "claim": "W303–M316 anchor span has continuous low bound-state backbone fluctuation",
+      "judgement": "supported",
+      "basis": "Full 14/14 RMSF are 0.447–0.689 A; MD 14/14 are 0.453–0.624 A. These values are lower than native N-flank and two-residue tail means in Full and full-trajectory MD.",
+      "limitation": "Low RMSF measures positional fluctuations under the used alignment, not alpha-helix content or binding kinetic lifetime."
+    },
+    {
+      "claim": "K296/F298 are more mobile than the central anchor span",
+      "judgement": "qualified support",
+      "basis": "K296 Full/MD 1.010/1.216 A; F298 0.626/0.874 A; central mean 0.513/0.553 A. F298 has only modest Full RMSF elevation and lies within the whole central Full range.",
+      "limitation": "Do not label the whole K296/F298 pair as a sharply distinct flexible latch. Their involvement in autoinhibition requires literature or separate 1A06 structure, not their RMSF alone."
+    },
+    {
+      "claim": "The C terminus retains relative flexibility in the bound complex",
+      "judgement": "qualified support",
+      "basis": "R317/K318 Full RMSF 0.778/1.064 A, MD 0.768/1.771 A; the increase is strongest at K318. Tail-versus-core mean direction is positive in all five MD windows.",
+      "limitation": "Only two tail residues, substantial time-window variation, and no measured terminal–domain coupling. A functional flexible leash or domain engagement mechanism remains a hypothesis."
+    },
+    {
+      "claim": "F298 and F307 illustrate distinct backbone/sidechain readouts",
+      "judgement": "supported descriptive contrast",
+      "basis": "Same Phe type: F298/F307 Full RMSF 0.626/0.447 A, MD 0.874/0.511 A, whereas Hchi Full 1.033/0.996 nats, MD 1.406/1.418 nats. Backbone difference does not require greater sidechain entropy.",
+      "limitation": "Five-window backbone difference direction and Hchi direction are exported separately; no independent-repeat p-values are claimed."
+    },
+    {
+      "claim": "Partner context constrains bound peptide compared with a real free peptide",
+      "judgement": "not measured by Full/Intra",
+      "basis": "Both separately trained models used the same bound structure and bound MD target; Intra is the within-chain model. Full/Intra values cannot be substituted for two physical binding states.",
+      "limitation": "Use partner-aware versus within-chain prediction labels, not bound/free or before/after CaM."
+    },
+    {
+      "claim": "Residual helix in free peptide, conformational selection plus folding funnel, or a C-first N-second temporal pathway",
+      "judgement": "hypotheses only; unsupported by these readouts",
+      "basis": "No free peptide trajectory, secondary-structure time series, transitions, ensemble reweighting, or time-resolved domain engagement data are provided.",
+      "limitation": "Intra predictions of low central RMSF are not proof of residual helix. Static lobe contacts cannot establish order of engagement."
+    },
+    {
+      "claim": "CaM restrains the regulatory segment and reduces return to autoinhibitory contacts",
+      "judgement": "mechanistic hypothesis consistent with bound-state spatial fluctuation pattern and prior static/literature context",
+      "basis": "A low-fluctuation anchor span and actual lobe contacts provide a plausible retained-segment geometry.",
+      "limitation": "1MXE lacks catalytic domain, and no binding/unbinding or regulatory-segment reinsertion event is measured. Do not claim measured reduced return probability or activity."
+    },
+    {
+      "claim": "RMSF/Hchi establish binding free energy, rotational speed, residence time or activation rate",
+      "judgement": "not inferable",
+      "basis": "RMSF is positional amplitude and Hchi is fixed-bin joint torsional occupancy entropy, each lacking transition timing and energetic reference.",
+      "limitation": "MD window variability is not confidence interval from independent replicas."
+    }
+  ],
+  "window_note": "Five consecutive 100 ns windows from one 500 ns trajectory, not independent repeats. Full-trajectory RMSF target is exported as frozen_rmsf in window source and must not be replaced with arithmetic average of separately calculated window RMSF values.",
+  "sidechain_note": "Compare same amino-acid types when discussing environment. Four Ala model outputs are masked because no effective sidechain chi exists. Different residue types and chi counts confound absolute Hchi across W/M/K/F."
+}

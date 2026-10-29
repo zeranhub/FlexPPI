@@ -1,0 +1,143 @@
+{
+  "case": "C32",
+  "model": "chemical_identity_corrected_v1 full OOF fold0; DynaRepo A003R held out",
+  "input_structure": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\reader_revision_v39_20261016\\english_figures\\fig6\\ubiquitin\\inputs\\A003R_input_structure.pdb",
+  "input_ubiquitin_CA": 72,
+  "n_all_valid_Hchi": 66,
+  "n_per_chi": {
+    "1": 66,
+    "2": 52,
+    "3": 23,
+    "4": 10
+  },
+  "n_all_angle_pairs": 151,
+  "n_Fstar_bins": 432,
+  "n_zero_count_Fstar_bins": 211,
+  "MD_frames_for_angles": 501,
+  "MD_time_window_ns": [
+    0,
+    100
+  ],
+  "MD_frame_spacing_ps": 200,
+  "MD_Hchi_reference": "Mean of five consecutive1000-frame windows in original5000 label frames",
+  "spread": "No independent-repeat uncertainty claimed; one DynaRepo trajectory",
+  "mae_nats": 0.07953050649754886,
+  "spearman": 0.9793749878063989,
+  "lowF_widths": [
+    {
+      "residue": "Q41",
+      "chi": 1,
+      "width_degrees": 20
+    },
+    {
+      "residue": "Q2",
+      "chi": 1,
+      "width_degrees": 30
+    },
+    {
+      "residue": "Q41",
+      "chi": 2,
+      "width_degrees": 25
+    },
+    {
+      "residue": "Q2",
+      "chi": 2,
+      "width_degrees": 55
+    },
+    {
+      "residue": "Q41",
+      "chi": 3,
+      "width_degrees": 35
+    },
+    {
+      "residue": "Q2",
+      "chi": 3,
+      "width_degrees": 100
+    }
+  ],
+  "all_source_points_retained": true,
+  "subsampling": false,
+  "source_sha256": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\figure_merge_v43_20261018\\figure5\\source\\original_fig7\\source\\all66_residue_summary.csv": "fec153f86b3b8ba808d2ee731937754427902660c5b29a955cacf25f5d8ab4ab",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\figure_merge_v43_20261018\\figure5\\source\\original_fig7\\source\\histograms_501frames.csv": "e90410df3e05ad5004861601e9f8b7272da0889c589d056ef4a13b4a5e20dbad",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\figure_merge_v43_20261018\\figure5\\source\\original_fig7\\experiment\\defined_angles_long.csv": "8052306e31edf07f8cc7295ec8059c4e8dad6047354a834ea21fb0020e48ad0c",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\figure_merge_v43_20261018\\figure5\\source\\original_fig7\\experiment\\per_chi_correlations.csv": "d90af24843fc5d5fb08abd0a9d799b38ea7e4fe0afd8fb229d7c370f3c544205"
+  },
+  "boundary": "Within-complex same-type side-chain diversity; joint scalar is not per-angle prediction or binding entropy",
+  "status": "passed",
+  "canvas_mm": [
+    183.0,
+    205.0
+  ],
+  "dpi": 450,
+  "minimum_font_pt": 9,
+  "visible_language": "English",
+  "axes": [
+    [
+      0.028961748633879833,
+      0.7073170731707317,
+      0.2754098360655737,
+      0.20487804878048776
+    ],
+    [
+      0.4207650273224044,
+      0.7121951219512195,
+      0.546448087431694,
+      0.1658536585365854
+    ],
+    [
+      0.12568306010928962,
+      0.4682926829268293,
+      0.3497267759562841,
+      0.11219512195121956
+    ],
+    [
+      0.6174863387978142,
+      0.4682926829268293,
+      0.3497267759562841,
+      0.11219512195121956
+    ],
+    [
+      0.12568306010928962,
+      0.3024390243902439,
+      0.3497267759562841,
+      0.1121951219512195
+    ],
+    [
+      0.6174863387978142,
+      0.3024390243902439,
+      0.3497267759562841,
+      0.1121951219512195
+    ],
+    [
+      0.10382513661202186,
+      0.04390243902439024,
+      0.23497267759562845,
+      0.1219512195121951
+    ],
+    [
+      0.41530054644808745,
+      0.04390243902439024,
+      0.23497267759562845,
+      0.1219512195121951
+    ],
+    [
+      0.726775956284153,
+      0.04390243902439024,
+      0.23497267759562845,
+      0.1219512195121951
+    ]
+  ],
+  "point_rows": 715,
+  "text_outside_canvas": [],
+  "source_paths_unmodified": true,
+  "statistical_tests": "None; descriptive complete-region evaluation",
+  "output_sha256": {
+    "png": "ba3b35683c176dcb711439b1d273d9746f10f6ca03e43556153acd54a7b7350f",
+    "pdf": "48766e2fd25cbf9a0e692df561ca25a6ee7befe224d21b901801acd48a385897",
+    "svg": "dcbfe56b179a4154c961b84edcfc78c919845f6ee0c98a33418fce730205d863"
+  },
+  "visual_QA": "passed",
+  "direct_source_check_count": 12,
+  "source_SVG_font_min_pt": 9.0
+}

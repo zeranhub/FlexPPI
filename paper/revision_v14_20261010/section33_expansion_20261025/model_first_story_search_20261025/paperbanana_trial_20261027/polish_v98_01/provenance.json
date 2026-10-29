@@ -1,0 +1,16 @@
+{
+  "source": "https://github.com/dwzhu-pku/PaperBanana",
+  "source_commit": "f07f5f8a04d3025709d9ee3ec41d3d325a2e8529",
+  "entrypoint": "agents.polish_agent.PolishAgent._generate_suggestions + PolishAgent.process",
+  "workflow": "author plot-image polish: VLM critique -> image refinement",
+  "main_model": "gemini-3.1-pro-preview",
+  "image_model": "gemini-3.1-flash-image-preview",
+  "input": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v98_structure_fill\\figure3\\fig3_dual_case_entropy.png",
+  "input_sha256": "75733ef569e662e0861ccf15a499e945700033b5e4ec31d601674029b35379a1",
+  "aspect_ratio": "4:5",
+  "image_size": "2k",
+  "started_at": "2026-10-27T00:37:20.931142+00:00",
+  "credential_values_not_logged": true,
+  "existing_manuscript_and_v98_unchanged": true,
+  "scope": "visual design trial; numerical fidelity must be reviewed before scientific use"
+}

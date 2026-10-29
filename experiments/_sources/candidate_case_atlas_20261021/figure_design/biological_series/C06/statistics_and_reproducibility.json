@@ -1,0 +1,106 @@
+{
+  "case_id": "C06",
+  "status": "passed",
+  "model": "Existing joint Full fold0; trained on ATLAS1866 + DynaRepo564; ITrace0",
+  "model_n": 1,
+  "model_error_bars": null,
+  "MD_independent_replicas_per_state": 3,
+  "MD_center": "Existing equal-weight replica mean",
+  "spread_displayed": null,
+  "n_definition": "Aligned residue comparisons; not independent experimental samples or MD frames",
+  "tests": null,
+  "multiple_comparison_correction": null,
+  "regression_fits": null,
+  "descriptive_metrics_by_complete_contrast": {
+    "rmsf": [
+      {
+        "a": "7pdw",
+        "b": "7pbc",
+        "n_positions": 43,
+        "Spearman_rho": 0.4187556629417094,
+        "MAE": 0.11791862096897392,
+        "zero_change_MAE": 0.13083707177361778,
+        "direction_agreement": 0.7674418604651163
+      }
+    ],
+    "hchi": [
+      {
+        "a": "7pdw",
+        "b": "7pbc",
+        "n_positions": 12,
+        "Spearman_rho": 0.2657342657342658,
+        "MAE": 0.21894311408201853,
+        "zero_change_MAE": 0.24201777577400208,
+        "direction_agreement": 0.6666666666666666
+      }
+    ]
+  },
+  "scope_counts": [
+    {
+      "a": "7pdw",
+      "b": "7pbc",
+      "backbone_scope_rows": 43,
+      "paired_valid_RMSF": 43,
+      "Hchi_same_AA_valid": 12,
+      "all_aligned_rows": 826,
+      "all_paired_rows": 822,
+      "all_gap_rows": 4,
+      "all_altered_AA_rows": 1
+    }
+  ],
+  "all_contrasts": [
+    [
+      "7pdw",
+      "7pbc"
+    ]
+  ],
+  "source_traceability": "Source CSVs and exact SHA256 in data_audit.json; panel_b/c plotted CSV and all panel_d observations exported",
+  "limitations": "旧模型ρ=0，7位仅1位变化超过描述性2SEM；不能称跨模型稳定机制。7QPJ c756并非c728衍生体。 7QPJ c756 is from a different parent, not a second derivative of c728. N-terminal tags and chain naming differ. Apo c728 crystal 7PDX exists in the source paper but is not in ITrace 244; apo MD was not identified. Solvent exclusion is not residue Hchi.",
+  "PNG_SHA256": "cf3057c3e6552036b5e98ab40848a3cd770900ff2bf58a30e631560290514d68",
+  "original_NPZ_checks": [
+    {
+      "a": "7pdw",
+      "b": "7pbc",
+      "state": "a",
+      "PDB": "7pdw",
+      "metric": "rmsf",
+      "valid_state_values_checked": 823,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_7pdw.npz",
+      "NPZ_SHA256": "286e072faa2fcfd50ee67e256810376cf7992e7394f0e85dbaedcdbe15c3e63a"
+    },
+    {
+      "a": "7pdw",
+      "b": "7pbc",
+      "state": "a",
+      "PDB": "7pdw",
+      "metric": "hchi",
+      "valid_state_values_checked": 716,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_7pdw.npz",
+      "NPZ_SHA256": "286e072faa2fcfd50ee67e256810376cf7992e7394f0e85dbaedcdbe15c3e63a"
+    },
+    {
+      "a": "7pdw",
+      "b": "7pbc",
+      "state": "b",
+      "PDB": "7pbc",
+      "metric": "rmsf",
+      "valid_state_values_checked": 825,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_7pbc.npz",
+      "NPZ_SHA256": "e5dd93a4254c3edca0ec6a90a7d925ce0cc421416c5bd4f2d8c14df9547ab669"
+    },
+    {
+      "a": "7pdw",
+      "b": "7pbc",
+      "state": "b",
+      "PDB": "7pbc",
+      "metric": "hchi",
+      "valid_state_values_checked": 718,
+      "maximum_absolute_error": 0.0,
+      "NPZ_path": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\tcr_case_v40_20261017\\family_predictions\\full\\itrace_7pbc.npz",
+      "NPZ_SHA256": "e5dd93a4254c3edca0ec6a90a7d925ce0cc421416c5bd4f2d8c14df9547ab669"
+    }
+  ]
+}

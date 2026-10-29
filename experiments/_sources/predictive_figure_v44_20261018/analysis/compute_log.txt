@@ -1,0 +1,24 @@
+Static training arrays [('X', (961321, 47)), ('target', (961321, 2)), ('valid', (961321, 2)), ('record_index', (961321,)), ('fold', (961321,))]
+Identity, mask and per-record metrics verified 250 / 3063 seconds 6.1
+Identity, mask and per-record metrics verified 500 / 3063 seconds 10.1
+Identity, mask and per-record metrics verified 750 / 3063 seconds 14.2
+Identity, mask and per-record metrics verified 1000 / 3063 seconds 18.3
+Identity, mask and per-record metrics verified 1250 / 3063 seconds 22.4
+Identity, mask and per-record metrics verified 1500 / 3063 seconds 26.5
+Identity, mask and per-record metrics verified 1750 / 3063 seconds 30.6
+Identity, mask and per-record metrics verified 2000 / 3063 seconds 34.9
+Identity, mask and per-record metrics verified 2250 / 3063 seconds 39.2
+Identity, mask and per-record metrics verified 2500 / 3063 seconds 43.7
+Identity, mask and per-record metrics verified 2750 / 3063 seconds 48.1
+Identity, mask and per-record metrics verified 3000 / 3063 seconds 53.2
+Saving threshold curves
+rmsf Full {'mean_ap': 0.7300365341292498, 'ap_ci': [0.7242412711594066, 0.7360574150410882], 'mean_auroc': 0.9343905203641495, 'auroc_ci': [0.9323176175173141, 0.9364948036176974], 'macro_mae': 0.5771038628004095, 'mean_spearman': 0.7961867220004638, 'n_records': 3063, 'n_total_records': 3063, 'n_positions': 961321, 'prevalence_mean': 0.10257909653812106, 'prevalence_min': 0.1, 'prevalence_max': 0.12195121951219512, 'undefined_records': 0}
+rmsf Intra {'mean_ap': 0.6955425480429748, 'ap_ci': [0.6893149093923974, 0.7018544681918509], 'mean_auroc': 0.9214558086206902, 'auroc_ci': [0.9189071052643324, 0.924061658004643], 'macro_mae': 0.6355266012703227, 'mean_spearman': 0.7765746491094271, 'n_records': 3063, 'n_total_records': 3063, 'n_positions': 961321, 'prevalence_mean': 0.10257909653812106, 'prevalence_min': 0.1, 'prevalence_max': 0.12195121951219512, 'undefined_records': 0}
+rmsf Static {'mean_ap': 0.6571306899778864, 'ap_ci': [0.6512488469285678, 0.663246885279877], 'mean_auroc': 0.9103457152250222, 'auroc_ci': [0.9081759682230929, 0.9126084959436274], 'macro_mae': 0.6773283014111061, 'mean_spearman': 0.7560924913700227, 'n_records': 3063, 'n_total_records': 3063, 'n_positions': 961321, 'prevalence_mean': 0.10257909653812106, 'prevalence_min': 0.1, 'prevalence_max': 0.12195121951219512, 'undefined_records': 0}
+rmsf AA {'mean_ap': 0.1680527305401422, 'ap_ci': [0.16547310925858408, 0.17070968992028437], 'mean_auroc': 0.625688076245388, 'auroc_ci': [0.6228916222817721, 0.6284612174808598], 'macro_mae': 0.9088715022058005, 'mean_spearman': 0.25636387896890833, 'n_records': 3063, 'n_total_records': 3063, 'n_positions': 961321, 'prevalence_mean': 0.10257909653812106, 'prevalence_min': 0.1, 'prevalence_max': 0.12195121951219512, 'undefined_records': 0}
+chi_entropy Full {'mean_ap': 0.9262696667415228, 'ap_ci': [0.9242291168113527, 0.9282332802004186], 'mean_auroc': 0.9892377533699649, 'auroc_ci': [0.9889202186687428, 0.9895355808583407], 'macro_mae': 0.16586574902130047, 'mean_spearman': 0.9411305304037728, 'n_records': 3063, 'n_total_records': 3063, 'n_positions': 824988, 'prevalence_mean': 0.10291394329994574, 'prevalence_min': 0.1, 'prevalence_max': 0.12903225806451613, 'undefined_records': 0}
+chi_entropy Intra {'mean_ap': 0.9203779513546311, 'ap_ci': [0.9181826477288799, 0.9224934394358201], 'mean_auroc': 0.9885655678116402, 'auroc_ci': [0.9882248317877301, 0.9888937993838872], 'macro_mae': 0.16961745654268454, 'mean_spearman': 0.9384564817696236, 'n_records': 3063, 'n_total_records': 3063, 'n_positions': 824988, 'prevalence_mean': 0.10291394329994574, 'prevalence_min': 0.1, 'prevalence_max': 0.12903225806451613, 'undefined_records': 0}
+chi_entropy Static {'mean_ap': 0.906589473047831, 'ap_ci': [0.9042555966402207, 0.9088051951998614], 'mean_auroc': 0.986724177973742, 'auroc_ci': [0.9863765215667659, 0.9870606234753853], 'macro_mae': 0.18698759641798685, 'mean_spearman': 0.9294127560685708, 'n_records': 3063, 'n_total_records': 3063, 'n_positions': 824988, 'prevalence_mean': 0.10291394329994574, 'prevalence_min': 0.1, 'prevalence_max': 0.12903225806451613, 'undefined_records': 0}
+chi_entropy AA {'mean_ap': 0.7789229917088459, 'ap_ci': [0.7752987974412595, 0.7825316534525595], 'mean_auroc': 0.9748943697813532, 'auroc_ci': [0.9743771951534802, 0.9754136709864654], 'macro_mae': 0.24177602810322707, 'mean_spearman': 0.8882664140178399, 'n_records': 3063, 'n_total_records': 3063, 'n_positions': 824988, 'prevalence_mean': 0.10291394329994574, 'prevalence_min': 0.1, 'prevalence_max': 0.12903225806451613, 'undefined_records': 0}
+Saving record-equal full density and conditional trends
+COMPLETE 77.4 seconds

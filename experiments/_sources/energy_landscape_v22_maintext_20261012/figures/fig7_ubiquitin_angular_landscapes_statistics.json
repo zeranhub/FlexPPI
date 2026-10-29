@@ -1,0 +1,19 @@
+{
+  "question": "How do paired RMSF/jointHchi outputs correspond to continuous marginal angular distributions?",
+  "sites": 2,
+  "frames_per_site": 5000,
+  "angles": 3,
+  "density_bins_per_angle": 72,
+  "all_time_points": 30000,
+  "all_histogram_bins": 2592,
+  "source_sha256": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\case_analysis\\ubiquitin_chi1_histograms_and_Fstar.csv": "454d72f79430fb2771912036c8258026c418926ec6b4cb165a54142c92c8f584",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\case_analysis\\ubiquitin_bin_sensitivity.csv": "27ba9b5c933e6789c739e8ec75da58e9d2ebcd3d391a796e3cfe8783b3949df9",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\case_analysis\\Q41_angles_used.csv": "d17cf3115073b20a9126aca7f8d186650d9e63ad9445a45f830890b341842b15",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\energy_landscape_v21_20261012\\case_analysis\\Q62_angles_used.csv": "3e0fec2ea9b37eef6da5b8826e27ae6be5cc253a63a1468a2c6616d7caaad336"
+  },
+  "Fstar_smoothing": false,
+  "Fstar_empty_bins": "missing",
+  "Fstar_physical_units": "dimensionless",
+  "single_angle_entropy_different_from_joint_target": true
+}

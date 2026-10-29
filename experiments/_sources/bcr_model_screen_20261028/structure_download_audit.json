@@ -1,0 +1,515 @@
+[
+  {
+    "pdb": "1C08",
+    "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\bcr_model_screen_20261028\\structures\\1c08_raw.pdb",
+    "sha256": "cc726b29c0f930cb94e671225e96c0e3142b9577639149983a190a390150265a",
+    "chains": {
+      "A": {
+        "n": 107,
+        "first": [
+          [
+            "   1 ",
+            "ASP"
+          ],
+          [
+            "   2 ",
+            "ILE"
+          ]
+        ],
+        "last": [
+          [
+            " 106 ",
+            "ILE"
+          ],
+          [
+            " 107 ",
+            "LYS"
+          ]
+        ]
+      },
+      "B": {
+        "n": 114,
+        "first": [
+          [
+            "   1 ",
+            "ASP"
+          ],
+          [
+            "   2 ",
+            "VAL"
+          ]
+        ],
+        "last": [
+          [
+            " 113 ",
+            "ALA"
+          ],
+          [
+            " 114 ",
+            "ALA"
+          ]
+        ]
+      },
+      "C": {
+        "n": 129,
+        "first": [
+          [
+            "   1 ",
+            "LYS"
+          ],
+          [
+            "   2 ",
+            "VAL"
+          ]
+        ],
+        "last": [
+          [
+            " 128 ",
+            "ARG"
+          ],
+          [
+            " 129 ",
+            "LEU"
+          ]
+        ]
+      }
+    },
+    "compound": [
+      "COMPND    MOL_ID: 1;",
+      "COMPND   2 MOLECULE: ANTI-HEN EGG WHITE LYSOZYME ANTIBODY (HYHEL-10);",
+      "COMPND   3 CHAIN: A;",
+      "COMPND   4 FRAGMENT: VL FRAGMENT;",
+      "COMPND   5 ENGINEERED: YES;",
+      "COMPND   6 MOL_ID: 2;",
+      "COMPND   7 MOLECULE: ANTI-HEN EGG WHITE LYSOZYME ANTIBODY (HYHEL-10);",
+      "COMPND   8 CHAIN: B;",
+      "COMPND   9 FRAGMENT: VH FRAGMENT;",
+      "COMPND  10 ENGINEERED: YES;",
+      "COMPND  11 MOL_ID: 3;",
+      "COMPND  12 MOLECULE: LYSOZYME;",
+      "COMPND  13 CHAIN: C"
+    ]
+  },
+  {
+    "pdb": "5AYU",
+    "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\bcr_model_screen_20261028\\structures\\5ayu_raw.pdb",
+    "sha256": "2dfe1f00714c363b5121b3520bed8aaac8cc52316a5fe0474db5cf09ff3e7204",
+    "chains": {
+      "L": {
+        "n": 107,
+        "first": [
+          [
+            "   1 ",
+            "ASP"
+          ],
+          [
+            "   2 ",
+            "ILE"
+          ]
+        ],
+        "last": [
+          [
+            " 106 ",
+            "ILE"
+          ],
+          [
+            " 107 ",
+            "LYS"
+          ]
+        ]
+      },
+      "H": {
+        "n": 113,
+        "first": [
+          [
+            "   1 ",
+            "ASP"
+          ],
+          [
+            "   2 ",
+            "VAL"
+          ]
+        ],
+        "last": [
+          [
+            " 112 ",
+            "SER"
+          ],
+          [
+            " 113 ",
+            "ALA"
+          ]
+        ]
+      }
+    },
+    "compound": [
+      "COMPND    MOL_ID: 1;",
+      "COMPND   2 MOLECULE: LYSOZYME BINDING IG KAPPA CHAIN V23-J2 REGION;",
+      "COMPND   3 CHAIN: L;",
+      "COMPND   4 ENGINEERED: YES;",
+      "COMPND   5 MOL_ID: 2;",
+      "COMPND   6 MOLECULE: IG VH,ANTI-LYSOZYME;",
+      "COMPND   7 CHAIN: H;",
+      "COMPND   8 ENGINEERED: YES"
+    ]
+  },
+  {
+    "pdb": "6P4A",
+    "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\bcr_model_screen_20261028\\structures\\6p4a_raw.pdb",
+    "sha256": "9b2c80f1eb94751572f79fc27d8fae7a4d9dd856455d5545988a7cfdbabbdf7e",
+    "chains": {
+      "L": {
+        "n": 214,
+        "first": [
+          [
+            "   1 ",
+            "ASP"
+          ],
+          [
+            "   2 ",
+            "ILE"
+          ]
+        ],
+        "last": [
+          [
+            " 213 ",
+            "GLU"
+          ],
+          [
+            " 214 ",
+            "CYS"
+          ]
+        ]
+      },
+      "H": {
+        "n": 209,
+        "first": [
+          [
+            "   1 ",
+            "ASP"
+          ],
+          [
+            "   2 ",
+            "VAL"
+          ]
+        ],
+        "last": [
+          [
+            " 214 ",
+            "ASP"
+          ],
+          [
+            " 215 ",
+            "CYS"
+          ]
+        ]
+      },
+      "C": {
+        "n": 129,
+        "first": [
+          [
+            "   1 ",
+            "LYS"
+          ],
+          [
+            "   2 ",
+            "VAL"
+          ]
+        ],
+        "last": [
+          [
+            " 128 ",
+            "ARG"
+          ],
+          [
+            " 129 ",
+            "LEU"
+          ]
+        ]
+      }
+    },
+    "compound": [
+      "COMPND    MOL_ID: 1;",
+      "COMPND   2 MOLECULE: HYHEL10 FAB LIGHT CHAIN;",
+      "COMPND   3 CHAIN: L;",
+      "COMPND   4 ENGINEERED: YES;",
+      "COMPND   5 MOL_ID: 2;",
+      "COMPND   6 MOLECULE: HYHEL10 FAB HEAVY CHAIN;",
+      "COMPND   7 CHAIN: H;",
+      "COMPND   8 ENGINEERED: YES;",
+      "COMPND   9 MOL_ID: 3;",
+      "COMPND  10 MOLECULE: LYSOZYME C;",
+      "COMPND  11 CHAIN: C;",
+      "COMPND  12 SYNONYM: 1,4-BETA-N-ACETYLMURAMIDASE C, ALLERGEN GAL D IV;",
+      "COMPND  13 EC: 3.2.1.17;",
+      "COMPND  14 ENGINEERED: YES;",
+      "COMPND  15 MUTATION: YES"
+    ]
+  },
+  {
+    "pdb": "6P4B",
+    "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\bcr_model_screen_20261028\\structures\\6p4b_raw.pdb",
+    "sha256": "fa270a3b4de1fe2e7c7e763e1872d9ab06d9a81246096cd24a48f41a328fd284",
+    "chains": {
+      "L": {
+        "n": 210,
+        "first": [
+          [
+            "   1 ",
+            "ASP"
+          ],
+          [
+            "   2 ",
+            "ILE"
+          ]
+        ],
+        "last": [
+          [
+            " 212 ",
+            "ASN"
+          ],
+          [
+            " 213 ",
+            "GLU"
+          ]
+        ]
+      },
+      "H": {
+        "n": 205,
+        "first": [
+          [
+            "   1 ",
+            "ASP"
+          ],
+          [
+            "   2 ",
+            "VAL"
+          ]
+        ],
+        "last": [
+          [
+            " 212 ",
+            "PRO"
+          ],
+          [
+            " 213 ",
+            "ARG"
+          ]
+        ]
+      },
+      "C": {
+        "n": 129,
+        "first": [
+          [
+            "   1 ",
+            "LYS"
+          ],
+          [
+            "   2 ",
+            "VAL"
+          ]
+        ],
+        "last": [
+          [
+            " 128 ",
+            "ARG"
+          ],
+          [
+            " 129 ",
+            "LEU"
+          ]
+        ]
+      },
+      "A": {
+        "n": 209,
+        "first": [
+          [
+            "   1 ",
+            "ASP"
+          ],
+          [
+            "   2 ",
+            "ILE"
+          ]
+        ],
+        "last": [
+          [
+            " 212 ",
+            "ASN"
+          ],
+          [
+            " 213 ",
+            "GLU"
+          ]
+        ]
+      },
+      "B": {
+        "n": 204,
+        "first": [
+          [
+            "   1 ",
+            "ASP"
+          ],
+          [
+            "   2 ",
+            "VAL"
+          ]
+        ],
+        "last": [
+          [
+            " 211 ",
+            "VAL"
+          ],
+          [
+            " 212 ",
+            "PRO"
+          ]
+        ]
+      },
+      "D": {
+        "n": 129,
+        "first": [
+          [
+            "   1 ",
+            "LYS"
+          ],
+          [
+            "   2 ",
+            "VAL"
+          ]
+        ],
+        "last": [
+          [
+            " 128 ",
+            "ARG"
+          ],
+          [
+            " 129 ",
+            "LEU"
+          ]
+        ]
+      }
+    },
+    "compound": [
+      "COMPND    MOL_ID: 1;",
+      "COMPND   2 MOLECULE: HYHEL10 FAB LIGHT CHAIN;",
+      "COMPND   3 CHAIN: L, A;",
+      "COMPND   4 ENGINEERED: YES;",
+      "COMPND   5 MOL_ID: 2;",
+      "COMPND   6 MOLECULE: HYHEL10 FAB HEAVY CHAIN;",
+      "COMPND   7 CHAIN: H, B;",
+      "COMPND   8 ENGINEERED: YES;",
+      "COMPND   9 MUTATION: YES;",
+      "COMPND  10 MOL_ID: 3;",
+      "COMPND  11 MOLECULE: LYSOZYME C;",
+      "COMPND  12 CHAIN: C, D;",
+      "COMPND  13 SYNONYM: 1,4-BETA-N-ACETYLMURAMIDASE C, ALLERGEN GAL D IV;",
+      "COMPND  14 EC: 3.2.1.17;",
+      "COMPND  15 ENGINEERED: YES;",
+      "COMPND  16 MUTATION: YES"
+    ]
+  },
+  {
+    "pdb": "6P4C",
+    "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\bcr_model_screen_20261028\\structures\\6p4c_raw.pdb",
+    "sha256": "fa68f839a1d4668ecf5f8ebfd1cdef843a5902db9881614658ea0a3b8420560e",
+    "chains": {
+      "L": {
+        "n": 207,
+        "first": [
+          [
+            "   1 ",
+            "ASP"
+          ],
+          [
+            "   2 ",
+            "ILE"
+          ]
+        ],
+        "last": [
+          [
+            " 212 ",
+            "ASN"
+          ],
+          [
+            " 213 ",
+            "GLU"
+          ]
+        ]
+      },
+      "H": {
+        "n": 213,
+        "first": [
+          [
+            "   2 ",
+            "VAL"
+          ],
+          [
+            "   3 ",
+            "GLN"
+          ]
+        ],
+        "last": [
+          [
+            " 213 ",
+            "ARG"
+          ],
+          [
+            " 214 ",
+            "ASP"
+          ]
+        ]
+      }
+    },
+    "compound": [
+      "COMPND    MOL_ID: 1;",
+      "COMPND   2 MOLECULE: HYHEL10 FAB LIGHT CHAIN;",
+      "COMPND   3 CHAIN: L;",
+      "COMPND   4 ENGINEERED: YES;",
+      "COMPND   5 MOL_ID: 2;",
+      "COMPND   6 MOLECULE: HYHEL10 FAB HEAVY CHAIN;",
+      "COMPND   7 CHAIN: H;",
+      "COMPND   8 ENGINEERED: YES;",
+      "COMPND   9 MUTATION: YES"
+    ]
+  },
+  {
+    "pdb": "6P4D",
+    "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\bcr_model_screen_20261028\\structures\\6p4d_raw.pdb",
+    "sha256": "1e930aab65ad768c709641c58bb8b6aa92410f91223de262660b56dea2ce84c9",
+    "chains": {
+      "A": {
+        "n": 129,
+        "first": [
+          [
+            "   1 ",
+            "LYS"
+          ],
+          [
+            "   2 ",
+            "VAL"
+          ]
+        ],
+        "last": [
+          [
+            " 128 ",
+            "ARG"
+          ],
+          [
+            " 129 ",
+            "LEU"
+          ]
+        ]
+      }
+    },
+    "compound": [
+      "COMPND    MOL_ID: 1;",
+      "COMPND   2 MOLECULE: LYSOZYME C;",
+      "COMPND   3 CHAIN: A;",
+      "COMPND   4 SYNONYM: 1,4-BETA-N-ACETYLMURAMIDASE C, ALLERGEN GAL D IV;",
+      "COMPND   5 EC: 3.2.1.17;",
+      "COMPND   6 ENGINEERED: YES;",
+      "COMPND   7 MUTATION: YES"
+    ]
+  }
+]

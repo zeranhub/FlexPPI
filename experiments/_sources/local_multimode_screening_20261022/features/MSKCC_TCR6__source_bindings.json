@@ -1,0 +1,870 @@
+{
+  "profile_audit": {
+    "panel_id": "MSKCC_TCR6",
+    "N": 171,
+    "R_dimensions": 105,
+    "H_dimensions": 90,
+    "R_max_abs_delta": 0.2202562689781189,
+    "H_max_abs_delta": 0.38252443075180054,
+    "all_inputs_fixed_backbone": true,
+    "unchanged_chemical_identity_at_every_feature": true,
+    "no_spatial_means_or_selected_good_residues": true
+  },
+  "prediction_bindings": [
+    {
+      "candidate_id": "MSKCC_TCR6__D3A",
+      "prediction_sha256": "524f2dbd99835907e4c51300fc4935eb87ae3c15dc3d9df8634f830017ba0bfb",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3C",
+      "prediction_sha256": "8b205089a946e4ba04284450f86612ffc0728f6e4885b2ff7f2b47b72d3d8b74",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3E",
+      "prediction_sha256": "dcd37c04eccbe2457e84fee7ae1fff7c2ebe9eda2d3fcd1bf82a7a84be302449",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3F",
+      "prediction_sha256": "c8fe7298b92bd080ac585ff973b06c975bf7e319dbb210be99cf285eba761d96",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3G",
+      "prediction_sha256": "6a138517843628245b3f93a959e113843e4da4a34fb76f91247ca2c78f03d2d3",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3H",
+      "prediction_sha256": "a984f39945516a55d8607ee0b4e0b1351e84e4003a1e9d4656e59f40bad4f391",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3I",
+      "prediction_sha256": "5e342dfc68b8ed1d3a01da3c703c47b2cc7db2fad3901138315c0a59551ffdf5",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3K",
+      "prediction_sha256": "cfa9e9762bf2d9fc8898fd7475330c069ac89e72eaae15fb9b4ba7bfef8e8002",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3L",
+      "prediction_sha256": "0967762f226c555b56e36e1467d353fcc8f32948eb0b8d0d134da3d6ea9fd32c",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3M",
+      "prediction_sha256": "51933cb4e16bb57a8574eb94ce1b535b6f29fb23fe5833c4009d02e0c01071c1",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3N",
+      "prediction_sha256": "c25c13c4e298e3ad2379569088c115ffd8be5d6fe3651b1f7b5b6cb87303dda6",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3P",
+      "prediction_sha256": "35ab771ef239a162c7ba754707fcce34b9291801aeebfb695824acb2a864276a",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3Q",
+      "prediction_sha256": "403865421a8eb33c7d5e703df73c91285a3c0927470037e998260875dfe2a9cd",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3R",
+      "prediction_sha256": "95a9d461bad7ba8126457f9b6d07387af8818b7bc00b0ba8529206ff4702412b",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3S",
+      "prediction_sha256": "93ffc0373cc88af9a57b788995de00cc38c54e04a402d72435ba4c180784523f",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3T",
+      "prediction_sha256": "168673e4a84efa9f8fcc3b4f91b69604ec0827f00e94d101cfeb2bf998442106",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3V",
+      "prediction_sha256": "93e5e16ca6e62e13a725080b9b185949094b73a34cb7fee56cb0c3a6aa05f3eb",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3W",
+      "prediction_sha256": "76bc6a94fa090e75d8daaa39473876f89c8919503b230aff1d773e8078665f59",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__D3Y",
+      "prediction_sha256": "7af885dc10c8680abfeee6b34e70fa9fba0a67d2734416fabdeca3f923f257da",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7A",
+      "prediction_sha256": "d35f21a880b434132f9c06e1398c7fec1cb8b460416d626dd2aef2cf51a5e92e",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7C",
+      "prediction_sha256": "650ae496e492cc23a96b1ad15c26e99bab6998b27816f07e9fe4e102af0e1684",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7D",
+      "prediction_sha256": "95b6872841b899491609f7e2a118783c0887495ddedee4ae2df04d3f366b3838",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7E",
+      "prediction_sha256": "eb11199ad642223a2d7a2182d65fc483b1c934bee509fe216456521a5aee40f8",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7G",
+      "prediction_sha256": "879a30beb646fce8e8ae79ffd60a7b606b1354ea7f210567e320dca87f302c0e",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7H",
+      "prediction_sha256": "b9f8ee6038f8632d4f43e22f8f679a1ccb000ca40a466dee364150133d548efa",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7I",
+      "prediction_sha256": "cfe9ca44f82977e498c6d435f43034f1d2e86bd147c1a2ee6837dc22f297616f",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7K",
+      "prediction_sha256": "917d18b83ea50d84cf3ed5227c1ee79a1360ce3ffe63ffe5f358d9cdfb915f90",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7L",
+      "prediction_sha256": "e363883c2e101631aa32fd4fe85e0eef2278cb40516c8fe18a095cd47fe9f03c",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7M",
+      "prediction_sha256": "a6c92bd784bc91082a8862acdafb7c2c5cd3eb580666dd03bbc4d9c622bdc1a4",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7N",
+      "prediction_sha256": "958a7ae22853acfb50598315f08e77729ae65f6a1d792ea1fac241cff52e3dca",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7P",
+      "prediction_sha256": "605163440598b813b161b88895927ec40799dda7aaa6da4955a5c8c98c328e3b",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7Q",
+      "prediction_sha256": "8b327ec36a8c21b1f42ddfa60a04f9aa6a00e272719231a950d84f7e03c310c8",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7R",
+      "prediction_sha256": "fcf56efc1c88ab7211284dd7f766f113e553cc854af1adeb8b5bd4ffe5c49a3b",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7S",
+      "prediction_sha256": "13b87dc269286da16c1c5e348f567fbb70a731aa746b7348816a48858fa1d31d",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7T",
+      "prediction_sha256": "082394d745f4d1b31331f0ce27d20a5217ef994662773c7c3451b038429fcd7a",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7V",
+      "prediction_sha256": "44e4b7e81148d5ca3c46f0100389c028efb8500f0121893db9b331237d2f9b96",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7W",
+      "prediction_sha256": "ea1205653f60c4408229a082657f9ed646e4f99fbd96acedb23bbbafe0bb2acf",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__F7Y",
+      "prediction_sha256": "f5b634a91a084ea303189cd803557c62cce7094e433b8a55d782d85f41e5e4ef",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1A",
+      "prediction_sha256": "cc0eab06a1e748030acc943efc61777238946c0703188cce20b40e7bf25906a6",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1C",
+      "prediction_sha256": "b8e102972cb682b232a5d7299ef83f13b71d304f792b22fabcecc666685a8f72",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1D",
+      "prediction_sha256": "ffdcfa097b4dfc3be1c20acb336195723534ea2b9508802a869caa30b80a5631",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1E",
+      "prediction_sha256": "c4aabd8901a2a7f81a6e5bb22a89e581e17082bd3926006df4a152a25e7f08c9",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1F",
+      "prediction_sha256": "ec6a60fa19a7a6c1b3da7dee531b67297f5fba795aa2c401e1e529a44d584fad",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1G",
+      "prediction_sha256": "e6b32e80ca2be834285d129375aba23e7c5adcfc144569b5d16488038a73c366",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1H",
+      "prediction_sha256": "f9766450e54f0808665ec893f4773255012b31e9a53aea1e81c1006aa2740cc3",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1K",
+      "prediction_sha256": "c5b54ac08cdb456a3ce3294cde4d9302d15de6708dac856eccf75d5dee2c577c",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1L",
+      "prediction_sha256": "ff8ec4d3bc8f5703a95228e1f9a77eebca54948e8f76bb712f312bf7277b27fe",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1M",
+      "prediction_sha256": "3e0d31ed3f21877bc271e4ec48734696807faaac55a811e734929685579b8f58",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1N",
+      "prediction_sha256": "fb96c9cb4f50723e1484453a5736126b8fdbc0ba4dd5cb3a01d194fbe3ee1d21",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1P",
+      "prediction_sha256": "ee9efc5d6e23309998eb1d152da62583e4a258ce5eb52f800e5391aa6d62d519",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1Q",
+      "prediction_sha256": "973869cac24ef42c5845c79379a064f72989f78994ec6c2e92552b081467769b",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1R",
+      "prediction_sha256": "1a7ed518b7d6d2b2547bf1fcb7f12a4ba6b3428a3d030d170f6096f65055e346",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1S",
+      "prediction_sha256": "707bdb24c54a425f0b123f17540dec724a5cfc2add28982d5ff57445acead4a6",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1T",
+      "prediction_sha256": "a96357f9b65f78c2520d2c35f945a49c75e595103280812412b2ac252a2a1be7",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1V",
+      "prediction_sha256": "a82a4ead447474b83846dbf1feb2d62eba1a12a3e148951a262449c109c6e20b",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1W",
+      "prediction_sha256": "298f5be12d1d08d77778f5702fa7ca84169012aae02abcbf4760457be1a1358f",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__I1Y",
+      "prediction_sha256": "a91aeb1f85690136cd2cf647750643e1100a740190cccdc8c70cac27e83b15c3",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2A",
+      "prediction_sha256": "aefaf909922654b2f9b73a3c9f0a7b25c8a99ecb496f4e1e4c09bd3e9c400867",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2C",
+      "prediction_sha256": "532f54c1398df9515b0684ad011577a9afa6faad1f7510d16b4630a7d4d6845e",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2D",
+      "prediction_sha256": "954230220361930ae89911c754c869ef495fea824fab80fe3da9930fb115e101",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2E",
+      "prediction_sha256": "8daf297e362cca1f79ec7b72fc0066e1f6c617ff1c02ec52aebe482ff021e744",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2F",
+      "prediction_sha256": "db454a7bcc0f63f54a24fd07e908f884e79f848d7f4af40cf27708676f1e68ec",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2G",
+      "prediction_sha256": "50b6cd6aac43c191652871a893e43c839c5987687e6033bbcd0b8c3bc8d15126",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2H",
+      "prediction_sha256": "9c70ba179023e9f74adcf51e57a61e270d3d5d39287e2fc7887820b8384fc035",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2I",
+      "prediction_sha256": "11a767f4933cad03a4c4b5340e6a89c7e4289497f9f973b5f4cba68334673ceb",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2K",
+      "prediction_sha256": "b1bdbf29d6a0b41b11fa36bbfead84e9084ce0025618c5dfd2427a59a944f808",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2L",
+      "prediction_sha256": "357bd287f07cfb192f679e078064ac3d16f48340e78ec377179f606c86039d48",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2N",
+      "prediction_sha256": "be250f935704689b7c56bfe2c328dd623c2e477ab86abda965cccf8f7a0daa15",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2P",
+      "prediction_sha256": "d11ad9f6f6d9af5c374331eebc0ef1f071873669e500979182488914376f8c47",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2Q",
+      "prediction_sha256": "592a1c9c9e86450bea9601d57634afd34546f7b2055d5c35101a7d042c2cf54f",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2R",
+      "prediction_sha256": "9ea1f669766924a7739eae54a6f3c710881ac35a7e78a3d1f69be8412a14f425",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2S",
+      "prediction_sha256": "3a401ed5dcd98abcc26bb5809a503b47665c3780301d7891e812a1f4f6478898",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2T",
+      "prediction_sha256": "d55d9680fdaa6ac6b7c10506aa8e8ebcfc4e2694098a2e913a4322ab4c1471f3",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2V",
+      "prediction_sha256": "027f9a7adb0523546f1b2496cee343a6bab96c49f2ad84a66f6dda6780953fa8",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2W",
+      "prediction_sha256": "4d73bead4607ea270dce6224b0c92400afb10ed414aa749b522b92b902184092",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__M2Y",
+      "prediction_sha256": "882b451dc506b6a122e6cf0224318c43e35c2db474fb9d99b94041eab63289f7",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6A",
+      "prediction_sha256": "f068e242a25cb6c4a377cd6272a98081d9b1486072c88a999c4fdca30f3dc30d",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6C",
+      "prediction_sha256": "c2c4b74049e9d4df9599931f94c4ac74468eeef1549b5b6df8449f48de8b13fd",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6D",
+      "prediction_sha256": "8ee388f31c9533b1095547c985493d3fb71af49463b6eaebf81ec1ea08b3bd3d",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6E",
+      "prediction_sha256": "70e17205a426aabc558e4d33ecafbe005de0c23ceff334f553c3a8f6898353e6",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6F",
+      "prediction_sha256": "2ab798c95f1373cc23060e56dad30b20597a82fda75adce0b9157579fb49c401",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6G",
+      "prediction_sha256": "7ab37f9ef55642bafa1e87cbc27031e7b0011c7dc3d6fccba677e607a0a5d649",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6H",
+      "prediction_sha256": "8519e231a7e9134859b47dc69168c22e828975af8e45df5f3e45399e8da51a0f",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6I",
+      "prediction_sha256": "112a4e67c3a8e95f0f61da9bf9c7e46eca51b861cd9749ac4d85adff033d2f6e",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6K",
+      "prediction_sha256": "fb0d5a621fba352cce3521900a3e0ad377a3e0a3646a53ecf6c1218c07ad32bf",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6L",
+      "prediction_sha256": "3e20f8d5df15dc4f198f628e165086fb174bf378585dc76fd89c5f1131b07a49",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6M",
+      "prediction_sha256": "d34f99ebb7966c6a30f1f7209aa9a9630e49114689fb4e59d2e7b3472adb31d8",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6N",
+      "prediction_sha256": "ac86d3047dd3862e457e42cf635fd0bfba25a863380823119bc3b38202f60677",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6Q",
+      "prediction_sha256": "9dad2d6835383cc6fb8fc54f90809ee0b46ee5458d86e336e42badc3858400b9",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6R",
+      "prediction_sha256": "ec681f2c8cbd2c8cc8343ffdc80d6680f3790514d9d488db105bf9e64ab299cb",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6S",
+      "prediction_sha256": "f85c3f99c30e3fda0c930d942bbfad265cfb2e3fddcb5f234fc3589db89f1362",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6T",
+      "prediction_sha256": "cb866eac0e10a9707158248caf72943f51a884290a2b6adfba2e80d14d24aa5d",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6V",
+      "prediction_sha256": "26b73b28572a8b744c1e339e26ed3902467e4afd364a82b57c79c86c49b3e78f",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6W",
+      "prediction_sha256": "ac1008232fe9940117ddb3437314096fe6ccc136fd7942053790a3e18dff66b2",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__P6Y",
+      "prediction_sha256": "30c5a984078b8eb1e71b05f36d5e0be3754a230cafe8f4327f8e017b0a6317a3",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4A",
+      "prediction_sha256": "ff35aef1c6a76a68512cc7722f1e3c426f94bcd97f2b88bfcb3dae07ebad8de2",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4C",
+      "prediction_sha256": "64598ac64c180abd499a80533dc78a6037ade4ecc0c625ee0a4a731e1c2a93b7",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4D",
+      "prediction_sha256": "34da07ed228f987150e9fb27faeb9f4520c889ec09d5456802925e710a024289",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4E",
+      "prediction_sha256": "1002d5987f471b98edcefa982980c254d4bcff0a337229d5cea84694ba3855c2",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4F",
+      "prediction_sha256": "9abd893c0143e0607cbf7d54d6468d522b0c81344d03db5343f4b2f2ee94479a",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4G",
+      "prediction_sha256": "0389d4ffa74080d05cd0d8117b7e2f18e9105c71c12574276480048f3550330a",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4H",
+      "prediction_sha256": "7d3b28a216fa066e1550213a3c18b4aa7be27a96fcedaaa52713f6b81010e6e7",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4I",
+      "prediction_sha256": "1518818c88920f203886e55accf8297f208d0562671a911b6059011a1dd609a5",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4K",
+      "prediction_sha256": "6818ee6c563d3ee716adff333c7ed11acaf361059eda0d89f10a5010fe20fc1f",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4L",
+      "prediction_sha256": "81f47eabaa5d5ee1d73bff3481ae9fa9818535ebc273b668723ee3ac45abc84c",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4M",
+      "prediction_sha256": "d9f65432e401f113ebcca7b9fe1d2be9436e1701bd4f96d19b9b1aad22f34b52",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4N",
+      "prediction_sha256": "f2eeb3bbcc465d7c7687b5c932e71973fcffe74e57e6a18da58fe6d1aafc55ed",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4P",
+      "prediction_sha256": "9370df1ab709fea8af2e3df66c35baa6ee4857b5860b465f2582bb9b7143a736",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4R",
+      "prediction_sha256": "ab62ae7eacd2501bcb257bcc0b7444390832d6c19c3f16445b7dbc047d95b083",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4S",
+      "prediction_sha256": "beed61dea1856f0cf8c69dde34ae7940cdaef66a268a4fb774ce6da0cbb9a1fc",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4T",
+      "prediction_sha256": "7d0b9ae03b71d7a85c77a1f0f40531cd01e3a8a7054e31f325b90729c32b1cf7",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4V",
+      "prediction_sha256": "6b134597caaa93857066293b584236b04f5505e725197f2cb013670575b43184",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4W",
+      "prediction_sha256": "5d17c3300a6e0f6f33e35f7247abb2c2ce763699d848da3650702aad5926aa80",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__Q4Y",
+      "prediction_sha256": "6387ad3df06e85051bd6086154a7e6ff71707fa59177907f579d74d8a34c8a13",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8A",
+      "prediction_sha256": "9009f15a47ed34d46adc12839da96a2f480e8ab5126bc77fea17e9a1ae0c3eec",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8C",
+      "prediction_sha256": "ad9ef3defe4515d8dc3f26297cd2b1c51f65130957aa97c6abaf9e1b0cf7da07",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8D",
+      "prediction_sha256": "a45c666f50f5cf0b1c3def8c7b69d96b5f0c8b6fcf389e54bb120679aab80b74",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8E",
+      "prediction_sha256": "b6ae30ef08189792023da6a8e9ea95da3a8445737c7f50a31478e906714815e3",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8F",
+      "prediction_sha256": "9e092b54f6f08c67ab681150cd402cfc5c159ef87e5b5b55c76e0aaf8a007307",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8G",
+      "prediction_sha256": "40e626a2dfc394e4e32632f02502c4fea5b177fcaf2cf555a75802bd1af97ed8",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8H",
+      "prediction_sha256": "fa7edee9103555387119e192333ca098ddcf4faec2eef176915cf8f6516bacc2",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8I",
+      "prediction_sha256": "7a9dc5ee94b8724a301cbe0e204be8f2d71fe5961b23999e9efc1c857d52776b",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8K",
+      "prediction_sha256": "0c6ae29c40268c3a5468aff6183ece3825f96117dde983ad3d27a8d60c0574ba",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8L",
+      "prediction_sha256": "1e9e83a00570d87736b143052cca0d98ed337673706bd1e8c19a716a7b194612",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8M",
+      "prediction_sha256": "9183a00322ad74e3c0dcef00d42f4f937a0024483bd9e6829555e955f89a882a",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8N",
+      "prediction_sha256": "8a228b3262c6f384b88f61698d4f8f2ca946092785778c0acc391e0292f5efd2",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8P",
+      "prediction_sha256": "20193b62b49ab5fc99fd213fe3930b8ecf3f90f43aadcc656cea5506f5938f60",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8Q",
+      "prediction_sha256": "7c75e84aec0f5cf61178a38c8331911b6be8fc2d900af4b57d1fdd3bef55331e",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8R",
+      "prediction_sha256": "dd5607427e403762f27161fb2808aecab8ee76f37c98a4fae7e82fb72c6b3d80",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8T",
+      "prediction_sha256": "ff860379f52c8bf8e3bc68c6d4bf91d007d94c22872a2858b54aa5b66c47d763",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8V",
+      "prediction_sha256": "d73ca4778bf81fd1a342ff2e2c83b7063554a9fdcddd0a000c1524b1a738fa62",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8W",
+      "prediction_sha256": "069c3440258fb9e374a6e51024f004ab590ef8b21f83a54ac6696ca40b288022",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__S8Y",
+      "prediction_sha256": "72b949356ba90be3419f8565ea261ed09ce73228ecd59745f847f0c0171af12d",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5A",
+      "prediction_sha256": "5024caa6c9c5074ef2a5a40f47dcca1853e1807ce758a3897239a251bed84be2",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5C",
+      "prediction_sha256": "574386ef686e46c3bbef8bafd1f68ddf5a9ce691a47879a583230790eb788484",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5D",
+      "prediction_sha256": "22e856c791da15ceb6be5c3b273bb74bd5ebcd96301ae816abc545bb848b093a",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5E",
+      "prediction_sha256": "2312d6e1cd3630f78e5982e7ba90da0736c474782c8b8fad7163651162b72ce5",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5F",
+      "prediction_sha256": "e820f409da55b97b3e1219e559bf49bb7220801c2620bed7ee0a15f2a4935ce7",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5G",
+      "prediction_sha256": "225a3d32ce60774bf1ac73db9dab451d82c8d65e816bb66122dd7f787e76bb08",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5H",
+      "prediction_sha256": "b09fc32ae2c00d3f8eb4742af1f77264e4d03af3bd723e3ede9291d8907ea038",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5I",
+      "prediction_sha256": "bf25fcf0b789b34c355742e56ebb9dea8de29ae0917403e733079d00aadb5542",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5K",
+      "prediction_sha256": "8e450c837ba32ee84111898f7b7ebff049b9433ea7a3b383791e5c628f29f1e3",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5L",
+      "prediction_sha256": "9c45f2d7dabb7485d28c615b4e1a164a5d4098079a52490ccd1bdc1a59f0eb7b",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5M",
+      "prediction_sha256": "2c09e835ede74cdf2139c3add9be54c9623ff74a50a2ea73c7c601160d6d8777",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5N",
+      "prediction_sha256": "42ce1521b25a224709a2e3d53fd4c825ff1bb612f42935e9666f5de6830b52b5",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5P",
+      "prediction_sha256": "72dde1d73c2205f4028b476e5c4d0d32dcfca69c1c2d484bfd53834428ea7d97",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5Q",
+      "prediction_sha256": "984e846cf7f27a9e9029c52b109fec0b25c65dc84eb44bd275dfd5eaf9b36854",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5R",
+      "prediction_sha256": "f19d7096e28298bc3f9e4a08d90a8732aa2c5718d21450c786ed0f659bdc0c03",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5S",
+      "prediction_sha256": "97b5af5a5485d7bf7f1a046630e4cf5c8900008cf135188554a7ca6713235a38",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5T",
+      "prediction_sha256": "a35744af4e37587c230a22d6cde3499b5ebd132e1d7f4edd491bcb9e31d1aad9",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5W",
+      "prediction_sha256": "21b6d7c45012d972e41207010058365ab81242f628763707faac3cda690fb261",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V5Y",
+      "prediction_sha256": "0dd83f4c5466acfb4781ad999f7ead0a48580117a29f3b668a76f534d000eb3f",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9A",
+      "prediction_sha256": "c6603155a92f8c0631c857a745f21a75f862c41393c80394258382f2c3ba75e4",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9C",
+      "prediction_sha256": "ad6daf717954c167b0fc3424a7fe72f33dc396c8604ef55f61374533634740f7",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9D",
+      "prediction_sha256": "eca940a4a6e45435d829aa8497920a444b2061ebe2e908050f96ea7273963ebd",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9E",
+      "prediction_sha256": "1a77ed7f9e1e1852af4bea523fab4ebc9e6e02486448e1f64f1257694f2fdc62",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9F",
+      "prediction_sha256": "491603304ae66c8fc53af0c73e84f2e8fd83c58e5e7f0e8fe872d70e375709a1",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9G",
+      "prediction_sha256": "fa7b7610752fc13f9515f5b7bfbb4892ba639fe19bf8e1ab928700c50ccd86eb",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9H",
+      "prediction_sha256": "0d28697e1718bac339545e638662329ee45c9b8d5c75d51d55a78a7bb94c3c61",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9I",
+      "prediction_sha256": "6c098d161d01d001c5d6bf334e7bdeabc287773e069bf916e824d28ddf753fff",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9K",
+      "prediction_sha256": "da7b06231be3202cb2c971183c91e54f4bdbc267fd02763f912620ff1fcf2aab",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9L",
+      "prediction_sha256": "79c83e2b5b2af74ccb33c67daaa40134a0df76b2bc7d14f142219cb3398021a2",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9M",
+      "prediction_sha256": "d0bc8b3a75b6309f1f9c9eeba1b6acf0a0054a23591afd58f1bba6378d4a95d2",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9N",
+      "prediction_sha256": "34623774a7448067fb46d42cb3d635af53aa4032bbf2a561714ca968dcabee99",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9P",
+      "prediction_sha256": "e0372e92bd65083143083c018f7e777e96d1f2895b7666c4c7c0d5c61ee8c970",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9Q",
+      "prediction_sha256": "8f68661430d703631fa4a9e46f2e8f96a5585ef62aea7ef873547f2ace87639c",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9R",
+      "prediction_sha256": "552186af3e827e00fc502ab89a7fc391693068999f45e780bc7b0ac23c7ec686",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9S",
+      "prediction_sha256": "11777cc95d820b03ae50f6587430a5df03c851f0e6787950de825e4e0c494b94",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9T",
+      "prediction_sha256": "b9cf5af550f04e913965bae394e50aaeaadae1e77ef43700af0ea96a64499711",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9W",
+      "prediction_sha256": "c0f9597e9ffab5b8d2146c8164b10380b7683cfd12cbaecb71b392abfa4d9447",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    },
+    {
+      "candidate_id": "MSKCC_TCR6__V9Y",
+      "prediction_sha256": "da1163a091c74a8d37400dc51fe3a430cc5c9cdf74122f532117b3258f20e4e2",
+      "parent_prediction_sha256": "9f5ecbb5b8a650309d382b7650e518f20f6a3d7d0c12638d5e5e665f7acf2d53"
+    }
+  ]
+}

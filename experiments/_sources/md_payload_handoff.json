@@ -1,0 +1,34 @@
+{
+  "status": "ready_for_root_environment_and_GPU_dispatch",
+  "new_batch": "KIX_rebuilt_triplicate_20261010",
+  "code_files": [
+    "analyze_job.py",
+    "analyze_triplicate_delta.py",
+    "audit_prepared.py",
+    "audit_rebuilt_prepared.py",
+    "quality_one_repeat.py",
+    "queue_triplicate.py",
+    "run_md.py"
+  ],
+  "payload_zip": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\kix_md_triplicate_rebuild_20261010_payload.zip",
+  "payload_zip_sha256": "f0715390ef6f7ff106e9d4309c17d25b71adfeab762676d4154718c856ef7a3f",
+  "previous_DCDs_freshly_verified": 400,
+  "previous_DCD_bytes": 8780110400,
+  "new_MD_run": false,
+  "prepared": false,
+  "production_started": false,
+  "script_syntax": "All Python code compiled successfully with bundled Python",
+  "analysis_QA": "Synthetic-only tests passed",
+  "primary_model_freeze_pending": true,
+  "install_pending": true,
+  "root_should_run": [
+    "install_md_env.sh",
+    "run_md.py prepare",
+    "audit_rebuilt_prepared.py",
+    "run_md.py smoke",
+    "freeze Full and Static current corrected fold1",
+    "queue_triplicate.py",
+    "quality_one_repeat.py for rep01/02/03",
+    "analyze_triplicate_delta.py"
+  ]
+}

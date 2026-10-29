@@ -1,0 +1,20 @@
+{
+  "total_frozen_records": 3063,
+  "observed_statuses": 3063,
+  "complete": 3063,
+  "failed": 0,
+  "timed_seconds_sum": 676.293870083522,
+  "run_metadata": {
+    "manifest_sha256": "c2b7c7b28fb0bff98b3609380eedb5fab8464432e42660a2186cb21bcfdbac30",
+    "cohort_freeze_sha256": "b58795275fa2843a502fdbb68f417f9a2b0b80f76e28d226ad5d58c9bf430a91",
+    "code_sha256": "87ed18e91802392e7d0e17adbd5021e2a921b5e7fac997fbfadbe6714af6e805",
+    "modes": 20,
+    "cutoff": 15.0,
+    "gamma": 1.0,
+    "input": "Complete original protein assembly; all frozen CA residues in original order",
+    "output_units": "Relative sqrt(calcSqFlucts); no fitted Angstrom calibration",
+    "device": "cpu",
+    "shard_count": 1,
+    "shard_index": 0
+  }
+}

@@ -1,0 +1,11 @@
+# 图3双面板主线
+
+最终主图只有两个面板：a为1MXE整体结构与四个关键位置的定位，b为完整25个主链RMSF位置及21个有效Hχ位置的Full/Intra预测。原d接触计数、e侧链配对与遮蔽统计、f自抑制结构，以及尝试并入b的M316静态双环境均退出主图。主线是结构定位与模型预测，避免把静态背景当成新增模型证据。
+
+最终文件为figure3/fig3_two_panel_story.pdf/svg/png，183×100mm；最小字号7.2pt，Arial嵌入，PNG450dpi。与v87的183×190mm相比，面积与高度均减少47.4%，曲线与所有位置不丢失。两个数值轴从零起，主图不画MD参考，四个Ala的Hχ留空。蓝圆实线始终表示Full，暖赭方点虚线表示Intra，结构颜色使用灰/紫/青。Full与Intra是同一结合态输入上分别训练的家族留出模型，不是真实游离与结合状态。
+
+正文保留“3.3 主链与侧链柔性的互补解析”及一般问题、CaMKI自抑制和已有叶瓣功能实验的背景，删掉已撤面板的引用。机制假说留在正文，并明确1A06是静态文献背景、1MXE只含短肽与CaM、没有直接测量回接触和活性。1A06原子接触与完整距离及遮蔽数据仍保留在源文件，不作为独立主图面板；静态结构对照在source_analysis/M316_static_context，完整接触源图在source_analysis/source_contact_map。
+
+主图复绘运行figure3/compose_fig3_1MXE.py，使用包内相对路径；数值环境为E:/Project/FlexPPI/experiments/_sources/local_model_benchmark_20261023/runtime_py312/Scripts/python.exe。结构坐标与PSE在pymol，原生编号及全部模型/MD源数据在data_audit与figure3/source_data。完整源数据保留原d/e所用数据，并不因主图精简而删除残基。主图绘图值CSV只记录最终92个显示值。
+
+本轮没有新训练、推理或MD；沿用已完成且经审计的全组成链家族留出第1折预测。S3图像和其他图像、全部六张表保持原字节；仅替换图3和授权正文/方法。Word最终文档为paper_v88_20261026_中文修订_图3双面板主线.docx；正文、图注及构建审计见narrative和manuscript。内部渲染页图仅作QA，不作交付图稿。所有试制三面板版本均为未交付中间稿。

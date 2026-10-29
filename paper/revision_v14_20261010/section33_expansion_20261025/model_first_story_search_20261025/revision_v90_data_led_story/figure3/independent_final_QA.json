@@ -1,0 +1,76 @@
+{
+  "status": "pass",
+  "review_scope": "Actual final PNG viewed; independent frozen-source and all plotted-value audit; composer checked read-only. No root figure or data modified.",
+  "PNG_sha256": "ef302c61f3975bfdd109d10a06ef9f15fa43d6a76e476d72d94cf5d284d03438",
+  "PNG_size_px": [
+    3242,
+    2728
+  ],
+  "canvas_mm": [
+    183.0,
+    154.0
+  ],
+  "panels": [
+    "a",
+    "b"
+  ],
+  "mechanism_schematic_removed": true,
+  "frozen_reference": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v89_mechanism_story\\figure3\\source_data\\all25_dynamics_and_static_lobe_contacts.csv",
+  "frozen_reference_sha256": "ebc5700ffcb1708f94d632816e854ea38e5397e7edba35d2d27b59503b36c473",
+  "source_byte_identical_to_V89": true,
+  "unique_profile_values": 92,
+  "RMSF_unique_values": 50,
+  "Hchi_unique_values": 42,
+  "all92_exactly_equal_frozen": true,
+  "max_numeric_difference": 0.0,
+  "expanded_Full_RMSF_values": 25,
+  "all25_repeated_exactly_from_Full_profile": true,
+  "total_curve_points_excluding_highlight_markers": 117,
+  "repeated_track_is_same_data_not_new_evidence": true,
+  "native_xrange": [
+    293.5,
+    318.5
+  ],
+  "native_positions": [
+    294,
+    318
+  ],
+  "RMSF_overview_ylim": [
+    0,
+    8.2
+  ],
+  "RMSF_expanded_ylim": [
+    0,
+    2.3
+  ],
+  "Hchi_ylim": [
+    0,
+    4.3
+  ],
+  "RMSF_Full_expanded_range": [
+    0.44702804,
+    2.123881
+  ],
+  "all_axes_start_at_zero": true,
+  "no_axis_break_or_clipped_values": true,
+  "omitted_invalid_Ala_Hchi": [
+    299,
+    306,
+    309,
+    311
+  ],
+  "shade_span": [
+    302.5,
+    316.5
+  ],
+  "shade_contains14_residues_303_316": true,
+  "Full_expanded_scale_label_clear": true,
+  "N297_N308_labels_correct": true,
+  "K296_W303_M316_zoom_labels_correct": true,
+  "palette_semantics_distinct": true,
+  "no_need_for_separate_Lys_panel": true,
+  "visual_findings": "The Full zoom makes the complete central low-fluctuation span readable without replacing the full-range Full/Intra comparison. Mechanistic inference belongs in the prose.",
+  "necessary_fixes": [],
+  "min_font_from_renderer_pt": 7.9,
+  "outside_text_from_renderer": []
+}

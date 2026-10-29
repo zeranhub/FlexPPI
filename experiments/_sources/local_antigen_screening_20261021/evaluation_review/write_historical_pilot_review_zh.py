@@ -1,0 +1,28 @@
+from pathlib import Path
+import json,hashlib
+ROOT=Path(__file__).resolve().parent
+body='''# 历史2431本地pilot：训练重叠与适用范围
+
+本轮实际使用本地已经存在的历史strict_full fold0联合模型，权重SHA为b3eed060919df15f075329bc892f959d9355232be5feb561417edd49ea82b39f。审查直接读取本地权重配置及实际训练清单，确认seed7、第40轮、Full结构信息、RMSF与Hχ联合输出、learned序列编码、无额外条件特征、无响应头。清单SHA为e0c84c566dea09b436dd7d07e9e6fd8ce1a8cf0c72be20931179e6689c8b44bd，共2,431条记录，其中ATLAS 1,866条、DynaRepo 565条、ITrace零条，对应3,013条链及2,589种唯一链序列。目标现稿2,430条模型的权重未能在本地取得，因此本轮是使用历史模型的可行性pilot，不能冒称现稿同一权重的精确复现。
+
+新旧实际训练清单逐记录比较后，历史模型仅多A00IL，即PDB4WV1链C、98位的单链记录，现稿模型没有任何独有记录。公共2,430条的输入结构路径、标签路径、标签SHA与标签协议完全相同；变化只在家族组件、折号等划分记录。两个模型分别训练产生不同权重，不能当作同一模型或随机重复。旧2,430条完整审查、原协议和修订前文件已原样保存在before_2431_pilot_amendment，本地历史checkpoint的完整配置、训练差异及新增链序列另见historical_strict_2431_checkpoint_audit.json。
+
+目标1G4的2BNQ、2BNR，以及A6的1AO7、1QRN、1QSE、1QSF都没有直接进入历史训练清单。对六个复合物的30条角色链，未发现精确训练匹配，也未发现原记录MMseqs中达到30%相同率且双向整数跨度覆盖均达到70%的直接目标链匹配；当前30种候选肽也没有精确训练肽重叠。为避免用ITrace准备拓扑代替本轮真实输入，又独立读取六个下载的X射线PDB，检查30条完整链，以及TCR前120位、MHC前180位构成的17个额外片段。在同双向覆盖及30%相同率条件下，固定参数的局部比对同样没有训练命中；新增加的A00IL也单独重复了这一检查。9肽采用精确匹配检查，不把缺少长链搜索条目当作搜索阴性。
+
+直接目标链阴性不等于完整传递家族隔离。补充unmasked MMseqs将A00IL的98位链连接到A00C3（PDB2V9T链A、107位），相同率0.303，整数跨度覆盖分别70/98与77/107；沿组件继续连接后，A00IL属于新版目标大组件family_9cd89939c749e38c。因此，历史模型实际有一条训练成员与目标处于同一传递家族组件，不能继续使用原2,430条模型“整个组件零训练成员”的结论。该边没有构成本轮1G4/A6模板的直接同源命中，但它限定了结果只能按历史权重pilot解释。“strict”是旧运行目录名称，不代表自动通过了新版完整组件隔离。
+
+更换模型在任何新抗原面板预测前记录于协议修订中，原因是目标权重不可取得，而非比较过预测成绩后挑选模型。标签、参照肽、结构模板、固定8 Å环境、特征、候选划分、ridge惩罚及所有成绩规则没有改变，26个主单点变体仍使用12个固定位置留出折。实际执行者复制权重后需再次核对运行文件SHA；最终候选结构尚须审查实际读入序列、链角色、主链完整性及固定环境位置。该过程不要求新MD或更新基础模型。本代理仅做本地只读权重、清单、序列及协议审查，未运行模型推理、校准拟合、训练或远程计算。
+'''
+(ROOT/'training_overlap_audit_zh.md').write_text(body,encoding='utf8')
+read=lambda p:json.loads(p.read_text(encoding='utf8'))
+a=read(ROOT/'before_2431_pilot_amendment/fixed_analysis_protocol.json')
+b=read(ROOT/'fixed_analysis_protocol.json')
+allowed={'protocol_id','status','base_model','scope','amendments','leakage_gates','interpretation'}
+assert not [k for k in a if a[k]!=b[k] and k not in allowed]
+result=dict(status='passed',protocol_id=b['protocol_id'],checkpoint_changed_only_as_disclosed=True,
+    candidate_split_sha256=hashlib.sha256((ROOT/'candidate_splits.json').read_bytes()).hexdigest(),
+    all_label_feature_split_calibrator_and_metric_contracts_unchanged=True,all_prior_files_archived=True,
+    model_not_same_as_manuscript_2430=True,indirect_transitive_component_overlap_disclosed=True,
+    new_panel_model_outputs_not_seen=True)
+(ROOT/'checkpoint_amendment_scope_audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf8')
+print(json.dumps(result,ensure_ascii=False))

@@ -1,0 +1,148 @@
+{
+  "canvas_mm": [
+    183.0,
+    235.0
+  ],
+  "all_axes_absolute": true,
+  "two_state_profiles": true,
+  "local_views_right_of_whole": true,
+  "no_numeric_tables": true,
+  "no_gray_note_text": true,
+  "structural_alignment": "N-lobe helices I/IV; one whole-complex rigid transform",
+  "all_residue_counts": {
+    "backbone": 145,
+    "sidechain": 122,
+    "Met": 9,
+    "contact_groups": [
+      8,
+      21,
+      3,
+      90
+    ]
+  },
+  "plotted_rows": {
+    "c": 1068,
+    "d": 16,
+    "e": 36,
+    "f": 244
+  },
+  "outside_text": [],
+  "min_font_pt": 6.1,
+  "axis_checks": [
+    {
+      "label": "RMSF (Å)",
+      "limits": [
+        0.0,
+        4.0
+      ],
+      "range": [
+        0.6228830218315125,
+        3.739128589630127
+      ]
+    },
+    {
+      "label": "RMSF (Å)",
+      "limits": [
+        0.0,
+        4.0
+      ],
+      "range": [
+        0.5927063822746277,
+        3.7241034507751465
+      ]
+    },
+    {
+      "label": "Hχ (nats)",
+      "limits": [
+        0.0,
+        4.1
+      ],
+      "range": [
+        0.2209544330835342,
+        3.920966148376465
+      ]
+    },
+    {
+      "label": "Hχ (nats)",
+      "limits": [
+        0.0,
+        4.1
+      ],
+      "range": [
+        0.45310178399086,
+        3.913898944854736
+      ]
+    },
+    {
+      "label": "Mean Hχ (nats)",
+      "limits": [
+        1.3,
+        2.2
+      ],
+      "range": [
+        1.5726840368338995,
+        1.9265032211939495
+      ]
+    },
+    {
+      "label": "",
+      "limits": [
+        1.3,
+        2.2
+      ],
+      "range": [
+        1.5890801350275676,
+        1.9443964138627052
+      ]
+    },
+    {
+      "label": "Hχ (nats)",
+      "limits": [
+        1.0,
+        3.4
+      ],
+      "range": [
+        1.4656245708465576,
+        2.838612794876098
+      ]
+    },
+    {
+      "label": "",
+      "limits": [
+        1.0,
+        3.4
+      ],
+      "range": [
+        1.7418729066848757,
+        2.6901867389678955
+      ]
+    }
+  ],
+  "visual_review": "passed: root and independent numerical/visual review",
+  "output_sha256": {
+    "png": "a4236438648ce700a3a3aeec040889a37e7dabdef39a2c0a92a15be423a700b5",
+    "pdf": "e201cf5e71fa7c6e2d1d3c6955084b42e53409d71c555e780b9f595d87fc4727",
+    "svg": "2b23c7732f50202cd2c330806f8331d598ba21e5f8853e2cc26d076cd74aeb7f"
+  },
+  "source_data_identical_to_v81": {
+    "cam_md_state_contrast_all_common_residues.csv": "22c791ab3ba468d11d11cda38f6c2b96417bd8dbaa48698c02cbf440da63e34d",
+    "cam_md_state_contrast_all_residues_five_blocks.csv": "ad1d2b91374192111eb09c527bd9f73d03a7575cff8266064cf566dd3d1a3776"
+  },
+  "display_geometry_audit": {
+    "NHE1": {
+      "max_pairwise_distance_error_A": 0.0,
+      "complete_complex_rigid_transform": true,
+      "display_coordinate_max_rounding_error_A": 2.4847760081369217e-06,
+      "heavy_atom_count_preserved": true
+    },
+    "IQCG": {
+      "max_pairwise_distance_error_A": 4.973799150320701e-14,
+      "complete_complex_rigid_transform": true,
+      "display_coordinate_max_rounding_error_A": 1.8992998816929003e-06,
+      "heavy_atom_count_preserved": true
+    }
+  },
+  "display_fit_RMSD_A": 1.3131231806619201,
+  "numeric_correspondence_to_v81": "All 1364 plotted quantities identical; only panel letters and layout changed.",
+  "pdf_fonts": "Arial and Arial Bold: embedded CID TrueType, verified with pdffonts"
+}

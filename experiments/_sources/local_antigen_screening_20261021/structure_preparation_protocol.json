@@ -1,0 +1,17 @@
+{
+  "method_fixed_before_candidate_outputs": true,
+  "task": "Local fixed-backbone retrospective candidate ranking pilot",
+  "primary_templates": ["2BNQ", "1AO7"],
+  "sensitivity_templates": ["2BNR", "1QSE", "1QSF"],
+  "all_candidates_per_template": true,
+  "heavy_atom_completion": "PDBFixer1.12.0 addMissingAtoms seed17, OpenMM8.6.1 CPU; missing-residue list empty, no loop modeling; all observed backbone values must be bit-identical after 3-decimal PDB export",
+  "parent_processing": "The same complete preparation is applied to the parent and every candidate on each template",
+  "environment_selection": "The original parent template heavy atoms define the prespecified fixed 8Angstrom environment; no mutated-sidechain-specific region selection",
+  "static_scoring": "Use completed heavy atoms; no static BSA or contact scoring on an incompletely substituted side chain",
+  "interpretation": "Model input differences are residue-identity changes on fixed experimental backbone coordinates. This pilot does not generate mutant backbone conformations or prospectively validate antigen design.",
+  "failure_rule": "Record every preparation failure; do not select alternative seeds/rotamers by SPR or model score. A technical repair is documented and applied uniformly before evaluation.",
+  "model_weight": "b3eed060919df15f075329bc892f959d9355232be5feb561417edd49ea82b39f",
+  "local_only": true,
+  "new_MD": false,
+  "new_training": false
+}

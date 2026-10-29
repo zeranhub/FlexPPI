@@ -1,0 +1,48 @@
+Title: Therapeutic high affinity T cell receptor targeting a KRASG12D cancer neoantigen | Nature Communications
+URL: https://www.nature.com/articles/s41467-022-32811-1
+Published: 2022-09-10T17:18:21.000Z
+Author: Poole, Andrew, Karuppiah, Vijaykumar, Hartt, Annabelle, Haidar, Jaafar N., Moureau, Sylvie
+Highlights:
+Neoantigens derived from somatic mutations are specific to cancer cells and are ideal targets for cancer immunotherapy. KRAS is the most frequently mutated oncogene and drives the pathogenesis of several cancers. Here we show the identification and development of an affinity-enhanced T cell receptor (TCR) that recognizes a peptide derived from the most common KRAS mutant, KRAS G12D, presented in the context of HLA-A*11:01. The affinity of the engineered TCR is increased by over one million-fold yet fully able to distinguish KRAS G12D over KRAS WT. While crystal ... versus KRAS G12D, thermodynamic analysis and molecular dynamics simulations reveal that TCR specificity is driven by differences in indirect electrostatic interactions. The affinity enhanced TCR, fused to a humanized anti-CD3 scFv, enables selective killing of cancer cells expressing KRAS G12D. Our work thus reveals a molecular mechanism that drives
+...
+To understand the molecular basis of TCR selectivity for HLA-A*11-KRAS G12D, we solved the crystal structures of the JDIa41b1 TCR in complex with HLA-A*11-KRAS G12D (K D = 743 ± 18 pM) and HLA-A*11-KRAS WT (K D = 3.0 µM) at 2.58 Å (JDIa41b1-HLA-A*11-KRAS G12D complex, PDB 7OW6) and 2.64 Å (JDIa41b1-HLA-A*11-KRAS WT complex, PDB 7OW5) resolution, respectively (Table 3). A superposition of the JDIa41b1-HLA-A*11-KRAS WT and JDIa41b1-HLA-A*11-KRAS G12D complexes revealed a virtually identical conformation (Root mean square deviation (RMSD) of TCR variable domains: 0.29 Å for Cα atoms and 0.80 Å for all atoms) (Fig. 2a), an identical crossing angle of 50° (Fig. 2b), with all CDRs, except CDR2β, directly contributing to the binding interface. Composite omit maps of the KRAS WT and KRAS G12D peptides and TCR CDR regions in the JDIa41b1-HLA-A*11-KRAS WT and JDIa41b1-HLA-A*11-KRAS G12D complexes, showed that modeled residues at the binding interface agree well with the observed experimental data. For a few CDR residues (R28α, Q57α), the side-chain densities were relatively weak (Supplementary Fig. S2), but the modeled side-chain structures do not differ substantially between the JDIa41b1-HLA-A*11-KRAS WT and JDIa41b1-HLA-A*11-KRAS G12D complexes. Only R28α contributes significantly to differences in binding affinity (based on the decomposition of binding energy calculated from MD simulations) and is discussed below. Analysis of the JDIa41b1-HLA-A*11-KRAS WT and JDIa41b1-HLA-A*11-KRAS G12D binding interfaces revealed that both complexes were very similar, with the JDIa41b1 TCR engaging mainly the C-terminus of the peptide through the CDR3β (Fig. 2c). Polar contacts to the peptide backbone were made through TCR residues Y33α (to peptide A5), N101β and H100β (to peptide G7) and G98β (to peptide G9).
+...
+a Superposition of JDIa41b1-HLA-A*11-KRAS WT (PBD 7OW5) and JDIa41b1-HLA-A*11-KRAS G12D (PBD 7OW6) complexes. The HLA, β2m, JDIa41b1 TCRα, and TCRβ are coloured in wheat, brown, green, and blue respectively. The darker shades of green and blue correspond to the JDIa41b1 TCR in the JDIa41b1-HLA-A*11-KRAS G12D complex. The KRAS WT and KRAS G12D peptides are coloured in grey and maroon respectively. b Top view of the JDIa41b1-HLA-A*11-KRAS G12D complex (PBD 7OW6). The HLA and KRAS G12D peptide are shown in surface representation and the CDRs are shown in cartoon tube representations. The crossing angle vector is drawn connecting the disulphides between the JDIa41b1 TCRα (green sphere) and TCRβ (blue sphere) variable domains. c Close up view of the JDIa41b1 TCR-peptide interactions (as overlayed in a). The dotted lines indicate polar contacts. d The HLA interaction network around the peptide residue D6 in the JDIa41b1-HLA-A*11-KRAS G12D complex (PBD 7OW6). e Superposition of the HLA-A*11-KRAS WT (PBD 7OW3) and HLA-A*11-KRAS G12D (PBD 7OW4) complexes without a bound TCR showing the peptides adopt open conformations. f Superposition of TCR bound JDIa41b1-HLA-A*11-KRAS WT (PBD 7OW5) and JDIa41b1-HLA-A*11-KRAS G12D (PBD 7OW6) complexes showing the peptides adopt closed conformations.
+...
+Crystal structures have provided some mechanistic understanding of neoantigen specificity. The aspartate residue of the KRAS G12D peptide presented by HLA-C*08:02 (GADGVGKSAL) was reported to form a salt bridge with HLA residue R156 to act as an anchor. Glycine in ... In this case, poor wild-type peptide presentation was likely the mechanism underlying TCR specificity towards KRAS G12D mutant peptide 33, 34. A similar mechanism, whereby somatic mutations introduce preferred primary HLA anchor residues, has been shown to generate public, shared neoantigens, for example in PIK3CA mutations encoding PI3Kα H10 ... 7L and histone variant H3.3 K27M 35, 36. In contrast, both KRAS WT and KRAS G12D peptides used in this study had comparable predicted binding affinities to HLA-A*11, suggesting that selectivity based on peptide presentation was unlikely to occur. Despite this, biochemical analysis of the JDI TCR demonstrated a preference for KRAS G12D and it was possible to enhance the binding affinity of this TCR to HLA-A*11-KRAS G12D by over a million-fold, while conserving the ability to distinguish between KRAS WT and KRAS G12D.
+
+Structural analysis of an affinity-enhanced version of the JDI TCR in complex with HLA-A*11-KRAS WT and -KRAS G12D demonstrated a virtually identical interaction network. However, analysis of the pHLA crystal structures revealed that both peptides underwent an induced fit conformational change upon TCR binding, with peptide residue D6 in the HLA-A*11-KRAS G12D complex forming a network of stabilizing interactions with the HLA-A*11 F-pocket upon TCR binding. This change in peptide conformation was reflected by thermodynamic analysis, demonstrating that TCR binding to HLA-A*11-KRAS G12D was driven by a greater net formation of new electrostatic interactions, at the cost of a greater disorder-order transition compared to HLA-A*11-KRAS WT. Further analysis using molecular dynamics simulations suggested that the buried D6 residue mediated a change towards negative electrostatics on the HLA surface, increasing the electrostatic interactions with the TCR. This allowed energetically favourable electrostatic interactions, in part mediated by TCR residues R50α and K70α, that formed an indirect network of interactions with the pHLA surface 37. The molecular dynamics simulations also demonstrated greater energetically favorable interactions via direct interactions with peptide residue D6 with both the HLA-A*11 F-pocket and residues in the TCR CDR3β 38, 39, 40. The structural, dynamic and electrostatically-driven specificity signature of the high affinity JD1 TCR resembles the specificity signature of anti-EGFR antibodies that differentially recognize the EGFR S468R mutation that was clinically associated with acquired cetuximab resistance in colorectal cancers 41. These findings add further to our understanding of how TCRs can use indirect energetically driven mechanisms to sense differences not only in peptide sequence, but also in peptide dynamics, that can drive T cell antigen specificity 42.
+...
+These data, combined with other investigations 33, 45, 46, demonstrate that TCRs can detect single amino acid mutations in common neoantigens derived from oncogenic mutations. Here, we elaborate on the molecular mechanisms guiding TCR specificity, demonstrating that indirect energetically driven factors could result in >4000-fold affinity window between a wild-type and mutated KRAS G12D neoantigen. This window translated into a mechanism by which a T cell engaging ImmTAC molecule bearing the affinity-enhanced TCR could achieve fine specificity for antigen positive cancer cells, whilst remaining tolerant to antigen negative cells. These findings demonstrate the powerful utility of TCR therapeutics to target neoantigens and have important implications for understanding the molecular determinants of therapeutic TCR selectivity for neoantigens.
+
+---
+
+Title: Table 3 X-ray data collection and refinements statistics
+URL: http://nature.com/articles/s41467-022-32811-1/tables/3
+Published: N/A
+Author: N/A
+Highlights:
+From: Therapeutic high affinity T cell receptor targeting a KRAS G12D cancer neoantigen
+
+| PDB CODE | 7OW3 | 7OW4 | 7PB2 | 7OW5 | 7OW6 |
+| --- | --- | --- | --- | --- | --- |
+| Molecule | HLA-A*11-KRAS WT | HLA-A*11-KRAS G12D | JDI TCR-HLA-A*11-KRAS G12D | JDIa41b1-HLA-A*11-KRAS WT | JDIa41b1-HLA-A*11-KRAS G12D |
+| Space group | P 1 21 1 | P 21 21 21 | P 41 21 2 | P 41 2 2 | P 41 2 2 |
+...
+| X-ray source | DLS I03 | DLS I04-1 | DLS I04-1 | DLS I04 | DLS I04 |
+...
+| Resolution range ( ... ) | 79.8 ... –2.46 (2.50–2.46) a | 88.05–1.8 ... (1.8 ... –3.41 (3 ... .09–2 ... 58) | 64.47–2.
+...
+| Rwork / Rfree (%) | 22.8 / 26.0 | 22.0 / 24.9 | 20.9 (25.1) | 20.6 / 27.4 | 21.1 / 26.8
+...
+0.009 ... 0.009 | 0.009 ... | 0.0093 |
+...
+1.4
+...
+| Overall | 35.28 | 26.14 | 86.21 | 88.0 | 95.08 |
+| HLA (chain A) | 35.37 | 30.62 | 79.48 | 88.65 | 96.05 |
+| Peptide (chain C) | 51.38 | 43.57 | 79.59 | 78.11 | 78.89 |
+| TCR alpha (chain D) | - | - | 93.99 | 108.06 | 114.97 |
+| TCR beta ( ... E) | - | - | 84.32 | 8
+...
+| Atom count | 12705 ... 127

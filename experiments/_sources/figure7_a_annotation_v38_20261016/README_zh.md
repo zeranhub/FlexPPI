@@ -1,0 +1,1 @@
+本包包含v38图7全矢量PDF/SVG、300dpi PNG、715条完整绘图数据、全部151角源表、原始角度缓存、作图与文稿核验脚本。运行figures/plot_clear_a_annotations_and_MD_curves.py可从包内source/experiment重绘。本轮只改a文字与图例，图注说明类型均值与无χ断线，数值和b/c保持。旧源包 E:\Project\FlexPPI\paper\revision_v14_20261010\paper_v37_20261015_图7简化散点与源数据.zip，SHA256 30444409a111020ed25d758834c3ca05b9e70b32a264a5f2dce8064c6471c6a4。

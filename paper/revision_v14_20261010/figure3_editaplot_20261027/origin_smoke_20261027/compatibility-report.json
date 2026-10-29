@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "connection_mode": "new_isolated",
+  "keep_open": false,
+  "stages": [
+    {
+      "name": "activate",
+      "status": "passed",
+      "connection_mode": "new_isolated"
+    },
+    {
+      "name": "read_version",
+      "status": "passed",
+      "origin_version": "10.15",
+      "origin_version_raw": 10.150132000000001,
+      "origin_product": "2024b",
+      "version_status": "recognized",
+      "known_version_risks": [],
+      "probe_priority": "normal",
+      "advisory_only": true,
+      "blocks_render": false
+    },
+    {
+      "name": "read_program_path",
+      "status": "passed",
+      "detected": true
+    },
+    {
+      "name": "ready",
+      "status": "passed",
+      "command": "sec -poc 3;"
+    },
+    {
+      "name": "create_book",
+      "status": "passed",
+      "rows": 4,
+      "columns": 2
+    },
+    {
+      "name": "create_graph",
+      "status": "passed",
+      "template": "Line",
+      "plot_count": 1
+    },
+    {
+      "name": "style_graph",
+      "status": "passed",
+      "font_family": "Arial",
+      "axis_title_size_pt": 18.0,
+      "tick_label_size_pt": 15.0,
+      "line_width_pt": 2.4
+    },
+    {
+      "name": "save_project",
+      "status": "passed"
+    },
+    {
+      "name": "export",
+      "status": "passed",
+      "png": true,
+      "pdf": true,
+      "tif": true
+    },
+    {
+      "name": "readback",
+      "status": "passed",
+      "x_axis_object": true,
+      "y_axis_object": true,
+      "program_path": true
+    },
+    {
+      "name": "cleanup",
+      "status": "passed"
+    }
+  ],
+  "capability_probe": {
+    "available_capabilities": [
+      "axis_readback",
+      "core_2d",
+      "editable_opju",
+      "pdf_export",
+      "png_export",
+      "text_readback",
+      "tif_export"
+    ],
+    "unavailable_capabilities": [],
+    "probe_complete": false
+  },
+  "version_advisory": {
+    "version_status": "recognized",
+    "known_version_risks": [],
+    "probe_priority": "normal",
+    "requires_full_capability_probe": false,
+    "advisory_only": true,
+    "blocks_render": false
+  },
+  "artifacts": {
+    "result.opju": {
+      "generated": true,
+      "size_bytes": 40097
+    },
+    "result.png": {
+      "generated": true,
+      "size_bytes": 30817
+    },
+    "result.pdf": {
+      "generated": true,
+      "size_bytes": 1098425
+    },
+    "result.tif": {
+      "generated": true,
+      "size_bytes": 51485
+    },
+    "environment_report.json": {
+      "generated": true,
+      "size_bytes": 794
+    },
+    "origin_verify_report.json": {
+      "generated": true,
+      "size_bytes": 4890
+    }
+  },
+  "privacy": {
+    "raw_exception_included": false,
+    "hresult_included": false,
+    "program_path_included": false
+  }
+}

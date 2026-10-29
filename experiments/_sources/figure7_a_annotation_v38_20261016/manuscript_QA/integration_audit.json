@@ -1,0 +1,20 @@
+{
+  "document": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v38_20261016_中文修订_图7标注说明与图例调整_三线表.docx",
+  "document_sha256": "45c39bc39aafd46b696123ac308567eb358c904bb1efb417222eadb4879c553c",
+  "source_document": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\paper_v37_20261015_中文修订_图7删去汇总表与布局精简_三线表.docx",
+  "source_sha256": "f283b7b504a08d2d42cd9acb619af5d2ddbc80fc919948ef2f27b7913dd2c7a1",
+  "figure7_sha256": "ff8ef8f95d088272fac3d93a182f28c8b818bcd40f18f257ce1fb91f3d53954c",
+  "changed_text_paragraphs": 1,
+  "changes": [
+    {
+      "before": "图7：联合熵预测、逐角占据关联与MD自由能。（a）泛素全部66个Hχ有效残基的联合熵预测与MD参考，仅标出Q2与Q41；空心圆为MD参考，蓝色方点为模型预测。（b）χ1–χ4全部有效残基的模型联合Hχ与MD单角细箱占据熵散点，n依次为66、52、23、10。每个χ层内按氨基酸类型分别减去预测值与MD指标的均值，散点使用相同坐标范围；Q2和Q41以紫色和橙色标识。各小图标注细箱熵的Spearmanρ。单角细箱熵采用0–100 ns、200 ps间隔的501帧，并对5°箱的四个原点取平均。（c）泛素六个谷氨酰胺中联合Hχ预测最低Q41与最高Q2的χ1、χ2及χ3逐角MD自由能F*=−ln(p̂/p̂max)，采用相同501帧、原点0°的5°箱，零计数箱断线。虚点线为F*=1，底部色条与标注为该箱格低自由能角区总宽度，±180°对应同一圆周接缝。联合Hχ参考为原五个连续1,000帧窗口的均值；模型为第0折冻结完整模型。",
+      "after": "图7：联合熵预测、逐角占据关联与MD自由能。（a）泛素全部66个Hχ有效残基的联合熵预测与MD参考，仅标出Q2与Q41；空心圆为MD参考，蓝色方点为模型预测。折线为原始Hχ；扣除类型均值后的ρ由预测与MD参考分别减去训练折中该氨基酸类型的同一个均值后计算。全部位置均属泛素A链，无可定义χ角的Gly/Ala位置不绘点，连线在此断开。（b）χ1–χ4全部有效残基的模型联合Hχ与MD单角细箱占据熵散点，n依次为66、52、23、10。每个χ层内按氨基酸类型分别减去预测值与MD指标的均值，散点使用相同坐标范围；Q2和Q41以紫色和橙色标识。各小图标注细箱熵的Spearmanρ。单角细箱熵采用0–100 ns、200 ps间隔的501帧，并对5°箱的四个原点取平均。（c）泛素六个谷氨酰胺中联合Hχ预测最低Q41与最高Q2的χ1、χ2及χ3逐角MD自由能F*=−ln(p̂/p̂max)，采用相同501帧、原点0°的5°箱，零计数箱断线。虚点线为F*=1，底部色条与标注为该箱格低自由能角区总宽度，±180°对应同一圆周接缝。联合Hχ参考为原五个连续1,000帧窗口的均值；模型为第0折冻结完整模型。"
+    }
+  ],
+  "all_tables_math_comments_preserved": true,
+  "main_figures": 7,
+  "supplementary_figures": 1,
+  "tables": 11,
+  "review": "passed_all28pages;changedpages_directlyreviewed;unchangedpages_pixelidentical;all564originalvaluesretained;151scatterpoints_exact;8associationsrecomputed;caption_updated_only",
+  "pages": 28
+}

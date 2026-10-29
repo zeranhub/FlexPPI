@@ -1,0 +1,68 @@
+{
+  "query": {
+    "query": {
+      "type": "terminal",
+      "service": "sequence",
+      "parameters": {
+        "evalue_cutoff": 0.1,
+        "identity_cutoff": 0.9,
+        "sequence_type": "protein",
+        "value": "QIVLTQSPAIMSASPGEKVTMTCSASSSVSYMHWYQQKSGTSPKRWIYDTSKLASGVPARFSGSGSGTSYSLTISSMEAEDAATYFCHQWRSNPYTFGGGTKLEIKRADAAPTVSIFPPSSEQLTGGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNRNE"
+      }
+    },
+    "return_type": "polymer_entity",
+    "request_options": {
+      "paginate": {
+        "start": 0,
+        "rows": 10
+      }
+    }
+  },
+  "response": {
+    "query_id": "1b95da77-36f4-47e4-9b05-c20c804fe376",
+    "result_type": "polymer_entity",
+    "total_count": 186,
+    "result_set": [
+      {
+        "identifier": "2W9E_3",
+        "score": 1.0
+      },
+      {
+        "identifier": "6SV2_1",
+        "score": 1.0
+      },
+      {
+        "identifier": "2W9D_2",
+        "score": 0.9622641509433962
+      },
+      {
+        "identifier": "6SUZ_3",
+        "score": 0.9622641509433962
+      },
+      {
+        "identifier": "11HA_2",
+        "score": 0.8301886792452831
+      },
+      {
+        "identifier": "3S62_1",
+        "score": 0.7547169811320755
+      },
+      {
+        "identifier": "6M87_1",
+        "score": 0.7169811320754716
+      },
+      {
+        "identifier": "6DJP_4",
+        "score": 0.6792452830188679
+      },
+      {
+        "identifier": "6JHS_4",
+        "score": 0.6226415094339622
+      },
+      {
+        "identifier": "6PV7_4",
+        "score": 0.6226415094339622
+      }
+    ]
+  }
+}

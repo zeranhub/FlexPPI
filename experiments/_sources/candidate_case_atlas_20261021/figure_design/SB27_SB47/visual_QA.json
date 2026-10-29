@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "case_id": "C02",
+  "reviewed_PNG_SHA256": "170368680da6d3cf8c77bca82a1ec3dd079c8048a55262c329056009aacc2272",
+  "reviewer": "case_figure_design_20261021",
+  "image_actually_opened": true,
+  "passes": {
+    "AP": "Semantic two-state colors, redundant markers, no default/rainbow palette, no four-sided plot frame",
+    "CL": "183 mm canvas width, 9 pt minimum visible text, vector PDF/SVG with editable text, 450 dpi PNG, visible text within canvas",
+    "VI": "All complete-region RMSF sites and all paired chi-defined Hchi sites retained; no lines across nonconsecutive Hchi residues; chemistry changes explicitly marked",
+    "VV": "Actual final PNG opened. Matched-camera structural views, no data clipping, no label/legend collision, main curves contain model output only; limitations visible in complete-scope diagnostics"
+  },
+  "scientific_caution": "Local Q7 entropy and input dependence are stronger than whole-peptide Hchi agreement; receptor identity changes prevent attribution to one mutation.",
+  "new_training_inference_MD": false
+}

@@ -1,0 +1,21 @@
+{
+  "abstract_old": "同一肽–MHC被SB27和SB47识别时，肽的主链波动变化与MD的排序相关为0.945，中央Q7的侧链联合熵增幅也与MD一致。",
+  "abstract_new": "在同一TCR和HLA识别KRAS野生型与G12D肽的对照中，模型重现了未替换肽位点的主链波动变化，排序相关为0.733，变化误差较预测不变降低40.2%。",
+  "introduction_old": "ITrace中的SB27/SB47比较进一步检验相同肽–MHC在不同TCR识别环境下的动态变化。",
+  "introduction_new": "ITrace中的KRAS G12D对照进一步检验模型能否从相近的复合物结构识别单点抗原改变伴随的主链动态差异。",
+  "method_overview_old": "结构实例考察主链活动区域定位、TCR识别环境改变下的动态响应，以及同类型残基侧链朝向多样性的区分。",
+  "method_overview_new": "结构实例考察主链活动区域定位、单点抗原改变伴随的主链动态响应，以及同类型残基侧链朝向多样性的区分。",
+  "method1": "TCR实例采用ITrace中的KRAS野生型和G12D复合物7OW5与7OW6。两者包含相同的工程TCR JDIa41b1与HLA-A*11:01，十肽序列分别为VVVGAGGVGK与VVVGADGVGK，仅肽第6位由Gly替换为Asp，对应KRAS蛋白的G12D变化[28]。预测采用2.5节全组成链家族划分的第0折完整模型，该折训练集合由ATLAS和DynaRepo的2,430条记录组成，未使用ITrace。每种复合物使用ITrace的三条200 ns独立重复轨迹，保留0–200 ns的全部1,001–1,003个保存帧，按2.2节逐链对齐后重新计算肽链RMSF，并核对原标签。",
+  "method2": "变化统一定义为G12D减野生型，在全部10个肽位置计算RMSF变化的Spearman相关与平均绝对误差；另在去除G6/D6后余下的9个未替换位置计算相同指标。MD参考为每种复合物三条重复轨迹的均值，均值差标准误由两组重复间的样本方差分别除以三、相加后开方得到。变化误差同时与对全部位置预测零变化的基线比较。",
+  "result_heading": "3.5 KRAS G12D单点抗原变化的主链动态响应",
+  "result_paragraphs": [
+    "JDIa41b1 TCR对HLA-A*11:01呈递的KRAS野生型与G12D肽具有明显不同的结合亲和力：原研究测得的解离常数分别为3.0 μM与743±18 pM，相差约4,000倍，但两种复合物的整体结合姿态相近[28]。这一对照因此提供了具体的动态预测问题：仅一个肽位点改变时，模型能否从相近的静态结构中辨认整条肽的运动差异（图6a）？",
+    "在全部10个肽位置上，完整模型与三重复MD的RMSF变化排序相关为0.806，变化量的平均绝对误差为0.229 Å（图6b、c）。MD中G12D肽的主链波动降低，模型识别了其中中央区域更明显的响应。未发生替换的A5、G7和V8，其MD RMSF分别降低0.447、0.801和0.477 Å，模型分别预测降低0.206、0.342和0.167 Å。预测定位了主要响应区域，同时低估了这些位置的变化幅度。",
+    "去除发生替换的G6/D6后，其余全部9个肽位置的变化排序相关仍为0.733，平均绝对误差为0.182 Å，较全部预测不变的0.303 Å降低40.2%；8个位点的预测变化方向与MD一致（图6c、d）。两种复合物各三条MD轨迹中，7个位点的RMSF取值范围完全分开。正面证据由未替换的整段肽共同提供，表明模型能够将抗原局部变化对应到邻近及其它未改变位置的主链运动响应。"
+  ],
+  "discussion_old": "KIX中的共同高波动环区、SB27/SB47识别环境改变后的全肽主链响应及Q7侧链熵增幅，以及泛素中的同类型位点给出具体验证；",
+  "discussion_new": "KIX中的共同高波动环区、KRAS G12D单点抗原改变后未替换肽位点的主链响应，以及泛素中的同类型侧链差异给出具体验证；",
+  "conclusion_old": "SB27/SB47实例进一步重现相同肽–MHC在不同TCR环境下的主链变化与Q7侧链熵升高。",
+  "conclusion_new": "KRAS G12D实例进一步表明，模型能够从相近的复合物结构辨认单点抗原变化伴随的未替换肽位点主链响应。",
+  "reference28": "[28] Andrew Poole, Vijaykumar Karuppiah, Annabelle Hartt, Jaafar N. Haidar, Sylvie Moureau, Tomasz Dobrzycki, Conor Hayes, Christopher Rowley, Jorge Dias, Stephen Harper, Keir Barnbrook, Miriam Hock, Charlotte Coles, Wei Yang, Milos Aleksic, Aimee Bence Lin, Ross Robinson, Joe D. Dukes, Nathaniel Liddy, Marc Van der Kamp, Gregory D. Plowman, Annelise Vuidepot, David K. Cole, Andrew D. Whale, and Chandramouli Chillakuri. Therapeutic high affinity T cell receptor targeting a KRASG12D cancer neoantigen. Nature Communications, 13:5333, 2022. doi:10.1038/s41467-022-32811-1."
+}

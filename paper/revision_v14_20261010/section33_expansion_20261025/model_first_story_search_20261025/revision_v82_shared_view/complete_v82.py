@@ -1,0 +1,7 @@
+from pathlib import Path
+import json,hashlib
+v=Path(r'E:\Project\FlexPPI\paper\revision_v14_20261010\section33_expansion_20261025\model_first_story_search_20261025\revision_v82_shared_view');r=v/'render';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+assert sha(r/'release/page-10.png')==sha(r/'release_final/page-10.png')
+p=r/'v82_page_comparison.json';d=json.loads(p.read_text(encoding='utf-8'));assert d['page_count']==28 and d['changed_pages']==[10,11,12];d['visual_review']='passed: current pages 10,11,12 inspected; remaining 25 pages pixel-identical to reviewed v81';d['figure3_own_page_with_caption']=True;d['render_directory']=str(r/'release_final');p.write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
+a=v/'manuscript/v82_build_audit.json';s=json.loads(a.read_text(encoding='utf-8'));s['render_visual_QA_pending']=False;s['render_visual_QA']=d['visual_review'];s['pages']=28;s['figure3_no_numeric_tables_or_gray_notes']=True;s['structure_local_views_right_of_whole']=True;a.write_text(json.dumps(s,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps({'output':s['output'],'docx_sha256':s['output_sha256'],'render_review':'passed','page_count':28},ensure_ascii=False))

@@ -1,0 +1,1 @@
+本包包含v36图7PNG、全矢量PDF/SVG、723条完整绘图数据、151个有效角与264个角槽明细、四角双指标关联、原角度缓存、作图/分析/文稿集成脚本及核验。figures/plot_rich_chi_scatter_and_MD_curves.py使用包内source与experiment可重绘。a/b/c的统计定义与v35相同，新增展示已有151条逐角散点，没有新训练或MD。旧版源包 E:\Project\FlexPPI\paper\revision_v14_20261010\paper_v35_20261015_图7逐χ占据关联与源数据.zip，SHA256 f24a153ea43f43b6cca85794a0f286db49ced2f192da52b512e5107082255fe5；可追溯已有角度复算与83记录群体验证。

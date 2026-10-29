@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "dimensions_mm": [
+    183.0,
+    184.0
+  ],
+  "all66_valid_including3zero_Pro": true,
+  "a_deleted_error_and_width_tracks": true,
+  "all6_Gln_axis_labels": [
+    {
+      "residue_id": 2,
+      "label": "Q2",
+      "x_data": 2.0,
+      "y_axes": -0.33
+    },
+    {
+      "residue_id": 31,
+      "label": "Q31",
+      "x_data": 31.0,
+      "y_axes": -0.33
+    },
+    {
+      "residue_id": 40,
+      "label": "Q40",
+      "x_data": 40.0,
+      "y_axes": -0.33
+    },
+    {
+      "residue_id": 41,
+      "label": "Q41",
+      "x_data": 41.0,
+      "y_axes": -0.48
+    },
+    {
+      "residue_id": 49,
+      "label": "Q49",
+      "x_data": 49.0,
+      "y_axes": -0.33
+    },
+    {
+      "residue_id": 62,
+      "label": "Q62",
+      "x_data": 62.0,
+      "y_axes": -0.33
+    }
+  ],
+  "all6_Gln_all3angles_full72bins": true,
+  "all6_order": [
+    41,
+    31,
+    40,
+    62,
+    49,
+    2
+  ],
+  "all6_Q40_largesterror_included": true,
+  "panel_counts": {
+    "a_Hchi": 132,
+    "b_Hchi": 12,
+    "b_probability": 1296,
+    "c": 144,
+    "d": 144,
+    "e": 144
+  },
+  "all_points": 1872,
+  "MD_probability_color_scale": [
+    0,
+    0.25
+  ],
+  "no_per_angle_prediction_claim": true,
+  "source_sha256": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\rich_angle_figure_v30_20261014\\experiment\\ubiquitin_all66_chi_501frames.npz": "562e14a3909718f99fa2471dc6503b3c244b39a04bc883073b50ba02a171c182",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\rich_angle_figure_v30_20261014\\experiment\\all66_residue_summary.csv": "fec153f86b3b8ba808d2ee731937754427902660c5b29a955cacf25f5d8ab4ab",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\free_energy_curves_v27_20261014\\case_curves\\histograms_501frames.csv": "e90410df3e05ad5004861601e9f8b7272da0889c589d056ef4a13b4a5e20dbad",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\experiment_completion\\all_residues_figure_v29_20261014\\figures\\fig7_all_residues_Gln_and_MD_free_energy.statistics.json": "5e164096e1f959087bffb328b6b9840a99f8e7f1bc023dcd91ec8e017983f418"
+  },
+  "output_sha256": {
+    "png": "d037a735517e11e353d5410981f719cc28805951864c45b303b24533eccc7f44",
+    "pdf": "ee3224c7b7be94764bc26c6016cf381959d25425cf78623ca7506a30b99cc349",
+    "svg": "6f8db5a26d2c29439810f74034ce9670f52647eb4cffeb7c1a73ac277472b8ea"
+  },
+  "minimum_font_pt": 7.5,
+  "text_outside_canvas": [],
+  "primary_metrics_unchanged": {
+    "all66_Hchi_MAE_nats": 0.07953050649754886,
+    "all66_Spearman_rho": 0.979374987806399,
+    "all66_training_type_mean_corrected_rho": 0.8681919720319797,
+    "all6_Gln_MAE_nats": 0.1050252914428711,
+    "all6_errors": {
+      "2": 0.019122838973999023,
+      "31": 0.02296161651611328,
+      "40": 0.3676173686981201,
+      "41": 0.10959291458129883,
+      "49": 0.05805158615112305,
+      "62": 0.052805423736572266
+    },
+    "all66_count": 66,
+    "GLN_count": 6,
+    "valid_zero_reference_count": 3
+  },
+  "visual_review": "passed_original_PNG_independent_review_and_final_Word_page17;all6GLNaxispositions_exact;Q40/Q41verticalstagger_nooverlap;all1872retaineddata_exact",
+  "script_sha256": "060adb1fa0421de7e54ef611f464bd20e6184d13cfab39edd25db83bc19e08cc"
+}

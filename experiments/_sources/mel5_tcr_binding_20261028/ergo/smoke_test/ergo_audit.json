@@ -1,0 +1,652 @@
+{
+  "official_repository": "https://github.com/IdoSpringer/ERGO-II",
+  "upstream_commit": "85d320ab03ade33460be9a81ea3a51b8d37cd998",
+  "inference_modifications": [
+    "LightningModule replaced by torch.nn.Module for inference; no training operations invoked.",
+    "Lightning training-only decorator and import classes replaced by inert import placeholders.",
+    "torch.load map_location=cpu; weight state_dict loaded by untouched upstream Predict.load_model with strict=True default.",
+    "Official Models/AE weight files copied to upstream hardcoded TCR_Autoencoder path without byte changes."
+  ],
+  "runtime": {
+    "torch": "2.2.2+cpu",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "sklearn": "1.9.1"
+  },
+  "input": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_tcr_binding_20261028\\ergo\\download\\ERGO-II-master\\example.csv",
+  "input_sha256": "2b29c4b9288a7a02a9851aa88f0d5ba047ebd61a04274c463231adf6d069ed15",
+  "score_interpretation": "Official 0-1 binding classifier score; not a calibrated KD or measured probability. Higher means greater binding propensity under model.",
+  "threshold": "No fixed binary cutoff is endorsed by upstream prediction help; 0.5 is recorded only as an untuned reference, not selected on this panel.",
+  "models": {
+    "mcpas": {
+      "version": "1meajht",
+      "hparams": {
+        "iter": 1,
+        "gpu": 0,
+        "dataset": "mcpas",
+        "tcr_encoding_model": "AE",
+        "cat_encoding": "embedding",
+        "use_alpha": true,
+        "use_vj": true,
+        "use_mhc": true,
+        "use_t_type": true,
+        "aa_embedding_dim": 10,
+        "cat_embedding_dim": 50,
+        "lstm_dim": 500,
+        "encoding_dim": 100,
+        "lr": 0.001,
+        "wd": 1e-05,
+        "dropout": 0.1
+      },
+      "checkpoint": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_tcr_binding_20261028\\ergo\\download\\ERGO-II-master\\Models\\version_1meajht\\checkpoints\\_ckpt_epoch_8.ckpt",
+      "checkpoint_sha256": "85f51e152ebce64e4bb4783a2a0792b2e125e87ad35a17c8616aadf232213445",
+      "ae_weights": {
+        "tcra_ae_dim_100.pt": "716ca55779ce450e568a6e10647e10efb161552a4b6af5445cc07474c0e56a56",
+        "tcrb_ae_dim_100.pt": "6c21531c5bc215811050699102610cd23128851b59e1c9df4eeb71f1631de5c3"
+      },
+      "train_samples_sha256": "b61fc444a2ff188e47faca6756f025def549cb0ec67e304abf2157121efbd74f",
+      "upstream_source_sha256": {
+        "Predict.py": "fd85a2312efb09f1f19a89666d5a8c0729052b8d1f945937cf85fdf7bf99437e",
+        "Trainer.py": "41107e24552de0356bc0f591af930acd4c51dfb785f5a1d44ae403eccda71f98",
+        "Models.py": "e4386f2b12e15a2d2709c3a60de71dd3e991f129e41372102ed62a28ec5080f3",
+        "Loader.py": "1055234660cab864eb6c6b1bd135fdf105770d8eefeb05397feaef2bc6a39f29"
+      },
+      "vocabulary_audit": [
+        {
+          "column": "TRAV",
+          "original": "",
+          "normalized": "",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRAV",
+          "original": "TRAV1-2",
+          "normalized": "TRAV1-2",
+          "known_in_training_vocabulary": true,
+          "index": 16
+        },
+        {
+          "column": "TRAV",
+          "original": "TRAV12-2",
+          "normalized": "TRAV12-2",
+          "known_in_training_vocabulary": true,
+          "index": 33
+        },
+        {
+          "column": "TRAV",
+          "original": "TRAV14",
+          "normalized": "TRAV14",
+          "known_in_training_vocabulary": true,
+          "index": 59
+        },
+        {
+          "column": "TRAV",
+          "original": "TRAV27",
+          "normalized": "TRAV27",
+          "known_in_training_vocabulary": true,
+          "index": 123
+        },
+        {
+          "column": "TRAV",
+          "original": "TRAV3",
+          "normalized": "TRAV3",
+          "known_in_training_vocabulary": true,
+          "index": 131
+        },
+        {
+          "column": "TRBV",
+          "original": "TRBV12-3",
+          "normalized": "TRBV12-3",
+          "known_in_training_vocabulary": true,
+          "index": 52
+        },
+        {
+          "column": "TRBV",
+          "original": "TRBV19",
+          "normalized": "TRBV19",
+          "known_in_training_vocabulary": true,
+          "index": 89
+        },
+        {
+          "column": "TRBV",
+          "original": "TRBV2",
+          "normalized": "TRBV2",
+          "known_in_training_vocabulary": true,
+          "index": 97
+        },
+        {
+          "column": "TRBV",
+          "original": "TRBV4-3",
+          "normalized": "TRBV4-3",
+          "known_in_training_vocabulary": true,
+          "index": 176
+        },
+        {
+          "column": "TRBV",
+          "original": "TRBV6-5",
+          "normalized": "TRBV6-5",
+          "known_in_training_vocabulary": true,
+          "index": 228
+        },
+        {
+          "column": "TRBV",
+          "original": "TRBV7-2",
+          "normalized": "TRBV7-2",
+          "known_in_training_vocabulary": true,
+          "index": 244
+        },
+        {
+          "column": "TRBV",
+          "original": "TRBV9",
+          "normalized": "TRBV9",
+          "known_in_training_vocabulary": true,
+          "index": 273
+        },
+        {
+          "column": "TRAJ",
+          "original": "",
+          "normalized": "",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRAJ",
+          "original": "TRAJ41",
+          "normalized": "TRAJ41",
+          "known_in_training_vocabulary": true,
+          "index": 104
+        },
+        {
+          "column": "TRAJ",
+          "original": "TRAJ42",
+          "normalized": "TRAJ42",
+          "known_in_training_vocabulary": true,
+          "index": 106
+        },
+        {
+          "column": "TRAJ",
+          "original": "TRAJ6",
+          "normalized": "TRAJ6",
+          "known_in_training_vocabulary": true,
+          "index": 137
+        },
+        {
+          "column": "TRAJ",
+          "original": "TRAJ8",
+          "normalized": "TRAJ8",
+          "known_in_training_vocabulary": true,
+          "index": 144
+        },
+        {
+          "column": "TRBJ",
+          "original": "TRBJ1-1",
+          "normalized": "TRBJ1-1",
+          "known_in_training_vocabulary": true,
+          "index": 4
+        },
+        {
+          "column": "TRBJ",
+          "original": "TRBJ2-1",
+          "normalized": "TRBJ2-1",
+          "known_in_training_vocabulary": true,
+          "index": 32
+        },
+        {
+          "column": "TRBJ",
+          "original": "TRBJ2-2",
+          "normalized": "TRBJ2-2",
+          "known_in_training_vocabulary": true,
+          "index": 35
+        },
+        {
+          "column": "TRBJ",
+          "original": "TRBJ2-6",
+          "normalized": "TRBJ2-6",
+          "known_in_training_vocabulary": true,
+          "index": 47
+        },
+        {
+          "column": "TRBJ",
+          "original": "TRBJ2-7",
+          "normalized": "TRBJ2-7",
+          "known_in_training_vocabulary": true,
+          "index": 50
+        },
+        {
+          "column": "MHC",
+          "original": "HLA-A*02",
+          "normalized": "HLA-A*02",
+          "known_in_training_vocabulary": true,
+          "index": 22
+        },
+        {
+          "column": "MHC",
+          "original": "HLA-A*03",
+          "normalized": "HLA-A*03",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "MHC",
+          "original": "HLA-A*11",
+          "normalized": "HLA-A*11",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "MHC",
+          "original": "HLA-B*07",
+          "normalized": "HLA-B*07",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "MHC",
+          "original": "HLA-B*08",
+          "normalized": "HLA-B*08",
+          "known_in_training_vocabulary": true,
+          "index": 44
+        },
+        {
+          "column": "MHC",
+          "original": "HLA-DRA1*01",
+          "normalized": "HLA-DRA1*01",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        }
+      ],
+      "train_overlap": [
+        {
+          "row": 0,
+          "peptide": "RAKFKQLL",
+          "same_alpha_beta_peptide_train_rows": 0,
+          "same_beta_peptide_train_rows": 0,
+          "same_peptide_train_rows": 689
+        },
+        {
+          "row": 1,
+          "peptide": "LLQTGIHVRVSQPSL",
+          "same_alpha_beta_peptide_train_rows": 0,
+          "same_beta_peptide_train_rows": 0,
+          "same_peptide_train_rows": 0
+        },
+        {
+          "row": 2,
+          "peptide": "KLGGALQAK",
+          "same_alpha_beta_peptide_train_rows": 0,
+          "same_beta_peptide_train_rows": 0,
+          "same_peptide_train_rows": 0
+        },
+        {
+          "row": 3,
+          "peptide": "RLQSLQTYV",
+          "same_alpha_beta_peptide_train_rows": 0,
+          "same_beta_peptide_train_rows": 0,
+          "same_peptide_train_rows": 0
+        },
+        {
+          "row": 4,
+          "peptide": "ELAGIGILTV",
+          "same_alpha_beta_peptide_train_rows": 0,
+          "same_beta_peptide_train_rows": 0,
+          "same_peptide_train_rows": 1161
+        },
+        {
+          "row": 5,
+          "peptide": "IVTDFSVIK",
+          "same_alpha_beta_peptide_train_rows": 0,
+          "same_beta_peptide_train_rows": 0,
+          "same_peptide_train_rows": 85
+        },
+        {
+          "row": 6,
+          "peptide": "EIYKRWII",
+          "same_alpha_beta_peptide_train_rows": 0,
+          "same_beta_peptide_train_rows": 0,
+          "same_peptide_train_rows": 182
+        },
+        {
+          "row": 7,
+          "peptide": "GILGFVFTL",
+          "same_alpha_beta_peptide_train_rows": 0,
+          "same_beta_peptide_train_rows": 0,
+          "same_peptide_train_rows": 8290
+        },
+        {
+          "row": 8,
+          "peptide": "LPRRSGAAGA",
+          "same_alpha_beta_peptide_train_rows": 2,
+          "same_beta_peptide_train_rows": 2,
+          "same_peptide_train_rows": 10259
+        },
+        {
+          "row": 9,
+          "peptide": "GILGFVFTL",
+          "same_alpha_beta_peptide_train_rows": 17,
+          "same_beta_peptide_train_rows": 191,
+          "same_peptide_train_rows": 8290
+        }
+      ],
+      "all_rows_retained": true,
+      "singleton_batch_max_abs_diff": 2.384185791015625e-07,
+      "strict_checkpoint_loading": true,
+      "state_parameter_count": 4063035
+    },
+    "vdjdb": {
+      "version": "1veajht",
+      "hparams": {
+        "iter": 1,
+        "gpu": 2,
+        "dataset": "vdjdb",
+        "tcr_encoding_model": "AE",
+        "cat_encoding": "embedding",
+        "use_alpha": true,
+        "use_vj": true,
+        "use_mhc": true,
+        "use_t_type": true,
+        "aa_embedding_dim": 10,
+        "cat_embedding_dim": 50,
+        "lstm_dim": 500,
+        "encoding_dim": 100,
+        "lr": 0.001,
+        "wd": 1e-05,
+        "dropout": 0.1
+      },
+      "checkpoint": "E:\\Project\\FlexPPI\\experiments\\_sources\\mel5_tcr_binding_20261028\\ergo\\download\\ERGO-II-master\\Models\\version_1veajht\\checkpoints\\_ckpt_epoch_10.ckpt",
+      "checkpoint_sha256": "916ad9989d72bf295cfc6c3b645a48be0c6ca015d1ab22be0188fc62ecb52a2b",
+      "ae_weights": {
+        "tcra_ae_dim_100.pt": "716ca55779ce450e568a6e10647e10efb161552a4b6af5445cc07474c0e56a56",
+        "tcrb_ae_dim_100.pt": "6c21531c5bc215811050699102610cd23128851b59e1c9df4eeb71f1631de5c3"
+      },
+      "train_samples_sha256": "e6fd2d3789eecb3143bc0ab41ce37ad5259c7f8151d56221d489297ed4525529",
+      "upstream_source_sha256": {
+        "Predict.py": "fd85a2312efb09f1f19a89666d5a8c0729052b8d1f945937cf85fdf7bf99437e",
+        "Trainer.py": "41107e24552de0356bc0f591af930acd4c51dfb785f5a1d44ae403eccda71f98",
+        "Models.py": "e4386f2b12e15a2d2709c3a60de71dd3e991f129e41372102ed62a28ec5080f3",
+        "Loader.py": "1055234660cab864eb6c6b1bd135fdf105770d8eefeb05397feaef2bc6a39f29"
+      },
+      "vocabulary_audit": [
+        {
+          "column": "TRAV",
+          "original": "",
+          "normalized": "",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRAV",
+          "original": "TRAV1-2",
+          "normalized": "TRAV1-2",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRAV",
+          "original": "TRAV12-2",
+          "normalized": "TRAV12-2",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRAV",
+          "original": "TRAV14",
+          "normalized": "TRAV14",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRAV",
+          "original": "TRAV27",
+          "normalized": "TRAV27",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRAV",
+          "original": "TRAV3",
+          "normalized": "TRAV3",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRBV",
+          "original": "TRBV12-3",
+          "normalized": "TRBV12-3",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRBV",
+          "original": "TRBV19",
+          "normalized": "TRBV19",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRBV",
+          "original": "TRBV2",
+          "normalized": "TRBV2",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRBV",
+          "original": "TRBV4-3",
+          "normalized": "TRBV4-3",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRBV",
+          "original": "TRBV6-5",
+          "normalized": "TRBV6-5",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRBV",
+          "original": "TRBV7-2",
+          "normalized": "TRBV7-2",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRBV",
+          "original": "TRBV9",
+          "normalized": "TRBV9",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRAJ",
+          "original": "",
+          "normalized": "",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRAJ",
+          "original": "TRAJ41",
+          "normalized": "TRAJ41",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRAJ",
+          "original": "TRAJ42",
+          "normalized": "TRAJ42",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRAJ",
+          "original": "TRAJ6",
+          "normalized": "TRAJ6",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRAJ",
+          "original": "TRAJ8",
+          "normalized": "TRAJ8",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRBJ",
+          "original": "TRBJ1-1",
+          "normalized": "TRBJ1-1",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRBJ",
+          "original": "TRBJ2-1",
+          "normalized": "TRBJ2-1",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRBJ",
+          "original": "TRBJ2-2",
+          "normalized": "TRBJ2-2",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRBJ",
+          "original": "TRBJ2-6",
+          "normalized": "TRBJ2-6",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "TRBJ",
+          "original": "TRBJ2-7",
+          "normalized": "TRBJ2-7",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        },
+        {
+          "column": "MHC",
+          "original": "HLA-A*02",
+          "normalized": "HLA-A*02",
+          "known_in_training_vocabulary": true,
+          "index": 9
+        },
+        {
+          "column": "MHC",
+          "original": "HLA-A*03",
+          "normalized": "HLA-A*03",
+          "known_in_training_vocabulary": true,
+          "index": 15
+        },
+        {
+          "column": "MHC",
+          "original": "HLA-A*11",
+          "normalized": "HLA-A*11",
+          "known_in_training_vocabulary": true,
+          "index": 17
+        },
+        {
+          "column": "MHC",
+          "original": "HLA-B*07",
+          "normalized": "HLA-B*07",
+          "known_in_training_vocabulary": true,
+          "index": 21
+        },
+        {
+          "column": "MHC",
+          "original": "HLA-B*08",
+          "normalized": "HLA-B*08",
+          "known_in_training_vocabulary": true,
+          "index": 23
+        },
+        {
+          "column": "MHC",
+          "original": "HLA-DRA1*01",
+          "normalized": "HLA-DRA1*01",
+          "known_in_training_vocabulary": false,
+          "index": 0
+        }
+      ],
+      "train_overlap": [
+        {
+          "row": 0,
+          "peptide": "RAKFKQLL",
+          "same_alpha_beta_peptide_train_rows": 2,
+          "same_beta_peptide_train_rows": 98,
+          "same_peptide_train_rows": 7033
+        },
+        {
+          "row": 1,
+          "peptide": "LLQTGIHVRVSQPSL",
+          "same_alpha_beta_peptide_train_rows": 0,
+          "same_beta_peptide_train_rows": 0,
+          "same_peptide_train_rows": 0
+        },
+        {
+          "row": 2,
+          "peptide": "KLGGALQAK",
+          "same_alpha_beta_peptide_train_rows": 1,
+          "same_beta_peptide_train_rows": 1,
+          "same_peptide_train_rows": 66647
+        },
+        {
+          "row": 3,
+          "peptide": "RLQSLQTYV",
+          "same_alpha_beta_peptide_train_rows": 0,
+          "same_beta_peptide_train_rows": 0,
+          "same_peptide_train_rows": 0
+        },
+        {
+          "row": 4,
+          "peptide": "ELAGIGILTV",
+          "same_alpha_beta_peptide_train_rows": 1,
+          "same_beta_peptide_train_rows": 1,
+          "same_peptide_train_rows": 10274
+        },
+        {
+          "row": 5,
+          "peptide": "IVTDFSVIK",
+          "same_alpha_beta_peptide_train_rows": 0,
+          "same_beta_peptide_train_rows": 26,
+          "same_peptide_train_rows": 3645
+        },
+        {
+          "row": 6,
+          "peptide": "EIYKRWII",
+          "same_alpha_beta_peptide_train_rows": 1,
+          "same_beta_peptide_train_rows": 1,
+          "same_peptide_train_rows": 811
+        },
+        {
+          "row": 7,
+          "peptide": "GILGFVFTL",
+          "same_alpha_beta_peptide_train_rows": 2,
+          "same_beta_peptide_train_rows": 2,
+          "same_peptide_train_rows": 23596
+        },
+        {
+          "row": 8,
+          "peptide": "LPRRSGAAGA",
+          "same_alpha_beta_peptide_train_rows": 1,
+          "same_beta_peptide_train_rows": 1,
+          "same_peptide_train_rows": 744
+        },
+        {
+          "row": 9,
+          "peptide": "GILGFVFTL",
+          "same_alpha_beta_peptide_train_rows": 38,
+          "same_beta_peptide_train_rows": 408,
+          "same_peptide_train_rows": 23596
+        }
+      ],
+      "all_rows_retained": true,
+      "singleton_batch_max_abs_diff": 8.940696716308594e-08,
+      "strict_checkpoint_loading": true,
+      "state_parameter_count": 4038585
+    }
+  }
+}

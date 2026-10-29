@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "options": {
+    "A": {
+      "width_mm": 183.0,
+      "height_mm": 203.0,
+      "minimum_font_pt": 9.0,
+      "outside_text": []
+    },
+    "B": {
+      "width_mm": 183.0,
+      "height_mm": 204.0,
+      "minimum_font_pt": 9.0,
+      "outside_text": []
+    },
+    "C": {
+      "width_mm": 183.0,
+      "height_mm": 203.0,
+      "minimum_font_pt": 9.0,
+      "outside_text": []
+    }
+  },
+  "same_density_data": true,
+  "same_density_axes": true,
+  "same_density_normalization": true,
+  "all_three_tasks_complete_PR_in_every_option": true,
+  "frozen_AP_values_unchanged": true,
+  "all_3063_records_in_each_distribution": true,
+  "distribution_points": 36756,
+  "violin_density": "Gaussian KDE for shape only; bw_method=0.20, 128 evaluation points, clipped to empirical min/max.",
+  "violin_raw_points": "Every raw AP preserved; deterministic horizontal offset only.",
+  "distribution_intervals": "25th-75th percentiles and median, not confidence intervals.",
+  "no_new_significance_tests": true,
+  "manuscript_replaced": false,
+  "output_sha256": {
+    "A_print_preview.png": "8c43190a3f37cf940cc1d4a0ab318979a95aca635a5748a524aabf2553deba57",
+    "B_print_preview.png": "54ad049b3a74fda791ae71777999c27ccab4e308cb1739045d228a4a1a58c157",
+    "C_print_preview.png": "dcf41f6c0c3e3ca3d0ce08e13fc2a5d16cc8da005d29c90be3b065b8c65614f3",
+    "option_A_balanced.pdf": "efb29316274f720bde0b92c44ecc435f3a1a8c83bef27ce276dd2af64497dac2",
+    "option_A_balanced.png": "bf27632dafd96892e631cafea76218dc4ae0c646d0c07ab84a2a82b4b8548877",
+    "option_A_balanced.svg": "e674028d3069df1bd6a42269626422af729baf5c033addb5ba0f866337473fb9",
+    "option_B_within_type.pdf": "b4b20f60fdc7a4e7466242890f2e0af7cc6ecca5059e111198399d4a191e7458",
+    "option_B_within_type.png": "9ea56ecc2f7f6ef956fb957652f3d2d485e4a82a9e292c7eff6f07e7f312d687",
+    "option_B_within_type.svg": "fff8160f39b29b0a507dee91646cb6ecfe499003c4a6e6c7a895960f2edd84be",
+    "option_C_distributions.pdf": "e38c2b6dfbd41748e5d734e6cfe79e588140a137e082743832289ba015aa527d",
+    "option_C_distributions.png": "d491443b8f4ca153a4e2549969552b0528a9244eacbb3f8272b5448b3c9a591a",
+    "option_C_distributions.svg": "7710bed32201a94c49da8cb7f7b52370eaf4abe8a9fb5f07ee997a7a2f71a727"
+  },
+  "visual_review_passed": true,
+  "v61_document_unchanged": true
+}

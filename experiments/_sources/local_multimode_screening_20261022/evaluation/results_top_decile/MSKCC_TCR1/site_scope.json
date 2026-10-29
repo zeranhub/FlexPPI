@@ -1,0 +1,24 @@
+{
+  "position_keys": [
+    "B:1",
+    "B:2",
+    "B:3",
+    "B:4",
+    "B:5",
+    "B:6",
+    "B:7",
+    "B:8",
+    "B:9"
+  ],
+  "shared_substitutions": "all19_nonparent",
+  "substitution_n": 19,
+  "hit_rule": {
+    "kind": "relative_top_decile",
+    "cutoff": 0.972136222910216,
+    "not_absolute_improvement": true,
+    "only_offline_scoring_knows_cutoff": true
+  },
+  "scores_sha256": "0149ae317ad60d7b720967fa139b8ccf65eba5d4345acd497c2fd4e3052fb259",
+  "labels_sha256": "5436c255f0e46ad830d07a4a46391c16790e3eb70107b49557bde51d50a14e7f",
+  "no_model_score_used_for_eligibility": true
+}

@@ -1,0 +1,107 @@
+{
+  "all66": {
+    "n": 66,
+    "MAE_nats": 0.07953050649754886,
+    "Spearman_rho": 0.9793749878063989
+  },
+  "all63_nonPro_sensitivity": {
+    "n": 63,
+    "MAE_nats": 0.08330029580328199,
+    "Spearman_rho": 0.9763344854070661
+  },
+  "all6_Gln": {
+    "n": 6,
+    "MAE_nats": 0.1050252914428711,
+    "Spearman_rho": 0.942857142857143
+  },
+  "Gln_SASA_vs_MD_Hchi_rho": 0.3714285714285715,
+  "Gln_SASA_vs_Full_Hchi_rho": 0.2571428571428572,
+  "within_AA_centered_excluding_Pro": {
+    "n_residues": 63,
+    "SASA_MD_rho": 0.418656008863673,
+    "SASA_Full_rho": 0.5391567349972456,
+    "contact_MD_rho": -0.3422620179774942,
+    "contact_Full_rho": -0.5235755323834151,
+    "warning": "single protein descriptive; within-AA-centered ranks do not create independent biological samples; no inferential p value"
+  },
+  "absolute_SASA_groups_descriptive": {
+    "definition": "buried sidechain SASA<=5A2 versus exposed>=40A2, same AA only, excluding Pro; post-hoc illustrative thresholds, not a universal burial criterion",
+    "n_AA_types_with_both_groups": 2,
+    "groups": [
+      {
+        "AA": "L",
+        "n_buried_SASA_le5": 4,
+        "n_exposed_SASA_ge40": 1,
+        "buried_residues": "L43;L50;L56;L67",
+        "exposed_residues": "L71",
+        "buried_MD_mean_Hchi": 1.2819750308990479,
+        "exposed_MD_mean_Hchi": 1.4445679187774658,
+        "MD_exposed_minus_buried": 0.16259288787841797,
+        "buried_Full_mean_Hchi": 1.2586687207221985,
+        "exposed_Full_mean_Hchi": 1.4863653182983398,
+        "Full_exposed_minus_buried": 0.22769659757614136
+      },
+      {
+        "AA": "Q",
+        "n_buried_SASA_le5": 1,
+        "n_exposed_SASA_ge40": 5,
+        "buried_residues": "Q41",
+        "exposed_residues": "Q2;Q31;Q40;Q49;Q62",
+        "buried_MD_mean_Hchi": 1.8904883861541748,
+        "exposed_MD_mean_Hchi": 2.6537419319152833,
+        "MD_exposed_minus_buried": 0.7632535457611085,
+        "buried_Full_mean_Hchi": 2.0000813007354736,
+        "exposed_Full_mean_Hchi": 2.72698392868042,
+        "Full_exposed_minus_buried": 0.7269026279449462
+      }
+    ]
+  },
+  "same_AA_pairs_descriptive": {
+    "0": {
+      "n_pairs": 144,
+      "n_amino_acid_types": 12,
+      "n_MD_high_SASA_higher_entropy": 95,
+      "n_Full_high_SASA_higher_entropy": 103,
+      "n_Full_agrees_MD_direction": 114,
+      "warning": "Pairs share residues and are not independent; this is a complete single-case descriptive diagnostic, not sample size for a statistical test"
+    },
+    "20": {
+      "n_pairs": 68,
+      "n_amino_acid_types": 10,
+      "n_MD_high_SASA_higher_entropy": 52,
+      "n_Full_high_SASA_higher_entropy": 55,
+      "n_Full_agrees_MD_direction": 57,
+      "warning": "Pairs share residues and are not independent; this is a complete single-case descriptive diagnostic, not sample size for a statistical test"
+    },
+    "40": {
+      "n_pairs": 38,
+      "n_amino_acid_types": 8,
+      "n_MD_high_SASA_higher_entropy": 30,
+      "n_Full_high_SASA_higher_entropy": 34,
+      "n_Full_agrees_MD_direction": 34,
+      "warning": "Pairs share residues and are not independent; this is a complete single-case descriptive diagnostic, not sample size for a statistical test"
+    }
+  },
+  "Q41_Q62_differences": {
+    "MD_Q62_minus_Q41": 0.7405779361724854,
+    "Full_Q62_minus_Q41": 0.6837904453277588
+  },
+  "source_manifest": {
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v80_redesign\\figure5\\source\\original_fig7\\experiment\\all66_joint_predictions.csv": "a0ffd1247617be4acbd9f1a6df7980f00fc64922151fe630c64bd5b59358226b",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v80_redesign\\supplement_ubiquitin\\source_data\\ubiquitin_fold0_all_residues.csv": "ba4b342442ab5a6993a1af4a65e6c957e0221c34846efabcf689d75cc05cb7a9",
+    "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\section33_expansion_20261025\\model_first_story_search_20261025\\revision_v93_dual_case_entropy\\ubiquitin_audit\\all119_input_environment.csv": "c9d70d2e70aac2368b8a21be993254431483aadf3959193a59b903b67563bdc8"
+  },
+  "direct_raw_cache_verification": {
+    "all66_exact_identity_and_values": true,
+    "cache_sha256": "b8a764739993e3bce18dedb3cff493c50a1a52613a08baac16f1803c4edabb5a",
+    "label_sha256": "a528abc00e9df39370da04bf76957acb471b9b900ca66e53ccdde955e7d409c2",
+    "label_metric_names": [
+      "rmsf",
+      "chi_entropy",
+      "sasa"
+    ],
+    "Pro_is_chemically_defined_and_valid": true,
+    "original_valid_mask_changed": false,
+    "Pro_zero_interpretation": "true zero of the frozen 120-degree joint-bin reference; not a forced missing-angle zero and not absence of motion"
+  }
+}

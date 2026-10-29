@@ -1,0 +1,38 @@
+step,status,start_utc,finish_utc,seconds,source
+freeze_kix_predictions,complete,2026-10-10T05:40:32Z,2026-10-10T05:43:12Z,160.0,pipeline state actual UTC timestamps
+verify_prior_kix_predictions,complete,2026-10-10T05:43:12Z,2026-10-10T05:43:12Z,0.0,pipeline state actual UTC timestamps
+prepare_md,complete,2026-10-10T05:43:12Z,2026-10-10T05:43:13Z,1.0,pipeline state actual UTC timestamps
+audit_md_inputs,complete,2026-10-10T05:43:13Z,2026-10-10T05:43:13Z,0.0,pipeline state actual UTC timestamps
+smoke_md_cuda,complete,2026-10-10T05:43:13Z,2026-10-10T07:02:11Z,4738.0,pipeline state actual UTC timestamps
+verify_md_queue,complete,2026-10-10T07:02:42Z,2026-10-10T07:02:42Z,0.0,pipeline state actual UTC timestamps
+smoke_single_targets,complete,2026-10-10T07:02:42Z,2026-10-10T07:02:45Z,3.0,pipeline state actual UTC timestamps
+train_single_targets,complete,2026-10-10T07:02:45Z,2026-10-10T23:23:25Z,58840.0,pipeline state actual UTC timestamps
+export_single_targets,complete,2026-10-10T23:23:36Z,2026-10-10T23:27:35Z,239.0,pipeline state actual UTC timestamps
+analyze_single_targets,complete,2026-10-10T23:27:35Z,2026-10-10T23:28:26Z,51.0,pipeline state actual UTC timestamps
+train_evaluate_family_folds,complete,2026-10-10T23:28:26Z,2026-10-11T15:35:48Z,58042.0,pipeline state actual UTC timestamps
+evaluate_external_2430,failed,2026-10-11T15:35:48Z,2026-10-11T15:35:52Z,4.0,pipeline state actual UTC timestamps
+family_full_fold0,complete,,,3646.124353170395,family queue actual wallclock floats
+family_full_fold1,complete,,,5535.847016572952,family queue actual wallclock floats
+family_full_fold2,complete,,,5513.529933691025,family queue actual wallclock floats
+family_full_fold3,complete,,,5469.022365570068,family queue actual wallclock floats
+family_full_fold4,complete,,,5490.030867815018,family queue actual wallclock floats
+family_intrachain_fold0,complete,,,4452.26679110527,family queue actual wallclock floats
+family_intrachain_fold1,complete,,,6959.54811835289,family queue actual wallclock floats
+family_intrachain_fold2,complete,,,6969.29797577858,family queue actual wallclock floats
+family_intrachain_fold3,complete,,,6831.167072296143,family queue actual wallclock floats
+family_intrachain_fold4,complete,,,6885.581179380417,family queue actual wallclock floats
+single_chi_entropy_only_fold0,complete,,,5875.0,single queue actual UTC timestamps
+single_rmsf_only_fold0,complete,,,5962.0,single queue actual UTC timestamps
+single_chi_entropy_only_fold1,complete,,,6723.0,single queue actual UTC timestamps
+single_rmsf_only_fold1,complete,,,5967.0,single queue actual UTC timestamps
+single_chi_entropy_only_fold2,complete,,,5723.0,single queue actual UTC timestamps
+single_rmsf_only_fold2,complete,,,5735.0,single queue actual UTC timestamps
+single_chi_entropy_only_fold3,complete,,,5718.0,single queue actual UTC timestamps
+single_rmsf_only_fold3,complete,,,5738.0,single queue actual UTC timestamps
+single_chi_entropy_only_fold4,complete,,,5668.0,single queue actual UTC timestamps
+single_rmsf_only_fold4,complete,,,5722.0,single queue actual UTC timestamps
+family_oof_export_after_training,complete,,,288.1053261756897,last training job completion to family pipeline export completion; includes orchestration overhead
+planet_full_inference,complete,,,20111.136315,CPU queue actual phase timestamps; phase polling adds up to30s overhead
+planet_full_verification,complete,,,30.003563,CPU queue actual phase timestamps; phase polling adds up to30s overhead
+planet_seq_inference,complete,,,16434.73953,CPU queue actual phase timestamps; phase polling adds up to30s overhead
+planet_seq_verification,complete,,,30.002956,CPU queue actual phase timestamps; phase polling adds up to30s overhead
