@@ -1,5 +1,0 @@
-# C23 statistics and reproducibility
-
-Fixed existing joint Full fold0; ATLAS1866 + DynaRepo564 training records, ITrace0. No new inference, training or MD. Model curves are a single deterministic existing prediction with no uncertainty bars. Model Hchi unit nats and RMSF unit angstrom. Existing MD labels are means over 3 independent trajectories per ITrace state; source sample variances and nrep are in complete alignment CSV. Panel d pools all aligned residue comparisons across all listed contrasts; residue positions are not independent experimental samples. No significance tests, regression fits or multiple comparison procedures were performed. MAE is descriptive change error, not proof that MD is physical truth. All positions in the predefined scope are shown; unpaired gaps, altered chemistry and undefined chi are explicitly retained in source data. Structural images are real existing topology coordinates, MHC-aligned with no outlier rejection.
-
-Source audit: ../data_audit.json and data/*_source_audit.json.

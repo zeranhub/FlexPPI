@@ -1,5 +1,0 @@
-v47 图1源文件与核对记录
-
-figure1/fig1_framework.drawio为可编辑原生母版，.svg和.pdf为矢量导出，.png为Word中实际使用的高分辨率版本；同目录含可复现脚本、素材来源和中文图注。其余prototype图是设计过程的中间文件。CURRENT_FIGURE_MAP.json索引全文现用图源。audit包含实现核对、期刊示例设计参考及最终科学/视觉审查；manuscript_QA记录文档包和最终全部页面检查。build_v47.py为局部OOXML替换脚本，不会重建无关文档部件。
-
-原始v45文稿和旧图1保持不变。最新DOCX在上两级目录，文件名paper_v47_20261019_中文修订_模型框架图重绘_三线表.docx。没有新增模型训练、推理或MD。

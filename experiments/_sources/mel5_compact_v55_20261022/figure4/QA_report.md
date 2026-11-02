@@ -1,3 +1,0 @@
-# Figure4 v55 QA
-
-READY. Four panels a-d. Prior ranked Hchi plot deleted by direct user request; two complete signed maps combined under one d heading with independent metric units and colorbars.183x172mm,600dpi PNG plus embedded-font PDF and editable SVG. Font sizes and all retained data unchanged from v54:40 peptide,90 absolute CDR,135 CDR differences,90 interface cells with valid23/23/22. Source CSVs and array values/masks independently checked against v54. No new inference/training/MD. Entire28-page DOCX independently reviewed, complete figure/caption same page.10 native three-line tables,36 equations,6 images and28 references preserved. Source v54 unchanged.

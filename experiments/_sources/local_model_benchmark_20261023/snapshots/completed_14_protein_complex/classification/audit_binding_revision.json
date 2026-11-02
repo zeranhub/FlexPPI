@@ -1,8 +1,0 @@
-{
-  "created_utc": "2026-10-24T00:00:01.586974+00:00",
-  "old_audit_sha256": "d9ec1831afbf14a8010b0ff6ec7f00441fc9d8f6086b0cb4a472bb20e71063e1",
-  "final_audit_sha256": "45d29a3f443e2b65ba1417eb440bff1f3221aa741c5f7da130d153802634ba45",
-  "unchanged_membership_sha256": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac",
-  "unchanged_policy_sha256": "c5e0868acd3fb90639d3205843c5f281e8292c6b1868e115210e958130493bdb",
-  "changes": "Final classifier audit corrects biological identity text in chain evidence, binds updated evidence-writer code and updates audit UTC; membership, rules and decisions unchanged. Final audit is rebound by rerunning deterministic aggregation and rendering; first audit retained as history."
-}

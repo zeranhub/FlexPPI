@@ -1,8 +1,0 @@
-sample_id,pdb_id,mapping_pdb_id,source_identity_conflict_note,benchmark_group
-A00L0,2FGJ,2FJG,All four actual MD chains exactly match 2FJG canonical entities: VEGF-A copies and Fab light/heavy chains. Original 2FGJ is a different ATP-binding protein; source PDB letters are transposed.,protein_complex
-A00L3,2WE9,2W9E,All three actual MD chains exactly match 2W9E canonical entities: prion protein plus ICSM18 heavy/light chains. Original 2WE9 is an unrelated MobA-related protein; source PDB letters are transposed.,protein_complex
-A00LC,3RVW,5VPG,Official RCSB removed-entry metadata explicitly replaces original 3RVW by 5VPG. MD chains match Der p 1 (221/222 known residues) and Fab4C1 chains (exact).,protein_complex
-A00O4,2OV8,2O8V,Both actual MD chains exactly match 2O8V: PAPS reductase and thioredoxin. Original 2OV8 is an unrelated sulfotransferase; source PDB letters are transposed.,protein_complex
-A00O8,1A2K,5BXQ,Official RCSB removed-entry metadata explicitly replaces original 1A2K by 5BXQ. All three MD chains exactly match NTF2 copies and Ran.,protein_complex
-A00ON,1RS8,1R8S,Both actual MD chains exactly match 1R8S: ARF1 and Arno. Original 1RS8 is an unrelated nitric-oxide synthase; source PDB letters/digits are transposed.,protein_complex
-A00Q0,1VDD,2V1C,Four actual MD chains match RecR (Q9ZNA2) and the fifth exactly matches RecO (Q9RW50). Original 1VDD contains only RecR; the actual MD composition is recovered by sequence against the official RecOR entry 2V1C.,protein_complex

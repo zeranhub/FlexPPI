@@ -1,1 +1,0 @@
-本包包含v32图7的矢量PDF/SVG、300dpi PNG、1872点源表与作图/集成/核验脚本；source包含所需MD概率NPZ、残基源表、统计和曲线直方图。可运行figures/plot_clean_axis_six_Gln_and_occupancy.py重绘，需numpy/pandas/matplotlib/Pillow与Microsoft YaHei字体，原工程路径不存在时使用source。完整前版图7及源数据归档 E:\Project\FlexPPI\paper\revision_v14_20261010\paper_v31_20261014_图7六谷氨酰胺轴标注与源数据.zip，SHA256 8775ea3942b10a68062d19af4523e3c641c3f3dd847b24003504b65a433e9801。

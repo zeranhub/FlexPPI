@@ -1,0 +1,12 @@
+# Keep editable entry documents and metadata consistent across platforms.
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.md text eol=lf
+/pyproject.toml text eol=lf
+/experiments/steps.json text eol=lf
+
+# Frozen scientific inputs and manuscript assets are identified by byte hashes.
+/paper/current/** -text
+/experiments/core_corrected_pipeline/** -text
+/experiments/_sources/** -text
+/src/** -text

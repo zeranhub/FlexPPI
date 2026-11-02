@@ -1,5 +1,0 @@
-{
-  "stdout": "3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]\n8.4\n['Reference', 'CPU', 'CUDA']\n['charmm_polar_2019.xml', 'charmm36_2024.xml', 'charmm_polar_2023.xml', 'charmm36.xml', 'charmm_polar_2013.xml']\n/ranze/envs/flexppi-kix-md-20260914/lib/python3.10/site-packages/pdbfixer/__init__.py\nindex, uuid, name, memory.free [MiB], utilization.gpu [%]\n0, GPU-4879385f-4906-62b8-4891-ad469985b9e3, NVIDIA L20, 4107 MiB, 0 %\n1, GPU-14ea2307-e603-8d5d-226d-a036db5b33b0, NVIDIA L20, 26884 MiB, 35 %\n2, GPU-338a0b24-0c5e-484c-0958-3f02ac2ef512, NVIDIA L20, 23999 MiB, 14 %\ntotal 2\ndrwxr-xr-x  3 244573 root 1024 Sep  5 10:20 .\ndrwx------ 14 244573 root 1024 Sep  9 03:46 ..\ndrwxr-xr-x 20 244573 root 1024 Sep 11 09:35 FlexPPI\ntotal 2\ndrwxr-xr-x  3 root   root 1024 May  6 04:12 .\ndrwx------ 14 244573 root 1024 Sep  9 03:46 ..\ndrwxr-xr-x  5 root   root 1024 May  6 04:13 gromacs\n    PID %CPU COMMAND\n    560  0.2 sshd\n    619  0.1 bash\n      1  0.0 tini\n      7  0.0 bash\n     32  0.0 sshd\n     44  0.0 jupyter-lab\n    702  0.0 ps\n    703  0.0 head\n",
-  "stderr": "",
-  "exit_code": 0
-}

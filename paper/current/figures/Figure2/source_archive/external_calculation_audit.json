@@ -1,0 +1,94 @@
+{
+  "generated_utc": "2026-10-24T07:18:43.791111+00:00",
+  "status": "complete",
+  "script_sha256": "35e103dbdb52042ba6bf366f17d37e761c415d86dd29644dfd6b0bffc5416564",
+  "sources": [
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\baselines\\cohort\\truth_residues.csv.gz",
+      "sha256": "d7fc3a98ea3eba4c1e4c1edb702faf75936d2cb5339938fbebc165ddc7a7ed83"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\evaluation\\aligned_predictions.npz",
+      "sha256": "251422fabeafee15f82106a6cda8edb627e7c7b444c5a7da5299e3cbe1417872"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\classification\\membership_frozen.csv",
+      "sha256": "23397071b405d0483088a1b58234b17aefc0193498955419664421153a3d0cac"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\classification\\ppi_interfaces_20261024.csv",
+      "sha256": "fd8fc6c7ac6416572673a032546334d87923bc963538463e5c5df82e9154c18b"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\per_record_metrics.csv",
+      "sha256": "87420afc23a9dce44919eb1e58bb6620da2b04a8c1075099d23df06ea538e6ef"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\evaluate_benchmark.py",
+      "sha256": "02923332cbaf1b0c79ab5728d0c2f7c193aa2a573d87d4133a9017cb3c810e22"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\aggregate_benchmark.py",
+      "sha256": "bcdb6fa2bd10d7af22f9caab4abc0604f1499d6df81e9ab3f5b4127447734e2c"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\evaluation\\scoring_audit.json",
+      "sha256": "c5a12719fdf96d4971b505922f98d483b9354e80e0bcca23b3e3efbdb7ff0031"
+    },
+    {
+      "path": "E:\\Project\\FlexPPI\\experiments\\_sources\\local_model_benchmark_20261023\\protein_complex_benchmark\\evaluation\\scoring_audit.json",
+      "sha256": "f50b821b0982ad6d3602c9b0d5f1fe3e60af6b7d2000877f30677479064eb90a"
+    }
+  ],
+  "cohort": "exact Figure 2d cohort: dynarepo; protein_complex; >=2 actual chains; >=1 observed protein interface",
+  "n_records": 615,
+  "n_families": 261,
+  "n_residues": 260340,
+  "strata": {
+    "i1": 414,
+    "i23": 144,
+    "i4": 57
+  },
+  "methods": [
+    "Full",
+    "backflip-2.1 (assembly)",
+    "backflip-1.0 (assembly)",
+    "DynaProt-M",
+    "FastProtFlex",
+    "ANM",
+    "GNM"
+  ],
+  "invalid_reference_residues": 0,
+  "missing_valid_predictions": [],
+  "discarded_valid_residues": 0,
+  "shared_residue_policy": "All frozen valid RMSF residues, identical for every method; all seven predictions must be finite, otherwise fail.",
+  "label_policy": "Per-record reference RMSF >= np.quantile(reference RMSF, 0.90); tied reference values retained.",
+  "threshold_policy": "Descending unique prediction score groups; every tied score group enters together.",
+  "mean_PR": "Per-record first threshold group reaching each common recall, then equal-record mean. r=0 uses first threshold group precision, not an artificial point. r=1 retains first reach; all-selected endpoint is separate.",
+  "all_selected_precision": 0.10139574129843872,
+  "prevalence_min": 0.1,
+  "prevalence_max": 0.10989010989010989,
+  "mean_ROC": "Per-record np.interp on original nondecreasing raw FPR/TPR points, preserving duplicate FPR and vertical segment order; then equal-record mean. At exact duplicate FPR, np.interp returns the last upper point; interpolation between distinct FPR values retains arrival at the next vertical lower endpoint. (0,0) may be separately plotted as vertical start.",
+  "ROC_interpolation_validation": "Toy raw ROC (0,0),(0,0.5),(1,0.5),(1,1): interpolated TPR at FPR=0.5 equals 0.5 and raw trapezoid area equals 0.5. Each real raw-threshold trapezoid AUC agrees with sklearn ROC AUC within 2e-14. Duplicate FPR must not be collapsed before interpolation.",
+  "AP_policy": "Sum of recall increments times threshold-group precision, computed on original thresholds; independently checked against sklearn.average_precision_score. Never integral of displayed mean curve.",
+  "AUROC_policy": "Per-record sklearn.roc_auc_score, then equal-record mean; not integral of displayed mean curve.",
+  "max_abs_AP_difference_from_panel_d": 4.440892098500626e-16,
+  "bootstrap": {
+    "seed": 20261024,
+    "draws": 2000,
+    "level": "family cluster",
+    "percentile": [
+      2.5,
+      97.5
+    ],
+    "shared_draws": true,
+    "denominator": "total records in sampled families",
+    "pointwise_curve_bands": "Full only; not simultaneous confidence bands",
+    "family_order_sha256": "8d3134120acc1764c8df87eeaac20bf60bae5904e57758e98ad46e40e293a7a4",
+    "resample_weights_sha256": "9a108726648052ae5b7a9af21c09201e583fd26ea1926d77f98b955849ad2b3a"
+  },
+  "raw_curve_format": "raw_threshold_curves.npz: one segment per sample_id/method; offsets length = segments+1; thresholds descending; recall=TPR; all-selected endpoint retained; ROC (0,0) not stored as an artificial threshold.",
+  "interpretation_limits": [
+    "Published model weights can have mixed training exposure and different target definitions; this is a frozen-cohort comparison, not an equal-training or universal-superiority claim."
+  ]
+}

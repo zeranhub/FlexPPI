@@ -1,0 +1,17 @@
+chi,chi_index,predictor,metric,n_defined,AA_types,n_singleton_AA_positions,n_proline_positions,rho_raw,rho_AA_centered,status_AA_centered,centered_zero_x_count,centered_zero_y_count
+chi1,1,predicted_joint_Hchi,fine_entropy,66,16,3,3,0.25293810666944999,0.49750527128869959,computed,3,3
+chi1,1,predicted_joint_Hchi,low_Fstar_width,66,16,3,3,0.13015576538774662,0.19514999736399299,computed,3,6
+chi1,1,MD_reference_joint_Hchi,fine_entropy,66,16,3,3,0.2952424694137461,0.54381809450075058,computed,6,3
+chi1,1,MD_reference_joint_Hchi,low_Fstar_width,66,16,3,3,0.15352185315954547,0.26727677838719599,computed,6,6
+chi2,2,predicted_joint_Hchi,fine_entropy,52,13,3,3,0.40519081362588577,0.44718640594313047,computed,3,3
+chi2,2,predicted_joint_Hchi,low_Fstar_width,52,13,3,3,0.26950940674395413,0.39554951028167351,computed,3,5
+chi2,2,MD_reference_joint_Hchi,fine_entropy,52,13,3,3,0.39156420907755873,0.41855903907444708,computed,6,3
+chi2,2,MD_reference_joint_Hchi,low_Fstar_width,52,13,3,3,0.25479102967578121,0.37647185981009729,computed,6,5
+chi3,3,predicted_joint_Hchi,fine_entropy,23,5,1,0,-0.18577075098814227,0.52470355731225293,computed,1,1
+chi3,3,predicted_joint_Hchi,low_Fstar_width,23,5,1,0,-0.16019781908964723,0.63998025180837115,computed,1,1
+chi3,3,MD_reference_joint_Hchi,fine_entropy,23,5,1,0,-0.15019762845849804,0.54051383399209485,computed,1,1
+chi3,3,MD_reference_joint_Hchi,low_Fstar_width,23,5,1,0,-0.10729298377300446,0.60390414494967537,computed,1,1
+chi4,4,predicted_joint_Hchi,fine_entropy,10,2,0,0,0.042424242424242413,0.12727272727272726,computed,0,0
+chi4,4,predicted_joint_Hchi,low_Fstar_width,10,2,0,0,-0.40244650599060872,-0.18293022999573122,computed,0,0
+chi4,4,MD_reference_joint_Hchi,fine_entropy,10,2,0,0,-0.11515151515151514,0.0060606060606060606,computed,0,0
+chi4,4,MD_reference_joint_Hchi,low_Fstar_width,10,2,0,0,-0.43293487765656391,-0.2195162759948775,computed,0,0

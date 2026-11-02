@@ -1,5 +1,0 @@
-replica_mode,scope,metric,contrast,dataset,n_records,mean,record_sample_sd,median,min,max,bootstrap_95_low,bootstrap_95_high,positive_records,negative_records,zero_records,metric_key,threshold
-replica1,all,fine_entropy_mean_per_chi,full_hchi_minus_full_rmsf,all,83,0.18932412493225415,0.11146892249577492,0.19549792973776681,-0.141501976284585,0.39093340584435177,0.17200149642456572,0.20639175304755769,79,4,0,fine_entropy,
-replica1,all,fine_entropy_mean_per_chi,full_hchi_minus_intrachain_hchi,all,83,0.016654261316848818,0.048504011596830883,0.0093249097909344769,-0.13848177605083684,0.14506834462041629,0.0064993664538582421,0.027044343498780175,58,25,0,fine_entropy,
-replica1,all,,full_hchi_minus_intrachain_hchi,all,83,0.0085197693743222901,,,,,-0.0031494070120198095,0.020434496272734377,50,33,0,lowF_width,1
-replica1,all,,full_hchi_minus_full_rmsf,all,83,0.16101672114553212,,,,,0.14378637061587363,0.17856362864338737,78,5,0,lowF_width,1

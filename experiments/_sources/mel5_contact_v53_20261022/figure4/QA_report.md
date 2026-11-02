@@ -1,3 +1,0 @@
-# Figure4 v53 QA
-
-READY. Actual 6 by9 contact grid with all54 residue pairs and108 state glyphs; six HLA Hchi rows and nine TCR RMSF columns aligned; all18 Q72 distances retained. English labels, Arial, 183 by170mm,450dpi PNG and embedded-font PDF plus editable SVG. Independent full-figure visual and numerical reviews passed. All45 CDR positions and90 model RMSF values unchanged. Both acquired and weakened contacts displayed. Geometry is minimum heavy-atom distance in existing starting structures, with the six-site inclusion rule explicit in methods. No newly run inference, training or MD. All28 manuscript pages independently inspected; figure and full caption on page15. Native10 three-line tables,36 equations,6 images and28 references preserved. Source v52 unchanged.

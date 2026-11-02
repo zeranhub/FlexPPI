@@ -1,0 +1,22 @@
+{
+  "system": "2QHO ubiquitin-EDD1 UBA; DynaRepo A003R",
+  "source_structure": "D:\\data\\dynarepo_non_nucleic_full\\A003R\\structure.pdb",
+  "source_trajectory": "D:\\data\\dynarepo_non_nucleic_full\\A003R\\trajectory.xtc",
+  "source_structure_sha256": "4b2206ae6e9b71d9b8659e661d6825320eebae563ec4e7c2643a43a5225bf1f5",
+  "source_trajectory_sha256": "9d5ffa6a837e7400a5ed571fa9ba2cbeb9838606449aa5c2d145477d725510df",
+  "n_frames_in_file": 5001,
+  "n_frames_used_by_labels": 5000,
+  "frame_spacing_ns": 0.1,
+  "n_windows": 5,
+  "n_frames_per_window": 1000,
+  "modeled_chain": "A ubiquitin, 72 residues in actual input",
+  "partner_chain": "B EDD1 UBA, 47 residues, input global residue IDs 73-119",
+  "residue_mapping": "Q41 = A:41 = global zero-based 40; Q62 = A:62 = global zero-based 61",
+  "representation": "Only the three most occupied observed categories per site are shown as structure sticks. Full 27-category frequencies are retained.",
+  "claim_boundary": "Side-chain structures shown here are MD observations, not model-predicted conformations. The model predicts RMSF and side-chain entropy.",
+  "category_boundary": "Joint bins follow original label code; bins need not correspond to physically separated rotamers, especially across angle boundaries.",
+  "extraction_software": {
+    "MDAnalysis": "2.7.0",
+    "numpy": "1.26.4"
+  }
+}

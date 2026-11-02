@@ -1,9 +1,0 @@
-# 肽突变动态接触证据
-
-本目录对已有4JFF、4JFD和4JFE三态各三条0–200 ns轨迹的全部保存帧进行接触分析，没有运行新MD。完整10个肽位置与三态起始结构7 Å邻居并集的所有组合均保留，包括无接触、反向变化及模型未涉及的位置。接触定义为两个残基的最小重原子距离≤4 Å，并提供4.5 Å敏感性口径。
-
-每条轨迹是一个重复，汇总为三重复等权均值和样本标准差。全部三条突变轨迹的接触占据都高于或低于全部三条参考轨迹，称为重复范围分离，仅作为描述，不作为统计显著性。`exploratory_changes_atleast20pp_with_nonoverlapping_replica_ranges.csv`是查看完整结果后的探索性筛选，不是独立验证；其阈值为平均占据改变至少20个百分点且三重复范围分离，全部未筛选结果另行完整保留。
-
-输入轨迹只有蛋白，不能从中验证动态水桥或溶剂熵。TCRα的端部还存在结构准备差异，所有序列差异和编号对齐均见audit及全映射表。以4JFF序列位置统一候选，再经既有3HG1–4JFF映射转换论文共同编号；不能直接把原始MD resid写成论文TCR编号。
-
-主要文件：`all_peptide_neighbor_contacts_per_replica.csv`逐重复全结果；`all_peptide_neighbor_contact_contrasts.csv`两种肽替换全差值；`whole_peptide_role_contact_counts_per_replica.csv`各相互作用方的整肽接触数；`complete_7A_neighbor_union.csv`全部候选；`contact_analysis_audit.json`方法和原始文件SHA256；每条轨迹的npz保存全部逐帧最小距离以供核查。

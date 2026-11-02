@@ -1,8 +1,0 @@
-{
-  "run_planet": false,
-  "run_rmsfnet": false,
-  "runtime_preference": "Confirmed by user: 先完成较快模型，重模型后补. PLANET and RMSF-net full inference are deferred and will not start in this queue.",
-  "device": "local_cpu_only",
-  "phase_order": ["wait_existing_backflip_fastprotflex_nma", "publish_completed_light_models"],
-  "deferred_phases": ["planet_smoke_then_full", "rmsfnet_full"]
-}

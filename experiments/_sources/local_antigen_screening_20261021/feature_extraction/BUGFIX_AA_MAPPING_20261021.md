@@ -1,5 +1,0 @@
-2026-10-21：首次freeze-regions在生成任何候选预测之前失败。根因是特征脚本用zip构造氨基酸表时，三字母列表漏写LEU，长度只有19，导致K之后映射错位、LEU残基被忽略。此为脚本错误，不是准备结构或实验标签的问题。
-
-修复改为明确20项标准字典，并新增独立输入契约测试：逐项与实际模型源码THREE_TO_ONE的20种标准AA等价，逐种核canonical χ数；用模型官方parse_pdb逐残基比较五个parent的固定输入及完整静态PDB，验证序列、作者编号、主链和canonical重原子完整性。未修改任何准备结构。测试结果存input_contract_test.json，带脚本和源常量SHA。
-
-同时修复静态manifest适配优先级，明确先取static_complete_pdb/static_pdb/complete_pdb/output_pdb等完整文件字段，防止继承的prepared_input_pdb字段误指向删侧链推断输入。错误打印限制为总缺失数和前三个例子；完整QC仍保留在单输入审计文件。

@@ -1,9 +1,0 @@
-# PaperBanana 从头生成图3
-
-本次实际执行作者的 demo_full 完整流程：Retriever、Planner、Stylist、Visualizer、Critic。输入由研究内容、853个冻结绘图数值的参考清单、科学解释边界、配色及期刊风格组成，没有输入旧完整组图，也没有调用现有图片润色流程。参考库为作者官方 PaperBananaBench 的298个diagram例子；自动Retriever按原逻辑从前200例中选择，两个候选共享参考检索，之后独立规划与生成，每候选最多两轮Critic。
-
-run_status.json记录两个最终输出及哈希；generation_01/provenance.json记录原生入口和模型；candidate_N_pipeline.json保存各阶段描述、参考id、批评意见、图像文件索引。视觉概念由PaperBanana生成，图中的分子形状和数据标记不能直接作为科学证据；后续正式成图须换为真实结构渲染与原生源数据绘图。本次不修改Word或v98原图。
-
-run_from_scratch.py是实验包装器，调用作者原生Agent和主处理器。它与已有安全包装器的区别仅为独立work_dir/期刊风格、原始参考图的绝对路径、两个并发独立设计意图、来源记录。作者Agent和内置提示词未修改。密钥通过本机配置读取，不包含在结果包。
-
-scientific_content.txt为实际科学内容输入，visual_intent.txt为公共图意图，numeric_inventory.json为853数值清单。input_manifest.json保存源文件哈希。data/PaperBananaBench/diagram/ref.json仅用于本机运行，引用本机官方参考图绝对路径，结果包不附带第三方参考图片。图片预览按真实纵横比，不拉伸。

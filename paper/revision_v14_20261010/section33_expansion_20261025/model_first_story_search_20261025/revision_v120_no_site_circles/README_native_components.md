@@ -1,9 +1,0 @@
-# 图3 v111：实际PaperBanana方案A的真实数据实现
-
-本次服务恢复后，真实调用本机PaperBanana完整demo_full：自动参考检索→Planner→Stylist→Visualizer→两轮Critic/Visualizer，成功生成两个4096×4096方案。没有把旧图3当输入，向Planner提供的是当前科学内容与论文图2风格参考。首轮曾HTTP402，本次成功结果与首次失败记录分开保存。当前候选完成顺序与独立方案号不同：A=candidate_id0，保存在candidate_2_final.png；B=candidate_id1，保存在candidate_1_final.png。不能把framework_final.png自动当A，它是先完成的B。
-
-选择A的三排骨架：顶排相邻两结构＋紧凑总体密度图，中排等宽等高的两个案例双轴曲线＋SASA下轨，底排四个χ散点共一行。正式图为183×190mm、Arial9/10/11pt，沿用图2细轴线和颜色。a结构，b全量密度，cCaMKI，d泛素，e单角占据关联；原六Gln面板保持删除。结构、所有曲线、SASA和散点均由真实PyMOL图片及冻结数据原生绘制，未使用生成模型给出的分子外形、点坐标或数据曲线。与v110保留全部767标量严格相同，824988密度NPZ和有效mask完全相同，合法Pro零与A/G缺口保留；图注和数据来源见manifest及caption。
-
-原始PaperBananaA/B只作为设计草案，不宜直接作为科学图：它们含错绘结构、错曲线、错误SASA双组柱、错散点和错刻度。正式图全部纠正，SASA只有单组静态值，ρ和n按真实数据保留。生成原图及每个阶段描述保存在相邻paperbanana_layout_v111_20261027/generation_retry_20261027_155023，最终图、输入哈希、原文描述及候选选择纳入本次结果包。
-
-可复现：compose_fig3_v111.py调用native_components.py和既有case_profiles/plot_overlay；固定输入来自prepare_frozen_inputs.py。运行validate_components.py核验组件767数值，release_and_audit.py核验最终767标量、字体嵌入、全部非零密度格、Word哈希并导出打包。PDF/SVG保留原生矢量文本/曲线，分子为原始高分辨PyMOL光栅，PNG450dpi。没有训练、推理、新MD或Word修改。

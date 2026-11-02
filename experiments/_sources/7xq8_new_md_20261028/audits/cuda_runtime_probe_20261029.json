@@ -1,5 +1,0 @@
-{
-  "stdout": "crw-rw-rw- 1 root root 195, 254 Oct 11 11:02 /dev/nvidia-modeset\ncrw-rw-rw- 1 root root 499,   0 Oct 11 10:59 /dev/nvidia-uvm\ncrw-rw-rw- 1 root root 499,   1 Oct 11 10:59 /dev/nvidia-uvm-tools\ncrw-rw-rw- 1 root root 195,   0 Oct 11 10:59 /dev/nvidia0\ncrw-rw-rw- 1 root root 195,   1 Oct 11 10:59 /dev/nvidia1\ncrw-rw-rw- 1 root root 195,   6 Oct 11 10:59 /dev/nvidia6\ncrw-rw-rw- 1 root root 195, 255 Oct 11 10:59 /dev/nvidiactl\n\tlibnvidia-ptxjitcompiler.so.1 (libc6,x86-64) => /usr/lib/x86_64-linux-gnu/libnvidia-ptxjitcompiler.so.1\n\tlibnvidia-ptxjitcompiler.so.1 (libc6,x86-64) => /usr/local/cuda/compat/lib/libnvidia-ptxjitcompiler.so.1\n\tlibcuda.so.1 (libc6,x86-64) => /usr/lib/x86_64-linux-gnu/libcuda.so.1\n\tlibcuda.so.1 (libc6,x86-64) => /usr/local/cuda/compat/lib/libcuda.so.1\n\tlibcuda.so (libc6,x86-64) => /usr/local/cuda/compat/lib/libcuda.so\n\ncuInit 0\ncuDeviceGetCount 3 0\nCUDA Error initializing Context: CUDA_ERROR_NOT_INITIALIZED (3) at /__w/openmm-build-wheels/openmm-build-wheels/openmm/platforms/cuda/src/CudaContext.cpp:123\nCPU OK\n",
-  "stderr": "",
-  "exit_code": 0
-}

@@ -1,0 +1,67 @@
+{
+  "source": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\TCR_用户视角_四位点标注_20261031_v3\\PyMOL\\alpha24beta17_用户视角_四位点.pse",
+  "source_sha256": "592ab54ba288faad59c299f47b9705d5dbc5ada645984dc743ead4a2cc9bf943",
+  "PNG": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure4_整体定位与双局部_20261031_v1\\结构原图\\locator.png",
+  "trimmed_PNG": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure4_整体定位与双局部_20261031_v1\\结构原图\\locator_trimmed.png",
+  "PSE": "E:\\Project\\FlexPPI\\paper\\revision_v14_20261010\\figure4_整体定位与双局部_20261031_v1\\PyMOL\\TCR_完整复合体定位.pse",
+  "image_size": [
+    1000,
+    1800
+  ],
+  "camera": [
+    0.06614458560943604,
+    -0.8752993941307068,
+    -0.4790363311767578,
+    0.9640218615531921,
+    0.1799342930316925,
+    -0.19566690921783447,
+    0.25746214389801025,
+    -0.44885921478271484,
+    0.855709433555603,
+    0.0,
+    0.0,
+    -801.6286010742188,
+    67.46527099609375,
+    60.48501205444336,
+    53.667633056640625,
+    707.3961181640625,
+    895.861083984375,
+    -20.0
+  ],
+  "overview_rotation_exactly_preserved": true,
+  "atoms": 12925,
+  "molecular_objects": [
+    "complex"
+  ],
+  "coordinates_exactly_preserved": true,
+  "PSE_reload": "PASS",
+  "all_CA_cartoon": 828,
+  "labels": 0,
+  "ROI_pixels_top_left_xyxy": [
+    445,
+    790,
+    541,
+    951
+  ],
+  "white_trim_box_xyxy": [
+    165,
+    577,
+    857,
+    1294
+  ],
+  "ROI_trimmed_pixels_top_left_xyxy": [
+    280,
+    213,
+    376,
+    374
+  ],
+  "ROI_definition": "All heavy atoms of HLA A69-77 and TCRbeta E51-56; includes Q72 and beta52-54 plus nearest continuous context.",
+  "ROI_method": "Exact native renderer: copy selected heavy atoms without coordinate changes, disable original, render magenta emissive spheres at native atom positions with identical view, take pixel mask bounds plus10px. Temporary copy deleted before save.",
+  "palette": {
+    "TCR": "#A8BDD1",
+    "HLA_beta2m": "#B3BBC3",
+    "peptide": "#B6A48A",
+    "TCR_contact_region": "#668AAE",
+    "HLA_contact_region": "#8995A3"
+  }
+}

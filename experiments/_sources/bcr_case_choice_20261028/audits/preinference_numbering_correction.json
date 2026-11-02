@@ -1,8 +1,0 @@
-{
- "stage": "Before any new paired model inference; source PDBs and coordinate distances only were inspected.",
- "initial_mistake": "Initial written contract linearly mapped literature Robo1R477 to PDB author31 using a SIFTS fragment offset, despite author31 being Val.",
- "correction": "PDB antigen author67 is Arg and is the only antigen Arg next to H31Asp and H97Glu in both structures and both biological copies. Use actual structural residue67 for network inspection, keep literature R477 isoform-numbering relationship unresolved.",
- "primary_outputs_seen": false,
- "does_not_define_entropy_direction": true,
- "independent_review": "b5209_pair_independent_audit independently confirmed copy1/copy2 residue identity and contacting atoms."
-}

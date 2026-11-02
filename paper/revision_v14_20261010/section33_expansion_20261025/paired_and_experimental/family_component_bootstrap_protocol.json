@@ -1,8 +1,0 @@
-{
-  "clusters": 27,
-  "seed": 20261025,
-  "replicates": 10000,
-  "estimator": "PDB-equal macro mean; chain-side metrics averaged within4ETP before bootstrap; resample full all-chain components, carry all constituent PDB systems together; divide accumulated metric sum by accumulated valid system count.",
-  "caveat": "Family-clean is a conservatively screened subset of original OOF; no family-model training or inference was performed.",
-  "pdb_bootstrap_earlier_file": "test53_macro_summary.csv contains explicitly PDB-level sensitivity intervals; use this component-level summary for primary intervals."
-}

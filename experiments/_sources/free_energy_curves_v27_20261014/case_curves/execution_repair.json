@@ -1,7 +1,0 @@
-{
-  "frozen_plan_sha256": "532207346dea21c5c9845865caa566a7f5d54fdbe6eb62ccae483caf7e16fb0a",
-  "before_code_sha256": "86e73df779a5d68fa18e5b731a340e66f8039bad368267b37eb4d704f20a1398",
-  "executed_code_sha256": "af729da3a55ba9350aeb50d24e6f6ac1289bca0e901f14c64667768ee57f69de",
-  "design_unchanged": true,
-  "repair": "Original label variance uses sample variance ddof1. Initial extraction QA erroneously recomputed ddof0, failed before output tables. Corrected only original variance audit and explicit executed-code provenance; selection, primary501 grid, angle calculation and Fstar/width definitions unchanged."
-}

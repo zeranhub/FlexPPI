@@ -1,1 +1,0 @@
-The user rejected this visual direction: “目前图1改成这样视觉上还不如上一版”. Technical, scientific and pagination checks passed, but that does not meet the user's visual goal. This version is a draft and was not promoted to the global delivery pointer. Do not finalize v46. Continue in framework_v47_20261019 from the accepted v45 manuscript and original Figure 1 composition.
