@@ -200,6 +200,11 @@
       "sha256": "b5d41de14d05c188cadd59b55168e7ec499775509ed8033764782ddfb89595e2"
     },
     {
+      "path": "figures/Figure3/cohort_all3063_records.csv",
+      "bytes": 63933,
+      "sha256": "fddc240eb6c80d643c1dd07324f6a0dd2b15e5d8759fae491bf75e18b2f6f435"
+    },
+    {
       "path": "figures/Figure3/compose_fig3_v123.py",
       "bytes": 8159,
       "sha256": "306efa40635ec16b26eeb1a8da8a14384ca1dd206b031aaea95e6bee2f865121"
@@ -315,6 +320,21 @@
       "sha256": "ab7bfda3008ac6dc8042a0418f19d4bbdb7665b70fe2b27603c2dac442e34cf7"
     },
     {
+      "path": "figures/Figure3/pymol/cam_overview.pse",
+      "bytes": 426310,
+      "sha256": "1c400850ad1a799c11567292f66d5b212327bffa4cf73f3700ffb9d041f201f8"
+    },
+    {
+      "path": "figures/Figure3/pymol/inputs/1MXE_CaM_native4_147_CaMKI294_318.pdb",
+      "bytes": 110213,
+      "sha256": "6a9ba977adf518634f96f37ea0c099408008604a63ab0db86197e7daf789b762"
+    },
+    {
+      "path": "figures/Figure3/pymol/inputs/A003R_input_structure.pdb",
+      "bytes": 155636,
+      "sha256": "4b2206ae6e9b71d9b8659e661d6825320eebae563ec4e7c2643a43a5225bf1f5"
+    },
+    {
       "path": "figures/Figure3/pymol/render_manifest.json",
       "bytes": 4420,
       "sha256": "760e9d8a45a22d03e0b75ee14f1dfcbc64522149062cf72296fd28ddd16b5bb7"
@@ -323,6 +343,11 @@
       "path": "figures/Figure3/pymol/ub_overview.png",
       "bytes": 310368,
       "sha256": "c489fb7401a3a656f04b635182d6b7dfec156d67f727ea187d9a2b1def99e68a"
+    },
+    {
+      "path": "figures/Figure3/pymol/ub_overview.pse",
+      "bytes": 278946,
+      "sha256": "a2b6e02c96b3265c80a79c42d783a674e6d9aecc60710fa4440f0bd429e31eae"
     },
     {
       "path": "figures/Figure3/same_residue_MD_and_Full_all824988.npz",
@@ -343,6 +368,21 @@
       "path": "figures/Figure3/sasa_audit/CaMKI_all_complex_atom_SASA.csv",
       "bytes": 118297,
       "sha256": "aecd7f7e15242d2d89de3cda48391ea30414b0c5509ad869e149f598c333c63a"
+    },
+    {
+      "path": "figures/Figure3/sasa_audit/CaMKI_exact_input_complex.pdb",
+      "bytes": 110213,
+      "sha256": "438284de7d706205c88d6eb3a41209e94757ba5bca0e27e6247c30637d910052"
+    },
+    {
+      "path": "figures/Figure3/sasa_audit/CaMKI_static_SASA_provenance.json",
+      "bytes": 2810,
+      "sha256": "1c988c5146dd1340e7c2adff236be7c92cc0d406172bc7bcb584621150646fac"
+    },
+    {
+      "path": "figures/Figure3/sasa_audit/compute_cam_static_sasa.py",
+      "bytes": 6369,
+      "sha256": "5bd18d483ebaf0287fb0e3a56d7eaebe37c4ce926560bb7298efc769b0479c41"
     },
     {
       "path": "figures/Figure3/source_inputs/all119_input_environment.csv",
@@ -413,6 +453,21 @@
       "path": "figures/Figure4/source_data/source_peptide_four_states.csv",
       "bytes": 10823,
       "sha256": "e07b701f72202a581b3c75cd3fe696febb8caf7d3a57a9cd80df1f3e53a7f7da"
+    },
+    {
+      "path": "figures/Figure4/structure_sessions/MEL5_放大局部_四位点无引线.pse",
+      "bytes": 4345941,
+      "sha256": "30abcb10164b9f826f091f1ee9ec5a27a9bdfbcc8538defd6f5247935d4a4caa"
+    },
+    {
+      "path": "figures/Figure4/structure_sessions/TCR_完整复合体定位.pse",
+      "bytes": 4410843,
+      "sha256": "14a9ba10193f0dac63b77765afb261ddf3d5e8cf6176890a459ec595bb163495"
+    },
+    {
+      "path": "figures/Figure4/structure_sessions/alpha24beta17_放大局部_四位点无引线.pse",
+      "bytes": 4766605,
+      "sha256": "eb90f1cd50eb7d482139cabf8d653b1006767cd8412023329b9226b7ea1638d2"
     },
     {
       "path": "figures/Figure4/四位点无引线_布局.json",
@@ -698,11 +753,6 @@
       "path": "supplementary_material.pdf",
       "bytes": 1287975,
       "sha256": "ebcd9802a37c7b61565fc7e20e968446a88fcd4de3d128c1c1058af58946707b"
-    },
-    {
-      "path": "figures/Figure3/cohort_all3063_records.csv",
-      "bytes": 63933,
-      "sha256": "fddc240eb6c80d643c1dd07324f6a0dd2b15e5d8759fae491bf75e18b2f6f435"
     }
   ]
 }
