@@ -28,6 +28,16 @@ The [absolute-error table](benchmarks/absolute_errors.csv) reports the mean abso
 
 [Protein-complex RMSF](benchmarks/complex_rmsf.csv) compares seven methods on the same 260,340 residues from 615 DynaRepo complexes in 261 families. Each row gives the record-mean AP or AUROC for one method. Its 95% interval comes from 2,000 bootstrap resamples of families. This comparison uses the DynaRepo subset of the study cohort.
 
+![Predictions against MD, ranking of high-flexibility residues and RMSF performance across multichain complexes.](../assets/benchmark.png)
+
+When ranked within the same record and amino acid type (panel c), FlexPPI achieved an average precision of 0.623 for Hχ, compared with 0.146 for the amino acid type baseline. Panels d and e show the separate comparison on 615 DynaRepo complexes.
+
+## Ubiquitin case study
+
+In ubiquitin chain A, glutamines 2 and 41 have similar Cα fluctuations in MD (0.49 and 0.47 Å), yet their side chains occupy different ranges of conformations. MD gives Hχ values of 3.01 and 1.89 nats at these sites. The held-out fold 0 model gave the same ordering on the study input (DynaRepo record A003R), predicting 2.99 and 2.00 nats. Panel c shows these sites alongside the other four glutamines in the chain. Panel b places this example in the wider cohort, showing the joint distribution across 824,988 positions with both MD measurements.
+
+![The ubiquitin–UBA complex, cohort-wide distributions and residue profiles for ubiquitin chain A.](../assets/ubiquitin.png)
+
 [Ubiquitin residue profiles](ubiquitin/profiles.csv) give the plotted MD and model values by position. The accompanying [solvent-accessible surface areas](ubiquitin/solvent_accessibility.csv) report side-chain and whole-residue exposure in square ångströms.
 
 ## Sensitivity to the MD observation window
