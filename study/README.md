@@ -2,18 +2,29 @@
 
 The study evaluates FlexPPI on held-out protein structures. Each of the 3,063 records contributes one structure and its molecular-dynamics (MD) reference measurements. The cohort draws 1,929 records from [ATLAS](https://www.dsimb.inserm.fr/ATLAS/), 890 from [DynaRepo](https://dynarepo.inria.fr/) and 244 from [ITrace](https://itrace.life/docs.html).
 
+## Download the training data
+
+Save the [version 1 training archive](https://github.com/zeranhub/FlexPPI/releases/download/training-data-v1/flexppi-training-data-v1.zip) in the root of the FlexPPI checkout. Run the following commands from that directory. The first extracts the labels and structures. The second downloads the 204 DynaBench PDBs from DynaRepo and applies the same residue and atom naming conventions used for training. The third checks all 6,126 inputs against the study hashes and creates the five system-based train/test partitions.
+
+```bash
+python -m zipfile -e flexppi-training-data-v1.zip .
+python study/fetch_dynabench_structures.py --structures data/structures
+python study/prepare_folds.py --structures data/structures --labels data/labels --verify
+```
+
+The assembled dataset contains one PDB and one NumPy `.npz` label file for each `sample_id`. Complete MD trajectories can be downloaded from the original providers. [Dataset sources and attribution](data_sources.md)
+
 ## Cohort and cross-validation
 
 [Fold membership](fold_membership.csv) gives the study record identifier (`sample_id`), dataset, PDB accession, target chains and source group. An empty chain selection includes all chains. The last two columns give the held-out fold (0–4) under two separate five-fold partitions. `system_fold` groups records by biological system and supplies the predictions for the internal residue-ranking comparison. `family_fold` gives the assignment for the sequence-family evaluation, which considers every constituent chain. When training fold 0, records assigned 0 supply the test set and records assigned 1–4 supply the training set.
 
 ## Training from local study inputs
 
-Use a directory of study structures named `<sample_id>.pdb` and a directory of aligned MD labels named `<sample_id>.npz`. Each label file contains `metric_names` (including `rmsf` and `chi_entropy`), `values`, `variances` and a Boolean `mask` marking valid observations. The three arrays have one row per residue in the order parsed from the PDB file and one column per metric. The structure and label collections are separate inputs to this repository. The [input checksums](input_checksums.csv) identify the exact prepared PDB and label files used for each record by SHA-256.
+Use a directory of study structures named `<sample_id>.pdb` and a directory of aligned MD labels named `<sample_id>.npz`. Each label file contains `metric_names` (including `rmsf` and `chi_entropy`), `values`, `variances` and a Boolean `mask` marking valid observations. The three arrays have one row per residue in the order parsed from the PDB file and one column per metric. The [input checksums](input_checksums.csv) identify the exact prepared PDB and label files used for each record by SHA-256.
 
-Run these commands from the repository root after installing FlexPPI and a CUDA-enabled PyTorch build. Replace the two directory arguments with your input directories.
+After preparing the splits above, run the following commands from the repository root with FlexPPI and a CUDA-enabled PyTorch build installed.
 
 ```bash
-python study/prepare_folds.py --structures data/structures --labels data/labels
 flexppi train --config study/configs/full_fold0.yaml
 flexppi evaluate --config study/configs/full_fold0.yaml --checkpoint runs/full/fold_0/epoch_040.pt --split test --output runs/full/fold_0/test_metrics.json
 ```

@@ -16,6 +16,12 @@ python -m flexppi predict --pdb examples/2qho_ab.pdb --target-chains A --output 
 
 For this example, `predictions.csv` contains 72 rows. Each row identifies a residue by chain, PDB residue number and amino acid, and gives the five-model mean in `rmsf_angstrom` and `chi_entropy_nats`. The Hχ field is empty for alanine and glycine, which have no side-chain χ angle. To analyze another complex, supply its PDB file with all relevant partner chains present. Omit `--target-chains` to report predictions for all chains.
 
+## Training data
+
+The dataset contains residue-level MD labels for 3,063 structures. The release archive includes all labels, 2,859 prepared structures, both five-fold partitions and input checksums. One command retrieves the remaining 204 DynaBench structures from DynaRepo. [Download the training data](https://github.com/zeranhub/FlexPPI/releases/download/training-data-v1/flexppi-training-data-v1.zip) · [Set up the dataset](study/README.md#download-the-training-data)
+
+Raw trajectories are available from the original databases. [ATLAS](https://www.dsimb.inserm.fr/ATLAS/download.html) · [DynaRepo](https://dynarepo.inria.fr/) · [ITrace](https://itrace.life/download.html)
+
 ## Model
 
 FlexPPI builds a local coordinate frame from each residue’s N, Cα and C atoms. Four invariant point attention layers combine amino acid identity with distances and orientations within and across chains. Training uses molecular dynamics (MD) trajectories as the reference for both outputs. To measure Hχ, each side-chain χ angle is assigned to one of three 120° bins. A residue that visits several combinations of bins with similar frequencies has higher entropy than one that spends most of its time in a single state.

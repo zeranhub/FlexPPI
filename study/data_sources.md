@@ -1,0 +1,12 @@
+# Training data sources
+
+FlexPPI uses a static structure for each input and trajectory-derived, per-residue measurements of Cα RMSF and side-chain joint-state entropy as targets. To prepare the study files, the authors standardized histidine residue names and isoleucine atom names where required, mapped residues between structures and trajectories, and stored target means, variances and validity masks in NumPy archives. The study membership table identifies the source, accession and PDB code for each record. In DynaRepo records, the `sample_id` is the DynaRepo accession.
+
+| Source | Study records | Data credit and terms |
+| --- | ---: | --- |
+| ATLAS | 1,929 | Yann Vander Meersche, Gabriel Cretin, Aria Gheeraert, Jean-Christophe Gelly and Tatiana Galochkina (DSIMB). The source release used for this study is distributed under CC BY-NC 4.0. [Data and terms](https://www.dsimb.inserm.fr/ATLAS/download.html#license) · [License](https://creativecommons.org/licenses/by-nc/4.0/) · [Publication](https://doi.org/10.1093/nar/gkad1084) |
+| DynaRepo collections | 686 | Omid Mokhtari, Hamed Khakzad, Yasaman Karami and the Delta team at the Inria Centre at the University of Lorraine. These accessions list the Apache License 2.0 in their project metadata. [Database](https://dynarepo.inria.fr/) · [Example accession](https://dynarepo.inria.fr/api/rest/v1/projects/A003R) · [License](https://www.apache.org/licenses/LICENSE-2.0) · [Publication](https://doi.org/10.1093/nar/gkaf1130) |
+| DynaBench via DynaRepo | 204 | Ayşe Berçin Barlas, Benoist Laurent, Ezgi Karaca, Chantal Prévost and Sophie Sacquin-Mora. The FlexPPI archive supplies the calculated labels. The accompanying script retrieves each coordinate file directly from its source accession. [DynaBench downloads](https://lbt.cnrs.fr/dynabench-dynamic-data-for-the-docking-benchmark/) · [Publication](https://doi.org/10.1016/j.jmb.2026.169650) |
+| ITrace | 244 | Mingyu Xu, Guanqiao Zhang, Xufan Gao, Zhaoqi Shi, Yibo Wang, Zaixing Yang and Ruhong Zhou. The ITrace dataset lists CC BY 4.0 and credits the underlying Protein Data Bank structures. [Data](https://doi.org/10.57967/hf/10610) · [Raw trajectories](https://itrace.life/download.html) · [License](https://huggingface.co/datasets/myuxu/ITrace/blob/main/LICENSE) |
+
+The versioned training archive includes these credits, the source membership and input checksums under `data/metadata/`, and the applicable license texts under `data/licenses/`.
