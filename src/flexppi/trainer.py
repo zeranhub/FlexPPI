@@ -203,9 +203,10 @@ def _training_sampler(
 
 
 def _rng_state() -> Dict[str, Any]:
+    generator, keys, position, has_gaussian, cached_gaussian = np.random.get_state()
     state: Dict[str, Any] = {
         "random": random.getstate(),
-        "numpy": np.random.get_state(),
+        "numpy": (generator, keys.tolist(), position, has_gaussian, cached_gaussian),
         "torch": torch.get_rng_state(),
     }
     if torch.cuda.is_available():

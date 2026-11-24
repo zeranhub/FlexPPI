@@ -1,0 +1,1 @@
+"""Bundled FlexPPI model parameters."""

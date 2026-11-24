@@ -1,14 +1,16 @@
 FlexPPI
 
-The invariant point attention design is an independent PyTorch implementation
+The FlexPPI source code is distributed under the Apache License, Version 2.0.
+Its invariant point attention module is an independent PyTorch implementation
 inspired by the Apache-2.0 licensed AlphaFold and Ibex/OpenFold structure
-modules:
+modules (https://github.com/google-deepmind/alphafold and
+https://github.com/prescient-design/ibex).
 
-  https://github.com/google-deepmind/alphafold
-  https://github.com/prescient-design/ibex
+The example backbone coordinates are derived from wwPDB entry 2QHO,
+https://doi.org/10.2210/pdb2QHO/pdb (G. Kozlov and K. Gehring).
+The wwPDB archive distributes structural coordinate data under CC0.
+Original structure report: Kozlov et al., J. Biol. Chem. (2007),
+https://doi.org/10.1074/jbc.M705655200.
 
-No pretrained AlphaFold or Ibex weights are redistributed by this project.
-ESM weights, when enabled, retain their upstream licenses. The local ATLAS
-dataset is distributed under CC BY-NC 4.0; users are responsible for checking
-the licenses of all training data and model weights for their intended use.
-
+The MD data sources used in the study are ATLAS, DynaRepo and ITrace.
+Source datasets retain their respective terms, including the CC BY-NC 4.0 notice supplied with the ATLAS files used here.

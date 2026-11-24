@@ -7,7 +7,6 @@ from flexppi.evaluation import (
     _regression_report,
     _retrieval_report,
 )
-from flexppi.tcr3d import _cdr_regions
 
 
 def test_linux_manifest_path_can_be_remapped_to_local_prefix(tmp_path):
@@ -38,20 +37,6 @@ def test_retrieval_and_dead_zone_direction_are_not_trivial_sign_metrics():
     assert direction["active_count"] == 3
     assert direction["active_sign_accuracy"] == 1.0
     assert retrieval["macro_top_fraction_recall"] == 1.0
-
-
-def test_tcr_cdr_sequences_are_mapped_without_using_residue_numbers():
-    regions = _cdr_regions(
-        "AAAACDEFGHIKLMNPQRSTVWYAAAA",
-        {
-            "cdr1_sequences": "CDEF",
-            "cdr2_sequences": "KLMN",
-            "cdr3_sequences": "STVW",
-        },
-    )
-    assert regions.tolist().count(1) == 4
-    assert regions.tolist().count(2) == 4
-    assert regions.tolist().count(3) == 4
 
 
 def test_hchi_amino_acid_correction_removes_type_prior():

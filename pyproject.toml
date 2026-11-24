@@ -29,16 +29,15 @@ dev = [
     "pytest>=8",
     "ruff>=0.6",
 ]
-benchmark = [
-    "orca-graphlets>=0.1.4",
-    "scipy>=1.9",
-]
-
 [project.scripts]
 flexppi = "flexppi.cli:main"
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.setuptools]
+packages = ["flexppi", "flexppi.data", "flexppi.model", "flexppi_weights"]
+package-dir = {"" = "src", flexppi_weights = "models"}
+
+[tool.setuptools.package-data]
+flexppi_weights = ["full/*.pt"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

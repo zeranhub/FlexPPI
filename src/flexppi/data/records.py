@@ -80,7 +80,7 @@ def write_jsonl(path: str, records: Iterable[Dict[str, Any]]) -> None:
 def remap_path(path: str, mappings: Optional[Mapping[str, str]] = None) -> str:
     """Resolve manifests copied between machines without rewriting source files.
 
-    A manifest produced on Linux can contain paths such as ``/ranze/data/...``
+    A manifest produced on Linux can contain paths such as ``/research/data/...``
     while evaluation happens on Windows.  Prefix matching is performed on a
     slash-normalised representation, then the unmatched suffix is appended to
     the local target prefix with :class:`pathlib.Path`.

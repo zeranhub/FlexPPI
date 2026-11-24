@@ -106,6 +106,8 @@ def test_resume_restores_optimizer_epoch_and_history(tmp_path):
     config.data.state_manifest = str(manifest)
     first = train(config)
     assert first["train_samples"] == 2
+    from flexppi.inference import load_model
+    load_model(str(tmp_path / "epoch_002.pt"), "cpu")
     history_path = tmp_path / "history.json"
     history = json.loads(history_path.read_text(encoding="utf-8"))
     assert [row["epoch"] for row in history] == [1, 2]

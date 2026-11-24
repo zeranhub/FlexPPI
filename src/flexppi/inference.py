@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import math
+from importlib.resources import files
+from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence
 
 import torch
@@ -12,7 +14,7 @@ from flexppi.constants import METRIC_NAMES
 from flexppi.data.dataset import collate_pairs, collate_states
 from flexppi.data.pairing import match_apo_to_holo
 from flexppi.data.structures import ProteinStructure, parse_pdb, target_mask
-from flexppi.model.network import FlexPPI
+from flexppi.model.information_ablation import build_information_ablation
 from flexppi.trainer import move_to_device, resolve_device
 
 
@@ -22,8 +24,10 @@ def _structure_example(
     temperature: float,
     window_ns: float,
     dataset_code: float,
+    structure: Optional[ProteinStructure] = None,
 ) -> Dict[str, Any]:
-    structure = parse_pdb(path)
+    if structure is None:
+        structure = parse_pdb(path)
     n_residues = structure.num_residues
     metric_count = len(METRIC_NAMES)
     return {
@@ -53,9 +57,9 @@ def _structure_example(
 
 def load_model(checkpoint_path: str, device_name: str = "auto") -> tuple:
     device = resolve_device(device_name)
-    checkpoint = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
+    checkpoint = torch.load(checkpoint_path, map_location="cpu", weights_only=True)
     model_config = ModelConfig(**checkpoint["config"]["model"])
-    model = FlexPPI(model_config)
+    model = build_information_ablation(model_config, model_config.information_ablation)
     model.load_state_dict(checkpoint["model"])
     model.to(device).eval()
     return model, model_config, device
@@ -186,3 +190,57 @@ def predict(
         "matched_holo_chains": matched_chains,
         "rows": rows,
     }
+
+
+def _full_model_paths() -> List[Path]:
+    try:
+        models = Path(str(files("flexppi_weights"))) / "full"
+    except ModuleNotFoundError:
+        models = Path(__file__).resolve().parents[2] / "models" / "full"
+    return [models / f"fold_{fold}.pt" for fold in range(5)]
+
+
+@torch.inference_mode()
+def predict_structure(
+    pdb: str,
+    checkpoint_path: Optional[str] = None,
+    target_chains: Optional[Sequence[str]] = None,
+    device_name: str = "auto",
+) -> List[Dict[str, Any]]:
+    """Predict per-residue RMSF (angstroms) and side-chain entropy (nats).
+
+    The default is the arithmetic mean of the five system-split full models.
+    The network sees all chains, independently of the selected output chains.
+    """
+    structure = parse_pdb(pdb)
+    chains = list(target_chains or structure.unique_chains())
+    missing = set(chains) - set(structure.chain_ids)
+    if missing:
+        raise ValueError(f"Unknown PDB chains: {', '.join(sorted(missing))}")
+    example = _structure_example(pdb, chains, 300.0, 100.0, 0.0, structure)
+    device = resolve_device(device_name)
+    batch = move_to_device(collate_states([example]), device)
+    selected = batch["target_mask"][0] & batch["geometry_mask"][0]
+    if not selected.any():
+        raise ValueError("Selected chains have no residues with a complete N, CA, C frame")
+    paths = [Path(checkpoint_path)] if checkpoint_path else _full_model_paths()
+    member_means = []
+    for path in paths:
+        model, config, _ = load_model(str(path), device_name)
+        if config.metrics != ["rmsf", "chi_entropy"] or config.use_condition_features:
+            raise ValueError("Structure prediction requires a two-target, structure-only checkpoint")
+        output = model.forward_state(batch)
+        member_means.append(output["mean"][0, selected].double().cpu())
+    means = torch.stack(member_means).mean(dim=0).tolist()
+    indices = torch.nonzero(selected).flatten().tolist()
+    rows = []
+    for residue, (rmsf, entropy) in zip(indices, means):
+        amino_acid = structure.sequence[residue]
+        rows.append({
+            "chain": structure.chain_ids[residue],
+            "author_residue_id": structure.author_residue_ids[residue],
+            "amino_acid": amino_acid,
+            "rmsf_angstrom": rmsf,
+            "chi_entropy_nats": entropy if amino_acid not in {"A", "G", "X"} else None,
+        })
+    return rows
